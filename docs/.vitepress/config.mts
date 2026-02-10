@@ -114,6 +114,7 @@ function findFirstLink(items: any[]): { text: string, link: string } | null {
 }
 
 export default defineConfig({
+  base: '/notes/',
   title: "Chasse_neige",
   description: "Notes on Physics, Math, and Programming",
 
