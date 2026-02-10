@@ -5,14 +5,17 @@ import * as path from 'path'
 import { fileURLToPath } from 'url'
 
 // --------------------------------------------------------------------------
-// 0. Fix Path Resolution for .mts (ESM)
+// 0. Environment & Path Setup
 // --------------------------------------------------------------------------
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const DOCS_ROOT = path.resolve(__dirname, '..')
 
+// Debug Log: Check where the script is running
+console.log(`[Config] Docs Root: ${DOCS_ROOT}`)
+
 // --------------------------------------------------------------------------
-// 1. Natural Sort Logic (Fixes 1, 10, 2 sorting)
+// 1. Natural Sort Logic
 // --------------------------------------------------------------------------
 function smartSort(textA: string, textB: string): number {
   const chunksA = textA.split(/(\d+)/).filter(Boolean)
@@ -37,113 +40,110 @@ function smartSort(textA: string, textB: string): number {
 // --------------------------------------------------------------------------
 // 2. Recursive Sidebar Generator
 // --------------------------------------------------------------------------
-// This function recursively scans a directory and builds the sidebar items tree
 function getRecursiveSidebarItems(dirPath: string, urlPrefix: string) {
   let items: any[] = []
 
   if (!fs.existsSync(dirPath)) return []
 
-  // Read all entries (files and folders)
   const entries = fs.readdirSync(dirPath, { withFileTypes: true })
 
-  // A. Process Files (.md)
+  // A. Process Files
   entries
     .filter(e => e.isFile() && e.name.endsWith('.md') && e.name !== 'index.md' && !e.name.startsWith('.'))
     .forEach(e => {
       items.push({
         text: e.name.replace('.md', ''),
+        // Fix: Use encodeURI to handle spaces in filenames correctly for links
         link: path.join(urlPrefix, e.name).replace(/\\/g, '/')
       })
     })
 
-  // B. Process Sub-directories (Nested Folders)
+  // B. Process Sub-directories
   entries
     .filter(e => e.isDirectory() && !e.name.startsWith('.'))
     .forEach(e => {
       const subDirPath = path.join(dirPath, e.name)
-      // Force forward slash for URL construction
       const subUrlPrefix = path.join(urlPrefix, e.name).replace(/\\/g, '/') + '/'
 
-      // Recursively get items inside this sub-folder
       const subItems = getRecursiveSidebarItems(subDirPath, subUrlPrefix)
 
-      // Only add the folder group if it contains valid items
       if (subItems.length > 0) {
         items.push({
           text: e.name,
           items: subItems,
-          collapsed: true // Default nested folders to collapsed
+          collapsed: true
         })
       }
     })
 
-  // C. Sort files and folders together naturally
+  // Sort combined results
   items.sort((a, b) => smartSort(a.text, b.text))
-
   return items
 }
 
 function generateScopedSidebar() {
   const sidebar: Record<string, any[]> = {}
-  const topLevelSections = ['physics', 'maths', 'coding']
+
+  // [!code focus] AUTO-DISCOVERY: Scan DOCS_ROOT for any top-level folders
+  // This fixes case-sensitivity issues on Linux/GitHub Actions
+  const topLevelSections = fs.readdirSync(DOCS_ROOT, { withFileTypes: true })
+    .filter(dirent => dirent.isDirectory() && !dirent.name.startsWith('.') && dirent.name !== '.vitepress')
+    .map(dirent => dirent.name)
+
+  console.log(`[Config] Found Top-level Sections: ${topLevelSections.join(', ')}`)
 
   topLevelSections.forEach(section => {
     const sectionAbsolutePath = path.join(DOCS_ROOT, section)
 
-    if (fs.existsSync(sectionAbsolutePath)) {
-      // 1. Get Top-Level Subjects (e.g. 'Analytical Mechanics', 'General Relativity')
-      const subjects = fs.readdirSync(sectionAbsolutePath).filter(f => {
-        return fs.statSync(path.join(sectionAbsolutePath, f)).isDirectory()
-      })
+    // Get Subjects (e.g. 'Analytical Mechanics')
+    const subjects = fs.readdirSync(sectionAbsolutePath).filter(f => {
+      return fs.statSync(path.join(sectionAbsolutePath, f)).isDirectory()
+    })
+    subjects.sort(smartSort)
 
-      // Sort subjects (Chapter 1, Chapter 2...)
-      subjects.sort(smartSort)
+    const sectionMasterSidebar: any[] = []
 
-      // This array will hold the config for the Section Home (e.g. /physics/index.md)
-      const sectionMasterSidebar: any[] = []
+    subjects.forEach(subjectName => {
+      const subjectPath = path.join(sectionAbsolutePath, subjectName)
+      const subjectRouteKey = `/${section}/${subjectName}/`
 
-      subjects.forEach(subjectName => {
-        const subjectPath = path.join(sectionAbsolutePath, subjectName)
-        const subjectRouteKey = `/${section}/${subjectName}/` // e.g. /physics/General Relativity/
+      const subjectItems = getRecursiveSidebarItems(subjectPath, subjectRouteKey)
 
-        // 2. Build the FULL tree for this Subject (Recursive)
-        const subjectItems = getRecursiveSidebarItems(subjectPath, subjectRouteKey)
-
-        if (subjectItems.length > 0) {
-          // A. Define the Sidebar for when user is INSIDE this subject
-          // This allows navigation of nested folders like 'Gravitational Waves'
-          // while staying inside 'General Relativity' context.
-          sidebar[subjectRouteKey] = [
-            {
-              text: subjectName,
-              items: subjectItems,
-              collapsed: false // Expand the root of the subject
-            }
-          ]
-
-          // B. Add to the Master Sidebar (for /physics/ root)
-          sectionMasterSidebar.push({
+      if (subjectItems.length > 0) {
+        // 1. Sidebar for inside the Subject
+        sidebar[subjectRouteKey] = [
+          {
             text: subjectName,
             items: subjectItems,
-            collapsed: true // Collapse in the main list
-          })
-        }
-      })
+            collapsed: false
+          }
+        ]
 
-      // 3. Register the Master Sidebar for the section root
-      if (sectionMasterSidebar.length > 0) {
-        sidebar[`/${section}/`] = sectionMasterSidebar
+        // 2. Entry for the Section Master List
+        sectionMasterSidebar.push({
+          text: subjectName,
+          items: subjectItems,
+          collapsed: true
+        })
       }
+    })
+
+    // 3. Register Section Master List
+    if (sectionMasterSidebar.length > 0) {
+      sidebar[`/${section}/`] = sectionMasterSidebar
     }
   })
 
   return sidebar
 }
 
+// Generate immediately
+console.log('--- Generating Sidebar ---')
 const mySidebar = generateScopedSidebar()
+console.log(`--- Sidebar Generated with ${Object.keys(mySidebar).length} keys ---`)
 
 // --------------------------------------------------------------------------
-// 3. Next/Prev Button Helper (Recursive search)
+// 3. Next/Prev Helper
 // --------------------------------------------------------------------------
 function findFirstLink(items: any[]): { text: string, link: string } | null {
   if (!items || !Array.isArray(items)) return null
@@ -158,7 +158,7 @@ function findFirstLink(items: any[]): { text: string, link: string } | null {
 }
 
 export default defineConfig({
-  base: '/notes/',
+  base: '/notes/', // IMPORTANT: Matches your repo name
   title: 'Chasse_neige',
   description: 'Notes on Physics, Math, and Programming',
 
@@ -173,10 +173,9 @@ export default defineConfig({
         const section = parts[0]
         const subject = parts[1]
 
-        // Try to match the subject sidebar first
         let sidebarKey = `/${section}/${subject}/`
 
-        // Fallback to section root
+        // Fallback check
         if (!mySidebar[sidebarKey]) {
           sidebarKey = `/${section}/`
         }
