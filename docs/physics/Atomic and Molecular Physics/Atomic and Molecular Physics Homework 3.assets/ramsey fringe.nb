@@ -1,0 +1,176 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      6704,        166]
+NotebookOptionsPosition[      5796,        146]
+NotebookOutlinePosition[      6189,        162]
+CellTagsIndexPosition[      6146,        159]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"TransitionProbability", "[", "x_", "]"}], ":=", 
+   RowBox[{"Module", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"rabiFrequency", "=", "14"}], ",", 
+       RowBox[{"detuningFrequency", "=", "x"}], ",", "totalFrequency", ",", 
+       RowBox[{"interrogationTime", "=", "3"}], ",", "interactionTime", ",", 
+       "blochVector"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"totalFrequency", "=", 
+       RowBox[{"Sqrt", "[", 
+        RowBox[{
+         RowBox[{"rabiFrequency", "^", "2"}], "+", 
+         RowBox[{"detuningFrequency", "^", "2"}]}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"interactionTime", "=", 
+       RowBox[{"Pi", "/", 
+        RowBox[{"(", 
+         RowBox[{"2", "*", "rabiFrequency"}], ")"}]}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"blochVector", "=", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], ";", 
+      "\[IndentingNewLine]", "\[IndentingNewLine]", 
+      RowBox[{"(*", 
+       RowBox[{"The", " ", "first", " ", 
+        RowBox[{"Pi", "/", "2"}], " ", "pulse"}], "*)"}], 
+      "\[IndentingNewLine]", 
+      RowBox[{"blochVector", "=", 
+       RowBox[{"blochVector", ".", 
+        RowBox[{"RotationMatrix", "[", 
+         RowBox[{
+          RowBox[{"totalFrequency", "*", "interactionTime"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"rabiFrequency", ",", "0", ",", "detuningFrequency"}], 
+           "}"}]}], "]"}]}]}], ";", "\[IndentingNewLine]", 
+      "\[IndentingNewLine]", 
+      RowBox[{"(*", 
+       RowBox[{"The", " ", "interrogation", " ", "region"}], "*)"}], 
+      "\[IndentingNewLine]", 
+      RowBox[{"blochVector", "=", 
+       RowBox[{"blochVector", ".", 
+        RowBox[{"RotationMatrix", "[", 
+         RowBox[{
+          RowBox[{"detuningFrequency", "*", "interrogationTime"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "]"}]}]}], ";", 
+      "\[IndentingNewLine]", "\[IndentingNewLine]", 
+      RowBox[{"(*", 
+       RowBox[{"The", " ", "second", " ", 
+        RowBox[{"Pi", "/", "2"}], " ", "pulse"}], "*)"}], 
+      "\[IndentingNewLine]", 
+      RowBox[{"blochVector", "=", 
+       RowBox[{"blochVector", ".", 
+        RowBox[{"RotationMatrix", "[", 
+         RowBox[{
+          RowBox[{"totalFrequency", "*", "interactionTime"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"rabiFrequency", ",", "0", ",", "detuningFrequency"}], 
+           "}"}]}], "]"}]}]}], ";", "\[IndentingNewLine]", 
+      "\[IndentingNewLine]", 
+      RowBox[{"finalPossibility", "=", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", " ", "-", " ", 
+          RowBox[{"blochVector", "[", 
+           RowBox[{"[", "3", "]"}], "]"}]}], ")"}], "/", "2"}]}], ";", 
+      "\[IndentingNewLine]", "finalPossibility"}]}], "  ", 
+    "\[IndentingNewLine]", "]"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"TransitionProbability", "[", "x", "]"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", " ", 
+     RowBox[{"-", "60"}], ",", " ", "60"}], "}"}]}], 
+  "]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.971941049270248*^9, 3.971941145032838*^9}, {
+   3.971941202422306*^9, 3.9719412176548643`*^9}, {3.971941282516547*^9, 
+   3.971941305469146*^9}, {3.971941360166428*^9, 3.9719415082748747`*^9}, {
+   3.9719415576357107`*^9, 3.971941628070044*^9}, {3.971941672862834*^9, 
+   3.971941801801964*^9}, 3.971941849492393*^9, {3.971941884007949*^9, 
+   3.971942190281888*^9}, {3.971942239608736*^9, 3.971942259861828*^9}, {
+   3.971942358604307*^9, 3.971942397028172*^9}, {3.9719424782643223`*^9, 
+   3.97194248095131*^9}, {3.971942613021933*^9, 3.971942709892705*^9}, {
+   3.9719427703285923`*^9, 3.971942785426448*^9}, {3.971942855224028*^9, 
+   3.971942876000413*^9}, {3.9719430982424803`*^9, 3.971943109888708*^9}, {
+   3.971943248277473*^9, 3.9719432822315493`*^9}, {3.9719434163566504`*^9, 
+   3.97194343832404*^9}, {3.971943485217144*^9, 3.9719434860638847`*^9}, {
+   3.9719447896682367`*^9, 3.9719448016196413`*^9}, {3.9719449118847427`*^9, 
+   3.97194509285382*^9}, 3.9719451416548367`*^9},
+ CellLabel->"In[60]:=",ExpressionUUID->"ebf6a46a-36fd-4ae6-878f-54e158374cfe"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.971945147712698*^9, 
+  3.971945147715639*^9}},ExpressionUUID->"625ae587-b5b3-49bb-8197-\
+f6a18ab132c6"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.9719447343591833`*^9, 
+  3.9719447839021053`*^9}},ExpressionUUID->"2a3f8071-d0f5-410b-b1c5-\
+b13cd6054b8a"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.971944838222241*^9, 
+  3.971944838228478*^9}},ExpressionUUID->"1ab791bf-23c4-4281-83f2-\
+7cc4e55e9036"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.971943447802971*^9, 
+  3.9719434478075542`*^9}},ExpressionUUID->"bbc2e0ab-595d-497d-8d18-\
+b4d3d7090984"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{3.971943456423586*^9},
+ NumberMarks->False,ExpressionUUID->"75d1a5a8-73ed-4dba-8390-55cd3640716f"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.971943452690032*^9, 
+  3.971943452691946*^9}},ExpressionUUID->"5f73e539-a223-4742-a09d-\
+98b2fc3c721e"]
+},
+WindowSize->{Full, Full},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"14.1 for Mac OS X ARM (64-bit) (July 16, 2024)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"2df0d83c-5456-403a-b100-d637e4343e56"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[554, 20, 4310, 95, 437, "Input",ExpressionUUID->"ebf6a46a-36fd-4ae6-878f-54e158374cfe"],
+Cell[4867, 117, 152, 3, 29, "Input",ExpressionUUID->"625ae587-b5b3-49bb-8197-f6a18ab132c6"],
+Cell[5022, 122, 156, 3, 29, "Input",ExpressionUUID->"2a3f8071-d0f5-410b-b1c5-b13cd6054b8a"],
+Cell[5181, 127, 152, 3, 29, "Input",ExpressionUUID->"1ab791bf-23c4-4281-83f2-7cc4e55e9036"],
+Cell[5336, 132, 154, 3, 29, "Input",ExpressionUUID->"bbc2e0ab-595d-497d-8d18-b4d3d7090984"],
+Cell[5493, 137, 144, 2, 29, "Input",ExpressionUUID->"75d1a5a8-73ed-4dba-8390-55cd3640716f"],
+Cell[5640, 141, 152, 3, 29, "Input",ExpressionUUID->"5f73e539-a223-4742-a09d-98b2fc3c721e"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

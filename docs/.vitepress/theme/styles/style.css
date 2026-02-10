@@ -1,0 +1,143 @@
+:root {
+  /* -- Brand Colors (Blue Tone) -- */
+  --vp-c-brand-1: #3b82f6;
+  /* Primary Blue */
+  --vp-c-brand-2: #2563eb;
+  /* Darker Blue */
+  --vp-c-brand-3: #1d4ed8;
+  /* Even Darker */
+  --vp-c-brand-soft: rgba(59, 130, 246, 0.14);
+
+  /* -- Global Animation -- */
+  /* Smooth transition for dark mode toggle */
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Dark Mode Specific overrides (optional, VitePress handles mostly automatically) */
+.dark {
+  --vp-c-brand-1: #60a5fa;
+  /* Lighter blue for dark backgrounds */
+  --vp-c-brand-2: #3b82f6;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--vp-c-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vp-c-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-brand-1);
+}
+
+/* Block Equation Styling Adjustment */
+mjx-container[display="true"] {
+  margin: 1.5em 0 !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* =======================================================
+   HERO SECTION OVERRIDES
+   ======================================================= */
+
+/* 1. Increase the maximum width of the Hero container */
+.VPHero .container {
+  /* Default is usually small, increase it to fit more text on one line */
+  max-width: 1500px !important;
+
+  /* Optional: Adjust padding if needed */
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* 2. Increase the width limit of the title (Name and Text) */
+.VPHero .main {
+  /* Default limits this to ~600-800px, causing wrapping */
+  max-width: 100% !important;
+  width: 100%;
+}
+
+/* 3. Specifically adjust the 'name' (Big Title) behavior */
+.VPHero .name {
+  max-width: 100% !important;
+  /* Optional: prevent wrapping if you really want it on one line */
+  white-space: nowrap;
+}
+
+/* 4. Specifically adjust the 'text' (Subtitle) behavior */
+.VPHero .text {
+  max-width: 100% !important;
+}
+
+/* 5. Specifically adjust the 'tagline' (Description) behavior */
+.VPHero .tagline {
+  max-width: 100% !important;
+  /* Give it more breathing room */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =======================================================
+   RESPONSIVE ADJUSTMENTS (Mobile)
+   ======================================================= */
+@media (max-width: 640px) {
+
+  /* Revert 'nowrap' on mobile screens to prevent text getting cut off */
+  .VPHero .name {
+    white-space: normal;
+  }
+}
+
+
+:root {
+  --vp-layout-max-width: 100% !important;
+}
+
+.VPDoc {
+  padding: 32px 64px 96px !important;
+}
+
+.container {
+  max-width: 100% !important;
+}
+
+.VPContent {
+  max-width: 100% !important;
+}
+
+.content-container {
+  max-width: 100% !important;
+}
+
+
+.VPDoc:not(.has-sidebar) .content {
+  max-width: 100% !important;
+}
+
+.VPDoc.has-sidebar .content {
+  max-width: 100% !important;
+}
+
+
+.VPDoc.has-sidebar .container {
+  display: flex;
+}
+
+.VPDoc.has-sidebar .aside {
+  flex: 0 0 300px;
+}
+
+.VPDoc.has-sidebar .content {
+  flex: 1;
+  min-width: 0;
+}
