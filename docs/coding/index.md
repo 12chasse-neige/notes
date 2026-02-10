@@ -11,8 +11,7 @@ import { data as posts } from './posts.data.ts'
 
 # Coding Notes
 
-Here is a collection of my notes on coding.
-Up till now only C++ and Python.
+Here is a collection of my notes on coding, only C++ and Python up till now.
 
 <!-- Loop through the posts -->
 <div class="post-list">

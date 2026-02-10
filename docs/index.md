@@ -30,9 +30,9 @@ recent_projects:
     link: "/maths/Mathematical Physics Equations"
     tags: ["Maths", "Homework", "I'm not LYS"]
   
-  - title: "Gravitational Hertz Experiment"
-    desc: "A SRT Project, trying to figure out whether artificial detecable gravitational wave is possible."
-    link: "/physics/General Relativity/Gravitational Waves/Gravitational Hertz Experiment"
+  - title: "Gravitational Waves Formation and Propagation"
+    desc: "My notes for a SRT project, trying to figure out whether artificial detecable gravitational wave is possible."
+    link: "/physics/General Relativity/Gravitational Waves/Gravitational Waves Formation and Propagation"
     tags: ["Gravitational Wave", "SRT", "Detection"]
 
   - title: "Feynman Diagrams for Beginners"
