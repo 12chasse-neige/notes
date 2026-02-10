@@ -1248,7 +1248,6 @@ read_txt(filename)
 诗酒趁年华。 
 
 
-
 《临江仙·夜归临皋》
 
 　　——苏　轼
@@ -1356,7 +1355,7 @@ def rand_ints(n: int, a: int, b: int) -> None:
 
 ##### 实值分布函数
 
-- 函数 random()：返回区间 [0.0, 1.0) 中的随机浮点数
+- 函数 random()：返回区间 `[0.0, 1.0)` 中的随机浮点数
 - 函数 uniform(a, b)：返回区间 [a, b] 中的随机浮点数
 
 - 函数 triangular(low, high, mode)：返回区间 [low, high] 中的随机浮点数，以 mode 为中点的对称分布
@@ -2169,17 +2168,17 @@ main()
 `class set([iterable])`
 
 - 参数 iterable 为可迭代对象，一般为元组、列表等序列类型
-- 示例：set((1, 2, 3)) -> {1, 2, 3}
-- 示例：set([1, 2, 3]) -> {1, 2, 3}
-- 示例：set("hello") -> {"l", "o", "e", "h"}
-- 示例：set(b"hello") -> {104, 108, 101, 111}
+- 示例：`set((1, 2, 3)) -> {1, 2, 3}`
+- 示例：`set([1, 2, 3]) -> {1, 2, 3}`
+- 示例：`set("hello") -> {"l", "o", "e", "h"}`
+- 示例：`set(b"hello") -> {104, 108, 101, 111}`
 - 空集：无参数调用 set()，“{}”用于构造空字典
 
 - 集合蕴涵式：与列表蕴涵式类似
-- 格式：{expression for-clause … if-clause …}
-- 示例：若 squares = {x ** 2 for x in range(10)}，则结果为 {0, 1, 64, 4, 36, 9, 16, 49, 81, 25}
-- 示例：若存在 vector = [-2, -1, 0, 1, 2]，则 squares = {x ** 2 for x in vector} -> {0, 1, 4}
-- 示例：若 s = {c.upper() for c in "Python" if c not in "aeiou" }，则结果为 {'H', 'Y', 'P', 'N', 'T'}
+- 格式：`{expression for-clause … if-clause …}`
+- 示例：若 `squares = {x ** 2 for x in range(10)}`，则结果为 `{0, 1, 64, 4, 36, 9, 16, 49, 81, 25}`
+- 示例：若存在 `vector = [-2, -1, 0, 1, 2]`，则 `squares = {x ** 2 for x in vector} -> {0, 1, 4}`
+- 示例：若 `s = {c.upper() for c in "Python" if c not in "aeiou" }`，则结果为 `{'H', 'Y', 'P', 'N', 'T'}`
 
 ##### 更新操作
 
