@@ -114,7 +114,7 @@ $$
 about the same order of magnitude compared to one big column.
 
 
-[^1]: Sayed Abolfazl Mirdehghan, 1 - Fibrous polymeric composites,
+[1]: Sayed Abolfazl Mirdehghan, 1 - Fibrous polymeric composites,
 Editor(s): Masoud Latifi,
 In The Textile Institute Book Series,
 Engineered Polymeric Fibrous Materials,

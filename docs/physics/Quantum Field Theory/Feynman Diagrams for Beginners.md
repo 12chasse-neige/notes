@@ -1,6 +1,6 @@
 # Feynman Diagrams for Beginners
 
-$\text{Krešimir Kumerički}^{\dagger}$
+Krešimir Kumerički
 
 Department of Physics, Faculty of Science, University of Zagreb, Croatia
 
@@ -10,20 +10,24 @@ Department of Physics, Faculty of Science, University of Zagreb, Croatia
 
 本文对费曼图进行了简要介绍，并包含许多练习题。文本针对那些先前很少或没有接触过量子场论的学生。我们介绍了单粒子狄拉克方程、自由量子场以及使用费曼图构建费曼振幅的简明描述。作为一个例子，我们详细计算了电子和正电子湮灭成 $\mu$ 子对的截面。我们还展示了如何借助计算机进行此类计算。
 
-## Cotents
+## Contents
 
 1 自然单位
 
 2 单粒子狄拉克方程 
 
 2.1 狄拉克方程
+
 2.2 伴随狄拉克方程与狄拉克流
+
 2.3 狄拉克方程的自由粒子解
 
 3 自由量子场
 
 3.1 自旋 0：标量场
+
 3.2 自旋 1/2：狄拉克场
+
 3.3 自旋 1：矢量场
 
 4 衰变与散射的黄金规则
@@ -33,16 +37,20 @@ Department of Physics, Faculty of Science, University of Zagreb, Croatia
 6 示例：QED 中的 $e^{+} e^{-} \to \mu^{+} \mu^{-}$
 
 6.1 对极化求和
+
 6.2 Casimir 技巧
+
 6.3 $\gamma$ 矩阵的迹与缩并恒等式
+
 6.4 质心系中的运动学
+
 6.5 对二粒子相空间积分
+
 6.6 步骤总结
+
 6.7 Mandelstam 变量
 
 附录：在计算机上计算费曼图
-
----
 
 ## 1 自然单位
 
@@ -135,7 +143,7 @@ $$
 >1 \text{m} \approx 10^{-8} \text{s} = 10^{6} \mathrm{\mu m} = 10^{6} \text{eV}^{-1} = 10^{15} \text{GeV}^{-1}
 >$$
 >
-用 $\mathrm{GeV}$ 计算要优雅得多。使用 $ m_{e} = 0.511{\cdot} 10^{-3} \mathrm{GeV}$，我们立即得到：
+用 $\mathrm{GeV}$ 计算要优雅得多。使用 $m_{e} = 0.511{\cdot} 10^{-3} \mathrm{GeV}$，我们立即得到：
 $$
 \sigma_{\mathrm{T}} = \frac{8 \pi \alpha^{2}}{3 m_{e}^{2}} = 1709 \mathrm {GeV}^{-2} = 665 \mathrm{mb} \tag{4}
 $$
@@ -151,8 +159,6 @@ $$
 >$$
 >\tau \approx 0.1 \text{eV}^{-1} = 0.1 \mathrm{\mu m} = 10^{-7} \text{m} \approx 10^{-15} \text{s}
 >$$
----
-
 ## 2 单粒子狄拉克方程
 
 ### 2.1 狄拉克方程
@@ -308,14 +314,16 @@ $$
 
 **练习 7** 验证流 $j ^ { \mu } = \bar { \psi } \gamma ^ { \mu } \psi$ 是守恒的，即满足连续性关系 $\partial _ { \mu } j ^ { \mu } = 0$。这个相对论性四流的分量是 $j ^ { \mu } = ( \rho , j )$。注意 $\rho =$ $j ^ { 0 } = \bar { \psi } \gamma ^ { 0 } \psi = \psi ^ { \dagger } \psi > 0$，即概率是正定的。
 
->
+>$$
+>\partial_{\mu} j^{\mu} = \partial_{\mu} (\bar{\psi} \gamma^{\mu} \psi) = \partial_{\mu} (\psi^{\dagger}  \gamma^{0} \gamma^{\mu} \psi) = (\partial_{\mu} \psi)^{\dagger} \gamma^{0} \gamma^{\mu} \psi + \psi^{\dagger} \gamma^{0} \gamma^{\mu} (\partial_{\mu} \psi) = - m \bar{\psi} \psi + m \bar{\psi} \psi = 0
+>$$
 
 ### 2.3 狄拉克方程的自由粒子解
 
 由于我们正在为微扰理论计算做准备，我们只需要考虑自由粒子解。关于各种势中的解，请参阅文献。狄拉克旋量满足克莱因-戈尔登方程这一事实提示了以下 ansatz
 
 $$
-\psi (x) = u(\vec{p}) e^{-ipx} \tag {20}
+\psi(x) = u(\vec{p}) e^{-ipx} \tag{20}
 $$
 
 将其代入狄拉克方程后，得到动量空间狄拉克方程
@@ -364,7 +372,7 @@ $$
 
 这个选择是相对论协变的，因为体积元的洛伦兹收缩被能量变化所补偿。还有其他具有其他优点的归一化约定。
 
-**练习 9** 根据此选择确定归一化常数 N。
+**练习 9** 根据此选择确定归一化常数 $N$。
 
 >
 
@@ -387,19 +395,21 @@ $$
 
 宇称变换：
 
-- P： $x \to −x, t \to t$
+- P：$x \to −x, t \to t$
 - P： ψ → γ 0 ψ
 
 **练习 11** 验证流 $j ^ { \mu } = \bar { \psi } \gamma ^ { \mu } \psi$ 在宇称下像矢量一样变换，即 $j ^ { 0 } \to j ^ { 0 }$ 且 $j \to - j$。
 
+>
+
 任何费米子流都具有 ${ \bar { \psi } } \Gamma \psi$ 的形式，其中 $\Gamma$ 是某个 4×4 矩阵。为了构建相互作用拉格朗日量，我们希望只使用那些具有确定洛伦兹变换性质的流。为此，我们首先定义两个新矩阵：
 
 $$
-\gamma^ {5} \equiv i \gamma^ {0} \gamma^ {1} \gamma^ {2} \gamma^ {3} \stackrel {\text {D i r a c r e p .}} {=} \left( \begin{array}{c c} 0 & 1 \\ 1 & 0 \end{array} \right), \quad \left\{\gamma^ {5}, \gamma^ {\mu} \right\} = 0, \tag {29}
+\gamma^{5} \equiv i \gamma^{0} \gamma^{1} \gamma^{2} \gamma^{3} \stackrel{\text{Diracrep.}}{=} \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \quad \left\{\gamma^{5}, \gamma^{\mu} \right\} = 0 \tag{29}
 $$
 
 $$
-\sigma^ {\mu \nu} \equiv \frac {i}{2} \left[ \gamma^ {\mu}, \gamma^ {\nu} \right], \quad \sigma^ {\mu \nu} = - \sigma^ {\nu \mu}. \tag {30}
+\sigma^{\mu \nu} \equiv \frac{i}{2} \left[ \gamma^{\mu}, \gamma^{\nu} \right], \quad \sigma^{\mu \nu} = - \sigma^{\nu \mu} \tag {30}
 $$
 
 现在，如果 $\Gamma$ 是下表中给出的矩阵之一，则 ${ \bar { \psi } } \Gamma \psi$ 将协变地变换。下表还显示了 ${ \bar { \psi } } \Gamma \psi$ 的变换性质、$\Gamma$ 中不同 $\gamma$ 矩阵的数量以及 $\Gamma$ 的分量数。
@@ -1032,9 +1042,6 @@ O u t [ 7 ] = (2 e^4 (t^2 + u^2))/s^2
 [3] J. A. M. Vermaseren, New features of FORM, math-ph/0010025.
 
 
-$$
-\begin{gather}
-a + b = c \\
-e = mc^2
-\end{gather}
-$$
+
+
+

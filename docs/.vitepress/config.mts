@@ -163,7 +163,7 @@ export default defineConfig({
   description: 'Notes on Physics, Math, and Programming',
 
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }]
+    ['link', { rel: 'icon', href: '/notes/favicon.ico' }]
   ],
 
   transformPageData(pageData) {

@@ -16,6 +16,7 @@
   },
   "homepage": "https://github.com/12chasse-neige/12chasse-neige.github.io#readme",
   "devDependencies": {
+    "@types/node": "^25.2.3",
     "markdown-it-mathjax3": "^4.3.2",
     "vitepress": "^1.6.4",
     "vitepress-sidebar": "^1.33.1",
