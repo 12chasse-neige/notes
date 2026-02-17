@@ -1,4 +1,5 @@
-# .github/workflows/deploy.yml
+# yaml-language-server: $schema=none
+
 name: Deploy VitePress site to Pages
 
 on:
@@ -8,7 +9,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -23,7 +24,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -35,15 +36,27 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Install dependencies
-        run: npm ci 
+        run: npm ci
+
+      - name: Generate AI Summaries
+        env:
+          AI_API_KEY: ${{ secrets.AI_API_KEY }}
+          AI_BASE_URL: https://api.deepseek.com
+        run: node scripts/generate-recent.mjs
+
+      - name: Commit AI Results
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update recent projects json [skip ci]"
+          file_pattern: docs/.vitepress/data/recent_projects.json
 
       - name: Build with VitePress
-        run: npm run docs:build 
+        run: npm run docs:build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs/.vitepress/dist 
+          path: docs/.vitepress/dist
 
   deploy:
     environment:

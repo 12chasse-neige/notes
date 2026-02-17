@@ -1,0 +1,102 @@
+[
+  {
+    "title": "Gravitational Wave Detection and Data Analysis",
+    "desc": "Explores gravitational wave detection across frequency bands, from CMB polarization to LIGO, and details interferometer response using TT gauge.",
+    "tags": [
+      "gravitational waves",
+      "interferometry",
+      "TT gauge"
+    ],
+    "link": "/physics/General Relativity/Gravitational Waves/Detecting Gravitiational Waves"
+  },
+  {
+    "title": "Gravitational Wave Metric Tensor Calculation",
+    "desc": "A script to compute gravitational wave metric tensor components in TT gauge for a rotating carbon fiber column source, including critical angular velocity estimation.",
+    "tags": [
+      "gravitational waves",
+      "metric tensor",
+      "quadrupole moment"
+    ],
+    "link": "/physics/General Relativity/Gravitational Waves/Gravitational Hertz Experiment"
+  },
+  {
+    "title": "Feynman Diagrams: A Beginner's Guide",
+    "desc": "An introductory guide to Feynman diagrams for quantum field theory beginners, covering Dirac equations, scattering calculations, and practical exercises.",
+    "tags": [
+      "Feynman diagrams",
+      "Quantum field theory",
+      "Scattering calculations"
+    ],
+    "link": "/physics/Quantum Field Theory/Feynman Diagrams for Beginners"
+  },
+  {
+    "title": "C++ Programming Basics and Keywords",
+    "desc": "An introduction to C++ programming fundamentals, covering essential keywords for data types, control flow, functions, and object-oriented concepts.",
+    "tags": [
+      "C++",
+      "Programming",
+      "Keywords"
+    ],
+    "link": "/coding/C++/C++_Note"
+  },
+  {
+    "title": "Python Escape Characters Guide",
+    "desc": "Learn essential Python escape characters like \\n and \\t for formatting strings, file paths, and special symbols with practical examples.",
+    "tags": [
+      "Python",
+      "Escape Characters",
+      "String Formatting"
+    ],
+    "link": "/coding/Python/Python_Note"
+  },
+  {
+    "title": "Advanced Calculus: Taylor's Theorem Review",
+    "desc": "A concise review of Taylor's Theorem, covering Peano's, Lagrange's, and Cauchy's forms of the remainder term for function approximation.",
+    "tags": [
+      "Taylor's Theorem",
+      "Calculus",
+      "Approximation"
+    ],
+    "link": "/maths/Advanced Calculus/Advanced Calculus (1) Final Review"
+  },
+  {
+    "title": "Advanced Calculus Series Convergence Analysis",
+    "desc": "A technical analysis of six infinite series, determining convergence or divergence using comparison, ratio, and root tests with rigorous proofs.",
+    "tags": [
+      "Series Convergence",
+      "Ratio Test",
+      "Comparison Test"
+    ],
+    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 1"
+  },
+  {
+    "title": "Advanced Calculus Surface and Curve Integrals",
+    "desc": "Solutions for surface and curve integrals involving parameterization, Stokes' theorem applications, and polar coordinate transformations in multivariable calculus.",
+    "tags": [
+      "Surface Integrals",
+      "Stokes' Theorem",
+      "Parameterization"
+    ],
+    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 10"
+  },
+  {
+    "title": "Power Series Convergence and Summation Formulas",
+    "desc": "Analyzes convergence domains and summation formulas for power series, including ln(1+x) and arctan expansions, with applications to ln2 and π/4.",
+    "tags": [
+      "power series",
+      "convergence",
+      "Taylor expansion"
+    ],
+    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 2"
+  },
+  {
+    "title": "Advanced Calculus: Metrics, Inequalities, and Open Sets",
+    "desc": "A technical analysis covering metric spaces on continuous functions, the Cauchy-Schwarz inequality proof, and characterization of open sets in ℝⁿ.",
+    "tags": [
+      "Metric Spaces",
+      "Cauchy-Schwarz Inequality",
+      "Open Sets"
+    ],
+    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 3"
+  }
+]

@@ -112,12 +112,10 @@ F(t) = t J_0(t) \cos t + t J_1(t) \sin t
 $$
 则  
 $$
-\begin{aligned}
-F'(t) &= J_0(t) \cos t + t J_0'(t) \cos t - t J_0(t) \sin t + J_1(t) \sin t + t J_1'(t) \sin t + t J_1(t) \cos t \[2mm]
-&= J_0(t) \cos t + t(-J_1(t)) \cos t - t J_0(t) \sin t + J_1(t) \sin t + t\left(J_0(t) - \frac{J_1(t)}{t}\right) \sin t + t J_1(t) \cos t \[2mm]
-&= J_0(t) \cos t - t J_1(t) \cos t - t J_0(t) \sin t + J_1(t) \sin t + t J_0(t) \sin t - J_1(t) \sin t + t J_1(t) \cos t \[2mm]
-&= J_0(t) \cos t
-\end{aligned}
+F'(t) = J_0(t) \cos t + t J_0'(t) \cos t - t J_0(t) \sin t + J_1(t) \sin t + t J_1'(t) \sin t + t J_1(t) \cos t \\
+= J_0(t) \cos t + t(-J_1(t)) \cos t - t J_0(t) \sin t + J_1(t) \sin t + t\left(J_0(t) - \frac{J_1(t)}{t}\right) \sin t + t J_1(t) \cos t \\
+= J_0(t) \cos t - t J_1(t) \cos t - t J_0(t) \sin t + J_1(t) \sin t + t J_0(t) \sin t - J_1(t) \sin t + t J_1(t) \cos t \\
+= J_0(t) \cos t
 $$
 
 因此  

@@ -13,7 +13,6 @@ hero:
     - theme: alt
       text: View on GitHub
       link: https://github.com/12chasse-neige/notes
-    
 
 features:
   - title: Mathematical Rigor
@@ -22,29 +21,18 @@ features:
     details: Interactive demos alongside theory.
   - title: Clean Design
     details: Distraction-free reading experience.
-
-# Data for your Custom Component
-recent_projects:
-  - title: "Mathematical Physics Equations"
-    desc: "Homework Answer (personal version) for LYS's 2025 Autumn Semester Mathematical Physics Equations."
-    link: "/maths/Mathematical Physics Equations"
-    tags: ["Maths", "Homework", "I'm not LYS"]
-  
-  - title: "Gravitational Waves Formation and Propagation"
-    desc: "My notes for a SRT project, trying to figure out whether artificial detecable gravitational wave is possible."
-    link: "/physics/General Relativity/Gravitational Waves/Gravitational Waves Formation and Propagation"
-    tags: ["Gravitational Wave", "SRT", "Detection"]
-
-  - title: "Feynman Diagrams for Beginners"
-    desc: "A shallow delve into the calculation of Feynman diagrams, following the notes of Krešimir Kumerički, ai translated."
-    link: "/physics/Quantum Field Theory/Feynman Diagrams for Beginners"
-    tags: ["QFT", "AI Translated", "Beginner"]
 ---
 
-<!-- Insert the custom component here -->
-<div class="container" style="margin-top: 50px; padding: 0 24px; max-width: 1152px; margin-left: auto; margin-right: auto;">
-  <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 20px;">Recent Notes & Projects</h2>
+<script setup>
+import RecentProjects from './.vitepress/theme/components/RecentProjects.vue'
 
-  <!-- Pass the frontmatter data to the Vue component -->
-  <RecentProjects :projects="$frontmatter.recent_projects" />
+import recentData from './.vitepress/data/recent_projects.json'
+</script>
+
+<div class="container" style="margin-top: 50px; padding: 0 24px; max-width: 1152px; margin-left: auto; margin-right: auto;">
+  <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 20px;">
+    Recent Notes & Projects (AI Summerized)
+  </h2>
+
+  <RecentProjects :projects="recentData" />
 </div>

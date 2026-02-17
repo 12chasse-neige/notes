@@ -17,7 +17,9 @@
   "homepage": "https://github.com/12chasse-neige/12chasse-neige.github.io#readme",
   "devDependencies": {
     "@types/node": "^25.2.3",
+    "dotenv": "^17.3.1",
     "markdown-it-mathjax3": "^4.3.2",
+    "openai": "^6.22.0",
     "vitepress": "^1.6.4",
     "vitepress-sidebar": "^1.33.1",
     "vue": "^3.5.27"

@@ -309,8 +309,6 @@ $$
 C_y(\tau) = \int_{0}^{\infty} S_y(f) \cos(2\pi f \tau) df, \quad S_y(f) = 4 \int_{0}^{\infty} C_y(\tau) \cos(2\pi f \tau) d\tau
 $$
 
-
-
 类似的对于二维随机过程有
 $$
 C_{xy}(\tau) = \frac{1}{2} \int_{-\infty}^{\infty} S_{xy} e^{-i2\pi f \tau} df = \frac{1}{2} \int_{0}^{\infty} (S_{xy} e^{-i2\pi f \tau} + S_{yx} e^{i2\pi f \tau}) df
@@ -356,27 +354,25 @@ $$
 日常生活中有 $S_y(f)$ 的常见型态有多种。比如 $S_y(f)$ 要是和频率无关，它通常被称为白噪声。在这个情况下任意频率 $f$ 下的 $y$ 的平分差 $\Delta y(\Delta t, f)$ 都和频率无关。我们来看下为什么散粒噪声谱便是白噪声。如果我们接收到很多脉冲，每个脉冲的形状都一样：$F(t)$ (特征宽度 $\tau_p$)，
 
 $$
-y(t) = \sum_i F(t-t_i) \quad \text{脉冲 i 到达时间 } t_i \text{ 是随机的}
+y(t) = \sum_i F(t-t_i) \quad \text{脉冲i达时间} t_i \text{是随机的}
 $$
 
 那么 $\langle y(f) \tilde{y}(f') \rangle = \langle \sum_i F(f) e^{i2\pi f t_i} \sum_j \tilde{F}(f') e^{-i2\pi f' t_j} \rangle = \langle \sum_j F(f) \tilde{F}(f') \rangle$
 
 $$
-= R |\tilde{F}(f)|^2 \delta(f-f') \quad \text{R 是单位时间脉冲数}
+= R |\tilde{F}(f)|^{2} \delta(f-f') \quad \text{R是单位时间脉冲数}
 $$
 
 $$
 \Rightarrow S_y(f) = 2R |\tilde{F}(f)|^2
 $$
 
-。当每个 $\tau_p$ 内都有 $R\tau_p \gg 1$ 时，中心极限定理告诉我们 $y(t)$ 实际上是一个高斯随机过程。而当我们感兴趣的 $f \ll \frac{1}{\tau_p}$ 时，$\tilde{F}(f) \approx \tilde{F}(0) \Rightarrow S_y(f) = 2R |\tilde{F}(0)|^2, \quad C_y(\tau) = R |\tilde{F}(0)|^2 \delta(\tau)$
+当每个 $\tau_p$ 内都有 $R\tau_p \gg 1$ 时，中心极限定理告诉我们 $y(t)$ 实际上是一个高斯随机过程。而当我们感兴趣的 $f \ll \frac{1}{\tau_p}$ 时，$\tilde{F}(f) \approx \tilde{F}(0) \Rightarrow S_y(f) = 2R |\tilde{F}(0)|^2, \quad C_y(\tau) = R |\tilde{F}(0)|^2 \delta(\tau)$
+
+<img src="./Detecting%20Gravitiational%20Waves.assets/image-20260217203923481.png" alt="image-20260217203923481" style="zoom:50%;" />
 
 
 
-
-
-(图 a, b: 两种噪声波形示意图)
-$$ S_y \propto 1/f $$
 另一方面，如果 $S_y(f) \propto 1/f$，那么对于任意 $\Delta t \propto 1/f$，对应的 $\Delta y(\Delta t, f) = \sqrt{S_y(f)\Delta f}$ 都是常数。所以在 f 的对数指标上等间距的导致的 $\Delta y$ 涨落一样大。被称为闪烁噪声 (flicker)。
 而如果 $y(t)$ 对应于一个随机行走，可以证明其 $S_y(f) \propto 1/f^2$，被称为随机行走噪声。当然，对于谱密度只和两点关联函数有关，它只反映了随机过程的一小部分信息。（可以想象 n 点关联函数, n>2）
 
@@ -428,9 +424,7 @@ $$
 
 因此，对于给定波型，我们可以选取对应合适的滤波器使得期望的信号相对于期望的噪声达到最大。但实际情况中，我们虽然在理论中可以计算双黑洞和双中子星的波型 $h(\lambda)$（其中 $\lambda$ = {质量, 自旋, 偏心率, 各种角度}），但系统的内禀参数 $\lambda$ 却是未知的。因此，在实际操作时我们要要在内禀参数空间选取不同的点一次又一次的作滤波。每一次我们都将得到
 
-$$
-SNR(\lambda, t) : \quad \text{(图：随 t 变化的 SNR 峰值)}
-$$
+<img src="./Detecting%20Gravitiational%20Waves.assets/image-20260217204136588.png" alt="image-20260217204136588" style="zoom:50%;" />
 
 当选取的 $\lambda$ 接近于真值并且滤波函数的时间 $t$ 接近于数据中信号所处的时间时，我们会发现一个较大的 SNR 的峰，标志着我们找到了数据中的信号。这个寻找过程叫做匹配滤波。
 

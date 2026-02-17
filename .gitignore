@@ -33,3 +33,4 @@ Thumbs.db
 .tmp/
 
 docs/replace.py
+.env
