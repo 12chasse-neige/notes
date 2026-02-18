@@ -1,17 +1,7 @@
 [
   {
-    "title": "Integral Calculus and Bessel Function Proofs",
-    "desc": "A mathematical physics assignment solving integrals using substitutions and Bessel functions, plus proving trigonometric expansions with generating functions.",
-    "tags": [
-      "Integral Calculus",
-      "Bessel Functions",
-      "Generating Functions"
-    ],
-    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 11"
-  },
-  {
     "title": "Gravitational Wave Detection and Data Analysis",
-    "desc": "Explores gravitational wave detection across frequency bands, from CMB polarization to LIGO, and details interferometer response using TT gauge.",
+    "desc": "Explores gravitational wave detection across frequency bands, from CMB polarization to LIGO, and explains interferometer physics.",
     "tags": [
       "gravitational waves",
       "interferometry",
@@ -20,8 +10,28 @@
     "link": "/physics/General Relativity/Gravitational Waves/Detecting Gravitiational Waves"
   },
   {
+    "title": "Interferometer Noise Sources and Quantum Noise",
+    "desc": "Analyzes noise components in interferometers, focusing on quantum noise, thermal noise, and their impact on gravitational wave detection sensitivity.",
+    "tags": [
+      "quantum noise",
+      "thermal noise",
+      "interferometer"
+    ],
+    "link": "/physics/General Relativity/Gravitational Waves/Quantum Noise"
+  },
+  {
+    "title": "Math Physics Equations Homework Solutions",
+    "desc": "Solving integrals with Bessel functions and proving trigonometric identities using generating functions.",
+    "tags": [
+      "Bessel Functions",
+      "Integral Calculus",
+      "Generating Functions"
+    ],
+    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 11"
+  },
+  {
     "title": "Gravitational Wave Metric Tensor Calculation",
-    "desc": "A script calculates gravitational wave metric tensor components in TT gauge for a rotating carbon fiber column source and estimates its critical angular velocity.",
+    "desc": "Script calculates metric tensor for gravitational waves from a rotating carbon fiber column with holes, using TT gauge.",
     "tags": [
       "gravitational waves",
       "metric tensor",
@@ -31,27 +41,27 @@
   },
   {
     "title": "Feynman Diagrams: A Beginner's Guide",
-    "desc": "An introductory guide to Feynman diagrams for quantum field theory beginners, covering Dirac equations, free fields, and practical QED calculations with exercises.",
+    "desc": "An introductory guide to Feynman diagrams and QFT calculations, featuring exercises and a detailed electron-positron annihilation example.",
     "tags": [
       "Feynman diagrams",
-      "Quantum Electrodynamics",
-      "Dirac equation"
+      "Quantum Field Theory",
+      "QED"
     ],
     "link": "/physics/Quantum Field Theory/Feynman Diagrams for Beginners"
   },
   {
-    "title": "C++ Programming Basics: Keywords Guide",
-    "desc": "A comprehensive overview of C++ reserved keywords, covering data types, control flow, functions, memory management, and object-oriented programming concepts.",
+    "title": "C++ Programming Fundamentals and Keywords",
+    "desc": "An introduction to C++ programming basics, covering essential keywords for data types, control flow, and object-oriented concepts.",
     "tags": [
       "C++",
-      "Keywords",
-      "Programming"
+      "Programming",
+      "Keywords"
     ],
     "link": "/coding/C++/C++_Note"
   },
   {
     "title": "Python Escape Characters Guide",
-    "desc": "Learn about Python escape characters like \\n and \\t, their uses in formatting, file paths, and strings, with examples and raw string tips.",
+    "desc": "Learn essential Python escape characters like \\n and \\t for formatting strings and handling special symbols.",
     "tags": [
       "Python",
       "Escape Characters",
@@ -61,42 +71,32 @@
   },
   {
     "title": "Advanced Calculus: Taylor's Theorem Review",
-    "desc": "A concise review of Taylor's Theorem, covering Peano's, Lagrange's, and Cauchy's forms of the remainder term for function approximation.",
+    "desc": "Explores Taylor's Theorem with Peano, Lagrange, and Cauchy remainder forms for function approximation.",
     "tags": [
       "Taylor's Theorem",
-      "Remainder Term",
-      "Function Approximation"
+      "Calculus",
+      "Approximation"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (1) Final Review"
   },
   {
     "title": "Advanced Calculus Series Convergence Analysis",
-    "desc": "A technical analysis of six infinite series convergence problems using comparison, ratio, and root tests with detailed proofs.",
+    "desc": "A technical analysis of six infinite series convergence tests using comparison, ratio, and root methods.",
     "tags": [
-      "Series Convergence",
-      "Ratio Test",
-      "Comparison Test"
+      "series convergence",
+      "ratio test",
+      "comparison test"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 1"
   },
   {
     "title": "Advanced Calculus Surface and Curve Integrals",
-    "desc": "Solutions for surface and curve integrals in advanced calculus, including parameterization techniques and Stokes' theorem applications.",
+    "desc": "Solutions for surface integrals on a plane region and curve integrals using parameterization and Green's theorem.",
     "tags": [
       "Surface Integral",
-      "Stokes' Theorem",
-      "Parameterization"
+      "Parameterization",
+      "Green's Theorem"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 10"
-  },
-  {
-    "title": "Power Series Convergence and Summation Formulas",
-    "desc": "Analyzes convergence domains and summation formulas for power series, including ln(1+x) and arctan expansions, with applications to series like the alternating harmonic series.",
-    "tags": [
-      "Power Series",
-      "Convergence",
-      "Taylor Expansion"
-    ],
-    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 2"
   }
 ]
