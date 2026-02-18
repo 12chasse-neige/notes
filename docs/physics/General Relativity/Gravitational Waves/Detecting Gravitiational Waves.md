@@ -321,19 +321,24 @@ $$
 定理的证明可以参照 Kip Thorne 的讲义。有了以上关系，我们计算
 
 $$
-\langle \tilde{x}^*(f) \tilde{y}(f') \rangle = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} \langle x(t) y(t') \rangle e^{-i2\pi f t} e^{i2\pi f' t'} dt dt'
+\langle \tilde{x}^{*} (f) \tilde{y}(f') \rangle = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} \langle x(t) y(t') \rangle e^{-i2\pi f t} e^{i2\pi f' t'} dt dt'
 $$
 
-让 $t' = t+\tau$，遍历定理 "$=$" $\int_{-\infty}^{\infty} C_{xy}(\tau) e^{2\pi i f' \tau} d\tau \int_{-\infty}^{\infty} e^{2\pi i (f'-f)t'} dt' = \frac{1}{2} S_{xy} \delta(f-f')$
-类似的还有 $2 \langle \tilde{y}(f) \tilde{y}^*(f') \rangle = S_y(f) \delta(f-f')$
-
-直观上，我们来理解下谱密度 $S_y(f)$ 到底是啥意思。考虑一个随机过程 $y(t)$ 在时间 $0$ 到 $\Delta t$ 之间的演化。那么它的傅利叶变换可以包括从 $f=\infty$ 到 $f=1/\Delta t$ 之间的频率。我们考虑 $f \in (f, \infty)$ 附近的 $y$ 的平方差：
+让 $t' = t + \tau$，遍历定理
+$$
+\int_{-\infty}^{\infty} C_{xy}(\tau) e^{2\pi i f' \tau} d\tau \int_{-\infty}^{\infty} e^{2\pi i (f'-f)t'} dt' = \frac{1}{2} S_{xy} \delta(f-f')
+$$
+类似的还有 
+$$
+2 \langle \tilde{y}(f) \tilde{y}^*(f') \rangle = S_y(f) \delta(f-f') 
+$$
+直观上，我们来理解下谱密度 $S_y(f)$ 到底是啥意思。考虑一个随机过程 $y(t)$ 在时间 $0$ 到 $\Delta t$ 之间的演化。那么它的傅利叶变换可以包括从 $f=\infty$ 到 $f=1/\Delta t$ 之间的频率。我们考虑 $f \in (f, \infty)$ 附近的 $y$ 的平方差
 
 $$
 [\Delta y(f, \Delta t)]^2 = \lim_{N\to\infty} \frac{2}{N} \sum_{n=-N/2}^{N/2} \left| \frac{1}{\Delta t} \int_{n\Delta t}^{(n+1)\Delta t} [y(t)-\bar{y}] e^{i2\pi f t} dt \right|^2
 $$
 
-其中这个 "2" 是考虑了正频和负频的贡献，而对 $N$ 求和平均反应了系统平均的一种方式。上述表达式也可以写作 (为什么？)
+其中这个 "2" 是考虑了正频和负频的贡献，而对 $N$ 求和平均反应了系统平均的一种方式。上述表达式也可以写作
 
 $$
 [\Delta y(f, \Delta t)]^2 = \lim_{N\to\infty} \frac{2}{N} \left| \sum_{n=-N/2}^{N/2} \frac{1}{\Delta t} \int_{n\Delta t}^{(n+1)\Delta t} [y(t)-\bar{y}] e^{i2\pi f t} dt \right|^2
@@ -430,11 +435,7 @@ $$
 
 ### 参数估计
 
-很明显由于噪声的影响，我们并不能唯一的从数据中确定真值 $\oplus$。即使我们找到 $\oplus_{\max}$ 使得对应的 SNR 最大，也无法保证真值 $\oplus$ 便是 $\oplus_{\max}$。因此在一般情况下我们探测到引力波事件后需要对波源的参数估计其误差范围。常用
-
-
-
-的方法有基于贝叶斯理论的贝叶斯参数估计，其被广泛应用于引力波数据分析。在本课程中我们介绍一种近似的，较为简单的方法 —— Fisher 信息方法。这种方法在引力波事件的 SNR 较大，对应的参数概率分布是高斯时较为准确，与贝叶斯方法一致。
+很明显由于噪声的影响，我们并不能唯一的从数据中确定真值 $\oplus$。即使我们找到 $\oplus_{\max}$ 使得对应的 SNR 最大，也无法保证真值 $\oplus$ 便是 $\oplus_{\max}$。因此在一般情况下我们探测到引力波事件后需要对波源的参数估计其误差范围。常用的方法有基于贝叶斯理论的贝叶斯参数估计，其被广泛应用于引力波数据分析。在本课程中我们介绍一种近似的，较为简单的方法 —— Fisher 信息方法。这种方法在引力波事件的 SNR 较大，对应的参数概率分布是高斯时较为准确，与贝叶斯方法一致。
 
 我们先定义两个波型的内积：
 
@@ -459,8 +460,7 @@ $$
 $$
 
 或者 $( \tilde{h}(\lambda_0) - \tilde{h}(\lambda_{\max}), \frac{\partial h}{\partial \lambda_i}(\lambda_{\max}) ) = -(n, \frac{\partial h}{\partial \lambda_i}(\lambda_{\max})) \quad \text{①} $
-定义等式的右边 $v_i \equiv (n, \frac{\partial h}{\partial \lambda_i}(\lambda_{\max})) \approx (n, \frac{\partial h}{\partial \lambda_i}(\lambda_0))$。$v^i$ 显然是一个高斯随机变量。其均值为 0。而它的协方差矩阵
-
+定义等 式的右边 $v_i \equiv (n, \frac{\partial h}{\partial \lambda_i}(\lambda_{\max})) \approx (n, \frac{\partial h}{\partial \lambda_i}(\lambda_0))$。$v^i$ 显然是一个高斯随机变量。其均值为 0。而它的协方差矩阵
 $$
 \Gamma_{ij} \equiv \langle v_i v_j \rangle = \langle (n, \frac{\partial h}{\partial \lambda_i} u_0) ( \frac{\partial h}{\partial \lambda_j} u_0, n ) \rangle = (\frac{\partial h}{\partial \lambda_i}, \frac{\partial h}{\partial \lambda_j}) \bigg|_{\lambda_0}
 $$

@@ -66,7 +66,7 @@ async function analyzeWithAI(filePath) {
     You are a technical editor. Analyze the following Markdown content.
     Output a JSON object with exactly these keys in English:
     1. "title": A short, catchy title (max 7 words).
-    2. "desc": A concise summary (max 30 words, engaging).
+    2. "desc": A concise summary (max 20 words, engaging).
     3. "tags": An array of 3 technical keywords (strings).
     Content: ${snippet}
   `;

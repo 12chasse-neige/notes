@@ -1,4 +1,6 @@
-# yaml-language-server: $schema=none
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+# This file uses GitHub Actions which may not be resolvable locally
+# github-actions: disable-validation
 
 name: Deploy VitePress site to Pages
 
