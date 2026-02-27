@@ -11,13 +11,23 @@
   },
   {
     "title": "Interferometer Noise Sources and Quantum Noise",
-    "desc": "Analyzes noise components in interferometers, focusing on quantum noise, thermal noise, and their impact on gravitational wave detection sensitivity.",
+    "desc": "Analyzes Advanced LIGO's noise composition, focusing on quantum, thermal, and technical noise sources affecting gravitational wave detection.",
     "tags": [
       "quantum noise",
       "thermal noise",
       "interferometer"
     ],
     "link": "/physics/General Relativity/Gravitational Waves/Quantum Noise"
+  },
+  {
+    "title": "Statistical Mechanics Homework Solutions",
+    "desc": "Deriving state equations and tension changes using thermodynamic coefficients and differential calculus.",
+    "tags": [
+      "thermodynamics",
+      "state_equation",
+      "differential_calculus"
+    ],
+    "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 1"
   },
   {
     "title": "Math Physics Equations Homework Solutions",
@@ -31,7 +41,7 @@
   },
   {
     "title": "Gravitational Wave Metric Tensor Calculation",
-    "desc": "Script calculates metric tensor for gravitational waves from a rotating carbon fiber column with holes, using TT gauge.",
+    "desc": "Script calculates metric tensor components in TT gauge for a rotating carbon fiber column source and estimates its critical angular velocity.",
     "tags": [
       "gravitational waves",
       "metric tensor",
@@ -40,28 +50,28 @@
     "link": "/physics/General Relativity/Gravitational Waves/Gravitational Hertz Experiment"
   },
   {
-    "title": "Feynman Diagrams: A Beginner's Guide",
-    "desc": "An introductory guide to Feynman diagrams and QFT calculations, featuring exercises and a detailed electron-positron annihilation example.",
+    "title": "Feynman Diagrams for Beginners",
+    "desc": "An introductory guide to Feynman diagrams and QED calculations, with exercises and computer-aided examples.",
     "tags": [
       "Feynman diagrams",
-      "Quantum Field Theory",
-      "QED"
+      "Quantum Electrodynamics",
+      "Scattering cross-section"
     ],
     "link": "/physics/Quantum Field Theory/Feynman Diagrams for Beginners"
   },
   {
     "title": "C++ Programming Fundamentals and Keywords",
-    "desc": "An introduction to C++ programming basics, covering essential keywords for data types, control flow, and object-oriented concepts.",
+    "desc": "An overview of C++ programming basics, focusing on essential keywords categorized by function.",
     "tags": [
       "C++",
-      "Programming",
-      "Keywords"
+      "Keywords",
+      "Programming"
     ],
     "link": "/coding/C++/C++_Note"
   },
   {
     "title": "Python Escape Characters Guide",
-    "desc": "Learn essential Python escape characters like \\n and \\t for formatting strings and handling special symbols.",
+    "desc": "Learn essential Python escape characters like \\n and \\t for formatting strings and handling special symbols effectively.",
     "tags": [
       "Python",
       "Escape Characters",
@@ -81,22 +91,12 @@
   },
   {
     "title": "Advanced Calculus Series Convergence Analysis",
-    "desc": "A technical analysis of six infinite series convergence tests using comparison, ratio, and root methods.",
+    "desc": "A technical analysis of six infinite series convergence tests using comparison, ratio, and root tests.",
     "tags": [
       "series convergence",
       "ratio test",
       "comparison test"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 1"
-  },
-  {
-    "title": "Advanced Calculus Surface and Curve Integrals",
-    "desc": "Solutions for surface integrals on a plane region and curve integrals using parameterization and Green's theorem.",
-    "tags": [
-      "Surface Integral",
-      "Parameterization",
-      "Green's Theorem"
-    ],
-    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 10"
   }
 ]
