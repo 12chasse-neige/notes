@@ -321,7 +321,7 @@ $$
 定理的证明可以参照 Kip Thorne 的讲义。有了以上关系，我们计算
 
 $$
-\langle \tilde{x}^{*} (f) \tilde{y}(f') \rangle = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} \langle x(t) y(t') \rangle e^{-i2\pi f t} e^{i2\pi f' t'} dt dt'
+\langle x^{*} (f) \tilde{y}(f') \rangle = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} \langle x(t) y(t') \rangle e^{-i2\pi f t} e^{i2\pi f' t'} dt dt'
 $$
 
 让 $t' = t + \tau$，遍历定理
@@ -330,7 +330,7 @@ $$
 $$
 类似的还有 
 $$
-2 \langle \tilde{y}(f) \tilde{y}^*(f') \rangle = S_y(f) \delta(f-f') 
+2 \langle y(f) \tilde{y}^*(f') \rangle = S_y(f) \delta(f-f')
 $$
 直观上，我们来理解下谱密度 $S_y(f)$ 到底是啥意思。考虑一个随机过程 $y(t)$ 在时间 $0$ 到 $\Delta t$ 之间的演化。那么它的傅利叶变换可以包括从 $f=\infty$ 到 $f=1/\Delta t$ 之间的频率。我们考虑 $f \in (f, \infty)$ 附近的 $y$ 的平方差
 
@@ -338,7 +338,7 @@ $$
 [\Delta y(f, \Delta t)]^2 = \lim_{N\to\infty} \frac{2}{N} \sum_{n=-N/2}^{N/2} \left| \frac{1}{\Delta t} \int_{n\Delta t}^{(n+1)\Delta t} [y(t)-\bar{y}] e^{i2\pi f t} dt \right|^2
 $$
 
-其中这个 "2" 是考虑了正频和负频的贡献，而对 $N$ 求和平均反应了系统平均的一种方式。上述表达式也可以写作
+其中这个 "$2$" 是考虑了正频和负频的贡献，而对 $N$ 求和平均反应了系统平均的一种方式。上述表达式也可以写作
 
 $$
 [\Delta y(f, \Delta t)]^2 = \lim_{N\to\infty} \frac{2}{N} \left| \sum_{n=-N/2}^{N/2} \frac{1}{\Delta t} \int_{n\Delta t}^{(n+1)\Delta t} [y(t)-\bar{y}] e^{i2\pi f t} dt \right|^2
@@ -347,39 +347,40 @@ $$
 定义 $T = N\Delta t$
 
 $$
-= \lim_{T\to\infty} \frac{2}{T} \left| \int_{-T/2}^{T/2} (y-\bar{y}) e^{i2\pi f t} dt \right|^2 \frac{1}{\Delta t} = S_y(f)/\Delta t
+\lim_{T\to\infty} \frac{2}{T} \left| \int_{-T/2}^{T/2} (y-\bar{y}) e^{i2\pi f t} dt \right|^2 \frac{1}{\Delta t} = S_y(f)/\Delta t
 $$
 
-通常大家把观测窗口时长 $\Delta t$ 的倒数 $1/\Delta t \equiv \Delta f \leftarrow$ 称为带宽(bandwidth)。而在窗口 $\Delta t$ 中 $y$ 在 $f$ 频率处涨落的平方根为
+通常把观测窗口时长 $\Delta t$ 的倒数 $\frac{1}{\Delta t} \equiv \Delta f$ 称为带宽(bandwidth)。而在窗口 $\Delta t$ 中 $y$ 在 $f$ 频率处涨落的平方根为
 
 $$
-\Delta y(\Delta t, f) = \sqrt{S_y(f) \Delta f}, \quad \Delta f = 1/\Delta t
+\Delta y(\Delta t, f) = \sqrt{S_y(f) \Delta f}, \quad \Delta f = \frac{1}{\Delta t}
 $$
 
-日常生活中有 $S_y(f)$ 的常见型态有多种。比如 $S_y(f)$ 要是和频率无关，它通常被称为白噪声。在这个情况下任意频率 $f$ 下的 $y$ 的平分差 $\Delta y(\Delta t, f)$ 都和频率无关。我们来看下为什么散粒噪声谱便是白噪声。如果我们接收到很多脉冲，每个脉冲的形状都一样：$F(t)$ (特征宽度 $\tau_p$)，
+日常生活中有 $S_y(f)$ 的常见型态有多种。比如 $S_y(f)$ 要是和频率无关，它通常被称为白噪声。在这个情况下任意频率 $f$ 下的 $y$ 的平分差 $\Delta y(\Delta t, f)$ 都和频率无关。我们来看下为什么散粒噪声谱便是白噪声。如果我们接收到很多脉冲，每个脉冲的形状都一样：$F(t)$ (特征宽度 $\tau_p$)
 
 $$
-y(t) = \sum_i F(t-t_i) \quad \text{脉冲i达时间} t_i \text{是随机的}
+y(t) = \sum_{i} F(t-t_{i}) \quad \text{脉冲i达时间} t_{i} \text{是随机的}
 $$
 
-那么 $\langle y(f) \tilde{y}(f') \rangle = \langle \sum_i F(f) e^{i2\pi f t_i} \sum_j \tilde{F}(f') e^{-i2\pi f' t_j} \rangle = \langle \sum_j F(f) \tilde{F}(f') \rangle$
-
+那么 
 $$
-= R |\tilde{F}(f)|^{2} \delta(f-f') \quad \text{R是单位时间脉冲数}
-$$
-
-$$
-\Rightarrow S_y(f) = 2R |\tilde{F}(f)|^2
+\langle y(f) \tilde{y}(f') \rangle = \langle \sum_i F(f) e^{i2\pi f t_i} \sum_j \tilde{F}(f') e^{-i2\pi f' t_j} \rangle = \langle \sum_j F(f) \tilde{F}(f') \rangle = R |\tilde{F}(f)|^{2} \delta(f-f')
 $$
 
-当每个 $\tau_p$ 内都有 $R\tau_p \gg 1$ 时，中心极限定理告诉我们 $y(t)$ 实际上是一个高斯随机过程。而当我们感兴趣的 $f \ll \frac{1}{\tau_p}$ 时，$\tilde{F}(f) \approx \tilde{F}(0) \Rightarrow S_y(f) = 2R |\tilde{F}(0)|^2, \quad C_y(\tau) = R |\tilde{F}(0)|^2 \delta(\tau)$
+其中$R$是单位时间脉冲数
+$$
+S_y(f) = 2R |\tilde{F}(f)|^2
+$$
+
+当每个 $\tau_p$ 内都有 $R\tau_p \gg 1$ 时，中心极限定理告诉我们 $y(t)$ 实际上是一个高斯随机过程。而当我们感兴趣的 $f \ll \frac{1}{\tau_p}$ 时
+$$
+\tilde{F}(f) \approx \tilde{F}(0) \Rightarrow S_y(f) = 2R |\tilde{F}(0)|^2, \quad C_y(\tau) = R |\tilde{F}(0)|^2 \delta(\tau)
+$$
+
 
 <img src="./Detecting%20Gravitiational%20Waves.assets/image-20260217203923481.png" alt="image-20260217203923481" style="zoom:50%;" />
 
-
-
-另一方面，如果 $S_y(f) \propto 1/f$，那么对于任意 $\Delta t \propto 1/f$，对应的 $\Delta y(\Delta t, f) = \sqrt{S_y(f)\Delta f}$ 都是常数。所以在 f 的对数指标上等间距的导致的 $\Delta y$ 涨落一样大。被称为闪烁噪声 (flicker)。
-而如果 $y(t)$ 对应于一个随机行走，可以证明其 $S_y(f) \propto 1/f^2$，被称为随机行走噪声。当然，对于谱密度只和两点关联函数有关，它只反映了随机过程的一小部分信息。（可以想象 n 点关联函数, n>2）
+另一方面，如果 $S_y(f) \propto 1/f$，那么对于任意 $\Delta t \propto 1/f$，对应的 $\Delta y(\Delta t, f) = \sqrt{S_y(f)\Delta f}$ 都是常数。所以在 f 的对数指标上等间距的导致的 $\Delta y$ 涨落一样大。被称为闪烁噪声 (flicker)。而如果 $y(t)$ 对应于一个随机行走，可以证明其 $S_y(f) \propto 1/f^2$，被称为随机行走噪声。当然，对于谱密度只和两点关联函数有关，它只反映了随机过程的一小部分信息。（可以想象 $n$ 点关联函数, $n>2$）
 
 ### 信噪比与匹配滤波
 
@@ -389,36 +390,26 @@ $$
 d(t) = n(t) + h(t)
 $$
 
-其中 $n(t)$ 是探测器噪声，它的谱密度见第10页的图，而 $h(t)$ 为我们想提取的引力波信号。那么怎样提取 $h(t)$ 和测量数据中 $h(t)$ 的大小呢？假设一种最简单情况，即 $h(t)$ 的波型是已知的。我们可以定义一种滤波器
+其中 $n(t)$ 是探测器噪声，而 $h(t)$ 为我们想提取的引力波信号。那么怎样提取 $h(t)$ 和测量数据中 $h(t)$ 的大小呢？假设一种最简单情况，即 $h(t)$ 的波型是已知的。我们可以定义一种滤波器
 
 $$
-D(t) = \int_{-\infty}^{\infty} d(t') k(t-t') dt'
+D(t) = \int_{-\infty}^{\infty} d(t') k(t-t') dt' \\ = \int_{-\infty}^{\infty} n(t') k(t-t') dt' + \int_{-\infty}^{\infty} h(t') k(t-t') dt' = N(t) + H(t)
 $$
 
-$$
-= \int_{-\infty}^{\infty} n(t') k(t-t') dt' + \int_{-\infty}^{\infty} h(t') k(t-t') dt' = N(t) + H(t)
-$$
-
-对于测量的 $d(t)$ 我们只知道 $D(t)$，但不知道 $N(t)$ 和 $H(t)$ 分别多少。但是，我们可以估计 $N(t)$ 的概率分布：
+对于测量的 $d(t)$ 我们只知道 $D(t)$，但不知道 $N(t)$ 和 $H(t)$ 分别多少。但是，我们可以估计 $N(t)$ 的概率分布
 
 $$
 \langle N(t) \rangle = \int_{-\infty}^{\infty} \langle n(t') \rangle k(t-t') dt' = 0
 $$
 
 $$
-\langle N^2(t) \rangle = \langle \int df_1 e^{2\pi i f_1 t} \int df_2 e^{-2\pi i f_2 t} \tilde{n}(f_1) \tilde{n}^*(f_2) k(f_1) k^*(f_2) \rangle
+\langle N^2(t) \rangle = \langle \int df_1 e^{2\pi i f_1 t} \int df_2 e^{-2\pi i f_2 t} \tilde{n}(f_1) \tilde{n}^*(f_2) k(f_1) k^*(f_2) \rangle \\ = \int_{0}^{\infty} \dd{f} S_{n} (f) |k(f)|^{2}
 $$
 
-$$
-= \int_{0}^{\infty} df S_n(f) |k(f)|^2
-$$
-
-
-
-而我们的目的是选取合适的 $k(t)$ 使得 $S/\sqrt{\langle N^2 \rangle}$ 最大化。这一点，我们留在作业中证明：使其最大化的滤波函数为
+而我们的目的是选取合适的 $k(t)$ 使得 $S/\sqrt{\langle N^2 \rangle}$ 最大化。使其最大化的滤波函数为
 
 $$
-\tilde{k}(f) = \text{Const.} \times \frac{\tilde{h}^*(f)}{S_n(f)} \leftarrow \text{Wiener 维纳滤波函数}
+\tilde{k}(f) = \text{Const.} \times \frac{\tilde{h}^*(f)}{S_n(f)} \leftarrow \text{Wiener 滤波函数}
 $$
 
 而将其代入对应的 $S/\sqrt{\langle N^2 \rangle}$，我们得到
@@ -435,16 +426,17 @@ $$
 
 ### 参数估计
 
-很明显由于噪声的影响，我们并不能唯一的从数据中确定真值 $\oplus$。即使我们找到 $\oplus_{\max}$ 使得对应的 SNR 最大，也无法保证真值 $\oplus$ 便是 $\oplus_{\max}$。因此在一般情况下我们探测到引力波事件后需要对波源的参数估计其误差范围。常用的方法有基于贝叶斯理论的贝叶斯参数估计，其被广泛应用于引力波数据分析。在本课程中我们介绍一种近似的，较为简单的方法 —— Fisher 信息方法。这种方法在引力波事件的 SNR 较大，对应的参数概率分布是高斯时较为准确，与贝叶斯方法一致。
+很明显由于噪声的影响，我们并不能唯一的从数据中确定真值 $H$。即使我们找到 $H_{\max}$ 使得对应的 SNR 最大，也无法保证真值 $H$ 便是 $H_{\max}$。因此在一般情况下我们探测到引力波事件后需要对波源的参数估计其误差范围。常用的方法有基于贝叶斯理论的贝叶斯参数估计，其被广泛应用于引力波数据分析。在本课程中我们介绍一种近似的，较为简单的方法 —— Fisher 信息方法。这种方法在引力波事件的 SNR 较大，对应的参数概率分布是高斯时较为准确，与贝叶斯方法一致。
 
-我们先定义两个波型的内积：
+我们先定义两个波型的内积
 
 $$
 (g, h) = 2 \int_{-\infty}^{\infty} \frac{\tilde{g}(f)\tilde{h}^*(f)}{S_n(f)} df \Rightarrow SNR^2 = (h, h)
 $$
 
-对于每一个事件，都有一个真实的 $\lambda_0$。那我们怎么通过数据分析得到 $\lambda_0$ 的较好估计呢？考虑（频域）数据 $d(f) = \tilde{h}(\lambda_0, f) + n(f)$。如果我们测量的系统参数是 $\lambda$，那么数据减去期望的信号的残差为
+对于每一个事件，都有一个真实的 $\lambda_0$。那我们怎么通过数据分析得到 $\lambda_0$ 的较好估计呢？
 
+考虑（频域）数据 $d(f) = \tilde{h}(\lambda_0, f) + n(f)$。如果我们测量的系统参数是 $\lambda$，那么数据减去期望的信号的残差为
 $$
 d(f) - \tilde{h}(\lambda, f) = [\tilde{h}(\lambda_0) - \tilde{h}(\lambda)] + n(f) \approx \frac{\partial \tilde{h}}{\partial \lambda} (\lambda_0 - \lambda) + n(f)
 $$
@@ -456,16 +448,17 @@ $$
 $$
 
 $$
-\Rightarrow (d-\tilde{h}(\lambda_{\max}), \frac{\partial h}{\partial \lambda_i}(\lambda_{\max})) = 0
+(d-\tilde{h}(\lambda_{\max}), \frac{\partial h}{\partial \lambda_i}(\lambda_{\max})) = 0
 $$
 
-或者 $( \tilde{h}(\lambda_0) - \tilde{h}(\lambda_{\max}), \frac{\partial h}{\partial \lambda_i}(\lambda_{\max}) ) = -(n, \frac{\partial h}{\partial \lambda_i}(\lambda_{\max})) \quad \text{①} $
+或者 
+$$
+( \tilde{h}(\lambda_0) - \tilde{h}(\lambda_{\max}), \frac{\partial h}{\partial \lambda_i}(\lambda_{\max}) ) = -(n, \frac{\partial h}{\partial \lambda_i}(\lambda_{\max}))
+$$
 定义等 式的右边 $v_i \equiv (n, \frac{\partial h}{\partial \lambda_i}(\lambda_{\max})) \approx (n, \frac{\partial h}{\partial \lambda_i}(\lambda_0))$。$v^i$ 显然是一个高斯随机变量。其均值为 0。而它的协方差矩阵
 $$
 \Gamma_{ij} \equiv \langle v_i v_j \rangle = \langle (n, \frac{\partial h}{\partial \lambda_i} u_0) ( \frac{\partial h}{\partial \lambda_j} u_0, n ) \rangle = (\frac{\partial h}{\partial \lambda_i}, \frac{\partial h}{\partial \lambda_j}) \bigg|_{\lambda_0}
 $$
-
-
 
 这个矩阵被称为 Fisher 信息矩阵，因此随机变量 $\vec{v}$ 的概率分布为
 
@@ -473,14 +466,14 @@ $$
 P(\vec{v}) = \frac{1}{\sqrt{\det(2\pi \Gamma)}} \exp \left( -\frac{1}{2} (\Gamma^{-1})_{ij} v_i v_j \right)
 $$
 
-而 $(\Gamma^{-1})_{ij}$ 这里是 Fisher 信息矩阵的逆。而公式 ① 其实也可以写作
+而 $(\Gamma^{-1})_{ij}$ 这里是 Fisher 信息矩阵的逆。而上式其实也可以写作
 
 $$
 (\frac{\partial \tilde{h}}{\partial \lambda_j}, \frac{\partial \tilde{h}}{\partial \lambda_i}) \Delta \lambda_j = v_i \text{ 或 } \Gamma_{ij} \Delta \lambda_j = v_i, \quad \Delta \lambda = \lambda_0 - \lambda_{\max}
 $$
 
 $$
-\Rightarrow \Delta \lambda_j = (\Gamma^{-1})_{ji} v_i
+\Delta \lambda_j = (\Gamma^{-1})_{ji} v_i
 $$
 
 因此对最佳拟合 $\lambda_{\max}$ (或称为最大似然拟合) 的估计可以由上式给出。由于 $v_i$ 是一个高斯随机变量，$\Delta \lambda$ 也是一个高斯随机变量。类似的，$\Delta \lambda$ 的概率分布为
@@ -495,5 +488,5 @@ $$
 (\Delta \lambda_i)_{rms} = \langle \Delta \lambda_i^2 \rangle^{1/2} = \langle \text{Var } \Delta \lambda_i \rangle^{1/2} = \sqrt{(\Gamma^{-1})_{ii}}
 $$
 
-在作业中我们将尝试计算双黑洞系统的探测误差。
+
 

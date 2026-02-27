@@ -11,7 +11,7 @@ import { data as posts } from './posts.data.ts'
 
 # Physics Notes
 
-Here is a collection of my notes on physics, including analytical mechanics, atomic and molecular physics, electrodynamics and feynman lectures on physics.
+Here is a collection of my notes on physics, including analytical mechanics, atomic and molecular physics, electrodynamics, feynman lectures on physics, quantum mechanics, statistical mechanics, general relativity and some topics on QFT.
 
 <!-- Loop through the posts -->
 <div class="post-list">
