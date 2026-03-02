@@ -1,102 +1,102 @@
 [
   {
-    "title": "Gravitational Wave Detection and Data Analysis",
-    "desc": "Explores gravitational wave detection across frequency bands, from CMB polarization to LIGO, and explains interferometer physics.",
+    "title": "Analytical Mechanics Homework on Hamiltonian Dynamics",
+    "desc": "Explores canonical variables, momentum-space Lagrangians, and double pendulum dynamics in analytical mechanics.",
     "tags": [
-      "gravitational waves",
-      "interferometry",
-      "LIGO"
+      "Hamiltonian Mechanics",
+      "Lagrangian Dynamics",
+      "Canonical Variables"
     ],
-    "link": "/physics/General Relativity/Gravitational Waves/Detecting Gravitiational Waves"
+    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 10"
   },
   {
-    "title": "Interferometer Noise Sources and Quantum Noise",
-    "desc": "Analyzes Advanced LIGO's noise composition, focusing on quantum, thermal, and technical noise sources affecting gravitational wave detection.",
+    "title": "Analytical Mechanics Homework Solutions",
+    "desc": "Proofs of canonical transformations using generating functions for various coordinate systems.",
     "tags": [
-      "quantum noise",
-      "thermal noise",
-      "interferometer"
+      "canonical transformation",
+      "generating function",
+      "analytical mechanics"
     ],
-    "link": "/physics/General Relativity/Gravitational Waves/Quantum Noise"
+    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 11"
   },
   {
-    "title": "Statistical Mechanics Homework Solutions",
-    "desc": "Deriving state equations and tension changes using thermodynamic coefficients and differential calculus.",
+    "title": "Analytical Mechanics Homework Solutions",
+    "desc": "Proofs of canonical transformations and Poisson bracket calculations in analytical mechanics.",
     "tags": [
-      "thermodynamics",
-      "state_equation",
-      "differential_calculus"
+      "canonical transformation",
+      "Poisson bracket",
+      "analytical mechanics"
     ],
-    "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 1"
+    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 12"
   },
   {
-    "title": "Math Physics Equations Homework Solutions",
-    "desc": "Solving integrals with Bessel functions and proving trigonometric identities using generating functions.",
+    "title": "Canonical Transformations in Analytical Mechanics",
+    "desc": "Analyzing canonical transformations to eliminate anharmonic terms and solving for action-angle variables in a periodic potential.",
     "tags": [
-      "Bessel Functions",
-      "Integral Calculus",
-      "Generating Functions"
+      "canonical transformation",
+      "action-angle variables",
+      "Poisson bracket"
     ],
-    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 11"
+    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 13"
   },
   {
-    "title": "Gravitational Wave Metric Tensor Calculation",
-    "desc": "Script calculates metric tensor components in TT gauge for a rotating carbon fiber column source and estimates its critical angular velocity.",
+    "title": "Lagrangian Mechanics Homework Solutions",
+    "desc": "Solutions for three physics problems using Lagrangian equations, covering spring-mass systems, inclined planes, and conical constraints.",
     "tags": [
-      "gravitational waves",
-      "metric tensor",
-      "quadrupole moment"
+      "Lagrangian Mechanics",
+      "Generalized Coordinates",
+      "Analytical Dynamics"
     ],
-    "link": "/physics/General Relativity/Gravitational Waves/Gravitational Hertz Experiment"
+    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 2"
   },
   {
-    "title": "Feynman Diagrams for Beginners",
-    "desc": "An introductory guide to Feynman diagrams and QED calculations, with exercises and computer-aided examples.",
+    "title": "Variational Calculus Homework Solutions",
+    "desc": "Applying Euler-Lagrange equations to solve shortest paths on spheres, minimal surfaces of revolution, and hanging chain shapes.",
     "tags": [
-      "Feynman diagrams",
-      "Quantum Electrodynamics",
-      "Scattering cross-section"
+      "Variational Calculus",
+      "Euler-Lagrange Equations",
+      "Analytical Mechanics"
     ],
-    "link": "/physics/Quantum Field Theory/Feynman Diagrams for Beginners"
+    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 3"
   },
   {
-    "title": "C++ Programming Fundamentals and Keywords",
-    "desc": "An overview of C++ programming basics, focusing on essential keywords categorized by function.",
+    "title": "Atmospheric Refraction via Variational Calculus",
+    "desc": "Deriving sunlight trajectory through Earth's atmosphere using functional minimization and the Euler-Lagrange equation.",
     "tags": [
-      "C++",
-      "Keywords",
-      "Programming"
+      "Variational Calculus",
+      "Atmospheric Refraction",
+      "Euler-Lagrange Equation"
     ],
-    "link": "/coding/C++/C++_Note"
+    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 4"
   },
   {
-    "title": "Python Escape Characters Guide",
-    "desc": "Learn essential Python escape characters like \\n and \\t for formatting strings and handling special symbols effectively.",
+    "title": "Central Force Problems in Analytical Mechanics",
+    "desc": "Solving for central forces in Archimedean spiral and inverse-cube law trajectories using conservation laws.",
     "tags": [
-      "Python",
-      "Escape Characters",
-      "String Formatting"
+      "Analytical Mechanics",
+      "Central Force",
+      "Trajectory Analysis"
     ],
-    "link": "/coding/Python/Python_Note"
+    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 5"
   },
   {
-    "title": "Advanced Calculus: Taylor's Theorem Review",
-    "desc": "Explores Taylor's Theorem with Peano, Lagrange, and Cauchy remainder forms for function approximation.",
+    "title": "Scattering Cross Sections in Analytical Mechanics",
+    "desc": "Calculates scattering cross sections for particles in a spherical potential well and for Rutherford scattering between two electrons.",
     "tags": [
-      "Taylor's Theorem",
-      "Calculus",
-      "Approximation"
+      "scattering",
+      "potential well",
+      "Rutherford scattering"
     ],
-    "link": "/maths/Advanced Calculus/Advanced Calculus (1) Final Review"
+    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 6"
   },
   {
-    "title": "Advanced Calculus Series Convergence Analysis",
-    "desc": "A technical analysis of six infinite series convergence tests using comparison, ratio, and root tests.",
+    "title": "Perturbation Analysis of Pendulum Motion",
+    "desc": "Using perturbation methods to derive second-order approximate solutions for a pendulum's motion and period corrections.",
     "tags": [
-      "series convergence",
-      "ratio test",
-      "comparison test"
+      "perturbation theory",
+      "analytical mechanics",
+      "nonlinear dynamics"
     ],
-    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 1"
+    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 7"
   }
 ]
