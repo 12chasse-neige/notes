@@ -1,11 +1,21 @@
 [
   {
-    "title": "Analytical Mechanics Homework on Hamiltonian Dynamics",
-    "desc": "Explores canonical variables, momentum-space Lagrangians, and double pendulum dynamics in analytical mechanics.",
+    "title": "Gravitational Waves: Linear Approximation Analysis",
+    "desc": "Explores gravitational wave generation and detection using linearized Einstein equations and metric perturbations.",
     "tags": [
-      "Hamiltonian Mechanics",
-      "Lagrangian Dynamics",
-      "Canonical Variables"
+      "gravitational waves",
+      "linearized gravity",
+      "Einstein equations"
+    ],
+    "link": "/physics/General Relativity/Gravitational Waves/Gravitational Waves Formation and Propagation"
+  },
+  {
+    "title": "Analytical Mechanics Homework on Harmonic Oscillator and Double Pendulum",
+    "desc": "Explores momentum-space Lagrangian for harmonic oscillator and Hamiltonian analysis of double pendulum with small-angle approximations.",
+    "tags": [
+      "Lagrangian Mechanics",
+      "Hamiltonian Dynamics",
+      "Analytical Mechanics"
     ],
     "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 10"
   },
@@ -21,7 +31,7 @@
   },
   {
     "title": "Analytical Mechanics Homework Solutions",
-    "desc": "Proofs of canonical transformations and Poisson bracket calculations in analytical mechanics.",
+    "desc": "Proving canonical transformations and Poisson bracket calculations in analytical mechanics problems.",
     "tags": [
       "canonical transformation",
       "Poisson bracket",
@@ -31,39 +41,39 @@
   },
   {
     "title": "Canonical Transformations in Analytical Mechanics",
-    "desc": "Analyzing canonical transformations to eliminate anharmonic terms and solving for action-angle variables in a periodic potential.",
+    "desc": "Analyzes canonical transformations for anharmonic oscillators and action-angle variables in a tan² potential.",
     "tags": [
       "canonical transformation",
-      "action-angle variables",
-      "Poisson bracket"
+      "anharmonic oscillator",
+      "action-angle variables"
     ],
     "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 13"
   },
   {
-    "title": "Lagrangian Mechanics Homework Solutions",
-    "desc": "Solutions for three physics problems using Lagrangian equations, covering spring-mass systems, inclined planes, and conical constraints.",
+    "title": "Analytical Mechanics Homework Solutions",
+    "desc": "Lagrangian mechanics applied to spring-mass systems, sliding blocks, and conical motion problems.",
     "tags": [
       "Lagrangian Mechanics",
       "Generalized Coordinates",
-      "Analytical Dynamics"
+      "Motion Equations"
     ],
     "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 2"
   },
   {
-    "title": "Variational Calculus Homework Solutions",
-    "desc": "Applying Euler-Lagrange equations to solve shortest paths on spheres, minimal surfaces of revolution, and hanging chain shapes.",
+    "title": "Variational Calculus in Analytical Mechanics",
+    "desc": "Using variational principles to solve optimization problems: shortest paths on spheres, minimal surfaces, and hanging chains.",
     "tags": [
       "Variational Calculus",
-      "Euler-Lagrange Equations",
+      "Euler-Lagrange Equation",
       "Analytical Mechanics"
     ],
     "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 3"
   },
   {
-    "title": "Atmospheric Refraction via Variational Calculus",
-    "desc": "Deriving sunlight trajectory through Earth's atmosphere using functional minimization and the Euler-Lagrange equation.",
+    "title": "Light Path in Exponential Atmosphere via Calculus of Variations",
+    "desc": "Derives the trajectory of sunlight through an exponentially stratified atmosphere using variational principles and the Euler-Lagrange equation.",
     "tags": [
-      "Variational Calculus",
+      "Calculus of Variations",
       "Atmospheric Refraction",
       "Euler-Lagrange Equation"
     ],
@@ -71,11 +81,11 @@
   },
   {
     "title": "Central Force Problems in Analytical Mechanics",
-    "desc": "Solving for central forces in Archimedean spiral and inverse-cube law trajectories using conservation laws.",
+    "desc": "Solving two central force problems: finding force for an Archimedean spiral trajectory and determining motion under inverse-cube gravity.",
     "tags": [
-      "Analytical Mechanics",
-      "Central Force",
-      "Trajectory Analysis"
+      "analytical mechanics",
+      "central force",
+      "trajectory analysis"
     ],
     "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 5"
   },
@@ -84,19 +94,9 @@
     "desc": "Calculates scattering cross sections for particles in a spherical potential well and for Rutherford scattering between two electrons.",
     "tags": [
       "scattering",
-      "potential well",
-      "Rutherford scattering"
+      "cross-section",
+      "Rutherford"
     ],
     "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 6"
-  },
-  {
-    "title": "Perturbation Analysis of Pendulum Motion",
-    "desc": "Using perturbation methods to derive second-order approximate solutions for a pendulum's motion and period corrections.",
-    "tags": [
-      "perturbation theory",
-      "analytical mechanics",
-      "nonlinear dynamics"
-    ],
-    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 7"
   }
 ]
