@@ -66,11 +66,11 @@ $$
 $$
 So
 $$
-\pdv{x^{\mu}}{\xi^{\alpha}}\pdv{\xi^{\alpha}}{x^{\lambda}} \dv[2]{x^{\lambda}}{\tau} + \pdv{x^{\mu}}{\xi^{\alpha}} \frac{\partial^{2} \xi^{\alpha}}{\partial x^{\rho} \partial x^{\sigma}} \dv{x^{\rho}}{\tau} \dv{x^{\sigma}}{\tau} = 0
+\pdv{x^{\mu}}{\xi^{\alpha}} \pdv{\xi^{\alpha}}{x^{\lambda}} \dv[2]{x^{\lambda}}{\tau} + \pdv{x^{\mu}}{\xi^{\alpha}} \frac{\partial^{2} \xi^{\alpha}}{\partial x^{\rho} \partial x^{\sigma}} \dv{x^{\rho}}{\tau} \dv{x^{\sigma}}{\tau} = 0
 $$
 Given that
 $$
-\pdv{x^{\mu}}{\xi^{\alpha}}\pdv{\xi^{\alpha}}{x^{\lambda}} = \delta^{\mu}_{\lambda}
+\pdv{x^{\mu}}{\xi^{\alpha}} \pdv{\xi^{\alpha}}{x^{\lambda}} = \delta^{\mu}_{\lambda}
 $$
 Therefore
 $$

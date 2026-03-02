@@ -211,37 +211,36 @@ export default defineConfig({
   },
 
   markdown: {
-    math: true,
+    math: {
+      tex: {
+        processEscapes: true,
+        processEnvironments: true,
+        macros: {
+          ket: ['{\\left| #1 \\right\\rangle}', 1],
+          bra: ['{\\left\\langle #1 \\right|}', 1],
+          braket: ['{\\left\\langle #1 \\middle| #2 \\right\\rangle}', 2],
+          ketbra: ['{\\left| #1 \\right\\rangle \\left\\langle #2 \\right|}', 2],
+          expval: ['{\\left\\langle #1 \\right\\rangle}', 1],
+          Res: ['{\\mathrm{Res}}'],
+          abs: ['{\\left| #1 \\right|}', 1],
+          dv: ['{\\frac{\\mathrm{d}^{#1} {#2}}{\\mathrm{d} {{#3}}^{#1}}}', 3, ''],
+          pdv: ['{\\frac{\\partial^{#1} {#2}}{\\partial {{#3}}^{#1}}}', 3, ''],
+          mqty: ['{\\begin{matrix} #1 \\end{matrix}}', 1],
+          pqty: ['{\\begin{pmatrix} #1 \\end{pmatrix}}', 1],
+          bqty: ['{\\begin{bmatrix} #1 \\end{bmatrix}}', 1],
+          comm: ['{\\left[ #1, #2 \\right]}', 2],
+          dd: ['{\\mathrm{d} #1}', 1],
+          exist: '{\\exists}',
+          tr: '{\\text{tr}}',
+          dag: '{\\dagger}',
+          real: '{\\Re}',
+          imag: '{\\Im}',
+          order: ['{\\mathcal{O}\\left(#1\\right)}', 1],
+        }
+      }
+    },
     breaks: false,
     config: (md) => {
-      md.use(markdownItMathjax3, {
-        tex: {
-          processEscapes: true,
-          processEnvironments: true,
-          macros: {
-            ket: ['{\\left| #1 \\right\\rangle}', 1],
-            bra: ['{\\left\\langle #1 \\right|}', 1],
-            braket: ['{\\left\\langle #1 \\middle| #2 \\right\\rangle}', 2],
-            ketbra: ['{\\left| #1 \\right\\rangle \\left\\langle #2 \\right|}', 2],
-            expval: ['{\\left\\langle #1 \\right\\rangle}', 1],
-            Res: ['{\\mathrm{Res}}'],
-            abs: ['{\\left| #1 \\right|}', 1],
-            dv: ['{\\frac{d^{#3} #1}{d #2^{#3}}}', 3], 
-            pdv: ['{\\frac{\\partial^{#3} #1}{\\partial #2^{#3}}}', 3], 
-            mqty: ['{\\begin{matrix} #1 \\end{matrix}}', 1],
-            pqty: ['{\\begin{pmatrix} #1 \\end{pmatrix}}', 1],
-            bqty: ['{\\begin{bmatrix} #1 \\end{bmatrix}}', 1],
-            comm: ['{\\left[ #1, #2 \\right]}', 2],
-            dd: ['{\\mathrm{d} #1}', 1],
-            exist: '{\\exists}',
-            tr: '{\\text{tr}}',
-            dag: '{\\dagger}',
-            real: '{\\Re}',
-            imag: '{\\Im}',
-            order: ['{\\mathcal{O}\\left(#1\\right)}', 1],
-          }
-        }
-      })
       md.core.ruler.push('patch_math_newlines', (state) => {
         state.tokens.forEach((token) => {
           if (token.type === 'math_block') {
