@@ -4,7 +4,7 @@ Chasse_neige
 
 7.3 用两种方法证明以下变换是正则变换
 $$
-Q = -p, \quad P = q + \alpha p^2
+Q = -p, \quad P = q + \alpha p^{2}
 $$
 
 其中，$\alpha$ 是适当的常量。
@@ -23,7 +23,7 @@ $$
 
 7.4 用两种方法证明以下变换是正则变换
 $$
-Q = \arctan\left(\frac{\alpha q}{p}\right), \quad P = \frac{\alpha q^2}{2}\left(1 + \frac{p^2}{\alpha^2 q^2}\right)
+Q = \arctan\left(\frac{\alpha q}{p}\right), \quad P = \frac{\alpha q^{2}}{2}\left(1 + \frac{p^{2}}{\alpha^{2} q^{2}}\right)
 $$
 
 其中 $\alpha$ 是适当的常量。
@@ -95,7 +95,7 @@ $$
 
 7.8  有一质点质量为 $m$, 在中心力场 $V(r)$ 中运动, 柱坐标为 $(\rho, \phi, z)$, 其拉格朗日量为
 $$
-L = \frac{1}{2}m(\dot{\rho}^2 + \rho^2 \dot{\phi}^2 + \dot{z}^2) - V(\sqrt{\rho^2 + z^2})
+L = \frac{1}{2}m(\dot{\rho}^{2} + \rho^{2} \dot{\phi}^{2} + \dot{z}^{2}) - V(\sqrt{\rho^{2} + z^{2}})
 $$
 
 另有一个转动坐标系, 绕 $z$ 轴以角速度 $\omega$ 转动。若 $t=0$ 时两个坐标系重合, 转动坐标系质点坐标为 $(\rho', \phi', z')$。选择第二种正则变换生成函数 $F_{2} = \sum_{i=1}^{3}p_{i}^{\prime}r_{i}^{\prime}$ 形式，其中，$r_{i}^{\prime}$ 和 $p_{i}^{\prime}$ 分别为转动坐标系的广义坐标和广义动量分量。给出相应的哈密顿量及正则方程，并考查虚拟力的形式。
@@ -131,7 +131,7 @@ H' - H = - p'_{\phi'} \omega
 $$
 所以
 $$
-H' = \frac{1}{2}m(\dot{\rho}^2 + \rho^2 \dot{\phi}^2 + \dot{z}^2) + V( \sqrt{\rho^{2} + z^{2}}) - p'_{\phi'} \omega \\=
+H' = \frac{1}{2}m(\dot{\rho}^{2} + \rho^{2} \dot{\phi}^{2} + \dot{z}^{2}) + V( \sqrt{\rho^{2} + z^{2}}) - p'_{\phi'} \omega \\=
 \frac{1}{2} p'_{\rho'} \dot{\rho'} + \frac{1}{2} p'_{\phi'} (\dot{\phi'} + \omega) + \frac{1}{2} p'_{z'} \dot{z'}  + V - p'_{\phi'} \omega \\= 
 \frac{{p'_{\rho'}}^{2}}{2m} + \frac{p'_{\phi'} (p'_{\phi'} - 2m \omega \rho'^{2})}{2m \rho'^{2}} + \frac{{p'_{z'}}^{2}}{2m} + V
 $$

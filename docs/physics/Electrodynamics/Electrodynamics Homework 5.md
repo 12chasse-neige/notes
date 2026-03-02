@@ -4,7 +4,7 @@ Chasse_neige
 
 1.  书6.12, 6.15, 6.16
 
-6.12 电偶极子 $p_0$ 以速度 $v$ 作匀速运动，求它产生的电磁势和场 $\varphi, A; E, B$。
+6.12 电偶极子 $p_{0}$ 以速度 $v$ 作匀速运动，求它产生的电磁势和场 $\varphi, A; E, B$。
 
 取Lorentz Boost的方向为x轴，记 $p_{0}$ 所在位置为原点，记当前时刻为时间零点。
 
@@ -58,7 +58,7 @@ $$
 
 其中$\vec{r'} = \begin{pmatrix} \gamma (x - \beta c t), y, z \end{pmatrix}^{\top}$
 
-6.15 有一沿 $z$ 轴方向螺旋进动的静磁场 $\vec{B} = B_0 (\cos k_m z \hat{e}_x + \sin k_m z \hat{e}_y)$，其中 $k_m = 2\pi / \lambda_m$，$\lambda_m$ 为磁场周期长度。现有一沿 $z$ 轴以速度 $v = \beta c$ 运动的惯性系，求在该惯性系中观察到的电磁场。证明当 $\beta \simeq 1$ 时该电磁场类似于一列频率为 $\gamma \cdot \beta c k_m$ 的圆偏振电磁波。
+6.15 有一沿 $z$ 轴方向螺旋进动的静磁场 $\vec{B} = B_{0} (\cos k_{m} z \hat{e}_{x} + \sin k_{m} z \hat{e}_{y})$，其中 $k_{m} = 2\pi / \lambda_{m}$，$\lambda_{m}$ 为磁场周期长度。现有一沿 $z$ 轴以速度 $v = \beta c$ 运动的惯性系，求在该惯性系中观察到的电磁场。证明当 $\beta \simeq 1$ 时该电磁场类似于一列频率为 $\gamma \cdot \beta c k_{m}$ 的圆偏振电磁波。
 
 在该系中：
 $$
@@ -127,11 +127,11 @@ $$
 2. 试证, 电磁场的一般变换关系为,
 
 $$
-\vec{E}' = \frac{\vec{E} \cdot \vec{v}}{v^2} \vec{v} + \frac{\vec{E} - \frac{\vec{E} \cdot \vec{v}}{v^2} \vec{v} + \vec{v} \times \vec{B}}{\sqrt{1 - \frac{v^2}{c^2}}}
+\vec{E}' = \frac{\vec{E} \cdot \vec{v}}{v^{2}} \vec{v} + \frac{\vec{E} - \frac{\vec{E} \cdot \vec{v}}{v^{2}} \vec{v} + \vec{v} \times \vec{B}}{\sqrt{1 - \frac{v^{2}}{c^{2}}}}
 $$
 
 $$
-\vec{B}' = \frac{\vec{B} \cdot \vec{v}}{v^2} \vec{v} + \frac{\vec{B} - \frac{\vec{B} \cdot \vec{v}}{v^2} \vec{v} - \frac{\vec{v}}{c^2} \times \vec{E}}{\sqrt{1 - \frac{v^2}{c^2}}}
+\vec{B}' = \frac{\vec{B} \cdot \vec{v}}{v^{2}} \vec{v} + \frac{\vec{B} - \frac{\vec{B} \cdot \vec{v}}{v^{2}} \vec{v} - \frac{\vec{v}}{c^{2}} \times \vec{E}}{\sqrt{1 - \frac{v^{2}}{c^{2}}}}
 $$
 
 由于电磁场张量在变换下满足二阶张量的变换关系，所以对于 $x$ 方向的Boost：
@@ -144,10 +144,10 @@ F' =
 -i\beta\gamma & 0 & 0 & \gamma
 \end{pmatrix}
 \begin{pmatrix}
-0 & B_3 & -B_2 & -iE_1/c \\
--B_3 & 0 & B_1 & -iE_2/c \\
-B_2 & -B_1 & 0 & -iE_3/c \\
-iE_1/c & iE_2/c & iE_3/c & 0
+0 & B_{3} & -B_{2} & -iE_{1}/c \\
+-B_{3} & 0 & B_{1} & -iE_{2}/c \\
+B_{2} & -B_{1} & 0 & -iE_{3}/c \\
+iE_{1}/c & iE_{2}/c & iE_{3}/c & 0
 \end{pmatrix}
 \begin{pmatrix}
 \gamma & 0 & 0 & - i\beta\gamma \\
@@ -157,10 +157,10 @@ i\beta\gamma & 0 & 0 & \gamma
 \end{pmatrix}
 \\ =
 \begin{pmatrix}
-0 & \gamma(B_3 - \tfrac{\beta E_2}{c}) & \gamma(B_2 + \tfrac{\beta E_3}{c}) & -i \frac{E_1}{c} \\
--\gamma(B_3 - \tfrac{\beta E_2}{c}) & 0 & B_1 & -i\gamma(\tfrac{E_2}{c} - \beta B_3) \\
--\gamma(B_2 + \tfrac{\beta E_3}{c}) & -B_1 & 0 & -i\gamma(\tfrac{E_3}{c} + \beta B_2) \\
-i \frac{E_1}{c} & i\gamma(\tfrac{E_2}{c} - \beta B_3) & i\gamma(\tfrac{E_3}{c} + \beta B_2) & 0
+0 & \gamma(B_{3} - \tfrac{\beta E_{2}}{c}) & \gamma(B_{2} + \tfrac{\beta E_{3}}{c}) & -i \frac{E_{1}}{c} \\
+-\gamma(B_{3} - \tfrac{\beta E_{2}}{c}) & 0 & B_{1} & -i\gamma(\tfrac{E_{2}}{c} - \beta B_{3}) \\
+-\gamma(B_{2} + \tfrac{\beta E_{3}}{c}) & -B_{1} & 0 & -i\gamma(\tfrac{E_{3}}{c} + \beta B_{2}) \\
+i \frac{E_{1}}{c} & i\gamma(\tfrac{E_{2}}{c} - \beta B_{3}) & i\gamma(\tfrac{E_{3}}{c} + \beta B_{2}) & 0
 \end{pmatrix}
 $$
 得到对于 Boost 而言 $E'_{\parallel} = E_{\parallel}$   $E'_{\perp} = \gamma (E_{\perp} + \vec{v} \times \vec{B})$  $B'_{\parallel} = B_{\parallel}$  $B'_{\perp} = \gamma (B_{\perp} - \vec{v} \times \vec{E})$
@@ -177,11 +177,11 @@ $$
 3.  试证, 匀速运动的点电荷$q$产生的电磁场为,
 
 $$
-\vec{E} = \frac{q \vec{R}}{4 \pi \epsilon_0 S^3} (1 - \frac{v^2}{c^2})
+\vec{E} = \frac{q \vec{R}}{4 \pi \epsilon_{0} S^{3}} (1 - \frac{v^{2}}{c^{2}})
 $$
 
 $$
-\vec{B} = \frac{\vec{v}}{c^2} \times \vec{E}
+\vec{B} = \frac{\vec{v}}{c^{2}} \times \vec{E}
 $$
 
 其中:
@@ -191,7 +191,7 @@ $$
 $$
 
 $$
-S^2 = (\vec{R} \cdot \frac{\vec{v}}{v})^2 + (1 - \frac{v^2}{c^2}) (\vec{R} - \vec{R} \cdot \frac{\vec{v}}{v^2} \vec{v}) \cdot (\vec{R} - \vec{R} \cdot \frac{\vec{v}}{v^2} \vec{v}) = \frac{(\vec{R} \cdot \vec{v})^2}{c^2} + (1 - \frac{v^2}{c^2}) R^2
+S^{2} = (\vec{R} \cdot \frac{\vec{v}}{v})^{2} + (1 - \frac{v^{2}}{c^{2}}) (\vec{R} - \vec{R} \cdot \frac{\vec{v}}{v^{2}} \vec{v}) \cdot (\vec{R} - \vec{R} \cdot \frac{\vec{v}}{v^{2}} \vec{v}) = \frac{(\vec{R} \cdot \vec{v})^{2}}{c^{2}} + (1 - \frac{v^{2}}{c^{2}}) R^{2}
 $$
 
 证明：在电荷参考系 $s'$ 中，电磁场为：
@@ -217,10 +217,10 @@ $$
 $$
 换至 $S$ 系中
 $$
-\vec{E} = \vec{E'} \cdot \frac{\vec{v}}{v} \hat{v} + \gamma (\vec{E'} - \vec{E'} \cdot \frac{\vec{v}}{v} \hat{v} ) = \frac{q}{4 \pi \epsilon_{0} \gamma^{3} S^{3}} (\gamma (\vec{R} \cdot \hat{v}) \hat{v} + \gamma (\gamma (\vec{R} \cdot \hat{v}) \hat{v} + \vec{R} - (\vec{R} \cdot \hat{v}) \hat{v}  - \gamma (\vec{R} \cdot \hat{v}) \hat{v}) \\ = \frac{q}{4 \pi \epsilon_{0} \gamma^{3} S^{3}}  \gamma \vec{R} = \frac{q \vec{R}}{4 \pi \epsilon_0 S^3} (1 - \frac{v^2}{c^2})
+\vec{E} = \vec{E'} \cdot \frac{\vec{v}}{v} \hat{v} + \gamma (\vec{E'} - \vec{E'} \cdot \frac{\vec{v}}{v} \hat{v} ) = \frac{q}{4 \pi \epsilon_{0} \gamma^{3} S^{3}} (\gamma (\vec{R} \cdot \hat{v}) \hat{v} + \gamma (\gamma (\vec{R} \cdot \hat{v}) \hat{v} + \vec{R} - (\vec{R} \cdot \hat{v}) \hat{v}  - \gamma (\vec{R} \cdot \hat{v}) \hat{v}) \\ = \frac{q}{4 \pi \epsilon_{0} \gamma^{3} S^{3}}  \gamma \vec{R} = \frac{q \vec{R}}{4 \pi \epsilon_{0} S^{3}} (1 - \frac{v^{2}}{c^{2}})
 $$
 
 $$
-\vec{B} = \gamma \frac{\vec{v}}{c^{2}} \times \vec{E'} = \gamma \frac{\vec{v}}{c^{2}} \times \frac{q}{4 \pi \epsilon_{0} \gamma^{3} S^{3}} (\gamma (\vec{R} \cdot \hat{v}) \hat{v} + \vec{R} - (\vec{R} \cdot \hat{v}) \hat{v}) = \frac{\vec{v}}{c^{2}} \times \frac{q}{4 \pi \epsilon_{0} \gamma^{3} S^{3}}  \gamma \vec{R} = \frac{\vec{v}}{c^2} \times \vec{E}
+\vec{B} = \gamma \frac{\vec{v}}{c^{2}} \times \vec{E'} = \gamma \frac{\vec{v}}{c^{2}} \times \frac{q}{4 \pi \epsilon_{0} \gamma^{3} S^{3}} (\gamma (\vec{R} \cdot \hat{v}) \hat{v} + \vec{R} - (\vec{R} \cdot \hat{v}) \hat{v}) = \frac{\vec{v}}{c^{2}} \times \frac{q}{4 \pi \epsilon_{0} \gamma^{3} S^{3}}  \gamma \vec{R} = \frac{\vec{v}}{c^{2}} \times \vec{E}
 $$
 

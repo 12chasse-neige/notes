@@ -13,9 +13,9 @@ Chasse_neige
 
 (1) 根据相对论协变的力学方程，证明相对论性加速带电荷 $q$ 的粒子的辐射场公式(1.17)用作用力表示为  
 $$
-\vec{E} = \frac{q}{4\pi \epsilon_0 m c^2 R} \left\{ \frac{\delta^3}{\gamma} \vec{e}_r \times [(\vec{e}_r - \vec{\beta}) \times \vec{F} - (\vec{\beta} \cdot \vec{F})(\vec{e}_r \times \vec{\beta})] \right\}_{\text{ret}}
+\vec{E} = \frac{q}{4\pi \epsilon_{0} m c^{2} R} \left\{ \frac{\delta^{3}}{\gamma} \vec{e}_{r} \times [(\vec{e}_{r} - \vec{\beta}) \times \vec{F} - (\vec{\beta} \cdot \vec{F})(\vec{e}_{r} \times \vec{\beta})] \right\}_{\text{ret}}
 $$
-其中 $\delta = (1 - \vec{\beta} \cdot \vec{e}_r)^{-1}$，$\text{ret}$ 表示时刻 $t' = t - \frac{R}{c}$ 时的值。  
+其中 $\delta = (1 - \vec{\beta} \cdot \vec{e}_{r})^{-1}$，$\text{ret}$ 表示时刻 $t' = t - \frac{R}{c}$ 时的值。  
 $$
 \vec{E}_{radia} (\vec{r}, t) = \frac{q}{4 \pi \epsilon_{0} S_{ret}^{3}} \left\{ \vec{R} \times ((\vec{R} - R \vec{\beta}) \times \vec{a}) \right\}_{ret} = \frac{q}{4 \pi \epsilon_{0} R} \left\{ \delta^{3} \vec{e}_{r} \times ((\vec{e}_{r} - \vec{\beta}) \times \vec{a}) \right\}_{rev}
 $$
@@ -25,41 +25,41 @@ $$
 $$
 所以
 $$
-\frac{1}{\gamma m} \vec{e}_r \times [(\vec{e}_r - \vec{\beta}) \times \vec{F} - (\vec{\beta} \cdot \vec{F})(\vec{e}_r \times \vec{\beta})] \\ = 
+\frac{1}{\gamma m} \vec{e}_{r} \times [(\vec{e}_{r} - \vec{\beta}) \times \vec{F} - (\vec{\beta} \cdot \vec{F})(\vec{e}_{r} \times \vec{\beta})] \\ = 
 \vec{e}_{r} \times \left((\vec{e}_{r} - \vec{\beta}) \times (\vec{a} + \gamma^{2} (\vec{\beta} \cdot \vec{a}) \vec{\beta}) - (\vec{\beta} \cdot (\vec{a} + \gamma^{2} (\vec{\beta} \cdot \vec{a}) \vec{\beta})) (\vec{e}_{r} \times \vec{\beta}) \right) \\ =
 \vec{e}_{r} \times \left( (\vec{e}_{r} - \vec{\beta}) \times \vec{a} - (\vec{\beta} \cdot \vec{a}) (\vec{e}_{r} \times \vec{\beta}) + (\vec{\beta} \cdot \vec{a}) (\vec{e}_{r} \times \vec{\beta})) \right) = \vec{e}_{r} \times ((\vec{e}_{r} - \vec{\beta}) \times \vec{a})
 $$
 所以
 $$
-\frac{q}{4\pi \epsilon_0 m c^2 R} \left\{ \frac{\delta^3}{\gamma} \vec{e}_r \times [(\vec{e}_r - \vec{\beta}) \times \vec{F} - (\vec{\beta} \cdot \vec{F})(\vec{e}_r \times \vec{\beta})] \right\}_{\text{ret}} \\ = 
+\frac{q}{4\pi \epsilon_{0} m c^{2} R} \left\{ \frac{\delta^{3}}{\gamma} \vec{e}_{r} \times [(\vec{e}_{r} - \vec{\beta}) \times \vec{F} - (\vec{\beta} \cdot \vec{F})(\vec{e}_{r} \times \vec{\beta})] \right\}_{\text{ret}} \\ = 
 \frac{q}{4 \pi \epsilon_{0} R} \left\{ \delta^{3} \vec{e}_{r} \times ((\vec{e}_{r} - \vec{\beta}) \times \vec{a}) \right\}_{rev} = \vec{E}_{radia}
 $$
-(2) 利用公式 $(\vec{A} \times \vec{B})^2 = \vec{A}^2 \vec{B}^2 - (\vec{A} \cdot \vec{B})^2$，计算 $[(\vec{e}_r - \vec{\beta}) \times \vec{F}]^2$ 和 $[\vec{F} \cdot (\vec{e}_r \times \vec{\beta})]^2$
+(2) 利用公式 $(\vec{A} \times \vec{B})^{2} = \vec{A}^{2} \vec{B}^{2} - (\vec{A} \cdot \vec{B})^{2}$，计算 $[(\vec{e}_{r} - \vec{\beta}) \times \vec{F}]^{2}$ 和 $[\vec{F} \cdot (\vec{e}_{r} \times \vec{\beta})]^{2}$
 $$
-[(\vec{e}_r - \vec{\beta}) \times \vec{F}]^2 = (\vec{e}_{r} - \vec{\beta})^{2} F^{2} - ((\vec{e}_{r} - \vec{\beta}) \cdot \vec{F})^{2} \\ =
+[(\vec{e}_{r} - \vec{\beta}) \times \vec{F}]^{2} = (\vec{e}_{r} - \vec{\beta})^{2} F^{2} - ((\vec{e}_{r} - \vec{\beta}) \cdot \vec{F})^{2} \\ =
 (1 + \beta^{2} - 2 \vec{e}_{r} \cdot \vec{\beta}) F^{2} - (\vec{e}_{r} \cdot \vec{F})^{2} - (\vec{\beta} \cdot \vec{F})^{2} + 2 (\vec{e}_{r} \cdot \vec{F}) (\vec{\beta} \cdot \vec{F})
 $$
 
 $$
-[\vec{F} \cdot (\vec{e}_r \times \vec{\beta})]^2 =  F^{2} |\vec{e}_{r} \times \vec{\beta}|^{2} - |\vec{F} \times (\vec{e}_{r} \times \vec{\beta})|^{2} = F^{2} (\beta^{2} - (\vec{e}_{r} \cdot \vec{\beta})^{2}) - |(\vec{F} \cdot \vec{\beta}) \vec{e}_{r} - (\vec{F} \cdot \vec{e}_{r}) \vec{\beta}|^{2} \\ =
+[\vec{F} \cdot (\vec{e}_{r} \times \vec{\beta})]^{2} =  F^{2} |\vec{e}_{r} \times \vec{\beta}|^{2} - |\vec{F} \times (\vec{e}_{r} \times \vec{\beta})|^{2} = F^{2} (\beta^{2} - (\vec{e}_{r} \cdot \vec{\beta})^{2}) - |(\vec{F} \cdot \vec{\beta}) \vec{e}_{r} - (\vec{F} \cdot \vec{e}_{r}) \vec{\beta}|^{2} \\ =
 F^{2} (\beta^{2} - (\vec{e}_{r} \cdot \vec{\beta})^{2}) - (\vec{F} \cdot \vec{\beta})^{2} - (\vec{F} \cdot \vec{e}_{r})^{2} \beta^{2} + 2 (\vec{e}_{r} \cdot \vec{F}) (\vec{\beta} \cdot \vec{F}) (\vec{e}_{r} \cdot \vec{\beta})
 $$
 
 (3) 利用上述公式，证明带电粒子的辐射功率的角分布公式(2.5)用作用力表示为  
 $$
-\frac{d P}{d \Omega} = \frac{q^2}{16 \pi^2 \epsilon_0 m^2 c^3} \frac{\delta^3}{\gamma^2} \left[ \vec{F}^2 - (\vec{\beta} \cdot \vec{F})^2 - \frac{\delta^2}{\gamma^2} (\vec{F} \cdot \vec{e}_r - \vec{F} \cdot \vec{\beta})^2 \right]
+\frac{d P}{d \Omega} = \frac{q^{2}}{16 \pi^{2} \epsilon_{0} m^{2} c^{3}} \frac{\delta^{3}}{\gamma^{2}} \left[ \vec{F}^{2} - (\vec{\beta} \cdot \vec{F})^{2} - \frac{\delta^{2}}{\gamma^{2}} (\vec{F} \cdot \vec{e}_{r} - \vec{F} \cdot \vec{\beta})^{2} \right]
 $$
 
 证明
 $$
 \frac{dP}{d \Omega} = \frac{1}{\mu_{0}} (\vec{E} \times \vec{B}) \cdot \vec{e}_{r} R^{2} \frac{dt}{dt'} =  \frac{R^{2}}{\mu_{0} c} |\vec{E}_{radia}|^{2} \delta^{-1}  \\ = 
-\frac{q^{2}}{16 \pi^{2} \epsilon_{0} m^{2} c^{3}} \left\{ \frac{\delta^{5}}{\gamma^{2}} \left| \vec{e}_r \times [(\vec{e}_r - \vec{\beta}) \times \vec{F} - (\vec{\beta} \cdot \vec{F})(\vec{e}_r \times \vec{\beta})] \right|^{2} \right\}_{\text{ret}} \\ =
-\frac{q^{2}}{16 \pi^{2} \epsilon_{0} m^{2} c^{3}} \frac{\delta^{5}}{\gamma^{2}} \left( \left|(\vec{e}_r - \vec{\beta}) \times \vec{F} - (\vec{\beta} \cdot \vec{F})(\vec{e}_r \times \vec{\beta}) \right|^{2} - [\vec{F} \cdot (\vec{e}_r \times \vec{\beta})]^2 \right) \\ = 
-\frac{q^{2}}{16 \pi^{2} \epsilon_{0} m^{2} c^{3}} \frac{\delta^{5}}{\gamma^{2}} ([(\vec{e}_r - \vec{\beta}) \times \vec{F}]^2 + (\vec{\beta} \cdot \vec{F})^{2} (\beta^{2} - (\vec{e}_{r} \cdot \vec{\beta})^{2}) - 2 (\vec{\beta} \cdot \vec{F}) ((\vec{e}_r - \vec{\beta}) \times \vec{F}) \cdot (\vec{e}_{r} \times \vec{\beta}) \\ - [\vec{F} \cdot (\vec{e}_r \times \vec{\beta})]^2) \\ = 
-\frac{q^{2}}{16 \pi^{2} \epsilon_{0} m^{2} c^{3}} \frac{\delta^{5}}{\gamma^{2}} \left[ (1 - \vec{e}_{r} \cdot \vec{\beta})^{2} (\vec{F}^2 - (\vec{\beta} \cdot \vec{F})^2) - (1 - \beta^{2}) (\vec{F} \cdot \vec{e}_r - \vec{F} \cdot \vec{\beta})^2 \right] \\ = 
-\frac{q^2}{16 \pi^2 \epsilon_0 m^2 c^3} \frac{\delta^3}{\gamma^2} \left[ \vec{F}^2 - (\vec{\beta} \cdot \vec{F})^2 - \frac{\delta^2}{\gamma^2} (\vec{F} \cdot \vec{e}_r - \vec{F} \cdot \vec{\beta})^2 \right]
+\frac{q^{2}}{16 \pi^{2} \epsilon_{0} m^{2} c^{3}} \left\{ \frac{\delta^{5}}{\gamma^{2}} \left| \vec{e}_{r} \times [(\vec{e}_{r} - \vec{\beta}) \times \vec{F} - (\vec{\beta} \cdot \vec{F})(\vec{e}_{r} \times \vec{\beta})] \right|^{2} \right\}_{\text{ret}} \\ =
+\frac{q^{2}}{16 \pi^{2} \epsilon_{0} m^{2} c^{3}} \frac{\delta^{5}}{\gamma^{2}} \left( \left|(\vec{e}_{r} - \vec{\beta}) \times \vec{F} - (\vec{\beta} \cdot \vec{F})(\vec{e}_{r} \times \vec{\beta}) \right|^{2} - [\vec{F} \cdot (\vec{e}_{r} \times \vec{\beta})]^{2} \right) \\ = 
+\frac{q^{2}}{16 \pi^{2} \epsilon_{0} m^{2} c^{3}} \frac{\delta^{5}}{\gamma^{2}} ([(\vec{e}_{r} - \vec{\beta}) \times \vec{F}]^{2} + (\vec{\beta} \cdot \vec{F})^{2} (\beta^{2} - (\vec{e}_{r} \cdot \vec{\beta})^{2}) - 2 (\vec{\beta} \cdot \vec{F}) ((\vec{e}_{r} - \vec{\beta}) \times \vec{F}) \cdot (\vec{e}_{r} \times \vec{\beta}) \\ - [\vec{F} \cdot (\vec{e}_{r} \times \vec{\beta})]^{2}) \\ = 
+\frac{q^{2}}{16 \pi^{2} \epsilon_{0} m^{2} c^{3}} \frac{\delta^{5}}{\gamma^{2}} \left[ (1 - \vec{e}_{r} \cdot \vec{\beta})^{2} (\vec{F}^{2} - (\vec{\beta} \cdot \vec{F})^{2}) - (1 - \beta^{2}) (\vec{F} \cdot \vec{e}_{r} - \vec{F} \cdot \vec{\beta})^{2} \right] \\ = 
+\frac{q^{2}}{16 \pi^{2} \epsilon_{0} m^{2} c^{3}} \frac{\delta^{3}}{\gamma^{2}} \left[ \vec{F}^{2} - (\vec{\beta} \cdot \vec{F})^{2} - \frac{\delta^{2}}{\gamma^{2}} (\vec{F} \cdot \vec{e}_{r} - \vec{F} \cdot \vec{\beta})^{2} \right]
 $$
-(b) 试由定义，$\frac{1}{J} = \int d^3x' \delta \left( r' - r_0\left(t - \frac{\|r-r'\|}{c}\right) \right)$ 证明：$J = 1 - \frac{\vec{R}^*}{R^*} \cdot \frac{\vec{v}^*}{c}$。并讨论 $J$ 的物理意义。若在介质中，式中 $c$ 应换为 $\frac{c}{n}$（$n$ 为介质的折射率），则 $J$ 有可能为$0$，它对应什么物理？  
+(b) 试由定义，$\frac{1}{J} = \int d^{3x}' \delta \left( r' - r_{0}\left(t - \frac{\|r-r'\|}{c}\right) \right)$ 证明：$J = 1 - \frac{\vec{R}^*}{R^*} \cdot \frac{\vec{v}^*}{c}$。并讨论 $J$ 的物理意义。若在介质中，式中 $c$ 应换为 $\frac{c}{n}$（$n$ 为介质的折射率），则 $J$ 有可能为$0$，它对应什么物理？  
 
 证明，由三维 $\delta$ 函数的性质
 $$
@@ -85,7 +85,7 @@ $$
 
 (c) 试证任意运动的电磁场为
 $$
-\vec{E}(\vec{r}, t) = \frac{q}{4\pi\epsilon_0 S^{* 3}} \left( \vec{R}^* - \frac{R^* \vec{v}^*}{c} \right) \left(1 - \frac{v^2}{c^2}\right) + \frac{q}{4\pi\epsilon_0 c^2 S^{* 3}} \vec{R}^* \times \left[ \left( \vec{R}^* - \frac{R^* \vec{v}^*}{c} \right) \times \vec{a}^* \right]
+\vec{E}(\vec{r}, t) = \frac{q}{4\pi\epsilon_{0} S^{* 3}} \left( \vec{R}^* - \frac{R^* \vec{v}^*}{c} \right) \left(1 - \frac{v^{2}}{c^{2}}\right) + \frac{q}{4\pi\epsilon_{0} c^{2} S^{* 3}} \vec{R}^* \times \left[ \left( \vec{R}^* - \frac{R^* \vec{v}^*}{c} \right) \times \vec{a}^* \right]
 $$
 
 $$
@@ -103,7 +103,7 @@ $$
 $$
 \frac{\partial t^*}{\partial t} = 1 - \frac{1}{c} \frac{\partial R^*}{\partial t}
 $$
-其中 $R^* = |\vec{r} - \vec{r}_0(t^*)|$，且：
+其中 $R^* = |\vec{r} - \vec{r}_{0}(t^*)|$，且：
 $$
 \frac{\partial R^*}{\partial t} = -\frac{\vec{R}^* \cdot \vec{v}^*}{R^*} \frac{\partial t^*}{\partial t}
 $$
@@ -112,7 +112,7 @@ $$
 \frac{\partial t^*}{\partial t} = 1 + \frac{\vec{R}^* \cdot \vec{v}^*}{c R^*} \frac{\partial t^*}{\partial t} \implies \frac{\partial t^*}{\partial t} = \frac{R^*}{R^* - \frac{\vec{R}^* \cdot \vec{v}^*}{c}} = \frac{R^*}{S^*}
 $$
 $\nabla R^*$
-$R^* = |\vec{r} - \vec{r}_0(t^*)|$，固定 $t$，对 $\vec{r}$ 求梯度：
+$R^* = |\vec{r} - \vec{r}_{0}(t^*)|$，固定 $t$，对 $\vec{r}$ 求梯度：
 $$
 \nabla R^* = \frac{\vec{R}^*}{R^*} - \frac{\vec{R}^* \cdot \vec{v}^*}{R^*} \nabla t^*
 $$
@@ -134,10 +134,10 @@ $$
 $$
 所以由李纳维谢尔势
 $$
-\phi(\vec{r}, t) = \frac{q}{4\pi\epsilon_0} \frac{1}{S^*}
+\phi(\vec{r}, t) = \frac{q}{4\pi\epsilon_{0}} \frac{1}{S^*}
 $$
 $$
-\vec{A}(\vec{r}, t) = \frac{\mu_0 q}{4\pi} \frac{\vec{v}^*}{S^*}
+\vec{A}(\vec{r}, t) = \frac{\mu_{0} q}{4\pi} \frac{\vec{v}^*}{S^*}
 $$
 
 $$
@@ -147,42 +147,42 @@ $$
 
 
 $-\nabla \phi$ 
-$\phi = \frac{q}{4\pi\epsilon_0} (S^*)^{-1}$，先求 $\nabla S^*$：
+$\phi = \frac{q}{4\pi\epsilon_{0}} (S^*)^{-1}$，先求 $\nabla S^*$：
 $$
-\nabla S^* = \nabla R^* - \frac{1}{c} \nabla (\vec{R}^* \cdot \vec{v}^*) = \frac{\vec{R}^*}{S^*} - \frac{\vec{v}^*}{c} + \frac{1}{c^2} (\vec{R}^* \cdot \vec{a}^* - v^{*2}) \frac{\vec{R}^*}{S^*}
+\nabla S^* = \nabla R^* - \frac{1}{c} \nabla (\vec{R}^* \cdot \vec{v}^*) = \frac{\vec{R}^*}{S^*} - \frac{\vec{v}^*}{c} + \frac{1}{c^{2}} (\vec{R}^* \cdot \vec{a}^* - v^{*2}) \frac{\vec{R}^*}{S^*}
 $$
 故：
 $$
--\nabla \phi = \frac{q}{4\pi\epsilon_0} \frac{1}{(S^*)^2} \left[ \frac{\vec{R}^*}{S^*} - \frac{\vec{v}^*}{c} + \frac{1}{c^2} (\vec{R}^* \cdot \vec{a}^* - v^{*2}) \frac{\vec{R}^*}{S^*} \right]
+-\nabla \phi = \frac{q}{4\pi\epsilon_{0}} \frac{1}{(S^*)^{2}} \left[ \frac{\vec{R}^*}{S^*} - \frac{\vec{v}^*}{c} + \frac{1}{c^{2}} (\vec{R}^* \cdot \vec{a}^* - v^{*2}) \frac{\vec{R}^*}{S^*} \right]
 $$
 $-\frac{\partial \vec{A}}{\partial t}$
-$\vec{A} = \frac{\mu_0 q}{4\pi} \frac{\vec{v}^*}{S^*}$，计算得：
+$\vec{A} = \frac{\mu_{0} q}{4\pi} \frac{\vec{v}^*}{S^*}$，计算得：
 $$
--\frac{\partial \vec{A}}{\partial t} = -\frac{q}{4\pi\epsilon_0 c^2} \frac{1}{(S^*)^2} \frac{R^*}{S^*} \left[ \vec{a}^* + \frac{\vec{v}^* (\vec{R}^* \cdot \vec{v}^*)}{(R^*)^2} - \frac{v^{*2}}{c} \frac{\vec{v}^*}{R^*} + \frac{\vec{v}^* (\vec{R}^* \cdot \vec{a}^*)}{c R^*} \right]
+-\frac{\partial \vec{A}}{\partial t} = -\frac{q}{4\pi\epsilon_{0} c^{2}} \frac{1}{(S^*)^{2}} \frac{R^*}{S^*} \left[ \vec{a}^* + \frac{\vec{v}^* (\vec{R}^* \cdot \vec{v}^*)}{(R^*)^{2}} - \frac{v^{*2}}{c} \frac{\vec{v}^*}{R^*} + \frac{\vec{v}^* (\vec{R}^* \cdot \vec{a}^*)}{c R^*} \right]
 $$
 自场项：
 $$
-\vec{E}_{\text{self}} = \frac{q}{4\pi\epsilon_0 S^{*3}} \left( \vec{R}^* - \frac{R^* \vec{v}^*}{c} \right) \left(1 - \frac{v^{2}}{c^2}\right)
+\vec{E}_{\text{self}} = \frac{q}{4\pi\epsilon_{0} S^{*3}} \left( \vec{R}^* - \frac{R^* \vec{v}^*}{c} \right) \left(1 - \frac{v^{2}}{c^{2}}\right)
 $$
 辐射项：
 $$
-\vec{E}_{\text{radia}} = \frac{q}{4\pi\epsilon_0 c^2 S^{*3}} \vec{R}^* \times \left[ \left( \vec{R}^* - \frac{R^* \vec{v}^*}{c} \right) \times \vec{a}^* \right]
+\vec{E}_{\text{radia}} = \frac{q}{4\pi\epsilon_{0} c^{2} S^{*3}} \vec{R}^* \times \left[ \left( \vec{R}^* - \frac{R^* \vec{v}^*}{c} \right) \times \vec{a}^* \right]
 $$
 总电场：
 $$
-\vec{E}(\vec{r}, t) = \vec{E}_{\text{vel}} + \vec{E}_{\text{acc}} = \frac{q}{4\pi\epsilon_0 S^{* 3}} \left( \vec{R}^* - \frac{R^* \vec{v}^*}{c} \right) \left(1 - \frac{v^2}{c^2}\right) + \frac{q}{4\pi\epsilon_0 c^2 S^{* 3}} \vec{R}^* \times \left[ \left( \vec{R}^* - \frac{R^* \vec{v}^*}{c} \right) \times \vec{a}^* \right]
+\vec{E}(\vec{r}, t) = \vec{E}_{\text{vel}} + \vec{E}_{\text{acc}} = \frac{q}{4\pi\epsilon_{0} S^{* 3}} \left( \vec{R}^* - \frac{R^* \vec{v}^*}{c} \right) \left(1 - \frac{v^{2}}{c^{2}}\right) + \frac{q}{4\pi\epsilon_{0} c^{2} S^{* 3}} \vec{R}^* \times \left[ \left( \vec{R}^* - \frac{R^* \vec{v}^*}{c} \right) \times \vec{a}^* \right]
 $$
 磁场：
 $$
 \vec{B}(\vec{r}, t) = \nabla \times \vec{A} = \nabla^{*} \times \vec{A} + (\nabla t^{*}) \times \frac{\partial \vec{A}}{\partial t^{*}} = \nabla^{*} \times (\vec{v}^{*} \frac{\phi}{c^{2}}) + \frac{\partial t}{\partial t^{*}} (\nabla t^{*}) \times \frac{\partial \vec{A}}{\partial t}  \\ = (\nabla^{*} \phi) \times \frac{\vec{v}^{*}}{c^{2}} - \frac{\vec{R}^{*}}{c R^{*}} \times \frac{\partial \vec{A}}{\partial t}
 $$
 $$
-\nabla^{*} \phi = \nabla^{*} \frac{q}{4\pi\epsilon_0} \frac{1}{S^*}  = - \frac{q}{4\pi\epsilon_0 S^{2*}} \nabla^{*} (R^{*} - \frac{\vec{R}^{*} \cdot \vec{v}^{*}}{c}) = - \frac{q}{4\pi\epsilon_0 S^{2*}} (\frac{\vec{R}^{*}}{R^{*}} - \frac{\vec{v}^{*}}{c})
+\nabla^{*} \phi = \nabla^{*} \frac{q}{4\pi\epsilon_{0}} \frac{1}{S^*}  = - \frac{q}{4\pi\epsilon_{0} S^{2*}} \nabla^{*} (R^{*} - \frac{\vec{R}^{*} \cdot \vec{v}^{*}}{c}) = - \frac{q}{4\pi\epsilon_{0} S^{2*}} (\frac{\vec{R}^{*}}{R^{*}} - \frac{\vec{v}^{*}}{c})
 $$
 
 所以
 $$
-(\nabla^{*} \phi) \times \frac{\vec{v}^{*}}{c^{2}} = - \frac{q}{4\pi\epsilon_0 S^{2*}} \frac{\vec{R}^{*}}{R^{*}} \times \frac{\vec{v}^{*}}{c^{2}} = - \frac{\vec{R}^{*}}{cR^{*}} \times \frac{q \vec{v}^{*}}{4 \pi \epsilon_{0} c S^{2*}} = \frac{\vec{R}^{*}}{c R^{*}} \times (- \nabla \phi)
+(\nabla^{*} \phi) \times \frac{\vec{v}^{*}}{c^{2}} = - \frac{q}{4\pi\epsilon_{0} S^{2*}} \frac{\vec{R}^{*}}{R^{*}} \times \frac{\vec{v}^{*}}{c^{2}} = - \frac{\vec{R}^{*}}{cR^{*}} \times \frac{q \vec{v}^{*}}{4 \pi \epsilon_{0} c S^{2*}} = \frac{\vec{R}^{*}}{c R^{*}} \times (- \nabla \phi)
 $$
 所以
 $$
@@ -235,7 +235,7 @@ $$
 
 7.3 带电粒子的简谐振动  
 
-有一带电荷 $q$ 的粒子沿 $z$ 轴作简谐振动 $z = z_0 e^{- i\omega t}$。设 $z_0 \omega \ll c$，求： 
+有一带电荷 $q$ 的粒子沿 $z$ 轴作简谐振动 $z = z_{0} e^{- i\omega t}$。设 $z_{0} \omega \ll c$，求： 
 (1) 它的辐射场和能流
 
 利用偶极辐射的结论，假设场点和 $z$ 轴的夹角为 $\theta$
@@ -260,7 +260,7 @@ $$
 
 自场
 $$
-\vec{E} \approx \frac{q}{ 4 \pi \epsilon_{0} R^{3}} \vec{R}
+\vec{E} \approx \frac{q}{4 \pi \epsilon_{0} R^{3}} \vec{R}
 $$
 
 $$
@@ -271,7 +271,7 @@ $$
 
 7.4 带电粒子的匀速率圆周运动  
 
-带电荷 $q$ 的粒子在 $xy$ 平面上绕 $z$ 轴作匀速率圆周运动，角频率为 $\omega$，半径 $R_0$。设 $\omega R_0 \ll c$，试计算辐射场的频率和能流密度，讨论 $\theta = 0, \frac{\pi}{4}, \frac{\pi}{2}$ 及 $\pi$ 处电磁场的偏振。  
+带电荷 $q$ 的粒子在 $xy$ 平面上绕 $z$ 轴作匀速率圆周运动，角频率为 $\omega$，半径 $R_{0}$。设 $\omega R_{0} \ll c$，试计算辐射场的频率和能流密度，讨论 $\theta = 0, \frac{\pi}{4}, \frac{\pi}{2}$ 及 $\pi$ 处电磁场的偏振。  
 
 假设电子运动方程为 （取场点方向在 $x-y$ 平面上的投影为 $x$ 轴正方向）
 $$
@@ -288,12 +288,12 @@ $$
 
 所以在远场近似下
 $$
-\vec{E}_{radia} = \frac{q}{4 \pi \epsilon_{0} c^{2} R} (\vec{e}_{r} \times (\vec{e}_{r} \times \vec{a})) = \frac{q}{4 \pi \epsilon_{0} c^{2} R} (\vec{e}_{r} \times (- \omega^{2} R_{0 }\cos \theta \cos \omega (t - \frac{R}{c}) \vec{e}_{\phi} + \omega^{2} R_{0} \sin \omega (t - \frac{R}{c} ) \vec{e}_{\theta})) \\ =
-\frac{q \omega^{2} R_{0}}{4 \pi \epsilon_{0} c^{2} R} (\cos \theta \cos \omega (t - \frac{R}{c})  \vec{e}_{\theta} + \sin \omega (t - \frac{R}{c}) \vec{e}_{\phi}) = \frac{q R_0 \omega^2}{4\pi \epsilon_0 c^2 R} (\cos \theta \vec{e}_\theta + i \vec{e}_\phi) e^{i\left(\frac{\omega R - \omega t }{c}\right)}
+\vec{E}_{radia} = \frac{q}{4 \pi \epsilon_{0} c^{2} R} (\vec{e}_{r} \times (\vec{e}_{r} \times \vec{a})) = \frac{q}{4 \pi \epsilon_{0} c^{2} R} (\vec{e}_{r} \times (- \omega^{2} R_{0}\cos \theta \cos \omega (t - \frac{R}{c}) \vec{e}_{\phi} + \omega^{2} R_{0} \sin \omega (t - \frac{R}{c} ) \vec{e}_{\theta})) \\ =
+\frac{q \omega^{2} R_{0}}{4 \pi \epsilon_{0} c^{2} R} (\cos \theta \cos \omega (t - \frac{R}{c})  \vec{e}_{\theta} + \sin \omega (t - \frac{R}{c}) \vec{e}_{\phi}) = \frac{q R_{0} \omega^{2}}{4\pi \epsilon_{0} c^{2} R} (\cos \theta \vec{e}_{\theta} + i \vec{e}_{\phi}) e^{i\left(\frac{\omega R - \omega t}{c}\right)}
 $$
 
 $$
-\vec{B}_{radia} = \frac{\vec{e}_{r}}{c} \times \vec{E}_{radia} = \frac{q R_0 \omega^2}{4\pi \epsilon_0 c^3 R} (-i \vec{e}_\theta + \cos \theta \vec{e}_\phi) e^{i\left(\frac{\omega R - \omega t}{c}\right)}
+\vec{B}_{radia} = \frac{\vec{e}_{r}}{c} \times \vec{E}_{radia} = \frac{q R_{0} \omega^{2}}{4\pi \epsilon_{0} c^{3} R} (-i \vec{e}_{\theta} + \cos \theta \vec{e}_{\phi}) e^{i\left(\frac{\omega R - \omega t}{c}\right)}
 $$
 
 $$
@@ -314,7 +314,7 @@ $$
 7.9 带电粒子在磁场中的辐射  
 
 一个质量为 $m$，电荷为 $q$ 的粒子在一个平面上运动，该平面垂直于均匀静磁场 $\vec{B}$。 
-(1) 计算辐射功率，用 $m, q, B, \gamma$ 表示 ($E = \gamma m c^2$) 
+(1) 计算辐射功率，用 $m, q, B, \gamma$ 表示 ($E = \gamma m c^{2}$) 
 
 角频率
 $$
@@ -331,7 +331,7 @@ R_{0} = \frac{v}{\omega} = \frac{m c}{q B} \sqrt{\gamma^{2} - 1}
 $$
 再推导相对论情形下的辐射功率表达式
 $$
-\vec{E} = \frac{q}{4 \pi \epsilon_{0} c^{2} R (1 - \frac{\vec{v} \cdot \vec{R} }{c R})^{3}} (\vec{e}_{r} \times ((\vec{e}_{r} - \frac{\vec{v}}{c}) \times \vec{a})))
+\vec{E} = \frac{q}{4 \pi \epsilon_{0} c^{2} R (1 - \frac{\vec{v} \cdot \vec{R}}{c R})^{3}} (\vec{e}_{r} \times ((\vec{e}_{r} - \frac{\vec{v}}{c}) \times \vec{a})))
 $$
 
 $$
@@ -342,24 +342,24 @@ $$
 $$
 P = \frac{q^{2} a^{2}}{6 \pi \epsilon_{0} c^{3}} \gamma^{4} = \frac{q^{2} \omega^{4} R_{0}^{2}}{6 \pi \epsilon_{0} c^{3}} \gamma^{4} = \frac{B^{2} q^{4}}{6 \pi \epsilon_{0} m^{2} c} (\gamma^{2} - 1)
 $$
-(2) 若在 $t = t_0$ 时，$E_0 = \gamma_0 m c^2$，求 $E(t)$
+(2) 若在 $t = t_{0}$ 时，$E_{0} = \gamma_{0} m c^{2}$，求 $E(t)$
 $$
-\frac{d E}{dt} = - \frac{B^2 q^4}{6 \pi \epsilon_0 m^2 c} (\frac{E^{2}}{m^{2} c^{4}} - 1)
-$$
-
-$$
-\frac{d E}{E^{2} - m^{2} c^{4}} = - \frac{B^2 q^4}{6 \pi \epsilon_0 m^{4} c^{5}} dt
+\frac{d E}{dt} = - \frac{B^{2} q^{4}}{6 \pi \epsilon_{0} m^{2} c} (\frac{E^{2}}{m^{2} c^{4}} - 1)
 $$
 
 $$
-\int_{\gamma_{0} m c^{2}}^{E} \frac{d E}{E - m c^{2}} - \frac{d E}{E + m c^{2}} = \int_{t_{0}}^{t} - \frac{B^2 q^4}{3 \pi \epsilon_0 m^{3} c^{3}} dt
+\frac{d E}{E^{2} - m^{2} c^{4}} = - \frac{B^{2} q^{4}}{6 \pi \epsilon_{0} m^{4} c^{5}} dt
 $$
 
 $$
-E (t) = m c^{2} \left( \frac{1 + \frac{\gamma_0 - 1}{\gamma_0 + 1} e^{-\frac{B^2 q^4}{3 \pi \epsilon_0 m^{3} c^{3}} (t - t_{0})}}{1 - \frac{\gamma_0 - 1}{\gamma_0 + 1} e^{-\frac{B^2 q^4}{3 \pi \epsilon_0 m^{3} c^{3}} (t - t_{0})}} \right)
+\int_{\gamma_{0} m c^{2}}^{E} \frac{d E}{E - m c^{2}} - \frac{d E}{E + m c^{2}} = \int_{t_{0}}^{t} - \frac{B^{2} q^{4}}{3 \pi \epsilon_{0} m^{3} c^{3}} dt
 $$
 
-(3) 若初始时刻粒子为非相对论性的，其动能为 $T_0$，求时刻 $t$ 的粒子动能 $T$
+$$
+E (t) = m c^{2} \left( \frac{1 + \frac{\gamma_{0} - 1}{\gamma_{0} + 1} e^{-\frac{B^{2} q^{4}}{3 \pi \epsilon_{0} m^{3} c^{3}} (t - t_{0})}}{1 - \frac{\gamma_{0} - 1}{\gamma_{0} + 1} e^{-\frac{B^{2} q^{4}}{3 \pi \epsilon_{0} m^{3} c^{3}} (t - t_{0})}} \right)
+$$
+
+(3) 若初始时刻粒子为非相对论性的，其动能为 $T_{0}$，求时刻 $t$ 的粒子动能 $T$
 
 非相对论时
 $$
@@ -375,7 +375,7 @@ $$
 $$
 
 $$
-T (t) = T_0  e^{ -\frac{B^2 q^4}{3 \pi \epsilon_0 m^3 c^3} (t - t_0) }
+T (t) = T_{0}  e^{-\frac{B^{2} q^{4}}{3 \pi \epsilon_{0} m^{3} c^{3}} (t - t_{0})}
 $$
 
 ### 5. 电磁波的散射与吸收，介质的色散
@@ -385,7 +385,7 @@ $$
 
 7.5 带电谐振子在磁场中的运动  
 
-设有一各向同性的带电谐振子（无外场时粒子受弹性恢复力 $-m \omega_0^2 \vec{r}$ 作用），处于均匀恒定外磁场 $\vec{B}$ 中，假设粒子速度 $v \ll c$ 及辐射阻尼力可以忽略，求： 
+设有一各向同性的带电谐振子（无外场时粒子受弹性恢复力 $-m \omega_{0}^{2} \vec{r}$ 作用），处于均匀恒定外磁场 $\vec{B}$ 中，假设粒子速度 $v \ll c$ 及辐射阻尼力可以忽略，求： 
 (1) 振子运动的通解
 
 在非相对论情形下
@@ -407,11 +407,11 @@ $$
 
 方程通解为
 $$
-z = A e^{i (\sqrt{\omega_{0}^{2} + \omega_{B}^{2}} - \omega_{0}) t} + B e^{ - i (\sqrt{\omega_{0}^{2} + \omega_{B}^{2}} + \omega_{0}) t}
+z = A e^{i (\sqrt{\omega_{0}^{2} + \omega_{B}^{2}} - \omega_{0}) t} + B e^{- i (\sqrt{\omega_{0}^{2} + \omega_{B}^{2}} + \omega_{0}) t}
 $$
 所以振子运动的通解为 
 $$
-\vec{r} (t) =  A (\hat{x} - i \hat{y}) e^{- i (-\sqrt{\omega_{0}^{2} + \omega_{B}^{2}} + \omega_{0}) t} + B (\hat{x} + i \hat{y}) e^{ - i (\sqrt{\omega_{0}^{2} + \omega_{B}^{2}} + \omega_{0}) t} + C \hat{z} e^{- i \omega_{0} t}
+\vec{r} (t) =  A (\hat{x} - i \hat{y}) e^{- i (-\sqrt{\omega_{0}^{2} + \omega_{B}^{2}} + \omega_{0}) t} + B (\hat{x} + i \hat{y}) e^{- i (\sqrt{\omega_{0}^{2} + \omega_{B}^{2}} + \omega_{0}) t} + C \hat{z} e^{- i \omega_{0} t}
 $$
 (2) 利用上题结果，讨论沿磁场方向和垂直于磁场方向上辐射场的频率和偏振。  
 
@@ -425,7 +425,7 @@ $z$ 方向的频率为 $\omega_{0}$ 的以及原来 $x- y$ 平面内频率为 $\
 
 7.6 电子在均匀磁场中的运动  
 
-设电子在均匀外磁场 $\vec{B}_0$ 中运动，取磁场 $\vec{B}$ 的方向为 $z$ 轴方向，已知 $t = 0$ 时，$x = R_0$，$y = z = 0$，$\dot{x} = \dot{z} = 0$，$\dot{y} = v_0$，设非相对论条件满足，求： 
+设电子在均匀外磁场 $\vec{B}_{0}$ 中运动，取磁场 $\vec{B}$ 的方向为 $z$ 轴方向，已知 $t = 0$ 时，$x = R_{0}$，$y = z = 0$，$\dot{x} = \dot{z} = 0$，$\dot{y} = v_{0}$，设非相对论条件满足，求： 
 (1) 考虑辐射阻尼力的电子运动轨道
 
 对于题示这种准周期运动，可以采取平均辐射阻尼力 $\frac{e^{2}}{6 \pi \epsilon_{0} c^{3}} \dot{\vec{a}}$
@@ -456,8 +456,8 @@ $$
 $$
 所以带入初始条件，得到运动轨迹为
 $$
-x \approx \left( R_0 - \frac{v_0}{\omega_0} \right) + \frac{v_0}{\omega_0} e^{-\gamma t} \cos \omega_0 t \\
-y \approx \frac{v_0}{\omega_0} e^{-\gamma t} \sin \omega_0 t
+x \approx \left( R_{0} - \frac{v_{0}}{\omega_{0}} \right) + \frac{v_{0}}{\omega_{0}} e^{-\gamma t} \cos \omega_{0} t \\
+y \approx \frac{v_{0}}{\omega_{0}} e^{-\gamma t} \sin \omega_{0} t
 $$
 (2) 电子单位时间内的辐射能量
 
@@ -487,6 +487,6 @@ $$
 $$
 
 $$
-n(\omega) = \sqrt{1 - \frac{N e^2}{\epsilon_0 m \omega^2}}
+n(\omega) = \sqrt{1 - \frac{N e^{2}}{\epsilon_{0} m \omega^{2}}}
 $$
 

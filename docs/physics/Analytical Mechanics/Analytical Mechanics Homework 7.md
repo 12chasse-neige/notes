@@ -66,7 +66,7 @@ $$
 $$
 \theta_{2} (t) = L^{-1} \left[\frac{1}{p^{2} + 1} L \left[2 A \frac{\omega_{2}}{\omega_{0}} \cos \tau + \frac{A^{3}}{6} \cos^{3} \tau \right]\right] \\ =
 \int_{0}^{\tau} 2 A \frac{\omega_{2}}{\omega_{0}} \cos (\tau - \tau') \sin \tau' + \frac{A^{3}}{6} \cos^{3} (\tau - \tau') \sin \tau' \, \dd{\tau'} \\ =
-A \frac{\omega_{2}}{\omega_{0}} \tau \sin\tau + \frac{A^3}{192} \left(12\tau \sin\tau + \cos\tau - \cos 3\tau \right)
+A \frac{\omega_{2}}{\omega_{0}} \tau \sin\tau + \frac{A^{3}}{192} \left(12\tau \sin\tau + \cos\tau - \cos 3\tau \right)
 $$
 消去非物理项，得到
 $$
@@ -74,7 +74,7 @@ $$
 $$
 得到结论
 $$
-\theta (t) = A \cos \tau + \frac{A^3}{192} \left(\cos\tau - \cos 3\tau \right)
+\theta (t) = A \cos \tau + \frac{A^{3}}{192} \left(\cos\tau - \cos 3\tau \right)
 $$
 
 $$
@@ -109,8 +109,8 @@ A =
 \end{pmatrix}
 \begin{pmatrix}
 0 & 0 & 0 \\
-0 & -\omega_1^2 & 0 \\
-0 & 0 & -\omega_1^2 - 2\omega_2^2
+0 & -\omega_{1}^{2} & 0 \\
+0 & 0 & -\omega_{1}^{2} - 2\omega_{2}^{2}
 \end{pmatrix}
 \frac{1}{2(2\omega_{2}^{2} + \omega_{1}^{2})} \begin{pmatrix}
 2\omega_{2}^{2} & 2\omega_{1}^{2} & 2\omega_{2}^{2} \\

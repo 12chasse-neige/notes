@@ -189,7 +189,7 @@ $$
 $$
 
 $$
-\mathbf{A} \times (\nabla \times \mathbf{A}) = \frac{1}{2} \nabla A^2 - (\mathbf{A} \cdot \nabla) \mathbf{A}
+\mathbf{A} \times (\nabla \times \mathbf{A}) = \frac{1}{2} \nabla A^{2} - (\mathbf{A} \cdot \nabla) \mathbf{A}
 $$
 
 证明：第一个式子从右推左
@@ -213,28 +213,28 @@ $$
 $$
 
 $$
-\therefore \,\, \nabla_{\mathbf{A_{2}}} (\mathbf{A_{1}} \cdot \mathbf{A_{2}}) = \frac{1}{2}  (\nabla_{\mathbf{A_{1}}} (\mathbf{A_{1}} \cdot \mathbf{A_{2}}) + \nabla_{\mathbf{A_{2}}} (\mathbf{A_{1}} \cdot \mathbf{A_{2}})) = \frac{1}{2} \nabla A^2
+\therefore \,\, \nabla_{\mathbf{A_{2}}} (\mathbf{A_{1}} \cdot \mathbf{A_{2}}) = \frac{1}{2}  (\nabla_{\mathbf{A_{1}}} (\mathbf{A_{1}} \cdot \mathbf{A_{2}}) + \nabla_{\mathbf{A_{2}}} (\mathbf{A_{1}} \cdot \mathbf{A_{2}})) = \frac{1}{2} \nabla A^{2}
 $$
 
 $$
-\therefore \,\, \mathbf{A} \times (\nabla \times \mathbf{A}) = \frac{1}{2} \nabla A^2 - (\mathbf{A} \cdot \nabla) \mathbf{A}
+\therefore \,\, \mathbf{A} \times (\nabla \times \mathbf{A}) = \frac{1}{2} \nabla A^{2} - (\mathbf{A} \cdot \nabla) \mathbf{A}
 $$
 
 #### 1.3 
 
-设 $r=\sqrt{(x-x')^2+(y-y')^2+(z-z')^2}$ 为源点 $x'$ 到场点 $x$ 的距离，$r$ 的方向规定为从源点指向场点。
+设 $r=\sqrt{(x-x')^{2}+(y-y')^{2}+(z-z')^{2}}$ 为源点 $x'$ 到场点 $x$ 的距离，$r$ 的方向规定为从源点指向场点。
 
-(1) 证明下列结果，并体会对源变数求微商 $\left(\nabla'=\mathbf{e}_x \frac{\partial}{\partial x'}+\mathbf{e}_y \frac{\partial}{\partial y'}+\mathbf{e}_z \frac{\partial}{\partial z'}\right)$ 与对场变数求微商 $\left(\nabla=\mathbf{e}_x \frac{\partial}{\partial x}+\mathbf{e}_y \frac{\partial}{\partial y}+\mathbf{e}_z \frac{\partial}{\partial z}\right)$ 的关系：
+(1) 证明下列结果，并体会对源变数求微商 $\left(\nabla'=\mathbf{e}_{x} \frac{\partial}{\partial x'}+\mathbf{e}_{y} \frac{\partial}{\partial y'}+\mathbf{e}_{z} \frac{\partial}{\partial z'}\right)$ 与对场变数求微商 $\left(\nabla=\mathbf{e}_{x} \frac{\partial}{\partial x}+\mathbf{e}_{y} \frac{\partial}{\partial y}+\mathbf{e}_{z} \frac{\partial}{\partial z}\right)$ 的关系：
 
 $$
 \nabla r = -\nabla' r = \frac{\mathbf{r}}{r} \\
-\nabla \frac{1}{r} = -\nabla' \frac{1}{r} = -\frac{\mathbf{r}}{r^3} \\
-\nabla \times \frac{\mathbf{r}}{r^3} = 0 \\
-\nabla \cdot \frac{\mathbf{r}}{r^3} = -\nabla' \cdot \frac{\mathbf{r}}{r^3} = 0 \quad (r \neq 0)
+\nabla \frac{1}{r} = -\nabla' \frac{1}{r} = -\frac{\mathbf{r}}{r^{3}} \\
+\nabla \times \frac{\mathbf{r}}{r^{3}} = 0 \\
+\nabla \cdot \frac{\mathbf{r}}{r^{3}} = -\nabla' \cdot \frac{\mathbf{r}}{r^{3}} = 0 \quad (r \neq 0)
 $$
 （最后一式在 $r=0$ 点不成立，见第二章 §5）。
 
-证明：将 $r$ 表示为直角坐标下的分量式  $\vec{r} = (x-x^{'}) \vec{e_{x}} + (y - y^{'}) \vec{e_{y}} + (z - z^{'}) \vec{e_{z}}$ 和 $r=\sqrt{(x-x')^2+(y-y')^2+(z-z')^2}$  
+证明：将 $r$ 表示为直角坐标下的分量式  $\vec{r} = (x-x^{'}) \vec{e_{x}} + (y - y^{'}) \vec{e_{y}} + (z - z^{'}) \vec{e_{z}}$ 和 $r=\sqrt{(x-x')^{2}+(y-y')^{2}+(z-z')^{2}}$  
 $$
 \nabla r = \partial_{i} \sqrt{(x_{i} - x_{i}^{'})^{2}} \vec{e_{i}} = \frac{(x_{i} - x_{i}^{'}) \vec{e_{i}}}{\sqrt{(x_{i} - x_{i}^{'})^{2}}} = \frac{\vec{r}}{r}
 $$
@@ -256,12 +256,12 @@ $$
 $$
 
 $$
-\nabla \cdot \frac{\vec{r}}{r^3} = -\nabla' \cdot \frac{\vec{r}}{r^3} = \frac{3}{r^{3}} - 3 \frac{\vec{r}}{r^{5}} \cdot \vec{r} = 0 \,\, (r \neq 0 )
+\nabla \cdot \frac{\vec{r}}{r^{3}} = -\nabla' \cdot \frac{\vec{r}}{r^{3}} = \frac{3}{r^{3}} - 3 \frac{\vec{r}}{r^{5}} \cdot \vec{r} = 0 \,\, (r \neq 0 )
 $$
 
 
 
-(2) 求 $\nabla \cdot \mathbf{r}$，$\nabla \times \mathbf{r}$，$(\mathbf{a} \cdot \nabla) \mathbf{r}$，$\nabla (\mathbf{a} \cdot \mathbf{r})$，$\nabla \cdot [\mathbf{E}_0 \sin (\mathbf{k} \cdot \mathbf{r})]$ 及 $\nabla \times [\mathbf{E}_0 \sin (\mathbf{k} \cdot \mathbf{r})]$，其中 $\mathbf{a}$、$\mathbf{k}$ 及 $\mathbf{E}_0$ 均为常矢量。
+(2) 求 $\nabla \cdot \mathbf{r}$，$\nabla \times \mathbf{r}$，$(\mathbf{a} \cdot \nabla) \mathbf{r}$，$\nabla (\mathbf{a} \cdot \mathbf{r})$，$\nabla \cdot [\mathbf{E}_{0} \sin (\mathbf{k} \cdot \mathbf{r})]$ 及 $\nabla \times [\mathbf{E}_{0} \sin (\mathbf{k} \cdot \mathbf{r})]$，其中 $\mathbf{a}$、$\mathbf{k}$ 及 $\mathbf{E}_{0}$ 均为常矢量。
 $$
 \nabla \cdot \vec{r} = 3
 $$
@@ -279,18 +279,18 @@ $$
 $$
 
 $$
-\nabla \cdot [\mathbf{E}_0 \sin (\mathbf{k} \cdot \mathbf{r})] = (\nabla \sin(\vec{k} \cdot \vec{r})) \cdot \vec{E_{0}} + \sin(\vec{k} \cdot \vec{r}) \nabla \cdot \vec{E_{0}} = \cos (\vec{k} \cdot \vec{r}) \,\, \nabla(\vec{k} \cdot \vec{r}) \cdot \vec{E_{0}} + 0 = \cos (\vec{k} \cdot \vec{r}) (\vec{k} \cdot \vec{E_{0}})
+\nabla \cdot [\mathbf{E}_{0} \sin (\mathbf{k} \cdot \mathbf{r})] = (\nabla \sin(\vec{k} \cdot \vec{r})) \cdot \vec{E_{0}} + \sin(\vec{k} \cdot \vec{r}) \nabla \cdot \vec{E_{0}} = \cos (\vec{k} \cdot \vec{r}) \,\, \nabla(\vec{k} \cdot \vec{r}) \cdot \vec{E_{0}} + 0 = \cos (\vec{k} \cdot \vec{r}) (\vec{k} \cdot \vec{E_{0}})
 $$
 
 $$
-\nabla \times [\mathbf{E}_0 \sin (\mathbf{k} \cdot \mathbf{r})] = (\nabla \sin(\vec{k} \cdot \vec{r})) \times \vec{E_{0}} + \sin(\vec{k} \cdot \vec{r}) \nabla \times \vec{E_{0}} = \cos (\vec{k} \cdot \vec{r}) \vec{k} \times \vec{E_{0}} + 0 = \cos (\vec{k} \cdot \vec{r}) (\vec{k} \times \vec{E_{0}})
+\nabla \times [\mathbf{E}_{0} \sin (\mathbf{k} \cdot \mathbf{r})] = (\nabla \sin(\vec{k} \cdot \vec{r})) \times \vec{E_{0}} + \sin(\vec{k} \cdot \vec{r}) \nabla \times \vec{E_{0}} = \cos (\vec{k} \cdot \vec{r}) \vec{k} \times \vec{E_{0}} + 0 = \cos (\vec{k} \cdot \vec{r}) (\vec{k} \times \vec{E_{0}})
 $$
 
 
 
 #### 1.6
 
-若 $\mathbf{m}$ 是常矢量，证明除 $R=0$ 点以外，矢量 $\mathbf{A} = \frac{\mathbf{m} \times \mathbf{R}}{R^3}$ 的旋度等于标量 $\varphi = \frac{\mathbf{m} \cdot \mathbf{R}}{R^3}$ 的梯度的负值，即
+若 $\mathbf{m}$ 是常矢量，证明除 $R=0$ 点以外，矢量 $\mathbf{A} = \frac{\mathbf{m} \times \mathbf{R}}{R^{3}}$ 的旋度等于标量 $\varphi = \frac{\mathbf{m} \cdot \mathbf{R}}{R^{3}}$ 的梯度的负值，即
 $$
 \nabla \times \mathbf{A} = -\nabla \varphi \qquad (R \neq 0)
 $$

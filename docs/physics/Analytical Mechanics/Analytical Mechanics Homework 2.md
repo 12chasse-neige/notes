@@ -57,7 +57,7 @@ $$
 带入拉格朗日方程
 $$
 \frac{d}{dt} (m \dot{r}) = m \sin^{2} \alpha \dot{\theta}^{2} r - mg \cos \alpha \\
-\frac{d}{dt} (m r^{2} \sin^{2} \alpha \dot{ \theta}) = 0
+\frac{d}{dt} (m r^{2} \sin^{2} \alpha \dot{\theta}) = 0
 $$
 得到
 $$
@@ -66,7 +66,7 @@ g \cos \alpha + \ddot{r} - r \dot{\theta}^{2} \sin^{2} \alpha = 0 \\
 $$
 注意到 $\theta$ 是循环坐标 ，所以存在循环积分
 $$
-\frac{\partial L}{\partial \dot{\theta}} = m r^{2} \sin^{2} \alpha \dot{ \theta}
+\frac{\partial L}{\partial \dot{\theta}} = m r^{2} \sin^{2} \alpha \dot{\theta}
 $$
 
 ### 1.18
@@ -138,15 +138,15 @@ $$
 
 以质心坐标 $\vec{R}$ 和相对坐标 $\vec{r}$ 作为广义坐标，其中
 $$
-\vec{R} = \frac{m_1 \vec{r}_1 + m_2 \vec{r}_2}{m_1 + m_2}, \quad \vec{r} = \vec{r}_1 - \vec{r}_2
+\vec{R} = \frac{m_{1} \vec{r}_{1} + m_{2} \vec{r}_{2}}{m_{1} + m_{2}}, \quad \vec{r} = \vec{r}_{1} - \vec{r}_{2}
 $$
-总质量 $M = m_1 + m_2$，约化质量 $\mu = \frac{m_1 m_2}{M}$。动能 $T$ 和势能 $V$ 表示为
+总质量 $M = m_{1} + m_{2}$，约化质量 $\mu = \frac{m_{1} m_{2}}{M}$。动能 $T$ 和势能 $V$ 表示为
 $$
-T = \frac{1}{2} M \dot{\vec{R}}^2 + \frac{1}{2} \mu \dot{\vec{r}}^2, \quad V = V(\vec{r})
+T = \frac{1}{2} M \dot{\vec{R}}^{2} + \frac{1}{2} \mu \dot{\vec{r}}^{2}, \quad V = V(\vec{r})
 $$
 拉格朗日量 $L$ 为：
 $$
-L = T - V = \frac{1}{2} M \dot{\vec{R}}^2 + \frac{1}{2} \mu \dot{\vec{r}}^2 - V(\vec{r})
+L = T - V = \frac{1}{2} M \dot{\vec{R}}^{2} + \frac{1}{2} \mu \dot{\vec{r}}^{2} - V(\vec{r})
 $$
 
  $\vec{R}$ 是循环坐标
@@ -162,11 +162,11 @@ $$
 R = - \vec{P} \cdot \dot{\vec{R}} + L
 $$
 $$
-R = - \frac{\vec{P}^2}{M} + \left( \frac{1}{2} M \dot{\vec{R}}^2 + \frac{1}{2} \mu \dot{\vec{r}}^2 - V(\vec{r}) \right) = - \frac{\vec{P}^2}{M} + \frac{1}{2} M \dot{\vec{R}}^2 + \frac{1}{2} \mu \dot{\vec{r}}^2 - V(\vec{r})
+R = - \frac{\vec{P}^{2}}{M} + \left( \frac{1}{2} M \dot{\vec{R}}^{2} + \frac{1}{2} \mu \dot{\vec{r}}^{2} - V(\vec{r}) \right) = - \frac{\vec{P}^{2}}{M} + \frac{1}{2} M \dot{\vec{R}}^{2} + \frac{1}{2} \mu \dot{\vec{r}}^{2} - V(\vec{r})
 $$
 罗斯函数为
 $$
-R = - \frac{\vec{P}^2}{2M} + \frac{1}{2} \mu \dot{\vec{r}}^2 + V(\vec{r})
+R = - \frac{\vec{P}^{2}}{2M} + \frac{1}{2} \mu \dot{\vec{r}}^{2} + V(\vec{r})
 $$
 
 运动方程由罗斯函数导出
@@ -182,7 +182,7 @@ $$
 有一质点质量为 $m$，在中心力场 $V(r)$ 中运动，柱坐标为 $(\rho, \varphi, z)$，其拉格朗日量为
 
 $$
-L=\frac{1}{2}m(\dot{\rho}^2+\rho^2\dot{\varphi}^2+\dot{z}^2)-V(\sqrt{\rho^2+z^2})
+L=\frac{1}{2}m(\dot{\rho}^{2}+\rho^{2}\dot{\varphi}^{2}+\dot{z}^{2})-V(\sqrt{\rho^{2}+z^{2}})
 $$
 
 另有一个转动坐标系，绕 $z$ 轴以角速度 $\omega$ 转动。若 $t=0$ 时两个坐标系重合，转动坐标系质点坐标为 $(\rho', \varphi', z')$。
@@ -197,7 +197,7 @@ z' = z \\
 $$
 所以旋转系中的拉格朗日量可以写作
 $$
-L = \frac{1}{2} m ( \dot{\rho'}^2 + \rho^2 (\dot{\varphi'} + \omega)^2 + \dot{z'}^2 ) - V(\sqrt{\rho'^2 + z'^2})
+L = \frac{1}{2} m ( \dot{\rho'}^{2} + \rho^{2} (\dot{\varphi'} + \omega)^{2} + \dot{z'}^{2} ) - V(\sqrt{\rho'^{2} + z'^{2}})
 $$
 循环坐标为 $\varphi'$ 
 
@@ -218,7 +218,7 @@ m \ddot{z'} = - \frac{\partial V}{\partial z'}
 $$
 也可以写为
 $$
-\ddot{\rho'} - \rho' \dot{\varphi'}^2 - 2\omega \rho' \dot{\varphi'} - \omega^2 \rho' + \frac{1}{m} \frac{\partial V}{\partial \rho'} = 0 \\
+\ddot{\rho'} - \rho' \dot{\varphi'}^{2} - 2\omega \rho' \dot{\varphi'} - \omega^{2} \rho' + \frac{1}{m} \frac{\partial V}{\partial \rho'} = 0 \\
 \rho' \ddot{\varphi'} + 2 \dot{\rho'} \dot{\varphi'} + 2 \dot{\rho'} \omega = 0 \\
 \ddot{z'} + \frac{1}{m} \frac{\partial V}{\partial z'} = 0
 $$
@@ -228,7 +228,7 @@ $$
 
 在转动坐标系中，运动方程出现额外项，对应虚拟力。其中
 
-在 $\rho'$ 方程中，项 $-\omega^2 \rho'$ 对应离心加速度，离心力为 $m \omega^2 \rho'$，方向径向向外。
+在 $\rho'$ 方程中，项 $-\omega^{2} \rho'$ 对应离心加速度，离心力为 $m \omega^{2} \rho'$，方向径向向外。
 
 在 $\rho'$ 方程中，项 $-2\omega \rho' \dot{\varphi'}$ 对应科里奥利力的径向分量，科里奥利加速度径向分量为 $2\omega \rho' \dot{\varphi'}$。
 

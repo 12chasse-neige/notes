@@ -33,7 +33,7 @@ Advanced LIGO名义运行模式的预期应变噪声谱如图2所示。在名义
 
 $4$公里长光束管中的残余气体会导致光路中气体粒子柱密度的统计变化，从而产生沿路径的有效折射率涨落。由此产生的光程长度噪声是通过计算分子穿过光束时腔内场相位的脉冲变化，并对分子速度分布进行积分来建模的 [22]。该噪声曲线仅包含了最主要的残余气体成分——氢气，其压力为 $4 \times 10^{-7} \mathrm{Pa}$。
 
-虽然未包含在图 2 的噪声曲线中，但测试质量真空室中的残余气体会对测试质量悬挂产生一定的阻尼，可能会增加悬挂热噪声。这种阻尼效应由于测试质量与其悬挂的反作用质量（reaction mass）之间相对狭窄的间隙而增强——即所谓的薄膜阻尼（thin-film damping）[23]。气体阻尼噪声在 10—40 Hz 频带内最为显著，在该频带内它几乎随 $f^{-2}$ 下降。在预期的 $H_2$ 腔体压力 $7 \times 10^{-7}$ 帕斯卡下，由此产生的应变噪声在 20 Hz 时为 $5 \times 10^{-24} / \sqrt{\text{Hz}}$——比图 2 中的干涉仪应变噪声低 3-4 倍。为了减轻这种影响，输入测试质量（ITM）的间隙（20 mm）比末端测试质量（ETM）的间隙（5 mm）要大，因为前者不需要那么大的静电致动力。这一噪声项未包含在图 2 中，是因为通过降低腔体压力、增加 ETM 的间隙以及可能采用更复杂的（环形）末端反作用质量几何形状的某种组合，最终将使其变得可以忽略不计（即再降低 3 倍）。
+虽然未包含在图 2 的噪声曲线中，但测试质量真空室中的残余气体会对测试质量悬挂产生一定的阻尼，可能会增加悬挂热噪声。这种阻尼效应由于测试质量与其悬挂的反作用质量（reaction mass）之间相对狭窄的间隙而增强——即所谓的薄膜阻尼（thin-film damping）[23]。气体阻尼噪声在 10—40 Hz 频带内最为显著，在该频带内它几乎随 $f^{-2}$ 下降。在预期的 $H_{2}$ 腔体压力 $7 \times 10^{-7}$ 帕斯卡下，由此产生的应变噪声在 20 Hz 时为 $5 \times 10^{-24} / \sqrt{\text{Hz}}$——比图 2 中的干涉仪应变噪声低 3-4 倍。为了减轻这种影响，输入测试质量（ITM）的间隙（20 mm）比末端测试质量（ETM）的间隙（5 mm）要大，因为前者不需要那么大的静电致动力。这一噪声项未包含在图 2 中，是因为通过降低腔体压力、增加 ETM 的间隙以及可能采用更复杂的（环形）末端反作用质量几何形状的某种组合，最终将使其变得可以忽略不计（即再降低 3 倍）。
 
 ### 其他运行模式 (Other modes of operation)
 
@@ -72,40 +72,40 @@ $$
 a_{+} = a_{\omega_{0} + \Omega} \quad a_{-} = a_{\omega_{0} - \Omega}
 $$
 此时对易关系变为
-\[
+$$
 \comm{a_{+}}{a_{+'}^{\dagger}} = 2 \pi \delta(\Omega - \Omega') \quad \comm{a_{-}}{a_{-'}^{\dagger}} = 2 \pi \delta(\Omega - \Omega')
-\]
+$$
 并且可以把 dark port 的输入端改写为
-\[
+$$
 E_{\text{in}}^{(+)} = \int_{0}^{\infty} \sqrt{\frac{2 \pi \hbar \omega_{0}}{\mathcal{A} c}} e^{- i \omega_{0} t} \left( a_{+} e^{- i \Omega t} + a_{-} e^{i \Omega t} \right) \, \frac{\dd{\Omega}}{2 \pi}
-\]
+$$
 这个表达式进行了近似，注意到 $\Omega$ 的范围远小于中心频率 $\omega_{0}$ (差 $10^{-13}$ 左右量级)，在积分过程中直接用 $\omega_{0}$ 代替根号中的 $\omega$ ，并且把对 $\Omega$ 的积分延拓到无穷。对上式进行一次重定义
-\[
+$$
 a_{1} = \frac{a_{+} + a_{-}^{\dagger}}{\sqrt{2}} \quad a_{2} = \frac{a_{+} - a_{-}^{\dagger}}{\sqrt{2} i}
-\]
+$$
 把输入信号改写成形式
-\[
+$$
 E_{\text{in}} = E_{\text{in}}^{(+)} + E_{\text{in}}^{(-)} \\ =
 \int_{0}^{\infty} \sqrt{\frac{4 \pi \hbar \omega_{0}}{\mathcal{A} c}} (\cos (\omega_{0} t) - i \sin (\omega_{0} t)) \left(\frac{1}{2} (a_{1} + i a_{2}) e^{- i \Omega t} + \frac{1}{2} (a_{1}^{\dagger} + i a_{2}^{\dagger}) e^{i \Omega t} \right) \, \frac{\dd{\Omega}}{2 \pi} + c.c. \\ =
 \int_{0}^{\infty} \sqrt{\frac{4 \pi \hbar \omega_{0}}{\mathcal{A} c}} \left[ \frac{\cos (\omega_{0} t)}{2} (a_{1} e^{- i \Omega t} + a_{1}^{\dagger} e^{i \Omega t}) + \frac{\sin (\omega_{0} t)}{2} (a_{2} e^{- i \Omega t} + a_{2}^{\dagger} e^{i \Omega t}) \right] \, \frac{\dd{\Omega}}{2 \pi} + c.c. \\ =
 \int_{0}^{\infty} \sqrt{\frac{4 \pi \hbar \omega_{0}}{\mathcal{A} c}} \left[ \cos (\omega_{0} t) (a_{1} e^{- i \Omega t} + a_{1}^{\dagger} e^{i \Omega t}) + \sin (\omega_{0} t) (a_{2} e^{- i \Omega t} + a_{2}^{\dagger} e^{i \Omega t}) \right] \, \frac{\dd{\Omega}}{2 \pi}
-\]
+$$
 对于dark port 端的输出信号，我们只要替换上式中的产生湮灭算符，就可以在三角基底下将其表示为
-\[
+$$
 E_{\text{out}} = E_{1} \cos (\omega_{0} t) + E_{2} \sin (\omega_{0} t)
-\]
+$$
 其中
-\[
+$$
 E_{j} = \int_{0}^{\infty} \sqrt{\frac{4 \pi \hbar \omega_{0}}{\mathcal{A} c}} (b_{j} e^{- i \Omega t} + b_{j}^{\dagger} e^{i \Omega t}) \, \frac{\dd{\Omega}}{2 \pi}
-\]
+$$
 
 ### 描述 Test Mass 的运动
 
 对于两条 arm 上的间隔 $X_{n}$ 以及 $X_{e}$，我们可以用自由粒子的测地线偏离方程对其进行处理。对于实际测量的
-\[
+$$
 x = X_{n} - X_{e}
-\]
+$$
 这个变量在引力波下的变化满足
-\[
+$$
 x = x_{0} + \frac{p_{0}}{m/4} t + \int_{0}^{\infty} (L \tilde{h} + \tilde{x}_{BA}) e^{- i \Omega t} \, \frac{\dd{\Omega}}{2 \pi}
-\]
+$$

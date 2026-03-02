@@ -25,22 +25,22 @@ $$
 $$
 3.20 求两电子之间的卢瑟福散射截面。
 
-两个电子的电荷均为 $-e$，因此库仑势能为 $U(r) = \frac{1}{4\pi\epsilon_0} \frac{e^2}{r}$，其中 $r$ 是两电子之间的距离。在质心系中，两体问题可简化为一个质量为约化质量 $\mu = \frac{m}{2}$ 的粒子在中心势 $U(r)$ 中的运动，其中 $m$ 是电子质量。质心系中的动能记为 $E$。
+两个电子的电荷均为 $-e$，因此库仑势能为 $U(r) = \frac{1}{4\pi\epsilon_{0}} \frac{e^{2}}{r}$，其中 $r$ 是两电子之间的距离。在质心系中，两体问题可简化为一个质量为约化质量 $\mu = \frac{m}{2}$ 的粒子在中心势 $U(r)$ 中的运动，其中 $m$ 是电子质量。质心系中的动能记为 $E$。
 对于中心势 $U(r) = \frac{k}{r}$，散射角 $\theta$ 与瞄准半径$b$ 的关系为
 $$
 b = \frac{k}{2E} \cot \frac{\theta}{2}
 $$
 所以
 $$
-\left| \frac{db}{d\theta} \right| = \frac{k}{4E} \csc^2 \frac{\theta}{2}
+\left| \frac{db}{d\theta} \right| = \frac{k}{4E} \csc^{2} \frac{\theta}{2}
 $$
 利用 $\sin\theta = 2 \sin \frac{\theta}{2} \cos \frac{\theta}{2}$ 和 $\cot \frac{\theta}{2} = \frac{\cos \frac{\theta}{2}}{\sin \frac{\theta}{2}}$，有：
 $$
-\frac{b}{\sin\theta} = \frac{ \frac{k}{2E} \cot \frac{\theta}{2} }{ 2 \sin \frac{\theta}{2} \cos \frac{\theta}{2} } = \frac{k}{2E} \cdot \frac{\cos \frac{\theta}{2}}{\sin \frac{\theta}{2}} \cdot \frac{1}{2 \sin \frac{\theta}{2} \cos \frac{\theta}{2}} = \frac{k}{4E} \csc^2 \frac{\theta}{2}
+\frac{b}{\sin\theta} = \frac{\frac{k}{2E} \cot \frac{\theta}{2}}{2 \sin \frac{\theta}{2} \cos \frac{\theta}{2}} = \frac{k}{2E} \cdot \frac{\cos \frac{\theta}{2}}{\sin \frac{\theta}{2}} \cdot \frac{1}{2 \sin \frac{\theta}{2} \cos \frac{\theta}{2}} = \frac{k}{4E} \csc^{2} \frac{\theta}{2}
 $$
 
 $$
-\frac{d\sigma}{d\Omega} = \frac{b}{\sin\theta} \left| \frac{db}{d\theta} \right| = \left( \frac{k}{4E} \csc^2 \frac{\theta}{2} \right) \left( \frac{k}{4E} \csc^2 \frac{\theta}{2} \right) = \left( \frac{k}{4E} \right)^2 \csc^4 \frac{\theta}{2}
+\frac{d\sigma}{d\Omega} = \frac{b}{\sin\theta} \left| \frac{db}{d\theta} \right| = \left( \frac{k}{4E} \csc^{2} \frac{\theta}{2} \right) \left( \frac{k}{4E} \csc^{2} \frac{\theta}{2} \right) = \left( \frac{k}{4E} \right)^{2} \csc^{4} \frac{\theta}{2}
 $$
 因此，两电子之间卢瑟福散射的微分散射截面为：
 
@@ -73,7 +73,7 @@ $$
 $$
 \omega = \sqrt{\frac{g}{2 R}}
 $$
-4.4 原子之间的相互作用可用勒纳-琼斯势近似 $V(r) = \frac{A}{r^{12}} - \frac{B}{r^6}$, 其中$A > 0, B > 0$。由此计算氧分子中两原子的平衡距离以及振动频率（氧原子质量为 $m$）。
+4.4 原子之间的相互作用可用勒纳-琼斯势近似 $V(r) = \frac{A}{r^{12}} - \frac{B}{r^{6}}$, 其中$A > 0, B > 0$。由此计算氧分子中两原子的平衡距离以及振动频率（氧原子质量为 $m$）。
 
 平衡距离
 $$
@@ -112,6 +112,6 @@ $$
 $$
 所以运动角频率为
 $$
-\omega = \sqrt{ \frac{B}{2A} \frac{312 A}{m r_{0}^{8}} - \frac{84 B}{m r_{0}^{8}}} \\ =
+\omega = \sqrt{\frac{B}{2A} \frac{312 A}{m r_{0}^{8}} - \frac{84 B}{m r_{0}^{8}}} \\ =
 \sqrt{\frac{72 B}{m r_{0}^{8}}} = \sqrt{\frac{36 B^{2}}{m A}} \left( \frac{B}{2 A} \right)^{\frac{1}{6}} = \frac{6}{2^{\frac{1}{6}}} \sqrt{\frac{B^{\frac{7}{3}}}{A^{\frac{4}{3}} m}}
 $$

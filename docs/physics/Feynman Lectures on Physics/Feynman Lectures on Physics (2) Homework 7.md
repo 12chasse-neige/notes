@@ -16,63 +16,63 @@ $$
 $$
 
 $$
-\frac{\partial u^i}{\partial t} + (\vec{u} \cdot \nabla) u^i - f \epsilon^{ij} u^j + g \frac{\partial h}{\partial x^i} = 0
+\frac{\partial u^{i}}{\partial t} + (\vec{u} \cdot \nabla) u^{i} - f \epsilon^{ij} u^{j} + g \frac{\partial h}{\partial x^{i}} = 0
 $$
 
 其中 $f$ 为科里奥利力参数，$g$ 为重力加速度。请证明浅水波的运动方程可以写成以下两个连续性方程：
 
 $$
-\frac{\partial J^0}{\partial t} + \nabla \cdot \vec{J} = 0 \\
-J_0 = h(t, x, y) \\
+\frac{\partial J^{0}}{\partial t} + \nabla \cdot \vec{J} = 0 \\
+J_{0} = h(t, x, y) \\
 \vec{J} = h(t, x, y) \vec{u}(t, x, y)
 $$
 
 $$
-\frac{\partial \tilde{J}^0}{\partial t} + \nabla \cdot \vec{\tilde{J}} = 0 \\ 
-\tilde{J}^0 = \zeta(t, x, y) + f \\ 
+\frac{\partial \tilde{J}^{0}}{\partial t} + \nabla \cdot \vec{\tilde{J}} = 0 \\ 
+\tilde{J}^{0} = \zeta(t, x, y) + f \\ 
 \vec{\tilde{J}} = (\zeta(t, x, y) + f) \vec{u}(t, x, y) \\
-\zeta(t, x, y) = \frac{\partial u^2}{\partial x} - \frac{\partial u^1}{\partial y}
+\zeta(t, x, y) = \frac{\partial u^{2}}{\partial x} - \frac{\partial u^{1}}{\partial y}
 $$
 
 第一个方程表征的是浅水波高度的守恒方程，第二个方程描述的是涡旋 $\zeta$ 在存在科里奥利力的情况下的守恒方程。
 
 证明
 $$
-\frac{\partial J^0}{\partial t} + \nabla \cdot \vec{J} = \frac{\partial h}{\partial t} + \nabla \cdot (h \vec{u}) = \frac{\partial h}{\partial t} + \vec{u} \cdot \nabla h + h \nabla \cdot \vec{u} = 0
+\frac{\partial J^{0}}{\partial t} + \nabla \cdot \vec{J} = \frac{\partial h}{\partial t} + \nabla \cdot (h \vec{u}) = \frac{\partial h}{\partial t} + \vec{u} \cdot \nabla h + h \nabla \cdot \vec{u} = 0
 $$
 
 $$
-\frac{\partial \tilde{J}^0}{\partial t} + \nabla \cdot \vec{\tilde{J}} = \frac{\partial}{\partial t} (\zeta(t, x, y) + f) + \nabla \cdot ((\zeta(t, x, y) + f) \vec{u}(t, x, y)) \\ =
+\frac{\partial \tilde{J}^{0}}{\partial t} + \nabla \cdot \vec{\tilde{J}} = \frac{\partial}{\partial t} (\zeta(t, x, y) + f) + \nabla \cdot ((\zeta(t, x, y) + f) \vec{u}(t, x, y)) \\ =
 \frac{\partial \zeta}{\partial t} + (\nabla \zeta) \cdot \vec{u} + (\zeta + f) \nabla \cdot \vec{u}
 $$
 
 $$
-\frac{\partial}{\partial t} \zeta = \frac{\partial}{\partial t} (\frac{\partial u^2}{\partial x} - \frac{\partial u^1}{\partial y}) = \frac{\partial}{\partial x} (f \epsilon^{21} u^{1} - (\vec{u} \cdot \nabla) u^{2} - g \frac{\partial h}{\partial y}) - \frac{\partial}{\partial y} (f \epsilon^{12} u^{2} - (\vec{u} \cdot \nabla) u^{1} - g \frac{\partial h}{\partial x}) \\ =
+\frac{\partial}{\partial t} \zeta = \frac{\partial}{\partial t} (\frac{\partial u^{2}}{\partial x} - \frac{\partial u^{1}}{\partial y}) = \frac{\partial}{\partial x} (f \epsilon^{21} u^{1} - (\vec{u} \cdot \nabla) u^{2} - g \frac{\partial h}{\partial y}) - \frac{\partial}{\partial y} (f \epsilon^{12} u^{2} - (\vec{u} \cdot \nabla) u^{1} - g \frac{\partial h}{\partial x}) \\ =
 \frac{\partial}{\partial x} (-f u^{1} - (\vec{u} \cdot \nabla) u^{2} - g \frac{\partial h}{\partial y}) - \frac{\partial}{\partial y} (f u^{2} - (\vec{u} \cdot \nabla) u^{1} - g \frac{\partial h}{\partial x})
 $$
 
 $$
-(\nabla \zeta) \cdot \vec{u} = \frac{\partial}{\partial x}(\frac{\partial u^2}{\partial x} - \frac{\partial u^1}{\partial y}) u^{1} + \frac{\partial}{\partial y}(\frac{\partial u^2}{\partial x} - \frac{\partial u^1}{\partial y}) u^{2}
+(\nabla \zeta) \cdot \vec{u} = \frac{\partial}{\partial x}(\frac{\partial u^{2}}{\partial x} - \frac{\partial u^{1}}{\partial y}) u^{1} + \frac{\partial}{\partial y}(\frac{\partial u^{2}}{\partial x} - \frac{\partial u^{1}}{\partial y}) u^{2}
 $$
 
 $$
-(\zeta + f) \nabla \cdot \vec{u} = (\frac{\partial u^2}{\partial x} - \frac{\partial u^1}{\partial y} + f) (\frac{\partial u^{1}}{\partial x} + \frac{\partial u^{2}}{\partial y})
+(\zeta + f) \nabla \cdot \vec{u} = (\frac{\partial u^{2}}{\partial x} - \frac{\partial u^{1}}{\partial y} + f) (\frac{\partial u^{1}}{\partial x} + \frac{\partial u^{2}}{\partial y})
 $$
 
 所以
 $$
 \frac{\partial \zeta}{\partial t} + (\nabla \zeta) \cdot \vec{u} + (\zeta + f) \nabla \cdot \vec{u} \\ = 
 \frac{\partial}{\partial x} (-f u^{1} - (\vec{u} \cdot \nabla) u^{2} - g \frac{\partial h}{\partial y}) - \frac{\partial}{\partial y} (f u^{2} - (\vec{u} \cdot \nabla) u^{1} - g \frac{\partial h}{\partial x}) \\ +
-\frac{\partial}{\partial x}(\frac{\partial u^2}{\partial x} - \frac{\partial u^1}{\partial y}) u^{1} + \frac{\partial}{\partial y}(\frac{\partial u^2}{\partial x} - \frac{\partial u^1}{\partial y}) u^{2} \\ + 
-(\frac{\partial u^2}{\partial x} - \frac{\partial u^1}{\partial y} + f) (\frac{\partial u^{1}}{\partial x} + \frac{\partial u^{2}}{\partial y}) \\ = 
+\frac{\partial}{\partial x}(\frac{\partial u^{2}}{\partial x} - \frac{\partial u^{1}}{\partial y}) u^{1} + \frac{\partial}{\partial y}(\frac{\partial u^{2}}{\partial x} - \frac{\partial u^{1}}{\partial y}) u^{2} \\ + 
+(\frac{\partial u^{2}}{\partial x} - \frac{\partial u^{1}}{\partial y} + f) (\frac{\partial u^{1}}{\partial x} + \frac{\partial u^{2}}{\partial y}) \\ = 
 \frac{\partial}{\partial y} (u^{1} \frac{\partial u^{1}}{\partial x} +  u^{2} \frac{\partial u^{1}}{\partial y}) - \frac{\partial}{\partial x} (u^{1} \frac{\partial u^{2}}{\partial x} +  u^{2} \frac{\partial u^{2}}{\partial y}) \\ +
-u^{1} \frac{\partial}{\partial x}(\frac{\partial u^2}{\partial x} - \frac{\partial u^1}{\partial y}) + u^{2} \frac{\partial}{\partial y}(\frac{\partial u^2}{\partial x} - \frac{\partial u^1}{\partial y}) \\ + 
-(\frac{\partial u^2}{\partial x} - \frac{\partial u^1}{\partial y}) (\frac{\partial u^{1}}{\partial x} + \frac{\partial u^{2}}{\partial y}) = 0
+u^{1} \frac{\partial}{\partial x}(\frac{\partial u^{2}}{\partial x} - \frac{\partial u^{1}}{\partial y}) + u^{2} \frac{\partial}{\partial y}(\frac{\partial u^{2}}{\partial x} - \frac{\partial u^{1}}{\partial y}) \\ + 
+(\frac{\partial u^{2}}{\partial x} - \frac{\partial u^{1}}{\partial y}) (\frac{\partial u^{1}}{\partial x} + \frac{\partial u^{2}}{\partial y}) = 0
 $$
 
 #### 2. 浅水波运动方程与麦克斯韦方程组的类比
 
-(2). 通过一些观察，我们可以将流体的高度 $h(t, x, y)$ 与水平方向的流速场 $\vec{u}(t, x, y)$ 同 1+2 维的电场磁场类比起来。请证明，如果令  $B = h$, $E_i = \epsilon_{ij} h u_j$，则第一个浅水波运动方程(1.1)可以写成麦克斯韦方程组的一部分:
+(2). 通过一些观察，我们可以将流体的高度 $h(t, x, y)$ 与水平方向的流速场 $\vec{u}(t, x, y)$ 同 1+2 维的电场磁场类比起来。请证明，如果令  $B = h$, $E_{i} = \epsilon_{ij} h u_{j}$，则第一个浅水波运动方程(1.1)可以写成麦克斯韦方程组的一部分:
 
 $$
 \epsilon^{\mu \nu \rho} \partial_{\mu} \partial_{\nu} A_{\rho} = 0
@@ -155,24 +155,24 @@ $$
 (3). 考虑一个真实的一维 $N$ 个自旋链系统，即我们考虑一维的伊辛模型，其哈密顿量可以写为：
 
 $$
-H = -J \sum_{\langle ij \rangle} s_i s_j - h \sum_{i} s_i
+H = -J \sum_{\langle ij \rangle} s_{i} s_{j} - h \sum_{i} s_{i}
 $$
 
 对于一维的伊辛模型而言，我们可以解析的计算其自由能：
 
 $$
-F = -N k T \log(\lambda_1), \quad \lambda_1 = \sqrt{e^{\frac{2J}{T}} \sinh^2 \left( \frac{h}{T} \right) + e^{-\frac{2J}{T}}} + e^{\frac{J}{T}} \cosh \left( \frac{h}{T} \right)
+F = -N k T \log(\lambda_{1}), \quad \lambda_{1} = \sqrt{e^{\frac{2J}{T}} \sinh^{2} \left( \frac{h}{T} \right) + e^{-\frac{2J}{T}}} + e^{\frac{J}{T}} \cosh \left( \frac{h}{T} \right)
 $$
 
 请证明对于一维伊辛模型而言，其自由能对外磁场 $h$ 的导数在  $T \neq 0$ 的时候没有零点，即一维伊辛模型没有相变。
 
 证明
 $$
-\frac{d F}{d h} = - \frac{NkT}{\lambda_{1}} \left(\frac{e^{\frac{2J}{T}} \sinh (\frac{h}{T}) \cosh (\frac{h}{T}) \frac{1}{T}}{\sqrt{e^{\frac{2J}{T}} \sinh^2 \left( \frac{h}{T} \right) + e^{-\frac{2J}{T}}}} + e^{\frac{J}{T}} \sinh (\frac{h}{T}) \frac{1}{T} \right)
+\frac{d F}{d h} = - \frac{NkT}{\lambda_{1}} \left(\frac{e^{\frac{2J}{T}} \sinh (\frac{h}{T}) \cosh (\frac{h}{T}) \frac{1}{T}}{\sqrt{e^{\frac{2J}{T}} \sinh^{2} \left( \frac{h}{T} \right) + e^{-\frac{2J}{T}}}} + e^{\frac{J}{T}} \sinh (\frac{h}{T}) \frac{1}{T} \right)
 $$
 在  $T \neq 0$ 的时候，该导数若存在零点，则
 $$
-e^{\frac{2J}{T}} \sinh (\frac{h}{T}) \cosh (\frac{h}{T}) + e^{\frac{J}{T}} \sinh (\frac{h}{T}) \sqrt{e^{\frac{2J}{T}} \sinh^2 \left( \frac{h}{T} \right) + e^{-\frac{2J}{T}}} = 0
+e^{\frac{2J}{T}} \sinh (\frac{h}{T}) \cosh (\frac{h}{T}) + e^{\frac{J}{T}} \sinh (\frac{h}{T}) \sqrt{e^{\frac{2J}{T}} \sinh^{2} \left( \frac{h}{T} \right) + e^{-\frac{2J}{T}}} = 0
 $$
 
 $$
@@ -200,48 +200,48 @@ $$
 提示：考虑一个在引力作用下自由运动的粒子。根据等效原理，存在一个自由降落的坐标系 $\xi^{\alpha}$ ，粒子在这个坐标系里的运动方程是时空中的一条直线：
 
 $$
-\frac{d^2 \xi^{\alpha}}{d \tau^2} = 0
+\frac{d^{2} \xi^{\alpha}}{d \tau^{2}} = 0
 $$
 
 其中 $d \tau$ 为固有时。考虑一个任意的坐标系 $x^{\mu}$，则此时自由降落坐标 $\xi^{\alpha}$ 是 $x^{\mu}$ 的函数，此时我们从(3.1)出发，推导的在 $x^{\mu}$ 坐标下的运动方程即为一般的引力场中的运动方程。
 
-根据等效原理，在自由降落的坐标系 $\xi^\alpha$ 中，粒子的运动方程为直线：
+根据等效原理，在自由降落的坐标系 $\xi^{\alpha}$ 中，粒子的运动方程为直线：
 
 $$
-\frac{d^2 \xi^\alpha}{d\tau^2} = 0
+\frac{d^{2} \xi^{\alpha}}{d\tau^{2}} = 0
 $$
 
-现在转换到任意坐标系 $x^\mu$，其中 $\xi^\alpha$ 是 $x^\mu$ 的函数。利用链式法则：
+现在转换到任意坐标系 $x^{\mu}$，其中 $\xi^{\alpha}$ 是 $x^{\mu}$ 的函数。利用链式法则：
 
 一阶导数：
 $$
-\frac{d\xi^\alpha}{d\tau} = \frac{\partial \xi^\alpha}{\partial x^\mu} \frac{dx^\mu}{d\tau}
+\frac{d\xi^{\alpha}}{d\tau} = \frac{\partial \xi^{\alpha}}{\partial x^{\mu}} \frac{dx^{\mu}}{d\tau}
 $$
 二阶导数：
 $$
-\frac{d^2\xi^\alpha}{d\tau^2} = \frac{\partial^2 \xi^\alpha}{\partial x^\mu \partial x^\nu} \frac{dx^\mu}{d\tau} \frac{dx^\nu}{d\tau} + \frac{\partial \xi^\alpha}{\partial x^\mu} \frac{d^2x^\mu}{d\tau^2}
+\frac{d^{2}\xi^{\alpha}}{d\tau^{2}} = \frac{\partial^{2} \xi^{\alpha}}{\partial x^{\mu} \partial x^{\nu}} \frac{dx^{\mu}}{d\tau} \frac{dx^{\nu}}{d\tau} + \frac{\partial \xi^{\alpha}}{\partial x^{\mu}} \frac{d^{2x}^{\mu}}{d\tau^{2}}
 $$
-根据 $\frac{d^2\xi^\alpha}{d\tau^2} = 0$，代入得：
+根据 $\frac{d^{2}\xi^{\alpha}}{d\tau^{2}} = 0$，代入得：
 
 $$
-\frac{\partial^2 \xi^\alpha}{\partial x^\mu \partial x^\nu} \frac{dx^\mu}{d\tau} \frac{dx^\nu}{d\tau} + \frac{\partial \xi^\alpha}{\partial x^\mu} \frac{d^2x^\mu}{d\tau^2} = 0
+\frac{\partial^{2} \xi^{\alpha}}{\partial x^{\mu} \partial x^{\nu}} \frac{dx^{\mu}}{d\tau} \frac{dx^{\nu}}{d\tau} + \frac{\partial \xi^{\alpha}}{\partial x^{\mu}} \frac{d^{2x}^{\mu}}{d\tau^{2}} = 0
 $$
 
-乘以 $\frac{\partial x^\lambda}{\partial \xi^\alpha}$ 并利用 $\frac{\partial x^\lambda}{\partial \xi^\alpha} \frac{\partial \xi^\alpha}{\partial x^\mu} = \delta^\lambda_\mu$，得到：
+乘以 $\frac{\partial x^{\lambda}}{\partial \xi^{\alpha}}$ 并利用 $\frac{\partial x^{\lambda}}{\partial \xi^{\alpha}} \frac{\partial \xi^{\alpha}}{\partial x^{\mu}} = \delta^{\lambda}_{\mu}$，得到：
 
 $$
-\frac{d^2x^\lambda}{d\tau^2} + \Gamma^\lambda_{\mu\nu} \frac{dx^\mu}{d\tau} \frac{dx^\nu}{d\tau} = 0
+\frac{d^{2x}^{\lambda}}{d\tau^{2}} + \Gamma^{\lambda}_{\mu\nu} \frac{dx^{\mu}}{d\tau} \frac{dx^{\nu}}{d\tau} = 0
 $$
 
 其中克里斯托夫符号定义为：
 
 $$
-\Gamma^\lambda_{\mu\nu} = \frac{\partial x^\lambda}{\partial \xi^\alpha} \frac{\partial^2 \xi^\alpha}{\partial x^\mu \partial x^\nu}
+\Gamma^{\lambda}_{\mu\nu} = \frac{\partial x^{\lambda}}{\partial \xi^{\alpha}} \frac{\partial^{2} \xi^{\alpha}}{\partial x^{\mu} \partial x^{\nu}}
 $$
 
 所以在 $x^{\mu}$ 坐标下的运动方程即测地线方程为
 $$
-\frac{d^2x^\lambda}{d\tau^2} + \Gamma^\lambda_{\mu\nu} \frac{dx^\mu}{d\tau} \frac{dx^\nu}{d\tau} = 0
+\frac{d^{2x}^{\lambda}}{d\tau^{2}} + \Gamma^{\lambda}_{\mu\nu} \frac{dx^{\mu}}{d\tau} \frac{dx^{\nu}}{d\tau} = 0
 $$
 
 ### 4. 协变性，牛顿引力与爱因斯坦引力
@@ -278,7 +278,7 @@ $$
 
 #### 3. 牛顿引力的张量形式泊松方程
 
-(3). 假设牛顿引力中的引力势能也可以写成某个张量的 00 分量： $G_{00} = \nabla g_{00} = - \nabla^2 (1 + 2 \phi)$。请利用 $G_{00}$ 与 $T_{00}$ 重新写出牛顿引力满足的泊松方程。
+(3). 假设牛顿引力中的引力势能也可以写成某个张量的 00 分量： $G_{00} = \nabla g_{00} = - \nabla^{2} (1 + 2 \phi)$。请利用 $G_{00}$ 与 $T_{00}$ 重新写出牛顿引力满足的泊松方程。
 $$
 T_{00} = - \rho_{m} c^{2}
 $$

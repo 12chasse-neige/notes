@@ -9,7 +9,7 @@ $$
 |\psi\rangle = \cos\left(\frac{\theta}{2}\right) |0\rangle + e^{i\phi} \sin\left(\frac{\theta}{2}\right) |1\rangle.
 $$
 
-Show that the density matrix $\rho = |\psi\rangle\langle\psi|$ can be written as $\rho = \frac{1}{2} (I + \mathbf{a} \cdot \boldsymbol{\sigma})$ where $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ ($\sigma_{1,2,3}$ being the Pauli matrices) and $\mathbf{a} = (\sin\theta \cos\phi, \sin\theta \sin\phi, \cos\theta)$.
+Show that the density matrix $\rho = |\psi\rangle\langle\psi|$ can be written as $\rho = \frac{1}{2} (I + \mathbf{a} \cdot \boldsymbol{\sigma})$ where $\boldsymbol{\sigma} = (\sigma_{1}, \sigma_{2}, \sigma_{3})$ ($\sigma_{1,2,3}$ being the Pauli matrices) and $\mathbf{a} = (\sin\theta \cos\phi, \sin\theta \sin\phi, \cos\theta)$.
 $$
 \rho = \ket{\psi} \bra{\psi} = \left(  \cos\left(\frac{\theta}{2}\right) |0\rangle + e^{i\phi} \sin\left(\frac{\theta}{2}\right) |1\rangle \right) \left( \cos\left(\frac{\theta}{2}\right) \bra{0} + e^{- i\phi} \sin\left(\frac{\theta}{2}\right) \bra{1} \right) \\ =
 \cos^{2} \frac{\theta}{2} \ket{0} \bra{0} + \sin^{2} \frac{\theta}{2} \ket{1} \bra{1}  + \sin \frac{\theta}{2} \cos \frac{\theta}{2} \left(e^{i \phi} \ket{1} \bra{0} + e^{- i \phi} \ket{0} \bra{1}\right) \\ =
@@ -26,14 +26,14 @@ So the density matrix can be written as  $\rho = \frac{1}{2} (I + \mathbf{a} \cd
 
 **b)** A two-level system coupled by a radiation of frequency $\omega$ is governed by the Hamiltonian 
 $$
-H = H_0 + V = \frac{\hbar\omega_0}{2} (|1\rangle\langle 1| - |0\rangle\langle 0|) + \frac{\hbar\Omega}{2} (e^{+i\omega t} |0\rangle\langle 1| + e^{-i\omega t} |1\rangle\langle 0|)
+H = H_{0} + V = \frac{\hbar\omega_{0}}{2} (|1\rangle\langle 1| - |0\rangle\langle 0|) + \frac{\hbar\Omega}{2} (e^{+i\omega t} |0\rangle\langle 1| + e^{-i\omega t} |1\rangle\langle 0|)
 $$
  in the Schrödinger picture and under the rotating-wave approximation. Show that a state represented by Bloch vector $\mathbf{a}$ evolves as
 $$
 \frac{d\mathbf{a}}{dt} = \mathbf{W}' \times \mathbf{a}
 $$
 
-where $\mathbf{W}' = (\Omega_0 \cos\omega t, -\Omega_0 \sin\omega t, -\omega_0)$.
+where $\mathbf{W}' = (\Omega_{0} \cos\omega t, -\Omega_{0} \sin\omega t, -\omega_{0})$.
 
 Write the Hamiltonian in terms of the Pauli Matrices 
 $$
@@ -45,8 +45,8 @@ $$
 
 So the Hamiltonian can be represented as
 $$
-H = \frac{\hbar\omega_0}{2} (|1\rangle\langle 1| - |0\rangle\langle 0|) + \frac{\hbar\Omega}{2} (e^{+i\omega t} |0\rangle\langle 1| + e^{-i\omega t} |1\rangle\langle 0|) \\ =
-- \frac{\hbar \omega_{0}}{2} \sigma_{3} + \frac{\hbar \Omega}{2} (e^{i \omega t} \frac{1}{2}(\sigma_{1} + i \sigma_{2}) + e^{ -i \omega t} \frac{1}{2}(\sigma_{1} - i \sigma_{2})) \\ =
+H = \frac{\hbar\omega_{0}}{2} (|1\rangle\langle 1| - |0\rangle\langle 0|) + \frac{\hbar\Omega}{2} (e^{+i\omega t} |0\rangle\langle 1| + e^{-i\omega t} |1\rangle\langle 0|) \\ =
+- \frac{\hbar \omega_{0}}{2} \sigma_{3} + \frac{\hbar \Omega}{2} (e^{i \omega t} \frac{1}{2}(\sigma_{1} + i \sigma_{2}) + e^{-i \omega t} \frac{1}{2}(\sigma_{1} - i \sigma_{2})) \\ =
 - \frac{\hbar \omega_{0}}{2} \sigma_{3} + \frac{\hbar \Omega}{2} \sigma_{1} \cos \omega t  - \frac{\hbar \Omega}{2} \sigma_{2} \sin \omega t = \frac{\hbar}{2} \vec{W'} \cdot \vec{\sigma}
 $$
 Calculate the evolvement of the density matrix
@@ -63,7 +63,7 @@ $$
 \dv{\vec{a}}{t} = \vec{W'} \times \vec{a}
 $$
 
-**c)** Going to the rotating frame $|\psi\rangle \to |\psi_R\rangle = U |\psi\rangle$ where $|\psi\rangle$ represents the solution of the Hamiltonian in (b) and $U = |0\rangle\langle 0| + e^{+i\omega t} |1\rangle\langle 1|$. Find the new Hamiltonian $H_R$ in the rotating frame. Make use of your results in (b) or repeat the above calculation, find the corresponding $\mathbf{W}'$ in the interaction frame. Do your results agree with what we obtain from physical arguments in the lecture?
+**c)** Going to the rotating frame $|\psi\rangle \to |\psi_{R}\rangle = U |\psi\rangle$ where $|\psi\rangle$ represents the solution of the Hamiltonian in (b) and $U = |0\rangle\langle 0| + e^{+i\omega t} |1\rangle\langle 1|$. Find the new Hamiltonian $H_{R}$ in the rotating frame. Make use of your results in (b) or repeat the above calculation, find the corresponding $\mathbf{W}'$ in the interaction frame. Do your results agree with what we obtain from physical arguments in the lecture?
 
 Under the rotating frame basis
 $$
@@ -77,9 +77,9 @@ $$
 Therefore
 $$
 H_{R} = U H U^{\dagger} + i \hbar \dot{U}  U^{\dagger} \\ =
-(\ket{0} \bra{0} + e^{i \omega t} \ket{1} \bra{1}) (\frac{\hbar\omega_0}{2} (|1\rangle\langle 1| - |0\rangle\langle 0|) + \frac{\hbar\Omega}{2} (e^{+i\omega t} |0\rangle\langle 1| + e^{-i\omega t} |1\rangle\langle 0|)) (\ket{0} \bra{0} + e^{- i \omega t} \ket{1} \bra{1}) \\ + 
+(\ket{0} \bra{0} + e^{i \omega t} \ket{1} \bra{1}) (\frac{\hbar\omega_{0}}{2} (|1\rangle\langle 1| - |0\rangle\langle 0|) + \frac{\hbar\Omega}{2} (e^{+i\omega t} |0\rangle\langle 1| + e^{-i\omega t} |1\rangle\langle 0|)) (\ket{0} \bra{0} + e^{- i \omega t} \ket{1} \bra{1}) \\ + 
 i \hbar (i \omega e^{i \omega t} \ket{1} \bra{1}) (\ket{0} \bra{0} + e^{- i \omega t} \ket{1} \bra{1}) \\ =
-\frac{\hbar\omega_0}{2} (|1\rangle\langle 1| - |0\rangle\langle 0|) + \frac{\hbar\Omega}{2} (|0\rangle\langle 1| + |1\rangle\langle 0|)) - \hbar \omega \ket{1} \bra{1}
+\frac{\hbar\omega_{0}}{2} (|1\rangle\langle 1| - |0\rangle\langle 0|) + \frac{\hbar\Omega}{2} (|0\rangle\langle 1| + |1\rangle\langle 0|)) - \hbar \omega \ket{1} \bra{1}
 $$
 Transfer the Hamiltonian in terms of the Pauli Matrices
 $$
@@ -98,9 +98,9 @@ $$
 
 ### Question 2
 
-**a)** Calculate relative transition strengths of the $5S_{1/2} |F=2, m_F=2\rangle$ to $5P_{3/2} |F=3, m_F=2\rangle$ transition and of the $5S_{1/2} |F=2, m_F=1\rangle$ to $5P_{3/2} |F=2, m_F=1\rangle$. Do not use $6-j$ or $9-j$ formula given in Daniel Steck notes. Try to dissect $F$ into $J+I$, and then into $L+S+I$ step by step, obtaining the relevant Clebsch-Gordan coefficient using Mathematica or other means. Doing so would help you appreciate the details. (Note: the absolute values of your results may differ from those in the tables, but the relative value must be the same.) Using the experience you obtain from this exercise, can you see why $\Delta F=0,\pm1$ and $\Delta J=0,\pm1$ for electric dipole transition? Can spin-orbit coupling and hyperfine interaction alter the selection rules for $L$, i.e. $\Delta L=\pm1$? (In other words, is it possible to have, say, $2p-3p$ electric-dipole transition after we include spin-orbit coupling and hyperfine interactions?)
+**a)** Calculate relative transition strengths of the $5S_{1/2} |F=2, m_{F}=2\rangle$ to $5P_{3/2} |F=3, m_{F}=2\rangle$ transition and of the $5S_{1/2} |F=2, m_{F}=1\rangle$ to $5P_{3/2} |F=2, m_{F}=1\rangle$. Do not use $6-j$ or $9-j$ formula given in Daniel Steck notes. Try to dissect $F$ into $J+I$, and then into $L+S+I$ step by step, obtaining the relevant Clebsch-Gordan coefficient using Mathematica or other means. Doing so would help you appreciate the details. (Note: the absolute values of your results may differ from those in the tables, but the relative value must be the same.) Using the experience you obtain from this exercise, can you see why $\Delta F=0,\pm1$ and $\Delta J=0,\pm1$ for electric dipole transition? Can spin-orbit coupling and hyperfine interaction alter the selection rules for $L$, i.e. $\Delta L=\pm1$? (In other words, is it possible to have, say, $2p-3p$ electric-dipole transition after we include spin-orbit coupling and hyperfine interactions?)
 
-First, try to represent the state $5S_{1/2} |F=2, m_F=2\rangle$ and $5P_{3/2} |F=3, m_F=2\rangle$ in terms of the  $L+S+I$ states using the C-G coefficients 
+First, try to represent the state $5S_{1/2} |F=2, m_{F}=2\rangle$ and $5P_{3/2} |F=3, m_{F}=2\rangle$ in terms of the  $L+S+I$ states using the C-G coefficients 
 $$
 \ket{F = 2, m_{F} = 2} = \ket{L = 0, m_{L} = 0} \otimes \ket{S = \frac{1}{2}, m_{S} = \frac{1}{2}} \otimes \ket{I = \frac{3}{2}, m_{I} = \frac{3}{2}}
 $$
@@ -115,7 +115,7 @@ So the relative electric dipole transition strength between the two states can b
 $$
 \bra{F = 3, m_{F} = 2} e \hat{r} \cdot \vec{E} \ket{F = 2, m_{F} = 2} = \frac{1}{\sqrt{3}} \bra{L = 1, m_{L} = 0} e \hat{r} \cdot \vec{E} \ket{L = 0, m_{L} = 0}
 $$
-Similarly, also expand the $5S_{1/2} |F=2, m_F=1\rangle$ and $5P_{3/2} |F=2, m_F=1\rangle$ 
+Similarly, also expand the $5S_{1/2} |F=2, m_{F}=1\rangle$ and $5P_{3/2} |F=2, m_{F}=1\rangle$ 
 $$
 \ket{F = 2, m_{F} = 1} = \frac{1}{2} \ket{L = 0, m_{L} = 0} \otimes \ket{S = \frac{1}{2}, m_{S} = - \frac{1}{2}} \otimes \ket{I = \frac{3}{2}, m_{I} = \frac{3}{2}} \\ + 
 \frac{\sqrt{3}}{2} \ket{L = 0, m_{L} = 0} \otimes \ket{S = \frac{1}{2}, m_{S} = \frac{1}{2}} \otimes \ket{I = \frac{3}{2}, m_{I} = \frac{1}{2}}
@@ -152,11 +152,11 @@ or
 $$
 \Delta H = A \left(\frac{1}{2}(J_{+} I_{+} + J_{-} I_{-}) + J_{z} I_{z}\right)
 $$
-But the electric dipole operator acts only on the orbital part of the wavefunction and does not depend on spin or nuclear spin. Thus, the matrix element $\langle L_f | e \hat{r} \cdot \vec{E} | L_i \rangle$ must satisfy $\Delta L = \pm 1$ because it is a tensor operator of rank 1 in orbital angular momentum space (as the consequence of Wigner-Eckart Theorem).So even when states are labeled by $J$ or $F$ due to spin-orbit or hyperfine interactions, the orbital selection rule $\Delta L = \pm 1$ remains strict because the spin-orbit coupling or the hyperfine interactions won't affect the behavior of the orbit part of the wave function in the dipole matrix. When  $\Delta L = 0$,  the dipole matrix $\bra{J_{f}} e \hat{r} \cdot \vec{E} \ket{J_{i}}$ or   $\bra{F_{f}} e \hat{r} \cdot \vec{E} \ket{F_{i}}$ remains zero.
+But the electric dipole operator acts only on the orbital part of the wavefunction and does not depend on spin or nuclear spin. Thus, the matrix element $\langle L_{f} | e \hat{r} \cdot \vec{E} | L_{i} \rangle$ must satisfy $\Delta L = \pm 1$ because it is a tensor operator of rank 1 in orbital angular momentum space (as the consequence of Wigner-Eckart Theorem).So even when states are labeled by $J$ or $F$ due to spin-orbit or hyperfine interactions, the orbital selection rule $\Delta L = \pm 1$ remains strict because the spin-orbit coupling or the hyperfine interactions won't affect the behavior of the orbit part of the wave function in the dipole matrix. When  $\Delta L = 0$,  the dipole matrix $\bra{J_{f}} e \hat{r} \cdot \vec{E} \ket{J_{i}}$ or   $\bra{F_{f}} e \hat{r} \cdot \vec{E} \ket{F_{i}}$ remains zero.
 
-**b)** Using the Rb87 $5S_{1/2}$–$5P_{3/2}$ dipole matrix elements given in the tables below (do not calculate), check that the radiative lifetime of $5P_{3/2} |F=2, m_F=1\rangle$, $5P_{3/2} |F=1, m_F=0\rangle$, and $5P_{3/2} |F=3, m_F=3\rangle$ Zeeman sublevels are the same. Assuming for the time being that the spontaneous-emission transition rate between any two-states is proportional to the square of their dipole-matrix element.
+**b)** Using the Rb87 $5S_{1/2}$–$5P_{3/2}$ dipole matrix elements given in the tables below (do not calculate), check that the radiative lifetime of $5P_{3/2} |F=2, m_{F}=1\rangle$, $5P_{3/2} |F=1, m_{F}=0\rangle$, and $5P_{3/2} |F=3, m_{F}=3\rangle$ Zeeman sublevels are the same. Assuming for the time being that the spontaneous-emission transition rate between any two-states is proportional to the square of their dipole-matrix element.
 
-Suppose that the spontaneous-emission transition rate between any two-states is proportional to the square of their dipole-matrix element. So for the $5P_{3/2} |F=2, m_F=1\rangle$ state, the spontaneous-emission transition rate is proportional to
+Suppose that the spontaneous-emission transition rate between any two-states is proportional to the square of their dipole-matrix element. So for the $5P_{3/2} |F=2, m_{F}=1\rangle$ state, the spontaneous-emission transition rate is proportional to
 $$
 \frac{1}{8}, \frac{1}{8} \quad (\sigma^{-} \text{transitions}) \\
 \frac{1}{24}, \frac{1}{8} \quad (\pi \text{transitions}) \\
@@ -164,7 +164,7 @@ $$
 $$
 So the total transition rate is proportional to $\frac{1}{2}$.
 
-For the $5P_{3/2} |F=1, m_F=0\rangle$ state, the spontaneous-emission transition rate is proportional to
+For the $5P_{3/2} |F=1, m_{F}=0\rangle$ state, the spontaneous-emission transition rate is proportional to
 $$
 \frac{1}{40}, \frac{5}{24} \quad (\sigma^{-} \text{transitions}) \\
 \frac{1}{30}, 0 \quad (\pi \text{transitions}) \\
@@ -172,13 +172,13 @@ $$
 $$
 So the total transition rate is proportional to $\frac{1}{2}$.
 
-For the $5P_{3/2} |F=3, m_F=3\rangle$ state, the spontaneous-emission transition rate is proportional to
+For the $5P_{3/2} |F=3, m_{F}=3\rangle$ state, the spontaneous-emission transition rate is proportional to
 $$
 \frac{1}{2} \quad (\sigma^{-} \text{transitions}) 
 $$
 So the total transition rate is proportional to $\frac{1}{2}$.
 
-Above showed that the radiative lifetime of $5P_{3/2} |F=2, m_F=1\rangle$, $5P_{3/2} |F=1, m_F=0\rangle$, and $5P_{3/2} |F=3, m_F=3\rangle$ Zeeman sublevels are the same. 
+Above showed that the radiative lifetime of $5P_{3/2} |F=2, m_{F}=1\rangle$, $5P_{3/2} |F=1, m_{F}=0\rangle$, and $5P_{3/2} |F=3, m_{F}=3\rangle$ Zeeman sublevels are the same. 
 
 <img src="./Atomic and Molecular Physics Homework 2.assets/image-20251021103426814.png" alt="image-20251021103426814">
 
@@ -195,11 +195,11 @@ The graphs on the right show the Zeeman shift of the $5S_{1/2}$ and $5P_{3/2}$ h
 Transitions within the $5S_{1/2}$ state are magnetic dipole transitions. The selection rules for magnetic dipole transitions are:
 
 - $\Delta F = 0, \pm 1$ (but $F=0 \to F=0$ is forbidden).
-- $\Delta m_F = 0, \pm 1$.
+- $\Delta m_{F} = 0, \pm 1$.
 
 So all magnetic transitions between the  $5S_{1/2}$ hyperfine levels are allowed.
 
-**b)** An experimenter prepares a quantum state in the $5S_{1/2} |F=1, m_F=-1\rangle$ eigenstate. He then adiabatically sweeps the external magnetic field to 10000 G. After that he would like to transfer the atomic state to all other states in the $5S_{1/2}$ manifold using Rabi transitions. Discuss in detail how he could achieve that? For each transition, specify the polarization of the field he should use.
+**b)** An experimenter prepares a quantum state in the $5S_{1/2} |F=1, m_{F}=-1\rangle$ eigenstate. He then adiabatically sweeps the external magnetic field to 10000 G. After that he would like to transfer the atomic state to all other states in the $5S_{1/2}$ manifold using Rabi transitions. Discuss in detail how he could achieve that? For each transition, specify the polarization of the field he should use.
 
 Because the experimenter want to have transitions within the $5S_{1/2}$ state, he have to use magnetic dipole transitions. For magnetic dipole Transitions,
 $$
@@ -212,53 +212,53 @@ $$
 
 Under high magnetic field like 10000G, the hyperfine structure of the $5S_{1/2}$ states of the Rb87 atoms can be represented in basis of $\ket{J} \otimes \ket{I}$. So using the selection rules for magnetic dipole transitions, we can deduce that the possible transition will take place when $\Delta L = 0$, $\Delta I = 0, \pm1$, $\Delta J = 0, \pm 1$. 
 
-The state $5S_{1/2} |F=1, m_F=-1\rangle$ will change into 
+The state $5S_{1/2} |F=1, m_{F}=-1\rangle$ will change into 
 $$
 \ket{m_{J} = - \frac{1}{2}, m_{I} = - \frac{1}{2}}
 $$
 under high magnetic field. So we can design sequence of transitions to all states as follows:
 
-1.From initial $|m_J = -1/2, m_I = -1/2\rangle$ to $|m_J = 1/2, m_I = -1/2\rangle$
+1.From initial $|m_{J} = -1/2, m_{I} = -1/2\rangle$ to $|m_{J} = 1/2, m_{I} = -1/2\rangle$
 
-- Type: Electron spin flip ($\Delta m_J = +1$, $\Delta m_I = 0$)  
+- Type: Electron spin flip ($\Delta m_{J} = +1$, $\Delta m_{I} = 0$)  
 - Polarization: $\sigma^+$  
-- This transition directly populates $|m_J = 1/2, m_I = -1/2\rangle$.
+- This transition directly populates $|m_{J} = 1/2, m_{I} = -1/2\rangle$.
 
-2.From initial $|m_J = -1/2, m_I = -1/2\rangle$ to $|m_J = -1/2, m_I = -3/2\rangle$
+2.From initial $|m_{J} = -1/2, m_{I} = -1/2\rangle$ to $|m_{J} = -1/2, m_{I} = -3/2\rangle$
 
-- Type: Nuclear spin flip ($\Delta m_I = -1$, $\Delta m_J = 0$)  
+- Type: Nuclear spin flip ($\Delta m_{I} = -1$, $\Delta m_{J} = 0$)  
 - Polarization: $\sigma^-$  
-- This transition directly populates $|m_J = -1/2, m_I = -3/2\rangle$.
+- This transition directly populates $|m_{J} = -1/2, m_{I} = -3/2\rangle$.
 
-3.From initial $|m_J = -1/2, m_I = -1/2\rangle$ to $|m_J = -1/2, m_I = 1/2\rangle$
+3.From initial $|m_{J} = -1/2, m_{I} = -1/2\rangle$ to $|m_{J} = -1/2, m_{I} = 1/2\rangle$
 
-- Type: Nuclear spin flip ($\Delta m_I = +1$, $\Delta m_J = 0$)  
+- Type: Nuclear spin flip ($\Delta m_{I} = +1$, $\Delta m_{J} = 0$)  
 - Polarization: $\sigma^+$  
-- This transition directly populates $|m_J = -1/2, m_I = 1/2\rangle$. 
+- This transition directly populates $|m_{J} = -1/2, m_{I} = 1/2\rangle$. 
 
-4.From $|m_J = -1/2, m_I = 1/2\rangle$ to $|m_J = -1/2, m_I = 3/2\rangle$
+4.From $|m_{J} = -1/2, m_{I} = 1/2\rangle$ to $|m_{J} = -1/2, m_{I} = 3/2\rangle$
 
-- Type: Nuclear spin flip ($\Delta m_I = +1$, $\Delta m_J = 0$)  
+- Type: Nuclear spin flip ($\Delta m_{I} = +1$, $\Delta m_{J} = 0$)  
 - Polarization: $\sigma^+$  
-- This transition populates $|m_J = -1/2, m_I = 3/2\rangle$ from the state reached in step 3.
+- This transition populates $|m_{J} = -1/2, m_{I} = 3/2\rangle$ from the state reached in step 3.
 
-5.From $|m_J = 1/2, m_I = -1/2\rangle$ to $|m_J = 1/2, m_I = -3/2\rangle$
+5.From $|m_{J} = 1/2, m_{I} = -1/2\rangle$ to $|m_{J} = 1/2, m_{I} = -3/2\rangle$
 
-- Type: Nuclear spin flip ($\Delta m_I = -1$, $\Delta m_J = 0$)  
+- Type: Nuclear spin flip ($\Delta m_{I} = -1$, $\Delta m_{J} = 0$)  
 - Polarization: $\sigma^-$  
-- This transition populates $|m_J = 1/2, m_I = -3/2\rangle$ from the state reached in step 1.
+- This transition populates $|m_{J} = 1/2, m_{I} = -3/2\rangle$ from the state reached in step 1.
 
-6.From $|m_J = 1/2, m_I = -1/2\rangle$ to $|m_J = 1/2, m_I = 1/2\rangle$
+6.From $|m_{J} = 1/2, m_{I} = -1/2\rangle$ to $|m_{J} = 1/2, m_{I} = 1/2\rangle$
 
-- Type: Nuclear spin flip ($\Delta m_I = +1$, $\Delta m_J = 0$)  
+- Type: Nuclear spin flip ($\Delta m_{I} = +1$, $\Delta m_{J} = 0$)  
 - Polarization: $\sigma^+$  
-- This transition populates $|m_J = 1/2, m_I = 1/2\rangle$ from the state reached in step 1.
+- This transition populates $|m_{J} = 1/2, m_{I} = 1/2\rangle$ from the state reached in step 1.
 
-7.From $|m_J = 1/2, m_I = 1/2\rangle$ to $|m_J = 1/2, m_I = 3/2\rangle$
+7.From $|m_{J} = 1/2, m_{I} = 1/2\rangle$ to $|m_{J} = 1/2, m_{I} = 3/2\rangle$
 
-- Type: Nuclear spin flip ($\Delta m_I = +1$, $\Delta m_J = 0$)  
+- Type: Nuclear spin flip ($\Delta m_{I} = +1$, $\Delta m_{J} = 0$)  
 - Polarization: $\sigma^+$  
-- This transition populates $|m_J = 1/2, m_I = 3/2\rangle$ from the state reached in step 6.
+- This transition populates $|m_{J} = 1/2, m_{I} = 3/2\rangle$ from the state reached in step 6.
 
 **c)** Discuss in detail the electric-dipole transition rules from the $5S_{1/2}$ to $5P_{3/2}$ states at low and high magnetic fields.
 

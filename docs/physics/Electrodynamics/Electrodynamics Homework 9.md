@@ -10,7 +10,7 @@ Chasse_neige
 
 ##### 3.14 电荷体均匀分布的刚性小球
 
-电荷体均匀分布的刚性小球，其总电荷为 $Q$，半径为 $R_0$，它以角速度 $\omega$ 绕自身某一直径转动，求：
+电荷体均匀分布的刚性小球，其总电荷为 $Q$，半径为 $R_{0}$，它以角速度 $\omega$ 绕自身某一直径转动，求：
 
 1.它的磁矩；
 $$
@@ -18,11 +18,11 @@ $$
 $$
 所以磁矩为
 $$
-\vec{m} = \frac{1}{2} \int \vec{r} \times \vec{j} d \tau = \int_{0}^{\pi} \int_{0}^{R_{0}} r \sin \theta \frac{3 Q}{8 \pi R_{0}^{3}} \omega r \sin \theta \, 2 \pi r^{2} \sin \theta \, d \theta \, d r \hat{z} \\ = \frac{Q R_0^2}{5} \omega \hat{z}
+\vec{m} = \frac{1}{2} \int \vec{r} \times \vec{j} d \tau = \int_{0}^{\pi} \int_{0}^{R_{0}} r \sin \theta \frac{3 Q}{8 \pi R_{0}^{3}} \omega r \sin \theta \, 2 \pi r^{2} \sin \theta \, d \theta \, d r \hat{z} \\ = \frac{Q R_{0}^{2}}{5} \omega \hat{z}
 $$
-2.它的磁矩与自转动量矩之比（设质量 $m_0$ 是均匀分布的）。
+2.它的磁矩与自转动量矩之比（设质量 $m_{0}$ 是均匀分布的）。
 $$
-\frac{m}{I} = \frac{\frac{Q R_0^2}{5} \omega}{\frac{2}{5} m R_{0}^{2} \omega} = \frac{Q}{2 m}
+\frac{m}{I} = \frac{\frac{Q R_{0}^{2}}{5} \omega}{\frac{2}{5} m R_{0}^{2} \omega} = \frac{Q}{2 m}
 $$
 
 ##### 3.15 小永磁体的受力
@@ -54,7 +54,7 @@ $$
 D_{11} = \int \frac{Q}{\frac{4 \pi}{3} abc} (2 x^{2} - (y^{2} + z^{2})) \, dxdydz \\ =
 \int \frac{3Q}{4 \pi abc} (2(a r \sin\theta \cos\phi)^{2} - (b r \sin\theta \sin\phi)^{2} - (c r \cos\theta)^{2}) abc \, r^{2} dr \, \sin \theta d \theta \, d \phi \\ =
 \frac{3 Q}{4 \pi}  (2 a^{2} \int_{0}^{1} r^{4} dr \int_{0}^{\pi} \sin^{3} \theta d \theta \int_{0}^{2 \pi} \cos^{2} \phi d \phi) \\ - (b^{2} \int_{0}^{1} r^{4} dr \int_{0}^{\pi} \sin^{3} \theta d \theta \int_{0}^{2 \pi} \sin^{2} \phi d \phi) - (c^{2} \int_{0}^{1} r^{4} dr \int_{0}^{\pi} \cos^{2} \theta \sin \theta d \theta \int_{0}^{2 \pi} d \phi) \\ =
-\frac{3Q}{4 \pi} (\frac{8 \pi }{15} a^{2} - \frac{4 \pi}{15} b^{2} - \frac{4 \pi}{15} c^{2}) \\ =
+\frac{3Q}{4 \pi} (\frac{8 \pi}{15} a^{2} - \frac{4 \pi}{15} b^{2} - \frac{4 \pi}{15} c^{2}) \\ =
 \frac{Q}{5} (2 a^{2} - b^{2} - c^{2})
 $$
 同理，积分得
@@ -117,11 +117,11 @@ W = \int d\tau \vec{j} \cdot \vec{A}
 $$
 其中$\vec{A}$是外磁场的矢势。请利用上面结果证明这个电流体系的多级展开为
 $$
-W = \sum_{n=0}^{\infty} W_n, \quad W_n = \frac{1}{n!} \sum_{i_1,\cdots,i_n} \vec{J}_{i_1\cdots i_n} \cdot \left[ \frac{\partial^n}{\partial x_{i_1}\cdots \partial x_{i_n}} \vec{A}(\vec{r}) \right]
+W = \sum_{n=0}^{\infty} W_{n}, \quad W_{n} = \frac{1}{n!} \sum_{i_{1},\cdots,i_{n}} \vec{J}_{i_{1}\cdots i_{n}} \cdot \left[ \frac{\partial^{n}}{\partial x_{i_{1}}\cdots \partial x_{i_{n}}} \vec{A}(\vec{r}) \right]
 $$
 特别地，
 $$
-W_0 = 0, \quad W_1 = \vec{m} \cdot \vec{B}
+W_{0} = 0, \quad W_{1} = \vec{m} \cdot \vec{B}
 $$
 
 证明：
@@ -131,7 +131,7 @@ W = \int d\tau \vec{j} \cdot \vec{A} = \int d \tau \vec{j} \cdot \sum_{n} \frac{
 $$
 其中
 $$
-W_n = \frac{1}{n!} \sum_{i_1,\cdots,i_n} \vec{J}_{i_1\cdots i_n} \cdot \left[ \frac{\partial^n}{\partial x_{i_1}\cdots \partial x_{i_n}} \vec{A}(\vec{0}) \right]
+W_{n} = \frac{1}{n!} \sum_{i_{1},\cdots,i_{n}} \vec{J}_{i_{1}\cdots i_{n}} \cdot \left[ \frac{\partial^{n}}{\partial x_{i_{1}}\cdots \partial x_{i_{n}}} \vec{A}(\vec{0}) \right]
 $$
 $$
 \vec{J}_{i_{1} i_{2} \cdots i_{n}} = \int d \tau \vec{j} x_{i_{1}} x_{i_{2}} \cdots x_{i_{n}}
@@ -157,11 +157,11 @@ W_{1} = \frac{1}{1!} \sum_{i} \vec{J}_{i} \cdot \frac{\partial}{\partial x_{i}} 
 $$
 (f) 试证电流体系在外磁场中受力的多级展开为
 $$
-\vec{F} = \sum_{n=0}^{\infty} \vec{F}_n, \quad \vec{F}_n = \frac{1}{n!} \sum_{i_1,\cdots,i_n} \vec{J}_{i_1\cdots i_n} \times \left[ \frac{\partial^n}{\partial x_{i_1}\cdots \partial x_{i_n}} \vec{B}(\vec{r}) \right]
+\vec{F} = \sum_{n=0}^{\infty} \vec{F}_{n}, \quad \vec{F}_{n} = \frac{1}{n!} \sum_{i_{1},\cdots,i_{n}} \vec{J}_{i_{1}\cdots i_{n}} \times \left[ \frac{\partial^{n}}{\partial x_{i_{1}}\cdots \partial x_{i_{n}}} \vec{B}(\vec{r}) \right]
 $$
 特别地，
 $$
-\vec{F}_0 = 0, \quad \vec{F}_1 = (\nabla \vec{B}) \cdot \vec{m}
+\vec{F}_{0} = 0, \quad \vec{F}_{1} = (\nabla \vec{B}) \cdot \vec{m}
 $$
 
 证明：
@@ -171,7 +171,7 @@ $$
 $$
 其中
 $$
-W_n = \frac{1}{n!} \sum_{i_1,\cdots,i_n} \vec{J}_{i_1\cdots i_n} \times \left[ \frac{\partial^n}{\partial x_{i_1}\cdots \partial x_{i_n}} \vec{B}(\vec{0}) \right]
+W_{n} = \frac{1}{n!} \sum_{i_{1},\cdots,i_{n}} \vec{J}_{i_{1}\cdots i_{n}} \times \left[ \frac{\partial^{n}}{\partial x_{i_{1}}\cdots \partial x_{i_{n}}} \vec{B}(\vec{0}) \right]
 $$
 
 $$
@@ -192,25 +192,25 @@ $$
 
  (g) 试证电流体系在外磁场中受力矩的多级展开为
 $$
-\vec{L} = \sum_{n=0}^{\infty} \vec{L}_n, \quad \text{其中:} \quad \vec{J}_{i_1\cdots i_n} = \sum_{i} \vec{e}_i J^i_{i_1\cdots i_n}
+\vec{L} = \sum_{n=0}^{\infty} \vec{L}_{n}, \quad \text{其中:} \quad \vec{J}_{i_{1}\cdots i_{n}} = \sum_{i} \vec{e}_{i} J^{i}_{i_{1}\cdots i_{n}}
 $$
 $$
-\vec{L}_n = \frac{1}{n!} \sum_{i,i_1,\cdots,i_n} \left\{ \vec{J}_{i i_1\cdots i_n} \left[ \frac{\partial^n}{\partial x_{i_1}\cdots \partial x_{i_n}} B_i(\vec{r}) \right] - J^i_{i i_1\cdots i_n} \left[ \frac{\partial^n}{\partial x_{i_1}\cdots \partial x_{i_n}} \vec{B}(\vec{r}) \right] \right\}
+\vec{L}_{n} = \frac{1}{n!} \sum_{i,i_{1},\cdots,i_{n}} \left\{ \vec{J}_{i i_{1}\cdots i_{n}} \left[ \frac{\partial^{n}}{\partial x_{i_{1}}\cdots \partial x_{i_{n}}} B_{i}(\vec{r}) \right] - J^{i}_{i i_{1}\cdots i_{n}} \left[ \frac{\partial^{n}}{\partial x_{i_{1}}\cdots \partial x_{i_{n}}} \vec{B}(\vec{r}) \right] \right\}
 $$
 特别地，
 $$
-\vec{L}_0 = \vec{m} \times \vec{B}
+\vec{L}_{0} = \vec{m} \times \vec{B}
 $$
 
 证明：
 $$
 \vec{L} = \int d \tau \vec{r} \times (\vec{j} \times \vec{B}) = \int d \tau \vec{j} (\vec{r} \cdot \vec{B}) - \vec{B} (\vec{r} \cdot \vec{j}) \\= 
 \int \vec{j} \left(\vec{r} \cdot \sum_{n} \frac{1}{n!} \sum_{i_{1}, i_{2}, \cdots, i_{n}} x_{i_{1}} x_{i_{2}} \cdots x_{i_{n}} \frac{\partial^{n}}{\partial x_{i_{1}} \partial x_{i_{2}} \cdots \partial x_{i_{n}}} \vec{B} (\vec{0}) \right) \\ - (\vec{j} \cdot \vec{r})  \sum_{n} \frac{1}{n!} \sum_{i_{1}, i_{2}, \cdots, i_{n}} x_{i_{1}} x_{i_{2}} \cdots x_{i_{n}} \frac{\partial^{n}}{\partial x_{i_{1}} \partial x_{i_{2}} \cdots \partial x_{i_{n}}} \vec{B} (\vec{0}) d \tau \\ = 
-\sum_{n} \frac{1}{n!} \sum_{i,i_1,\cdots,i_n} \left\{ \vec{J}_{i i_1\cdots i_n} \left[ \frac{\partial^n}{\partial x_{i_1}\cdots \partial x_{i_n}} B_i(\vec{r}) \right] - J^i_{i i_1\cdots i_n} \left[ \frac{\partial^n}{\partial x_{i_1}\cdots \partial x_{i_n}} \vec{B}(\vec{r}) \right] \right\}= \sum_{n} \vec{L}_{n}
+\sum_{n} \frac{1}{n!} \sum_{i,i_{1},\cdots,i_{n}} \left\{ \vec{J}_{i i_{1}\cdots i_{n}} \left[ \frac{\partial^{n}}{\partial x_{i_{1}}\cdots \partial x_{i_{n}}} B_{i}(\vec{r}) \right] - J^{i}_{i i_{1}\cdots i_{n}} \left[ \frac{\partial^{n}}{\partial x_{i_{1}}\cdots \partial x_{i_{n}}} \vec{B}(\vec{r}) \right] \right\}= \sum_{n} \vec{L}_{n}
 $$
 其中
 $$
-\vec{L}_n = \frac{1}{n!} \sum_{i,i_1,\cdots,i_n} \left\{ \vec{J}_{i i_1\cdots i_n} \left[ \frac{\partial^n}{\partial x_{i_1}\cdots \partial x_{i_n}} B_i(\vec{r}) \right] - J^i_{i i_1\cdots i_n} \left[ \frac{\partial^n}{\partial x_{i_1}\cdots \partial x_{i_n}} \vec{B}(\vec{r}) \right] \right\}
+\vec{L}_{n} = \frac{1}{n!} \sum_{i,i_{1},\cdots,i_{n}} \left\{ \vec{J}_{i i_{1}\cdots i_{n}} \left[ \frac{\partial^{n}}{\partial x_{i_{1}}\cdots \partial x_{i_{n}}} B_{i}(\vec{r}) \right] - J^{i}_{i i_{1}\cdots i_{n}} \left[ \frac{\partial^{n}}{\partial x_{i_{1}}\cdots \partial x_{i_{n}}} \vec{B}(\vec{r}) \right] \right\}
 $$
 
 $$
@@ -232,17 +232,17 @@ $$
 
 ##### 5.10 均匀永磁磁体小球的辐射场和能流
 
-半径为 $R_0$ 的均匀永磁磁体小球，磁化强度为 $\vec{M}_0$，球以恒定角速度 $\omega$ 绕通过球心而垂直于 $\vec{M}_0$ 的轴旋转，设 $R_0 \omega \ll c$，求辐射场和能流。
+半径为 $R_{0}$ 的均匀永磁磁体小球，磁化强度为 $\vec{M}_{0}$，球以恒定角速度 $\omega$ 绕通过球心而垂直于 $\vec{M}_{0}$ 的轴旋转，设 $R_{0} \omega \ll c$，求辐射场和能流。
 
 提示：
 
-- $\vec{M}_0$ 以角速度 $\omega$ 转动，可分解为相位差为 $\pi/2$ 的互相垂直的线振动（参阅第四章习题5）。
+- $\vec{M}_{0}$ 以角速度 $\omega$ 转动，可分解为相位差为 $\pi/2$ 的互相垂直的线振动（参阅第四章习题5）。
 - 直角坐标基矢与球坐标基矢的变换关系为：
   $$
   \begin{pmatrix}
-  e_x \\
-  e_y \\
-  e_z
+  e_{x} \\
+  e_{y} \\
+  e_{z}
   \end{pmatrix}
   =
   \begin{pmatrix}
@@ -251,23 +251,23 @@ $$
   \cos\theta & -\sin\theta & 0
   \end{pmatrix}
   \begin{pmatrix}
-  e_r \\
-  e_\theta \\
-  e_\phi
+  e_{r} \\
+  e_{\theta} \\
+  e_{\phi}
   \end{pmatrix}
   $$
 
 答案：
 $$
-\vec{B} = \frac{\mu_0 \omega^2 R_0^3 M_0}{3 c^2 R} (e_\theta \cos\theta + i e_\phi) e^{i(kR - \omega t + \phi)}
+\vec{B} = \frac{\mu_{0} \omega^{2} R_{0}^{3} M_{0}}{3 c^{2} R} (e_{\theta} \cos\theta + i e_{\phi}) e^{i(kR - \omega t + \phi)}
 $$
 
 $$
-\vec{E} = \frac{\mu_0 \omega^2 R_0^3 M_0}{3 c R} (i e_\theta - e_\phi \cos\theta) e^{i(kR - \omega t + \phi)}
+\vec{E} = \frac{\mu_{0} \omega^{2} R_{0}^{3} M_{0}}{3 c R} (i e_{\theta} - e_{\phi} \cos\theta) e^{i(kR - \omega t + \phi)}
 $$
 
 $$
-\vec{S} = \frac{\mu_0 \omega^4 R_0^6 M_0^2}{18 c^3 R^2} (1 + \cos^2\theta) e_R
+\vec{S} = \frac{\mu_{0} \omega^{4} R_{0}^{6} M_{0}^{2}}{18 c^{3} R^{2}} (1 + \cos^{2}\theta) e_{R}
 $$
 
 ##### 5.11 带电粒子的辐射场和能流
@@ -276,41 +276,41 @@ $$
 
 答案：
 $$
-\vec{B} = \frac{\mu_0 \omega^2 e a}{4 \pi c R} (e_\theta \cos\theta - i e_\phi) e^{i(kR - \omega t + \phi)}
+\vec{B} = \frac{\mu_{0} \omega^{2} e a}{4 \pi c R} (e_{\theta} \cos\theta - i e_{\phi}) e^{i(kR - \omega t + \phi)}
 $$
 
 $$
-\vec{E} = \frac{\mu_0 \omega^2 e a}{4 \pi c^2 R} (e_\theta \cos\theta + i e_\phi) e^{i(kR - \omega t + \phi)}
+\vec{E} = \frac{\mu_{0} \omega^{2} e a}{4 \pi c^{2} R} (e_{\theta} \cos\theta + i e_{\phi}) e^{i(kR - \omega t + \phi)}
 $$
 
 $$
-\vec{S} = \frac{\mu_0 \omega^4 e^2 a^2}{32 \pi^2 c R^2} (1 + \cos^2\theta) e_R
+\vec{S} = \frac{\mu_{0} \omega^{4} e^{2} a^{2}}{32 \pi^{2} c R^{2}} (1 + \cos^{2}\theta) e_{R}
 $$
 
 ##### 5.12 电偶极子的辐射场和能流
 
-设有一电矩振幅为 $p_0$，频率为 $\omega$ 的电偶极子距理想导体平面为 $a/2$ 处，$p_0$ 平行于导体平面。设 $a \ll \lambda$，求在 $R \gg \lambda$ 处的电磁场及辐射能流。
+设有一电矩振幅为 $p_{0}$，频率为 $\omega$ 的电偶极子距理想导体平面为 $a/2$ 处，$p_{0}$ 平行于导体平面。设 $a \ll \lambda$，求在 $R \gg \lambda$ 处的电磁场及辐射能流。
 
 答案：
 $$
-\vec{E} = \frac{\mu_0 \omega^3 p_0 a}{4 \pi c R} (-\cos^2\theta \cos\phi e_\theta + \cos\theta \sin\phi e_\phi) e^{i(kR - \omega t)}
+\vec{E} = \frac{\mu_{0} \omega^{3} p_{0} a}{4 \pi c R} (-\cos^{2}\theta \cos\phi e_{\theta} + \cos\theta \sin\phi e_{\phi}) e^{i(kR - \omega t)}
 $$
 
 $$
-\vec{B} = \frac{\mu_0 \omega^3 p_0 a}{4 \pi c^2 R} (-\cos\theta \sin\phi e_\theta + \cos^2\theta \cos\phi e_\phi) e^{i(kR - \omega t)}
+\vec{B} = \frac{\mu_{0} \omega^{3} p_{0} a}{4 \pi c^{2} R} (-\cos\theta \sin\phi e_{\theta} + \cos^{2}\theta \cos\phi e_{\phi}) e^{i(kR - \omega t)}
 $$
 
 $$
-\vec{S} = \frac{\mu_0 \omega^6 p_0^2 a^2}{32 \pi^2 c^3 R^2} (\cos^4\theta \cos^2\phi + \cos^2\theta \sin^2\phi) e_R
+\vec{S} = \frac{\mu_{0} \omega^{6} p_{0}^{2} a^{2}}{32 \pi^{2} c^{3} R^{2}} (\cos^{4}\theta \cos^{2}\phi + \cos^{2}\theta \sin^{2}\phi) e_{R}
 $$
 
 ##### 5.13 绝缘介质球的辐射场和能流
 
-设有线偏振平面波 $\vec{E} = E_0 e^{i(kz - \omega t)}$ 照射到一个绝缘介质球上（$E_0$ 在 $z$ 方向），引起介质球极化，极化矢量 $\vec{P}$ 是随时间变化的，因而产生辐射。设平面波的波长 $2\pi/k$ 远大于球半径 $R_0$，求介质球所产生的辐射场和能流。
+设有线偏振平面波 $\vec{E} = E_{0} e^{i(kz - \omega t)}$ 照射到一个绝缘介质球上（$E_{0}$ 在 $z$ 方向），引起介质球极化，极化矢量 $\vec{P}$ 是随时间变化的，因而产生辐射。设平面波的波长 $2\pi/k$ 远大于球半径 $R_{0}$，求介质球所产生的辐射场和能流。
 
 答案：辐射场就是总电偶极矩为
 $$
-\vec{p} = \frac{4 \pi \epsilon_0 (\epsilon - \epsilon_0)}{\epsilon + 2 \epsilon_0} R_0^3 E_0 e^{-i\omega t}
+\vec{p} = \frac{4 \pi \epsilon_{0} (\epsilon - \epsilon_{0})}{\epsilon + 2 \epsilon_{0}} R_{0}^{3} E_{0} e^{-i\omega t}
 $$
 的电偶极辐射场。
 
@@ -320,17 +320,17 @@ $$
 
 5.13题提示: 下一章的讨论给出介质球的极化效应对球外的效应可以用位于球心的电偶极子所产生的电场代表，这个电偶极子的偶极矩为
 $$
-\vec{p} = 4\pi \frac{\epsilon_0 (\epsilon - \epsilon_0)}{\epsilon + 2\epsilon_0} R^3_0 \vec{E}
+\vec{p} = 4\pi \frac{\epsilon_{0} (\epsilon - \epsilon_{0})}{\epsilon + 2\epsilon_{0}} R^{3}_{0} \vec{E}
 $$
 
-(b) 两个相互垂直的电偶极振子，具有相同的振幅 $p_0$ 和相同的角频率 $\omega$，但位相差为 $\Phi$，试求系统的平均辐射角分布。
+(b) 两个相互垂直的电偶极振子，具有相同的振幅 $p_{0}$ 和相同的角频率 $\omega$，但位相差为 $\Phi$，试求系统的平均辐射角分布。
 
 答案: 设偶极子在原点，分别沿 $x$ 和 $y$ 轴方向，
 $$
-\frac{dI}{d\Omega} = \frac{\mu_0 p_0^2 \omega^4}{32 \pi^2 c} (1 + \cos^2\theta - \sin^2\theta \sin 2\phi \cos\Phi)
+\frac{dI}{d\Omega} = \frac{\mu_{0} p_{0}^{2} \omega^{4}}{32 \pi^{2} c} (1 + \cos^{2}\theta - \sin^{2}\theta \sin 2\phi \cos\Phi)
 $$
 
-(c) 两个方向相同相距为 $\frac{\lambda}{4}$ 的电偶极子沿 $z$ 轴排列 ($\lambda$ 为电磁辐射波长)，它们位相差为 $\Phi$，具有相同的振幅 $p_0$、频率 $\omega$，试求系统的平均辐射角分布。
+(c) 两个方向相同相距为 $\frac{\lambda}{4}$ 的电偶极子沿 $z$ 轴排列 ($\lambda$ 为电磁辐射波长)，它们位相差为 $\Phi$，具有相同的振幅 $p_{0}$、频率 $\omega$，试求系统的平均辐射角分布。
 
 直接视为两个偶极子场的叠加
 
@@ -360,16 +360,16 @@ $$
 $$
 所以
 $$
-\frac{dI}{d\Omega} = <\vec{S}> r^{2} = \frac{\mu_0 p_0^2 \omega^4}{16 \pi^2 c} \left[ 1 + \cos\left( \frac{\pi}{2} \cos\theta + \Phi \right) \right] \sin^2\theta
+\frac{dI}{d\Omega} = <\vec{S}> r^{2} = \frac{\mu_{0} p_{0}^{2} \omega^{4}}{16 \pi^{2} c} \left[ 1 + \cos\left( \frac{\pi}{2} \cos\theta + \Phi \right) \right] \sin^{2}\theta
 $$
-(d) 一半波天线长度为 $l = \frac{\lambda}{2}$, 其上电流分布为 $J=J_0\cos\tfrac{2\pi z}{\lambda}\cos\omega t$
+(d) 一半波天线长度为 $l = \frac{\lambda}{2}$, 其上电流分布为 $J=J_{0}\cos\tfrac{2\pi z}{\lambda}\cos\omega t$
 
 条件范围: $-\frac{\lambda}{4} \leq z \leq \frac{\lambda}{4}$
 
 答案:
 
 $$
-\frac{d I}{d \Omega} = \frac{c \mu_0 J_0^2}{8 \pi^2} \frac{\cos^2(\frac{\pi}{2} \cos\theta)}{\sin^2\theta}
+\frac{d I}{d \Omega} = \frac{c \mu_{0} J_{0}^{2}}{8 \pi^{2}} \frac{\cos^{2}(\frac{\pi}{2} \cos\theta)}{\sin^{2}\theta}
 $$
 
 (e) 求加速度为 $\vec{a}$ 的低速运动带电点粒子的平均辐射角分布和辐射功率.

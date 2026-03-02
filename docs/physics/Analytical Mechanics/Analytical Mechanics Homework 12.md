@@ -22,10 +22,10 @@ $$
 
 7.8 用两种方法证明以下变换是正则变换
 $$
-Q_i = q_i \cos \theta_i - p_i \sin \theta_i, \quad P_i = q_i \sin \theta_i + p_i \cos \theta_i, \quad i = 1, 2, 3, \cdots, s
+Q_{i} = q_{i} \cos \theta_{i} - p_{i} \sin \theta_{i}, \quad P_{i} = q_{i} \sin \theta_{i} + p_{i} \cos \theta_{i}, \quad i = 1, 2, 3, \cdots, s
 $$
 
-其中 $\theta_i$ 是适当的常量，$s$ 是系统自由度个数。
+其中 $\theta_{i}$ 是适当的常量，$s$ 是系统自由度个数。
 
 (2) 计算泊松括号。
 
@@ -50,7 +50,7 @@ $$
 
 所以是正则变换。
 
-7.11 求证: 角动量 $J = (J_1, J_2, J_3)$ 分量之间满足 $[J_1, J_2] = J_3$。
+7.11 求证: 角动量 $J = (J_{1}, J_{2}, J_{3})$ 分量之间满足 $[J_{1}, J_{2}] = J_{3}$。
 
 证明：
 
@@ -141,21 +141,21 @@ $$
 $$
 第一项
 $$
-\epsilon_{lmi} \epsilon_{knj} [p_{l}J_{m}, p_{k} J_{n}] = -2mH \epsilon_{ijk} J_k - 2mk \frac{1}{r} \epsilon_{ijk} J_k + 2mk \left( \frac{r_j}{r} p_i - \frac{r_i}{r} p_j \right)
+\epsilon_{lmi} \epsilon_{knj} [p_{l}J_{m}, p_{k} J_{n}] = -2mH \epsilon_{ijk} J_{k} - 2mk \frac{1}{r} \epsilon_{ijk} J_{k} + 2mk \left( \frac{r_{j}}{r} p_{i} - \frac{r_{i}}{r} p_{j} \right)
 $$
 
 第二项
 $$
-- mk \epsilon_{knj} [\frac{r_{i}}{r}, p_{k} J_{n}] = -2 mk \frac{1}{r} \epsilon_{ijk} J_k - 2 mk \frac{r_j}{r} p_i + 2 mk \frac{r_i}{r} p_j
+- mk \epsilon_{knj} [\frac{r_{i}}{r}, p_{k} J_{n}] = -2 mk \frac{1}{r} \epsilon_{ijk} J_{k} - 2 mk \frac{r_{j}}{r} p_{i} + 2 mk \frac{r_{i}}{r} p_{j}
 $$
 
 第三项
 $$
-- mk \epsilon_{lmi} [p_{l} J_{m}, \frac{r_{j}}{r}] = 2 mk \frac{1}{r} \epsilon_{ijk} J_k + 2 mk \frac{r_j}{r} p_i - 2 mk \frac{r_i}{r} p_j
+- mk \epsilon_{lmi} [p_{l} J_{m}, \frac{r_{j}}{r}] = 2 mk \frac{1}{r} \epsilon_{ijk} J_{k} + 2 mk \frac{r_{j}}{r} p_{i} - 2 mk \frac{r_{i}}{r} p_{j}
 $$
 
-将三项相加，所有含 $\frac{mk}{r}$ 和 $r_i p_j$ 的项相互抵消，最终结果为
+将三项相加，所有含 $\frac{mk}{r}$ 和 $r_{i} p_{j}$ 的项相互抵消，最终结果为
 $$
-[A_i, A_j] = -2mH \epsilon_{ijk} J_k
+[A_{i}, A_{j}] = -2mH \epsilon_{ijk} J_{k}
 $$
-其中 $H = \frac{p^2}{2m} - \frac{k}{r}$ 是系统的哈密顿量。
+其中 $H = \frac{p^{2}}{2m} - \frac{k}{r}$ 是系统的哈密顿量。

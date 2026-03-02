@@ -6,9 +6,9 @@ Chasse_neige
 
 书2.2, 2.4, 2.18
 
-2.2 在均匀外电场中置入半径为 $R_0$ 的导体球，试用分离变数法求下列两种情况的电势：
+2.2 在均匀外电场中置入半径为 $R_{0}$ 的导体球，试用分离变数法求下列两种情况的电势：
 
-(1) 导体球上接有电池，使球与地保持电势差 $\Phi_0$；
+(1) 导体球上接有电池，使球与地保持电势差 $\Phi_{0}$；
 
 假设球心在垂直电场方向上到无穷远处的电势为 $\phi_{0}$ ，均匀外电场大小为 $E_{0}$ ，位矢与外电场夹角为 $\theta$
 $$
@@ -18,7 +18,7 @@ $$
 $$
 \phi (r, \theta) = A_{0} + \frac{B_{0}}{r} + (A_{1} r + \frac{B_{1}}{r^{2}}) \cos \theta
 $$
-带入 $\theta = \frac{\pi}{2}, r \to \infty, \phi = \phi_{0}$，所以 $A_{0} = \phi _{0}$
+带入 $\theta = \frac{\pi}{2}, r \to \infty, \phi = \phi_{0}$，所以 $A_{0} = \phi_{0}$
 
 当 $r = R_{0}$ 时，$\phi = \Phi_{0}$ ，所以 $A_{1} R_{0} + \frac{B_{1}}{R_{0}^{2}} = 0$
 $$
@@ -62,7 +62,7 @@ $$
 $$
 \phi (r, \theta) = A_{0} + \frac{B_{0}}{r} + (A_{1} r + \frac{B_{1}}{r^{2}}) \cos \theta
 $$
-带入 $\theta = \frac{\pi}{2}, r \to \infty, \phi = \phi_{0}$，所以 $A_{0} = \phi _{0}$
+带入 $\theta = \frac{\pi}{2}, r \to \infty, \phi = \phi_{0}$，所以 $A_{0} = \phi_{0}$
 
 当 $r = R_{0}$ 时，$\phi$ 为常数 ，所以 $A_{1} R_{0} + \frac{B_{1}}{R_{0}^{2}} = 0$
 
@@ -103,9 +103,9 @@ $$
 \phi (r, \theta) = \phi_{0} + \frac{Q}{4 \pi \epsilon_{0} r} - E_{0} r \cos \theta + \frac{E_{0} R_{0}^{3}}{r^{2}} \cos \theta \qquad (r > R_{0})
 $$
 
-2.4 均匀介质球(电容率为 $\varepsilon_1$)的中心置一自由电偶极子 $\vec{p}_t$，球外充满了另一种介质(电容率为 $\varepsilon_2$)，求空间各点的电势和极化电荷分布。
+2.4 均匀介质球(电容率为 $\varepsilon_{1}$)的中心置一自由电偶极子 $\vec{p}_{t}$，球外充满了另一种介质(电容率为 $\varepsilon_{2}$)，求空间各点的电势和极化电荷分布。
 
-提示：同上题，$\phi = \frac{\vec{p}_t \cdot \vec{r}}{4\pi\epsilon_1 r^3} + \phi'$，而 $\phi'$ 满足拉普拉斯方程。
+提示：同上题，$\phi = \frac{\vec{p}_{t} \cdot \vec{r}}{4\pi\epsilon_{1} r^{3}} + \phi'$，而 $\phi'$ 满足拉普拉斯方程。
 $$
 \phi' (r, \theta) = \sum_{n} (A_{n} r^{n} + B_{n} \frac{1}{r^{n + 1}}) P_{n} (\cos \theta)
 $$
@@ -121,7 +121,7 @@ $$
 
 电场
 $$
-\vec{E} = - \nabla (\phi' + \frac{\vec{p}_t \cdot \vec{r}}{4\pi\epsilon_1 r^3}) \\ =
+\vec{E} = - \nabla (\phi' + \frac{\vec{p}_{t} \cdot \vec{r}}{4\pi\epsilon_{1} r^{3}}) \\ =
 - \hat{r} \frac{\partial}{\partial r} (A_{0} + A_{1} r \cos \theta + \frac{p_{t} \cos \theta}{4 \pi \epsilon_{1} r^{2}}) - \frac{\hat{\theta}}{r} \frac{\partial}{\partial \theta} (A_{0} + A_{1} r + \cos \theta + \frac{p_{t} \cos \theta}{4 \pi \epsilon_{1} r^{2}}) \\ = 
 - A_{1} \cos \theta \hat{r} + A_{1} \sin \theta \hat{\theta} + \frac{p_{t}}{2 \pi \epsilon_{1} r^{3}} \cos \theta \hat{r} + \frac{p_{t}}{4 \pi \epsilon_{1} r^{3}} \sin \theta \hat{\theta}
 $$
@@ -165,17 +165,17 @@ $$
 $$
 \phi = 
 \begin{cases} 
-\frac{3(\vec{p}_t \cdot \vec{r})}{4\pi(\epsilon_1 + 2\epsilon_2) r^{3}}& (r > R_{0}) \\ 
-\frac{\vec{p}_t \cdot \vec{r}}{4\pi\epsilon_1 r^{3}} + \frac{2(\epsilon_1 - \epsilon_2)(\vec{p}_t \cdot \vec{r})}{4\pi \epsilon_1 (\epsilon_1 + 2\epsilon_2) R_{0}^{3}} & (r < R_0)
+\frac{3(\vec{p}_{t} \cdot \vec{r})}{4\pi(\epsilon_{1} + 2\epsilon_{2}) r^{3}}& (r > R_{0}) \\ 
+\frac{\vec{p}_{t} \cdot \vec{r}}{4\pi\epsilon_{1} r^{3}} + \frac{2(\epsilon_{1} - \epsilon_{2})(\vec{p}_{t} \cdot \vec{r})}{4\pi \epsilon_{1} (\epsilon_{1} + 2\epsilon_{2}) R_{0}^{3}} & (r < R_{0})
 \end{cases}
 $$
 极化电荷分布
 
-球心处有极化偶极子 $\vec{p} = \left( \frac{\varepsilon_0}{\varepsilon_1} - 1 \right) \vec{p}_t$
+球心处有极化偶极子 $\vec{p} = \left( \frac{\varepsilon_{0}}{\varepsilon_{1}} - 1 \right) \vec{p}_{t}$
 
-球面上有极化面电荷 $\sigma_p = \frac{3(\varepsilon_1 - \varepsilon_2)\varepsilon_0 \vec{p}_t}{2\pi\varepsilon_1 (\varepsilon_1 + 2\varepsilon_2)R_0^3} \cos \theta$
+球面上有极化面电荷 $\sigma_{p} = \frac{3(\varepsilon_{1} - \varepsilon_{2})\varepsilon_{0} \vec{p}_{t}}{2\pi\varepsilon_{1} (\varepsilon_{1} + 2\varepsilon_{2})R_{0}^{3}} \cos \theta$
 
-2.18 一半径为 $R_0$ 的球面，在球坐标 $0<\theta<\frac{\pi}{2}$ 的半球面上电势为 $\phi_0$，在 $\frac{\pi}{2}<\theta<\pi$ 的半球面上电势为 $- \phi_0$，求空间各点电势。
+2.18 一半径为 $R_{0}$ 的球面，在球坐标 $0<\theta<\frac{\pi}{2}$ 的半球面上电势为 $\phi_{0}$，在 $\frac{\pi}{2}<\theta<\pi$ 的半球面上电势为 $- \phi_{0}$，求空间各点电势。
 $$
 \phi (r, \theta) = \sum_{n} (A_{n} r^{n} + B_{n} \frac{1}{r^{n + 1}}) P_{n} (\cos \theta)
 $$
@@ -255,15 +255,15 @@ $$
 $$
 提示：
 $$
-\int_{0}^{1} P_n(x) dx = \left. \frac{P_{n+1}(x)-P_{n-1}(x)}{2n+1} \right|_{0}^{1}
+\int_{0}^{1} P_{n}(x) dx = \left. \frac{P_{n+1}(x)-P_{n-1}(x)}{2n+1} \right|_{0}^{1}
 $$
 $$
-P_n(1)=1
+P_{n}(1)=1
 $$
 $$
-P_n(0)=\begin{cases}
+P_{n}(0)=\begin{cases}
 0 & (n=奇数)\\
-(-1)^\frac{n}{2} \cdot \frac{1 \cdot 3 \cdot 5 \cdots (n-1)}{2 \cdot 4 \cdot 6 \cdots n} & (n=偶数)
+(-1)^{\frac}{n}{2} \cdot \frac{1 \cdot 3 \cdot 5 \cdots (n-1)}{2 \cdot 4 \cdot 6 \cdots n} & (n=偶数)
 \end{cases}
 $$
 
@@ -285,8 +285,8 @@ $$
 $$
 
 $$
-\frac{\partial G (\vec{r}, \vec{r'})}{\partial n'} = \hat{r'} \cdot \nabla' \frac{1}{4\pi\epsilon_0} \left( \frac{1}{|\vec{r} - \vec{r}'|} - \frac{\frac{R_{0}}{r'}}{|\vec{r} - \frac{R_0^2}{r'^2}\vec{r}'|} \right) \\ = 
-\hat{r'} \cdot \frac{1}{4 \pi \epsilon_{0}} \left(\frac{\vec{r} - \vec{r'}}{|\vec{r} - \vec{r'}|^{3}} + \frac{\frac{R_{0} \vec{r'}}{r'^{3}}}{|\vec{r} - \frac{R_0^2}{r'^2}\vec{r}'|} +  \frac{R_{0}}{r'}\frac{\vec{r} - \frac{R_0^2}{r'^2}\vec{r}'}{|\vec{r} - \frac{R_0^2}{r'^2}\vec{r}'|^{3}} \cdot (\frac{2 R_{0}^{2}}{r'^{4}} \vec{r'} \vec{r'} - \frac{R_{0}^{2}}{r'^{2}} \overset{\leftrightarrow}{I}) \right)
+\frac{\partial G (\vec{r}, \vec{r'})}{\partial n'} = \hat{r'} \cdot \nabla' \frac{1}{4\pi\epsilon_{0}} \left( \frac{1}{|\vec{r} - \vec{r}'|} - \frac{\frac{R_{0}}{r'}}{|\vec{r} - \frac{R_{0}^{2}}{r'^{2}}\vec{r}'|} \right) \\ = 
+\hat{r'} \cdot \frac{1}{4 \pi \epsilon_{0}} \left(\frac{\vec{r} - \vec{r'}}{|\vec{r} - \vec{r'}|^{3}} + \frac{\frac{R_{0} \vec{r'}}{r'^{3}}}{|\vec{r} - \frac{R_{0}^{2}}{r'^{2}}\vec{r}'|} +  \frac{R_{0}}{r'}\frac{\vec{r} - \frac{R_{0}^{2}}{r'^{2}}\vec{r}'}{|\vec{r} - \frac{R_{0}^{2}}{r'^{2}}\vec{r}'|^{3}} \cdot (\frac{2 R_{0}^{2}}{r'^{4}} \vec{r'} \vec{r'} - \frac{R_{0}^{2}}{r'^{2}} \overset{\leftrightarrow}{I}) \right)
 $$
 
 在 $r' = R_{0}$ 处

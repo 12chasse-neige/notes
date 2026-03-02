@@ -69,12 +69,12 @@ $$
 
 (2) 证明：
 $$
-\mathbf{D} = \frac{1}{\omega^2 \mu} \left[ k^2 \mathbf{E} - (\mathbf{k} \cdot \mathbf{E}) \mathbf{k} \right]
+\mathbf{D} = \frac{1}{\omega^{2} \mu} \left[ k^{2} \mathbf{E} - (\mathbf{k} \cdot \mathbf{E}) \mathbf{k} \right]
 $$
 
 证明：
 $$
-\mathbf{D} = - \frac{1}{\mu \omega} \mathbf{k} \times \mathbf{B} = - \frac{1}{\mu \omega} \mathbf{k} \times \left( \frac{1}{\omega} \mathbf{k} \times \mathbf{E} \right) = \frac{1}{\omega^2 \mu} \left[ k^2 \mathbf{E} - (\mathbf{k} \cdot \mathbf{E}) \mathbf{k} \right]
+\mathbf{D} = - \frac{1}{\mu \omega} \mathbf{k} \times \mathbf{B} = - \frac{1}{\mu \omega} \mathbf{k} \times \left( \frac{1}{\omega} \mathbf{k} \times \mathbf{E} \right) = \frac{1}{\omega^{2} \mu} \left[ k^{2} \mathbf{E} - (\mathbf{k} \cdot \mathbf{E}) \mathbf{k} \right]
 $$
 
 
@@ -97,7 +97,7 @@ $$
 \nabla \cdot \mathbf{E} = 0 \\
 \nabla \cdot \mathbf{B} = 0 \\
 \nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t} \\
-\nabla \times \mathbf{B} = \mu_0 \epsilon_0 \frac{\partial \mathbf{E}}{\partial t}
+\nabla \times \mathbf{B} = \mu_{0} \epsilon_{0} \frac{\partial \mathbf{E}}{\partial t}
 $$
 可以通过两个旋度方程导出散度方程如下：
 $$
@@ -192,7 +192,7 @@ $$
 带入麦克斯韦方程组：
 $$
 \nabla \cdot (\mathbf{E}_{0R} \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) - \mathbf{E}_{0I} \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t)) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} \\ = \mathbf{E}_{0Ri} \partial_{i} (\cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}}) - \mathbf{E}_{0Ii} \partial_{i} (\sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}}) \\ = \mathbf{E}_{0Ri} (- \mathbf{k}_{Ri} \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t)- \mathbf{k}_{Ii} \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t)) e^{- \mathbf{k}_{I} \cdot \mathbf{r}}  - \\ 
-\mathbf{E}_{0Ii} (\mathbf{k}_{Ri} \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) - \mathbf{k}_{Ii} \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t)) e ^{- \mathbf{k}_{I} \cdot \mathbf{r}} \\ = e^{- \mathbf{k}_{I} \cdot \mathbf{r}} (- (\mathbf{E}_{0R} \cdot \mathbf{k}_{I} + \mathbf{E}_{0I} \cdot \mathbf{k}_{R}) \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) + (\mathbf{E}_{0I} \cdot \mathbf{k}_{I} - \mathbf{E}_{0R} \cdot \mathbf{k}_{R}) \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t)) \\  = 0
+\mathbf{E}_{0Ii} (\mathbf{k}_{Ri} \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) - \mathbf{k}_{Ii} \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t)) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} \\ = e^{- \mathbf{k}_{I} \cdot \mathbf{r}} (- (\mathbf{E}_{0R} \cdot \mathbf{k}_{I} + \mathbf{E}_{0I} \cdot \mathbf{k}_{R}) \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) + (\mathbf{E}_{0I} \cdot \mathbf{k}_{I} - \mathbf{E}_{0R} \cdot \mathbf{k}_{R}) \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t)) \\  = 0
 $$
 磁场同理。
 
@@ -269,11 +269,11 @@ $$
 
 (a) 书4.2, 4.6
 
-4.2 一平面电磁波以 $\theta = 45^\circ$ 从真空入射到 $\varepsilon_r = 2$ 的介质，电场强度垂直于入射面。求反射系数和折射系数。
+4.2 一平面电磁波以 $\theta = 45^{\circ}$ 从真空入射到 $\varepsilon_{r} = 2$ 的介质，电场强度垂直于入射面。求反射系数和折射系数。
 
 电场强度垂直于入射面，所以是 $s$ 光，入射的介质折射率为 $\sqrt{2}$。
 
-入射角$\theta = 45^\circ$ ，折射角 $\sqrt{2} \sin \theta' = \sin \theta$，所以 $\theta' = \frac{\pi}{6}$
+入射角$\theta = 45^{\circ}$ ，折射角 $\sqrt{2} \sin \theta' = \sin \theta$，所以 $\theta' = \frac{\pi}{6}$
 
 利用 $s$ 光的菲涅耳公式：
 $$
@@ -340,17 +340,17 @@ $$
 
 (b) 试证：当入射波电场垂直入射面时，反射和透射振幅满足：
 $$
-\vec{E}_{20\perp} = \frac{2 E_{10\perp} \vec{e}_y}{1 + \frac{\mu_1 k_{2z}}{\mu_2 k_1 \cos \theta_1}}
+\vec{E}_{20\perp} = \frac{2 E_{10\perp} \vec{e}_{y}}{1 + \frac{\mu_{1} k_{2z}}{\mu_{2} k_{1} \cos \theta_{1}}}
 $$
 $$
-\vec{E}_{30\perp} = \frac{1 - \frac{\mu_1 k_{2z}}{\mu_2 k_1 \cos \theta_1}}{1 + \frac{\mu_1 k_{2z}}{\mu_2 k_1 \cos \theta_1}} E_{10\perp} \vec{e}_y
+\vec{E}_{30\perp} = \frac{1 - \frac{\mu_{1} k_{2z}}{\mu_{2} k_{1} \cos \theta_{1}}}{1 + \frac{\mu_{1} k_{2z}}{\mu_{2} k_{1} \cos \theta_{1}}} E_{10\perp} \vec{e}_{y}
 $$
-进一步当 $\mu_1 = \mu_2, \gamma_2 = 0$ 时，它们化为：
+进一步当 $\mu_{1} = \mu_{2}, \gamma_{2} = 0$ 时，它们化为：
 $$
-\vec{E}_{20\perp} = \frac{2 \cos \theta_1 \sin \theta_2}{\sin (\theta_1 + \theta_2)} E_{10\perp} \vec{e}_y
+\vec{E}_{20\perp} = \frac{2 \cos \theta_{1} \sin \theta_{2}}{\sin (\theta_{1} + \theta_{2})} E_{10\perp} \vec{e}_{y}
 $$
 $$
-\vec{E}_{30\perp} = \frac{\sin (\theta_2 - \theta_1)}{\sin (\theta_2 + \theta_1)} E_{10\perp} \vec{e}_y
+\vec{E}_{30\perp} = \frac{\sin (\theta_{2} - \theta_{1})}{\sin (\theta_{2} + \theta_{1})} E_{10\perp} \vec{e}_{y}
 $$
 
 证明：当入射波电场垂直入射时，电磁波在介质界面处满足以下边界条件：（下述所有电磁场和波矢均为复数）
@@ -369,21 +369,21 @@ $$
 $$
 入射波的磁场：
 $$
-\mathbf{H}_1 = \frac{\mathbf{k}_1 \times \mathbf{E}_1}{\omega \mu_1}
+\mathbf{H}_{1} = \frac{\mathbf{k}_{1} \times \mathbf{E}_{1}}{\omega \mu_{1}}
 $$
 反射波的磁场：
 $$
-\mathbf{H}_3 = \frac{\mathbf{k}_1 \times \mathbf{E}_3}{\omega \mu_1}
+\mathbf{H}_{3} = \frac{\mathbf{k}_{1} \times \mathbf{E}_{3}}{\omega \mu_{1}}
 $$
 透射波的磁场：
 $$
-\mathbf{H}_2 = \frac{\mathbf{k}_2 \times \mathbf{E}_2}{\omega \mu_2}
+\mathbf{H}_{2} = \frac{\mathbf{k}_{2} \times \mathbf{E}_{2}}{\omega \mu_{2}}
 $$
 将磁场分量代入边界条件：
 
 磁场的 $x$分量连续：
 $$
-\frac{k_{1z}}{\mu_1} (E_{10\perp} - E_{30\perp}) = \frac{k_{2z}}{\mu_2} E_{20\perp}
+\frac{k_{1z}}{\mu_{1}} (E_{10\perp} - E_{30\perp}) = \frac{k_{2z}}{\mu_{2}} E_{20\perp}
 $$
 磁感应强度的z分量连续：
 $$
@@ -391,14 +391,14 @@ k_{1x} (E_{10\perp} + E_{30\perp}) = k_{2x} E_{20\perp}
 $$
 从磁场的 $z$分量连续方程：
 $$
-\frac{k_{1x}}{\mu_1} (E_{10\perp} - E_{30\perp}) = \frac{k_{1x}}{\mu_2} E_{20\perp}
+\frac{k_{1x}}{\mu_{1}} (E_{10\perp} - E_{30\perp}) = \frac{k_{1x}}{\mu_{2}} E_{20\perp}
 $$
 $$
 E_{10\perp} + E_{30\perp} = E_{20\perp}
 $$
 将此结果代入磁场强度的 $x$分量连续方程：
 $$
-\frac{k_{1z}}{\mu_1} (E_{10\perp} - E_{30\perp}) = \frac{k_{2z}}{\mu_2}  (E_{10\perp} +E_{30\perp})
+\frac{k_{1z}}{\mu_{1}} (E_{10\perp} - E_{30\perp}) = \frac{k_{2z}}{\mu_{2}}  (E_{10\perp} +E_{30\perp})
 $$
 解得：
 $$
@@ -407,28 +407,28 @@ $$
 
 带入 $k_{1z} = k_{1} \cos \theta_{1}$，进一步整理为：
 $$
-E_{30\perp} = \frac{1 - \frac{\mu_1 k_{2z}}{\mu_2 k_1 \cos \theta_1}}{1 + \frac{\mu_1 k_{2z}}{\mu_2 k_1 \cos \theta_1}} E_{10\perp}
+E_{30\perp} = \frac{1 - \frac{\mu_{1} k_{2z}}{\mu_{2} k_{1} \cos \theta_{1}}}{1 + \frac{\mu_{1} k_{2z}}{\mu_{2} k_{1} \cos \theta_{1}}} E_{10\perp}
 $$
 
 透射振幅由 $E_{10\perp} + E_{30\perp} = E_{20\perp}$给出：
 $$
-E_{20\perp} = \frac{2 E_{10\perp}}{1 + \frac{\mu_1 k_{2z}}{\mu_2 k_1 \cos \theta_1}}
+E_{20\perp} = \frac{2 E_{10\perp}}{1 + \frac{\mu_{1} k_{2z}}{\mu_{2} k_{1} \cos \theta_{1}}}
 $$
 
-当 $\mu_1 = \mu_2$ 且 $\gamma_2 = 0$ 时， $k_{2z} = k_{2} \cos \theta_{2}$，并且 $k_{1} \sin \theta_{1} = k_{2} \sin \theta_{2}$：
+当 $\mu_{1} = \mu_{2}$ 且 $\gamma_{2} = 0$ 时， $k_{2z} = k_{2} \cos \theta_{2}$，并且 $k_{1} \sin \theta_{1} = k_{2} \sin \theta_{2}$：
 $$
-E_{20\perp} = \frac{2 \cos \theta_1 \sin \theta_2}{\sin (\theta_1 + \theta_2)} E_{10\perp}
+E_{20\perp} = \frac{2 \cos \theta_{1} \sin \theta_{2}}{\sin (\theta_{1} + \theta_{2})} E_{10\perp}
 $$
 $$
-E_{30\perp} = \frac{\sin (\theta_2 - \theta_1)}{\sin (\theta_2 + \theta_1)} E_{10\perp}
+E_{30\perp} = \frac{\sin (\theta_{2} - \theta_{1})}{\sin (\theta_{2} + \theta_{1})} E_{10\perp}
 $$
 
 (c) 试证明：
 $$
-D_{\parallel} = \frac{4 \mu_1 \cos \theta_1 \text{Re} \left( \frac{k_2 k_{2z}^*}{k_{2}^{*}} \right)}{\mu_2 k_1 \left| \frac{k_{2z}}{k_2} + \frac{k_2 \mu_1}{k_1 \mu_2} \cos \theta_1 \right|^2}
+D_{\parallel} = \frac{4 \mu_{1} \cos \theta_{1} \text{Re} \left( \frac{k_{2} k_{2z}^*}{k_{2}^{*}} \right)}{\mu_{2} k_{1} \left| \frac{k_{2z}}{k_{2}} + \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}}
 $$
 $$
-R_{\parallel} = \left| \frac{\frac{k_{2z}}{k_2} - \frac{k_2 \mu_1}{k_1 \mu_2} \cos \theta_1}{\frac{k_{2z}}{k_2} + \frac{k_2 \mu_1}{k_1 \mu_2} \cos \theta_1} \right|^{2}
+R_{\parallel} = \left| \frac{\frac{k_{2z}}{k_{2}} - \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1}}{\frac{k_{2z}}{k_{2}} + \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1}} \right|^{2}
 $$
 $$
 D_{\parallel} + R_{\parallel} = 1
@@ -457,11 +457,11 @@ $$
 由于 $\mathbf{k}_{2} \cdot \mathbf{E}_{2 \parallel} = 0$ ，所以
 $$
 \Re [E_{2 \parallel z} (\mathbf{k}_{2} \cdot \mathbf{E}_{2 \parallel}^{*})] = - \Re [E_{2 \parallel z} (\mathbf{k}_{2} \cdot 2 \Im [\mathbf{E}_{2 \parallel}])] \\ =
-- \Re [|\mathbf{E_{2 \parallel}}| \frac{k_{2z}}{ |\mathbf{k_{2}}|} (\mathbf{k}_{2} \cdot 2 \Im [\mathbf{E}_{2 \parallel}])]  = \mathbf{E}_{2}^{2} \left( - \Re[k_{2} \frac{k_{2z}}{k_{2}}^{*}] + \Re[k_{2z}] \right)
+- \Re [|\mathbf{E_{2 \parallel}}| \frac{k_{2z}}{|\mathbf{k_{2}}|} (\mathbf{k}_{2} \cdot 2 \Im [\mathbf{E}_{2 \parallel}])]  = \mathbf{E}_{2}^{2} \left( - \Re[k_{2} \frac{k_{2z}}{k_{2}}^{*}] + \Re[k_{2z}] \right)
 $$
 得到：
 $$
-\frac{\frac{1}{2 \mu_{2} \omega} (k_{2Rz} \mathbf{E}_{2 \parallel}^{2} - \Re [E_{2 \parallel z} (\mathbf{k}_{2} \cdot \mathbf{E}_{2 \parallel}^{*})])}{\frac{1}{2 \mu_{1} \omega} (k_{1Rz}  \mathbf{E}_{1 \parallel}^{2})} = \frac{\mu_{1}}{\mu_{2} k_{1} \cos \theta_{1}} \left| \frac{2 \cos \theta_{1}}{\frac{k_{2z}}{k_{2}} + \frac{\mu_{1} k_{2} \cos \theta_{1}}{\mu_{2} k_{1}}} \right|^{2} \Re [k_{2} \frac{k_{2z}^{*}}{k_{2}^{*}}] \\ = \frac{4 \mu_1 \cos \theta_1 \text{Re} \left( \frac{k_2 k_{2z}^*}{k_{2}^{*}} \right)}{\mu_2 k_1 \left| \frac{k_{2z}}{k_2} + \frac{k_2 \mu_1}{k_1 \mu_2} \cos \theta_1 \right|^2}
+\frac{\frac{1}{2 \mu_{2} \omega} (k_{2Rz} \mathbf{E}_{2 \parallel}^{2} - \Re [E_{2 \parallel z} (\mathbf{k}_{2} \cdot \mathbf{E}_{2 \parallel}^{*})])}{\frac{1}{2 \mu_{1} \omega} (k_{1Rz}  \mathbf{E}_{1 \parallel}^{2})} = \frac{\mu_{1}}{\mu_{2} k_{1} \cos \theta_{1}} \left| \frac{2 \cos \theta_{1}}{\frac{k_{2z}}{k_{2}} + \frac{\mu_{1} k_{2} \cos \theta_{1}}{\mu_{2} k_{1}}} \right|^{2} \Re [k_{2} \frac{k_{2z}^{*}}{k_{2}^{*}}] \\ = \frac{4 \mu_{1} \cos \theta_{1} \text{Re} \left( \frac{k_{2} k_{2z}^*}{k_{2}^{*}} \right)}{\mu_{2} k_{1} \left| \frac{k_{2z}}{k_{2}} + \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}}
 $$
 
 $$
@@ -473,10 +473,10 @@ R_{\parallel} =  \left| \frac{- \frac{k_{2z}}{k_{2}} + \frac{\mu_{1} k_{2} \cos 
 $$
 
 $$
-D_{\parallel} + R_{\parallel} = \frac{4 \mu_1 \cos \theta_1 \text{Re} \left( \frac{k_2 k_{2z}^*}{k_{2}^{*}} \right)}{\mu_2 k_1 \left| \frac{k_{2z}}{k_2} + \frac{k_2 \mu_1}{k_1 \mu_2} \cos \theta_1 \right|^2} + \left| \frac{\frac{k_{2z}}{k_2} - \frac{k_2 \mu_1}{k_1 \mu_2} \cos \theta_1}{\frac{k_{2z}}{k_2} + \frac{k_2 \mu_1}{k_1 \mu_2} \cos \theta_1} \right|^{2} \\ = 
-\frac{4 \mu_1 \cos \theta_1 \text{Re} \left( \frac{k_2 k_{2z}^*}{k_{2}^{*}} \right) + \mu_{2} k_{1} \left| \frac{k_{2z}}{k_2} - \frac{k_2 \mu_1}{k_1 \mu_2} \cos \theta_1 \right|^{2}}{\mu_2 k_1 \left| \frac{k_{2z}}{k_2} + \frac{k_2 \mu_1}{k_1 \mu_2} \cos \theta_1 \right|^2} \\ =
-\frac{\mu_{2} k_{1} \left(4 \frac{\mu_1}{\mu_{2} k_{1}} \cos \theta_1 \text{Re} \left( \frac{k_2 k_{2z}^*}{k_{2}^{*}} \right) +  \left| \frac{k_{2z}}{k_2} - \frac{k_2 \mu_1}{k_1 \mu_2} \cos \theta_1 \right|^{2}\right)}{\mu_2 k_1 \left| \frac{k_{2z}}{k_2} + \frac{k_2 \mu_1}{k_1 \mu_2} \cos \theta_1 \right|^2} \\ =
-\frac{\mu_2 k_1 \left| \frac{k_{2z}}{k_2} + \frac{k_2 \mu_1}{k_1 \mu_2} \cos \theta_1 \right|^2}{\mu_2 k_1 \left| \frac{k_{2z}}{k_2} + \frac{k_2 \mu_1}{k_1 \mu_2} \cos \theta_1 \right|^2} = 1
+D_{\parallel} + R_{\parallel} = \frac{4 \mu_{1} \cos \theta_{1} \text{Re} \left( \frac{k_{2} k_{2z}^*}{k_{2}^{*}} \right)}{\mu_{2} k_{1} \left| \frac{k_{2z}}{k_{2}} + \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}} + \left| \frac{\frac{k_{2z}}{k_{2}} - \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1}}{\frac{k_{2z}}{k_{2}} + \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1}} \right|^{2} \\ = 
+\frac{4 \mu_{1} \cos \theta_{1} \text{Re} \left( \frac{k_{2} k_{2z}^*}{k_{2}^{*}} \right) + \mu_{2} k_{1} \left| \frac{k_{2z}}{k_{2}} - \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}}{\mu_{2} k_{1} \left| \frac{k_{2z}}{k_{2}} + \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}} \\ =
+\frac{\mu_{2} k_{1} \left(4 \frac{\mu_{1}}{\mu_{2} k_{1}} \cos \theta_{1} \text{Re} \left( \frac{k_{2} k_{2z}^*}{k_{2}^{*}} \right) +  \left| \frac{k_{2z}}{k_{2}} - \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}\right)}{\mu_{2} k_{1} \left| \frac{k_{2z}}{k_{2}} + \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}} \\ =
+\frac{\mu_{2} k_{1} \left| \frac{k_{2z}}{k_{2}} + \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}}{\mu_{2} k_{1} \left| \frac{k_{2z}}{k_{2}} + \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}} = 1
 $$
 
 其中利用了

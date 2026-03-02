@@ -2,11 +2,11 @@
 Chasse_neige
 
 #### 1 超导 (16-3)
-1. 描述超导电流 $\vec{j_s}$ 时，除了正常的电磁方程，电流还额外满足伦敦方程 $(a > 0)$：
+1. 描述超导电流 $\vec{j_{s}}$ 时，除了正常的电磁方程，电流还额外满足伦敦方程 $(a > 0)$：
    $$
    \begin{align}
-   \nabla \times \vec{j_s} &= -a \vec{B} \\
-   \frac{\partial}{\partial t} \vec{j_s} &= a \vec{E} 
+   \nabla \times \vec{j_{s}} &= -a \vec{B} \\
+   \frac{\partial}{\partial t} \vec{j_{s}} &= a \vec{E} 
    \end{align}
    $$
    试证明电流有限要求超导体的电阻为零，而磁场在超导体内指数衰减。
@@ -15,7 +15,7 @@ Chasse_neige
    
    假设电阻不为零，即存在 $\sigma$ 使得 $\vec{j} = \sigma \vec{E}$
    $$
-   \frac{\partial}{\partial t} \vec{j_s} = a \vec{E} = \frac{\alpha}{\sigma} \vec{j}_{s}
+   \frac{\partial}{\partial t} \vec{j_{s}} = a \vec{E} = \frac{\alpha}{\sigma} \vec{j}_{s}
    $$
    所以超导电流会随时间指数增长，最终发散。
    
@@ -33,11 +33,11 @@ Chasse_neige
 #### 2 矢势的应用 (蒋济帆)
 1. 证明：为使得磁矢势满足 $\nabla \times \vec{A} = \vec{B}$, 可取
    $$
-   \vec{A}(\vec{r}) = \frac{\mu_0}{4\pi} \int_{V'} \frac{\vec{j}(\vec{r'})}{|\vec{r} - \vec{r'}|} dV'
+   \vec{A}(\vec{r}) = \frac{\mu_{0}}{4\pi} \int_{V'} \frac{\vec{j}(\vec{r'})}{|\vec{r} - \vec{r'}|} dV'
    $$
    其中 $\vec{r}$ 为空间中某一点的位矢，$\vec{r'}$ 为空间中场源的位矢，$\vec{j}(\vec{r'})$ 为空间中的电流密度，$V'$ 是整个空间。
    $$
-   \nabla \times \vec{A} = \nabla \times \frac{\mu_0}{4\pi} \int_{V'} \frac{\vec{j}(\vec{r'})}{|\vec{r} - \vec{r'}|} dV' = - \frac{\mu_0}{4\pi} \int_{V'} \vec{j}(\vec{r'}) \times \nabla \frac{1}{|\vec{r} - \vec{r'}|} dV' = \frac{\mu_0}{4\pi} \int_{V'} \vec{j}(\vec{r'})  \times \frac{\vec{r} - \vec{r'}}{|\vec{r} - \vec{r'}|^{3}} dV' = \vec{B}
+   \nabla \times \vec{A} = \nabla \times \frac{\mu_{0}}{4\pi} \int_{V'} \frac{\vec{j}(\vec{r'})}{|\vec{r} - \vec{r'}|} dV' = - \frac{\mu_{0}}{4\pi} \int_{V'} \vec{j}(\vec{r'}) \times \nabla \frac{1}{|\vec{r} - \vec{r'}|} dV' = \frac{\mu_{0}}{4\pi} \int_{V'} \vec{j}(\vec{r'})  \times \frac{\vec{r} - \vec{r'}}{|\vec{r} - \vec{r'}|^{3}} dV' = \vec{B}
    $$
 
 2. 计算通有方向与大小均相同的电流的两无限长平行直导线周围的磁感线的方程。该种曲线的名称是什么？
@@ -63,10 +63,10 @@ Chasse_neige
    $$
    其中$C$ 为常数。
 
-3. 考虑一条截面为半径是 $a$ 的圆的闭合导线 (磁导率为 $\mu_0$, $a$ 远小于导线的其他各项几何尺寸), 设电流在导线内部均匀分布, 导线的各个横截面的中心在同一平面内。记该导线的自感为 $L$。
+3. 考虑一条截面为半径是 $a$ 的圆的闭合导线 (磁导率为 $\mu_{0}$, $a$ 远小于导线的其他各项几何尺寸), 设电流在导线内部均匀分布, 导线的各个横截面的中心在同一平面内。记该导线的自感为 $L$。
    - (i) 证明：在合理的近似下，有
      $$
-     L = \frac{\mu_0}{4\pi} \oint_{l} \oint_{l} \frac{\theta(|\vec{r_1} - \vec{r_2}| - \eta a)}{|\vec{r_1} - \vec{r_2}|} d\vec{r_1} \cdot d\vec{r_2}
+     L = \frac{\mu_{0}}{4\pi} \oint_{l} \oint_{l} \frac{\theta(|\vec{r_{1}} - \vec{r_{2}}| - \eta a)}{|\vec{r_{1}} - \vec{r_{2}}|} d\vec{r_{1}} \cdot d\vec{r_{2}}
      $$
      的形式，其中 $\ell$ 是整条回路，
      $$
@@ -83,7 +83,7 @@ Chasse_neige
      $$
      所以自感可以表示为除去导线内部部分的区域的磁通积分
      $$
-     L = \frac{\Phi}{\pi a^{2} j} = \oint_{l} \oint_{l}  d \vec{r_{1}} \cdot  \frac{\mu_{0}}{4 \pi} \frac{\theta (|\vec{r_{1}} - \vec{r_{2}}| - a)}{|\vec{r}_{1} - \vec{r}_{2}|} d \vec{r}_{2} = \frac{\mu_0}{4\pi} \oint_{l} \oint_{l} \frac{\theta(|\vec{r_1} - \vec{r_2}| - a)}{|\vec{r_1} - \vec{r_2}|} d\vec{r_1} \cdot d\vec{r_2}
+     L = \frac{\Phi}{\pi a^{2} j} = \oint_{l} \oint_{l}  d \vec{r_{1}} \cdot  \frac{\mu_{0}}{4 \pi} \frac{\theta (|\vec{r_{1}} - \vec{r_{2}}| - a)}{|\vec{r}_{1} - \vec{r}_{2}|} d \vec{r}_{2} = \frac{\mu_{0}}{4\pi} \oint_{l} \oint_{l} \frac{\theta(|\vec{r_{1}} - \vec{r_{2}}| - a)}{|\vec{r_{1}} - \vec{r_{2}}|} d\vec{r_{1}} \cdot d\vec{r_{2}}
      $$
      
      所以 $\eta = 1$
@@ -96,11 +96,11 @@ Chasse_neige
      $$
      
    
-4. 计算两个半径分别为 $R_1$ 和 $R_2$、圆心间距为 $l$ 的同轴导体圆环间的互感。结果利用完全椭圆积分
+4. 计算两个半径分别为 $R_{1}$ 和 $R_{2}$、圆心间距为 $l$ 的同轴导体圆环间的互感。结果利用完全椭圆积分
    $$
    \begin{align}
-   K(k^2) &\triangleq \int_{0}^{\frac{\pi}{2}} \frac{d\theta}{\sqrt{1 - k^2 \sin^2 \theta}}, \\
-   E(k^2) &\triangleq \int_{0}^{\frac{\pi}{2}} \sqrt{1 - k^2 \sin^2 \theta} \, d\theta
+   K(k^{2}) &\triangleq \int_{0}^{\frac{\pi}{2}} \frac{d\theta}{\sqrt{1 - k^{2} \sin^{2} \theta}}, \\
+   E(k^{2}) &\triangleq \int_{0}^{\frac{\pi}{2}} \sqrt{1 - k^{2} \sin^{2} \theta} \, d\theta
    \end{align}
    $$
    表示，不要出现积分符号。
@@ -111,7 +111,7 @@ Chasse_neige
 
    注：可能用到的积分等式：
    $$
-   \int_{0}^{2\pi} \ln(a - \cos x) \, dx = 2\pi \ln a + \sqrt{a^2 - 1}, \quad a > 1
+   \int_{0}^{2\pi} \ln(a - \cos x) \, dx = 2\pi \ln a + \sqrt{a^{2} - 1}, \quad a > 1
    $$
 
 5. 
@@ -120,8 +120,8 @@ Chasse_neige
 现在考虑修改麦克斯韦方程组，在其中加入 $\theta$ 项。麦克斯韦方程组被修改为：
 $$
 \begin{align}
-\nabla \cdot \vec{E} &= \frac{\rho}{\epsilon_0} - \frac{\alpha c}{\pi} \nabla \theta \cdot \vec{B}\\
--\frac{1}{c^2} \frac{\partial \vec{E}}{\partial t} + \nabla \times \vec{B} &= \mu_0 \vec{J} + \frac{\alpha}{\pi c} (\dot{\theta} \vec{B} + \nabla \theta \times \vec{E})
+\nabla \cdot \vec{E} &= \frac{\rho}{\epsilon_{0}} - \frac{\alpha c}{\pi} \nabla \theta \cdot \vec{B}\\
+-\frac{1}{c^{2}} \frac{\partial \vec{E}}{\partial t} + \nabla \times \vec{B} &= \mu_{0} \vec{J} + \frac{\alpha}{\pi c} (\dot{\theta} \vec{B} + \nabla \theta \times \vec{E})
 \end{align}
 $$
 其余两个无源方程没有改变。
@@ -155,7 +155,7 @@ $$
 $$
 (c)
 
-若从下半空间加入沿着 $z$ 方向的磁场 $B_z = B$，则在上半空间不仅会有磁场，也会因为介质的存在而产生电场，请求出电场 $\vec{E}$ 的大小与方向。
+若从下半空间加入沿着 $z$ 方向的磁场 $B_{z} = B$，则在上半空间不仅会有磁场，也会因为介质的存在而产生电场，请求出电场 $\vec{E}$ 的大小与方向。
 $$
 B_{z} = B'_{z} \\
 \frac{\epsilon_{0} \alpha}{\pi} c \theta B_{z} =  \epsilon_{0} E'_{z}
@@ -168,7 +168,7 @@ $$
 
 (d)
 
-若从下半空间加入沿着 $y$ 方向的电场 $E_y = E$，同样地，在上半空间会因为介质的存在而产生磁场，请求出磁场 $\vec{B}$ 的大小与方向。
+若从下半空间加入沿着 $y$ 方向的电场 $E_{y} = E$，同样地，在上半空间会因为介质的存在而产生磁场，请求出磁场 $\vec{B}$ 的大小与方向。
 $$
 E'_{y} = E_{y} \\
  - \frac{\alpha}{\mu_{0} \pi c} \theta E_{y} = \frac{B'_{y}}{\mu_{0}}
@@ -187,7 +187,7 @@ $$
 
 对于上半空间而言，电场就是电荷 $q$产生的电场和在下半空间坐标为$\vec{x} = (0, 0, - d)$ 处引入像电荷$- \frac{\alpha^{2}}{4 + \alpha^{2}} q$ 的叠加
 $$
-\vec{E} = \frac{q}{4 \pi \epsilon_{0}} \frac{(x,y, z-d)}{\sqrt{x^{2} + y^{2} + (z - d)^{2}}^{3}} - \frac{\alpha^{2}}{4 + \alpha^{2}} \frac{q}{4 \pi \epsilon_{0} } \frac{(x,y, z+d)}{\sqrt{x^{2} + y^{2} + (z + d)^{2}}^{3}}
+\vec{E} = \frac{q}{4 \pi \epsilon_{0}} \frac{(x,y, z-d)}{\sqrt{x^{2} + y^{2} + (z - d)^{2}}^{3}} - \frac{\alpha^{2}}{4 + \alpha^{2}} \frac{q}{4 \pi \epsilon_{0}} \frac{(x,y, z+d)}{\sqrt{x^{2} + y^{2} + (z + d)^{2}}^{3}}
 $$
 
 

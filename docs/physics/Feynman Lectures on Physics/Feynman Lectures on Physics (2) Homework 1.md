@@ -6,28 +6,28 @@ Chasse_neige
 
 #### 1.  高维空间的矢量分析
 
-(1). 一般而言，叉乘只能定义在特殊的维度，做为其推广，外积可以定义在任意维度。假设 $\vec{e}_1 = (1, 0, 0)^T$、$\vec{e}_2 = (0, 1, 0)^T$ 和 $\vec{e}_3 = (0, 0, 1)^T$ 为 $\mathbb{R}^3$ 上的标准基底，则 $\forall \vec{u} = u_1\vec{e}_1 + u_2\vec{e}_2 + u_3\vec{e}_3$，$\vec{v} = v_1\vec{e}_1 + v_2\vec{e}_2 + v_3\vec{e}_3 \in \mathbb{R}^3$，其外积定义为：
+(1). 一般而言，叉乘只能定义在特殊的维度，做为其推广，外积可以定义在任意维度。假设 $\vec{e}_{1} = (1, 0, 0)^{T}$、$\vec{e}_{2} = (0, 1, 0)^{T}$ 和 $\vec{e}_{3} = (0, 0, 1)^{T}$ 为 $\mathbb{R}^{3}$ 上的标准基底，则 $\forall \vec{u} = u_{1}\vec{e}_{1} + u_{2}\vec{e}_{2} + u_{3}\vec{e}_{3}$，$\vec{v} = v_{1}\vec{e}_{1} + v_{2}\vec{e}_{2} + v_{3}\vec{e}_{3} \in \mathbb{R}^{3}$，其外积定义为：
 $$
-\vec{u} \wedge \vec{v} = (u_1v_2 - u_2v_1) (\vec{e}_1 \wedge \vec{e}_2) + (u_2v_3 - u_3v_2) (\vec{e}_2 \wedge \vec{e}_3) + (u_3v_1 - u_1v_3) (\vec{e}_3 \wedge \vec{e}_1) \quad (1.1)
+\vec{u} \wedge \vec{v} = (u_{1v}_{2} - u_{2v}_{1}) (\vec{e}_{1} \wedge \vec{e}_{2}) + (u_{2v}_{3} - u_{3v}_{2}) (\vec{e}_{2} \wedge \vec{e}_{3}) + (u_{3v}_{1} - u_{1v}_{3}) (\vec{e}_{3} \wedge \vec{e}_{1}) \quad (1.1)
 $$
-对于 $\vec{w} = w_1\vec{e}_1 + w_2\vec{e}_2 + w_3\vec{e}_3$，试计算：
+对于 $\vec{w} = w_{1}\vec{e}_{1} + w_{2}\vec{e}_{2} + w_{3}\vec{e}_{3}$，试计算：
 $$
 \vec{u} \wedge \vec{v} \wedge \vec{w} \\ = ((u_{1} v_{2} - u_{2} v_{1}) (\vec{e_{1}} \wedge \vec{e_{2}}) + (u_{2} v_{3} - u_{3} v_{2}) (\vec{e_{2}} \wedge \vec{e_{3}}) + (u_{3} v_{1} - u_{1} v_{3}) (\vec{e_{3}} \wedge \vec{e_{1}})) \wedge (w_{1} \vec{e_{1}} + w_{2} \vec{e_{2}} + w_{3} \vec{e_{3}}) \\
 = (u_{1} v_{2} - u_{2} v_{1}) w_{3} (\vec{e_{1}} \wedge \vec{e_{2}} \wedge \vec{e_{3}}) + (u_{2} v_{3} - u_{3} v_{2}) w_{1} (\vec{e_{2}} \wedge \vec{e_{3}} \wedge \vec{e_{1}}) + (u_{3} v_{1} - u_{1} v_{3}) w_{2} (\vec{e_{3}} \wedge \vec{e_{1}} \wedge \vec{e_{2}}) \\
 = (\epsilon_{ijk} u_{i} v_{j} w_{k}) (\vec{e_{1}} \wedge \vec{e_{2}} \wedge \vec{e_{3}})
 $$
 
-(2). 从外积的运算法则中我们发现外积具有和叉乘类似的结构。事实上，两者可以通过 Hodge 对偶联系起来。假设 $u = \frac{1}{p!}u_{\mu_1\cdots\mu_p}e_{\mu_1} \wedge \cdots \wedge e_{\mu_p}$ 是 $\mathbb{R}^n$ 中的 $p$-形式，则 Hodge 对偶将 $u$ 映射为 $(n - p)$-形式：
+(2). 从外积的运算法则中我们发现外积具有和叉乘类似的结构。事实上，两者可以通过 Hodge 对偶联系起来。假设 $u = \frac{1}{p!}u_{\mu_{1}\cdots\mu_{p}}e_{\mu_{1}} \wedge \cdots \wedge e_{\mu_{p}}$ 是 $\mathbb{R}^{n}$ 中的 $p$-形式，则 Hodge 对偶将 $u$ 映射为 $(n - p)$-形式：
 $$
-\star u = \star \left( \frac{1}{p!}u_{\mu_1\cdots\mu_p}e_{\mu_1} \wedge \cdots \wedge e_{\mu_p} \right) = \frac{1}{p!(n - p)!}\epsilon_{\nu_1\cdots\nu_p,\mu_1\cdots\mu_{n-p}}u_{\nu_1\cdots\nu_p}e_{\mu_1} \wedge \cdots \wedge e_{\mu_{n-p}}
+\star u = \star \left( \frac{1}{p!}u_{\mu_{1}\cdots\mu_{p}}e_{\mu_{1}} \wedge \cdots \wedge e_{\mu_{p}} \right) = \frac{1}{p!(n - p)!}\epsilon_{\nu_{1}\cdots\nu_{p},\mu_{1}\cdots\mu_{n-p}}u_{\nu_{1}\cdots\nu_{p}}e_{\mu_{1}} \wedge \cdots \wedge e_{\mu_{n-p}}
 $$
-其中 $\epsilon_{\nu_1\cdots\nu_p,\mu_1\cdots\mu_{n-p}}$ 为 Levi-Civita 符号。写成分量形式为：
+其中 $\epsilon_{\nu_{1}\cdots\nu_{p},\mu_{1}\cdots\mu_{n-p}}$ 为 Levi-Civita 符号。写成分量形式为：
 $$
-(\star u)_{\mu_1\cdots\mu_{n-p}} = \frac{1}{p!}\epsilon_{\nu_1\cdots\nu_p,\mu_1\cdots\mu_{n-p}}u_{\nu_1\cdots\nu_p}
+(\star u)_{\mu_{1}\cdots\mu_{n-p}} = \frac{1}{p!}\epsilon_{\nu_{1}\cdots\nu_{p},\mu_{1}\cdots\mu_{n-p}}u_{\nu_{1}\cdots\nu_{p}}
 $$
-特别的，对于 $\mathbb{R}^3$ 中的矢量 $\vec{u} = (u_1, u_2, u_3)$ 有：
+特别的，对于 $\mathbb{R}^{3}$ 中的矢量 $\vec{u} = (u_{1}, u_{2}, u_{3})$ 有：
 $$
-\star \vec{u} = u_1\vec{e}_2 \wedge \vec{e}_3 + u_2\vec{e}_3 \wedge \vec{e}_1 + u_3\vec{e}_1 \wedge \vec{e}_2 
+\star \vec{u} = u_{1}\vec{e}_{2} \wedge \vec{e}_{3} + u_{2}\vec{e}_{3} \wedge \vec{e}_{1} + u_{3}\vec{e}_{1} \wedge \vec{e}_{2} 
 $$
 试证明：
 $$
@@ -55,13 +55,13 @@ $$
 \frac{1}{2!} \epsilon_{ijk} (u_{i} v_{j} - u_{j} v_{i}) \vec{e_{k}} = 
 \epsilon_{ijk} u_{i} v_{j} \vec{e_{k}} = \vec{u} \times \vec{v}
 $$
-(3). 利用外导数与外积和 Hodge 对偶，我们可以将 Maxwell 方程组写成一个紧凑的形式。我们首先定义外导数，假设 $A = \frac{1}{p!}A_{\mu_1\cdots\mu_p}e_{\mu_1} \wedge \cdots \wedge e_{\mu_p}$ 是 $p$-形式，则外导数定义为：
+(3). 利用外导数与外积和 Hodge 对偶，我们可以将 Maxwell 方程组写成一个紧凑的形式。我们首先定义外导数，假设 $A = \frac{1}{p!}A_{\mu_{1}\cdots\mu_{p}}e_{\mu_{1}} \wedge \cdots \wedge e_{\mu_{p}}$ 是 $p$-形式，则外导数定义为：
 $$
-(dA)_{\mu_1\cdots\mu_{p+1}} = (p + 1) \partial_{[\mu_1}A_{\mu_2\cdots\mu_{p+1}]}
+(dA)_{\mu_{1}\cdots\mu_{p+1}} = (p + 1) \partial_{[\mu_{1}}A_{\mu_{2}\cdots\mu_{p+1}]}
 $$
-其中 $[\cdots]$ 表示对所有置换指标的可能求和并除以 $(p + 1)!$，且置换次数为奇数时为负，偶数时为正。如 $A$ 是标量时：$(dA)_\mu = \partial_\mu A$。试证明：当 $A$ 为 4-矢量电磁势时，满足：
+其中 $[\cdots]$ 表示对所有置换指标的可能求和并除以 $(p + 1)!$，且置换次数为奇数时为负，偶数时为正。如 $A$ 是标量时：$(dA)_{\mu} = \partial_{\mu} A$。试证明：当 $A$ 为 4-矢量电磁势时，满足：
 $$
-F_{\mu\nu} = (dA)_{\mu\nu} = (\partial_\mu A_\nu - \partial_\nu A_\mu)
+F_{\mu\nu} = (dA)_{\mu\nu} = (\partial_{\mu} A_{\nu} - \partial_{\nu} A_{\mu})
 $$
 
 进一步的请证明 Maxwell 方程满足：
@@ -69,7 +69,7 @@ $$
 dF = 0 \\
 d (\star F) = \star J 
 $$
-其中 $J$ 为四矢量形式的电流密度。（注：本题当中我们在 Euclidean 时空下，即不考虑时间和空间分量的不同，此时麦克斯韦方程组的四维协变形式为 $\partial_\mu F^{\mu\nu} = -J^\nu$。值得一提的是，如果不存在外源 $J$，我们可以发现方程在 $F \rightarrow \star F$ 变换下是不变的，此即著名的 S-对偶。）
+其中 $J$ 为四矢量形式的电流密度。（注：本题当中我们在 Euclidean 时空下，即不考虑时间和空间分量的不同，此时麦克斯韦方程组的四维协变形式为 $\partial_{\mu} F^{\mu\nu} = -J^{\nu}$。值得一提的是，如果不存在外源 $J$，我们可以发现方程在 $F \rightarrow \star F$ 变换下是不变的，此即著名的 S-对偶。）
 
 （3） 直接利用定义导出电磁场张量：
 $$
@@ -181,7 +181,7 @@ $$
 
 (4). 给定一个标量场 $f$，和 1-形式场（矢量场）$A$，试证明：
 $$
-(\nabla f)_\mu = (df)_\mu, \quad (\nabla \times A)_\mu = \star (dA)_\mu, \quad \nabla \cdot A = \star (d \star A) 
+(\nabla f)_{\mu} = (df)_{\mu}, \quad (\nabla \times A)_{\mu} = \star (dA)_{\mu}, \quad \nabla \cdot A = \star (d \star A) 
 $$
 
 既然题目里出现了旋度，默认在三维下进行运算：
@@ -281,7 +281,7 @@ $$
 \frac{1}{2} \epsilon_{ijk} \omega_{ij} \vec{e_{k}} = \star \mathbf{\omega}
 $$
 
-(6). 我们定义一个 $n$-形式场 $\omega$ 在一个 $n$ 维流形 $M$ 上的积分为 $\int_M \omega = \int_M \omega_{1\cdots n}(x_1, \cdots, x_n) dx_1 \cdots dx_n$（1.11）。在高维空间中，Stokes 定理和 Gauss 定理可以统一表述为：$\int_M d\omega = \int_{\partial M} \omega$，其中 $\omega$ 是一个 $(p - 1)$-形式，$d\omega$ 是 $\omega$ 的外微分，表示场的散度或旋度，$M$ 是一个 $p$-维流形，$\partial M$ 是边界。试说明一般的 Stokes 定理在二维时如何回到我们熟悉的表述：$\oint_{\partial S} \omega_\mu \cdot dx^\mu = \int_S (\partial_1 \omega_2 - \partial_2 \omega_1) dx^1 dx^2$。
+(6). 我们定义一个 $n$-形式场 $\omega$ 在一个 $n$ 维流形 $M$ 上的积分为 $\int_{M} \omega = \int_{M} \omega_{1\cdots n}(x_{1}, \cdots, x_{n}) dx_{1} \cdots dx_{n}$（1.11）。在高维空间中，Stokes 定理和 Gauss 定理可以统一表述为：$\int_{M} d\omega = \int_{\partial M} \omega$，其中 $\omega$ 是一个 $(p - 1)$-形式，$d\omega$ 是 $\omega$ 的外微分，表示场的散度或旋度，$M$ 是一个 $p$-维流形，$\partial M$ 是边界。试说明一般的 Stokes 定理在二维时如何回到我们熟悉的表述：$\oint_{\partial S} \omega_{\mu} \cdot dx^{\mu} = \int_{S} (\partial_{1} \omega_{2} - \partial_{2} \omega_{1}) dx^{1} dx^{2}$。
 
 取 $\omega$ 为二维 1-form：
 $$

@@ -10,7 +10,7 @@
 
 2.1 计算
 
-一个半径为 $R$ 的电介质球,极化强度为 $\vec{P}=K\frac{\vec{r}}{r^2}$,电容率为 $\epsilon$.
+一个半径为 $R$ 的电介质球,极化强度为 $\vec{P}=K\frac{\vec{r}}{r^{2}}$,电容率为 $\epsilon$.
 
 (1) 计算束缚电荷的体密度和面密度 
 
@@ -44,7 +44,7 @@ $$
 球外
 $$
 Q = \int_{0}^{R} \left( \frac{\epsilon K}{(\epsilon - \epsilon_{0}) r^{2}} - \frac{K}{r^{2}} \right) 4 \pi r^{2} d r + 4 \pi R^{2} \frac{K}{R} = \frac{\epsilon K}{\epsilon - \epsilon_{0}} 4 \pi R \\
-\phi (r) = \frac{1}{4 \pi \epsilon_{0}} \frac{Q}{r} = \frac{\epsilon KR}{(\epsilon - \epsilon_0)\epsilon_0 r}
+\phi (r) = \frac{1}{4 \pi \epsilon_{0}} \frac{Q}{r} = \frac{\epsilon KR}{(\epsilon - \epsilon_{0})\epsilon_{0} r}
 $$
 球内
 $$
@@ -56,15 +56,15 @@ $$
 $$
 
 $$
-\phi (r) = \frac{\epsilon K}{(\epsilon - \epsilon_0)\epsilon_0} + \int_{r}^{R} \frac{K}{\epsilon - \epsilon_{0}} \frac{d r}{r} = \frac{K}{\epsilon - \epsilon_0}(\ln \frac{R}{r} + \frac{\epsilon}{\epsilon_0})
+\phi (r) = \frac{\epsilon K}{(\epsilon - \epsilon_{0})\epsilon_{0}} + \int_{r}^{R} \frac{K}{\epsilon - \epsilon_{0}} \frac{d r}{r} = \frac{K}{\epsilon - \epsilon_{0}}(\ln \frac{R}{r} + \frac{\epsilon}{\epsilon_{0}})
 $$
 
 (4) 求该带电介质球产生的静电场总能量
 $$
-W_{E} = \int_{0}^{R} \frac{1}{2} \epsilon_{0} (\frac{K}{(\epsilon - \epsilon_{0}) r})^{2} 4 \pi r^{2} d r + \int_{R}^{\infty} \frac{1}{2} \epsilon_{0} (\frac{\epsilon KR}{(\epsilon - \epsilon_0)\epsilon_0 r^{2}})^{2} 4 \pi r^{2} d r \\ = 
-2\pi \epsilon R \left(1 + \frac{\epsilon}{\epsilon_0}\right) \left(\frac{K}{\epsilon - \epsilon_0}\right)^2
+W_{E} = \int_{0}^{R} \frac{1}{2} \epsilon_{0} (\frac{K}{(\epsilon - \epsilon_{0}) r})^{2} 4 \pi r^{2} d r + \int_{R}^{\infty} \frac{1}{2} \epsilon_{0} (\frac{\epsilon KR}{(\epsilon - \epsilon_{0})\epsilon_{0} r^{2}})^{2} 4 \pi r^{2} d r \\ = 
+2\pi \epsilon R \left(1 + \frac{\epsilon}{\epsilon_{0}}\right) \left(\frac{K}{\epsilon - \epsilon_{0}}\right)^{2}
 $$
-(b) 试证:极化电荷出在自由电荷处,无自由电荷也无极化电荷,极化使自由电荷处的总电荷变为原来的$\frac{1}{\epsilon_r}$倍.  
+(b) 试证:极化电荷出在自由电荷处,无自由电荷也无极化电荷,极化使自由电荷处的总电荷变为原来的$\frac{1}{\epsilon_{r}}$倍.  
 
 证明
 
@@ -91,7 +91,7 @@ $$
 $$
 \rho = \rho_{0} + \rho' = \frac{\epsilon_{0}}{\epsilon} \rho_{0} = \frac{1}{\epsilon_{r}} \rho_{0}
 $$
-(c) 试证:对无穷大均匀电介质,有介质时的电势和电场是无介质时的$\frac{1}{\epsilon_r}$倍.
+(c) 试证:对无穷大均匀电介质,有介质时的电势和电场是无介质时的$\frac{1}{\epsilon_{r}}$倍.
 
 证明
 
@@ -127,33 +127,33 @@ $$
 \vec{E} = \int d \tau' \frac{\rho_{0} (\vec{r} - \vec{r}')}{4 \pi \epsilon_{0} \epsilon_{r}|\vec{r} - \vec{r}'|^{3}}
 $$
 
-所以场强和电势都变为无介质时的$\frac{1}{\epsilon_r}$倍.
+所以场强和电势都变为无介质时的$\frac{1}{\epsilon_{r}}$倍.
 
 ### 2. 唯一性定理及应用
 
 静电问题唯一性定理，有导体存在时的唯一性定理 
 作业： 
-(a) 由一组导体组成的体系,已知第$i$个导体上的总电荷为$q_i$,且导体外可以有介质,但无自由电荷,试证空间任一点 $\vec{r}$ 处的电势与 $q$ 的关系为:  $\phi(\vec{r}, q_1, q_2, \ldots) = \sum_i p_i(\vec{r}) q_i$，其中$p_i(\vec{r})$与导体上电荷无关. 
+(a) 由一组导体组成的体系,已知第$i$个导体上的总电荷为$q_{i}$,且导体外可以有介质,但无自由电荷,试证空间任一点 $\vec{r}$ 处的电势与 $q$ 的关系为:  $\phi(\vec{r}, q_{1}, q_{2}, \ldots) = \sum_{i} p_{i}(\vec{r}) q_{i}$，其中$p_{i}(\vec{r})$与导体上电荷无关. 
 
 证明
 
 由唯一性定理，只要说明满足边界条件
 $$
-\oint_{S_{i}} d S \frac{\partial}{\partial n_{i}}  \sum_i p_i(\vec{r}) q_i = - \frac{q_{i}}{\epsilon} \\
-\sum_i p_i(\vec{r}) q_i = \phi_{i} \qquad (\vec{r} \in S_{i})
+\oint_{S_{i}} d S \frac{\partial}{\partial n_{i}}  \sum_{i} p_{i}(\vec{r}) q_{i} = - \frac{q_{i}}{\epsilon} \\
+\sum_{i} p_{i}(\vec{r}) q_{i} = \phi_{i} \qquad (\vec{r} \in S_{i})
 $$
 的解存在，那么这个解就是唯一解
 $$
-\oint_{S_{i}} d S \frac{\partial}{\partial n_{i}}  \sum_i p_i(\vec{r}) q_i = \int_{S_{i}} d \vec{S} \cdot \nabla (\sum_{i} p_{i} (\vec{r}) q_{i}) \\
+\oint_{S_{i}} d S \frac{\partial}{\partial n_{i}}  \sum_{i} p_{i}(\vec{r}) q_{i} = \int_{S_{i}} d \vec{S} \cdot \nabla (\sum_{i} p_{i} (\vec{r}) q_{i}) \\
 = \int_{V_{i}} d \tau \nabla \cdot \nabla  (\sum_{i} p_{i} (\vec{r}) q_{i}) = \int_{V_{i}} d \tau \nabla^{2}  (\sum_{i} p_{i} (\vec{r}) q_{i}) = - \frac{q_{i}}{\epsilon}
 $$
 不妨令
 $$
-p_{i} (\vec{r}) = \frac{1}{ 4 \pi \epsilon} \int_{V_{i}} \frac{\rho_{i} (\vec{r}') d \tau'}{ |\vec{r} - \vec{r}'|}
+p_{i} (\vec{r}) = \frac{1}{4 \pi \epsilon} \int_{V_{i}} \frac{\rho_{i} (\vec{r}') d \tau'}{|\vec{r} - \vec{r}'|}
 $$
 
 $$
-\int_{V_{i}} d \tau \nabla^{2}  (\sum_{i} p_{i} (\vec{r}) q_{i}) = \int_{V_{i}} d \tau \sum_{i} \frac{q_{i}}{ 4 \pi \epsilon} \nabla^{2} \int_{V_{i}} \frac{\rho_{i} (\vec{r}') d \tau'}{ |\vec{r} - \vec{r}'|} = - \frac{q_{i}}{\epsilon} \int_{V_{i}} d \tau \sum_{i} \int_{V_{i}} d \tau' \rho_{i} (\vec{r'}) \delta (\vec{r} - \vec{r'}) \\ =
+\int_{V_{i}} d \tau \nabla^{2}  (\sum_{i} p_{i} (\vec{r}) q_{i}) = \int_{V_{i}} d \tau \sum_{i} \frac{q_{i}}{4 \pi \epsilon} \nabla^{2} \int_{V_{i}} \frac{\rho_{i} (\vec{r}') d \tau'}{|\vec{r} - \vec{r}'|} = - \frac{q_{i}}{\epsilon} \int_{V_{i}} d \tau \sum_{i} \int_{V_{i}} d \tau' \rho_{i} (\vec{r'}) \delta (\vec{r} - \vec{r'}) \\ =
 - \frac{q_{i}}{\epsilon} \int_{V_{i}} d \tau \rho_{i} (\vec{r})
 $$
 
@@ -163,7 +163,7 @@ $$
 $$
 再证明存在这样一组 $\rho_{i}$ 能够让所有导体表面等势，即满足
 $$
-\sum_{i}  \frac{q_{i}}{ 4 \pi \epsilon} \int_{V_{i}} \frac{\rho_{i} (\vec{r}') d \tau'}{ |\vec{r} - \vec{r}'|} = \phi_{i} \qquad (\vec{r} \in S_{i})
+\sum_{i}  \frac{q_{i}}{4 \pi \epsilon} \int_{V_{i}} \frac{\rho_{i} (\vec{r}') d \tau'}{|\vec{r} - \vec{r}'|} = \phi_{i} \qquad (\vec{r} \in S_{i})
 $$
 注意到取 $q_{i} \rho_{i}$ 为平衡时，那个导体的面电荷密度满足条件，即
 $$
@@ -203,13 +203,13 @@ $$
 
 2.9 接地的空心导体球
 
-接地的空心导体球的内外半径为 $R_1$ 和 $R_2$,在球内离球心为 $a(a<R_1)$ 处置一点电荷 $Q$. 用镜像法求电势. 导体球上的感应电荷有多少? 分布在内表面还是外表面?
+接地的空心导体球的内外半径为 $R_{1}$ 和 $R_{2}$,在球内离球心为 $a(a<R_{1})$ 处置一点电荷 $Q$. 用镜像法求电势. 导体球上的感应电荷有多少? 分布在内表面还是外表面?
 
 像电荷大小为$- \frac{a}{R_{1}} Q$ ，距离球心$\frac{R_{1}^{2}}{a}$
 
 所以电势分布为
 $$
-\phi (r, \theta) =  \frac{1}{4\pi \epsilon_0} \left( \frac{Q}{\sqrt{R^2 + a^2 - 2Ra \cos \theta}} - \frac{\frac{R_{1}}{a} Q}{\sqrt{R^2 + \frac{R_1^2}{a^2} - \frac{2R_1^2 R}{a} \cos \theta}} \right)
+\phi (r, \theta) =  \frac{1}{4\pi \epsilon_{0}} \left( \frac{Q}{\sqrt{R^{2} + a^{2} - 2Ra \cos \theta}} - \frac{\frac{R_{1}}{a} Q}{\sqrt{R^{2} + \frac{R_{1}^{2}}{a^{2}} - \frac{2R_{1}^{2} R}{a} \cos \theta}} \right)
 $$
 感应电荷分布于内表面,总电荷量为 $-Q$
 

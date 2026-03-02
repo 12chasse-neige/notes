@@ -6,7 +6,7 @@ Chasse_neige
 
 量子力学提出以前，人们认为电子在绕着原子核转动，这个模型虽然已经被证明是错误的，但它仍然能够解决一些问题。本题尝试使用这个模型来计算氢原子在受到外加电场时，电子偏离轨道产生的电偶极矩。为了方便计算，我们忽略外电场与电子对质子的相互作用。同时，我们仅考虑在二维情况，即电子只在一个二维平面上做圆周运动。
 
-(1). 为了简单起见，我们假设在受到电场作用之前，电子进行圆周运动，圆周运动半径为 $r_0 = 1$，且电子的电荷 $e = 1$ 与质量 $m = 1$。请在极坐标系下，写出此时电子的运动方程，并求解 (取 $\frac{1}{4\pi\epsilon_0} = 1$)；
+(1). 为了简单起见，我们假设在受到电场作用之前，电子进行圆周运动，圆周运动半径为 $r_{0} = 1$，且电子的电荷 $e = 1$ 与质量 $m = 1$。请在极坐标系下，写出此时电子的运动方程，并求解 (取 $\frac{1}{4\pi\epsilon_{0}} = 1$)；
 $$
 \ddot{r} - \dot{\theta}^{2} r = - \frac{1}{r^{2}}
 $$
@@ -26,10 +26,10 @@ $$
 
 (3). 对于一般的电场强度 $E$，电子的运动方程不易求解。因此我们考虑一个简单情形，即电场强度较弱 $\epsilon = \frac{eE}{m} \ll 1$。此时，我们可以微扰求解我们的微分方程。具体而言，我们可以 Taylor 展开我们的运动方程：
 $$
-r = r_0 + \epsilon r_1(t) + \epsilon^2 r_2(t) + \cdots,
+r = r_{0} + \epsilon r_{1}(t) + \epsilon^{2} r_{2}(t) + \cdots,
 $$
 $$
-\theta = \theta_0 + \epsilon \theta_1(t) + \epsilon^2 \theta_2(t) + \cdots
+\theta = \theta_{0} + \epsilon \theta_{1}(t) + \epsilon^{2} \theta_{2}(t) + \cdots
 $$
 请将上述展开带入 (2) 中的运动方程，并写出正比于 $\epsilon$ 阶的微扰运动方程。
 
@@ -51,7 +51,7 @@ $$
 2 \dot{\theta}_{1} \dot{r}_{0} + 2 \dot{\theta}_{0} \dot{r}_{1} + \ddot{\theta}_{0} r_{1} + \ddot{\theta}_{1} r_{0} = - \sin \theta_{0}
 $$
 
-(4). 请给定的边界条件 $r_1 = 0$, $\dot{r}_1 = 0$, $\theta_1 = 0$, $\dot{\theta}_1 = 0$ 下，我们可以求解上述运动方程。假设我们仅考虑 $O(\epsilon)$ 的贡献，请求解运动方程。取 $\epsilon = 0.01$，请画出电子在 2 个，4 个，8 个周期内的运动轨迹，并在 x-轴上轨迹相对于原轨道的偏移量。请计算在上述周期下，原子的平均电偶极矩。假设原子体密度为 $N$，请计算等效的相对介电常数。
+(4). 请给定的边界条件 $r_{1} = 0$, $\dot{r}_{1} = 0$, $\theta_{1} = 0$, $\dot{\theta}_{1} = 0$ 下，我们可以求解上述运动方程。假设我们仅考虑 $O(\epsilon)$ 的贡献，请求解运动方程。取 $\epsilon = 0.01$，请画出电子在 2 个，4 个，8 个周期内的运动轨迹，并在 x-轴上轨迹相对于原轨道的偏移量。请计算在上述周期下，原子的平均电偶极矩。假设原子体密度为 $N$，请计算等效的相对介电常数。
 
 带入 $r_{0} = 1$， $\theta_{0} (t) = t$ 以及题给边界条件：
 $$
@@ -65,8 +65,8 @@ $$
 解得：
 $$
 \begin{aligned}
-r_1(t) &= A \sin t + B \cos t + \frac{3}{2} t \sin t + C \\
-\theta_1(t) &= - (2B + 2) \sin t + 2A \cos t + 3t \cos t - \frac{3}{2} C t + D
+r_{1}(t) &= A \sin t + B \cos t + \frac{3}{2} t \sin t + C \\
+\theta_{1}(t) &= - (2B + 2) \sin t + 2A \cos t + 3t \cos t - \frac{3}{2} C t + D
 \end{aligned}
 $$
 利用边界条件待定系数，解得：
@@ -78,8 +78,8 @@ $$
 所以解为：
 $$
 \begin{aligned}
-r_1(t) &= 2 \cos t + \frac{3}{2} t \sin t - 2 \\
-\theta_1(t) &= - 6 \sin t + 3t \cos t + 3 t 
+r_{1}(t) &= 2 \cos t + \frac{3}{2} t \sin t - 2 \\
+\theta_{1}(t) &= - 6 \sin t + 3t \cos t + 3 t 
 \end{aligned}
 $$
 作图
@@ -138,7 +138,7 @@ $$
 
 证明：在规范变换后
 $$
-\vec{E'} = - \nabla (\phi - \frac{\partial }{\partial t} a) - \frac{\partial}{\partial t}(\vec{A} + \nabla a) = - \nabla \phi - \frac{\partial}{\partial t} \vec{A} = \vec{E}
+\vec{E'} = - \nabla (\phi - \frac{\partial}{\partial t} a) - \frac{\partial}{\partial t}(\vec{A} + \nabla a) = - \nabla \phi - \frac{\partial}{\partial t} \vec{A} = \vec{E}
 $$
 
 $$

@@ -3,44 +3,44 @@
 Chasse_neige
 
 ### Question 1
-The eigenfunctions of a Hydrogen are of the form $\psi_{nlm} = R_{nl}(r)P_l^m(\cos\theta)e^{im\phi}$
+The eigenfunctions of a Hydrogen are of the form $\psi_{nlm} = R_{nl}(r)P_{l}^{m}(\cos\theta)e^{im\phi}$
 
 (a) Write down the explicit forms of $\psi_{100}$, $\psi_{200}$, $\psi_{210}$ and $\psi_{21\pm1}$.
 $$
-R_{nl}(r) = \sqrt{ \left( \frac{2}{n a_0} \right)^3 \frac{(n-l-1)!}{2n[(n+l)!]} } e^{- \frac{r}{(n a_0)}} \left( \frac{2r}{n a_0} \right)^l L_{n-l-1}^{2l+1} \left( \frac{2r}{n a_0} \right)
+R_{nl}(r) = \sqrt{\left( \frac{2}{n a_{0}} \right)^{3} \frac{(n-l-1)!}{2n[(n+l)!]}} e^{- \frac{r}{(n a_{0})}} \left( \frac{2r}{n a_{0}} \right)^{l} L_{n-l-1}^{2l+1} \left( \frac{2r}{n a_{0}} \right)
 $$
 Where
 $$
-L_{k}^{\alpha}(x) = \sum_{j=0}^{k} (-1)^j \binom{k+\alpha}{k-j} \frac{x^j}{j!}
+L_{k}^{\alpha}(x) = \sum_{j=0}^{k} (-1)^{j} \binom{k+\alpha}{k-j} \frac{x^{j}}{j!}
 $$
 
 And
 $$
-Y_{lm}(\theta, \phi) = \sqrt{ \frac{2l+1}{4\pi} \frac{(l-m)!}{(l+m)!} } P_l^m (\cos \theta) e^{i m \phi}
+Y_{lm}(\theta, \phi) = \sqrt{\frac{2l+1}{4\pi} \frac{(l-m)!}{(l+m)!}} P_{l}^{m} (\cos \theta) e^{i m \phi}
 $$
 Where
 $$
-P_l^m(x) = (-1)^m (1 - x^2)^{\frac{m}{2}} \frac{d^m}{dx^m} P_l(x)
+P_{l}^{m}(x) = (-1)^{m} (1 - x^{2})^{\frac{m}{2}} \frac{d^{m}}{dx^{m}} P_{l}(x)
 $$
 
 So
 $$
-\psi_{100} = R_{10} (r) Y_{00} (\theta, \phi) = \sqrt{\left( \frac{2}{a_0} \right)^3 \frac{1}{2}} e^{-\frac{r}{a_{0}}} L_{0}^{1} \left(\frac{2r}{a_{0}} \right) \sqrt{\frac{1}{4 \pi}} P_{0}^{0} (\cos \theta) \\
+\psi_{100} = R_{10} (r) Y_{00} (\theta, \phi) = \sqrt{\left( \frac{2}{a_{0}} \right)^{3} \frac{1}{2}} e^{-\frac{r}{a_{0}}} L_{0}^{1} \left(\frac{2r}{a_{0}} \right) \sqrt{\frac{1}{4 \pi}} P_{0}^{0} (\cos \theta) \\
 = \frac{2}{a_{0}^{\frac{3}{2}}} \sqrt{\frac{1}{4 \pi}} e^{- \frac{r}{a_{0}}}
 $$
 
 $$
-\psi_{200} = R_{20} (r) Y_{00} (\theta, \phi) = \sqrt{\left( \frac{2}{2 a_0} \right)^3 \frac{1}{8}} e^{- \frac{r}{2 a_{0}}} L_{1}^{1} \left(\frac{r}{a_{0}} \right) \sqrt{\frac{1}{4 \pi}} P_{0}^{0} (\cos \theta) \\ 
+\psi_{200} = R_{20} (r) Y_{00} (\theta, \phi) = \sqrt{\left( \frac{2}{2 a_{0}} \right)^{3} \frac{1}{8}} e^{- \frac{r}{2 a_{0}}} L_{1}^{1} \left(\frac{r}{a_{0}} \right) \sqrt{\frac{1}{4 \pi}} P_{0}^{0} (\cos \theta) \\ 
 = \frac{1}{2\sqrt{2} a_{0}^{\frac{3}{2}}} \sqrt{\frac{1}{4 \pi}} \left(2 - \frac{r}{a_{0}}\right) e^{- \frac{r}{a_{0}}}
 $$
 
 $$
-\psi_{210} = R_{21} (r) Y_{1 0} (\theta, \phi) = \sqrt{\frac{1}{a_{0}}^{3} \frac{1}{24}} e^{ -\frac{r}{2 a_{0}}} \frac{r}{a_{0}} L_{0}^{3} \left( \frac{r}{a_{0}} \right) \sqrt{\frac{3}{4 \pi} } P_{1}^{0} (\cos \theta) \\ 
+\psi_{210} = R_{21} (r) Y_{1 0} (\theta, \phi) = \sqrt{\frac{1}{a_{0}}^{3} \frac{1}{24}} e^{-\frac{r}{2 a_{0}}} \frac{r}{a_{0}} L_{0}^{3} \left( \frac{r}{a_{0}} \right) \sqrt{\frac{3}{4 \pi}} P_{1}^{0} (\cos \theta) \\ 
 = \frac{1}{2 \sqrt{2} a_{0}^{\frac{3}{2}}} \sqrt{\frac{1}{4 \pi}} \frac{r}{a_{0}} e^{- \frac{r}{2 a_{0}}} \cos \theta
 $$
 
 $$
-\psi_{21 \pm 1} = R_{21} (r) Y_{1 \pm 1} (\theta, \phi) = \sqrt{\frac{1}{a_{0}}^{3} \frac{1}{24}} e^{ -\frac{r}{2 a_{0}}} \frac{r}{a_{0}} L_{0}^{3} \left( \frac{r}{a_{0}} \right) \sqrt{\frac{3}{4 \pi} 2^{\mp 1}} P_{1}^{\pm 1} (\cos \theta) e^{i \pm 1 \phi}
+\psi_{21 \pm 1} = R_{21} (r) Y_{1 \pm 1} (\theta, \phi) = \sqrt{\frac{1}{a_{0}}^{3} \frac{1}{24}} e^{-\frac{r}{2 a_{0}}} \frac{r}{a_{0}} L_{0}^{3} \left( \frac{r}{a_{0}} \right) \sqrt{\frac{3}{4 \pi} 2^{\mp 1}} P_{1}^{\pm 1} (\cos \theta) e^{i \pm 1 \phi}
 $$
 
 Show the two functions respectively 
@@ -65,22 +65,22 @@ J = 0
 $$
 For $\psi_{211}$ 
 $$
-J (r, \theta, \phi) = \frac{\hbar }{\mu} \frac{r}{64 \pi a_{0}^{5}} e^{- \frac{r}{a_{0}}} \sin \theta \hat{e}_{\phi}
+J (r, \theta, \phi) = \frac{\hbar}{\mu} \frac{r}{64 \pi a_{0}^{5}} e^{- \frac{r}{a_{0}}} \sin \theta \hat{e}_{\phi}
 $$
-(c) Use the probability current obtained above to show that the z-component of the magnetic moment of $\psi_{nlm}$ is given by $M_z=m\mu_B$ where $\mu_B=\frac{e\hbar}{2\mu}$ is the Bohr magneton.
+(c) Use the probability current obtained above to show that the z-component of the magnetic moment of $\psi_{nlm}$ is given by $M_{z}=m\mu_{B}$ where $\mu_{B}=\frac{e\hbar}{2\mu}$ is the Bohr magneton.
 
 $$
 M_{z} = - \int \frac{e}{2} \vec{r} \times \vec{J} dv = -\frac{e \hbar m}{2 \mu} \int \frac{|\psi_{nlm}|^{2}}{r \sin \theta} r \sin \theta dv = - m \mu_{B}
 $$
 
 ### Question 2
-Using $H_{hfB} = A \vec{I} \cdot \vec{J} + \frac{\mu_B}{\hbar} (g_J J_z + g_I I_z) B_z$, compute the hyperfine structure of the $5S_{1/2}$ ground state of $^{87}\text{Rb}$ atom under the influence of an external magnetic field. The relevant parameters are given in the next page.
+Using $H_{hfB} = A \vec{I} \cdot \vec{J} + \frac{\mu_{B}}{\hbar} (g_{J} J_{z} + g_{I} I_{z}) B_{z}$, compute the hyperfine structure of the $5S_{1/2}$ ground state of $^{87}\text{Rb}$ atom under the influence of an external magnetic field. The relevant parameters are given in the next page.
 
-(a) You should write a Matlab or Mathematica script or any computation script of your preference. Use $|J, m_J\rangle |I, m_I\rangle$ as your starting basis to obtain the matrix representation of $H_{hfB}$ and then diagonalize this matrix to obtain the eigenenergies and eigenstates. Do not use the Breit-Rabi formula. Submit your results together with 1 page of your program.
+(a) You should write a Matlab or Mathematica script or any computation script of your preference. Use $|J, m_{J}\rangle |I, m_{I}\rangle$ as your starting basis to obtain the matrix representation of $H_{hfB}$ and then diagonalize this matrix to obtain the eigenenergies and eigenstates. Do not use the Breit-Rabi formula. Submit your results together with 1 page of your program.
 
-Under the  $|J, m_J\rangle |I, m_I\rangle$ basis, the Hamiltonian can be represented as
+Under the  $|J, m_{J}\rangle |I, m_{I}\rangle$ basis, the Hamiltonian can be represented as
 $$
-H_{hfB} = A \left( \frac{I_+ J_- + I_- J_+}{2} + I_z J_z \right) + \frac{\mu_{B}}{\hbar} (g_{J} J_{z} + g_{I} I_{z}) B_{z}
+H_{hfB} = A \left( \frac{I_+ J_- + I_- J_+}{2} + I_{z} J_{z} \right) + \frac{\mu_{B}}{\hbar} (g_{J} J_{z} + g_{I} I_{z}) B_{z}
 $$
 For $^{87}\text{Rb}$ atoms' $5 S_{1/2}$ state
 $$
@@ -96,7 +96,7 @@ $$
 $$
 The Hamiltonian matrix can be obtained as
 $$
-H_{ij} = A \bra{i} \frac{I_+ J_- + I_- J_+}{2} + I_z J_z \ket{j} + \frac{\mu_{B}}{\hbar} (g_{J} J_{z} + g_{I} I_{z}) B_{z}
+H_{ij} = A \bra{i} \frac{I_+ J_- + I_- J_+}{2} + I_{z} J_{z} \ket{j} + \frac{\mu_{B}}{\hbar} (g_{J} J_{z} + g_{I} I_{z}) B_{z}
 $$
 For diagonals, the x and y components of the spin operator is 0, so the Hamiltonian is 
 $$
@@ -212,7 +212,7 @@ D_{B = 0} = \begin{pmatrix}
 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2.563
 \end{pmatrix}
 $$
-(b) When B=0, write down all $|F, m_F\rangle$ states in the basis of $|J, m_J\rangle |I, m_I\rangle$ from your computations. Compare your results to that based on the Clebsch-Gordan coefficients? Compare also the eigenenergies you obtain to the formula given in the lecture notes.
+(b) When B=0, write down all $|F, m_{F}\rangle$ states in the basis of $|J, m_{J}\rangle |I, m_{I}\rangle$ from your computations. Compare your results to that based on the Clebsch-Gordan coefficients? Compare also the eigenenergies you obtain to the formula given in the lecture notes.
 $$
 \ket{F = 1, m_{F} = 1} = - 0.500 \ket{m_{J} = \frac{1}{2}} \otimes \ket{m_{I} = \frac{1}{2}} + 0.866 \ket{m_{J} = -\frac{1}{2}} \otimes \ket{m_{I} = \frac{3}{2}}
 $$
@@ -306,6 +306,6 @@ These show that our calculations are corresponding to the formula given in class
 Hint for Question 2:
 
 $$
-\vec{I} \cdot \vec{J} = \frac{I_+ J_- + I_- J_+}{2} + I_z J_z
+\vec{I} \cdot \vec{J} = \frac{I_+ J_- + I_- J_+}{2} + I_{z} J_{z}
 $$
 <img src="./Atomic and Molecular Physics Homework 1.assets/image-20250929134001198.png" alt="image-20250929134001198">

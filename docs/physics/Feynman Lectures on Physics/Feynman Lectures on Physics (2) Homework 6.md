@@ -85,80 +85,80 @@ $$
 
 $$
 \begin{aligned}
-\partial_\mu F^{\mu\nu} &= \frac{4\pi}{c} j^\nu \\
-\partial_\mu {}^\star\!F^{\mu\nu} &= 0
+\partial_{\mu} F^{\mu\nu} &= \frac{4\pi}{c} j^{\nu} \\
+\partial_{\mu} {}^{\star}\!F^{\mu\nu} &= 0
 \end{aligned}
 $$
 
 电磁场张量 $F^{\mu\nu}$ 定义为：
 $$
 F^{\mu\nu} = \begin{pmatrix}
-0 & -E_x & -E_y & -E_z \\
-E_x & 0 & -B_z & B_y \\
-E_y & B_z & 0 & -B_x \\
-E_z & -B_y & B_x & 0
+0 & -E_{x} & -E_{y} & -E_{z} \\
+E_{x} & 0 & -B_{z} & B_{y} \\
+E_{y} & B_{z} & 0 & -B_{x} \\
+E_{z} & -B_{y} & B_{x} & 0
 \end{pmatrix}.
 $$
 
-对偶电磁场张量 ${}^\star\!F^{\mu\nu}$ 定义为：
+对偶电磁场张量 ${}^{\star}\!F^{\mu\nu}$ 定义为：
 $$
-{}^\star\!F^{\mu\nu} = \begin{pmatrix}
-0 & B_x & B_y & B_z \\
--B_x & 0 & E_z & -E_y \\
--B_y & -E_z & 0 & E_x \\
--B_z & E_y & -E_x & 0
+{}^{\star}\!F^{\mu\nu} = \begin{pmatrix}
+0 & B_{x} & B_{y} & B_{z} \\
+-B_{x} & 0 & E_{z} & -E_{y} \\
+-B_{y} & -E_{z} & 0 & E_{x} \\
+-B_{z} & E_{y} & -E_{x} & 0
 \end{pmatrix}.
 $$
 
-四维流密度 $j^\nu$ 定义为：
+四维流密度 $j^{\nu}$ 定义为：
 $$
-j^\nu = \left( c \rho, \vec{J} \right)
+j^{\nu} = \left( c \rho, \vec{J} \right)
 $$
 
 洛伦兹变换可以表示为：
 $$
-x'^\mu = \Lambda^\mu{}_\nu x^\nu
+x'^{\mu} = \Lambda^{\mu}{}_{\nu} x^{\nu}
 $$
 
-其中 $\Lambda^\mu{}_\nu$ 是洛伦兹变换矩阵，满足：
+其中 $\Lambda^{\mu}{}_{\nu}$ 是洛伦兹变换矩阵，满足：
 $$
-\Lambda^\mu{}_\alpha \Lambda^\nu{}_\beta \eta_{\mu\nu} = \eta_{\alpha\beta},
+\Lambda^{\mu}{}_{\alpha} \Lambda^{\nu}{}_{\beta} \eta_{\mu\nu} = \eta_{\alpha\beta},
 $$
 
 其中 $\eta_{\mu\nu} = \text{diag}(-1, 1, 1, 1)$ 
 
 $$
-F'^{\mu\nu} = \Lambda^\mu{}_\alpha \Lambda^\nu{}_\beta F^{\alpha\beta},
+F'^{\mu\nu} = \Lambda^{\mu}{}_{\alpha} \Lambda^{\nu}{}_{\beta} F^{\alpha\beta},
 $$
 
 $$
-j'^\nu = \Lambda^\nu{}_\beta j^\beta
+j'^{\nu} = \Lambda^{\nu}{}_{\beta} j^{\beta}
 $$
 
 $$
-\partial'_\mu = \frac{\partial}{\partial x'^\mu} = \frac{\partial x^\alpha}{\partial x'^\mu} \frac{\partial}{\partial x^\alpha} = \Lambda^\alpha{}_\mu \partial_\alpha
+\partial'_{\mu} = \frac{\partial}{\partial x'^{\mu}} = \frac{\partial x^{\alpha}}{\partial x'^{\mu}} \frac{\partial}{\partial x^{\alpha}} = \Lambda^{\alpha}{}_{\mu} \partial_{\alpha}
 $$
 
 $$
-F'^{\mu\nu} = \Lambda^\mu{}_\alpha \Lambda^\nu{}_\beta F^{\alpha\beta}
+F'^{\mu\nu} = \Lambda^{\mu}{}_{\alpha} \Lambda^{\nu}{}_{\beta} F^{\alpha\beta}
 $$
 
 $$
-j'^\nu = \Lambda^\nu{}_\beta j^\beta
+j'^{\nu} = \Lambda^{\nu}{}_{\beta} j^{\beta}
 $$
 
 $$
-\partial'_\mu F'^{\mu\nu} = \Lambda^\delta{}_\mu \partial_\delta \left( \Lambda^\mu{}_\alpha \Lambda^\nu{}_\beta F^{\alpha\beta} \right)
+\partial'_{\mu} F'^{\mu\nu} = \Lambda^{\delta}{}_{\mu} \partial_{\delta} \left( \Lambda^{\mu}{}_{\alpha} \Lambda^{\nu}{}_{\beta} F^{\alpha\beta} \right)
 $$
 
 $$
-\partial'_\mu F'^{\mu\nu} = \delta^\delta{}_\alpha \Lambda^\nu{}_\beta \partial_\delta F^{\alpha\beta} \\ = 
-\Lambda^\nu{}_\beta \partial_\alpha F^{\alpha\beta} = \frac{4 \pi}{c} \Lambda^\nu{}_\beta j^{\beta} = \frac{4 \pi}{c} j'^{\nu}
+\partial'_{\mu} F'^{\mu\nu} = \delta^{\delta}{}_{\alpha} \Lambda^{\nu}{}_{\beta} \partial_{\delta} F^{\alpha\beta} \\ = 
+\Lambda^{\nu}{}_{\beta} \partial_{\alpha} F^{\alpha\beta} = \frac{4 \pi}{c} \Lambda^{\nu}{}_{\beta} j^{\beta} = \frac{4 \pi}{c} j'^{\nu}
 $$
 
 同理，对于对偶电磁场张量：
 $$
-\partial'_\mu {}^\star\!F'^{\mu\nu} = 0
+\partial'_{\mu} {}^{\star}\!F'^{\mu\nu} = 0
 $$
 
 所以麦克斯韦方程组是洛伦兹协变的。
@@ -167,43 +167,43 @@ $$
 
 在课堂上，大家表示电磁场能量-动量张量的推导比较繁琐，并且看不出太明显的物理意义。在本题当中，我们尝试从时空平移不变性出发，利用诺特定理推导能量-动量张量的表达式。从而将能量-动量张量与对称性联系起来。
 
-(1). 考虑一个无穷小的变换: $x^\mu \rightarrow x^\mu + \epsilon^\mu(x)$。在此无穷小变换下，电磁势按照如下变换: $A^\mu \rightarrow A^\mu + \epsilon^\nu(x)\partial_\nu A^\mu$。对于一般的理论而言，其作用量只明显包含电磁势 $A^\mu$ 及其导数 $\partial_\nu A^\mu$。请证明在上述变换下，作用量的变化满足:
+(1). 考虑一个无穷小的变换: $x^{\mu} \rightarrow x^{\mu} + \epsilon^{\mu}(x)$。在此无穷小变换下，电磁势按照如下变换: $A^{\mu} \rightarrow A^{\mu} + \epsilon^{\nu}(x)\partial_{\nu} A^{\mu}$。对于一般的理论而言，其作用量只明显包含电磁势 $A^{\mu}$ 及其导数 $\partial_{\nu} A^{\mu}$。请证明在上述变换下，作用量的变化满足:
 $$
-\delta S = \int d^4x \left( \frac{\partial \mathcal{L}}{\partial A^\mu} \epsilon^\nu(x) \partial_\nu A^\mu + \frac{\partial \mathcal{L}}{\partial (\partial_\sigma A^\mu)} \partial_\sigma [\epsilon^\nu(x) \partial_\nu A^\mu] \right)
+\delta S = \int d^{4x} \left( \frac{\partial \mathcal{L}}{\partial A^{\mu}} \epsilon^{\nu}(x) \partial_{\nu} A^{\mu} + \frac{\partial \mathcal{L}}{\partial (\partial_{\sigma} A^{\mu})} \partial_{\sigma} [\epsilon^{\nu}(x) \partial_{\nu} A^{\mu}] \right)
 $$
 
 证明
 $$
-A^\mu \rightarrow A^\mu + \epsilon^\nu(x)\partial_\nu A^\mu \\
+A^{\mu} \rightarrow A^{\mu} + \epsilon^{\nu}(x)\partial_{\nu} A^{\mu} \\
 \partial_{\sigma} A^{\mu} \rightarrow \partial_{\sigma} A^{\mu} + \partial_{\sigma} \epsilon^{\nu} (x) \partial_{\nu} A^{\mu}
 $$
 所以
 $$
 \delta S = \frac{\partial S}{\partial A^{\mu}} \epsilon^{\nu} (x) \partial_{\nu} A^{\mu} + \frac{\partial S}{\partial (\partial_{\sigma} A^{\mu})} \partial_{\sigma} \epsilon^{\nu} (x) \partial_{\nu} A^{\mu} \\ =
-\int d^4x \left( \frac{\partial \mathcal{L}}{\partial A^\mu} \epsilon^\nu(x) \partial_\nu A^\mu + \frac{\partial \mathcal{L}}{\partial (\partial_\sigma A^\mu)} \partial_\sigma [\epsilon^\nu(x) \partial_\nu A^\mu] \right)
+\int d^{4x} \left( \frac{\partial \mathcal{L}}{\partial A^{\mu}} \epsilon^{\nu}(x) \partial_{\nu} A^{\mu} + \frac{\partial \mathcal{L}}{\partial (\partial_{\sigma} A^{\mu})} \partial_{\sigma} [\epsilon^{\nu}(x) \partial_{\nu} A^{\mu}] \right)
 $$
 (2). 在上述的基础上，请证明作用量的变化满足:
 $$
-\delta S = \int d^4x T^{\mu\nu} \partial_\mu \epsilon_\nu(x), \quad T^{\mu\nu} = \frac{\partial \mathcal{L}}{\partial (\partial_\mu A_\sigma)} \partial^\nu A_\sigma - \eta^{\mu\nu} \mathcal{L}
+\delta S = \int d^{4x} T^{\mu\nu} \partial_{\mu} \epsilon_{\nu}(x), \quad T^{\mu\nu} = \frac{\partial \mathcal{L}}{\partial (\partial_{\mu} A_{\sigma})} \partial^{\nu} A_{\sigma} - \eta^{\mu\nu} \mathcal{L}
 $$
 
 证明
 $$
-\delta S = \int d^4x \left( \frac{\partial \mathcal{L}}{\partial A^\mu} \epsilon^\nu(x) \partial_\nu A^\mu + \frac{\partial \mathcal{L}}{\partial (\partial_\sigma A^\mu)} \partial_\sigma [\epsilon^\nu(x) \partial_\nu A^\mu] \right) \\ = 
-\int d^{4} x \left( \frac{\partial \mathcal{L}}{\partial A^\mu} \epsilon^\nu(x)  +  \frac{\partial \mathcal{L}}{\partial (\partial_\mu A^\sigma)} \partial_\mu [\epsilon^\nu(x) \partial_\nu A^\sigma] \right) \\ =
-\int d^{4} x \left( \frac{\partial \mathcal{L}}{\partial A^\mu} \epsilon^\nu(x) + \frac{\partial \mathcal{L}}{\partial (\partial_\mu A^\sigma)} \partial_\mu (\partial_\nu A^\sigma) \epsilon^\nu(x)  +  \frac{\partial \mathcal{L}}{\partial (\partial_\mu A^\sigma)} \partial_\nu A^\sigma \partial_\mu \epsilon^\nu(x) \right) \\ = 
-\int d^{4} x \left( \partial_{\nu} \mathcal{L} \epsilon^{\nu} (x) + \frac{\partial \mathcal{L}}{\partial (\partial_\mu A^\sigma)} \partial_\nu A^\sigma \partial_\mu \epsilon^\nu(x) \right) \\ =
-\int d^{4} x \left(\frac{\partial \mathcal{L}}{\partial (\partial_\mu A^\sigma)} \partial_\nu A^\sigma \partial_\mu \epsilon^\nu(x) - \mathcal{L} \partial_{\nu} \epsilon^{\nu} (x) \right) \\ =
-\int d^{4} x \left(\frac{\partial \mathcal{L}}{\partial (\partial_\mu A_\sigma)} \partial^\nu A_\sigma \partial_\mu \epsilon_\nu(x) - \mathcal{L} \partial_{\mu} \eta^{\mu \nu} \epsilon_{\nu} (x) \right) \\ =
-\int d^4x T^{\mu\nu} \partial_\mu \epsilon_\nu(x), \quad T^{\mu\nu} = \frac{\partial \mathcal{L}}{\partial (\partial_\mu A_\sigma)} \partial^\nu A_\sigma - \eta^{\mu\nu} \mathcal{L}
+\delta S = \int d^{4x} \left( \frac{\partial \mathcal{L}}{\partial A^{\mu}} \epsilon^{\nu}(x) \partial_{\nu} A^{\mu} + \frac{\partial \mathcal{L}}{\partial (\partial_{\sigma} A^{\mu})} \partial_{\sigma} [\epsilon^{\nu}(x) \partial_{\nu} A^{\mu}] \right) \\ = 
+\int d^{4} x \left( \frac{\partial \mathcal{L}}{\partial A^{\mu}} \epsilon^{\nu}(x)  +  \frac{\partial \mathcal{L}}{\partial (\partial_{\mu} A^{\sigma})} \partial_{\mu} [\epsilon^{\nu}(x) \partial_{\nu} A^{\sigma}] \right) \\ =
+\int d^{4} x \left( \frac{\partial \mathcal{L}}{\partial A^{\mu}} \epsilon^{\nu}(x) + \frac{\partial \mathcal{L}}{\partial (\partial_{\mu} A^{\sigma})} \partial_{\mu} (\partial_{\nu} A^{\sigma}) \epsilon^{\nu}(x)  +  \frac{\partial \mathcal{L}}{\partial (\partial_{\mu} A^{\sigma})} \partial_{\nu} A^{\sigma} \partial_{\mu} \epsilon^{\nu}(x) \right) \\ = 
+\int d^{4} x \left( \partial_{\nu} \mathcal{L} \epsilon^{\nu} (x) + \frac{\partial \mathcal{L}}{\partial (\partial_{\mu} A^{\sigma})} \partial_{\nu} A^{\sigma} \partial_{\mu} \epsilon^{\nu}(x) \right) \\ =
+\int d^{4} x \left(\frac{\partial \mathcal{L}}{\partial (\partial_{\mu} A^{\sigma})} \partial_{\nu} A^{\sigma} \partial_{\mu} \epsilon^{\nu}(x) - \mathcal{L} \partial_{\nu} \epsilon^{\nu} (x) \right) \\ =
+\int d^{4} x \left(\frac{\partial \mathcal{L}}{\partial (\partial_{\mu} A_{\sigma})} \partial^{\nu} A_{\sigma} \partial_{\mu} \epsilon_{\nu}(x) - \mathcal{L} \partial_{\mu} \eta^{\mu \nu} \epsilon_{\nu} (x) \right) \\ =
+\int d^{4x} T^{\mu\nu} \partial_{\mu} \epsilon_{\nu}(x), \quad T^{\mu\nu} = \frac{\partial \mathcal{L}}{\partial (\partial_{\mu} A_{\sigma})} \partial^{\nu} A_{\sigma} - \eta^{\mu\nu} \mathcal{L}
 $$
-(3). 对于一般的理论而言，如果其满足时空平移不变性，即 $\epsilon^\nu(x) = \epsilon^\nu$ 为一个不依赖于时空坐标的函数时，体系的作用量应该在该时空平移下保持不变: $\delta S = 0$。在分部积分的意义下，这意味着我们有 $\partial_\nu T^{\mu\nu} = 0$。对于电磁理论来说，其作用量可以写为:
+(3). 对于一般的理论而言，如果其满足时空平移不变性，即 $\epsilon^{\nu}(x) = \epsilon^{\nu}$ 为一个不依赖于时空坐标的函数时，体系的作用量应该在该时空平移下保持不变: $\delta S = 0$。在分部积分的意义下，这意味着我们有 $\partial_{\nu} T^{\mu\nu} = 0$。对于电磁理论来说，其作用量可以写为:
 $$
-S = - \int d^4x \left( \frac{1}{4} F_{\mu\nu} F^{\mu\nu} \right)
+S = - \int d^{4x} \left( \frac{1}{4} F_{\mu\nu} F^{\mu\nu} \right)
 $$
 请利用第二问的结论证明电磁理论的能量-动量张量满足:
 $$
-T^{\mu\nu} = - F^{\mu\sigma} \partial_\nu A^\sigma - \eta^{\mu\nu} \mathcal{L}
+T^{\mu\nu} = - F^{\mu\sigma} \partial_{\nu} A^{\sigma} - \eta^{\mu\nu} \mathcal{L}
 $$
 
 $$
@@ -211,9 +211,9 @@ $$
 $$
 
 $$
-T^{\mu\nu} = \frac{\partial \mathcal{L}}{\partial (\partial_\mu A_\sigma)} \partial^\nu A_\sigma - \eta^{\mu\nu} \mathcal{L} \\ =
-(- \partial^{\mu} A^{\sigma}  + \partial^{\sigma} A^{\mu}) \partial^\nu A_\sigma - \eta^{\mu\nu} \mathcal{L} \\ =
-- F^{\mu\sigma} \partial_\nu A^\sigma - \eta^{\mu\nu} \mathcal{L}
+T^{\mu\nu} = \frac{\partial \mathcal{L}}{\partial (\partial_{\mu} A_{\sigma})} \partial^{\nu} A_{\sigma} - \eta^{\mu\nu} \mathcal{L} \\ =
+(- \partial^{\mu} A^{\sigma}  + \partial^{\sigma} A^{\mu}) \partial^{\nu} A_{\sigma} - \eta^{\mu\nu} \mathcal{L} \\ =
+- F^{\mu\sigma} \partial_{\nu} A^{\sigma} - \eta^{\mu\nu} \mathcal{L}
 $$
 
 (4) 对于一般的电磁理论而言，我们可以采用希尔伯特的定义方式，让其能量-动量张量是对称张量。具体而言，对于电磁理论而言，其能量-动量张量对称化之后可以写为:
@@ -222,7 +222,7 @@ T^{\mu\nu} = \eta^{\sigma\lambda} F^{\mu\sigma} F^{\lambda\nu} - \eta^{\mu\nu} \
 $$
 请证明能量-动量张量零分量的守恒方程即为电磁场的守恒方程:
 $$
-\partial_\mu T^{\mu 0} = 0, \quad \Rightarrow \quad \frac{1}{2} \frac{\partial}{\partial t} \left( \vec{E} \cdot \vec{E} + \vec{B} \cdot \vec{B} \right) + \nabla \cdot ( \vec{E} \times \vec{B} ) = 0
+\partial_{\mu} T^{\mu 0} = 0, \quad \Rightarrow \quad \frac{1}{2} \frac{\partial}{\partial t} \left( \vec{E} \cdot \vec{E} + \vec{B} \cdot \vec{B} \right) + \nabla \cdot ( \vec{E} \times \vec{B} ) = 0
 $$
 
 证明
@@ -247,7 +247,7 @@ $$
 $$
 \delta_{s} = 2 \arctan \frac{1}{n \cos \theta_{i}} \sqrt{(n \sin \theta_{i})^{2}  - 1}
 $$
-(3). 如果菲涅尔棱镜中的两次全内反射的入射角均为 $\theta_i = 53.3^\circ$，请计算菲涅尔棱镜相对于周围环境的折射率。
+(3). 如果菲涅尔棱镜中的两次全内反射的入射角均为 $\theta_{i} = 53.3^{\circ}$，请计算菲涅尔棱镜相对于周围环境的折射率。
 $$
 2 \left( \arctan \frac{n}{\cos \theta_{i}} \sqrt{(n \sin \theta_{i})^{2}  - 1} -  \arctan \frac{1}{n \cos \theta_{i}} \sqrt{(n \sin \theta_{i})^{2}  - 1} \right) = \frac{\pi}{4}
 $$

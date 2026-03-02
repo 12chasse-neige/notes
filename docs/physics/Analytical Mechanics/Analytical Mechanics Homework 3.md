@@ -30,7 +30,7 @@ $$
 $$
 即路径是大圆。
 
-2.4 函数 $y=f(x)$ 连接点 $(0, y_0)$ 和点 $(x_1, y_1)$ 形成一曲线，利用泛函变分极值方法找到使得该曲线绕 $x$ 轴旋转表面面积最小的函数形式。
+2.4 函数 $y=f(x)$ 连接点 $(0, y_{0})$ 和点 $(x_{1}, y_{1})$ 形成一曲线，利用泛函变分极值方法找到使得该曲线绕 $x$ 轴旋转表面面积最小的函数形式。
 
 假设曲线函数为
 $$
@@ -127,7 +127,7 @@ $$
 积分得到（作代换 $r = R \cos \phi$）注：积分时的常数和上面的常数可能不代表一个常数，反正都是常数，所以我就随便换了
 $$
 \theta = \int_{0}^{\arccos \frac{r}{R}} (- \frac{1}{\cos \phi} + \cos \phi) \frac{d \phi}{\sqrt{C \cos^{2} \phi - 1}} \\ 
-= \arctan \left( \sqrt{\frac{R^2 - r^2}{C r^2 - R^2}} \right) - \frac{1}{\sqrt{C}} \arctan \left( \sqrt{\frac{C (R^2 - r^2)}{C r^2 - R^2}} \right)
+= \arctan \left( \sqrt{\frac{R^{2} - r^{2}}{C r^{2} - R^{2}}} \right) - \frac{1}{\sqrt{C}} \arctan \left( \sqrt{\frac{C (R^{2} - r^{2})}{C r^{2} - R^{2}}} \right)
 $$
 是一条摆线。常数 $C$ 可由端点待定系数给出。
 
@@ -156,22 +156,22 @@ $$
 $$
 也可以给出和后文讨论的相同结果，此处不再赘述）此处简约作用量为
 $$
-S_0 = \int \mathbf{p} \cdot d\mathbf{q} = m \int v \, ds
+S_{0} = \int \mathbf{p} \cdot d\mathbf{q} = m \int v \, ds
 $$
 对于从点 $A$ 到点 $B$ 的路径，经过球面上的点 $P$，有
 $$
-S_0 = m v_1 \cdot AP + m v_2 \cdot PB
+S_{0} = m v_{1} \cdot AP + m v_{2} \cdot PB
 $$
-其中 $AP$ 和 $PB$ 是直线距离。变分点 $P$ 的位置，令 $\delta S_0 = 0$，得
+其中 $AP$ 和 $PB$ 是直线距离。变分点 $P$ 的位置，令 $\delta S_{0} = 0$，得
 $$
-m v_1 \, \delta(AP) + m v_2 \, \delta(PB) = 0
+m v_{1} \, \delta(AP) + m v_{2} \, \delta(PB) = 0
 $$
 $$
-- m v_1 \sin \theta_1 \, \delta s + m v_2 \sin \theta_2 \, \delta s = 0
+- m v_{1} \sin \theta_{1} \, \delta s + m v_{2} \sin \theta_{2} \, \delta s = 0
 $$
 即
 $$
-\frac{\sin \theta_1}{\sin \theta_2} = \frac{v_2}{v_1} = \frac{ \sqrt{v_{0}^{2} - \frac{2 U_{0}}{m}}}{v_{0}}
+\frac{\sin \theta_{1}}{\sin \theta_{2}} = \frac{v_{2}}{v_{1}} = \frac{\sqrt{v_{0}^{2} - \frac{2 U_{0}}{m}}}{v_{0}}
 $$
 从这个“折射定律”可以看出，当
 $$

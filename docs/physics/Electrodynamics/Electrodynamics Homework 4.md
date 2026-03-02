@@ -4,9 +4,9 @@ Chasse_neige
 
 (a) 书6.17，6.19，6.25，6.27
 
-6.17 质量为 $m$ 的静止粒子衰变为两个粒子 $m_1$ 和 $m_2$, 求粒子 $m_1$ 的动量和能量.
+6.17 质量为 $m$ 的静止粒子衰变为两个粒子 $m_{1}$ 和 $m_{2}$, 求粒子 $m_{1}$ 的动量和能量.
 
-设 $m_1$ 和 $m_2$的动量分别为 $p_{1}$ 和 $p_{2}$ ，列出能动量守恒方程；
+设 $m_{1}$ 和 $m_{2}$的动量分别为 $p_{1}$ 和 $p_{2}$ ，列出能动量守恒方程；
 $$
 p_{1} = p_{2}
 $$
@@ -17,11 +17,11 @@ $$
 
 解得：
 $$
-p_1 = \frac{c}{2m} \sqrt{[m^2 - (m_1 + m_2)^2][m^2 - (m_1 - m_2)^2]}
+p_{1} = \frac{c}{2m} \sqrt{[m^{2} - (m_{1} + m_{2})^{2}][m^{2} - (m_{1} - m_{2})^{2}]}
 $$
 
 $$
-E_1 = \sqrt{m_{1}^{2} c^{4} + p_{1}^{2} c^{2}} = \frac{c^2}{2m}(m^2 + m_1^2 - m_2^2)
+E_{1} = \sqrt{m_{1}^{2} c^{4} + p_{1}^{2} c^{2}} = \frac{c^{2}}{2m}(m^{2} + m_{1}^{2} - m_{2}^{2})
 $$
 
 6.19 能量和动量的洛伦兹变换
@@ -31,7 +31,7 @@ $$
 设 $E$ 和 $p$ 是粒子体系在实验室参考系 $\Sigma$ 中的总能量和总动量（$p$ 与 $x$ 轴方向夹角为 $\theta$）。证明在另一参考系 $\Sigma'$（相对于 $\Sigma$ 以速度 $v$ 沿 $x$ 轴方向运动）中的粒子体系总能量和总动量满足：
 
 $$
-p_x' = \gamma (p_x - \beta \frac{E}{c}), \quad E' = \gamma (E - c \beta p_x)
+p_{x}' = \gamma (p_{x} - \beta \frac{E}{c}), \quad E' = \gamma (E - c \beta p_{x})
 $$
 
 $$
@@ -40,11 +40,11 @@ $$
 
 检查动量与能量构成的四维矢量的内积 $P^{\mu} P_{\mu} = p^{2} - (- \frac{E^{2}}{c^{2}}) = m^{2}$ 是一个不变量，所以该四维矢量洛伦兹协变。
 $$
-p_x' = \gamma (p_x - \beta \frac{E}{c}), \quad E' = \gamma (E - c \beta p_x)
+p_{x}' = \gamma (p_{x} - \beta \frac{E}{c}), \quad E' = \gamma (E - c \beta p_{x})
 $$
 
 $$
-\tan \theta' = \frac{p_{y}'}{p_{x}'} = \frac{p_{y}}{\gamma (p_x - \beta \frac{E}{c})} = \frac{\sin \theta}{\gamma (\cos \theta - \beta \frac{E}{cp})}
+\tan \theta' = \frac{p_{y}'}{p_{x}'} = \frac{p_{y}}{\gamma (p_{x} - \beta \frac{E}{c})} = \frac{\sin \theta}{\gamma (\cos \theta - \beta \frac{E}{cp})}
 $$
 
 (2) 光束夹角的变换
@@ -73,7 +73,7 @@ $$
 考虑在 $\Sigma$ 系内立体角为 $\mathrm{d} \Omega = \mathrm{d} \cos \theta d\phi$ 的光束，证明当变换到另一惯性系 $\Sigma'$ 时，立体角变为
 
 $$
-\mathrm{d} \Omega' = \frac{\mathrm{d} \Omega}{\gamma^2 (1 - \beta \cos \theta)^2}
+\mathrm{d} \Omega' = \frac{\mathrm{d} \Omega}{\gamma^{2} (1 - \beta \cos \theta)^{2}}
 $$
 证明：
 $$
@@ -87,7 +87,7 @@ $$
 $$
 
 $$
-\therefore \,\, \mathrm{d} \Omega' = \mathrm{d} \cos \theta' \mathrm{d} \phi' = \frac{\mathrm{d} \cos \theta'}{\mathrm{d} \cos \theta} \frac{\mathrm{d} \phi'}{\mathrm{d} \phi} \mathrm{d} \Omega = \frac{\mathrm{d} \Omega}{\gamma^2 (1 - \beta \cos \theta)^2}
+\therefore \,\, \mathrm{d} \Omega' = \mathrm{d} \cos \theta' \mathrm{d} \phi' = \frac{\mathrm{d} \cos \theta'}{\mathrm{d} \cos \theta} \frac{\mathrm{d} \phi'}{\mathrm{d} \phi} \mathrm{d} \Omega = \frac{\mathrm{d} \Omega}{\gamma^{2} (1 - \beta \cos \theta)^{2}}
 $$
 
 6.25 光子与电子的相互作用
@@ -104,38 +104,38 @@ $$
 
 总能量守恒：  
 $$
-\hbar\omega + m_e c^2 = \hbar\omega' + \sqrt{p_e^2 c^2 + m_e^2 c^4}
+\hbar\omega + m_{e} c^{2} = \hbar\omega' + \sqrt{p_{e}^{2} c^{2} + m_{e}^{2} c^{4}}
 $$
-其中 $p_e$ 为电子碰撞后动量。
+其中 $p_{e}$ 为电子碰撞后动量。
 
 矢量分解为分量：  
 $$
 \begin{cases}
-\hbar k = \hbar k'\cos\theta + p_e \cos\phi \\
-0 = \hbar k'\sin\theta - p_e \sin\phi
+\hbar k = \hbar k'\cos\theta + p_{e} \cos\phi \\
+0 = \hbar k'\sin\theta - p_{e} \sin\phi
 \end{cases}
 $$
 消去角度 $\phi$，得动量平方关系：  
 $$
-p_e^2 = \hbar^2 \left(k^2 + k'^2 - 2kk'\cos\theta\right)
+p_{e}^{2} = \hbar^{2} \left(k^{2} + k'^{2} - 2kk'\cos\theta\right)
 $$
 
 $$
-\hbar(\omega - \omega') + m_e c^2 = \sqrt{\hbar^2 (\omega^2 + \omega'^2 - 2\omega\omega'\cos\theta) + m_e^2 c^4}.
+\hbar(\omega - \omega') + m_{e} c^{2} = \sqrt{\hbar^{2} (\omega^{2} + \omega'^{2} - 2\omega\omega'\cos\theta) + m_{e}^{2} c^{4}}.
 $$
 平方后化简：  
 $$
-\hbar (\omega - \omega') = \frac{\hbar^2 \omega\omega' (1 - \cos\theta)}{m_e c^2}.
+\hbar (\omega - \omega') = \frac{\hbar^{2} \omega\omega' (1 - \cos\theta)}{m_{e} c^{2}}.
 $$
 
 即散射后光子频率 $\omega'$ 比散射前光子频率 $\omega$ 小。
 
 6.27 激发态原子的光子发射频率
 
-一个总质量为 $m_0$ 的激发原子，对所选定的参考系静止。它在跃迁到能量比之低 $\Delta W$ 的基态时，发射一个光子（能量 $\hbar\omega$，动量 $\hbar k$），同时受到光子的反冲，因此光子的频率不能正好是 $\nu = \frac{\Delta W}{h}$，而要略小一些。证明这个频率：
+一个总质量为 $m_{0}$ 的激发原子，对所选定的参考系静止。它在跃迁到能量比之低 $\Delta W$ 的基态时，发射一个光子（能量 $\hbar\omega$，动量 $\hbar k$），同时受到光子的反冲，因此光子的频率不能正好是 $\nu = \frac{\Delta W}{h}$，而要略小一些。证明这个频率：
 
 $$
-\nu = \frac{\Delta W}{h} \left(1 - \frac{\Delta W}{2 m_0 c^2}\right)
+\nu = \frac{\Delta W}{h} \left(1 - \frac{\Delta W}{2 m_{0} c^{2}}\right)
 $$
 证明：
 
@@ -147,9 +147,9 @@ $$
 $$
 \omega = \frac{\Delta W}{\hbar} - \frac{\Delta W^{2}}{2  m_{0} c^{2} \hbar}
 $$
-即$\nu = \frac{\Delta W}{h} \left(1 - \frac{\Delta W}{2 m_0 c^2}\right)$
+即$\nu = \frac{\Delta W}{h} \left(1 - \frac{\Delta W}{2 m_{0} c^{2}}\right)$
 
-(b) 对在外电磁场中运动的带电点粒子，试由 $\frac{d p_\mu}{d \tau} = K_\mu$ 证明 $K_\mu = \sum_\nu e F_{\mu\nu} U_\nu$
+(b) 对在外电磁场中运动的带电点粒子，试由 $\frac{d p_{\mu}}{d \tau} = K_{\mu}$ 证明 $K_{\mu} = \sum_{\nu} e F_{\mu\nu} U_{\nu}$
 
 证明：$p_{\mu} = \begin{pmatrix} \vec{p} , i\frac{E}{c} \end{pmatrix}$，$u_{\mu} = \begin{pmatrix} \gamma \vec{v} , i \gamma c \end{pmatrix}$
 $$
@@ -187,12 +187,12 @@ $$
 
 容易判断括号中后一项由于 $F$ 的反对称性为0.
 
-所以$K_\mu = \sum_\nu e F_{\mu\nu} u_\nu$对四个分量均成立。
+所以$K_{\mu} = \sum_{\nu} e F_{\mu\nu} u_{\nu}$对四个分量均成立。
 
 （用PPT上那个作用量作变分的推法也可以，不过我不想相当于把PPT抄一遍。所以此处利用分量展开直接证明。）
 
-(c) 试证 $K_4 = \frac{i}{c} \vec{K} \cdot \vec{v}$，其中 $\vec{K}$ 是 $K_\mu$ 前三分量构成的矢量。这个结论不止对电磁作用，而是一般成立的。
+(c) 试证 $K_{4} = \frac{i}{c} \vec{K} \cdot \vec{v}$，其中 $\vec{K}$ 是 $K_{\mu}$ 前三分量构成的矢量。这个结论不止对电磁作用，而是一般成立的。
 
 对于点粒子而言，利用能量定律：$\vec{f} \cdot \vec{v} = \frac{\mathrm{d}}{\mathrm{d} t} E$
 
-对比$K_{\mu} = \frac{\mathrm{d} p_{\mu}}{\mathrm{d} \tau} = \begin{pmatrix} \gamma \vec{f}, i\frac{\gamma}{c} \frac{\mathrm{d} E}{\mathrm{d} t} \end{pmatrix}$ 的形式，得到 $K_4 = \frac{i}{c} \vec{K} \cdot \vec{v}$
+对比$K_{\mu} = \frac{\mathrm{d} p_{\mu}}{\mathrm{d} \tau} = \begin{pmatrix} \gamma \vec{f}, i\frac{\gamma}{c} \frac{\mathrm{d} E}{\mathrm{d} t} \end{pmatrix}$ 的形式，得到 $K_{4} = \frac{i}{c} \vec{K} \cdot \vec{v}$

@@ -27,15 +27,15 @@ $$
 
 5.4 设真空中矢势 $\mathbf{A}(\mathbf{x},t)$ 可用复数傅里叶展开为
 $$
-\mathbf{A}(\mathbf{x},t) = \sum_k \left[ \mathbf{a}_k(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_k^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}} \right]
+\mathbf{A}(\mathbf{x},t) = \sum_{k} \left[ \mathbf{a}_{k}(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_{k}^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}} \right]
 $$
 
-其中 $\mathbf{a}_k^*$ 是 $\mathbf{a}_k$ 的复共轭。
+其中 $\mathbf{a}_{k}^*$ 是 $\mathbf{a}_{k}$ 的复共轭。
 
-(1) 证明 $\mathbf{a}_k$ 满足谐振子方程
+(1) 证明 $\mathbf{a}_{k}$ 满足谐振子方程
 
 $$
-\frac{d^2 \mathbf{a}_k(t)}{dt^2} + k^2 c^2 \mathbf{a}_k(t) = 0
+\frac{d^{2} \mathbf{a}_{k}(t)}{dt^{2}} + k^{2} c^{2} \mathbf{a}_{k}(t) = 0
 $$
 
 证明：真空中没有自由电荷和电流，所以
@@ -57,7 +57,7 @@ $$
 $$
 
 $$
-\nabla \times (\nabla \times \sum_k \left[ \mathbf{a}_k(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_k^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}} \right]) + \frac{1}{c^{2}} \frac{\partial^{2}}{\partial t^{2}} \sum_k \left[ \mathbf{a}_k(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_k^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}} \right] = 0
+\nabla \times (\nabla \times \sum_{k} \left[ \mathbf{a}_{k}(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_{k}^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}} \right]) + \frac{1}{c^{2}} \frac{\partial^{2}}{\partial t^{2}} \sum_{k} \left[ \mathbf{a}_{k}(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_{k}^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}} \right] = 0
 $$
 
 所以在库伦规范下
@@ -70,32 +70,32 @@ $$
 $$
 即对应系数
 $$
-\frac{d^2 \mathbf{a}_k(t)}{dt^2} + k^2 c^2 \mathbf{a}_k(t) = 0
+\frac{d^{2} \mathbf{a}_{k}(t)}{dt^{2}} + k^{2} c^{2} \mathbf{a}_{k}(t) = 0
 $$
-(2) 当选取规范 $\nabla \cdot \mathbf{A} = 0, \varphi = 0$ 时，证明 $\mathbf{k} \cdot \mathbf{a}_k = 0$
+(2) 当选取规范 $\nabla \cdot \mathbf{A} = 0, \varphi = 0$ 时，证明 $\mathbf{k} \cdot \mathbf{a}_{k} = 0$
 
 证明：
 $$
-\nabla \cdot \mathbf{A} = \nabla \cdot  \sum_k \left[ \mathbf{a}_k(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_k^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}} \right] = 0
+\nabla \cdot \mathbf{A} = \nabla \cdot  \sum_{k} \left[ \mathbf{a}_{k}(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_{k}^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}} \right] = 0
 $$
 
 $$
-\therefore \,\, \nabla \cdot (\mathbf{a}_k(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_k^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}}) = 0
+\therefore \,\, \nabla \cdot (\mathbf{a}_{k}(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_{k}^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}}) = 0
 $$
 
 $$
-\nabla \cdot (\mathbf{a}_k(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_k^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}}) = (\nabla e^{i \mathbf{k} \cdot \mathbf{x}}) \cdot \mathbf{a}_{k} + (\nabla e^{- i \mathbf{k} \cdot \mathbf{x}}) \cdot \mathbf{a}_{k}^{*} = i e^{i \mathbf{k} \cdot \mathbf{x}} \mathbf{k} \cdot \mathbf{a}_{k} - i e^{- i \mathbf{k} \cdot \mathbf{x}} \mathbf{k} \cdot \mathbf{a}_{k}^{*} = 0
+\nabla \cdot (\mathbf{a}_{k}(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_{k}^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}}) = (\nabla e^{i \mathbf{k} \cdot \mathbf{x}}) \cdot \mathbf{a}_{k} + (\nabla e^{- i \mathbf{k} \cdot \mathbf{x}}) \cdot \mathbf{a}_{k}^{*} = i e^{i \mathbf{k} \cdot \mathbf{x}} \mathbf{k} \cdot \mathbf{a}_{k} - i e^{- i \mathbf{k} \cdot \mathbf{x}} \mathbf{k} \cdot \mathbf{a}_{k}^{*} = 0
 $$
 
-对于任意 $\mathbf{x}$ 成立，所以$\mathbf{k} \cdot \mathbf{a}_k = 0$
+对于任意 $\mathbf{x}$ 成立，所以$\mathbf{k} \cdot \mathbf{a}_{k} = 0$
 
-(3) 把 $\mathbf{E}$ 和 $\mathbf{B}$ 用 $\mathbf{a}_k$ 和 $\mathbf{a}_k^*$ 表示出来
+(3) 把 $\mathbf{E}$ 和 $\mathbf{B}$ 用 $\mathbf{a}_{k}$ 和 $\mathbf{a}_{k}^*$ 表示出来
 $$
-\mathbf{E} = - \frac{\partial}{\partial t} \mathbf{A} = - \sum_k \left[ \frac{d}{d t} \mathbf{a}_k(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \frac{d}{d t} \mathbf{a}_k^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}} \right]
+\mathbf{E} = - \frac{\partial}{\partial t} \mathbf{A} = - \sum_{k} \left[ \frac{d}{d t} \mathbf{a}_{k}(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \frac{d}{d t} \mathbf{a}_{k}^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}} \right]
 $$
 
 $$
-\mathbf{B} = \nabla \times \mathbf{A} = \sum_k \left[ (\nabla e^{i \mathbf{k} \cdot \mathbf{x}}) \times \mathbf{a}_k(t)  + (\nabla e^{-i \mathbf{k} \cdot \mathbf{x}}) \times \mathbf{a}_k^*(t) \right] \\ = 
+\mathbf{B} = \nabla \times \mathbf{A} = \sum_{k} \left[ (\nabla e^{i \mathbf{k} \cdot \mathbf{x}}) \times \mathbf{a}_{k}(t)  + (\nabla e^{-i \mathbf{k} \cdot \mathbf{x}}) \times \mathbf{a}_{k}^*(t) \right] \\ = 
 i \sum_{k} e^{i \mathbf{k} \cdot \mathbf{x}} \mathbf{k} \times \mathbf{a}_{k} (t) - e^{-i \mathbf{k} \cdot \mathbf{x}} \mathbf{k} \times \mathbf{a}_{k}^{*} (t)
 $$
 
@@ -106,7 +106,7 @@ $$
 
 5.5 设 $\mathbf{A}$ 和 $\phi$ 是满足洛伦兹规范的矢势和标势
 
-(1) 引入一矢量函数 $\mathbf{Z} (\vec{x}, t)$（赫兹矢量），若令 $\phi = -\nabla \cdot \mathbf{Z}$，证明 $\mathbf{A} = \frac{1}{c^2} \frac{\partial \mathbf{Z}}{\partial t}$
+(1) 引入一矢量函数 $\mathbf{Z} (\vec{x}, t)$（赫兹矢量），若令 $\phi = -\nabla \cdot \mathbf{Z}$，证明 $\mathbf{A} = \frac{1}{c^{2}} \frac{\partial \mathbf{Z}}{\partial t}$
 
 由于 $\nabla \cdot \mathbf{A} + \frac{1}{c^{2}} \frac{\partial}{\partial t} \phi = 0$
 $$
@@ -114,9 +114,9 @@ $$
 $$
 所以可以选取合适的 $\mathbf{Z}$ 使得
 $$
-\mathbf{A} = \frac{1}{c^2} \frac{\partial \mathbf{Z}}{\partial t}
+\mathbf{A} = \frac{1}{c^{2}} \frac{\partial \mathbf{Z}}{\partial t}
 $$
-(2) 若令 $\rho = -\nabla \cdot \mathbf{P}$ 证明 $\mathbf{Z}$ 满足方程 $\nabla^2 \mathbf{Z} - \frac{1}{c^2} \frac{\partial^2 \mathbf{Z}}{\partial t^2} = -c^2 \mu_0 \mathbf{P}$，写出在真空中的推迟解
+(2) 若令 $\rho = -\nabla \cdot \mathbf{P}$ 证明 $\mathbf{Z}$ 满足方程 $\nabla^{2} \mathbf{Z} - \frac{1}{c^{2}} \frac{\partial^{2} \mathbf{Z}}{\partial t^{2}} = -c^{2} \mu_{0} \mathbf{P}$，写出在真空中的推迟解
 
 证明：
 $$
@@ -128,7 +128,7 @@ $$
 $$
 
 $$
-\nabla \cdot (- \nabla (- \nabla \cdot \mathbf{Z}) - \frac{\partial}{\partial t} \frac{1}{c^2} \frac{\partial \mathbf{Z}}{\partial t}) = \frac{- \nabla \cdot \mathbf{P}}{\epsilon_{0}}
+\nabla \cdot (- \nabla (- \nabla \cdot \mathbf{Z}) - \frac{\partial}{\partial t} \frac{1}{c^{2}} \frac{\partial \mathbf{Z}}{\partial t}) = \frac{- \nabla \cdot \mathbf{P}}{\epsilon_{0}}
 $$
 
 $$
@@ -137,7 +137,7 @@ $$
 
 所以可以选取合适的 $\mathbf{Z}$ 以及 $\mathbf{P}$ 使得
 $$
-\nabla^2 \mathbf{Z} - \frac{1}{c^2} \frac{\partial^2 \mathbf{Z}}{\partial t^2} = -c^2 \mu_0 \mathbf{P}
+\nabla^{2} \mathbf{Z} - \frac{1}{c^{2}} \frac{\partial^{2} \mathbf{Z}}{\partial t^{2}} = -c^{2} \mu_{0} \mathbf{P}
 $$
 在真空中，$\mathbf{Z}$ 存在推迟解
 $$
@@ -145,15 +145,15 @@ $$
 $$
 (3) 证明 $\mathbf{E}$ 和 $\mathbf{B}$ 可通过 $\mathbf{Z}$ 用下列公式表出：
 $$
-\mathbf{E} = \nabla \times (\nabla \times \mathbf{Z}) - c^2 \mu_0 \mathbf{P}, \quad \mathbf{B} = \frac{1}{c^2} \frac{\partial}{\partial t} \nabla \times \mathbf{Z}
+\mathbf{E} = \nabla \times (\nabla \times \mathbf{Z}) - c^{2} \mu_{0} \mathbf{P}, \quad \mathbf{B} = \frac{1}{c^{2}} \frac{\partial}{\partial t} \nabla \times \mathbf{Z}
 $$
 证明：
 $$
-\mathbf{E} = - \nabla \phi - \frac{\partial}{\partial t} \mathbf{A} =  \nabla (\nabla \cdot \mathbf{Z}) - \frac{1}{c^{2}} \frac{\partial^{2}}{\partial t^{2}} \mathbf{Z} = \nabla (\nabla \cdot \mathbf{Z}) - \nabla^{2} \mathbf{Z} - c^{2} \mu_{0} \mathbf{P} = \nabla \times (\nabla \times \mathbf{Z}) - c^2 \mu_0 \mathbf{P}
+\mathbf{E} = - \nabla \phi - \frac{\partial}{\partial t} \mathbf{A} =  \nabla (\nabla \cdot \mathbf{Z}) - \frac{1}{c^{2}} \frac{\partial^{2}}{\partial t^{2}} \mathbf{Z} = \nabla (\nabla \cdot \mathbf{Z}) - \nabla^{2} \mathbf{Z} - c^{2} \mu_{0} \mathbf{P} = \nabla \times (\nabla \times \mathbf{Z}) - c^{2} \mu_{0} \mathbf{P}
 $$
 
 $$
-\mathbf{B} = \nabla \times \mathbf{A} = \nabla \times \frac{1}{c^2} \frac{\partial \mathbf{Z}}{\partial t} = \frac{1}{c^2} \frac{\partial}{\partial t} \nabla \times \mathbf{Z}
+\mathbf{B} = \nabla \times \mathbf{A} = \nabla \times \frac{1}{c^{2}} \frac{\partial \mathbf{Z}}{\partial t} = \frac{1}{c^{2}} \frac{\partial}{\partial t} \nabla \times \mathbf{Z}
 $$
 
 (b) 试证，库伦规范的解满足$$\nabla \cdot \mathbf{A} = 0$$

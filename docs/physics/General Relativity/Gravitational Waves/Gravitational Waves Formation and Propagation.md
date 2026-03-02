@@ -12,7 +12,7 @@ $$
 
 在保留至一阶线性项的前提下，我们可以用这些符号线性化爱因斯坦方程。从 Christoffel 符号的分量形式出发
 $$
-\Gamma^\lambda {}_{\mu\nu} = \frac{1}{2}g^{\lambda\rho}(\partial_\mu g_{\nu\rho} + \partial_\nu g_{\rho\mu} - \partial_\rho g_{\mu\nu})
+\Gamma^{\lambda} {}_{\mu\nu} = \frac{1}{2}g^{\lambda\rho}(\partial_{\mu} g_{\nu\rho} + \partial_{\nu} g_{\rho\mu} - \partial_{\rho} g_{\mu\nu})
 $$
 此时随着 $x_{\mu}$ 变化而变化的部分是微扰项，所以
 $$
@@ -20,7 +20,7 @@ $$
 $$
 再考虑黎曼张量
 $$
-R_{\mu \nu} = \partial_\lambda \Gamma^\lambda {}_{\mu\nu} - \partial_\nu \Gamma^\lambda {}_{\mu\lambda} + \Gamma^\lambda {}_{\lambda\rho}\Gamma^\rho {}_{\mu\nu} - \Gamma^\lambda {}_{\nu\rho} \Gamma^\rho {}_{\mu\lambda}
+R_{\mu \nu} = \partial_{\lambda} \Gamma^{\lambda} {}_{\mu\nu} - \partial_{\nu} \Gamma^{\lambda} {}_{\mu\lambda} + \Gamma^{\lambda} {}_{\lambda\rho}\Gamma^{\rho} {}_{\mu\nu} - \Gamma^{\lambda} {}_{\nu\rho} \Gamma^{\rho} {}_{\mu\lambda}
 $$
 我们带入上面克氏符的表达式，并且保留至 $h$ 的一阶项，可以得到以下形式
 $$
@@ -162,20 +162,20 @@ $$
 \lambda \ll \{ R, \mathcal{L} \}
 $$
 
-我们可以将黎曼曲率张量分成两个部分：一个部分是背景黎曼曲率 $R^B_{\alpha\beta\gamma\delta}$，作为对黎曼曲率张量的局部平均
+我们可以将黎曼曲率张量分成两个部分：一个部分是背景黎曼曲率 $R^{B}_{\alpha\beta\gamma\delta}$，作为对黎曼曲率张量的局部平均
 $$
-R^B_{\alpha\beta\gamma\delta} = \langle R_{\alpha\beta\gamma\delta} \rangle
+R^{B}_{\alpha\beta\gamma\delta} = \langle R_{\alpha\beta\gamma\delta} \rangle
 $$
 这里 $\langle \ \rangle$ 意味着对局部好几个波长范围内的平均。另一个部分是一个振动项，或者叫引力波项 $R^{GW}_{\alpha\beta\gamma\delta}$
 $$
-R_{\alpha\beta\gamma\delta} = R^B_{\alpha\beta\gamma\delta} + R^{GW}_{\alpha\beta\gamma\delta}
+R_{\alpha\beta\gamma\delta} = R^{B}_{\alpha\beta\gamma\delta} + R^{GW}_{\alpha\beta\gamma\delta}
 $$
 同理，我们也可以把时空度规作类似分解
 $$
-g_{\alpha\beta} = g^B_{\alpha\beta} + h_{\alpha\beta} \ , \quad g^B_{\alpha\beta} = \langle g_{\alpha\beta} \rangle
+g_{\alpha\beta} = g^{B}_{\alpha\beta} + h_{\alpha\beta} \ , \quad g^{B}_{\alpha\beta} = \langle g_{\alpha\beta} \rangle
 $$
 
-因此，背景 $R^B_{\alpha\beta\gamma\delta}$ 也可由 $g^B_{\alpha\beta}$ 计算出来。在一般情况下引力波带来的时空扰动都是比较弱的。因此我们可以把 $h_{\alpha\beta}, R^{GW}_{\alpha\beta\gamma\delta}$ 当作在背景时空下的线性扰动。（注：接下来为了区分对于完整时空度规的导数和对于时空背景的导数，我们用 $;$ 代表对于完整时空的协变导数，用 $|$ 代表对于时空背景的协变导数）当我们计算协变导数时，在一阶近似下，我们可以把对完整时空度规相应的导数替换成直接用背景时空度规 $g^B_{\alpha\beta}$ 计算的协变导数，比如 $R^{GW}_{\alpha\beta\gamma\delta;\mu} = R^{GW}_{\alpha\beta\gamma\delta|\mu}$。因此，我们可以选取背景时空中的局部惯性系来计算 $R^{GW}_{\alpha\beta\gamma\delta}$。通过非常复杂的计算，我们可以得到
+因此，背景 $R^{B}_{\alpha\beta\gamma\delta}$ 也可由 $g^{B}_{\alpha\beta}$ 计算出来。在一般情况下引力波带来的时空扰动都是比较弱的。因此我们可以把 $h_{\alpha\beta}, R^{GW}_{\alpha\beta\gamma\delta}$ 当作在背景时空下的线性扰动。（注：接下来为了区分对于完整时空度规的导数和对于时空背景的导数，我们用 $;$ 代表对于完整时空的协变导数，用 $|$ 代表对于时空背景的协变导数）当我们计算协变导数时，在一阶近似下，我们可以把对完整时空度规相应的导数替换成直接用背景时空度规 $g^{B}_{\alpha\beta}$ 计算的协变导数，比如 $R^{GW}_{\alpha\beta\gamma\delta;\mu} = R^{GW}_{\alpha\beta\gamma\delta|\mu}$。因此，我们可以选取背景时空中的局部惯性系来计算 $R^{GW}_{\alpha\beta\gamma\delta}$。通过非常复杂的计算，我们可以得到
 $$
 R^{GW}_{\alpha\beta\gamma\delta} = \frac{1}{2} ( h_{\alpha\delta|\beta\gamma} + h_{\beta\gamma|\alpha\delta} - h_{\alpha\gamma|\beta\delta} - h_{\beta\delta|\alpha\gamma} )
 $$
@@ -197,24 +197,24 @@ $$
 
 有了引力波的解，我们可以来看它们的极化问题。 $R^{GW}_{\alpha\beta\gamma\delta}$ 本身会有 $20$ 个自由的分量，但是我们可以利用对称性消去其中的大部分自由度。注意到利用 Bianchi 恒等式
 $$
-R^\alpha_{\beta\gamma\delta;\epsilon} + R^\alpha_{\beta\delta\epsilon;\gamma} + R^\alpha_{\beta\epsilon\gamma;\delta} = 0
+R^{\alpha}_{\beta\gamma\delta;\epsilon} + R^{\alpha}_{\beta\delta\epsilon;\gamma} + R^{\alpha}_{\beta\epsilon\gamma;\delta} = 0
 $$
 可以证明 $R^{GW}_{\alpha\beta xy} = 0, \ R^{GW}_{\alpha\beta xz} = -R^{GW}_{\alpha\beta x0}, \ R^{GW}_{\alpha\beta yz} = -R^{GW}_{\alpha\beta y0}$。同时因为黎曼张量的对称性
 $$
 R_{\alpha\beta\gamma\delta} = -R_{\beta\alpha\gamma\delta}, \ R_{\alpha\beta\gamma\delta} = -R_{\alpha\beta\delta\gamma}, \ R_{\alpha\beta\gamma\delta} = R_{\gamma\delta\alpha\beta}
 $$
-使得所有的分量都能用 $R^{GW}_{j0k0}$ 表示。最后，由于 $R_{\alpha\beta} = 0 = R^\mu_{\alpha\mu\beta}$，我们可以得到
+使得所有的分量都能用 $R^{GW}_{j0k0}$ 表示。最后，由于 $R_{\alpha\beta} = 0 = R^{\mu}_{\alpha\mu\beta}$，我们可以得到
 
 $$
 R^{GW}_{z0z0} = R^{GW}_{z0x0} = R^{GW}_{z0y0} = 0
 $$
-且 $R^{GW}_{x0x0} = -R^{GW}_{y0y0} \equiv -\frac{1}{2} \ddot{h}_+(t-z), \quad R^{GW}_{x0y0} = R^{GW}_{y0x0} \equiv -\frac{1}{2} \ddot{h}_\times(t-z)$
+且 $R^{GW}_{x0x0} = -R^{GW}_{y0y0} \equiv -\frac{1}{2} \ddot{h}_+(t-z), \quad R^{GW}_{x0y0} = R^{GW}_{y0x0} \equiv -\frac{1}{2} \ddot{h}_{\times}(t-z)$
 
-这里两个独立非0的分量分别被定义成了两个无量纲函数的导数： $h_+, h_\times$ 这里 $\ddot{ \ } \equiv \partial^2/\partial t^2$。由于 $z0z0, z0x0, z0y0$ 分量全为0，所以对应的 $\mathcal{E}_{zz}, \mathcal{E}_{yz}, \mathcal{E}_{xz}$ 全为0，所以此波为横波，因为它没有传播方向 $z$ 方向的分量。而 $R^{GW}_{x0x0} = -R^{GW}_{y0y0} \Rightarrow \mathcal{E}^{GW}_{xx} = -\mathcal{E}^{GW}_{yy}$，所以 $\mathcal{E}^{GW}$ 的迹为 $0$。这两个性质：Transverse 和 Traceless 通常被简称为 TT， $h_+$ 和 $h_\times$ 通常被称为引力波场中“+”偏振态和“$\times$”偏振态。
+这里两个独立非0的分量分别被定义成了两个无量纲函数的导数： $h_+, h_{\times}$ 这里 $\ddot{\} \equiv \partial^{2}/\partial t^{2}$。由于 $z0z0, z0x0, z0y0$ 分量全为0，所以对应的 $\mathcal{E}_{zz}, \mathcal{E}_{yz}, \mathcal{E}_{xz}$ 全为0，所以此波为横波，因为它没有传播方向 $z$ 方向的分量。而 $R^{GW}_{x0x0} = -R^{GW}_{y0y0} \Rightarrow \mathcal{E}^{GW}_{xx} = -\mathcal{E}^{GW}_{yy}$，所以 $\mathcal{E}^{GW}$ 的迹为 $0$。这两个性质：Transverse 和 Traceless 通常被简称为 TT， $h_+$ 和 $h_{\times}$ 通常被称为引力波场中“+”偏振态和“$\times$”偏振态。
 
-因此我们可以利用两个偏振态基矢来重构所有的黎曼张量分量。首先我们定义 $e^+ = \vec{e}_x \otimes \vec{e}_x - \vec{e}_y \otimes \vec{e}_y, \, e ^\times = \vec{e}_x \otimes \vec{e}_y + \vec{e}_y \otimes \vec{e}_x$和一个 $2$ 阶引力波场
+因此我们可以利用两个偏振态基矢来重构所有的黎曼张量分量。首先我们定义 $e^+ = \vec{e}_{x} \otimes \vec{e}_{x} - \vec{e}_{y} \otimes \vec{e}_{y}, \, e^{\times} = \vec{e}_{x} \otimes \vec{e}_{y} + \vec{e}_{y} \otimes \vec{e}_{x}$和一个 $2$ 阶引力波场
 $$
-h^{TT}_{\alpha\beta} = h_+ e^+_{\alpha\beta} + h_\times e^\times_{\alpha\beta}
+h^{TT}_{\alpha\beta} = h_+ e^+_{\alpha\beta} + h_{\times} e^{\times}_{\alpha\beta}
 $$
 那么对应的黎曼张量则是
 $$
@@ -224,17 +224,17 @@ $$
 $$
 \quad R^{GW}_{0j0k} = -\frac{1}{2} \ddot{h}^{TT}_{jk}
 $$
-我们发现这样通过极化张量 $e_+, e_\times$ 定义出来的 $h_+, h_\times$ 和我们之前通过 $R^{GW}_{x0x0}$ 和 $R^{GW}_{x0y0}$ 定义的 $h_+, h_\times$ 是一致的。
+我们发现这样通过极化张量 $e_+, e_{\times}$ 定义出来的 $h_+, h_{\times}$ 和我们之前通过 $R^{GW}_{x0x0}$ 和 $R^{GW}_{x0y0}$ 定义的 $h_+, h_{\times}$ 是一致的。
 
 #### 引力波和物质的相互作用
 
-考虑一团自由漂浮在空间的粒子。设想有个局部惯性系在粒子团的中心的一个粒子处，而其它粒子的相对位置 $\xi^j = x^j + \delta x^j$，其中 $x^j$ 是引力波来之前其它粒子的位置， $\delta x^j$ 是引力波来之后位置的改变。我们代入测地线偏离方程：
+考虑一团自由漂浮在空间的粒子。设想有个局部惯性系在粒子团的中心的一个粒子处，而其它粒子的相对位置 $\xi^{j} = x^{j} + \delta x^{j}$，其中 $x^{j}$ 是引力波来之前其它粒子的位置， $\delta x^{j}$ 是引力波来之后位置的改变。我们代入测地线偏离方程：
 $$
-\frac{d^2 \delta x^j}{dt^2} = - R^{GW}_{j0k0} x^k = \frac{1}{2} \ddot{h}^{TT}_{jk} x^k
+\frac{d^{2} \delta x^{j}}{dt^{2}} = - R^{GW}_{j0k0} x^{k} = \frac{1}{2} \ddot{h}^{TT}_{jk} x^{k}
 $$
 把此方程对时间作两次积分
 $$
-\delta x^j = \frac{1}{2} h^{TT}_{jk} x^k
+\delta x^{j} = \frac{1}{2} h^{TT}_{jk} x^{k}
 $$
 
 如果来的引力波是“+”偏振，我们得到
@@ -245,36 +245,36 @@ $$
 
 $h_+$ 偏振波的效应能用潮汐力场的形式表达
 $$
-\frac{d^2 \delta \vec{x}}{dt^2} = \frac{1}{2} \ddot{h}_+ (x \vec{e}_x - y \vec{e}_y)
+\frac{d^{2} \delta \vec{x}}{dt^{2}} = \frac{1}{2} \ddot{h}_+ (x \vec{e}_{x} - y \vec{e}_{y})
 $$
 
 所以这个场的散度为0 $[\nabla \cdot (\ ) = 0]$，它可以像电场一样用电力线来描述场，此处我们就唤作潮汐力线，可以看出来整个力线的分布是遵循二极矩的形式。
 
 同理的，当入射的引力波是“$\times$”偏振态，那时粒子的位移则是
 $$
-\delta x = \frac{1}{2} h_\times y, \quad \delta y = \frac{1}{2} h_\times x, \quad \delta z = 0
+\delta x = \frac{1}{2} h_{\times} y, \quad \delta y = \frac{1}{2} h_{\times} x, \quad \delta z = 0
 $$
 而此时的加速度场为
 $$
-\frac{d^2 \delta \vec{x}}{dt^2} = \frac{1}{2} \ddot{h}_\times (y \vec{e}_x + x \vec{e}_y)
+\frac{d^{2} \delta \vec{x}}{dt^{2}} = \frac{1}{2} \ddot{h}_{\times} (y \vec{e}_{x} + x \vec{e}_{y})
 $$
 
 ### 引力波的能动张量和辐射功率
 
-1968年 Richard Isaacson 发现了推导引力波能动张量的方法。我们考虑将度规张量 $g_{\mu\nu} = g^B_{\mu\nu} + \epsilon h_{\mu\nu}$，其中 $\epsilon$ 是一个微扰用的小量。将这个度规代入爱因斯坦张量
+1968年 Richard Isaacson 发现了推导引力波能动张量的方法。我们考虑将度规张量 $g_{\mu\nu} = g^{B}_{\mu\nu} + \epsilon h_{\mu\nu}$，其中 $\epsilon$ 是一个微扰用的小量。将这个度规代入爱因斯坦张量
 $$
-G_{\alpha\beta} = G^B_{\alpha\beta} + \epsilon G^{(1)}_{\alpha\beta} + \epsilon^2 G^{(2)}_{\alpha\beta} + \dots = 0
+G_{\alpha\beta} = G^{B}_{\alpha\beta} + \epsilon G^{(1)}_{\alpha\beta} + \epsilon^{2} G^{(2)}_{\alpha\beta} + \dots = 0
 $$
-这里我们将爱因斯坦张量按照 $g_{\mu\nu}$ 中 $\epsilon$ 的阶数作展开。 $G^B_{\alpha\beta}$ 是用 $g^B_{\mu\nu}$ 算的爱因斯坦张量， $G^{(1)}$ 是线性部分（正比于 $h_{\mu\nu}$ 的大小）， $G^{(2)}$ 是平方阶。由于引力波是波动，我们可以在 $\lambda \ll L \ll R$ 的范围内进行平均。注意到 $\langle G^{(1)}_{\alpha\beta} \rangle = 0$，所以
+这里我们将爱因斯坦张量按照 $g_{\mu\nu}$ 中 $\epsilon$ 的阶数作展开。 $G^{B}_{\alpha\beta}$ 是用 $g^{B}_{\mu\nu}$ 算的爱因斯坦张量， $G^{(1)}$ 是线性部分（正比于 $h_{\mu\nu}$ 的大小）， $G^{(2)}$ 是平方阶。由于引力波是波动，我们可以在 $\lambda \ll L \ll R$ 的范围内进行平均。注意到 $\langle G^{(1)}_{\alpha\beta} \rangle = 0$，所以
 $$
-G^B_{\alpha\beta} = - \langle G^{(2)}_{\alpha\beta} \rangle \equiv 8\pi T^{GW}_{\alpha\beta}
+G^{B}_{\alpha\beta} = - \langle G^{(2)}_{\alpha\beta} \rangle \equiv 8\pi T^{GW}_{\alpha\beta}
 $$
 
 因此，我们可以把 $-\frac{1}{8\pi} \langle G^{(2)}_{\alpha\beta} \rangle$ 看成是引力波的能动张量
 $$
 T^{GW}_{\alpha\beta} = - \frac{1}{8\pi} \langle G^{(2)}_{\alpha\beta} \rangle
 $$
-由于这个定义的来源是用了空间平均，所以相应的引力波能动张量在小于波长的尺度上没有定义。在近场中，当我们关注 $L < \lambda$ 范围内的时空动力学，此关系就不适用。但在远场时，我们可以看到这个表达式满足能动张量所需的性质，尤其是由于 $G^B_{\alpha\beta|\beta} = 0$ (Bianchi 恒等式)，所以
+由于这个定义的来源是用了空间平均，所以相应的引力波能动张量在小于波长的尺度上没有定义。在近场中，当我们关注 $L < \lambda$ 范围内的时空动力学，此关系就不适用。但在远场时，我们可以看到这个表达式满足能动张量所需的性质，尤其是由于 $G^{B}_{\alpha\beta|\beta} = 0$ (Bianchi 恒等式)，所以
 $$
 T^{GW}_{\alpha\beta|\beta} = 0
 $$
@@ -282,30 +282,30 @@ $$
 $$
 T^{GW}_{\alpha\beta} = \frac{1}{16\pi} \langle h_{+,\alpha} h_{+,\beta} + h_{\times,\alpha} h_{\times,\beta} \rangle
 $$
-当引力波是沿着 $z$ 方向传播的平面波时， $h_+ = h_+(t-z), h_\times = h_\times(t-z)$，我们会发现能动张量的非零分量为
+当引力波是沿着 $z$ 方向传播的平面波时， $h_+ = h_+(t-z), h_{\times} = h_{\times}(t-z)$，我们会发现能动张量的非零分量为
 $$
-T^{GW}_{00} = T^{GW}_{0z} = T^{GW}_{z0} = T^{GW}_{zz} = \frac{1}{16\pi} \langle \dot{h}_+^2 + \dot{h}_\times^2 \rangle
+T^{GW}_{00} = T^{GW}_{0z} = T^{GW}_{z0} = T^{GW}_{zz} = \frac{1}{16\pi} \langle \dot{h}_+^{2} + \dot{h}_{\times}^{2} \rangle
 $$
-与电磁波的能动张量 $T_{EM} \propto E^2 + B^2$ 很类似。考虑一个弱引力，接近能用牛顿力学描述的系统。它的牛顿引力势为
+与电磁波的能动张量 $T_{EM} \propto E^{2} + B^{2}$ 很类似。考虑一个弱引力，接近能用牛顿力学描述的系统。它的牛顿引力势为
 $$
 \Phi(\vec{x}) = - \int \frac{\rho(\vec{x}')}{|\vec{x}-\vec{x}'|} dV_{x'}
 $$
 其中 $\frac{1}{|\vec{x}-\vec{x}'|}$ 可以在 Cartesian 坐标系下展开
 $$
-\frac{1}{|\vec{x}-\vec{x}'|} = \frac{1}{r} + \frac{x^j x'^j}{r^3} + \frac{x^j x^k (3 x'^j x'^k - r'^2 \delta_{jk})}{2r^5} + \dots
+\frac{1}{|\vec{x}-\vec{x}'|} = \frac{1}{r} + \frac{x^{j} x'^{j}}{r^{3}} + \frac{x^{j} x^{k} (3 x'^{j} x'^{k} - r'^{2} \delta_{jk})}{2r^{5}} + \dots
 $$
 所以 $\Phi$ 可以写作
 $$
-\Phi(\vec{x}) = - \frac{M}{r} - \frac{3 I_{jk} x^j x^k}{2r^5} + \dots
+\Phi(\vec{x}) = - \frac{M}{r} - \frac{3 I_{jk} x^{j} x^{k}}{2r^{5}} + \dots
 $$
-其中 $M = \int \rho dV_x$ ， $I_{jk} = \int \rho (x_j x_k - \frac{1}{3} r^2 \delta_{jk}) dV_x$ （注意这个四极矩经过和电动力学中多级展开里电四极类似的重定义，使其迹为 $0$）。由于振动的四极矩能产生引力波。这些波应该描述满足
+其中 $M = \int \rho dV_{x}$ ， $I_{jk} = \int \rho (x_{j} x_{k} - \frac{1}{3} r^{2} \delta_{jk}) dV_{x}$ （注意这个四极矩经过和电动力学中多级展开里电四极类似的重定义，使其迹为 $0$）。由于振动的四极矩能产生引力波。这些波应该描述满足
 
 $$
 \partial^{\alpha} \partial_{\alpha} \bar{h}_{\mu\nu} = 0, \quad \partial^{\nu} \bar{h}_{\mu \nu} = 0
 $$
 在近场，有
 $$
-\bar{h}_{00} = \frac{3 I_{jk} x^j x^k}{r^5} = \frac{1}{2} (\bar{h}_{00} + \bar{h}_{xx} + \bar{h}_{yy} + \bar{h}_{zz})
+\bar{h}_{00} = \frac{3 I_{jk} x^{j} x^{k}}{r^{5}} = \frac{1}{2} (\bar{h}_{00} + \bar{h}_{xx} + \bar{h}_{yy} + \bar{h}_{zz})
 $$
 可以证明，满足要求的解为 
 $$
@@ -319,15 +319,15 @@ $$
 
 当波源的确近似为牛顿波源时，我们在远场测量得到的 $I_{jk}$ 和质量四极
 $$
-I^n_{jk} = \int \rho x_j x_k dV_x
+I^{n}_{jk} = \int \rho x_{j} x_{k} dV_{x}
 $$
 一致。所以引力波的二极矩公式就是
 $$
-h^{TT}_{jk} = 2 \left[ \frac{\ddot{I}^n_{jk}(t-r)}{r} \right]^{TT}
+h^{TT}_{jk} = 2 \left[ \frac{\ddot{I}^{n}_{jk}(t-r)}{r} \right]^{TT}
 $$
-在数量级上，由于 $I^n_{jk}$ 的二次时间导数大致就是
+在数量级上，由于 $I^{n}_{jk}$ 的二次时间导数大致就是
 $$
-\ddot{I}^n_{jk} \sim \int \rho v_j v_k dV_x \sim E_{k}
+\ddot{I}^{n}_{jk} \sim \int \rho v_{j} v_{k} dV_{x} \sim E_{k}
 $$
 由于引力波本身携带能量和动量，那么波源通过引力波辐射必定会损失能量和动量。我们可以利用引力波的能动张量 $T^{GW}_{\mu\nu}$，对一个半径为 $r$ 的球面积分，从而算出质量和能流
 $$
@@ -335,10 +335,10 @@ $$
 $$
 
 $$
-\frac{dS_i}{dt} = - \frac{2}{5} \epsilon_{ijk} \langle \ddot{I}_{jm} \dddot{I}_{km} \rangle
+\frac{dS_{i}}{dt} = - \frac{2}{5} \epsilon_{ijk} \langle \ddot{I}_{jm} \dddot{I}_{km} \rangle
 $$
 
-且 $\frac{dP_j}{dt} = 0$ (动量的变化出现在更高阶项上，我们在此不讨论)。
+且 $\frac{dP_{j}}{dt} = 0$ (动量的变化出现在更高阶项上，我们在此不讨论)。
 
 ### 引力波的探测
 
@@ -350,16 +350,16 @@ h_{ij}(t,\vec{x}) = h_{+}(t,\vec{x}) e^{+}_{ij}(\hat{n}) + h_{\times}(t,\vec{x})
 $$
 其中 $h_{+,\times}(t,\vec{x}) = h_{+,\times}(t + \vec{x} \cdot \hat{n})$，极化张量为
 $$
-e^{+}_{ij}(\hat{n}) = \ell_i \ell_j - m_i m_j
+e^{+}_{ij}(\hat{n}) = \ell_{i} \ell_{j} - m_{i} m_{j}
 $$
 
 $$
-e^{\times}_{ij}(\hat{n}) = \ell_i m_j + \ell_j m_i
+e^{\times}_{ij}(\hat{n}) = \ell_{i} m_{j} + \ell_{j} m_{i}
 $$
 
 单位矢量 $\hat{\ell}$ 和 $\hat{m}$ 的选择使得 $\hat{\ell}, \hat{m}, \hat{n}$ 构成右手正交基。与垂直于 $\hat{n}$ 的平面内 $\hat{\ell}$ 和 $\hat{m}$ 选择相关的旋转自由度通常称为极化角 $\beta$。考虑一个臂沿单位矢量 $\hat{a}$ 和 $\hat{b}$ 排列的迈克耳孙干涉仪。在长波近似下，引力波在探测器中产生的信号为
 $$
-V(t) = \frac{1}{2} (a_i a_j - b_i b_j) h_{ij}(t,\vec{0})
+V(t) = \frac{1}{2} (a_{i} a_{j} - b_{i} b_{j}) h_{ij}(t,\vec{0})
 $$
 其中我们假设探测器位于 $\vec{x} = \vec{0}$ 且其尺寸可以忽略。等效地，信号可以写为
 $$
@@ -367,7 +367,7 @@ V(t) = F_{+}(\hat{n}) h_{+}(t) + F_{\times}(\hat{n}) h_{\times}(t)
 $$
 其中
 $$
-F_A(\hat{n}) = \frac{1}{2} (a_i a_j - b_i b_j) e^A_{ij}(\hat{n})
+F_{A}(\hat{n}) = \frac{1}{2} (a_{i} a_{j} - b_{i} b_{j}) e^{A}_{ij}(\hat{n})
 $$
 是干涉仪对引力波两个独立极化（$A = +, \times$）的响应。在频域中，上式变为
 $$
@@ -379,21 +379,21 @@ $$
 
 在具有引力波的时空中传播的光子的线元为
 $$
-ds^2 = -c^2 dt^2 + [\delta_{ij} + h_{ij}(t,\vec{x})] dx^i dx^j = 0
+ds^{2} = -c^{2} dt^{2} + [\delta_{ij} + h_{ij}(t,\vec{x})] dx^{i} dx^{j} = 0
 $$
-考虑一个沿 $\hat{a}$ 方向发射的光子，被距离 $L$ 处的镜子反射回来。在前向路径上，未受扰动的光子轨迹为 $x^i = a^i \xi$，其中 $\xi \in [0, L]$。将此轨迹代入上式中并求解 $t$，我们得到
+考虑一个沿 $\hat{a}$ 方向发射的光子，被距离 $L$ 处的镜子反射回来。在前向路径上，未受扰动的光子轨迹为 $x^{i} = a^{i} \xi$，其中 $\xi \in [0, L]$。将此轨迹代入上式中并求解 $t$，我们得到
 $$
-c(t - t_0) = \int_0^\xi \left( 1 + h_{ij} a^i a^j \right)^{1/2} d\xi'
+c(t - t_{0}) = \int_{0}^{\xi} \left( 1 + h_{ij} a^{i} a^{j} \right)^{1/2} d\xi'
 $$
 设 $T$ 为标称光子 transit time $T \equiv L/c$。在引力波存在的情况下，其将略微偏离其在闵可夫斯基时空中的值，产生微小扰动
 $$
-\delta T(t) = \frac{1}{2c} a_i a_j \int_0^L h_{ij}\left( t_0 + \frac{\xi}{c} + \frac{\hat{n} \cdot \hat{a}}{c} \xi \right) d\xi
+\delta T(t) = \frac{1}{2c} a_{i} a_{j} \int_{0}^{L} h_{ij}\left( t_{0} + \frac{\xi}{c} + \frac{\hat{n} \cdot \hat{a}}{c} \xi \right) d\xi
 $$
-其中 $t_0$ 是光子传播的起始时间，可以近似为 $t_0 = t - T$。类似地，在返回路径上
+其中 $t_{0}$ 是光子传播的起始时间，可以近似为 $t_{0} = t - T$。类似地，在返回路径上
 $$
-\delta T'(t) = \frac{1}{2c} a_i a_j \int_0^L h_{ij}\left( t_0 + \frac{L - \xi}{c} + \frac{\hat{n} \cdot \hat{a}}{c} \xi \right) d\xi
+\delta T'(t) = \frac{1}{2c} a_{i} a_{j} \int_{0}^{L} h_{ij}\left( t_{0} + \frac{L - \xi}{c} + \frac{\hat{n} \cdot \hat{a}}{c} \xi \right) d\xi
 $$
-其中 $t_0$ 也可以近似为 $t_0 = t - T$。那么往返时间的扰动由下式给出
+其中 $t_{0}$ 也可以近似为 $t_{0} = t - T$。那么往返时间的扰动由下式给出
 $$
 \delta T_{\text{r.t.}}(t) = \delta T(t - T) + \delta T'(t)
 $$
@@ -423,7 +423,7 @@ $$ -->
 
 在频域中，它可以写为
 $$
-\frac{\delta \tilde{T}_{\text{r.t.}}(f)}{T} = a_i a_j D(\hat{a}, f) e^A_{ij}(\hat{n}) \tilde{h}_A(f)
+\frac{\delta \tilde{T}_{\text{r.t.}}(f)}{T} = a_{i} a_{j} D(\hat{a}, f) e^{A}_{ij}(\hat{n}) \tilde{h}_{A}(f)
 $$
 其中传递函数定义为
 $$

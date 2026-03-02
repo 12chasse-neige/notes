@@ -5,7 +5,7 @@ Chasse_neige
 ### 8. 恒定电流的电场
 (a) 书2.7.2.13  
 
-2.7 在一很大的电解槽中充满电导率为 $\sigma_2$ 的液体，使其中流着均匀的电流 $\vec{J}_{f0}$。今在液体中置入一个电导率为 $\sigma_1$ 的小球，求恒定时电流分布和面电荷分布，讨论 $\sigma_1 \gg \sigma_2$ 及 $\sigma_2 \gg \sigma_1$ 两种情况的电流分布的特点。
+2.7 在一很大的电解槽中充满电导率为 $\sigma_{2}$ 的液体，使其中流着均匀的电流 $\vec{J}_{f0}$。今在液体中置入一个电导率为 $\sigma_{1}$ 的小球，求恒定时电流分布和面电荷分布，讨论 $\sigma_{1} \gg \sigma_{2}$ 及 $\sigma_{2} \gg \sigma_{1}$ 两种情况的电流分布的特点。
 
 小球中 $\vec{j}_{in} = \sigma_{1} \vec{E}_{in}$ ，小球外 $\vec{j}_{out} = \sigma_{2} \vec{E}_{out} = \sigma_{2} (\frac{\vec{J}_{f0}}{\sigma_{2}} + \vec{E'})$
 
@@ -44,19 +44,19 @@ $$
 \epsilon_{0} (\frac{1}{\sigma_{2}} + \frac{2 (\sigma_{1} - \sigma_{2})}{(\sigma_{1} + 2 \sigma_{2}) \sigma_{2}} - \frac{3}{\sigma_{1} + 2 \sigma_{2}}) J_{f0} \cos \theta \\ = 
 \frac{3 \epsilon_{0} (\sigma_{1} - \sigma_{2})}{\sigma_{2} (\sigma_{1} + 2 \sigma_{2})} J_{f0} \cos \theta
 $$
-当 $\sigma_1 \gg \sigma_2$ 时，电流密度以及面电荷密度的分布趋近于
+当 $\sigma_{1} \gg \sigma_{2}$ 时，电流密度以及面电荷密度的分布趋近于
 $$
 \vec{j}_{in} = 3 \vec{J}_{f0} \\
 \vec{j}_{out} = \vec{J}_{f0} + R_{0}^{3} \left(\frac{3 (\vec{J}_{f0} \cdot \vec{r}) \vec{r}}{r^{5}} - \frac{\vec{J}_{f0}}{r^{3}} \right) \\ 
 \sigma' =  \frac{3 \epsilon_{0}}{\sigma_{2}} J_{f0} \cos \theta
 $$
-当$\sigma_2 \gg \sigma_1$ 时，电流密度以及面电荷密度的分布趋近于
+当$\sigma_{2} \gg \sigma_{1}$ 时，电流密度以及面电荷密度的分布趋近于
 $$
 \vec{j}_{in} = \frac{3 \sigma_{1}}{2 \sigma_{2}} \vec{J}_{f0} \\
 \vec{j}_{out} = \vec{J}_{f0} - \frac{1}{2} R_{0}^{3} \left(\frac{3 (\vec{J}_{f0} \cdot \vec{r}) \vec{r}}{r^{5}} - \frac{\vec{J}_{f0}}{r^{3}} \right) \\ 
 \sigma' = - \frac{3 \epsilon_{0}}{2 \sigma_{2}} J_{f0} \cos \theta
 $$
-2.13 设有两平面围成的直角形无穷容器，其内充满电导率为 $\sigma$ 的液体。取该两平面为 $xz$ 面和 $yz$ 面，在 $(x_0, y_0, z_0)$ 和 $(x_0, y_0, -z_0)$ 两点分别置正负电极并通以电流 $I$，求导电液体中的电势。
+2.13 设有两平面围成的直角形无穷容器，其内充满电导率为 $\sigma$ 的液体。取该两平面为 $xz$ 面和 $yz$ 面，在 $(x_{0}, y_{0}, z_{0})$ 和 $(x_{0}, y_{0}, -z_{0})$ 两点分别置正负电极并通以电流 $I$，求导电液体中的电势。
 
 边界条件即在两平面处的电场强度沿切向，所以可以采取类似于电像的方法求解，即在 $(x_{0}, - y_{0}, z_{0}), (- x_{0}, y_{0}, z_{0}), (- x_{0}, - y_{0}, z_{0})$ 处放置正像电极，在 $(x_{0}, - y_{0}, - z_{0}), (- x_{0}, y_{0}, - z_{0}), (- x_{0}, - y_{0}, - z_{0})$ 处放置负电极，此时直角形区域内的电势为
 $$
@@ -110,7 +110,7 @@ $$
 
 注意到在圆柱内离圆心 $\frac{a^{2}}{d}$ 处放置大小为$I$ 的电流源，并且在圆柱中心放置大小为 $-I$ 的电流源时，圆柱表面法向电流密度为
 $$
-j_{n} = - \frac{I}{2 \pi} \frac{d \cos \theta - a}{a^{2} + d^{2} - 2ad \cos \theta} + \frac{ I}{2 \pi} \frac{a - \frac{a^{2}}{d} \cos \theta}{a^{2} + \frac{a^{4}}{d^{2}} - 2 a \frac{a^{2}}{d} \cos \theta} - \frac{I}{2 \pi r} \\ = 
+j_{n} = - \frac{I}{2 \pi} \frac{d \cos \theta - a}{a^{2} + d^{2} - 2ad \cos \theta} + \frac{I}{2 \pi} \frac{a - \frac{a^{2}}{d} \cos \theta}{a^{2} + \frac{a^{4}}{d^{2}} - 2 a \frac{a^{2}}{d} \cos \theta} - \frac{I}{2 \pi r} \\ = 
 \frac{I}{2 \pi} \left(\frac{\frac{d^{2}}{a} - 2d \cos \theta + a}{a^{2} + d^{2} - 2ad \cos \theta} - \frac{1}{a} \right) = 0
 $$
  满足孔边需要的边界条件。所以在挖去圆孔之后孔外空间电流密度分布可以视作电流源和两个像电流源的叠加。假设在圆周上两个点相对于电流源和圆心的连线夹角为 $\theta_{1}$ 和 $\theta_{2}$，此时在挖孔之前，二点之间的电势差为
@@ -143,7 +143,7 @@ $$
 $$
 由于此时标势和静电场的情况一样具有唯一性，所以该解是合理的
 
-3.7 半径为 $a$ 的无限长圆柱导体上有恒定电流 $J$ 均匀分布于截面上，试解矢势 $\vec{A}$ 的微分方程，设导体的磁导率为 $\mu_0$，导体外的磁导率为 $\mu$。
+3.7 半径为 $a$ 的无限长圆柱导体上有恒定电流 $J$ 均匀分布于截面上，试解矢势 $\vec{A}$ 的微分方程，设导体的磁导率为 $\mu_{0}$，导体外的磁导率为 $\mu$。
 $$
 \nabla^{2} \vec{A} = - \mu_{0} \vec{J}
 $$
@@ -209,19 +209,19 @@ $$
 $$
 
 $$
-\vec{B} = \frac{\mu_0 \mu}{\mu + \mu_0} \frac{I}{\pi r} \vec{e}_\phi
+\vec{B} = \frac{\mu_{0} \mu}{\mu + \mu_{0}} \frac{I}{\pi r} \vec{e}_{\phi}
 $$
 
 磁化电流
 $$
-\frac{\mu_{0} (I + I_{m})}{2 \pi r} = \frac{\mu_0 \mu}{\mu + \mu_0} \frac{I}{\pi r}
+\frac{\mu_{0} (I + I_{m})}{2 \pi r} = \frac{\mu_{0} \mu}{\mu + \mu_{0}} \frac{I}{\pi r}
 $$
 
 $$
 \frac{\mu - \mu_{0}}{\mu + \mu_{0}} I
 $$
 
-3.9 将一磁导率为 $\mu$，半径为 $R_0$ 的球体，放入均匀磁场 $\vec{H}_0$ 内，求总磁感应强度 $\vec{B}$ 和诱导磁矩 $\vec{m}$。
+3.9 将一磁导率为 $\mu$，半径为 $R_{0}$ 的球体，放入均匀磁场 $\vec{H}_{0}$ 内，求总磁感应强度 $\vec{B}$ 和诱导磁矩 $\vec{m}$。
 
 由于是稳态，所以内外的总磁场对应标势均满足拉普拉斯方程，假设
 $$
@@ -256,21 +256,21 @@ $$
 $$
 \vec{B} = 
 \begin{cases} 
-\frac{3\mu \mu_0}{\mu + 2\mu_0} \vec{H}_0 & (r < R_0) \\ 
-\mu_0 \vec{H}_0 + \frac{\mu - \mu_0}{\mu + 2\mu_0} \mu_0 R_0^3 \left( \frac{3(\vec{H}_0 \cdot \vec{r})\vec{r}}{r^5} - \frac{\vec{H}_0}{r^3} \right) & (r > R_0)
+\frac{3\mu \mu_{0}}{\mu + 2\mu_{0}} \vec{H}_{0} & (r < R_{0}) \\ 
+\mu_{0} \vec{H}_{0} + \frac{\mu - \mu_{0}}{\mu + 2\mu_{0}} \mu_{0} R_{0}^{3} \left( \frac{3(\vec{H}_{0} \cdot \vec{r})\vec{r}}{r^{5}} - \frac{\vec{H}_{0}}{r^{3}} \right) & (r > R_{0})
 \end{cases}
 $$
 诱导磁矩
 $$
 \vec{m} = 4 \pi \frac{\mu - \mu_{0}}{\mu + 2 \mu_{0}} R_{0}^{3} \vec{H}_{0}
 $$
-3.13 有一个均匀带电的薄导体壳，其半径为 $R_0$，总电荷为 $Q$，今使球壳绕自身某一直径以角速度 $\omega$ 转动，求球内外的磁场 $\vec{B}$。
+3.13 有一个均匀带电的薄导体壳，其半径为 $R_{0}$，总电荷为 $Q$，今使球壳绕自身某一直径以角速度 $\omega$ 转动，求球内外的磁场 $\vec{B}$。
 
-提示：本题通过解 $\vec{A}$ 或 $\varphi_m$ 的方程都可以解决，也可以比较本题与 §5 例3 和例5 的电流分布得到结果。
+提示：本题通过解 $\vec{A}$ 或 $\varphi_{m}$ 的方程都可以解决，也可以比较本题与 §5 例3 和例5 的电流分布得到结果。
 
 面电流密度
 $$
-\vec{i} = \frac{Q \omega }{4 \pi R_{0}} \sin \theta \hat{\phi}
+\vec{i} = \frac{Q \omega}{4 \pi R_{0}} \sin \theta \hat{\phi}
 $$
 在球内外，磁标势都满足拉普拉斯方程
 
@@ -289,7 +289,7 @@ H_{1} = 2 H_{3}
 $$
 
 $$
-- H_{1} - H_{3} = - \frac{Q \omega }{4 \pi R_{0}}
+- H_{1} - H_{3} = - \frac{Q \omega}{4 \pi R_{0}}
 $$
 
 所以
@@ -304,5 +304,5 @@ $$
 所以磁感应强度为
 $$
 \vec{B}_{in} =  \frac{\mu_{0} Q \omega}{6 \pi R_{0}} \hat{z} \\
-\vec{B}_{out} = \frac{\mu_{0} Q \omega R_{0}^{2}}{12 \pi} \left( \frac{3(\hat{z} \cdot \vec{r})\vec{r} - \hat{z} r^2}{r^5}  \right)
+\vec{B}_{out} = \frac{\mu_{0} Q \omega R_{0}^{2}}{12 \pi} \left( \frac{3(\hat{z} \cdot \vec{r})\vec{r} - \hat{z} r^{2}}{r^{5}}  \right)
 $$

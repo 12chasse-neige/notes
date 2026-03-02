@@ -71,7 +71,7 @@ u_{2s} (r) = \frac{2}{a_{0}^{\frac{3}{2}}} \left(1 - \frac{r}{a_{0}} \right) e^{
 $$
 
 $$
-u_{4p} (r) =  \frac{1}{256 \sqrt{15} \, a_0^{\frac{3}{2}}} e^{- \frac{r}{4 a_{0}}} \; \frac{r}{a_0} \left( \frac{r^2}{a_0^2} - \frac{20r}{a_0} + 80 \right)
+u_{4p} (r) =  \frac{1}{256 \sqrt{15} \, a_{0}^{\frac{3}{2}}} e^{- \frac{r}{4 a_{0}}} \; \frac{r}{a_{0}} \left( \frac{r^{2}}{a_{0}^{2}} - \frac{20r}{a_{0}} + 80 \right)
 $$
 
 Because these integrals are nearly impossible to be calculated by hand, so I'll use mathematica to give a numerical answer:
@@ -177,22 +177,22 @@ Consider the ground state of zirconium which has a ground state’s term symbol 
 
 Zirconium has atomic number $40$. 
 $$
-1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^{10} 4p^6
+1s^{2} 2s^{2} 2p^{6} 3s^{2} 3p^{6} 4s^{2} 3d^{10} 4p^{6}
 $$
 The remaining $4$ electrons occupy the $5s$ and $4d$ orbitals. 
 Because of the energetic closeness of 5s and 4d, and the extra stability of a filled or half‑filled 4d subshell, the ground‑state configuration is  
 $$
-[\text{Kr}]\,5s^2 4d^2
+[\text{Kr}]\,5s^{2} 4d^{2}
 $$
 
 Thus the complete ground‑state electron configuration of $\ce{Zr}$ is  
 $$
-1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^{10} 4p^6 5s^2 4d^2
+1s^{2} 2s^{2} 2p^{6} 3s^{2} 3p^{6} 4s^{2} 3d^{10} 4p^{6} 5s^{2} 4d^{2}
 $$
 
 **(b)** According to the given term symbol, what are the spin angular momentum $S$, the orbital angular momentum $L$, and the total angular momentum $J$ for the ground state of $\ce{Zr}$?  
 
-For a term symbol $^{2S+1}L_J$:  
+For a term symbol $^{2S+1}L_{J}$:  
 
 - Spin multiplicity $2S+1 = 3 \Rightarrow S = 1$.  
 - Orbital symbol $F \Rightarrow L = 3$.  
@@ -203,14 +203,14 @@ For a term symbol $^{2S+1}L_J$:
 The valence electrons that determine the term are the two 4d electrons (the closed shells and the filled 5s subshell contribute $S = 0, L = 0$). 
 For two electrons, the total spin quantum number $S$ can be  
 $$
-S = |s_1 - s_2|, |s_1 - s_2 + 1|, \dots, |s_1 + s_2|  = 0 \, \text{or} \, 1
+S = |s_{1} - s_{2}|, |s_{1} - s_{2} + 1|, \dots, |s_{1} + s_{2}|  = 0 \, \text{or} \, 1
 $$
 
 Hund’s first rule states that for a given electron configuration, the term with the highest multiplicity (largest $S$) lies lowest in energy. Here the ground state has $S = 1$ , which is the maximum possible $S$ for the $4d^{2}$ configuration.  
 
-**(d)** Determine all possible values of $L$ by adding all the individual angular momenta $l_i$. Does the ground state of $\ce{Zr}$ meet the requirement of the second Hund's rule? Explain your answer.
+**(d)** Determine all possible values of $L$ by adding all the individual angular momenta $l_{i}$. Does the ground state of $\ce{Zr}$ meet the requirement of the second Hund's rule? Explain your answer.
 
-Each $4d$ electron has orbital quantum number $l = 2$. The total orbital angular momentum $L$ can in principle take values from $|l_1 - l_2|$ to $l_1 + l_2$, 
+Each $4d$ electron has orbital quantum number $l = 2$. The total orbital angular momentum $L$ can in principle take values from $|l_{1} - l_{2}|$ to $l_{1} + l_{2}$, 
 $$
 L = 0, 1, 2, 3, 4.
 $$
@@ -239,27 +239,27 @@ The $4d$ subshell can hold 10 electrons; here it contains only 2 electrons, so i
 
 <img src="./Atomic and Molecular Physics Homework 4.assets/image-20251207181019990.png" alt="image-20251207181019990" style="zoom:25%;" />
 
-**(a)** For atoms or ions whose two valence electrons are in the same $p$-subshell ($p^2$). Consider the effects of $L-S$ and $j-j$ coupling. Write down the term symbols of the states (a), (b), ..., (m) in the picture below. Explain your answer.  (The parameter $\chi$ describes the strength of spin orbit coupling. A larger $\chi$ means a larger energy $H_2$ discussed in the lecture.)
+**(a)** For atoms or ions whose two valence electrons are in the same $p$-subshell ($p^{2}$). Consider the effects of $L-S$ and $j-j$ coupling. Write down the term symbols of the states (a), (b), ..., (m) in the picture below. Explain your answer.  (The parameter $\chi$ describes the strength of spin orbit coupling. A larger $\chi$ means a larger energy $H_{2}$ discussed in the lecture.)
 
-For left side of the picture, the atomic number is quite low, so it's proper to describe these states using the effect of $L-S$ coupling. For the Silicon atoms, the valence electrons are the two $3p^{2}$ electrons. So the $p^2$ configuration gives rise to three terms due to electrostatic repulsion and the Pauli exclusion principle: $^3P$, $^1D$, and $^1S$.
+For left side of the picture, the atomic number is quite low, so it's proper to describe these states using the effect of $L-S$ coupling. For the Silicon atoms, the valence electrons are the two $3p^{2}$ electrons. So the $p^{2}$ configuration gives rise to three terms due to electrostatic repulsion and the Pauli exclusion principle: $^{3P}$, $^{1D}$, and $^{1S}$.
 
 According to the Hund's Rules, the ordering of the states are:
 
-1. $^3P$ is the ground term (lowest energy).
+1. $^{3P}$ is the ground term (lowest energy).
 
-2. Highest Orbital ($L$) for same $S$: $^1D$ is the next lowest.
+2. Highest Orbital ($L$) for same $S$: $^{1D}$ is the next lowest.
 
-3. $^1S$ is the highest energy term.
+3. $^{1S}$ is the highest energy term.
 
 Considering the Fine Structure Spin-Orbit Splitting:
 
-1. The $^3P$ term ($S=1, L=1$) splits into $J = 0, 1, 2$. For a less-than-half-filled shell, the lowest $J$ has the lowest energy. $^3P_0 < ^3P_1 < ^3P_2$.
+1. The $^{3P}$ term ($S=1, L=1$) splits into $J = 0, 1, 2$. For a less-than-half-filled shell, the lowest $J$ has the lowest energy. $^{3P}_{0} <^{3P}_{1} <^{3P}_{2}$.
 
-2. The $^1D$ term ($S=0, L=2$) has only $J=2$: $^1D_2$.
+2. The $^{1D}$ term ($S=0, L=2$) has only $J=2$: $^{1D}_{2}$.
 
-3. The $^1S$ term ($S=0, L=0$) has only $J=0$: $^1S_0$.
+3. The $^{1S}$ term ($S=0, L=0$) has only $J=0$: $^{1S}_{0}$.
 
-So the energy order at low $\chi$ is  $^3P_0 < ^3P_1 < ^3P_2 < ^1D_2 < ^1S_0$.
+So the energy order at low $\chi$ is  $^{3P}_{0} <^{3P}_{1} <^{3P}_{2} <^{1D}_{2} <^{1S}_{0}$.
 
 $j-j$ Coupling Limit (Right Side):
 The electrons couple their spin and orbital angular momenta individually ($j = l \pm s$). For $p$ electrons ($l=1$), $j$ can be $1/2$ or $3/2$.
@@ -271,43 +271,43 @@ The electrons couple their spin and orbital angular momenta individually ($j = l
 
 States with the same total angular momentum $J$ do not cross (non-crossing rule).So  we can  connect the levels from left to right based on their energy order for each $J$.
 
-1. $J=0$: Lowest ($^3P_0$) $\to$ Lowest ($1/2, 1/2$)$_0$. Highest ($^1S_0$) $\to$ Highest ($3/2, 3/2$)$_0$.
-2. $J=1$: Only one state ($^3P_1$) $\to$ Middle group ($3/2, 1/2$)$_1$.
-3. $J=2$: Lower ($^3P_2$) $\to$ Middle group ($3/2, 1/2$)$_2$. Higher ($^1D_2$) $\to$ Highest group ($3/2, 3/2$)$_2$.
+1. $J=0$: Lowest ($^{3P}_{0}$) $\to$ Lowest ($1/2, 1/2$)$_{0}$. Highest ($^{1S}_{0}$) $\to$ Highest ($3/2, 3/2$)$_{0}$.
+2. $J=1$: Only one state ($^{3P}_{1}$) $\to$ Middle group ($3/2, 1/2$)$_{1}$.
+3. $J=2$: Lower ($^{3P}_{2}$) $\to$ Middle group ($3/2, 1/2$)$_{2}$. Higher ($^{1D}_{2}$) $\to$ Highest group ($3/2, 3/2$)$_{2}$.
 
 According to the analysis above, we can get the assigned term symbols for the points given:
 
 Left Side (L-S Coupling Region):
 
-(a) $^1S_0$ : The highest energy term on the LHS.
+(a) $^{1S}_{0}$ : The highest energy term on the LHS.
 
-(b) $^1D_2$ : The middle energy term.
+(b) $^{1D}_{2}$ : The middle energy term.
 
-(c) $^3 P$: The lowest energy term.
+(c) $^{3} P$: The lowest energy term.
 
-The bottom cluster originates from the $^3P$ term:
+The bottom cluster originates from the $^{3P}$ term:
 
- (f) $^3P_0$ : The lowest level of the triplet.
+ (f) $^{3P}_{0}$ : The lowest level of the triplet.
 
-(d) $^3P_2$ : The highest level of the triplet.
+(d) $^{3P}_{2}$ : The highest level of the triplet.
 
-(e) $^3P_1$ : The middle level of the triplet.
+(e) $^{3P}_{1}$ : The middle level of the triplet.
 
-Right Side (j-j Coupling Region): In $j-j$ coupling notation $(j_1, j_2)_J$
+Right Side (j-j Coupling Region): In $j-j$ coupling notation $(j_{1}, j_{2})_{J}$
 
 (i) $(3/2, 3/2)$ : The highest energy state.
 
 (l) $(3/2, 1/2)$: The middle energy state.
 
-(m) $(1/2, 1/2)$: The lowest energy state, connected to $^3 P_{0}$.
+(m) $(1/2, 1/2)$: The lowest energy state, connected to $^{3} P_{0}$.
 
-(g) $(3/2, 3/2)_{0}$: The highest state, connected to $^1 S_{0}$.
+(g) $(3/2, 3/2)_{0}$: The highest state, connected to $^{1} S_{0}$.
 
-(h) $(3/2, 3/2)_2$ : The second highest state, connected to $^1D_2$.
+(h) $(3/2, 3/2)_{2}$ : The second highest state, connected to $^{1D}_{2}$.
 
-(j) $(3/2, 1/2)_2$ : The upper state of the middle group ($J=2$), connected to $^3P_2$.
+(j) $(3/2, 1/2)_{2}$ : The upper state of the middle group ($J=2$), connected to $^{3P}_{2}$.
 
-(k) $(3/2, 1/2)_1$ : The lower state of the middle group ($J=1$), connected to $^3P_1$.
+(k) $(3/2, 1/2)_{1}$ : The lower state of the middle group ($J=1$), connected to $^{3P}_{1}$.
 
 
 

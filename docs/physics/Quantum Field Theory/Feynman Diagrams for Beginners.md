@@ -59,7 +59,7 @@ Department of Physics, Faculty of Science, University of Zagreb, Croatia
 相对论性量子力学中的自然单位选择使得该理论的基本常数 $c$ 和 $\hbar$ 都等于 1。$[c] = L T^{-1}$ ，$[\hbar] = M L^{-2} T^{-1}$ ，为了完全确定我们的单位制，我们指定能量单位 $(M L^{2} T^{-2})$：
 
 $$
-1 \mathrm{GeV} = 1.6 \cdot 10 ^ {-10} \mathrm{kg} \mathrm{m}^{2} \cdot \mathrm{s}^{-2}
+1 \mathrm{GeV} = 1.6 \cdot 10^{-10} \mathrm{kg} \mathrm{m}^{2} \cdot \mathrm{s}^{-2}
 $$
 
 约等于质子的质量。我们在实践中的做法是：
@@ -78,7 +78,7 @@ $$
 为了恢复 $\hbar$ 和 $c$，我们将它们以一般幂次 $\alpha$ 和 $\beta$ 插入上述方程，通过要求截面具有面积量纲 $(L^{2})$ 来确定这些幂次：
 
 $$
-\sigma_{\mathrm{T}} = \frac{8 \pi \alpha^{2}}{3 m_{e}^{2}} \hbar^ {\alpha} c^{\beta} \tag{2}
+\sigma_{\mathrm{T}} = \frac{8 \pi \alpha^{2}}{3 m_{e}^{2}} \hbar^{\alpha} c^{\beta} \tag{2}
 $$
 
 $$
@@ -192,7 +192,7 @@ $$
 其中 $\beta^{\mu}$ 和 $\gamma^{\nu}$ 将通过要求与 Klein-Gordan 方程的一致性来确定。这要求 $\gamma^{\mu} = \beta^{\mu}$ 且
 
 $$
-\gamma^ {\mu} \partial_{\mu} \gamma^{\nu} \partial_{\nu} = \partial^{\mu} \partial_{\mu} \tag {10}
+\gamma^{\mu} \partial_{\mu} \gamma^{\nu} \partial_{\nu} = \partial^{\mu} \partial_{\mu} \tag {10}
 $$
 
 这又意味着
@@ -223,7 +223,7 @@ $$
 \gamma^{0} = \begin{pmatrix} 1 & 0 \\ 0 & - 1 \end{pmatrix}  \quad \gamma^{i} = \begin{pmatrix} 0 & \sigma^{i} \\ -\sigma^{i} & 0 \end{pmatrix} \tag {13}
 $$
 
-其中 $\sigma ^ { i }$ 是泡利矩阵。这种表示对于非相对论近似非常方便，因为此时主导的能量项 $(i\gamma^{0} \partial_{0} - \cdots -m) \psi(0)$ 是对角化的。另外两种常用的表示是：
+其中 $\sigma^{i}$ 是泡利矩阵。这种表示对于非相对论近似非常方便，因为此时主导的能量项 $(i\gamma^{0} \partial_{0} - \cdots -m) \psi(0)$ 是对角化的。另外两种常用的表示是：
 
 - Weyl（或手征）表示——在超相对论区域（$E \gg m$）方便  
 -  Majorana 表示——使狄拉克方程变为实数；对于反粒子等于粒子的 Majorana 费米子方便
@@ -243,7 +243,7 @@ $$
 $$
 
 $$
-[\sigma^ {i}, \sigma^ {j}] = 2 i \epsilon^{ijk} \sigma^{k} \tag {17}
+[\sigma^{i}, \sigma^{j}] = 2 i \epsilon^{ijk} \sigma^{k} \tag {17}
 $$
 
 $$
@@ -298,21 +298,21 @@ $$
 
 ### 2.2 伴随狄拉克方程与狄拉克流
 
-为了构建狄拉克流，我们需要 $\psi ( x ) ^ { \dagger }$ 的方程。取狄拉克方程的dagger，我们得到
+为了构建狄拉克流，我们需要 $\psi ( x )^{\dagger}$ 的方程。取狄拉克方程的dagger，我们得到
 
 $$
 \psi^{\dagger} \gamma^{0} (i \overleftarrow{\rlap / \partial} + m) = 0
 $$
 
-我们定义伴随旋量 ${ \bar { \psi } } \equiv \psi ^ { \dagger } \gamma ^ { 0 }$，得到伴随狄拉克方程
+我们定义伴随旋量 ${\bar {\psi}} \equiv \psi^{\dagger} \gamma^{0}$，得到伴随狄拉克方程
 
 $$
 \bar{\psi}(x) (i \overleftarrow{\rlap / \partial} + m) = 0
 $$
 
-引入 $\bar { \psi }$ 不仅是为了得到美学上令人愉悦的方程，而且因为可以证明，与 $\psi ^ { \dagger }$ 不同，它在洛伦兹变换下协变地变换。
+引入 $\bar {\psi}$ 不仅是为了得到美学上令人愉悦的方程，而且因为可以证明，与 $\psi^{\dagger}$ 不同，它在洛伦兹变换下协变地变换。
 
-**练习 7** 验证流 $j ^ { \mu } = \bar { \psi } \gamma ^ { \mu } \psi$ 是守恒的，即满足连续性关系 $\partial _ { \mu } j ^ { \mu } = 0$。这个相对论性四流的分量是 $j ^ { \mu } = ( \rho , j )$。注意 $\rho =$ $j ^ { 0 } = \bar { \psi } \gamma ^ { 0 } \psi = \psi ^ { \dagger } \psi > 0$，即概率是正定的。
+**练习 7** 验证流 $j^{\mu} = \bar {\psi} \gamma^{\mu} \psi$ 是守恒的，即满足连续性关系 $\partial_{\mu} j^{\mu} = 0$。这个相对论性四流的分量是 $j^{\mu} = ( \rho , j )$。注意 $\rho =$ $j^{0} = \bar {\psi} \gamma^{0} \psi = \psi^{\dagger} \psi > 0$，即概率是正定的。
 
 >$$
 >\partial_{\mu} j^{\mu} = \partial_{\mu} (\bar{\psi} \gamma^{\mu} \psi) = \partial_{\mu} (\psi^{\dagger}  \gamma^{0} \gamma^{\mu} \psi) = (\partial_{\mu} \psi)^{\dagger} \gamma^{0} \gamma^{\mu} \psi + \psi^{\dagger} \gamma^{0} \gamma^{\mu} (\partial_{\mu} \psi) = - m \bar{\psi} \psi + m \bar{\psi} \psi = 0
@@ -335,19 +335,19 @@ $$
 这有两个正能量解
 
 $$
-u (\boldsymbol {p}, \sigma) = N \left( \begin{array}{c} \chi^ {(\sigma)} \\ \frac {\boldsymbol {\sigma} \cdot \boldsymbol {p}}{E + m} \chi^ {(\sigma)} \end{array} \right), \quad \sigma = 1, 2, \tag {22}
+u (\boldsymbol {p}, \sigma) = N \left( \begin{array}{c} \chi^{(\sigma)} \\ \frac {\boldsymbol {\sigma} \cdot \boldsymbol {p}}{E + m} \chi^{(\sigma)} \end{array} \right), \quad \sigma = 1, 2, \tag {22}
 $$
 
 其中
 
 $$
-\chi^ {(1)} = \left( \begin{array}{l} 1 \\ 0 \end{array} \right), \quad \chi^ {(2)} = \left( \begin{array}{l} 0 \\ 1 \end{array} \right), \tag {23}
+\chi^{(1)} = \left( \begin{array}{l} 1 \\ 0 \end{array} \right), \quad \chi^{(2)} = \left( \begin{array}{l} 0 \\ 1 \end{array} \right), \tag {23}
 $$
 
 以及两个负能量解，它们被解释为正能量的反粒子解
 
 $$
-v (\boldsymbol {p}, \sigma) = - N \left( \begin{array}{c} \frac {\boldsymbol {\sigma} \cdot \boldsymbol {p}}{E + m} (i \sigma^ {2}) \chi^ {(\sigma)} \\ (i \sigma^ {2}) \chi^ {(\sigma)} \end{array} \right), \quad \sigma = 1, 2, \quad E > 0. \tag {24}
+v (\boldsymbol {p}, \sigma) = - N \left( \begin{array}{c} \frac {\boldsymbol {\sigma} \cdot \boldsymbol {p}}{E + m} (i \sigma^{2}) \chi^{(\sigma)} \\ (i \sigma^{2}) \chi^{(\sigma)} \end{array} \right), \quad \sigma = 1, 2, \quad E > 0. \tag {24}
 $$
 
 $N$ 是待定的归一化常数。上面的旋量与 [1] 中的一致。反粒子解的动量空间狄拉克方程是
@@ -358,13 +358,13 @@ $$
 
 可以证明，两个解（一个 $\sigma = 1$，另一个 $\sigma = 2$）对应于自旋-1/2 粒子的两个自旋状态。
 
-**练习 8** 确定 $\bar { u } ( { \pmb p } , \sigma )$ 和 $\bar { v } ( p , \sigma )$ 的动量空间狄拉克方程。
+**练习 8** 确定 $\bar {u} ( {\pmb p} , \sigma )$ 和 $\bar {v} ( p , \sigma )$ 的动量空间狄拉克方程。
 
 >
 
 #### 归一化
 
-在非相对论单粒子量子力学中，波函数的归一化很简单。粒子在空间中某处的概率等于一，这转化为归一化条件 $\textstyle \int \psi ^ { * } \psi d V = 1$。另一方面，我们最终将在多粒子量子场论中使用旋量 (22) 和 (24)，因此它们的归一化不是唯一的。我们将选择归一化约定：单位体积内有 $2 E$ 个粒子
+在非相对论单粒子量子力学中，波函数的归一化很简单。粒子在空间中某处的概率等于一，这转化为归一化条件 $\textstyle \int \psi^{*} \psi d V = 1$。另一方面，我们最终将在多粒子量子场论中使用旋量 (22) 和 (24)，因此它们的归一化不是唯一的。我们将选择归一化约定：单位体积内有 $2 E$ 个粒子
 
 $$
 \int_{\text{unitvolume}} \rho dV = \int_{\text{unitvolume}} \psi^{\dagger} \psi dV  = 2 E \tag{26}
@@ -380,11 +380,11 @@ $$
 
 **练习 10** 使用显式表达式 (22) 和 (24) 证明
 $$
-\sum_ {\sigma = 1, 2} u (\boldsymbol {p}, \sigma) \bar {u} (\boldsymbol {p}, \sigma) = \not p + m, \tag {27}
+\sum_{\sigma = 1, 2} u (\boldsymbol {p}, \sigma) \bar {u} (\boldsymbol {p}, \sigma) = \not p + m, \tag {27}
 $$
 
 $$
-\sum_ {\sigma = 1, 2} v (\boldsymbol {p}, \sigma) \bar {v} (\boldsymbol {p}, \sigma) = \not p - m. \tag {28}
+\sum_{\sigma = 1, 2} v (\boldsymbol {p}, \sigma) \bar {v} (\boldsymbol {p}, \sigma) = \not p - m. \tag {28}
 $$
 
 这些关系在计算未极化费米子的费曼图时经常需要。参见后面的章节。
@@ -398,11 +398,11 @@ $$
 - P：$x \to −x, t \to t$
 - P： ψ → γ 0 ψ
 
-**练习 11** 验证流 $j ^ { \mu } = \bar { \psi } \gamma ^ { \mu } \psi$ 在宇称下像矢量一样变换，即 $j ^ { 0 } \to j ^ { 0 }$ 且 $j \to - j$。
+**练习 11** 验证流 $j^{\mu} = \bar {\psi} \gamma^{\mu} \psi$ 在宇称下像矢量一样变换，即 $j^{0} \to j^{0}$ 且 $j \to - j$。
 
 >
 
-任何费米子流都具有 ${ \bar { \psi } } \Gamma \psi$ 的形式，其中 $\Gamma$ 是某个 4×4 矩阵。为了构建相互作用拉格朗日量，我们希望只使用那些具有确定洛伦兹变换性质的流。为此，我们首先定义两个新矩阵：
+任何费米子流都具有 ${\bar {\psi}} \Gamma \psi$ 的形式，其中 $\Gamma$ 是某个 4×4 矩阵。为了构建相互作用拉格朗日量，我们希望只使用那些具有确定洛伦兹变换性质的流。为此，我们首先定义两个新矩阵：
 
 $$
 \gamma^{5} \equiv i \gamma^{0} \gamma^{1} \gamma^{2} \gamma^{3} \stackrel{\text{Diracrep.}}{=} \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \quad \left\{\gamma^{5}, \gamma^{\mu} \right\} = 0 \tag{29}
@@ -412,7 +412,7 @@ $$
 \sigma^{\mu \nu} \equiv \frac{i}{2} \left[ \gamma^{\mu}, \gamma^{\nu} \right], \quad \sigma^{\mu \nu} = - \sigma^{\nu \mu} \tag {30}
 $$
 
-现在，如果 $\Gamma$ 是下表中给出的矩阵之一，则 ${ \bar { \psi } } \Gamma \psi$ 将协变地变换。下表还显示了 ${ \bar { \psi } } \Gamma \psi$ 的变换性质、$\Gamma$ 中不同 $\gamma$ 矩阵的数量以及 $\Gamma$ 的分量数。
+现在，如果 $\Gamma$ 是下表中给出的矩阵之一，则 ${\bar {\psi}} \Gamma \psi$ 将协变地变换。下表还显示了 ${\bar {\psi}} \Gamma \psi$ 的变换性质、$\Gamma$ 中不同 $\gamma$ 矩阵的数量以及 $\Gamma$ 的分量数。
 
 | Γ | 变换性质 | # of γ's | # of components |
 |---|---|---|---|
@@ -422,38 +422,38 @@ $$
 | γ5γμ | 轴矢量 | 3 | 4 |
 | γ5 | 赝标量 | 4 | 1 |
 
-这穷尽了所有可能性。分量总数为 16，这意味着集合 $\left\{ 1 , \gamma ^ { \mu } , \sigma ^ { \mu \nu } , \gamma ^ { 5 } \gamma ^ { \mu } , \gamma ^ { 5 } \right\}$ 构成任何 4×4 矩阵的完备基。这样的 ${ \bar { \psi } } \Gamma \psi$ 流称为双线性协变量。
+这穷尽了所有可能性。分量总数为 16，这意味着集合 $\left\{ 1 , \gamma^{\mu} , \sigma^{\mu \nu} , \gamma^{5} \gamma^{\mu} , \gamma^{5} \right\}$ 构成任何 4×4 矩阵的完备基。这样的 ${\bar {\psi}} \Gamma \psi$ 流称为双线性协变量。
 
 ---
 
 ## 3 自由量子场
 
-单粒子狄拉克方程（a）即使对于单粒子系统（如 H 原子）也不完全正确，并且（b）无法处理多粒子过程（如 $\beta$ -衰变 $n  p e ^ { - } \bar { \nu }$）。我们必须升级到量子场论。
+单粒子狄拉克方程（a）即使对于单粒子系统（如 H 原子）也不完全正确，并且（b）无法处理多粒子过程（如 $\beta$ -衰变 $n  p e^{-} \bar {\nu}$）。我们必须升级到量子场论。
 
 任何狄拉克场都是以下完备集的某种叠加
 
 $$
-u (\boldsymbol {p}, \sigma) e ^ {- i p x}, \quad v (\boldsymbol {p}, \sigma) e ^ {i p x}, \quad \sigma = 1, 2, \quad \boldsymbol {p} \in \mathbb {R} ^ {3}
+u (\boldsymbol {p}, \sigma) e^{- i p x}, \quad v (\boldsymbol {p}, \sigma) e^{i p x}, \quad \sigma = 1, 2, \quad \boldsymbol {p} \in \mathbb {R}^{3}
 $$
 
 我们可以将其写为
 
 $$
-\psi (x) = \sum_ {\sigma} \int \frac {d ^ {3} p}{\sqrt {(2 \pi) ^ {3} 2 E}} \left[ u (\boldsymbol {p}, \sigma) a (\boldsymbol {p}, \sigma) e ^ {- i p x} + v (\boldsymbol {p}, \sigma) a ^ {c \dagger} (\boldsymbol {p}, \sigma) e ^ {i p x} \right]. \tag {31}
+\psi (x) = \sum_{\sigma} \int \frac {d^{3} p}{\sqrt {(2 \pi)^{3} 2 E}} \left[ u (\boldsymbol {p}, \sigma) a (\boldsymbol {p}, \sigma) e^{- i p x} + v (\boldsymbol {p}, \sigma) a^{c \dagger} (\boldsymbol {p}, \sigma) e^{i p x} \right]. \tag {31}
 $$
 
-这里 $1 / \sqrt { ( 2 \pi ) ^ { 3 } 2 E }$ 是归一化因子（有许多不同的约定），$a ( \pmb { p } , \sigma )$ 和 $a ^ { c \dagger } ( \pmb { p } , \sigma )$ 是展开系数。为了使这成为量子狄拉克场，我们通过强加反对易关系将这些系数提升为算符：
+这里 $1 / \sqrt {( 2 \pi )^{3} 2 E}$ 是归一化因子（有许多不同的约定），$a ( \pmb {p} , \sigma )$ 和 $a^{c \dagger} ( \pmb {p} , \sigma )$ 是展开系数。为了使这成为量子狄拉克场，我们通过强加反对易关系将这些系数提升为算符：
 
 $$
-\left\{a \left(\boldsymbol {p}, \sigma\right), a ^ {\dagger} \left(\boldsymbol {p} ^ {\prime}, \sigma^ {\prime}\right) \right\} = \delta_ {\sigma \sigma^ {\prime}} \delta^ {3} \left(\boldsymbol {p} - \boldsymbol {p} ^ {\prime}\right), \tag {32}
+\left\{a \left(\boldsymbol {p}, \sigma\right), a^{\dagger} \left(\boldsymbol {p}^{\prime}, \sigma^{\prime}\right) \right\} = \delta_{\sigma \sigma^{\prime}} \delta^{3} \left(\boldsymbol {p} - \boldsymbol {p}^{\prime}\right), \tag {32}
 $$
 
-类似地对于 $a ^ { c } ( \pmb { p } , \sigma )$。（对于玻色场，我们将有对易关系。）这类似于通过 $[ x _ { i } , p _ { j } ] = i \hbar \delta _ { i j }$ 对易关系将位置和动量提升为算符，这就是为什么从单粒子量子理论过渡到量子场论有时被称为二次量子化。
+类似地对于 $a^{c} ( \pmb {p} , \sigma )$。（对于玻色场，我们将有对易关系。）这类似于通过 $[ x_{i} , p_{j} ] = i \hbar \delta_{i j}$ 对易关系将位置和动量提升为算符，这就是为什么从单粒子量子理论过渡到量子场论有时被称为二次量子化。
 
-算符 $a ^ { \dagger }$ 作用于真空态 $| 0 \rangle$ 时，产生单粒子态 $| p , \sigma \rangle$：
+算符 $a^{\dagger}$ 作用于真空态 $| 0 \rangle$ 时，产生单粒子态 $| p , \sigma \rangle$：
 
 $$
-a ^ {\dagger} (\boldsymbol {p}, \sigma) | 0 \rangle = | \boldsymbol {p}, \sigma \rangle , \tag {33}
+a^{\dagger} (\boldsymbol {p}, \sigma) | 0 \rangle = | \boldsymbol {p}, \sigma \rangle , \tag {33}
 $$
 
 这就是它被称为产生算符的原因。类似地，$a$ 是湮灭算符：
@@ -462,7 +462,7 @@ $$
 a (\boldsymbol {p}, \sigma) | \boldsymbol {p}, \sigma \rangle = | 0 \rangle , \tag {34}
 $$
 
-而 $a ^ { c \dagger }$ 和 $a ^ { c }$ 是反粒子态的产生和湮灭算符（$a ^ { c }$ 中的 $c$ 代表“共轭”）。
+而 $a^{c \dagger}$ 和 $a^{c}$ 是反粒子态的产生和湮灭算符（$a^{c}$ 中的 $c$ 代表“共轭”）。
 
 粒子物理学中的过程大多在此类场的理论框架内计算——量子场论。该理论可以在不同严格程度上描述，但无论如何都足够复杂，超出了这些笔记的范围。
 
@@ -475,7 +475,7 @@ $$
 例如，希格斯玻色子、π 介子……
 
 $$
-\phi (x) = \int \frac {d ^ {3} p}{\sqrt {(2 \pi) ^ {3} 2 E}} \left[ a (\boldsymbol {p}) e ^ {- i p x} + a ^ {c \dagger} (\boldsymbol {p}) e ^ {i p x} \right] \tag {35}
+\phi (x) = \int \frac {d^{3} p}{\sqrt {(2 \pi)^{3} 2 E}} \left[ a (\boldsymbol {p}) e^{- i p x} + a^{c \dagger} (\boldsymbol {p}) e^{i p x} \right] \tag {35}
 $$
 
 ### 3.2 自旋 1/2：狄拉克场
@@ -492,13 +492,13 @@ $$
 • 无质量的（例如光子）
 
 $$
-A ^ {\mu} (x) = \sum_ {\lambda} \int \frac {d ^ {3} p}{\sqrt {(2 \pi) ^ {3} 2 E}} \left[ \epsilon^ {\mu} (\boldsymbol {p}, \lambda) a (\boldsymbol {p}, \lambda) e ^ {- i p x} + \epsilon^ {\mu *} (\boldsymbol {p}, \lambda) a ^ {\dagger} (\boldsymbol {p}, \lambda) e ^ {i p x} \right] \tag {36}
+A^{\mu} (x) = \sum_{\lambda} \int \frac {d^{3} p}{\sqrt {(2 \pi)^{3} 2 E}} \left[ \epsilon^{\mu} (\boldsymbol {p}, \lambda) a (\boldsymbol {p}, \lambda) e^{- i p x} + \epsilon^{\mu *} (\boldsymbol {p}, \lambda) a^{\dagger} (\boldsymbol {p}, \lambda) e^{i p x} \right] \tag {36}
 $$
 
-$\epsilon ^ { \mu } ( \pmb { p } , \lambda )$ 是极化矢量。对于有质量粒子，它自动满足
+$\epsilon^{\mu} ( \pmb {p} , \lambda )$ 是极化矢量。对于有质量粒子，它自动满足
 
 $$
-p _ {\mu} \epsilon^ {\mu} (\boldsymbol {p}, \lambda) = 0 \tag {37}
+p_{\mu} \epsilon^{\mu} (\boldsymbol {p}, \lambda) = 0 \tag {37}
 $$
 
 而在无质量情况下，由于规范不变性（洛伦兹规范条件），可以强加这个条件。这意味着有质量矢量粒子只有三个独立极化：$\lambda = 1 , 2 , 3$ 或 $\lambda =$ $+ , - , 0$。在无质量情况下，可以进一步利用规范对称性消除一个极化态，只留下两个：$\lambda = 1 , 2$ 或 $\lambda = + , -$。
@@ -506,10 +506,10 @@ $$
 极化矢量的归一化使得
 
 $$
-\epsilon^ {*} (\boldsymbol {p}, \lambda) \cdot \epsilon (\boldsymbol {p}, \lambda) = - 1. \tag {38}
+\epsilon^{*} (\boldsymbol {p}, \lambda) \cdot \epsilon (\boldsymbol {p}, \lambda) = - 1. \tag {38}
 $$
 
-例如，对于沿 $z$ 轴运动的有质量粒子 $( p = ( E , 0 , 0 , | \pmb { p } | ) )$，我们可以取
+例如，对于沿 $z$ 轴运动的有质量粒子 $( p = ( E , 0 , 0 , | \pmb {p} | ) )$，我们可以取
 
 $$
 \epsilon (\boldsymbol {p}, \pm) = \mp \frac {1}{\sqrt {2}} \left( \begin{array}{c} 0 \\ 1 \\ \pm i \\ 0 \end{array} \right), \quad \epsilon (\boldsymbol {p}, 0) = \frac {1}{m} \left( \begin{array}{c} | \boldsymbol {p} | \\ 0 \\ 0 \\ E \end{array} \right) \tag {39}
@@ -518,15 +518,15 @@ $$
 **练习 12** 计算
 
 $$
-\sum_ {\lambda} \epsilon^ {\mu *} (\boldsymbol {p}, \lambda) \epsilon^ {\nu} (\boldsymbol {p}, \lambda)
+\sum_{\lambda} \epsilon^{\mu *} (\boldsymbol {p}, \lambda) \epsilon^{\nu} (\boldsymbol {p}, \lambda)
 $$
 
-提示：将其写成最一般的形式 $( A g ^ { \mu \nu } + B p ^ { \mu } p ^ { \nu } )$，然后确定 $A$ 和 $B$。
+提示：将其写成最一般的形式 $( A g^{\mu \nu} + B p^{\mu} p^{\nu} )$，然后确定 $A$ 和 $B$。
 
 显然，所得结果不能简单地通过极限 $m \to 0$ 外推到无质量情况。规范对称性使无质量极化求和稍微复杂一些，但为了进行简单的费曼图计算，可以只使用以下关系
 
 $$
-\sum_ {\lambda} \epsilon^ {\mu *} (\boldsymbol {p}, \lambda) \epsilon^ {\nu} (\boldsymbol {p}, \lambda) = - g ^ {\mu \nu}.
+\sum_{\lambda} \epsilon^{\mu *} (\boldsymbol {p}, \lambda) \epsilon^{\nu} (\boldsymbol {p}, \lambda) = - g^{\mu \nu}.
 $$
 
 ---
@@ -535,89 +535,89 @@ $$
 
 粒子物理学的主要实验可观测量是
 
-• 散射截面 $\sigma ( 1 + 2  1 ^ { \prime } + 2 ^ { \prime } + \cdot \cdot \cdot + n ^ { \prime } )$  
-• 衰变宽度 $\Gamma ( 1 \to 1 ^ { \prime } + 2 ^ { \prime } + \cdot \cdot \cdot + n ^ { \prime } )$
+• 散射截面 $\sigma ( 1 + 2  1^{\prime} + 2^{\prime} + \cdot \cdot \cdot + n^{\prime} )$  
+• 衰变宽度 $\Gamma ( 1 \to 1^{\prime} + 2^{\prime} + \cdot \cdot \cdot + n^{\prime} )$
 
 另一方面，理论是用量子场的拉格朗日密度定义的，例如
 
 $$
-\mathcal {L} = \frac {1}{2} \partial_ {\mu} \phi \partial^ {\mu} \phi - \frac {1}{2} m ^ {2} \phi^ {2} - \frac {g}{4 !} \phi^ {4}.
+\mathcal {L} = \frac {1}{2} \partial_{\mu} \phi \partial^{\mu} \phi - \frac {1}{2} m^{2} \phi^{2} - \frac {g}{4 !} \phi^{4}.
 $$
 
-如何从 $\mathcal { L }$ 计算 $\sigma$ 和 Γ？
+如何从 $\mathcal {L}$ 计算 $\sigma$ 和 Γ？
 
-在非相对论量子理论中，为了计算存在相互作用势 $V _ { I }$ 时从态 $| \alpha \rangle$ 到态 $| \beta \rangle$ 的跃迁速率，我们有费米黄金规则
+在非相对论量子理论中，为了计算存在相互作用势 $V_{I}$ 时从态 $| \alpha \rangle$ 到态 $| \beta \rangle$ 的跃迁速率，我们有费米黄金规则
 
 $$
-\binom {\alpha \rightarrow \beta} {\text {t r a n s i t i o n r a t e}} = \frac {2 \pi}{\hbar} \left| \right.\left\langle \right. \beta \left. \right| V _ {I} \mid \alpha \left. \right\rangle\left. \right| ^ {2} \times \binom {\text {d e n s i t y o f f i n a l}} {\text {q u a n t u m s t a t e s}}. \tag {40}
+\binom {\alpha \rightarrow \beta} {\text {t r a n s i t i o n r a t e}} = \frac {2 \pi}{\hbar} \left| \right.\left\langle \right. \beta \left. \right| V_{I} \mid \alpha \left. \right\rangle\left. \right|^{2} \times \binom {\text {d e n s i t y o f f i n a l}} {\text {q u a n t u m s t a t e s}}. \tag {40}
 $$
 
-这是最低阶微扰理论。对于更高阶，我们有更多相互作用势矩阵元 $\langle \vert V _ { I } \vert \rangle$ 的乘积项。
+这是最低阶微扰理论。对于更高阶，我们有更多相互作用势矩阵元 $\langle \vert V_{I} \vert \rangle$ 的乘积项。
 
 在量子场论中，有与这些矩阵元对应的东西——S 矩阵：
 
 $$
-\langle \beta | V _ {I} | \alpha \rangle + \left(\text {h i g h e r - o r d e r t e r m s}\right) \quad \longrightarrow \quad \langle \beta | S | \alpha \rangle . \tag {41}
+\langle \beta | V_{I} | \alpha \rangle + \left(\text {h i g h e r - o r d e r t e r m s}\right) \quad \longrightarrow \quad \langle \beta | S | \alpha \rangle . \tag {41}
 $$
 
 一方面，S 矩阵元可以（在知道相互作用拉格朗日量/哈密顿量的情况下）借助戴森级数进行微扰计算
 
 $$
-S = 1 - i \int d ^ {4} x _ {1} \mathcal {H} \left(x _ {1}\right) + \frac {(- i) ^ {2}}{2 !} \int d ^ {4} x _ {1} d ^ {4} x _ {2} T \left\{\mathcal {H} \left(x _ {1}\right) \mathcal {H} \left(x _ {2}\right) \right\} + \dots , \tag {42}
+S = 1 - i \int d^{4} x_{1} \mathcal {H} \left(x_{1}\right) + \frac {(- i)^{2}}{2 !} \int d^{4} x_{1} d^{4} x_{2} T \left\{\mathcal {H} \left(x_{1}\right) \mathcal {H} \left(x_{2}\right) \right\} + \dots , \tag {42}
 $$
 
 另一方面，我们有将这些矩阵元与截面和衰变宽度联系起来的“黄金规则”。
 
-将这些黄金规则用费曼不变振幅 $\mathcal { M }$ 表示很方便，$\mathcal { M }$ 是通过从 $S$ - 矩阵中剥离一些运动学因子得到的：
+将这些黄金规则用费曼不变振幅 $\mathcal {M}$ 表示很方便，$\mathcal {M}$ 是通过从 $S$ - 矩阵中剥离一些运动学因子得到的：
 
 $$
-\langle \beta | S | \alpha \rangle = \delta_ {\beta \alpha} - i (2 \pi) ^ {4} \delta^ {4} \left(p _ {\beta} - p _ {\alpha}\right) \mathcal {M} _ {\beta \alpha} \prod_ {i = \alpha , \beta} \frac {1}{\sqrt {\left(2 \pi\right) ^ {3} 2 E _ {i}}}. \tag {43}
+\langle \beta | S | \alpha \rangle = \delta_{\beta \alpha} - i (2 \pi)^{4} \delta^{4} \left(p_{\beta} - p_{\alpha}\right) \mathcal {M}_{\beta \alpha} \prod_{i = \alpha , \beta} \frac {1}{\sqrt {\left(2 \pi\right)^{3} 2 E_{i}}}. \tag {43}
 $$
 
 现在我们有两个规则：
 
-• $1 \to 1 ^ { \prime } + 2 ^ { \prime } + \cdot \cdot \cdot + n ^ { \prime }$ 的部分衰变率
+• $1 \to 1^{\prime} + 2^{\prime} + \cdot \cdot \cdot + n^{\prime}$ 的部分衰变率
 
 $$
-d \Gamma = \frac {1}{2 E _ {1}} \overline {{| \mathcal {M} _ {\beta \alpha} | ^ {2}}} (2 \pi) ^ {4} \delta^ {4} \left(p _ {1} - p _ {1} ^ {\prime} - \dots - p _ {n} ^ {\prime}\right) \prod_ {i = 1} ^ {n} \frac {d ^ {3} p _ {i} ^ {\prime}}{\left(2 \pi\right) ^ {3} 2 E _ {i} ^ {\prime}}, \tag {44}
+d \Gamma = \frac {1}{2 E_{1}} \overline {{| \mathcal {M}_{\beta \alpha} |^{2}}} (2 \pi)^{4} \delta^{4} \left(p_{1} - p_{1}^{\prime} - \dots - p_{n}^{\prime}\right) \prod_{i = 1}^{n} \frac {d^{3} p_{i}^{\prime}}{\left(2 \pi\right)^{3} 2 E_{i}^{\prime}}, \tag {44}
 $$
 
-• $1 + 2  1 ^ { \prime } + 2 ^ { \prime } + \cdot \cdot + n ^ { \prime }$ 散射的微分截面
+• $1 + 2  1^{\prime} + 2^{\prime} + \cdot \cdot + n^{\prime}$ 散射的微分截面
 
 $$
-d \sigma = \frac {1}{u _ {\alpha}} \frac {1}{2 E _ {1}} \frac {1}{2 E _ {2}} \overline {{\left| \mathcal {M} _ {\beta \alpha} \right| ^ {2}}} (2 \pi) ^ {4} \delta^ {4} \left(p _ {1} + p _ {2} - p _ {1} ^ {\prime} - \dots - p _ {n} ^ {\prime}\right) \prod_ {i = 1} ^ {n} \frac {d ^ {3} p _ {i} ^ {\prime}}{\left(2 \pi\right) ^ {3} 2 E _ {i} ^ {\prime}}, \tag {45}
+d \sigma = \frac {1}{u_{\alpha}} \frac {1}{2 E_{1}} \frac {1}{2 E_{2}} \overline {{\left| \mathcal {M}_{\beta \alpha} \right|^{2}}} (2 \pi)^{4} \delta^{4} \left(p_{1} + p_{2} - p_{1}^{\prime} - \dots - p_{n}^{\prime}\right) \prod_{i = 1}^{n} \frac {d^{3} p_{i}^{\prime}}{\left(2 \pi\right)^{3} 2 E_{i}^{\prime}}, \tag {45}
 $$
 
-其中 $u _ { \alpha }$ 是粒子 1 和 2 的相对速度：
+其中 $u_{\alpha}$ 是粒子 1 和 2 的相对速度：
 
 $$
-u _ {\alpha} = \frac {\sqrt {\left(p _ {1} \cdot p _ {2}\right) ^ {2} - m _ {1} ^ {2} m _ {2} ^ {2}}}{E _ {1} E _ {2}}, \tag {46}
+u_{\alpha} = \frac {\sqrt {\left(p_{1} \cdot p_{2}\right)^{2} - m_{1}^{2} m_{2}^{2}}}{E_{1} E_{2}}, \tag {46}
 $$
 
-而 $\overline { { | \mathcal { M } | ^ { 2 } } }$ 是费曼不变振幅对未测量的粒子自旋的平均（参见第 6.1 节）。$\mathcal { M }$ 的量纲（以能量为单位）为
+而 $\overline {{| \mathcal {M} |^{2}}}$ 是费曼不变振幅对未测量的粒子自旋的平均（参见第 6.1 节）。$\mathcal {M}$ 的量纲（以能量为单位）为
 
-• 对于衰变 $\left[ \mathcal { M } \right] = 3 - n$  
-• 对于两个粒子的散射 $[ { \mathcal { M } } ] = 2 - n$
+• 对于衰变 $\left[ \mathcal {M} \right] = 3 - n$  
+• 对于两个粒子的散射 $[ {\mathcal {M}} ] = 2 - n$
 
 其中 $n$ 是产生的粒子数。
 
 因此，计算某个可观测量包括两个阶段：
 
-1. 确定 $\overline { { | \mathcal { M } | ^ { 2 } } }$。为此，我们使用下一节将介绍的费曼图方法。  
+1. 确定 $\overline {{| \mathcal {M} |^{2}}}$。为此，我们使用下一节将介绍的费曼图方法。  
 2. 对洛伦兹不变相空间积分
 
 $$
-d \text {L i p s} = (2 \pi) ^ {4} \delta^ {4} \left(p _ {1} + p _ {2} - p _ {1} ^ {\prime} - \dots - p _ {n} ^ {\prime}\right) \prod_ {i = 1} ^ {n} \frac {d ^ {3} p _ {i} ^ {\prime}}{\left(2 \pi\right) ^ {3} 2 E _ {i} ^ {\prime}}.
+d \text {L i p s} = (2 \pi)^{4} \delta^{4} \left(p_{1} + p_{2} - p_{1}^{\prime} - \dots - p_{n}^{\prime}\right) \prod_{i = 1}^{n} \frac {d^{3} p_{i}^{\prime}}{\left(2 \pi\right)^{3} 2 E_{i}^{\prime}}.
 $$
 
 ---
 
 ## 5 费曼图
 
-示例：$\phi ^ { 4 }$ -理论
+示例：$\phi^{4}$ -理论
 
 $$
-\mathcal {L} = \frac {1}{2} \partial_ {\mu} \phi \partial^ {\mu} \phi - \frac {1}{2} m ^ {2} \phi^ {2} - \frac {g}{4 !} \phi^ {4}
+\mathcal {L} = \frac {1}{2} \partial_{\mu} \phi \partial^{\mu} \phi - \frac {1}{2} m^{2} \phi^{2} - \frac {g}{4 !} \phi^{4}
 $$
 
 • 自由（动能）拉格朗日量（恰好包含两个场的项）决定了理论的粒子及其传播子。这里我们只有一个标量场： [图片：标量传播子]
@@ -630,27 +630,27 @@ $$
 
 由于每个顶点对应于 (42) 中的一个相互作用拉格朗日量（哈密顿量）项，带有圈的图对应于微扰理论的更高阶。这里我们只处理最低阶，因此只使用树图。
 
-为了实际写出费曼振幅 $\mathcal { M }$，我们有一套费曼规则，将因子与费曼图的元素关联起来。具体来说，为了得到 $- i \mathcal { M }$，我们按以下方式构建费曼规则：
+为了实际写出费曼振幅 $\mathcal {M}$，我们有一套费曼规则，将因子与费曼图的元素关联起来。具体来说，为了得到 $- i \mathcal {M}$，我们按以下方式构建费曼规则：
 
 • 顶点因子就是 $i$ 乘以（动量空间）拉格朗日量中的相互作用项，并移除所有场：
 
 $$
-i \mathcal {L} _ {\mathrm {I}} = - i \frac {g}{4 !} \phi^ {4} \quad \stackrel {\text {r e m o v i n g f i e l d s}} {\Rightarrow} \quad - i \frac {g}{4 !} \quad \text{[顶点图示]}
+i \mathcal {L}_{\mathrm {I}} = - i \frac {g}{4 !} \phi^{4} \quad \stackrel {\text {r e m o v i n g f i e l d s}} {\Rightarrow} \quad - i \frac {g}{4 !} \quad \text{[顶点图示]}
 $$
 
 • 传播子是 $i$ 乘以动量空间中动能算符（由自由运动方程定义）的逆：
 
 $$
-\mathcal {L} _ {\text {f r e e}} \xrightarrow {\text {E u l e r - L a r g r a n e e q .}} \left(\partial_ {\mu} \partial^ {\mu} + m ^ {2}\right) \phi = 0 \quad \text {(K l e i n - G o r d o n e q .)} \tag {48}
+\mathcal {L}_{\text {f r e e}} \xrightarrow {\text {E u l e r - L a r g r a n e e q .}} \left(\partial_{\mu} \partial^{\mu} + m^{2}\right) \phi = 0 \quad \text {(K l e i n - G o r d o n e q .)} \tag {48}
 $$
 
-使用替换 $\partial ^ { \mu } \rightarrow - i p ^ { \mu }$ 转到动量空间，然后取逆得到：
+使用替换 $\partial^{\mu} \rightarrow - i p^{\mu}$ 转到动量空间，然后取逆得到：
 
 $$
-(p ^ {2} - m ^ {2}) \phi = 0 \quad \Rightarrow \quad \phi = \frac {i}{p ^ {2} - m ^ {2}} \tag {49}
+(p^{2} - m^{2}) \phi = 0 \quad \Rightarrow \quad \phi = \frac {i}{p^{2} - m^{2}} \tag {49}
 $$
 
-（实际上，正确的费曼传播子是 $i / ( p ^ { 2 } - m ^ { 2 } + i \epsilon )$，但为了我们的目的，我们可以忽略无穷小 $i \epsilon$ 项。）
+（实际上，正确的费曼传播子是 $i / ( p^{2} - m^{2} + i \epsilon )$，但为了我们的目的，我们可以忽略无穷小 $i \epsilon$ 项。）
 
 • 外线由适当的极化矢量或旋量表示（在 (31)、(35)、(36) 及其共轭场中，位于相应产生或湮灭算符旁边的那个）：
 
@@ -665,7 +665,7 @@ $$
 | 入射标量 | 1 |
 | 出射标量 | 1 |
 
-因此，这个 $\phi ^ { 4 }$ 理论中标量-标量散射振幅的树图贡献就是
+因此，这个 $\phi^{4}$ 理论中标量-标量散射振幅的树图贡献就是
 
 $$
 - i \mathcal {M} = - i \frac {g}{4 !}. \tag {50}
@@ -674,13 +674,13 @@ $$
 **练习 13** 确定电子传播子以及量子电动力学（QED）唯一顶点的费曼规则：
 
 $$
-\mathcal {L} = \bar {\psi} (i \not \partial + e A - m) \psi - \frac {1}{4} F _ {\mu \nu} F ^ {\mu \nu} \quad F ^ {\mu \nu} = \partial^ {\mu} A ^ {\nu} - \partial^ {\nu} A ^ {\mu}. \tag {51}
+\mathcal {L} = \bar {\psi} (i \not \partial + e A - m) \psi - \frac {1}{4} F_{\mu \nu} F^{\mu \nu} \quad F^{\mu \nu} = \partial^{\mu} A^{\nu} - \partial^{\nu} A^{\mu}. \tag {51}
 $$
 
 注意也有
 
 $$
-\xrightarrow {\mathbf {p}} = \frac {i \sum_ {\sigma} u (\boldsymbol {p} , \sigma) \bar {u} (\boldsymbol {p} , \sigma)}{p ^ {2} - m ^ {2}}, \tag {52}
+\xrightarrow {\mathbf {p}} = \frac {i \sum_{\sigma} u (\boldsymbol {p} , \sigma) \bar {u} (\boldsymbol {p} , \sigma)}{p^{2} - m^{2}}, \tag {52}
 $$
 
 即，电子传播子只是标量传播子乘以极化求和。很好的是，这可以推广到所有粒子的传播子。这非常有帮助，因为由于规范对称性的复杂性，反转动子动能算符并非易事。因此，矢量粒子的传播子是：
@@ -688,10 +688,10 @@ $$
 有质量情况： [传播子表达式]
 无质量情况：
 $$
-\mathbf {p} = \frac {- i g ^ {\mu \nu}}{p ^ {2}}. \tag {54}
+\mathbf {p} = \frac {- i g^{\mu \nu}}{p^{2}}. \tag {54}
 $$
 
-原则上，这几乎是我们需要知道的全部，以便能够计算任何给定过程的费曼振幅。注意，传播子和外线极化矢量仅由粒子类型（其自旋和质量）决定，因此上述相应规则不仅限于 $\phi ^ { 4 }$ 理论和 QED，而且适用于所有标量、自旋-1 矢量玻色子和狄拉克费米子（如标准模型）的理论。我们需要的唯一附加信息是顶点因子。
+原则上，这几乎是我们需要知道的全部，以便能够计算任何给定过程的费曼振幅。注意，传播子和外线极化矢量仅由粒子类型（其自旋和质量）决定，因此上述相应规则不仅限于 $\phi^{4}$ 理论和 QED，而且适用于所有标量、自旋-1 矢量玻色子和狄拉克费米子（如标准模型）的理论。我们需要的唯一附加信息是顶点因子。
 
 上一段中的“几乎”指的是，在一般的费曼图计算中，还有几个额外的微妙之处：
 
@@ -704,7 +704,7 @@ $$
 
 ---
 
-## 6 示例：QED 中的 $e ^ { + } e ^ { - } \to \mu ^ { + } \mu ^ { - }$
+## 6 示例：QED 中的 $e^{+} e^{-} \to \mu^{+} \mu^{-}$
 
 只有一个贡献的树图：
 
@@ -713,79 +713,79 @@ $$
 我们使用 QED 的费曼规则并沿着费米子线反向写下振幅。线本身的顺序无关紧要。
 
 $$
-- i \mathcal {M} = \left[ \bar {u} \left(\boldsymbol {p} _ {3}, \sigma_ {3}\right) \left(i e \gamma^ {\nu}\right) v \left(\boldsymbol {p} _ {4}, \sigma_ {4}\right) \right] \frac {- i g _ {\mu \nu}}{\left(p _ {1} + p _ {2}\right) ^ {2}} \left[ \bar {v} \left(\boldsymbol {p} _ {2}, \sigma_ {2}\right) \left(i e \gamma^ {\mu}\right) u \left(\boldsymbol {p} _ {1}, \sigma_ {1}\right) \right], \tag {55}
+- i \mathcal {M} = \left[ \bar {u} \left(\boldsymbol {p}_{3}, \sigma_{3}\right) \left(i e \gamma^{\nu}\right) v \left(\boldsymbol {p}_{4}, \sigma_{4}\right) \right] \frac {- i g_{\mu \nu}}{\left(p_{1} + p_{2}\right)^{2}} \left[ \bar {v} \left(\boldsymbol {p}_{2}, \sigma_{2}\right) \left(i e \gamma^{\mu}\right) u \left(\boldsymbol {p}_{1}, \sigma_{1}\right) \right], \tag {55}
 $$
 
-或者，引入缩写 $u _ { 1 } \equiv u ( \pmb { p } _ { 1 } , \sigma _ { 1 } )$，
+或者，引入缩写 $u_{1} \equiv u ( \pmb {p}_{1} , \sigma_{1} )$，
 
 $$
-\mathcal {M} = \frac {e ^ {2}}{\left(p _ {1} + p _ {2}\right) ^ {2}} \left[ \bar {u} _ {3} \gamma_ {\mu} v _ {4} \right] \left[ \bar {v} _ {2} \gamma^ {\mu} u _ {1} \right]. \tag {56}
+\mathcal {M} = \frac {e^{2}}{\left(p_{1} + p_{2}\right)^{2}} \left[ \bar {u}_{3} \gamma_{\mu} v_{4} \right] \left[ \bar {v}_{2} \gamma^{\mu} u_{1} \right]. \tag {56}
 $$
 
-**练习 14** 为康普顿散射 $\gamma e ^ { - } \to \gamma e ^ { - }$ 绘制费曼图并写下振幅。
+**练习 14** 为康普顿散射 $\gamma e^{-} \to \gamma e^{-}$ 绘制费曼图并写下振幅。
 
 ### 6.1 对极化求和
 
-如果我们知道所有外粒子的动量和极化，我们就可以显式计算 $\mathcal { M }$。然而，实验通常使用未极化粒子进行，因此我们必须对未态粒子的极化（自旋）求和，并对初态粒子的极化（自旋）求平均：
+如果我们知道所有外粒子的动量和极化，我们就可以显式计算 $\mathcal {M}$。然而，实验通常使用未极化粒子进行，因此我们必须对未态粒子的极化（自旋）求和，并对初态粒子的极化（自旋）求平均：
 
 $$
-| \mathcal {M} | ^ {2} \rightarrow \overline {{| \mathcal {M} | ^ {2}}} = \underbrace {\frac {1}{2} \frac {1}{2} \sum_ {\sigma_ {1} \sigma_ {2}}} _ {\text {a v g . o v e r i n i t i a l p o l .}} \overbrace {\sum_ {\sigma_ {3} \sigma_ {4}}} ^ {\text {s u m o v e r f i n a l p o l .}} | \mathcal {M} | ^ {2}. \tag {57}
+| \mathcal {M} |^{2} \rightarrow \overline {{| \mathcal {M} |^{2}}} = \underbrace {\frac {1}{2} \frac {1}{2} \sum_{\sigma_{1} \sigma_{2}}}_{\text {a v g . o v e r i n i t i a l p o l .}} \overbrace {\sum_{\sigma_{3} \sigma_{4}}}^{\text {s u m o v e r f i n a l p o l .}} | \mathcal {M} |^{2}. \tag {57}
 $$
 
 因子 $1 / 2$ 是因为每个初态费米子有两个极化（自旋）态。
 
 （问题：为什么我们对概率求和而不是对振幅求和？）
 
-在计算 $| { \mathcal { M } } | ^ { 2 } = { \mathcal { M } } ^ { * } { \mathcal { M } }$ 时，需要以下恒等式
+在计算 $| {\mathcal {M}} |^{2} = {\mathcal {M}}^{*} {\mathcal {M}}$ 时，需要以下恒等式
 
 $$
-[ \bar {u} \gamma^ {\mu} v ] ^ {*} = [ u ^ {\dagger} \gamma^ {0} \gamma^ {\mu} v ] ^ {\dagger} = v ^ {\dagger} \gamma^ {\mu \dagger} \gamma^ {0} u = [ \bar {v} \gamma^ {\mu} u ]. \tag {58}
+[ \bar {u} \gamma^{\mu} v ]^{*} = [ u^{\dagger} \gamma^{0} \gamma^{\mu} v ]^{\dagger} = v^{\dagger} \gamma^{\mu \dagger} \gamma^{0} u = [ \bar {v} \gamma^{\mu} u ]. \tag {58}
 $$
 
 因此，
 
 $$
-\overline {{\left| \mathcal {M} \right| ^ {2}}} = \frac {e ^ {4}}{4 \left(p _ {1} + p _ {2}\right) ^ {4}} \sum_ {\sigma_ {1, 2, 3, 4}} \left[ \bar {v} _ {4} \gamma_ {\mu} u _ {3} \right] \left[ \bar {u} _ {1} \gamma^ {\mu} v _ {2} \right] \left[ \bar {u} _ {3} \gamma_ {\nu} v _ {4} \right] \left[ \bar {v} _ {2} \gamma^ {\nu} u _ {1} \right]. \tag {59}
+\overline {{\left| \mathcal {M} \right|^{2}}} = \frac {e^{4}}{4 \left(p_{1} + p_{2}\right)^{4}} \sum_{\sigma_{1, 2, 3, 4}} \left[ \bar {v}_{4} \gamma_{\mu} u_{3} \right] \left[ \bar {u}_{1} \gamma^{\mu} v_{2} \right] \left[ \bar {u}_{3} \gamma_{\nu} v_{4} \right] \left[ \bar {v}_{2} \gamma^{\nu} u_{1} \right]. \tag {59}
 $$
 
 ### 6.2 Casimir 技巧
 
-使用以下技巧可以轻松执行对极化的求和。首先，我们用显式的旋量指标 $\alpha , \beta , \gamma , \delta = 1 , 2 , 3 , 4$ 写出 $\sum [ \bar { u } _ { 1 } \gamma ^ { \mu } v _ { 2 } ] [ \bar { v } _ { 2 } \gamma ^ { \nu } u _ { 1 } ]$：
+使用以下技巧可以轻松执行对极化的求和。首先，我们用显式的旋量指标 $\alpha , \beta , \gamma , \delta = 1 , 2 , 3 , 4$ 写出 $\sum [ \bar {u}_{1} \gamma^{\mu} v_{2} ] [ \bar {v}_{2} \gamma^{\nu} u_{1} ]$：
 
 $$
-\sum_ {\sigma_ {1} \sigma_ {2}} \bar {u} _ {1 \alpha} \gamma_ {\alpha \beta} ^ {\mu} v _ {2 \beta} \bar {v} _ {2 \gamma} \gamma_ {\gamma \delta} ^ {\nu} u _ {1 \delta}. \tag {60}
+\sum_{\sigma_{1} \sigma_{2}} \bar {u}_{1 \alpha} \gamma_{\alpha \beta}^{\mu} v_{2 \beta} \bar {v}_{2 \gamma} \gamma_{\gamma \delta}^{\nu} u_{1 \delta}. \tag {60}
 $$
 
-我们现在可以将 $u _ { 1 \delta }$ 移到前面（$u _ { 1 \delta }$ 只是一个数字，是 $u _ { 1 }$ 向量的元素，因此它与所有东西都对易），然后使用完备性关系 (27) 和 (28)，
+我们现在可以将 $u_{1 \delta}$ 移到前面（$u_{1 \delta}$ 只是一个数字，是 $u_{1}$ 向量的元素，因此它与所有东西都对易），然后使用完备性关系 (27) 和 (28)，
 
 $$
-\begin{array}{l} \sum_ {\sigma_ {1}} u _ {1 \delta} \bar {u} _ {1 \alpha} = (\not {p} _ {1} + m _ {1}) _ {\delta \alpha}, \\ \sum_ {\sigma_ {2}} v _ {2 \beta} \bar {v} _ {2 \gamma} = \left(\not {p} _ {2} - m _ {2}\right) _ {\beta \gamma}, \\ \end{array}
+\begin{array}{l} \sum_{\sigma_{1}} u_{1 \delta} \bar {u}_{1 \alpha} = (\not {p}_{1} + m_{1})_{\delta \alpha}, \\ \sum_{\sigma_{2}} v_{2 \beta} \bar {v}_{2 \gamma} = \left(\not {p}_{2} - m_{2}\right)_{\beta \gamma}, \\ \end{array}
 $$
 
 这将求和 (60) 变为
 
 $$
-\left(\not p _ {1} + m _ {1}\right) _ {\delta \alpha} \gamma_ {\alpha \beta} ^ {\mu} \left(\not p _ {2} - m _ {2}\right) _ {\beta \gamma} \gamma_ {\gamma \delta} ^ {\nu} = \operatorname {T r} \left[ \left(\not p _ {1} + m _ {1}\right) \gamma^ {\mu} \left(\not p _ {2} - m _ {2}\right) \gamma^ {\nu} \right]. \tag {61}
+\left(\not p_{1} + m_{1}\right)_{\delta \alpha} \gamma_{\alpha \beta}^{\mu} \left(\not p_{2} - m_{2}\right)_{\beta \gamma} \gamma_{\gamma \delta}^{\nu} = \operatorname {T r} \left[ \left(\not p_{1} + m_{1}\right) \gamma^{\mu} \left(\not p_{2} - m_{2}\right) \gamma^{\nu} \right]. \tag {61}
 $$
 
 这意味着
 
 $$
-\overline {{| \mathcal {M} | ^ {2}}} = \frac {e ^ {4}}{4 \left(p _ {1} + p _ {2}\right) ^ {4}} \operatorname {T r} \left[ \left(p _ {1} + m _ {1}\right) \gamma^ {\mu} \left(p _ {2} - m _ {2}\right) \gamma^ {\nu} \right] \operatorname {T r} \left[ \left(p _ {4} - m _ {4}\right) \gamma_ {\mu} \left(p _ {3} + m _ {3}\right) \gamma_ {\nu} \right]. \tag {62}
+\overline {{| \mathcal {M} |^{2}}} = \frac {e^{4}}{4 \left(p_{1} + p_{2}\right)^{4}} \operatorname {T r} \left[ \left(p_{1} + m_{1}\right) \gamma^{\mu} \left(p_{2} - m_{2}\right) \gamma^{\nu} \right] \operatorname {T r} \left[ \left(p_{4} - m_{4}\right) \gamma_{\mu} \left(p_{3} + m_{3}\right) \gamma_{\nu} \right]. \tag {62}
 $$
 
 因此我们摆脱了所有旋量，只剩下 $\gamma$ 矩阵的迹。这些可以使用下一节的关系来评估。
 
 ### 6.3 $\gamma$ 矩阵的迹与缩并恒等式
 
-所有这些都是反对易关系 $\{ \gamma ^ { \mu } , \gamma ^ { \nu } \} = 2 g ^ { \mu \nu }$ 、$\{ \gamma ^ { \mu } , \gamma ^ { 5 } \} =$ $0 , ( \gamma ^ { 5 } ) ^ { 2 } = 1$ 的结果，而不是其他任何东西！
+所有这些都是反对易关系 $\{ \gamma^{\mu} , \gamma^{\nu} \} = 2 g^{\mu \nu}$ 、$\{ \gamma^{\mu} , \gamma^{5} \} =$ $0 , ( \gamma^{5} )^{2} = 1$ 的结果，而不是其他任何东西！
 
 #### 迹恒等式
 
 1. 奇数个 $\gamma$ 的迹为零：
 
 $$
-\begin{array}{l} \operatorname {T r} \left(\gamma^ {\mu_ {1}} \gamma^ {\mu_ {2}} \dots \gamma^ {\mu_ {2 n + 1}}\right) = \operatorname {T r} \left(\gamma^ {\mu_ {1}} \gamma^ {\mu_ {2}} \dots \gamma^ {\mu_ {2 n + 1}} \overbrace {\gamma^ {5} \gamma^ {5}} ^ {1}\right) \\ \left(\text {m o v i n g} \gamma^ {5} \text {o v e r e a c h} \gamma^ {\mu_ {i}}\right) = - \operatorname {T r} \left(\gamma^ {5} \gamma^ {\mu_ {1}} \gamma^ {\mu_ {2}} \dots \gamma^ {\mu_ {2 n + 1}} \gamma^ {5}\right) \\ \text {(c y c l i c p r o p e r t y o f t r a c e)} = - \operatorname {T r} \left(\gamma^ {\mu_ {1}} \gamma^ {\mu_ {2}} \dots \gamma^ {\mu_ {2 n + 1}} \gamma^ {5} \gamma^ {5}\right) \\ = - \operatorname {T r} \left(\gamma^ {\mu_ {1}} \gamma^ {\mu_ {2}} \dots \gamma^ {\mu_ {2 n + 1}}\right) \\ = 0 \\ \end{array}
+\begin{array}{l} \operatorname {T r} \left(\gamma^{\mu_{1}} \gamma^{\mu_{2}} \dots \gamma^{\mu_{2 n + 1}}\right) = \operatorname {T r} \left(\gamma^{\mu_{1}} \gamma^{\mu_{2}} \dots \gamma^{\mu_{2 n + 1}} \overbrace {\gamma^{5} \gamma^{5}}^{1}\right) \\ \left(\text {m o v i n g} \gamma^{5} \text {o v e r e a c h} \gamma^{\mu_{i}}\right) = - \operatorname {T r} \left(\gamma^{5} \gamma^{\mu_{1}} \gamma^{\mu_{2}} \dots \gamma^{\mu_{2 n + 1}} \gamma^{5}\right) \\ \text {(c y c l i c p r o p e r t y o f t r a c e)} = - \operatorname {T r} \left(\gamma^{\mu_{1}} \gamma^{\mu_{2}} \dots \gamma^{\mu_{2 n + 1}} \gamma^{5} \gamma^{5}\right) \\ = - \operatorname {T r} \left(\gamma^{\mu_{1}} \gamma^{\mu_{2}} \dots \gamma^{\mu_{2 n + 1}}\right) \\ = 0 \\ \end{array}
 $$
 
 2. Tr 1 = 4
@@ -793,7 +793,7 @@ $$
 3.
 
 $$
-\begin{array}{l} \mathrm {T r} \gamma^ {\mu} \gamma^ {\nu} = \mathrm {T r} (2 g ^ {\mu \nu} - \gamma^ {\nu} \gamma^ {\mu}) \stackrel {(2 .)} {=} 8 g ^ {\mu \nu} - \mathrm {T r} \gamma^ {\nu} \gamma^ {\mu} = 8 g ^ {\mu \nu} - \mathrm {T r} \gamma^ {\mu} \gamma^ {\nu} \\ \Rightarrow 2 \operatorname {T r} \gamma^ {\mu} \gamma^ {\nu} = 8 g ^ {\mu \nu} \Rightarrow \operatorname {T r} \gamma^ {\mu} \gamma^ {\nu} = 4 g ^ {\mu \nu} \\ \end{array}
+\begin{array}{l} \mathrm {T r} \gamma^{\mu} \gamma^{\nu} = \mathrm {T r} (2 g^{\mu \nu} - \gamma^{\nu} \gamma^{\mu}) \stackrel {(2 .)} {=} 8 g^{\mu \nu} - \mathrm {T r} \gamma^{\nu} \gamma^{\mu} = 8 g^{\mu \nu} - \mathrm {T r} \gamma^{\mu} \gamma^{\nu} \\ \Rightarrow 2 \operatorname {T r} \gamma^{\mu} \gamma^{\nu} = 8 g^{\mu \nu} \Rightarrow \operatorname {T r} \gamma^{\mu} \gamma^{\nu} = 4 g^{\mu \nu} \\ \end{array}
 $$
 
 这也意味着：
@@ -802,145 +802,145 @@ $$
 \operatorname {T r} \partial / \partial / = 4 a \cdot b
 $$
 
-4. **练习 15** 计算 $\operatorname { T r } ( \gamma ^ { \mu } \gamma ^ { \nu } \gamma ^ { \rho } \gamma ^ { \sigma } )$。提示：使用反对易关系将 $\gamma ^ { \sigma }$ 一直移到左边。然后使用 3。
+4. **练习 15** 计算 $\operatorname {T r} ( \gamma^{\mu} \gamma^{\nu} \gamma^{\rho} \gamma^{\sigma} )$。提示：使用反对易关系将 $\gamma^{\sigma}$ 一直移到左边。然后使用 3。
 
-作业：证明 $\operatorname { T r } ( \gamma ^ { \mu _ { 1 } } \gamma ^ { \mu _ { 2 } } \cdot \cdot \cdot \gamma ^ { \mu _ { 2 n } } )$ 有 $( 2 n - 1 ) ! !$ 项。
+作业：证明 $\operatorname {T r} ( \gamma^{\mu_{1}} \gamma^{\mu_{2}} \cdot \cdot \cdot \gamma^{\mu_{2 n}} )$ 有 $( 2 n - 1 ) ! !$ 项。
 
-5. ${ \mathrm { T r } } ( \gamma ^ { 5 } \gamma ^ { \mu _ { 1 } } \gamma ^ { \mu _ { 2 } } \cdot \cdot \cdot \gamma ^ { \mu _ { 2 n + 1 } } ) = 0$。这可以从 1. 以及 $\gamma ^ { 5 }$ 由偶数个 $\gamma$ 组成的事实得出。  
-6. $\mathrm { T r } \gamma ^ { 5 } = \mathrm { T r } ( \gamma ^ { 0 } \gamma ^ { 0 } \gamma ^ { 5 } ) = - \mathrm { T r } ( \gamma ^ { 0 } \gamma ^ { 5 } \gamma ^ { 0 } ) = - \mathrm { T r } \gamma ^ { 5 } = 0$  
-7. ${ \mathrm { T r } } ( \gamma ^ { 5 } \gamma ^ { \mu } \gamma ^ { \nu } ) = 0$。（与上面相同的技巧，用 $\gamma ^ { \alpha } \neq \mu , \nu$ 代替 $\gamma ^ { 0 }$。）  
-8. $\operatorname { T r } ( \gamma ^ { 5 } \gamma ^ { \mu } \gamma ^ { \nu } \gamma ^ { \rho } \gamma ^ { \sigma } ) = - 4 i \epsilon ^ { \mu \nu \rho \sigma }$，其中 $\epsilon ^ { 0 1 2 3 } = 1$。注意：也有使用 $\epsilon ^ { 0 1 2 3 } = - 1$ 的约定。
+5. ${\mathrm {T r}} ( \gamma^{5} \gamma^{\mu_{1}} \gamma^{\mu_{2}} \cdot \cdot \cdot \gamma^{\mu_{2 n + 1}} ) = 0$。这可以从 1. 以及 $\gamma^{5}$ 由偶数个 $\gamma$ 组成的事实得出。  
+6. $\mathrm {T r} \gamma^{5} = \mathrm {T r} ( \gamma^{0} \gamma^{0} \gamma^{5} ) = - \mathrm {T r} ( \gamma^{0} \gamma^{5} \gamma^{0} ) = - \mathrm {T r} \gamma^{5} = 0$  
+7. ${\mathrm {T r}} ( \gamma^{5} \gamma^{\mu} \gamma^{\nu} ) = 0$。（与上面相同的技巧，用 $\gamma^{\alpha} \neq \mu , \nu$ 代替 $\gamma^{0}$。）  
+8. $\operatorname {T r} ( \gamma^{5} \gamma^{\mu} \gamma^{\nu} \gamma^{\rho} \gamma^{\sigma} ) = - 4 i \epsilon^{\mu \nu \rho \sigma}$，其中 $\epsilon^{0 1 2 3} = 1$。注意：也有使用 $\epsilon^{0 1 2 3} = - 1$ 的约定。
 
 #### 缩并恒等式
 
 1.
 
 $$
-\gamma^ {\mu} \gamma_ {\mu} = \frac {1}{2} g _ {\mu \nu} \underbrace {\left(\gamma^ {\mu} \gamma^ {\nu} + \gamma^ {\nu} \gamma^ {\mu}\right)} _ {2 g ^ {\mu \nu}} = g _ {\mu \nu} g ^ {\mu \nu} = 4
+\gamma^{\mu} \gamma_{\mu} = \frac {1}{2} g_{\mu \nu} \underbrace {\left(\gamma^{\mu} \gamma^{\nu} + \gamma^{\nu} \gamma^{\mu}\right)}_{2 g^{\mu \nu}} = g_{\mu \nu} g^{\mu \nu} = 4
 $$
 
 2.
 
 $$
-\gamma^ {\mu} \underbrace {\gamma^ {\alpha} \gamma_ {\mu}} _ {- \gamma_ {\mu} \gamma^ {\alpha} + 2 g _ {\mu} ^ {\alpha}} = - 4 \gamma^ {\alpha} + 2 \gamma^ {\alpha} = - 2 \gamma^ {\alpha}
+\gamma^{\mu} \underbrace {\gamma^{\alpha} \gamma_{\mu}}_{- \gamma_{\mu} \gamma^{\alpha} + 2 g_{\mu}^{\alpha}} = - 4 \gamma^{\alpha} + 2 \gamma^{\alpha} = - 2 \gamma^{\alpha}
 $$
 
-3. **练习 16** 缩并 $\gamma ^ { \mu } \gamma ^ { \alpha } \gamma ^ { \beta } \gamma _ { \mu }$  
-4. $\gamma ^ { \mu } \gamma ^ { \alpha } \gamma ^ { \beta } \gamma ^ { \gamma } \gamma _ { \mu } = - 2 \gamma ^ { \gamma } \gamma ^ { \beta } \gamma ^ { \alpha }$
+3. **练习 16** 缩并 $\gamma^{\mu} \gamma^{\alpha} \gamma^{\beta} \gamma_{\mu}$  
+4. $\gamma^{\mu} \gamma^{\alpha} \gamma^{\beta} \gamma^{\gamma} \gamma_{\mu} = - 2 \gamma^{\gamma} \gamma^{\beta} \gamma^{\alpha}$
 
-**练习 17** 计算 $\overline { { | \mathcal { M } | ^ { 2 } } }$ 中的迹：
-
-$$
-\operatorname {T r} \left[ \left(\not p _ {1} + m _ {1}\right) \gamma^ {\mu} \left(\not p _ {2} - m _ {2}\right) \gamma^ {\nu} \right] = ?
-$$
+**练习 17** 计算 $\overline {{| \mathcal {M} |^{2}}}$ 中的迹：
 
 $$
-\mathrm {T r} [ (\not {p} _ {4} - m _ {4}) \gamma_ {\mu} (\not {p} _ {3} + m _ {3}) \gamma_ {\nu} ] = ?
+\operatorname {T r} \left[ \left(\not p_{1} + m_{1}\right) \gamma^{\mu} \left(\not p_{2} - m_{2}\right) \gamma^{\nu} \right] = ?
 $$
 
-**练习 18** 计算 $| \overline { { | \mathcal { M } | ^ { 2 } } }$。
+$$
+\mathrm {T r} [ (\not {p}_{4} - m_{4}) \gamma_{\mu} (\not {p}_{3} + m_{3}) \gamma_{\nu} ] = ?
+$$
+
+**练习 18** 计算 $| \overline {{| \mathcal {M} |^{2}}}$。
 
 ### 6.4 质心系中的运动学
 
-在 $e ^ { + } e ^ { - }$ 对撞机中，通常 $p _ { i } \gg m _ { e } , m _ { \mu }$ ，$i = 1 , \dots , 4$，因此我们可以取
+在 $e^{+} e^{-}$ 对撞机中，通常 $p_{i} \gg m_{e} , m_{\mu}$ ，$i = 1 , \dots , 4$，因此我们可以取
 
 $$
-m _ {i} \rightarrow 0 \quad \text {‘高能”或“极端相对论”极限}
+m_{i} \rightarrow 0 \quad \text {‘高能”或“极端相对论”极限}
 $$
 
 那么
 
 $$
-\overline {{| \mathcal {M} | ^ {2}}} = \frac {8 e ^ {4}}{(p _ {1} + p _ {2}) ^ {4}} \left[ \left(p _ {1} \cdot p _ {3}\right) \left(p _ {2} \cdot p _ {4}\right) + \left(p _ {1} \cdot p _ {4}\right) \left(p _ {2} \cdot p _ {3}\right) \right] \tag {63}
+\overline {{| \mathcal {M} |^{2}}} = \frac {8 e^{4}}{(p_{1} + p_{2})^{4}} \left[ \left(p_{1} \cdot p_{3}\right) \left(p_{2} \cdot p_{4}\right) + \left(p_{1} \cdot p_{4}\right) \left(p_{2} \cdot p_{3}\right) \right] \tag {63}
 $$
 
-为了计算散射截面 $\sigma$，我们必须具体到某个特定参考系（$\sigma$ 不是与参考系无关的）。对于 $e ^ { + } e ^ { - }$ 对撞机，最相关的是质心 (CM) 系：
+为了计算散射截面 $\sigma$，我们必须具体到某个特定参考系（$\sigma$ 不是与参考系无关的）。对于 $e^{+} e^{-}$ 对撞机，最相关的是质心 (CM) 系：
 
 [图片：质心系运动学示意图]
 
-**练习 19** 用 $E$ 和 $\theta$ 表示 $| \overline { { | \mathcal { M } | ^ { 2 } } }$。
+**练习 19** 用 $E$ 和 $\theta$ 表示 $| \overline {{| \mathcal {M} |^{2}}}$。
 
 ### 6.5 对二粒子相空间积分
 
 现在我们可以对 $1 + 2 \to 3 + 4$ 微分散射截面使用“黄金规则” (45)
 
 $$
-d \sigma = \frac {1}{u _ {\alpha}} \frac {1}{2 E _ {1}} \frac {1}{2 E _ {2}} \overline {{| \mathcal {M} | ^ {2}}} d \mathrm {L i p s} _ {2} \tag {64}
+d \sigma = \frac {1}{u_{\alpha}} \frac {1}{2 E_{1}} \frac {1}{2 E_{2}} \overline {{| \mathcal {M} |^{2}}} d \mathrm {L i p s}_{2} \tag {64}
 $$
 
 其中要积分的二粒子相空间为
 
 $$
-d \operatorname {L i p s} _ {2} = (2 \pi) ^ {4} \delta^ {4} \left(p _ {1} + p _ {2} - p _ {3} - p _ {4}\right) \frac {d ^ {3} p _ {3}}{(2 \pi) ^ {3} 2 E _ {3}} \frac {d ^ {3} p _ {4}}{(2 \pi) ^ {3} 2 E _ {4}}. \tag {65}
+d \operatorname {L i p s}_{2} = (2 \pi)^{4} \delta^{4} \left(p_{1} + p_{2} - p_{3} - p_{4}\right) \frac {d^{3} p_{3}}{(2 \pi)^{3} 2 E_{3}} \frac {d^{3} p_{4}}{(2 \pi)^{3} 2 E_{4}}. \tag {65}
 $$
 
-首先，我们对六个积分变量中的四个积分，并在一般参考系中进行。$\delta$ -函数使得对 $d ^ { 3 } p _ { 4 }$ 的积分变得平凡：
+首先，我们对六个积分变量中的四个积分，并在一般参考系中进行。$\delta$ -函数使得对 $d^{3} p_{4}$ 的积分变得平凡：
 
 $$
-d \operatorname {L i p s} _ {2} = \frac {1}{(2 \pi) ^ {2} 4 E _ {3} E _ {4}} \delta \left(E _ {1} + E _ {2} - E _ {3} - E _ {4}\right) \underbrace {d ^ {3} p _ {3}} _ {\boldsymbol {p} _ {3} ^ {2} d \left| \boldsymbol {p} _ {3} \right| d \Omega_ {3}} \tag {66}
+d \operatorname {L i p s}_{2} = \frac {1}{(2 \pi)^{2} 4 E_{3} E_{4}} \delta \left(E_{1} + E_{2} - E_{3} - E_{4}\right) \underbrace {d^{3} p_{3}}_{\boldsymbol {p}_{3}^{2} d \left| \boldsymbol {p}_{3} \right| d \Omega_{3}} \tag {66}
 $$
 
-现在，我们注意到 $E _ { 3 }$ 和 $E _ { 4 }$ 是 $\left| p _ { 3 } \right|$ 的函数：
+现在，我们注意到 $E_{3}$ 和 $E_{4}$ 是 $\left| p_{3} \right|$ 的函数：
 
 $$
-E _ {3} = E _ {3} \left(\left| \boldsymbol {p} _ {3} \right|\right) = \sqrt {\boldsymbol {p} _ {3} ^ {2} + m _ {3} ^ {2}},
+E_{3} = E_{3} \left(\left| \boldsymbol {p}_{3} \right|\right) = \sqrt {\boldsymbol {p}_{3}^{2} + m_{3}^{2}},
 $$
 
 $$
-E _ {4} = \sqrt {\boldsymbol {p} _ {4} ^ {2} + m _ {4} ^ {2}} = \sqrt {\boldsymbol {p} _ {3} ^ {2} + m _ {4} ^ {2}},
+E_{4} = \sqrt {\boldsymbol {p}_{4}^{2} + m_{4}^{2}} = \sqrt {\boldsymbol {p}_{3}^{2} + m_{4}^{2}},
 $$
 
 并通过 $\delta$ -函数关系
 
 $$
-\delta \left(E _ {1} + E _ {2} - \sqrt {\boldsymbol {p} _ {3} ^ {2} + m _ {3} ^ {2}} - \sqrt {\boldsymbol {p} _ {3} ^ {2} + m _ {4} ^ {2}}\right) = \delta \left[ f \left(\left| \boldsymbol {p} _ {3} \right|\right) \right] = \frac {\delta \left(\left| \boldsymbol {p} _ {3} \right| - \left| \boldsymbol {p} _ {3} ^ {(0)} \right|\right)}{\left| f ^ {\prime} \left(\left| \boldsymbol {p} _ {3} \right|\right) \right| _ {\left| \boldsymbol {p} _ {3} \right| = \left| \boldsymbol {p} _ {3} ^ {(0)} \right|}}. \tag {67}
+\delta \left(E_{1} + E_{2} - \sqrt {\boldsymbol {p}_{3}^{2} + m_{3}^{2}} - \sqrt {\boldsymbol {p}_{3}^{2} + m_{4}^{2}}\right) = \delta \left[ f \left(\left| \boldsymbol {p}_{3} \right|\right) \right] = \frac {\delta \left(\left| \boldsymbol {p}_{3} \right| - \left| \boldsymbol {p}_{3}^{(0)} \right|\right)}{\left| f^{\prime} \left(\left| \boldsymbol {p}_{3} \right|\right) \right|_{\left| \boldsymbol {p}_{3} \right| = \left| \boldsymbol {p}_{3}^{(0)} \right|}}. \tag {67}
 $$
 
-这里 $| p _ { 3 } |$ 只是积分变量，$| p _ { 3 } ^ { ( 0 ) } |$ 是 $f ( | p _ { 3 } | )$ 的零点，即第三个粒子的实际动量。在对 $d | p _ { 3 } |$ 积分后，我们令 $\vert p _ { 3 } ^ { ( 0 ) } \vert \rightarrow \vert p _ { 3 } \vert$。
+这里 $| p_{3} |$ 只是积分变量，$| p_{3}^{( 0 )} |$ 是 $f ( | p_{3} | )$ 的零点，即第三个粒子的实际动量。在对 $d | p_{3} |$ 积分后，我们令 $\vert p_{3}^{( 0 )} \vert \rightarrow \vert p_{3} \vert$。
 
 由于
 
 $$
-f ^ {\prime} \left(\left| \boldsymbol {p} _ {3} \right|\right) = - \frac {E _ {3} + E _ {4}}{E _ {3} E _ {4}} \left| \boldsymbol {p} _ {3} \right|, \tag {68}
+f^{\prime} \left(\left| \boldsymbol {p}_{3} \right|\right) = - \frac {E_{3} + E_{4}}{E_{3} E_{4}} \left| \boldsymbol {p}_{3} \right|, \tag {68}
 $$
 
 我们得到
 
 $$
-d \operatorname {L i p s} _ {2} = \frac {\left| \boldsymbol {p} _ {3} \right| d \Omega}{1 6 \pi^ {2} \left(E _ {1} + E _ {2}\right)}. \tag {69}
+d \operatorname {L i p s}_{2} = \frac {\left| \boldsymbol {p}_{3} \right| d \Omega}{1 6 \pi^{2} \left(E_{1} + E_{2}\right)}. \tag {69}
 $$
 
 现在我们再次具体到 CM 系，并注意通量因子为
 
 $$
-4 E _ {1} E _ {2} u _ {\alpha} = 4 \sqrt {\left(p _ {1} \cdot p _ {2}\right) ^ {2} - m _ {1} ^ {2} m _ {2} ^ {2}} = 4 \left| \boldsymbol {p} _ {1} \right| \left(E _ {1} + E _ {2}\right), \tag {70}
+4 E_{1} E_{2} u_{\alpha} = 4 \sqrt {\left(p_{1} \cdot p_{2}\right)^{2} - m_{1}^{2} m_{2}^{2}} = 4 \left| \boldsymbol {p}_{1} \right| \left(E_{1} + E_{2}\right), \tag {70}
 $$
 
 最终给出
 
 $$
-\frac {d \sigma_ {\mathrm {C M}}}{d \Omega} = \frac {1}{6 4 \pi^ {2} \left(E _ {1} + E _ {2}\right) ^ {2}} \frac {\left| \boldsymbol {p} _ {3} \right|}{\left| \boldsymbol {p} _ {1} \right|} \overline {{\left| \mathcal {M} \right| ^ {2}}}. \tag {71}
+\frac {d \sigma_{\mathrm {C M}}}{d \Omega} = \frac {1}{6 4 \pi^{2} \left(E_{1} + E_{2}\right)^{2}} \frac {\left| \boldsymbol {p}_{3} \right|}{\left| \boldsymbol {p}_{1} \right|} \overline {{\left| \mathcal {M} \right|^{2}}}. \tag {71}
 $$
 
 注意，我们在每一步都保留了质量，因此这个公式对于任何 CM 散射都是普遍有效的。
 
-对于我们特定的 $e ^ { - } e ^ { + } \to \mu ^ { - } \mu ^ { + }$ 散射，这给出了微分截面的最终结果（引入精细结构常数 $\alpha = e ^ { 2 } / ( 4 \pi ) )$
+对于我们特定的 $e^{-} e^{+} \to \mu^{-} \mu^{+}$ 散射，这给出了微分截面的最终结果（引入精细结构常数 $\alpha = e^{2} / ( 4 \pi ) )$
 
 $$
-\frac {d \sigma}{d \Omega} = \frac {\alpha^ {2}}{1 6 E ^ {2}} \left(1 + \cos^ {2} \theta\right). \tag {72}
+\frac {d \sigma}{d \Omega} = \frac {\alpha^{2}}{1 6 E^{2}} \left(1 + \cos^{2} \theta\right). \tag {72}
 $$
 
 **练习 20** 对此积分得到总截面 $\sigma$。
 
-注意，显然 $\sigma \propto \alpha ^ { 2 }$，并且量纲分析要求 $\sigma \propto 1 / E ^ { 2 }$，因此只有角度依赖关系 $\left( 1 + \cos ^ { 2 } \theta \right)$ 检验了 QED 作为轻子和光子理论的地位。
+注意，显然 $\sigma \propto \alpha^{2}$，并且量纲分析要求 $\sigma \propto 1 / E^{2}$，因此只有角度依赖关系 $\left( 1 + \cos^{2} \theta \right)$ 检验了 QED 作为轻子和光子理论的地位。
 
 ### 6.6 步骤总结
 
 概括地说，计算（未极化）散射截面（或衰变宽度）包括以下步骤：
 
 1. 绘制费曼图  
-2. 使用费曼规则写出 $- i \mathcal { M }$  
-3. 平方 $\mathcal { M }$ 并使用 Casimir 技巧得到迹  
+2. 使用费曼规则写出 $- i \mathcal {M}$  
+3. 平方 $\mathcal {M}$ 并使用 Casimir 技巧得到迹  
 4. 评估迹  
 5. 应用所选参考系的运动学  
 6. 对相空间积分
@@ -950,24 +950,24 @@ $$
 Mandelstam 变量 s、$t$ 和 $u$ 常用于散射计算。它们（对于 $1 + 2  3 + 4$ 散射）定义为
 
 $$
-\begin{array}{l} s = (p _ {1} + p _ {2}) ^ {2} \\ t = (p _ {1} - p _ {3}) ^ {2} \\ u = (p _ {1} - p _ {4}) ^ {2} \\ \end{array}
+\begin{array}{l} s = (p_{1} + p_{2})^{2} \\ t = (p_{1} - p_{3})^{2} \\ u = (p_{1} - p_{4})^{2} \\ \end{array}
 $$
 
-**练习 21** 证明 $s + t + u = m _ { 1 } ^ { 2 } + m _ { 2 } ^ { 2 } + m _ { 3 } ^ { 2 } + m _ { 4 } ^ { 2 }$。
+**练习 21** 证明 $s + t + u = m_{1}^{2} + m_{2}^{2} + m_{3}^{2} + m_{4}^{2}$。
 
 这意味着只有两个 Mandelstam 变量是独立的。它们的主要优点是它们是洛伦兹不变量，这使得它们在费曼振幅计算中很方便。只有在最后，我们才能将它们换成“实验者”的变量 $E$ 和 $\theta$。
 
-**练习 22** 用 Mandelstam 变量表示 $e ^ { - } e ^ { + } \to \mu ^ { - } \mu ^ { + }$ 散射的 $\overline { { | \mathcal { M } | ^ { 2 } } }$。
+**练习 22** 用 Mandelstam 变量表示 $e^{-} e^{+} \to \mu^{-} \mu^{+}$ 散射的 $\overline {{| \mathcal {M} |^{2}}}$。
 
 ---
 
 ## 附录：在计算机上计算费曼图
 
-有几个计算机程序可以执行费曼图计算中的部分或全部步骤。以下是与其中一个程序（FeynCalc [2]，Wolfram Mathematica 的包）的一个简单会话，我们在其中计算了与正文中相同的过程，$e ^ { - } e ^ { + } \to \mu ^ { - } \mu ^ { + }$。另一个仅依赖开源软件的框架是 FORM [3]。
+有几个计算机程序可以执行费曼图计算中的部分或全部步骤。以下是与其中一个程序（FeynCalc [2]，Wolfram Mathematica 的包）的一个简单会话，我们在其中计算了与正文中相同的过程，$e^{-} e^{+} \to \mu^{-} \mu^{+}$。另一个仅依赖开源软件的框架是 FORM [3]。
 
 ### FeynCalc 演示
 
-这个 Mathematica 笔记本演示了使用 Feyncalc 包对 $e ^ { - } ~ e ^ { + } \to \mu ^ { - } \mu ^ { + }$ 散射进行费曼不变振幅的计算机计算。
+这个 Mathematica 笔记本演示了使用 Feyncalc 包对 $e^{-} ~ e^{+} \to \mu^{-} \mu^{+}$ 散射进行费曼不变振幅的计算机计算。
 
 首先，我们将 FeynCalc 加载到 Mathematica 中：
 
@@ -977,7 +977,7 @@ I n [ 1 ] := <<HighEnergyPhysics`fc`
 
 FeynCalc 4.1.0.3b 评估 ?FeynCalc 获取帮助或访问 www.feyncalc.org
 
-在使用费曼规则并应用 Casimir 技巧后，自旋平均的费曼振幅平方 $\overline { { | \mathcal { M } | ^ { 2 } } }$：
+在使用费曼规则并应用 Casimir 技巧后，自旋平均的费曼振幅平方 $\overline {{| \mathcal {M} |^{2}}}$：
 
 ```
 I n [ 2 ] := Msq = (e^4/(4 (p1 + p2)^4)) * Contract[ 

@@ -2,7 +2,7 @@
 
 Chasse_neige
 
-3.4 已知一质点运动轨迹可以用平面极坐标表示为阿基米德螺线 $r = r_0\theta$，求作用在质点上的有心力。
+3.4 已知一质点运动轨迹可以用平面极坐标表示为阿基米德螺线 $r = r_{0}\theta$，求作用在质点上的有心力。
 
 由于角动量守恒，所以
 $$
@@ -20,7 +20,7 @@ $$
 
 $$
 \dot{r} = r_{0} \dot{\theta} = \frac{L}{m r_{0} \theta^{2}} \\
-\ddot{r} = - \frac{2 L }{m r_{0} \theta^{3}} \dot{\theta} = - \frac{2 L^{2}}{m^{2} r_{0}^{3} \theta^{5}}
+\ddot{r} = - \frac{2 L}{m r_{0} \theta^{3}} \dot{\theta} = - \frac{2 L^{2}}{m^{2} r_{0}^{3} \theta^{5}}
 $$
 
 
@@ -97,7 +97,7 @@ r = \frac{1}{u = A e^{\sqrt{\frac{2 m a}{L^{2}} - 1} \theta} + B e^{- \sqrt{\fra
 $$
 其中 $A$ 和 $B$ 由初始条件决定
 
-3.8 一质点受有心力 $F(r)=- \frac{k m }{r^{4}}$ 作用。若质点在距力心 $2 a$ 处，垂直于极轴以速率 $\sqrt{\frac{k} {12 a^{3}}}$ 抛出, 求质点的轨道。
+3.8 一质点受有心力 $F(r)=- \frac{k m}{r^{4}}$ 作用。若质点在距力心 $2 a$ 处，垂直于极轴以速率 $\sqrt{\frac{k} {12 a^{3}}}$ 抛出, 求质点的轨道。
 
 我们选取质点发射的坐标为 $\theta = 0$
 
@@ -179,7 +179,7 @@ $$
 
 判断稳定性
 $$
-\pdv{V}{r^{2}}{} = e^{- \frac{r}{a}} (- \frac{2k}{r^{3}} - \frac{2k}{a r^{2}} - \frac{k}{a^{2} r}) + \frac{3 L^{2}}{m r^{4}} = \frac{k}{r^{4}} \left( -(2r + \frac{2 r^{2}}{a} + \frac{r^{3}}{a^{2}}) e^{ - \frac{r}{a}}  + \frac{3 L^{2}}{mk} \right)
+\pdv{V}{r^{2}}{} = e^{- \frac{r}{a}} (- \frac{2k}{r^{3}} - \frac{2k}{a r^{2}} - \frac{k}{a^{2} r}) + \frac{3 L^{2}}{m r^{4}} = \frac{k}{r^{4}} \left( -(2r + \frac{2 r^{2}}{a} + \frac{r^{3}}{a^{2}}) e^{- \frac{r}{a}}  + \frac{3 L^{2}}{mk} \right)
 $$
 带入 $(r + \frac{r^{2}}{a}) e^{- \frac{r}{a}} = \frac{L^{2}}{m k}$ 
 $$
