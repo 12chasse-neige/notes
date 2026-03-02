@@ -210,7 +210,7 @@ R^{GW}_{z0z0} = R^{GW}_{z0x0} = R^{GW}_{z0y0} = 0
 $$
 且 $R^{GW}_{x0x0} = -R^{GW}_{y0y0} \equiv -\frac{1}{2} \ddot{h}_+(t-z), \quad R^{GW}_{x0y0} = R^{GW}_{y0x0} \equiv -\frac{1}{2} \ddot{h}_{\times}(t-z)$
 
-这里两个独立非0的分量分别被定义成了两个无量纲函数的导数： $h_+, h_{\times}$ 这里 $\ddot{\} \equiv \partial^{2}/\partial t^{2}$。由于 $z0z0, z0x0, z0y0$ 分量全为0，所以对应的 $\mathcal{E}_{zz}, \mathcal{E}_{yz}, \mathcal{E}_{xz}$ 全为0，所以此波为横波，因为它没有传播方向 $z$ 方向的分量。而 $R^{GW}_{x0x0} = -R^{GW}_{y0y0} \Rightarrow \mathcal{E}^{GW}_{xx} = -\mathcal{E}^{GW}_{yy}$，所以 $\mathcal{E}^{GW}$ 的迹为 $0$。这两个性质：Transverse 和 Traceless 通常被简称为 TT， $h_+$ 和 $h_{\times}$ 通常被称为引力波场中“+”偏振态和“$\times$”偏振态。
+这里两个独立非0的分量分别被定义成了两个无量纲函数的导数： $h_+, h_{\times}$ 这里 $\ddot{} \equiv \partial^{2}/\partial t^{2}$。由于 $z0z0, z0x0, z0y0$ 分量全为0，所以对应的 $\mathcal{E}_{zz}, \mathcal{E}_{yz}, \mathcal{E}_{xz}$ 全为0，所以此波为横波，因为它没有传播方向 $z$ 方向的分量。而 $R^{GW}_{x0x0} = -R^{GW}_{y0y0} \Rightarrow \mathcal{E}^{GW}_{xx} = -\mathcal{E}^{GW}_{yy}$，所以 $\mathcal{E}^{GW}$ 的迹为 $0$。这两个性质：Transverse 和 Traceless 通常被简称为 TT， $h_+$ 和 $h_{\times}$ 通常被称为引力波场中“+”偏振态和“$\times$”偏振态。
 
 因此我们可以利用两个偏振态基矢来重构所有的黎曼张量分量。首先我们定义 $e^+ = \vec{e}_{x} \otimes \vec{e}_{x} - \vec{e}_{y} \otimes \vec{e}_{y}, \, e^{\times} = \vec{e}_{x} \otimes \vec{e}_{y} + \vec{e}_{y} \otimes \vec{e}_{x}$和一个 $2$ 阶引力波场
 $$
