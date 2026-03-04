@@ -1,17 +1,67 @@
 [
   {
-    "title": "Proving Energy-Momentum Tensor Lorentz Invariance",
-    "desc": "Demonstrates the Lorentz tensor property of T^αβ and transforms particle motion equations between coordinate systems.",
+    "title": "General Relativity: From Special to Gravity",
+    "desc": "Explores Lorentz transformations, Christoffel symbols, and the equivalence principle linking acceleration to gravity.",
     "tags": [
-      "energy-momentum tensor",
-      "Lorentz transformation",
-      "general relativity"
+      "Lorentz Transformation",
+      "Christoffel Symbol",
+      "Equivalence Principle"
+    ],
+    "link": "/physics/General Relativity/General Relativity"
+  },
+  {
+    "title": "Feynman Diagrams for Beginners",
+    "desc": "An introductory guide to Feynman diagrams and QED calculations with practical examples and exercises.",
+    "tags": [
+      "Feynman diagrams",
+      "Quantum Electrodynamics",
+      "Scattering cross-section"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Field Theory/Feynman Diagrams for Beginners"
+  },
+  {
+    "title": "Classical vs Quantum Physics Fundamentals",
+    "desc": "Explores classical mechanics phase space, quantum Schrödinger/Heisenberg pictures, and Bayesian measurement theory with Gaussian noise examples.",
+    "tags": [
+      "phase space",
+      "Schrödinger equation",
+      "Bayesian inference"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Optics/1. Key Concepts in Classical and Quantum Physics"
+  },
+  {
+    "title": "Graviton: Massless Spin-2 Particle",
+    "desc": "Explores why gravity is mediated by a massless spin-2 particle, comparing it to electromagnetism and scalar fields.",
+    "tags": [
+      "graviton",
+      "field theory",
+      "Lorentz invariance"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 2 Exercise"
+  },
+  {
+    "title": "Massless Spin-2 Mediators in Field Theory",
+    "desc": "Analyzes massless spin-1 and spin-0 fields, then introduces spin-2 as gravity's mediator with inverse square law implications.",
+    "tags": [
+      "field theory",
+      "spin-2",
+      "gravity"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 2"
+  },
+  {
+    "title": "Proving Energy-Momentum Tensor Lorentz Invariance",
+    "desc": "A physics homework analyzing tensor properties under Lorentz transformations and coordinate system changes.",
+    "tags": [
+      "general relativity",
+      "tensor calculus",
+      "Lorentz transformation"
     ],
     "link": "/physics/General Relativity/General Relativity Homework 1"
   },
   {
     "title": "Gravitational Waves: Linear Approximation Analysis",
-    "desc": "Explains gravitational waves using linearized Einstein equations, metric perturbations, and first-order approximations.",
+    "desc": "Explores gravitational wave generation and detection using linearized Einstein equations and metric perturbations.",
     "tags": [
       "gravitational waves",
       "linearized gravity",
@@ -20,18 +70,18 @@
     "link": "/physics/General Relativity/Gravitational Waves/Gravitational Waves Formation and Propagation"
   },
   {
-    "title": "Analytical Mechanics Homework: Harmonic Oscillator and Double Pendulum",
-    "desc": "Explores momentum-space Lagrangian for harmonic oscillator and Hamiltonian analysis of double pendulum with small-angle approximation.",
+    "title": "Analytical Mechanics Homework on Harmonic Oscillators",
+    "desc": "Explores momentum-space Lagrangians for harmonic oscillators and analyzes double pendulum dynamics with small-angle approximations.",
     "tags": [
       "Lagrangian Mechanics",
       "Hamiltonian Dynamics",
-      "Analytical Mechanics"
+      "Harmonic Oscillator"
     ],
     "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 10"
   },
   {
-    "title": "Proving Canonical Transformations in Analytical Mechanics",
-    "desc": "A homework set demonstrating proofs of canonical transformations using generating functions for various coordinate systems.",
+    "title": "Analytical Mechanics Homework Solutions",
+    "desc": "Proofs of canonical transformations using generating functions for various coordinate systems.",
     "tags": [
       "canonical transformation",
       "generating function",
@@ -41,62 +91,12 @@
   },
   {
     "title": "Analytical Mechanics Homework Solutions",
-    "desc": "Solutions for canonical transformations and Poisson brackets in analytical mechanics problems.",
+    "desc": "Proofs of canonical transformations and Poisson bracket calculations in analytical mechanics.",
     "tags": [
       "canonical transformation",
       "Poisson bracket",
       "analytical mechanics"
     ],
     "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 12"
-  },
-  {
-    "title": "Canonical Transformations in Analytical Mechanics",
-    "desc": "Analyzes canonical transformations for anharmonic oscillators and action-angle variables in a tan² potential.",
-    "tags": [
-      "canonical transformation",
-      "anharmonic oscillator",
-      "action-angle variables"
-    ],
-    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 13"
-  },
-  {
-    "title": "Lagrangian Mechanics Homework Solutions",
-    "desc": "Solutions for three physics problems using Lagrangian equations, covering spring-mass systems, inclined planes, and conical motion.",
-    "tags": [
-      "Lagrangian Mechanics",
-      "Generalized Coordinates",
-      "Differential Equations"
-    ],
-    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 2"
-  },
-  {
-    "title": "Variational Calculus in Analytical Mechanics",
-    "desc": "Applying functional variation to prove geodesics on spheres, minimal surfaces of revolution, and catenary curves under gravity.",
-    "tags": [
-      "Variational Calculus",
-      "Euler-Lagrange Equation",
-      "Geodesics"
-    ],
-    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 3"
-  },
-  {
-    "title": "Light Path in Exponential Atmosphere via Calculus of Variations",
-    "desc": "Derives the trajectory of sunlight through an exponentially stratified atmosphere using variational principles and the Euler-Lagrange equation.",
-    "tags": [
-      "Calculus of Variations",
-      "Atmospheric Refraction",
-      "Optical Path"
-    ],
-    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 4"
-  },
-  {
-    "title": "Central Force Problems in Analytical Mechanics",
-    "desc": "Solving two central force problems: finding force for an Archimedean spiral trajectory and determining motion under inverse-cube gravity.",
-    "tags": [
-      "central force",
-      "analytical mechanics",
-      "trajectory analysis"
-    ],
-    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 5"
   }
 ]
