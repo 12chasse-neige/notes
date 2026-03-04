@@ -47,7 +47,7 @@ L = -\frac{1}{2} (\partial \phi)^{2} - \frac{1}{2} m^{2} \phi^{2} + g \phi j, \q
 $$
 
 $$
-\Rightarrow (\Box - m^{2}) \phi = -g j, \quad \text{Let } j_{a}(t,\vec{x}) = q_{a} \delta^{(3)}(\vec{x} - \vec{x}_{a}) \tag{7}
+\Rightarrow (\Box - m^{2}) \phi = -g j, \quad \text{Let} j_{a}(t,\vec{x}) = q_{a} \delta^{(3)}(\vec{x} - \vec{x}_{a}) \tag{7}
 $$
 
 $$
@@ -301,23 +301,23 @@ $$
 $$
 
 The integral equals
-\[
+$$
 \int \frac{d^{3}\vec{k}}{(2\pi)^{3}} \frac{e^{+i \vec{k} \cdot \vec{x}}}{\vec{k}^{2} + m^{2}} = \frac{1}{(2 \pi)^{2}} \int \frac{k^{2} \dd{k}}{k^{2} + m^{2}} \int \sin \theta \dd{\theta} e^{i k x \cos \theta} = \frac{1}{(2 \pi)^{2} x} \int_{0}^{\infty} \frac{2u \sin u \dd{u}}{u^{2} + m^{2} x^{2}}
-\]
+$$
 We’ll use the residue theorem to treat wirth the radial part
-\[
+$$
 \frac{1}{(2 \pi)^{2}x} \int_{0}^{\infty} \frac{2u \sin u \dd{u}}{u^{2} + m^{2} x^{2}} = \frac{1}{(2 \pi)^{2} x} \int_{- \infty}^{\infty} \frac{1}{2 i} \frac{2u e^{iu} \dd{u}}{u^{2} + m^{2} x^{2}} = \frac{1}{2 \pi x} \Res[\frac{u e^{iu}}{u^{2} + m^{2} x^{2}}, u = imx] = \frac{e^{- mx}}{4 \pi x}
-\]
+$$
 (2) Starting from the action of the photon field (without source), please derive its gauge invariant energy-momentum tensor $T_{\mu\nu}$ and show that it is traceless.
 
 The Lagrangian of the photon field is
-\[
+$$
 \mathcal{L} = -\frac{1}{4} F_{\mu\nu} F^{\mu\nu}
-\]
+$$
 And the energy-momentum tensor is defined as
-\[
+$$
 
-\]
+$$
 
 
 (3) Please derive (26).
