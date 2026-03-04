@@ -1,7 +1,47 @@
 [
   {
-    "title": "General Relativity: From Special to Gravity",
-    "desc": "Explores Lorentz transformations, Christoffel symbols, and the equivalence principle linking acceleration to gravity.",
+    "title": "Quantum Mechanics Homework Problems",
+    "desc": "A collection of quantum mechanics exercises covering historical foundations, wave functions, and Schrödinger equations.",
+    "tags": [
+      "quantum mechanics",
+      "wave function",
+      "Schrödinger equation"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 1"
+  },
+  {
+    "title": "Classical vs Quantum Physics Fundamentals",
+    "desc": "Explores classical mechanics, quantum pictures, and measurement theory with mathematical foundations.",
+    "tags": [
+      "phase space",
+      "Schrödinger picture",
+      "Bayesian inference"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Optics/1. Key Concepts in Classical and Quantum Physics"
+  },
+  {
+    "title": "Graviton: Massless Spin-2 Particle",
+    "desc": "Explores why gravity requires a massless spin-2 particle, comparing with electromagnetism and scalar fields.",
+    "tags": [
+      "graviton",
+      "field theory",
+      "Lorentz invariance"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 2 Exercise"
+  },
+  {
+    "title": "Massless Spin-2 Field Theory Analysis",
+    "desc": "Explores massless spin-2 particles as gravity mediators, comparing with spin-0 and spin-1 fields through classical field theory.",
+    "tags": [
+      "field theory",
+      "spin-2",
+      "gravity"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 2"
+  },
+  {
+    "title": "General Relativity: From Lorentz to Christoffel",
+    "desc": "Explores Lorentz transformations, Christoffel symbols, and the equivalence principle in general relativity.",
     "tags": [
       "Lorentz Transformation",
       "Christoffel Symbol",
@@ -11,57 +51,27 @@
   },
   {
     "title": "Feynman Diagrams for Beginners",
-    "desc": "An introductory guide to Feynman diagrams and QED calculations with practical examples and exercises.",
+    "desc": "An introductory guide to Feynman diagrams and QFT calculations, featuring exercises and a detailed electron-positron annihilation example.",
     "tags": [
       "Feynman diagrams",
-      "Quantum Electrodynamics",
-      "Scattering cross-section"
+      "Quantum Field Theory",
+      "QED"
     ],
     "link": "/physics/Quantum Physics/Quantum Field Theory/Feynman Diagrams for Beginners"
   },
   {
-    "title": "Classical vs Quantum Physics Fundamentals",
-    "desc": "Explores classical mechanics phase space, quantum Schrödinger/Heisenberg pictures, and Bayesian measurement theory with Gaussian noise examples.",
-    "tags": [
-      "phase space",
-      "Schrödinger equation",
-      "Bayesian inference"
-    ],
-    "link": "/physics/Quantum Physics/Quantum Optics/1. Key Concepts in Classical and Quantum Physics"
-  },
-  {
-    "title": "Graviton: Massless Spin-2 Particle",
-    "desc": "Explores why gravity is mediated by a massless spin-2 particle, comparing it to electromagnetism and scalar fields.",
-    "tags": [
-      "graviton",
-      "field theory",
-      "Lorentz invariance"
-    ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 2 Exercise"
-  },
-  {
-    "title": "Massless Spin-2 Mediators in Field Theory",
-    "desc": "Analyzes massless spin-1 and spin-0 fields, then introduces spin-2 as gravity's mediator with inverse square law implications.",
-    "tags": [
-      "field theory",
-      "spin-2",
-      "gravity"
-    ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 2"
-  },
-  {
     "title": "Proving Energy-Momentum Tensor Lorentz Invariance",
-    "desc": "A physics homework analyzing tensor properties under Lorentz transformations and coordinate system changes.",
+    "desc": "Demonstrates that the energy-momentum tensor transforms as a tensor under Lorentz transformations using delta function properties.",
     "tags": [
       "general relativity",
-      "tensor calculus",
+      "energy-momentum tensor",
       "Lorentz transformation"
     ],
     "link": "/physics/General Relativity/General Relativity Homework 1"
   },
   {
-    "title": "Gravitational Waves: Linear Approximation Analysis",
-    "desc": "Explores gravitational wave generation and detection using linearized Einstein equations and metric perturbations.",
+    "title": "Gravitational Waves: Generation, Propagation, Detection",
+    "desc": "Explains gravitational waves using linearized gravity approximations and Einstein field equations.",
     "tags": [
       "gravitational waves",
       "linearized gravity",
@@ -70,12 +80,12 @@
     "link": "/physics/General Relativity/Gravitational Waves/Gravitational Waves Formation and Propagation"
   },
   {
-    "title": "Analytical Mechanics Homework on Harmonic Oscillators",
-    "desc": "Explores momentum-space Lagrangians for harmonic oscillators and analyzes double pendulum dynamics with small-angle approximations.",
+    "title": "Analytical Mechanics Homework on Hamiltonian Dynamics",
+    "desc": "Explores canonical transformations and double pendulum dynamics in Hamiltonian mechanics.",
     "tags": [
-      "Lagrangian Mechanics",
-      "Hamiltonian Dynamics",
-      "Harmonic Oscillator"
+      "Hamiltonian Mechanics",
+      "Canonical Transformations",
+      "Double Pendulum"
     ],
     "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 10"
   },
@@ -88,15 +98,5 @@
       "analytical mechanics"
     ],
     "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 11"
-  },
-  {
-    "title": "Analytical Mechanics Homework Solutions",
-    "desc": "Proofs of canonical transformations and Poisson bracket calculations in analytical mechanics.",
-    "tags": [
-      "canonical transformation",
-      "Poisson bracket",
-      "analytical mechanics"
-    ],
-    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 12"
   }
 ]
