@@ -1,45 +1,5 @@
 [
   {
-    "title": "Quantum Mechanics Homework Problems",
-    "desc": "A collection of quantum mechanics exercises covering historical foundations, wave functions, and Schrödinger equations.",
-    "tags": [
-      "quantum mechanics",
-      "wave function",
-      "Schrödinger equation"
-    ],
-    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 1"
-  },
-  {
-    "title": "Classical vs Quantum Physics Fundamentals",
-    "desc": "Explores classical mechanics, quantum pictures, and measurement theory with mathematical foundations.",
-    "tags": [
-      "phase space",
-      "Schrödinger picture",
-      "Bayesian inference"
-    ],
-    "link": "/physics/Quantum Physics/Quantum Optics/1. Key Concepts in Classical and Quantum Physics"
-  },
-  {
-    "title": "Graviton: Massless Spin-2 Particle",
-    "desc": "Explores why gravity requires a massless spin-2 particle, comparing with electromagnetism and scalar fields.",
-    "tags": [
-      "graviton",
-      "field theory",
-      "Lorentz invariance"
-    ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 2 Exercise"
-  },
-  {
-    "title": "Massless Spin-2 Field Theory Analysis",
-    "desc": "Explores massless spin-2 particles as gravity mediators, comparing with spin-0 and spin-1 fields through classical field theory.",
-    "tags": [
-      "field theory",
-      "spin-2",
-      "gravity"
-    ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 2"
-  },
-  {
     "title": "General Relativity: From Lorentz to Christoffel",
     "desc": "Explores Lorentz transformations, Christoffel symbols, and the equivalence principle in general relativity.",
     "tags": [
@@ -50,8 +10,68 @@
     "link": "/physics/General Relativity/General Relativity"
   },
   {
+    "title": "Quantum Mechanics Homework: Photons, Wells, Waves",
+    "desc": "Analyzing photon density, infinite potential wells, and de Broglie wave velocities in quantum mechanics.",
+    "tags": [
+      "Quantum Mechanics",
+      "Photon Density",
+      "De Broglie Waves"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 1"
+  },
+  {
+    "title": "Classical vs Quantum Physics Fundamentals",
+    "desc": "Explores phase space, Schrödinger/Heisenberg pictures, and Bayesian measurement theory.",
+    "tags": [
+      "phase space",
+      "Schrödinger equation",
+      "Bayesian inference"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Optics/1. Key Concepts in Classical and Quantum Physics"
+  },
+  {
+    "title": "Quantum Measurement: Contextual and Non-Deterministic",
+    "desc": "Explores quantum measurement's departure from classical reality through wave function entanglement.",
+    "tags": [
+      "quantum measurement",
+      "wave function",
+      "entanglement"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Optics/2. Quantum Measurement"
+  },
+  {
+    "title": "Statistical Mechanics Homework Solutions",
+    "desc": "Proving thermodynamic properties and deriving functions for ideal gases and rubber bands.",
+    "tags": [
+      "Thermodynamics",
+      "Statistical Mechanics",
+      "Maxwell Relations"
+    ],
+    "link": "/physics/Statistical Mechanics/Statisitcal Mechanics Homework 2"
+  },
+  {
+    "title": "Quantum Field Theory Exercise Solutions",
+    "desc": "Solving a 3D Fourier integral and deriving the photon energy-momentum tensor.",
+    "tags": [
+      "Fourier Transform",
+      "Energy-Momentum Tensor",
+      "Residue Theorem"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 2 Exercise"
+  },
+  {
+    "title": "Massless Spin-2 Particles and Gravity",
+    "desc": "Exploring why gravity requires massless spin-2 mediators through field theory comparisons.",
+    "tags": [
+      "field theory",
+      "spin-2",
+      "gravity"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 2"
+  },
+  {
     "title": "Feynman Diagrams for Beginners",
-    "desc": "An introductory guide to Feynman diagrams and QFT calculations, featuring exercises and a detailed electron-positron annihilation example.",
+    "desc": "An introductory guide to Feynman diagrams with exercises for QFT newcomers.",
     "tags": [
       "Feynman diagrams",
       "Quantum Field Theory",
@@ -60,43 +80,23 @@
     "link": "/physics/Quantum Physics/Quantum Field Theory/Feynman Diagrams for Beginners"
   },
   {
-    "title": "Proving Energy-Momentum Tensor Lorentz Invariance",
-    "desc": "Demonstrates that the energy-momentum tensor transforms as a tensor under Lorentz transformations using delta function properties.",
+    "title": "Proving Tensor Properties in Relativity",
+    "desc": "Demonstrates Lorentz invariance of energy-momentum tensor and coordinate transformations.",
     "tags": [
-      "general relativity",
       "energy-momentum tensor",
-      "Lorentz transformation"
+      "Lorentz transformation",
+      "delta function"
     ],
     "link": "/physics/General Relativity/General Relativity Homework 1"
   },
   {
-    "title": "Gravitational Waves: Generation, Propagation, Detection",
-    "desc": "Explains gravitational waves using linearized gravity approximations and Einstein field equations.",
+    "title": "Gravitational Waves: Linear Approximation Analysis",
+    "desc": "Explores gravitational wave generation, propagation, and detection using linearized gravity approximations.",
     "tags": [
       "gravitational waves",
       "linearized gravity",
       "Einstein equations"
     ],
     "link": "/physics/General Relativity/Gravitational Waves/Gravitational Waves Formation and Propagation"
-  },
-  {
-    "title": "Analytical Mechanics Homework on Hamiltonian Dynamics",
-    "desc": "Explores canonical transformations and double pendulum dynamics in Hamiltonian mechanics.",
-    "tags": [
-      "Hamiltonian Mechanics",
-      "Canonical Transformations",
-      "Double Pendulum"
-    ],
-    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 10"
-  },
-  {
-    "title": "Analytical Mechanics Homework Solutions",
-    "desc": "Proofs of canonical transformations using generating functions for various coordinate systems.",
-    "tags": [
-      "canonical transformation",
-      "generating function",
-      "analytical mechanics"
-    ],
-    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 11"
   }
 ]
