@@ -236,6 +236,7 @@ export default defineConfig({
           real: '{\\Re}',
           imag: '{\\Im}',
           order: ['{\\mathcal{O}\\left(#1\\right)}', 1],
+          sub: ['{\\subset{1}}', 1],
         }
       }
     },
