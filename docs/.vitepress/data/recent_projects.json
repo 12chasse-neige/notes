@@ -1,21 +1,31 @@
 [
   {
-    "title": "General Relativity: From Lorentz to Christoffel",
-    "desc": "Explores Lorentz transformations, Christoffel symbols, and the equivalence principle in general relativity.",
+    "title": "Tensor Covariant Derivative Proof",
+    "desc": "Demonstrates the tensor nature of covariant derivatives in general relativity.",
     "tags": [
-      "Lorentz Transformation",
-      "Christoffel Symbol",
-      "Equivalence Principle"
+      "covariant derivative",
+      "tensor transformation",
+      "Christoffel symbols"
+    ],
+    "link": "/physics/General Relativity/General Relativity Homework 2"
+  },
+  {
+    "title": "General Relativity: From Special to Gravity",
+    "desc": "Exploring spacetime curvature through Lorentz transformations and geodesic motion equations.",
+    "tags": [
+      "spacetime",
+      "geodesic",
+      "curvature"
     ],
     "link": "/physics/General Relativity/General Relativity"
   },
   {
     "title": "Quantum Mechanics Homework: Photons, Wells, Waves",
-    "desc": "Analyzing photon density, infinite potential wells, and de Broglie wave velocities in quantum mechanics.",
+    "desc": "Analyzing cavity radiation, infinite wells, and de Broglie wave velocities in quantum mechanics.",
     "tags": [
       "Quantum Mechanics",
-      "Photon Density",
-      "De Broglie Waves"
+      "Photon Statistics",
+      "Wave-Particle Duality"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 1"
   },
@@ -31,26 +41,26 @@
   },
   {
     "title": "Quantum Measurement: Contextual and Non-Deterministic",
-    "desc": "Explores quantum measurement's departure from classical reality through wave function entanglement.",
+    "desc": "Explores quantum measurement's contextual nature and entanglement effects.",
     "tags": [
       "quantum measurement",
-      "wave function",
-      "entanglement"
+      "entanglement",
+      "wave function"
     ],
     "link": "/physics/Quantum Physics/Quantum Optics/2. Quantum Measurement"
   },
   {
     "title": "Statistical Mechanics Homework Solutions",
-    "desc": "Proving thermodynamic properties and deriving functions for ideal gases and rubber bands.",
+    "desc": "Proving thermodynamic properties and deriving functions for van der Waals gas.",
     "tags": [
-      "Thermodynamics",
-      "Statistical Mechanics",
-      "Maxwell Relations"
+      "thermodynamics",
+      "statistical mechanics",
+      "van der Waals gas"
     ],
     "link": "/physics/Statistical Mechanics/Statisitcal Mechanics Homework 2"
   },
   {
-    "title": "Quantum Field Theory Exercise Solutions",
+    "title": "Quantum Field Theory Exercises: Integrals and Tensors",
     "desc": "Solving a 3D Fourier integral and deriving the photon energy-momentum tensor.",
     "tags": [
       "Fourier Transform",
@@ -83,20 +93,10 @@
     "title": "Proving Tensor Properties in Relativity",
     "desc": "Demonstrates Lorentz invariance of energy-momentum tensor and coordinate transformations.",
     "tags": [
-      "energy-momentum tensor",
       "Lorentz transformation",
+      "energy-momentum tensor",
       "delta function"
     ],
     "link": "/physics/General Relativity/General Relativity Homework 1"
-  },
-  {
-    "title": "Gravitational Waves: Linear Approximation Analysis",
-    "desc": "Explores gravitational wave generation, propagation, and detection using linearized gravity approximations.",
-    "tags": [
-      "gravitational waves",
-      "linearized gravity",
-      "Einstein equations"
-    ],
-    "link": "/physics/General Relativity/Gravitational Waves/Gravitational Waves Formation and Propagation"
   }
 ]
