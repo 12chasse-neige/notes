@@ -52,18 +52,17 @@ jobs:
           commit_message: "chore: update recent projects json [skip ci]"
           file_pattern: docs/.vitepress/data/recent_projects.json
 
+      # Combined and fixed build step
       - name: Build with VitePress
         run: npm run docs:build
+        env:
+          NODE_OPTIONS: "--max-old-space-size=8192"
 
+      # Upload must happen AFTER the build is successful
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs/.vitepress/dist
-      
-      - name: Build docs
-        run: npm run docs:build
-        env:
-          NODE_OPTIONS: "--max-old-space-size=8192"
 
   deploy:
     environment:
