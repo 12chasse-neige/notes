@@ -124,7 +124,7 @@ S(T, M) = -\left. \frac{\partial F}{\partial T} \right|_{M} = -\frac{\mu_{0}}{2C
 $$
 内能  
 $$
-U(T) = F + Ts = \varphi(T) - T\varphi'(T)
+U(T) = F + TS = \varphi(T) - T\varphi'(T)
 $$
 可见内能只与温度有关，与磁化强度 $M$ 无关。
 

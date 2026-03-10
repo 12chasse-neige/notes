@@ -158,4 +158,4 @@ $$
 
 ## Summary
 
-Polarization tensors are up to LGT $\sub$  L-transf.
+Polarization tensors are up to LGT $\subset$  L-transf.
