@@ -52,11 +52,11 @@ S (T, V) = \int n C_{V} \frac{\dd{T}}{T} + n R \ln (V - nb) + \text{Const.}
 $$
 所以
 $$
-F (T, V)  = U - TS = \int n C_{V} (1 - \frac{1}{T}) \dd{T} - \frac{n^{2} a}{V} - nRT \ln (V - nb) + \text{Const.}
+F (T, V)  = U - TS = \int n C_{V} \dd{T} - T \int n C_{V} \frac{\dd{T}}{T} - \frac{n^{2} a}{V} - nRT \ln (V - nb) + \text{Const.}
 $$
 
 $$
-G (T, V) = F (T, V) + pV = \int n C_{V} (1 - \frac{1}{T}) \dd{T} - \frac{2 n^{2} a}{V} + \frac{n RTV}{V - nb} - nRT \ln (V - nb) + \text{Const.}
+G (T, V) = F (T, V) + pV = \int n C_{V} \dd{T} - T \int n C_{V} \frac{\dd{T}}{T} - \frac{2 n^{2} a}{V} + \frac{n RTV}{V - nb} - nRT \ln (V - nb) + \text{Const.}
 $$
 
 2.13. X射线衍射实验发现, 橡皮带未被拉紧时具有无定形结构, 当受张力而被拉伸时, 具有晶型结构, 这一事实表明橡皮带具有大的分子链。
@@ -104,7 +104,7 @@ $$
 $$
 2.21. 已知顺磁介质遵从居里定律，今忽略其体积的变化，试分别用$dw = \mu_{0} H dM$和$dw = -\mu_{0} M dH$的微功表达式，求磁介质单位体积的自由能、内能和熵，并对结果加以解释。
 
-1. 当微功表达式为  $ \dd{w} = \mu_{0} H \, \mathrm{d}M $ 时
+1. 当微功表达式为  $\dd{w} = \mu_{0} H \, \mathrm{d}M$ 时
 
 $$
 \mathrm{d} U = T \, \mathrm{d}S + \mu_{0} H \, \mathrm{d}M
@@ -114,11 +114,11 @@ $$
 $$
 M = \frac{C}{T} H \quad 
 $$
-自由能（亥姆霍兹自由能）$ F = U - TS $，由 $ \mathrm{d} F = - S \, \mathrm{d}T + \mu_{0} H \, \mathrm{d}M $ 和居里定律积分得
+自由能（亥姆霍兹自由能）$F = U - TS$，由 $\mathrm{d} F = - S \, \mathrm{d}T + \mu_{0} H \, \mathrm{d}M$ 和居里定律积分得
 $$
 F(T, M) = \frac{\mu_{0} T}{2C} M^{2} + \varphi(T)
 $$
-其中 $ \varphi(T) $ 是仅与温度有关的函数。熵为  
+其中 $\varphi(T)$ 是仅与温度有关的函数。熵为  
 $$
 S(T, M) = -\left. \frac{\partial F}{\partial T} \right|_{M} = -\frac{\mu_{0}}{2C} M^{2} - \varphi'(T)
 $$
@@ -126,15 +126,15 @@ $$
 $$
 U(T) = F + Ts = \varphi(T) - T\varphi'(T)
 $$
-可见内能只与温度有关，与磁化强度 $ M $ 无关。
+可见内能只与温度有关，与磁化强度 $M$ 无关。
 
-2. 当微功表达式为 $ \mathrm{d}w = -\mu_{0} M \, \mathrm{d}H $ 时
+2. 当微功表达式为 $\mathrm{d}w = -\mu_{0} M \, \mathrm{d}H$ 时
 
 $$
 \mathrm{d}U = T \, \mathrm{d}S - \mu_{0} M \, \mathrm{d}H
 $$
 
-自由能 $ F = U - TS$（以 $ T, H $ 为自变量）
+自由能 $F = U - TS$（以 $T, H$ 为自变量）
 由 $\mathrm{d}F = -S \, \mathrm{d}T - \mu_{0} M \, \mathrm{d}H$ 和居里定律积分得
 $$
 F(T, H) = -\frac{\mu_{0} C}{2T} H^{2} + \chi(T)
@@ -151,9 +151,9 @@ $$
 
 两种表达式的关系与物理解释：热力学势的对应两种微功表达式对应于不同的系统边界和热力学势。  
 
-当 $ \mathrm{d}w = \mu_{0} H \, \mathrm{d}M $ 时，系统为介质本身，内能 $U$ 不包括外磁场的能量，自变量为 $(T, M)$，自由能为亥姆霍兹自由能。  
+当 $\mathrm{d}w = \mu_{0} H \, \mathrm{d}M$ 时，系统为介质本身，内能 $U$ 不包括外磁场的能量，自变量为 $(T, M)$，自由能为亥姆霍兹自由能。  
 
-当 $ \mathrm{d}w = -\mu_{0} M \, \mathrm{d}H $ 时，系统包括介质与外磁场的耦合，内能 $U'$ 包含了相互作用能，自变量为 $ (T, H) $，自由能对应于吉布斯自由能。两种内能之间满足关系
+当 $\mathrm{d}w = -\mu_{0} M \, \mathrm{d}H$ 时，系统包括介质与外磁场的耦合，内能 $U'$ 包含了相互作用能，自变量为 $(T, H)$，自由能对应于吉布斯自由能。两种内能之间满足关系
 $$
 U' = U - \mu_{0} H M
 $$
