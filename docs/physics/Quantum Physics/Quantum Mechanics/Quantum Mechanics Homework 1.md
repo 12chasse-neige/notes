@@ -271,11 +271,11 @@ $$
 
 >补充：上面的解答中我直接使用了Courant–Fischer 定理的结论，在这里补一个证明：
 >
->设 $ H $ 是一个 $ N \times N $ 的 Hermitian 矩阵，其特征值按递增顺序排列为  
+>设 $H$ 是一个 $N \times N$ 的 Hermitian 矩阵，其特征值按递增顺序排列为  
 >$$
 >\lambda_{1} \le \lambda_{2} \le \dots \le \lambda_{N}
 >$$
->那么对于 $ k = 1, 2, \dots, N $，有
+>那么对于 $k = 1, 2, \dots, N$，有
 >
 >$$
 >\lambda_{k} = \min_{\substack{U \subset \mathbb{C}^{N} \\ \dim(U) = k}} \max_{\substack{x \in U \\ x \neq 0}} \frac{x^{\dagger} H x}{x^{\dagger} x}

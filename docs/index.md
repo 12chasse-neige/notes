@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "Chasse_neige's Personal Page"
-  text: "Listen to chasse neige in B-Flat minor!"
+  text: "Listen to chasse neige in B-flat minor!"
   link: 'https://classical.music.apple.com/us/recording/franz-liszt-1811-pp48-1440779332'
   tagline: My personal notebook on Maths, Physics and Coding. Get access to all my notes and projects through just one click.
   actions:
