@@ -2,7 +2,7 @@
 
 Chasse_neige
 
-### Problem 1
+## Problem 1
 
 Suppose $T^{\mu}{}_{\rho\sigma}$ is a tensor under the general coordinate transformation. Please show that 
 $$
@@ -108,7 +108,7 @@ T'^{\lambda} {}_{\alpha \beta;\gamma} \equiv \underbrace{T'^{\lambda} {}_{\alpha
 $$
 is a tensor under general coordinate transformation.
 
-### Problem 2
+## Problem 2
 
 Please show that 
 $$

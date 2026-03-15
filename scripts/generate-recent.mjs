@@ -12,7 +12,7 @@ const DOCS_DIR = 'docs';
 const OUTPUT_FILE = 'docs/.vitepress/data/recent_projects.json';
 const IGNORE_FILES = ['index.md', 'README.md'];
 const IGNORE_DIRS = ['.vitepress', 'public', 'node_modules', '.git'];
-const MAX_FILES_TO_ANALYZE = 10;
+const MAX_FILES_TO_ANALYZE = 30;
 
 // Initialize OpenAI safely
 // If no key is provided, client will be null, handled later
