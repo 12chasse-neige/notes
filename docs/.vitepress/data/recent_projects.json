@@ -1,13 +1,43 @@
 [
   {
+    "title": "Quantum Mechanics Homework: Photons and Waves",
+    "desc": "Analyzing photon density, infinite wells, and de Broglie wave velocities in quantum mechanics.",
+    "tags": [
+      "quantum mechanics",
+      "photon density",
+      "de Broglie waves"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 1"
+  },
+  {
+    "title": "Quantum Mechanics Homework Problems",
+    "desc": "Advanced quantum mechanics exercises covering infinite wells, harmonic oscillators, and delta potentials.",
+    "tags": [
+      "quantum mechanics",
+      "wave functions",
+      "energy eigenvalues"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 2"
+  },
+  {
     "title": "Quantizing the Electromagnetic Field in a Cavity",
     "desc": "Deriving quantum operators for EM fields using boundary conditions and creation/annihilation operators.",
     "tags": [
-      "quantum electrodynamics",
-      "field quantization",
-      "cavity modes"
+      "quantization",
+      "electromagnetic field",
+      "cavity"
     ],
     "link": "/physics/Quantum Physics/Quantum Optics/2. Quantization of EM Field"
+  },
+  {
+    "title": "Phase Transition Thermodynamics Proofs",
+    "desc": "Derivations for molar internal energy change and latent heat temperature dependence in phase transitions.",
+    "tags": [
+      "statistical mechanics",
+      "thermodynamics",
+      "phase transitions"
+    ],
+    "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 3"
   },
   {
     "title": "Statistical Mechanics Homework Solutions",
@@ -15,7 +45,7 @@
     "tags": [
       "Thermodynamics",
       "Statistical Mechanics",
-      "Van der Waals"
+      "Maxwell Relations"
     ],
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 2"
   },
@@ -25,13 +55,13 @@
     "tags": [
       "quantum gravity",
       "effective field theory",
-      "energy scales"
+      "electroweak symmetry breaking"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 1"
   },
   {
     "title": "Massless Spin-2 Particles and Gravity",
-    "desc": "Exploring why gravity requires massless spin-2 mediators through field theory comparisons.",
+    "desc": "Analyzing massless spin-2 field theory as a potential mediator for gravitational interactions.",
     "tags": [
       "field theory",
       "spin-2",
@@ -41,7 +71,7 @@
   },
   {
     "title": "Scattering Theory Principles and Hilbert Space",
-    "desc": "Exploring scattering amplitude constraints, Hilbert space axioms, and Fock space in quantum mechanics.",
+    "desc": "Explores scattering amplitude constraints, Hilbert space axioms, and Fock space in quantum mechanics.",
     "tags": [
       "scattering amplitude",
       "Hilbert space",
@@ -68,35 +98,5 @@
       "Christoffel symbol"
     ],
     "link": "/physics/General Relativity/General Relativity Homework 2"
-  },
-  {
-    "title": "General Relativity: From Special to Curved Spacetime",
-    "desc": "Explores Lorentz transformations, Christoffel symbols, and the equivalence principle in general relativity.",
-    "tags": [
-      "Lorentz Transformation",
-      "Christoffel Symbol",
-      "Equivalence Principle"
-    ],
-    "link": "/physics/General Relativity/General Relativity"
-  },
-  {
-    "title": "Quantum Mechanics Homework: Photons and Waves",
-    "desc": "Analyzing photon density, infinite well energy, and de Broglie wave velocities.",
-    "tags": [
-      "Quantum Mechanics",
-      "Photon Density",
-      "De Broglie Waves"
-    ],
-    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 1"
-  },
-  {
-    "title": "Solving Physics Integrals and Tensor Derivation",
-    "desc": "Evaluates a 3D Fourier integral and derives the photon field's energy-momentum tensor.",
-    "tags": [
-      "Fourier Transform",
-      "Energy-Momentum Tensor",
-      "Residue Theorem"
-    ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 2 Exercise"
   }
 ]
