@@ -1,5 +1,15 @@
 [
   {
+    "title": "Deriving Einstein's Field Equations",
+    "desc": "Step-by-step derivation from Riemann tensor to Einstein tensor using Bianchi identity.",
+    "tags": [
+      "General Relativity",
+      "Einstein Tensor",
+      "Ricci Tensor"
+    ],
+    "link": "/physics/General Relativity/General Relativity Homework 3"
+  },
+  {
     "title": "Tensor Covariant Derivative Proof",
     "desc": "Demonstrates that the covariant derivative of a tensor remains a tensor under coordinate transformations.",
     "tags": [
@@ -10,21 +20,11 @@
     "link": "/physics/General Relativity/General Relativity Homework 2"
   },
   {
-    "title": "General Relativity Homework Solutions",
-    "desc": "Deriving Einstein's field equations and calculating Ricci tensors for isotropic systems.",
-    "tags": [
-      "general relativity",
-      "Ricci tensor",
-      "Einstein equations"
-    ],
-    "link": "/physics/General Relativity/General Relativity Homework 3"
-  },
-  {
-    "title": "Quantum Mechanics Homework: Infinite Square Well Problems",
-    "desc": "Solving pressure, wave functions, and probabilities in infinite square well scenarios.",
+    "title": "Quantum Mechanics Homework: Infinite Potential Wells",
+    "desc": "Analyzing particle pressure, wave function evolution, and energy probabilities in infinite potential wells.",
     "tags": [
       "quantum mechanics",
-      "infinite square well",
+      "potential well",
       "wave function"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 2"
@@ -33,9 +33,9 @@
     "title": "Quantum Mechanics Homework: Photons and Waves",
     "desc": "Analyzing photon density, infinite wells, and de Broglie wave velocities in quantum mechanics.",
     "tags": [
-      "Quantum Mechanics",
-      "Photon Density",
-      "De Broglie Waves"
+      "quantum mechanics",
+      "photon density",
+      "de Broglie waves"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 1"
   },
@@ -50,12 +50,12 @@
     "link": "/physics/Quantum Physics/Quantum Optics/2. Quantization of EM Field"
   },
   {
-    "title": "Phase Transition Energy and Latent Heat",
+    "title": "Phase Transition Thermodynamics Proofs",
     "desc": "Derivations for molar internal energy change and latent heat temperature dependence in phase transitions.",
     "tags": [
       "statistical mechanics",
-      "phase transitions",
-      "thermodynamics"
+      "thermodynamics",
+      "phase transitions"
     ],
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 3"
   },
@@ -65,13 +65,13 @@
     "tags": [
       "thermodynamics",
       "statistical mechanics",
-      "van der Waals gas"
+      "van der Waals"
     ],
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 2"
   },
   {
     "title": "Particle Cosmology: Gravity and Fundamental Interactions",
-    "desc": "Explores gravity's unique properties and the energy scales of fundamental particle interactions.",
+    "desc": "Explores gravity as spin-2 particle, fundamental interactions, and energy scale transitions in cosmology.",
     "tags": [
       "gravity",
       "quantum field theory",
@@ -81,7 +81,7 @@
   },
   {
     "title": "Massless Spin-2 Particles and Gravity",
-    "desc": "Exploring massless spin-2 field theory as the mediator for gravitational interactions.",
+    "desc": "Exploring why gravity requires massless spin-2 mediators through field theory comparisons.",
     "tags": [
       "field theory",
       "spin-2",
@@ -90,8 +90,8 @@
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 2"
   },
   {
-    "title": "Scattering Theory Principles and Hilbert Space",
-    "desc": "Exploring scattering amplitude constraints, Hilbert space axioms, and Fock space in quantum mechanics.",
+    "title": "Scattering Theory Principles and Axioms",
+    "desc": "Explores scattering amplitude constraints, Hilbert space structure, and asymptotic states in quantum theory.",
     "tags": [
       "scattering amplitude",
       "Hilbert space",
@@ -110,8 +110,8 @@
     "link": "/physics/Quantum Physics/Quantum Optics/1. Key Concepts in Measurement"
   },
   {
-    "title": "General Relativity: From Lorentz to Geodesics",
-    "desc": "Explores Lorentz transformations, Christoffel symbols, geodesic motion, and the equivalence principle.",
+    "title": "General Relativity: From Special to Curved Spacetime",
+    "desc": "Explores Lorentz transformations, Christoffel symbols, and the equivalence principle in general relativity.",
     "tags": [
       "Lorentz Transformation",
       "Christoffel Symbol",
@@ -121,11 +121,11 @@
   },
   {
     "title": "Solving Physics Integrals and Tensor Derivation",
-    "desc": "Evaluates a 3D Fourier integral and derives the photon field's energy-momentum tensor.",
+    "desc": "Step-by-step solution of a 3D integral and derivation of the photon energy-momentum tensor.",
     "tags": [
-      "Fourier Transform",
-      "Energy-Momentum Tensor",
-      "Residue Theorem"
+      "integral",
+      "energy-momentum tensor",
+      "gauge invariance"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 2 Exercise"
   },
@@ -140,18 +140,18 @@
     "link": "/physics/Quantum Physics/Quantum Field Theory/Feynman Diagrams for Beginners"
   },
   {
-    "title": "Proving Energy-Momentum Tensor Lorentz Invariance",
-    "desc": "Demonstrates tensor properties under Lorentz transformations using delta functions and proper time.",
+    "title": "Proving Tensor Properties in General Relativity",
+    "desc": "Demonstrates Lorentz invariance of energy-momentum tensor and coordinate transformations.",
     "tags": [
-      "Lorentz transformation",
       "energy-momentum tensor",
+      "Lorentz transformation",
       "delta function"
     ],
     "link": "/physics/General Relativity/General Relativity Homework 1"
   },
   {
     "title": "Gravitational Waves: Linear Approximation Analysis",
-    "desc": "Explores gravitational wave generation, propagation, and detection using linearized gravity approximations.",
+    "desc": "Explores gravitational waves using linearized Einstein equations and metric perturbations.",
     "tags": [
       "gravitational waves",
       "linearized gravity",
@@ -160,12 +160,12 @@
     "link": "/physics/General Relativity/Gravitational Waves/Gravitational Waves Formation and Propagation"
   },
   {
-    "title": "Analytical Mechanics Homework Analysis",
-    "desc": "Explores canonical transformations and double pendulum dynamics in analytical mechanics.",
+    "title": "Analytical Mechanics Homework on Hamiltonian Dynamics",
+    "desc": "Explores canonical transformations and double pendulum dynamics in Hamiltonian mechanics.",
     "tags": [
       "Hamiltonian Mechanics",
-      "Lagrangian Dynamics",
-      "Canonical Transformations"
+      "Canonical Transformations",
+      "Double Pendulum"
     ],
     "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 10"
   },
@@ -181,7 +181,7 @@
   },
   {
     "title": "Analytical Mechanics Homework Solutions",
-    "desc": "Proving canonical transformations and angular momentum Poisson brackets in analytical mechanics.",
+    "desc": "Proving canonical transformations and Poisson bracket calculations in analytical mechanics.",
     "tags": [
       "canonical transformation",
       "Poisson bracket",
@@ -191,27 +191,27 @@
   },
   {
     "title": "Canonical Transformations in Analytical Mechanics",
-    "desc": "Analyzing canonical transformations to eliminate anharmonic terms in Hamiltonian systems.",
+    "desc": "Solving canonical transformations and anharmonic oscillator problems in analytical mechanics.",
     "tags": [
       "canonical transformation",
-      "Hamiltonian mechanics",
-      "perturbation theory"
+      "anharmonic oscillator",
+      "action-angle variables"
     ],
     "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 13"
   },
   {
     "title": "Analytical Mechanics Homework Solutions",
-    "desc": "Lagrangian mechanics problems solved for spring-mass systems, sliding blocks, and conical motion.",
+    "desc": "Lagrangian solutions for spring-pulley, sliding block, and conical pendulum systems.",
     "tags": [
       "Lagrangian Mechanics",
       "Generalized Coordinates",
-      "Motion Equations"
+      "Differential Equations"
     ],
     "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 2"
   },
   {
-    "title": "Variational Calculus in Analytical Mechanics",
-    "desc": "Proving geodesics on spheres and minimal surfaces using Euler-Lagrange equations.",
+    "title": "Variational Calculus Homework Solutions",
+    "desc": "Proving shortest paths on spheres and minimal surfaces using Euler-Lagrange equations.",
     "tags": [
       "Variational Calculus",
       "Euler-Lagrange",
@@ -220,8 +220,8 @@
     "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 3"
   },
   {
-    "title": "Atmospheric Refraction and Light Path Optimization",
-    "desc": "Using variational calculus to derive light trajectory through Earth's atmosphere with exponential density.",
+    "title": "Atmospheric Refraction via Variational Calculus",
+    "desc": "Deriving light path equations in variable-density atmosphere using functional minimization.",
     "tags": [
       "variational calculus",
       "atmospheric refraction",
@@ -230,21 +230,21 @@
     "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 4"
   },
   {
-    "title": "Central Force Problems in Analytical Mechanics",
-    "desc": "Solving central force problems for Archimedean spiral and inverse-cube law trajectories.",
+    "title": "Analyzing Central Forces in Particle Motion",
+    "desc": "Deriving central forces for Archimedean spiral and inverse-cube law trajectories.",
     "tags": [
-      "analytical mechanics",
-      "central force",
-      "trajectory analysis"
+      "Analytical Mechanics",
+      "Central Force",
+      "Trajectory Analysis"
     ],
     "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 5"
   },
   {
     "title": "Scattering Cross Sections in Analytical Mechanics",
-    "desc": "Calculates scattering cross sections for a spherical potential well and electron-electron Rutherford scattering.",
+    "desc": "Calculating scattering cross sections for particles in spherical potentials and electron-electron Rutherford scattering.",
     "tags": [
       "scattering",
-      "cross section",
+      "cross-section",
       "Rutherford"
     ],
     "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 6"
@@ -255,7 +255,7 @@
     "tags": [
       "perturbation theory",
       "analytical mechanics",
-      "nonlinear oscillations"
+      "oscillations"
     ],
     "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 7"
   },
@@ -271,17 +271,17 @@
   },
   {
     "title": "Hydrogen Atom Wavefunction Solutions",
-    "desc": "Explicit forms of hydrogen atom eigenfunctions ψ100, ψ200, ψ210, ψ21±1 derived.",
+    "desc": "Deriving explicit forms of hydrogen atom eigenfunctions for specific quantum states.",
     "tags": [
-      "wavefunctions",
-      "hydrogen atom",
-      "quantum mechanics"
+      "Quantum Mechanics",
+      "Wavefunctions",
+      "Hydrogen Atom"
     ],
     "link": "/physics/Atomic and Molecular Physics/Atomic and Molecular Physics Homework 1"
   },
   {
     "title": "Two-Level Quantum State Density Matrix",
-    "desc": "Deriving density matrix representation using Pauli matrices and Bloch sphere parameters.",
+    "desc": "Deriving density matrix representation using Pauli matrices for quantum states.",
     "tags": [
       "quantum mechanics",
       "density matrix",
@@ -290,12 +290,12 @@
     "link": "/physics/Atomic and Molecular Physics/Atomic and Molecular Physics Homework 2"
   },
   {
-    "title": "Ramsey Fringes in Atomic Clock Homework",
-    "desc": "Analyzes Bloch vector evolution for Ramsey fringes in atomic clocks.",
+    "title": "Ramsey Fringes in Atomic Clock Physics",
+    "desc": "Analyzing Bloch sphere evolution for atomic states in Ramsey interferometry setups.",
     "tags": [
-      "atomic physics",
+      "Ramsey fringes",
       "Bloch sphere",
-      "Ramsey fringes"
+      "atomic clock"
     ],
     "link": "/physics/Atomic and Molecular Physics/Atomic and Molecular Physics Homework 3"
   }
