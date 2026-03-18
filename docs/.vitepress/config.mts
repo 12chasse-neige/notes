@@ -229,7 +229,7 @@ export default defineConfig({
           pqty: ['{\\begin{pmatrix} #1 \\end{pmatrix}}', 1],
           bqty: ['{\\begin{bmatrix} #1 \\end{bmatrix}}', 1],
           comm: ['{\\left[ #1, #2 \\right]}', 2],
-          dd: ['{\\mathrm{d} #1}', 1],
+          dd: ['{\\mathrm{d}^{#1} {#2}}', 2, ''],
           exist: '{\\exists}',
           tr: '{\\text{tr}}',
           dag: '{\\dagger}',

@@ -11,7 +11,7 @@ $$
 R^{\lambda} {}_{\mu \nu \kappa} = \Gamma^{\lambda} {}_{\mu \nu, \kappa} - \Gamma^{\lambda} {}_{\mu \kappa, \nu} + \Gamma^{\eta} {}_{\mu \nu} \Gamma^{\lambda} {}_{\eta \kappa} - \Gamma^{\eta} {}_{\mu \kappa} \Gamma^{\lambda} {}_{\eta \nu}
 $$
 
-is the tesor we can use to build the field equation. To be compatible with the energy momentum tensor (second order), we’ll need to contract the Riemann tensor to get the Ricci tensor, which is defined as
+is the tensor we can use to build the field equation. To be compatible with the energy momentum tensor (second order), we’ll need to contract the Riemann tensor to get the Ricci tensor, which is defined as
 $$
 R_{\mu \kappa} = g^{\lambda \nu} R_{\lambda \mu \nu \kappa} = R^{\lambda} {}_{\mu \lambda \kappa} \\ = 
 \Gamma^{\lambda} {}_{\mu \lambda, \kappa} - \Gamma^{\lambda} {}_{\mu \kappa, \lambda} + \Gamma^{\eta} {}_{\mu \lambda} \Gamma^{\lambda} {}_{\eta \kappa} - \Gamma^{\eta} {}_{\mu \kappa} \Gamma^{\lambda} {}_{\mu \lambda}

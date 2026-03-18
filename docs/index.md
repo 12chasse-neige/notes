@@ -31,7 +31,7 @@ import recentData from './.vitepress/data/recent_projects.json'
 
 <div class="container" style="margin-top: 50px; padding: 0 24px; max-width: 1152px; margin-left: auto; margin-right: auto;">
   <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 20px;">
-    Recent Notes & Projects (AI Summerized)
+    Recent Notes & Projects (AI Summarized)
   </h2>
 
   <RecentProjects :projects="recentData" />
