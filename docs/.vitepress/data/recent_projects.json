@@ -1,302 +1,302 @@
 [
   {
-    "title": "Deriving Einstein's Field Equations",
-    "desc": "Step-by-step derivation of general relativity's field equations using tensor calculus.",
+    "title": "Advanced Calculus: Taylor's Theorem Review",
+    "desc": "Explores Taylor's Theorem with Peano, Lagrange, and Cauchy remainder forms for function approximation.",
     "tags": [
-      "General Relativity",
-      "Tensor Calculus",
-      "Einstein Equations"
+      "Taylor's Theorem",
+      "Remainder Terms",
+      "Function Approximation"
     ],
-    "link": "/physics/General Relativity/General Relativity Homework 3"
+    "link": "/maths/Advanced Calculus/Advanced Calculus (1) Final Review"
   },
   {
-    "title": "Quantum Field Theory Exercise Solutions",
-    "desc": "Solving integrals and deriving photon energy-momentum tensors in field theory.",
+    "title": "Advanced Calculus Series Convergence Analysis",
+    "desc": "Analyzing convergence of six complex series using comparison, ratio, and root tests.",
     "tags": [
-      "quantum field theory",
-      "energy-momentum tensor",
-      "residue theorem"
+      "series convergence",
+      "ratio test",
+      "comparison test"
     ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 2 Exercise"
+    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 1"
   },
   {
-    "title": "Proving Lorentz Invariance and Optical Theorem",
-    "desc": "Exercises on Lorentz invariance proofs, optical theorem derivation, and analytic S-matrix concepts.",
+    "title": "Advanced Calculus Surface and Curve Integrals",
+    "desc": "Solutions for surface integrals, Stokes' theorem, and closed curve calculations.",
     "tags": [
-      "Lorentz invariance",
-      "optical theorem",
-      "S-matrix"
+      "Surface Integrals",
+      "Stokes' Theorem",
+      "Parameterization"
     ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 3 Exercise"
+    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 10"
   },
   {
-    "title": "Scattering Theory Principles and Hilbert Space",
-    "desc": "Explores scattering amplitude constraints, Hilbert space axioms, and Fock space in quantum mechanics.",
+    "title": "Power Series Convergence and Summation Formulas",
+    "desc": "Analyzing convergence domains and proving summation formulas for ln(1+x) and π/4.",
     "tags": [
-      "scattering amplitude",
-      "Hilbert space",
-      "Fock space"
+      "power series",
+      "convergence",
+      "Taylor expansion"
     ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 3"
+    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 2"
   },
   {
-    "title": "On-Shell Factorization and Soft Theorems",
-    "desc": "Exploring factorization in quantum field theory with light bulb models and momentum space analysis.",
+    "title": "Advanced Calculus: Metrics and Inequalities",
+    "desc": "Proving metric properties and Cauchy-Schwarz inequality in function spaces.",
     "tags": [
-      "Quantum Field Theory",
-      "Factorization",
-      "Green Function"
+      "metric space",
+      "Cauchy sequence",
+      "Cauchy-Schwarz inequality"
     ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 4"
+    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 3"
   },
   {
-    "title": "Tensor Covariant Derivative Proof",
-    "desc": "Demonstrates the tensor nature of covariant derivatives in general relativity.",
+    "title": "Advanced Calculus Homework on Minima and Closed Sets",
+    "desc": "Proving existence of minima for functions and closedness of the unit circle.",
     "tags": [
-      "covariant derivative",
-      "tensor transformation",
-      "Christoffel symbols"
+      "continuous functions",
+      "closed sets",
+      "extreme value theorem"
     ],
-    "link": "/physics/General Relativity/General Relativity Homework 2"
+    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 4"
   },
   {
-    "title": "Quantum Mechanics Homework Solutions",
-    "desc": "Solving particle-in-a-box problems: pressure, wave functions, and probabilities.",
+    "title": "Advanced Calculus Partial Derivative Exercises",
+    "desc": "A set of partial derivative problems with solutions, covering chain rule and higher-order derivatives.",
     "tags": [
-      "quantum mechanics",
-      "infinite potential well",
-      "wave function"
+      "partial derivatives",
+      "chain rule",
+      "multivariable calculus"
     ],
-    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 2"
+    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 5"
   },
   {
-    "title": "Quantum Mechanics Homework: Photons, Wells, Waves",
-    "desc": "Analyzes cavity radiation, infinite potential wells, and de Broglie wave velocities.",
+    "title": "Implicit Function Theorem Application in Calculus",
+    "desc": "Analyzing a cubic equation to prove implicit function existence and compute partial derivatives.",
     "tags": [
-      "Quantum Mechanics",
-      "Blackbody Radiation",
-      "Wave-Particle Duality"
+      "Implicit Function Theorem",
+      "Partial Derivatives",
+      "Taylor Expansion"
     ],
-    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 1"
+    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 6"
   },
   {
-    "title": "Quantizing the Electromagnetic Field in a Cavity",
-    "desc": "Deriving quantum operators for EM fields using boundary conditions and creation/annihilation operators.",
+    "title": "Advanced Calculus Critical Points Analysis",
+    "desc": "Finding and classifying critical points of multivariable functions using partial derivatives.",
     "tags": [
-      "quantization",
-      "electromagnetic field",
-      "cavity"
+      "critical points",
+      "Hessian matrix",
+      "multivariable calculus"
     ],
-    "link": "/physics/Quantum Physics/Quantum Optics/2. Quantization of EM Field"
+    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 7"
   },
   {
-    "title": "Phase Transition Thermodynamics Proofs",
-    "desc": "Derivations for molar internal energy change and latent heat temperature dependence in phase transitions.",
+    "title": "Advanced Calculus Integration Problems",
+    "desc": "Solving area and volume integrals using coordinate transformations in multivariable calculus.",
     "tags": [
-      "thermodynamics",
-      "phase_transition",
-      "Clapeyron_equation"
+      "multivariable calculus",
+      "integration",
+      "coordinate transformation"
     ],
-    "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 3"
+    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 8"
   },
   {
-    "title": "Statistical Mechanics Homework Solutions",
-    "desc": "Proving thermodynamic properties and deriving functions for ideal gases and rubber bands.",
+    "title": "Advanced Calculus: Surface Area and Centroids",
+    "desc": "Calculating surface area for ellipsoids, spheres, and tori using double integrals.",
     "tags": [
-      "Thermodynamics",
-      "Statistical Mechanics",
-      "Van der Waals"
+      "Surface Integrals",
+      "Parametrization",
+      "Ellipsoid"
     ],
-    "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 2"
+    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 9"
   },
   {
-    "title": "Particle Cosmology: Gravity and Fundamental Interactions",
-    "desc": "Explores gravity as a spin-2 interaction and the energy scales of fundamental forces.",
+    "title": "Complex Analysis Homework: Proofs and Trigonometry",
+    "desc": "Proving a complex modulus identity and deriving trigonometric formulas using Euler's formula.",
     "tags": [
-      "gravity",
-      "quantum field theory",
-      "energy scales"
+      "complex analysis",
+      "trigonometry",
+      "Euler's formula"
     ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 1"
+    "link": "/maths/Complex Analysis/Complex Analysis Homework 1"
   },
   {
-    "title": "Massless Spin-2 Particles and Gravity",
-    "desc": "Exploring why gravity requires massless spin-2 mediators through field theory comparisons.",
+    "title": "Complex Analysis Homework: Residue Theorem Applications",
+    "desc": "Solving integrals using the residue theorem with detailed step-by-step calculations.",
     "tags": [
-      "field theory",
-      "spin-2",
-      "gravity"
+      "Residue Theorem",
+      "Complex Integration",
+      "Contour Integration"
     ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 2"
+    "link": "/maths/Complex Analysis/Complex Analysis Homework 10"
   },
   {
-    "title": "Measurement Concepts in Classical and Quantum Mechanics",
-    "desc": "Explores phase space, Schrödinger/Heisenberg pictures, and Bayesian measurement with Gaussian noise.",
+    "title": "Complex Analysis: Residue Theorem Applications",
+    "desc": "Using the residue theorem to evaluate challenging improper integrals with branch cuts.",
     "tags": [
-      "phase space",
-      "Schrödinger picture",
-      "Bayesian inference"
+      "Residue Theorem",
+      "Complex Integration",
+      "Branch Cuts"
     ],
-    "link": "/physics/Quantum Physics/Quantum Optics/1. Key Concepts in Measurement"
+    "link": "/maths/Complex Analysis/Complex Analysis Homework 11"
   },
   {
-    "title": "Feynman Diagrams for Beginners",
-    "desc": "An introductory guide to Feynman diagrams with exercises for QFT newcomers.",
+    "title": "Complex Functions Homework: Trigonometric Identities",
+    "desc": "Proofs of complex sine/cosine addition formulas and hyperbolic identities.",
     "tags": [
-      "Feynman diagrams",
-      "Quantum Field Theory",
-      "QED"
+      "Complex Analysis",
+      "Trigonometric Functions",
+      "Hyperbolic Functions"
     ],
-    "link": "/physics/Quantum Physics/Quantum Field Theory/Feynman Diagrams for Beginners"
+    "link": "/maths/Complex Analysis/Complex Analysis Homework 2"
   },
   {
-    "title": "Proving Energy-Momentum Tensor Lorentz Invariance",
-    "desc": "Demonstrates tensor properties under Lorentz transformations using delta functions and proper time.",
+    "title": "Analyzing Multivalued Functions and Branch Points",
+    "desc": "A technical analysis of multivalued complex functions, their branch points, and path-dependent evaluations.",
     "tags": [
-      "Lorentz transformation",
-      "energy-momentum tensor",
-      "delta function"
+      "Complex Analysis",
+      "Multivalued Functions",
+      "Branch Points"
     ],
-    "link": "/physics/General Relativity/General Relativity Homework 1"
+    "link": "/maths/Complex Analysis/Complex Analysis Homework 3"
   },
   {
-    "title": "Gravitational Waves: Linear Approximation Analysis",
-    "desc": "Explores gravitational wave generation and detection using linearized Einstein equations.",
+    "title": "Complex Analysis Homework: Contour Integrals",
+    "desc": "Solutions for contour integrals and Poisson formula in complex analysis.",
     "tags": [
-      "gravitational waves",
-      "linearized gravity",
-      "Einstein equations"
+      "Contour Integration",
+      "Residue Theorem",
+      "Complex Variables"
     ],
-    "link": "/physics/General Relativity/Gravitational Waves/Gravitational Waves Formation and Propagation"
+    "link": "/maths/Complex Analysis/Complex Analysis Homework 4"
   },
   {
-    "title": "Analytical Mechanics Homework: Harmonic Oscillator and Double Pendulum",
-    "desc": "Analyzes momentum-space Lagrangians and small-angle approximations for a double pendulum.",
+    "title": "Complex Analysis Homework on Series Convergence",
+    "desc": "Analyzing convergence of positive and complex series with counterexamples.",
     "tags": [
-      "Lagrangian Mechanics",
-      "Hamiltonian Dynamics",
-      "Double Pendulum"
+      "series convergence",
+      "complex analysis",
+      "counterexamples"
     ],
-    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 10"
+    "link": "/maths/Complex Analysis/Complex Analysis Homework 5"
   },
   {
-    "title": "Analytical Mechanics Homework Solutions",
-    "desc": "Proving canonical transformations using generating functions in multiple examples.",
+    "title": "Complex Analysis Homework: Series Convergence",
+    "desc": "Analyzing convergence radii, sum functions, and series sums in complex analysis.",
     "tags": [
-      "canonical transformation",
-      "generating function",
-      "analytical mechanics"
+      "complex analysis",
+      "series convergence",
+      "power series"
     ],
-    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 11"
+    "link": "/maths/Complex Analysis/Complex Analysis Homework 6"
   },
   {
-    "title": "Analytical Mechanics Homework Solutions",
-    "desc": "Proving canonical transformations and Poisson bracket calculations in analytical mechanics.",
+    "title": "Complex Analysis: Taylor Series and Convergence",
+    "desc": "Expanding secant, logarithmic, and square root functions into Taylor series with convergence radii.",
     "tags": [
-      "Canonical Transformation",
-      "Poisson Bracket",
-      "Analytical Mechanics"
+      "Taylor series",
+      "convergence radius",
+      "complex analysis"
     ],
-    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 12"
+    "link": "/maths/Complex Analysis/Complex Analysis Homework 7"
   },
   {
-    "title": "Canonical Transformations in Analytical Mechanics",
-    "desc": "Analyzing canonical transformations to simplify anharmonic oscillator and periodic potential problems.",
+    "title": "Complex Analysis: Laurent Series Expansions",
+    "desc": "Step-by-step Laurent expansions for rational and logarithmic functions in complex analysis.",
     "tags": [
-      "canonical transformation",
-      "anharmonic oscillator",
-      "action-angle variables"
+      "Laurent Series",
+      "Complex Analysis",
+      "Series Expansion"
     ],
-    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 13"
+    "link": "/maths/Complex Analysis/Complex Analysis Homework 8"
   },
   {
-    "title": "Analytical Mechanics Homework Solutions",
-    "desc": "Lagrangian solutions for spring-mass, sliding block, and conical pendulum systems.",
+    "title": "Complex Analysis Homework: Analytic Continuation",
+    "desc": "Proving analytic continuation and identifying singularities in complex function series.",
     "tags": [
-      "Lagrangian Mechanics",
-      "Generalized Coordinates",
-      "Motion Equations"
+      "analytic continuation",
+      "complex analysis",
+      "power series"
     ],
-    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 2"
+    "link": "/maths/Complex Analysis/Complex Analysis Homework 9"
   },
   {
-    "title": "Variational Calculus in Analytical Mechanics",
-    "desc": "Applying functional variation to prove geodesics on spheres and solve minimal surface problems.",
+    "title": "Spherical Harmonics Expansion and PDE Solutions",
+    "desc": "Expanding functions in spherical harmonics and solving Poisson's equation with boundary conditions.",
     "tags": [
-      "Variational Calculus",
-      "Euler-Lagrange Equations",
-      "Geodesics"
+      "spherical harmonics",
+      "Poisson equation",
+      "boundary value problem"
     ],
-    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 3"
+    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 10"
   },
   {
-    "title": "Atmospheric Refraction: Light Path via Calculus of Variations",
-    "desc": "Deriving sunlight trajectory through Earth's atmosphere using variational principles and exponential density.",
+    "title": "Math Physics Equations Homework Solutions",
+    "desc": "Integral calculations and Bessel function identities in mathematical physics.",
     "tags": [
-      "Calculus of Variations",
-      "Atmospheric Refraction",
-      "Optical Path"
+      "Integral Calculus",
+      "Bessel Functions",
+      "Mathematical Physics"
     ],
-    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 4"
+    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 11"
   },
   {
-    "title": "Central Force Problems in Analytical Mechanics",
-    "desc": "Solving for central forces in Archimedean spiral and inverse-cube law trajectories.",
+    "title": "Critical Radius in Nuclear Diffusion Problems",
+    "desc": "Analyzes critical radii for cylindrical and spherical uranium blocks using diffusion equations and Bessel functions.",
     "tags": [
-      "Analytical Mechanics",
-      "Central Force",
-      "Trajectory Analysis"
+      "Diffusion Equation",
+      "Bessel Functions",
+      "Critical Radius"
     ],
-    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 5"
+    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 12"
   },
   {
-    "title": "Scattering Cross Sections in Analytical Mechanics",
-    "desc": "Calculates scattering cross sections for particles in a spherical potential well and for electron-electron Rutherford scattering.",
+    "title": "Delta Function Properties and Proofs",
+    "desc": "Mathematical proofs for delta function identities in various coordinate systems.",
     "tags": [
-      "scattering",
-      "cross-section",
-      "Rutherford"
+      "delta function",
+      "mathematical physics",
+      "coordinate transformation"
     ],
-    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 6"
+    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 13"
   },
   {
-    "title": "Perturbation Analysis of Pendulum Motion",
-    "desc": "Second-order perturbation solution for small-angle pendulum oscillations with period correction.",
+    "title": "Solving Forced Vibration with Laplace Transform",
+    "desc": "A step-by-step solution to a damped oscillator driven by a harmonic force using Laplace transforms.",
     "tags": [
-      "perturbation theory",
-      "analytical mechanics",
-      "oscillations"
+      "Laplace Transform",
+      "Forced Vibration",
+      "Differential Equations"
     ],
-    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 7"
+    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 14"
   },
   {
-    "title": "Earth's Axial Precession from Solar Torque",
-    "desc": "Calculates Earth's precession rate using Lagrangian mechanics and gravitational potential.",
+    "title": "Green's Function for 1D Boundary Value Problem",
+    "desc": "Deriving and applying Green's function to solve a differential equation with boundary conditions.",
     "tags": [
-      "Analytical Mechanics",
-      "Celestial Mechanics",
-      "Lagrangian Dynamics"
+      "Green's Function",
+      "Boundary Value Problem",
+      "Differential Equations"
     ],
-    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 9"
+    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 15"
   },
   {
-    "title": "Hydrogen Atom Eigenfunctions Explained",
-    "desc": "Detailed derivation of hydrogen atom wavefunctions for specific quantum states.",
+    "title": "Solving Laplace's Equation with Separation of Variables",
+    "desc": "A step-by-step solution to a Laplace equation with mixed boundary conditions using separation of variables.",
     "tags": [
-      "Quantum Mechanics",
-      "Wavefunctions",
-      "Hydrogen Atom"
+      "Laplace Equation",
+      "Separation of Variables",
+      "Boundary Conditions"
     ],
-    "link": "/physics/Atomic and Molecular Physics/Atomic and Molecular Physics Homework 1"
+    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 3"
   },
   {
-    "title": "Two-Level Quantum State Density Matrix",
-    "desc": "Deriving density matrix representation using Pauli matrices and Bloch sphere parameters.",
+    "title": "Solving Heat Equation with Sinusoidal Boundary",
+    "desc": "Decomposing and solving a heat equation using eigenfunction expansion and separation of variables.",
     "tags": [
-      "quantum mechanics",
-      "density matrix",
-      "Pauli matrices"
+      "Partial Differential Equations",
+      "Eigenfunction Expansion",
+      "Heat Equation"
     ],
-    "link": "/physics/Atomic and Molecular Physics/Atomic and Molecular Physics Homework 2"
+    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 4"
   }
 ]
