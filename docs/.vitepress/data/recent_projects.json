@@ -1,5 +1,15 @@
 [
   {
+    "title": "Statistical Mechanics Homework: Normalization and Particle Classification",
+    "desc": "Normalizing a probability distribution and classifying particles as bosons or fermions.",
+    "tags": [
+      "probability distribution",
+      "normalization",
+      "quantum statistics"
+    ],
+    "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 4"
+  },
+  {
     "title": "Advanced Calculus: Taylor's Theorem Review",
     "desc": "Explores Taylor's Theorem with Peano, Lagrange, and Cauchy remainder forms for function approximation.",
     "tags": [
@@ -21,17 +31,17 @@
   },
   {
     "title": "Advanced Calculus Surface and Curve Integrals",
-    "desc": "Solutions for surface integrals, Stokes' theorem, and closed curve calculations.",
+    "desc": "Solutions for surface integrals, Stokes' theorem, and complex line integrals in multivariable calculus.",
     "tags": [
       "Surface Integrals",
       "Stokes' Theorem",
-      "Parameterization"
+      "Line Integrals"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 10"
   },
   {
-    "title": "Power Series Convergence and Summation Formulas",
-    "desc": "Analyzing convergence domains and proving summation formulas for ln(1+x) and π/4.",
+    "title": "Power Series Convergence and Summation",
+    "desc": "Analyzing convergence domains and summation formulas for power series in advanced calculus.",
     "tags": [
       "power series",
       "convergence",
@@ -41,37 +51,37 @@
   },
   {
     "title": "Advanced Calculus: Metrics and Inequalities",
-    "desc": "Proving metric properties and Cauchy-Schwarz inequality in function spaces.",
+    "desc": "Proofs on metric spaces, Cauchy sequences, and integral inequalities in analysis.",
     "tags": [
       "metric space",
       "Cauchy sequence",
-      "Cauchy-Schwarz inequality"
+      "integral inequality"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 3"
   },
   {
     "title": "Advanced Calculus Homework on Minima and Closed Sets",
-    "desc": "Proving existence of minima for functions and closedness of the unit circle.",
+    "desc": "Proving existence of minima for coercive functions and extremal values on the unit circle.",
     "tags": [
-      "continuous functions",
-      "closed sets",
+      "coercive function",
+      "closed set",
       "extreme value theorem"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 4"
   },
   {
     "title": "Advanced Calculus Partial Derivative Exercises",
-    "desc": "A set of partial derivative problems with solutions, covering chain rule and higher-order derivatives.",
+    "desc": "A set of partial derivative problems with solutions for advanced calculus students.",
     "tags": [
       "partial derivatives",
-      "chain rule",
-      "multivariable calculus"
+      "multivariable calculus",
+      "differentiation"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 5"
   },
   {
-    "title": "Implicit Function Theorem Application in Calculus",
-    "desc": "Analyzing a cubic equation to prove implicit function existence and compute partial derivatives.",
+    "title": "Implicit Function Theorem in Advanced Calculus",
+    "desc": "Proving existence and computing derivatives of an implicit function from a cubic equation.",
     "tags": [
       "Implicit Function Theorem",
       "Partial Derivatives",
@@ -83,15 +93,15 @@
     "title": "Advanced Calculus Critical Points Analysis",
     "desc": "Finding and classifying critical points of multivariable functions using partial derivatives.",
     "tags": [
+      "multivariable calculus",
       "critical points",
-      "Hessian matrix",
-      "multivariable calculus"
+      "Hessian matrix"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 7"
   },
   {
     "title": "Advanced Calculus Integration Problems",
-    "desc": "Solving area and volume integrals using coordinate transformations in multivariable calculus.",
+    "desc": "Three multivariable integration problems solved using coordinate transformations.",
     "tags": [
       "multivariable calculus",
       "integration",
@@ -100,28 +110,28 @@
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 8"
   },
   {
-    "title": "Advanced Calculus: Surface Area and Centroids",
-    "desc": "Calculating surface area for ellipsoids, spheres, and tori using double integrals.",
+    "title": "Ellipsoid Area and Surface Integrals",
+    "desc": "Deriving area formulas for ellipsoids and spheres using double integrals.",
     "tags": [
       "Surface Integrals",
-      "Parametrization",
-      "Ellipsoid"
+      "Ellipsoid",
+      "Parametrization"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 9"
   },
   {
-    "title": "Complex Analysis Homework: Proofs and Trigonometry",
-    "desc": "Proving a complex modulus identity and deriving trigonometric formulas using Euler's formula.",
+    "title": "Complex Analysis Homework: Proofs and Trigonometric Identities",
+    "desc": "A complex analysis assignment proving a modulus identity and deriving trigonometric formulas using Euler's formula.",
     "tags": [
       "complex analysis",
-      "trigonometry",
+      "trigonometric identities",
       "Euler's formula"
     ],
     "link": "/maths/Complex Analysis/Complex Analysis Homework 1"
   },
   {
-    "title": "Complex Analysis Homework: Residue Theorem Applications",
-    "desc": "Solving integrals using the residue theorem with detailed step-by-step calculations.",
+    "title": "Complex Analysis Homework on Residue Theorem",
+    "desc": "Calculating integrals using the residue theorem with detailed solutions.",
     "tags": [
       "Residue Theorem",
       "Complex Integration",
@@ -131,7 +141,7 @@
   },
   {
     "title": "Complex Analysis: Residue Theorem Applications",
-    "desc": "Using the residue theorem to evaluate challenging improper integrals with branch cuts.",
+    "desc": "Using the residue theorem to evaluate three challenging improper integrals with branch cuts.",
     "tags": [
       "Residue Theorem",
       "Complex Integration",
@@ -151,7 +161,7 @@
   },
   {
     "title": "Analyzing Multivalued Functions and Branch Points",
-    "desc": "A technical analysis of multivalued complex functions, their branch points, and path-dependent evaluations.",
+    "desc": "A technical analysis of multivalued functions, branch points, and path-dependent evaluations in complex analysis.",
     "tags": [
       "Complex Analysis",
       "Multivalued Functions",
@@ -160,17 +170,17 @@
     "link": "/maths/Complex Analysis/Complex Analysis Homework 3"
   },
   {
-    "title": "Complex Analysis Homework: Contour Integrals",
-    "desc": "Solutions for contour integrals and Poisson formula in complex analysis.",
+    "title": "Complex Analysis Homework Solutions",
+    "desc": "Solutions for contour integrals and function analysis in complex variables.",
     "tags": [
       "Contour Integration",
       "Residue Theorem",
-      "Complex Variables"
+      "Complex Functions"
     ],
     "link": "/maths/Complex Analysis/Complex Analysis Homework 4"
   },
   {
-    "title": "Complex Analysis Homework on Series Convergence",
+    "title": "Complex Analysis Homework: Series Convergence Tests",
     "desc": "Analyzing convergence of positive and complex series with counterexamples.",
     "tags": [
       "series convergence",
@@ -190,58 +200,58 @@
     "link": "/maths/Complex Analysis/Complex Analysis Homework 6"
   },
   {
-    "title": "Complex Analysis: Taylor Series and Convergence",
-    "desc": "Expanding secant, logarithmic, and square root functions into Taylor series with convergence radii.",
+    "title": "Complex Analysis: Taylor Series Expansions",
+    "desc": "Taylor series expansions for secant, logarithmic, and square root functions in complex analysis.",
     "tags": [
       "Taylor series",
-      "convergence radius",
-      "complex analysis"
+      "complex analysis",
+      "convergence radius"
     ],
     "link": "/maths/Complex Analysis/Complex Analysis Homework 7"
   },
   {
     "title": "Complex Analysis: Laurent Series Expansions",
-    "desc": "Step-by-step Laurent expansions for rational and logarithmic functions in complex analysis.",
+    "desc": "Detailed Laurent expansions for rational and logarithmic functions in complex analysis.",
     "tags": [
       "Laurent Series",
       "Complex Analysis",
-      "Series Expansion"
+      "Mathematical Functions"
     ],
     "link": "/maths/Complex Analysis/Complex Analysis Homework 8"
   },
   {
-    "title": "Complex Analysis Homework: Analytic Continuation",
-    "desc": "Proving analytic continuation and identifying singularities in complex function series.",
+    "title": "Complex Analysis Homework on Analytic Continuation",
+    "desc": "Proofs on analytic continuation, series convergence, and function singularities in complex analysis.",
     "tags": [
       "analytic continuation",
-      "complex analysis",
-      "power series"
+      "power series",
+      "singularities"
     ],
     "link": "/maths/Complex Analysis/Complex Analysis Homework 9"
   },
   {
     "title": "Spherical Harmonics Expansion and PDE Solutions",
-    "desc": "Expanding functions in spherical harmonics and solving Poisson's equation with boundary conditions.",
+    "desc": "Expanding functions in spherical harmonics and solving Poisson equations with boundary conditions.",
     "tags": [
-      "spherical harmonics",
-      "Poisson equation",
-      "boundary value problem"
+      "Spherical Harmonics",
+      "Poisson Equation",
+      "Boundary Conditions"
     ],
     "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 10"
   },
   {
     "title": "Math Physics Equations Homework Solutions",
-    "desc": "Integral calculations and Bessel function identities in mathematical physics.",
+    "desc": "Solving integrals with Bessel functions and proving trigonometric identities.",
     "tags": [
-      "Integral Calculus",
       "Bessel Functions",
+      "Integral Calculus",
       "Mathematical Physics"
     ],
     "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 11"
   },
   {
-    "title": "Critical Radius in Nuclear Diffusion Problems",
-    "desc": "Analyzes critical radii for cylindrical and spherical uranium blocks using diffusion equations and Bessel functions.",
+    "title": "Critical Radius Calculations for Nuclear Fuel",
+    "desc": "Deriving critical radii for cylindrical and spherical uranium blocks using diffusion equations.",
     "tags": [
       "Diffusion Equation",
       "Bessel Functions",
@@ -250,17 +260,17 @@
     "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 12"
   },
   {
-    "title": "Delta Function Properties and Proofs",
-    "desc": "Mathematical proofs for delta function identities in various coordinate systems.",
+    "title": "Mathematical Physics Equations Homework Solutions",
+    "desc": "Proofs for delta function identities and coordinate transformations in physics.",
     "tags": [
       "delta function",
-      "mathematical physics",
-      "coordinate transformation"
+      "coordinate transformation",
+      "mathematical physics"
     ],
     "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 13"
   },
   {
-    "title": "Solving Forced Vibration with Laplace Transform",
+    "title": "Solving Forced Vibration with Laplace Transforms",
     "desc": "A step-by-step solution to a damped oscillator driven by a harmonic force using Laplace transforms.",
     "tags": [
       "Laplace Transform",
@@ -270,8 +280,8 @@
     "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 14"
   },
   {
-    "title": "Green's Function for 1D Boundary Value Problem",
-    "desc": "Deriving and applying Green's function to solve a differential equation with boundary conditions.",
+    "title": "Solving 1D Green's Function for Boundary Problems",
+    "desc": "Deriving Green's function for a second-order ODE with boundary conditions and applying it to solve a related problem.",
     "tags": [
       "Green's Function",
       "Boundary Value Problem",
@@ -280,23 +290,13 @@
     "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 15"
   },
   {
-    "title": "Solving Laplace's Equation with Separation of Variables",
-    "desc": "A step-by-step solution to a Laplace equation with mixed boundary conditions using separation of variables.",
+    "title": "Solving Laplace's Equation with Boundary Conditions",
+    "desc": "Step-by-step solution using separation of variables for a 2D Laplace equation.",
     "tags": [
       "Laplace Equation",
       "Separation of Variables",
       "Boundary Conditions"
     ],
     "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 3"
-  },
-  {
-    "title": "Solving Heat Equation with Sinusoidal Boundary",
-    "desc": "Decomposing and solving a heat equation using eigenfunction expansion and separation of variables.",
-    "tags": [
-      "Partial Differential Equations",
-      "Eigenfunction Expansion",
-      "Heat Equation"
-    ],
-    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 4"
   }
 ]
