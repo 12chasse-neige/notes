@@ -32,5 +32,5 @@ Thumbs.db
 .temp/
 .tmp/
 
-docs/replace.py
+scripts/replace.py
 .env

@@ -116,7 +116,7 @@ $$
 最终得到
 $$
 u(r,\theta) = \begin{cases}
-\dfrac{Q}{4\pi\epsilon_0} \sum\limits_{n=0}^{\infty}\frac{(-1)^{n} (2n)!}{2^{2n} (n!)^{2}} P_{2n} (\cos\theta) r^{2n} \left( \dfrac{1}{a^{2n+1}} - \dfrac{a^{2n}}{b^{4n+1}} \right) &  (0 \leq r < a) \\
-\dfrac{Q}{4\pi\epsilon_0} \sum\limits_{n=0}^{\infty} \frac{(-1)^{n} (2n)!}{2^{2n} (n!)^{2}} P_{2n} (\cos \theta) \left( \dfrac{a^{2n}}{r^{2n+1}} - \dfrac{a^{2n} r^{2n}}{b^{4n+1}} \right) &  (a < r < b)
+\dfrac{Q}{4\pi\epsilon_{0}} \sum\limits_{n=0}^{\infty}\frac{(-1)^{n} (2n)!}{2^{2n} (n!)^{2}} P_{2n} (\cos\theta) r^{2n} \left( \dfrac{1}{a^{2n+1}} - \dfrac{a^{2n}}{b^{4n+1}} \right) &  (0 \leq r < a) \\
+\dfrac{Q}{4\pi\epsilon_{0}} \sum\limits_{n=0}^{\infty} \frac{(-1)^{n} (2n)!}{2^{2n} (n!)^{2}} P_{2n} (\cos \theta) \left( \dfrac{a^{2n}}{r^{2n+1}} - \dfrac{a^{2n} r^{2n}}{b^{4n+1}} \right) &  (a < r < b)
 \end{cases}
 $$

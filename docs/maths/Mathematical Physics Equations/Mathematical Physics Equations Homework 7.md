@@ -119,7 +119,7 @@ $$
 得到
 $$
 C_{2k} = (-1)^{k} \frac{m^{2}}{(2k + 1) 2k} \cdot \frac{m^{2}}{(2k - 1) (2k - 2)} \cdots \frac{m^{2}}{3 \cdot 2} C_{0} \\ =
-(-1)^{k} \frac{m^{2k} }{(2k + 1) !} C_{0}
+(-1)^{k} \frac{m^{2k}}{(2k + 1) !} C_{0}
 $$
 
 $$
@@ -160,7 +160,7 @@ $$
 
 (a) 
 $$
-w'' + (\lambda - \alpha z^2 - \beta z^4)w = 0
+w'' + (\lambda - \alpha z^{2} - \beta z^{4})w = 0
 $$
 假设 $w(z) = e^{S(z)}$
 
@@ -234,5 +234,5 @@ S_{2} = - \ln z
 $$
 得到主项为
 $$
-e^{S} = e^{\pm \left(\frac{\sqrt{\beta}}{3} z^{3} + \frac{\alpha}{2 \sqrt{\beta}} z \right) - \ln z} = \frac{e^{\pm \left(\frac{\sqrt{\beta}}{3} z^{3} + \frac{\alpha}{2 \sqrt{\beta}} z\right)} }{z}
+e^{S} = e^{\pm \left(\frac{\sqrt{\beta}}{3} z^{3} + \frac{\alpha}{2 \sqrt{\beta}} z \right) - \ln z} = \frac{e^{\pm \left(\frac{\sqrt{\beta}}{3} z^{3} + \frac{\alpha}{2 \sqrt{\beta}} z\right)}}{z}
 $$

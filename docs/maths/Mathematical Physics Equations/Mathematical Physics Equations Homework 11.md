@@ -108,24 +108,24 @@ $$
 $$
 令  
 $$
-F(t) = t J_0(t) \cos t + t J_1(t) \sin t
+F(t) = t J_{0}(t) \cos t + t J_{1}(t) \sin t
 $$
 则  
 $$
-F'(t) = J_0(t) \cos t + t J_0'(t) \cos t - t J_0(t) \sin t + J_1(t) \sin t + t J_1'(t) \sin t + t J_1(t) \cos t \\
-= J_0(t) \cos t + t(-J_1(t)) \cos t - t J_0(t) \sin t + J_1(t) \sin t + t\left(J_0(t) - \frac{J_1(t)}{t}\right) \sin t + t J_1(t) \cos t \\
-= J_0(t) \cos t - t J_1(t) \cos t - t J_0(t) \sin t + J_1(t) \sin t + t J_0(t) \sin t - J_1(t) \sin t + t J_1(t) \cos t \\
-= J_0(t) \cos t
+F'(t) = J_{0}(t) \cos t + t J_{0}'(t) \cos t - t J_{0}(t) \sin t + J_{1}(t) \sin t + t J_{1}'(t) \sin t + t J_{1}(t) \cos t \\
+= J_{0}(t) \cos t + t(-J_{1}(t)) \cos t - t J_{0}(t) \sin t + J_{1}(t) \sin t + t\left(J_{0}(t) - \frac{J_{1}(t)}{t}\right) \sin t + t J_{1}(t) \cos t \\
+= J_{0}(t) \cos t - t J_{1}(t) \cos t - t J_{0}(t) \sin t + J_{1}(t) \sin t + t J_{0}(t) \sin t - J_{1}(t) \sin t + t J_{1}(t) \cos t \\
+= J_{0}(t) \cos t
 $$
 
 因此  
 $$
-\int J_0(t) \cos t \, dt = t J_0(t) \cos t + t J_1(t) \sin t + C
+\int J_{0}(t) \cos t \, dt = t J_{0}(t) \cos t + t J_{1}(t) \sin t + C
 $$
 
 所以
 $$
-\int_0^x J_0(t) \cos t \, dt = \left. t J_0(t) \cos t + t J_1(t) \sin t \right|_0^x = x J_0(x) \cos x + x J_1(x) \sin x.
+\int_{0}^{x} J_{0}(t) \cos t \, dt = \left. t J_{0}(t) \cos t + t J_{1}(t) \sin t \right|_{0}^{x} = x J_{0}(x) \cos x + x J_{1}(x) \sin x.
 $$
 
 对于第二个积分，考虑 $\dv{}{x} (x^{n} J_{n} (x)) = x^{n} J_{n - 1} (x)$ ，所以
@@ -184,19 +184,19 @@ $$
 $$
 所以本征值问题的解为
 $$
-u(r, \varphi, t) = \sin 2\varphi \sum_{n=1}^{\infty} B_{2,n} \, J_2\left( \frac{\mu^{(2)}_{n}}{a} r \right) \exp\left( -\kappa \left( \frac{\mu^{(2)}_{n}}{a} \right)^2 t \right)
+u(r, \varphi, t) = \sin 2\varphi \sum_{n=1}^{\infty} B_{2,n} \, J_{2}\left( \frac{\mu^{(2)}_{n}}{a} r \right) \exp\left( -\kappa \left( \frac{\mu^{(2)}_{n}}{a} \right)^{2} t \right)
 $$
 其系数 $B_{2,n}$ 由初始条件确定
 $$
-B_{2,n} = \frac{ u_0 \int_0^a r J_2\left( \frac{\mu^{(2)}_{n}}{a} r \right) \mathrm{d}r }{ \int_0^a r \left[ J_2\left( \frac{\mu^{(2)}_{n}}{a} r \right) \right]^2 \mathrm{d}r }
+B_{2,n} = \frac{u_{0} \int_{0}^{a} r J_{2}\left( \frac{\mu^{(2)}_{n}}{a} r \right) \mathrm{d}r}{\int_{0}^{a} r \left[ J_{2}\left( \frac{\mu^{(2)}_{n}}{a} r \right) \right]^{2} \mathrm{d}r}
 $$
 
 计算积分得系数为
 $$
-B_{2,n} = \frac{2 u_0 \left[ 2 - 2 J_0(\mu^{(2)}_{n}) - \mu^{(2)}_{n} J_1(\mu^{(2)}_{n}) \right]}{{\mu^{(2)}_{n}}^{2} \left[ J_3(\mu^{(2)}_{n}) \right]^2}
+B_{2,n} = \frac{2 u_{0} \left[ 2 - 2 J_{0}(\mu^{(2)}_{n}) - \mu^{(2)}_{n} J_{1}(\mu^{(2)}_{n}) \right]}{{\mu^{(2)}_{n}}^{2} \left[ J_{3}(\mu^{(2)}_{n}) \right]^{2}}
 $$
 
 所以最终解为
 $$
-u(r, \varphi, t) = 2 u_0 \sin 2\varphi \sum_{n=1}^{\infty} \frac{2 - 2 J_0(\mu^{(2)}_{n}) - \mu^{(2)}_{n} J_1(\mu^{(2)}_{n})}{{\mu^{(2)}_{n}}^{2} \left[ J_3(\mu^{(2)}_{n}) \right]^2} J_2\left( \frac{\mu^{(2)}_{n}}{a} r \right) \exp\left( -\kappa \left( \frac{\mu^{(2)}_{n}}{a} \right)^2 t \right)
+u(r, \varphi, t) = 2 u_{0} \sin 2\varphi \sum_{n=1}^{\infty} \frac{2 - 2 J_{0}(\mu^{(2)}_{n}) - \mu^{(2)}_{n} J_{1}(\mu^{(2)}_{n})}{{\mu^{(2)}_{n}}^{2} \left[ J_{3}(\mu^{(2)}_{n}) \right]^{2}} J_{2}\left( \frac{\mu^{(2)}_{n}}{a} r \right) \exp\left( -\kappa \left( \frac{\mu^{(2)}_{n}}{a} \right)^{2} t \right)
 $$

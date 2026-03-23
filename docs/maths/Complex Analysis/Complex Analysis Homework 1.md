@@ -31,7 +31,7 @@ $$
 3 \cos^{2} \theta \sin \theta - \sin^{3} \theta
 $$
 
-7.请利用多倍角三角函数的线性关系表达 $\cos^n\theta$ 和 $\sin^n\theta$，并给出 $\cos^3\theta$ 和 $\sin^3\theta$ 的具体表达式。
+7.请利用多倍角三角函数的线性关系表达 $\cos^{n}\theta$ 和 $\sin^{n}\theta$，并给出 $\cos^{3}\theta$ 和 $\sin^{3}\theta$ 的具体表达式。
 $$
 \cos^{n} \theta = \left( \frac{e^{i  \theta} + e^{- i \theta}}{2} \right)^{n}  = \sum_{k = 0}^{[\frac{n + 1}{2}]} C_{n}^{k} \frac{e^{i (n - 2k) \theta} + e^{- i (n - 2k) \theta}}{2^{n}} = 
 \frac{1}{2^{n - 1}} \sum_{k = 0}^{[\frac{n + 1}{2}]} C_{n}^{k} \cos ((n - 2k) \theta)
@@ -64,12 +64,12 @@ $$
 $$
 再考虑沿着角向的逼近方式：
 $$
-\lim_{\Delta z \to 0} \frac{\Delta w}{\Delta z} = \lim_{\Delta \theta \to 0} \frac{\Delta u + i \Delta v}{r (i \cos \theta - \sin \theta) \Delta \theta} = \frac{1}{r} ((\frac{\partial v}{\partial \theta} \cos \theta - \frac{\partial u}{\partial \theta} \sin \theta) - i (\frac{\partial u }{\partial \theta} \cos \theta + \frac{\partial v}{\partial \theta} \sin \theta))
+\lim_{\Delta z \to 0} \frac{\Delta w}{\Delta z} = \lim_{\Delta \theta \to 0} \frac{\Delta u + i \Delta v}{r (i \cos \theta - \sin \theta) \Delta \theta} = \frac{1}{r} ((\frac{\partial v}{\partial \theta} \cos \theta - \frac{\partial u}{\partial \theta} \sin \theta) - i (\frac{\partial u}{\partial \theta} \cos \theta + \frac{\partial v}{\partial \theta} \sin \theta))
 $$
 对比上述二式，得到
 $$
 \frac{\partial u}{\partial r} \cos \theta + \frac{\partial v}{\partial r} \sin \theta =  \frac{1}{r} (\frac{\partial v}{\partial \theta} \cos \theta - \frac{\partial u}{\partial \theta} \sin \theta) \\
-\frac{\partial v}{\partial r} \cos \theta - \frac{\partial v}{\partial r} \sin \theta = - \frac{1}{r} (\frac{\partial u }{\partial \theta} \cos \theta + \frac{\partial v}{\partial \theta} \sin \theta)
+\frac{\partial v}{\partial r} \cos \theta - \frac{\partial v}{\partial r} \sin \theta = - \frac{1}{r} (\frac{\partial u}{\partial \theta} \cos \theta + \frac{\partial v}{\partial \theta} \sin \theta)
 $$
 即
 $$

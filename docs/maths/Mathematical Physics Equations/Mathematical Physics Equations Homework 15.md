@@ -19,55 +19,55 @@ $$
 $$
 \frac{\mathrm{d}^{2} G\left(x ; x^{\prime}\right)}{\mathrm{d} x^{2}}+\omega_{0}^{2} G\left(x ; x^{\prime}\right)=\delta\left(x-x^{\prime}\right), \quad 0<x, x^{\prime}<l
 $$
-当 $x \neq x'$ 时，方程为齐次方程 $G'' + \omega_0^2 G = 0$，其通解形式为 $C_1 \sin(\omega_0 x) + C_2 \cos(\omega_0 x)$。
+当 $x \neq x'$ 时，方程为齐次方程 $G'' + \omega_{0}^{2} G = 0$，其通解形式为 $C_{1} \sin(\omega_{0} x) + C_{2} \cos(\omega_{0} x)$。
 
 (1) 在区间 $0 < x < x'$ 上，满足 $G(0)=0$ 的解的形式为：
 $$
-G_1(x) = A \sin(\omega_0 x)
+G_{1}(x) = A \sin(\omega_{0} x)
 $$
 (2) 在区间 $x' < x < l$ 上，满足 $G(l)=0$ 的解的形式为
 $$
-G_2(x) = B \sin(\omega_0(l-x))
+G_{2}(x) = B \sin(\omega_{0}(l-x))
 $$
 (3) 在 $x=x'$ 处，$G$ 必须连续
 $$
-A \sin(\omega_0 x') = B \sin(\omega_0(l-x'))
+A \sin(\omega_{0} x') = B \sin(\omega_{0}(l-x'))
 $$
 由此得出 $B$ 与 $A$ 的关系
 $$
-B = A \frac{\sin(\omega_0 x')}{\sin(\omega_0(l-x'))}
+B = A \frac{\sin(\omega_{0} x')}{\sin(\omega_{0}(l-x'))}
 $$
 (4) 在 $x=x'$ 处，$G$ 的一阶导数有跃变，跃变度为 1
 $$
-\left. \frac{dG_2}{dx} \right|_{x=x'} - \left. \frac{dG_1}{dx} \right|_{x=x'} = 1
+\left. \frac{dG_{2}}{dx} \right|_{x=x'} - \left. \frac{dG_{1}}{dx} \right|_{x=x'} = 1
 $$
 计算导数并代入
 $$
--B\omega_0 \cos(\omega_0(l-x')) - A\omega_0 \cos(\omega_0 x') = 1
+-B\omega_{0} \cos(\omega_{0}(l-x')) - A\omega_{0} \cos(\omega_{0} x') = 1
 $$
 将 $B$ 的表达式代入上式
 $$
--A \frac{\sin(\omega_0 x')}{\sin(\omega_0(l-x'))} \omega_0 \cos(\omega_0(l-x')) - A\omega_0 \cos(\omega_0 x') = 1
+-A \frac{\sin(\omega_{0} x')}{\sin(\omega_{0}(l-x'))} \omega_{0} \cos(\omega_{0}(l-x')) - A\omega_{0} \cos(\omega_{0} x') = 1
 $$
-提取公因式 $-A\omega_0 / \sin(\omega_0(l-x'))$ 并整理括号内的项
+提取公因式 $-A\omega_{0} / \sin(\omega_{0}(l-x'))$ 并整理括号内的项
 $$
--A \omega_0 \frac{\sin(\omega_0 x') \cos(\omega_0(l-x')) + \cos(\omega_0 x') \sin(\omega_0(l-x'))}{\sin(\omega_0(l-x'))} = 1
+-A \omega_{0} \frac{\sin(\omega_{0} x') \cos(\omega_{0}(l-x')) + \cos(\omega_{0} x') \sin(\omega_{0}(l-x'))}{\sin(\omega_{0}(l-x'))} = 1
 $$
-利用三角恒等式 $\sin(\alpha+\beta)$，分子化简为 $\sin(\omega_0 l)$
+利用三角恒等式 $\sin(\alpha+\beta)$，分子化简为 $\sin(\omega_{0} l)$
 $$
--A \omega_0 \frac{\sin(\omega_0 l)}{\sin(\omega_0(l-x'))} = 1
+-A \omega_{0} \frac{\sin(\omega_{0} l)}{\sin(\omega_{0}(l-x'))} = 1
 $$
 解得系数 $A$
 $$
-A = -\frac{\sin(\omega_0(l-x'))}{\omega_0 \sin(\omega_0 l)}
+A = -\frac{\sin(\omega_{0}(l-x'))}{\omega_{0} \sin(\omega_{0} l)}
 $$
 代回可求得 $B$
 $$
-B = -\frac{\sin(\omega_0 x')}{\omega_0 \sin(\omega_0 l)}
+B = -\frac{\sin(\omega_{0} x')}{\omega_{0} \sin(\omega_{0} l)}
 $$
 综上，格林函数可以写为统一形式，令 $x_< = \min(x, x'), x_> = \max(x, x')$
 $$
-G(x ; x^{\prime}) = -\frac{\sin(\omega_0 x_<) \sin(\omega_0(l-x_>))}{\omega_0 \sin(\omega_0 l)}
+G(x ; x^{\prime}) = -\frac{\sin(\omega_{0} x_<) \sin(\omega_{0}(l-x_>))}{\omega_{0} \sin(\omega_{0} l)}
 $$
 
 利用格林函数求解定解问题
@@ -78,28 +78,28 @@ y^{\prime \prime}(x)+\omega_{0}^{2} y(x)=f(x), \quad y(0)=a, \quad y(l)=b
 $$
 利用格林公式，即 Lagrange 恒等式在区间上的积分
 $$
-\int_0^l [G(x;x') L_{x'} y(x') - y(x') L_{x'} G(x;x')] \mathrm{d}x' = \left[ G(x;x') \frac{\mathrm{d}y(x')}{\mathrm{d}x'} - y(x') \frac{\partial G(x;x')}{\partial x'} \right]_{x'=0}^{x'=l}
+\int_{0}^{l} [G(x;x') L_{x'} y(x') - y(x') L_{x'} G(x;x')] \mathrm{d}x' = \left[ G(x;x') \frac{\mathrm{d}y(x')}{\mathrm{d}x'} - y(x') \frac{\partial G(x;x')}{\partial x'} \right]_{x'=0}^{x'=l}
 $$
-其中算子 $L = \frac{d^2}{dx^2} + \omega_0^2$。代入方程 $L y = f$ 和 $L G = \delta(x-x')$
+其中算子 $L = \frac{d^{2}}{dx^{2}} + \omega_{0}^{2}$。代入方程 $L y = f$ 和 $L G = \delta(x-x')$
 $$
-\int_0^l [G(x;x') f(x') - y(x') \delta(x'-x)] \mathrm{d}x' = \left[ G(x;x') y'(x') - y(x') \frac{\partial G}{\partial x'} \right]_0^l
+\int_{0}^{l} [G(x;x') f(x') - y(x') \delta(x'-x)] \mathrm{d}x' = \left[ G(x;x') y'(x') - y(x') \frac{\partial G}{\partial x'} \right]_{0}^{l}
 $$
 利用 $\delta$ 函数的筛选性质，以及 $G$ 在边界为零的条件 $G(x;0)=G(x;l)=0$，并代入 $y$ 的边界值
 $$
-\int_0^l G(x;x') f(x') \mathrm{d}x' - y(x) = - y(l) \frac{\partial G(x;x')}{\partial x'}\Bigg|_{x'=l} + y(0) \frac{\partial G(x;x')}{\partial x'}\Bigg|_{x'=0}
+\int_{0}^{l} G(x;x') f(x') \mathrm{d}x' - y(x) = - y(l) \frac{\partial G(x;x')}{\partial x'}\Bigg|_{x'=l} + y(0) \frac{\partial G(x;x')}{\partial x'}\Bigg|_{x'=0}
 $$
 移项整理得到解的表达式
 $$
-y(x) = \int_0^l G(x;x') f(x') \mathrm{d}x' + b \frac{\partial G(x;x')}{\partial x'}\Bigg|_{x'=l} - a \frac{\partial G(x;x')}{\partial x'}\Bigg|_{x'=0}
+y(x) = \int_{0}^{l} G(x;x') f(x') \mathrm{d}x' + b \frac{\partial G(x;x')}{\partial x'}\Bigg|_{x'=l} - a \frac{\partial G(x;x')}{\partial x'}\Bigg|_{x'=0}
 $$
 计算边界上的法向导数
 当 $x' \to l$ 时，使用 $x < x'$ 的分支
 $$
-\frac{\partial G}{\partial x'}\Bigg|_{x'=l} = \frac{\partial}{\partial x'} \left( -\frac{\sin(\omega_0 x) \sin(\omega_0(l-x'))}{\omega_0 \sin(\omega_0 l)} \right) \Bigg|_{x'=l} = \frac{\sin(\omega_0 x)}{\sin(\omega_0 l)}
+\frac{\partial G}{\partial x'}\Bigg|_{x'=l} = \frac{\partial}{\partial x'} \left( -\frac{\sin(\omega_{0} x) \sin(\omega_{0}(l-x'))}{\omega_{0} \sin(\omega_{0} l)} \right) \Bigg|_{x'=l} = \frac{\sin(\omega_{0} x)}{\sin(\omega_{0} l)}
 $$
 当 $x' \to 0$ 时，使用 $x > x'$ 的分支
 $$
-\frac{\partial G}{\partial x'}\Bigg|_{x'=0} = \frac{\partial}{\partial x'} \left( -\frac{\sin(\omega_0(l-x)) \sin(\omega_0 x')}{\omega_0 \sin(\omega_0 l)} \right) \Bigg|_{x'=0} = -\frac{\sin(\omega_0(l-x))}{\sin(\omega_0 l)}
+\frac{\partial G}{\partial x'}\Bigg|_{x'=0} = \frac{\partial}{\partial x'} \left( -\frac{\sin(\omega_{0}(l-x)) \sin(\omega_{0} x')}{\omega_{0} \sin(\omega_{0} l)} \right) \Bigg|_{x'=0} = -\frac{\sin(\omega_{0}(l-x))}{\sin(\omega_{0} l)}
 $$
 最终解为
 $$
@@ -166,12 +166,12 @@ $$
 $$
 \phi_{nm}(x,y) = \sin\left(\frac{n\pi x}{a}\right) \sin\left(\frac{m\pi y}{b}\right)
 $$
-对应的本征值 $k_{nm}^2 = (n\pi/a)^2 + (m\pi/b)^2$
+对应的本征值 $k_{nm}^{2} = (n\pi/a)^{2} + (m\pi/b)^{2}$
 将 $\delta$ 函数展开
 $$
-\delta(x-x')\delta(y-y') = \frac{4}{ab} \sum_{n=1}^\infty \sum_{m=1}^\infty \sin\left(\frac{n\pi x'}{a}\right) \sin\left(\frac{m\pi y'}{b}\right) \sin\left(\frac{n\pi x}{a}\right) \sin\left(\frac{m\pi y}{b}\right)
+\delta(x-x')\delta(y-y') = \frac{4}{ab} \sum_{n=1}^{\infty} \sum_{m=1}^{\infty} \sin\left(\frac{n\pi x'}{a}\right) \sin\left(\frac{m\pi y'}{b}\right) \sin\left(\frac{n\pi x}{a}\right) \sin\left(\frac{m\pi y}{b}\right)
 $$
-设 $G = \sum C_{nm} \phi_{nm}$，代入方程得 $C_{nm} = \frac{4}{ab} \frac{\phi_{nm}(x',y')}{k_{nm}^2}$
+设 $G = \sum C_{nm} \phi_{nm}$，代入方程得 $C_{nm} = \frac{4}{ab} \frac{\phi_{nm}(x',y')}{k_{nm}^{2}}$
 
 格林函数为
 $$
@@ -186,15 +186,15 @@ $$
 
 利用格林第二公式
 $$
-\iint_D (u \nabla^2 G - G \nabla^2 u) \mathrm{d}x' \mathrm{d}y' = \oint_{\partial D} (u \frac{\partial G}{\partial n'} - G \frac{\partial u}{\partial n'}) \mathrm{d}l'
+\iint_{D} (u \nabla^{2} G - G \nabla^{2} u) \mathrm{d}x' \mathrm{d}y' = \oint_{\partial D} (u \frac{\partial G}{\partial n'} - G \frac{\partial u}{\partial n'}) \mathrm{d}l'
 $$
 代入方程性质及 $G$ 在边界为 0 的条件，并注意外法线方向 $\hat{n}'$
 $$
--u(x,y) - \iint_D G f \mathrm{d}x' \mathrm{d}y' = \oint_{\partial D} u(x',y') \frac{\partial G}{\partial n'} \mathrm{d}l'
+-u(x,y) - \iint_{D} G f \mathrm{d}x' \mathrm{d}y' = \oint_{\partial D} u(x',y') \frac{\partial G}{\partial n'} \mathrm{d}l'
 $$
 解的形式为
 $$
-u(x,y) = -\iint_D G(x,y;x',y') f(x',y') \mathrm{d}x' \mathrm{d}y' - \oint_{\partial D} u(x',y') \frac{\partial G(x,y;x',y')}{\partial n'} \mathrm{d}l'
+u(x,y) = -\iint_{D} G(x,y;x',y') f(x',y') \mathrm{d}x' \mathrm{d}y' - \oint_{\partial D} u(x',y') \frac{\partial G(x,y;x',y')}{\partial n'} \mathrm{d}l'
 $$
 具体写出边界积分项
 $$

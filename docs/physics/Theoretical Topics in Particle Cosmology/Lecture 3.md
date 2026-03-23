@@ -108,21 +108,21 @@ Question: How singular can $A_{\Phi \Psi}$ be as a function of p and q?
 It can be very singular as $\delta^{3} (\vec{p}_{1}- \vec{q}_{1}) \delta^{3} (\vec{p}_{2} - \vec{q}_{2})$
 
 Redefine the interaction matrix as
-\[
+$$
 A_{p_{1} p_{2} \to p_{3} p_{4}} = \delta_{13} \delta_{24} + (2 \pi)^{4} \delta^{4} (p_{1} + p_{2} - p_{3} - p_{4}) \times i M_{34,12}
-\]
+$$
 With the property
-\[
+$$
 \lim_{|\vec{x}_{1} - \vec{x}_{2}| \to \infty} M_{34,12} = 0
-\]
+$$
 Interpretation 
-\[
+$$
 \lim_{|\vec{x}_{1} - \vec{x}_{2}| \to \infty} \int \prod_{a} \left[\dd[3]{\vec{p}}_{a} e^{i \vec{p}_{a} \cdot \vec{x}_{a}}\right] M_{34,12} = 0
-\]
+$$
 Consider a simple example
-\[
+$$
 g (\vec{x}) = \int \dd[3]{\vec{p}} f(\vec{p}) e^{i \vec{p} \cdot \vec{x}}
-\]
+$$
 If $f(\vec{p})$ is analytic within the strip, then $g (x) \to 0$ exponentially fast as $x \to \infty$. 
 
 We wat a long-range force $g(x) \to \frac{1}{x}$ as $x \to \infty$, which means $f(p)$ is non-analytic at $p = 0$.
@@ -136,30 +136,30 @@ $M$ has no singularity, other than pole/branch cuts.
 $S$ is unitary, which means $S^{\dagger} S = 1$.
 
 Optical theorem: $2 \to 2$ forward scattering
-\[
+$$
 S = 1 + i (2 \pi)^{4} \delta^{4} (p) M
-\]
+$$
 
-\[
+$$
 \Im M(p_{1} p_{2} \to p_{1} p_{2})  = \sum_{X \in \text{final states}} (2 \pi)^{4} \delta^{4} (p_{1} + p_{2} - p_{X}) |M (p_{1} p_{2} \to X)|^{2}
-\]
+$$
 
 Unitarity tells us that the poles in S-matrices cannot be more singular than simple poles.
 
 $s = -(p_{1} + p_{2})^{2}$, if $M$ has a simple pole at $s = m^{2} - i \epsilon$
-\[
+$$
 M  \to \frac{R}{-s + m^{2} - i\epsilon} = P \frac{R}{-s + m^{2}} + i \pi R \delta(s - m^{2}) \\
 \Rightarrow \Im M = \pi R \delta(s - m^{2})
-\]
+$$
 RHS of Optical theorem
-\[
+$$
 \sum_{X} \delta^{4} (p_{12} - p_{X}) |M|^{2} \quad M_{12 \to X} = C + \cdots
-\]
+$$
 
-\[
+$$
 \Rightarrow \int \frac{\dd{\vec{p}}_{X}}{(2 \pi)^{3}} \frac{1}{2 E_{pX}} \delta^{4} (p_{X} - p_{1} - p_{2}) \times |C|^{2} + \cdots \\
 \propto \delta (s - m^{2}) \times |C|^{2} + \cdots
-\]
+$$
 
 Remarks: causality [$E_{X}$]
 

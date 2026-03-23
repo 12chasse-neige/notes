@@ -4,7 +4,7 @@ Chasse_neige
 
 2.证明下列等式
 
-(a) $\delta(x^2 - a^2) = \frac{1}{2|a|}[\delta(x - a) + \delta(x + a)]$
+(a) $\delta(x^{2} - a^{2}) = \frac{1}{2|a|}[\delta(x - a) + \delta(x + a)]$
 
 证明：
 $$
@@ -22,34 +22,34 @@ $$
 $$
 (c) 定义三维 $\delta$ 函数
 $$
-\delta(\mathbf{r} - \mathbf{r}_0) = \delta(x - x_0)\delta(y - y_0)\delta(z - z_0)
+\delta(\mathbf{r} - \mathbf{r}_{0}) = \delta(x - x_{0})\delta(y - y_{0})\delta(z - z_{0})
 $$
 
 
 (1)
 $$
-\nabla^2\frac{1}{|\mathbf{r} - \mathbf{r}_0|} = -4\pi\delta(\mathbf{r} - \mathbf{r}_0)
+\nabla^{2}\frac{1}{|\mathbf{r} - \mathbf{r}_{0}|} = -4\pi\delta(\mathbf{r} - \mathbf{r}_{0})
 $$
 
 证明：
 
 考虑任意电势分布 $\varphi (\mathbf{r})$ 
 $$
-\int \varphi (\mathbf{r}) \nabla^{2} \frac{1}{|\mathbf{r} - \mathbf{r}_0|} \, \dd{\tau} = - \int \frac{1}{|\mathbf{r} - \mathbf{r}_0|} \nabla^{2} \varphi (\mathbf{r}) \, \dd{\tau} = - \int \frac{\rho (\mathbf{r})}{|\mathbf{r} - \mathbf{r}_0|} \, \dd{\tau} = - 4 \pi \varphi (\mathbf{r}_{0})
+\int \varphi (\mathbf{r}) \nabla^{2} \frac{1}{|\mathbf{r} - \mathbf{r}_{0}|} \, \dd{\tau} = - \int \frac{1}{|\mathbf{r} - \mathbf{r}_{0}|} \nabla^{2} \varphi (\mathbf{r}) \, \dd{\tau} = - \int \frac{\rho (\mathbf{r})}{|\mathbf{r} - \mathbf{r}_{0}|} \, \dd{\tau} = - 4 \pi \varphi (\mathbf{r}_{0})
 $$
-所以在 $\frac{\varphi}{|\mathbf{r} - \mathbf{r}_0|}$ 在无穷远处收敛的基础上
+所以在 $\frac{\varphi}{|\mathbf{r} - \mathbf{r}_{0}|}$ 在无穷远处收敛的基础上
 $$
-\nabla^2\frac{1}{|\mathbf{r} - \mathbf{r}_0|} = -4\pi\delta(\mathbf{r} - \mathbf{r}_0)
+\nabla^{2}\frac{1}{|\mathbf{r} - \mathbf{r}_{0}|} = -4\pi\delta(\mathbf{r} - \mathbf{r}_{0})
 $$
 (2) 在球坐标下
 $$
-\delta(\mathbf{r} - \mathbf{r}_0) = \frac{1}{r^2}\delta(r - r_0)\delta(\cos\theta - \cos\theta_0)\delta(\varphi - \varphi_0)
+\delta(\mathbf{r} - \mathbf{r}_{0}) = \frac{1}{r^{2}}\delta(r - r_{0})\delta(\cos\theta - \cos\theta_{0})\delta(\varphi - \varphi_{0})
 $$
 
 以及在柱坐标下
 
 $$
-\delta(\mathbf{r} - \mathbf{r}_0) = \frac{1}{r}\delta(r - r_0)\delta(\varphi - \varphi_0)\delta(z - z_0)
+\delta(\mathbf{r} - \mathbf{r}_{0}) = \frac{1}{r}\delta(r - r_{0})\delta(\varphi - \varphi_{0})\delta(z - z_{0})
 $$
 
 证明：
@@ -70,8 +70,8 @@ $$
 $$
 所以
 $$
-\delta(\mathbf{r} - \mathbf{r}_0) = \frac{1}{r^2 \sin \theta} \delta(r - r_0)\delta(\theta - \theta_0)\delta(\varphi - \varphi_0)\\ = 
-\frac{1}{r^2}\delta(r - r_0)\delta(\cos\theta - \cos\theta_0)\delta(\varphi - \varphi_0)
+\delta(\mathbf{r} - \mathbf{r}_{0}) = \frac{1}{r^{2} \sin \theta} \delta(r - r_{0})\delta(\theta - \theta_{0})\delta(\varphi - \varphi_{0})\\ = 
+\frac{1}{r^{2}}\delta(r - r_{0})\delta(\cos\theta - \cos\theta_{0})\delta(\varphi - \varphi_{0})
 $$
 在柱坐标下，同样存在坐标变换关系
 $$
@@ -85,7 +85,7 @@ $$
 $$
 得到
 $$
-\delta(\mathbf{r} - \mathbf{r}_0) = \delta(x - x_{0}) \delta (y - y_{0}) \delta (z - z_{0}) = \frac{1}{r}\delta(r - r_0)\delta(\varphi - \varphi_0)\delta(z - z_0)
+\delta(\mathbf{r} - \mathbf{r}_{0}) = \delta(x - x_{0}) \delta (y - y_{0}) \delta (z - z_{0}) = \frac{1}{r}\delta(r - r_{0})\delta(\varphi - \varphi_{0})\delta(z - z_{0})
 $$
 3.求解下列常微分方程的定解问题
 
@@ -177,7 +177,7 @@ $$
 
 得到解函数的系数为
 $$
-c_{nlm} =  \frac{\int \rho(r, \theta, \varphi) j_{l} (k_{nl} \frac{r}{a}) Y_{lm}^{*} (\theta, \varphi) r^{2} \sin \theta \, \dd{r} \dd{\theta} \dd{\varphi}}{\frac{k_{nl}^{2}}{2} {j'_{nl}}^{2} (k_{nl}) }
+c_{nlm} =  \frac{\int \rho(r, \theta, \varphi) j_{l} (k_{nl} \frac{r}{a}) Y_{lm}^{*} (\theta, \varphi) r^{2} \sin \theta \, \dd{r} \dd{\theta} \dd{\varphi}}{\frac{k_{nl}^{2}}{2} {j'_{nl}}^{2} (k_{nl})}
 $$
 所以对应的解为
 $$

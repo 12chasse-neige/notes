@@ -86,26 +86,26 @@ $$
 使用分离变量法求解 $v(x,t)$
 
 $$
-v(x,t) = \sum_{n=1}^{\infty} \sin \frac{n \pi x}{l} \left( A_n \cos \omega_n t + B_n \sin \omega_n t \right)
+v(x,t) = \sum_{n=1}^{\infty} \sin \frac{n \pi x}{l} \left( A_{n} \cos \omega_{n} t + B_{n} \sin \omega_{n} t \right)
 $$
 
-其中 $\omega_n = \sqrt{ \alpha^{2} \left( \frac{n \pi}{l} \right)^2 + \frac{\beta^{2}}{\alpha^{2}} }$，系数 $A_n$ 和 $B_n$ 由初始条件确定
+其中 $\omega_{n} = \sqrt{\alpha^{2} \left( \frac{n \pi}{l} \right)^{2} + \frac{\beta^{2}}{\alpha^{2}}}$，系数 $A_{n}$ 和 $B_{n}$ 由初始条件确定
 
 $$
-A_n = \frac{2}{l} \int_{0}^{l} e^{-\frac{\beta}{\alpha^{2}} x} \varphi(x) \sin \frac{n \pi x}{l} \, dx
+A_{n} = \frac{2}{l} \int_{0}^{l} e^{-\frac{\beta}{\alpha^{2}} x} \varphi(x) \sin \frac{n \pi x}{l} \, dx
 $$
 
 $$
-B_n = \frac{2}{l \omega_n} \int_{0}^{l} e^{-\frac{\beta}{\alpha^{2}} x} \psi(x) \sin \frac{n \pi x}{l} \, dx
+B_{n} = \frac{2}{l \omega_{n}} \int_{0}^{l} e^{-\frac{\beta}{\alpha^{2}} x} \psi(x) \sin \frac{n \pi x}{l} \, dx
 $$
 
 最终，原问题的解为：
 
 $$
-u(x,t) = e^{\frac{\beta}{\alpha^{2}} x} \sum_{n=1}^{\infty} \sin \frac{n \pi x}{l} \left( A_n \cos \omega_n t + B_n \sin \omega_n t \right)
+u(x,t) = e^{\frac{\beta}{\alpha^{2}} x} \sum_{n=1}^{\infty} \sin \frac{n \pi x}{l} \left( A_{n} \cos \omega_{n} t + B_{n} \sin \omega_{n} t \right)
 $$
 
-其中 $\omega_n$, $A_n$, $B_n$ 如上所示
+其中 $\omega_{n}$, $A_{n}$, $B_{n}$ 如上所示
 
 12.求解如下热传导问题的稳定解
 $$

@@ -8,26 +8,26 @@ Chasse_neige
 
 (b)
 $$
-\sin(z_1 + z_2) = \sin z_1 \cos z_2 + \cos z_1 \sin z_2
+\sin(z_{1} + z_{2}) = \sin z_{1} \cos z_{2} + \cos z_{1} \sin z_{2}
 $$
 $$
-\cos(z_1 + z_2) = \cos z_1 \cos z_2 - \sin z_1 \sin z_2
+\cos(z_{1} + z_{2}) = \cos z_{1} \cos z_{2} - \sin z_{1} \sin z_{2}
 $$
 
 证明
 $$
 \sin(z_{1} + z_{2}) = \frac{e^{i (z_{1} + z_{2})} - e^{-i (z_{1} + z_{2})}}{2i} = \frac{(e^{i z_{1}} + e^{-i z_{1}}) (e^{i z_{2}} - e^{-i z_{2}}) + (e^{i z_{1}} - e^{-i z_{1}})(e^{i z_{2}} + e^{-i z_{2}})}{4i} \\ = 
-\frac{e^{i z_{1}} + e^{-i z_{1}}}{2} \frac{e^{i z_{2}} - e^{-i z_{2}}}{2i} + \frac{e^{i z_{1}} - e^{-i z_{1}}}{2i} \frac{e^{i z_{2}} + e^{-i z_{2}}}{2} = \sin z_1 \cos z_2 + \cos z_1 \sin z_2
+\frac{e^{i z_{1}} + e^{-i z_{1}}}{2} \frac{e^{i z_{2}} - e^{-i z_{2}}}{2i} + \frac{e^{i z_{1}} - e^{-i z_{1}}}{2i} \frac{e^{i z_{2}} + e^{-i z_{2}}}{2} = \sin z_{1} \cos z_{2} + \cos z_{1} \sin z_{2}
 $$
 
 $$
 \cos (z_{1} + z_{2}) = \frac{e^{i (z_{1} + z_{2})} + e^{-i (z_{1} + z_{2})}}{2} = \frac{(e^{i z_{1}} + e^{-i z_{1}}) (e^{i z_{2}} + e^{-i z_{2}}) + (e^{i z_{1}} - e^{-i z_{1}})(e^{i z_{2}} - e^{-i z_{2}})}{4} \\ = 
-\frac{e^{i z_{1}} + e^{-i z_{1}}}{2} \frac{e^{i z_{2}} + e^{-i z_{2}}}{2} - \frac{e^{i z_{1}} - e^{-i z_{1}}}{2i} \frac{e^{i z_{2}} - e^{-i z_{2}}}{2i} = \cos z_1 \cos z_2 - \sin z_1 \sin z_2
+\frac{e^{i z_{1}} + e^{-i z_{1}}}{2} \frac{e^{i z_{2}} + e^{-i z_{2}}}{2} - \frac{e^{i z_{1}} - e^{-i z_{1}}}{2i} \frac{e^{i z_{2}} - e^{-i z_{2}}}{2i} = \cos z_{1} \cos z_{2} - \sin z_{1} \sin z_{2}
 $$
 
 (d)
 $$
-\cosh^2 z - \sinh^2 z = 1, \quad 1 - \tanh^2 z = \text{sech}^2 z
+\cosh^{2} z - \sinh^{2} z = 1, \quad 1 - \tanh^{2} z = \text{sech}^{2} z
 $$
 
 证明
@@ -111,7 +111,7 @@ $$
 
 4.判断下列函数是否为多值函数, 若为多值函数, 请分析其支点的情况
 
-(1) $\sqrt{1 - z^3}$
+(1) $\sqrt{1 - z^{3}}$
 
 是多值函数
 
@@ -124,7 +124,7 @@ $$
 3. $z = - \frac{1}{2} - \frac{\sqrt{3}}{2} i$：此时$z$绕行一圈后$w$ 的辐角变化$\pi$，是支点
 4. 无穷远点：此时$z$绕行一圈后$w$ 的辐角变化$3 \pi$，是支点
 
-(2) $\sqrt[3]{z^2 - 1}$
+(2) $\sqrt[3]{z^{2} - 1}$
 
 是多值函数
 

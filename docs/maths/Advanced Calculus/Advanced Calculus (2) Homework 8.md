@@ -17,9 +17,9 @@ S = \iint_{D} dx dy = \iint_{\Phi^{-1} (D)} \begin{vmatrix} y & - \frac{y}{x^{2}
 \iint_{\Phi^{-1} (D)} \begin{vmatrix} \sqrt{uv} & - \frac{v}{\sqrt{\frac{u}{v}}} \\ \sqrt{\frac{u}{v}} & \frac{1}{\sqrt{\frac{u}{v}}} \end{vmatrix}^{-1} du dv = \iint_{\Phi^{-1} (D)} \frac{1}{2v} du dv \\ =
 \frac{b - a}{2} \ln \frac{d}{c}
 $$
-2.设四条曲线 $x^2 - y^2 = 1, x^2 - y^2 = 4, \frac{x^2}{4} + y^2 = 1$ 以及 $\frac{x^2}{4} + y^2 = 4$ 在第一象限内围成的平面区域为 $D$。计算积分
+2.设四条曲线 $x^{2} - y^{2} = 1, x^{2} - y^{2} = 4, \frac{x^{2}}{4} + y^{2} = 1$ 以及 $\frac{x^{2}}{4} + y^{2} = 4$ 在第一象限内围成的平面区域为 $D$。计算积分
 $$
-\iint_D \frac{xy}{x^2 - y^2} dxdy
+\iint_{D} \frac{xy}{x^{2} - y^{2}} dxdy
 $$
 
 作换元
@@ -31,17 +31,17 @@ $$
 
 利用换元公式
 $$
-\iint_D \frac{xy}{x^2 - y^2} dxdy = \iint_{\Phi^{-1} (D)} (f \circ \Phi) \det (J_{\Phi}) du dv \\ =
+\iint_{D} \frac{xy}{x^{2} - y^{2}} dxdy = \iint_{\Phi^{-1} (D)} (f \circ \Phi) \det (J_{\Phi}) du dv \\ =
 \iint_{\Phi^{-1} (D)} \frac{\frac{4}{5} \sqrt{(u + v) (v - \frac{u}{4})}}{u} \begin{vmatrix} \frac{1}{\sqrt{5 (u + v)}} & - \frac{1}{4} \frac{1}{\sqrt{5 (v - \frac{u}{4})}} \\ \frac{1}{\sqrt{5 (u + v)}} & \frac{1}{\sqrt{5 (v - \frac{u}{4})}} \end{vmatrix} du dv \\ =
 \iint_{\Phi^{-1} (D)} \frac{1}{5u} du dv = \frac{6}{5} \ln 2
 $$
 3.给定 $a, b, c > 0$，令
 $$
-V = \{(x, y, z) | \frac{x^2}{a^2} + \frac{y^2}{b^2} + \frac{z^2}{c^2} \leq 1, z \geq 0\}
+V = \{(x, y, z) | \frac{x^{2}}{a^{2}} + \frac{y^{2}}{b^{2}} + \frac{z^{2}}{c^{2}} \leq 1, z \geq 0\}
 $$
 计算三重积分
 $$
-\iiint_V zdxdydz
+\iiint_{V} zdxdydz
 $$
 
 作换元
@@ -54,18 +54,18 @@ $$
 
 利用换元公式
 $$
-\iiint_V zdxdydz = \iiint_{\Phi^{-1} (V)} (f \circ \Phi) \det (J_{\Phi}) dr d\theta d\phi \\ =
+\iiint_{V} zdxdydz = \iiint_{\Phi^{-1} (V)} (f \circ \Phi) \det (J_{\Phi}) dr d\theta d\phi \\ =
 \iiint_{\Phi^{-1} (V)} c r \cos \theta abc r^{2} \sin \theta dr d \theta d \phi \\ = 
 \iiint_{\Phi^{-1} (V)}abc^{2} r^{3} dr \sin \theta \cos \theta d \theta d \phi \\ =
 abc^{2} \cdot \frac{1}{4} \cdot \frac{1}{2} \cdot 2 \pi = \frac{\pi}{4} abc^{2}
 $$
 4.考虑三维区域
 $$
-V = \{(x, y, z) | x^2 + y^2 + z^2 + xy + yz + zx \leq 1\}
+V = \{(x, y, z) | x^{2} + y^{2} + z^{2} + xy + yz + zx \leq 1\}
 $$
 计算 $V$ 的体积 (提示: 把 $V$ 的定义式配方, 然后适当换元)
 $$
-x^2 + y^2 + z^2 + xy + yz + zx \leq 1  \\
+x^{2} + y^{2} + z^{2} + xy + yz + zx \leq 1  \\
 (\frac{\sqrt{2}}{2} x + \frac{\sqrt{2}}{2} y)^{2} + (\frac{\sqrt{2}}{2} y + \frac{\sqrt{2}}{2} z)^{2} + (\frac{\sqrt{2}}{2} x + \frac{\sqrt{2}}{2} z)^{2} \leq 1
 $$
 所以作换元
@@ -76,7 +76,7 @@ w = \frac{\sqrt{2}}{2} x + \frac{\sqrt{2}}{2} y
 $$
 利用换元公式
 $$
-\iiint_V dxdydz = \iiint_{\Phi^{-1} (V)} (f \circ \Phi) \det (J_{\Phi}) du dv dw \\ =
+\iiint_{V} dxdydz = \iiint_{\Phi^{-1} (V)} (f \circ \Phi) \det (J_{\Phi}) du dv dw \\ =
 \iiint_{\Phi^{-1} (V)} \begin{vmatrix} 0 & \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2} \\
 \frac{\sqrt{2}}{2} & 0 & \frac{\sqrt{2}}{2} \\
 \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2} & 0 \end{vmatrix}^{-1} du dv dw \\ = 
@@ -84,9 +84,9 @@ $$
 $$
 5.设 $f$ 在矩形区域 $[a, b] \times [c, d]$ 上连续，且有连续的偏导函数 $\frac{\partial f}{\partial x}$。
 
-(1) 证明: 对任何 $x_0 \in [a, b]$，有
+(1) 证明: 对任何 $x_{0} \in [a, b]$，有
 $$
-\int_c^d f(x_0, y) dy = \int_c^d f(a, y) dy + \int_a^{x_0} dx \int_c^d \frac{\partial f(x, y)}{\partial x} dy
+\int_{c}^{d} f(x_{0}, y) dy = \int_{c}^{d} f(a, y) dy + \int_{a}^{x_{0}} dx \int_{c}^{d} \frac{\partial f(x, y)}{\partial x} dy
 $$
 
 证明
@@ -95,7 +95,7 @@ $$
 
 容易得知
 $$
-\left. \frac{d}{dx} g (x) \right|_{x = x_{0}} = \left. \frac{\partial f}{\partial x} \right|_{ (x,y) = (x_{0}, y_{0})}
+\left. \frac{d}{dx} g (x) \right|_{x = x_{0}} = \left. \frac{\partial f}{\partial x} \right|_{(x,y) = (x_{0}, y_{0})}
 $$
 由于偏导数 $\frac{\partial f}{\partial x}$ 连续，所以 $g'$ 连续，对 $g (x)$ 使用一元的 N-L 公式
 $$
@@ -112,13 +112,13 @@ $$
 
 由于偏导数 $\frac{\partial f}{\partial x}$ 连续，所以它可积。利用 Fubini 定理
 $$
-\int_{c}^{d} dy \int_{a}^{x_{0}} \frac{\partial f (x, y)}{\partial x} dx = \int_a^{x_0} dx \int_c^d \frac{\partial f(x, y)}{\partial x} dy
+\int_{c}^{d} dy \int_{a}^{x_{0}} \frac{\partial f (x, y)}{\partial x} dx = \int_{a}^{x_{0}} dx \int_{c}^{d} \frac{\partial f(x, y)}{\partial x} dy
 $$
 所以
 $$
-\int_c^d f(x_0, y) dy = \int_c^d f(a, y) dy + \int_a^{x_0} dx \int_c^d \frac{\partial f(x, y)}{\partial x} dy
+\int_{c}^{d} f(x_{0}, y) dy = \int_{c}^{d} f(a, y) dy + \int_{a}^{x_{0}} dx \int_{c}^{d} \frac{\partial f(x, y)}{\partial x} dy
 $$
-(2) 对每个 $x \in [a, b]$，定义函数 $g(x) = \int_c^d f(x, y) dy$。证明: $g'(x) = \int_c^d \frac{\partial f(x, y)}{\partial x} dy$。
+(2) 对每个 $x \in [a, b]$，定义函数 $g(x) = \int_{c}^{d} f(x, y) dy$。证明: $g'(x) = \int_{c}^{d} \frac{\partial f(x, y)}{\partial x} dy$。
 
 证明
 $$
@@ -141,7 +141,7 @@ $$
 $$
 二最后一项显然为 $0$ 。所以
 $$
-g'(x) = \int_c^d \frac{\partial f(x, y)}{\partial x} dy
+g'(x) = \int_{c}^{d} \frac{\partial f(x, y)}{\partial x} dy
 $$
 6.设 $D$ 是 $Oxy$ 平面中的区域，其面积为 $S$。定义以 $D$ 为底面，$(0,0,1)$ 为顶点的锥体为
 $$
@@ -167,11 +167,11 @@ V = \iiint_{\Phi^{-1} (V)} \det (J_{\Phi}) du dv dt \\ =
 $$
 7.给定非负整数 $a,b,c$。令
 $$
-Q = \{(x,y,z) \in R^3 | x+y+z \leq 1, x \geq 0, y \geq 0, z \geq 0\}
+Q = \{(x,y,z) \in R^{3} | x+y+z \leq 1, x \geq 0, y \geq 0, z \geq 0\}
 $$
 计算三重积分
 $$
-\iiint_Q x^ay^bz^c dxdydz
+\iiint_{Q} x^{ay}^{bz}^{c} dxdydz
 $$
 利用 Fubini 定理的推论
 $$

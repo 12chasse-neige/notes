@@ -222,15 +222,15 @@ $$
 利用正交性确定系数
 $$
 A_{n} = - \frac{b}{6 a \sinh(\omega_{n} b)} \int_{0}^{a} x (x^{3} - a^{3}) \sin(\omega_{n} x) dx \\
-= - \frac{2b}{ a \sinh(\omega_{n} b)}\left(\dfrac{a^{5} \left(-1\right)^{n}}{n^{3} \pi^{3}} + \dfrac{2 a^{5}}{n^{5} \pi^{5}} \left(1 - \left(-1\right)^{n}\right)\right)
+= - \frac{2b}{a \sinh(\omega_{n} b)}\left(\dfrac{a^{5} \left(-1\right)^{n}}{n^{3} \pi^{3}} + \dfrac{2 a^{5}}{n^{5} \pi^{5}} \left(1 - \left(-1\right)^{n}\right)\right)
 $$
 所以解为
 $$
 u(x, y) = v(x, y) + w(x, y) \\
-= \frac{1}{12} x^{4}y - \frac{1}{12} a^{3} xy- \sum_{n = 1}^{\infty} \frac{2a^{4}b}{ \sinh(\frac{n \pi}{a} b)}\left(\dfrac{\left(-1\right)^{n}}{n^{3} \pi^{3}} + \dfrac{2}{n^{5} \pi^{5}} \left(1 - \left(-1\right)^{n}\right)\right) \sin(\frac{n \pi}{a} x) \sinh(\frac{n \pi}{a} y)
+= \frac{1}{12} x^{4}y - \frac{1}{12} a^{3} xy- \sum_{n = 1}^{\infty} \frac{2a^{4}b}{\sinh(\frac{n \pi}{a} b)}\left(\dfrac{\left(-1\right)^{n}}{n^{3} \pi^{3}} + \dfrac{2}{n^{5} \pi^{5}} \left(1 - \left(-1\right)^{n}\right)\right) \sin(\frac{n \pi}{a} x) \sinh(\frac{n \pi}{a} y)
 $$
 或者可以写成一种更对称的等价形式（这是直接猜的形式再待定系数得到的解）
 $$
-u(x, y) = \sum_{m=1}^{\infty} \sum_{n=1}^{\infty} \frac{4 a^2 b (-1)^n}{n\pi^3 \left( \frac{m^2}{a^2} + \frac{n^2}{b^2} \right)} \left[ \frac{1}{m} (-1)^m + \frac{2}{m^3 \pi^2} \left( (-1)^m - 1 \right) \right] \sin\left(\frac{m\pi x}{a}\right) \sin\left(\frac{n\pi y}{b}\right)
+u(x, y) = \sum_{m=1}^{\infty} \sum_{n=1}^{\infty} \frac{4 a^{2} b (-1)^{n}}{n\pi^{3} \left( \frac{m^{2}}{a^{2}} + \frac{n^{2}}{b^{2}} \right)} \left[ \frac{1}{m} (-1)^{m} + \frac{2}{m^{3} \pi^{2}} \left( (-1)^{m} - 1 \right) \right] \sin\left(\frac{m\pi x}{a}\right) \sin\left(\frac{n\pi y}{b}\right)
 $$
 

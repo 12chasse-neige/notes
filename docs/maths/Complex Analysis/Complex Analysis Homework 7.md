@@ -91,7 +91,7 @@ $$
 
 (d) 将  
 $$
-\frac{z^{(1-p)}(1-z)^p}{2z}
+\frac{z^{(1-p)}(1-z)^{p}}{2z}
 $$
 在 $z = \infty$ 处展开，其中 $-1 < p < 2$  
 
@@ -105,13 +105,13 @@ $$
 
 3.验证等式  
 $$
-\sum_{n=0}^\infty \frac{(-1)^n}{a + nb} = \int_0^1 \frac{t^{a-1}}{1 + t^b} dt, \quad a, b > 0
+\sum_{n=0}^{\infty} \frac{(-1)^{n}}{a + nb} = \int_{0}^{1} \frac{t^{a-1}}{1 + t^{b}} dt, \quad a, b > 0
 $$
 
 证明
 $$
-\int_0^1 \frac{t^{a-1}}{1 + t^b} dt = \int_{0}^{1} \sum_{n = 0}^{\infty} (-1)^{n} t^{nb + a - 1} dt \\ = 
-\sum_{n = 0}^{\infty} \int_{0}^{1} (-1)^{n} t^{nb + a - 1} dt = \sum_{n=0}^\infty \frac{(-1)^n}{a + nb}
+\int_{0}^{1} \frac{t^{a-1}}{1 + t^{b}} dt = \int_{0}^{1} \sum_{n = 0}^{\infty} (-1)^{n} t^{nb + a - 1} dt \\ = 
+\sum_{n = 0}^{\infty} \int_{0}^{1} (-1)^{n} t^{nb + a - 1} dt = \sum_{n=0}^{\infty} \frac{(-1)^{n}}{a + nb}
 $$
 据此求出以下级数之和：  
 
@@ -139,6 +139,6 @@ $$
 $$
 
 $$
-\sum_{n = 0}^{\infty} \frac{(-1)^{n}}{1 + 4n} = \int_{0}^{1} \frac{1}{1 + t^{4}} dt = \frac{\pi + 2\coth^{-1} (\sqrt{2}) }{4 \sqrt{2}}
+\sum_{n = 0}^{\infty} \frac{(-1)^{n}}{1 + 4n} = \int_{0}^{1} \frac{1}{1 + t^{4}} dt = \frac{\pi + 2\coth^{-1} (\sqrt{2})}{4 \sqrt{2}}
 $$
 

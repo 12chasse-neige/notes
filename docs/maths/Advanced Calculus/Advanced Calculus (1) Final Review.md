@@ -9,13 +9,13 @@ Chasse_neige
 When $f(x)$ is n times differentiable on an open interval $I$ containing the point $a$
 
 $$
-f(x) = f(a) + f'(a)(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \cdots + \frac{f^{(n)}(a)}{n!}(x-a)^n + o((x-a)^n) 
+f(x) = f(a) + f'(a)(x-a) + \frac{f''(a)}{2!}(x-a)^{2} + \cdots + \frac{f^{(n)}(a)}{n!}(x-a)^{n} + o((x-a)^{n}) 
 $$
 
 Specially, when $a=0$, the polnomial
 
 $$
-f(x) = f(0) + f'(0)x + \frac{f''(0)}{2!}x^2 + \cdots + \frac{f^{(n)}(0)}{n!}x^n + o(x^n) 
+f(x) = f(0) + f'(0)x + \frac{f''(0)}{2!}x^{2} + \cdots + \frac{f^{(n)}(0)}{n!}x^{n} + o(x^{n}) 
 $$
 
 is called Maclaurin's polynomial.
@@ -27,16 +27,16 @@ is called Maclaurin's polynomial.
 If a function $f(x)$ is $(n+1)$ times differentiable on an open interval $I$ containing the point $a$, then for any $x$ in $I$, there exists a point $c$ between $a$ and $x$ such that:
 
 $$
-f(x) = f(a) + f'(a)(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \cdots + \frac{f^{(n)}(a)}{n!}(x-a)^n + R_n(x)
+f(x) = f(a) + f'(a)(x-a) + \frac{f''(a)}{2!}(x-a)^{2} + \cdots + \frac{f^{(n)}(a)}{n!}(x-a)^{n} + R_{n}(x)
 $$
 
-where $R_n(x)$ is the remainder term given by:
+where $R_{n}(x)$ is the remainder term given by:
 
 $$
-R_n(x) = \frac{f^{(n+1)}(c)}{(n+1)!}(x-a)^{n+1}
+R_{n}(x) = \frac{f^{(n+1)}(c)}{(n+1)!}(x-a)^{n+1}
 $$
 
-Here, $c$ is some point between $a$ and $x$. The remainder term $R_n(x)$ represents the error in approximating $f(x)$ by the $n$-th degree Taylor polynomial centered at $a$. The form of the remainder provided by Lagrange gives a specific way to bound this error, depending on the $(n+1)$-th derivative of $f$ at some point $c$ in the interval.
+Here, $c$ is some point between $a$ and $x$. The remainder term $R_{n}(x)$ represents the error in approximating $f(x)$ by the $n$-th degree Taylor polynomial centered at $a$. The form of the remainder provided by Lagrange gives a specific way to bound this error, depending on the $(n+1)$-th derivative of $f$ at some point $c$ in the interval.
 >  Proof.
 >
 > Given that $f(x)$ is $(n+1)$ times differentiable, then we can use the Cauchy's Mean Value Theorem on the functions $F(t) = f(a+t \Delta x) - P_{n}(t \Delta x)$ and $G(t) = (t \Delta x)^{n+1}$, where $t$ is an arbitrary constant between $0$ and $1$
@@ -51,9 +51,9 @@ Here, $c$ is some point between $a$ and $x$. The remainder term $R_n(x)$ represe
 
 #### 1.3  Taylor's Theorem with Cauchy's Form of Remainder
 
-Cauchy's Form of the Remainder is another way to express the remainder term $R_n(x)$. It states that:
+Cauchy's Form of the Remainder is another way to express the remainder term $R_{n}(x)$. It states that:
 
-$$ R_n(x) = \frac{f^{(n+1)}(c)}{n!}(x-c)^n(x-a) $$
+$$ R_{n}(x) = \frac{f^{(n+1)}(c)}{n!}(x-c)^{n}(x-a) $$
 
 where $c$ is some number between $a$ and $x$ .
 
@@ -62,7 +62,7 @@ where $c$ is some number between $a$ and $x$ .
 > Given that $f(x)$ is $(n+1)$ times differentiable, then we can use the Cauchy's Mean Value Theorem on the functions $F(t) = f(x) - P_{n}(x-t \Delta x)$ and $G(t) = x - t \Delta x$, where $t$ is an arbitrary constant between $0$ and $1$
 >
 > $$
-> \frac{F(t)-F(0)}{G(0)-G(t)} = \frac{f^{(n+1)}(x-t_{1} \Delta x)(t_{1} \Delta x)^n \Delta x}{n!\Delta x}
+> \frac{F(t)-F(0)}{G(0)-G(t)} = \frac{f^{(n+1)}(x-t_{1} \Delta x)(t_{1} \Delta x)^{n} \Delta x}{n!\Delta x}
 > $$
 >
 > then let $t=1$ and we can get the Cauchy's form.
@@ -76,7 +76,7 @@ Using the Taylor's theorem with Lagrange's form of remainder to estimate the Tay
 Given that$f \in C^{3}[a-h, a+h]$, $h > 0$ and $\lvert f(x) \rvert \leq M$, prove that 
 
 $$
-\lvert \frac{f(a+h)+f(a-h)-2f(a)}{h^2} - f''(a) \rvert \leq \frac{Mh}{3} 
+\lvert \frac{f(a+h)+f(a-h)-2f(a)}{h^{2}} - f''(a) \rvert \leq \frac{Mh}{3} 
 $$
 
 > Proof.
@@ -84,22 +84,22 @@ $$
 > First use $f$'s Taylor Series about a:
 >
 > $$
-> f(x) = f(a) + f'(a)(x-a) + \frac{f''(a)}{2}(x-a)^2 + \frac{f'''(a+t(x-a))}{6}(x-a)^3
+> f(x) = f(a) + f'(a)(x-a) + \frac{f''(a)}{2}(x-a)^{2} + \frac{f'''(a+t(x-a))}{6}(x-a)^{3}
 > $$
 >
 > so it is trivial that 
 >
 > $$
-> f(a+h) = f(a) + f'(a)h + \frac{f''(a)}{2}h^2 + \frac{f'''(a+th)}{6}h^3 
+> f(a+h) = f(a) + f'(a)h + \frac{f''(a)}{2}h^{2} + \frac{f'''(a+th)}{6}h^{3} 
 > $$
 >
 > $$
-> f(a-h) = f(a) - f'(a)h + \frac{f''(a)}{2}h^2 + \frac{f'''(a-th)}{6}h^3 
+> f(a-h) = f(a) - f'(a)h + \frac{f''(a)}{2}h^{2} + \frac{f'''(a-th)}{6}h^{3} 
 > $$
 >
 > so 
 > $$
-> \lvert f(a+h) + f(a-h) - 2f(a) \rvert = \lvert f''(a)h^2 + \frac{f'''(a+th) + f'''(a-th)}{6}h^3 \rvert \leq \lvert f''(a)h^2 + \frac{1}{3}Mh^3 \rvert
+> \lvert f(a+h) + f(a-h) - 2f(a) \rvert = \lvert f''(a)h^{2} + \frac{f'''(a+th) + f'''(a-th)}{6}h^{3} \rvert \leq \lvert f''(a)h^{2} + \frac{1}{3}Mh^{3} \rvert
 > $$
 >
 
@@ -111,18 +111,18 @@ l(x) = \frac{b-x}{b-a} f(a) + \frac{x-a}{b-a} f(b)
 $$
 
 and $l$ is called the linear interpolation on the interval.
-Given that on the interval $[a,b]$, $\sup_{x \in [a,b]} \lvert f'' \rvert = M$ and $f''$ is continuous on the interval, prove that the error of the linear interpolation $\lvert f(x) - l(x) \rvert \leq \frac{1}{8} (b-a)^2 M$
+Given that on the interval $[a,b]$, $\sup_{x \in [a,b]} \lvert f'' \rvert = M$ and $f''$ is continuous on the interval, prove that the error of the linear interpolation $\lvert f(x) - l(x) \rvert \leq \frac{1}{8} (b-a)^{2} M$
 
 > Proof.
 >
 > Given that $f''$ is continuous on the interval $[a,b]$, then $f$ can be estimated by the Taylor Series
 >
 > $$
-> f(a) = f(x) + f'(x)(a-x) + \frac{1}{2}(a-x)^2f''(\xi), a < \xi < b  
+> f(a) = f(x) + f'(x)(a-x) + \frac{1}{2}(a-x)^{2f}''(\xi), a < \xi < b  
 > $$
 >
 > $$
-> f(b) = f(x) + f'(x)(b-x) + \frac{1}{2}(b-x)^2f''(\eta), a < \eta < b
+> f(b) = f(x) + f'(x)(b-x) + \frac{1}{2}(b-x)^{2f}''(\eta), a < \eta < b
 > $$
 >
 > so the error equals to 
@@ -137,7 +137,7 @@ Given that on the interval $[a,b]$, $\sup_{x \in [a,b]} \lvert f'' \rvert = M$ a
 > \lvert f''(\zeta) \rvert = \lvert \frac{x-a}{b-a}f''(\xi) + \frac{b-x}{b-a}f''(\eta) \rvert \leq M
 > $$
 >
-> while the Quadratic Function $(b-x)(x-a)$ has a maximum $\frac{1}{4} (b-a)^2$ on the interval $[a,b]$, then the error $\lvert f(x) - l(x) \rvert \leq \frac{1}{8} (b-a)^2 M$ is trivial.
+> while the Quadratic Function $(b-x)(x-a)$ has a maximum $\frac{1}{4} (b-a)^{2}$ on the interval $[a,b]$, then the error $\lvert f(x) - l(x) \rvert \leq \frac{1}{8} (b-a)^{2} M$ is trivial.
 
 ---
 
@@ -185,11 +185,11 @@ $$
 Integral Inequalities:
 1. Cauchy-Schwarz Inequality:
 $$
-\left( \int_{a}^{b} f(x) g(x) dx \right)^2 \leq \int_{a}^{b} f^{2}(x) dx \int_{a}^{b} g^{2}(x) dx
+\left( \int_{a}^{b} f(x) g(x) dx \right)^{2} \leq \int_{a}^{b} f^{2}(x) dx \int_{a}^{b} g^{2}(x) dx
 $$
 >  Proof.
 > $$
-> \int_{a}^{b} (f(x)+\lambda g(x))^2 dx \geq 0
+> \int_{a}^{b} (f(x)+\lambda g(x))^{2} dx \geq 0
 > $$
 > where $\lambda$ is an arbitrary constant.
 > $$
@@ -204,7 +204,7 @@ $$
 $$
 Then, Hölder Inequality states that:
 $$
-\int_{a}^{b} \lvert f(x)g(x) \rvert dx \leq \left( \int_{a}^{b} \lvert f(x) \rvert^p dx \right)^{1/p} \left( \int_{a}^{b} \lvert g(x) \rvert^q dx \right)^{1/q}
+\int_{a}^{b} \lvert f(x)g(x) \rvert dx \leq \left( \int_{a}^{b} \lvert f(x) \rvert^{p} dx \right)^{1/p} \left( \int_{a}^{b} \lvert g(x) \rvert^{q} dx \right)^{1/q}
 $$
 > Proof.
 > Notice that $e^{x}$ is a convex on $\mathbb{R}$. Use the Jensen Inequality,
@@ -215,18 +215,18 @@ $$
 > $$
 > \frac{1}{p} \, a^{p} + \frac{1}{q} \, b^{q} \geq ab
 > $$
-> Then let $a = \frac{\lvert f \rvert}{\left( \int_{a}^{b} \lvert f(x) \rvert^p dx \right)^{1/p}}$ and $b = \frac{\lvert g \rvert}{\left( \int_{a}^{b} \lvert g(x) \rvert^q dx \right)^{1/q}}$
+> Then let $a = \frac{\lvert f \rvert}{\left( \int_{a}^{b} \lvert f(x) \rvert^{p} dx \right)^{1/p}}$ and $b = \frac{\lvert g \rvert}{\left( \int_{a}^{b} \lvert g(x) \rvert^{q} dx \right)^{1/q}}$
 > and we can get the inequality.
 
 3. Minkowski Inequality
 Let $f$ and $g$ be measurable functions on $\mathbb{R}$, and let $1 \leq p < \infty$. 
 Minkowski's Inequality states that:
 $$
-\left( \int_{a}^{b} \lvert f(x) + g(x)\rvert^p \, dx \right)^{1/p} \leq \left( \int_{a}^{b} \lvert f(x)\rvert^p \, dx \right)^{1/p} + \left( \int_{a}^{b} \lvert g(x)\rvert^p \, dx \right)^{1/p}
+\left( \int_{a}^{b} \lvert f(x) + g(x)\rvert^{p} \, dx \right)^{1/p} \leq \left( \int_{a}^{b} \lvert f(x)\rvert^{p} \, dx \right)^{1/p} + \left( \int_{a}^{b} \lvert g(x)\rvert^{p} \, dx \right)^{1/p}
 $$
 >  Proof.
 > $$
-> \int_{a}^{b} \lvert f(x) + g(x)\rvert^p \, dx \leq \int_{a}^{b} \lvert f(x) + g(x)\rvert^{p-1} \lvert f \rvert \, dx  + \int_{a}^{b} \lvert f(x) + g(x)\rvert^{p-1} \lvert g \rvert \, dx \leq \left( \int_{a}^{b} \lvert f(x) + g(x)\rvert^p \, dx \right)^{\frac{p-1}{p}} \left( \int_{a}^{b} \lvert f(x)\rvert^p \, dx \right)^{1/p} + \left( \int_{a}^{b} \lvert f(x) + g(x)\rvert^p \, dx \right)^{\frac{p-1}{p}} \left( \int_{a}^{b} \lvert g(x)\rvert^p \, dx \right)^{1/p}
+> \int_{a}^{b} \lvert f(x) + g(x)\rvert^{p} \, dx \leq \int_{a}^{b} \lvert f(x) + g(x)\rvert^{p-1} \lvert f \rvert \, dx  + \int_{a}^{b} \lvert f(x) + g(x)\rvert^{p-1} \lvert g \rvert \, dx \leq \left( \int_{a}^{b} \lvert f(x) + g(x)\rvert^{p} \, dx \right)^{\frac{p-1}{p}} \left( \int_{a}^{b} \lvert f(x)\rvert^{p} \, dx \right)^{1/p} + \left( \int_{a}^{b} \lvert f(x) + g(x)\rvert^{p} \, dx \right)^{\frac{p-1}{p}} \left( \int_{a}^{b} \lvert g(x)\rvert^{p} \, dx \right)^{1/p}
 > $$
 > where the second $\leq$ is based on the Hölder Inequality.
 
@@ -289,7 +289,7 @@ If $f$ is a Riemann integrable function on the interval $[a, b]$ and $g$ is a pe
 
 
 $$
-\lim_{p \to \infty} \int_a^b f(x) g(px) \, dx = \frac{1}{T} \int_0^T g(x) \, dx \int_a^b f(x) \, dx
+\lim_{p \to \infty} \int_{a}^{b} f(x) g(px) \, dx = \frac{1}{T} \int_{0}^{T} g(x) \, dx \int_{a}^{b} f(x) \, dx
 $$
 
 > Proof.
@@ -315,7 +315,7 @@ $$
 > Therefore, we can add the parts and use the definition of the Riemann Integral to get the lemma:
 >
 > $$
-> \lim_{p \to \infty} \int_a^b f(x) g(px) \, dx = \lim_{p \to \infty} \frac{1}{p} \sum_{k=1}^{n} f(\xi_{k}) \int_{0}^{T} g(t) dt = \lim_{n \to \infty} \sum_{k=1}^{n} f(\xi_{k}) \frac{b-a}{nT} \int_{0}^{T} g(t) dt = \frac{1}{T} \int_0^T g(x) \, dx \int_a^b f(x) \, dx
+> \lim_{p \to \infty} \int_{a}^{b} f(x) g(px) \, dx = \lim_{p \to \infty} \frac{1}{p} \sum_{k=1}^{n} f(\xi_{k}) \int_{0}^{T} g(t) dt = \lim_{n \to \infty} \sum_{k=1}^{n} f(\xi_{k}) \frac{b-a}{nT} \int_{0}^{T} g(t) dt = \frac{1}{T} \int_{0}^{T} g(x) \, dx \int_{a}^{b} f(x) \, dx
 > $$
 >
 
@@ -345,7 +345,7 @@ $$
 > $$
 >
 > $$
-> \therefore \lim_{x \to a+} \frac{\int_{a}^{x} f(x) dx}{(x-a)^2} = \frac{1}{2} f'(a) = f'(a) \frac{\xi-a}{x-a} 
+> \therefore \lim_{x \to a+} \frac{\int_{a}^{x} f(x) dx}{(x-a)^{2}} = \frac{1}{2} f'(a) = f'(a) \frac{\xi-a}{x-a} 
 > $$
 >
 > $$

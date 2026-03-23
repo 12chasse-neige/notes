@@ -6,7 +6,7 @@ Chasse_neige
 
 (1) 
 $$
-\sum_{n=1}^{\infty} \frac{z^n}{n^n}
+\sum_{n=1}^{\infty} \frac{z^{n}}{n^{n}}
 $$
 
 $$
@@ -27,7 +27,7 @@ $$
 
 (2) 
 $$
-\sum_{n=1}^{\infty} \frac{n!}{n^n} z^n
+\sum_{n=1}^{\infty} \frac{n!}{n^{n}} z^{n}
 $$
 
 $$
@@ -88,7 +88,7 @@ $$
 
 又因为 $\cos n \theta$ 部分和
 $$
-\sum_{n = 1}^{\infty} \cos n \theta = \frac{\sin (n + \frac{1}{2}) \theta - \sin \frac{1}{2} \theta }{2 \sin \frac{\theta}{2}}
+\sum_{n = 1}^{\infty} \cos n \theta = \frac{\sin (n + \frac{1}{2}) \theta - \sin \frac{1}{2} \theta}{2 \sin \frac{\theta}{2}}
 $$
 有界，所以原级数收敛
 $$
@@ -106,26 +106,26 @@ $$
 $$
 (5) 
 $$
-\sum_{n=0}^{\infty} \frac{(-1)^n \sin (2n+1)\theta}{(2n+1)^2}, \quad -\pi/2 \leq \theta \leq \pi/2
+\sum_{n=0}^{\infty} \frac{(-1)^{n} \sin (2n+1)\theta}{(2n+1)^{2}}, \quad -\pi/2 \leq \theta \leq \pi/2
 $$
 证明收敛性
 $$
-\left|\frac{(-1)^n \sin (2n+1)\theta}{(2n+1)^2}\right| \leq \frac{1}{(2n + 1)^{2}}
+\left|\frac{(-1)^{n} \sin (2n+1)\theta}{(2n+1)^{2}}\right| \leq \frac{1}{(2n + 1)^{2}}
 $$
 由于级数 $\sum_{n} \frac{1}{n^{2}}$ 收敛，所以该级数绝对收敛
 $$
-\sum_{n=0}^{\infty} \frac{(-1)^n \sin (2n+1)\theta}{(2n+1)^2} = \sum_{n = 0}^{\infty} \int_{0}^{\theta} \frac{(-1)^{n} \cos (2n + 1) \theta}{2n + 1} d \theta \\ = 
+\sum_{n=0}^{\infty} \frac{(-1)^{n} \sin (2n+1)\theta}{(2n+1)^{2}} = \sum_{n = 0}^{\infty} \int_{0}^{\theta} \frac{(-1)^{n} \cos (2n + 1) \theta}{2n + 1} d \theta \\ = 
 \int_{0}^{\theta} \left(\sum_{0}^{\infty} \frac{(-1)^{n} \cos (2n + 1) \theta}{2n + 1} \right) d \theta = \int_{0}^{\theta} \frac{\pi}{4} \text{sgn} (\cos \theta) d \theta = \frac{\pi}{4} \theta
 $$
 1.将下列函数在指定点展开成 Taylor 级数，并给出收敛半径
 
-(a) $1-z^3$ 在 $z=1$ 展开
+(a) $1-z^{3}$ 在 $z=1$ 展开
 $$
 1 - z^{3} = -3 (z - 1) - 3 (z - 1)^{2} -  (z - 1)^{3}
 $$
 收敛半径为 $\infty$
 
-(b) $$\frac{1}{1+z+z^2}$$ 在 $z=0$ 展开
+(b) $$\frac{1}{1+z+z^{2}}$$ 在 $z=0$ 展开
 $$
 \frac{1}{1 + z + z^{2}} = \frac{1}{\sqrt{3} i} \left( \frac{1}{z + \frac{1 - \sqrt{3} i}{2}} - \frac{1}{z + \frac{1 + \sqrt{3} i}{2}} \right) \\ = 
 \frac{1}{\sqrt{3} i} \left( \frac{1 + \sqrt{3} i}{2} \sum_{n = 0}^{\infty} (- \frac{1 + \sqrt{3} i}{2} z)^{n} - \frac{1 - \sqrt{3} i}{2} \sum_{n = 0}^{\infty} (- \frac{1 - \sqrt{3} i}{2} z)^{n} \right) \\ =

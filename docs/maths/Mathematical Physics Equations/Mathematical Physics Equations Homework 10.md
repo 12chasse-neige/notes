@@ -49,15 +49,15 @@ $$
 \nabla^{2} u  = A + B r^{2} \sin 2 \theta \cos \varphi \\
 u \mid_{r=a}  = 0
 $$
-由于方程线性，解由两部分组成：$u = u_1 + u_2$，其中 $u_1$ 对应源项 $A$，$u_2$ 对应源项 $B r^{2} \sin 2\theta \cos \varphi$。
+由于方程线性，解由两部分组成：$u = u_{1} + u_{2}$，其中 $u_{1}$ 对应源项 $A$，$u_{2}$ 对应源项 $B r^{2} \sin 2\theta \cos \varphi$。
 
-对于 $u_1$：满足 $\nabla^{2} u_1 = A$，且 $u_1(a) = 0$ 
-特解为 $u_1 = \frac{A}{6} r^{2}$，添加齐次解满足边界条件  
+对于 $u_{1}$：满足 $\nabla^{2} u_{1} = A$，且 $u_{1}(a) = 0$ 
+特解为 $u_{1} = \frac{A}{6} r^{2}$，添加齐次解满足边界条件  
 $$
-u_1 = \frac{A}{6} (r^{2} - a^{2})
+u_{1} = \frac{A}{6} (r^{2} - a^{2})
 $$
-对于 $u_2$：满足 $\nabla^{2} u_2 = B r^{2} \sin 2\theta \cos \varphi$，且 $u_2(a) = 0$
-假设 $u_2 = v(r) (Y_{2}^{1} - Y_{2}^{-1})$，则 $B r^{2} \sin 2\theta \cos \varphi = - \sqrt{\frac{8 \pi}{15}}B r^{2} (Y_{2}^{1} - Y_{2}^{-1})$
+对于 $u_{2}$：满足 $\nabla^{2} u_{2} = B r^{2} \sin 2\theta \cos \varphi$，且 $u_{2}(a) = 0$
+假设 $u_{2} = v(r) (Y_{2}^{1} - Y_{2}^{-1})$，则 $B r^{2} \sin 2\theta \cos \varphi = - \sqrt{\frac{8 \pi}{15}}B r^{2} (Y_{2}^{1} - Y_{2}^{-1})$
 
 所以
 $$
@@ -73,7 +73,7 @@ v(r) = - \frac{1}{14} \sqrt{\frac{8 \pi}{15}}B r^{2} (r^{2} - a^{2})
 $$
 
 $$
-u_2 = \frac{B}{14} r^{2} (r^{2} - a^{2}) \sin 2\theta \cos \varphi
+u_{2} = \frac{B}{14} r^{2} (r^{2} - a^{2}) \sin 2\theta \cos \varphi
 $$
 
 所以解为

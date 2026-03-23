@@ -8,7 +8,7 @@ Chasse_neige
 
 设 $S$ 是椭球面 
 $$
-\frac{x^2}{a^2} + \frac{y^2}{b^2} + \frac{z^2}{c^2} = 1
+\frac{x^{2}}{a^{2}} + \frac{y^{2}}{b^{2}} + \frac{z^{2}}{c^{2}} = 1
 $$
 请用二重积分表示 $S$ 的面积（不必计算该积分）。
 
@@ -31,7 +31,7 @@ S = \iint d S = \iint \begin{vmatrix}  \begin{pmatrix} a \cos \theta \cos \phi, 
 $$
 
 #### (2)
-计算球面 $x^2 + y^2 + z^2 = R^2$ 的面积。
+计算球面 $x^{2} + y^{2} + z^{2} = R^{2}$ 的面积。
 
 取 $a = b = c = R$
 $$
@@ -41,7 +41,7 @@ $$
 ### 2
 设 $\Sigma$ 为质量均匀的上半球面  
 $$
-\Sigma = \{(x, y, z) | x^2 + y^2 + z^2 = 1, z \geq 0\}
+\Sigma = \{(x, y, z) | x^{2} + y^{2} + z^{2} = 1, z \geq 0\}
 $$
 
 求出 $\Sigma$ 的质心位置，即计算 
@@ -61,7 +61,7 @@ $$
 
 给定 $a > b > 0$，定义曲面 $T$ 为  
 $$
-T = \{(x, y, z) \in \mathbb{R}^3 | (\sqrt{x^2 + y^2} - a)^2 + z^2 = b^2\}
+T = \{(x, y, z) \in \mathbb{R}^{3} | (\sqrt{x^{2} + y^{2}} - a)^{2} + z^{2} = b^{2}\}
 $$
 求 $T$ 的面积。
 
@@ -91,10 +91,10 @@ $$
 
 令 $S$ 为单位球面 
 $$
-S = \{(x, y, z) | x^2 + y^2 + z^2 = 1\}
+S = \{(x, y, z) | x^{2} + y^{2} + z^{2} = 1\}
 $$
 
-设 $p : [0, 1] \to S$ 是 $C^1$ 光滑映射  
+设 $p : [0, 1] \to S$ 是 $C^{1}$ 光滑映射  
 $$
 p(t) = (x(t), y(t), z(t)), \quad \forall t \in [0, 1]
 $$
@@ -124,7 +124,7 @@ $$
 
 证明：对任何 $0 < t < 1$，有  
 $$
-x'(t)^2 + y'(t)^2 \geq \frac{z(t)^2}{x(t)^2 + y(t)^2} z'(t)^2
+x'(t)^{2} + y'(t)^{2} \geq \frac{z(t)^{2}}{x(t)^{2} + y(t)^{2}} z'(t)^{2}
 $$
 证明
 
@@ -134,29 +134,29 @@ $$
 $$
 所以
 $$
-x'(t)^2 + y'(t)^2 \geq \frac{z(t)^2}{x(t)^2 + y(t)^2} z'(t)^2
+x'(t)^{2} + y'(t)^{2} \geq \frac{z(t)^{2}}{x(t)^{2} + y(t)^{2}} z'(t)^{2}
 $$
 
 #### (3)
 定义 $p$ 的弧长为 
 $$
-L = \int_0^1 \sqrt{x'(t)^2 + y'(t)^2 + z'(t)^2} \, dt
+L = \int_{0}^{1} \sqrt{x'(t)^{2} + y'(t)^{2} + z'(t)^{2}} \, dt
 $$
 
 证明：$L \geq \pi$
 
 证明
 $$
-L = \int_0^1 \sqrt{x'(t)^2 + y'(t)^2 + z'(t)^2} \, dt \geq \int_{0}^{1} \sqrt{\frac{z(t)^2}{x(t)^2 + y(t)^2} z'(t)^2 + z'^{2} (t)} \, dt \\ =
+L = \int_{0}^{1} \sqrt{x'(t)^{2} + y'(t)^{2} + z'(t)^{2}} \, dt \geq \int_{0}^{1} \sqrt{\frac{z(t)^{2}}{x(t)^{2} + y(t)^{2}} z'(t)^{2} + z'^{2} (t)} \, dt \\ =
 \int_{0}^{1} \frac{|z' (t)|}{\sqrt{x^{2} (t) + y^{2} (t)}} dt = \int_{0}^{1} \sqrt{\frac{z'^{2} (t)}{1 - z^{2} (t)}} dt \\ \geq 
 \int_{0}^{1} \frac{z' (t)}{\sqrt{1 - z^{2} (t)}} dt = \int_{-1}^{1} \frac{dz}{\sqrt{1 - z^{2}}} = \pi
 $$
 
 ### 5
-给定正数 $c < \sqrt{2}$。设曲面 $S = \{(x, y, z) | x^2 + y^2 + z^2 = 1, x + y \geq c\}$。
+给定正数 $c < \sqrt{2}$。设曲面 $S = \{(x, y, z) | x^{2} + y^{2} + z^{2} = 1, x + y \geq c\}$。
 
 #### (1)
-计算第一型曲面积分 $\iint_S x \, dS$，其中 $dS$ 表示面积微元。
+计算第一型曲面积分 $\iint_{S} x \, dS$，其中 $dS$ 表示面积微元。
 
 作换元
 $$
@@ -197,12 +197,12 @@ $$
 
 
 ### 6
-设 $C = \{(x, y) | x^2 + y^2 = 1\}$ 是平面上的单位圆周，取逆时针定向（方向）。
+设 $C = \{(x, y) | x^{2} + y^{2} = 1\}$ 是平面上的单位圆周，取逆时针定向（方向）。
 
 #### (1)
 计算第二型曲线积分 
 $$
-B(u) = \oint_C \frac{-y \, dx + x \, dy}{(x^2 + y^2 + u^2)^{3/2}}
+B(u) = \oint_{C} \frac{-y \, dx + x \, dy}{(x^{2} + y^{2} + u^{2})^{3/2}}
 $$
 参数化
 $$
@@ -211,30 +211,30 @@ y = \sin \theta
 $$
 
 $$
-B(u) = \oint_C \frac{-y \, dx + x \, dy}{(x^2 + y^2 + u^2)^{3/2}} = \int_{0}^{2 \pi} \frac{ \sin^{2} \theta + \cos^{2} \theta}{(1 + u^{2})^{\frac{3}{2}}} d \theta = \frac{2 \pi}{(1 + u^{2})^{\frac{3}{2}}}
+B(u) = \oint_{C} \frac{-y \, dx + x \, dy}{(x^{2} + y^{2} + u^{2})^{3/2}} = \int_{0}^{2 \pi} \frac{\sin^{2} \theta + \cos^{2} \theta}{(1 + u^{2})^{\frac{3}{2}}} d \theta = \frac{2 \pi}{(1 + u^{2})^{\frac{3}{2}}}
 $$
 
 #### (2)
 计算极限 
 $$
-\lim_{A \to +\infty} \int_{-A}^A B(u) \, du
+\lim_{A \to +\infty} \int_{-A}^{A} B(u) \, du
 $$
 
 $$
-\lim_{A \to +\infty} \int_{-A}^A B(u) \, du = \lim_{A \to \infty} \int_{-A}^{A} \frac{2 \pi}{\cosh^{3} \theta} d (\sinh \theta) \\ =
+\lim_{A \to +\infty} \int_{-A}^{A} B(u) \, du = \lim_{A \to \infty} \int_{-A}^{A} \frac{2 \pi}{\cosh^{3} \theta} d (\sinh \theta) \\ =
 \lim_{A \to \infty} \int_{- A}^{A} \frac{2 \pi}{\cosh^{2} \theta} d \theta = 4 \pi
 $$
 
 ### 7
 计算 
 $$
-\oint_L xy \, dx + yz \, dy + zx \, dz
+\oint_{L} xy \, dx + yz \, dy + zx \, dz
 $$
 
 其中 $L$ 为曲线  
 $$
 \begin{cases}  
-x^2 + y^2 + z^2 = 1 \\  
+x^{2} + y^{2} + z^{2} = 1 \\  
 x + y + z = 1  
 \end{cases}
 $$
@@ -265,18 +265,18 @@ $$
 $$
 
 $$
-\oint_L xy \, dx + yz \, dy + zx \, dz = \iint_{S} - (y, z, x) \cdot \frac{\sqrt{3}}{3} (1, 1, 1) dS \\ = - \frac{\sqrt{3}}{3} \iint_{S} d S = - \frac{2 \sqrt{3} \pi}{9}
+\oint_{L} xy \, dx + yz \, dy + zx \, dz = \iint_{S} - (y, z, x) \cdot \frac{\sqrt{3}}{3} (1, 1, 1) dS \\ = - \frac{\sqrt{3}}{3} \iint_{S} d S = - \frac{2 \sqrt{3} \pi}{9}
 $$
 
 ### 8
 设 $a, b, c$ 为给定的正数，$S$ 为椭球面 
 $$
-\frac{x^2}{a^2} + \frac{y^2}{b^2} + \frac{z^2}{c^2} = 1
+\frac{x^{2}}{a^{2}} + \frac{y^{2}}{b^{2}} + \frac{z^{2}}{c^{2}} = 1
 $$
 
 取指向外面的定向。对于正整数 $n$，计算第二型曲面积分 
 $$
-I_n = \iint_S (x^n \, dy \, dz + y^n \, dz \, dx + z^n \, dx \, dy)
+I_{n} = \iint_{S} (x^{n} \, dy \, dz + y^{n} \, dz \, dx + z^{n} \, dx \, dy)
 $$
 对椭球面做如下参数化
 $$
@@ -286,7 +286,7 @@ z = c \cos \theta
 $$
 所以利用 Gauss 公式
 $$
-I_n = \iint_S (x^n \, dy \, dz + y^n \, dz \, dx + z^n \, dx \, dy) \\ = \iiint_{V} n (x^{n - 1} + y^{n - 1} + z^{n - 1}) dx dy dz \\ =
+I_{n} = \iint_{S} (x^{n} \, dy \, dz + y^{n} \, dz \, dx + z^{n} \, dx \, dy) \\ = \iiint_{V} n (x^{n - 1} + y^{n - 1} + z^{n - 1}) dx dy dz \\ =
 n abc \iiint_{V} (a^{n - 1} r^{n - 1} \sin^{n - 1} \theta \cos^{n - 1} \phi + b^{n - 1} r^{n - 1} \sin^{n - 1} \theta \sin^{n - 1} \phi + c^{n - 1}  r^{n - 1} \cos^{n - 1} \theta) r^{2} \sin \theta dr d \theta d \phi \\ =
 \frac{2n \pi}{n + 2} abc \int_{0}^{\pi} \int_{0}^{2 \pi} (a^{n - 1} \sin^{n - 1} \theta \cos^{n - 1} \phi + b^{n - 1} \sin^{n - 1} \theta \sin^{n - 1} \phi + c^{n - 1}  \cos^{n - 1} \theta)  \sin \theta d \theta d \phi \\ =
 \frac{2n \pi}{n + 2} abc  ((a^{n - 1} + b^{n - 1}) 2 \frac{(n - 2)!!}{n!!} + c^{n - 1} \frac{2}{n}) \\ = 

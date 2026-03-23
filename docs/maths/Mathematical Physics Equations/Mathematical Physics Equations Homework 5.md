@@ -70,7 +70,7 @@ $$
 $$
 不妨假设两半的分界线处为 $\theta = 0$，所以解中只应该存在正弦函数
 $$
-\phi(r, \theta) = \sum_{n = 1}^{\infty} A_{n } \sin(n \theta) r^{n}
+\phi(r, \theta) = \sum_{n = 1}^{\infty} A_{n} \sin(n \theta) r^{n}
 $$
 带入边界
 $$
@@ -179,5 +179,5 @@ w (r, \theta)  = - \frac{a^{3}}{21} r^{2} \sin 2 \theta
 $$
 叠加得到
 $$
-u(r, \theta) = \frac{1}{21} r^2 (r^3 - a^3) \sin 2\theta
+u(r, \theta) = \frac{1}{21} r^{2} (r^{3} - a^{3}) \sin 2\theta
 $$
