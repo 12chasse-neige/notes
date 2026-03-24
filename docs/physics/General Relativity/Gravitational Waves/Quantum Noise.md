@@ -100,7 +100,7 @@ E_{\text{in}} = E_{\text{in}}^{(+)} + E_{\text{in}}^{(-)} \\ =
 \int_{0}^{\infty} \sqrt{\frac{4 \pi \hbar \omega_{o}}{\mathcal{A} c}} \left[ \frac{\cos (\omega_{o} t)}{2} (a_{1} e^{- i \Omega t} + a_{1}^{\dagger} e^{i \Omega t}) + \frac{\sin (\omega_{o} t)}{2} (a_{2} e^{- i \Omega t} + a_{2}^{\dagger} e^{i \Omega t}) \right] \, \frac{\dd{\Omega}}{2 \pi} + c.c. \\ =
 \int_{0}^{\infty} \sqrt{\frac{4 \pi \hbar \omega_{o}}{\mathcal{A} c}} \left[ \cos (\omega_{o} t) (a_{1} e^{- i \Omega t} + a_{1}^{\dagger} e^{i \Omega t}) + \sin (\omega_{o} t) (a_{2} e^{- i \Omega t} + a_{2}^{\dagger} e^{i \Omega t}) \right] \, \frac{\dd{\Omega}}{2 \pi}
 $$
-对于dark port 端的输出信号，我们只要替换上式中的产生湮灭算符，就可以在三角基底下将其表示为
+对于 dark port 端的输出信号，我们只要替换上式中的产生湮灭算符，就可以在三角基底下将其表示为
 $$
 E_{\text{out}} = E_{1} \cos (\omega_{o} t) + E_{2} \sin (\omega_{o} t)
 $$
@@ -111,7 +111,7 @@ $$
 
 ### 出入射光场之间的关系
 
-为了得到 $a$ 和 $b$ 之间的关系，我们考虑干涉仪内部对于光场的影响是如何反应到 annihilation operator 上的。
+为了得到 $a$ 和 $b$ 之间的关系，我们考虑干涉仪内部对于光场的影响是如何反应到 annihilation and creation operators 上的。
 
 #### Beam Splitter 处的传递
 
@@ -157,17 +157,100 @@ j_{j} = \sqrt{T} f_{j} + \sqrt{R} k_{j} \\
 g_{j} = \sqrt{T} k_{j} - \sqrt{R} f_{j}
 $$
 
-
-### 描述 Test Mass 的运动
-
-对于两条 arm 上的间隔 $X_{n}$ 以及 $X_{e}$，我们可以用自由粒子的测地线偏离方程对其进行处理。对于实际测量的
+我们现在加入引力波对于腔内光场的影响。假设 carrier light 在打到镜面上的时候腔的长度是 $L + X(t)$，那么 carrier light 一来一回回到 $x = L$ 的位置的时候的相位就是
 $$
-x = X_{n} - X_{e}
+E_{\text{carrier}} = \sqrt{\frac{4 \pi \hbar \omega_{o}}{\mathcal{A} c}} \frac{2}{\sqrt{T}} D \cos (\omega_{o} (t - \frac{2 X (t)}{c})) \\ =
+\sqrt{\frac{4 \pi \hbar \omega_{o}}{\mathcal{A} c}} \frac{2}{\sqrt{T}} D \left(\cos \omega_{o} t + \sin \omega_{o} t \cdot \frac{2 \omega_{o}}{c} \int_{- \infty}^{\infty} X e^{- i \Omega t} \frac{\dd{\Omega}}{2 \pi}\right)
 $$
-这个变量在引力波下的变化满足
+所以引力波在这里的效果实际上是把一部分的 carrier light 给挤到了 side band 里面！这个效果用 annihilation and creation operators 可以表示为
 $$
-x = x_{0} + \frac{p_{0}}{m/4} t + \int_{0}^{\infty} (L \tilde{h} + \tilde{x}_{BA}) e^{- i \Omega t} \, \frac{\dd{\Omega}}{2 \pi}
+\delta k_{1} = 0 \\
+\delta k_{2} = \frac{2}{\sqrt{T}} D\frac{2 \omega_{o} X}{c}
+$$
+所以在 back mirror 处的 operator 之间的关系可以表示为
+$$
+k_{j} e^{-i \frac{\Omega L}{c}} = j_{j} e^{i \frac{\Omega L}{c}} \sqrt{\tilde{R}} + q_{j} \sqrt{\tilde{T}} + \delta k_{j}
+$$
+把 back mirror 公式中的 $k_{j}$ 表达式代入 front mirror 处关系的第一行，消去 $k_{j}$，就可以解出腔内向右传播的边带场 $j_{j}$
+
+$$
+j_{j} = \frac{\sqrt{T} f_{j} + \sqrt{R} e^{i\Omega L/c} \left(\sqrt{\tilde{T}} q_{j} + \delta k_{j}\right)}{1 - \sqrt{R\tilde{R}} e^{2i\Omega L/c}}
 $$
 
+为了简化它，使用 Resonant Approximation
+*   假设镜子反射率极高（$R \approx 1, \tilde{R} \approx 1$）
+*   假设 side band 频率 $\Omega$ 远小于自由光谱范围（$\Omega \ll c/2L$），所以 $e^{2i\Omega L/c} \approx 1 + 2i\Omega L/c$
+*   引入腔的半带宽 $\gamma = \frac{Tc}{4L}$ 和损耗修正 $\gamma_* = \gamma(1 + \epsilon/2)$
 
+经过近似分母变成了极其简洁的形式：$(2L/c)(\gamma_* - i\Omega)$，于是，$j_{j}$ 化简为
+$$
+j_{j} = \frac{\sqrt{T}(f_{j} + \sqrt{\epsilon/2} q_{j}) + \delta k_{j}}{(2L/c)(\gamma_* - i\Omega)}
+$$
+所以腔内的循环功率 $W_{\text{circ}}$ 为
+$$
+W_{\text{circ}} = \frac{4}{T} \cdot \frac{1}{2} I_{0} = \frac{I_{0}/2}{\gamma L/c}
+$$
+涨落 $\delta W_{\text{circ}}$
+$$
+\delta W_{\text{circ}} = \int_{0}^{\infty} \frac{\sqrt{I_{o}\hbar\omega_{o}} (f_{1} + \sqrt{\epsilon/2} q_{1})}{(L/c)(\gamma_* - i\Omega)} e^{-i\Omega t} \frac{d\Omega}{2\pi} + c.c.
+$$
+这个光强涨落公式纯粹是由真空散粒噪声（$f_{1}, q_{1}$）引起的，引力波的影响全部反应在相位涨落上。
+
+#### 镜子的运动
+
+腔内的光强在不断随机涨落，这就意味着打在镜子上的辐射压力也在随机抖动。镜子受到的辐射压波动产生的力是 $F_{\text{BA}} = \frac{2 \delta W_{\text{circ}}}{c}$
+同时，引力波 $h(t)$ 也在拉伸空间。把这两者加起来，就是干涉仪单臂长度变化 $X(t)$ 的运动方程
+$$
+\dv[2]{X(t)}{t} = \frac{1}{2} \eta_{ne} L \dv[2]{h (t)}{t} + \frac{4 \delta W_{\text{circ}}(t)}{mc}
+$$
+我们关心的是两条臂的位移之差 $x = X_{n} - X_{e}$，对上面的运动方程做傅里叶变换，解出 $x(\Omega)$，结果由两部分组成
+$$
+x = Lh + x_{\text{BA}}
+$$
+
+*   $Lh$：引力波信号带来的位移
+
+*   $x_{\text{BA}}$：由辐射压噪声导致的随机位移
+    $$
+     \mathcal{K}_* \equiv \frac{(I_{o}/I_{\text{SQL}}) 2\gamma^{4}}{\Omega^{2}[\gamma^{2}(1 + \epsilon/2)^{2} + \Omega^{2}]}
+    $$
+
+    $$
+    \beta_* \equiv \arctan\left(\frac{\Omega}{\gamma_*}\right) = \arctan\left(\frac{\Omega}{\gamma(1 + \epsilon/2)}\right)
+    $$
+
+    
+
+$$
+x_{\text{BA}} = - \sqrt{\frac{{\cal K}_*}{2}} L h_{\text{SQL}} (a_{1} + \sqrt{\epsilon/2} n_{1}) e^{i\beta_*}
+$$
+这就是 Ponderomotive effect，即散粒噪声 $a_{1}$ 推动了镜子，产生了一个与 $a_{1}$ 成正比的随机位移 $x_{\text{BA}}$。其中 ${\cal K}_{*}$ 是耦合强度。
+
+#### 腔的输出场
+
+根据前镜的反射公式，把前面求出来的腔内场代进去，经过和分母一样的 Resonant Approximation，化简后得到离开单条臂的输出场 $g_{j}$
+
+$$
+g_{j} = \left(1 - \frac{1}{2}{\cal E}\right) e^{2i\beta} f_{j} + \sqrt{\cal E} e^{i\beta} q_{j} + \sqrt{\frac{(c/2L)^{2} T}{\gamma_*^{2} + \Omega^{2}}} e^{i\beta_*} \delta k_{j}
+$$
+
+它清晰地展示了 F-P 腔的三大输出成分
+1.  第一项（输入反射）：输入的量子噪声 $f_{j}$ 原路反回，但带上了一个频变相移 $2\beta$，并且因为吸收损耗衰减了 $(1 - {\cal E}/2)$
+2.  第二项（损耗噪声）：从后镜漏进来的外接真空噪声 $q_{j}$
+3.  第三项（信号泄漏）：在腔内诞生的引力波信号 $\delta k_{j}$
+
+#### 分束镜输出
+
+从北臂出来的光 $g_{j}^{n}$ 和从东臂出来的光 $g_{j}^{e}$ 再次回到分束镜，在暗端口发生干涉，合成最终的输出场 $b_{j}$
+
+*   对于量子噪声项（第一、二项）：共模的激光器噪声被完美抵消，只剩下 $a_{j}$ 和 $n_{j}$
+*   对于信号项（第三项）：代入前面求得的镜子差动位移 $x$
+
+$$
+b_{1} = \left(1 - \frac{1}{2}{\cal E}\right) a_{1} e^{2i\beta} + \sqrt{\cal E} n_{1} e^{i\beta}
+$$
+
+$$
+b_{2} = \left(1 - \frac{1}{2}{\cal E}\right) a_{2} e^{2i\beta} + \sqrt{\cal E} n_{2} e^{i\beta} + \sqrt{2{\cal K}_*} \left( \frac{h + x_{\text{BA}}/L}{h_{\text{SQL}}} \right) e^{i\beta_*}
+$$
 

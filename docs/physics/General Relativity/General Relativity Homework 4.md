@@ -1,6 +1,6 @@
 # General Relativity Homework 4
 
-吴桐 2024012555
+Chasse_neige
 
 ## Problem 1
 
@@ -66,8 +66,6 @@ For other components, the $\xi_{\mu, \nu}$ is zero and the Christoffel symbols w
 
 Please repeat the steps of calculating the phenomena of Mercury precession and light deflection induced by general relativity, and calculate what is the precession angle of the Mars during GR effect.
 
-### Mercury Precession
-
 First, we use the Killing vectors to find some conserved quantities. For the Killing vector $\delta^{\mu} {}_{t}$, we have
 $$
 g_{\mu \nu} U^{\mu} \delta^{\nu} {}_{t} = - \left(1 - \frac{2 GM}{r}\right) \cdot \dv{t}{\tau} = \text{Constant} \equiv -E
@@ -78,23 +76,79 @@ g_{\mu \nu} U^{\mu} \delta^{\nu} {}_{\phi} = r^{2} \sin^{2} \theta \cdot \dv{\ph
 $$
 We choose the plain $\theta = \frac{\pi}{2}$,  so the $\theta$ component’s geodesic equation is automatically satisfied.
 
-For the left component $r$, its geodesic equation can be written as
+Now we can derive the track of the planet
 $$
-\dv[2]{r}{\tau} + \Gamma^{r} {}_{\mu \nu} \dv{x^{\mu}}{\tau} \dv{x^{\nu}}{\tau} = 0
+\dd{\tau}^{2} = \left(1 − \frac{2 GM}{r}\right) \dd{t}^{2} − \left(1 − \frac{2GM}{r}\right)^{−1} \dd{r}^{2} − r^{2} (\dd{\theta}^{2} + \sin^{2} \theta \dd{\phi}^{2})
+\tag{1}
 $$
-Expand this equation, using the non-zero Christoffel symbols, we have
+So
 $$
-\dv[2]{r}{\tau} + \frac{GM}{r^{2}} \left(1 - \frac{2 GM}{r}\right) \left(\dv{t}{\tau}\right)^{2} - \frac{GM}{r^{2} - 2 GM r} \left(\dv{r}{\tau}\right)^{2} + \sin^{2} \theta (GM - r) \left(\dv{\phi}{\tau}\right)^{2} = 0
+1 = \left(1 − \frac{2 GM}{r}\right) \left(\dv{t}{\tau}\right)^{2} - \left(1 − \frac{2 GM}{r}\right)^{-1} \left(\dv{r}{\tau}\right)^{2} - r^{2} \left(\dv{\phi}{\tau}\right)^{2}
 $$
-Substituting the conserved quantities $E$ and $L$ into the above equation, we have
+Substituting the conserved quantities into the above equation, we have
 $$
-\dv[2]{r}{\tau} + \frac{GM}{r^{2} - 2GMr} \left(E^{2} - \left(\dv{r}{\tau}\right)^{2}\right) + L^{2} \frac{GM - r}{r^{4}} = 0
+\left(\dv{r}{\tau}\right)^{2} - E^{2} + \left(1 + \frac{L^{2}}{r^{2}}\right)\left(1 - \frac{2 GM}{r}\right) =0
 $$
-Change the variable from $\tau$ to $\phi$
+Use a new variable $u = \frac{1}{r}$, we can rewrite the above equation as
+$$
+\left(\dv{u}{\phi}\right)^{2} + \frac{- E^{2} + 1}{L^{2}} - \frac{2 GM u}{L^{2}} + u^{2} - 2 GM u^{3} = 0
+$$
+So this equals
+$$
+\dv[2]{u}{\phi} + u = \frac{GM}{L^{2}} + 3 GM u^{2}
+$$
+We use the perturbation method to solve this equation
+$$
+u = u_{0} + u_{1}
+$$
+The first-order solution $u_{0}$ is
+$$
+u_{0} = \frac{GM}{L^{2}} (1 + e \cos \phi)
+$$
+The second-order perturbation is described by the equation
+$$
+\dv[2]{u_{1}}{\phi} + u_{1} = 3 GM u_{0}^{2} =  \frac{3 G^{3} M^{3}}{2L^{4}} (2 + 4e \cos \phi + e^{2}\cos 2 \phi + e^{2})
+$$
+So the approximate $u_{1}$ is
+$$
+u_{1} = \frac{G^{3} M^{3}}{L^{4}} (3 + \frac{3}{2} e^{2} + 3 e \phi \sin \phi - \frac{e^{2}}{2} \cos 2 \phi)
+$$
+Thus our total track equation leads to
+$$
+u = \cdots + \frac{GM}{L^{2}} e \cos \phi + 3 \frac{G^{3} M^{3}}{L^{4}} e \phi \sin \phi \\ \approx 
+\cdots + \frac{GM}{L^{2}} e \cos ((1 - 3 \frac{G^{2} M^{2}}{L^{2}}) \phi)
+$$
+So the precession angle per period is
+$$
+\Delta \phi = 6 \pi \frac{G^{2} M^{2} m^{2}}{L^{2} c^{2}}
+$$
+The $L$ in this precession angle is the classical $L$ which contains the mass of the planet.
+
+### Mercury Precession
+
+The parameters of Mercury orbit are
+$$
+a = 0.3870993 \mathrm{AU} \\
+e = 0.20564 \\
+T = 87.969257 \mathrm{D}
+$$
+So the total precession angle in one century of the Mercury orbit is
+$$
+\Delta \phi = \frac{100 \times 365}{87.969257} \times 6 \pi \times \frac{G M_{\text{sun}}}{a (1 - e^{2}) \cdot c^{2}} \approx 42.98''
 $$
 
-$$
+### Mars Precession
 
+The parameters of Mars orbit are
+$$
+a = 1.52371 \mathrm{AU} \\
+e = 0.09339 \\
+T = 686.92971 \mathrm{D}
+$$
+So the total precession angle in one century of the Mars orbit is
+$$
+\Delta \phi = \frac{100 \times 365}{686.92971} \times 6 \pi \times \frac{G M_{\text{sun}}}{a (1 - e^{2}) \cdot c^{2}} \approx 1.35''
+$$
 
 ## Problem 3
 
@@ -105,3 +159,41 @@ $$
 $$
 
 Now, consider two observers $A$ and $B$. At $t=t_{0}$ they were both at $r= 6GM$. At $t_{0}$, $A$ starts to freely fall into the blackhole in the radial direction, while $B$ remains fixed at $r= 6GM$. From $t_{0}$, $A$ sends back a signal to $B$ every $Δt$ (measured by the clock flying with $A$). Please calculate how often $B$ observed a signal from $A$.
+
+ First consider the geodesic equation of the observer $A$ in the radial direction, the motion equation is
+$$
+\left(\dv{r}{\tau}\right)^{2} - E^{2} + 1 - \frac{2 GM}{r} =0
+$$
+Using the initial condition $r = 6 GM$ at $\tau = t_{0}$, we can get
+$$
+E = \sqrt{\frac{2}{3}}
+$$
+Therefore
+$$
+\dv{r}{\tau} = \sqrt{\frac{2 GM}{r} - \frac{1}{3}}
+$$
+and the integral gives out
+$$
+6 \sqrt{3} GM \arccos (\sqrt{1 - \frac{r}{6GM}}) - \sqrt{3r (6GM - r)} = \tau - t_{0}
+$$
+Then consider the geodesic equation of the signal sent by $A$, we have the null geodesic equation
+$$
+0 = \left(1 − \frac{2 GM}{r}\right) \left(\dv{t}{\lambda}\right)^{2} - \left(1 − \frac{2 GM}{r}\right)^{-1} \left(\dv{r}{\lambda}\right)^{2} - r^{2} \left(\dv{\phi}{\lambda}\right)^{2}
+$$
+For the signal travels radially, we have $\dv{\phi}{\lambda} = 0$, so the above equation can be rewritten as
+$$
+\dv{r}{t} = 1 - \frac{2 GM}{r}
+$$
+At the position $r$, when the time in A’s frame passes $\Delta t$, A actually moves 
+$$
+\Delta r = \Delta t \cdot \sqrt{\frac{2 GM}{r} - \frac{1}{3}}
+$$
+closer to the blackhole, and while the time in A’s frame passes $\Delta t$, the time in B’s frame passes
+$$
+\Delta \tau_{B} = \Delta t \cdot \frac{2}{3\left(1 - \frac{2 GM}{r}\right)}
+$$
+So B will receive the later signal when time in its frame has passed
+$$
+\Delta t_{B} = \Delta t \cdot \frac{2}{3\left(1 - \frac{2 GM}{r}\right)} + \Delta t \cdot \frac{\sqrt{\frac{2 GM}{r} - \frac{1}{3}}}{1 - \frac{2 GM}{r}} \cdot \sqrt{\frac{2}{3}} \\ =
+\frac{2 + \sqrt{\frac{12 GM}{r} - 2}}{3 \left(1 - \frac{2 GM}{r}\right)} \Delta t
+$$
