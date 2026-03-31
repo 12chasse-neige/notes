@@ -14,7 +14,7 @@ g_{\mu \nu} = \text{diag} \begin{pmatrix}
 $$
 Copy the Christoffel symbols of the Schwarzschild metric from the last homework
 $$
-\Gamma^{t} {}_{tr} = \Gamma^{t}_{rt} = \frac{B'}{2B} = \frac{GM}{r^{2} - 2 GM r} \\
+\Gamma^{t} {}_{tr} = \Gamma^{t} {}_{rt} = \frac{B'}{2B} = \frac{GM}{r^{2} - 2 GM r} \\
 \Gamma^{r} {}_{tt} = \frac{B'}{2A} = \frac{GM}{r^{2}} \left(1 - \frac{2 GM}{r}\right) \\
 \Gamma^{r} {}_{rr} = \frac{A'}{2A} = - \frac{GM}{r^{2} - 2 GM r} \\
 \Gamma^{r} {}_{\theta\theta} = -\frac{r}{A} = GM - r \\

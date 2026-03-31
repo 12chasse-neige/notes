@@ -10,9 +10,9 @@ How fundamental principles restrain interactions, delve into scattering amplitud
 
 ### Axioms of Scattering Theory
 
-1. Assume a Hilbert Space $\mathcal{H}$ with a Hamiltonian $H$, there exists a lowest-energy state - vacuum $\ket{\Omega}$, which is normalized. $\ket{\Omega}$ trivially spans a subspace of $\mathcal{H}$: $\mathcal{H}^{(0)}$.
+1. Assume a Hilbert Space $\mathcal{H}$ with a Hamiltonian $H$, there exists a lowest-energy state-vacuum $\ket{\Omega}$, which is normalized. $\ket{\Omega}$ trivially spans a subspace of $\mathcal{H}$: $\mathcal{H}^{(0)}$.
 
-2. Assume that there exists a subspace $\mathcal{H}^{(1)} \in \mathcal{H}$ - 1PS(one-particle state), the state of all stable particles. 1 PS is specified by $\ket{n, \vec{p}, \sigma}$.
+2. Assume that there exists a subspace $\mathcal{H}^{(1)} \in \mathcal{H}$ - 1PS (one-particle state), the state of all stable particles. 1 PS is specified by $\ket{n, \vec{p}, \sigma}$.
 
 $$
 H \ket{n, \vec{p}, \sigma} = E_{p} \ket{n, \vec{p}, \sigma} \quad E_{p} = \sqrt{m^{2} + p^{2}}
@@ -31,7 +31,7 @@ $$
 
 Redifine the Hilbert Space as
 $$
-\mathcal{H}_{0} \equiv \mathop{\oplus}_{p = 0}^{\infty} [\mathcal{H}^{(1)}]^{p}
+\mathcal{H}_{0} \equiv \mathop{\bigoplus}_{p = 0}^{\infty} [\mathcal{H}^{(1)}]^{p}
 $$
 
 $$
@@ -93,7 +93,7 @@ Globel symmetry act quasi-locally. In particular, we can perform separate LGTs t
 $$
 \braket{\Phi_{-}}{\{\cdots (\vec{p}, \sigma)_{i} \cdots\}_{+}} \to \sum_{\sigma'} W_{\sigma' \sigma'} \braket{\Phi_{-}}{\{\cdots (\vec{p}, \sigma')_{i} \cdots\}_{+}}
 $$
-$A_{\Phi \Psi}$ is a Lorentz scalar constructed by any of $p^{\mu}$ and $q^{\mu}$ s, and $e_{i}$ for each in-particle, and $e^{*}$ for each out-particle.
+$A_{\Phi \Psi}$ is a Lorentz scalar constructed by any of $p^{\mu}$ and $q^{\mu}$ s, and $e_{i}$ for each in-particle, and $e^{*}_{i}$ for each out-particle.
 
 ### Locality
 

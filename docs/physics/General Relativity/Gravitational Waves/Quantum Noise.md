@@ -209,22 +209,31 @@ x = Lh + x_{\text{BA}}
 $$
 
 *   $Lh$：引力波信号带来的位移
-
 *   $x_{\text{BA}}$：由辐射压噪声导致的随机位移
-    $$
-     \mathcal{K}_* \equiv \frac{(I_{o}/I_{\text{SQL}}) 2\gamma^{4}}{\Omega^{2}[\gamma^{2}(1 + \epsilon/2)^{2} + \Omega^{2}]}
-    $$
 
-    $$
-    \beta_* \equiv \arctan\left(\frac{\Omega}{\gamma_*}\right) = \arctan\left(\frac{\Omega}{\gamma(1 + \epsilon/2)}\right)
-    $$
-
-    
+定义
+$$
+\mathcal{K}_* \equiv \frac{(I_{o}/I_{\text{SQL}}) 2\gamma^{4}}{\Omega^{2}[\gamma^{2}(1 + \epsilon/2)^{2} + \Omega^{2}]}
+$$
 
 $$
-x_{\text{BA}} = - \sqrt{\frac{{\cal K}_*}{2}} L h_{\text{SQL}} (a_{1} + \sqrt{\epsilon/2} n_{1}) e^{i\beta_*}
+\beta_* \equiv \arctan\left(\frac{\Omega}{\gamma_*}\right) = \arctan\left(\frac{\Omega}{\gamma(1 + \epsilon/2)}\right)
 $$
-这就是 Ponderomotive effect，即散粒噪声 $a_{1}$ 推动了镜子，产生了一个与 $a_{1}$ 成正比的随机位移 $x_{\text{BA}}$。其中 ${\cal K}_{*}$ 是耦合强度。
+
+$$
+n_{j} = \frac{q_{j}^{n} - q_{j}^{e}}{\sqrt{2}}
+$$
+
+最后得到
+$$
+x_{\text{BA}} = - \sqrt{\frac{{\cal K}_*}{2}} L h_{\text{SQL}} \cdot \left(a_{1} + \sqrt{\frac{\epsilon}{2}} n_{1}\right) e^{i\beta_*}
+$$
+其中
+$$
+I_{SQL} = \frac{m L^{2} \gamma^{4}}{4 \omega_{o}} \\
+h_{SQL} = \sqrt{\frac{8 \hbar}{m \Omega^{2}}}
+$$
+这就是 Ponderomotive effect，即散粒噪声 $a_{1}$ 推动了镜子，产生了一个与 $a_{1}$ 成正比的随机位移 $x_{\text{BA}}$
 
 #### 腔的输出场
 
@@ -234,7 +243,12 @@ $$
 g_{j} = \left(1 - \frac{1}{2}{\cal E}\right) e^{2i\beta} f_{j} + \sqrt{\cal E} e^{i\beta} q_{j} + \sqrt{\frac{(c/2L)^{2} T}{\gamma_*^{2} + \Omega^{2}}} e^{i\beta_*} \delta k_{j}
 $$
 
+其中
+$$
+\mathcal{E} = \frac{2 \gamma^{2}}{\gamma^{2} + \Omega^{2}} \epsilon
+$$
 它清晰地展示了 F-P 腔的三大输出成分
+
 1.  第一项（输入反射）：输入的量子噪声 $f_{j}$ 原路反回，但带上了一个频变相移 $2\beta$，并且因为吸收损耗衰减了 $(1 - {\cal E}/2)$
 2.  第二项（损耗噪声）：从后镜漏进来的外接真空噪声 $q_{j}$
 3.  第三项（信号泄漏）：在腔内诞生的引力波信号 $\delta k_{j}$
@@ -242,15 +256,147 @@ $$
 #### 分束镜输出
 
 从北臂出来的光 $g_{j}^{n}$ 和从东臂出来的光 $g_{j}^{e}$ 再次回到分束镜，在暗端口发生干涉，合成最终的输出场 $b_{j}$
+$$
+g_{j}^{n} = \left(1 - \frac{1}{2}{\cal E}\right) e^{2i\beta} f_{j}^{n} + \sqrt{\cal E} e^{i\beta} q_{j}^{n} + \sqrt{\frac{(c/2L)^{2} T}{\gamma_*^{2} + \Omega^{2}}} e^{i\beta_*} \delta k_{j}^{n}
+$$
 
-*   对于量子噪声项（第一、二项）：共模的激光器噪声被完美抵消，只剩下 $a_{j}$ 和 $n_{j}$
-*   对于信号项（第三项）：代入前面求得的镜子差动位移 $x$
+$$
+g_{j}^{e} = \left(1 - \frac{1}{2}{\cal E}\right) e^{2i\beta} f_{j}^{e} + \sqrt{\cal E} e^{i\beta} q_{j}^{e} + \sqrt{\frac{(c/2L)^{2} T}{\gamma_*^{2} + \Omega^{2}}} e^{i\beta_*} \delta k_{j}^{e}
+$$
 
+所以二者合成之后得到
+$$
+b_{j} = \frac{g_{j}^{n} - g_{j}^{e}}{\sqrt{2}} \\ =
+\left(1 - \frac{1}{2}{\cal E}\right) e^{2i\beta} a_{j} + \sqrt{\cal E} e^{i\beta} n_{j} + \sqrt{\frac{(c/2L)^{2} T}{\gamma_*^{2} + \Omega^{2}}} e^{i\beta_*} \frac{\delta k_{j}^{n} - \delta k_{j}^{e}}{\sqrt{2}}
+$$
+
+对于量子噪声项（第一、二项）：共模的激光器噪声被完美抵消，只剩下 $a_{j}$ 和 $n_{j}$
+
+对于信号项（第三项）：代入前面求得的镜子差动位移 $x$
 $$
 b_{1} = \left(1 - \frac{1}{2}{\cal E}\right) a_{1} e^{2i\beta} + \sqrt{\cal E} n_{1} e^{i\beta}
 $$
 
 $$
 b_{2} = \left(1 - \frac{1}{2}{\cal E}\right) a_{2} e^{2i\beta} + \sqrt{\cal E} n_{2} e^{i\beta} + \sqrt{2{\cal K}_*} \left( \frac{h + x_{\text{BA}}/L}{h_{\text{SQL}}} \right) e^{i\beta_*}
+$$
+
+如果我们忽略 end mirror 处的损耗并且代入 $x_{BA}$ 和噪声项之间的关系 $x_{\text{BA}} = - \sqrt{\frac{{\cal K}_*}{2}} L h_{\text{SQL}} \cdot \left(a_{1} + \sqrt{\frac{\epsilon}{2}} n_{1}\right) e^{i\beta_*}$，那么上述结论可以进一步表示为
+$$
+b_{1} = a_{1} e^{2 i \beta}
+$$
+
+$$
+b_{2} = (a_{2} - \mathcal{K} a_{1}) e^{2 i \beta} - \sqrt{2 \mathcal{K}} \frac{h}{h_{SQL}} e^{i \beta}
+$$
+
+#### 噪声谱
+
+从上面的输出表达式中，我们关心的 $b_{2}$ 分量可以分为要测量的引力波分量 $h (\Omega)$ 以及噪声分量 $h_{n} (\Omega)$
+$$
+h_{n} (\Omega) = \frac{h_{SQL}}{\sqrt{2 \mathcal{K}}} \Delta b_{2} e^{- i \beta}
+$$
+所以对应的噪声谱是
+$$
+\langle h_{n} h_{n}^{\dagger} \rangle = \frac{h^{2}_{SQL}}{2 \mathcal{K}} \left(a_{1} a_{1}^{\dagger} - \mathcal{K} a_{1} a_{2}^{\dagger} - \mathcal{K} a_{1}^{\dagger} a_{2} + \mathcal{K}^{2} a_{2} a_{2}^{\dagger}\right)
+$$
+利用关系
+$$
+S_{a_{1}} = S_{a_{2}} = 1, \quad S_{a_{1} a_{2}} = 0
+$$
+所以量子噪声谱可以表示为
+$$
+S_{h}^{SQL} = \frac{h_{SQL}^{2}}{2} \left(\frac{1}{\mathcal{K}} + \mathcal{K}\right)
+$$
+
+
+### 压缩
+
+#### Rotation 和 Squeeze 算符
+
+rotation 算符 $R (\theta)$ 作用在 side bands 频率模式的 Hilbert 空间上，定义为
+$$
+R (\theta) = e^{- i \theta (a_{+}^{\dagger} a_{+} + a_{-}^{\dagger} a_{-})}
+$$
+这个算符是 Unitary 的，并且逆为
+$$
+R^{-1} (\theta) = R^{\dagger} (\theta) = R (- \theta)
+$$
+这个算符作用在光场上的行为是
+$$
+R (\theta) a_{\pm} R^{\dagger} (\theta) = a_{\pm} e^{i \theta}
+$$
+这个性质可以利用公式 $e^{A} B e^{-A}$ 的对易子展开式证明。当我们把变量替换成 $a_{i}$ 的时候，上述算符就开始体现出旋转的性质
+$$
+R (\theta) a_{1} R^{\dagger} (\theta) = a_{1} \cos \theta - a_{2} \sin \theta \\
+R (\theta) a_{2} R^{\dagger} (\theta) = a_{2} \cos \theta + a_{1} \sin \theta
+$$
+所以 rotation 算符在 $1,2$ 相空间上的性质就是把态矢量逆时针旋转 $\theta$
+
+squeeze 算符的定义则是
+$$
+S (r \phi) = e^{r (a_{+} a_{-} e^{- 2 i \phi} - a_{+}^{\dagger} a_{-}^{\dagger} e^{2 i \phi})}
+$$
+这个算符也是 Unitary 的，并且逆为
+$$
+S^{-1} (r, \phi) = S^{\dagger} (r, \phi) = S (-r, \phi) = S (r, \phi + \frac{\pi}{2})
+$$
+这个算符作用在光场上的行为是
+$$
+S(r, \phi) a_{\pm} S^{\dagger} (r, \phi) = a_{\pm} \cosh r + a_{\mp}^{\dagger} e^{2 i \phi} \sinh r
+$$
+这个性质同样可以利用公式 $e^{A} B e^{-A}$ 的对易子展开式证明。当我们把变量替换成 $a_{i}$ 的时候，上述算符变为
+$$
+S (r, \phi) a_{1} S^{\dagger} (r, \phi) = a_{1} (\cosh r + \sinh r \cos 2 \phi) + a_{2} \sinh r \sin 2 \phi \\
+S (r, \phi) a_{2} s^{\dagger} (r, \phi) = a_{2} (\cosh r - \sinh r \cos 2 \phi) + a_{1} \sinh r \sin 2 \phi
+$$
+
+#### 利用算符描述噪声传递
+
+上述推导出的量子噪声传递
+$$
+\Delta b_{1} = a_{1} e^{2 i \beta} \\
+\Delta b_{2} = (a_{2} - \mathcal{K} a_{1}) e^{2 i \beta} \\
+$$
+用两个算符重新表示，就是
+$$
+b_{j} = S^{\dagger} (r, \phi) R^{\dagger} (- \theta) a_{j} e^{2 i \beta} R (- \theta) S (r, \phi)
+$$
+其中
+$$
+\theta = \arctan(\frac{\mathcal{K}}{2}), \quad \phi = \frac{1}{2} \arccot(\frac{\mathcal{K}}{2}), \quad r = \mathop{\text{arcsinh}}\left(\frac{\mathcal{K}}{2}\right)
+$$
+所以
+$$
+b_{\pm} \ket{0_{b_{\pm}}} = S^{\dagger} R^{\dagger} a_{\pm} e^{\pm i 2 \beta} R S \ket{0_{b_{\pm}}} = 0
+$$
+可以得到 $a_{\pm}$ 对应真空态的表示
+$$
+\ket{0_{a_{\pm}}} = e^{\pm i 2 \beta} RS \ket{0_{b_{\pm}}}
+$$
+利用真空态在旋转下不变的性质
+$$
+\ket{\text{in}} = \ket{0_{a_{\pm}}} = e^{\pm 2 i \beta} S(r, \phi) \ket{0_{b_{\pm}}}
+$$
+所以在没有旋转的时候
+$$
+S_{b_{1}} = 1, \quad S_{b_{2}} = 1 + \mathcal{K}^{2}, \quad S_{b_{1} b_{2}} = \langle \text{in} | \frac{1}{2} (\Delta b_{1} \Delta b_{2}^{\dagger} + \Delta b_{2} \Delta b_{1}^{\dagger}) | \text{in} \rangle = - \mathcal{K}
+$$
+那么我们在把噪声扭转一个角度 $\phi$ 之后，对应的谱密度就是
+$$
+b'_{1} = b_{1} \cos \phi + b_{2} \sin \phi \\
+b'_{2} = b_{2} \cos \phi - b_{1} \sin \phi
+$$
+计算得到
+$$
+S_{b'_{1}} = e^{-2 r} = \left(\sqrt{1 + \frac{\mathcal{K}}{2}} - \frac{\mathcal{K}}{2}\right)^{2}
+$$
+
+$$
+S_{b'_{1}} = e^{2 r} = \left(\sqrt{1 + \frac{\mathcal{K}}{2}} + \frac{\mathcal{K}}{2}\right)^{2}
+$$
+
+$$
+S_{b'_{1} b'_{2}} = 0
 $$
 

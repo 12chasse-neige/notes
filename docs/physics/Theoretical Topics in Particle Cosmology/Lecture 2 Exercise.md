@@ -1,7 +1,6 @@
 # Lecture 2 Exercise
 
-### (1) Please finish the integral
-
+(1) Please finish the integral
 $$
 \int \frac{d^{3}\vec{k}}{(2\pi)^{3}} \frac{e^{+i \vec{k} \cdot \vec{x}}}{\vec{k}^{2} + m^{2}} \tag{35}
 $$
@@ -15,7 +14,7 @@ $$
 \frac{1}{(2 \pi)^{2}x} \int_{0}^{\infty} \frac{2u \sin u \dd{u}}{u^{2} + m^{2} x^{2}} = \frac{1}{(2 \pi)^{2} x} \int_{- \infty}^{\infty} \frac{1}{2 i} \frac{2u e^{iu} \dd{u}}{u^{2} + m^{2} x^{2}} \\
 = \frac{1}{2 \pi x} \Res[\frac{u e^{iu}}{u^{2} + m^{2} x^{2}}, u = imx] = \frac{e^{- mx}}{4 \pi x}
 $$
-### (2) Starting from the action of the photon field (without source), please derive its gauge invariant energy-momentum tensor $T_{\mu\nu}$ and show that it is traceless.
+(2) Starting from the action of the photon field (without source), please derive its gauge invariant energy-momentum tensor $T_{\mu\nu}$ and show that it is traceless.
 
 The Lagrangian of the photon field is
 $$
@@ -23,26 +22,15 @@ $$
 $$
 And the energy-momentum tensor is defined as
 $$
-T^{\mu \nu} = \frac{1}{\mu_{0}} \left(F^{\mu \alpha} F^{\nu} {}_{\alpha} - \eta^{\mu \nu} F^{\rho \sigma} F_{\rho \sigma}\right)
+T^{\mu \nu} = \frac{1}{\mu_{0}} \left(F^{\mu \alpha} F^{\nu} {}_{\alpha} - \frac{1}{4} \eta^{\mu \nu} F^{\rho \sigma} F_{\rho \sigma}\right)
 $$
-Calculate the components of the energy-momentum tensor
+Contract the tensor, and we can find that
 $$
-T^{\mu\nu} = \frac{1}{\mu_{0}}
-\begin{pmatrix}
-\frac{1}{2}(E^{2} + B^{2}) & (\mathbf{E}\times\mathbf{B})_{x} & (\mathbf{E}\times\mathbf{B})_{y} & (\mathbf{E}\times\mathbf{B})_{z} \\
-(\mathbf{E}\times\mathbf{B})_{x} & -E_{x}^{2} - B_{x}^{2} + \frac{1}{2}(E^{2}+B^{2}) & -E_{x} E_{y} - B_{x} B_{y} & -E_{x} E_{z} - B_{x} B_{z} \\
-(\mathbf{E}\times\mathbf{B})_{y} & -E_{y} E_{x} - B_{y} B_{x} & -E_{y}^{2} - B_{y}^{2} + \frac{1}{2}(E^{2}+B^{2}) & -E_{y} E_{z} - B_{y} B_{z} \\
-(\mathbf{E}\times\mathbf{B})_{z} & -E_{z} E_{x} - B_{z} B_{x} & -E_{z} E_{y} - B_{z} B_{y} & -E_{z}^{2} - B_{z}^{2} + \frac{1}{2}(E^{2}+B^{2})
-\end{pmatrix}
+\eta_{\mu \nu} T^{\mu \nu} = \frac{1}{\mu_{0}} \left(\eta_{\mu \nu} F^{\mu \alpha} F^{\nu} {}_{\alpha} - \frac{1}{4} \eta^{\mu \nu} \eta_{\mu \nu} F^{\rho \sigma} F_{\rho \sigma}\right) = \frac{1}{\mu_{0}} \left( F^{\mu \alpha} F_{\mu \alpha} - F^{\rho \sigma} F_{\rho \sigma}\right) = 0
 $$
+is traceless.
 
-and we can find that the energy-momentum tensor’s trace is 
-$$
-\frac{1}{2} (E^{2} + B^{2}) + -E_{x}^{2} - B_{x}^{2} + \frac{1}{2}(E^{2}+B^{2}) + -E_{y}^{2} - B_{y}^{2} + \frac{1}{2}(E^{2}+B^{2}) + -E_{z}^{2} - B_{z}^{2} + \frac{1}{2}(E^{2}+B^{2}) = 0
-$$
-So the tensor is traceless, and the covariant version of this tensor, only with the $T_{0i}$ and $T_{i0}$ components’ signs inversed, is also traceless.
-
-### (3) Please derive (26).
+(3) Please derive (26).
 
 >But a direct calculation gives
 >
@@ -127,7 +115,7 @@ $$
 e^{\mu}_{\pm}(k) + \frac{1}{\sqrt{2}} \begin{pmatrix} \tan \theta \\ 0 \\ 0 \\ \tan \theta \end{pmatrix} = e^{\mu}_{\pm}(k) + \frac{\tan \theta}{\sqrt{2} k^{0}} k^{\mu}
 $$
 
-### (4) Please prove (29).
+(4) Please prove (29).
 
 >What are they? $R_{z}(\theta)$ is clearly an SO(2) generator; For 2 $R \times L$-type transform, taking $\theta \rightarrow 0$ we get generators:
 >
@@ -201,7 +189,7 @@ $$
 \end{pmatrix} = 0
 $$
 
-### (5) Please derive (33).
+(5) Please derive (33).
 
 >The polarization tensor $e^{\mu\nu}_{\pm}$ is symmetric, traceless, and transverse.  Once again, $e^{\mu\nu}_{\pm}$ is not a Lorentz tensor.  Under the two “Abelian” LGTs:
 >
