@@ -1,17 +1,27 @@
 [
   {
-    "title": "Schwarzschild Metric Killing Vectors Proof",
-    "desc": "Demonstrates that δᵐᵤ_t and δᵐᵤ_φ are Killing vectors using Christoffel symbols.",
+    "title": "Schwarzschild Metric Killing Vectors",
+    "desc": "Proving time and angular Killing vectors in Schwarzschild spacetime.",
     "tags": [
       "General Relativity",
-      "Schwarzschild Metric",
-      "Killing Vectors"
+      "Killing Vectors",
+      "Schwarzschild Metric"
     ],
     "link": "/physics/General Relativity/General Relativity Homework 4"
   },
   {
-    "title": "Advanced LIGO Noise Sources Explained",
-    "desc": "Analyzes quantum, thermal, and technical noise components in gravitational wave detectors.",
+    "title": "General Relativity Homework 5 Solutions",
+    "desc": "Calculating Christoffel symbols and Ricci tensor for a time-dependent metric.",
+    "tags": [
+      "Christoffel symbols",
+      "Ricci tensor",
+      "General Relativity"
+    ],
+    "link": "/physics/General Relativity/General Relativity Homework 5"
+  },
+  {
+    "title": "Advanced LIGO Noise Sources and Quantum Noise",
+    "desc": "Analyzes quantum, thermal, seismic, and gas noise in Advanced LIGO interferometers, detailing their impact on gravitational wave detection.",
     "tags": [
       "quantum noise",
       "thermal noise",
@@ -20,8 +30,78 @@
     "link": "/physics/General Relativity/Gravitational Waves/Quantum Noise"
   },
   {
+    "title": "Quantum Mechanics Homework Solutions",
+    "desc": "Proofs on operator properties and uncertainty relations in quantum mechanics.",
+    "tags": [
+      "Hermitian Operators",
+      "Uncertainty Relations",
+      "Unitary Transformations"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 4"
+  },
+  {
+    "title": "Statistical Mechanics: Particle Distributions and Quantum States",
+    "desc": "Calculates most probable distributions for classical, bosonic, and fermionic particles, linking β to temperature.",
+    "tags": [
+      "Statistical Mechanics",
+      "Particle Statistics",
+      "Quantum States"
+    ],
+    "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 5"
+  },
+  {
+    "title": "Solving Physics Integrals and Tensor Proofs",
+    "desc": "Step-by-step solutions for quantum field theory and electromagnetism exercises.",
+    "tags": [
+      "integral",
+      "tensor",
+      "gauge"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 2 Exercise"
+  },
+  {
+    "title": "Proving Lorentz Invariance and Optical Theorem",
+    "desc": "Demonstrates Lorentz invariance of inner products and derives optical theorem from S-matrix unitarity.",
+    "tags": [
+      "Lorentz invariance",
+      "S-matrix",
+      "optical theorem"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 3 Exercise"
+  },
+  {
+    "title": "Scattering Theory Principles and Axioms",
+    "desc": "Explores scattering amplitude constraints, Hilbert space axioms, and asymptotic states in quantum theory.",
+    "tags": [
+      "scattering amplitude",
+      "Hilbert space",
+      "Fock space"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 3"
+  },
+  {
+    "title": "On-Shell Factorization in Quantum Field Theory",
+    "desc": "Explores Green functions, poles, and factorization in scattering amplitudes.",
+    "tags": [
+      "Green function",
+      "On-shell",
+      "Factorization"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 4"
+  },
+  {
+    "title": "Spinor Helicity Formalism in Physics",
+    "desc": "Exploring massless amplitudes and spinor representations in quantum field theory.",
+    "tags": [
+      "spinor helicity",
+      "massless amplitudes",
+      "Lorentz group"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 5"
+  },
+  {
     "title": "Statistical Mechanics Homework: Normalization and Particle Classification",
-    "desc": "Normalizing a probability distribution and classifying particles as bosons or fermions.",
+    "desc": "Normalizing a probability distribution and classifying particles as bosons or fermions based on spin.",
     "tags": [
       "probability distribution",
       "normalization",
@@ -41,7 +121,7 @@
   },
   {
     "title": "Advanced Calculus Series Convergence Analysis",
-    "desc": "Analyzing convergence of six complex series using comparison, ratio, and root tests.",
+    "desc": "Analyzing convergence of six infinite series using comparison, ratio, and root tests.",
     "tags": [
       "series convergence",
       "ratio test",
@@ -51,11 +131,11 @@
   },
   {
     "title": "Advanced Calculus Surface and Curve Integrals",
-    "desc": "Solutions for surface integrals, Stokes' theorem, and complex line integrals in multivariable calculus.",
+    "desc": "Solutions for surface integrals on a plane disk and curve integrals using parameterization.",
     "tags": [
-      "Surface Integrals",
-      "Stokes' Theorem",
-      "Line Integrals"
+      "Surface Integral",
+      "Parameterization",
+      "Stokes' Theorem"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 10"
   },
@@ -63,9 +143,9 @@
     "title": "Power Series Convergence and Summation Formulas",
     "desc": "Analyzing convergence domains and proving summation formulas for power series like ln(1+x) and arctan(x).",
     "tags": [
-      "Power Series",
-      "Convergence",
-      "Taylor Expansion"
+      "power series",
+      "convergence",
+      "Taylor expansion"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 2"
   },
@@ -81,7 +161,7 @@
   },
   {
     "title": "Advanced Calculus: Existence of Extrema",
-    "desc": "Proving continuous functions attain minima and maxima on specific sets in ℝ².",
+    "desc": "Proving existence of minima and maxima for continuous functions on Euclidean spaces.",
     "tags": [
       "continuous functions",
       "extreme value theorem",
@@ -91,11 +171,11 @@
   },
   {
     "title": "Advanced Calculus Partial Derivative Exercises",
-    "desc": "A set of partial derivative problems with solutions, covering chain rule applications.",
+    "desc": "A collection of partial derivative problems with solutions in advanced calculus.",
     "tags": [
-      "Partial Derivatives",
-      "Chain Rule",
-      "Multivariable Calculus"
+      "partial derivatives",
+      "multivariable calculus",
+      "chain rule"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 5"
   },
@@ -121,17 +201,17 @@
   },
   {
     "title": "Advanced Calculus Integration Problems",
-    "desc": "Three multivariable integration problems solved using coordinate transformations.",
+    "desc": "Solving area and volume integrals using coordinate transformations and Jacobians.",
     "tags": [
       "multivariable calculus",
-      "integration",
-      "coordinate transformation"
+      "Jacobian",
+      "integration"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 8"
   },
   {
     "title": "Advanced Calculus: Surface Area and Centroids",
-    "desc": "Calculating surface areas and centroids for ellipsoids, spheres, and tori using double integrals.",
+    "desc": "Deriving surface area formulas for ellipsoids and tori, and calculating centroids.",
     "tags": [
       "Surface Integrals",
       "Parametrization",
@@ -141,7 +221,7 @@
   },
   {
     "title": "Complex Analysis Homework: Proofs and Trigonometric Identities",
-    "desc": "A complex analysis assignment proving a modulus identity and deriving trigonometric formulas.",
+    "desc": "A complex analysis assignment proving a modulus identity and deriving multiple-angle trigonometric formulas.",
     "tags": [
       "complex analysis",
       "trigonometric identities",
@@ -151,7 +231,7 @@
   },
   {
     "title": "Complex Analysis Homework: Residue Theorem Applications",
-    "desc": "Solving integrals using the residue theorem with detailed step-by-step calculations.",
+    "desc": "Calculating integrals using the residue theorem with detailed step-by-step solutions.",
     "tags": [
       "Residue Theorem",
       "Complex Integration",
@@ -170,8 +250,8 @@
     "link": "/maths/Complex Analysis/Complex Analysis Homework 11"
   },
   {
-    "title": "Complex Functions Homework: Trigonometric Identities",
-    "desc": "Proving complex sine/cosine addition formulas and hyperbolic identities using Euler's formula.",
+    "title": "Complex Function Homework: Trigonometric Identities",
+    "desc": "Proofs for complex sine/cosine addition formulas and hyperbolic identities.",
     "tags": [
       "complex analysis",
       "trigonometric identities",
@@ -181,26 +261,26 @@
   },
   {
     "title": "Analyzing Multivalued Functions and Branch Points",
-    "desc": "A technical analysis of branch points and values for complex functions like sqrt(1-z^3).",
+    "desc": "A technical analysis of multivalued complex functions, their branch points, and path-dependent evaluations.",
     "tags": [
       "Complex Analysis",
-      "Branch Points",
-      "Multivalued Functions"
+      "Multivalued Functions",
+      "Branch Points"
     ],
     "link": "/maths/Complex Analysis/Complex Analysis Homework 3"
   },
   {
-    "title": "Complex Analysis Homework: Contour Integrals",
-    "desc": "Solutions for complex contour integrals and Poisson formula proofs.",
+    "title": "Complex Analysis Homework Solutions",
+    "desc": "Solutions for contour integrals and function analysis in complex variables.",
     "tags": [
-      "Complex Analysis",
-      "Contour Integration",
-      "Residue Theorem"
+      "contour integration",
+      "residue theorem",
+      "Poisson formula"
     ],
     "link": "/maths/Complex Analysis/Complex Analysis Homework 4"
   },
   {
-    "title": "Complex Analysis Homework on Series Convergence",
+    "title": "Complex Analysis Homework: Series Convergence Tests",
     "desc": "Analyzing convergence of positive and complex series with counterexamples.",
     "tags": [
       "Series Convergence",
@@ -210,93 +290,13 @@
     "link": "/maths/Complex Analysis/Complex Analysis Homework 5"
   },
   {
-    "title": "Complex Analysis Homework: Series Convergence",
-    "desc": "Analyzing convergence radii and sum functions in complex power series problems.",
+    "title": "Complex Analysis Homework on Series Convergence",
+    "desc": "Analyzing convergence radii, sum functions, and Fourier series in complex analysis problems.",
     "tags": [
       "complex analysis",
       "power series",
       "convergence"
     ],
     "link": "/maths/Complex Analysis/Complex Analysis Homework 6"
-  },
-  {
-    "title": "Complex Analysis: Taylor Series Expansions",
-    "desc": "Taylor series expansions for secant, logarithmic, and square root functions in complex analysis.",
-    "tags": [
-      "Taylor Series",
-      "Complex Analysis",
-      "Convergence Radius"
-    ],
-    "link": "/maths/Complex Analysis/Complex Analysis Homework 7"
-  },
-  {
-    "title": "Complex Analysis: Laurent Series Expansions",
-    "desc": "Detailed Laurent expansions for rational and logarithmic functions in complex analysis.",
-    "tags": [
-      "Laurent Series",
-      "Complex Analysis",
-      "Series Expansion"
-    ],
-    "link": "/maths/Complex Analysis/Complex Analysis Homework 8"
-  },
-  {
-    "title": "Complex Analysis Homework on Analytic Continuation",
-    "desc": "Proofs for analytic continuation, series convergence, and function singularities in complex analysis.",
-    "tags": [
-      "analytic continuation",
-      "power series",
-      "singularities"
-    ],
-    "link": "/maths/Complex Analysis/Complex Analysis Homework 9"
-  },
-  {
-    "title": "Spherical Harmonics Expansion and PDE Solutions",
-    "desc": "Expanding functions in spherical harmonics and solving Poisson equations with boundary conditions.",
-    "tags": [
-      "spherical harmonics",
-      "Poisson equation",
-      "boundary value problem"
-    ],
-    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 10"
-  },
-  {
-    "title": "Math Physics Equations Homework Solutions",
-    "desc": "Integral calculations and Bessel function identities in mathematical physics.",
-    "tags": [
-      "Integral Calculus",
-      "Bessel Functions",
-      "Mathematical Physics"
-    ],
-    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 11"
-  },
-  {
-    "title": "Critical Radius Calculations for Nuclear Reactors",
-    "desc": "Deriving critical radii for cylindrical and spherical uranium blocks using diffusion equations.",
-    "tags": [
-      "Diffusion Equation",
-      "Bessel Functions",
-      "Critical Radius"
-    ],
-    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 12"
-  },
-  {
-    "title": "Delta Function Properties and Coordinate Transformations",
-    "desc": "Proofs of delta function identities in 1D, 3D, and coordinate systems.",
-    "tags": [
-      "delta function",
-      "coordinate transformation",
-      "Laplacian"
-    ],
-    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 13"
-  },
-  {
-    "title": "Solving Forced Vibration with Laplace Transforms",
-    "desc": "A step-by-step solution to a damped oscillator driven by a harmonic force using Laplace transforms.",
-    "tags": [
-      "Laplace Transform",
-      "Forced Vibration",
-      "Differential Equations"
-    ],
-    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 14"
   }
 ]
