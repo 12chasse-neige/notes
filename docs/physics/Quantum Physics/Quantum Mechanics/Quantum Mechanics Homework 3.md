@@ -1,6 +1,6 @@
 # 量子力学 第3次作业
 
-吴桐 2024012555
+Chasse_neige
 
 3.5.1 设有一个阶跃势场 $V(x)=\begin{cases}0 & x<0 \\ V_{0} (>0) & x>0\end{cases}$ 粒子以能量 $E (>V_{0})$ 从左方入射。求 $R$ 和 $T$，并验证 $R+T=1$。提示：注意这时应该使用原始的 $R$ 和 $T$ 的定义。
 
@@ -341,7 +341,6 @@ $$
 所以一般地
 $$
 f^{(n)}(\lambda)=e^{\lambda\hat{A}}\underbrace{[\hat{A},[\hat{A},\cdots[\hat{A}}_{n},\hat{B}]\cdots]]e^{-\lambda\hat{A}}
-
 $$
 在 $\lambda=0$ 处展开为泰勒级数
 $$

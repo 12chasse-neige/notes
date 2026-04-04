@@ -231,7 +231,7 @@ $$
 其中
 $$
 I_{SQL} = \frac{m L^{2} \gamma^{4}}{4 \omega_{o}} \\
-h_{SQL} = \sqrt{\frac{8 \hbar}{m \Omega^{2}}}
+h_{SQL} = \sqrt{\frac{8 \hbar}{m \Omega^{2} L^{2}}}
 $$
 这就是 Ponderomotive effect，即散粒噪声 $a_{1}$ 推动了镜子，产生了一个与 $a_{1}$ 成正比的随机位移 $x_{\text{BA}}$
 
@@ -335,7 +335,7 @@ $$
 
 squeeze 算符的定义则是
 $$
-S (r \phi) = e^{r (a_{+} a_{-} e^{- 2 i \phi} - a_{+}^{\dagger} a_{-}^{\dagger} e^{2 i \phi})}
+S (r, \phi) = e^{r (a_{+} a_{-} e^{- 2 i \phi} - a_{+}^{\dagger} a_{-}^{\dagger} e^{2 i \phi})}
 $$
 这个算符也是 Unitary 的，并且逆为
 $$
@@ -400,3 +400,41 @@ $$
 S_{b'_{1} b'_{2}} = 0
 $$
 
+#### 压缩噪声
+
+我们可以在 dark port 输入之前给它上一个压缩，来减少最后的量子噪声。所谓的 squeezed-input 可以表示成
+$$
+\ket{\text{in}} = S (R, \lambda) \ket{0_{a}}
+$$
+所以最后的噪声就是
+$$
+\langle \text{in} | h_{n} h_{n'} | \text{in} \rangle 
+$$
+把压缩算符提进去
+$$
+\langle 0_{a} | h_{ns} h_{ns'} | 0_{a} \rangle
+$$
+其中
+$$
+h_{ns} = S^{\dagger} (R, \lambda) h_{n} S (R, \lambda)
+$$
+带入
+$$
+h_{n} = \frac{h_{SQL}}{\sqrt{2 \mathcal{K}}} \Delta b_{2} e^{- i \beta}
+$$
+计算得到
+$$
+h_{ns} = - \frac{h_{SQL}}{\sqrt{2 \mathcal{K}}} \sqrt{1 + \mathcal{K}^{2}} e^{- i \beta} \times \\ \left(a_{1} (\cosh R \cos \Phi - \sinh R \cos(\Phi - 2(\Phi + \lambda)) - a_{2} (\cosh R  \sin \Phi - \sinh R \sin(\Phi - 2 (\Phi + \lambda)))\right)
+$$
+所以总的噪声谱就是
+$$
+S_{h} = \frac{h_{SQL}^{2}}{2} \left(\mathcal{K} + \frac{1}{\mathcal{K}}\right) (\cosh 2R - \cos (2 (\lambda + \Phi)) \sinh 2R)
+$$
+其中 $\Phi = \arccot \mathcal{K}$，所以在 $\lambda = - \Phi$ 的时候，噪声压缩到最小为
+$$
+S_{h} = \frac{h_{SQL}^{2}}{2} \left(\mathcal{K} + \frac{1}{\mathcal{K}}\right) e^{- 2 R}
+$$
+
+### Detuned Interferometer 噪声谱
+
+为了减少在特定频率出的量子噪声，可以通过

@@ -232,6 +232,7 @@ export default defineConfig({
           dd: ['{\\mathrm{d}^{#1} {#2}}', 2, ''],
           exist: '{\\exists}',
           tr: '{\\text{tr}}',
+          arccot: '{\\text{arccot}}',
           dag: '{\\dagger}',
           real: '{\\Re}',
           imag: '{\\Im}',
