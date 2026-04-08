@@ -10,8 +10,38 @@
     "link": "/physics/General Relativity/Gravitational Waves/Quantum Noise"
   },
   {
-    "title": "Quantum Mechanics Step Potential Analysis",
-    "desc": "Calculating reflection and transmission coefficients for a step potential, verifying probability conservation.",
+    "title": "Deriving Dyson Series and On-Shell Factorization",
+    "desc": "Step-by-step derivation of Dyson series for transition amplitudes and on-shell factorization theorem.",
+    "tags": [
+      "Dyson series",
+      "S-matrix",
+      "quantum field theory"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 4 Exercise"
+  },
+  {
+    "title": "Massless Amplitudes and Spinor-Helicity Formalism",
+    "desc": "Exploring 3-point amplitudes and spinor-helicity variables for massless spinning particles.",
+    "tags": [
+      "amplitudes",
+      "spinor-helicity",
+      "scattering"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 5 Exercise"
+  },
+  {
+    "title": "Spinor Helicity for Massless Amplitudes",
+    "desc": "Explains spinor helicity formalism using Lorentz group decomposition and spinors.",
+    "tags": [
+      "spinor helicity",
+      "Lorentz group",
+      "massless amplitudes"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 5"
+  },
+  {
+    "title": "Quantum Step Potential and Probability Conservation",
+    "desc": "Analyzing reflection and transmission coefficients for a step potential, proving probability conservation.",
     "tags": [
       "quantum mechanics",
       "step potential",
@@ -20,18 +50,18 @@
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 3"
   },
   {
-    "title": "Quantum Mechanics: Symmetry and Conservation",
+    "title": "Quantum Mechanics Symmetry and Conservation",
     "desc": "Analyzes angular momentum conservation and proves the Feynman-Hellmann theorem.",
     "tags": [
       "angular momentum",
       "Feynman-Hellmann theorem",
-      "quantum mechanics"
+      "conservation laws"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 5"
   },
   {
-    "title": "Statistical Mechanics: 2D Gas and Relative Velocity",
-    "desc": "Derives velocity distributions for 2D ideal gas and relative speed between molecules.",
+    "title": "Statistical Mechanics: 2D Gas Distributions",
+    "desc": "Derives velocity and rate distributions for 2D ideal gases and relative molecular speeds.",
     "tags": [
       "Statistical Mechanics",
       "Maxwell Distribution",
@@ -40,32 +70,22 @@
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 6"
   },
   {
-    "title": "On-Shell Factorization and Soft Theorems",
-    "desc": "Exploring connected amplitudes, on-shell factorization, and Weinberg's soft theorem for massless particles.",
-    "tags": [
-      "S-matrix",
-      "Green functions",
-      "soft theorem"
-    ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 4 Exercise"
-  },
-  {
     "title": "On-Shell Factorization in Quantum Field Theory",
-    "desc": "Explores Green functions, momentum space poles, and factorization conditions in QFT.",
+    "desc": "Explores Green functions, poles, and factorization in scattering amplitudes.",
     "tags": [
-      "Green function",
-      "momentum space",
-      "factorization"
+      "Green Function",
+      "On-Shell",
+      "Factorization"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 4"
   },
   {
-    "title": "Schwarzschild Metric Killing Vectors",
-    "desc": "Proving time and angular Killing vectors in Schwarzschild spacetime.",
+    "title": "Killing Vectors in Schwarzschild Metric",
+    "desc": "Proving time and azimuthal symmetries as Killing vectors using Christoffel symbols.",
     "tags": [
       "General Relativity",
-      "Killing Vectors",
-      "Schwarzschild Metric"
+      "Schwarzschild Metric",
+      "Killing Vectors"
     ],
     "link": "/physics/General Relativity/General Relativity Homework 4"
   },
@@ -83,19 +103,19 @@
     "title": "Quantum Mechanics Homework Solutions",
     "desc": "Proofs for operator properties and uncertainty relations in quantum mechanics.",
     "tags": [
+      "Quantum Mechanics",
       "Hermitian Operators",
-      "Uncertainty Relations",
-      "Unitary Transformations"
+      "Uncertainty Relations"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 4"
   },
   {
-    "title": "Statistical Mechanics: Particle Distributions Analysis",
-    "desc": "Calculates most probable distributions for classical, Bose, and Fermi particles with temperature correspondence.",
+    "title": "Statistical Mechanics: Most Probable Distributions",
+    "desc": "Calculates equilibrium distributions for classical, bosonic, and fermionic particles.",
     "tags": [
       "Statistical Mechanics",
-      "Particle Statistics",
-      "Thermodynamics"
+      "Quantum Statistics",
+      "Lagrange Multipliers"
     ],
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 5"
   },
@@ -111,7 +131,7 @@
   },
   {
     "title": "Proving Lorentz Invariance and Optical Theorem",
-    "desc": "Demonstrates Lorentz invariance of inner products and derives optical theorem from S-matrix unitarity.",
+    "desc": "Demonstrates Lorentz invariance of inner product and derives optical theorem from S-matrix unitarity.",
     "tags": [
       "Lorentz invariance",
       "S-matrix",
@@ -130,18 +150,8 @@
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 3"
   },
   {
-    "title": "Spinor Helicity Formalism in Physics",
-    "desc": "Explores massless amplitudes and spinor representations in quantum field theory.",
-    "tags": [
-      "spinor helicity",
-      "massless amplitudes",
-      "Lorentz group"
-    ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 5"
-  },
-  {
     "title": "Statistical Mechanics Homework: Normalization and Particle Classification",
-    "desc": "Normalizing a probability distribution and classifying particles as bosons or fermions.",
+    "desc": "Normalizing a probability distribution and classifying particles as bosons or fermions based on spin.",
     "tags": [
       "probability distribution",
       "normalization",
@@ -181,7 +191,7 @@
   },
   {
     "title": "Power Series Convergence and Summation",
-    "desc": "Analyzing convergence domains and proving summation formulas for power series.",
+    "desc": "Analyzing convergence domains and proving summation formulas for ln(1+x) and arctan(x).",
     "tags": [
       "power series",
       "convergence",
@@ -211,17 +221,17 @@
   },
   {
     "title": "Advanced Calculus Partial Derivative Exercises",
-    "desc": "A set of partial derivative problems with solutions, covering chain rule applications.",
+    "desc": "A collection of partial derivative problems with solutions in advanced calculus.",
     "tags": [
-      "Partial Derivatives",
-      "Chain Rule",
-      "Multivariable Calculus"
+      "partial derivatives",
+      "multivariable calculus",
+      "differentiation"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 5"
   },
   {
-    "title": "Implicit Function Theorem Application in Calculus",
-    "desc": "Analyzing an implicit function defined by a cubic equation and computing its partial derivatives.",
+    "title": "Implicit Function Theorem in Advanced Calculus",
+    "desc": "Proving existence and computing derivatives of an implicit function from a cubic equation.",
     "tags": [
       "Implicit Function Theorem",
       "Partial Derivatives",
@@ -241,37 +251,37 @@
   },
   {
     "title": "Advanced Calculus Integration Problems",
-    "desc": "Solutions for three multivariable integration problems using coordinate transformations.",
+    "desc": "Solving area and volume integrals using coordinate transformations and Jacobians.",
     "tags": [
-      "multivariable calculus",
-      "integration",
-      "coordinate transformation"
+      "Jacobian",
+      "Coordinate Transformation",
+      "Multiple Integrals"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 8"
   },
   {
     "title": "Advanced Calculus: Surface Area and Centroids",
-    "desc": "Calculating surface areas and centroids for ellipsoids, spheres, and tori using double integrals.",
+    "desc": "Calculating surface areas and centroids using double integrals and parameterization.",
     "tags": [
-      "double integrals",
-      "surface area",
-      "centroid"
+      "Double Integral",
+      "Surface Area",
+      "Parameterization"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 9"
   },
   {
-    "title": "Complex Analysis Homework: Proofs and Trigonometric Identities",
-    "desc": "A complex analysis assignment proving a modulus identity and deriving trigonometric formulas using Euler's formula.",
+    "title": "Complex Analysis Homework Problems and Proofs",
+    "desc": "Proofs and formulas for complex functions and trigonometric expansions.",
     "tags": [
       "complex analysis",
       "trigonometric identities",
-      "Euler's formula"
+      "mathematical proof"
     ],
     "link": "/maths/Complex Analysis/Complex Analysis Homework 1"
   },
   {
     "title": "Complex Analysis Homework: Residue Theorem Applications",
-    "desc": "Calculating integrals using the residue theorem with detailed step-by-step solutions.",
+    "desc": "Solving integrals using the residue theorem with detailed step-by-step calculations.",
     "tags": [
       "Residue Theorem",
       "Complex Integration",
@@ -281,22 +291,12 @@
   },
   {
     "title": "Complex Analysis: Residue Theorem Applications",
-    "desc": "Using the residue theorem to evaluate challenging improper integrals with branch cuts.",
+    "desc": "Using the residue theorem to evaluate improper integrals with branch cuts.",
     "tags": [
       "Residue Theorem",
       "Complex Integration",
       "Branch Cuts"
     ],
     "link": "/maths/Complex Analysis/Complex Analysis Homework 11"
-  },
-  {
-    "title": "Complex Functions Homework: Trigonometric Identities",
-    "desc": "Proving complex sine/cosine addition formulas and hyperbolic identities using Euler's formula.",
-    "tags": [
-      "Complex Analysis",
-      "Trigonometric Functions",
-      "Hyperbolic Functions"
-    ],
-    "link": "/maths/Complex Analysis/Complex Analysis Homework 2"
   }
 ]
