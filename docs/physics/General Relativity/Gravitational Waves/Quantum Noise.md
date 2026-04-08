@@ -437,4 +437,4 @@ $$
 
 ### Detuned Interferometer 噪声谱
 
-为了减少在特定频率出的量子噪声，可以通过
+为了减少在特定频率出的量子噪声，可以通过 detuned interferometer 的方法来减小窄带内的量子噪声。
