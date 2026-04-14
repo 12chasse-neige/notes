@@ -1,7 +1,17 @@
 [
   {
-    "title": "Advanced LIGO Noise Sources Explained",
-    "desc": "Analyzes quantum, thermal, and technical noise components in gravitational wave detectors.",
+    "title": "Gravitational Waves: Linear Approximation Analysis",
+    "desc": "Explores gravitational wave generation and detection using linearized Einstein equations.",
+    "tags": [
+      "gravitational waves",
+      "linear approximation",
+      "Einstein equations"
+    ],
+    "link": "/physics/General Relativity/Gravitational Waves/Gravitational Waves Formation and Propagation"
+  },
+  {
+    "title": "Interferometer Noise Sources and Quantum Noise",
+    "desc": "Analyzes Advanced LIGO's noise composition, focusing on quantum, thermal, and technical noise sources.",
     "tags": [
       "quantum noise",
       "thermal noise",
@@ -10,12 +20,32 @@
     "link": "/physics/General Relativity/Gravitational Waves/Quantum Noise"
   },
   {
-    "title": "Deriving Dyson Series and On-Shell Factorization",
-    "desc": "Step-by-step derivation of Dyson series for transition amplitudes and on-shell factorization theorem.",
+    "title": "Two-Body Systems and Spherical Wells",
+    "desc": "Deriving kinetic energy separation and solving for bound states in a finite spherical potential well.",
+    "tags": [
+      "quantum mechanics",
+      "two-body problem",
+      "bound states"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 6"
+  },
+  {
+    "title": "Statistical Mechanics Homework: Entropy and Magnetism",
+    "desc": "Calculating entropy for Einstein solids and magnetization in paramagnetic systems under various limits.",
+    "tags": [
+      "Statistical Mechanics",
+      "Entropy",
+      "Magnetization"
+    ],
+    "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 7"
+  },
+  {
+    "title": "Deriving Dyson Series and Factorization Theorem",
+    "desc": "Step-by-step derivation of Dyson series for transition amplitudes and on-shell factorization theorem proof.",
     "tags": [
       "Dyson series",
       "S-matrix",
-      "quantum field theory"
+      "interaction picture"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 4 Exercise"
   },
@@ -31,7 +61,7 @@
   },
   {
     "title": "Spinor Helicity for Massless Amplitudes",
-    "desc": "Explains spinor helicity formalism using Lorentz group decomposition and spinors.",
+    "desc": "Explores spinor helicity formalism to simplify massless scattering amplitudes using Lorentz group decomposition.",
     "tags": [
       "spinor helicity",
       "Lorentz group",
@@ -40,8 +70,18 @@
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 5"
   },
   {
-    "title": "Quantum Step Potential and Probability Conservation",
-    "desc": "Analyzing reflection and transmission coefficients for a step potential, proving probability conservation.",
+    "title": "Four Particle Test in Scattering Amplitudes",
+    "desc": "Analyzing 4-point amplitudes using on-shell factorization and rational functions in particle physics.",
+    "tags": [
+      "scattering-amplitudes",
+      "on-shell-factorization",
+      "yang-mills"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 6"
+  },
+  {
+    "title": "Quantum Step Potential: Reflection and Transmission",
+    "desc": "Calculating reflection and transmission coefficients for a quantum particle crossing a step potential.",
     "tags": [
       "quantum mechanics",
       "step potential",
@@ -60,8 +100,8 @@
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 5"
   },
   {
-    "title": "Statistical Mechanics: 2D Gas Distributions",
-    "desc": "Derives velocity and rate distributions for 2D ideal gases and relative molecular speeds.",
+    "title": "Statistical Mechanics: 2D Gas and Relative Velocity",
+    "desc": "Analyzes velocity distributions in 2D gases and derives relative speed distributions between molecules.",
     "tags": [
       "Statistical Mechanics",
       "Maxwell Distribution",
@@ -71,17 +111,17 @@
   },
   {
     "title": "On-Shell Factorization in Quantum Field Theory",
-    "desc": "Explores Green functions, poles, and factorization in scattering amplitudes.",
+    "desc": "Explores Green functions, momentum space poles, and factorization in scattering amplitudes.",
     "tags": [
       "Green Function",
-      "On-Shell",
+      "Momentum Space",
       "Factorization"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 4"
   },
   {
-    "title": "Killing Vectors in Schwarzschild Metric",
-    "desc": "Proving time and azimuthal symmetries as Killing vectors using Christoffel symbols.",
+    "title": "Schwarzschild Metric Killing Vectors Proof",
+    "desc": "Demonstrates that δᵐᵤ_t and δᵐᵤ_φ are Killing vectors using Christoffel symbols.",
     "tags": [
       "General Relativity",
       "Schwarzschild Metric",
@@ -101,27 +141,27 @@
   },
   {
     "title": "Quantum Mechanics Homework Solutions",
-    "desc": "Proofs for operator properties and uncertainty relations in quantum mechanics.",
+    "desc": "Proofs on operator properties and uncertainty relations in quantum mechanics.",
     "tags": [
-      "Quantum Mechanics",
       "Hermitian Operators",
-      "Uncertainty Relations"
+      "Uncertainty Relations",
+      "Unitary Transformations"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 4"
   },
   {
-    "title": "Statistical Mechanics: Most Probable Distributions",
-    "desc": "Calculates equilibrium distributions for classical, bosonic, and fermionic particles.",
+    "title": "Statistical Mechanics: Particle Distributions and Quantum States",
+    "desc": "Calculates most probable distributions for classical, bosonic, and fermionic particles, linking β to temperature.",
     "tags": [
       "Statistical Mechanics",
-      "Quantum Statistics",
-      "Lagrange Multipliers"
+      "Particle Statistics",
+      "Quantum States"
     ],
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 5"
   },
   {
     "title": "Solving Physics Integrals and Tensor Proofs",
-    "desc": "Step-by-step solutions for quantum field theory and electromagnetism exercises.",
+    "desc": "Step-by-step solutions for quantum field theory integrals and photon tensor derivations.",
     "tags": [
       "integral",
       "tensor",
@@ -141,7 +181,7 @@
   },
   {
     "title": "Scattering Theory Principles and Axioms",
-    "desc": "Explores scattering amplitude constraints, Hilbert space axioms, and Fock space definitions in quantum theory.",
+    "desc": "Explores scattering amplitude constraints, Hilbert space axioms, and Fock space in quantum mechanics.",
     "tags": [
       "scattering amplitude",
       "Hilbert space",
@@ -171,7 +211,7 @@
   },
   {
     "title": "Advanced Calculus Series Convergence Analysis",
-    "desc": "Analyzing convergence of six complex series using comparison, ratio, and root tests.",
+    "desc": "Analyzing convergence of six infinite series using comparison, ratio, and root tests.",
     "tags": [
       "series convergence",
       "ratio test",
@@ -181,17 +221,17 @@
   },
   {
     "title": "Advanced Calculus Surface and Curve Integrals",
-    "desc": "Solutions for surface integrals, Stokes' theorem, and complex line integrals in multivariable calculus.",
+    "desc": "Solutions for surface integrals, Stokes' theorem applications, and polar coordinate transformations.",
     "tags": [
       "Surface Integrals",
       "Stokes' Theorem",
-      "Line Integrals"
+      "Parameterization"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 10"
   },
   {
-    "title": "Power Series Convergence and Summation",
-    "desc": "Analyzing convergence domains and proving summation formulas for ln(1+x) and arctan(x).",
+    "title": "Power Series Convergence and Summation Formulas",
+    "desc": "Analyzing convergence domains and proving summation formulas for power series and function expansions.",
     "tags": [
       "power series",
       "convergence",
@@ -204,8 +244,8 @@
     "desc": "Proving metric properties and Cauchy-Schwarz inequality in function spaces.",
     "tags": [
       "metric space",
-      "Cauchy sequence",
-      "Cauchy-Schwarz inequality"
+      "Cauchy-Schwarz inequality",
+      "open sets"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 3"
   },
@@ -221,17 +261,17 @@
   },
   {
     "title": "Advanced Calculus Partial Derivative Exercises",
-    "desc": "A collection of partial derivative problems with solutions in advanced calculus.",
+    "desc": "A set of partial derivative problems with solutions, covering chain rule applications.",
     "tags": [
-      "partial derivatives",
-      "multivariable calculus",
-      "differentiation"
+      "Partial Derivatives",
+      "Chain Rule",
+      "Multivariable Calculus"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 5"
   },
   {
-    "title": "Implicit Function Theorem in Advanced Calculus",
-    "desc": "Proving existence and computing derivatives of an implicit function from a cubic equation.",
+    "title": "Implicit Function Theorem Application in Calculus",
+    "desc": "Analyzing a cubic equation to prove implicit function existence and compute partial derivatives.",
     "tags": [
       "Implicit Function Theorem",
       "Partial Derivatives",
@@ -243,60 +283,20 @@
     "title": "Advanced Calculus Critical Points Analysis",
     "desc": "Finding and classifying critical points of multivariable functions using partial derivatives.",
     "tags": [
+      "multivariable calculus",
       "critical points",
-      "Hessian matrix",
-      "multivariable calculus"
+      "Hessian matrix"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 7"
   },
   {
     "title": "Advanced Calculus Integration Problems",
-    "desc": "Solving area and volume integrals using coordinate transformations and Jacobians.",
+    "desc": "Three multivariable integration problems solved using coordinate transformations.",
     "tags": [
-      "Jacobian",
-      "Coordinate Transformation",
-      "Multiple Integrals"
+      "multivariable calculus",
+      "integration",
+      "coordinate transformation"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 8"
-  },
-  {
-    "title": "Advanced Calculus: Surface Area and Centroids",
-    "desc": "Calculating surface areas and centroids using double integrals and parameterization.",
-    "tags": [
-      "Double Integral",
-      "Surface Area",
-      "Parameterization"
-    ],
-    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 9"
-  },
-  {
-    "title": "Complex Analysis Homework Problems and Proofs",
-    "desc": "Proofs and formulas for complex functions and trigonometric expansions.",
-    "tags": [
-      "complex analysis",
-      "trigonometric identities",
-      "mathematical proof"
-    ],
-    "link": "/maths/Complex Analysis/Complex Analysis Homework 1"
-  },
-  {
-    "title": "Complex Analysis Homework: Residue Theorem Applications",
-    "desc": "Solving integrals using the residue theorem with detailed step-by-step calculations.",
-    "tags": [
-      "Residue Theorem",
-      "Complex Integration",
-      "Contour Integration"
-    ],
-    "link": "/maths/Complex Analysis/Complex Analysis Homework 10"
-  },
-  {
-    "title": "Complex Analysis: Residue Theorem Applications",
-    "desc": "Using the residue theorem to evaluate improper integrals with branch cuts.",
-    "tags": [
-      "Residue Theorem",
-      "Complex Integration",
-      "Branch Cuts"
-    ],
-    "link": "/maths/Complex Analysis/Complex Analysis Homework 11"
   }
 ]
