@@ -277,7 +277,7 @@ Recall that $s_{\ell}\equiv -K_{1\cdots\ell}^{2}=-(K_{1\cdots\ell}^{0})^{2}+|\ma
 $$
 K_{1\cdots\ell}^{0}+E_{p}+i\epsilon
 =\frac{(K_{1\cdots\ell}^{0}+E_{p})(K_{1\cdots\ell}^{0}-E_{p})}{K_{1\cdots\ell}^{0}-E_{p}}+i\epsilon\\
-=\frac{-(K_{1\cdots\ell}^{0})^{2}+E_{p}^{2}}{K_{1\cdots\ell}^{0}-E_{p}}+i\epsilon\\[4pt]
+=\frac{-(K_{1\cdots\ell}^{0})^{2}+E_{p}^{2}}{K_{1\cdots\ell}^{0}-E_{p}}+i\epsilon \\
 =\frac{-s_{\ell}+m^{2}}{K_{1\cdots\ell}^{0}-E_{p}}+i\epsilon
 $$
 

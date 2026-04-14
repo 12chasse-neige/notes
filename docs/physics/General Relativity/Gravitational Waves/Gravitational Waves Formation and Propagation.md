@@ -398,29 +398,6 @@ $$
 \delta T_{\text{r.t.}}(t) = \delta T(t - T) + \delta T'(t)
 $$
 
-<!-- 
-$$
-\delta T (t - T) + \delta T' (t) = \frac{1}{2c} a_{i} a_{j} \int_{0}^{L} h_{ij}\left( t - 2T + \frac{\xi}{c} + \frac{\hat{n} \cdot \hat{a}}{c} \xi \right) +  h_{ij}\left( t - T + \frac{L - \xi}{c} + \frac{\hat{n} \cdot \hat{a}}{c} \xi \right) d \xi
-$$
-
-FT:
-
-$$
-\delta \tilde{T}_{\text{r.t.}} (\omega) = \frac{1}{2c} a_{i} a_{j} \int_{- \infty}^{\infty} \left[\int_{0}^{L} h_{ij}\left( t - 2T + \frac{\xi}{c} + \frac{\hat{n} \cdot \hat{a}}{c} \xi \right) +  h_{ij}\left( t - T + \frac{L - \xi}{c} + \frac{\hat{n} \cdot \hat{a}}{c} \xi \right) d \xi \right] e^{- i \omega t} dt
-$$
-
-$$
-\int_{- \infty}^{\infty} h_{ij}\left( t - 2T + \frac{\xi}{c} + \frac{\hat{n} \cdot \hat{a}}{c} \xi \right) e^{- i \omega t} \, dt = \tilde{h}_{ij} (\omega) e^{i \omega (-2T + \frac{\xi}{c} + \frac{\hat{n} \cdot \hat{a}}{c} \xi)}
-$$
-
-$$
-\int_{- \infty}^{\infty} h_{ij}\left( t - T + \frac{L - \xi}{c} + \frac{\hat{n} \cdot \hat{a}}{c} \xi \right) e^{- i \omega t} \, dt = \tilde{h}_{ij} (\omega) e^{i \omega (-T + \frac{L - \xi}{c} + \frac{\hat{n} \cdot \hat{a}}{c} \xi)}
-$$
-
-$$
-\delta \tilde{T}_{\text{r.c.}} (\omega) = \frac{1}{2c} a_{i} a_{j} \tilde{h}_{ij} (\omega) \int_{0}^{L} e^{i \omega (-2T + \frac{\xi}{c} + \frac{\hat{n} \cdot \hat{a}}{c} \xi)} + e^{i \omega (-T + \frac{L - \xi}{c} + \frac{\hat{n} \cdot \hat{a}}{c} \xi)} \, d \xi = \frac{1}{2c} a_{i} a_{j} \tilde{h}_{ij} (\omega)
-$$ -->
-
 在频域中，它可以写为
 $$
 \frac{\delta \tilde{T}_{\text{r.t.}}(f)}{T} = a_{i} a_{j} D(\hat{a}, f) e^{A}_{ij}(\hat{n}) \tilde{h}_{A}(f)

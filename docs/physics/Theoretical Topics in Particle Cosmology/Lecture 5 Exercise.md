@@ -326,6 +326,12 @@ By the way, at the 3-point level, we see again a curious fact that the kinematic
 
 (1) For null momentum $p^{\mu} = (p^{0},p^{1},p^{2},p^{3})$, please find the expressions for $|p\rangle$, $|p]$, $\langle p|$, and $[p|$ when $p^{0} < 0$.
 
+Using $p_{\mu} (\sigma^{\mu})_{a\dot{a}}$  to construct the matrix
+$$
+p_{a \dot{a}} = 
+$$
+
+
 
 
 (2) Please show, for a null momentum $k^{\mu} = (k,0,0,k)$, how does $|k\rangle$ transform under the 3 independent LGTs (See Lecture 2).

@@ -135,7 +135,7 @@ $$
 
 ## 3-point Massless Amplitudes
 
-Couting the DOF of the system: $4 \times 3 - 3 - 10 = -1$, so this process is non-physical.
+Couting the DoF of the system: $4 \times 3 - 3 - 10 = -1$, so this process is non-physical.
 $$
 p_{1} \cdot p_{2} = \cdots = 0
 $$
@@ -221,7 +221,7 @@ We can use the principles to constrain the form of $M$
     \end{cases}
     $$
 
-We can choose the left or right hand form of the amplitude according to whether $\sum_{i} h_{i} > 0$. 
+    We can choose the left or right hand form of the amplitude according to whether $\sum_{i} h_{i} > 0$. 
 
 ### Examples
 
