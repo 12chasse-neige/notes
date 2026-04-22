@@ -179,5 +179,5 @@ $$
 $$
 很好是极小值，这说明存在序参量跳变的一级相变。求相变潜热
 $$
-L = - T_{c} \left. \left(\pdv{G}{T}\right)_{T_{c}} \right|_{m = m_{c}}^{m = 0} = - \frac{1}{2} T_{c} b'(T_{c}) \frac{2c}{3b} = - \frac{c T_{c} b'(T_{c})}{3b}
+L = - T_{c} \left. \left(\pdv{G}{T}\right)_{T_{c}} \right|_{m = m_{c}}^{m = 0} = - \frac{1}{2} T_{c} b'(T_{c}) \frac{2c}{3d} = - \frac{c T_{c} b'(T_{c})}{3d}
 $$

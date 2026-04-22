@@ -211,7 +211,7 @@ $$
 \left\{\gamma^{\mu}, \gamma^{\nu} \right\} = 2 g^{\mu \nu}, \quad g^{\mu \nu} = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & - 1 & 0 & 0 \\ 0 & 0 & - 1 & 0 \\ 0 & 0 & 0 & - 1 \end{pmatrix} \tag {11}
 $$
 
-这些条件显然不可能用通常的数字 $\gamma$ 来满足，但我们可以通过取 $\gamma$ 为（至少）4×4 矩阵来满足它们。现在，要满足 (9)，只需该方程中的两个因子之一为零，按照惯例我们要求第二个因子为零。由此我们得到狄拉克方程：
+这些条件显然不可能用通常的数字 $\gamma$ 来满足，但我们可以通过取 $\gamma$ 为（至少）4×4 矩阵来满足它们。现在，要满足 (9)，只需该方程中的两个因子之一为零，按照惯例我们要求第二个因子为零。由此我们得到狄拉克方程
 
 $$
 (i \gamma^{\mu} \partial_{\mu} - m) \psi (x) = 0 \tag {12}
@@ -263,10 +263,12 @@ $$
 **练习 4** 利用泡利矩阵的性质，证明狄拉克表示中的 $\gamma$ 矩阵满足 $\{\gamma^{i} , \gamma^{j}\} = 2 g^{ij} = -  \delta^{ij}$，符合反对易关系。（反对易关系的其他分量，$(\gamma^{0})^{2} = 1$，$\{\gamma^{0}, \gamma^{i} \} = 0$，是平凡的证明。）
 
 >$$
->\{\gamma^{i} , \gamma^{j}\} = \gamma^{i} \gamma^{j} + \gamma^{j} \gamma^{i} = \begin{pmatrix} 0 & \sigma^{i} \\ -\sigma^{i} & 0 \end{pmatrix} \begin{pmatrix} 0 & \sigma^{j} \\ -\sigma^{j} & 0 \end{pmatrix} + \begin{pmatrix} 0 & \sigma^{j} \\ -\sigma^{j} & 0 \end{pmatrix} \begin{pmatrix} 0 & \sigma^{i} \\ -\sigma^{i} & 0 \end{pmatrix} = 2 \begin{pmatrix} - \{\sigma^{i}, \sigma^{j}\} & 0 \\ 0 & - \{\sigma^{i}, \sigma^{j}\} \end{pmatrix} = -2 \delta_{ij}
+>\{\gamma^{i} , \gamma^{j}\} = \gamma^{i} \gamma^{j} + \gamma^{j} \gamma^{i} = \begin{pmatrix} 0 & \sigma^{i} \\ -\sigma^{i} & 0 \end{pmatrix} \begin{pmatrix} 0 & \sigma^{j} \\ -\sigma^{j} & 0 \end{pmatrix} + \begin{pmatrix} 0 & \sigma^{j} \\ -\sigma^{j} & 0 \end{pmatrix} \begin{pmatrix} 0 & \sigma^{i} \\ -\sigma^{i} & 0 \end{pmatrix} 
+>\\ = 
+>2 \begin{pmatrix} - \{\sigma^{i}, \sigma^{j}\} & 0 \\ 0 & - \{\sigma^{i}, \sigma^{j}\} \end{pmatrix} = -2 \delta_{ij}
 >$$
 
-**练习 5** 证明在狄拉克表示中 $\gamma^{0} \gamma^{\mu} \gamma^{0} = \gamma^{\mu^{\dagger}}$。
+**练习 5** 证明在狄拉克表示中 $\gamma^{0} \gamma^{\mu} \gamma^{0} = \gamma^{\mu^{\dagger}}$
 
 >$$
 >\gamma^{0} \gamma^{\mu} \gamma^{0} = \begin{pmatrix} 1 & 0 \\ 0 & - 1 \end{pmatrix} \gamma^{\mu} \begin{pmatrix} 1 & 0 \\ 0 & - 1 \end{pmatrix}
@@ -329,34 +331,34 @@ $$
 将其代入狄拉克方程后，得到动量空间狄拉克方程
 
 $$
-(p - m) u (\boldsymbol {p}) = 0. \tag {21}
+(\rlap{/}{p} - m) u (\boldsymbol {p}) = 0 \tag {21}
 $$
 
-这有两个正能量解
+这有两个正能量解     
 
 $$
-u (\boldsymbol {p}, \sigma) = N \left( \begin{array}{c} \chi^{(\sigma)} \\ \frac {\boldsymbol {\sigma} \cdot \boldsymbol {p}}{E + m} \chi^{(\sigma)} \end{array} \right), \quad \sigma = 1, 2, \tag {22}
+u (\boldsymbol {p}, \sigma) = N \begin{pmatrix} \chi^{(\sigma)} \\ \frac {\boldsymbol {\sigma} \cdot \boldsymbol {p}}{E + m} \chi^{(\sigma)} \end{pmatrix} \quad \sigma = 1, 2 \tag {22}
 $$
 
 其中
 
 $$
-\chi^{(1)} = \left( \begin{array}{l} 1 \\ 0 \end{array} \right), \quad \chi^{(2)} = \left( \begin{array}{l} 0 \\ 1 \end{array} \right), \tag {23}
+\chi^{(1)} = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad \chi^{(2)} = \begin{pmatrix} 0 \\ 1 \end{pmatrix} \tag {23}
 $$
 
 以及两个负能量解，它们被解释为正能量的反粒子解
 
 $$
-v (\boldsymbol {p}, \sigma) = - N \left( \begin{array}{c} \frac {\boldsymbol {\sigma} \cdot \boldsymbol {p}}{E + m} (i \sigma^{2}) \chi^{(\sigma)} \\ (i \sigma^{2}) \chi^{(\sigma)} \end{array} \right), \quad \sigma = 1, 2, \quad E > 0. \tag {24}
+v (\boldsymbol {p}, \sigma) = - N \begin{pmatrix} \frac {\boldsymbol {\sigma} \cdot \boldsymbol {p}}{E + m} (i \sigma^{2}) \chi^{(\sigma)} \\ (i \sigma^{2}) \chi^{(\sigma)} \end{pmatrix} \quad \sigma = 1, 2, \quad E > 0 \tag {24}
 $$
 
 $N$ 是待定的归一化常数。上面的旋量与 [1] 中的一致。反粒子解的动量空间狄拉克方程是
 
 $$
-(\not p + m) v (\boldsymbol {p}, \sigma) = 0. \tag {25}
+(\rlap{/}{p} + m) v (\boldsymbol {p}, \sigma) = 0 \tag {25}
 $$
 
-可以证明，两个解（一个 $\sigma = 1$，另一个 $\sigma = 2$）对应于自旋-1/2 粒子的两个自旋状态。
+可以证明，两个解（一个 $\sigma = 1$，另一个 $\sigma = 2$）对应于自旋 $- \frac{1}{2}$ 粒子的两个自旋状态。
 
 **练习 8** 确定 $\bar {u} ( {\pmb p} , \sigma )$ 和 $\bar {v} ( p , \sigma )$ 的动量空间狄拉克方程。
 
@@ -380,11 +382,11 @@ $$
 
 **练习 10** 使用显式表达式 (22) 和 (24) 证明
 $$
-\sum_{\sigma = 1, 2} u (\boldsymbol {p}, \sigma) \bar {u} (\boldsymbol {p}, \sigma) = \not p + m, \tag {27}
+\sum_{\sigma = 1, 2} u (\boldsymbol {p}, \sigma) \bar {u} (\boldsymbol {p}, \sigma) = \rlap{/}{p} + m \tag {27}
 $$
 
 $$
-\sum_{\sigma = 1, 2} v (\boldsymbol {p}, \sigma) \bar {v} (\boldsymbol {p}, \sigma) = \not p - m. \tag {28}
+\sum_{\sigma = 1, 2} v (\boldsymbol {p}, \sigma) \bar {v} (\boldsymbol {p}, \sigma) = \rlap{/}{p} - m \tag {28}
 $$
 
 这些关系在计算未极化费米子的费曼图时经常需要。参见后面的章节。
@@ -393,7 +395,7 @@ $$
 
 #### 宇称与双线性协变量
 
-宇称变换：
+宇称变换
 
 - P：$x \to −x, t \to t$
 - P： ψ → γ 0 ψ
@@ -405,7 +407,7 @@ $$
 任何费米子流都具有 ${\bar {\psi}} \Gamma \psi$ 的形式，其中 $\Gamma$ 是某个 4×4 矩阵。为了构建相互作用拉格朗日量，我们希望只使用那些具有确定洛伦兹变换性质的流。为此，我们首先定义两个新矩阵：
 
 $$
-\gamma^{5} \equiv i \gamma^{0} \gamma^{1} \gamma^{2} \gamma^{3} \stackrel{\text{Diracrep.}}{=} \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \quad \left\{\gamma^{5}, \gamma^{\mu} \right\} = 0 \tag{29}
+\gamma^{5} \equiv i \gamma^{0} \gamma^{1} \gamma^{2} \gamma^{3} \stackrel{\text{Diracrep}}{=} \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \quad \left\{\gamma^{5}, \gamma^{\mu} \right\} = 0 \tag{29}
 $$
 
 $$
@@ -423,8 +425,6 @@ $$
 | γ5 | 赝标量 | 4 | 1 |
 
 这穷尽了所有可能性。分量总数为 16，这意味着集合 $\left\{ 1 , \gamma^{\mu} , \sigma^{\mu \nu} , \gamma^{5} \gamma^{\mu} , \gamma^{5} \right\}$ 构成任何 4×4 矩阵的完备基。这样的 ${\bar {\psi}} \Gamma \psi$ 流称为双线性协变量。
-
----
 
 ## 3 自由量子场
 

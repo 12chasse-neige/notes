@@ -1,7 +1,6 @@
 # Lecture 5 Exercise
 
-
-Lecture 5. Massless Amplitudes*  
+Lecture 5. Massless Amplitudes* 
 Zhong-Zhi Xianyu$^{*}$ 
 Department of Physics, Tsinghua University, Beijing 100084, China  
 
@@ -104,8 +103,8 @@ $$
 
 Then, you can check that a possible set of spinors are:
 
-spin down | spin up  
-left-handed $|p\rangle = \frac{1}{\sqrt{p^{0}+p^{3}}} \begin{pmatrix} -p^{1} + i p^{2} \\ p^{0} + p^{3} \end{pmatrix}$, $\langle p| = \frac{1}{\sqrt{p^{0}+p^{3}}} (p^{0}+p^{3}, p^{1} - i p^{2})$  
+spin down | spin up 
+left-handed $|p\rangle = \frac{1}{\sqrt{p^{0}+p^{3}}} \begin{pmatrix} -p^{1} + i p^{2} \\ p^{0} + p^{3} \end{pmatrix}$, $\langle p| = \frac{1}{\sqrt{p^{0}+p^{3}}} (p^{0}+p^{3}, p^{1} - i p^{2})$ 
 right-handed $[p| = \frac{1}{\sqrt{p^{0}+p^{3}}} (-p^{1} - i p^{2}, p^{0}+p^{3})$, $|p] = \frac{1}{\sqrt{p^{0}+p^{3}}} \begin{pmatrix} p^{0}+p^{3} \\ p^{1} + i p^{2} \end{pmatrix}$.
 
 Clearly, from a null $p^{\mu}$, $|p\rangle$ is defined only up to a phase. So, $|p\rangle$ has 3 real degree of freedoms (2 complex entries $-$ 1 phase), which is correct for a null momentum.
@@ -328,21 +327,171 @@ By the way, at the 3-point level, we see again a curious fact that the kinematic
 
 Using $p_{\mu} (\sigma^{\mu})_{a\dot{a}}$  to construct the matrix
 $$
-p_{a \dot{a}} = 
+p_{a \dot{a}} = \begin{pmatrix} -p^{0} + p^{3} & p^{1} - i p^{2} \\ p^{1} + i p^{2} & -p^{0} - p^{3} \end{pmatrix}
 $$
 
+We can decompose this matrix into the outer product of the left and right spinors. For the circumstances where $p^{0} < 0$, we can deduce that
+$$
+p^{0} + p^{3} = - \sqrt{(p^{1})^{2} + (p^{2})^{2} + (p^{3})^{2}} + p^{3}< 0
+$$
+So the decomposition is $p_{a \dot{a}} = - \ket{p} [p|$, which gives out 
+$$
+\ket{p} = \frac{i}{\sqrt{- (p^{0} + p^{3})}} \begin{pmatrix}
+- p^{1} + i p^{2} \\
+p^{0} + p^{3}
+\end{pmatrix}
+$$
+and
+$$
+[p| = \frac{i}{\sqrt{- (p^{0} + p^{3})}} \begin{pmatrix} - p^{1} - i p^{2}, p^{0} + p^{3} \end{pmatrix}
+$$
+We use the antisymmetric tensor to raise the indexes, which gives the covariant form of the tensor
+$$
+p^{a \dot{a}} = \epsilon^{ab} \epsilon^{\dot{a} \dot{b}} p_{b \dot{b}}
+$$
+This will give out the form of the covariant matrix
+$$
+p^{a \dot{a}} = \begin{pmatrix}
+- p^{0} - p^{3} & p^{1} + i p^{2} \\
+p^{1} - i p^{2} & - p^{0} + p^{3}
+\end{pmatrix}
+$$
+Given the relationship $p^{a \dot{a}} = - |p] \bra{p}$, we can get the expressions of $|p]$ and $\bra{p}$
+$$
+|p] = \frac{i}{\sqrt{- (p^{0} + p^{3})}} \begin{pmatrix}
+p^{0} + p^{3} \\
+p^{1} - i p^{2} 
+\end{pmatrix}
+$$
 
-
+$$
+\bra{p} =\frac{i}{\sqrt{- (p^{0} + p^{3})}} \begin{pmatrix}
+p^{0} + p^{3} & p^{1} + i p^{2}
+\end{pmatrix}
+$$
 
 (2) Please show, for a null momentum $k^{\mu} = (k,0,0,k)$, how does $|k\rangle$ transform under the 3 independent LGTs (See Lecture 2).
 
+For a null momentum, the ket $\ket{k}$ equals
+$$
+\ket{k} = \frac{1}{\sqrt{2k}} \begin{pmatrix}
+0 \\
+2k
+\end{pmatrix} = \begin{pmatrix}
+0 \\
+\sqrt{2k}
+\end{pmatrix}
+$$
+The 3 independent LGTs are
 
+1.  Rotation around $\hat{k}$: $R_{z} (\theta)$
+2.  $R \times L$-type transform: $R_{y}^{-1}(\theta) L_{x}\left(\operatorname{arcsinh}(\tan \theta)\right) L_{z}(\log (\cos \theta))$
+3.  $R \times L$-type transform: $R_{x}^{-1}(-\theta) L_{y}(\operatorname{arcsinh}(\tan \theta)) L_{z}(\log (\cos \theta))$
 
+First consider the rotation around $z$ axis, the transformation matrix $M$ is
+$$
+M = \begin{pmatrix}
+e^{i \frac{\theta}{2}} & 0 \\
+0 & e^{- i\frac{\theta}{2}}
+\end{pmatrix}
+$$
+So ket $\ket{p}$ will change like
+$$
+\ket{p'} = M \ket{p} = \begin{pmatrix}
+0 \\
+e^{- i\frac{\theta}{2}}\sqrt{2k}
+\end{pmatrix}
+$$
+Then, we calculate the transformation matrix for the $R \times L$ type LGTs
+$$
+R_{y}^{-1} (\theta) L_{x} (\mathrm{arcsinh} (\tan \theta)) L_{y} (\log \cos \theta)
+$$
+where
+$$
+L_{y} (\log \cos \theta) = e^{i \frac{\eta}{2} \hat{y} \cdot \vec{\sigma}} = \begin{pmatrix}
+\cosh (\frac{1}{2} \log (\cos \theta)) & -i \sinh (\frac{1}{2} \log (\cos \theta)) \\
+i \sinh (\frac{1}{2} \log (\cos \theta)) & \cosh(\frac{1}{2} \log (\cos \theta))
+\end{pmatrix}  = \frac{1}{\sqrt{\cos \theta}} \begin{pmatrix}
+\cos^{2} \frac{\theta}{2} & i \sin^{2} \frac{\theta}{2} \\
+- i\sin^{2} \frac{\theta}{2} & \cos^{2} \frac{\theta}{2}
+\end{pmatrix}
+$$
+
+$$
+L_{x} (\mathrm{arcsinh} (\tan \theta)) = e^{i \frac{\eta}{2} \hat{x} \cdot \vec{\sigma}} = \begin{pmatrix}
+\cosh (\frac{1}{2} \mathrm{arcsinh} (\tan \theta)) & \sinh (\frac{1}{2} \mathrm{arcsinh} (\tan \theta)) \\
+\sinh (\frac{1}{2} \mathrm{arcsinh} (\tan \theta)) & \cosh (\frac{1}{2} \mathrm{arcsinh} (\tan \theta))
+\end{pmatrix} \\ 
+= \frac{1}{\sqrt{\cos \theta}} \begin{pmatrix}
+\cos \frac{\theta}{2} & \sin \frac{\theta}{2} \\
+\sin \frac{\theta}{2} & \cos \frac{\theta}{2}
+\end{pmatrix}
+$$
+
+And the rotation matrix
+$$
+R_{y} (\theta) = e^{i \frac{\theta}{2} \hat{y} \cdot \vec{\sigma}} = \begin{pmatrix}
+\cos \frac{\theta}{2} & \sin \frac{\theta}{2} \\
+- \sin \frac{\theta}{2} & \cos \frac{\theta}{2}
+\end{pmatrix}
+$$
+
+$$
+R_{y}^{-1} (\theta) = \begin{pmatrix}
+\cos \frac{\theta}{2} & - \sin \frac{\theta}{2} \\
+\sin \frac{\theta}{2} & \cos \frac{\theta}{2}
+\end{pmatrix}
+$$
+
+So the total transformation matrix is
+$$
+M = \begin{pmatrix}
+\frac{1}{\cos \frac{\theta}{2}} & 0 \\
+\tan \frac{\theta}{2} & \cos \frac{\theta}{2}
+\end{pmatrix}
+$$
+The ket $\ket{p}$ will change like
+$$
+\ket{p'} = M \ket{p} = \begin{pmatrix}
+0 \\
+\cos \frac{\theta}{2} \sqrt{2k}
+\end{pmatrix}
+$$
+Another $R \times L$ type LGT’s transformation matrix is
+$$
+M = R_{x}^{-1}(-\theta) L_{y}(\operatorname{arcsinh}(\tan \theta)) L_{z}(\log (\cos \theta)) \\ =
+\begin{pmatrix}
+\cos \frac{\theta}{2} & - i\sin \frac{\theta}{2} \\
+- i\sin \frac{\theta}{2} & \cos \frac{\theta}{2}
+\end{pmatrix} \frac{1}{\sqrt{\cos \theta}} \begin{pmatrix}
+\cos \frac{\theta}{2} & - i\sin \frac{\theta}{2} \\
+i \sin \frac{\theta}{2} & \cos \frac{\theta}{2}
+\end{pmatrix} \frac{1}{\sqrt{\cos \theta}} \begin{pmatrix}
+\cos^{2} \frac{\theta}{2} & - \sin^{2} \frac{\theta}{2} \\
+- \sin^{2} \frac{\theta}{2} & \cos^{2} \frac{\theta}{2} 
+\end{pmatrix} \\ = \frac{1}{\cos \theta} \begin{pmatrix}
+\cos^{2} \frac{\theta}{2} + i \sin^{2} \frac{\theta}{2} \sin \theta & - \sin^{2} \frac{\theta}{2} - i\cos^{2} \frac{\theta}{2} \sin \theta \\
+- \sin^{2} \frac{\theta}{2} \cos \theta & \cos^{2} \frac{\theta}{2} \cos \theta
+\end{pmatrix}
+$$
+The ket $\ket{p}$ will change like
+$$
+\ket{p'} = M \ket{p} = \begin{pmatrix}
+- \frac{\sin^{2} \frac{\theta}{2} + i \cos^{2} \frac{\theta}{2} \sin \theta}{\cos \theta} \sqrt{2k} \\
+\cos^{2} \frac{\theta}{2} \sqrt{2k}
+\end{pmatrix}
+$$
 (3) Compute the tree-level 3-point amplitude of 3 gluons $\mathcal{M}_{3}(1^+_{a},2^+_{b},3^-_{c})$ with Feynman rules from a Yang-Mills theory and compare your result with (35).
 
 
 
-(4) How does a photon talk to a graviton? Can a photon be weighty and can a graviton be charged? Please answer these questions by going through the following steps. (a) Please find all 3-point massless amplitudes of 1 spin-1 and 2 spin-2 particles consistent with LGT properties. Please do the same for 2 spin-1 and 1 spin-1 particles. (b) Apply various consistent conditions to identify consistent amplitudes among results from (a). How many different ways can a photon talk to a graviton? Which one is the one realized in general relativity?
+(4) How does a photon talk to a graviton? Can a photon be weighty and can a graviton be charged? Please answer these questions by going through the following steps. 
+
+(a) Please find all 3-point massless amplitudes of 1 spin-1 and 2 spin-2 particles consistent with LGT properties. Please do the same for 2 spin-1 and 1 spin-1 particles. 
+
+
+
+(b) Apply various consistent conditions to identify consistent amplitudes among results from (a). How many different ways can a photon talk to a graviton? Which one is the one realized in general relativity?
 
 
 

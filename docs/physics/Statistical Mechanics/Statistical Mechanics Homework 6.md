@@ -81,12 +81,12 @@ f(\mathbf{v}) = \left( \frac{m}{2\pi kT} \right)^{\frac{3}{2}} \exp\left( -\frac
 $$
 平均速率 $\bar{v}_{\text{beam}}$
 $$
-\bar{v}_{\text{beam}} = \int v f_{\text{beam}}(\mathbf{v}) \, d^{3v} = \sqrt{\frac{9\pi kT}{8m}}
+\bar{v}_{\text{beam}} = \int v f_{\text{beam}}(\mathbf{v}) \, \dd[3]{v} = \sqrt{\frac{9\pi kT}{8m}}
 $$
 
 方均根速率 $v_{\text{s,beam}}$
 $$
-v_{\text{s,beam}} = \sqrt{\overline{v^{2}}_{\text{beam}}} = \sqrt{\int v^{2} f_{\text{beam}}(\mathbf{v}) \, d^{3v}} = 2 \sqrt{\frac{kT}{m}}
+v_{\text{s,beam}} = \sqrt{\overline{v^{2}}_{\text{beam}}} = \sqrt{\int v^{2} f_{\text{beam}}(\mathbf{v}) \, \dd[3]{v}} = 2 \sqrt{\frac{kT}{m}}
 $$
 
 平均能量 $\bar{\epsilon}_{\text{beam}}$

@@ -189,3 +189,48 @@ Amplitude:
 $$
 M_{4} = [12]^{4} \langle 34 \rangle^{4} \frac{\kappa^{2}}{stu}
 $$
+Consider spin-j (j>2) 
+$$
+M_{4} (1_{a}^{+j}, 2_{b}^{+j}, 3_{c}^{-j}, 4_{d}^{-j}) = [12]^{2j} [34]^{2j} f(s, t, u)
+$$
+
+$$
+[M_{4}] = 0 \Rightarrow [f] = -4j
+$$
+
+Do consistent factorization similarly, which requires $f \propto \kappa^{2}, [\kappa] = 1-j$
+$$
+f = \kappa^{2} \tilde{f}(s,t,u)
+$$
+where $\tilde{f}$ is a rational function of $s, t, u$
+$$
+[\tilde{f}] = -2 - 2j
+$$
+If $j > 2$, we can say that $[\tilde{f}] < -6$, which is impossible because this will cause double-pole singularity in any channel.
+
+So massless spin-j particles cannot have minimal self-interaction.
+
+### Remarks
+
+1.  No underlying theory assumed in our derivation. Tension: spin $\leftrightarrow$ locality
+2.  $j = 1,2$ 4pt amplitudes’s form is nearly “uniquely” fixed.
+3.  “constructable”: 3pt $\to$ n-pt ($n > 3$) “BCFW”
+
+## Gravitational Couplings of all Massless Particles
+
+Simplify: we only consider how 1 species of spin-j particles coulple with gravitons.
+$$
+M (1^{+j}, 2^{+j}, 3^{-j}, 4^{-j})
+$$
+is impossible if $j > 2$ (same reason as analyzed above, they can’t minimal couple with gravitons), so we only consider $j = 0,1,2$
+
+### Gravitional Compton Scattering
+
+Gravitional coupling $\kappa_{j}$ of a spin-j particles equals the graviton cubic self-coupling $\kappa$.
+
+If we consider more than 1 massless spin-2 particles, then any other massless can only couple gravitationally to one of them.
+
+### Remarks
+
+1.  Minimal couplings are assumed in all our derivation.
+2.  Massive particles can also be derived using the same trick, but the spinor-helicity formalism will be more complicated (need to spinors to construct one momentum).
