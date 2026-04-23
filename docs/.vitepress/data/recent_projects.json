@@ -10,8 +10,8 @@
     "link": "/physics/General Relativity/Gravitational Waves/Quantum Noise"
   },
   {
-    "title": "Feynman Diagrams for Beginners",
-    "desc": "An introductory guide to Feynman diagrams with exercises for QFT newcomers.",
+    "title": "Feynman Diagrams: A Beginner's Guide",
+    "desc": "Introductory guide to Feynman diagrams with exercises for QFT newcomers.",
     "tags": [
       "Feynman diagrams",
       "Quantum Field Theory",
@@ -21,7 +21,7 @@
   },
   {
     "title": "Phase Transition Thermodynamics Proofs",
-    "desc": "Derivations for molar internal energy change and latent heat temperature dependence in phase transitions.",
+    "desc": "Deriving molar internal energy and latent heat formulas for phase transitions.",
     "tags": [
       "thermodynamics",
       "phase_transition",
@@ -30,11 +30,11 @@
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 3"
   },
   {
-    "title": "Statistical Mechanics: 2D Gas and Relative Velocity",
-    "desc": "Derives velocity distributions for 2D ideal gas and relative speed between molecules.",
+    "title": "Statistical Mechanics: 2D Gas Distributions",
+    "desc": "Derives velocity and speed distributions for 2D ideal gases and relative molecular speeds.",
     "tags": [
       "statistical mechanics",
-      "Maxwell distribution",
+      "Maxwell-Boltzmann distribution",
       "kinetic theory"
     ],
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 6"
@@ -61,11 +61,11 @@
   },
   {
     "title": "Quantum Field Theory: Fields and Perturbation",
-    "desc": "Explores field theory, causality, Lagrangian formulation, and perturbation methods in QFT.",
+    "desc": "Exploring field theory, canonical normalization, and perturbation methods in QFT.",
     "tags": [
       "quantum field theory",
-      "Lagrangian",
-      "perturbation theory"
+      "perturbation theory",
+      "renormalization"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 7"
   },
@@ -81,30 +81,30 @@
   },
   {
     "title": "Two-Body Systems and Spherical Wells",
-    "desc": "Deriving kinetic energy operators and solving for bound states in quantum mechanics.",
+    "desc": "Deriving kinetic energy separation and solving for bound states in a spherical potential well.",
     "tags": [
-      "Quantum Mechanics",
-      "Two-Body Problem",
-      "Bound States"
+      "quantum mechanics",
+      "two-body problem",
+      "bound states"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 6"
   },
   {
-    "title": "Statistical Mechanics Homework: Solids and Magnetism",
-    "desc": "Calculating entropy for Einstein solids and magnetization in paramagnetic systems under various limits.",
+    "title": "Statistical Mechanics Homework: Entropy and Magnetism",
+    "desc": "Calculating entropy for Einstein solids and magnetization in paramagnetic systems.",
     "tags": [
       "Statistical Mechanics",
-      "Einstein Solid",
+      "Entropy",
       "Magnetization"
     ],
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 7"
   },
   {
-    "title": "Deriving the Dyson Series for Transition Amplitudes",
-    "desc": "Step-by-step derivation of the Dyson series for transition amplitudes with source terms.",
+    "title": "Deriving Dyson Series and Factorization Theorem",
+    "desc": "Step-by-step derivation of Dyson series for transition amplitudes and on-shell factorization theorem proof.",
     "tags": [
       "Dyson series",
-      "transition amplitude",
+      "S-matrix",
       "interaction picture"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 4 Exercise"
@@ -143,8 +143,8 @@
     "title": "On-Shell Factorization in Quantum Field Theory",
     "desc": "Explores Green functions, poles, and factorization in scattering amplitudes.",
     "tags": [
-      "Green function",
-      "On-shell",
+      "Green Function",
+      "On-Shell",
       "Factorization"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 4"
@@ -160,18 +160,18 @@
     "link": "/physics/General Relativity/General Relativity Homework 4"
   },
   {
-    "title": "General Relativity Homework 5 Analysis",
-    "desc": "Calculates Christoffel symbols and Ricci tensor for a time-dependent metric.",
+    "title": "General Relativity Homework Problem Analysis",
+    "desc": "Calculating Christoffel symbols and Ricci tensor for a time-dependent metric.",
     "tags": [
       "Christoffel symbols",
       "Ricci tensor",
-      "General Relativity"
+      "general relativity"
     ],
     "link": "/physics/General Relativity/General Relativity Homework 5"
   },
   {
     "title": "Quantum Mechanics Homework Solutions",
-    "desc": "Proofs on operator properties and uncertainty relations in quantum mechanics.",
+    "desc": "Proofs for operator properties and uncertainty relations in quantum mechanics.",
     "tags": [
       "Hermitian Operators",
       "Uncertainty Relations",
@@ -180,28 +180,28 @@
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 4"
   },
   {
-    "title": "Statistical Mechanics: Particle Distributions and Quantum States",
-    "desc": "Calculates most probable distributions for classical, Bose, and Fermi particles, linking β to temperature.",
+    "title": "Statistical Mechanics: Particle Distribution Analysis",
+    "desc": "Calculates most probable distributions for classical, Bose, and Fermi particles with temperature correspondence.",
     "tags": [
       "Statistical Mechanics",
       "Particle Statistics",
-      "Quantum States"
+      "Thermodynamics"
     ],
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 5"
   },
   {
-    "title": "Solving Physics Integrals and Tensor Analysis",
+    "title": "Solving Physics Integrals and Tensor Proofs",
     "desc": "Step-by-step solutions for quantum field theory and electromagnetism exercises.",
     "tags": [
-      "integral",
-      "tensor",
-      "gauge"
+      "quantum field theory",
+      "electromagnetism",
+      "tensor calculus"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 2 Exercise"
   },
   {
     "title": "Proving Lorentz Invariance and Optical Theorem",
-    "desc": "Demonstrates Lorentz invariance of inner product and derives optical theorem from S-matrix unitarity.",
+    "desc": "Demonstrates Lorentz invariance of inner products and derives optical theorem from S-matrix unitarity.",
     "tags": [
       "Lorentz invariance",
       "S-matrix",
@@ -215,7 +215,7 @@
     "tags": [
       "scattering amplitude",
       "Hilbert space",
-      "asymptotic states"
+      "Fock space"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 3"
   },
@@ -225,7 +225,7 @@
     "tags": [
       "probability distribution",
       "normalization",
-      "particle statistics"
+      "particle classification"
     ],
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 4"
   },
@@ -241,7 +241,7 @@
   },
   {
     "title": "Advanced Calculus Series Convergence Analysis",
-    "desc": "Analyzing convergence of six complex series using comparison, ratio, and root tests.",
+    "desc": "Mathematical proofs for convergence of six complex infinite series using comparison and ratio tests.",
     "tags": [
       "series convergence",
       "ratio test",
@@ -251,17 +251,17 @@
   },
   {
     "title": "Advanced Calculus Surface and Curve Integrals",
-    "desc": "Solutions for surface integrals on a disk and curve integrals using parameterization and Stokes' theorem.",
+    "desc": "Solutions for surface integrals, Stokes' theorem, and complex line integrals in multivariable calculus.",
     "tags": [
-      "Surface Integral",
+      "Surface Integrals",
       "Stokes' Theorem",
-      "Parameterization"
+      "Line Integrals"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 10"
   },
   {
     "title": "Power Series Convergence and Summation",
-    "desc": "Analyzing convergence domains and proving summation formulas for power series.",
+    "desc": "Analyzing convergence domains and summation formulas for power series and function expansions.",
     "tags": [
       "Power Series",
       "Convergence",
@@ -280,22 +280,22 @@
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 3"
   },
   {
-    "title": "Advanced Calculus Homework on Minima and Closed Sets",
-    "desc": "Proving existence of minima for coercive functions and properties of the unit circle.",
+    "title": "Advanced Calculus: Existence of Extrema",
+    "desc": "Proving existence of minima and maxima for continuous functions on Euclidean spaces.",
     "tags": [
-      "coercive function",
-      "closed set",
-      "extreme value theorem"
+      "continuous functions",
+      "extreme value theorem",
+      "compact sets"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 4"
   },
   {
     "title": "Advanced Calculus Partial Derivative Exercises",
-    "desc": "A set of partial derivative problems with solutions, covering chain rule and higher-order derivatives.",
+    "desc": "A set of partial derivative problems with solutions, focusing on multivariable functions.",
     "tags": [
-      "Partial Derivatives",
-      "Chain Rule",
-      "Multivariable Calculus"
+      "partial derivatives",
+      "multivariable calculus",
+      "differentiation"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 5"
   }
