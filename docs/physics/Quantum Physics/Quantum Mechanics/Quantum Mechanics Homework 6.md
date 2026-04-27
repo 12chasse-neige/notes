@@ -243,19 +243,19 @@ $$
 $$
 带入，化简，得到系数函数的方程
 $$
-f'' + \left(\frac{2 m_{l} + 1}{\xi} - 2 \xi\right) f' + (\lambda - 2 m_{l} - 2) f = 0
+f'' + \left(\frac{2 |m_{l}| + 1}{\xi} - 2 \xi\right) f' + (\lambda - 2 |m_{l}| - 2) f = 0
 $$
 再进行代换 $\eta = \xi^{2}$，得到
 $$
-4 \eta f'' + 4 (m_{l} + 1 - \eta) f' + (\lambda - 2 m_{l} - 2) f = 0
+4 \eta f'' + 4 (|m_{l}| + 1 - \eta) f' + (\lambda - 2 |m_{l}| - 2) f = 0
 $$
 所以递推关系为
 $$
-c_{k + 1} = \frac{4k + 2 + 2 m_{l} - \lambda}{4 (k + 1) (k + m_{l} + 1)} c_{k}
+c_{k + 1} = \frac{4k + 2 + 2 |m_{l}| - \lambda}{4 (k + 1) (k + |m_{l}| + 1)} c_{k}
 $$
 所以定态的能量量子化条件是
 $$
-\lambda = 4 k + 2 m_{l} + 2
+\lambda = 4 k + 2 |m_{l}| + 2
 $$
 得到二维谐振子的能级公式
 $$
@@ -263,7 +263,7 @@ E_{n} = \hbar \omega (n + 1), \quad n = 0,1,2,\dots
 $$
 其中 $n = 2n_{\rho} + |m_{l}|$，$n_{\rho} = 0,1,2,\dots$ 为径向量子数，$m_{l} = 0, \pm 1, \pm 2, \dots$ 为角动量量子数。
 
-简并度：对于给定 $n$，可能的 $m_{l}$ 值为 $n, n-2, \dots, -n$，零 $|m_{l}|$ 对应两个简并态（$m_{l} = \pm |m_{l}|$），$m_{l}=0$ 对应一个态，所以简并度为 $n+1$
+简并度：对于给定 $n$，可能的 $m_{l}$ 值为 $n, n-2, \dots, -n$，非零 $|m_{l}|$ 对应两个简并态（$m_{l} = \pm |m_{l}|$），$m_{l}=0$ 对应一个态，所以简并度为 $n+1$
 
 6.4.1 求电子偶素和缪子 muon 氢原子 (以 muon $(m_{\mu}=207 m_{e})$ 代替氢原子中的电子) 的基态能量。
 
@@ -319,3 +319,363 @@ $$
 $$
 \Gamma \approx 2.0 \times 10^{9} \, \text{s}^{-1}, \quad \tau = \frac{1}{\Gamma} \approx 5.0 \times 10^{-10} \, \text{s}
 $$
+
+## 第七章 量子力学中的代数方法
+
+7.1.1 几率守恒方程是 $\frac{\partial \rho}{\partial t}+\nabla \cdot \vec{J}=0, \rho=|\Psi|^{2}$, $\vec{J}=\frac{-\mathrm{i} \hbar}{2 m}\left(\Psi^{*} \nabla \Psi-\Psi \nabla \Psi^{*}\right)$ 。如果采用分立表象即 $\Psi(\vec{r}, t)=\sum a_{n}(t) u_{n}(\vec{r})$ ，其中 $\left\{u_{n}(\vec{r})\right\}$ 都是束缚态, 那么这个方程的矩阵形式是什么样子? 提示:转为积分形式的方程 $\frac{\mathrm{d}}{\mathrm{d} t} W_{V}+\oint_{S} \vec{J} \cdot \mathrm{d} \vec{S}=0$ 并且让积分体积趋于无穷。
+
+带入
+$$
+\rho (\vec{r}, t) = \Psi^{*} \Psi = \sum_{mn} a^{*}_{m} (t) a_{n} (t) u_{m} (\vec{r}) u_{n} (\vec{r})
+$$
+
+$$
+\vec{J} (\vec{r}, t) = \frac{-\mathrm{i} \hbar}{2 m}\left(\Psi^{*} \nabla \Psi-\Psi \nabla \Psi^{*}\right) \\ = 
+\frac{- i \hbar}{2m} \sum_{mn}(a^{*}_{m} (t) a_{n} (t) u^{*}_{m} (\vec{r}) \nabla u_{n} (\vec{r}) - a_{m} (t) a^{*}_{n} (t) u_{m} (\vec{r}) \nabla u^{*}_{n} (\vec{r}))
+$$
+
+带入 $\int u^{*}_{m} (\vec{r}) u_{n} (\vec{r}) \dd{\tau} = \delta_{mn}$，我们把该方程化为积分形式并且把积分体积趋于无穷，此时
+$$
+W_{V} = \int \dd{\tau} \sum_{mn} a^{*}_{m} (t) a_{n} (t) u_{m} (\vec{r}) u_{n} (\vec{r}) = \sum_{mn} \delta_{mn} a^{*}_{m} (t) a_{n} (t) = \sum_{n} a^{*}_{n} (t) a_{n} (t)
+$$
+对于束缚态，$u_{n}(\vec{r})$ 在无穷远处衰减为零，因此当积分体积趋于无穷时，边界通量项为零，于是
+$$
+\dv{}{t}\sum_{n}|a_{n}(t)|^{2}=0
+$$
+即
+$$
+\sum_{n}|a_{n}(t)|^{2}=1
+$$
+对任意时刻都成立。若写成矩阵形式，令列向量 $a=(a_{1},a_{2},\cdots)^{T}$，则几率守恒就是
+
+$$
+\dv{}{t}(a^{\dagger}a)=0
+$$
+若再利用分立表象下薛定谔方程 $\mathrm{i}\hbar \dot a = H a$（$H^{\dagger}=H$），可直接验证
+$$
+\dv{}{t}(a^{\dagger}a)=\dot a^{\dagger}a+a^{\dagger}\dot a
+=\frac{\mathrm{i}}{\hbar}a^{\dagger}Ha-\frac{\mathrm{i}}{\hbar}a^{\dagger}Ha=0
+$$
+这就是几率守恒方程在分立表象中的矩阵表达。
+
+7.1.2 求在 $-a<x<+a$ 的无限势阱中, 粒子的坐标算符 $\hat{x}$ 在能量表象中的矩阵元 $x_{m n}$ 
+
+本征态为
+$$
+\psi_{n} (x) = \sqrt{\frac{1}{a}} \sin (\frac{n \pi}{2a} (x + a))
+$$
+所以
+$$
+x_{mn} = \int_{-a}^{a} \psi^{*}_{m} (x) x \psi_{n} (x) \dd{x} = \frac{1}{a} \int_{-a}^{a} x \sin(\frac{m \pi}{2a} (x + a)) \sin(\frac{n \pi}{2a} (x + a)) \dd{x}
+$$
+令 $y=x+a$，则 $x=y-a$，积分区间为 $0\to 2a$，并用积化和差公式
+$$
+\sin\alpha\sin\beta=\frac{1}{2}\left[\cos(\alpha-\beta)-\cos(\alpha+\beta)\right]
+$$
+得
+$$
+x_{mn}
+=\frac{1}{2a}\int_{0}^{2a}(y-a)\left[\cos\frac{(m-n)\pi y}{2a}-\cos\frac{(m+n)\pi y}{2a}\right]\dd y
+$$
+计算后可得
+$$
+x_{nn}=0
+$$
+且当 $m,n$ 同奇同偶时
+$$
+x_{mn}=0
+$$
+当 $m,n$ 奇偶性不同（即 $m+n$ 为奇数）时
+$$
+x_{mn}=-\frac{16amn}{\pi^{2}(m^{2}-n^{2})^{2}}
+$$
+因此矩阵元可以写成
+$$
+x_{mn}=
+\begin{cases}
+0 & (m+n \text{为偶数}) \\
+-\dfrac{16amn}{\pi^{2}(m^{2}-n^{2})^{2}} & (m+n \text{为奇数})
+\end{cases}
+$$
+7.2.1 (a) 验证 $L_{x}=\hbar\left(\begin{array}{ccc}0 & 0 & 0 \\ 0 & 0 & -\mathrm{i} \\ 0 & \mathrm{i} & 0\end{array}\right), L_{y}=\hbar\left(\begin{array}{ccc}0 & 0 & \mathrm{i} \\ 0 & 0 & 0 \\ -\mathrm{i} & 0 & 0\end{array}\right), L_{z}=\hbar\left(\begin{array}{ccc}0 & -\mathrm{i} & 0 \\ \mathrm{i} & 0 & 0 \\ 0 & 0 & 0\end{array}\right)$ 满足 $\left[L_{x}, L_{y}\right]=\mathrm{i} \hbar L_{z}$, 这称为角动量算符的“自伴表示”
+
+先记 $L_{i}=\hbar M_{i}$，直接计算
+$$
+[M_{x},M_{y}]=
+\begin{pmatrix}
+0&1&0\\
+-1&0&0\\
+0&0&0
+\end{pmatrix}
+=\mathrm{i}
+\begin{pmatrix}
+0&-\mathrm{i}&0\\
+\mathrm{i}&0&0\\
+0&0&0
+\end{pmatrix}
+=\mathrm{i}M_{z}
+$$
+故
+$$
+[L_{x},L_{y}]=\hbar^{2}[M_{x},M_{y}]
+=\mathrm{i}\hbar(\hbar M_{z})
+=\mathrm{i}\hbar L_{z}
+$$
+
+(b) 把 $L_{z}$ 对角化 (本征值从大到小排列), 明确写出该变换
+
+对角化 $L_{z}$：其本征值为 $\hbar,0,-\hbar$，可取归一化本征矢
+$$
+v_{+}=\frac{1}{\sqrt2}\begin{pmatrix} -1\\ -\mathrm{i}\\ 0\end{pmatrix},\quad
+v_{0}=\begin{pmatrix}0\\0\\1\end{pmatrix},\quad
+v_{-}=\frac{1}{\sqrt2}\begin{pmatrix}1\\ -\mathrm{i}\\ 0\end{pmatrix}
+$$
+按本征值从大到小组成幺正矩阵
+$$
+U=(v_{+},v_{0},v_{-})=
+\begin{pmatrix}
+\frac{1}{\sqrt2}&0&\frac{1}{\sqrt2}\\
+\frac{\mathrm{i}}{\sqrt2}&0&-\frac{\mathrm{i}}{\sqrt2}\\
+0&1&0
+\end{pmatrix}
+$$
+则
+$$
+U^{\dagger}L_{z}U=\hbar
+\begin{pmatrix}
+1&0&0\\
+0&0&0\\
+0&0&-1
+\end{pmatrix}
+$$
+
+(c) 写出 $L_{x}$ 和 $L_{y}$ 在同样的变换下变成了什么矩阵
+
+在同样变换下
+$$
+U^{\dagger}L_{x}U=\frac{\hbar}{\sqrt2}
+\begin{pmatrix}
+0&1&0\\
+1&0&1\\
+0&1&0
+\end{pmatrix},
+\quad
+U^{\dagger}L_{y}U=\frac{\hbar}{\sqrt2}
+\begin{pmatrix}
+0&-\mathrm{i}&0\\
+\mathrm{i}&0&-\mathrm{i}\\
+0&\mathrm{i}&0
+\end{pmatrix}
+$$
+这就是 $l=1$ 表象中的标准角动量矩阵。
+
+7.3.1 设一个量子系统的正交归一完备态矢量集是 $\{|n\rangle(n=1,2, \cdots)\}$, 那么用 $|\psi\rangle=\sum c_{n}|n\rangle\left(c_{n} \in \mathbb{C}\right)$来描写的系统状态称为量子纯态。如果系统是处在 $\{|n\rangle\}$ 的非相干混合上, 那就用 $\rho=\sum p_{n}|n\rangle\langle n|$ 来描写, 其中 $p_{n}$ 是系统处在状态 $|n\rangle$ 上的几率, 这种状态称为混合态, $\rho$ 称为密度矩阵或密度算符。
+
+(a) 根据上面所说的 $\left\{p_{n}\right\}$ 的定义, 请写出 $\left\{p_{n}\right\}$ 应满足的条件。把这些条件写成对于 $\rho$ 的式子是什么样子? 
+
+由定义，$\{p_{n}\}$ 必须满足
+$$
+p_{n}\ge 0,\quad \sum_{n}p_{n}=1
+$$
+对应到密度算符
+$$
+\rho=\sum_{n}p_{n}|n\rangle\langle n|
+$$
+可以写成
+$$
+\rho^{\dagger}=\rho,\quad \rho\ge0,\quad \Tr\rho=1
+$$
+
+(b) 量子纯态可看成是混合态的特殊情况, 描写量子纯态 $|\psi\rangle$ 的密度矩阵直接定义为 $\rho_{\psi}=|\psi\rangle\langle\psi|$ 。那么 $\rho_{\psi}$满足什么条件? 
+
+对于纯态密度算符 $\rho_{\psi}=|\psi\rangle\langle\psi|$，除满足上面三条外，还满足
+$$
+\rho_{\psi}^{2}=\rho_{\psi}
+$$
+等价地
+$$
+\Tr(\rho_{\psi}^{2})=1
+$$
+而一般混合态满足 $\Tr(\rho^{2})<1$。力学量 $F$ 在混合态 $\rho$ 下的平均值是
+
+$$
+\langle F\rangle=\Tr(\rho F)
+$$
+(c) 对于混合态 $\rho$， 一个力学量（算符）$F$ 的平均值如何用 $\rho$ 和 $F$ 来表达？
+
+若 $\rho=\sum_{n}p_{n}|n\rangle\langle n|$，则
+$$
+\langle F\rangle=\sum_{n}p_{n}\langle n|F|n\rangle
+$$
+即按几率加权平均。
+
+7.4.1 用数学归纳法证明:  $\mathrm{e}^{\xi^{2}} \frac{\mathrm{d}^{n}}{\mathrm{~d} \xi^{n}} \mathrm{e}^{-\xi^{2}}=\mathrm{e}^{\xi^{2} / 2}\left(\frac{\mathrm{d}}{\mathrm{d} \xi}-\xi\right)^{n} \mathrm{e}^{-\xi^{2} / 2}(n \in \mathbb{N})$ 
+
+命题
+$$
+P(n):
+\mathrm{e}^{\xi^{2}}\dv[n]{}{\xi}\mathrm{e}^{-\xi^{2}}
+=\mathrm{e}^{\xi^{2}/2}\left(\dv{}{\xi}-\xi\right)^{n}\mathrm{e}^{-\xi^{2}/2}
+$$
+
+当 $n=1$ 时
+$$
+\mathrm{e}^{\xi^{2}}\dv{}{\xi}\mathrm{e}^{-\xi^{2}}=-2\xi
+$$
+而
+$$
+\mathrm{e}^{\xi^{2}/2}\left(\dv{}{\xi}-\xi\right)\mathrm{e}^{-\xi^{2}/2}
+=\mathrm{e}^{\xi^{2}/2}(-\xi-\xi)\mathrm{e}^{-\xi^{2}/2}=-2\xi
+$$
+所以 $P(1)$ 成立。设 $P(n)$ 成立，则
+
+$$
+\mathrm{e}^{\xi^{2}}\dv[n+1]{}{\xi}\mathrm{e}^{-\xi^{2}}
+=\left(\dv{}{\xi}-2\xi\right)\left[\mathrm{e}^{\xi^{2}}\dv[n]{}{\xi}\mathrm{e}^{-\xi^{2}}\right]
+$$
+代入归纳假设
+$$
+=\left(\dv{}{\xi}-2\xi\right)\left[\mathrm{e}^{\xi^{2}/2}\left(\dv{}{\xi}-\xi\right)^{n}\mathrm{e}^{-\xi^{2}/2}\right]
+$$
+利用恒等式
+$$
+\left(\dv{}{\xi}-2\xi\right)\mathrm{e}^{\xi^{2}/2}
+=\mathrm{e}^{\xi^{2}/2}\left(\dv{}{\xi}-\xi\right)
+$$
+可得
+$$
+\mathrm{e}^{\xi^{2}}\dv[n+1]{}{\xi}\mathrm{e}^{-\xi^{2}}
+=\mathrm{e}^{\xi^{2}/2}\left(\dv{}{\xi}-\xi\right)^{n+1}\mathrm{e}^{-\xi^{2}/2}
+$$
+即 $P(n+1)$ 成立，因此命题对任意 $n\in\mathbb N$ 成立。
+
+7.4.2 在自然单位制下， $\hat{a}=\frac{1}{\sqrt{2}}(\hat{x}+\mathrm{i} \hat{p})$, $\hat{a}^{\dagger}=\frac{1}{\sqrt{2}}(\hat{x}-\mathrm{i} \hat{p})$, $\hat{N} \equiv \hat{a}^{\dagger} \hat{a}$. 记 $|n\rangle(n=0,1,2,\cdots)$ 是 $\hat{N}$的本征态。
+
+求证: 若 $\hat{a}|\alpha\rangle=\alpha|\alpha\rangle,\langle\alpha|\alpha\rangle=1, \alpha \in \mathbb{C}$， 则 $|\alpha\rangle=\mathrm{e}^{-\alpha^{*} \alpha / 2} \sum_{n=0}^{\infty} \frac{\alpha^{n}}{\sqrt{n !}}|n\rangle$ ，其中 $|\alpha\rangle$ 称为相干态。
+
+展开本征态
+$$
+|\alpha\rangle=\sum_{n=0}^{\infty}c_{n}|n\rangle
+$$
+代入 $\hat a|\alpha\rangle=\alpha|\alpha\rangle$
+$$
+\sum_{n=1}^{\infty}c_{n}\sqrt{n}|n-1\rangle
+=\alpha\sum_{n=0}^{\infty}c_{n}|n\rangle
+$$
+比较系数得到
+$$
+c_{n+1}\sqrt{n+1}=\alpha c_{n}
+\quad\Rightarrow\quad
+c_{n}=\frac{\alpha^{n}}{\sqrt{n!}}c_{0}
+$$
+所以
+$$
+|\alpha\rangle=c_{0}\sum_{n=0}^{\infty}\frac{\alpha^{n}}{\sqrt{n!}}|n\rangle
+$$
+归一化条件给出
+$$
+1=\langle\alpha|\alpha\rangle
+=|c_{0}|^{2}\sum_{n=0}^{\infty}\frac{|\alpha|^{2n}}{n!}
+=|c_{0}|^{2}\mathrm{e}^{|\alpha|^{2}}
+$$
+故
+$$
+|c_{0}|=\mathrm{e}^{-|\alpha|^{2}/2}
+$$
+忽略整体相位，可取
+$$
+c_{0}=\mathrm{e}^{-\alpha^{*}\alpha/2}
+$$
+最终得到
+$$
+|\alpha\rangle=\mathrm{e}^{-\alpha^{*}\alpha/2}\sum_{n=0}^{\infty}\frac{\alpha^{n}}{\sqrt{n!}}|n\rangle
+$$
+7.4.3 在自然单位制下 $\hat{H}=\hat{N}+ \frac{1}{2}$ ，求证: 含时间的 Schrödinger 方程 $\mathrm{i} \partial_{t}|\psi\rangle=\hat{H}|\psi\rangle$ 满足初始条件 $|\psi\rangle|_{t=0}=|\alpha\rangle$ 的解是 $|\psi (t) \rangle = \mathrm{e}^{-\mathrm{i} t / 2}|\alpha \mathrm{e}^{-\mathrm{i} t}\rangle$, 其中 $|\alpha \mathrm{e}^{-\mathrm{i} t}\rangle$ 代表 $a$ 的本征值为 $\alpha \mathrm{e}^{-\mathrm{i} t}$ 的相干态。
+
+时间演化算符
+$$
+U(t)=\mathrm{e}^{-\mathrm{i}\hat H t}
+=\mathrm{e}^{-\mathrm{i}t/2}\mathrm{e}^{-\mathrm{i}\hat N t}
+$$
+所以
+$$
+|\psi(t)\rangle=U(t)|\alpha\rangle
+=\mathrm{e}^{-\mathrm{i}t/2}\mathrm{e}^{-\mathrm{i}\hat N t}|\alpha\rangle
+$$
+考虑态 $|\chi(t)\rangle=\mathrm{e}^{-\mathrm{i}\hat N t}|\alpha\rangle$，计算
+$$
+\hat a|\chi(t)\rangle
+=\hat a\mathrm{e}^{-\mathrm{i}\hat N t}|\alpha\rangle
+=\mathrm{e}^{-\mathrm{i}\hat N t}\left(\mathrm{e}^{\mathrm{i}\hat N t}\hat a\mathrm{e}^{-\mathrm{i}\hat N t}\right)|\alpha\rangle
+$$
+又有（利用 BCH 公式可以导出）
+$$
+\mathrm{e}^{\mathrm{i}\hat N t}\hat a\mathrm{e}^{-\mathrm{i}\hat N t}
+=\hat a\,\mathrm{e}^{-\mathrm{i}t}
+$$
+故
+$$
+\hat a|\chi(t)\rangle
+=\mathrm{e}^{-\mathrm{i}t}\mathrm{e}^{-\mathrm{i}\hat N t}\hat a|\alpha\rangle
+=\alpha\mathrm{e}^{-\mathrm{i}t}|\chi(t)\rangle
+$$
+即 $|\chi(t)\rangle$ 是 $\hat a$ 本征态，本征值为 $\alpha\mathrm{e}^{-\mathrm{i}t}$，所以
+$$
+|\chi(t)\rangle=|\alpha\mathrm{e}^{-\mathrm{i}t}\rangle
+$$
+于是
+$$
+|\psi\rangle(t)=\mathrm{e}^{-\mathrm{i}t/2}|\alpha\mathrm{e}^{-\mathrm{i}t}\rangle
+$$
+7.4.4 (选做) (a) 求证: 若 $a(\eta)=a \cosh \eta+a^{\dagger} \sinh \eta, a^{\dagger}(\eta)=a^{\dagger} \cosh \eta+a \sinh \eta(-\infty<\eta<+\infty)$,则 $\left[a(\eta), a^{\dagger}(\eta)\right]=1$ 。
+
+由定义
+$$
+a(\eta)=a\cosh\eta+a^{\dagger}\sinh\eta,\quad
+a^{\dagger}(\eta)=a^{\dagger}\cosh\eta+a\sinh\eta
+$$
+可得
+$$
+[a(\eta),a^{\dagger}(\eta)]
+=\cosh^{2}\eta[a,a^{\dagger}]
++\sinh^{2}\eta[a^{\dagger},a]
++\cosh\eta\sinh\eta([a,a]+[a^{\dagger},a^{\dagger}])
+$$
+利用
+$$
+[a,a^{\dagger}]=1,\quad [a,a]=[a^{\dagger},a^{\dagger}]=0
+$$
+即
+$$
+[a(\eta),a^{\dagger}(\eta)]
+=\cosh^{2}\eta-\sinh^{2}\eta=1
+$$
+(b) 求证: 若态 $\left|\alpha\right\rangle_{\eta}$ 满足 $a(\eta)\left|\alpha\right\rangle_{\eta}=\alpha\left|\alpha\right\rangle_{\eta}$, 则 $\left|\alpha\right\rangle_{\eta}=\mathrm{e}^{\frac{1}{2}\eta\left(a^{2}-\left(a^{\dagger}\right)^{2}\right)}|\alpha\rangle$ 
+
+再记
+$$
+S(\eta)=\exp\left[\frac{\eta}{2}(a^{2}-a^{\dagger2})\right]
+$$
+由 BCH 公式可得变换
+$$
+S(\eta)aS^{-1}(\eta)=a\cosh\eta+a^{\dagger}\sinh\eta=a(\eta)
+$$
+定义
+$$
+|\alpha\rangle_{\eta}=S(\eta)|\alpha\rangle
+$$
+则
+$$
+a(\eta)|\alpha\rangle_{\eta}
+=S(\eta)aS^{-1}(\eta)S(\eta)|\alpha\rangle
+=S(\eta)a|\alpha\rangle
+=\alpha S(\eta)|\alpha\rangle
+=\alpha|\alpha\rangle_{\eta}
+$$
+因此 $|\alpha\rangle_{\eta}$ 正是 $a(\eta)$ 的本征态，本征值为 $\alpha$，即
+$$
+|\alpha\rangle_{\eta}
+=\exp\left[\frac{\eta}{2}(a^{2}-a^{\dagger2})\right]|\alpha\rangle
+$$
+
+
