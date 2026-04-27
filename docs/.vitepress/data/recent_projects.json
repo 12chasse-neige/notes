@@ -1,247 +1,267 @@
 [
   {
-    "title": "Advanced LIGO Noise Sources Explained",
-    "desc": "Analyzes quantum, thermal, and technical noise components in gravitational wave detectors.",
+    "title": "Quantum Mechanics Homework 6: Central Force Field",
+    "desc": "Derivation of kinetic energy operator and bound state condition in a spherical well.",
+    "tags": [
+      "central force",
+      "kinetic energy",
+      "spherical well"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 6"
+  },
+  {
+    "title": "Quantum Mechanics Homework 7",
+    "desc": "Dive into quantum mechanics with challenging problems and concepts.",
+    "tags": [
+      "quantum mechanics",
+      "homework",
+      "physics"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 7"
+  },
+  {
+    "title": "统计力学第8次作业：玻色气体凝聚",
+    "desc": "分析二维和三维玻色气体的玻色-爱因斯坦凝聚及光子气体性质。",
+    "tags": [
+      "Bose-Einstein condensation",
+      "ideal Bose gas",
+      "photon gas"
+    ],
+    "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 8"
+  },
+  {
+    "title": "Interferometer Noise and Quantum Noise",
+    "desc": "Analysis of noise sources in Advanced LIGO, focusing on quantum noise and thermal noise.",
     "tags": [
       "quantum noise",
-      "thermal noise",
-      "interferometer"
+      "interferometer noise",
+      "gravitational wave detector"
     ],
     "link": "/physics/General Relativity/Gravitational Waves/Quantum Noise"
   },
   {
-    "title": "Feynman Diagrams: A Beginner's Guide",
-    "desc": "Introductory guide to Feynman diagrams with exercises for QFT newcomers.",
+    "title": "Feynman Diagrams for Beginners",
+    "desc": "Introduction to Feynman diagrams with exercises, covering QED calculations and cross sections.",
     "tags": [
       "Feynman diagrams",
-      "Quantum Field Theory",
+      "quantum field theory",
       "QED"
     ],
     "link": "/physics/Quantum Physics/Quantum Field Theory/Feynman Diagrams for Beginners"
   },
   {
-    "title": "Phase Transition Thermodynamics Proofs",
-    "desc": "Deriving molar internal energy and latent heat formulas for phase transitions.",
+    "title": "Statistical Mechanics Homework 3: Phase Transition",
+    "desc": "Derives molar internal energy change and latent heat variation with temperature.",
     "tags": [
-      "thermodynamics",
-      "phase_transition",
-      "Clapeyron_equation"
+      "phase transition",
+      "Clapeyron equation",
+      "latent heat"
     ],
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 3"
   },
   {
-    "title": "Statistical Mechanics: 2D Gas Distributions",
-    "desc": "Derives velocity and speed distributions for 2D ideal gases and relative molecular speeds.",
+    "title": "统计力学第6次作业：二维气体与相对速度分布",
+    "desc": "推导二维理想气体速度分布及相对速度分布，计算平均速率等。",
     "tags": [
-      "statistical mechanics",
-      "Maxwell-Boltzmann distribution",
-      "kinetic theory"
+      "统计力学",
+      "速度分布",
+      "相对速度"
     ],
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 6"
   },
   {
-    "title": "Massless Amplitudes and Spinor-Helicity Formalism",
-    "desc": "Exploring 3-point amplitudes and spinor-helicity variables for massless spinning particles.",
+    "title": "Massless Amplitudes and Spinor-Helicity",
+    "desc": "Exploring self-interactions of massless spinning particles using spinor-helicity formalism.",
     "tags": [
-      "amplitudes",
+      "massless amplitudes",
       "spinor-helicity",
-      "scattering"
+      "bootstrap"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 5 Exercise"
   },
   {
-    "title": "Four-Particle Amplitude Analysis in QFT",
-    "desc": "Exploring 4-point amplitudes, factorization theorems, and Yang-Mills theory in quantum field theory.",
+    "title": "Lecture 6: Chasse_neige & Four Particle Test",
+    "desc": "Analyzing 4-point amplitudes via on-shell factorization and tree-level approximation.",
     "tags": [
-      "amplitude",
-      "factorization",
+      "amplitudes",
+      "on-shell",
       "Yang-Mills"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 6"
   },
   {
-    "title": "Quantum Field Theory: Fields and Perturbation",
-    "desc": "Exploring field theory, canonical normalization, and perturbation methods in QFT.",
+    "title": "QFT: Renormalization and Photon Field",
+    "desc": "Canonical quantization, renormalization, and photon polarization in quantum field theory.",
     "tags": [
       "quantum field theory",
-      "perturbation theory",
-      "renormalization"
+      "renormalization",
+      "photon field"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 7"
   },
   {
-    "title": "Gravitational Waves: Linear Approximation Analysis",
-    "desc": "Explores gravitational wave generation, propagation, and detection using linearized gravity approximations.",
+    "title": "引力波的产生、传播与探测",
+    "desc": "线性引力近似下引力波的产生、传播与探测原理。",
     "tags": [
-      "gravitational waves",
-      "linearized gravity",
-      "Einstein equations"
+      "引力波",
+      "线性引力",
+      "爱因斯坦方程"
     ],
     "link": "/physics/General Relativity/Gravitational Waves/Gravitational Waves Formation and Propagation"
   },
   {
-    "title": "Two-Body Systems and Spherical Wells",
-    "desc": "Deriving kinetic energy separation and solving for bound states in a spherical potential well.",
+    "title": "统计力学第7次作业分析",
+    "desc": "求解爱因斯坦固体熵与顺磁固体磁化率问题。",
     "tags": [
-      "quantum mechanics",
-      "two-body problem",
-      "bound states"
-    ],
-    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 6"
-  },
-  {
-    "title": "Statistical Mechanics Homework: Entropy and Magnetism",
-    "desc": "Calculating entropy for Einstein solids and magnetization in paramagnetic systems.",
-    "tags": [
-      "Statistical Mechanics",
-      "Entropy",
-      "Magnetization"
+      "统计力学",
+      "配分函数",
+      "磁化率"
     ],
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 7"
   },
   {
-    "title": "Deriving Dyson Series and Factorization Theorem",
-    "desc": "Step-by-step derivation of Dyson series for transition amplitudes and on-shell factorization theorem proof.",
+    "title": "Dyson Series and On-Shell Factorization",
+    "desc": "Derivation of Dyson series for transition amplitude with source j.",
     "tags": [
       "Dyson series",
-      "S-matrix",
+      "transition amplitude",
       "interaction picture"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 4 Exercise"
   },
   {
-    "title": "Spinor Helicity for Massless Amplitudes",
-    "desc": "Explores spinor helicity formalism to simplify massless scattering amplitudes using Lorentz group decomposition.",
+    "title": "Massless Amplitudes and Spinor Helicity",
+    "desc": "Lecture on massless amplitudes using spinor helicity formalism for Lorentz group decomposition.",
     "tags": [
       "spinor helicity",
-      "Lorentz group",
-      "massless amplitudes"
+      "massless amplitudes",
+      "Lorentz group"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 5"
   },
   {
-    "title": "Quantum Mechanics Step Potential Analysis",
-    "desc": "Calculating reflection and transmission coefficients for a step potential, verifying probability conservation.",
+    "title": "量子力学阶跃势场与概率守恒",
+    "desc": "求解阶跃势反射透射系数，验证概率守恒，证明左右入射透射相等。",
     "tags": [
-      "quantum mechanics",
-      "step potential",
-      "probability current"
+      "量子力学",
+      "阶跃势",
+      "概率守恒"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 3"
   },
   {
-    "title": "Quantum Mechanics Symmetry and Conservation",
-    "desc": "Analyzes angular momentum conservation and proves the Feynman-Hellmann theorem.",
+    "title": "量子力学对称性与守恒量分析",
+    "desc": "自由粒子角动量守恒证明及Feynman-Hellmann定理推导",
     "tags": [
-      "angular momentum",
-      "Feynman-Hellmann theorem",
-      "conservation laws"
+      "量子力学",
+      "对称性",
+      "守恒量"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 5"
   },
   {
-    "title": "On-Shell Factorization in Quantum Field Theory",
-    "desc": "Explores Green functions, poles, and factorization in scattering amplitudes.",
+    "title": "On-Shell Factorization in QFT",
+    "desc": "Analyzes Green functions and poles in momentum space for scalar particles.",
     "tags": [
-      "Green Function",
-      "On-Shell",
-      "Factorization"
+      "on-shell factorization",
+      "Green functions",
+      "scalar particles"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 4"
   },
   {
-    "title": "Schwarzschild Metric Killing Vectors Proof",
-    "desc": "Demonstrates that δᵐᵤ_t and δᵐᵤ_φ are Killing vectors using Christoffel symbols.",
+    "title": "Schwarzschild Killing Vectors Proof",
+    "desc": "Show that δ^μ_t and δ^μ_φ are Killing vectors of Schwarzschild metric.",
     "tags": [
-      "General Relativity",
-      "Schwarzschild Metric",
-      "Killing Vectors"
+      "Killing vectors",
+      "Schwarzschild metric",
+      "general relativity"
     ],
     "link": "/physics/General Relativity/General Relativity Homework 4"
   },
   {
-    "title": "General Relativity Homework Problem Analysis",
-    "desc": "Calculating Christoffel symbols and Ricci tensor for a time-dependent metric.",
+    "title": "General Relativity Homework 5 Analysis",
+    "desc": "Calculates connection and Ricci tensor for a time-relevant metric.",
     "tags": [
       "Christoffel symbols",
       "Ricci tensor",
-      "general relativity"
+      "metric"
     ],
     "link": "/physics/General Relativity/General Relativity Homework 5"
   },
   {
-    "title": "Quantum Mechanics Homework Solutions",
-    "desc": "Proofs for operator properties and uncertainty relations in quantum mechanics.",
+    "title": "Quantum Mechanics Homework 4: Operator Identities",
+    "desc": "Proves inverse Hermitian conjugate relation and uncertainty principle generalization.",
     "tags": [
-      "Hermitian Operators",
-      "Uncertainty Relations",
-      "Unitary Transformations"
+      "Hermitian operator",
+      "uncertainty principle",
+      "unitary transformation"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 4"
   },
   {
-    "title": "Statistical Mechanics: Particle Distribution Analysis",
-    "desc": "Calculates most probable distributions for classical, Bose, and Fermi particles with temperature correspondence.",
+    "title": "统计力学作业：混合粒子系统最概然分布",
+    "desc": "计算经典、玻色、费米子混合系统的最概然分布，并确定温度参数。",
     "tags": [
-      "Statistical Mechanics",
-      "Particle Statistics",
-      "Thermodynamics"
+      "统计力学",
+      "最概然分布",
+      "热力学第零定律"
     ],
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 5"
   },
   {
-    "title": "Solving Physics Integrals and Tensor Proofs",
-    "desc": "Step-by-step solutions for quantum field theory and electromagnetism exercises.",
+    "title": "QFT Lecture 2: Integrals and Photon Tensor",
+    "desc": "Evaluates a momentum integral and derives traceless energy-momentum tensor for photon field.",
     "tags": [
-      "quantum field theory",
-      "electromagnetism",
-      "tensor calculus"
+      "Feynman integral",
+      "energy-momentum tensor",
+      "gauge invariance"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 2 Exercise"
   },
   {
-    "title": "Proving Lorentz Invariance and Optical Theorem",
-    "desc": "Demonstrates Lorentz invariance of inner products and derives optical theorem from S-matrix unitarity.",
+    "title": "Lorentz Invariance and Optical Theorem",
+    "desc": "Proving Lorentz invariance of inner product and optical theorem via unitarity.",
     "tags": [
       "Lorentz invariance",
-      "S-matrix",
-      "optical theorem"
+      "optical theorem",
+      "S-matrix unitarity"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 3 Exercise"
   },
   {
-    "title": "Scattering Theory Principles and Axioms",
-    "desc": "Explores scattering amplitude constraints, Hilbert space axioms, and asymptotic states in quantum theory.",
+    "title": "Scattering Theory: Axioms and Fock Space",
+    "desc": "Fundamental principles restrain interactions; delve into scattering amplitude using analyticity.",
     "tags": [
-      "scattering amplitude",
-      "Hilbert space",
-      "Fock space"
+      "scattering theory",
+      "Fock space",
+      "analyticity"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 3"
   },
   {
-    "title": "Statistical Mechanics Homework: Normalization and Particle Classification",
-    "desc": "Normalizing a probability distribution and classifying particles as bosons or fermions based on spin.",
+    "title": "统计力学第4次作业：概率分布与粒子分类",
+    "desc": "归一化概率分布，计算边缘概率，判断玻色子或费米子。",
     "tags": [
-      "probability distribution",
-      "normalization",
-      "particle classification"
+      "统计力学",
+      "概率分布",
+      "粒子分类"
     ],
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 4"
   },
   {
     "title": "Advanced Calculus: Taylor's Theorem Review",
-    "desc": "Explores Taylor's Theorem with Peano, Lagrange, and Cauchy remainder forms for function approximation.",
+    "desc": "Covers Taylor's theorem with Peano, Lagrange, and Cauchy remainder forms.",
     "tags": [
       "Taylor's Theorem",
-      "Remainder Terms",
-      "Function Approximation"
+      "Remainder Forms",
+      "Advanced Calculus"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (1) Final Review"
   },
   {
-    "title": "Advanced Calculus Series Convergence Analysis",
-    "desc": "Mathematical proofs for convergence of six complex infinite series using comparison and ratio tests.",
+    "title": "Advanced Calculus Homework 1: Series Convergence",
+    "desc": "Analyze convergence of six series using comparison, ratio, and root tests.",
     "tags": [
       "series convergence",
       "ratio test",
@@ -250,53 +270,33 @@
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 1"
   },
   {
-    "title": "Advanced Calculus Surface and Curve Integrals",
-    "desc": "Solutions for surface integrals, Stokes' theorem, and complex line integrals in multivariable calculus.",
+    "title": "Advanced Calculus Homework 10 Analysis",
+    "desc": "Surface and line integrals computation with parameterization and orientation.",
     "tags": [
-      "Surface Integrals",
-      "Stokes' Theorem",
-      "Line Integrals"
+      "surface integral",
+      "line integral",
+      "parameterization"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 10"
   },
   {
-    "title": "Power Series Convergence and Summation",
-    "desc": "Analyzing convergence domains and summation formulas for power series and function expansions.",
+    "title": "Power Series and Taylor Expansion",
+    "desc": "Convergence, sum formula, and series expansion of arctan and ln(1+x).",
     "tags": [
-      "Power Series",
-      "Convergence",
-      "Taylor Expansion"
+      "power series",
+      "convergence",
+      "Taylor expansion"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 2"
   },
   {
-    "title": "Advanced Calculus: Metrics and Inequalities",
-    "desc": "Proving metric properties and Cauchy-Schwarz inequality in function spaces.",
+    "title": "高等微积分作业：度量空间与不等式",
+    "desc": "证明连续函数空间度量、Cauchy列收敛、柯西-施瓦茨不等式及开集性质。",
     "tags": [
-      "metric space",
-      "Cauchy sequence",
-      "Cauchy-Schwarz inequality"
+      "度量空间",
+      "柯西-施瓦茨不等式",
+      "开集"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 3"
-  },
-  {
-    "title": "Advanced Calculus: Existence of Extrema",
-    "desc": "Proving existence of minima and maxima for continuous functions on Euclidean spaces.",
-    "tags": [
-      "continuous functions",
-      "extreme value theorem",
-      "compact sets"
-    ],
-    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 4"
-  },
-  {
-    "title": "Advanced Calculus Partial Derivative Exercises",
-    "desc": "A set of partial derivative problems with solutions, focusing on multivariable functions.",
-    "tags": [
-      "partial derivatives",
-      "multivariable calculus",
-      "differentiation"
-    ],
-    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 5"
   }
 ]
