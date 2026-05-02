@@ -126,8 +126,12 @@ $$
 所以在 beam splitter 处几个端口的场可以用下图的关系表示
 
 <img src="./Quantum Noise.assets/image-20260318192533476.png" alt="image-20260318192533476" style="zoom:50%;" />
+
 $$
-f_{j}^{n} = \frac{d_{j} + a_{j}}{\sqrt{2}} \quad f_{j}^{e} = \frac{d_{j} - a_{j}}{\sqrt{2}} \\
+f_{j}^{n} = \frac{d_{j} + a_{j}}{\sqrt{2}} \quad f_{j}^{e} = \frac{d_{j} - a_{j}}{\sqrt{2}} 
+$$
+
+$$
 b_{j} = \frac{g_{j}^{n} - g_{j}^{e}}{\sqrt{2}} \quad d_{j} = \frac{g_{j}^{n} + g_{j}^{e}}{\sqrt{2}}
 $$
 
@@ -178,9 +182,9 @@ j_{j} = \frac{\sqrt{T} f_{j} + \sqrt{R} e^{i\Omega L/c} \left(\sqrt{\tilde{T}} q
 $$
 
 为了简化它，使用 Resonant Approximation
-*   假设镜子反射率极高（$R \approx 1, \tilde{R} \approx 1$）
-*   假设 side band 频率 $\Omega$ 远小于自由光谱范围（$\Omega \ll c/2L$），所以 $e^{2i\Omega L/c} \approx 1 + 2i\Omega L/c$
-*   引入腔的半带宽 $\gamma = \frac{Tc}{4L}$ 和损耗修正 $\gamma_* = \gamma(1 + \epsilon/2)$
+-  假设镜子反射率极高（$R \approx 1, \tilde{R} \approx 1$）
+-   假设 side band 频率 $\Omega$ 远小于自由光谱范围（$\Omega \ll c/2L$），所以 $e^{2i\Omega L/c} \approx 1 + 2i\Omega L/c$
+-   引入腔的半带宽 $\gamma = \frac{Tc}{4L}$ 和损耗修正 $\gamma_* = \gamma(1 + \epsilon/2)$
 
 经过近似分母变成了极其简洁的形式：$(2L/c)(\gamma_* - i\Omega)$，于是，$j_{j}$ 化简为
 $$
