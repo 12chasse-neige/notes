@@ -202,9 +202,7 @@ We can use the principles to constrain the form of $M$
     $$
     \lambda^{R}_{abc} [12]^{- h_{3} + h_{1} + h_{2}} [23]^{- h_{1} + h_{2} +  h_{3}} [31]^{- h_{2} + h_{1} + h_{3}}
     $$
-
-2.  
-
+    
 2.  Locality
     $$
     [\langle 12 \rangle^{h_{3} - h_{1} - h_{2}} \langle 23 \rangle^{h_{1} - h_{2}-  h_{3}} \langle 31 \rangle^{h_{2} - h_{1} - h_{3}}] = - (h_{1} + h_{2} + h_{3})

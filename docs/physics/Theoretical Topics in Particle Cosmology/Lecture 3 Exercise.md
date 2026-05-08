@@ -87,11 +87,11 @@ $$
 
     Derivation: Since $\tilde{\chi}(\omega)$ is analytic in the upper half-plane, we apply Cauchy's Integral Formula for a point $\omega$ on the real axis, using a contour that travels along the real axis and closes via a large semi-circle in the upper half-plane (assuming $\tilde{\chi}$ vanishes at infinity). 
 
-    By taking the Cauchy Principal Value ($\mathcal{P}$) of the integral:
+    By taking the Cauchy Principal Value ($\mathcal{P}$) of the integral
     $$
     \tilde{\chi}(\omega) = \frac{1}{i\pi} \mathcal{P} \int_{-\infty}^{\infty} \frac{\tilde{\chi}(\omega')}{\omega' - \omega} d\omega'
     $$
-    Splitting $\tilde{\chi}$ into real and imaginary parts ($\tilde{\chi} = \text{Re}\,\chi + i\text{Im}\,\chi$) yields:
+    Splitting $\tilde{\chi}$ into real and imaginary parts ($\tilde{\chi} = \text{Re}\,\chi + i\text{Im}\,\chi$) yields
     $$
     \text{Re}\,\tilde{\chi}(\omega) = \frac{1}{\pi} \mathcal{P} \int_{-\infty}^{\infty} \frac{\text{Im}\,\tilde{\chi}(\omega')}{\omega' - \omega} d\omega' \quad \text{and} \quad \text{Im}\,\tilde{\chi}(\omega) = -\frac{1}{\pi} \mathcal{P} \int_{-\infty}^{\infty} \frac{\text{Re}\,\tilde{\chi}(\omega')}{\omega' - \omega} d\omega'
     $$

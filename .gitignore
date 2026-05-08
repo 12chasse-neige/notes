@@ -97,4 +97,5 @@ Thumbs.db
 .tmp/
 
 # Specific ignores
+AGENTS.md
 scripts/replace.py
