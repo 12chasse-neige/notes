@@ -1,17 +1,47 @@
 [
   {
+    "title": "Interferometer Noise and Quantum Noise",
+    "desc": "Overview of noise sources in Advanced LIGO, focusing on quantum noise and thermal noise.",
+    "tags": [
+      "quantum noise",
+      "thermal noise",
+      "gravitational wave detector"
+    ],
+    "link": "/physics/General Relativity/Gravitational Waves/Quantum Noise"
+  },
+  {
+    "title": "Bose-Einstein Condensation in 2D and 3D",
+    "desc": "Proves no BEC in 2D ideal Bose gas; derives critical temperature for 3D harmonic trap.",
+    "tags": [
+      "Bose-Einstein condensation",
+      "ideal Bose gas",
+      "harmonic trap"
+    ],
+    "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 8"
+  },
+  {
+    "title": "QFT: Renormalization and Photon Field",
+    "desc": "Quantum field theory basics: renormalization, perturbation theory, and photon field quantization.",
+    "tags": [
+      "quantum field theory",
+      "renormalization",
+      "photon field"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 7"
+  },
+  {
     "title": "Quantum Mechanics Homework 6: Central Force Field",
-    "desc": "Derivation of kinetic energy operator and bound state condition in a spherical well.",
+    "desc": "Derivation of kinetic operator and bound state condition in spherical well.",
     "tags": [
       "central force",
-      "kinetic energy",
+      "kinetic operator",
       "spherical well"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 6"
   },
   {
     "title": "Quantum Mechanics Homework 7",
-    "desc": "Dive into quantum mechanics with challenging problems and concepts.",
+    "desc": "Seventh assignment covering key quantum mechanics concepts.",
     "tags": [
       "quantum mechanics",
       "homework",
@@ -20,28 +50,8 @@
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 7"
   },
   {
-    "title": "统计力学第8次作业：玻色气体凝聚",
-    "desc": "分析二维和三维玻色气体的玻色-爱因斯坦凝聚及光子气体性质。",
-    "tags": [
-      "Bose-Einstein condensation",
-      "ideal Bose gas",
-      "photon gas"
-    ],
-    "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 8"
-  },
-  {
-    "title": "Interferometer Noise and Quantum Noise",
-    "desc": "Analysis of noise sources in Advanced LIGO, focusing on quantum noise and thermal noise.",
-    "tags": [
-      "quantum noise",
-      "interferometer noise",
-      "gravitational wave detector"
-    ],
-    "link": "/physics/General Relativity/Gravitational Waves/Quantum Noise"
-  },
-  {
     "title": "Feynman Diagrams for Beginners",
-    "desc": "Introduction to Feynman diagrams with exercises, covering QED calculations and cross sections.",
+    "desc": "Introduction to Feynman diagrams and QED calculations with exercises and examples.",
     "tags": [
       "Feynman diagrams",
       "quantum field theory",
@@ -60,48 +70,38 @@
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 3"
   },
   {
-    "title": "统计力学第6次作业：二维气体与相对速度分布",
-    "desc": "推导二维理想气体速度分布及相对速度分布，计算平均速率等。",
+    "title": "统计力学第6次作业分析",
+    "desc": "二维气体速度分布与相对速率分布推导",
     "tags": [
       "统计力学",
       "速度分布",
-      "相对速度"
+      "相对速率"
     ],
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 6"
   },
   {
     "title": "Massless Amplitudes and Spinor-Helicity",
-    "desc": "Exploring self-interactions of massless spinning particles using spinor-helicity formalism.",
+    "desc": "Explore 3-point amplitudes for massless particles using spinor-helicity formalism.",
     "tags": [
       "massless amplitudes",
       "spinor-helicity",
-      "bootstrap"
+      "bootstrap program"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 5 Exercise"
   },
   {
     "title": "Lecture 6: Chasse_neige & Four Particle Test",
-    "desc": "Analyzing 4-point amplitudes via on-shell factorization and tree-level approximation.",
+    "desc": "Analyzing 4-point amplitudes from 3-point consistency, DoF counting, and Yang-Mills theory.",
     "tags": [
       "amplitudes",
-      "on-shell",
-      "Yang-Mills"
+      "Yang-Mills",
+      "on-shell"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 6"
   },
   {
-    "title": "QFT: Renormalization and Photon Field",
-    "desc": "Canonical quantization, renormalization, and photon polarization in quantum field theory.",
-    "tags": [
-      "quantum field theory",
-      "renormalization",
-      "photon field"
-    ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 7"
-  },
-  {
     "title": "引力波的产生、传播与探测",
-    "desc": "线性引力近似下引力波的产生、传播与探测原理。",
+    "desc": "在线性引力近似下分析引力波的产生、传播和探测机制。",
     "tags": [
       "引力波",
       "线性引力",
@@ -111,7 +111,7 @@
   },
   {
     "title": "统计力学第7次作业分析",
-    "desc": "求解爱因斯坦固体熵与顺磁固体磁化率问题。",
+    "desc": "求解爱因斯坦固体熵与顺磁固体磁化强度及磁化率。",
     "tags": [
       "统计力学",
       "配分函数",
@@ -121,17 +121,17 @@
   },
   {
     "title": "Dyson Series and On-Shell Factorization",
-    "desc": "Derivation of Dyson series for transition amplitude with source j.",
+    "desc": "Derivation of Dyson series for transition amplitude with source, and on-shell factorization theorem steps.",
     "tags": [
       "Dyson series",
       "transition amplitude",
-      "interaction picture"
+      "on-shell factorization"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 4 Exercise"
   },
   {
-    "title": "Massless Amplitudes and Spinor Helicity",
-    "desc": "Lecture on massless amplitudes using spinor helicity formalism for Lorentz group decomposition.",
+    "title": "Spinor Helicity for Massless Amplitudes",
+    "desc": "Introduces spinor helicity formalism to construct massless amplitudes using Lorentz group decomposition.",
     "tags": [
       "spinor helicity",
       "massless amplitudes",
@@ -140,38 +140,38 @@
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 5"
   },
   {
-    "title": "量子力学阶跃势场与概率守恒",
-    "desc": "求解阶跃势反射透射系数，验证概率守恒，证明左右入射透射相等。",
+    "title": "量子力学作业：阶跃势场反射与透射",
+    "desc": "求解阶跃势场反射系数R和透射系数T，验证R+T=1，并证明概率守恒。",
     "tags": [
       "量子力学",
       "阶跃势",
-      "概率守恒"
+      "反射系数"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 3"
   },
   {
-    "title": "量子力学对称性与守恒量分析",
-    "desc": "自由粒子角动量守恒证明及Feynman-Hellmann定理推导",
+    "title": "量子力学中的对称性与守恒量",
+    "desc": "证明自由粒子角动量守恒及Feynman-Hellmann定理。",
     "tags": [
-      "量子力学",
-      "对称性",
-      "守恒量"
+      "角动量守恒",
+      "Feynman-Hellmann定理",
+      "量子力学"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 5"
   },
   {
     "title": "On-Shell Factorization in QFT",
-    "desc": "Analyzes Green functions and poles in momentum space for scalar particles.",
+    "desc": "Analyzes Green functions and pole behavior in scalar field theory.",
     "tags": [
       "on-shell factorization",
-      "Green functions",
-      "scalar particles"
+      "Green function",
+      "scalar field"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 4"
   },
   {
-    "title": "Schwarzschild Killing Vectors Proof",
-    "desc": "Show that δ^μ_t and δ^μ_φ are Killing vectors of Schwarzschild metric.",
+    "title": "Killing Vectors in Schwarzschild Metric",
+    "desc": "Proving δ^μ_t and δ^μ_φ are Killing vectors of Schwarzschild metric.",
     "tags": [
       "Killing vectors",
       "Schwarzschild metric",
@@ -180,28 +180,28 @@
     "link": "/physics/General Relativity/General Relativity Homework 4"
   },
   {
-    "title": "General Relativity Homework 5 Analysis",
-    "desc": "Calculates connection and Ricci tensor for a time-relevant metric.",
+    "title": "General Relativity Homework 5: Metric Analysis",
+    "desc": "Calculate connection and Ricci tensor for a time-relevant metric.",
     "tags": [
       "Christoffel symbols",
       "Ricci tensor",
-      "metric"
+      "general relativity"
     ],
     "link": "/physics/General Relativity/General Relativity Homework 5"
   },
   {
-    "title": "Quantum Mechanics Homework 4: Operator Identities",
-    "desc": "Proves inverse Hermitian conjugate relation and uncertainty principle generalization.",
+    "title": "量子力学作业：算符性质与不确定性关系",
+    "desc": "证明逆算符的厄米共轭关系及幺正变换条件，推广不确定性关系。",
     "tags": [
       "Hermitian operator",
-      "uncertainty principle",
-      "unitary transformation"
+      "unitary transformation",
+      "uncertainty relation"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 4"
   },
   {
-    "title": "统计力学作业：混合粒子系统最概然分布",
-    "desc": "计算经典、玻色、费米子混合系统的最概然分布，并确定温度参数。",
+    "title": "统计力学第5次作业分析",
+    "desc": "计算两种粒子平衡分布，讨论β与温度对应。",
     "tags": [
       "统计力学",
       "最概然分布",
@@ -210,27 +210,27 @@
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 5"
   },
   {
-    "title": "QFT Lecture 2: Integrals and Photon Tensor",
-    "desc": "Evaluates a momentum integral and derives traceless energy-momentum tensor for photon field.",
+    "title": "Lecture 2: Integrals and Photon Field",
+    "desc": "Solving a momentum integral, deriving traceless energy-momentum tensor for photon field.",
     "tags": [
-      "Feynman integral",
-      "energy-momentum tensor",
-      "gauge invariance"
+      "quantum field theory",
+      "residue theorem",
+      "energy-momentum tensor"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 2 Exercise"
   },
   {
     "title": "Lorentz Invariance and Optical Theorem",
-    "desc": "Proving Lorentz invariance of inner product and optical theorem via unitarity.",
+    "desc": "Proves Lorentz invariance of inner product and derives optical theorem from S-matrix unitarity.",
     "tags": [
       "Lorentz invariance",
       "optical theorem",
-      "S-matrix unitarity"
+      "S-matrix"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 3 Exercise"
   },
   {
-    "title": "Scattering Theory: Axioms and Fock Space",
+    "title": "Scattering Theory Axioms and Fock Space",
     "desc": "Fundamental principles restrain interactions; delve into scattering amplitude using analyticity.",
     "tags": [
       "scattering theory",
@@ -241,11 +241,11 @@
   },
   {
     "title": "统计力学第4次作业：概率分布与粒子分类",
-    "desc": "归一化概率分布，计算边缘概率，判断玻色子或费米子。",
+    "desc": "归一化概率分布，求边缘概率，判断粒子为玻色子或费米子。",
     "tags": [
       "统计力学",
       "概率分布",
-      "粒子分类"
+      "玻色子费米子"
     ],
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 4"
   },
@@ -261,7 +261,7 @@
   },
   {
     "title": "Advanced Calculus Homework 1: Series Convergence",
-    "desc": "Analyze convergence of six series using comparison, ratio, and root tests.",
+    "desc": "Analyzes convergence of six series using comparison, ratio, and root tests.",
     "tags": [
       "series convergence",
       "ratio test",
@@ -271,7 +271,7 @@
   },
   {
     "title": "Advanced Calculus Homework 10 Analysis",
-    "desc": "Surface and line integrals computation with parameterization and orientation.",
+    "desc": "Surface and line integrals computed with parameterization and Green's theorem.",
     "tags": [
       "surface integral",
       "line integral",
@@ -280,12 +280,12 @@
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 10"
   },
   {
-    "title": "Power Series and Taylor Expansion",
-    "desc": "Convergence, sum formula, and series expansion of arctan and ln(1+x).",
+    "title": "Power Series and Function Expansion",
+    "desc": "Analysis of power series convergence, expansion of arctan, and properties of zeta function.",
     "tags": [
       "power series",
-      "convergence",
-      "Taylor expansion"
+      "Taylor expansion",
+      "convergence"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 2"
   },
@@ -294,8 +294,8 @@
     "desc": "证明连续函数空间度量、Cauchy列收敛、柯西-施瓦茨不等式及开集性质。",
     "tags": [
       "度量空间",
-      "柯西-施瓦茨不等式",
-      "开集"
+      "Cauchy列",
+      "柯西-施瓦茨不等式"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 3"
   }
