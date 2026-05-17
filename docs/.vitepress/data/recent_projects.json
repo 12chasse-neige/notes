@@ -1,7 +1,17 @@
 [
   {
+    "title": "Quantum Mechanics Homework 9: Pauli Matrices",
+    "desc": "Proofs of Pauli matrix identities and spin operators.",
+    "tags": [
+      "Pauli matrices",
+      "spin operators",
+      "quantum mechanics"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 9"
+  },
+  {
     "title": "Ergosphere Angular Velocity Range",
-    "desc": "Derives allowed angular velocity range inside ergosphere, narrowing to Ω_H at horizon.",
+    "desc": "Derives allowed angular velocity range for observers inside Kerr ergosphere, approaching horizon.",
     "tags": [
       "Kerr metric",
       "ergosphere",
@@ -10,34 +20,24 @@
     "link": "/physics/General Relativity/General Relativity Homework 6"
   },
   {
-    "title": "干涉仪噪声组成与量子噪声分析",
-    "desc": "分析干涉仪噪声源，包括量子噪声、热噪声等，以及其对灵敏度的影响。",
+    "title": "Interferometer Noise and Quantum Noise",
+    "desc": "Analysis of noise sources in Advanced LIGO, focusing on quantum noise and thermal effects.",
     "tags": [
-      "量子噪声",
-      "干涉仪",
-      "引力波探测"
+      "quantum noise",
+      "thermal noise",
+      "gravitational wave detector"
     ],
     "link": "/physics/General Relativity/Gravitational Waves/Quantum Noise"
   },
   {
-    "title": "Quantum Mechanics Homework 8: Angular Momentum",
-    "desc": "Proofs of commutator identities for general angular momentum operators.",
+    "title": "量子力学第8次作业：角动量对易与矢量算符",
+    "desc": "证明角动量算符与矢量算符的对易关系及叉积恒等式。",
     "tags": [
-      "angular momentum",
-      "commutator",
-      "vector operator"
+      "角动量算符",
+      "对易关系",
+      "矢量算符"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 8"
-  },
-  {
-    "title": "Quantum Mechanics Homework 9: Pauli Matrices",
-    "desc": "Proves Pauli matrix identities and spin operators for quantum mechanics.",
-    "tags": [
-      "Pauli matrices",
-      "spin operators",
-      "quantum mechanics"
-    ],
-    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 9"
   },
   {
     "title": "统计力学第10次作业：自由电子气体",
@@ -50,8 +50,8 @@
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 10"
   },
   {
-    "title": "Debye Model: Partition Function and Thermodynamics",
-    "desc": "Derives ln Z, internal energy, and entropy for solids in high and low temperature limits.",
+    "title": "Debye Model: Partition Function, Internal Energy, Entropy",
+    "desc": "Derives ln Z, U, S for solids at high and low T using Debye spectrum.",
     "tags": [
       "Debye model",
       "partition function",
@@ -61,17 +61,17 @@
   },
   {
     "title": "Photon Field Energy-Momentum Tensor",
-    "desc": "Derives gauge invariant, traceless energy-momentum tensor for photon field.",
+    "desc": "Derivation of gauge invariant, traceless energy-momentum tensor for photon field.",
     "tags": [
       "energy-momentum tensor",
       "photon field",
-      "gauge invariance"
+      "Noether theorem"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 2 Exercise"
   },
   {
     "title": "Lorentz Invariance and Optical Theorem",
-    "desc": "Proving Lorentz invariance of inner product and deriving optical theorem from S-matrix unitarity.",
+    "desc": "Proof of Lorentz invariance of inner product and optical theorem from S-matrix unitarity.",
     "tags": [
       "Lorentz invariance",
       "optical theorem",
@@ -91,37 +91,37 @@
   },
   {
     "title": "Null Momentum Spinor Decomposition and LGTs",
-    "desc": "Derives spinor expressions for null momentum with p0<0 and shows LGT action on |k>.",
+    "desc": "Derives spinor expressions for null momentum with p0<0 and shows LGT transformation.",
     "tags": [
-      "null momentum",
       "spinors",
-      "little group transformations"
+      "null momentum",
+      "Lorentz transformations"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 5 Exercise"
   },
   {
-    "title": "Gluon Amplitude Factorization Analysis",
-    "desc": "Shows vanishing of all-plus 4-pt amplitude and u-channel factorization for 4-gluon amplitude.",
+    "title": "4-Gluon Amplitude Vanishing and Factorization",
+    "desc": "Shows all-plus amplitude vanishes; derives u-channel factorization for two-minus amplitude.",
     "tags": [
       "Yang-Mills",
-      "tree-level",
-      "amplitude factorization"
+      "gluon amplitude",
+      "factorization"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 6 Exercise"
   },
   {
-    "title": "Non-Relativistic Limit in QFT",
-    "desc": "Leading order effects and NR limit for charged scalar particles with massless exchange.",
+    "title": "Non-Relativistic QFT and Leading Order Effects",
+    "desc": "Analyzing NR limit of QFT with massless exchange, leading to Schrödinger equation.",
     "tags": [
-      "non-relativistic limit",
-      "QFT",
-      "scalar particles"
+      "Non-Relativistic QFT",
+      "Leading Order",
+      "Massless Exchange"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 8"
   },
   {
-    "title": "Spinor Helicity for Massless Amplitudes",
-    "desc": "Bootstrap massless amplitudes using spinor helicity formalism and Lorentz group decomposition.",
+    "title": "Massless Amplitudes & Spinor Helicity",
+    "desc": "Spinor helicity formalism for massless amplitudes using Lorentz group decomposition.",
     "tags": [
       "spinor helicity",
       "massless amplitudes",
@@ -130,8 +130,8 @@
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 5"
   },
   {
-    "title": "Bose-Einstein Condensation in 2D and 3D",
-    "desc": "Proofs that 2D ideal Bose gas has no BEC; 3D harmonic trap shows BEC with critical temperature.",
+    "title": "Bose-Einstein Condensation in 2D and 3D Trapped Gases",
+    "desc": "Proofs of no BEC in 2D ideal Bose gas and BEC in 3D harmonic trap.",
     "tags": [
       "Bose-Einstein condensation",
       "ideal Bose gas",
@@ -140,8 +140,8 @@
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 8"
   },
   {
-    "title": "QFT Lecture 7: Field Theory Basics",
-    "desc": "Covers QFT Hamiltonian, causality, renormalization, perturbation theory, and photon field.",
+    "title": "QFT: Renormalization and Photon Field",
+    "desc": "Covers QFT basics, renormalization, perturbation theory, and photon field quantization.",
     "tags": [
       "quantum field theory",
       "renormalization",
@@ -150,12 +150,12 @@
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 7"
   },
   {
-    "title": "量子力学中心力场作业分析",
-    "desc": "二体系统动能算符分解及球方势阱束缚态条件推导。",
+    "title": "Quantum Mechanics Homework 6: Central Force Field",
+    "desc": "Derivation of kinetic operator and bound state condition in spherical well.",
     "tags": [
-      "量子力学",
-      "中心力场",
-      "束缚态"
+      "center-of-mass",
+      "reduced mass",
+      "spherical well"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 6"
   },
@@ -171,7 +171,7 @@
   },
   {
     "title": "Feynman Diagrams for Beginners",
-    "desc": "A concise introduction to Feynman diagrams with exercises, covering QED calculations.",
+    "desc": "Introduction to Feynman diagrams with exercises, covering QED scattering calculation.",
     "tags": [
       "Feynman diagrams",
       "quantum field theory",
@@ -180,42 +180,42 @@
     "link": "/physics/Quantum Physics/Quantum Field Theory/Feynman Diagrams for Beginners"
   },
   {
-    "title": "Statistical Mechanics Homework 3: Phase Transition",
-    "desc": "Derives molar internal energy change and latent heat variation with temperature.",
+    "title": "统计力学第3次作业：相变热力学推导",
+    "desc": "证明相变中摩尔内能变化及潜热随温度变化率公式，并简化气相-凝聚相情况。",
     "tags": [
-      "phase transition",
-      "Clapeyron equation",
-      "latent heat"
+      "相变",
+      "Clapeyron方程",
+      "潜热"
     ],
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 3"
   },
   {
-    "title": "统计力学第6次作业分析",
-    "desc": "二维气体速度分布与相对速率分布推导及平均速率计算。",
+    "title": "统计力学第6次作业：二维气体与相对速度分布",
+    "desc": "推导二维理想气体速度分布，计算平均、最概然和方均根速率，并求相对速度分布。",
     "tags": [
       "统计力学",
       "速度分布",
-      "相对速率"
+      "相对速度"
     ],
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 6"
   },
   {
-    "title": "Lecture 6: Four-Particle Test & Yang-Mills",
-    "desc": "Analyzing four-particle amplitudes, scalar self-interactions, and Yang-Mills theory with spin-1 particles.",
+    "title": "4-Point Amplitudes and Yang-Mills",
+    "desc": "Analyzing 4-point amplitudes using on-shell factorization and consistency, leading to Yang-Mills theory.",
     "tags": [
       "amplitudes",
       "Yang-Mills",
-      "scalar field"
+      "on-shell"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 6"
   },
   {
-    "title": "Gravitational Waves: Generation, Propagation, Detection",
-    "desc": "Linearized gravity approach to Einstein equations for gravitational wave analysis.",
+    "title": "引力波的产生、传播与探测",
+    "desc": "线性引力近似下引力波的产生、传播与探测原理。",
     "tags": [
-      "gravitational waves",
-      "linearized gravity",
-      "Einstein equations"
+      "引力波",
+      "线性引力",
+      "爱因斯坦方程"
     ],
     "link": "/physics/General Relativity/Gravitational Waves/Gravitational Waves Formation and Propagation"
   },
@@ -230,18 +230,18 @@
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 7"
   },
   {
-    "title": "量子力学作业：阶跃势与概率守恒",
-    "desc": "求解阶跃势反射透射系数，证明R+T=1及左右入射透射相等。",
+    "title": "Quantum Mechanics Homework 3: Step Potential",
+    "desc": "Reflection and transmission coefficients for a step potential, verifying probability conservation.",
     "tags": [
-      "量子力学",
-      "阶跃势",
-      "概率守恒"
+      "step potential",
+      "reflection coefficient",
+      "transmission coefficient"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 3"
   },
   {
-    "title": "量子力学对称性与守恒量分析",
-    "desc": "证明自由粒子角动量守恒及Feynman-Hellmann定理。",
+    "title": "量子力学中的对称性与守恒量",
+    "desc": "分析自由粒子角动量守恒性并证明Feynman-Hellmann定理。",
     "tags": [
       "量子力学",
       "对称性",
@@ -251,7 +251,7 @@
   },
   {
     "title": "On-Shell Factorization in QFT",
-    "desc": "Analyzes Green functions and poles in momentum space for scalar particles.",
+    "desc": "Exploring Green functions and poles in momentum space for scalar particles.",
     "tags": [
       "on-shell factorization",
       "Green function",
@@ -260,38 +260,38 @@
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 4"
   },
   {
-    "title": "Schwarzschild Killing Vectors Analysis",
+    "title": "General Relativity Homework 4: Killing Vectors",
     "desc": "Proving δ^μ_t and δ^μ_φ are Killing vectors of Schwarzschild metric.",
     "tags": [
       "Killing vectors",
       "Schwarzschild metric",
-      "general relativity"
+      "covariant derivative"
     ],
     "link": "/physics/General Relativity/General Relativity Homework 4"
   },
   {
-    "title": "General Relativity Homework 5: Metric Analysis",
-    "desc": "Compute connection and Ricci tensor for a time-dependent spherically symmetric metric.",
+    "title": "General Relativity Homework 5 Analysis",
+    "desc": "Calculates Christoffel symbols and Ricci tensor for a time-relevant metric.",
     "tags": [
       "Christoffel symbols",
       "Ricci tensor",
-      "spherical symmetry"
+      "metric"
     ],
     "link": "/physics/General Relativity/General Relativity Homework 5"
   },
   {
-    "title": "Quantum Mechanics Homework 4 Analysis",
-    "desc": "Proves operator identities and uncertainty relation generalization.",
+    "title": "Quantum Mechanics Homework 4: Operator Identities",
+    "desc": "Proofs of inverse Hermitian conjugate and generalized uncertainty relation.",
     "tags": [
-      "Hermitian operators",
-      "uncertainty principle",
-      "unitary transformations"
+      "Hermitian operator",
+      "uncertainty relation",
+      "unitary transformation"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 4"
   },
   {
-    "title": "统计力学作业：混合粒子系统最概然分布",
-    "desc": "计算经典、玻色、费米子最概然分布，β对应温度。",
+    "title": "统计力学作业：混合粒子系统分布",
+    "desc": "分析经典、玻色、费米粒子最概然分布，β对应温度。",
     "tags": [
       "统计力学",
       "最概然分布",
