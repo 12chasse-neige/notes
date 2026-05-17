@@ -1,5 +1,3 @@
-
-
 # Lecture 4 Exercise 
 
 (1) Please derive the Dyson series (4) for the transition amplitude in the presence of a source $j$.
@@ -8,7 +6,7 @@ S_{\Phi\Psi}[j] = \langle \Phi_{-} | T\bigg\{ \exp\!\Big(-i\int dt\, d^{3}\mathb
 $$
 We can solve this problem in the interaction picture, where the effect of the light bulb can be seen as a perturbation
 $$
-V(t) = g \int \dd[3]{\vec{x}} j(t, \vec{x}) O (t, \vec{x})
+V(t) = \int \dd[3]{\vec{x}} j(t, \vec{x}) O (t, \vec{x})
 $$
 Using the schrödinger equation for the time elvoving operators under the interaction picture
 $$
@@ -24,7 +22,7 @@ U(t, t_{0}) = 1 + \sum_{n} \frac{(-i)^{n}}{n!} \prod_{i = 1}^{n} \int \dd{t}_{i}
 $$
 So using the Dyson series, we can get the time evolving operator from $- \infty$ to $\infty$
 $$
-U (- \infty, \infty) = T \left\{ \exp(-i \int_{-\infty}^{\infty}V (\tau) \dd{\tau}) \right\} \\ =
+U (\infty, - \infty) = T \left\{ \exp(-i \int_{-\infty}^{\infty}V (\tau) \dd{\tau}) \right\} \\ =
 T \left\{ \exp(-i \int_{-\infty}^{\infty}\dd{\tau} \int \dd[3]{\vec{x}} j(t, \vec{x}) O (t, \vec{x}) ) \right\} = T \left\{ \exp(-i \int \dd[4]{\vec{x}} j(t, \vec{x}) O (t, \vec{x}) ) \right\}
 $$
 So the component of the S-matrix can be represented as

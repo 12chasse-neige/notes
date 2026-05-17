@@ -1,12 +1,12 @@
 # General Relativity Homework 6
 
-Chasse_neige
+吴桐 2024012555
 
 ## Problem 1 
 
-Please work out the range of angular velocity $\Omega_{\text{obs}}$ allowed an observer inside the ergosphere who remains at a fixed value of $r$. Show that this range becomes increasingly limited as the observer is located closer to the horizon and is eventually limited to the single value $\Omega_H$.
+Please work out the range of angular velocity $\Omega_{\text{obs}}$ allowed an observer inside the ergosphere who remains at a fixed value of $r$. Show that this range becomes increasingly limited as the observer is located closer to the horizon and is eventually limited to the single value $\Omega_{H}$.
 
-Use the Boyer-Lindquist coordinate for the Kerr metric. Here $M$ is the physical mass of the black hole, while $a=J/M$ is the Kerr spin parameter. Since we take $c=1$ but not $G=1$, $GM$ carries the dimension of length. We define
+Use the Kerr metric. Here $M$ is the physical mass of the black hole, while $a= \frac{J}{M}$ is the Kerr spin parameter. Since we take $c=1$ but not $G=1$, $GM$ carries the dimension of length. We define
 $$
 \rho^{2} = r^{2} + a^{2} \cos^{2}\theta
 $$
@@ -15,17 +15,17 @@ $$
 \Delta = r^{2} - 2GMr + a^{2}
 $$
 
-Then the relevant components of the Kerr metric are
+Then the relevant components of the Kerr metric are (we assume that $\theta = \frac{\pi}{2}$)
 $$
-g_{tt} = -\left(1 - \frac{2GMr}{\rho^{2}}\right)
-$$
-
-$$
-g_{t\phi} = - \frac{2GMar\sin^{2}\theta}{\rho^{2}}
+g_{tt} = -\left(1 - \frac{2GM}{r}\right)
 $$
 
 $$
-g_{\phi\phi} = \left(r^{2} + a^{2} + \frac{2GMa^{2}r\sin^{2}\theta}{\rho^{2}}\right)\sin^{2}\theta
+g_{t\phi} = - \frac{2GMa}{r}
+$$
+
+$$
+g_{\phi\phi} = r^{2} + a^{2} + \frac{2GMa^{2}}{r}
 $$
 
 Consider an observer who stays at fixed $r$ and $\theta$, but is allowed to rotate in the $\phi$ direction. Its four-velocity can be written as
@@ -35,9 +35,13 @@ $$
 
 where
 $$
-\Omega_{\text{obs}} = \dv{\phi}{t}
+\Omega_{\text{obs}} = \dv{\phi}{t} = \frac{E \frac{2 GM a}{r} + L (1 - \frac{2GM}{r})}{E (r^{2} + a^{2} + \frac{2 GM a^{2}}{r}) - L \frac{2 GM a}{r}}
 $$
 
+and the circular motion requires the observer’s energy and angular momentum constrained by
+$$
+(E^{2} - 1) (r^{2} + a^{2}) + (a E - L)^{2} \frac{2 GM}{r} + 2GMr - L^{2} = 0
+$$
 For this worldline to be timelike, we need
 $$
 g_{\mu\nu} u^{\mu}u^{\nu} < 0
@@ -70,7 +74,7 @@ $$
 
 Therefore the allowed range can also be written as
 $$
-\Omega_{\pm} = \frac{-g_{t\phi} \pm \sqrt{\Delta}\sin\theta}{g_{\phi\phi}}
+\Omega_{\pm} = \frac{-g_{t\phi} \pm \sqrt{\Delta}\sin\theta}{g_{\phi\phi}} = \frac{\frac{2 GMa}{r} \pm \sqrt{r^{2} + a^{2} - 2 GM r}}{r^{2} + a^{2} + \frac{2 GM a^{2}}{r}}
 $$
 
 At the boundary of the ergosphere, $g_{tt}=0$. There, the lower bound is $\Omega_{-}=0$. Inside the ergosphere, $g_{tt}>0$, so both roots are positive. This means an observer cannot remain at fixed $r$ without rotating in the same direction as the black hole.
@@ -101,8 +105,6 @@ Therefore, when the observer approaches the horizon, the allowed angular velocit
 $$
 \Omega_{\text{obs}} \to \Omega_{H} = \frac{a}{r_{+}^{2}+a^{2}}
 $$
-
-
 
 ## Problem 2
 
@@ -156,32 +158,28 @@ $$
 u = t - r_{*}
 $$
 
-Using $dt = du + f(r)^{-1}dr$, the metric becomes
+Using $\dd{t} = \dd{u} + f(r)^{-1} \dd{r}$, the metric becomes
 $$
-ds^{2} = -f(r)du^{2} - 2du\,dr + r^{2}(d\theta^{2}+\sin^{2}\theta d\varphi^{2})
-$$
-
-This coordinate system is regular at $r=R$. Outside the horizon, $r>R$, we have $f(r)<0$. Then for any future-directed causal curve with $du>0$,
-$$
-0 \geq ds^{2} = |f(r)|du^{2} - 2du\,dr + r^{2}(d\theta^{2}+\sin^{2}\theta d\varphi^{2})
+\dd{s}^{2} = -f(r) \dd{u}^{2} - 2 \dd{u} \, \dd{r} + r^{2} (\dd{\theta}^{2} + \sin^{2} \theta \dd{\varphi}^{2})
 $$
 
-Dividing by $du^{2}$ gives
+This coordinate system is regular at $r=R$. Outside the horizon, $r>R$, we have $f(r)<0$. Then for any future-directed curve with $\dd{u}>0$
+$$
+0 \geq \dd{s}^{2} = |f(r)| \dd{u}^{2} - 2 \dd{u} \, \dd{r} + r^{2}(\dd{\theta}^{2} + \sin^{2} \theta \dd{\varphi}^{2})
+$$
+
+Dividing by $\dd{u}^{2}$ gives
 $$
 \dv{r}{u} \geq \frac{|f(r)|}{2} + \frac{r^{2}}{2}\left[\left(\dv{\theta}{u}\right)^{2} + \sin^{2}\theta \left(\dv{\varphi}{u}\right)^{2}\right]
 $$
 
-So once $r>R$, every future-directed causal curve must move toward larger $r$. In other words, after crossing the horizon, decreasing $r$ and returning to the region around $r=0$ would require a spacelike trajectory. Thus we could never return.
-
-
+So once $r>R$, every future-directed curve must move toward larger $r$. In other words, after crossing the horizon, decreasing $r$ and returning to the region around $r=0$ would require a spacelike trajectory, which is impossible for observers.
 
 ## Problem 3
 
 Consider the perturbation to the metric field in Minkowski background. We expand the metric tensor as $g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}$.
 
-(1) Please calculate $g^{\mu\nu}$, $g^{1/2}$, $\Gamma^\lambda {}_{\mu\nu}$, $R_{\mu\nu}$ to the $O(h)$ order.
-
-(2) Please calculate the Einstein-Hilbert action to the $O(h^{2})$ order.
+(1) Please calculate $g^{\mu\nu}$, $g^{1/2}$, $\Gamma^{\lambda} {}_{\mu\nu}$, $R_{\mu\nu}$ to the $O(h)$ order.
 
 We raise and lower the indices of $h_{\mu\nu}$ with the background metric $\eta_{\mu\nu}$. Define
 $$
@@ -247,6 +245,8 @@ $$
 R^{(1)} = \partial_{\mu}\partial_{\nu}h^{\mu\nu} - \square h
 $$
 
+(2) Please calculate the Einstein-Hilbert action to the $O(h^{2})$ order.
+
 Now we calculate the Einstein-Hilbert action
 $$
 S_{\text{EH}} = \frac{1}{16\pi G}\int \dd[4]{x}\sqrt{-g}R
@@ -257,36 +257,180 @@ $$
 R^{(1)} = \partial_{\mu}\left(\partial_{\nu}h^{\mu\nu}-\partial^{\mu}h\right)
 $$
 
-So it is a boundary term and can be dropped if we fix the perturbation on the boundary. The first nontrivial bulk contribution is the quadratic part. After expanding $\sqrt{-g}R$ to $O(h^{2})$ and integrating by parts, we obtain the Fierz-Pauli action
+So it is a boundary term and can be dropped if we fix the perturbation on the boundary. The first nontrivial bulk contribution is the quadratic part.
+
+To see the second-order part more explicitly, first write the Ricci scalar as
+$$
+R = g^{\mu\nu}R_{\mu\nu}
+$$
+
+Using the results above, we can obtain that
+$$
+\sqrt{-g}g^{\mu\nu}
+= \eta^{\mu\nu}+\frac{1}{2}h\eta^{\mu\nu}-h^{\mu\nu}+O(h^{2})
+$$
+
+where
+$$
+R_{\mu\nu}
+= \partial_{\lambda}\Gamma^{\lambda} {}_{\mu\nu}
+- \partial_{\nu}\Gamma^{\lambda} {}_{\mu\lambda}
++ \Gamma^{\lambda} {}_{\mu\nu}\Gamma^{\sigma} {}_{\lambda\sigma}
+- \Gamma^{\sigma} {}_{\mu\lambda}\Gamma^{\lambda} {}_{\nu\sigma}
+$$
+
+Therefore
+$$
+\sqrt{-g}R
+= \sqrt{-g}g^{\mu\nu}
+\left(\partial_{\lambda}\Gamma^{\lambda} {}_{\mu\nu}
+- \partial_{\nu}\Gamma^{\lambda} {}_{\mu\lambda}\right)
++ \sqrt{-g}g^{\mu\nu}
+\left(\Gamma^{\lambda} {}_{\mu\nu}\Gamma^{\sigma} {}_{\lambda\sigma}
+- \Gamma^{\sigma} {}_{\mu\lambda}\Gamma^{\lambda} {}_{\nu\sigma}\right)
+$$
+
+Now integrate the derivative part by parts
+$$
+\sqrt{-g}g^{\mu\nu}\partial_{\lambda}\Gamma^{\lambda} {}_{\mu\nu}
+= \partial_{\lambda}\left(\sqrt{-g}g^{\mu\nu}\Gamma^{\lambda} {}_{\mu\nu}\right)
+- \Gamma^{\lambda} {}_{\mu\nu}\partial_{\lambda}\left(\sqrt{-g}g^{\mu\nu}\right)
+$$
+
+and
+$$
+-\sqrt{-g}g^{\mu\nu}\partial_{\nu}\Gamma^{\lambda} {}_{\mu\lambda}
+= -\partial_{\nu}\left(\sqrt{-g}g^{\mu\nu}\Gamma^{\lambda} {}_{\mu\lambda}\right)
++ \Gamma^{\lambda} {}_{\mu\lambda}\partial_{\nu}\left(\sqrt{-g}g^{\mu\nu}\right)
+$$
+
+The first terms on the right hand side are total derivatives. Dropping these boundary terms, and using the metric compatibility relation to combine the remaining terms, the Einstein-Hilbert Lagrangian can be written in the equivalent gamma-gamma form
+$$
+\sqrt{-g}R
+\doteq
+-\sqrt{-g}g^{\mu\nu}
+\left(\Gamma^{\lambda} {}_{\mu\nu}\Gamma^{\sigma} {}_{\lambda\sigma}
+- \Gamma^{\sigma} {}_{\mu\lambda}\Gamma^{\lambda} {}_{\nu\sigma}\right)
+$$
+
+where $\doteq$ means equal up to a total derivative. Because each Christoffel symbol is already $O(h)$, to calculate the $O(h^{2})$ Lagrangian we only need to put $\sqrt{-g}g^{\mu\nu}\to\eta^{\mu\nu}$ and $\Gamma\to\Gamma^{(1)}$. Thus
+$$
+\mathcal{L}^{(2)}
+= - \eta^{\mu\nu}
+\left(\Gamma^{\lambda(1)} {}_{\mu\nu}\Gamma^{\sigma(1)} {}_{\lambda\sigma}
+- \Gamma^{\sigma(1)} {}_{\mu\lambda}\Gamma^{\lambda(1)} {}_{\nu\sigma}\right)
+$$
+
+Now calculate the two pieces separately. First we have
+$$
+\Gamma^{\sigma(1)} {}_{\lambda\sigma}
+= \frac{1}{2}\partial_{\lambda}h
+$$
+
+and
+$$
+\eta^{\mu\nu}\Gamma^{\lambda(1)} {}_{\mu\nu}
+= \partial_{\mu}h^{\mu\lambda}-\frac{1}{2}\partial^{\lambda}h
+$$
+
+So the first product is
+$$
+\eta^{\mu\nu}\Gamma^{\lambda(1)} {}_{\mu\nu}\Gamma^{\sigma(1)} {}_{\lambda\sigma}
+= \frac{1}{2}\partial_{\lambda}h\,\partial_{\mu}h^{\mu\lambda}
+-\frac{1}{4}\partial_{\lambda}h\partial^{\lambda}h
+$$
+
+For the second product, we substitute the linearized Christoffel symbol
+$$
+\eta^{\mu\nu}\Gamma^{\sigma(1)} {}_{\mu\lambda}\Gamma^{\lambda(1)} {}_{\nu\sigma}
+= \frac{1}{4}\eta^{\mu\nu}
+\left(\partial_{\mu}h^{\sigma} {}_{\lambda}
++ \partial_{\lambda}h^{\sigma} {}_{\mu}
+- \partial^{\sigma}h_{\mu\lambda}\right)
+\left(\partial_{\nu}h^{\lambda} {}_{\sigma}
++ \partial_{\sigma}h^{\lambda} {}_{\nu}
+- \partial^{\lambda}h_{\nu\sigma}\right)
+$$
+
+Expanding the product, using $h_{\mu\nu}=h_{\nu\mu}$, and relabeling dummy indices gives
+$$
+\eta^{\mu\nu}\Gamma^{\sigma(1)} {}_{\mu\lambda}\Gamma^{\lambda(1)} {}_{\nu\sigma}
+= -\frac{1}{4}\partial_{\lambda}h_{\mu\nu}\partial^{\lambda}h^{\mu\nu}
++ \frac{1}{2}\partial_{\lambda}h_{\mu\nu}\partial^{\nu}h^{\mu\lambda}
+$$
+
+Therefore
+$$
+\mathcal{L}^{(2)}
+= - \frac{1}{4}\partial_{\lambda}h_{\mu\nu}\partial^{\lambda}h^{\mu\nu}
++ \frac{1}{2}\partial_{\lambda}h_{\mu\nu}\partial^{\nu}h^{\mu\lambda}
+- \frac{1}{2}\partial_{\lambda}h\,\partial_{\mu}h^{\mu\lambda}
++ \frac{1}{4}\partial_{\lambda}h\partial^{\lambda}h
+$$
+
+The second term is usually rewritten by integrating by parts twice. We have
+$$
+\int \dd[4]{x}\,\partial_{\lambda}h_{\mu\nu}\partial^{\nu}h^{\mu\lambda}
+= -\int \dd[4]{x}\,h_{\mu\nu}\partial_{\lambda}\partial^{\nu}h^{\mu\lambda}
+$$
+
+Then integrate by parts once more and use the symmetry of $h_{\mu\nu}$
+$$
+-\int \dd[4]{x}\,h_{\mu\nu}\partial_{\lambda}\partial^{\nu}h^{\mu\lambda}
+= \int \dd[4]{x}\,\partial_{\mu}h^{\mu\nu}\partial^{\lambda}h_{\lambda\nu}
+$$
+
+Also
+$$
+\partial_{\lambda}h\,\partial_{\mu}h^{\mu\lambda}
+= \partial_{\mu}h^{\mu\nu}\partial_{\nu}h
+$$
+
+Thus the quadratic Lagrangian density is
+$$
+\mathcal{L}^{(2)}
+= \frac{1}{4}
+\left[
+- \partial_{\lambda}h_{\mu\nu}\partial^{\lambda}h^{\mu\nu}
++ 2\partial_{\mu}h^{\mu\nu}\partial^{\lambda}h_{\lambda\nu}
+- 2\partial_{\mu}h^{\mu\nu}\partial_{\nu}h
++ \partial_{\lambda}h\partial^{\lambda}h
+\right]
+$$
+
+Plugging this back into the action, we obtain
 $$
 S_{\text{EH}}^{(2)}
 = \frac{1}{64\pi G}\int \dd[4]{x}
 \left[
-\partial_{\lambda}h_{\mu\nu}\partial^{\lambda}h^{\mu\nu}
--2\partial_{\mu}h^{\mu\nu}\partial^{\lambda}h_{\lambda\nu}
-+2\partial_{\mu}h^{\mu\nu}\partial_{\nu}h
--\partial_{\lambda}h\partial^{\lambda}h
+- \partial_{\lambda}h_{\mu\nu}\partial^{\lambda}h^{\mu\nu}
++ 2\partial_{\mu}h^{\mu\nu}\partial^{\lambda}h_{\lambda\nu}
+- 2\partial_{\mu}h^{\mu\nu}\partial_{\nu}h
++ \partial_{\lambda}h\partial^{\lambda}h
 \right]
 $$
 
 This is the Einstein-Hilbert action expanded around flat spacetime to second order in the perturbation.
 
-
-
 ## Problem 4 
 
-Please follow the steps on the class and the materials about GWs I sent to you to show that the $h_+$ and $h_\times$ produced by a nonrelativistic binary system can be written as
+Please follow the steps on the class and the materials about GWs I sent to you to show that the $h_+$ and $h_{\times}$ produced by a nonrelativistic binary system can be written as
 $$
-h_+(t) = \frac{4(GM_c)^{5/3}}{r} \left(\frac{\omega_{GW}}{2}\right)^{2/3} \frac{1+\cos^{2}\theta}{2} \cos(\omega_{GW} t_{\text{ret}} + 2\varphi)
-$$
-
-$$
-h_\times(t) = \frac{4(GM_c)^{5/3}}{r} \left(\frac{\omega_{GW}}{2}\right)^{2/3} \cos\theta \sin(\omega_{GW} t_{\text{ret}} + 2\varphi)
+h_+(t) = \frac{4(GM_{c})^{5/3}}{r} \left(\frac{\omega_{GW}}{2}\right)^{2/3} \frac{1+\cos^{2}\theta}{2} \cos(\omega_{GW} t_{\text{ret}} + 2 \varphi)
 $$
 
-where $t_{\text{ret}} = t - r$ and $M_c$ is the chirp mass.
+$$
+h_{\times}(t) = \frac{4(GM_{c})^{5/3}}{r} \left(\frac{\omega_{GW}}{2}\right)^{2/3} \cos\theta \sin(\omega_{GW} t_{\text{ret}} + 2 \varphi)
+$$
 
-In this problem we use the convention $c=1$. For a weak and slow source, the quadrupole formula is
+where $t_{\text{ret}} = t - r$ and $M_{c}$ is the chirp mass.
+
+>  The chirp mass is defined as
+>  $$
+>  M_{c} = (\mu^{3} m^{2})^{1/5}
+>  $$
+
+For a weak and slow source, the quadrupole formula is
 $$
 h_{ij}^{TT}(t,\vec{x}) = \frac{2G}{r}\ddot{I}_{ij}^{TT}(t_{\text{ret}})
 $$
@@ -298,7 +442,7 @@ $$
 
 For a Newtonian binary, put the center of mass at the origin and choose the orbital plane to be the $x-y$ plane. Let $a$ be the separation between the two masses, $M=m_{1}+m_{2}$, and $\mu=m_{1}m_{2}/M$. We take the relative position to be
 $$
-\vec{x}(t) = a(\cos\omega t, -\sin\omega t, 0)
+\vec{x}(t) = a(- \sin \omega t, \cos \omega t, 0)
 $$
 
 Then the Newtonian quadrupole moment is
@@ -308,11 +452,11 @@ $$
 
 The components which contain the time-dependent quadrupole are
 $$
-I_{xx} = \mu a^{2}\cos^{2}\omega t
+I_{xx} = \mu a^{2}\sin^{2}\omega t
 $$
 
 $$
-I_{yy} = \mu a^{2}\sin^{2}\omega t
+I_{yy} = \mu a^{2}\cos^{2}\omega t
 $$
 
 $$
@@ -321,11 +465,11 @@ $$
 
 Taking two time derivatives gives
 $$
-\ddot{I}_{xx} = -2\mu a^{2}\omega^{2}\cos 2\omega t
+\ddot{I}_{xx} = 2\mu a^{2}\omega^{2}\cos 2\omega t
 $$
 
 $$
-\ddot{I}_{yy} = 2\mu a^{2}\omega^{2}\cos 2\omega t
+\ddot{I}_{yy} = - 2\mu a^{2}\omega^{2}\cos 2\omega t
 $$
 
 $$
@@ -348,7 +492,7 @@ $$
 
 With the polarization convention
 $$
-e^{+}_{ij} = e^{\varphi}_{i}e^{\varphi}_{j} - e^{\theta}_{i}e^{\theta}_{j}
+e^{+}_{ij} = e^{\theta}_{i}e^{\theta}_{j} - e^{\varphi}_{i}e^{\varphi}_{j} 
 $$
 
 $$
@@ -364,7 +508,29 @@ $$
 h_{\times} = \frac{1}{2}e^{\times}_{ij}h_{ij}^{TT}
 $$
 
-Since the polarization tensors are already transverse and traceless, we can contract them directly with $\ddot{I}_{ij}$. This gives
+Since the polarization tensors are already transverse and traceless, we can contract them directly with $\ddot{I}_{ij}$. 
+
+Or we can use the form given by eq 3.72 in the textbook *Gravitational Waves*[^1]
+$$
+h_{+}(t; \theta, \phi) = \frac{1}{r} \frac{G}{c^{4}}[ 
+  \ddot{M}_{11}(\cos^{2} \phi - \sin^{2} \phi \cos^{2} \theta) 
+  + \ddot{M}_{22}(\sin^{2} \phi - \cos^{2} \phi \cos^{2} \theta) 
+  - \ddot{M}_{33} \sin^{2} \theta \\
+  - \ddot{M}_{12} \sin 2\phi (1 + \cos^{2} \theta) 
+  + \ddot{M}_{13} \sin \phi \sin 2\theta 
+  + \ddot{M}_{23} \cos \phi \sin 2\theta]
+$$
+
+$$
+h_{\times}(t; \theta, \phi) = \frac{1}{r} \frac{G}{c^{4}} \left[ 
+  (\ddot{M}_{11} - \ddot{M}_{22}) \sin 2\phi \cos \theta 
+  + 2\ddot{M}_{12} \cos 2\phi \cos \theta 
+  - 2\ddot{M}_{13} \cos \phi \sin \theta 
+  + 2\ddot{M}_{23} \sin \phi \sin \theta 
+\right]
+$$
+
+This gives
 $$
 h_{+}(t) =
 \frac{2G\mu a^{2}\omega^{2}}{r}(1+\cos^{2}\theta)
@@ -390,30 +556,23 @@ G\mu a^{2}\omega^{2}
 = (GM_{c})^{5/3}\omega^{2/3}
 $$
 
-where the chirp mass is
-$$
-M_{c} = \mu^{3/5}M^{2/5}
-$$
-
-The gravitational wave frequency is twice the orbital frequency
+And the gravitational wave frequency is twice the orbital frequency
 $$
 \omega_{GW} = 2\omega
 $$
 
 Substituting this into the two polarizations, we finally obtain
 $$
-h_+(t) = \frac{4(GM_c)^{5/3}}{r} \left(\frac{\omega_{GW}}{2}\right)^{2/3} \frac{1+\cos^{2}\theta}{2} \cos(\omega_{GW} t_{\text{ret}} + 2\varphi)
+h_+(t) = \frac{4(GM_{c})^{5/3}}{r} \left(\frac{\omega_{GW}}{2}\right)^{2/3} \frac{1+\cos^{2}\theta}{2} \cos(\omega_{GW} t_{\text{ret}} + 2\varphi)
 $$
 
 $$
-h_\times(t) = \frac{4(GM_c)^{5/3}}{r} \left(\frac{\omega_{GW}}{2}\right)^{2/3} \cos\theta \sin(\omega_{GW} t_{\text{ret}} + 2\varphi)
+h_{\times}(t) = \frac{4(GM_{c})^{5/3}}{r} \left(\frac{\omega_{GW}}{2}\right)^{2/3} \cos\theta \sin(\omega_{GW} t_{\text{ret}} + 2\varphi)
 $$
-
-
 
 ## Problem 5
 
-Assuming we have a binary neutron star system, each with the mass equal to $M_\odot$. Initially their distance they rotate with each other in a circular orbit with their distance 0.1 AU. Please estimate how long they will coalesce with each other via gravitational radiation. (AU is the Sun-Earth distance, $M_\odot$ is the mass of the Sun).
+Assuming we have a binary neutron star system, each with the mass equal to $M_{\odot}$. Initially their distance they rotate with each other in a circular orbit with their distance 0.1 AU. Please estimate how long they will coalesce with each other via gravitational radiation. (AU is the Sun-Earth distance, $M_{\odot}$ is the mass of the Sun).
 
 For a circular binary, the Newtonian orbital energy is
 $$
@@ -421,6 +580,10 @@ E = -\frac{Gm_{1}m_{2}}{2a}
 $$
 
 where $a$ is the separation between the two stars. The gravitational-wave energy loss for a circular orbit is
+$$
+P_{\text{quad}} = \frac{G}{5} \langle \dddot{Q}_{ij} \dddot{Q}_{ij} \rangle
+$$
+In this case, we can represent the energy loss in parameters of the circular orbit
 $$
 \dv{E}{t}
 = -\frac{32}{5}\frac{G^{4}}{c^{5}}
@@ -482,3 +645,5 @@ t_{\text{coal}} \simeq 1.61\times 10^{13}\mathrm{yr}
 $$
 
 So a binary neutron star system with initial separation $0.1\mathrm{AU}$ would take about $1.6\times 10^{13}$ years to coalesce by gravitational radiation, much longer than the current age of the universe.
+
+[^1]: Maggiore, M. (2017). *Gravitational waves*. Oxford university press.

@@ -24,11 +24,11 @@ $$
 
 Since the integration measure $\frac{\dd[3]{p}}{2E_{p}}$ is Lorentz invariant, and we have
 $$
-| \vec{q} \rangle = \int \dd[3] {\vec{p}} | \vec{p} \rangle \langle \vec{p} | \vec{q} \rangle
+| \vec{q} \rangle = \int \frac{\dd[3]{\vec{p}}}{(2\pi)^{3}\,2E_{p}} | \vec{p} \rangle \langle \vec{p} | \vec{q} \rangle
 $$
 So the integration
 $$
-\int \dd[3]{\vec{p}} \langle \vec{p} | \vec{q} \rangle = \int \frac{\dd[3]{p}}{2 E_{p}} 2 E_{p} \cdot \delta^{3} (\vec{p} - \vec{q})
+\int \dd[3]{\vec{p}} \langle \vec{p} | \vec{q} \rangle = \int \frac{\dd[3]{p}}{(2 \pi)^{3} \cdot2 E_{p}} 2 E_{p} \times (2 \pi)^{3} \delta^{3} (\vec{p} - \vec{q})
 $$
 must be a Lorentz invariant.  Therefore, we can know that
 $$
@@ -62,14 +62,16 @@ and insert a complete set of states on the right side
 $$
 i \langle \psi | M - M^{\dagger} | \psi \rangle = - \sum_{X} (2 \pi)^{4} \delta^{4} (p) \langle \psi | M | X \rangle \langle X | M^{\dagger}| \psi \rangle
 $$
-Notice that $\langle \psi | M^{\dagger} | \psi \rangle = \langle \psi | M^{\dagger} | \psi \rangle^{*}$, thus
+Notice that $\langle \psi | M^{\dagger} | \psi \rangle = \langle \psi | M | \psi \rangle^{*}$, thus
 $$
 i \langle \psi | M - M^{\dagger} | \psi \rangle = -2 \Im M(p_{1}p_{2} \to p_{1} p_{2})
 $$
 So we have the optical theorem
 $$
-\operatorname{Im} \mathcal {M} \left(p_{1} p_{2} \rightarrow p_{1} p_{2}\right) = \sum_{X \in \text {final states}} \left(2 \pi \right)^{4} \delta^{(4)} \left(p_{1} + p_{2} - p_{X} \right) \left| \mathcal{M} \left(p_{1} p_{2} \rightarrow X \right) \right|^{2} 
+\operatorname{Im} \mathcal {M} \left(p_{1} p_{2} \rightarrow p_{1} p_{2}\right) = \frac{1}{2} \sum_{X \in \text {final states}} \left(2 \pi \right)^{4} \delta^{(4)} \left(p_{1} + p_{2} - p_{X} \right) \left| \mathcal{M} \left(p_{1} p_{2} \rightarrow X \right) \right|^{2}
 $$
+I find a surplus $\frac{1}{2}$, not knowing whether it’s from the difference in definition.
+
 (3) Please read through Sec. 1.1-1.3 in Lecture I of [1] (or ask AI directly) and write a short summary of 
 
 1)  how does causality imply analyticity in classical physics (no quantum mechanics required) 
@@ -95,7 +97,9 @@ $$
     $$
     \text{Re}\,\tilde{\chi}(\omega) = \frac{1}{\pi} \mathcal{P} \int_{-\infty}^{\infty} \frac{\text{Im}\,\tilde{\chi}(\omega')}{\omega' - \omega} d\omega' \quad \text{and} \quad \text{Im}\,\tilde{\chi}(\omega) = -\frac{1}{\pi} \mathcal{P} \int_{-\infty}^{\infty} \frac{\text{Re}\,\tilde{\chi}(\omega')}{\omega' - \omega} d\omega'
     $$
-    This shows that if you know the absorption (imaginary part) of a system across all frequencies, you can calculate its dispersion (real part), and vice versa.
+    This shows that if you know the absorption (imaginary part) of a system across all frequencies, you can calculate its dispersion (real part), an
+    
+    d vice versa.
 
 ### References
 

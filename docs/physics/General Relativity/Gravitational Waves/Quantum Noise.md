@@ -441,4 +441,71 @@ $$
 
 ### Detuned Interferometer 噪声谱
 
-为了减少在特定频率出的量子噪声，可以通过 detuned interferometer 的方法来减小窄带内的量子噪声。
+为了减少在特定频率出的量子噪声，可以通过 detuned interferometer 的方法来减小窄带内的量子噪声，这在 LIGO-II 中是常用的手段。
+
+<img src="./Quantum Noise.assets/image-20260511222230880.png" alt="image-20260511222230880">
+
+为了描述 SR 情况下的各个 operator 之间的关系，用下图描述各个端口的量子噪声
+
+<img src="./Quantum Noise.assets/image-20260511224309081.png" alt="image-20260511224309081" style="zoom:30%;" />
+
+那么传播时的相位关系表现为
+$$
+E (f_{i}, t) = E (d_{i}, t - \frac{l}{c}) \\
+E (c_{i}, t) = E (e_{i}, t - \frac{l}{c})
+$$
+经过计算可以得到输出算符和入射之间的关系
+
+$$
+\begin{pmatrix} b_{1} \\ b_{2} \end{pmatrix} = \frac{1}{M} \left[ e^{2i(\beta + \Phi)} \begin{pmatrix} C_{11} & C_{12} \\ C_{21} & C_{22} \end{pmatrix} \begin{pmatrix} a_{1} \\ a_{2} \end{pmatrix} + \sqrt{2\mathcal{K}} \tau e^{i(\beta + \Phi)} \begin{pmatrix} D_{1} \\ D_{2} \end{pmatrix} \frac{h}{h_{\text{SQL}}} \right]
+$$
+
+其中
+
+$$
+M = 1 + \rho^{2} e^{4i(\beta + \Phi)} - 2\rho e^{2i(\beta + \Phi)} \left( \cos 2\phi + \frac{\mathcal{K}}{2} \sin 2\phi \right)
+$$
+
+$$
+C_{11} = C_{22} = (1 + \rho^{2}) \left( \cos 2\phi + \frac{\mathcal{K}}{2} \sin 2\phi \right) - 2\rho \cos (2(\beta + \Phi))
+$$
+
+$$
+C_{12} = -\tau^{2} (\sin 2\phi + \mathcal{K} \sin^{2} \phi), \quad C_{21} = \tau^{2} (\sin 2\phi - \mathcal{K} \cos^{2} \phi)
+$$
+
+$$
+D_{1} = -(1 + \rho e^{2i(\beta + \Phi)}) \sin \phi, \quad D_{2} = -(-1 + \rho e^{2i(\beta + \Phi)}) \cos \phi
+$$
+
+在加上 squeezing 之后，整个噪声谱可以表示为
+$$
+S_{h} = \frac{\begin{pmatrix}\cos \zeta & \sin \zeta \end{pmatrix} \mathbb{T} \mathcal{D} (- \lambda) \mathcal{S} (2r) \mathcal{D} (\lambda) \mathbb{T}^{\dagger} \begin{pmatrix} \cos \zeta \\ \sin \zeta \end{pmatrix}}{\begin{pmatrix}\cos \zeta & \sin \zeta \end{pmatrix} \bar{s} \bar{s}^{\dagger} \begin{pmatrix} \cos \zeta \\ \sin \zeta \end{pmatrix}}
+$$
+其中定义如下
+
+$$
+T_{11,22} = \mathrm{e}^{2\imath\Phi} \left[ (1 + \rho^{2}) \left( \cos(2\phi) + \frac{K}{2} \sin(2\phi) \right) - 2\rho \cos(2\Phi) \right]
+$$
+
+$$
+T_{12} = -\mathrm{e}^{2\imath\Phi} \tau^{2} \left( \sin(2\phi) + K \sin^{2}(\phi) \right)
+$$
+
+$$
+T_{21} = \mathrm{e}^{2\imath\Phi} \tau^{2} \left( \sin(2\phi) - K \cos^{2}(\phi) \right)
+$$
+
+$$
+M = 1 + \rho^{2} \mathrm{e}^{4\imath\Phi} - 2\rho \mathrm{e}^{2\imath\Phi} \left( \cos(2\phi) + \frac{K}{2} \sin(2\phi) \right)
+$$
+
+其中对于两个 quadrature 的传递函数是
+
+$$
+\bar{s}_{1} = -\frac{\sqrt{2K}}{h_{\mathrm{SQL}}} \tau \left( 1 + \rho \mathrm{e}^{2\imath\Phi} \right) \sin(\phi)
+$$
+
+$$
+\bar{s}_{2} = -\frac{\sqrt{2K}}{h_{\mathrm{SQL}}} \tau \left( -1 + \rho \mathrm{e}^{2\imath\Phi} \right) \cos(\phi)
+$$

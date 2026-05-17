@@ -20,13 +20,26 @@ The Lagrangian of the photon field is
 $$
 \mathcal{L} = -\frac{1}{4} F_{\mu\nu} F^{\mu\nu}
 $$
-And the energy-momentum tensor is defined as
+The Noether Theorem gives the form of the energy-momentum tensor
 $$
-T^{\mu \nu} = \frac{1}{\mu_{0}} \left(F^{\mu \alpha} F^{\nu} {}_{\alpha} - \frac{1}{4} \eta^{\mu \nu} F^{\rho \sigma} F_{\rho \sigma}\right)
+T^{\mu \nu} = \frac{2}{\sqrt{-g}} \frac{\delta S}{\delta g_{\mu \nu}}
+$$
+Plugging in 
+$$
+S_{\text{EM}} = - \int \dd[4]{x} \frac{\sqrt{-g}}{4} F_{\mu \nu} F^{\mu \nu}
+$$
+Thus we can expand the varation of the action as follows 
+$$
+\delta S_{\text{EM}} = - \int \frac{\dd[4]{x}}{4} \left(F_{\mu \nu} F^{\mu \nu} \delta (\sqrt{-g}) + 2 \sqrt{-g} F^{\mu \nu} \delta F_{\mu\nu}\right) \\ =
+- \int \frac{\dd[4]{x}}{4}  \left(\frac{1}{2} F_{\mu \nu} F^{\mu \nu} \sqrt{-g} g^{\mu \nu} \delta g_{\mu \nu} + 2 \sqrt{-g} F^{\mu \nu} (F^{\rho \sigma} g_{\sigma \nu} \delta g_{\rho \mu} + F^{\rho \sigma} g_{\rho \mu} \delta g_{\sigma \nu})\right)
+$$
+Therefore, we can get the form of the energy-momentum tensor
+$$
+T^{\mu \nu} = F^{\mu \alpha} F^{\nu} {}_{\alpha} - \frac{1}{4} \eta^{\mu \nu} F^{\rho \sigma} F_{\rho \sigma}
 $$
 Contract the tensor, and we can find that
 $$
-\eta_{\mu \nu} T^{\mu \nu} = \frac{1}{\mu_{0}} \left(\eta_{\mu \nu} F^{\mu \alpha} F^{\nu} {}_{\alpha} - \frac{1}{4} \eta^{\mu \nu} \eta_{\mu \nu} F^{\rho \sigma} F_{\rho \sigma}\right) = \frac{1}{\mu_{0}} \left( F^{\mu \alpha} F_{\mu \alpha} - F^{\rho \sigma} F_{\rho \sigma}\right) = 0
+\eta_{\mu \nu} T^{\mu \nu} = \eta_{\mu \nu} F^{\mu \alpha} F^{\nu} {}_{\alpha} - \frac{1}{4} \eta^{\mu \nu} \eta_{\mu \nu} F^{\rho \sigma} F_{\rho \sigma} = F^{\mu \alpha} F_{\mu \alpha} - F^{\rho \sigma} F_{\rho \sigma} = 0
 $$
 is traceless.
 
@@ -85,13 +98,13 @@ $$
 So the whole matrix, using $\theta$ to depict, is
 $$
 \begin{pmatrix}
-\frac{1 + \cos^{2} \theta}{2 \cos^{2} \theta} & \tan \theta & 0 & 2 \tan^{2} \theta \\
+\frac{1 + \cos^{2} \theta}{2 \cos^{2} \theta} & \tan \theta & 0 & \frac{1}{2} \tan^{2} \theta \\
 \sin \theta \cos \theta & 1 & 0 & - \sin \theta \cos \theta \\
 0 & 0 & 1 & 0 \\
 \frac{\sin^{2} \theta (1 + 2 \cos^{2} \theta)}{2 \cos^{2} \theta} & \tan \theta & 0 & \frac{2 \cos^{4} \theta - \cos^{2} \theta + 1}{2 \cos^{2} \theta}
 \end{pmatrix}
 = I + \begin{pmatrix}
-\frac{1 - \cos^{2} \theta}{2 \cos^{2} \theta} & \tan \theta & 0 & 2 \tan^{2} \theta \\
+\frac{1 - \cos^{2} \theta}{2 \cos^{2} \theta} & \tan \theta & 0 & \frac{1}{2} \tan^{2} \theta \\
 \sin \theta \cos \theta & 0 & 0 & - \sin \theta \cos \theta \\
 0 & 0 & 0 & 0 \\
 \frac{\sin^{2} \theta (1 + 2 \cos^{2} \theta)}{2 \cos^{2} \theta} & \tan \theta & 0 & \frac{2 \cos^{4} \theta - 3 \cos^{2} \theta + 1}{2 \cos^{2} \theta}
@@ -134,54 +147,75 @@ $$
 >The little group is ISO(2).
 
 $$
-\comm{J_{z}}{T_{x}} = - \begin{pmatrix} 0 & 0 & 0 & 0 \\ 0 & 0 & i & 0 \\ 0 & -i & 0 & 0 \\ 0 & 0 & 0 & 0 \end{pmatrix} \begin{pmatrix} 0 & i & 0 & 0 \\ i & 0 & 0 & -i \\ 0 & 0 & 0 & 0 \\ 0 & i & 0 & 0 \end{pmatrix} + \begin{pmatrix} 0 & i & 0 & 0 \\ i & 0 & 0 & -i \\ 0 & 0 & 0 & 0 \\ 0 & i & 0 & 0 \end{pmatrix} \begin{pmatrix} 0 & 0 & 0 & 0 \\ 0 & 0 & i & 0 \\ 0 & -i & 0 & 0 \\ 0 & 0 & 0 & 0 \end{pmatrix} \\ 
-= - \begin{pmatrix}
+\comm{J_{z}}{T_{x}} = 
+\begin{pmatrix} 
+0 & 0 & 0 & 0 \\ 
+0 & 0 & i & 0 \\ 
+0 & -i & 0 & 0 \\ 
+0 & 0 & 0 & 0 \end{pmatrix} 
+\begin{pmatrix} 
+0 & i & 0 & 0 \\ 
+i & 0 & 0 & -i \\ 
+0 & 0 & 0 & 0 \\ 
+0 & i & 0 & 0 
+\end{pmatrix} - 
+\begin{pmatrix} 
+0 & i & 0 & 0 \\ 
+i & 0 & 0 & -i \\ 
+0 & 0 & 0 & 0 \\ 
+0 & i & 0 & 0 \end{pmatrix} 
+\begin{pmatrix} 
+0 & 0 & 0 & 0 \\ 
+0 & 0 & i & 0 \\ 
+0 & -i & 0 & 0 \\ 
+0 & 0 & 0 & 0 \end{pmatrix} \\ 
+= \begin{pmatrix}
 0 & 0 & 0 & 0 \\
 0 & 0 & 0 & 0 \\
 1 & 0 & 0 & -1 \\
 0 & 0 & 0 & 0
-\end{pmatrix} + \begin{pmatrix}
+\end{pmatrix} - \begin{pmatrix}
 0 & 0 & -1 & 0 \\
 0 & 0 & 0 & 0 \\
 0 & 0 & 0 & 0 \\
 0 & 0 & -1 & 0 
 \end{pmatrix} = \begin{pmatrix} 
-0 & 0 & -1 & 0 \\
+0 & 0 & 1 & 0 \\
 0 & 0 & 0 & 0 \\
--1 & 0 & 0 & 1 \\
-0 & 0 & -1 & 0 
+1 & 0 & 0 & -1 \\
+0 & 0 & 1 & 0 
 \end{pmatrix} = i T_{y}
 $$
 
 $$
-\comm{J_{z}}{T_{y}} = - \begin{pmatrix} 0 & 0 & 0 & 0 \\ 0 & 0 & i & 0 \\ 0 & -i & 0 & 0 \\ 0 & 0 & 0 & 0 \end{pmatrix} \begin{pmatrix} 0 & 0 & i & 0 \\ 0 & 0 & 0 & 0 \\ i & 0 & 0 & -i \\ 0 & 0 & i & 0 \end{pmatrix} + \begin{pmatrix} 0 & 0 & i & 0 \\ 0 & 0 & 0 & 0 \\ i & 0 & 0 & -i \\ 0 & 0 & i & 0 \end{pmatrix} \begin{pmatrix} 0 & 0 & 0 & 0 \\ 0 & 0 & i & 0 \\ 0 & -i & 0 & 0 \\ 0 & 0 & 0 & 0 \end{pmatrix} \\ = 
-- \begin{pmatrix}
+\comm{J_{z}}{T_{y}} = \begin{pmatrix} 0 & 0 & 0 & 0 \\ 0 & 0 & i & 0 \\ 0 & -i & 0 & 0 \\ 0 & 0 & 0 & 0 \end{pmatrix} \begin{pmatrix} 0 & 0 & i & 0 \\ 0 & 0 & 0 & 0 \\ i & 0 & 0 & -i \\ 0 & 0 & i & 0 \end{pmatrix} - \begin{pmatrix} 0 & 0 & i & 0 \\ 0 & 0 & 0 & 0 \\ i & 0 & 0 & -i \\ 0 & 0 & i & 0 \end{pmatrix} \begin{pmatrix} 0 & 0 & 0 & 0 \\ 0 & 0 & i & 0 \\ 0 & -i & 0 & 0 \\ 0 & 0 & 0 & 0 \end{pmatrix} \\ = 
+\begin{pmatrix}
 0 & 0 & 0 & 0 \\
 -1 & 0 & 0 & 1 \\
 0 & 0 & 0 & 0 \\
 0 & 0 & 0 & 0 
-\end{pmatrix} + 
+\end{pmatrix} -
 \begin{pmatrix}
 0 & 1 & 0 & 0 \\
 0 & 0 & 0 & 0 \\
 0 & 0 & 0 & 0 \\
 0 & 1 & 0 & 0 
 \end{pmatrix} = \begin{pmatrix}
-0 & 1 & 0 & 0 \\
-1 & 0 & 0 & -1 \\
+0 & -1 & 0 & 0 \\
+-1 & 0 & 0 & 1 \\
 0 & 0 & 0 & 0 \\
-0 & 1 & 0 & 0 
+0 & -1 & 0 & 0 
 \end{pmatrix} = -i T_{x}
 $$
 
 $$
-\comm{T_{x}}{T_{y}} = - \begin{pmatrix} 0 & i & 0 & 0 \\ i & 0 & 0 & -i \\ 0 & 0 & 0 & 0 \\ 0 & i & 0 & 0 \end{pmatrix} \begin{pmatrix} 0 & 0 & i & 0 \\ 0 & 0 & 0 & 0 \\ i & 0 & 0 & -i \\ 0 & 0 & i & 0 \end{pmatrix} + \begin{pmatrix} 0 & 0 & i & 0 \\ 0 & 0 & 0 & 0 \\ i & 0 & 0 & -i \\ 0 & 0 & i & 0 \end{pmatrix} \begin{pmatrix} 0 & i & 0 & 0 \\ i & 0 & 0 & -i \\ 0 & 0 & 0 & 0 \\ 0 & i & 0 & 0 \end{pmatrix} \\ =
+\comm{T_{x}}{T_{y}} = \begin{pmatrix} 0 & i & 0 & 0 \\ i & 0 & 0 & -i \\ 0 & 0 & 0 & 0 \\ 0 & i & 0 & 0 \end{pmatrix} \begin{pmatrix} 0 & 0 & i & 0 \\ 0 & 0 & 0 & 0 \\ i & 0 & 0 & -i \\ 0 & 0 & i & 0 \end{pmatrix} - \begin{pmatrix} 0 & 0 & i & 0 \\ 0 & 0 & 0 & 0 \\ i & 0 & 0 & -i \\ 0 & 0 & i & 0 \end{pmatrix} \begin{pmatrix} 0 & i & 0 & 0 \\ i & 0 & 0 & -i \\ 0 & 0 & 0 & 0 \\ 0 & i & 0 & 0 \end{pmatrix} \\ =
 \begin{pmatrix}
 0 & 0 & 0 & 0 \\
 0 & 0 & 0 & 0 \\
 0 & 0 & 0 & 0 \\
 0 & 0 & 0 & 0 \\
-\end{pmatrix} + \begin{pmatrix}
+\end{pmatrix} - \begin{pmatrix}
 0 & 0 & 0 & 0 \\
 0 & 0 & 0 & 0 \\
 0 & 0 & 0 & 0 \\
