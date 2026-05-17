@@ -64,7 +64,7 @@ $$
 \begin{pmatrix}0&0\\1&0\end{pmatrix}=0
 $$
 
-由于 $S_{z}=\frac{\hbar}{2}\sigma_{z}$，$\alpha$ 和 $\beta$ 的 $S_{z}$ 本征值分别为 $\frac{\hbar}{2}$ 和 $-\frac{\hbar}{2}$。所以 $\sigma_{+}$ 把 $\beta$ 升为 $\alpha$，而 $\sigma_{-}$ 把 $\alpha$ 降为 $\beta$。
+由于 $S_{z}=\frac{\hbar}{2}\sigma_{z}$，$\alpha$ 和 $\beta$ 的 $S_{z}$ 本征值分别为 $\frac{\hbar}{2}$ 和 $-\frac{\hbar}{2}$，所以 $\sigma_{+}$ 把 $\beta$ 升为 $\alpha$，而 $\sigma_{-}$ 把 $\alpha$ 降为 $\beta$。
 
 8.1.3 记 $P_{\pm} = (1/2)(1 \pm \sigma_{z})$，求证：$P_+\alpha = \alpha$，$P_+\beta = 0$，$P_-\alpha = 0$，$P_-\beta = \beta$ 以及 $P_+^{2} = P_+$，$P_-^{2} = P_-$，$P_+P_- = P_-P_+ = 0$，$P_+ + P_- = I$。所以 $P_+$，$P_-$ 分别称为态 $\alpha$，$\beta$ 的投影算符。
 
@@ -347,7 +347,7 @@ $$
 
 8.2.3 (选做) 一般地说，如果电子的角动量是$\vec{J}$（轨道角动量或自旋角动量或总角动量），$\vec{J}$产生的磁矩是$\vec{M}_{J}$，那么总成立$\vec{M}_{J}/\mu_{\text{B}}=-g_{J}(\vec{J}/\hbar)$，其中$\mu_{\text{B}}$是Bohr磁子，$g_{J}$是无量纲常数，称为g因子或朗德Landé因子。已知：对于轨道角动量，$g_{L}=1$（见§6.4.3），对自旋角动量，$g_{S}=2$（见§8.1.1），因此问题是：对总角动量$\vec{J}=\vec{L}+\vec{S}$，$g_{J}=$？下面分两步来回答该问题。
 
-![image-20260515154058580](/Users/wutong/Library/Application%20Support/typora-user-images/image-20260515154058580.png)
+<img src="./Quantum Mechanics Homework 9.assets/image-20260517195959670.png" alt="image-20260517195959670">
 
 (a) 请证明：若$\vec{J}=\vec{J}_{1}+\vec{J}_{2}$，则有
 $$
@@ -412,7 +412,7 @@ $$
 
 这里 $J_{z}$ 表示总角动量在该态中的 $z$ 分量本征值。
 
-(b) 再利用$\vec{J}=\vec{L}+\vec{S}$和$\vec{M}_{J}=\vec{M}_{L}+\vec{M}_{S}$，即可求出$g_{J}$。
+(b) 再利用$\vec{J}=\vec{L}+\vec{S}$和$\vec{M}_{J}=\vec{M}_{L}+\vec{M}_{S}$，即可求出 $g_{J}$
 
 对电子有
 
