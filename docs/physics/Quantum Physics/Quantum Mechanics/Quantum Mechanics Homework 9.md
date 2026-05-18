@@ -21,7 +21,7 @@ $$
 
 这里如果 $\vec{a},\vec{b}$ 的分量是算符，乘积的次序理解为 $a_{i}b_{j}$，并且这些算符与 Pauli 矩阵对易。
 
-8.1.2 记 $\sigma_{\pm} = (1/2)(\sigma_{x} \pm \mathrm{i}\sigma_{y})$，求证：$\sigma_+\alpha = 0$，$\sigma_+\beta = \alpha$，$\sigma_-\alpha = \beta$，$\sigma_-\beta = 0$ 以及 $\sigma_+^{2} = \sigma_-^{2} = 0$，所以 $\sigma_+$ 是 $S_{z}$ 的升级算符，$\sigma_-$ 是 $S_{z}$ 的降级算符。
+8.1.2 记 $\sigma_{\pm} = \frac{1}{2}(\sigma_{x} \pm \mathrm{i}\sigma_{y})$，求证：$\sigma_+\alpha = 0$，$\sigma_+\beta = \alpha$，$\sigma_-\alpha = \beta$，$\sigma_-\beta = 0$ 以及 $\sigma_+^{2} = \sigma_-^{2} = 0$，所以 $\sigma_+$ 是 $S_{z}$ 的升级算符，$\sigma_-$ 是 $S_{z}$ 的降级算符。
 
 取
 
@@ -66,7 +66,7 @@ $$
 
 由于 $S_{z}=\frac{\hbar}{2}\sigma_{z}$，$\alpha$ 和 $\beta$ 的 $S_{z}$ 本征值分别为 $\frac{\hbar}{2}$ 和 $-\frac{\hbar}{2}$，所以 $\sigma_{+}$ 把 $\beta$ 升为 $\alpha$，而 $\sigma_{-}$ 把 $\alpha$ 降为 $\beta$。
 
-8.1.3 记 $P_{\pm} = (1/2)(1 \pm \sigma_{z})$，求证：$P_+\alpha = \alpha$，$P_+\beta = 0$，$P_-\alpha = 0$，$P_-\beta = \beta$ 以及 $P_+^{2} = P_+$，$P_-^{2} = P_-$，$P_+P_- = P_-P_+ = 0$，$P_+ + P_- = I$。所以 $P_+$，$P_-$ 分别称为态 $\alpha$，$\beta$ 的投影算符。
+8.1.3 记 $P_{\pm} = \frac{1}{2}(1 \pm \sigma_{z})$，求证：$P_+\alpha = \alpha$，$P_+\beta = 0$，$P_-\alpha = 0$，$P_-\beta = \beta$ 以及 $P_+^{2} = P_+$，$P_-^{2} = P_-$，$P_+P_- = P_-P_+ = 0$，$P_+ + P_- = I$。所以 $P_+$，$P_-$ 分别称为态 $\alpha$，$\beta$ 的投影算符。
 
 由 $\sigma_{z}$ 的矩阵形式得到
 
@@ -147,7 +147,7 @@ $$
 
 8.2.1 令 $\hat{P}^+ = \dfrac{1}{2l+1}\left[l + 1 + \dfrac{1}{\hbar}(\vec{\sigma} \cdot \hat{\vec{L}})\right]$，$\hat{P}^- = \dfrac{1}{2l+1}\left[l - \dfrac{1}{\hbar}(\vec{\sigma} \cdot \hat{\vec{L}})\right]$。求证：
 
-(a) $(\hat{P}^+)^{2} = \hat{P}^+$，$(\hat{P}^-)^{2} = \hat{P}^-$，$\hat{P}^+\hat{P}^- = \hat{P}^-\hat{P}^+ = 0$，$\hat{P}^+ + \hat{P}^- = I$；
+(a) $(\hat{P}^+)^{2} = \hat{P}^+$，$(\hat{P}^-)^{2} = \hat{P}^-$，$\hat{P}^+\hat{P}^- = \hat{P}^-\hat{P}^+ = 0$，$\hat{P}^+ + \hat{P}^- = I$
 
 令
 
@@ -155,7 +155,7 @@ $$
 \hat{A}=\frac{1}{\hbar}\vec{\sigma}\cdot\hat{\vec{L}}
 $$
 
-先计算 $(\vec{\sigma}\cdot\hat{\vec{L}})^{2}$。利用 8.1.1 的结果，注意 $\hat{L}_{i}$ 之间不对易，所以
+先计算 $(\vec{\sigma}\cdot\hat{\vec{L}})^{2}$，利用 8.1.1 的结果，注意 $\hat{L}_{i}$ 之间不对易，所以
 
 $$
 (\vec{\sigma}\cdot\hat{\vec{L}})^{2}
@@ -272,7 +272,7 @@ $$
 
 这说明 $\hat{P}^{+}$ 和 $\hat{P}^{-}$ 分别投影到 $j=l+\frac{1}{2}$ 和 $j=l-\frac{1}{2}$ 的子空间。
 
-8.2.2 请推导（不是代入课文中的公式）$l = 1$，$j = (1/2)$，$m_{j} = +(1/2)$ 时 $\phi_{ljm_{j}}$ 的表达式。
+8.2.2 请推导（不是代入课文中的公式）$l = 1$，$j = \frac{1}{2}$，$m_{j} = +\frac{1}{2}$ 时 $\phi_{ljm_{j}}$ 的表达式。
 
 >  提示：它是 $\hat{\vec{L}} \cdot \hat{\vec{S}}$ 的本征态；可以利用 $\hat{L}_+Y_{10}(\theta, \varphi) = \sqrt{2}\hbar Y_{11}(\theta, \varphi)$，$\hat{L}_-Y_{11}(\theta, \varphi) = \sqrt{2}\hbar Y_{10}(\theta, \varphi)$
 
@@ -282,7 +282,7 @@ $$
 \phi=aY_{10}\alpha+bY_{11}\beta
 $$
 
-这里 $Y_{10}\alpha$ 的 $m_{l}=0,m_{s}=\frac{1}{2}$，而 $Y_{11}\beta$ 的 $m_{l}=1,m_{s}=-\frac{1}{2}$。
+这里 $Y_{10}\alpha$ 的 $m_{l}=0,m_{s}=\frac{1}{2}$，而 $Y_{11}\beta$ 的 $m_{l}=1,m_{s}=-\frac{1}{2}$
 
 利用
 
@@ -412,7 +412,7 @@ $$
 
 这里 $J_{z}$ 表示总角动量在该态中的 $z$ 分量本征值。
 
-(b) 再利用$\vec{J}=\vec{L}+\vec{S}$和$\vec{M}_{J}=\vec{M}_{L}+\vec{M}_{S}$，即可求出 $g_{J}$
+(b) 再利用 $\vec{J}=\vec{L}+\vec{S}$ 和 $\vec{M}_{J}=\vec{M}_{L}+\vec{M}_{S}$，即可求出 $g_{J}$
 
 对电子有
 
@@ -509,9 +509,9 @@ $$
 \pdv{}{t}(|\psi_{1}|^{2}+|\psi_{2}|^{2})+\nabla\cdot(\vec{j}_{1}+\vec{j}_{2})=0
 $$
 
-因此非对角元素 $A$ 的物理意义是两个赝自旋分量之间的相干耦合强度，它使原子可以在 $F_{1}$ 和 $F_{2}$ 两个内部态之间发生转化。若忽略空间运动和 $V_{0}$，这种耦合会导致两分量之间的 Rabi 振荡；矩阵 $V$ 的对称与反对称组合能量相差 $2A$。
+因此非对角元素 $A$ 的物理意义是两个赝自旋分量之间的相干耦合强度，它使原子可以在 $F_{1}$ 和 $F_{2}$ 两个内部态之间发生转化。若忽略空间运动和 $V_{0}$，这种耦合会导致两分量之间的 Rabi 振荡。
 
-8.3.1 考虑原子序数（即核外电子数目）为 Z 的原子。如果这些原子中的单电子能级从低到高的排列顺序是 1s < 2s < 2p < 3s < 3p < 4s < 3d < 4p < 5s < 4d < 5p < 6s < 4f < 5d < 6p < 7s < ⋯ (其中 4s < 3d，5s < 4d，6s < 4f < 5d 就是壳层交叉)。请你据此指出第 1,2,3,4,5,6 周期的元素的原子序数 Z 的范围。
+8.3.1 考虑原子序数（即核外电子数目）为 $Z$ 的原子。如果这些原子中的单电子能级从低到高的排列顺序是 1s < 2s < 2p < 3s < 3p < 4s < 3d < 4p < 5s < 4d < 5p < 6s < 4f < 5d < 6p < 7s < ⋯ (其中 4s < 3d，5s < 4d，6s < 4f < 5d 就是壳层交叉)。请你据此指出第 1,2,3,4,5,6 周期的元素的原子序数 $Z$ 的范围。
 
 >  提示：一个周期中打头的和结尾的元素的主量子数是相同的。
 
@@ -556,14 +556,3 @@ $$
 $$
 Z=55\sim 86
 $$
-
-整理成表格为
-
-| 周期 | 填充能级 | 原子序数 $Z$ 的范围 |
-| :---: | :---: | :---: |
-| 1 | $1s$ | $1\sim 2$ |
-| 2 | $2s,2p$ | $3\sim 10$ |
-| 3 | $3s,3p$ | $11\sim 18$ |
-| 4 | $4s,3d,4p$ | $19\sim 36$ |
-| 5 | $5s,4d,5p$ | $37\sim 54$ |
-| 6 | $6s,4f,5d,6p$ | $55\sim 86$ |

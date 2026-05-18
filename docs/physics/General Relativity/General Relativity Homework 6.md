@@ -1,6 +1,6 @@
 # General Relativity Homework 6
 
-吴桐 2024012555
+Chasse_neige
 
 ## Problem 1 
 
