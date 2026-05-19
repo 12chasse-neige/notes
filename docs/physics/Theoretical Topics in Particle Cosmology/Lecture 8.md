@@ -136,3 +136,55 @@ $$
 \Rightarrow V (\vec{r}, \vec{p}) = - \int \frac{\dd[3] {q}}{(2 \pi)^{3}} e^{i \vec{q} \cdot \vec{r}} \frac{M (\vec{p} - \vec{q}, \vec{p})}{4 E_{1} E_{2}}
 $$
 
+## Long Range Potential
+
+$$
+V (\vec{r}, \vec{p}) = - \int \frac{\dd[3] {q}}{(2 \pi)^{3}} e^{i \vec{q} \cdot \vec{r}} \frac{M (\vec{p} - \vec{q}, \vec{p})}{4 E_{1} E_{2}}
+$$
+
+We want to get Newton’s Law and its leading-roder relativistic correction.
+$$
+i M = \sum_{h = \pm 2} \frac{-i}{q^{2} - i \epsilon} \times (i M_{L}^{-h}) \times (i M_{R}^{+h})
+$$
+
+$$
+i M_{L}^{-h} = i\sqrt{2} \kappa \epsilon_{\mu \nu}^{(h)*} p_{1}^{\mu} p_{1}^{\nu}
+$$
+
+$$
+i M_{R}^{+h} = i\sqrt{2} \kappa \epsilon_{\mu \nu}^{(h)} p_{1}^{\prime\mu} p_{1}^{\prime\nu}
+$$
+
+The sum of the polarization tensors is
+$$
+\sum_{h= \pm 2} \epsilon_{\mu \nu}^{(h)*} \epsilon_{\rho \sigma}^{(h)} = \eta_{\mu \rho} \eta_{\nu \sigma} + \eta_{\mu \sigma} \eta_{\nu \rho} - \eta_{\mu \nu} \eta_{\rho \sigma} + \cdots
+$$
+So the amplitude is
+$$
+M = \frac{2 \kappa^{2}}{q^{2}} [- m_{1}^{2} m_{2}^{2} + 2 (p_{1} \cdot p_{2})^{2}] + O(q^{0})
+$$
+The long-range potential is 
+$$
+V (\vec{r}, \vec{p}) = \frac{\kappa^{2}}{16 \pi |\vec{r}|} \frac{m_{1}^{2} m_{2}^{2} - 2 (E_{1} E_{2} + p^{2})^{2}}{E_{1} E_{2}} + contact
+$$
+Plugging in $\kappa = \sqrt{8 \pi G}$, expanding in $p^{2}$
+$$
+V (\vec{r}, \vec{p}) = \frac{G}{|\vec{r}|}\left[-m_{1} m_{2} - \frac{3m_{1}^{2} + 8 m_{1} m_{2} + 3 m_{2}^{2}}{2 m_{1} m_{2}} p^{2} + \cdots \right]
+$$
+
+### Bound States
+
+Not in any order in perturbation theory, so we have to resume loops.
+$$
+\mathcal{L} = \sum_{a= 1}^{2} \Psi_{a}^{\dagger} (i \partial_{t} + e Q_{a} A_{0}) + \frac{1}{2m} \nabla^{2}) \Psi_{a} - \frac{1}{2} A_{0} \nabla^{2} A_{0}
+$$
+The propagators
+$$
+\langle \Psi_{a} (t_{1}, \vec{k}) \Psi_{a}^{\dagger}(t_{2}, - \vec{k}) = \theta (t_{1} - t_{2}) e^{- i E_{k} (t_{1} - t_{2})}
+$$
+And for photons
+$$
+\langle A_{0} (t_{1}, \vec{k}) A_{0}^{\dagger}(t_{2}, - \vec{k}) = \delta (t_{1} - t_{2}) \frac{-i}{k^{2}}
+$$
+The time sequence garuantees that only the ladder graphs remains.
+
