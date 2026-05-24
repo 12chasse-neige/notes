@@ -1,6 +1,36 @@
 [
   {
-    "title": "Angular Velocity Range in Kerr Ergosphere",
+    "title": "Quantum Mechanics Homework 3: Step Potential",
+    "desc": "Analyzes reflection and transmission coefficients for a step potential, verifying probability conservation.",
+    "tags": [
+      "quantum mechanics",
+      "step potential",
+      "probability conservation"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 3"
+  },
+  {
+    "title": "Non-Relativistic Limit in QFT",
+    "desc": "Leading order effects and NR limit of charged scalar particles with massless exchange.",
+    "tags": [
+      "non-relativistic QFT",
+      "Coulomb scattering",
+      "light bending"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 8"
+  },
+  {
+    "title": "Classical Limit of Light Bending",
+    "desc": "Analyzing phase shifts and classical limit in light bending via graviton exchange.",
+    "tags": [
+      "phase shift",
+      "classical limit",
+      "light bending"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 9"
+  },
+  {
+    "title": "Ergosphere Observer Angular Velocity Range",
     "desc": "Derives allowed angular velocity range for observers inside ergosphere, approaching horizon.",
     "tags": [
       "Kerr metric",
@@ -11,37 +41,37 @@
   },
   {
     "title": "Quantum Mechanics Homework 9: Pauli Matrices",
-    "desc": "Proofs of Pauli matrix identities and spin operators.",
+    "desc": "Proofs of Pauli matrix identities, ladder operators, and projection operators.",
     "tags": [
       "Pauli matrices",
-      "spin operators",
+      "ladder operators",
       "quantum mechanics"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 9"
   },
   {
-    "title": "Statistical Mechanics Homework 10: Electron Gas",
-    "desc": "Calculates Fermi energy, internal energy, and degeneracy pressure for free electron gas at 0K.",
+    "title": "统计力学第10次作业：自由电子气体",
+    "desc": "计算绝对零度下自由电子气体的平均速率、费米能量、内能和简并压。",
     "tags": [
-      "Fermi gas",
-      "degeneracy pressure",
-      "statistical mechanics"
+      "自由电子气体",
+      "费米能量",
+      "简并压"
     ],
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 10"
   },
   {
-    "title": "干涉仪噪声组成与量子噪声分析",
-    "desc": "分析干涉仪噪声源，包括量子、热、悬挂、重力梯度及残余气体噪声。",
+    "title": "Interferometer Noise Composition and Quantum Noise",
+    "desc": "Analysis of noise sources in Advanced LIGO, focusing on quantum noise and thermal noise contributions.",
     "tags": [
-      "量子噪声",
-      "干涉仪",
-      "热噪声"
+      "quantum noise",
+      "thermal noise",
+      "interferometer"
     ],
     "link": "/physics/General Relativity/Gravitational Waves/Quantum Noise"
   },
   {
     "title": "Quantum Mechanics Homework 8: Angular Momentum",
-    "desc": "Proves commutator identities for vector operators and angular momentum.",
+    "desc": "Proofs of commutator identities for angular momentum and vector operators.",
     "tags": [
       "angular momentum",
       "commutator",
@@ -50,12 +80,12 @@
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 8"
   },
   {
-    "title": "Debye Model: Partition Function, Energy, Entropy",
-    "desc": "Derives ln Z, internal energy, and entropy for solids using Debye spectrum in high and low T limits.",
+    "title": "Debye Model: Partition Function and Thermodynamics",
+    "desc": "Derives ln Z, internal energy, and entropy for solids at high and low temperatures using Debye spectrum.",
     "tags": [
       "Debye model",
       "partition function",
-      "statistical mechanics"
+      "thermodynamics"
     ],
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 9"
   },
@@ -65,17 +95,17 @@
     "tags": [
       "energy-momentum tensor",
       "photon field",
-      "gauge invariance"
+      "Noether theorem"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 2 Exercise"
   },
   {
-    "title": "Lorentz Invariance and Optical Theorem",
-    "desc": "Proof of Lorentz invariance for momentum inner product and optical theorem from S-matrix unitarity.",
+    "title": "Lorentz Invariance and Optical Theorem Proof",
+    "desc": "Demonstrates Lorentz invariance of inner product and proves optical theorem via S-matrix unitarity.",
     "tags": [
       "Lorentz invariance",
       "optical theorem",
-      "S-matrix"
+      "S-matrix unitarity"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 3 Exercise"
   },
@@ -90,7 +120,7 @@
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 4 Exercise"
   },
   {
-    "title": "Spinor Helicity for Null Momentum",
+    "title": "Spinor Helicity for Null Momentum with p0<0",
     "desc": "Derives spinor expressions for null momentum with negative energy and shows transformation under LGTs.",
     "tags": [
       "spinor helicity",
@@ -110,18 +140,8 @@
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 6 Exercise"
   },
   {
-    "title": "Non-Relativistic QFT and Leading Order Effects",
-    "desc": "Analyzes NR limit of charged scalar scattering, including Coulomb and relativistic corrections.",
-    "tags": [
-      "non-relativistic QFT",
-      "Coulomb scattering",
-      "leading order effects"
-    ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 8"
-  },
-  {
     "title": "Massless Amplitudes and Spinor Helicity",
-    "desc": "Lecture on massless amplitudes using spinor helicity formalism and Lorentz group decomposition.",
+    "desc": "Introduces spinor helicity formalism for massless amplitudes using Lorentz group decomposition.",
     "tags": [
       "spinor helicity",
       "massless amplitudes",
@@ -130,8 +150,8 @@
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 5"
   },
   {
-    "title": "BEC in 2D and 3D Harmonic Trap",
-    "desc": "Proves no BEC in 2D ideal Bose gas; derives BEC critical temperature in 3D harmonic trap.",
+    "title": "Bose-Einstein Condensation in 2D and 3D",
+    "desc": "Proof that 2D ideal Bose gas has no BEC; 3D harmonic trap BEC critical temperature.",
     "tags": [
       "Bose-Einstein condensation",
       "ideal Bose gas",
@@ -140,18 +160,18 @@
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 8"
   },
   {
-    "title": "QFT: Renormalization and Photon Field",
-    "desc": "Quantum field theory basics: Hamiltonian, Lagrangian, renormalization, and photon field quantization.",
+    "title": "QFT Perspective on Field Theory",
+    "desc": "Relativistic quantum theory with Hamiltonian, perturbation theory, and photon field.",
     "tags": [
       "quantum field theory",
-      "renormalization",
+      "perturbation theory",
       "photon field"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 7"
   },
   {
-    "title": "量子力学中心力场作业分析",
-    "desc": "二体系统动能算符分解及球方势阱束缚态条件推导。",
+    "title": "量子力学第6次作业：中心力场分析",
+    "desc": "二体系统动能算符分解及势阱束缚态超越方程推导。",
     "tags": [
       "量子力学",
       "中心力场",
@@ -163,9 +183,9 @@
     "title": "Quantum Mechanics Homework 7",
     "desc": "Seventh assignment covering key quantum mechanics concepts.",
     "tags": [
-      "quantum mechanics",
-      "homework",
-      "physics"
+      "Quantum Mechanics",
+      "Homework",
+      "Physics"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 7"
   },
@@ -180,8 +200,8 @@
     "link": "/physics/Quantum Physics/Quantum Field Theory/Feynman Diagrams for Beginners"
   },
   {
-    "title": "Phase Transition Thermodynamics: Latent Heat and Internal Energy",
-    "desc": "Derives molar internal energy change and latent heat variation with temperature in phase transitions.",
+    "title": "Phase Transition Thermodynamics Proofs",
+    "desc": "Derives molar internal energy change and latent heat variation with temperature.",
     "tags": [
       "Clapeyron equation",
       "latent heat",
@@ -191,7 +211,7 @@
   },
   {
     "title": "统计力学第6次作业：二维气体速度分布",
-    "desc": "推导二维理想气体速度分布，求平均、最概然和方均根速率，及相对速率分布。",
+    "desc": "推导二维气体速度分布，计算平均、最概然和方均根速率，以及相对速度分布。",
     "tags": [
       "统计力学",
       "速度分布",
@@ -201,17 +221,17 @@
   },
   {
     "title": "Lecture 6: Chasse_neige and Four Particle Test",
-    "desc": "Analyzing four-particle amplitudes using on-shell factorization and tree-level approximation.",
+    "desc": "Analyzing four-particle amplitudes using on-shell factorization and consistency conditions.",
     "tags": [
       "on-shell factorization",
-      "amplitudes",
-      "Yang-Mills theory"
+      "Yang-Mills theory",
+      "amplitudes"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 6"
   },
   {
-    "title": "Gravitational Waves: Linear Approximation",
-    "desc": "Derivation of linearized Einstein equations for gravitational wave perturbations.",
+    "title": "Gravitational Waves: Generation, Propagation, Detection",
+    "desc": "Linearized gravity approximation for gravitational wave analysis with Einstein equations.",
     "tags": [
       "gravitational waves",
       "linearized gravity",
@@ -220,24 +240,14 @@
     "link": "/physics/General Relativity/Gravitational Waves/Gravitational Waves Formation and Propagation"
   },
   {
-    "title": "Statistical Mechanics Homework 7 Solutions",
-    "desc": "Entropy of Einstein solid and magnetization of crystal with spin-1 atoms.",
+    "title": "统计力学第7次作业分析",
+    "desc": "计算爱因斯坦固体熵和顺磁固体磁化强度与磁化率。",
     "tags": [
-      "Einstein solid",
-      "entropy",
-      "magnetization"
+      "统计力学",
+      "熵",
+      "磁化率"
     ],
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 7"
-  },
-  {
-    "title": "Quantum Mechanics Homework 3: Step Potential",
-    "desc": "Reflection and transmission coefficients for a step potential, verifying R+T=1.",
-    "tags": [
-      "quantum mechanics",
-      "step potential",
-      "probability conservation"
-    ],
-    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 3"
   },
   {
     "title": "量子力学对称性与守恒量作业分析",
@@ -250,8 +260,8 @@
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 5"
   },
   {
-    "title": "On-Shell Factorization in QFT",
-    "desc": "Analyzing Green functions and poles in scalar particle scattering.",
+    "title": "On-Shell Factorization in Light Bulb Model",
+    "desc": "Analyzes Green function poles and on-shell factorization with scalar particles.",
     "tags": [
       "on-shell factorization",
       "Green function",
@@ -260,8 +270,8 @@
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 4"
   },
   {
-    "title": "Killing Vectors of Schwarzschild Metric",
-    "desc": "Proving δ^μ_t and δ^μ_φ are Killing vectors in Schwarzschild spacetime.",
+    "title": "Proving Killing Vectors in Schwarzschild Metric",
+    "desc": "Show that δ^μ_t and δ^μ_φ are Killing vectors of Schwarzschild metric.",
     "tags": [
       "Killing vectors",
       "Schwarzschild metric",
@@ -271,32 +281,22 @@
   },
   {
     "title": "General Relativity Homework 5 Analysis",
-    "desc": "Calculates connection and Ricci tensor for a time-dependent metric.",
+    "desc": "Calculate connection and Ricci tensor for a time-relevant metric.",
     "tags": [
       "Christoffel symbols",
       "Ricci tensor",
-      "general relativity"
+      "metric"
     ],
     "link": "/physics/General Relativity/General Relativity Homework 5"
   },
   {
     "title": "Quantum Mechanics Homework 4: Operator Properties",
-    "desc": "Proves inverse adjoint relation and Hermiticity condition for similarity transformation.",
+    "desc": "Proofs of inverse Hermitian conjugate and generalized uncertainty relation.",
     "tags": [
       "Hermitian operator",
-      "unitary transformation",
-      "uncertainty relation"
+      "uncertainty relation",
+      "unitary transformation"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 4"
-  },
-  {
-    "title": "Statistical Mechanics Homework 5: Particle Distributions",
-    "desc": "Derives most probable distributions for classical, Bose, and Fermi particles, identifying β as temperature parameter.",
-    "tags": [
-      "statistical mechanics",
-      "most probable distribution",
-      "temperature parameter"
-    ],
-    "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 5"
   }
 ]
