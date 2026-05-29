@@ -27,10 +27,12 @@ $$
 $$
 证明：
 $$
+\begin{gathered}
 \vec{a} \times  (\vec{b} \times \vec{c}) = \epsilon_{lkm} \epsilon_{ijk} a_{l} b_{i} c_{j} \vec{e_{m}} = 
 \epsilon_{mlk} \epsilon_{ijk} a_{l} b_{i} c_{j} \vec{e_{m}} \\= 
 (\delta_{mi} \delta_{lj} - \delta_{mj} \delta_{li}) a_{l} b_{i} c_{j} \vec{e_{m}} = 
 a_{j} b_{i} c_{j} \vec{e_{i}} - a_{i} b_{i} c_{j} \vec{e_{m}} = (\vec{a} \cdot \vec{c}) \vec{b} - (\vec{a} \cdot \vec{b}) \vec{c}
+\end{gathered}
 $$
 2.
 $$
@@ -38,6 +40,7 @@ $$
 $$
 证明：
 $$
+\begin{gathered}
 (\vec{a} \times \vec{b}) \times (\vec{c} \times \vec{d}) = (\epsilon_{ijk} a_{i} b_{j} \vec{e_{k}}) \times (\epsilon_{lmn} c_{l} d_{m} \vec{e_{n}}) \\ = 
 \epsilon_{kns} \epsilon_{ijk} \epsilon_{lmn} a_{i} b_{j} c_{l} d_{m} \vec{e_{s}} = 
 \epsilon_{ijk} (\delta_{sl} \delta_{km} - \delta_{sm} \delta_{kl}) a_{i} b_{j} c_{l} d_{m} \vec{e_{s}} \\ = 
@@ -48,6 +51,7 @@ $$
 (\delta_{ni} \delta_{sj} - \delta_{nj} \delta_{si}) \epsilon_{lmn} a_{i} b_{j} c_{l} d_{m} \vec{e_{s}} \\ = 
 \epsilon_{lmn} (a_{n} b_{s} c_{l} d_{m} \vec{e_{s}} - a_{s} b_{n} c_{l} d_{m} \vec{e_{s}}) =
 [\vec{a} \cdot (\vec{c} \times \vec{d})] \vec{b} - [\vec{b} \cdot (\vec{c} \times \vec{d})] \vec{a}
+\end{gathered}
 $$
 
 #### (c) 思考选做题
@@ -199,9 +203,11 @@ $$
 $$
 其中 $\nabla$ 的下标表示仅对该分量做微分。
 $$
+\begin{gathered}
 \therefore \,\, \mathbf{B} \times (\nabla \times \mathbf{A}) + (\mathbf{B} \cdot \nabla) \mathbf{A} + \mathbf{A} \times (\nabla \times \mathbf{B}) + (\mathbf{A} \cdot \nabla) \mathbf{B} \\ = 
 \nabla_{A} (\mathbf{A} \cdot \mathbf{B}) + \nabla_{B} (\mathbf{A} \cdot \mathbf{B}) - (\mathbf{B} \cdot \nabla) \mathbf{A} - (\mathbf{A} \cdot \nabla) \mathbf{B} + (\mathbf{B} \cdot \nabla) \mathbf{A} + (\mathbf{A} \cdot \nabla) \mathbf{B} \\ = 
 \nabla_{A} (\mathbf{A} \cdot \mathbf{B}) + \nabla_{B} (\mathbf{A} \cdot \mathbf{B}) = \nabla (\mathbf{A} \cdot \mathbf{B})
+\end{gathered}
 $$
 第二个式子从左推右，为了区分，给两个A加上下标，但是它们本质上是一样的。
 $$
@@ -227,10 +233,12 @@ $$
 (1) 证明下列结果，并体会对源变数求微商 $\left(\nabla'=\mathbf{e}_{x} \frac{\partial}{\partial x'}+\mathbf{e}_{y} \frac{\partial}{\partial y'}+\mathbf{e}_{z} \frac{\partial}{\partial z'}\right)$ 与对场变数求微商 $\left(\nabla=\mathbf{e}_{x} \frac{\partial}{\partial x}+\mathbf{e}_{y} \frac{\partial}{\partial y}+\mathbf{e}_{z} \frac{\partial}{\partial z}\right)$ 的关系：
 
 $$
+\begin{gathered}
 \nabla r = -\nabla' r = \frac{\mathbf{r}}{r} \\
 \nabla \frac{1}{r} = -\nabla' \frac{1}{r} = -\frac{\mathbf{r}}{r^{3}} \\
 \nabla \times \frac{\mathbf{r}}{r^{3}} = 0 \\
 \nabla \cdot \frac{\mathbf{r}}{r^{3}} = -\nabla' \cdot \frac{\mathbf{r}}{r^{3}} = 0 \quad (r \neq 0)
+\end{gathered}
 $$
 （最后一式在 $r=0$ 点不成立，见第二章 §5）。
 
@@ -299,12 +307,16 @@ $$
 
 证明：
 $$
+\begin{gathered}
 \nabla \times \vec{A} = - \nabla \times (\vec{m} \times \nabla \frac{1}{r}) =  - (\vec{m} \nabla^{2} \frac{1}{r} - \vec{m} \cdot \nabla \nabla \frac{1}{r} + (\nabla \frac{1}{r}) \cdot (\nabla \vec{m}) - (\nabla \frac{1}{r})(\nabla \cdot \vec{m})) \\ = -(0 - \frac{3 (\vec{m} \cdot \vec{r}) \vec{r}}{r^{5}} + \frac{\vec{m}}{r^{3}} + 0 - 0) = - \frac{\vec{m}}{r^{3}} + \frac{3(\vec{m} \cdot \vec{r})}{r^{5}} \qquad (R \neq 0)
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 - \nabla \varphi = \nabla (\vec{m} \cdot \nabla \frac{1}{r}) = \vec{m} \times (\nabla \times \nabla \frac{1}{r}) + \nabla \frac{1}{r} \times (\nabla \times \vec{m}) + (\vec{m} \cdot \nabla) \nabla \frac{1}{r} + (\nabla \frac{1}{r} \cdot \nabla) \vec{m} \\ = 
 0 + 0 + \vec{m} \cdot \nabla \nabla \frac{1}{r} + 0 = - \frac{\vec{m}}{r^{3}} + \frac{3(\vec{m} \cdot \vec{r})}{r^{5}} \qquad (R \neq 0)
+\end{gathered}
 $$
 
 
@@ -337,7 +349,9 @@ $\nabla \times \vec{A} = 0$ 表现为该点的矢量场沿着径向或者为0。
 
 证明：
 $$
+\begin{gathered}
 \int \rho \vec{r} \, d \tau = \int  -(\vec{p} \cdot \nabla)\delta(\vec{r}) \, \vec{r} \, d \tau = \int ( (\nabla \cdot \vec{p}) \delta(\vec{r}) - \nabla \cdot (\delta(\vec{r}) \vec{p})) \vec{r} d \tau \\ = - \int \nabla \cdot (\delta(\vec{r}) \vec{p} \vec{r}) d \tau + \int \delta(\vec{r}) \vec{p} \cdot \nabla \vec{r} \, d \tau = \int \delta(\vec{r}) \vec{p} \, d \tau = \vec{p}
+\end{gathered}
 $$
 
 
@@ -347,8 +361,10 @@ $$
 
 证明：
 $$
+\begin{gathered}
 \delta(ax) \, d (ax) =  \delta (x) \, dx \\
 \therefore \,\, \delta(ax) = \frac{1}{|a|}\delta(x), a > 0
+\end{gathered}
 $$
 当 $a < 0$ 时，
 $$

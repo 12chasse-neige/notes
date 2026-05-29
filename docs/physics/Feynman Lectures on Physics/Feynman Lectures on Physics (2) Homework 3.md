@@ -71,9 +71,11 @@ r_{1}(t) &= A \sin t + B \cos t + \frac{3}{2} t \sin t + C \\
 $$
 利用边界条件待定系数，解得：
 $$
+\begin{gathered}
 B = 2 \\ 
 C = -2 \\
 D = A = 0
+\end{gathered}
 $$
 所以解为：
 $$
@@ -104,7 +106,9 @@ $$
 
 平均偶极矩：
 $$
+\begin{gathered}
 <x> = \frac{1}{2 \pi} \int_{0}^{2 \pi} (1 + \epsilon (2 \cos t + \frac{3}{2} \sin t - 2)) \cos (t + \epsilon (- 6 \sin t + 3 t \cos t + 3 t)) \mathrm{d} t \\ \approx \frac{59}{8} \epsilon
+\end{gathered}
 $$
 所以原子平均偶极矩为 $\frac{59}{8} e r_{0} \epsilon$
 
@@ -185,8 +189,10 @@ $$
 $$
 麦克斯韦方程组可以表示为
 $$
+\begin{gathered}
 \mathrm{d} \mathbf{F} = 0\\
 \mathrm{d} \star \mathbf{F} = \star \mathbf{J}
+\end{gathered}
 $$
 由于规范变换后
 $$
@@ -200,22 +206,28 @@ $$
 
 修正后麦克斯韦方程组可以表示为：（其中下标 $e$ 表示电荷，下标 $m$ 表示磁荷）
 $$
+\begin{gathered}
 \nabla \cdot \vec{E} = \frac{\rho_{e}}{\epsilon_{0}} \\
 \nabla \times \vec{E} = - \vec{j}_{m} - \frac{\partial}{\partial t} \vec{B} \\
 \nabla \cdot \vec{B} = \rho_{m} \\
 \nabla \times \vec{B} = \mu_{0} \vec{j}_{e} + \mu_{0} \epsilon_{0} \frac{\partial}{\partial t} \vec{E}
+\end{gathered}
 $$
 (2). 若宇宙中的所有粒子所具有的电荷与磁荷之比都相同，请说明我们总可以对场和荷做一种旋转变换，使得旋转过后的场和荷仍然满足麦克斯韦方程组，且所有粒子的磁荷为 0。
 
 证明：注意到麦克斯韦方程组可以写成形式
 $$
+\begin{gathered}
 \nabla \cdot (\vec{E} + i c \vec{B}) = \frac{1}{\epsilon_{0}} (\rho_{e} + i \sqrt{\frac{\epsilon_{0}}{\mu_{0}}} \rho_{m}) \\
 \nabla \times (\vec{E} + i c \vec{B}) = i c \mu_{0} (\vec{j}_{e} + i \sqrt{\frac{\epsilon_{0}}{\mu_{0}}} \vec{j}_{m}) + \frac{i}{c} \frac{\partial}{\partial t} (\vec{E} + i c \vec{B})
+\end{gathered}
 $$
 所以对于场和荷做变换
 $$
+\begin{gathered}
 \vec{E'} + i c \vec{B'} = e^{i \theta} (\vec{E} + i c \vec{B}) \\
 \rho_{e}' + i \sqrt{\frac{\epsilon_{0}}{\mu_{0}}} \rho_{m}' = e^{i \theta} (\rho_{e} + i \sqrt{\frac{\epsilon_{0}}{\mu_{0}}} \rho_{m}) \\
+\end{gathered}
 $$
 之后麦克斯韦方程组形式不变。
 

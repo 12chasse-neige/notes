@@ -63,8 +63,10 @@ g (1 - z) + \sum_{k = 2}^{\infty} k (k - 1) C_{k} z^{k - 1} - \sum_{k = 1}^{\inf
 $$
 所以
 $$
+\begin{gathered}
 C_{0} = - g \\
 - g + 2 C_{2} - C_{1} + C_{1} = 0 
+\end{gathered}
 $$
 即
 $$
@@ -74,8 +76,10 @@ $$
 
 递推关系为
 $$
+\begin{gathered}
 (k + 1) k C_{k + 1} - (k - 1) C_{k} = 0 \\
 C_{k + 1} = \frac{k - 1}{k (k + 1)} C_{k}
+\end{gathered}
 $$
 得到
 $$
@@ -118,13 +122,17 @@ C_{k} = - \frac{m^{2}}{(k + 1)k} C_{k - 2}
 $$
 得到
 $$
+\begin{gathered}
 C_{2k} = (-1)^{k} \frac{m^{2}}{(2k + 1) 2k} \cdot \frac{m^{2}}{(2k - 1) (2k - 2)} \cdots \frac{m^{2}}{3 \cdot 2} C_{0} \\ =
 (-1)^{k} \frac{m^{2k}}{(2k + 1) !} C_{0}
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 C_{2k + 1} = (-1)^{k} \frac{m^{2}}{(2k  + 2) (2k + 1)} \cdot \frac{m^{2}}{2k (2k - 1)} \cdots \frac{m^{2}}{4 \cdot 3} C_{1} \\ =
 (-1)^{k} \frac{2 m^{2k}}{(2k + 2)!} C_{1}
+\end{gathered}
 $$
 
 注意此时的低次项的条件需要满足（这一神奇的条件来自 $\rho$ 等于小整数带来的低此项导数缺失）
@@ -166,8 +174,10 @@ $$
 
 所以
 $$
+\begin{gathered}
 w'(z) = S'(z) e^{S(z)} \\
 w''(z) = S''(z) e^{S(z)} + S'^{2} (z) e^{S(z)}
+\end{gathered}
 $$
 所以方程化为
 $$
@@ -175,8 +185,10 @@ S'' + S'^{2} + \lambda - \alpha z^{2} - \beta z^{4} = 0
 $$
 
 $$
+\begin{gathered}
 S_{0}'^{2} = \beta z^{4} \\
 S_{0}' = \pm \sqrt{\beta} z^{2}
+\end{gathered}
 $$
 
 得到 $0$ 阶
@@ -194,8 +206,10 @@ $$
 $$
 得到
 $$
+\begin{gathered}
 S_{1}'^{2} \pm 2 \sqrt{\beta} z^{2} S_{1}' + \beta z^{4} - \alpha z^{2} - \beta z^{4} = 0 \\
 S_{1}' = \pm \frac{\alpha}{2 \sqrt{\beta}}
+\end{gathered}
 $$
 得到
 

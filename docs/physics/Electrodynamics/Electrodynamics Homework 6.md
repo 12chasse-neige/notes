@@ -94,10 +94,12 @@ $$
 证明：在无自由电荷和电流的情况下，麦克斯韦方程组为：
 
 $$
+\begin{gathered}
 \nabla \cdot \mathbf{E} = 0 \\
 \nabla \cdot \mathbf{B} = 0 \\
 \nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t} \\
 \nabla \times \mathbf{B} = \mu_{0} \epsilon_{0} \frac{\partial \mathbf{E}}{\partial t}
+\end{gathered}
 $$
 可以通过两个旋度方程导出散度方程如下：
 $$
@@ -110,8 +112,10 @@ $$
 
 所以
 $$
+\begin{gathered}
 \frac{\partial}{\partial t} \nabla \cdot \mathbf{E} = 0 \\
 \frac{\partial}{\partial t} \nabla \cdot \mathbf{B} = 0
+\end{gathered}
 $$
 所以对 $\rho = 0, \vec{J} = 0$ 的麦克斯韦方程组，四个方程中是独立的，我认为无法从两个方程推出其余的两个。
 
@@ -142,18 +146,22 @@ $$
 
 使用复数法解麦克斯韦方程组：
 $$
+\begin{gathered}
 \nabla \cdot \mathbf{E} = 0 \\ 
 \nabla \times \mathbf{E} = - \frac{\partial}{\partial t} \mathbf{B} \\ 
 \nabla \cdot \mathbf{B} = 0 \\
 \nabla \times \mathbf{B} = \mu (\gamma \mathbf{E} + \epsilon \frac{\partial}{\partial t} \mathbf{E})
+\end{gathered}
 $$
 
 带入波动假设：
 $$
+\begin{gathered}
 \mathbf{k} \cdot \mathbf{E} = 0 \\
 \mathbf{k} \times \mathbf{E} = \omega \mathbf{B} \\
 \mathbf{k} \cdot \mathbf{B} = 0 \\
 \mathbf{k} \times \mathbf{B} =  - \mu (i \gamma + \epsilon \omega) \mathbf{E}
+\end{gathered}
 $$
 所以 
 $$
@@ -165,72 +173,92 @@ $$
 $$
 假设 $\mathbf{k} = \mathbf{k_{R}} + i \mathbf{k_{I}}$，则
 $$
+\begin{gathered}
 \mathbf{k_{R}^{2}} - \mathbf{k_{I}^{2}} = \mu \epsilon \omega^{2} \\
 2 \mathbf{k_{R}} \cdot  \mathbf{k_{I}} = \gamma \mu \omega
+\end{gathered}
 $$
 所以对应的平面波解为：
 $$
+\begin{gathered}
 \mathbf{E} = (\mathbf{E}_{0R} + i \mathbf{E}_{0I}) e^{i(\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) - \mathbf{k}_{I} \cdot \mathbf{r}} \\
 \mathbf{B} = (\mathbf{B}_{0R} + i \mathbf{B}_{0I}) e^{i(\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) - \mathbf{k}_{I} \cdot \mathbf{r}}
+\end{gathered}
 $$
 并且有
 $$
+\begin{gathered}
 \mathbf{E}_{0R} \cdot \mathbf{k}_{R} - \mathbf{E}_{0I} \cdot \mathbf{k}_{I} = 0 \\ 
 \mathbf{E}_{0I} \cdot \mathbf{k}_{R} + \mathbf{E}_{0R} \cdot \mathbf{k}_{I} = 0 \\
 \mathbf{B}_{0R} = \frac{\mathbf{k}_{R}}{\omega} \times \mathbf{E}_{0R} - \frac{\mathbf{k}_{I}}{\omega} \times \mathbf{E}_{0I} \\ 
 \mathbf{B}_{0I} = \frac{\mathbf{k}_{I}}{\omega} \times \mathbf{E}_{0R} + \frac{\mathbf{k}_{R}}{\omega} \times \mathbf{E}_{0I} \\ 
 \mathbf{B}_{0R} \cdot \mathbf{k}_{R} - \mathbf{B}_{0I} \cdot \mathbf{k}_{I} = 0 \\ 
 \mathbf{B}_{0I} \cdot \mathbf{k}_{R} + \mathbf{B}_{0R} \cdot \mathbf{k}_{I} = 0
+\end{gathered}
 $$
 
 
 取实部：
 $$
+\begin{gathered}
 \Re [\mathbf{E}] = (\mathbf{E}_{0R} \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) - \mathbf{E}_{0I} \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t)) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} \\
 \Re [\mathbf{B}] = (\mathbf{B}_{0R} \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) - \mathbf{B}_{0I} \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t)) e^{- \mathbf{k}_{I} \cdot \mathbf{r}}
+\end{gathered}
 $$
 带入麦克斯韦方程组：
 $$
+\begin{gathered}
 \nabla \cdot (\mathbf{E}_{0R} \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) - \mathbf{E}_{0I} \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t)) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} \\ = \mathbf{E}_{0Ri} \partial_{i} (\cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}}) - \mathbf{E}_{0Ii} \partial_{i} (\sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}}) \\ = \mathbf{E}_{0Ri} (- \mathbf{k}_{Ri} \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t)- \mathbf{k}_{Ii} \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t)) e^{- \mathbf{k}_{I} \cdot \mathbf{r}}  - \\ 
 \mathbf{E}_{0Ii} (\mathbf{k}_{Ri} \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) - \mathbf{k}_{Ii} \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t)) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} \\ = e^{- \mathbf{k}_{I} \cdot \mathbf{r}} (- (\mathbf{E}_{0R} \cdot \mathbf{k}_{I} + \mathbf{E}_{0I} \cdot \mathbf{k}_{R}) \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) + (\mathbf{E}_{0I} \cdot \mathbf{k}_{I} - \mathbf{E}_{0R} \cdot \mathbf{k}_{R}) \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t)) \\  = 0
+\end{gathered}
 $$
 磁场同理。
 
 考虑旋度方程：
 $$
+\begin{gathered}
 \nabla \times (\mathbf{E}_{0R} \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) - \mathbf{E}_{0I} \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t)) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} \\ =
 \nabla (\cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}}) \times \mathbf{E}_{0R} - \nabla (\sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t)  e^{- \mathbf{k}_{I} \cdot \mathbf{r}}) \times \mathbf{E}_{0I} \\ = 
 (- \mathbf{k}_{R} \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} - \mathbf{k}_{I} \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}}) \times \mathbf{E}_{0R} - \\ ( \mathbf{k}_{R} \cos(\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} -  \mathbf{k}_{I} \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}}) \times \mathbf{E}_{0I} \\ =
 - \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} \mathbf{B}_{0I} \omega - \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} \mathbf{B}_{0R} \omega = - \frac{\partial}{\partial t} \mathbf{B}
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 \nabla \times \mathbf{B} = \nabla \times (\mathbf{B}_{0R} \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) - \mathbf{B}_{0I} \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t)) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} \\ =
 \nabla (\cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}}) \times \mathbf{B}_{0R} - \nabla (\sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t)  e^{- \mathbf{k}_{I} \cdot \mathbf{r}}) \times \mathbf{B}_{0I} \\ = 
 (- \mathbf{k}_{R} \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} - \mathbf{k}_{I} \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}}) \times \mathbf{B}_{0R} - \\ ( \mathbf{k}_{R} \cos(\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} -  \mathbf{k}_{I} \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}}) \times \mathbf{B}_{0I} \\ =
 - \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} (\mathbf{k}_{I} \times \mathbf{B}_{0R} + \mathbf{k}_{R} \times \mathbf{B}_{0I}) - \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} (\mathbf{k}_{R} \times \mathbf{B}_{0R} - \mathbf{k}_{I} \times \mathbf{B}_{0I})
+\end{gathered}
 $$
 
 由于
 $$
+\begin{gathered}
 \mathbf{k}_{I} \times \mathbf{B}_{0R} + \mathbf{k}_{R} \times \mathbf{B}_{0I}  \\ =
 \mathbf{k}_{I} \times (\frac{\mathbf{k}_{R}}{\omega} \times \mathbf{E}_{0R} - \frac{\mathbf{k}_{I}}{\omega} \times \mathbf{E}_{0I}) + \mathbf{k}_{R} \times (\frac{\mathbf{k}_{I}}{\omega} \times \mathbf{E}_{0R} + \frac{\mathbf{k}_{R}}{\omega} \times \mathbf{E}_{0I}) \\ = 
 \frac{1}{\omega} ((\mathbf{k}_{R} \cdot \mathbf{E}_{0R}) \mathbf{k}_{I} + (\mathbf{k}_{I} \cdot \mathbf{E}_{0R}) \mathbf{k}_{R} - 2 (\mathbf{k}_{I} \cdot \mathbf{k}_{R}) \mathbf{E}_{0R} + (\mathbf{k}_{R} \cdot \mathbf{E}_{0I}) \mathbf{k}_{R} - (\mathbf{k}_{I} \cdot \mathbf{E}_{0I}) \mathbf{k}_{I} + (\mathbf{k}_{I}^{2} - \mathbf{k}_{R}^{2}) \mathbf{E}_{0I}) \\ = 
 \frac{1}{\omega} (- \mu \epsilon \omega^{2} \mathbf{E}_{0I} - \gamma \mu \omega \mathbf{E}_{0R}) = - \mu \epsilon \omega \mathbf{E}_{0I} - \gamma \mu \mathbf{E}_{0R}
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 \mathbf{k}_{R} \times \mathbf{B}_{0R} - \mathbf{k}_{I} \times \mathbf{B}_{0I} \\ =
 \mathbf{k}_{R} \times (\frac{\mathbf{k}_{R}}{\omega} \times \mathbf{E}_{0R} - \frac{\mathbf{k}_{I}}{\omega} \times \mathbf{E}_{0I}) - \mathbf{k}_{I} \times (\frac{\mathbf{k}_{I}}{\omega} \times \mathbf{E}_{0R} + \frac{\mathbf{k}_{R}}{\omega} \times \mathbf{E}_{0I}) \\ = 
 \frac{1}{\omega} (- (\mathbf{k}_{R} \cdot \mathbf{E}_{0I}) \mathbf{k}_{I} - (\mathbf{k}_{I} \cdot \mathbf{E}_{0I}) \mathbf{k}_{R} + 2 (\mathbf{k}_{I} \cdot \mathbf{k}_{R}) \mathbf{E}_{0I} + (\mathbf{k}_{R} \cdot \mathbf{E}_{0R}) \mathbf{k}_{R} - (\mathbf{k}_{I} \cdot \mathbf{E}_{0R}) \mathbf{k}_{I} + (\mathbf{k}_{I}^{2} - \mathbf{k}_{R}^{2}) \mathbf{E}_{0R}) \\ = 
 \frac{1}{\omega} (- \mu \epsilon \omega^{2} \mathbf{E}_{0R} + \gamma \mu \omega \mathbf{E}_{0I}) 
 = - \mu \epsilon \omega \mathbf{E}_{0R} + \gamma \mu \mathbf{E}_{0I}
+\end{gathered}
 $$
 
 所以
 $$
+\begin{gathered}
 - \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} (\mathbf{k}_{I} \times \mathbf{B}_{0R} + \mathbf{k}_{R} \times \mathbf{B}_{0I}) - \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} (\mathbf{k}_{R} \times \mathbf{B}_{0R} - \mathbf{k}_{I} \times \mathbf{B}_{0I}) \\ =
 - \cos (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} (- \mu \epsilon \omega \mathbf{E}_{0I} - \gamma \mu \mathbf{E}_{0R}) - \sin (\mathbf{k}_{R} \cdot \mathbf{r} - \omega t) e^{- \mathbf{k}_{I} \cdot \mathbf{r}} (- \mu \epsilon \omega \mathbf{E}_{0R} + \gamma \mu \mathbf{E}_{0I}) \\ = \mu (\gamma \mathbf{E} + \epsilon \frac{\partial}{\partial t} \mathbf{E})
+\end{gathered}
 $$
 所以该实部满足麦克斯韦方程组。
 
@@ -238,14 +266,18 @@ $$
 
 穿透深度：
 $$
+\begin{gathered}
 k_{R}^{2} - k_{I}^{2} = \mu \epsilon \omega^{2} \\
 2 k_{R} k_{I} \cos \theta = \gamma \mu \omega
+\end{gathered}
 $$
 所以
 $$
+\begin{gathered}
 \left( \frac{\gamma \mu \omega}{2 k_{I} \cos \theta} \right )^{2} - k_{I}^{2} = \mu \epsilon \omega^{2} \\ 
 k_{I}^{4} + \mu \epsilon \omega^{2} k_{I}^{2} - \left( \frac{\gamma \mu \omega}{2 \cos \theta} \right )^{2} = 0 \\
 k_{I}^{2} = \frac{- \mu \epsilon \omega^{2} + \sqrt{(\mu \epsilon \omega^{2})^{2} + 4 \left( \frac{\gamma \mu \omega}{2 \cos \theta} \right )^{2}}}{2}
+\end{gathered}
 $$
 所以穿透深度的严格表达式为
 $$
@@ -456,12 +488,16 @@ $$
 
 由于 $\mathbf{k}_{2} \cdot \mathbf{E}_{2 \parallel} = 0$ ，所以
 $$
+\begin{gathered}
 \Re [E_{2 \parallel z} (\mathbf{k}_{2} \cdot \mathbf{E}_{2 \parallel}^{*})] = - \Re [E_{2 \parallel z} (\mathbf{k}_{2} \cdot 2 \Im [\mathbf{E}_{2 \parallel}])] \\ =
 - \Re [|\mathbf{E_{2 \parallel}}| \frac{k_{2z}}{|\mathbf{k_{2}}|} (\mathbf{k}_{2} \cdot 2 \Im [\mathbf{E}_{2 \parallel}])]  = \mathbf{E}_{2}^{2} \left( - \Re[k_{2} \frac{k_{2z}}{k_{2}}^{*}] + \Re[k_{2z}] \right)
+\end{gathered}
 $$
 得到：
 $$
+\begin{gathered}
 \frac{\frac{1}{2 \mu_{2} \omega} (k_{2Rz} \mathbf{E}_{2 \parallel}^{2} - \Re [E_{2 \parallel z} (\mathbf{k}_{2} \cdot \mathbf{E}_{2 \parallel}^{*})])}{\frac{1}{2 \mu_{1} \omega} (k_{1Rz}  \mathbf{E}_{1 \parallel}^{2})} = \frac{\mu_{1}}{\mu_{2} k_{1} \cos \theta_{1}} \left| \frac{2 \cos \theta_{1}}{\frac{k_{2z}}{k_{2}} + \frac{\mu_{1} k_{2} \cos \theta_{1}}{\mu_{2} k_{1}}} \right|^{2} \Re [k_{2} \frac{k_{2z}^{*}}{k_{2}^{*}}] \\ = \frac{4 \mu_{1} \cos \theta_{1} \text{Re} \left( \frac{k_{2} k_{2z}^*}{k_{2}^{*}} \right)}{\mu_{2} k_{1} \left| \frac{k_{2z}}{k_{2}} + \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}}
+\end{gathered}
 $$
 
 $$
@@ -473,10 +509,12 @@ R_{\parallel} =  \left| \frac{- \frac{k_{2z}}{k_{2}} + \frac{\mu_{1} k_{2} \cos 
 $$
 
 $$
+\begin{gathered}
 D_{\parallel} + R_{\parallel} = \frac{4 \mu_{1} \cos \theta_{1} \text{Re} \left( \frac{k_{2} k_{2z}^*}{k_{2}^{*}} \right)}{\mu_{2} k_{1} \left| \frac{k_{2z}}{k_{2}} + \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}} + \left| \frac{\frac{k_{2z}}{k_{2}} - \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1}}{\frac{k_{2z}}{k_{2}} + \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1}} \right|^{2} \\ = 
 \frac{4 \mu_{1} \cos \theta_{1} \text{Re} \left( \frac{k_{2} k_{2z}^*}{k_{2}^{*}} \right) + \mu_{2} k_{1} \left| \frac{k_{2z}}{k_{2}} - \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}}{\mu_{2} k_{1} \left| \frac{k_{2z}}{k_{2}} + \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}} \\ =
 \frac{\mu_{2} k_{1} \left(4 \frac{\mu_{1}}{\mu_{2} k_{1}} \cos \theta_{1} \text{Re} \left( \frac{k_{2} k_{2z}^*}{k_{2}^{*}} \right) +  \left| \frac{k_{2z}}{k_{2}} - \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}\right)}{\mu_{2} k_{1} \left| \frac{k_{2z}}{k_{2}} + \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}} \\ =
 \frac{\mu_{2} k_{1} \left| \frac{k_{2z}}{k_{2}} + \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}}{\mu_{2} k_{1} \left| \frac{k_{2z}}{k_{2}} + \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}} = 1
+\end{gathered}
 $$
 
 其中利用了

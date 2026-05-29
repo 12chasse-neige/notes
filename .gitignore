@@ -98,4 +98,12 @@ Thumbs.db
 
 # Specific ignores
 AGENTS.md
+
+# Local scripts
 scripts/replace.py
+
+# Obstian files
+.obsidian/
+.claude/
+.claudian/
+preamble.sty

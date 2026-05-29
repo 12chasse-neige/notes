@@ -15,8 +15,10 @@ $$
 
 利用 $\comm{q}{p} = 1$，所以
 $$
+\begin{gathered}
 \comm{q}{p}_{QP} = \comm{Q+aQ^{2}+2bQP+cP^{2}}{P+dQ^{2}+2eQP+fP^{2}} \\ = 
 \comm{Q}{P} + a\comm{Q^{2}}{P} + 2b \comm{QP}{P} + c \comm{P^{2}}{P} + d \comm{Q}{Q^{2}} + 2e \comm{Q}{QP} + f \comm{Q}{P^{2}}
+\end{gathered}
 $$
 所以在一阶近似下要求满足
 $$
@@ -24,8 +26,10 @@ a\comm{Q^{2}}{P} + 2b \comm{QP}{P} + c \comm{P^{2}}{P} + d \comm{Q}{Q^{2}} + 2e 
 $$
 
 $$
+\begin{gathered}
 2a Q + 2b P + 2e Q + 2f P = 0 \\
 (a + e) Q + (b + f) P = 0
+\end{gathered}
 $$
 
 即 $a = -e, b = -f$
@@ -70,8 +74,10 @@ $$
 
 在新的正则变量下，正则方程的解为
 $$
+\begin{gathered}
 P =- m \omega Q_{0} \sin (\omega t + \phi) \\
 Q = Q_{0} \cos (\omega t + \phi)
+\end{gathered}
 $$
 逆变换回去得到
 $$

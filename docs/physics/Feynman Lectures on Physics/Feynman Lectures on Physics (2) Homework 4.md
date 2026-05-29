@@ -105,7 +105,9 @@ Chasse_neige
    $$
    表示，不要出现积分符号。
    $$
+   \begin{gathered}
    M = \frac{\Phi_{12}}{I} = \frac{\mu_{0}}{4 \pi} \int_{0}^{2 \pi} \int_{0}^{2 \pi} \frac{R_{1} R_{2}  d \theta \cos \phi d \phi}{\sqrt{l^{2} + R_{1}^{2} + R_{2}^{2} - 2 R_{1} R_{2} \cos \phi}} \\ = \frac{\mu_{0} R_{1} R_{2}}{\sqrt{l^{2} + (R_{1} + R_{2})^{2}}} \\ \left( ( - 2 + \frac{l^{2} + (R_{1} + R_{2})^{2}}{R_{1} R_{2}}) K(\frac{4 R_{1} R_{2}}{l^{2} + (R_{1} + R_{2})^{2}}) -  \frac{l^{2} + (R_{1} + R_{2})^{2}}{R_{1} R_{2}} E(\frac{4 R_{1} R_{2}}{l^{2} + (R_{1} + R_{2})^{2}})\right)
+   \end{gathered}
    $$
    
 
@@ -130,8 +132,10 @@ $$
 
 在 $\theta$ 存在的情况下，我们可以将 $\theta$ 项放入电位移场 $\vec{D}$ 和磁场强度 $\vec{H}$，使得用 $\vec{D}$ 和 $\vec{H}$ 表达的麦克斯韦方程组不变，请给出 $\vec{D}$ 和 $\vec{H}$ 的定义。
 $$
+\begin{gathered}
 \vec{D} =  \epsilon_{0} \vec{E} + \vec{P} + \frac{\alpha \epsilon_{0}}{\pi} c \theta \vec{B} \\ 
 \vec{H} = \frac{\vec{B}}{\mu_{0}} - \vec{M} - \frac{\alpha}{\mu_{0} \pi c} \theta \vec{E}
+\end{gathered}
 $$
 (b)
 
@@ -141,24 +145,30 @@ $$
 
 由于界面附近没有自由电荷和电流，所以界面附近的麦克斯韦方程组为
 $$
+\begin{gathered}
 \nabla \cdot \vec{D} = 0 \\ 
 \nabla \times \vec{E} = 0 \\
 \nabla \cdot \vec{B} = 0 \\
 \nabla \times \vec{H} = 0
+\end{gathered}
 $$
 所以边界条件为：
 $$
+\begin{gathered}
 \hat{n} \times (\vec{E}_{1} - \vec{E}_{2}) = 0 \\
 \hat{n} \cdot ( \epsilon_{0} \vec{E}_{1} + \frac{\epsilon_{0} \alpha}{\pi} c \theta_{1} \vec{B}_{1} -  \epsilon_{0} \vec{E}_{2} - \frac{\epsilon_{0} \alpha}{\pi} c \theta_{2} \vec{B}_{2}) = 0 \\
 \hat{n} \cdot (\vec{B}_{1} - \vec{B}_{2}) = 0 \\
 \hat{n} \times (\frac{\vec{B}_{1}}{\mu_{0}} - \frac{\alpha}{\mu_{0} \pi c} \theta_{1} \vec{E}_{1} - \frac{\vec{B}_{2}}{\mu_{0}} + \frac{\alpha}{\mu_{0} \pi c} \theta_{2} \vec{E}_{2}) = 0
+\end{gathered}
 $$
 (c)
 
 若从下半空间加入沿着 $z$ 方向的磁场 $B_{z} = B$，则在上半空间不仅会有磁场，也会因为介质的存在而产生电场，请求出电场 $\vec{E}$ 的大小与方向。
 $$
+\begin{gathered}
 B_{z} = B'_{z} \\
 \frac{\epsilon_{0} \alpha}{\pi} c \theta B_{z} =  \epsilon_{0} E'_{z}
+\end{gathered}
 $$
 所以
 $$
@@ -170,8 +180,10 @@ $$
 
 若从下半空间加入沿着 $y$ 方向的电场 $E_{y} = E$，同样地，在上半空间会因为介质的存在而产生磁场，请求出磁场 $\vec{B}$ 的大小与方向。
 $$
+\begin{gathered}
 E'_{y} = E_{y} \\
  - \frac{\alpha}{\mu_{0} \pi c} \theta E_{y} = \frac{B'_{y}}{\mu_{0}}
+\end{gathered}
 $$
 所以
 $$

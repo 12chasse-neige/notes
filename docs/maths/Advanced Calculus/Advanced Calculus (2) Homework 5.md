@@ -16,7 +16,9 @@ $$
 $$
 (3) 设 $f, g \in C^{2}(\mathbb{R}, \mathbb{R})$, $z = xf\left( \dfrac{y}{x} \right) + yg\left( \dfrac{x}{y} \right)$. 求 $\dfrac{\partial^{2} z}{\partial x \partial y}$
 $$
+\begin{gathered}
 \dfrac{\partial^{2} z}{\partial x \partial y} = \frac{\partial}{\partial x} (x f' \frac{1}{x} + g + y g' (- \frac{x}{y^{2}})) = \frac{\partial}{\partial x} (f' + g - \frac{x}{y} g') \\ = - \frac{y}{x^{2}} f'' + \frac{1}{y} g' - \frac{1}{y} g' - \frac{x}{y^{2}} g'' = - \frac{y}{x^{2}} f'' - \frac{x}{y^{2}} g''
+\end{gathered}
 $$
 (4) 设 $f \in C^{1}(\mathbb{R}, \mathbb{R})$, $z = \dfrac{y}{f(x^{2} - y^{2})}$. 求 $\dfrac{1}{x} \dfrac{\partial z}{\partial x} + \dfrac{1}{y} \dfrac{\partial z}{\partial y}$
 $$
@@ -24,9 +26,11 @@ $$
 $$
 (5) 设 $f \in C^{1}(\mathbb{R}^{3}, \mathbb{R})$, $u = f(x, xy, xyz)$. 求 $\dfrac{\partial u}{\partial x}, \dfrac{\partial u}{\partial y}, \dfrac{\partial u}{\partial z}$
 $$
+\begin{gathered}
 \frac{\partial u}{\partial x} = f'_{1} + y f'_{2} + yz f'_{3} \\
 \frac{\partial u}{\partial y} = x f'_{2} + xz f'_{3} \\
 \frac{\partial u}{\partial z} = xy f'_{3}
+\end{gathered}
 $$
 这里, 我们称函数 $f : \mathbb{R}^{n} \rightarrow \mathbb{R}$ 是 $C^{k}$ 光滑的, 记作 $f \in C^{k}(\mathbb{R}^{n}, \mathbb{R})$, 如果 $f$ 的各个 $k$ 阶 (偏) 导函数都存在且连续.
 
@@ -38,10 +42,12 @@ F(u^{2} - x^{2}, u^{2} - y^{2}, u^{2} - z^{2})
 $$
 对 $x, y, z, u$ 的偏导数
 $$
+\begin{gathered}
 \frac{\partial F}{\partial x} = -2x F'_{1} \\
 \frac{\partial F}{\partial y} = -2y F'_{2} \\
 \frac{\partial F}{\partial z} = -2z F'_{3} \\
 \frac{\partial F}{\partial u} = 2u (F'_{1} + F'_{2} + F'_{3})
+\end{gathered}
 $$
 
 ### 3 
@@ -90,8 +96,10 @@ $$
 
 证明：
 $$
+\begin{gathered}
 f (x, y, z) = g (1) = g (0) + \int_{0}^{1} g'(t) dt = g (0) + \int_{0}^{1} (x f'_{1} + y f'_{2} + z f'_{3}) dt \\ 
 =  f(0, 0, 0) + x \int_{0}^{1} f_{x}(tx, ty, tz) \, dt + y \int_{0}^{1} f_{y}(tx, ty, tz) \, dt + z \int_{0}^{1} f_{z}(tx, ty, tz) \, dt
+\end{gathered}
 $$
 (3) 对于给定的点 $(x, y, z) \in \mathbb{R}^{3}$, 考虑关于 $t$ 的一元函数
 $$
@@ -125,8 +133,10 @@ $$
 
 两遍同时积分
 $$
+\begin{gathered}
 \int_{g(1)}^{g(t)} \frac{dg}{g} = n \int_{1}^{t} \frac{dt}{t} \\
 g (t) = t^{n} g (1)
+\end{gathered}
 $$
 所以
 $$

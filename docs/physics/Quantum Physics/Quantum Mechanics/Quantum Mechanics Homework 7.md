@@ -13,11 +13,13 @@ $$
 于是
 
 $$
+\begin{gathered}
 [\hat{\boldsymbol{J}}\cdot\vec{a},\hat{\boldsymbol{J}}\cdot\vec{b}]
 =a_{i}b_{j}[\hat{J}_{i},\hat{J}_{j}]\\
 =\mathrm{i}\hbar a_{i}b_{j}\varepsilon_{ijk}\hat{J}_{k}\\
 =\mathrm{i}\hbar\hat{J}_{k}\varepsilon_{kij}a_{i}b_{j}\\
 =\mathrm{i}\hbar\hat{\boldsymbol{J}}\cdot(\vec{a}\times\vec{b})
+\end{gathered}
 $$
 
 7.5.2 我们曾经在习题4.4.3里定义了量子力学意义上的标量和矢量，但那里用的是轨道角动量$\hat{\boldsymbol{L}}$，现在应推广为一般的$\hat{\boldsymbol{J}}$，即满足$[\hat{J}_{i},\hat{S}]=0$ 的算符 $\hat{S}$ 称为标量算符，满足 $[\hat{J}_{i},\hat{V}_{j}]=\mathrm{i}\hbar\varepsilon_{ijk}\hat{V}_{k}$ 的算符 $\hat{\boldsymbol{V}}$ 称为矢量算符。求证：对矢量算符$\hat{\boldsymbol{V}}$ 有
@@ -27,11 +29,13 @@ $$
 按照定义，对第 $i$ 个分量计算
 
 $$
+\begin{gathered}
 (\hat{\boldsymbol{V}}\times\hat{\boldsymbol{J}})_{i}
 =\varepsilon_{ijk}\hat{V}_{j}\hat{J}_{k}\\
 =\varepsilon_{ijk}\left(\hat{J}_{k}\hat{V}_{j}-[\hat{J}_{k},\hat{V}_{j}]\right)\\
 =\varepsilon_{ijk}\hat{J}_{k}\hat{V}_{j}-\mathrm{i}\hbar\varepsilon_{ijk}\varepsilon_{kjl}\hat{V}_{l}\\
 =-\varepsilon_{ijk}\hat{J}_{j}\hat{V}_{k}+2\mathrm{i}\hbar\hat{V}_{i}
+\end{gathered}
 $$
 
 其中用到了
@@ -57,10 +61,12 @@ $$
 仍然对第 $i$ 个分量计算
 
 $$
+\begin{gathered}
 [\hat{J}^{2},\hat{V}_{i}]
 =[\hat{J}_{j}^{2},\hat{V}_{i}]\\
 =\hat{J}_{j}[\hat{J}_{j},\hat{V}_{i}]+[\hat{J}_{j},\hat{V}_{i}]\hat{J}_{j}\\
 =\mathrm{i}\hbar\varepsilon_{jik}\left(\hat{J}_{j}\hat{V}_{k}+\hat{V}_{k}\hat{J}_{j}\right)
+\end{gathered}
 $$
 
 所以
@@ -73,9 +79,11 @@ $$
 另一方面
 
 $$
+\begin{gathered}
 (\hat{\boldsymbol{J}}\times\hat{\boldsymbol{V}}-\hat{\boldsymbol{V}}\times\hat{\boldsymbol{J}})_{i}
 =\varepsilon_{ijk}\hat{J}_{j}\hat{V}_{k}-\varepsilon_{ijk}\hat{V}_{j}\hat{J}_{k}\\
 =\varepsilon_{ijk}\left(\hat{J}_{j}\hat{V}_{k}+\hat{V}_{k}\hat{J}_{j}\right)
+\end{gathered}
 $$
 
 两式相同，所以
@@ -101,9 +109,11 @@ $$
 另一方面
 
 $$
+\begin{gathered}
 \hat{J}_{-}|j_{1},j_{2}\rangle_{\mathrm{n}}
 =(\hat{J}_{1-}+\hat{J}_{2-})|j_{1},j_{2}\rangle_{\mathrm{n}}\\
 =\sqrt{2j_{1}}|j_{1}-1,j_{2}\rangle_{\mathrm{n}}+\sqrt{2j_{2}}|j_{1},j_{2}-1\rangle_{\mathrm{n}}
+\end{gathered}
 $$
 
 所以
@@ -123,18 +133,22 @@ $$
 同时
 
 $$
+\begin{gathered}
 \hat{J}_{-}|j,j-1\rangle_{\mathrm{c}}
 =\sqrt{\frac{j_{1}}{j}}\left(\sqrt{2(2j_{1}-1)}|j_{1}-2,j_{2}\rangle_{\mathrm{n}}+\sqrt{2j_{2}}|j_{1}-1,j_{2}-1\rangle_{\mathrm{n}}\right)\\
 +\sqrt{\frac{j_{2}}{j}}\left(\sqrt{2j_{1}}|j_{1}-1,j_{2}-1\rangle_{\mathrm{n}}+\sqrt{2(2j_{2}-1)}|j_{1},j_{2}-2\rangle_{\mathrm{n}}\right)
+\end{gathered}
 $$
 
 因此
 
 $$
+\begin{gathered}
 |j_{1}+j_{2},j_{1}+j_{2}-2\rangle_{\mathrm{c}}
 =\sqrt{\frac{j_{1}(2j_{1}-1)}{(j_{1}+j_{2})(2j_{1}+2j_{2}-1)}}|j_{1}-2,j_{2}\rangle_{\mathrm{n}}\\
 +2\sqrt{\frac{j_{1}j_{2}}{(j_{1}+j_{2})(2j_{1}+2j_{2}-1)}}|j_{1}-1,j_{2}-1\rangle_{\mathrm{n}}\\
 +\sqrt{\frac{j_{2}(2j_{2}-1)}{(j_{1}+j_{2})(2j_{1}+2j_{2}-1)}}|j_{1},j_{2}-2\rangle_{\mathrm{n}}
+\end{gathered}
 $$
 
 7.6.2（选做）把上面的问题做完，就是写出 $|j_{1} + j_{2}, j_{1} + j_{2} - k\rangle_{c}$ ($k = 0, \cdots, 2(j_{1} + j_{2})$) 的一般表达式。

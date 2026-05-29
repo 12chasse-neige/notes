@@ -12,9 +12,11 @@ $$
 $$
 对于 $\vec{w} = w_{1}\vec{e}_{1} + w_{2}\vec{e}_{2} + w_{3}\vec{e}_{3}$，试计算：
 $$
+\begin{gathered}
 \vec{u} \wedge \vec{v} \wedge \vec{w} \\ = ((u_{1} v_{2} - u_{2} v_{1}) (\vec{e_{1}} \wedge \vec{e_{2}}) + (u_{2} v_{3} - u_{3} v_{2}) (\vec{e_{2}} \wedge \vec{e_{3}}) + (u_{3} v_{1} - u_{1} v_{3}) (\vec{e_{3}} \wedge \vec{e_{1}})) \wedge (w_{1} \vec{e_{1}} + w_{2} \vec{e_{2}} + w_{3} \vec{e_{3}}) \\
 = (u_{1} v_{2} - u_{2} v_{1}) w_{3} (\vec{e_{1}} \wedge \vec{e_{2}} \wedge \vec{e_{3}}) + (u_{2} v_{3} - u_{3} v_{2}) w_{1} (\vec{e_{2}} \wedge \vec{e_{3}} \wedge \vec{e_{1}}) + (u_{3} v_{1} - u_{1} v_{3}) w_{2} (\vec{e_{3}} \wedge \vec{e_{1}} \wedge \vec{e_{2}}) \\
 = (\epsilon_{ijk} u_{i} v_{j} w_{k}) (\vec{e_{1}} \wedge \vec{e_{2}} \wedge \vec{e_{3}})
+\end{gathered}
 $$
 
 (2). 从外积的运算法则中我们发现外积具有和叉乘类似的结构。事实上，两者可以通过 Hodge 对偶联系起来。假设 $u = \frac{1}{p!}u_{\mu_{1}\cdots\mu_{p}}e_{\mu_{1}} \wedge \cdots \wedge e_{\mu_{p}}$ 是 $\mathbb{R}^{n}$ 中的 $p$-形式，则 Hodge 对偶将 $u$ 映射为 $(n - p)$-形式：
@@ -31,8 +33,10 @@ $$
 $$
 试证明：
 $$
+\begin{gathered}
 \vec{u} \wedge \vec{v} = \star (\vec{u} \times \vec{v}) \\
 \vec{u} \times \vec{v} = \star (\vec{u} \wedge \vec{v}) 
+\end{gathered}
 $$
 
 证明：$\vec{u} \times \vec{v} = \epsilon_{ijk} u_{i} v_{j} \vec{e_{k}}$ ，是一个1-form。将它作霍奇对偶：
@@ -43,11 +47,13 @@ $$
 $$
 此时$\mu_{1}, \cdots ,\mu_{n-p}$ 可以取遍所有$(n-p)!$个值。
 $$
+\begin{gathered}
 \star (\vec{u} \times \vec{v}) = \frac{1}{2!} \epsilon_{klm} \epsilon_{ijk} u_{i} v_{j} (\vec{e_{l}} \wedge \vec{e_{m}}) \\
 = \frac{1}{2} \begin{vmatrix} \delta_{li} & \delta_{lj} \\ \delta_{mi} & \delta_{mj} \end{vmatrix} u_{i} v_{j} (\vec{e_{l}} \wedge \vec{e_{m}}) \\
 = \frac{1}{2} (u_{i} v_{j} (\vec{e_{i}} \wedge \vec{e_{j}}) - u_{i} v_{j} (\vec{e_{j}} \wedge \vec{e_{i}})) \\
 = u_{i} v_{j} (\vec{e_{i}} \wedge \vec{e_{j}}) \\
 = \vec{u} \wedge \vec{v}
+\end{gathered}
 $$
 同理：
 $$
@@ -66,8 +72,10 @@ $$
 
 进一步的请证明 Maxwell 方程满足：
 $$
+\begin{gathered}
 dF = 0 \\
 d (\star F) = \star J 
+\end{gathered}
 $$
 其中 $J$ 为四矢量形式的电流密度。（注：本题当中我们在 Euclidean 时空下，即不考虑时间和空间分量的不同，此时麦克斯韦方程组的四维协变形式为 $\partial_{\mu} F^{\mu\nu} = -J^{\nu}$。值得一提的是，如果不存在外源 $J$，我们可以发现方程在 $F \rightarrow \star F$ 变换下是不变的，此即著名的 S-对偶。）
 
@@ -169,6 +177,7 @@ $$
 
 在洛伦兹规范$\partial_{i} A_{i} = 0$下，$\partial_{i}^{2} A_{j} = -J_{j}$ （取自然单位制）对确定的 $m,k,l$ 而言：
 $$
+\begin{gathered}
 d (\star \mathbf{F})_{mkl} = 
 \frac{1}{2} \epsilon_{mkl} \epsilon_{ijkl} \partial_{m} \partial_{i} A_{j}  \\ = 
 \frac{1}{2} \times \frac{1}{6}\epsilon_{ikl} \epsilon_{ikl} \epsilon_{mkl} \epsilon_{ijkl} \partial_{m} \partial_{i} A_{j} \\ =
@@ -177,6 +186,7 @@ d (\star \mathbf{F})_{mkl} =
 -\frac{1}{6} \epsilon_{mkl} \epsilon_{mjkl} J_{j} \\ = 
 \frac{1}{6} \epsilon_{mkl} \epsilon_{jmkl} J_{j}\\ = 
 (\star \mathbf{J})_{mkl}
+\end{gathered}
 $$
 
 (4). 给定一个标量场 $f$，和 1-形式场（矢量场）$A$，试证明：

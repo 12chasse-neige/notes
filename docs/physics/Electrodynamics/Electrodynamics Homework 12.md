@@ -20,50 +20,66 @@ $$
 
 边界条件
 $$
+\begin{gathered}
 \hat{n} \cdot \vec{j}_{in} = \hat{n} \cdot \vec{j}_{out} \\
 \hat{n} \times \vec{E}_{in} = \hat{n} \times \vec{E}_{out}
+\end{gathered}
 $$
 又因为在沿着$\vec{J}_{f0}$ 方向趋近于无穷远时场强为$\frac{\vec{J}_{f0}}{\sigma_{2}}$ ，所以 $E_{2} = \frac{J_{f0}}{\sigma_{2}}$
 $$
+\begin{gathered}
 \sigma_{1} E_{1} = \sigma_{2} (\frac{J_{f0}}{\sigma_{2}} + 2 E_{3}) \\
 - E_{1} = - \frac{J_{f0}}{\sigma_{2}} + E_{3}
+\end{gathered}
 $$
 解得
 $$
+\begin{gathered}
 E_{1} = \frac{3 J_{f0}}{\sigma_{1} + 2 \sigma_{2}} \\ 
 E_{3} = \frac{J_{f0}}{\sigma_{2}} - \frac{3 J_{f0}}{\sigma_{1} + 2 \sigma_{2}} = \frac{\sigma_{1} - \sigma_{2}}{\sigma_{2}(\sigma_{1} + 2 \sigma_{2})} J_{f0}
+\end{gathered}
 $$
 所以电流密度为
 $$
+\begin{gathered}
 \vec{j}_{in} = \frac{3 \sigma_{1}}{\sigma_{1} + 2 \sigma_{2}} \vec{J}_{f0} \\
 \vec{j}_{out} = \vec{J}_{f0} + \frac{(\sigma_{1} - \sigma_{2}) R_{0}^{3}}{\sigma_{1} + 2 \sigma_{2}} \left(\frac{3 (\vec{J}_{f0} \cdot \vec{r}) \vec{r}}{r^{5}} - \frac{\vec{J}_{f0}}{r^{3}} \right)
+\end{gathered}
 $$
 面电荷密度
 $$
+\begin{gathered}
 \sigma' = \epsilon_{0} \hat{n} \cdot (\vec{E}_{out} - \vec{E}_{in}) \\ =
 \epsilon_{0} (\frac{1}{\sigma_{2}} + \frac{2 (\sigma_{1} - \sigma_{2})}{(\sigma_{1} + 2 \sigma_{2}) \sigma_{2}} - \frac{3}{\sigma_{1} + 2 \sigma_{2}}) J_{f0} \cos \theta \\ = 
 \frac{3 \epsilon_{0} (\sigma_{1} - \sigma_{2})}{\sigma_{2} (\sigma_{1} + 2 \sigma_{2})} J_{f0} \cos \theta
+\end{gathered}
 $$
 当 $\sigma_{1} \gg \sigma_{2}$ 时，电流密度以及面电荷密度的分布趋近于
 $$
+\begin{gathered}
 \vec{j}_{in} = 3 \vec{J}_{f0} \\
 \vec{j}_{out} = \vec{J}_{f0} + R_{0}^{3} \left(\frac{3 (\vec{J}_{f0} \cdot \vec{r}) \vec{r}}{r^{5}} - \frac{\vec{J}_{f0}}{r^{3}} \right) \\ 
 \sigma' =  \frac{3 \epsilon_{0}}{\sigma_{2}} J_{f0} \cos \theta
+\end{gathered}
 $$
 当$\sigma_{2} \gg \sigma_{1}$ 时，电流密度以及面电荷密度的分布趋近于
 $$
+\begin{gathered}
 \vec{j}_{in} = \frac{3 \sigma_{1}}{2 \sigma_{2}} \vec{J}_{f0} \\
 \vec{j}_{out} = \vec{J}_{f0} - \frac{1}{2} R_{0}^{3} \left(\frac{3 (\vec{J}_{f0} \cdot \vec{r}) \vec{r}}{r^{5}} - \frac{\vec{J}_{f0}}{r^{3}} \right) \\ 
 \sigma' = - \frac{3 \epsilon_{0}}{2 \sigma_{2}} J_{f0} \cos \theta
+\end{gathered}
 $$
 2.13 设有两平面围成的直角形无穷容器，其内充满电导率为 $\sigma$ 的液体。取该两平面为 $xz$ 面和 $yz$ 面，在 $(x_{0}, y_{0}, z_{0})$ 和 $(x_{0}, y_{0}, -z_{0})$ 两点分别置正负电极并通以电流 $I$，求导电液体中的电势。
 
 边界条件即在两平面处的电场强度沿切向，所以可以采取类似于电像的方法求解，即在 $(x_{0}, - y_{0}, z_{0}), (- x_{0}, y_{0}, z_{0}), (- x_{0}, - y_{0}, z_{0})$ 处放置正像电极，在 $(x_{0}, - y_{0}, - z_{0}), (- x_{0}, y_{0}, - z_{0}), (- x_{0}, - y_{0}, - z_{0})$ 处放置负电极，此时直角形区域内的电势为
 $$
+\begin{gathered}
 \phi (x, y, z) = \frac{I}{4 \pi \sigma} (\frac{1}{\sqrt{(x - x_{0})^{2} + (y - y_{0})^{2} + (z - z_{0})^{2}}} + \frac{1}{\sqrt{(x + x_{0})^{2} + (y - y_{0})^{2} + (z - z_{0})^{2}}} \\ + 
 \frac{1}{\sqrt{(x - x_{0})^{2} + (y + y_{0})^{2} + (z - z_{0})^{2}}} + \frac{1}{\sqrt{(x + x_{0})^{2} + (y + y_{0})^{2} + (z - z_{0})^{2}}} \\ - 
 \frac{1}{\sqrt{(x - x_{0})^{2} + (y - y_{0})^{2} + (z + z_{0})^{2}}} - \frac{1}{\sqrt{(x + x_{0})^{2} + (y - y_{0})^{2} + (z + z_{0})^{2}}} \\ -
 \frac{1}{\sqrt{(x - x_{0})^{2} + (y + y_{0})^{2} + (z + z_{0})^{2}}} - \frac{1}{\sqrt{(x + x_{0})^{2} + (y + y_{0})^{2} + (z + z_{0})^{2}}})
+\end{gathered}
 $$
 (b) 两个距离很远半径为 $a$ 的金属半球埋入电导率为 $\gamma$ 的地面,使半球平面部分与地面平齐,在此两半球电极上加电压 $V$, 求地面下极面附近电流分布,并求两半球间的电阻和每个半球的接的电阻。  
 
@@ -93,8 +109,10 @@ $$
 
 同样使用镜像法，在关于导电媒质对称位置放置同样电势的小球，求出保留到一阶项的电势，此时
 $$
+\begin{gathered}
 I_{12} = \frac{1}{2} \iint_{x = 0} \frac{\gamma Q}{4 \pi \epsilon_{0}} \left( \frac{b}{(\frac{b^{2}}{4} + y^{2} + (z + d)^{2})^{\frac{3}{2}}} + \frac{b}{(\frac{b^{2}}{4} + y^{2} + (z - d)^{2})^{\frac{3}{2}}} \right) dy dz \\ =
 \frac{\gamma Q}{8 \pi \epsilon_{0}} \int_{0}^{\infty}  \frac{2b}{(\frac{b^{2}}{4} + r^{2})^{\frac{3}{2}}} 2 \pi r dr =  \frac{\gamma Q}{\epsilon_{0}}
+\end{gathered}
 $$
 而电势差为
 $$
@@ -110,8 +128,10 @@ $$
 
 注意到在圆柱内离圆心 $\frac{a^{2}}{d}$ 处放置大小为$I$ 的电流源，并且在圆柱中心放置大小为 $-I$ 的电流源时，圆柱表面法向电流密度为
 $$
+\begin{gathered}
 j_{n} = - \frac{I}{2 \pi} \frac{d \cos \theta - a}{a^{2} + d^{2} - 2ad \cos \theta} + \frac{I}{2 \pi} \frac{a - \frac{a^{2}}{d} \cos \theta}{a^{2} + \frac{a^{4}}{d^{2}} - 2 a \frac{a^{2}}{d} \cos \theta} - \frac{I}{2 \pi r} \\ = 
 \frac{I}{2 \pi} \left(\frac{\frac{d^{2}}{a} - 2d \cos \theta + a}{a^{2} + d^{2} - 2ad \cos \theta} - \frac{1}{a} \right) = 0
+\end{gathered}
 $$
  满足孔边需要的边界条件。所以在挖去圆孔之后孔外空间电流密度分布可以视作电流源和两个像电流源的叠加。假设在圆周上两个点相对于电流源和圆心的连线夹角为 $\theta_{1}$ 和 $\theta_{2}$，此时在挖孔之前，二点之间的电势差为
 $$
@@ -119,8 +139,10 @@ V_{12} = \frac{I}{4 \pi \gamma} \ln \frac{d^{2} + a^{2} - 2 ad \cos \theta_{2}}{
 $$
 在挖孔之后，电势差还应该加上离圆心 $\frac{a^{2}}{d}$ 处电流源带来的电势差
 $$
+\begin{gathered}
 V'_{12}  = \frac{I}{4 \pi \gamma} \ln \frac{d^{2} + a^{2} - 2 ad \cos \theta_{2}}{d^{2} + a^{2} - 2 ad \cos \theta_{1}} + \frac{I}{4 \pi \gamma} \ln \frac{a^{2} + \frac{a^{4}}{d^{2}} - 2 a \frac{a^{2}}{d} \cos \theta_{2}}{a^{2} + \frac{a^{4}}{d^{2}} - 2 a \frac{a^{2}}{d} \cos \theta_{1}} \\ =
 \frac{I}{2 \pi \gamma} \ln \frac{d^{2} + a^{2} - 2 ad \cos \theta_{2}}{d^{2} + a^{2} - 2 ad \cos \theta_{1}} = 2 V_{12}
+\end{gathered}
 $$
 
 ### 9. 稳恒电流的磁场
@@ -133,13 +155,17 @@ $$
 
 由于管内外空间均无自由电流，所以可以使用标势求解，考虑到沿角向的旋转对称性以及沿 $z$ 轴的平移对称性，边界条件为
 $$
+\begin{gathered}
 B_{in,z} - B_{out, z} = \mu_{0} n I \\
 \left. B_{out} = 0 \right|_{r \to \infty}
+\end{gathered}
 $$
 所以不妨猜测
 $$
+\begin{gathered}
 \vec{B}_{in} = \mu_{0} n I \hat{z} \\
 \vec{B}_{out} = 0
+\end{gathered}
 $$
 由于此时标势和静电场的情况一样具有唯一性，所以该解是合理的
 
@@ -193,8 +219,10 @@ $$
 
 所以磁矢势解为
 $$
+\begin{gathered}
 A_{in} = \frac{1}{4} \mu_{0} J (a^{2} - r^{2}) \hat{z} \\
 A_{out} = \frac{\mu a^{2} J}{2} \ln \frac{a}{r} \hat{z}
+\end{gathered}
 $$
 
 ### 10. 磁场问题的一般解法
@@ -234,23 +262,31 @@ $$
 
 边界条件
 $$
+\begin{gathered}
 \hat{n} \cdot \vec{B}_{in} = \hat{n} \cdot \vec{B}_{out} \\
 \hat{n} \times \vec{H}_{in} = \hat{n} \times \vec{H}_{out}
+\end{gathered}
 $$
 又因为在沿着$\vec{H}_{0}$ 方向趋近于无穷远时场强为$H_{0}$ ，所以 $H_{2} = H_{0}$
 $$
+\begin{gathered}
 \mu H_{1} = \mu_{0} (H_{0} + 2 H_{3}) \\
 - H_{1} = - H_{0} + H_{3}
+\end{gathered}
 $$
 解得
 $$
+\begin{gathered}
 H_{1} = \frac{3 \mu_{0}}{\mu + 2 \mu_{0}} H_{0} \\ 
 H_{3} = \frac{\mu - \mu_{0}}{\mu + 2 \mu_{0}} H_{0}
+\end{gathered}
 $$
 所以磁场强度为
 $$
+\begin{gathered}
 \vec{H}_{in} = \frac{3 \mu_{0}}{\mu + 2 \mu_{0}} \vec{H}_{0}  \\
 \vec{H}_{out} = \vec{H}_{0} + \frac{\mu - \mu_{0}}{\mu + 2 \mu_{0}} R_{0}^{3} \left(\frac{3 (\vec{H}_{0} \cdot \vec{r}) \vec{r}}{r^{5}} - \frac{\vec{H}_{0}}{r^{3}} \right)
+\end{gathered}
 $$
 所以
 $$
@@ -303,6 +339,8 @@ $$
 
 所以磁感应强度为
 $$
+\begin{gathered}
 \vec{B}_{in} =  \frac{\mu_{0} Q \omega}{6 \pi R_{0}} \hat{z} \\
 \vec{B}_{out} = \frac{\mu_{0} Q \omega R_{0}^{2}}{12 \pi} \left( \frac{3(\hat{z} \cdot \vec{r})\vec{r} - \hat{z} r^{2}}{r^{5}}  \right)
+\end{gathered}
 $$

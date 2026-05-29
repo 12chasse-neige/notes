@@ -80,14 +80,18 @@ is L-inv.
 ### Photon Propagator
 
 $$
+\begin{gathered}
 G_{\mu \nu} = \langle 0 | T \{A_{\mu} (x) A_{\nu} (y)\} | 0 \rangle \\ =
 \int \frac{\dd[4]{p}}{(2 \pi)^{4}} \frac{-i}{p - i\epsilon} e^{i p \cdot (x - y)} \times P_{\mu \nu} (p)
+\end{gathered}
 $$
 
 Where $P$ is described by the “adaptors”
 $$
+\begin{gathered}
 P_{\mu \nu} (p) = \sum_{h = \pm 1} e_{\mu}^{(h)} (p) e_{\nu}^{(h) *} (p) \\ =
 A \eta_{\mu \nu} + B \times \frac{p_{\mu} p_{\nu}}{p^{2}}
+\end{gathered}
 $$
 Take the photon propagating in the z direction , we can know that
 $$
@@ -194,8 +198,10 @@ $$
 $$
 The total Lagrangian is
 $$
+\begin{gathered}
 \mathcal{L} = \mathcal{L}_{free} + \mathcal{L}_{GF} = \frac{1}{4} h_{\mu \nu} \square \bar{h}^{\mu \nu}  \\ =
 \frac{1}{8} h_{\mu \nu} (2 \eta^{\mu (\rho} \eta^{\sigma) \nu} - \eta^{\mu \nu} \eta^{\rho \sigma}) \square h_{\rho \sigma}
+\end{gathered}
 $$
 The propagator is described by the equation
 $$
@@ -207,8 +213,10 @@ G_{\mu \nu, \rho \sigma} (p) = - \frac{i}{p^{2} - i \epsilon} \left[2 \eta_{\mu 
 $$
 Doing the same trick between the two sources
 $$
+\begin{gathered}
 i M(p) = \left(\frac{i \kappa}{2}\right)^{2} T_{A}^{\mu \nu} (-p) G_{\mu \nu, \rho \sigma} (p) T^{\rho \sigma}_{B} (p) \\ =
 \frac{i \kappa^{2}}{4 p^{2}} \left[2 T_{A}^{\mu \nu} (-p) T_{B \mu \nu} (p) - T_{A} (p) T_{B} (p)\right]
+\end{gathered}
 $$
 Using the current conservation law
 $$
@@ -216,9 +224,11 @@ $$
 $$
 And this will give out the amplitude
 $$
+\begin{gathered}
 M (p) = \frac{\kappa^{2}}{4 (- E^{2} + p^{2})} \left[(T_{A}^{11} - T_{A}^{22}) (T_{B}^{11} - T_{B}^{22}) + 4 T_{A}^{12} T_{B}^{12}\right] \\ + 
 \frac{\kappa^{2}}{4 p^{2}} \left(1 - \frac{E^{2}}{p^{2}}\right) T_{A}^{00} T_{B}^{00} \\ +
 \frac{\kappa^{2}}{4 p^{2}} \left[T_{A}^{00} (T_{B}^{11} + T_{B}^{22}) + (T_{A}^{11} + T_{A}^{22}) T_{B}^{00} - 4 (T_{A}^{01} T_{B}^{01} + T_{A}^{02} T_{B}^{02}) \right]
+\end{gathered}
 $$
 The first term is on-shell poles of the gravitons, the second term is the Newtonian potential, and the third term gives out the velocity-dependent potential.
 

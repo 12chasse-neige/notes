@@ -6,8 +6,10 @@ Chasse_neige
 
 首先给出归一化之后的波函数以及能级
 $$
+\begin{gathered}
 \psi_{n} (x) = \sqrt{\frac{2}{L}} \sin (\frac{n \pi}{L} x) \quad (0 \leq x \leq L) \\
 E_{n} = \frac{n^{2} \pi^{2} \hbar^{2}}{2m L^{2}}
+\end{gathered}
 $$
 
 所以对于阱壁的压力可以表示为

@@ -80,8 +80,10 @@ n = \frac{N}{A} = \frac{p_{F}^{2}}{2\pi\hbar^{2}}
 $$
 费米动量和费米能量分别为
 $$
+\begin{gathered}
 p_{F} = \hbar (2\pi n)^{\frac{1}{2}} \\
 \varepsilon_{F} = \frac{p_{F}^{2}}{2m} = \frac{\pi\hbar^{2}n}{m}
+\end{gathered}
 $$
 内能为
 $$
@@ -168,8 +170,10 @@ $$
 
 设外磁场为 $B$，对于磁矩平行和反平行于磁场的电子，能量分别移动 $\mp\mu_{B}B$，单位体积内两种取向的电子数为
 $$
+\begin{gathered}
 n_{+} = \int_{0}^{\infty} g(\varepsilon) f(\varepsilon - \mu_{B}B)\dd{\varepsilon} \\
 n_{-} = \int_{0}^{\infty} g(\varepsilon) f(\varepsilon + \mu_{B}B)\dd{\varepsilon}
+\end{gathered}
 $$
 磁化强度为
 $$
@@ -194,8 +198,10 @@ $$
 这就是题目要求的结果。在 $T=0$ 时，能量低于费米能量的态全部被占据，高于费米能量的态为空态，也就是
 
 $$
+\begin{gathered}
 f(\varepsilon) = 1,\quad 0\leq \varepsilon < \varepsilon_{F} \\
 f(\varepsilon) = 0,\quad \varepsilon > \varepsilon_{F}
+\end{gathered}
 $$
 所以
 $$

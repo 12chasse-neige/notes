@@ -67,8 +67,10 @@ $$
 (1) 求得生成函数
 
 $$
+\begin{gathered}
 \dd{F}_{2} = p_{1} \dd{q}_{1} + p_{2} \dd{q}_{2} + Q_{1} \dd{P}_{1} + Q_{2} \dd{P}_{2} \\ = 
 (P_{2} + q_{1} + q_{2} P_{1}) \dd{q}_{1} + (P_{2} + q_{2} + q_{1} P_{1}) \dd{q}_{2} + q_{1} q_{2} \dd{P}_{1} + (q_{1} + q_{2}) \dd{P}_{2}
+\end{gathered}
 $$
 所以
 $$
@@ -102,9 +104,11 @@ $$
 
 首先写出坐标变换关系
 $$
+\begin{gathered}
 \rho' = \rho \\
 \phi' = \phi - \omega t \\
 z' = z
+\end{gathered}
 $$
 利用旋转系内坐标重新表示拉格朗日量得到
 $$
@@ -112,14 +116,18 @@ L' = \frac{1}{2} m (\dot{\rho'}^{2} + \rho'^{2} (\dot{\phi'} + \omega)^{2} + \do
 $$
 得到旋转系内的广义动量为
 $$
+\begin{gathered}
 p'_{\rho'} = m \dot{\rho'} \\
 p'_{\phi'} = m \rho'^{2} (\dot{\phi'} + \omega) \\
 p'_{z'} = m \dot{z'}
+\end{gathered}
 $$
 所以第二种正则变换生成函数为
 $$
+\begin{gathered}
 F_{2} (q_{i}, P_{i}) = m \left( \dot{\rho'} \rho' + \rho'^{2} (\dot{\phi'} + \omega) \phi' + \dot{z'} z' \right) \\=
 p'_{\rho'} \rho + p'_{\phi'} (\phi - \omega t) + p'_{z'} z
+\end{gathered}
 $$
 利用 
 $$
@@ -131,15 +139,19 @@ H' - H = - p'_{\phi'} \omega
 $$
 所以
 $$
+\begin{gathered}
 H' = \frac{1}{2}m(\dot{\rho}^{2} + \rho^{2} \dot{\phi}^{2} + \dot{z}^{2}) + V( \sqrt{\rho^{2} + z^{2}}) - p'_{\phi'} \omega \\=
 \frac{1}{2} p'_{\rho'} \dot{\rho'} + \frac{1}{2} p'_{\phi'} (\dot{\phi'} + \omega) + \frac{1}{2} p'_{z'} \dot{z'}  + V - p'_{\phi'} \omega \\= 
 \frac{{p'_{\rho'}}^{2}}{2m} + \frac{p'_{\phi'} (p'_{\phi'} - 2m \omega \rho'^{2})}{2m \rho'^{2}} + \frac{{p'_{z'}}^{2}}{2m} + V
+\end{gathered}
 $$
 正则方程
 $$
+\begin{gathered}
 \dot{p'}_{\rho'} = - m \pdv{V}{\rho'} + \frac{{p'_{\phi'}}^{2}}{m \rho'^{3}} \\
 \dot{p'}_{\phi'} = - m \pdv{V}{\phi'} \\
 \dot{p'}_{z'} = - m \pdv{V}{z'}
+\end{gathered}
 $$
 虚拟力，从运动方程中得到
 $$

@@ -46,8 +46,10 @@ $Y_{2}^{-1} = \sqrt{\frac{15}{8\pi}} \sin \theta \cos \theta e^{-i\varphi}$
 
 15.求解如下定解问题
 $$
+\begin{gathered}
 \nabla^{2} u  = A + B r^{2} \sin 2 \theta \cos \varphi \\
 u \mid_{r=a}  = 0
+\end{gathered}
 $$
 由于方程线性，解由两部分组成：$u = u_{1} + u_{2}$，其中 $u_{1}$ 对应源项 $A$，$u_{2}$ 对应源项 $B r^{2} \sin 2\theta \cos \varphi$。
 

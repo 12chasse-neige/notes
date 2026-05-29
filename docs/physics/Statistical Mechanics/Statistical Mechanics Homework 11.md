@@ -80,8 +80,10 @@ $$
 
 把 $N_{A}$ 和 $N_{B}$ 看作两种分子的粒子数。两种分子的单粒子配分函数分别为
 $$
+\begin{gathered}
 z_{A} = V\left(\frac{2\pi m_{A} k_{B}T}{h^{2}}\right)^{\frac{3}{2}} \\
 z_{B} = V\left(\frac{2\pi m_{B} k_{B}T}{h^{2}}\right)^{\frac{3}{2}}
+\end{gathered}
 $$
 由于同种分子不可分辨而不同种分子可以分辨，总配分函数为
 $$
@@ -117,18 +119,24 @@ S = k_{B}(\ln Z+\beta U)
 $$
 代入上面的 $\ln Z$ 和 $U$，得到
 $$
+\begin{gathered}
 S = k_{B}N_{A}\left\{\ln\left[\frac{V}{N_{A}}\left(\frac{2\pi m_{A} k_{B}T}{h^{2}}\right)^{\frac{3}{2}}\right]+\frac{5}{2}\right\} \\
 + k_{B}N_{B}\left\{\ln\left[\frac{V}{N_{B}}\left(\frac{2\pi m_{B} k_{B}T}{h^{2}}\right)^{\frac{3}{2}}\right]+\frac{5}{2}\right\}
+\end{gathered}
 $$
 令
 $$
+\begin{gathered}
 \lambda_{A} = \frac{h}{\sqrt{2\pi m_{A} k_{B}T}} \\
 \lambda_{B} = \frac{h}{\sqrt{2\pi m_{B} k_{B}T}}
+\end{gathered}
 $$
 化学势分别由
 $$
+\begin{gathered}
 \mu_{A} = \left(\pdv[]{F}{N_{A}}\right)_{T,V,N_{B}} \\
 \mu_{B} = \left(\pdv[]{F}{N_{B}}\right)_{T,V,N_{A}}
+\end{gathered}
 $$
 给出，因此
 $$
@@ -154,8 +162,10 @@ $$
 $$
 对于具有 $f$ 个二次型自由度的经典理想气体，能均分定理给出
 $$
+\begin{gathered}
 U = \frac{f}{2}Nk_{B}T \\
 C_{V} = \frac{f}{2}Nk_{B}
+\end{gathered}
 $$
 所以
 $$
@@ -218,7 +228,7 @@ $$
 $$
 Q_{N} \approx \int \left(1+\sum_{i<j}f_{ij}\right)\prod_{i=1}^{N}\dd[2]{r_{i}}
 $$
-第一项给出 $S^{N}$。对于任意一对粒子，有
+对于任意一对粒子，有
 $$
 \int f_{12}\prod_{i=1}^{N}\dd[2]{r_{i}}
 = S^{N-2}\int f_{12}\dd[2]{r_{1}}\dd[2]{r_{2}}
@@ -261,64 +271,68 @@ $$
 
 9.14 求伊辛模型在平均场近似下的临界指数。
 
-设伊辛模型的哈密顿量为
+设各向同性情形下伊辛模型的哈密顿量为
 $$
-\mathcal{H} = -J\sum_{\langle i,j\rangle}s_{i}s_{j} - h\sum_{i}s_{i}
+E = -\epsilon\sum_{\langle i,j\rangle}s_{i}s_{j} - \mu_{0} \mu H\sum_{i}s_{i}
 $$
 其中 $s_{i}=\pm 1$，$z$ 为每个格点的最近邻数。平均场近似下，用平均磁化强度
 $$
-m = \langle s_{i}\rangle
+\bar{S} = \langle s_{i}\rangle
 $$
-代替邻近自旋，于是自洽方程为
+代替邻近自旋，于是等效磁场强度为
 $$
-m = \tanh[\beta(zJm+h)]
+\bar{H} = H + \frac{1}{\mu_{0} \mu} z \epsilon \bar{S}
 $$
-在 $h=0$ 时，临界温度由线性项决定，即
+自洽方程为
 $$
-\beta_{c} zJ = 1
+\bar{S} = \tanh (\beta z \epsilon \bar{S} + \beta \mu_{0} \mu H)
+$$
+在 $H = 0$ 时，临界温度由线性项决定，即
+$$
+\beta_{c} z \epsilon = 1
 $$
 所以
 $$
-k_{B}T_{c} = zJ
+k_{B}T_{c} = z \epsilon
 $$
 
-先求序参量的临界指数。令 $h=0$，在 $T_{c}$ 附近 $m$ 很小，因此
+先求序参量的临界指数。令 $H = 0$，在 $T_{c}$ 附近 $\bar{S}$ 很小，因此
 $$
-m = \tanh\left(\frac{T_{c}}{T}m\right)
-\approx \frac{T_{c}}{T}m-\frac{1}{3}\left(\frac{T_{c}}{T}m\right)^{3}
+\bar{S} = \tanh\left(\frac{T_{c}}{T} \bar{S} \right)
+\approx \frac{T_{c}}{T} \bar{S} - \frac{1}{3}\left(\frac{T_{c}}{T} \bar{S} \right)^{3}
 $$
 当 $T<T_{c}$ 时，非零解满足
 $$
-m^{2} \approx 3\frac{\frac{T_{c}}{T}-1}{\left(\frac{T_{c}}{T}\right)^{3}}
+\bar{S}^{2} \approx 3\frac{\frac{T_{c}}{T}-1}{\left(\frac{T_{c}}{T}\right)^{3}}
 $$
 在临界点附近可以化为
 $$
-m^{2} \approx 3\frac{T_{c}-T}{T_{c}}
+\bar{S}^{2} \approx 3\frac{T_{c}-T}{T_{c}}
 $$
 所以
 $$
-m \propto (T_{c}-T)^{\frac{1}{2}}
+\bar{S} \propto (1- \frac{T}{T_{c}})^{\frac{1}{2}}
 $$
 因此序参量临界指数为
 $$
-\beta_{\mathrm{crit}} = \frac{1}{2}
+\beta = \frac{1}{2}
 $$
 
 再求磁化率指数。磁化率定义为
 $$
-\chi = \left(\pdv[]{m}{h}\right)_{h=0}
+\chi = \left(\pdv[]{M}{H}\right)_{H=0}
 $$
 对平均场方程求导，得到
 $$
-\chi = (1-m^{2})\beta(zJ\chi+1)
+\chi = (1-\bar{S}^{2})\beta(z\epsilon\chi+1)
 $$
 也就是
 $$
-\chi = \frac{\beta(1-m^{2})}{1-\beta zJ(1-m^{2})}
+\chi = \frac{\beta(1 - \bar{S}^{2})}{1-\beta z \epsilon (1-\bar{S}^{2})}
 $$
-当 $T>T_{c}$ 时，$m=0$，所以
+当 $T>T_{c}$ 时，$\bar{S} = 0$，所以
 $$
-\chi = \frac{\beta}{1-\beta zJ}
+\chi = \frac{\beta}{1-\beta z \epsilon}
 = \frac{1}{k_{B}(T-T_{c})}
 $$
 当 $T<T_{c}$ 时，代入 $m^{2}\approx 3(T_{c}-T)/T_{c}$，也有
@@ -332,15 +346,15 @@ $$
 
 在临界等温线上，令 $T=T_{c}$，平均场方程变为
 $$
-m = \tanh\left(m+\frac{h}{k_{B}T_{c}}\right)
+\bar{S} = \tanh\left(\bar{S} + \frac{\mu_{0}\mu H}{k_{B}T_{c}}\right)
 $$
 展开到最低非线性阶，得到
 $$
-m \approx m+\frac{h}{k_{B}T_{c}}-\frac{1}{3}m^{3}
+\bar{S} \approx \bar{S} + \frac{\mu_{0} \mu H}{k_{B}T_{c}}-\frac{1}{3} \bar{S}^{3}
 $$
 因此
 $$
-h \propto m^{3}
+H \propto \bar{S}^{3}
 $$
 所以临界等温线指数为
 $$
@@ -349,9 +363,9 @@ $$
 
 最后看热容量。平均场近似下，零场时相互作用能为
 $$
-U = -\frac{1}{2}NzJm^{2}
+U = -\frac{1}{2}Nz \epsilon \bar{S}^{2}
 $$
-当 $T>T_{c}$ 时，$m=0$，这部分热容量没有奇异贡献。当 $T<T_{c}$ 时，代入 $m^{2}\approx 3(T_{c}-T)/T_{c}$，得到
+当 $T>T_{c}$ 时，$\bar{S} = 0$，这部分热容量没有奇异贡献。当 $T<T_{c}$ 时，代入 $\bar{S}^{2} \approx 3(T_{c}-T)/T_{c}$，得到
 $$
 U \approx -\frac{3}{2}Nk_{B}(T_{c}-T)
 $$
@@ -366,13 +380,17 @@ $$
 
 综上，平均场近似下伊辛模型的主要临界指数为
 $$
+\begin{gathered}
 \alpha = 0 \\
-\beta_{\mathrm{crit}} = \frac{1}{2} \\
+\beta = \frac{1}{2} \\
 \gamma = 1 \\
 \delta = 3
+\end{gathered}
 $$
 如果还把关联长度和临界关联函数的指数列入平均场结果，则有
 $$
+\begin{gathered}
 \nu = \frac{1}{2} \\
 \eta = 0
+\end{gathered}
 $$

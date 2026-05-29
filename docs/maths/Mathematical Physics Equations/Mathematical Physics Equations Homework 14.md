@@ -63,8 +63,10 @@ $$
 
 即
 $$
+\begin{gathered}
 x(t) = H \frac{\omega_{0}^{2} - \omega^{2}}{(\omega_{0}^{2} - \omega^{2})^{2} + 4\beta^{2}\omega^{2}} \cos\omega t + H \frac{2\beta\omega}{(\omega_{0}^{2} - \omega^{2})^{2} + 4\beta^{2}\omega^{2}} \sin\omega t \\
 - H e^{-\beta t} \left( \frac{\omega_{0}^{2} - \omega^{2}}{(\omega_{0}^{2} - \omega^{2})^{2} + 4\beta^{2}\omega^{2}} \cos\sqrt{\omega_{0}^{2} - \beta^{2}} t + \beta \frac{\omega_{0}^{2} + \omega^{2}}{(\omega_{0}^{2} - \beta^{2}) ((\omega_{0}^{2} - \omega^{2})^{2} + 4\beta^{2}\omega^{2})} \sin\sqrt{\omega_{0}^{2} - \beta^{2}} t \right)
+\end{gathered}
 $$
 2.利用 Laplace 变换求解半无界问题
 $$
@@ -179,8 +181,10 @@ $$
 $$
 逆变换，利用卷积定理
 $$
+\begin{gathered}
 \mathscr{F}^{-1}[\Psi(\vec{k}) \frac{\sin (akt)}{ak}] = \frac{1}{(2 \pi)^{\frac{3}{2}}} \int \psi (\vec{\xi}) \frac{\sqrt{2 \pi} \delta(|\vec{r} - \vec{\xi}| - at)}{2a |\vec{r} - \vec{\xi}|} \, \dd[3]{\xi} \\ =
 \frac{1}{2 \pi a} \iint_{D} \frac{\psi(x', y')}{\sqrt{(x - x')^{2} + (y - y')^{2}}} \, \dd{x'} \dd{y'}
+\end{gathered}
 $$
 另一项
 $$
@@ -188,7 +192,9 @@ $$
 $$
 相加得到
 $$
+\begin{gathered}
 u(x,y,t) = \frac{1}{2\pi a} \iint_{D} \frac{\psi(x',y')}{\sqrt{a^{2} t^{2} - (x-x')^{2} - (y-y')^{2}}} \, dx' dy' \\
 + \frac{1}{2 \pi a} \frac{\partial}{\partial t} \iint_{D} \frac{\phi(x',y')}{\sqrt{a^{2} t^{2} - (x-x')^{2} - (y-y')^{2}}} \, dx' dy'
+\end{gathered}
 $$
 其中积分区域 $D = \{ (x',y') : (x-x')^{2} + (y-y')^{2} \leq a^{2} t^{2} \}$

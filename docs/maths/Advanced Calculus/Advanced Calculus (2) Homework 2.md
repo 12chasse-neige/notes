@@ -179,11 +179,15 @@ $$
 
 证明：利用柯西准则证明。记$\{b_{n}(x)\}_{n=1}^{\infty}$ 的部分和 $\sum_{k = 1}^{n} b_{k} (x) = B_{n} (x)$
 $$
+\begin{gathered}
 \sum_{k=n+1}^{m} a_{k}(x) b_{k}(x) = \sum_{k=n+1}^{m} a_{k} (x) (B_{k} (x) - B_{k - 1} (x)) \\ = a_{m}(x) B_{m}(x) - a_{n+1}(x) B_{n}(x) + \sum_{k=n+1}^{m-1} (a_{k}(x) - a_{k+1}(x)) B_{k}(x)
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 \Big|\sum_{k=n+1}^{m} a_{k}(x) b_{k}(x) \Big| \leq |a_{m}(x) B_{m}(x)| + |a_{n+1}(x) B_{n}(x)| + \sum_{k=n+1}^{m-1} (a_{k}(x) - a_{k+1}(x)) |B_{k}(x)| \\ \leq |a_{n} (x)| M + |a_{m} (x)| M + |a_{n+1} (x) - a_{m} (x)| M
+\end{gathered}
 $$
 
 由于函数序列 $\{a_{n}(x)\}_{n=1}^{\infty}$ 在区间 $I$ 上一致收敛到零函数，所以 $\forall \epsilon > 0 ,\exist N, s.t. \forall x \in I, \forall n > N, |a_{n} (x)| < \frac{\epsilon}{4M}$
@@ -212,8 +216,10 @@ $$
 $$
 由于 $\{a_{n}(x)\}$ 是单调的，假设其单调递减（单调递增的情况类似），则 $a_{k}(x) - a_{k+1}(x) \geq 0$。
 $$
+\begin{gathered}
 \sum_{k=n+1}^{m} a_{k}(x) b_{k}(x) = a_{m}(x) B_{m}(x) - a_{n+1}(x) B_{n}(x) + \sum_{k=n+1}^{m-1} (a_{k}(x) - a_{k+1}(x)) B_{k}(x) \\ = a_{m} (x) (B_{m} (x) - B_{n} (x)) + \sum_{k = n + 1}^{m - 1} (a_{k} (x) - a_{k+1} (x))(B_{k} (x) - B_{n} (x)) \\ \leq |a_{m} (x)||B_{m} (x) - B_{n} (x)| + \sum_{k = n + 1}^{m - 1} |a_{k} (x) - a_{k+1} (x)||B_{k} (x) - B_{n} (x)| \leq \frac{\epsilon}{3} + (a_{n+1} (x) - a_{m} (x)) \epsilon \\ =
 \frac{\epsilon}{3} + \frac{2}{2} \epsilon = \epsilon
+\end{gathered}
 $$
 
 这表明 $\sum_{n=1}^{\infty} a_{n}(x) b_{n}(x)$ 满足一致收敛的柯西准则，所以 函数级数 $\sum_{n=1}^{\infty} a_{n}(x) b_{n}(x)$ 在区间 $I$ 上一致收敛。

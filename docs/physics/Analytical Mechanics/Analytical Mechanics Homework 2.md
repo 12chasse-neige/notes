@@ -12,8 +12,10 @@ L = \frac{1}{2} 2m \dot{x}^{2} - (\frac{1}{2} k x^{2} - mgx) = m \dot{x}^{2}  - 
 $$
 带入拉格朗日方程
 $$
+\begin{gathered}
 \frac{d}{dt} 2m \dot{x} = -kx + mg \\
 2m \ddot{x} = - kx + mg
+\end{gathered}
 $$
 
 ### 1.11
@@ -30,13 +32,17 @@ L = \frac{1}{2} M \dot{X}^{2} + \frac{1}{2} m ((\dot{X} + \dot{l} \cos \theta)^{
 $$
 带入拉格朗日方程
 $$
+\begin{gathered}
 \frac{d}{dt} (M \dot{X} + m \dot{X} + m \dot{l} \cos \theta) = 0 \\
 \frac{d}{dt} (m \dot{X} \cos \theta + m \dot{l}) = - mg \sin \theta
+\end{gathered}
 $$
 即
 $$
+\begin{gathered}
 (M + m) \ddot{X} + m \cos \theta \ddot{l} = 0 \\
 m \cos \theta \ddot{X} + m \ddot{l} = - mg \sin \theta
+\end{gathered}
 $$
 解得小块相对斜面的加速度为
 $$
@@ -56,13 +62,17 @@ L = \frac{1}{2} m (\dot{r}^{2} + r^{2} \sin^{2} \alpha \dot{\theta}^{2}) - mg r 
 $$
 带入拉格朗日方程
 $$
+\begin{gathered}
 \frac{d}{dt} (m \dot{r}) = m \sin^{2} \alpha \dot{\theta}^{2} r - mg \cos \alpha \\
 \frac{d}{dt} (m r^{2} \sin^{2} \alpha \dot{\theta}) = 0
+\end{gathered}
 $$
 得到
 $$
+\begin{gathered}
 g \cos \alpha + \ddot{r} - r \dot{\theta}^{2} \sin^{2} \alpha = 0 \\
 2 \dot{r} \dot{\theta} + r \ddot{\theta} = 0
+\end{gathered}
 $$
 注意到 $\theta$ 是循环坐标 ，所以存在循环积分
 $$
@@ -81,9 +91,11 @@ $$
 
 带入拉格朗日方程
 $$
+\begin{gathered}
 \frac{d}{dt} (\gamma t \dot{x} e^{\frac{\gamma t}{m}(T-V)})  = - \frac{\gamma t}{m} \frac{\partial V}{\partial x} e^{\frac{\gamma t}{m}(T-V)} \\
 \frac{d}{dt} (\gamma t \dot{y} e^{\frac{\gamma t}{m}(T-V)})  = - \frac{\gamma t}{m} \frac{\partial V}{\partial y} e^{\frac{\gamma t}{m}(T-V)} \\
 \frac{d}{dt} (\gamma t \dot{z} e^{\frac{\gamma t}{m}(T-V)})  = - \frac{\gamma t}{m} \frac{\partial V}{\partial z} e^{\frac{\gamma t}{m}(T-V)} \\
+\end{gathered}
 $$
 所以运动微分方程为
 $$
@@ -191,9 +203,11 @@ $$
 
 在旋转系中，坐标与地面系之间的对应关系为
 $$
+\begin{gathered}
 \rho' = \rho \\
 z' = z \\
 \varphi' = \varphi - \omega t
+\end{gathered}
 $$
 所以旋转系中的拉格朗日量可以写作
 $$
@@ -208,19 +222,25 @@ $$
 (2) 给出拉格朗日方程；
 
 $$
+\begin{gathered}
 \frac{d}{dt} (m \dot{\rho'}) = \frac{p_{\varphi'}^{2}}{m \rho'^{3}} - \frac{\partial V}{\partial \rho'} \\
 \frac{d}{dt} (m \dot{z'}) = - \frac{\partial V}{\partial z'}
+\end{gathered}
 $$
 即
 $$
+\begin{gathered}
 m \ddot{\rho'} = \frac{p_{\varphi'}^{2}}{m \rho'^{3}} - \frac{\partial V}{\partial \rho'} \\
 m \ddot{z'} = - \frac{\partial V}{\partial z'}
+\end{gathered}
 $$
 也可以写为
 $$
+\begin{gathered}
 \ddot{\rho'} - \rho' \dot{\varphi'}^{2} - 2\omega \rho' \dot{\varphi'} - \omega^{2} \rho' + \frac{1}{m} \frac{\partial V}{\partial \rho'} = 0 \\
 \rho' \ddot{\varphi'} + 2 \dot{\rho'} \dot{\varphi'} + 2 \dot{\rho'} \omega = 0 \\
 \ddot{z'} + \frac{1}{m} \frac{\partial V}{\partial z'} = 0
+\end{gathered}
 $$
 的形式。
 

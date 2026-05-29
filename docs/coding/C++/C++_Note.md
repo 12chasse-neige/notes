@@ -4866,15 +4866,19 @@ $$
 根据极值原理，a 和b 满足下列方程：
 
 $$
+\begin{gathered}
 \frac{\partial Q}{\partial a} = 2 \sum_{i = 0}^{n - 1} (y_{i} - (a x_{i} + b)) (- x_{i}) = 0 \\
 \frac{\partial Q}{\partial b} = 2 \sum_{i = 0}^{n - 1} (y_{i} - (a x_{i} + b)) (- 1) = 0 
+\end{gathered}
 $$
 
 解得：
 
 $$
+\begin{gathered}
 a = \frac{L_{xy}}{L_{xx}} = \frac{\sum_{i = 0}^{n - 1} (x_{i} - \bar{x})(y_{i} - \bar{y})}{\sum_{i = 0}^{n - 1} (x_{i} - \bar{x})^{2}} \\
 b - \bar{y} - a \bar{x} 
+\end{gathered}
 $$
 
 最终可以得到直线方程 $y(x)= ax + b$。

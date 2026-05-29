@@ -65,8 +65,10 @@ N = \sum_{n_{x}, n_{y}, n_{z}} \frac{1}{e^{\beta \hbar (n_{x} \omega_{x} + n_{y}
 $$
 对于稠密的情况，进行积分近似
 $$
+\begin{gathered}
 N \approx \int \dd{n}_{x} \int \dd{n}_{y} \int \dd{n}_{z} \frac{1}{e^{\beta \hbar(n_{x} \omega_{x} + n_{y} \omega_{y} + n_{z} \omega_{z})} - 1} \\ =
 \frac{1}{(\beta\hbar)^{3} \omega_{x} \omega_{y} \omega_{z}} \int_{0}^{\infty} \dd{x} \int_{0}^{\infty} \dd{y} \int_{0}^{\infty} \dd{z} \frac{1}{e^{x + y + z} - 1}  = \frac{\zeta(3)}{(\beta\hbar)^{3} \omega_{x} \omega_{y} \omega_{z}}
+\end{gathered}
 $$
 所以
 $$
@@ -106,8 +108,10 @@ $$
 $$
 所以此时在临界温度以下，激发态粒子数为
 $$
+\begin{gathered}
 N = \int \dd{n}_{x} \int \dd{n}_{y} \frac{1}{e^{\beta \hbar (n_{x} \omega_{x} + n_{y} \omega_{y})} - 1} \\ =
 \frac{1}{\beta^{2} \hbar^{2} \omega_{x} \omega_{y}} \int_{0}^{\infty} \dd{x} \int_{0}^{\infty} \dd{y} \frac{1}{e^{x + y} - 1} \approx \frac{1.645}{\beta^{2} \hbar^{2} \omega_{x} \omega_{y}}
+\end{gathered}
 $$
 记 $\bar{\omega} = \sqrt{\omega_{x} \omega_{y}}$ ，则此时确定临界温度的表达式为
 $$

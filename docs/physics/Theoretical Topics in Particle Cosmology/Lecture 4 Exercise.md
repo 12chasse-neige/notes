@@ -22,8 +22,10 @@ U(t, t_{0}) = 1 + \sum_{n} \frac{(-i)^{n}}{n!} \prod_{i = 1}^{n} \int \dd{t}_{i}
 $$
 So using the Dyson series, we can get the time evolving operator from $- \infty$ to $\infty$
 $$
+\begin{gathered}
 U (\infty, - \infty) = T \left\{ \exp(-i \int_{-\infty}^{\infty}V (\tau) \dd{\tau}) \right\} \\ =
 T \left\{ \exp(-i \int_{-\infty}^{\infty}\dd{\tau} \int \dd[3]{\vec{x}} j(t, \vec{x}) O (t, \vec{x}) ) \right\} = T \left\{ \exp(-i \int \dd[4]{\vec{x}} j(t, \vec{x}) O (t, \vec{x}) ) \right\}
+\end{gathered}
 $$
 So the component of the S-matrix can be represented as
 $$
@@ -108,8 +110,10 @@ $$
 >   Claim: Only the **one‑particle state part** contributes poles.
 >
 > $$
+> \begin{gather}
 > \langle \Omega | T\big\{ O_{\ell+1}\cdots O_{n} \big\} T\big\{ O_{1}\cdots O_{\ell} \big\} | \Omega \rangle \\ = 
 > \int \frac{d^{3}\mathbf{p}}{(2\pi)^{3}}\frac{1}{2E_{p}} \langle \Omega | T\big\{ O_{\ell+1}\cdots O_{n} \big\} | \mathbf{p} \rangle \langle \mathbf{p} | T\big\{ O_{1}\cdots O_{\ell} \big\} | \Omega \rangle + \cdots \tag{17}
+> \end{gather}
 > $$
 >
 >3. Rewrite
@@ -157,6 +161,7 @@ $$
 After using the integral representation of the $\theta$-function and inserting the complete set of states, keeping only the one‑particle contribution, we have
 
 $$
+\begin{gather}
 G_{\text{pole}} = \int\prod_{a=1}^{n} d^{4}x_{a}\,e^{-ik_{a}\cdot x_{a}}
 \frac{-1}{2\pi i}\int \frac{d\omega}{\omega+i\epsilon}\,
 e^{-i\omega[\min\{x^{0}_{\ell+1},\dots ,x^{0}_{n}\}-\max\{x^{0}_{1},\dots ,x^{0}_{\ell}\}]} \\
@@ -165,6 +170,7 @@ e^{-i\omega[\min\{x^{0}_{\ell+1},\dots ,x^{0}_{n}\}-\max\{x^{0}_{1},\dots ,x^{0}
 \langle\Omega|T\{O_{\ell+1}(x_{\ell+1})\cdots O_{n}(x_{n})\}|\mathbf{p}\rangle
 \langle\mathbf{p}|T\{O_{1}(x_{1})\cdots O_{\ell}(x_{\ell})\}|\Omega\rangle 
 \tag{A}
+\end{gather}
 $$
 
 The pole at $s_{\ell}=m^{2}$ comes from the region where the early operators $(O_{1},\dots ,O_{\ell})$ are all earlier than the late operators $(O_{\ell+1},\dots ,O_{n})$.  In that region the time ordering factorises
@@ -187,6 +193,7 @@ $$
 
 Using the momentum eigenstate property $P^{\mu}|\mathbf{p}\rangle=p^{\mu}|\mathbf{p}\rangle$ we can extract the dependence on the reference points
 $$
+\begin{gather}
 \langle\mathbf{p}|T\{O_{1}(x_{1})\cdots O_{\ell}(x_{\ell})\}|\Omega\rangle
 =e^{-ip\cdot x_{1}}
 \langle\mathbf{p}|T\{O_{1}(0)O_{2}(z_{2})\cdots O_{\ell}(z_{\ell})\}|\Omega\rangle \\
@@ -194,14 +201,17 @@ $$
 =e^{ip\cdot x_{\ell+1}}
 \langle\Omega|T\{O_{\ell+1}(0)O_{\ell+2}(y_{\ell+2})\cdots O_{n}(y_{n})\}|\mathbf{p}\rangle 
 \tag{D}
+\end{gather}
 $$
 
 Insert (C) and (D) into (A).  The Fourier exponentials combine as
 $$
+\begin{gathered}
 \sum_{a=1}^{\ell}k_{a}\!\cdot\! x_{a}
 =K_{1\cdots\ell}\!\cdot\! x_{1}+\sum_{i=2}^{\ell}k_{i}\!\cdot\! z_{i} \\
 \sum_{a=\ell+1}^{n}k_{a}\!\cdot\! x_{a}
 =K_{(\ell+1)\cdots n}\!\cdot\! x_{\ell+1}+\sum_{i=\ell+2}^{n}k_{i}\!\cdot\! y_{i}
+\end{gathered}
 $$
 where
 $$
@@ -211,11 +221,13 @@ $$
 
 The integrals over $x_{1}$ and $x_{\ell+1}$ are now Gaussian and yield delta‑functions
 $$
+\begin{gather}
 \int d^{4}x_{1}\,e^{-i(K_{1\cdots\ell}+p-(\omega,0,0,0))\cdot x_{1}}
 =(2\pi)^{4}\delta^{(4)}\!\big(K_{1\cdots\ell}+p-(\omega,\mathbf{0})\big) \\
 \int d^{4}x_{\ell+1}\,e^{-i(K_{(\ell+1)\cdots n}-p+(\omega,0,0,0))\cdot x_{\ell+1}}
 =(2\pi)^{4}\delta^{(4)}\!\big(K_{(\ell+1)\cdots n}-p+(\omega,\mathbf{0})\big)
 \tag{E}
+\end{gather}
 $$
 
 The two delta‑functions in (E) enforce
@@ -247,6 +259,7 @@ $$
 because in that case $\omega$ can be small (near the pole) while $E_{p}>0$. After performing the integrals over $x_{1},x_{\ell+1}$ and using the delta‑functions to eliminate $p$, the expression (A) reduces to
 
 $$
+\begin{gathered}
 G_{\text{pole}}=
 \frac{-1}{2\pi i}\int d\omega\,
 \frac{1}{\omega+i\epsilon}\;
@@ -261,6 +274,7 @@ G_{\text{pole}}=
 \qquad\times
 \Big[\int\prod_{a=1}^{\ell}d^{4}z_{a}\,e^{-i\sum k_{a}\cdot z_{a}}
 \langle\mathbf{p}|T\{O_{1}(0)O_{2}(z_{2})\cdots\}|\Omega\rangle\Big]
+\end{gathered}
 $$
 
 The three‑dimensional delta‑function sets $\mathbf{p}=-\mathbf{K}_{1\cdots\ell}$ and the energy delta‑function fixes $\omega$ as in (F).  The integrals over the internal coordinates $y_{i},z_{i}$ are precisely the definitions of the amputated Green functions $G_{L}$ and $G_{E}$ given in eqs. (8)–(9) of the theorem (up to the overall momentum‑conserving delta‑functions, which are already present).
@@ -273,10 +287,12 @@ $$
 
 Recall that $s_{\ell}\equiv -K_{1\cdots\ell}^{2}=-(K_{1\cdots\ell}^{0})^{2}+|\mathbf{K}_{1\cdots\ell}|^{2}$. Using $E_{p}^{2}=|\mathbf{K}_{1\cdots\ell}|^{2}+m^{2}$ we have
 $$
+\begin{gathered}
 K_{1\cdots\ell}^{0}+E_{p}+i\epsilon
 =\frac{(K_{1\cdots\ell}^{0}+E_{p})(K_{1\cdots\ell}^{0}-E_{p})}{K_{1\cdots\ell}^{0}-E_{p}}+i\epsilon\\
 =\frac{-(K_{1\cdots\ell}^{0})^{2}+E_{p}^{2}}{K_{1\cdots\ell}^{0}-E_{p}}+i\epsilon \\
 =\frac{-s_{\ell}+m^{2}}{K_{1\cdots\ell}^{0}-E_{p}}+i\epsilon
+\end{gathered}
 $$
 
 The factor $1/(K_{1\cdots\ell}^{0}-E_{p})$ is analytic near the pole and can be absorbed into the definition of the residues.  The singular part is therefore

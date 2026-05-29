@@ -82,8 +82,10 @@ $$
 $$
 
 $$
+\begin{gathered}
 [\sigma] = L^{2} = \frac{1}{M^{2}} (M L^{2} T^{- 1})^{\alpha} (L T^{-1})^{\beta} \\ 
 \Rightarrow \alpha = 2, \quad \beta = - 2
+\end{gathered}
 $$
 
 即
@@ -263,9 +265,11 @@ $$
 **练习 4** 利用泡利矩阵的性质，证明狄拉克表示中的 $\gamma$ 矩阵满足 $\{\gamma^{i} , \gamma^{j}\} = 2 g^{ij} = -  \delta^{ij}$，符合反对易关系。（反对易关系的其他分量，$(\gamma^{0})^{2} = 1$，$\{\gamma^{0}, \gamma^{i} \} = 0$，是平凡的证明。）
 
 >$$
+>\begin{gathered}
 >\{\gamma^{i} , \gamma^{j}\} = \gamma^{i} \gamma^{j} + \gamma^{j} \gamma^{i} = \begin{pmatrix} 0 & \sigma^{i} \\ -\sigma^{i} & 0 \end{pmatrix} \begin{pmatrix} 0 & \sigma^{j} \\ -\sigma^{j} & 0 \end{pmatrix} + \begin{pmatrix} 0 & \sigma^{j} \\ -\sigma^{j} & 0 \end{pmatrix} \begin{pmatrix} 0 & \sigma^{i} \\ -\sigma^{i} & 0 \end{pmatrix} 
 >\\ = 
 >2 \begin{pmatrix} - \{\sigma^{i}, \sigma^{j}\} & 0 \\ 0 & - \{\sigma^{i}, \sigma^{j}\} \end{pmatrix} = -2 \delta_{ij}
+>\end{gathered}
 >$$
 
 **练习 5** 证明在狄拉克表示中 $\gamma^{0} \gamma^{\mu} \gamma^{0} = \gamma^{\mu^{\dagger}}$

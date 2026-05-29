@@ -20,9 +20,11 @@ $$
 
 不正确
 $$
+\begin{gathered}
 a_{2} = \frac{1}{100} \\
 a_{2n} = \frac{1}{(2 n)^{3}} \quad (n \neq 1)\\ 
 a_{2n + 1} = \frac{1}{(2n + 1)^{2}}
+\end{gathered}
 $$
 此时$a_{2n} < a_{2n + 1}$，但是
 $$
@@ -34,8 +36,10 @@ $$
 
 不正确
 $$
+\begin{gathered}
 a_{2n} = \frac{1}{(2 n)^{3}} \\ 
 a_{2n + 1} = \frac{1}{(2n + 1)^{2}}
+\end{gathered}
 $$
 
 $$
@@ -52,8 +56,10 @@ $$
 
 不正确，反例
 $$
+\begin{gathered}
 a_{2n} = \frac{1}{2n}, \qquad a_{2n + 1} = \frac{1}{(2n + 1)^{2}} \\
 b_{2n} = \frac{1}{(2n)^{2}}, \qquad b_{2n + 1} = \frac{1}{2n + 1}
+\end{gathered}
 $$
 此时
 $$
@@ -121,15 +127,19 @@ $$
 
 当 $|z| > 1$ 时
 $$
+\begin{gathered}
 \left| \frac{z^{n-1}}{\left(1-z^{n}\right)\left(1-z^{n+1}\right)} \right| \leq \frac{|z|^{n - 1}}{(|z|^{n} - 1) (|z|^{n + 1} - 1)} = \frac{|z|^{n - 1}}{|z|^{2n + 1} - |z|^{n + 1} - |z|^{n}} \\
 \leq \frac{1}{|z|^{n + 2} - |z|^{2} - |z|} \leq \frac{1}{|z|} \frac{1}{|z|^{n + 1} - 2 |z|} = \frac{1}{|z|^{2}} \frac{1}{|z|^{n} - 2}
+\end{gathered}
 $$
 由比较定理，原级数绝对收敛，可以进行裂项
 $$
+\begin{gathered}
 \sum_{n=1}^{\infty} \frac{z^{n-1}}{\left(1-z^{n}\right)\left(1-z^{n+1}\right)} = \sum_{n=1}^{\infty} \frac{z^{n} - z^{n+1}}{\left(1-z^{n}\right)\left(1-z^{n+1}\right) z(1-z)} \\ = 
 \sum_{n = 1}^{\infty} \frac{1}{z (1 - z)} \left(\frac{1}{1 - z^{n}} - \frac{1}{1 - z^{n + 1}} \right) \\ = 
 \begin{cases} 
 \frac{1}{z (1 - z)^{2}} \qquad (|z| > 1) \\ 
 \frac{1}{(1 - z)^{2}} \qquad (|z| < 1)
 \end{cases}
+\end{gathered}
 $$

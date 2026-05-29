@@ -37,8 +37,10 @@ $$
 $$
 and we can get
 $$
+\begin{gathered}
 (\square - m^{2})\phi = -gj \\
 j_{\alpha} = q_{\alpha} \delta^{3} (\vec{x} - \vec{x}_{\alpha})
+\end{gathered}
 $$
 the form of $\phi$ is
 $$
@@ -86,8 +88,10 @@ $$
 
 for $\vec{k} = (0,0,k)$, we describe the polarization using the vector
 $$
+\begin{gathered}
 e_{x} = (1,0,0) \\
 e_{y} = (0,1,0)
+\end{gathered}
 $$
 or using the circular polarization
 $$
@@ -119,9 +123,11 @@ So $e_{\pm}^{\mu}$ is a L-vec only up to an additive term $\propto k^{\mu}$.
 
 we call them LGT (little group transformation, ISO(2)). The generators of the LGT’s commutations are
 $$
+\begin{gathered}
 \comm{R_{z}}{T_{x}} = i T_{y} \\
 \comm{R_{z}}{T_{y}} = -i T_{x} \\
 \comm{T_{x}}{T_{y}} = 0
+\end{gathered}
 $$
 Polarization is a representation of not LGT, but SO(2).
 

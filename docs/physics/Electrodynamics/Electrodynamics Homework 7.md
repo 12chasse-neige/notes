@@ -88,9 +88,11 @@ $$
 
 对于矩形波导中的 $TM$ 波，有分量
 $$
+\begin{gathered}
 E_{x} = A_{x} \cos k_{x} x \sin k_{y} y e^{i (k_{z} z - \omega t)} \\
 E_{y} = A_{y} \sin k_{x} x \cos k_{y} y e^{i (k_{z} z - \omega t)} \\
 E_{z} = A_{z} \sin k_{x} x \sin k_{y} y e^{i (k_{z} z - \omega t)}
+\end{gathered}
 $$
 由 $\nabla \cdot \vec{E} = 0$，得到$- k_{x} A_{x} - k_{y} A_{y} + i k_{z} A_{z} = 0$
 
@@ -99,9 +101,11 @@ $$
 对于$k_{x}$ 或 $k_{y}$ 中一个为 $0$ 的传播模式：不妨假设 $k_{x} = 0$
 则有
 $$
+\begin{gathered}
 E_{x} = A_{x}  \sin k_{y} y e^{i (k_{z} z - \omega t)} \\
 E_{y} = 0 \\
 E_{z} = 0
+\end{gathered}
 $$
 由于  $k_{y} A_{x} = k_{x} A_{y}$ ，所以 $A_{x} = 0$，即电场的三个方向分量均为零，故矩形波导管内不存在 $TM_{m0}$ 或 $TM_{0n}$ 波。
 
@@ -113,16 +117,20 @@ f_{c}^{(m,n)} = \frac{c}{2 \pi} \sqrt{\frac{m \pi}{L_{1}}^{2} + \frac{n \pi}{L_{
 $$
 在 $0.7 \, \text{cm} \times 0.4 \, \text{cm}$ 的矩形波导管中
 $$
+\begin{gathered}
 f_{c}^{10} = 2.14 \times 10^{10} \text{Hz} \\
 f_{c}^{01} = 3.75 \times 10^{10} \text{Hz}
+\end{gathered}
 $$
 所以仅有$TE_{10}$ 模式
 
 在 $0.7 \, \text{cm} \times 0.6 \, \text{cm}$ 的矩形波导管中
 $$
+\begin{gathered}
 f_{c}^{10} = 2.14 \times 10^{10} \text{Hz} \\
 f_{c}^{01} = 2.50 \times 10^{10} \text{HZ} \\
 f_{c}^{11} = 3.29 \times 10^{10} \text{Hz}
+\end{gathered}
 $$
 所以仅$TE_{10} ,\,  TE_{01}$ 模式可以传播
 
@@ -151,18 +159,22 @@ $$
 证明：
 对于定向传输中的$TM$波 ，作如下拆分：
 $$
+\begin{gathered}
 \vec{E} = (\vec{E}_{z} + \vec{E}_{t}) e^{i (k_{z} z - \omega t)} \\
 \vec{B} = (\vec{B}_{z} + \vec{B}_{t}) e^{i (k_{z} z - \omega t)} \\
 \nabla = \nabla_{xy} + \frac{\partial}{\partial_{z}} \hat{z}
+\end{gathered}
 $$
 所以麦克斯韦方程化为
 $$
+\begin{gathered}
 i \omega \vec{B}_{z} = \nabla_{xy} \times \vec{E}_{t} \\
 - i \mu \epsilon \omega \vec{E}_{z} = \nabla_{xy} \times \vec{B}_{t} \\
 i \omega \vec{B}_{t} = \nabla_{xy} \times \vec{E}_{z} + i k_{z} (\hat{z} \times \vec{E}_{t}) \\
 - i \mu \epsilon \omega \vec{E}_{t} = \nabla_{xy} \times \vec{B}_{z} + i k_{z} (\hat{z} \times \vec{B}_{t}) \\
 \nabla_{xy} \cdot \vec{E}_{t} + i k_{z} E_{z} = 0 \\
 \nabla_{xy} \cdot \vec{B}_{t} + i k_{z} B_{z} = 0
+\end{gathered}
 $$
 对于$TM$波，有 $B_{z} = 0$
 
@@ -184,13 +196,17 @@ $$
 $$
 所以
 $$
+\begin{gathered}
 i (\frac{k_{z}^{2}}{\omega} - \mu \epsilon \omega) \vec{E}_{t} = \frac{k_{z}}{\omega} \nabla_{xy} E_{z} \\
 \vec{E}_{t} = \frac{i k_{z}}{\mu\epsilon\omega^{2} - k_{z}^{2}} \nabla_{xy} E_{z}
+\end{gathered}
 $$
 所以
 $$
+\begin{gathered}
 i \omega \vec{B}_{t} = \nabla_{xy} \times \vec{E}_{z} + i k_{z} (\hat{z} \times \vec{E}_{t}) = \nabla_{xy} \times \vec{E}_{z} + i k_{z} (\hat{z} \times \frac{i k_{z}}{\mu\epsilon\omega^{2} - k_{z}^{2}} \nabla_{xy} E_{z}) \\ = 
 \nabla_{xy} \times \vec{E}_{z} - i k_{z} (\frac{i k_{z}}{\mu\epsilon\omega^{2} - k_{z}^{2}} \nabla_{xy} \times \vec{E}_{z}) = \frac{\mu \epsilon \omega^{2}}{\mu \epsilon \omega^{2} - k_{z}^{2}} \nabla_{xy} \times \vec{E}_{z}
+\end{gathered}
 $$
 即
 $$
@@ -204,5 +220,7 @@ $$
 $$
 面电流
 $$
+\begin{gathered}
 \vec{i}_{f} = \hat{n} \times \vec{H} = \frac{1}{\mu} \hat{n} \times \vec{B}_{t} e^{i (k_{z} z - \omega t)} = \frac{1}{\mu} \frac{-i \mu\epsilon\omega}{\mu\epsilon\omega^{2} - k_{z}^{2}} \hat{n} \times  (\nabla_{xy} \times \vec{E}_{z}) e^{i (k_{z} z - \omega t)} \\ = \frac{1}{\mu} \frac{i \mu\epsilon\omega}{\mu\epsilon\omega^{2} - k_{z}^{2}} (\hat{n} \cdot \nabla_{xy}) \vec{E}_{z}  e^{i (k_{z} z - \omega t)}
+\end{gathered}
 $$

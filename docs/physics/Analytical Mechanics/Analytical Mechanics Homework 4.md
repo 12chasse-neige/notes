@@ -32,16 +32,20 @@ C = \sin \theta
 $$
 所以
 $$
+\begin{gathered}
 \frac{x'}{\sqrt{1 + x'^{2}}} = \frac{\sin \theta}{\sqrt{1 + \beta n_{0} e^{- \alpha y}}} \\
 x' = \sqrt{\frac{1}{\cot^{2} \theta + \frac{\beta n_{0}}{\sin^{2} \theta} e^{- \alpha y}}}
+\end{gathered}
 $$
 积分得到
 $$
+\begin{gathered}
 x (y) = \int_{\infty}^{y} \sqrt{\frac{1}{\cot^{2} \theta + \frac{\beta n_{0}}{\sin^{2} \theta} e^{- \alpha y}}} \dd y = \sin \theta \int_{\infty}^{y} \sqrt{\frac{1}{\cos^{2} \theta + \beta n_{0} e^{- \alpha y}}} \dd y \\ 
 = \sin \theta \int_{\cos^{2} \theta}^{\cos^{2} \theta + \beta n_{0} e^{- \alpha y}} \sqrt{\frac{1}{u}} \dd{\left(- \frac{1}{\alpha} \ln(\frac{u - \cos^{2} \theta}{\beta n_{o}}) \right)} \\
 = - \frac{\sin \theta}{\alpha} \int_{\cos^{2} \theta}^{\cos^{2} \theta + \beta n_{0} e^{- \alpha y}} \frac{\dd u}{(u - \cos^{2} \theta) \sqrt{u}} = - \frac{2 \sin \theta}{\alpha} \int_{\cos \theta}^{\sqrt{\cos^{2} \theta + \beta n_{0} e^{- \alpha y}}} \frac{\dd x}{x^{2} - \cos^{2} \theta} \\
 = - \frac{\tan \theta}{\alpha} \int_{\cos \theta}^{\sqrt{\cos^{2} \theta + \beta n_{0} e^{- \alpha y}}} \frac{\dd x}{x - \cos \theta} - \frac{\dd x}{x + \cos \theta} \\
 = \frac{\tan \theta}{\alpha} \ln(\frac{\sqrt{\cos^{2} \theta + \beta n_{0} e^{- \alpha y}} + \cos \theta}{\sqrt{\cos^{2} \theta + \beta n_{0} e^{- \alpha y}} - \cos \theta}) + C
+\end{gathered}
 $$
 其中常数用来消除原点处 $y$ 坐标的发散
 

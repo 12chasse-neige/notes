@@ -17,9 +17,11 @@ $$
 $$
 
 $$
+\begin{gathered}
 s \equiv - (p_{1} + p_{2})^{2} \\
 t \equiv - (p_{1} + p_{4})^{2} \\
 u \equiv - (p_{1} + p_{3})^{2}
+\end{gathered}
 $$
 
 And we have
@@ -80,8 +82,10 @@ $$
 
 Under this representation 
 $$
+\begin{gathered}
 \lim_{s \to 0} i M_{4} = \frac{i}{s} \sum_{e} i M_{3} (1_{a}^{+}, 2_{b}^{+}, - s_{e}^{-}) \times i M_{3} (s_{e}^{+}, 3_{c}^{-}, 4_{d}^{-}) \\ =
 - \frac{i}{s} \sum_{e} \kappa_{abe} \kappa_{cde} \frac{[12]^{3}}{[1s] [s2]} \frac{\langle 34 \rangle^{3}}{\langle 3s \rangle \langle s4 \rangle}
+\end{gathered}
 $$
 Simplify
 $$
@@ -109,13 +113,17 @@ $$
 
 Amplitude is
 $$
+\begin{gathered}
 \lim_{t \to 0} i M_{4} = \frac{i}{t} \sum_{e} i M_{3} (1_{a}^{+}, 4_{d}^{-}, - t_{e}^{+}) \times i M_{3} (t_{e}^{-}, 2_{b}^{+}, 3_{c}^{-}) + i M_{3} (1_{a}^{+}, 4_{d}^{-}, - t_{e}^{-}) \times i M_{3} (t_{e}^{+}, 2_{b}^{+}, 3_{c}^{-}) \\ =
 - \frac{i}{t} \sum_{e} \kappa_{dae} \kappa_{bce} \left[\frac{[1t]^{3}}{[14] [4t]} \frac{\langle 3t \rangle^{3}}{\langle 32 \rangle \langle 2t \rangle} + \frac{[2t]^{3}}{[23] [3t]} \frac{\langle 4t \rangle^{3}}{\langle 41 \rangle \langle 1t \rangle}\right]
+\end{gathered}
 $$
 while $t \to 0$, we have
 $$
+\begin{gathered}
 [14] \langle 41 \rangle \approx O (t) \\
 [23] \langle 32 \rangle \approx O (t)
+\end{gathered}
 $$
 We suppose that $\langle 14 \rangle \approx O (t), [14] \approx O (1)$, so we can derive that
 $$
@@ -139,9 +147,11 @@ f (s, t, u) = \frac{A}{st} + \frac{B}{tu} + \frac{C}{us}
 $$
 where
 $$
+\begin{gathered}
 A - C = \alpha \\
 B - A = \beta \\
 C - B = \gamma
+\end{gathered}
 $$
 So this form is only possible if
 $$
@@ -162,12 +172,14 @@ $u$ and $t$ channels are similar.
 ### Gravity (j = 2)
 
 $$
+\begin{gathered}
 M_{4} (1_{a}^{+2}, 2_{b}^{+2}, 3_{c}^{-2}, 4_{c}^{-2}) = [12]^{4} \langle 34 \rangle^{4} \frac{A}{stu} \\ \to
 \begin{cases}
 - \frac{A}{st^{2}} \quad (s \to 0) \\
 - \frac{A}{tu^{2}} \quad (t \to 0) \\
 - \frac{A}{us^{2}} \quad (u \to 0)
 \end{cases}
+\end{gathered}
 $$
 
 This gives out 

@@ -14,9 +14,11 @@ $$
 
 Given that the Christoffel Symbol’s transformation rule is
 $$
+\begin{gathered}
 \Gamma'^{\lambda} {}_{\rho \sigma} = \pdv{x^{\prime \lambda}}{\xi^{\alpha}} \frac{\partial^{2} \xi^{\alpha}}{\partial x^{\prime \rho} \partial x^{\prime \sigma}} = \pdv{x^{\prime \lambda}}{x^{\kappa}} \pdv{x^{\kappa}}{\xi^{\alpha}} \pdv{}{x^{\prime \rho}} \left(\pdv{\xi^{\alpha}}{x^{\nu}} \pdv{x^{\nu}}{x^{\prime \sigma}}\right) \\ =
 \pdv{x^{\prime \lambda}}{x^{\kappa}} \pdv{x^{\kappa}}{\xi^{\alpha}} \left(\pdv{\xi^{\alpha}}{x^{\nu}} \frac{\partial^{2} x^{\nu}}{\partial x'^{\rho} \partial x'^{\sigma}} + \pdv{x^{\mu}}{x'^{\rho}} \pdv{x^{\nu}}{x'^{\sigma}} \frac{\partial^{2} \xi^{\alpha}}{\partial x^{\mu} \partial x^{\nu}}\right) \\ =
 \pdv{x^{\prime \lambda}}{x^{\kappa}} \pdv{x^{\mu}}{x'^{\rho}} \pdv{x^{\nu}}{x'^{\sigma}} \Gamma^{\kappa} {}_{\mu \nu} + \pdv{x^{\prime \lambda}}{x^{\kappa}} \frac{\partial^{2} x^{\kappa}}{\partial x'^{\rho} \partial x'^{\sigma}}
+\end{gathered}
 $$
 #### Tensor after Transformation
 
@@ -29,19 +31,23 @@ To deal with this complex tensor, we’ll analyse it one part after another.
 #### The first part
 
 $$
+\begin{gathered}
 T'^{\lambda} {}_{\alpha \beta, \gamma} = \pdv{}{x'^{\gamma}} \left(\pdv{x'^{\lambda}}{x^{\mu}} \pdv{x^{\rho}}{x'^{\alpha}} \pdv{x^{\sigma}}{x'^{\beta}} T^{\mu} {}_{\rho \sigma}\right) \\ =
 \frac{\partial^{2} x'^{\lambda}}{\partial x^{\eta} \partial x^{\tau}} \pdv{x^{\eta}}{x'^{\gamma}} \pdv{x^{\rho}}{x'^{\alpha}} \pdv{x^{\sigma}}{x'^{\beta}} T^{\tau} {}_{\rho \sigma} \quad \text{(Term 1)} \\
 + \frac{\partial^{2} x^{\rho}}{\partial x'^{\gamma} \partial x'^{\alpha}} \pdv{x'^{\lambda}}{x^{\mu}} \pdv{x^{\sigma}}{x'^{\beta}} T^{\mu}{}_{\rho \sigma} \quad \text{(Term 2)} \\ 
 + \frac{\partial^{2} x^{\sigma}}{\partial x'^{\lambda} \partial x'^{\beta}} \pdv{x'^{\lambda}}{x^{\mu}} \pdv{x^{\rho}}{x'^{\alpha}} T^{\mu} {}_{\rho \sigma} \quad \text{(Term 3)} \\ 
 + \pdv{x^{\nu}}{x'^{\gamma}} \pdv{x'^{\lambda}}{x^{\mu}} \pdv{x^{\rho}}{x'^{\alpha}} \pdv{x^{\sigma}}{x'^{\beta}} T^{\mu} {}_{\rho \sigma, \nu} \quad \text{(Term 4)}
+\end{gathered}
 $$
 gives out 4 terms, and I’ll show in detail how the first three cancel with the $\Gamma$ parts’ extra terms.
 
 #### The second part
 
 $$
+\begin{gathered}
 \Gamma'^{\lambda} {}_{\gamma \kappa} T'^{\kappa} {}_{\alpha \beta} = \left(\pdv{x'^{\lambda}}{x^{\mu}} \pdv{x^{\nu}}{x'^{\gamma}} \pdv{x^{\tau}}{x'^{\kappa}} \Gamma^{\mu} {}_{\nu \tau} +  \frac{\partial^{2} x^{\zeta}}{\partial x'^{\gamma} \partial x'^{\kappa}} \pdv{x'^{\lambda}}{x^{\zeta}} \right) \pdv{x'^{\kappa}}{x^{\tau}} \pdv{x^{\rho}}{x'^{\alpha}} \pdv{x^{\sigma}}{x'^{\beta}} T^{\tau} {}_{\rho \sigma} \\ = 
 \pdv{x'^{\lambda}}{x^{\mu}} \pdv{x^{\nu}}{x'^{\gamma}} \pdv{x^{\tau}}{x'^{\kappa}} \pdv{x'^{\kappa}}{x^{\tau}} \pdv{x^{\rho}}{x'^{\alpha}} \pdv{x^{\sigma}}{x'^{\beta}} \Gamma^{\mu} {}_{\nu \tau} T^{\tau} {}_{\rho \sigma} + \frac{\partial^{2} x^{\zeta}}{\partial x'^{\gamma} \partial x'^{\kappa}} \pdv{x'^{\lambda}}{x^{\zeta}} \pdv{x'^{\kappa}}{x^{\tau}} \pdv{x^{\rho}}{x'^{\alpha}} \pdv{x^{\sigma}}{x'^{\beta}} T^{\tau} {}_{\rho \sigma}
+\end{gathered}
 $$
 
 To let the extra term of the second part cancel with the Term 1 of the first part, we’ll have to prove that
@@ -54,8 +60,10 @@ $$
 $$
 
 $$
+\begin{gathered}
 \pdv{}{x^{\tau}} \left(\pdv{x'^{\lambda}}{x^{\eta}} \pdv{x^{\eta}}{x'^{\gamma}}\right) \\ =
 \frac{\partial^{2} x'^{\lambda}}{\partial x^{\tau} \partial x^{\eta}} \pdv{x^{\eta}}{x'^{\gamma}} + \frac{\partial^{2} x^{\eta}}{\partial x'^{\gamma} \partial x'^{\kappa}} \pdv{x'^{\kappa}}{x^{\tau}} \pdv{x'^{\lambda}}{x^{\eta}} = 0
+\end{gathered}
 $$
 
 So equation (1) is right. We can see that the second part’s extra term cancels with the first part’s Term 1.
@@ -102,9 +110,11 @@ So this part’s extra term cancels with the first part’s Term 3.
 
 In conclusion, the transformation for this tensor could be written as
 $$
+\begin{gathered}
 T'^{\lambda} {}_{\alpha \beta;\gamma} \equiv \underbrace{T'^{\lambda} {}_{\alpha\beta,\gamma}}_{\text{Part 1}} + \underbrace{\Gamma'^{\lambda} {}_{\gamma\kappa} T'^{\kappa} {}_{\alpha\beta}}_{\text{Part 2}} - \underbrace{\Gamma'^{\eta} {}_{\alpha\gamma} T'^{\lambda} {}_{\eta \beta}}_{\text{Part 3}} - \underbrace{\Gamma'^{\epsilon} {}_{\gamma\beta} T'^{\lambda} {}_{\alpha \epsilon}}_{\text{Part 4}} \\ =
 \pdv{x^{\nu}}{x'^{\gamma}} \pdv{x'^{\lambda}}{x^{\mu}} \pdv{x^{\rho}}{x'^{\alpha}} \pdv{x^{\sigma}}{x'^{\beta}} T^{\mu} {}_{\rho \sigma, \nu} + \pdv{x'^{\lambda}}{x^{\mu}} \pdv{x^{\nu}}{x'^{\gamma}} \pdv{x^{\tau}}{x'^{\kappa}} \pdv{x'^{\kappa}}{x^{\tau}} \pdv{x^{\rho}}{x'^{\alpha}} \pdv{x^{\sigma}}{x'^{\beta}} \Gamma^{\mu} {}_{\nu \tau} T^{\tau} {}_{\rho \sigma} \\ -
 \pdv{x'^{\epsilon}}{x^{\kappa}} \pdv{x^{\sigma}}{x'^{\gamma}} \pdv{x'^{\beta}}{x^{\nu}} \pdv{x'^{\lambda}}{x^{\mu}} \pdv{x^{\rho}}{x'^{\alpha}} \pdv{x^{\kappa}}{x'^{\epsilon}} \Gamma^{\kappa} {}_{\sigma\nu} T^{\mu} {}_{\rho\kappa} - \pdv{x'^{\epsilon}}{x^{\kappa}} \pdv{x^{\sigma}}{x'^{\gamma}} \pdv{x'^{\beta}}{x^{\nu}} \pdv{x'^{\lambda}}{x^{\mu}} \pdv{x^{\rho}}{x'^{\alpha}} \pdv{x^{\kappa}}{x'^{\epsilon}} \Gamma^{\kappa} {}_{\sigma\nu} T^{\mu} {}_{\rho\kappa}
+\end{gathered}
 $$
 is a tensor under general coordinate transformation.
 
@@ -124,6 +134,7 @@ $$
 $$
 Expanding this gives 6 terms
 $$
+\begin{gathered}
 \partial'_{\mu} \Gamma'^{\rho}{}_{\nu\sigma} = 
 \pdv{x^{\delta}}{x'^{\mu}} \frac{\partial^{2} x'^{\rho}}{\partial x^{\delta} \partial x^{\alpha}} \pdv{x^{\beta}}{x'^{\nu}} \pdv{x^{\gamma}}{x'^{\sigma}} \Gamma^{\alpha}{}_{\beta\gamma} \quad \text{(Term 1)} \\
 + \pdv{x'^{\rho}}{x^{\alpha}} \frac{\partial^{2} x^{\beta}}{\partial x'^{\mu} \partial x'^{\nu}} \pdv{x^{\gamma}}{x'^{\sigma}} \Gamma^{\alpha}{}_{\beta\gamma} \quad \text{(Term 2)} \\
@@ -131,6 +142,7 @@ $$
 + \pdv{x'^{\rho}}{x^{\alpha}} \pdv{x^{\beta}}{x'^{\nu}} \pdv{x^{\gamma}}{x'^{\sigma}} \pdv{x^{\delta}}{x'^{\mu}} \partial_{\delta} \Gamma^{\alpha}{}_{\beta\gamma} \quad \text{(Term 4)} \\
 + \pdv{x^{\delta}}{x'^{\mu}} \frac{\partial^{2} x'^{\rho}}{\partial x^{\delta} \partial x^{\alpha}} \frac{\partial^{2} x^{\alpha}}{\partial x'^{\nu} \partial x'^{\sigma}} \quad \text{(Term 5)} \\
 + \pdv{x'^{\rho}}{x^{\alpha}} \frac{\partial^{3} x^{\alpha}}{\partial x'^{\mu} \partial x'^{\nu} \partial x'^{\sigma}} \quad \text{(Term 6)}
+\end{gathered}
 $$
 
 #### Computing the Product Term
@@ -143,11 +155,13 @@ $$
 $$
 Multiplying these gives 4 terms. Note that we can collapse $\pdv{x^{\eta}}{x'^{\lambda}} \pdv{x'^{\lambda}}{x^{\alpha}} = \delta^{\eta}_{\alpha}$
 $$
+\begin{gathered}
 \Gamma'^{\rho}{}_{\mu\lambda} \Gamma'^{\lambda}{}_{\nu\sigma} = 
 \pdv{x'^{\rho}}{x^{\epsilon}} \pdv{x^{\zeta}}{x'^{\mu}} \pdv{x^{\beta}}{x'^{\nu}} \pdv{x^{\gamma}}{x'^{\sigma}} \Gamma^{\epsilon}{}_{\zeta\alpha} \Gamma^{\alpha}{}_{\beta\gamma} \quad \text{(Term A)} \\
 + \pdv{x'^{\rho}}{x^{\epsilon}} \pdv{x^{\zeta}}{x'^{\mu}} \frac{\partial^{2} x^{\alpha}}{\partial x'^{\nu} \partial x'^{\sigma}} \Gamma^{\epsilon}{}_{\zeta\alpha} \quad \text{(Term B)} \\
 + \left( \pdv{x'^{\rho}}{x^{\epsilon}} \frac{\partial^{2} x^{\epsilon}}{\partial x'^{\mu} \partial x'^{\lambda}} \pdv{x'^{\lambda}}{x^{\alpha}} \right) \pdv{x^{\beta}}{x'^{\nu}} \pdv{x^{\gamma}}{x'^{\sigma}} \Gamma^{\alpha}{}_{\beta\gamma} \quad \text{(Term C)} \\
 + \left( \pdv{x'^{\rho}}{x^{\epsilon}} \frac{\partial^{2} x^{\epsilon}}{\partial x'^{\mu} \partial x'^{\lambda}} \pdv{x'^{\lambda}}{x^{\alpha}} \right) \frac{\partial^{2} x^{\alpha}}{\partial x'^{\nu} \partial x'^{\sigma}} \quad \text{(Term D)}
+\end{gathered}
 $$
 Now, substitute the Lemma into Terms C and D. They become
 $$

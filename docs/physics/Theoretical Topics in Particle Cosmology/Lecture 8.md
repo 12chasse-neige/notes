@@ -55,15 +55,19 @@ $$
 ### Including Massless Exchange
 
 $$
+\begin{gathered}
 \mathcal{L} = - |(\partial_{\mu} - i e A_{\mu}) \phi |^{2} - m^{2} \phi^{2} - \frac{1}{4} F_{\mu \nu} F^{\mu \nu} \\ =
 i \Psi^{\dagger} \dot{\Psi} + \frac{1}{2m} \Psi^{\dagger} \nabla^{2} \Psi + \frac{1}{2} (E^{2} - B^{2}) + e A_{0} \Psi^{\dagger} \Psi - \frac{1}{m} e A_{i} \Psi^{\dagger} \partial_{i} \Psi - \frac{e^{2}}{2m} A^{2} \Psi^{\dagger} \Psi + \cdots
+\end{gathered}
 $$
 
 #### NR Power Couting
 
 $$
+\begin{gathered}
 [t] = 2 [x] \\
 [m] = 0
+\end{gathered}
 $$
 
 Here the dimension of energy consists with momentum, say
@@ -104,13 +108,17 @@ In practice, we want to match an on-shell amplitude $M$, where
 
 Conside a 2 to 2 scattering $p_{1} p_{2} \to p'_{1} p'_{2}$ in the CoM system.
 $$
+\begin{gathered}
 p_{1}^{\mu} = (E_{1}, \vec{p}_{1}), \quad p_{2}^{\mu}  = (E_{2}, \vec{p}_{2}) \\
  p_{1}^{'\mu} = (E_{1}, \vec{p}'_{1}), \quad p_{2}^{'\mu}  = (E_{2}, \vec{p}'_{2}) \\
+\end{gathered}
 $$
 On the NR side, we start from the Lagrangian
 $$
+\begin{gathered}
 \mathcal{L} = \int \frac{\dd[3]{p}}{(2 \pi)^{3}} \sum_{a= 1}^{2} \Psi_{a}^{\dagger} (- \vec{p}) \left[i \partial_{t} - \sqrt{p^{2} + m_{a}^{2}}\right] \Psi_{a} (\vec{p}) \\ - 
 \int \frac{\dd[3]{p}}{(2 \pi)^{3}} \int \frac{\dd[3]{p'}}{(2 \pi)^{3}} V(\vec{p}, \vec{p'}) \Psi_{a}^{\dagger} (\vec{p'}) \Psi_{a} (\vec{p}) \times \Psi_{b}^{\dagger} (- \vec{p'}) \Psi_{b} (-\vec{p})
+\end{gathered}
 $$
 Def $V (p', p) = \int \dd[3]{r} e^{-i \vec{q} \cdot \vec{r}} V(\vec{r}, \vec{p})$, where $\vec{q} = \vec{p} - \vec{p'}$
 
@@ -120,8 +128,10 @@ $$
 $$
 So the propagator
 $$
+\begin{gathered}
 \langle 0 | T \{\Psi_{a} (t, \vec{p}) \Psi_{a}^{\dagger} (t', - \vec{p})\} | 0 \rangle \\ = 
 \theta(t - t') e^{- i E_{p} (t - t')} = \int \frac{\dd{\omega}}{2 \pi} \frac{i}{\omega - E_{p} + i \epsilon} e^{- i \omega (t - t')}
+\end{gathered}
 $$
 The vertex
 $$

@@ -36,9 +36,11 @@ $$
 
 上述最后一步利用了 Hamiltonian 的厄米性。所以
 $$
+\begin{gathered}
 \pdv{E_{n}}{\lambda} = \langle \psi_{n} | \pdv{\hat{H}}{\lambda} | \psi_{n} \rangle + \langle \pdv{\psi_{n}}{\lambda} | \hat{H}  \psi_{n} \rangle + \langle \pdv{\psi_{n}}{\lambda} | \hat{H} \psi_{n} \rangle^{*} \\ =
 \langle \psi_{n} | \pdv{\hat{H}}{\lambda} | \psi_{n} \rangle + E_{n}  \left( \langle \pdv{\psi_{n}}{\lambda} | \psi_{n} \rangle + \langle \pdv{\psi_{n}}{\lambda} | \psi_{n} \rangle^{*} \right) \\ =
 \langle \psi_{n} | \pdv{\hat{H}}{\lambda} | \psi_{n} \rangle + E_{n}  \left( \langle \pdv{\psi_{n}}{\lambda} | \psi_{n} \rangle + \langle  \psi_{n} | \pdv{\psi_{n}}{\lambda} \rangle \right) = \langle \psi_{n} | \pdv{\hat{H}}{\lambda} | \psi_{n} \rangle
+\end{gathered}
 $$
 5.2.1 一个带电量 $q$ 的粒子在匀强电场 $\vec{E}=|\vec{E}|\vec{e}_{z}$ 中运动，它有哪些基本的（函数独立的）守恒量? 请证明你的结论。
 
@@ -87,8 +89,10 @@ $$
 
 考虑拉格朗日量在这个变换下的行为
 $$
+\begin{gathered}
 \delta \mathcal{L} = \left(- i \hbar(\partial_{t} \Psi^{*}) + \frac{\hbar^{2}}{2m} \nabla^{2} \Psi^{*}\right) \delta \Psi + \left(\mathrm{i}\hbar \frac{\partial \Psi}{\partial t}+\frac{\hbar^{2}}{2m}\nabla^{2}\Psi\right) \delta \Psi^{*} \\ = 
 \left(- i \hbar(\partial_{t} \Psi^{*}) + \frac{\hbar^{2}}{2m} \nabla^{2} \Psi^{*}\right) \frac{i}{\hbar} \epsilon \Psi - \left(\mathrm{i}\hbar \frac{\partial \Psi}{\partial t}+\frac{\hbar^{2}}{2m}\nabla^{2}\Psi\right) \frac{i}{\hbar} \epsilon \Psi^{*}
+\end{gathered}
 $$
 所以由于无穷小变换下的拉格朗日量不变性
 $$

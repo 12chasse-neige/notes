@@ -54,8 +54,10 @@ $$
 
 
 $$
+\begin{gathered}
 - 2 \pi i  \int_{0}^{\infty} \frac{1}{x^{3}+a^{3}} \, dx = 2 \pi i (\Res f (a e^{i \frac{\pi}{3}}) + \Res f(a e^{i \pi}) + \Res f (a e^{i \frac{5 \pi}{3}}))) \\ = 
 2 \pi i \left( \frac{a + i \frac{\pi}{3}}{a^{2} (e^{i \frac{\pi}{3}} - e^{i \pi}) (e^{i \frac{\pi}{3}} - e^{i \frac{5 \pi}{3}})} + \frac{a + i \pi}{a^{2} (e^{i \pi} - e^{i \frac{\pi}{3}}) (e^{i \pi} - e^{i \frac{5 \pi}{3}})} + \frac{a + i \frac{5 \pi}{3}}{a^{2} (e^{i \frac{5 \pi}{3}} - e^{i \pi}) (e^{i \frac{5 \pi}{3}} - e^{i \frac{\pi}{3}})} \right)
+\end{gathered}
 $$
 
 $$
@@ -75,7 +77,9 @@ $$
 
 取围道为沿着割线上下岸、半个原点的小圆弧以及整个大圆弧，计算 $f$ 沿着围道的积分
 $$
+\begin{gathered}
 - 4 \pi i \int_{0}^{\infty} \frac{\ln x}{x^{2}+a^{2}} \, dx = 2 \pi i (\Res f (i a) + \Res f (-ia)) \\ = 2 \pi i (- \frac{\pi \ln a}{a})
+\end{gathered}
 $$
 
 $$

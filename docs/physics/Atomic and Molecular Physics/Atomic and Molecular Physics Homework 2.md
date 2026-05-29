@@ -11,16 +11,20 @@ $$
 
 Show that the density matrix $\rho = |\psi\rangle\langle\psi|$ can be written as $\rho = \frac{1}{2} (I + \mathbf{a} \cdot \boldsymbol{\sigma})$ where $\boldsymbol{\sigma} = (\sigma_{1}, \sigma_{2}, \sigma_{3})$ ($\sigma_{1,2,3}$ being the Pauli matrices) and $\mathbf{a} = (\sin\theta \cos\phi, \sin\theta \sin\phi, \cos\theta)$.
 $$
+\begin{gathered}
 \rho = \ket{\psi} \bra{\psi} = \left(  \cos\left(\frac{\theta}{2}\right) |0\rangle + e^{i\phi} \sin\left(\frac{\theta}{2}\right) |1\rangle \right) \left( \cos\left(\frac{\theta}{2}\right) \bra{0} + e^{- i\phi} \sin\left(\frac{\theta}{2}\right) \bra{1} \right) \\ =
 \cos^{2} \frac{\theta}{2} \ket{0} \bra{0} + \sin^{2} \frac{\theta}{2} \ket{1} \bra{1}  + \sin \frac{\theta}{2} \cos \frac{\theta}{2} \left(e^{i \phi} \ket{1} \bra{0} + e^{- i \phi} \ket{0} \bra{1}\right) \\ =
 \cos^{2} \frac{\theta}{2} \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix} + \sin^{2} \frac{\theta}{2} \begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix} + \sin \frac{\theta}{2} \cos \frac{\theta}{2} e^{i \phi} \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix} + \sin \frac{\theta}{2} \cos \frac{\theta}{2} e^{- i \phi} \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} \\ =
 \begin{pmatrix} \cos^{2} \frac{\theta}{2} & \sin \frac{\theta}{2} \cos \frac{\theta}{2} e^{- i \phi} \\ \sin \frac{\theta}{2} \cos \frac{\theta}{2} e^{i \phi} &  \sin^{2} \frac{\theta}{2} \end{pmatrix}
+\end{gathered}
 $$
 While the density matrix can also be represented as
 $$
+\begin{gathered}
 \rho = \frac{1}{2} (I + \mathbf{a} \cdot \boldsymbol{\sigma}) = \frac{1}{2} (I + \sin \theta \cos \phi \sigma_{1} + \sin \theta \sin \phi \sigma_{2} + \cos \theta \sigma_{3}) \\ =
 \frac{1}{2} \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} + \frac{1}{2} \sin \theta \cos \phi \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} + \frac{1}{2} \sin \theta \sin \phi \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix} + \frac{1}{2} \cos \theta \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} \\ =
 \begin{pmatrix} \frac{1}{2} (1 + \cos \theta) & \frac{1}{2} \sin \theta (\cos \phi - i \sin \phi) \\ \frac{1}{2} \sin \theta (\cos \phi + i \sin \phi) & \frac{1}{2} (1 - \cos \theta) \end{pmatrix}  = \begin{pmatrix} \cos^{2} \frac{\theta}{2} & \sin \frac{\theta}{2} \cos \frac{\theta}{2} e^{- i \phi} \\ \sin \frac{\theta}{2} \cos \frac{\theta}{2} e^{i \phi} &  \sin^{2} \frac{\theta}{2} \end{pmatrix}
+\end{gathered}
 $$
 So the density matrix can be written as  $\rho = \frac{1}{2} (I + \mathbf{a} \cdot \boldsymbol{\sigma})$ 
 
@@ -37,22 +41,28 @@ where $\mathbf{W}' = (\Omega_{0} \cos\omega t, -\Omega_{0} \sin\omega t, -\omega
 
 Write the Hamiltonian in terms of the Pauli Matrices 
 $$
+\begin{gathered}
 \ket{1} \bra{1} = \frac{1}{2}(I - \sigma_{3}) \\
 \ket{0} \bra{0} = \frac{1}{2}(I + \sigma_{3}) \\
 \ket{1} \bra{0} = \frac{1}{2}(\sigma_{1} - i \sigma_{2}) \\
 \ket{0} \bra{1} = \frac{1}{2}(\sigma_{1} + i \sigma_{2})
+\end{gathered}
 $$
 
 So the Hamiltonian can be represented as
 $$
+\begin{gathered}
 H = \frac{\hbar\omega_{0}}{2} (|1\rangle\langle 1| - |0\rangle\langle 0|) + \frac{\hbar\Omega}{2} (e^{+i\omega t} |0\rangle\langle 1| + e^{-i\omega t} |1\rangle\langle 0|) \\ =
 - \frac{\hbar \omega_{0}}{2} \sigma_{3} + \frac{\hbar \Omega}{2} (e^{i \omega t} \frac{1}{2}(\sigma_{1} + i \sigma_{2}) + e^{-i \omega t} \frac{1}{2}(\sigma_{1} - i \sigma_{2})) \\ =
 - \frac{\hbar \omega_{0}}{2} \sigma_{3} + \frac{\hbar \Omega}{2} \sigma_{1} \cos \omega t  - \frac{\hbar \Omega}{2} \sigma_{2} \sin \omega t = \frac{\hbar}{2} \vec{W'} \cdot \vec{\sigma}
+\end{gathered}
 $$
 Calculate the evolvement of the density matrix
 $$
+\begin{gathered}
 \dv{\rho}{t} = \frac{1}{i \hbar} \comm{H}{\rho} = \frac{1}{i \hbar} \comm{\frac{\hbar}{2} \vec{W'} \cdot \vec{\sigma}}{\frac{1}{2}(I + \vec{a} \cdot \vec{\sigma})} = \frac{1}{4 i} \comm{\vec{W'} \cdot \vec{\sigma}}{\vec{a} \cdot \vec{\sigma}} \\
 = \frac{1}{4 i} \sum_{i,j} W'_{i} a_{j} \comm{\sigma_{i}}{\sigma_{j}} = \frac{1}{2} \sum_{i,j,k} W'_{i} a_{j} \epsilon_{ijk} \sigma_{k} = \frac{1}{2} (\vec{W'} \times \vec{a}) \cdot \vec{\sigma}
+\end{gathered}
 $$
 Under the Schrödinger picture, the Pauli Matrices vector is an invariant, so the time derivative of the density matrix is
 $$
@@ -71,15 +81,19 @@ $$
 $$
 So the new Hamiltonian can be represented as
 $$
+\begin{gathered}
 i \hbar \pdv{\ket{\psi_{R}}}{t} = H_{R} \ket{\psi_{R}} \\
 U H \ket{\psi} + i \hbar \dot{U} \ket{\psi} = H_{R} U \ket{\psi}
+\end{gathered}
 $$
 Therefore
 $$
+\begin{gathered}
 H_{R} = U H U^{\dagger} + i \hbar \dot{U}  U^{\dagger} \\ =
 (\ket{0} \bra{0} + e^{i \omega t} \ket{1} \bra{1}) (\frac{\hbar\omega_{0}}{2} (|1\rangle\langle 1| - |0\rangle\langle 0|) + \frac{\hbar\Omega}{2} (e^{+i\omega t} |0\rangle\langle 1| + e^{-i\omega t} |1\rangle\langle 0|)) (\ket{0} \bra{0} + e^{- i \omega t} \ket{1} \bra{1}) \\ + 
 i \hbar (i \omega e^{i \omega t} \ket{1} \bra{1}) (\ket{0} \bra{0} + e^{- i \omega t} \ket{1} \bra{1}) \\ =
 \frac{\hbar\omega_{0}}{2} (|1\rangle\langle 1| - |0\rangle\langle 0|) + \frac{\hbar\Omega}{2} (|0\rangle\langle 1| + |1\rangle\langle 0|)) - \hbar \omega \ket{1} \bra{1}
+\end{gathered}
 $$
 Transfer the Hamiltonian in terms of the Pauli Matrices
 $$
@@ -106,9 +120,11 @@ $$
 $$
 
 $$
+\begin{gathered}
 \ket{F = 3, m_{F} = 2} = \frac{1}{\sqrt{3}} \ket{L = 1, m_{L} = 0} \otimes \ket{S = \frac{1}{2}, m_{S} = \frac{1}{2}} \otimes \ket{I = \frac{3}{2}, m_{I} = \frac{3}{2}} \\ +
 \frac{1}{\sqrt{6}} \ket{L = 1, m_{L} = 1} \otimes \ket{S = \frac{1}{2}, m_{S} = - \frac{1}{2}} \otimes \ket{I = \frac{3}{2}, m_{I} = \frac{3}{2}} \\ +
 \frac{1}{\sqrt{2}} \ket{L = 1, m_{L} = 1} \otimes \ket{S = \frac{1}{2}, m_{S} = \frac{1}{2}} \otimes \ket{I = \frac{3}{2}, m_{I} = \frac{1}{2}}
+\end{gathered}
 $$
 
 So the relative electric dipole transition strength between the two states can be represented as 
@@ -117,21 +133,27 @@ $$
 $$
 Similarly, also expand the $5S_{1/2} |F=2, m_{F}=1\rangle$ and $5P_{3/2} |F=2, m_{F}=1\rangle$ 
 $$
+\begin{gathered}
 \ket{F = 2, m_{F} = 1} = \frac{1}{2} \ket{L = 0, m_{L} = 0} \otimes \ket{S = \frac{1}{2}, m_{S} = - \frac{1}{2}} \otimes \ket{I = \frac{3}{2}, m_{I} = \frac{3}{2}} \\ + 
 \frac{\sqrt{3}}{2} \ket{L = 0, m_{L} = 0} \otimes \ket{S = \frac{1}{2}, m_{S} = \frac{1}{2}} \otimes \ket{I = \frac{3}{2}, m_{I} = \frac{1}{2}}
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 \ket{F = 2, m_{F} = 1} = \frac{1}{2 \sqrt{3}} \ket{L = 1, m_{L} = 0} \otimes \ket{S = \frac{1}{2}, m_{S} = - \frac{1}{2}} \otimes \ket{I = \frac{3}{2}, m_{I} = \frac{3}{2}} \\ -
 \frac{1}{\sqrt{6}} \ket{L = 1, m_{L} = - 1} \otimes \ket{S = \frac{1}{2}, m_{S} = \frac{1}{2}} \otimes \ket{I = \frac{3}{2}, m_{I} = \frac{3}{2}} \\ -
 \frac{1}{2} \ket{L = 1, m_{L} = 0} \otimes \ket{S = \frac{1}{2}, m_{S} = \frac{1}{2}} \otimes \ket{I = \frac{3}{2}, m_{I} = \frac{1}{2}} \\ +
 \frac{1}{\sqrt{2}} \ket{L = 1, m_{L} = 1} \otimes \ket{S = \frac{1}{2}, m_{S} = - \frac{1}{2}} \otimes \ket{I = \frac{3}{2}, m_{I} = \frac{1}{2}} 
+\end{gathered}
 $$
 
 So the relative electric dipole transition strength between the two states can be represented as 
 $$
+\begin{gathered}
 \bra{F = 2, m_{F} = 1} e \hat{r} \cdot \vec{E} \ket{F = 2, m_{F} = 1} = \frac{1}{4 \sqrt{3}} \bra{L = 1, m_{L} = 0} e \hat{r} \cdot \vec{E} \ket{L = 0, m_{L} = 0} \\ - \frac{\sqrt{3}}{4} \bra{L = 1, m_{L} = 0} e \hat{r} \cdot \vec{E} \ket{L = 0, m_{L} = 0} \\ =
 - \frac{1}{2 \sqrt{3}} \bra{L = 1, m_{L} = 0} e \hat{r} \cdot \vec{E} \ket{L = 0, m_{L} = 0}
+\end{gathered}
 $$
 The relative transition strength
 $$
@@ -158,17 +180,21 @@ But the electric dipole operator acts only on the orbital part of the wavefuncti
 
 Suppose that the spontaneous-emission transition rate between any two-states is proportional to the square of their dipole-matrix element. So for the $5P_{3/2} |F=2, m_{F}=1\rangle$ state, the spontaneous-emission transition rate is proportional to
 $$
+\begin{gathered}
 \frac{1}{8}, \frac{1}{8} \quad (\sigma^{-} \text{transitions}) \\
 \frac{1}{24}, \frac{1}{8} \quad (\pi \text{transitions}) \\
 \frac{1}{12} \quad (\sigma^{+} \text{transitions}) \\
+\end{gathered}
 $$
 So the total transition rate is proportional to $\frac{1}{2}$.
 
 For the $5P_{3/2} |F=1, m_{F}=0\rangle$ state, the spontaneous-emission transition rate is proportional to
 $$
+\begin{gathered}
 \frac{1}{40}, \frac{5}{24} \quad (\sigma^{-} \text{transitions}) \\
 \frac{1}{30}, 0 \quad (\pi \text{transitions}) \\
 \frac{1}{40}, \frac{5}{24} \quad (\sigma^{+} \text{transitions}) \\
+\end{gathered}
 $$
 So the total transition rate is proportional to $\frac{1}{2}$.
 
@@ -264,7 +290,9 @@ under high magnetic field. So we can design sequence of transitions to all state
 
 At low magnetic fields, the good quantum number is $F$, so the electric-dipole transition rules are
 $$
+\begin{gathered}
 \Delta F = 0, \pm1 \\
+\end{gathered}
 $$
 while the $F = 0 \to F' = 0$  transition is forbidden. So to the $5P_{3/2}$ state:
 
@@ -275,8 +303,10 @@ while the $F = 0 \to F' = 0$  transition is forbidden. So to the $5P_{3/2}$ stat
 
 At high magnetic fields, the good quantum number is $J$, where the selection rules become
 $$
+\begin{gathered}
 \Delta J = 0, \pm 1 \\
 \Delta m_{J} = \pm 1
+\end{gathered}
 $$
 while the $J = 0 \to J' = 0$  transition is forbidden. So, transitions where
 $$

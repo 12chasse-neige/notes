@@ -16,8 +16,10 @@ $$
 $$
 所以以瞄准距离 $\rho$ 入射的粒子将会运动到方位角为
 $$
+\begin{gathered}
 \phi = 2 (\pi - \theta - \alpha) = 2 \pi - 2 \theta - 2 \arcsin(\sin \theta \sqrt{1 - \frac{2 \abs{U_{0}}}{m v_{\infty}^{2}}}) \\ = 
 2 \arcsin(\frac{\rho}{R}) - 2 \arcsin(\frac{\rho}{R} \sqrt{1 - \frac{2 \abs{U_{0}}}{m v_{\infty}^{2}}})
+\end{gathered}
 $$
 处，所有进入势阱的粒子均会与其相互作用。所以散射截面为
 $$
@@ -54,8 +56,10 @@ $$
 $$
 所以在实验室系中的散射角 $\phi$ 是质心系中散射角 $\theta$ 的一半，得到微分散射截面之间的关系（考虑到电子是全同粒子，此处应该加上不可分辨的 $\pi - \theta$ 情形）
 $$
+\begin{gathered}
 \sigma_{Lab} (\phi) = \frac{\sin \theta}{\sin \phi} \dv{\theta}{\phi} \sigma_{COM} (\theta) + \frac{\sin \theta}{\sin \phi} \dv{\theta}{\phi} \sigma_{COM} (\pi - \theta) \\ =
 \left( \dfrac{e^{2}}{4\pi\epsilon_{0} E} \right)^{2} \left(\dfrac{1}{\sin^{4} \phi} + \frac{1}{\cos^{4} \phi} \right) \cos \phi
+\end{gathered}
 $$
 4.2 一质量为 $M$ ，半径为 $R$ 的圆环在重力作用下绕固定点 $(O)$ 在其平面内作小振动, 如图 4.12 所示。求振动频率。
 
@@ -90,8 +94,10 @@ r_{0} = \left( \frac{2A}{B} \right)^{\frac{1}{6}}
 $$
 以两个原子之间的距离为广义坐标，写出拉格朗日量
 $$
+\begin{gathered}
 L (r) = 2 \times \frac{1}{2} m (\dot{\frac{r}{2}})^{2} - \frac{A}{r^{12}} + \frac{B}{r^{6}} \\ =
 \frac{1}{4} m \dot{r}^{2} - \frac{A}{r^{12}} + \frac{B}{r^{6}}
+\end{gathered}
 $$
 在平衡位置附近把势能展开为2阶项
 $$
@@ -112,6 +118,8 @@ $$
 $$
 所以运动角频率为
 $$
+\begin{gathered}
 \omega = \sqrt{\frac{B}{2A} \frac{312 A}{m r_{0}^{8}} - \frac{84 B}{m r_{0}^{8}}} \\ =
 \sqrt{\frac{72 B}{m r_{0}^{8}}} = \sqrt{\frac{36 B^{2}}{m A}} \left( \frac{B}{2 A} \right)^{\frac{1}{6}} = \frac{6}{2^{\frac{1}{6}}} \sqrt{\frac{B^{\frac{7}{3}}}{A^{\frac{4}{3}} m}}
+\end{gathered}
 $$

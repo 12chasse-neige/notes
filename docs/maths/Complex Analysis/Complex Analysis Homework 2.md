@@ -16,13 +16,17 @@ $$
 
 证明
 $$
+\begin{gathered}
 \sin(z_{1} + z_{2}) = \frac{e^{i (z_{1} + z_{2})} - e^{-i (z_{1} + z_{2})}}{2i} = \frac{(e^{i z_{1}} + e^{-i z_{1}}) (e^{i z_{2}} - e^{-i z_{2}}) + (e^{i z_{1}} - e^{-i z_{1}})(e^{i z_{2}} + e^{-i z_{2}})}{4i} \\ = 
 \frac{e^{i z_{1}} + e^{-i z_{1}}}{2} \frac{e^{i z_{2}} - e^{-i z_{2}}}{2i} + \frac{e^{i z_{1}} - e^{-i z_{1}}}{2i} \frac{e^{i z_{2}} + e^{-i z_{2}}}{2} = \sin z_{1} \cos z_{2} + \cos z_{1} \sin z_{2}
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 \cos (z_{1} + z_{2}) = \frac{e^{i (z_{1} + z_{2})} + e^{-i (z_{1} + z_{2})}}{2} = \frac{(e^{i z_{1}} + e^{-i z_{1}}) (e^{i z_{2}} + e^{-i z_{2}}) + (e^{i z_{1}} - e^{-i z_{1}})(e^{i z_{2}} - e^{-i z_{2}})}{4} \\ = 
 \frac{e^{i z_{1}} + e^{-i z_{1}}}{2} \frac{e^{i z_{2}} + e^{-i z_{2}}}{2} - \frac{e^{i z_{1}} - e^{-i z_{1}}}{2i} \frac{e^{i z_{2}} - e^{-i z_{2}}}{2i} = \cos z_{1} \cos z_{2} - \sin z_{1} \sin z_{2}
+\end{gathered}
 $$
 
 (d)
@@ -32,8 +36,10 @@ $$
 
 证明
 $$
+\begin{gathered}
 \cosh^{2} z - \sinh^{2} z = \left(\frac{e^{z} + e^{-z}}{2}\right)^{2} - \left(\frac{e^{z} - e^{-z}}{2}\right)^{2} \\ =
 \frac{e^{2z} + e^{-2z} + 2}{4} - \frac{e^{2z} + e^{-2z} - 2}{4} = 1
+\end{gathered}
 $$
 
 $$
@@ -74,13 +80,17 @@ $$
 $$
 
 $$
+\begin{gathered}
 \sqrt{\sin^{2} x \cosh^{2} y + \cos^{2} x \sinh^{2} y} = \sqrt{\sin^{2} x \cosh^{2} y + \cos^{2} x (\cosh^{2} y - 1)} \\ =
 \sqrt{\cosh^{2} y - \cos^{2} x} \leq |\cosh y|
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 \sqrt{\sin^{2} x \cosh^{2} y + \cos^{2} x \sinh^{2} y} = \sqrt{\sin^{2} x (1 + \sinh^{2} y) + \cos^{2} x \sinh^{2} y} \\ =
 \sqrt{\sin^{2} x + \sinh^{2} y} \geq |\sinh y|
+\end{gathered}
 $$
 
 $$
@@ -96,13 +106,17 @@ $$
 $$
 
 $$
+\begin{gathered}
 \sqrt{\cos^{2} x \cosh^{2} y + \sin^{2} x \sinh^{2} y} = \sqrt{\cos^{2} x \cosh^{2} y + \sin^{2} x (\cosh^{2} y - 1)} \\ =
 \sqrt{\cosh^{2} y - \sin^{2} x} \leq |\cosh y|
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 \sqrt{\cos^{2} x \cosh^{2} y + \sin^{2} x \sinh^{2} y} = \sqrt{\cos^{2} x (1 + \sinh^{2} y) + \sin^{2} x \sinh^{2} y} \\ =
 \sqrt{\cos^{2} x + \sinh^{2} y} \geq |\sinh y|
+\end{gathered}
 $$
 
 $$

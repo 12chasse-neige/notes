@@ -13,8 +13,10 @@ $$
 
 is the tensor we can use to build the field equation. To be compatible with the energy momentum tensor (second order), we’ll need to contract the Riemann tensor to get the Ricci tensor, which is defined as
 $$
+\begin{gathered}
 R_{\mu \kappa} = g^{\lambda \nu} R_{\lambda \mu \nu \kappa} = R^{\lambda} {}_{\mu \lambda \kappa} \\ = 
 \Gamma^{\lambda} {}_{\mu \lambda, \kappa} - \Gamma^{\lambda} {}_{\mu \kappa, \lambda} + \Gamma^{\eta} {}_{\mu \lambda} \Gamma^{\lambda} {}_{\eta \kappa} - \Gamma^{\eta} {}_{\mu \kappa} \Gamma^{\lambda} {}_{\mu \lambda}
+\end{gathered}
 $$
 And we continue to contract the Ricci tensor to get the Ricci scalar, which is defined as
 $$
@@ -42,9 +44,11 @@ g^{\mu \kappa} \left(R_{\mu \kappa; \eta} - R_{\mu \eta; \kappa} + R^{\nu} {}_{\
 $$
 So to be consistent with the conservation of energy momentum, we can get the ratio between the two coefficients, say
 $$
+\begin{gathered}
 C_{1} R^{\mu \nu}{}_{; \mu} + C_{2} g^{\mu \nu} R_{; \mu} = 0 \\
 g_{\eta \nu} (C_{1} R^{\mu \nu}{}_{; \mu} + C_{2} g^{\mu \nu} R_{; \mu}) = 0 \Rightarrow
 C_{1} R^{\mu} {}_{\eta; \mu} + C_{2} R_{; \eta} = 0
+\end{gathered}
 $$
 Compare this equation with the result of the Bianchi identity, we can know that
 $$
@@ -69,8 +73,10 @@ $$
 $$
 So the Ricci tensor can be expressed as, using the metric tensor
 $$
+\begin{gathered}
 R_{\mu \nu} = \Gamma^{\lambda} {}_{\mu \lambda, \nu} - \Gamma^{\lambda} {}_{\mu \nu, \lambda} \\ =
 \frac{1}{2} g^{\lambda \eta} \left(g_{\eta \lambda, \mu \nu} + g_{\mu \nu, \eta \lambda} - g_{\mu \lambda, \eta \nu} - g_{\eta \nu, \mu \lambda}\right) 
+\end{gathered}
 $$
 Under weak field approximation
 $$
@@ -78,8 +84,10 @@ g_{\mu \nu} = \eta_{\mu \nu} + h_{\mu \nu} \quad (h \ll 1)
 $$
 
 $$
+\begin{gathered}
 R_{\mu \nu} \approx \frac{1}{2} \eta^{\lambda \kappa} (h_{\kappa \lambda, \mu \nu} + h_{\mu \nu, \kappa \lambda} - h_{\mu \lambda, \kappa \nu} - h_{\kappa \nu,\mu \lambda}) \\ =
 \frac{1}{2} (h_{, \mu \nu} + \square h_{\mu \nu} - h_{\mu} {}^{\kappa} {}_{, \kappa \nu} - h^{\lambda} {}_{\nu, \mu \lambda})
+\end{gathered}
 $$
 
 And the Ricci scalar
@@ -128,8 +136,10 @@ Please calculate the affine connection $\Gamma^{\lambda} {}_{\mu \nu}$ and the R
 
 The components of the metric tensors (covariant and contravariant) are
 $$
+\begin{gathered}
 g_{\mu \nu} = \text{diag} (-B, A, r^{2}, r^{2} \sin^{2} \theta) \\
 g^{\mu \nu} = \text{diag} (-\frac{1}{B}, \frac{1}{A}, \frac{1}{r^{2}}, \frac{1}{r^{2} \sin^{2} \theta})
+\end{gathered}
 $$
 
 ### Affine Connection
@@ -140,6 +150,7 @@ $$
 $$
 Calculate the components of the affine connection, I find that all non-zero componets are
 $$
+\begin{gathered}
 \Gamma^{t} {}_{tr} = \Gamma^{t}_{rt} = \frac{B'}{2B}\\
 \Gamma^{r} {}_{tt} = \frac{B'}{2A} \\
 \Gamma^{r} {}_{rr} = \frac{A'}{2A} \\
@@ -149,6 +160,7 @@ $$
 \Gamma^{\theta} {}_{\phi\phi} = -\sin\theta\cos\theta \\
 \Gamma^{\phi} {}_{r\phi} = \Gamma^{\phi} {}_{\phi r} = \frac{1}{r} \\
 \Gamma^{\phi} {}_{\theta\phi} = \Gamma^{\phi} {}_{\phi\theta} = \cot\theta
+\end{gathered}
 $$
 where primes denote derivatives with respect to $r$.
 
@@ -160,8 +172,10 @@ R^{\lambda} {}_{\mu \nu \kappa} = \Gamma^{\lambda} {}_{\mu \nu, \kappa} - \Gamma
 $$
 So the Ricci tensor is, after contraction
 $$
+\begin{gathered}
 R_{\mu \kappa} = g^{\lambda \nu} R_{\lambda \mu \nu \kappa} = R^{\lambda} {}_{\mu \lambda \kappa} \\ = 
 \Gamma^{\lambda} {}_{\mu \lambda, \kappa} - \Gamma^{\lambda} {}_{\mu \kappa, \lambda} + \Gamma^{\eta} {}_{\mu \lambda} \Gamma^{\lambda} {}_{\eta \kappa} - \Gamma^{\eta} {}_{\mu \kappa} \Gamma^{\lambda} {}_{\mu \lambda}
+\end{gathered}
 $$
 The Ricci tensor is diagnal, because we can consider some transformations, like time inversion and space reflection, under which the transformation rules of the tensor requires the Ricci tensor’s off-diagnal components to be zero. For example, the time inversion transformation $t \to -t$ requires Ricci tensor to transform like
 $$
@@ -175,8 +189,10 @@ So we can derive that $R_{tr} = 0$. Similarly, using the transformation of $\phi
 
 The diagnal part of the components are as follows (after careful calculation)
 $$
+\begin{gathered}
 R_{tt} = -\frac{B''}{2A} + \frac{B'A'}{4A^{2}} + \frac{(B')^{2}}{4AB} - \frac{B'}{A r} \\
 R_{rr} = \frac{B''}{2B} - \frac{(B')^{2}}{4B^{2}} - \frac{A'B'}{4AB} - \frac{A'}{A r} \\
 R_{\theta\theta} = - 1 + \frac{1}{A} - \frac{r A'}{2A^{2}} + \frac{r B'}{2AB} \\
 R_{\phi\phi} = \sin^{2}\theta \, R_{\theta\theta}
+\end{gathered}
 $$

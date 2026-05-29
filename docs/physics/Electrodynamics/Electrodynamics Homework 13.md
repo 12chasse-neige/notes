@@ -25,24 +25,32 @@ $$
 $$
 所以
 $$
+\begin{gathered}
 \frac{1}{\gamma m} \vec{e}_{r} \times [(\vec{e}_{r} - \vec{\beta}) \times \vec{F} - (\vec{\beta} \cdot \vec{F})(\vec{e}_{r} \times \vec{\beta})] \\ = 
 \vec{e}_{r} \times \left((\vec{e}_{r} - \vec{\beta}) \times (\vec{a} + \gamma^{2} (\vec{\beta} \cdot \vec{a}) \vec{\beta}) - (\vec{\beta} \cdot (\vec{a} + \gamma^{2} (\vec{\beta} \cdot \vec{a}) \vec{\beta})) (\vec{e}_{r} \times \vec{\beta}) \right) \\ =
 \vec{e}_{r} \times \left( (\vec{e}_{r} - \vec{\beta}) \times \vec{a} - (\vec{\beta} \cdot \vec{a}) (\vec{e}_{r} \times \vec{\beta}) + (\vec{\beta} \cdot \vec{a}) (\vec{e}_{r} \times \vec{\beta})) \right) = \vec{e}_{r} \times ((\vec{e}_{r} - \vec{\beta}) \times \vec{a})
+\end{gathered}
 $$
 所以
 $$
+\begin{gathered}
 \frac{q}{4\pi \epsilon_{0} m c^{2} R} \left\{ \frac{\delta^{3}}{\gamma} \vec{e}_{r} \times [(\vec{e}_{r} - \vec{\beta}) \times \vec{F} - (\vec{\beta} \cdot \vec{F})(\vec{e}_{r} \times \vec{\beta})] \right\}_{\text{ret}} \\ = 
 \frac{q}{4 \pi \epsilon_{0} R} \left\{ \delta^{3} \vec{e}_{r} \times ((\vec{e}_{r} - \vec{\beta}) \times \vec{a}) \right\}_{rev} = \vec{E}_{radia}
+\end{gathered}
 $$
 (2) 利用公式 $(\vec{A} \times \vec{B})^{2} = \vec{A}^{2} \vec{B}^{2} - (\vec{A} \cdot \vec{B})^{2}$，计算 $[(\vec{e}_{r} - \vec{\beta}) \times \vec{F}]^{2}$ 和 $[\vec{F} \cdot (\vec{e}_{r} \times \vec{\beta})]^{2}$
 $$
+\begin{gathered}
 [(\vec{e}_{r} - \vec{\beta}) \times \vec{F}]^{2} = (\vec{e}_{r} - \vec{\beta})^{2} F^{2} - ((\vec{e}_{r} - \vec{\beta}) \cdot \vec{F})^{2} \\ =
 (1 + \beta^{2} - 2 \vec{e}_{r} \cdot \vec{\beta}) F^{2} - (\vec{e}_{r} \cdot \vec{F})^{2} - (\vec{\beta} \cdot \vec{F})^{2} + 2 (\vec{e}_{r} \cdot \vec{F}) (\vec{\beta} \cdot \vec{F})
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 [\vec{F} \cdot (\vec{e}_{r} \times \vec{\beta})]^{2} =  F^{2} |\vec{e}_{r} \times \vec{\beta}|^{2} - |\vec{F} \times (\vec{e}_{r} \times \vec{\beta})|^{2} = F^{2} (\beta^{2} - (\vec{e}_{r} \cdot \vec{\beta})^{2}) - |(\vec{F} \cdot \vec{\beta}) \vec{e}_{r} - (\vec{F} \cdot \vec{e}_{r}) \vec{\beta}|^{2} \\ =
 F^{2} (\beta^{2} - (\vec{e}_{r} \cdot \vec{\beta})^{2}) - (\vec{F} \cdot \vec{\beta})^{2} - (\vec{F} \cdot \vec{e}_{r})^{2} \beta^{2} + 2 (\vec{e}_{r} \cdot \vec{F}) (\vec{\beta} \cdot \vec{F}) (\vec{e}_{r} \cdot \vec{\beta})
+\end{gathered}
 $$
 
 (3) 利用上述公式，证明带电粒子的辐射功率的角分布公式(2.5)用作用力表示为  
@@ -52,12 +60,14 @@ $$
 
 证明
 $$
+\begin{gathered}
 \frac{dP}{d \Omega} = \frac{1}{\mu_{0}} (\vec{E} \times \vec{B}) \cdot \vec{e}_{r} R^{2} \frac{dt}{dt'} =  \frac{R^{2}}{\mu_{0} c} |\vec{E}_{radia}|^{2} \delta^{-1}  \\ = 
 \frac{q^{2}}{16 \pi^{2} \epsilon_{0} m^{2} c^{3}} \left\{ \frac{\delta^{5}}{\gamma^{2}} \left| \vec{e}_{r} \times [(\vec{e}_{r} - \vec{\beta}) \times \vec{F} - (\vec{\beta} \cdot \vec{F})(\vec{e}_{r} \times \vec{\beta})] \right|^{2} \right\}_{\text{ret}} \\ =
 \frac{q^{2}}{16 \pi^{2} \epsilon_{0} m^{2} c^{3}} \frac{\delta^{5}}{\gamma^{2}} \left( \left|(\vec{e}_{r} - \vec{\beta}) \times \vec{F} - (\vec{\beta} \cdot \vec{F})(\vec{e}_{r} \times \vec{\beta}) \right|^{2} - [\vec{F} \cdot (\vec{e}_{r} \times \vec{\beta})]^{2} \right) \\ = 
 \frac{q^{2}}{16 \pi^{2} \epsilon_{0} m^{2} c^{3}} \frac{\delta^{5}}{\gamma^{2}} ([(\vec{e}_{r} - \vec{\beta}) \times \vec{F}]^{2} + (\vec{\beta} \cdot \vec{F})^{2} (\beta^{2} - (\vec{e}_{r} \cdot \vec{\beta})^{2}) - 2 (\vec{\beta} \cdot \vec{F}) ((\vec{e}_{r} - \vec{\beta}) \times \vec{F}) \cdot (\vec{e}_{r} \times \vec{\beta}) \\ - [\vec{F} \cdot (\vec{e}_{r} \times \vec{\beta})]^{2}) \\ = 
 \frac{q^{2}}{16 \pi^{2} \epsilon_{0} m^{2} c^{3}} \frac{\delta^{5}}{\gamma^{2}} \left[ (1 - \vec{e}_{r} \cdot \vec{\beta})^{2} (\vec{F}^{2} - (\vec{\beta} \cdot \vec{F})^{2}) - (1 - \beta^{2}) (\vec{F} \cdot \vec{e}_{r} - \vec{F} \cdot \vec{\beta})^{2} \right] \\ = 
 \frac{q^{2}}{16 \pi^{2} \epsilon_{0} m^{2} c^{3}} \frac{\delta^{3}}{\gamma^{2}} \left[ \vec{F}^{2} - (\vec{\beta} \cdot \vec{F})^{2} - \frac{\delta^{2}}{\gamma^{2}} (\vec{F} \cdot \vec{e}_{r} - \vec{F} \cdot \vec{\beta})^{2} \right]
+\end{gathered}
 $$
 (b) 试由定义，$\frac{1}{J} = \int d^{3x}' \delta \left( r' - r_{0}\left(t - \frac{\|r-r'\|}{c}\right) \right)$ 证明：$J = 1 - \frac{\vec{R}^*}{R^*} \cdot \frac{\vec{v}^*}{c}$。并讨论 $J$ 的物理意义。若在介质中，式中 $c$ 应换为 $\frac{c}{n}$（$n$ 为介质的折射率），则 $J$ 有可能为$0$，它对应什么物理？  
 
@@ -96,8 +106,10 @@ $$
 
 注意：一下推导中可以分解算符为
 $$
+\begin{gathered}
 \nabla = \nabla^{*} + \nabla t^{*} \frac{\partial}{\partial t^{*}} \\
 \frac{\partial}{\partial t} = \frac{\partial t^{*}}{\partial t} \frac{\partial}{\partial t^{*}}
+\end{gathered}
 $$
 由推迟时间定义 $t^* = t - \frac{R^*}{c}$，固定场点 $\vec{r}$，对 $t$ 求导：
 $$
@@ -127,10 +139,12 @@ $$
 $$
 综上所述
 $$
+\begin{gathered}
 \nabla R^{*} = \frac{\vec{R}^{*}}{S^{*}} \\
 \nabla t^{*} = - \frac{1}{c} \frac{\vec{R}^{*}}{S^{*}} \\
 \frac{\partial R^{*}}{\partial t} = - \frac{\vec{R}^{*} \cdot \vec{v}^{*}}{S^{*}} \\
 \frac{\partial t^{*}}{\partial t} = \frac{R^{*}}{S^{*}}
+\end{gathered}
 $$
 所以由李纳维谢尔势
 $$
@@ -174,7 +188,9 @@ $$
 $$
 磁场：
 $$
+\begin{gathered}
 \vec{B}(\vec{r}, t) = \nabla \times \vec{A} = \nabla^{*} \times \vec{A} + (\nabla t^{*}) \times \frac{\partial \vec{A}}{\partial t^{*}} = \nabla^{*} \times (\vec{v}^{*} \frac{\phi}{c^{2}}) + \frac{\partial t}{\partial t^{*}} (\nabla t^{*}) \times \frac{\partial \vec{A}}{\partial t}  \\ = (\nabla^{*} \phi) \times \frac{\vec{v}^{*}}{c^{2}} - \frac{\vec{R}^{*}}{c R^{*}} \times \frac{\partial \vec{A}}{\partial t}
+\end{gathered}
 $$
 $$
 \nabla^{*} \phi = \nabla^{*} \frac{q}{4\pi\epsilon_{0}} \frac{1}{S^*}  = - \frac{q}{4\pi\epsilon_{0} S^{2*}} \nabla^{*} (R^{*} - \frac{\vec{R}^{*} \cdot \vec{v}^{*}}{c}) = - \frac{q}{4\pi\epsilon_{0} S^{2*}} (\frac{\vec{R}^{*}}{R^{*}} - \frac{\vec{v}^{*}}{c})
@@ -209,8 +225,10 @@ $$
 
 没有辐射的方向满足
 $$
+\begin{gathered}
 (\vec{e}_{r} \cdot \vec{a}) (\vec{e}_{r} - \vec{\beta}) = (1 - \vec{e}_{r} \cdot \vec{\beta}) \vec{a} \\
 (\vec{e}_{r} \cdot \vec{a}) (\vec{e}_{r} \cdot \vec{a} - \vec{\beta} \cdot \vec{a}) = (1 - \vec{e}_{r} \cdot \vec{\beta}) a^{2}
+\end{gathered}
 $$
 假设 $\vec{e}_{r}$ 与 $\vec{a}$ 的夹角为 $\beta$ ，切该夹角的正方向与 $\alpha$ 定义相同
 $$
@@ -244,8 +262,10 @@ $$
 $$
 其中 $R$ 和 $a$ 均为推迟时间时的结果。由于场点和粒子距离 $R >> z_{0}$ ，所以在远场处推迟时间可以近似为 $\frac{R}{c}$
 $$
+\begin{gathered}
 \vec{E} \approx \frac{q}{4 \pi \epsilon_{0} c^{2} R} (\vec{e}_{r} \times (\vec{e}_{r} \times \vec{a})) = \frac{q}{4 \pi \epsilon_{0} c^{2} R} (- \omega^{2} z_{0} e^{- i \omega (t - \frac{R}{c})}) (\vec{e}_{r} \times (\vec{e}_{r} \times \vec{e}_{z})) \\ = 
 - \frac{\omega^{2} q z_{0} \sin \theta}{4 \pi \epsilon_{0} c^{2} R} e^{i \omega (\frac{R}{c} - t)} \vec{e}_{\theta}
+\end{gathered}
 $$
 
 $$
@@ -288,8 +308,10 @@ $$
 
 所以在远场近似下
 $$
+\begin{gathered}
 \vec{E}_{radia} = \frac{q}{4 \pi \epsilon_{0} c^{2} R} (\vec{e}_{r} \times (\vec{e}_{r} \times \vec{a})) = \frac{q}{4 \pi \epsilon_{0} c^{2} R} (\vec{e}_{r} \times (- \omega^{2} R_{0}\cos \theta \cos \omega (t - \frac{R}{c}) \vec{e}_{\phi} + \omega^{2} R_{0} \sin \omega (t - \frac{R}{c} ) \vec{e}_{\theta})) \\ =
 \frac{q \omega^{2} R_{0}}{4 \pi \epsilon_{0} c^{2} R} (\cos \theta \cos \omega (t - \frac{R}{c})  \vec{e}_{\theta} + \sin \omega (t - \frac{R}{c}) \vec{e}_{\phi}) = \frac{q R_{0} \omega^{2}}{4\pi \epsilon_{0} c^{2} R} (\cos \theta \vec{e}_{\theta} + i \vec{e}_{\phi}) e^{i\left(\frac{\omega R - \omega t}{c}\right)}
+\end{gathered}
 $$
 
 $$
@@ -394,9 +416,11 @@ $$
 $$
 
 $$
+\begin{gathered}
 m \ddot{x} = - m \omega_{0}^{2} x + q B\dot{y} \\ 
 m \ddot{y} = - m \omega_{0}^{2} y - q B \dot{x} \\
 m \ddot{z} = - m \omega_{0}^{2} z
+\end{gathered}
 $$
 
 采取复数法求解 （ $z = x + iy$ ）
@@ -432,8 +456,10 @@ $z$ 方向的频率为 $\omega_{0}$ 的以及原来 $x- y$ 平面内频率为 $\
 
 此时运动方程变为
 $$
+\begin{gathered}
 \ddot{x} = \omega_{0} \dot{y} + \frac{\gamma}{\omega_{0}^{2}} \dddot{x} \\
 \ddot{y} = - \omega_{0} \dot{x} + \frac{\gamma}{\omega_{0}^{2}} \dddot{y}
+\end{gathered}
 $$
 其中 $\omega_{0} = \frac{q B}{m}, \gamma = \frac{e^{2} \omega_{0}^{2}}{6 \pi \epsilon_{0} m c^{3}}$
 
@@ -456,8 +482,10 @@ $$
 $$
 所以带入初始条件，得到运动轨迹为
 $$
+\begin{gathered}
 x \approx \left( R_{0} - \frac{v_{0}}{\omega_{0}} \right) + \frac{v_{0}}{\omega_{0}} e^{-\gamma t} \cos \omega_{0} t \\
 y \approx \frac{v_{0}}{\omega_{0}} e^{-\gamma t} \sin \omega_{0} t
+\end{gathered}
 $$
 (2) 电子单位时间内的辐射能量
 

@@ -106,8 +106,10 @@ u(r, \varphi, t) = v(r, \varphi, t) + u_{0} \frac{r^{2}}{a^{2}} \cos 2 \varphi \
 $$
 其中 $v(r, \varphi, t)$ 满足
 $$
+\begin{gathered}
 \pdv{}{t} v = - \omega u_{0} \frac{r^{2}}{a^{2}} \cos 2 \varphi \cos \omega t  + \kappa \nabla^{2} v\\
 v (a, \varphi, t) = 0
+\end{gathered}
 $$
 利用扩散方程的本征函数展开
 $$

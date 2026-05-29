@@ -120,13 +120,17 @@ e^{-} = \frac{|q] \bra{p}}{[pq]}
 $$
 Also define spin-s
 $$
+\begin{gathered}
 e^{+s} = \left(\frac{\ket{q} [p|}{\langle pq \rangle}\right)^{s} \\
 e^{-s} = \left(\frac{|q] \bra{p}}{[pq]}\right)^{s}
+\end{gathered}
 $$
 Consider the polarization tensors under LGT
 $$
+\begin{gathered}
 \ket{p} \to e^{-i \delta} \ket{p} \\
 \ket{q} \to \alpha \ket{q} +  \beta \ket{p}
+\end{gathered}
 $$
 
 $$
@@ -182,8 +186,10 @@ We can use the principles to constrain the form of $M$
     $$
     Under this rotation, the spinors will act as
     $$
+    \begin{gathered}
     \psi_{i} \to z_{i}^{- \frac{1}{2}} \psi_{i} \\
     \tilde{\psi}_{i} \to z_{i}^{\frac{1}{2}} \tilde{\psi}_{i}
+    \end{gathered}
     $$
     So the M will perform as
     $$
@@ -262,8 +268,10 @@ $$
 
 Where 
 $$
+\begin{gathered}
 [\lambda] = -2 \\
 [\kappa] = 0
+\end{gathered}
 $$
 We call the most important coupling in the macroscopic world minimal coupling ($\kappa$ here).
 
@@ -279,7 +287,9 @@ $$
 
 Where 
 $$
+\begin{gathered}
 [\lambda] = -5 \\
 [\kappa] = -1
+\end{gathered}
 $$
 Minimal coupling for gravitation is $[\kappa] = -1$.

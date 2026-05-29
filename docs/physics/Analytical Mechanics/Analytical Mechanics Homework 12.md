@@ -11,8 +11,10 @@ $$
 
 计算泊松括号为
 $$
+\begin{gathered}
 [Q, P]_{pq} = \pdv{Q}{q} \pdv{P}{p} - \pdv{Q}{p} \pdv{P}{q} \\ = 
 \sqrt{2p} \cos q \frac{\cos q}{\sqrt{2p}} + \frac{\sin q}{\sqrt{2p}} \sqrt{2p} \sin q = 1
+\end{gathered}
 $$
 并且显然有
 $$
@@ -31,21 +33,27 @@ $$
 
 计算泊松括号
 $$
+\begin{gathered}
 [Q_{i}, P_{j}]_{pq} = \sum_{k} \pdv{Q_{i}}{q_{k}} \pdv{P_{j}}{p_{k}} - \pdv{Q_{i}}{p_{k}} \pdv{P_{j}}{q_{k}} \\ = 
 \sum_{k} \delta_{ik} \cos \theta_{i} \delta_{jk} \cos \theta_{j} - \delta_{ik} \sin \theta_{k} \delta_{jk} \sin \theta_{k} \\=
 \delta_{ij}
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 [Q_{i}, Q_{j}]_{pq} = \sum_{k} \pdv{Q_{i}}{q_{k}} \pdv{Q_{j}}{p_{k}} - \pdv{Q_{i}}{p_{k}} \pdv{Q_{j}}{q_{k}} \\ = 
 \sum_{k} \delta_{ik} \cos \theta_{i} \delta_{jk} \sin \theta_{j} - \delta_{ik} \sin \theta_{k} \delta_{jk} \cos \theta_{k} \\=
 0
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 [P_{i}, P_{j}]_{pq} = \sum_{k} \pdv{P_{i}}{q_{k}} \pdv{P_{j}}{p_{k}} - \pdv{P_{i}}{p_{k}} \pdv{P_{j}}{q_{k}} \\ = 
 \sum_{k} \delta_{ik} \sin \theta_{i} \delta_{jk} \cos \theta_{j} - \delta_{ik} \cos \theta_{k} \delta_{jk} \sin \theta_{k} \\=
 0
+\end{gathered}
 $$
 
 所以是正则变换。
@@ -60,11 +68,13 @@ J_{k}  = \epsilon_{ijk} r_{i} p_{k}
 $$
 所以
 $$
+\begin{gathered}
 [J_{i}, J_{j}] = [\epsilon_{kli} r_{k} p_{l}, \epsilon_{mnj} r_{m} p_{n}] = \epsilon_{kli} \epsilon_{mnj} [r_{k} p_{l}, r_{m} p_{n}] \\ = 
 \epsilon_{kli} \epsilon_{mnj} (\delta_{kn} p_{l} r_{m} - \delta_{lm} r_{k} p_{n}) \\=
 \epsilon_{nli} \epsilon_{mnj} p_{l} r_{m} - \epsilon_{kmi} \epsilon_{mnj} r_{k} p_{n} \\=
 (\delta_{lj} \delta_{im} - \delta_{lm} \delta_{ij}) p_{l} r_{m} - (\delta_{in} \delta_{kj} - \delta_{kn} \delta_{ij}) r_{k} p_{n} \\ = 
 p_{j} r_{i} - \delta_{ij} p_{l} r_{l} - p_{i} r_{j}  + \delta_{ij} r_{k} p_{k} = r_{i} p_{j} - r_{j} p_{i}
+\end{gathered}
 $$
 所以
 $$
@@ -91,8 +101,10 @@ $$
 $$
 展开上述式子
 $$
+\begin{gathered}
 [p^{2} \vec{r} - (\vec{p} \cdot \vec{r}) \vec{p} - \frac{mk \vec{r}}{r},\frac{p^{2}}{2m} - \frac{k}{r}] = [p^{2}, \frac{p^{2}}{2m}] \vec{r} + [\vec{r}, \frac{p^{2}}{2m}] p^{2} - [p^{2} \vec{r} , \frac{k}{r}] - [(\vec{p} \cdot \vec{r}) \vec{p}, \frac{p^{2}}{2m}] + [(\vec{p} \cdot \vec{r}) \vec{p}, \frac{k}{r}] \\ 
 - [\frac{mk \vec{r}}{r}, \frac{p^{2}}{2m}] + [\frac{mk \vec{r}}{r}, \frac{k}{r}]
+\end{gathered}
 $$
 做等价变换
 $$
@@ -108,8 +120,10 @@ $$
 $$
 
 $$
+\begin{gathered}
 [p^{2} r_{i}, \frac{k}{r}] = [r_{i}, \frac{k}{r}] p^{2} + 2 p_{j} [p_{j}, \frac{k}{r}] r_{i} \\ = 
 0 + \frac{2 p_{j} r_{j}}{r^{3}} k r_{i}
+\end{gathered}
 $$
 
 $$
@@ -136,8 +150,10 @@ $$
 
 7.14 计算拉普拉斯-龙格-楞次矢量 $\mathbf{A}$ 各分量之间的泊松括号。
 $$
+\begin{gathered}
 [A_{i}, A_{j}] = [\epsilon_{lmi} p_{l} J_{m} - \frac{mk r_{i}}{r}, \epsilon_{knj} p_{k} J_{n} - \frac{mk r_{j}}{r} ] \\ =
 \epsilon_{lmi} \epsilon_{knj} [p_{l}J_{m}, p_{k} J_{n}] - mk \epsilon_{knj} [\frac{r_{i}}{r}, p_{k} J_{n}] - mk \epsilon_{lmi} [p_{l} J_{m}, \frac{r_{j}}{r}]
+\end{gathered}
 $$
 第一项
 $$

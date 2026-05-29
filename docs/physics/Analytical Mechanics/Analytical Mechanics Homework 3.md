@@ -20,8 +20,10 @@ p_{\phi} = \frac{\partial}{\partial \phi'} \sqrt{\theta'^{2} + \sin^{2} \theta \
 $$
 
 $$
+\begin{gathered}
 \frac{d}{dt} \left( \frac{\partial}{\partial \theta'} \sqrt{\theta'^{2} + \sin^{2} \theta \phi'^{2}} \right) = \frac{\partial}{\partial \theta} \sqrt{\theta'^{2} + \sin^{2} \theta \phi'^{2}} \\
 \frac{d}{dt} \frac{\theta'}{\sqrt{\theta'^{2} + \sin^{2} \theta \phi'^{2}}} = \frac{\sin \theta \cos \theta \phi'^{2}}{\sqrt{\theta'^{2} + \sin^{2} \theta \phi'^{2}}}
+\end{gathered}
 $$
 
 带入循环坐标，解得
@@ -42,9 +44,11 @@ S = \int_{0}^{x_{1}} 2 \pi f \sqrt{1 + f'^{2}} dx
 $$
 带入EL方程
 $$
+\begin{gathered}
 \frac{d}{dx} \frac{\partial}{\partial f'} f \sqrt{1 + f'^{2}} =  \frac{\partial}{\partial f} f \sqrt{1 + f'^{2}} \\
 f f'' = 1 + f'^{2} \\
 f = A \cosh(\frac{x - c}{A})
+\end{gathered}
 $$
 所以解析式为
 $$
@@ -52,15 +56,19 @@ f(x) = A \cosh(\frac{x - c}{A})
 $$
 其中
 $$
+\begin{gathered}
 A \cosh(\frac{c}{A}) = y_{0}\\
 A \cosh(\frac{x_{1} - c}{A}) = y_{1}
+\end{gathered}
 $$
 2.8 一软绳的两端分别固定在 $A$, $B$ 两点，在重力作用下绳子自然下垂，绳长 $D > AB$，求绳子的形状。
 
 不妨假设 $A$ 在原点，$B$ 的坐标为 $(x_{0}, y_{0})$，绳长为 $l$，线密度为 $\lambda$
 $$
+\begin{gathered}
 y = f(x), \quad f(0) = 0, f(x_{0}) = y_{0} \\
 \int_{0}^{x_{0}} \sqrt{1 + f'^{2}} dx = l
+\end{gathered}
 $$
 所以在此处的EL方程中需要引入拉格朗日乘子 $c$
 $$
@@ -74,8 +82,10 @@ $$
 
 所以对应哈密顿量
 $$
+\begin{gathered}
 p \dot{q} - L = f'(- \frac{\lambda f f'}{\sqrt{1 + f'^{2}}} + c \frac{f'}{\sqrt{1 + f'^{2}}}) + \lambda \sqrt{1 + f'^{2}} f - c \sqrt{1 + f'^{2}} = Const \\
 \frac{\lambda f - c}{\sqrt{1 + f'^{2}}} = Const = C_{1}
+\end{gathered}
 $$
 
 
@@ -93,9 +103,11 @@ f = \frac{C_{1}}{\lambda} (\cosh(\frac{\lambda}{C_{1}}x + C_{2}) + \frac{c}{\lam
 $$
 其中参数满足
 $$
+\begin{gathered}
 \cosh(C_{2}) = - \frac{c}{\lambda} \\
 y_{0} = \frac{C_{1}}{\lambda}(\cosh(\frac{\lambda}{C_{1}} x_{0} + C_{2}) + \frac{c}{\lambda}) \\
 \int_{0}^{x_{0}} \cosh(\frac{\lambda}{C_{1}} x + C_{2}) dx = l
+\end{gathered}
 $$
 
 2.13 假设可以自由地在地球内部穿梭，如图 2.3 所示，则只依靠重力从地面某一处到地面另一处的最快的路径为何？
@@ -121,13 +133,17 @@ p \dot{q} - L = - \frac{1}{\sqrt{G M}} \sqrt{\frac{R^{3}}{R^{2} - r^{2}}} \frac{
 $$
 所以
 $$
+\begin{gathered}
 r'^{2} = \frac{C r^{4} - R^{2} r^{2} + r^{4}}{R^{2} - r^{2}} \\
 \sqrt{\frac{R^{2} - r^{2}}{C r^{4} - R^{2} r^{2} + r^{4}}} dr = d\theta
+\end{gathered}
 $$
 积分得到（作代换 $r = R \cos \phi$）注：积分时的常数和上面的常数可能不代表一个常数，反正都是常数，所以我就随便换了
 $$
+\begin{gathered}
 \theta = \int_{0}^{\arccos \frac{r}{R}} (- \frac{1}{\cos \phi} + \cos \phi) \frac{d \phi}{\sqrt{C \cos^{2} \phi - 1}} \\ 
 = \arctan \left( \sqrt{\frac{R^{2} - r^{2}}{C r^{2} - R^{2}}} \right) - \frac{1}{\sqrt{C}} \arctan \left( \sqrt{\frac{C (R^{2} - r^{2})}{C r^{2} - R^{2}}} \right)
+\end{gathered}
 $$
 是一条摆线。常数 $C$ 可由端点待定系数给出。
 

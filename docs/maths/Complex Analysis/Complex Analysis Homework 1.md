@@ -12,23 +12,31 @@ $$
 $$
 6.请利用单倍角的三角函数表示 $\cos(n\theta)$ 和 $\sin(n\theta)$，并给出 $\cos(3\theta)$ 和 $\sin(3\theta)$ 的具体表达式。
 $$
+\begin{gathered}
 \cos (n \theta) = \frac{e^{i n \theta} + e^{- i n \theta}}{2} = \frac{1}{2} ((\cos \theta + i \sin \theta)^{n} + (\cos \theta - i \sin \theta)^{n}) \\ = \frac{1}{2} (\sum_{k = 0}^{n} i^{k} C_{n}^{k} \cos^{n - k} \theta \sin^{k} \theta + \sum_{k = 0}^{n} (-i)^{k} C_{n}^{k} \cos^{n-k} \theta \sin^{k} \theta) = \frac{1}{2} (2 \sum_{k = 0}^{[\frac{n}{2}]} i^{2k} C_{n}^{2k} \cos^{n-2k} \sin^{2k} \theta) \\ = \sum_{k = 0}^{[\frac{n}{2}]} i^{2k} C_{n}^{2k} \cos^{n-2k} \theta \sin^{2k} \theta
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 \sin (n \theta)  = \frac{e^{i n \theta} - e^{- i n \theta}}{2 i} = \frac{1}{2i} ((\cos \theta + i \sin \theta)^{n} - (\cos \theta - i \sin \theta)^{n}) \\ = \frac{1}{2i} (\sum_{k = 0}^{n} i^{k} C_{n}^{k} \cos^{n - k} \theta \sin^{k} \theta - \sum_{n = 0}^{k} (-i)^{k} \cos^{n - k} \theta \sin^{k} \theta) = \frac{1}{2i} (2i \sum_{n = 0}^{[\frac{n}{2}]} i^{2k} C_{n}^{2k + 1} \cos^{n - 2k - 1} \theta \sin^{2k + 1} \theta) \\ = 
 \sum_{n = 0}^{[\frac{n}{2}]} i^{2k} C_{n}^{2k + 1} \cos^{n - 2k - 1} \theta \sin^{2k + 1} \theta
+\end{gathered}
 $$
 
 特别地，对于 $n = 3$
 $$
+\begin{gathered}
 \cos (3 \theta) = \sum_{k = 0}^{1} i^{2k} C_{3}^{2k} \cos^{3-2k} \theta \sin^{2k} \theta \\ =
 \cos^{3} \theta - 3 \cos \theta \sin^{2} \theta
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 \sin (3 \theta) = \sum_{n = 0}^{1} i^{2k} C_{3}^{2k + 1} \cos^{3 - 2k - 1} \theta \sin^{2k + 1} \theta \\ =
 3 \cos^{2} \theta \sin \theta - \sin^{3} \theta
+\end{gathered}
 $$
 
 7.请利用多倍角三角函数的线性关系表达 $\cos^{n}\theta$ 和 $\sin^{n}\theta$，并给出 $\cos^{3}\theta$ 和 $\sin^{3}\theta$ 的具体表达式。
@@ -38,8 +46,10 @@ $$
 $$
 
 $$
+\begin{gathered}
 \sin^{n} \theta = \left( \frac{e^{i  \theta} - e^{- i \theta}}{2 i} \right)^{n}  = \sum_{k = 0}^{[\frac{n + 1}{2}]} C_{n}^{k} \frac{(-1)^{k} e^{i (n - 2k) \theta} + (-1)^{n - k} e^{- i (n - 2k) \theta}}{(2i)^{n}} \\ = 
 \begin{cases} \frac{1}{(2i)^{n - 1}} \sum_{k = 0}^{[\frac{n}{2}]} (-1)^{k} C_{n}^{k} \sin ((n - 2k) \theta) & (\text{n为奇数}) \\ \frac{1}{(2i)^{n}} \sum_{k = 0}^{[\frac{n}{2}]} 2 (-1)^{k} C_{n}^{k} \cos ((n - 2k) \theta) & (\text{n为偶数}) \end{cases}
+\end{gathered}
 $$
 
 特别地，对于 $n = 3$
@@ -68,8 +78,10 @@ $$
 $$
 对比上述二式，得到
 $$
+\begin{gathered}
 \frac{\partial u}{\partial r} \cos \theta + \frac{\partial v}{\partial r} \sin \theta =  \frac{1}{r} (\frac{\partial v}{\partial \theta} \cos \theta - \frac{\partial u}{\partial \theta} \sin \theta) \\
 \frac{\partial v}{\partial r} \cos \theta - \frac{\partial v}{\partial r} \sin \theta = - \frac{1}{r} (\frac{\partial u}{\partial \theta} \cos \theta + \frac{\partial v}{\partial \theta} \sin \theta)
+\end{gathered}
 $$
 即
 $$

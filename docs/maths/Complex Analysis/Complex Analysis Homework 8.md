@@ -29,15 +29,19 @@ $$
 
 在 $1 < |z| < 2$ 上展开
 $$
+\begin{gathered}
 \frac{1}{z^{2} - 3z + 2} = \frac{1}{(z - 1) (z - 2)} = - \frac{1}{z - 1} \frac{1}{1 - (z - 1)} \\ =
 - \frac{1}{z - 1} \sum_{n = 0}^{\infty} (-1)^{n} \begin{pmatrix} n \\ -1 \end{pmatrix} (z - 1)^{n} \\ =
 \sum_{n = -1}^{\infty} (-1)^{n}  \begin{pmatrix} n + 1 \\ -1 \end{pmatrix} (z - 1)^{n}
+\end{gathered}
 $$
 在 $|z| > 2$ 区域内展开
 $$
+\begin{gathered}
 \frac{1}{z^{2} - 3z + 2} = \frac{1}{(z - 1) (z - 2)} = \frac{1}{(z - 1)^{2}} \frac{1}{1 - \frac{1}{(z - 1)}} \\ =
 \frac{1}{(z - 1)^{2}} \sum_{n = 0}^{\infty} (-1)^{n} \begin{pmatrix} n \\ -1 \end{pmatrix} (z - 1)^{- n} \\ =
 \sum_{n = 0}^{\infty} (-1)^{n}  \begin{pmatrix} n \\ -1 \end{pmatrix} (z - 1)^{- n - 2}
+\end{gathered}
 $$
 (e)  
 $$
@@ -53,16 +57,22 @@ $$
 
 当$k = 0$ 时
 $$
+\begin{gathered}
 \ln^{-1} \frac{1 + z}{1 - z} = \frac{1}{\sum_{n = 0}^{\infty} \frac{2}{2n + 1} z^{2n + 1}} = \frac{1}{2z} \frac{1}{1 + \sum_{n = 1}^{\infty} \frac{1}{2n + 1} z^{2n}} \\ = 
 \frac{1}{2 z} - \frac{1}{6} z - \frac{2}{45} z^{3} - \cdots
+\end{gathered}
 $$
 当 $k \neq 0$ 时
 $$
+\begin{gathered}
 \ln^{-1} \frac{1 + z}{1 - z} = \frac{1}{i 2 k \pi} \frac{1}{1 + \sum_{n = 0}^{\infty} \frac{z^{2n + 1}}{i (2n + 1) k \pi}} \\ = 
 - \frac{i}{2 k \pi} + \frac{1}{2 k^{2} \pi^{2}} z + \frac{i}{2 k^{3} \pi^{3}} z^{2} + \cdots
+\end{gathered}
 $$
 在$z = \infty$ 邻域内，假设 $z = -1$ 到 $z = 1$ 连线上宗量辐角为 $2 k \pi， (k \in \mathbb{Z})$  ，此时在无穷远点宗量辐角为 $(2k + 1) \pi$
 $$
+\begin{gathered}
 \ln^{-1} \frac{1 + z}{1 - z} = \frac{1}{i (2 k + 1) \pi} \frac{1}{1 + \sum_{n = 0}^{\infty} \frac{2z^{- 2n - 1}}{i (2n + 1) (2k + 1) \pi}} \\ = 
 - \frac{i}{(2 k + 1) \pi} + \frac{2}{(2 k + 1)^{2} \pi^{2}} \frac{1}{z} + \frac{4i}{(2 k + 1)^{3} \pi^{3}} \frac{1}{z^{2}} + \cdots
+\end{gathered}
 $$

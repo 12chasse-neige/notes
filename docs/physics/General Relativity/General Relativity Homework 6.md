@@ -512,6 +512,7 @@ Since the polarization tensors are already transverse and traceless, we can cont
 
 Or we can use the form given by eq 3.72 in the textbook *Gravitational Waves*[^1]
 $$
+\begin{gathered}
 h_{+}(t; \theta, \phi) = \frac{1}{r} \frac{G}{c^{4}}[ 
   \ddot{M}_{11}(\cos^{2} \phi - \sin^{2} \phi \cos^{2} \theta) 
   + \ddot{M}_{22}(\sin^{2} \phi - \cos^{2} \phi \cos^{2} \theta) 
@@ -519,6 +520,7 @@ h_{+}(t; \theta, \phi) = \frac{1}{r} \frac{G}{c^{4}}[
   - \ddot{M}_{12} \sin 2\phi (1 + \cos^{2} \theta) 
   + \ddot{M}_{13} \sin \phi \sin 2\theta 
   + \ddot{M}_{23} \cos \phi \sin 2\theta]
+\end{gathered}
 $$
 
 $$

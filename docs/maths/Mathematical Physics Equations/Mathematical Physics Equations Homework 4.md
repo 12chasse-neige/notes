@@ -25,9 +25,11 @@ v(x, t) = A \frac{x}{l} \sin \omega t
 $$
 所以 $w(x, t)$ 满足
 $$
+\begin{gathered}
 \pdv{w}{t} - \kappa \pdv{w}{x^{2}}{} = - \omega A \frac{x}{l} \cos \omega t \\
 \left. w \right|_{x = 0} = 0, \quad \left. w \right|_{x = l} = 0 \\
 \left. w \right|_{t = 0} = 0
+\end{gathered}
 $$
 对于这个方程，我们直接使用特征函数展开。特征函数为
 $$
@@ -35,7 +37,9 @@ E_{n} = \sin(\frac{n \pi}{l} x)
 $$
 右侧函数用特征函数展开的系数为
 $$
+\begin{gathered}
 c_{n} = \frac{2}{l} \int_{0}^{l} \omega A \frac{x}{l} \cos \omega t  \sin \omega_{n} x \, \dd x \\ =- \frac{2 \omega A}{n \pi} \cos \omega t \int_{0}^{n \pi} \frac{x}{n \pi} \sin x \, \dd x \\ = (-1)^{n} \frac{2 \omega A}{n \pi} \cos \omega t
+\end{gathered}
 $$
 所以微分方程化为
 $$
@@ -45,13 +49,17 @@ $$
 
 待定系数得到
 $$
+\begin{gathered}
 C_{n} \omega +  D_{n} \kappa \omega_{n}^{2} = (-1)^{n} \frac{2 \omega A}{n \pi} \\
 - D_{n} \omega + C_{n} \kappa \omega_{n}^{2} = 0
+\end{gathered}
 $$
 解得
 $$
+\begin{gathered}
 C_{n} = \frac{(-1)^{n} 2 \omega^{2} A}{n \pi (\omega^{2} + \kappa^{2} \frac{n^{4} \pi^{4}}{l^{4}})}  \\
 D_{n} = \frac{(-1)^{n} 2 \omega \kappa \frac{n^{2} \pi^{2}}{l^{2}} A}{n \pi (\omega^{2} + \kappa^{2} \frac{n^{4} \pi^{4}}{l^{4}})}
+\end{gathered}
 $$
 这是特解，再根据初始条件确定该方程的通解
 $$

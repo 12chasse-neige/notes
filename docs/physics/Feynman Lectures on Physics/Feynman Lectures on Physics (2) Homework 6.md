@@ -46,15 +46,19 @@ r' -  \frac{\vec{v} \cdot \vec{r'}}{c} = ct (1 - \beta^{2}) - \frac{\vec{r} \cdo
 $$
 
 $$
+\begin{gathered}
 \phi = \frac{q}{4 \pi \epsilon_{0} (r' - \frac{\vec{v} \cdot \vec{r'}}{c})} \\
 \vec{A} = \phi \vec{v} = \frac{q \vec{v}}{4 \pi \epsilon_{0} c^{2} (r' - \frac{\vec{v} \cdot \vec{r'}}{c})}
+\end{gathered}
 $$
 
 所以
 $$
+\begin{gathered}
 \vec{E} = - \nabla \phi - \frac{\partial}{\partial t} \vec{A} = - \nabla \frac{q}{4 \pi \epsilon_{0} (r' - \frac{\vec{v} \cdot \vec{r'}}{c})}  - \frac{\partial}{\partial t} \frac{q \vec{v}}{4 \pi \epsilon_{0} c^{2} (r' - \frac{\vec{v} \cdot \vec{r'}}{c})} \\ =
 - \frac{q}{4 \pi \epsilon_{0}} \left( - \frac{2 \beta^{2} (\vec{r} \cdot \hat{x}) \hat{x} + 2 (1 - \beta^{2}) \vec{r}}{2\sqrt{\beta^{2} (\vec{r} \cdot \hat{x})^{2} + (1 - \beta^{2}) r^{2}}^{3}} + \frac{2 \beta^{2} (\vec{r} \cdot \hat{x}) \hat{x} + 2 (1 - \beta^{2}) \vec{r}}{2\sqrt{\beta^{2} (\vec{r} \cdot \hat{x})^{2} + (1 - \beta^{2}) r^{2}}^{3}} \cdot \frac{\vec{v}}{c^{2}} \vec{v} \right)  \\ =
 \frac{q}{4 \pi \epsilon_{0}}  \frac{(1 - \beta^{2}) \vec{r}}{(\beta^{2} (\vec{r} \cdot \hat{v})^{2} + (1 - \beta^{2}) r^{2})^{\frac{3}{2}}}
+\end{gathered}
 $$
 对比洛伦兹变换结果
 
@@ -72,9 +76,11 @@ $$
 $$
 所以
 $$
+\begin{gathered}
 \vec{E} = \frac{q}{4 \pi \epsilon_{0}} \frac{- (\gamma - 1) \gamma (\vec{r} \cdot \hat{v}) \hat{v} + \gamma (\gamma - 1) (\vec{r} \cdot \hat{v}) \hat{v} + \gamma \vec{r}}{\left( \frac{\beta^{2} (\vec{r} \cdot \hat{v})^{2} + (1 - \beta^{2}) r^{2}}{1 - \beta^{2}} \right)^{\frac{3}{2}}} \\ =
 \frac{q}{4 \pi \epsilon_{0}} \frac{\gamma \vec{r}}{\left( \frac{\beta^{2} (\vec{r} \cdot \hat{v})^{2} + (1 - \beta^{2}) r^{2}}{1 - \beta^{2}} \right)^{\frac{3}{2}}} \\ =
 \frac{q}{4 \pi \epsilon_{0}}  \frac{(1 - \beta^{2}) \vec{r}}{(\beta^{2} (\vec{r} \cdot \hat{v})^{2} + (1 - \beta^{2}) r^{2})^{\frac{3}{2}}}
+\end{gathered}
 $$
 可以看出，两种计算方式的结果是相同的
 
@@ -152,8 +158,10 @@ $$
 $$
 
 $$
+\begin{gathered}
 \partial'_{\mu} F'^{\mu\nu} = \delta^{\delta}{}_{\alpha} \Lambda^{\nu}{}_{\beta} \partial_{\delta} F^{\alpha\beta} \\ = 
 \Lambda^{\nu}{}_{\beta} \partial_{\alpha} F^{\alpha\beta} = \frac{4 \pi}{c} \Lambda^{\nu}{}_{\beta} j^{\beta} = \frac{4 \pi}{c} j'^{\nu}
+\end{gathered}
 $$
 
 同理，对于对偶电磁场张量：
@@ -174,13 +182,17 @@ $$
 
 证明
 $$
+\begin{gathered}
 A^{\mu} \rightarrow A^{\mu} + \epsilon^{\nu}(x)\partial_{\nu} A^{\mu} \\
 \partial_{\sigma} A^{\mu} \rightarrow \partial_{\sigma} A^{\mu} + \partial_{\sigma} \epsilon^{\nu} (x) \partial_{\nu} A^{\mu}
+\end{gathered}
 $$
 所以
 $$
+\begin{gathered}
 \delta S = \frac{\partial S}{\partial A^{\mu}} \epsilon^{\nu} (x) \partial_{\nu} A^{\mu} + \frac{\partial S}{\partial (\partial_{\sigma} A^{\mu})} \partial_{\sigma} \epsilon^{\nu} (x) \partial_{\nu} A^{\mu} \\ =
 \int d^{4x} \left( \frac{\partial \mathcal{L}}{\partial A^{\mu}} \epsilon^{\nu}(x) \partial_{\nu} A^{\mu} + \frac{\partial \mathcal{L}}{\partial (\partial_{\sigma} A^{\mu})} \partial_{\sigma} [\epsilon^{\nu}(x) \partial_{\nu} A^{\mu}] \right)
+\end{gathered}
 $$
 (2). 在上述的基础上，请证明作用量的变化满足:
 $$
@@ -189,6 +201,7 @@ $$
 
 证明
 $$
+\begin{gathered}
 \delta S = \int d^{4x} \left( \frac{\partial \mathcal{L}}{\partial A^{\mu}} \epsilon^{\nu}(x) \partial_{\nu} A^{\mu} + \frac{\partial \mathcal{L}}{\partial (\partial_{\sigma} A^{\mu})} \partial_{\sigma} [\epsilon^{\nu}(x) \partial_{\nu} A^{\mu}] \right) \\ = 
 \int d^{4} x \left( \frac{\partial \mathcal{L}}{\partial A^{\mu}} \epsilon^{\nu}(x)  +  \frac{\partial \mathcal{L}}{\partial (\partial_{\mu} A^{\sigma})} \partial_{\mu} [\epsilon^{\nu}(x) \partial_{\nu} A^{\sigma}] \right) \\ =
 \int d^{4} x \left( \frac{\partial \mathcal{L}}{\partial A^{\mu}} \epsilon^{\nu}(x) + \frac{\partial \mathcal{L}}{\partial (\partial_{\mu} A^{\sigma})} \partial_{\mu} (\partial_{\nu} A^{\sigma}) \epsilon^{\nu}(x)  +  \frac{\partial \mathcal{L}}{\partial (\partial_{\mu} A^{\sigma})} \partial_{\nu} A^{\sigma} \partial_{\mu} \epsilon^{\nu}(x) \right) \\ = 
@@ -196,6 +209,7 @@ $$
 \int d^{4} x \left(\frac{\partial \mathcal{L}}{\partial (\partial_{\mu} A^{\sigma})} \partial_{\nu} A^{\sigma} \partial_{\mu} \epsilon^{\nu}(x) - \mathcal{L} \partial_{\nu} \epsilon^{\nu} (x) \right) \\ =
 \int d^{4} x \left(\frac{\partial \mathcal{L}}{\partial (\partial_{\mu} A_{\sigma})} \partial^{\nu} A_{\sigma} \partial_{\mu} \epsilon_{\nu}(x) - \mathcal{L} \partial_{\mu} \eta^{\mu \nu} \epsilon_{\nu} (x) \right) \\ =
 \int d^{4x} T^{\mu\nu} \partial_{\mu} \epsilon_{\nu}(x), \quad T^{\mu\nu} = \frac{\partial \mathcal{L}}{\partial (\partial_{\mu} A_{\sigma})} \partial^{\nu} A_{\sigma} - \eta^{\mu\nu} \mathcal{L}
+\end{gathered}
 $$
 (3). 对于一般的理论而言，如果其满足时空平移不变性，即 $\epsilon^{\nu}(x) = \epsilon^{\nu}$ 为一个不依赖于时空坐标的函数时，体系的作用量应该在该时空平移下保持不变: $\delta S = 0$。在分部积分的意义下，这意味着我们有 $\partial_{\nu} T^{\mu\nu} = 0$。对于电磁理论来说，其作用量可以写为:
 $$
@@ -211,9 +225,11 @@ $$
 $$
 
 $$
+\begin{gathered}
 T^{\mu\nu} = \frac{\partial \mathcal{L}}{\partial (\partial_{\mu} A_{\sigma})} \partial^{\nu} A_{\sigma} - \eta^{\mu\nu} \mathcal{L} \\ =
 (- \partial^{\mu} A^{\sigma}  + \partial^{\sigma} A^{\mu}) \partial^{\nu} A_{\sigma} - \eta^{\mu\nu} \mathcal{L} \\ =
 - F^{\mu\sigma} \partial_{\nu} A^{\sigma} - \eta^{\mu\nu} \mathcal{L}
+\end{gathered}
 $$
 
 (4) 对于一般的电磁理论而言，我们可以采用希尔伯特的定义方式，让其能量-动量张量是对称张量。具体而言，对于电磁理论而言，其能量-动量张量对称化之后可以写为:
@@ -227,10 +243,12 @@ $$
 
 证明
 $$
+\begin{gathered}
 \partial_{\mu} T^{\mu 0} = \partial_{\mu} (\eta^{\sigma\lambda} F^{\mu\sigma} F^{\lambda 0} - \eta^{\mu 0} \mathcal{L}) \\ =
 \partial_{\mu} ( - (F^{\mu 1} F^{10} + F^{\mu 2} F^{20} + F^{\mu 3} F^{30}) + F^{\mu 0} F^{00}) + \partial_{0} \mathcal{L} \\ = \partial_{0} ( E^{2}) + \partial_{i} (F^{ij} F^{j0}) - \frac{\partial}{\partial t} \mathcal{L}\\ = 
 \frac{\partial}{\partial t} E^{2} + \partial_{i} (\epsilon^{ijk} E_{j} B_{k})  - \frac{\partial}{\partial t} ( \frac{1}{2} (E^{2} - B^{2}))\\ = 
 \frac{1}{2} \frac{\partial}{\partial t} (\vec{E} \cdot \vec{E} + \vec{B} \cdot \vec{B}) + \nabla \cdot (\vec{E} \times \vec{B}) = 0
+\end{gathered}
 $$
 
 ### 4 菲涅尔定律及其应用 (33-1)

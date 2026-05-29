@@ -13,10 +13,12 @@ $$
 所以
 
 $$
+\begin{gathered}
 (\vec{a}\cdot\vec{\sigma})(\vec{b}\cdot\vec{\sigma})
 =a_{i}b_{j}\sigma_{i}\sigma_{j}\\
 =a_{i}b_{j}\delta_{ij}I+\mathrm{i}a_{i}b_{j}\varepsilon_{ijk}\sigma_{k}\\
 =(\vec{a}\cdot\vec{b})I+\mathrm{i}(\vec{a}\times\vec{b})\cdot\vec{\sigma}
+\end{gathered}
 $$
 
 这里如果 $\vec{a},\vec{b}$ 的分量是算符，乘积的次序理解为 $a_{i}b_{j}$，并且这些算符与 Pauli 矩阵对易。
@@ -158,12 +160,14 @@ $$
 先计算 $(\vec{\sigma}\cdot\hat{\vec{L}})^{2}$，利用 8.1.1 的结果，注意 $\hat{L}_{i}$ 之间不对易，所以
 
 $$
+\begin{gathered}
 (\vec{\sigma}\cdot\hat{\vec{L}})^{2}
 =\sigma_{i}\sigma_{j}\hat{L}_{i}\hat{L}_{j}\\
 =\hat{L}^{2}+\mathrm{i}\varepsilon_{ijk}\sigma_{k}\hat{L}_{i}\hat{L}_{j}\\
 =\hat{L}^{2}+\frac{\mathrm{i}}{2}\varepsilon_{ijk}\sigma_{k}[\hat{L}_{i},\hat{L}_{j}]\\
 =\hat{L}^{2}-\frac{\hbar}{2}\varepsilon_{ijk}\varepsilon_{ijl}\sigma_{k}\hat{L}_{l}\\
 =\hat{L}^{2}-\hbar\vec{\sigma}\cdot\hat{\vec{L}}
+\end{gathered}
 $$
 
 在固定 $l$ 的子空间中，$\hat{L}^{2}=l(l+1)\hbar^{2}$，因此
@@ -347,7 +351,7 @@ $$
 
 8.2.3 (选做) 一般地说，如果电子的角动量是$\vec{J}$（轨道角动量或自旋角动量或总角动量），$\vec{J}$产生的磁矩是$\vec{M}_{J}$，那么总成立$\vec{M}_{J}/\mu_{\text{B}}=-g_{J}(\vec{J}/\hbar)$，其中$\mu_{\text{B}}$是Bohr磁子，$g_{J}$是无量纲常数，称为g因子或朗德Landé因子。已知：对于轨道角动量，$g_{L}=1$（见§6.4.3），对自旋角动量，$g_{S}=2$（见§8.1.1），因此问题是：对总角动量$\vec{J}=\vec{L}+\vec{S}$，$g_{J}=$？下面分两步来回答该问题。
 
-<img src="./Quantum%20Mechanics%20Homework%208.assets/image-20260517195959670.png" alt="image-20260517195959670">
+<img src="./Quantum Mechanics Homework 8.assets/image-20260517195959670.png" alt="image-20260517195959670">
 
 (a) 请证明：若$\vec{J}=\vec{J}_{1}+\vec{J}_{2}$，则有
 $$
@@ -442,9 +446,11 @@ $$
 所以
 
 $$
+\begin{gathered}
 \frac{\bar{M}_{Jz}}{\mu_{\mathrm{B}}}
 =-\frac{1}{\hbar}(\bar{L}_{z}+2\bar{S}_{z})\\
 =-\frac{1}{\hbar}(C_{L}+2C_{S})J_{z}
+\end{gathered}
 $$
 
 与定义

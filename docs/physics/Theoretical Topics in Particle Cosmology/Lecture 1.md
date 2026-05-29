@@ -55,8 +55,10 @@ $$
 $$
 
 $$
+\begin{gathered}
 \mathcal{L}_{free} = \mathcal{L}_{gluon} + \mathcal{L}_{EW} + \mathcal{L}_{gravitation} \\
 + \mathcal{L}_{quark} + \mathcal{L}_{lepton} + \mathcal{L}_{Higgs}
+\end{gathered}
 $$
 
 $$

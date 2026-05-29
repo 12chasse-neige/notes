@@ -14,20 +14,26 @@ $$
 
 对椭球面做如下参数化
 $$
+\begin{gathered}
 x = a \sin \theta \cos \phi \\
 y = b \sin \theta \sin \phi \\
 z = c \cos \theta
+\end{gathered}
 $$
 所以
 $$
+\begin{gathered}
 x_{\theta} = a \cos \theta \cos \phi, y_{\theta} = b \cos \theta \sin \phi, z_{\theta} = - c \sin \theta \\
 x_{\phi} = - a \sin \theta \sin \phi, y_{\phi} = b \sin \theta \cos \phi, z_{\phi} = 0
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 S = \iint d S = \iint \begin{vmatrix}  \begin{pmatrix} a \cos \theta \cos \phi, b \cos \theta \sin \phi, - c \sin \theta \end{pmatrix} \times \begin{pmatrix} - a \sin \theta \sin \phi, b \sin \theta \cos \phi, 0 \end{pmatrix} \end{vmatrix} d \theta d \phi \\ =
 \iint \sqrt{(bc \sin^{2} \theta \cos \phi)^{2} + (ac \sin^{2} \theta \sin \phi)^{2} + (ab \sin \theta \cos \theta)^{2}} d \theta d \phi \\ =
 \iint \sqrt{b^{2} c^{2} \sin^{2} \theta \cos^{2} \phi + a^{2} c^{2} \sin^{2} \theta \sin^{2} \phi + a^{2} b^{2} \cos^{2} \theta} \sin \theta d \theta d \phi
+\end{gathered}
 $$
 
 #### (2)
@@ -69,21 +75,27 @@ $$
 
 做如下参数化
 $$
+\begin{gathered}
 x = (b \cos \theta + a) \sin \phi \\ 
 y = (b \cos \theta + a) \cos \phi \\
 z = b \sin \theta
+\end{gathered}
 $$
 其中，参数取值范围 $\theta \in [0, \pi], \phi \in [0, 2 \pi)$所以
 $$
+\begin{gathered}
 x_{\theta} = - b \sin \theta \sin \phi, y_{\theta} = - b \sin \theta \cos \phi, z_{\theta} = b \cos \theta \\
 x_{\phi} = (b \cos \theta + a) \cos \phi, y_{\phi} = - (b \cos \theta + a) \sin \phi, z_{\phi} = 0
+\end{gathered}
 $$
 面积
 $$
+\begin{gathered}
 S = \iint |(-b \sin \theta \sin \phi, -b \sin \theta \cos \phi, b \cos \theta) \times ((b \cos \theta + a) \cos \phi, - (b \cos \theta + a) \sin \phi, 0)| d \theta d \phi \\ =
 \iint \sqrt{(b^{2} \cos^{2} \theta + ab \cos \theta)^{2} \sin^{2} \phi + (b^{2} \cos^{2} \theta + ab \cos \theta)^{2} \cos^{2} \phi + (b^{2} \sin \theta \cos \theta + ab \sin \theta)^{2}} d \theta d \phi \\ =
 \iint \sqrt{b^{4} \cos^{2} \theta + 2 ab^{3} \cos \theta + a^{2} b^{2}} d \theta d \phi \\ =
 \iint b (b \cos \theta + a) d \theta d \phi = 2 \pi b \int_{0}^{\pi} (b \cos \theta + a) d \theta = 2 \pi^{2} ab 
+\end{gathered}
 $$
 
 
@@ -147,9 +159,11 @@ $$
 
 证明
 $$
+\begin{gathered}
 L = \int_{0}^{1} \sqrt{x'(t)^{2} + y'(t)^{2} + z'(t)^{2}} \, dt \geq \int_{0}^{1} \sqrt{\frac{z(t)^{2}}{x(t)^{2} + y(t)^{2}} z'(t)^{2} + z'^{2} (t)} \, dt \\ =
 \int_{0}^{1} \frac{|z' (t)|}{\sqrt{x^{2} (t) + y^{2} (t)}} dt = \int_{0}^{1} \sqrt{\frac{z'^{2} (t)}{1 - z^{2} (t)}} dt \\ \geq 
 \int_{0}^{1} \frac{z' (t)}{\sqrt{1 - z^{2} (t)}} dt = \int_{-1}^{1} \frac{dz}{\sqrt{1 - z^{2}}} = \pi
+\end{gathered}
 $$
 
 ### 5
@@ -173,14 +187,18 @@ x = \frac{\sqrt{2}}{2} (u - v)
 $$
 再换到球坐标下
 $$
+\begin{gathered}
 u = \cos \theta \\
 v = \sin \theta \sin \phi \\
 w = \sin \theta \cos \phi
+\end{gathered}
 $$
 所以积分范围为 $\theta \in [0, \arccos \frac{\sqrt{2}}{2} c], \phi \in [0, 2 \pi]$
 $$
+\begin{gathered}
 \iint_{S} x dS = \iint_{S} \frac{\sqrt{2}}{2} (\cos \theta - \sin \theta \sin \phi) \sin \theta d \theta d \phi \\ =
 \frac{\sqrt{2}}{2} \cdot 2 \pi \int_{0}^{\arccos \frac{\sqrt{2}}{2} c} \cos \theta \sin \theta d \theta \\ = \sqrt{2} \pi \cdot \frac{1}{2} (1 - \frac{c^{2}}{2}) = \frac{\sqrt{2}}{2} \pi (1 - \frac{c^{2}}{2})
+\end{gathered}
 $$
 
 #### (2)
@@ -206,8 +224,10 @@ B(u) = \oint_{C} \frac{-y \, dx + x \, dy}{(x^{2} + y^{2} + u^{2})^{3/2}}
 $$
 参数化
 $$
+\begin{gathered}
 x = \cos \theta \\
 y = \sin \theta
+\end{gathered}
 $$
 
 $$
@@ -221,8 +241,10 @@ $$
 $$
 
 $$
+\begin{gathered}
 \lim_{A \to +\infty} \int_{-A}^{A} B(u) \, du = \lim_{A \to \infty} \int_{-A}^{A} \frac{2 \pi}{\cosh^{3} \theta} d (\sinh \theta) \\ =
 \lim_{A \to \infty} \int_{- A}^{A} \frac{2 \pi}{\cosh^{2} \theta} d \theta = 4 \pi
+\end{gathered}
 $$
 
 ### 7
@@ -265,7 +287,9 @@ $$
 $$
 
 $$
+\begin{gathered}
 \oint_{L} xy \, dx + yz \, dy + zx \, dz = \iint_{S} - (y, z, x) \cdot \frac{\sqrt{3}}{3} (1, 1, 1) dS \\ = - \frac{\sqrt{3}}{3} \iint_{S} d S = - \frac{2 \sqrt{3} \pi}{9}
+\end{gathered}
 $$
 
 ### 8
@@ -280,15 +304,19 @@ I_{n} = \iint_{S} (x^{n} \, dy \, dz + y^{n} \, dz \, dx + z^{n} \, dx \, dy)
 $$
 对椭球面做如下参数化
 $$
+\begin{gathered}
 x = a \sin \theta \cos \phi \\
 y = b \sin \theta \sin \phi \\
 z = c \cos \theta
+\end{gathered}
 $$
 所以利用 Gauss 公式
 $$
+\begin{gathered}
 I_{n} = \iint_{S} (x^{n} \, dy \, dz + y^{n} \, dz \, dx + z^{n} \, dx \, dy) \\ = \iiint_{V} n (x^{n - 1} + y^{n - 1} + z^{n - 1}) dx dy dz \\ =
 n abc \iiint_{V} (a^{n - 1} r^{n - 1} \sin^{n - 1} \theta \cos^{n - 1} \phi + b^{n - 1} r^{n - 1} \sin^{n - 1} \theta \sin^{n - 1} \phi + c^{n - 1}  r^{n - 1} \cos^{n - 1} \theta) r^{2} \sin \theta dr d \theta d \phi \\ =
 \frac{2n \pi}{n + 2} abc \int_{0}^{\pi} \int_{0}^{2 \pi} (a^{n - 1} \sin^{n - 1} \theta \cos^{n - 1} \phi + b^{n - 1} \sin^{n - 1} \theta \sin^{n - 1} \phi + c^{n - 1}  \cos^{n - 1} \theta)  \sin \theta d \theta d \phi \\ =
 \frac{2n \pi}{n + 2} abc  ((a^{n - 1} + b^{n - 1}) 2 \frac{(n - 2)!!}{n!!} + c^{n - 1} \frac{2}{n}) \\ = 
 \frac{4 \pi}{n + 2} abc (a^{n - 1} + b^{n - 1} + c^{n + 1})
+\end{gathered}
 $$

@@ -41,8 +41,10 @@ $$
 
 由于两个速度分布是独立的，所以我们可以从联合分布出发
 $$
+\begin{gathered}
 f(v_{1x}, v_{2x}, v_{1y}, v_{2y}) \dd{v}_{1x} \dd{v}_{2x} \dd{v}_{1y} \dd{v}_{2y} \dd{v}_{1z} \dd{v}_{2z} \\ = 
 \left( \frac{m_{1}}{2\pi kT} \right)^{\frac{3}{2}} \left(\frac{m_{2}}{2\pi kT} \right)^{\frac{3}{2}} \exp\left( -\frac{m_{1} v_{1}^{2}}{2kT} \right) \exp\left( -\frac{m_{2} v_{2}^{2}}{2kT} \right) \dd{v}_{1x} \dd{v}_{2x} \dd{v}_{1y} \dd{v}_{2y} \dd{v}_{1z} \dd{v}_{2z}
+\end{gathered}
 $$
 注意到体积元之间存在变换
 $$

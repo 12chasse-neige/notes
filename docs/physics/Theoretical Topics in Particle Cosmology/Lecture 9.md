@@ -62,20 +62,26 @@ $$
 $$
 will be non-zero. We calculate the inner product
 $$
+\begin{gathered}
 \langle RT g | S g \rangle = \langle g | e^{i J_{y} \theta + i H_{0} \Delta t} \times S | g \rangle \\ =
 \int \dd{E} \dd{E'} \sum_{l, n l', n'} \langle E', l', n'| g^{*}_{l'n'} (E') g_{ln} (E) P_{l'} (\cos \theta) e^{i E' \Delta t} e^{i \chi_{l} (E)} | E,l,n \rangle \\ \rightarrow^{l \to 0}
 \int \dd{E} \dd{l} \int_{0}^{2 \pi} \frac{\dd{z}}{2 \pi} \sum_{n} |g_{l,n} (E)|^{2} \times e^{il \theta \cos z + i E \Delta t  + i \chi_{l}}
+\end{gathered}
 $$
 Saddle-point
 $$
+\begin{gathered}
 \pdv{}{z} = \sin z = 0 \\
 \pdv{}{l} = \theta \cos z + \pdv{\chi_{l}}{l} = 0 \\
 \pdv{}{E} = \Delta t + \pdv{\chi_{l}}{E} = 0
+\end{gathered}
 $$
 Which gives out
 $$
+\begin{gathered}
 \theta = \frac{1}{p} \left|\pdv{\chi (E, b)}{b}\right| \\
 \Delta t = - \pdv{\chi (E, b)}{E}
+\end{gathered}
 $$
 
 ### From Amplitude to Phase Shift
@@ -94,8 +100,10 @@ M (E, b) = \frac{1}{N p^{2}} \int_{0}^{\infty} q \dd{q} \int_{0}^{2 \pi} \frac{\
 $$
  where
 $$
+\begin{gathered}
 \vec{q} = (q,0,0) = (q_{\perp}, 0) \\
 \vec{b} = (\cos z, \sin z, 0) = (b_{\perp}, 0)
+\end{gathered}
 $$
 Plug in these terms
 $$
@@ -108,16 +116,66 @@ $$
 
 ### Gravitational Scattering of Two Scalars
 
+Taking $m_{1} = m$ and $m_{2} \to 0$, the amplitude is
 $$
 M = \frac{\kappa^{2}}{q^{2}} \left(E_{CM}^{2} - m^{2}\right)^{2}
 $$
 
 $$
-\chi_{G0} (E, b) = - 2 G (E_{CM}^{2} - m^{2}) \log \frac{b}{b_{IR}}
+\chi_{G,0} (E, b) = - 2 G (E_{CM}^{2} - m^{2}) \log \frac{b}{b_{IR}}
 $$
 
 After finding the saddle-points, the results are
 $$
+\begin{gathered}
 \theta = \frac{4 G m}{b} \\
 \Delta t = 4 G m \log \frac{b}{b_{IR}}
+\end{gathered}
 $$
+
+### EM Scattering
+
+\[
+\mathcal{M} = \frac{4 e^{2} Q_{a} Q_{b}}{q^{2} - i \epsilon} p_{1} \cdot p_{2} = -\frac{4 e^{2} Q_{a} Q_{b}}{q^{2} - i \epsilon} \times \frac{E_{CM}^{2} - m^{2}}{2}
+\]
+
+Doing fourier transform, this phase will have some infared radiation divergence, so we’ll do some cut-off.
+\[
+\chi_{EM,0} (E, b) = 2 \alpha Q_{a} Q_{b} \log \frac{b}{b_{IR}}
+\]
+Finding the saddle point, the results are
+\[
+\theta = \frac{1}{p} \left|\pdv{\chi(E, b)}{b}\right| = \frac{2 \alpha Q_{a} Q_{b}}{pb}
+\]
+But the EM case will not have time delay in the leading order.
+
+### Photon Spin
+
+Considering the photon helicity and expand the result to the first-order of $G_{N}$ and $\hbar$, we can get
+\[
+\theta = \frac{4 G m}{b} + \frac{15 \pi}{4} \left(\frac{G m}{b}\right)^{2} + C \left(\frac{G m}{b}\right)^{2} \times \frac{1}{mb} + \cdots
+\]
+
+## Gravitational Light-by-light Scattering
+
+Two photons exchange a graviton. The long-range part is only induced by the t-channel singularity. The two cases are while the beams are parallel or anti-parallel (we can always boost the not parallel cases to that)
+
+1.  Parallel: $s = t = u = 0$
+    \[
+    \mathcal{M} \sim G \times O(s,t,u) = 0
+    \]
+    Two parallel beams of light do not feel gravitational attraction.
+
+2.  Anti-parallel
+    \[
+    \lim_{t \to 0} \mathcal{M} (1^{+}, 2^{+}, 3^{-}, 4^{-}) = \frac{\kappa^{2}}{t} [12]^{2} \langle 34 \rangle^{2} = \frac{16 \kappa^{2} p^{4}}{t}
+    \]
+    So we have the phase shift
+    \[
+    \chi_{0} = - \frac{\kappa^{2} p^{2}}{\pi^{2}} \ln \frac{b}{b_{IR}}
+    \]
+    And get the angle
+    \[
+    \theta = \frac{8 G p}{b}
+    \]
+    

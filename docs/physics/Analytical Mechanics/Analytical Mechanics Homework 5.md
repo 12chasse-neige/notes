@@ -10,8 +10,10 @@ $$
 $$
 即
 $$
+\begin{gathered}
 \theta^{2} \dd \theta = \frac{L}{m r_{0}^{2}} \dd t \\
 \theta (t) = \left( \frac{3 L}{mr_{0}^{2}} t \right)^{\frac{1}{3}}
+\end{gathered}
 $$
 可以求出
 $$
@@ -19,8 +21,10 @@ $$
 $$
 
 $$
+\begin{gathered}
 \dot{r} = r_{0} \dot{\theta} = \frac{L}{m r_{0} \theta^{2}} \\
 \ddot{r} = - \frac{2 L}{m r_{0} \theta^{3}} \dot{\theta} = - \frac{2 L^{2}}{m^{2} r_{0}^{3} \theta^{5}}
+\end{gathered}
 $$
 
 
@@ -54,8 +58,10 @@ u = \frac{1}{r}
 $$
 此时
 $$
+\begin{gathered}
 \dot{r} = - \frac{1}{u^{2}} \dv{u}{\theta} \frac{L}{m} u^{2} = - \frac{L}{m} \dv{u}{\theta} \\
 \ddot{r} = - \frac{L^{2}}{m^{2}} \frac{\mathrm{d}^{2} u}{\mathrm{d} \theta^{2}} u^{2}
+\end{gathered}
 $$
 所以
 $$
@@ -107,14 +113,18 @@ $$
 $$
 
 $$
+\begin{gathered}
 \frac{1}{2} \dv{(\dv{u}{\theta})^{2}}{u} = \frac{k m^{2}}{L^{2}} u^{2} - u \\
 \left( \dv{u}{\theta} \right)^{2} = 2 \int_{\frac{1}{2a}}^{u} \left( \frac{k m^{2}}{L^{2}} u^{2} - u \right) \, \dd u = \frac{2 k m^{2}}{3 L^{2}} (u^{3} - \frac{1}{8 a^{3}}) - (u^{2} - \frac{1}{4 a^{2}})
+\end{gathered}
 $$
 
 带入 $L = m  \sqrt{\frac{k}{3 a}}$, 整理得到
 $$
+\begin{gathered}
 \left( \dv{u}{\theta} \right)^{2} = 2 a u^{3} - u^{2} \\
 \dv{u}{\theta} = u \sqrt{2 a u - 1} 
+\end{gathered}
 $$
 积分
 $$
@@ -122,14 +132,18 @@ $$
 $$
 
 $$
+\begin{gathered}
 \int_{\frac{1}{2a}}^{u} \frac{\dd u}{u \sqrt{2a u - 1}} = \int_{0}^{\sqrt{2 a u - 1}} \frac{1}{2a} \frac{\dd{(x^{2} + 1)}}{\frac{1}{2a} (x^{2} + 1) x} \\
 = 2 \int_{0}^{\sqrt{2a u - 1}} \frac{\dd{x}}{x^{2} + 1} = 2 \int_{0}^{\arctan(\sqrt{2a u - 1})} \dd{\theta} = 2 \arctan(\sqrt{2a u - 1})
+\end{gathered}
 $$
 
 所以轨道方程为
 $$
+\begin{gathered}
 \sqrt{2a u - 1} = \tan(\frac{\theta}{2}) \\
 u (\theta) = \frac{1}{2a} (1 + \tan^{2}(\frac{\theta}{2}))
+\end{gathered}
 $$
 即
 $$
@@ -147,9 +161,11 @@ $$
 $$
 
 $$
+\begin{gathered}
 r \, \dd r = - a v_{0} \, \dd t \\
 \int_{\sqrt{s_{0}^{2} + a^{2}}}^{a} r \, \dd r = - \int_{0}^{t} a v_{0} \, \dd t \\
 \frac{s_{0}^{2}}{2} = a v_{0} t
+\end{gathered}
 $$
 
 所以花费的时间为
@@ -160,8 +176,10 @@ $$
 
 圆周运动的动力学方程满足
 $$
+\begin{gathered}
 m (\ddot{r} - r \frac{L^{2}}{m^{2} r^{4}}) = F(r) \\
 m \ddot{r} = F(r) + \frac{L^{2}}{m r^{3}}
+\end{gathered}
 $$
 所以有效势能可以表示为
 $$
@@ -173,8 +191,10 @@ $$
 $$
 
 $$
+\begin{gathered}
 \frac{k}{r^{2}} e^{- \frac{r}{a}} + \frac{k}{ar} e^{- \frac{r}{a}} - \frac{L^{2}}{m r^{3}} = 0 \\
 (r + \frac{r^{2}}{a}) e^{- \frac{r}{a}} = \frac{L^{2}}{m k}
+\end{gathered}
 $$
 
 判断稳定性
@@ -183,8 +203,10 @@ $$
 $$
 带入 $(r + \frac{r^{2}}{a}) e^{- \frac{r}{a}} = \frac{L^{2}}{m k}$ 
 $$
+\begin{gathered}
 \pdv{V}{r^{2}}{} = \frac{k}{r^{4}} \left(\frac{L^{2}}{mk}- \frac{r^{3}}{a^{2}} e^{- \frac{r}{a}}\right) = \frac{k}{r^{4}} \left((r + \frac{r^{2}}{a} - \frac{r^{3}}{a^{2}}) e^{- \frac{r}{a}}\right) \\
 = \frac{k}{r^{3}} e^{- \frac{r}{a}} (1 + \frac{r}{a} - \frac{r^{2}}{a^{2}})
+\end{gathered}
 $$
 另 $x = \frac{r}{a}$ ，则稳定性条件可以写为
 $$

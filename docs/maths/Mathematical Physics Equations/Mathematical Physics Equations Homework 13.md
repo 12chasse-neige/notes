@@ -56,9 +56,11 @@ $$
 
 在球坐标下，利用坐标变换关系
 $$
+\begin{gathered}
 x = r \sin \theta \cos \varphi, x_{0} = r_{0} \sin \theta_{0} \cos \varphi_{0} \\
 y = r \sin \theta \sin \varphi, y_{0} = r_{0} \sin \theta_{0} \sin \varphi_{0} \\
 z = r \cos \theta, z_{0} = r_{0} \cos \theta_{0}
+\end{gathered}
 $$
 得到
 $$
@@ -70,14 +72,18 @@ $$
 $$
 所以
 $$
+\begin{gathered}
 \delta(\mathbf{r} - \mathbf{r}_{0}) = \frac{1}{r^{2} \sin \theta} \delta(r - r_{0})\delta(\theta - \theta_{0})\delta(\varphi - \varphi_{0})\\ = 
 \frac{1}{r^{2}}\delta(r - r_{0})\delta(\cos\theta - \cos\theta_{0})\delta(\varphi - \varphi_{0})
+\end{gathered}
 $$
 在柱坐标下，同样存在坐标变换关系
 $$
+\begin{gathered}
 x = r \cos \varphi, x_{0} = r_{0} \cos \varphi_{0} \\
 y = r \sin \varphi, y_{0} = r_{0} \sin \varphi_{0} \\
 z = z, z_{0} = z_{0}
+\end{gathered}
 $$
 所以
 $$
@@ -113,8 +119,10 @@ $$
 
 得到
 $$
+\begin{gathered}
 A + B = 0 \\
 Ak - Bk = 1
+\end{gathered}
 $$
 解得
 $$
@@ -166,8 +174,10 @@ $$
 
 这个物理情景对应的边值问题为
 $$
+\begin{gathered}
 \nabla^{2} \varphi = - \frac{\rho}{\epsilon_{0}} \\
 \left. \varphi \right|_{\Sigma = \{r = a\}} = 0
+\end{gathered}
 $$
 利用球坐标下本征值问题的本征函数
 $$
@@ -187,8 +197,10 @@ $$
 
 这个物理情景对应的边值问题为
 $$
+\begin{gathered}
 \nabla^{2} \varphi = - \frac{\rho}{\epsilon_{0}} \\
 \left. \varphi \right|_{\Sigma = \{r = a, z = 0, l \}} = 0
+\end{gathered}
 $$
 利用球坐标下本征值问题的本征函数
 $$
@@ -202,5 +214,7 @@ c_{nim} = \frac{\int \rho(r, \varphi, z) J_{m} (\mu_{i}^{(m)} \frac{r}{a}) \sin(
 $$
 所以对应的解为
 $$
+\begin{gathered}
 u (r, \varphi, z) = \sum_{m = -\infty}^{\infty} \sum_{i = 1}^{\infty} \sum_{n = 1}^{\infty} \left({\int \rho(r, \varphi, z) J_{m} (\mu_{i}^{(m)} \frac{r}{a}) \sin(\frac{n \pi}{l} z)  e^{- im \varphi}r^{2} \sin \theta \, \dd{r} \dd{\theta} \dd{\varphi}}\right) \\ \cdot \frac{2 J_{m} (\mu_{i}^{(m)} \frac{r}{a}) \sin(\frac{n \pi}{l} z) e^{im \varphi}}{\pi a^{2} l J'^{2} (\mu_{i}^{(m)}) \left(\frac{{\mu_{i}^{(n)}}^{2}}{a^{{2}}} + \frac{n^{2} \pi^{2}}{l^{2}} \right)}
+\end{gathered}
 $$

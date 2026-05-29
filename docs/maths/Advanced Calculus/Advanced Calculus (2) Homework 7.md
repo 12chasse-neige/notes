@@ -33,39 +33,49 @@ $$
 $$
 (2) 判断上述每个临界点是否为 $f$ 的极值点。如果是的话，请指出它是极大值点还是极小值点。
 $$
+\begin{gathered}
 \frac{\partial^{2}}{\partial x^{2}} f = - \sin x \sin y \\
 \frac{\partial^{2}}{\partial x \partial y} f = \frac{\partial^{2}}{\partial y \partial x} f = \cos x \cos y \\
 \frac{\partial^{2}}{\partial y^{2}} f = - (2 + \sin x) \sin y
+\end{gathered}
 $$
 对于 $(x, y) = (\frac{\pi}{2}, \frac{\pi}{2})$
 $$
+\begin{gathered}
 \frac{\partial^{2}}{\partial x^{2}} f = -1 < 0 \\
 \frac{\partial^{2}}{\partial x \partial y} f = 0 \\
 \frac{\partial^{2}}{\partial y^{2}} f = -3 < 0
+\end{gathered}
 $$
 该点的 $H_{f}$ 负定，所以该点为极小值点
 
 对于 $(x, y) = (\frac{3 \pi}{2}, \frac{\pi}{2})$
 $$
+\begin{gathered}
 \frac{\partial^{2}}{\partial x^{2}} f = 1 > 0 \\
 \frac{\partial^{2}}{\partial x \partial y} f = 0 \\
 \frac{\partial^{2}}{\partial y^{2}} f = -1 < 0
+\end{gathered}
 $$
 该点的 $H_{f}$ 不定，所以该点并非极值点
 
 对于 $(x, y) = (\frac{\pi}{2}, \frac{3 \pi}{2})$
 $$
+\begin{gathered}
 \frac{\partial^{2}}{\partial x^{2}} f = 1 > 0 \\
 \frac{\partial^{2}}{\partial x \partial y} f = 0 \\
 \frac{\partial^{2}}{\partial y^{2}} f = 3 > 0
+\end{gathered}
 $$
 该点的 $H_{f}$ 正定，所以该点为极大值点
 
 对于 $(x, y) = (\frac{3 \pi}{2}, \frac{3 \pi}{2})$
 $$
+\begin{gathered}
 \frac{\partial^{2}}{\partial x^{2}} f = -1 < 0 \\
 \frac{\partial^{2}}{\partial x \partial y} f = 0 \\
 \frac{\partial^{2}}{\partial y^{2}} f = 1 > 0
+\end{gathered}
 $$
 该点的 $H_{f}$ 不定，所以该点并非极值点
 
@@ -92,9 +102,11 @@ $$
 
 在 $\overset{\circ}{B}$ 上，$f$ 的临界点满足
 $$
+\begin{gathered}
 1 + yz = 0 \\
 1 + xz = 0 \\
 1 + xy = 0 \\
+\end{gathered}
 $$
 所以 $xy = xz = yz = -1$ ，即 $(xyz)^{2} = -1$，在实数范围内无解，所以 $f$ 在 $\overset{\circ}{B}$ 上没有极值点，所以最大值在 $\partial B$ 上
 
@@ -104,16 +116,20 @@ L = x + y + z + xyz - \lambda (x^{2} + y^{2} + z^{2} - 1)
 $$
 所以极值点满足
 $$
+\begin{gathered}
 1 + yz - 2 \lambda x = 0 \\
 1 + xz - 2 \lambda y = 0 \\
 1 + xy - 2 \lambda z = 0 \\
 x^{2} + y^{2} + z^{2} = 1
+\end{gathered}
 $$
 所以
 $$
+\begin{gathered}
 3 + xy + xz + yz = 2 \lambda (x + y + z) \\
 \frac{5}{2} + \frac{1}{2} (x + y + z)^{2} - 2 \lambda (x + y + z) = 0 \\
 (x + y + z)^{2} - 4 \lambda (x + y + z) + 5 = 0 
+\end{gathered}
 $$
 解得
 $$
@@ -125,8 +141,10 @@ $$
 $$
 带入原函数
 $$
+\begin{gathered}
 f (\frac{\sqrt{3}}{3}, \frac{\sqrt{3}}{3}, \frac{\sqrt{3}}{3}) = \sqrt{3} + \frac{\sqrt{3}}{9} = \frac{10}{9} \sqrt{3} \\
 f (-\frac{\sqrt{3}}{3}, -\frac{\sqrt{3}}{3}, -\frac{\sqrt{3}}{3}) = - \frac{10}{9} \sqrt{3} < \frac{10}{9} \sqrt{3}
+\end{gathered}
 $$
 所以 $f$ 在 $B$ 上的最大值为 $\frac{10}{9} \sqrt{3}$ 
 
@@ -137,16 +155,20 @@ L = xyz - \lambda_{1} (x + y + z - 1) - \lambda_{2} (x^{2} + y^{2} + z^{2} - 1)
 $$
 所以极值点满足
 $$
+\begin{gathered}
 yz - \lambda_{1} - 2 \lambda_{2} x = 0 \\
 xz - \lambda_{1} - 2 \lambda_{2} y = 0 \\
 xy - \lambda_{1} - 2 \lambda_{2} z = 0 \\
 x + y + z = 1 \\
 x^{2} + y^{2} + z^{2} = 1
+\end{gathered}
 $$
 所以
 $$
+\begin{gathered}
 xy + xz + yz = 3 \lambda_{1} + 2 \lambda_{2}  \\
 (x + y + z)^{2} = 1 + 6 \lambda_{1} + 4 \lambda_{2} = 1
+\end{gathered}
 $$
 所以
 $$
@@ -154,20 +176,26 @@ $$
 $$
 然后进行暴力计算
 $$
+\begin{gathered}
 (xyz)^{2} = (\lambda_{1} + 2 \lambda_{2} x) (\lambda_{1} + 2 \lambda_{2} y) (\lambda_{1} + 2 \lambda_{2} z) \\ =
 \lambda_{1}^{3} + 8 \lambda_{2}^{3} xyz + 2 \lambda_{1}^{2} \lambda_{2} (x + y + z) + 4 \lambda_{1} \lambda_{2}^{2} (xy + xz + yz) \\ =
 \lambda_{1}^{3} + 8 \lambda_{2}^{3} xyz + 2 \lambda_{1}^{2} \lambda_{2} = \lambda_{1}^{3} (1 - 27 xyz - 3)
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 xyz (x + y + z) = (\lambda_{1} + 2 \lambda_{2} x) (\lambda_{1} + 2 \lambda_{2} y) + (\lambda_{1} + 2 \lambda_{2} x) (\lambda_{1} + 2 \lambda_{2} z) + (\lambda_{1} + 2 \lambda_{2} y) (\lambda_{1} + 2 \lambda_{2} z) \\
 xyz = 3 \lambda_{1}^{2} + 4 \lambda_{1} \lambda_{2} = -3 \lambda_{1}^{2}
+\end{gathered}
 $$
 
 所以
 $$
+\begin{gathered}
 9 \lambda_{1}^{4} + \lambda_{1}^{3} (2 - 81 \lambda_{1}^{2}) = 0 \\ 
 \lambda_{1} = \frac{1 \pm 3}{18}
+\end{gathered}
 $$
 所以函数 $f(x, y, z) = xyz$ 的最小值为
 $$
@@ -205,8 +233,10 @@ $$
 
 所以 $S$ 紧致，显然 $g$ 对于坐标的偏导不全为0，所以对于题给条件，拉格朗日定理成立，即极值点$(\overline{x}_{1}, ..., \overline{x}_{n}) \in S$ 满足
 $$
+\begin{gathered}
 L (x_{1}, x_{2}, \cdots, x_{n}, \lambda) = f (x_{1}, x_{2}, \cdots, x_{n}) - \lambda (\sum_{i = 1}^{n} x_{i}^{2} - 1) \\ 
 \nabla L = \vec{0}
+\end{gathered}
 $$
 所以
 $$
@@ -238,8 +268,10 @@ L = f(x_{1}, ..., x_{n}) - \lambda g(x_{1}, ..., x_{n})
 $$
 条件极值点满足
 $$
+\begin{gathered}
 \left. \nabla f \right|_{x_{i} = x_{i} (0), 1 \leq i \leq n} = \lambda \left. \nabla g \right|_{x_{i} = x_{i} (0), 1 \leq i \leq n} \\ 
 g (x_{1} (0), \cdots, x_{n} (0)) = 0
+\end{gathered}
 $$
 (3) 设 $\lambda \in \mathbb{R}$ 满足 (2) 中所述拉格朗日乘子法的结论，定义 $n$ 元函数 $F$ 为 
 $$
@@ -285,8 +317,10 @@ $$
 $$
 所以
 $$
+\begin{gathered}
 h'' (0) = \left. \sum_{i = 1}^{n}  x''_{i} (0) \frac{\partial}{\partial x_{i}} f \right|_{\mathbf{p}} - \lambda  \left. \sum_{i = 1}^{n}  \sum_{j = 1}^{n} x'_{i} (0) x'_{j} (0) \frac{\partial^{2}}{\partial x_{j} \partial x_{i}} g \right|_{\mathbf{p}} + \left. \sum_{i = 1}^{n}  \sum_{j = 1}^{n} x'_{i} (0) x'_{j} (0) \frac{\partial^{2}}{\partial x_{j} \partial x_{i}} F \right|_{\mathbf{p}} \\ =
 \left. \sum_{i=1}^{n} \sum_{j=1}^{n} \frac{\partial^{2} F}{\partial x_{i} \partial x_{j}} \right|_{\mathbf}{p}  x_{i}'(0)  x_{j}'(0)
+\end{gathered}
 $$
 
 ### 6  

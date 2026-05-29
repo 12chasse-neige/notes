@@ -16,8 +16,10 @@ $$
 
 We can derive this form from the $u \to 0$ limit
 $$
+\begin{gathered}
 \lim_{u \to 0} i M_{4} (1_{a}^{+}, 2_{b}^{+}, 3_{c}^{-}, 4_{d}^{-}) = \frac{i}{u} \sum_{e} i M_{3} (1_{a}^{+}, 3_{c}^{-}, -u_{e}^{-}) i M_{3} (u_{e}^{+}, 2_{b}^{+}, 4_{d}^{-}) + i M_{3} (1_{a}^{+}, 3_{c}^{-}, u_{e}^{+}) i M_{3} (-u_{e}^{-}, 2_{b}^{+}, 4_{d}^{-}) \\ = 
 - \frac{i}{u} \sum_{e} \kappa_{cea} \kappa_{dbe} \frac{\langle 3u \rangle^{3}}{\langle 13 \rangle \langle u1 \rangle} \frac{[u2]^{3}}{[24][4u]} + \kappa_{cea} \kappa_{dbe} \frac{[1u]^{3}}{[13][3u]} \frac{\langle u4 \rangle^{3}}{\langle u2 \rangle \langle 24 \rangle}
+\end{gathered}
 $$
 Using the momentum conservation, we can simplify this form as
 $$
@@ -73,10 +75,12 @@ $$
 
 Then we can get the 4-pt amplitude from the 3-pt amplitudes. The minimal coupling requires construction from $u$ and $t$ channels. First consider the $u$ channel
 $$
+\begin{gathered}
 \lim_{u \to 0} i M_{4} (1_{a}^{+j}, 2_{b}^{+j}, 3_{c}^{-j}, 4_{d}^{-j}) \\ = 
 \frac{i}{u} \sum_{e} i M_{3} (1_{a}^{+j}, 3_{c}^{-j}, u_{e}^{+2}) i M_{3} (- u_{e}^{-2}, 2_{b}^{+j}, 4_{d}^{-j}) + i M_{3} (1_{a}^{+j}, 3_{c}^{-j}, - u_{e}^{-2}) i M_{3} (u_{e}^{+2}, 2_{b}^{+j}, 4_{d}^{-j})\\ =
 - \frac{i}{u} \sum_{e} \kappa_{ace} \kappa_{ebd} \left(\frac{[3u]^{2 - 2j} [u1]^{2 + 2j}}{[13]^{2}} \frac{\langle u2 \rangle^{2 - 2j} \langle 4u \rangle^{2 + 2j}}{\langle 24 \rangle^{2}} + \frac{\langle 3u \rangle^{2 + 2j} \langle u1 \rangle^{2 - 2j}}{\langle 13 \rangle^{2}} \frac{[u2]^{2 + 2j} [4u]^{2 - 2j}}{[24]^{2}} \right) \\ =
 - \frac{i \gamma}{u} \left(\frac{[31]^{2 - 2j}\langle 12 \rangle^{2 - 2j} \langle 43 \rangle^{2 + 2j} [31]^{2 + 2j}}{[13]^{2} \langle 24 \rangle^{2}} + \frac{\langle 31 \rangle^{2 + 2j} [12]^{2 + 2j} \langle 31 \rangle^{2 - 2j} [43]^{2 - 2j}}{\langle 13 \rangle^{2} [24]^{2}}\right)\
+\end{gathered}
 $$
 Using the conditions on both approaching branches, we can get the same result 
 $$
@@ -266,3 +270,4 @@ $$
 \kappa_{j}=\kappa
 $$
 So the gravitational coupling of the spin-$j$ particle must equal the graviton cubic self-coupling.
+

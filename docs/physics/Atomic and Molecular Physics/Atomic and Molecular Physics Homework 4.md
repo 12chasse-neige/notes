@@ -122,13 +122,17 @@ K = \frac{8917952}{1220703125} \frac{e^{2}}{4 \pi \epsilon_{0} a_{0}} \approx 0.
 $$
 So we can get that the first-order energy correction
 $$
+\begin{gathered}
 \Delta E_{1} = J + K \approx 0.0661418 \cdot \frac{e^{2}}{4 \pi \epsilon_{0} a_{0}} \approx 1.79981 \text{eV}\\
 \Delta E_{2} = J - K \approx 0.0515306 \cdot \frac{e^{2}}{4 \pi \epsilon_{0} a_{0}} \approx 1.40222 \text{eV}
+\end{gathered}
 $$
 So the energy for the this autoionizing level at singlet and triplet states are
 $$
+\begin{gathered}
 E_{\text{triplet}} = -12.6483699 \text{eV} \\
 E_{\text{singlet}} = -13.0459601 \text{eV}
+\end{gathered}
 $$
 For the ground state where the two electrons are at the $1s$ state, the energy is
 $$
@@ -136,8 +140,10 @@ E^{(0)}_{1s^{2}} = - \frac{2^{2}}{1^{2}} \cdot \frac{m_{e} m_{p}}{m_{e} + m_{p}}
 $$
 while the first-order correction gives out that
 $$
+\begin{gathered}
 J = 34.0142328 \text{eV} \\
 K = 0
+\end{gathered}
 $$
 So the energy for the ground state is
 $$
@@ -145,13 +151,17 @@ E_{ground} \approx -108.786298 \text{eV} + 34.0142328 \text{eV} \approx -74.7720
 $$
 So the energy gap between the ground state and this exited state is
 $$
+\begin{gathered}
 \Delta E_{\text{triplet}} = E_{\text{triplet}} - E_{ground} = -12.6483699 \text{eV} + 74.772065 \text{eV} \approx 62.1236951 \text{eV} \\
 \Delta E_{\text{singlet}} = E_{\text{singlet}} - E_{ground} = -13.045960 \text{eV} + 74.772065 \text{eV} \approx 61.726105 \text{eV}
+\end{gathered}
 $$
 So the wavelength of the UV radiation are
 $$
+\begin{gathered}
 \lambda_{triplet} = \frac{hc}{\Delta E_{triplet}} \approx 19.96 \text{nm}\\
 \lambda_{singlet} = \frac{hc}{\Delta E_{singlet}} \approx 20.09\text{nm}
+\end{gathered}
 $$
 **(b)** Find the velocity of the electron emitted in the autoionizing process in which the autoionizing level $2s4p$ decays into a free electron and a $\ce{He+}$ ion in the ground state $1s$.  
 
@@ -161,13 +171,17 @@ E = - \frac{2^{2}}{2 \cdot 1^{2}} \cdot \frac{m_{e} m_{p}}{m_{e} + m_{p}} c^{2} 
 $$
 So the total energy of the emitted electron is
 $$
+\begin{gathered}
 \Delta E_{triplet} =  -12.6483699 \text{eV} + 54.39315 \text{eV} \approx 41.74478 \text{eV} \\
 \Delta E_{\text{singlet}}= -13.045960 \text{eV} + 54.39315 \text{eV} \approx 41.34719 \text{eV}
+\end{gathered}
 $$
 Therefore, the velocity of the emitted electron is
 $$
+\begin{gathered}
 v_{triplet} \approx 3.832 \times 10^{6} m/s \\
 v_{singlet} \approx 3.814 \times 10^{6} m/s
+\end{gathered}
 $$
 
 ### Question2

@@ -13,8 +13,10 @@ Chasse_neige
 
 假设棒子全长为$L$，则质心位置可以表示为
 $$
+\begin{gathered}
 x_{c} = (c - \frac{L}{2}) \cos \theta \\
 y_{c} = (c - \frac{L}{2}) \sin \theta
+\end{gathered}
 $$
 其中 $\cos \theta = \frac{c}{2R}$
 
@@ -26,18 +28,24 @@ $$
 
 约束可以用广义坐标 $\theta$ 表示为
 $$
+\begin{gathered}
 x_{c} = (2R \cos \theta - \frac{L}{2}) \cos \theta \\
 y_{c} = (2R \cos \theta - \frac{L}{2}) \sin \theta
+\end{gathered}
 $$
 虚位移
 $$
+\begin{gathered}
 \delta y_{c} = (2R \cos \theta - \frac{L}{2}) \cos \theta \delta \theta - 2R \sin^{2} \theta \delta \theta = 0 \\
 2R \cos (2 \theta) = \frac{L}{2} \cos \theta = \frac{Lc}{4R}
+\end{gathered}
 $$
 所以
 $$
+\begin{gathered}
 Lc = 8R^{2} (2 \frac{c^{2}}{4R^{2}} - 1)\\
 L = 4c - \frac{8R^{2}}{c}
+\end{gathered}
 $$
 
 ### 1.3 竖直半圆钢丝上的两球
@@ -70,7 +78,9 @@ P \cos \theta_{1} + Q \cos \theta_{2} = 0
 $$
 即
 $$
+\begin{gathered}
 P (\cos \frac{\theta_{1} + \theta_{2}}{2} \cos \frac{\theta_{1} - \theta_{2}}{2} - \sin \frac{\theta_{1} + \theta_{2}}{2} \sin \frac{\theta_{1} - \theta_{2}}{2}) \\ + Q (\cos \frac{\theta_{1} + \theta_{2}}{2} \cos \frac{\theta_{1} - \theta_{2}}{2} + \sin \frac{\theta_{1} + \theta_{2}}{2} \sin \frac{\theta_{1} - \theta_{2}}{2}) = 0
+\end{gathered}
 $$
 带入 $\sin \frac{\theta_{1} - \theta_{2}}{2} = \frac{l}{r}$
 $$
@@ -95,8 +105,10 @@ y_{m} + \tan \theta x_{m} = C
 $$
 虚位移满足
 $$
+\begin{gathered}
 \delta Y_{M} = 0 \\
 - \tan \theta \delta x_{m} = \delta y_{m}
+\end{gathered}
 $$
 根据达朗贝尔原理
 $$
@@ -112,8 +124,10 @@ $$
 $$
 整理得
 $$
+\begin{gathered}
 m \ddot{x}_{m} (1 + \tan^{2} \theta) + m \ddot{X}_{M} = mg \tan \theta \\
 M \ddot{X}_{M} + m (\ddot{x}_{m} + \ddot{X}_{M}) = 0
+\end{gathered}
 $$
 解得
 $$
@@ -150,7 +164,9 @@ $$
 $$
 所以运动微分方程为
 $$
+\begin{gathered}
 g \cos \alpha + \ddot{r} - r \dot{\theta}^{2} \sin^{2} \alpha = 0 \\
 2 \dot{r} \dot{\theta} + r \ddot{\theta} = 0
+\end{gathered}
 $$
 

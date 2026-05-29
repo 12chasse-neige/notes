@@ -9,25 +9,31 @@ $$
 $$
 作代换 $\sqrt{x} = u$
 $$
+\begin{gathered}
 \int_{0}^{1} \sqrt{1 - x} \sin(a \sqrt{x}) \, \dd{x} = \int_{0}^{1} 2u \sqrt{1 - u^{2}} \sin (au) \, \dd{u} \\ = 
 \int_{-1}^{1} u \sqrt{1 - u^{2}} \sin(au) \, \dd{u} = \int_{- \frac{\pi}{2}}^{\frac{\pi}{2}} \cos^{2} \theta \sin \theta \sin(a \sin \theta) \, \dd{\theta} \\ =
 \frac{1}{2i} \int_{- \frac{\pi}{2}}^{\frac{\pi}{2}} \cos^{2} \theta \sin \theta \left(e^{i a \sin \theta} - e^{- i a \sin \theta}\right) \, \dd{\theta}
+\end{gathered}
 $$
 考虑
 $$
+\begin{gathered}
 \int_{- \frac{\pi}{2}}^{\frac{\pi}{2}} \cos^{2} \theta \sin \theta e^{i a \sin \theta}  \, \dd{\theta} = \left. \frac{1}{ia} \cos \theta \sin \theta e^{ia \sin \theta} \right|_{- \frac{\pi}{2}}^{\frac{\pi}{2}} - \frac{1}{ia} \int_{- \frac{\pi}{2}}^{\frac{\pi}{2}} (2 \cos^{2} \theta - 1) e^{ia \sin \theta} \, \dd{\theta} \\ =
 \frac{i}{2a} \int_{-\pi}^{\pi} \cos 2 \theta e^{ia \sin \theta} \, \dd{\theta} \\ =
 \frac{i}{4a} \int_{-\pi}^{\pi} e^{ia \sin \theta + i 2 \theta} + e^{ia \sin \theta - i 2 \theta} \, \dd{\theta} \\ = 
 \frac{i \pi}{a} J_{2} (a)
+\end{gathered}
 $$
 同理
 
 
 $$
+\begin{gathered}
 \int_{- \frac{\pi}{2}}^{\frac{\pi}{2}} \cos^{2} \theta \sin \theta e^{- i a \sin \theta}  \, \dd{\theta} = - \left. \frac{1}{ia} \cos \theta \sin \theta e^{- ia \sin \theta} \right|_{- \frac{\pi}{2}}^{\frac{\pi}{2}} + \frac{1}{ia} \int_{- \frac{\pi}{2}}^{\frac{\pi}{2}} (2 \cos^{2} \theta - 1) e^{- ia \sin \theta} \, \dd{\theta} \\ =
 - \frac{i}{2a} \int_{-\pi}^{\pi} \cos 2 \theta e^{-ia \sin \theta} \, \dd{\theta} \\ =
 - \frac{i}{4a} \int_{-\pi}^{\pi} e^{- ia \sin \theta + i 2 \theta} + e^{- ia \sin \theta - i 2 \theta} \, \dd{\theta} \\ = 
 - \frac{i \pi}{a} J_{2} (a)
+\end{gathered}
 $$
 所以
 $$
@@ -98,8 +104,10 @@ $$
 $$
 
 $$
+\begin{gathered}
 \int_{0}^{x} x^{3} J_{0} (x) \, \dd{x} = \int_{0}^{x} 2 x^{2} J_{1} (x) - x^{3} J_{2} (x) \, \dd{x} \\ = 
 \int_{0}^{x} 2 \dv{}{x}(x^{2} J_{2} (x)) - \dv{}{x} (x^{3} J_{3} (x)) \, \dd{x} = 2 x^{2} J_{2} (x) - x^{3} J_{3} (x)
+\end{gathered}
 $$
 
 (b)  
@@ -112,10 +120,12 @@ F(t) = t J_{0}(t) \cos t + t J_{1}(t) \sin t
 $$
 则  
 $$
+\begin{gathered}
 F'(t) = J_{0}(t) \cos t + t J_{0}'(t) \cos t - t J_{0}(t) \sin t + J_{1}(t) \sin t + t J_{1}'(t) \sin t + t J_{1}(t) \cos t \\
 = J_{0}(t) \cos t + t(-J_{1}(t)) \cos t - t J_{0}(t) \sin t + J_{1}(t) \sin t + t\left(J_{0}(t) - \frac{J_{1}(t)}{t}\right) \sin t + t J_{1}(t) \cos t \\
 = J_{0}(t) \cos t - t J_{1}(t) \cos t - t J_{0}(t) \sin t + J_{1}(t) \sin t + t J_{0}(t) \sin t - J_{1}(t) \sin t + t J_{1}(t) \cos t \\
 = J_{0}(t) \cos t
+\end{gathered}
 $$
 
 因此  
@@ -134,9 +144,11 @@ F(t) = t^{n + 1} J_{n} (t) \cos t + t^{n + 1} J_{n + 1} (t) \sin t
 $$
 
 $$
+\begin{gathered}
 F' (t) = (n + 1)  t^{n} J_{n} (t) \cos t + t^{n + 1} J'_{n} (t) \cos t - t^{n + 1} J_{n} (t) \sin t + t^{n + 1} J_{n} (t) \sin t + t^{n + 1} J_{n + 1} (t) \cos t \\ =
 (n + 1)  t^{n} J_{n} (t) \cos t + t^{n + 1} (J'_{n} (t) + J_{n + 1} (t)) \cos t = (n + 1)  t^{n} J_{n} (t) \cos t + \frac{1}{2} t^{n + 1} (J_{n - 1} (t) + J_{n + 1} (t)) \cos t \\ =
 (n + 1)  t^{n} J_{n} (t) \cos t + t^{n} J_{n} (t) \cos t = (2n + 1) t^{n} J_{n} (t) \cos t
+\end{gathered}
 $$
 
 所以

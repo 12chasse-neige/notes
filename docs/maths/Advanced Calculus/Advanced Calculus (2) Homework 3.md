@@ -117,8 +117,10 @@ $$
 
 所以
 $$
+\begin{gathered}
 \lim_{(x, y) \to (0, 0)} \frac{(1 + x^{2} + y^{2})^{1/(x^{2} + y^{2})} - e}{x^{2} + y^{2}} = \lim_{(x, y) \to (0, 0)} g \circ f = \lim_{t \to 0} g (t) = \lim_{t \to 0} \frac{(1 + t)^{\frac{1}{t}} - e}{t} \\ = 
 \lim_{t \to 0} \frac{e^{\ln (1 + t) \frac{1}{t}} - e}{t} = \lim_{t \to 0} \left(\frac{1}{1 + t} \frac{1}{t} - \frac{1}{t^{2}} \ln (1 + t) \right) e^{\ln (1 + t) \frac{1}{t}} = - \frac{e}{2}
+\end{gathered}
 $$
 验证复合极限的适用条件：
 
@@ -176,7 +178,9 @@ $$
 $$
 
 $$
+\begin{gathered}
 \therefore \,\, \forall \epsilon > 0, \exist \delta = \min \{ \delta_{1}, \delta_{2} \}, s.t. \forall d (x_{0}, x) < \delta, |h(x) - h(x_{0})| \leq \max \{ |f(x) - h(x_{0})|, |g(x) - h(x_{0})| \} \\ \leq \max \{ |f(x) - f(x_{0})|, |g(x) - g(x_{0})| \} < \epsilon
+\end{gathered}
 $$
 
 所以$h$ 是连续函数。

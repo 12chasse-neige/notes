@@ -245,8 +245,10 @@ $$
 一个函数经过一个正变换和一个反变换又能回到自身。而在实际情况中，测到的数据长度不可能是无限的。因此我们需要在时间上作某种截断。定义
 
 $$
+\begin{gathered}
 y_{T}(t) = y(t) \quad -T/2 < t < T/2 \\  
 y_{T}(t) = 0 \quad t < -T/2, t> T/2
+\end{gathered}
 $$
 
 这样 $y_{T}(t)$ 的傅立叶变换 $\tilde{y}_{T}(f)$ 就是有限的了。可以证明 (Parseval 定理)
@@ -286,7 +288,8 @@ $$
 这只是一个 Convention 的问题。但若是用双边谱密度那么负频率也得考虑。
 
 <img src="./Detecting Gravitiational Waves.assets/image-20260212220414776.png" alt="image-20260212220414776" style="zoom: 50%;" />
-如图，LIGO 在 2007 年 3 月测量的探测器读出的双臂长度差 $x(t)$ 的谱密度。在 150Hz 以上，其主要贡献是光子到达时间的非均匀性引起散粒噪声；在 150Hz 和 40Hz 之间主要来源是镜子镀的膜的涨落引起的布朗噪声；在 40Hz 以下主要是地震噪声。图中的 y 轴画的是 $\sqrt{S_{x}(f)}$，其单位为 $m/\sqrt{\text{Hz}}$。如果 $x(t)$ 和 $y(t)$ 是两个随机过程，那么类似于 $S_{y}(f)$ 的定义，我们也可以定义 $S_{xy}(f)$ (交叉谱密度)
+如图，LIGO 在 2007 年 3 月测量的探测器读出的双臂长度差 $x(t)$ 的谱密度。在 150Hz 以上，其主要贡献是光子到达时间的非均匀性引起散粒噪声；在 150Hz 和 40Hz 之间主要来源是镜子镀的膜的涨落引起的布朗噪声；在 40Hz 以下主要是地震噪声。图中的 y 轴画的是 $\sqrt{S_{x}(f)}$，其单位为 $m/\sqrt{\text{Hz}}$。如果 $x(t)$ 和 $y(t)$ 是两个随机过程，那么类似于 $S_{y} (f)$ 的定义，我们也可以定义 $S_{xy}(f)$ (交叉谱密度)
+
 $$
 S_{xy}(f) = \lim_{T\to\infty} \frac{2}{T} \int_{-T/2}^{T/2} (x(t)-\bar{x}) e^{-i2\pi f t} dt \int_{-T/2}^{T/2} (y(t')-\bar{y}) e^{i2\pi f t'} dt'
 $$
@@ -393,7 +396,9 @@ $$
 其中 $n(t)$ 是探测器噪声，而 $h(t)$ 为我们想提取的引力波信号。那么怎样提取 $h(t)$ 和测量数据中 $h(t)$ 的大小呢？假设一种最简单情况，即 $h(t)$ 的波型是已知的。我们可以定义一种滤波器
 
 $$
+\begin{gathered}
 D(t) = \int_{-\infty}^{\infty} d(t') k(t-t') dt' \\ = \int_{-\infty}^{\infty} n(t') k(t-t') dt' + \int_{-\infty}^{\infty} h(t') k(t-t') dt' = N(t) + H(t)
+\end{gathered}
 $$
 
 对于测量的 $d(t)$ 我们只知道 $D(t)$，但不知道 $N(t)$ 和 $H(t)$ 分别多少。但是，我们可以估计 $N(t)$ 的概率分布
@@ -403,7 +408,9 @@ $$
 $$
 
 $$
+\begin{gathered}
 \langle N^{2}(t) \rangle = \langle \int df_{1} e^{2\pi i f_{1} t} \int df_{2} e^{-2\pi i f_{2} t} \tilde{n}(f_{1}) \tilde{n}^*(f_{2}) k(f_{1}) k^*(f_{2}) \rangle \\ = \int_{0}^{\infty} \dd{f} S_{n} (f) |k(f)|^{2}
+\end{gathered}
 $$
 
 而我们的目的是选取合适的 $k(t)$ 使得 $S/\sqrt{\langle N^{2} \rangle}$ 最大化。使其最大化的滤波函数为

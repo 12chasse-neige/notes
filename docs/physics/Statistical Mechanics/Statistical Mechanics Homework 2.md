@@ -1,4 +1,4 @@
-# 统计力学 第2次作业
+#  统计力学 第2次作业 
 
 Chasse_neige
 
@@ -37,13 +37,17 @@ U (T, V) = \int n C_{V} \dd{T} - \frac{n^{2} a}{V} + \text{Const.}
 $$
 利用Legendre变换得到其余特性函数
 $$
+\begin{gathered}
 H (T, V) = U + pV = \int n C_{V} \dd{T} - \frac{n^{2} a}{V} + \left(\frac{n RT}{V - nb}  - \frac{n^{2} a}{V^{2}}\right) V +\text{Const.} \\ = 
 \int n C_{V} \dd{T} - \frac{2 n^{2} a}{V} + \frac{nRTV}{V - nb} +\text{Const.}
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 \dd{S} = \frac{\dd{U} + p \dd{V}}{T} = n C_{V} \frac{\dd{T}}{T} + \frac{1}{T} \left(\frac{n^{2} a}{V^{2}} \dd{V} + \frac{n RT\dd{V}}{V - nb} - \frac{n^{2} a}{V^{2}} \dd{V}\right) \\ = 
 n C_{V} \frac{\dd{T}}{T} + \frac{n R \dd{V}}{V - nb}
+\end{gathered}
 $$
 
 得到
@@ -239,8 +243,10 @@ $$
 
 由于熵是状态量，可以构造一个等温过程来计算熵增
 $$
+\begin{gathered}
 \Delta S = \frac{1}{T} \left(\int_{\frac{n_{1}RT}{p_{1}}}^{\frac{n_{1} RT}{p_{1}} + \frac{n_{2} RT}{p_{2}}} \frac{n_{1}RT}{V} \dd{V} + \int_{\frac{n_{2}RT}{p_{1}}}^{\frac{n_{1} RT}{p_{1}} + \frac{n_{2} RT}{p_{2}}} \frac{n_{2}RT}{V} \dd{V}\right) \\ = 
 R \left(n_{1} \ln(\frac{n_{1} p_{2} + n_{2} p_{1}}{n_{1} p_{2}}) + n_{2} \ln(\frac{n_{1} p_{2} + n_{2} p_{1}}{n_{2} p_{1}})\right)
+\end{gathered}
 $$
 (c) 如果两种气体是相同的, 计算混合后的熵增。
 

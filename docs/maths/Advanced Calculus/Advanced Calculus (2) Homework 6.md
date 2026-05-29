@@ -43,18 +43,24 @@ $$
 
 二阶项
 $$
+\begin{gathered}
 \frac{\partial^{2} z}{\partial x^{2}} \Bigg|_{(1, 1)} = - \frac{\partial}{\partial x} \left(\frac{3 x^{2} + yz}{3 z^{2} + xy} \right) = - \frac{(6 x + y \frac{\partial z}{\partial x}) (3 z^{2} + xy) - (3 x^{2} + yz) (6 z \frac{\partial z}{\partial x} + y)}{(3 z^{2} + xy)^{2}} \\ =
 - \frac{5 \cdot 4 - 4 \cdot (-5)}{4^{2}} = - \frac{5}{2}
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 \frac{\partial^{2} z}{\partial y \partial x} = - \frac{\partial}{\partial y} \left(\frac{3 x^{2} + yz}{3 z^{2} + xy} \right)  = - \frac{(z + y \frac{\partial z}{\partial y}) (3 z^{2} + xy) - (3 x^{2} + yz) (6 z \frac{\partial z}{\partial y} + x)}{(3 z^{2} + xy)^{2}} \\ = 
 - \frac{0 - 4 \cdot (-5)}{4^{2}} = - \frac{5}{4}
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 \frac{\partial^{2} z}{\partial y^{2}} \Bigg|_{(1, 1)} = - \frac{\partial}{\partial y} \left(\frac{3 y^{2} + xz}{3 z^{2} + xy} \right) = - \frac{(6 y + x \frac{\partial z}{\partial x}) (3 z^{2} + xy) - (3 y^{2} + xz) (6 z \frac{\partial z}{\partial x} + x)}{(3 z^{2} + xy)^{2}} \\ =
 - \frac{5 \cdot 4 - 4 \cdot (-5)}{4^{2}} = - \frac{5}{2}
+\end{gathered}
 $$
 所以$z(x, y)$ 在 $(1, 1)$ 附近带皮亚诺余项的泰勒公式为
 $$
@@ -88,8 +94,10 @@ $$
 (2) 求 2 阶导函数 $h''(x)$.
 
 $$
+\begin{gathered}
 h’’ (x) = \frac{\partial}{\partial x} \left(f’_{1} (x, y (x)) + f’_{2} (x, y (x)) \frac{\partial y (x)}{\partial x} \right) \\ =
 f’’_{11} + f’’_{21} \frac{\partial y}{\partial x} + f’’_{12} \frac{\partial y}{\partial x} + f’’_{22} (\frac{\partial y}{\partial x})^{2} + f’_{2} \frac{\partial^{2} y}{\partial x^{2}}
+\end{gathered}
 $$
 
 带入$\frac{\partial y}{\partial x} = - \frac{g_{x} (x_{0}, y_{0})}{g_{y} (x_{0}, y_{0})}$ 以及 $\frac{\partial^{2} y}{\partial x^{2}} = - \frac{\partial}{\partial x} \frac{g_{x}}{g_{y}} = - \frac{g_{xx} g_{y} - g_{x} g_{xy}}{g_{y}^{2}}$
@@ -108,8 +116,10 @@ $$
 
 (1) 求 $\phi$ 的 Jacobi 矩阵 $J(\phi)_{(x, v)}$
 $$
+\begin{gathered}
 J (\phi)_{(x, \nu)} = \begin{pmatrix} \frac{\partial x}{\partial x} & \frac{\partial x}{\partial \nu} \\ \frac{\partial}{\partial x} \frac{\partial L (x, \nu)}{\partial \nu} & \frac{\partial}{\partial \nu} \frac{\partial L (x, \nu)}{\partial \nu}  \end{pmatrix} \\ =
 \begin{pmatrix} 1 & 0 \\ \frac{\partial^{2} L (x, \nu)}{\partial x \partial \nu} & \frac{\partial^{2} L (x, \nu)}{\partial \nu^{2}} \end{pmatrix}
+\end{gathered}
 $$
 (2) 证明: 如果 $\dfrac{\partial^{2} L(x, v)}{\partial v^{2}} \neq 0$, 则 $\phi$ 在 $(x, v)$ 附近有 $C^{1}$ 光滑的逆映射. 以下我们假定 $\phi$ 有整体的 $C^{1}$ 光滑的逆 $\phi^{-1}$, 并把它记作:
 $$

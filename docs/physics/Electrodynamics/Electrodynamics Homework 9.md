@@ -18,7 +18,9 @@ $$
 $$
 所以磁矩为
 $$
+\begin{gathered}
 \vec{m} = \frac{1}{2} \int \vec{r} \times \vec{j} d \tau = \int_{0}^{\pi} \int_{0}^{R_{0}} r \sin \theta \frac{3 Q}{8 \pi R_{0}^{3}} \omega r \sin \theta \, 2 \pi r^{2} \sin \theta \, d \theta \, d r \hat{z} \\ = \frac{Q R_{0}^{2}}{5} \omega \hat{z}
+\end{gathered}
 $$
 2.它的磁矩与自转动量矩之比（设质量 $m_{0}$ 是均匀分布的）。
 $$
@@ -51,16 +53,20 @@ D_{ij} = \int \rho (3r_{ij} - \delta_{ij} r^{2}) \, d \tau
 $$
 所以
 $$
+\begin{gathered}
 D_{11} = \int \frac{Q}{\frac{4 \pi}{3} abc} (2 x^{2} - (y^{2} + z^{2})) \, dxdydz \\ =
 \int \frac{3Q}{4 \pi abc} (2(a r \sin\theta \cos\phi)^{2} - (b r \sin\theta \sin\phi)^{2} - (c r \cos\theta)^{2}) abc \, r^{2} dr \, \sin \theta d \theta \, d \phi \\ =
 \frac{3 Q}{4 \pi}  (2 a^{2} \int_{0}^{1} r^{4} dr \int_{0}^{\pi} \sin^{3} \theta d \theta \int_{0}^{2 \pi} \cos^{2} \phi d \phi) \\ - (b^{2} \int_{0}^{1} r^{4} dr \int_{0}^{\pi} \sin^{3} \theta d \theta \int_{0}^{2 \pi} \sin^{2} \phi d \phi) - (c^{2} \int_{0}^{1} r^{4} dr \int_{0}^{\pi} \cos^{2} \theta \sin \theta d \theta \int_{0}^{2 \pi} d \phi) \\ =
 \frac{3Q}{4 \pi} (\frac{8 \pi}{15} a^{2} - \frac{4 \pi}{15} b^{2} - \frac{4 \pi}{15} c^{2}) \\ =
 \frac{Q}{5} (2 a^{2} - b^{2} - c^{2})
+\end{gathered}
 $$
 同理，积分得
 $$
+\begin{gathered}
 D_{22} = \frac{Q}{5} (2 b^{2} - a^{2} - c^{2}) \\
 D_{33} = \frac{Q}{5} (2 c^{2} - a^{2} - b^{2})
+\end{gathered}
 $$
 其余分量
 $$
@@ -104,12 +110,14 @@ $$
 
 利用镜像法求解偶极子附近的磁场：（$\vec{p'}$ 为像偶极子，$a$为磁矩离界面的距离， $\alpha$为 $m$ 与界面法线的夹角，假设界面法线为 $\hat{y}$ 方向，磁矩在界面方向上的投影分量为 $\hat{x}$ 方向）
 $$
+\begin{gathered}
 \vec{F} = (\vec{p} \cdot \nabla)\vec{E} = \vec{p} \cdot \left( \nabla \frac{1}{4 \pi \epsilon_{0}} \frac{3 (\vec{p'} \cdot \vec{r}) \vec{r} - r^{2} \vec{p'}}{r^{5}} \right) \\ =
 \vec{p} \cdot \frac{3}{4 \pi \epsilon_{0}} \left( \frac{\vec{p'} \vec{r}}{r^{5}} - \frac{5 (\vec{p'} \cdot \vec{r}) \vec{r} \vec{r}}{r^{7}} + \frac{(\vec{p'} \cdot \vec{r}) \overset{\leftrightarrow}{I}}{r^{5}} + \frac{\vec{r} \vec{p'}}{r^{5}} \right) \\ = 
 \frac{3}{4 \pi \epsilon_{0}} \frac{(\vec{p} \cdot \vec{p'}) r^{2} \vec{r} - 5 (\vec{p'} \cdot \vec{r}) (\vec{p} \cdot \vec{r}) \vec{r} + (\vec{p'} \cdot \vec{r}) r^{2} \vec{p} + (\vec{p} \cdot \vec{r}) r^{2} \vec{p'}}{r^{7}} \\ =
 \frac{3}{4 \pi \epsilon_{0}} \frac{p^{2} \cos (2 \alpha) (2a)^{3} - 5 p^{2} \cos^{2} \alpha (2a)^{3} + 2 p^{2} \cos^{2} \alpha (2a)^{3}}{(2a)^{7}} \hat{y} \\ =
 - \frac{3 p^{2}}{64 \pi \epsilon_{0} a^{4}} (2 \cos^{2} \alpha + \sin^{2} \alpha) \hat{y} \\ =
 - \frac{3 p^{2}}{64 \pi \epsilon_{0} a^{4}} (1 + \cos^{2} \alpha) \hat{y}
+\end{gathered}
 $$
 (e) 在后面静磁场讨论中将给出一个由电流密度 $\vec{j}$ 描述的稳恒电流体系在外磁场中的能量为：
 $$
@@ -126,8 +134,10 @@ $$
 
 证明：
 $$
+\begin{gathered}
 W = \int d\tau \vec{j} \cdot \vec{A} = \int d \tau \vec{j} \cdot \sum_{n} \frac{1}{n!} \sum_{i_{1}, i_{2}, \cdots, i_{n}} x_{i_{1}} x_{i_{2}} \cdots x_{i_{n}} \frac{\partial^{n}}{\partial x_{i_{1}} \partial x_{i_{2}} \cdots \partial x_{i_{n}}} \vec{A} (\vec{0}) \\ = 
 \sum_{n} \frac{1}{n!} \sum_{i_{1}, i_{2}, \cdots, i_{n}} \vec{J}_{i_{1} i_{2} \cdots i_{n}} \cdot \frac{\partial^{n}}{\partial x_{i_{1}} \partial x_{i_{2}} \cdots \partial x_{i_{n}}} \vec{A} (\vec{0}) = \sum_{n} W_{n}
+\end{gathered}
 $$
 其中
 $$
@@ -140,20 +150,24 @@ $$
 
 所以
 $$
+\begin{gathered}
 \int \vec{j} d \tau = \int \nabla \cdot (\vec{j} \vec{r}) - (\nabla \cdot \vec{j}) \vec{r} d \tau \\ =
 \oint_{S} d \vec{S} \cdot \vec{j} \vec{r} = 0
+\end{gathered}
 $$
 
 $$
 W_{0} = \int d \tau \vec{j} \cdot \vec{A} (\vec{0}) = 0
 $$
 $$
+\begin{gathered}
 W_{1} = \frac{1}{1!} \sum_{i} \vec{J}_{i} \cdot \frac{\partial}{\partial x_{i}} \vec{A} (\vec{0}) = \int j_{k} x_{i} d \tau \frac{\partial}{\partial x_{i}} A_{k} (\vec{0}) \\ =
 \frac{1}{2} \int  ((j_{k} x_{i} - j_{i} x_{k}) + (j_{k} x_{i} + j_{i} x_{k})) d \tau  \frac{\partial}{\partial x_{i}} A_{k}  \\ = 
 \frac{1}{2} \int (j_{k} x_{i} - j_{i} x_{k})  d \tau (\partial_{i} A_{k} - \partial_{k} A_{i}) + \int  j_{i} x_{k} d \tau \partial_{i} A_{k} \\ =
 \frac{1}{2} \int (\vec{r} \times \vec{j}) d \tau \cdot (\nabla \times \vec{A})  + \int \partial_{i} (j_{i} x_{k} A_{k}) - A_{k} \partial_{i} (j_{i} x_{k})  d \tau\\ = 
 \vec{m} \cdot \vec{B} - \int A_{k} (x_{k} \partial_{i} j_{i} + j_{i} \delta_{ik}) d \tau \\ =
 \vec{m} \cdot \vec{B} - \int \vec{A} \cdot \vec{j} d \tau  = \vec{m} \cdot \vec{B}
+\end{gathered}
 $$
 (f) 试证电流体系在外磁场中受力的多级展开为
 $$
@@ -166,8 +180,10 @@ $$
 
 证明：
 $$
+\begin{gathered}
 \vec{F} = \int d \tau \vec{j} \times \vec{B} = \int d \tau \vec{j} \times \sum_{n} \frac{1}{n!} \sum_{i_{1}, i_{2}, \cdots, i_{n}} x_{i_{1}} x_{i_{2}} \cdots x_{i_{n}} \frac{\partial^{n}}{\partial x_{i_{1}} \partial x_{i_{2}} \cdots \partial x_{i_{n}}} \vec{B} (\vec{0}) \\ = 
 \sum_{n} \frac{1}{n!} \sum_{i_{1}, i_{2}, \cdots, i_{n}} \vec{J}_{i_{1} i_{2} \cdots i_{n}} \times \frac{\partial^{n}}{\partial x_{i_{1}} \partial x_{i_{2}} \cdots \partial x_{i_{n}}} \vec{B} (\vec{0}) = \sum_{n} \vec{F}_{n}
+\end{gathered}
 $$
 其中
 $$
@@ -184,10 +200,12 @@ $$
 $$
 
 $$
+\begin{gathered}
 \vec{F}_{1} = \frac{1}{1!} \int \vec{j} x_{i} d \tau \times \partial_{i} \vec{B} (\vec{0})  = \int j_{l} x_{i} d \tau \epsilon_{lmn} \partial_{i} B_{m} \vec{e}_{n} \\ =
 \epsilon_{ilk} m_{k} \epsilon_{lmn} \partial_{i} B_{m} \vec{e}_{n} \\ = 
 (\delta_{in} \delta_{km} - \delta_{im} \delta_{kn}) m_{k} \partial_{i} B_{m} \vec{e}_{n} \\ = 
 m_{k} \partial_{i} B_{k} \vec{e}_{k}  = (\nabla \vec{B}) \cdot \vec{m}
+\end{gathered}
 $$
 
  (g) 试证电流体系在外磁场中受力矩的多级展开为
@@ -204,9 +222,11 @@ $$
 
 证明：
 $$
+\begin{gathered}
 \vec{L} = \int d \tau \vec{r} \times (\vec{j} \times \vec{B}) = \int d \tau \vec{j} (\vec{r} \cdot \vec{B}) - \vec{B} (\vec{r} \cdot \vec{j}) \\= 
 \int \vec{j} \left(\vec{r} \cdot \sum_{n} \frac{1}{n!} \sum_{i_{1}, i_{2}, \cdots, i_{n}} x_{i_{1}} x_{i_{2}} \cdots x_{i_{n}} \frac{\partial^{n}}{\partial x_{i_{1}} \partial x_{i_{2}} \cdots \partial x_{i_{n}}} \vec{B} (\vec{0}) \right) \\ - (\vec{j} \cdot \vec{r})  \sum_{n} \frac{1}{n!} \sum_{i_{1}, i_{2}, \cdots, i_{n}} x_{i_{1}} x_{i_{2}} \cdots x_{i_{n}} \frac{\partial^{n}}{\partial x_{i_{1}} \partial x_{i_{2}} \cdots \partial x_{i_{n}}} \vec{B} (\vec{0}) d \tau \\ = 
 \sum_{n} \frac{1}{n!} \sum_{i,i_{1},\cdots,i_{n}} \left\{ \vec{J}_{i i_{1}\cdots i_{n}} \left[ \frac{\partial^{n}}{\partial x_{i_{1}}\cdots \partial x_{i_{n}}} B_{i}(\vec{r}) \right] - J^{i}_{i i_{1}\cdots i_{n}} \left[ \frac{\partial^{n}}{\partial x_{i_{1}}\cdots \partial x_{i_{n}}} \vec{B}(\vec{r}) \right] \right\}= \sum_{n} \vec{L}_{n}
+\end{gathered}
 $$
 其中
 $$
@@ -214,14 +234,18 @@ $$
 $$
 
 $$
+\begin{gathered}
 \vec{J}_{ii_{1} i_{2} \cdots i_{n}} = \int d \tau \vec{j} x_{i} x_{i_{1}} x_{i_{2}} \cdots x_{i_{n}} \\
+\end{gathered}
 $$
 
 特别地
 $$
+\begin{gathered}
 \vec{L}_{0} = \frac{1}{1!} \left(\int d \tau \vec{j} x_{i} B_{i} - \int d \tau j_{i} x_{i} \vec{B} \right) \\ =
 \int d \tau j_{j} x_{i} B_{i} - \int d \tau j_{i} x_{i} B_{j} \\ = 
 \epsilon_{ijk} m_{k} B_{i} - 0 = \vec{m} \times \vec{B}
+\end{gathered}
 $$
 
 ### 5. 辐射电磁场 (书第五章第3、4、5节) 一般性质，多极展开，电偶极辐射，电四极辐射，磁偶极辐射  
@@ -354,9 +378,11 @@ $$
 
 所以
 $$
+\begin{gathered}
 <\vec{S}> = <\vec{E} \times \vec{H}> = \frac{<B^{2}>}{\mu_{0}} = \frac{\mu_{0} \omega^{4}}{16 \pi^{2} c r^{2}} \frac{1}{2} |(e^{ikr} \vec{p}_{0} + e^{ik (r + \frac{\lambda}{4} \cos \theta) + \Phi} \vec{p}_{0})^{2}| \sin^{2} \theta \\ =
 \frac{\mu_{0} \omega^{4}}{32 \pi^{2} c r^{2}} p_{0}^{2} |(e^{ikr} + e^{ik (r + \frac{\lambda}{4} \cos \theta) + \Phi}) (e^{- ikr} + e^{- ik (r + \frac{\lambda}{4} \cos \theta) + \Phi})| \sin^{2} \theta \\ = 
 \frac{\mu_{0} p_{0}^{2} \omega^{4}}{16 \pi^{2} c r^{2}} (1 + \cos (\frac{\pi}{2} \cos \theta + \Phi)) \sin^{2} \theta
+\end{gathered}
 $$
 所以
 $$

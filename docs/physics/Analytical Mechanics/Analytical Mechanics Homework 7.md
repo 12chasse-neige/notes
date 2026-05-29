@@ -18,8 +18,10 @@ $$
 $$
 
 $$
+\begin{gathered}
 \ddot{\theta} = - \omega_{0}^{2} \theta + \epsilon^{2} \frac{\omega_{0}^{2}}{6} \theta^{3} \\
 \ddot{\theta} + \omega^{2} \theta = (\omega^{2} - \omega_{0}^{2}) \theta + \epsilon^{2} \frac{\omega_{0}^{2}}{6} \theta^{3}
+\end{gathered}
 $$
 
 作代换 $\tau = \omega t + \phi$，得到
@@ -28,9 +30,11 @@ $$
 $$
 分离得到
 $$
+\begin{gathered}
 \theta''_{0} + \theta_{0} = 0 \\
 \theta''_{1} + \theta_{1} = 2\frac{\omega_{1}}{\omega_{0}} \theta_{0} \\
 \theta''_{2} + \theta_{2} = \left(2 \frac{\omega_{2}}{\omega_{0}} - 3 \left(\frac{\omega_{1}}{\omega_{0}} \right)^{2} \right) \theta_{0} + 2 \frac{\omega_{1}}{\omega_{0}} \theta_{1} +  \frac{1}{6} \theta_{0}^{3}
+\end{gathered}
 $$
 解得0阶解
 $$
@@ -46,9 +50,11 @@ p^{2} L[\theta_{1}] + L[\theta_{1}] = L \left[2 A \frac{\omega_{1}}{\omega_{0}} 
 $$
 所以
 $$
+\begin{gathered}
 \theta_{1} (t) = L^{-1} \left[\frac{1}{p^{2} + 1} L \left[2 A \frac{\omega_{1}}{\omega_{0}} \cos \tau \right]\right] \\ = 
 \int_{0}^{\tau} 2 A \frac{\omega_{1}}{\omega_{0}} \cos (\tau - \tau') \sin \tau' \, \dd{\tau'} \\ =
 A \frac{\omega_{1}}{\omega_{0}} \tau \sin \tau
+\end{gathered}
 $$
 为了消除非物理项，得到
 $$
@@ -64,9 +70,11 @@ $$
 $$
 所以
 $$
+\begin{gathered}
 \theta_{2} (t) = L^{-1} \left[\frac{1}{p^{2} + 1} L \left[2 A \frac{\omega_{2}}{\omega_{0}} \cos \tau + \frac{A^{3}}{6} \cos^{3} \tau \right]\right] \\ =
 \int_{0}^{\tau} 2 A \frac{\omega_{2}}{\omega_{0}} \cos (\tau - \tau') \sin \tau' + \frac{A^{3}}{6} \cos^{3} (\tau - \tau') \sin \tau' \, \dd{\tau'} \\ =
 A \frac{\omega_{2}}{\omega_{0}} \tau \sin\tau + \frac{A^{3}}{192} \left(12\tau \sin\tau + \cos\tau - \cos 3\tau \right)
+\end{gathered}
 $$
 消去非物理项，得到
 $$
@@ -87,9 +95,11 @@ $$
 
 直接给出相对于平衡位置的坐标运动方程
 $$
+\begin{gathered}
 \ddot{x}_{1} = \frac{k}{m} (x_{2} - x_{1}) \\
 \ddot{x}_{2} = \frac{k}{M} (x_{1} + x_{3} - 2 x_{2}) \\
 \ddot{x}_{3} = \frac{k}{m} (x_{2} - x_{3})
+\end{gathered}
 $$
 令 $\omega_{1}^{2} = \frac{k}{m}, \omega_{2}^{2} = \frac{k}{M}$，得到系数矩阵
 $$
@@ -120,13 +130,17 @@ A =
 $$
 得到两个振动模式的频率和简正坐标为（特征值0对应了平动）
 $$
+\begin{gathered}
 \omega = \omega_{1} = \sqrt{\frac{k}{m}} \\
 x = x_{1} - x_{3}
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 \omega = \sqrt{\omega_{1}^{2} + 2 \omega_{2}^{2}} = \sqrt{\frac{k}{m} + 2 \frac{k}{M}} \\
 x = - x_{1} + 2 x_{2} - x_{3}
+\end{gathered}
 $$
 
 4.15 一耦合摆作小振动，如图 4.17所示，两个小球质量都是 $m$，系在长度都是 $l$ 的轻杆，小球之间用劲度系数为 $k$ 的弹簧相连，弹簧的自然长度与两个悬点 $O, O'$ 之间的距离相同，系统限于两个轻杆自然下垂的铅直平面内运动。两球初始静止，一球在平衡位置，另一球则拉到 $\theta_{2}=\alpha$，求解系统。
@@ -185,8 +199,10 @@ $$
 $$
 重新定义坐标
 $$
+\begin{gathered}
 q_{1} = \frac{1}{\sqrt{2}} (\theta_{1} + \theta_{2}) \\
 q_{2} = \frac{1}{\sqrt{2}} (\theta_{1} - \theta_{2})
+\end{gathered}
 $$
 所以
 $$
@@ -198,16 +214,22 @@ $$
 $$
 结合初始条件
 $$
+\begin{gathered}
 q_{1} (0) = \frac{\alpha}{\sqrt{2}} \quad q_{2} (0) = - \frac{\alpha}{\sqrt{2}} \\
 \dot{q}_{1} (0) = \dot{q}_{2} (0) = 0
+\end{gathered}
 $$
 所以
 $$
+\begin{gathered}
 q_{1} (t) = \frac{\alpha}{\sqrt{2}} \cos(\sqrt{- \omega_{1}^{2} + \omega_{2}^{2}} t) \\
 q_{2} (t) = - \frac{\alpha}{\sqrt{2}} \cos(\sqrt{\omega_{1}^{2} + \omega_{2}^{2}} t)
+\end{gathered}
 $$
 得到
 $$
+\begin{gathered}
 \theta_{1} (t) = \frac{\alpha}{2} \left( \cos(\sqrt{\frac{g}{l}} t) - \cos(\sqrt{\frac{g}{l} + 2 \frac{k}{m}} t)\right) \\
 \theta_{2} (t) = \frac{\alpha}{2} \left( \cos(\sqrt{\frac{g}{l}} t) + \cos(\sqrt{\frac{g}{l} + 2 \frac{k}{m}} t)\right)
+\end{gathered}
 $$

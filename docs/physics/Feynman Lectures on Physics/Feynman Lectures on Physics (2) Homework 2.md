@@ -35,7 +35,9 @@ $$
 $$
 
 $$
+\begin{gathered}
 - \nabla^{2} \phi = - C  \nabla^{2} \frac{e^{-mr}}{r} = - C \left( - 4 \pi \delta (r) e^{-mr} + \frac{1}{r} ( m^{2} e^{-mr} - \frac{2m}{r} e^{-mr}) + \frac{2m}{r^{2}} e^{-mr}  \right) \\ = C \left( 4 \pi \delta (r) e^{-mr} - \frac{1}{r}  m^{2} e^{-mr} \right)
+\end{gathered}
 $$
 
 $$
@@ -78,8 +80,10 @@ $$
 $$
 
 $$
+\begin{gathered}
 \therefore \,\, \phi = \int_{0}^{\pi} \frac{1}{4 \pi \epsilon_{0}} \left( \frac{Q}{4 \pi R^{2}} 2 \pi R^{2} \sin \theta \mathrm{d} \theta \frac{1}{\sqrt{d^{2} + R^{2} - 2 d R \cos \theta}^{1 + \delta}} \right) \\ = 
 \frac{Q}{8 \pi \epsilon_{0} d R} \frac{|d + R|^{1 - \delta} - |d - R|^{1 - \delta}}{1 - \delta}
+\end{gathered}
 $$
 
 c) 设内球的半径为 $R_{1}$ , 外球壳的半径为 $R_{2}$ , 请求出在步骤 iv 后, 内球电势 $V_{1}$ 与外球壳原来电势 $V$ 的关系 (忽略小铜球的影响, 并保留到 $\delta$ 的一阶项).
@@ -99,10 +103,12 @@ $$
 $$
 当外壳放完电时，为了使外球壳保持零势，外球壳会带电 $- \Delta Q_{1}$ ，此时内球壳上的电势即为内球壳和外球壳的叠加，保留至一阶项：
 $$
+\begin{gathered}
 V_{1} = \frac{\Delta Q_{1}}{4\pi \epsilon_{0} R_{1}} - \frac{\Delta Q_{1}}{4 \pi \epsilon_{0} R_{2}} = \frac{\Delta Q_{1}}{4 \pi \epsilon_{0}}  \frac{R_{2} - R_{1}}{R_{1} R_{2}} \\ = 
 \frac{R_{2} - R_{1}}{R_{1}} V \left( \frac{R_{1} + R_{2}}{2(R_{2} - R_{1})} \ln (R_{2} + R_{1}) - \frac{1}{2} \ln (R_{2} - R_{1})  - \frac{R_{1}}{R_{2} - R_{1}} \ln(2 R_{1}) \right) \delta \\ = 
 V \left( \frac{R_{1} + R_{2}}{2R_{1}} \ln (R_{2} + R_{1}) - \frac{R_{2} - R_{1}}{2 R_{1}} \ln (R_{2} - R_{1})  - \ln(2 R_{1}) \right) \delta \\ = 
 V \left( \frac{1 + \frac{R_{2}}{R_{1}}}{2} \ln (1 + \frac{R_{2}}{R_{1}}) - \frac{\frac{R_{2}}{R_{1}} - 1}{2} \ln (\frac{R_{2}}{R_{1}} - 1) - \ln2  \right) \delta
+\end{gathered}
 $$
 v 将静电计的探针脱离接地, 由外壳的小口伸入, 与内球保持接触. 静电计的指针观察不到任何偏转.
 
@@ -191,7 +197,9 @@ E_{tot} = \frac{1}{2} \hbar (\frac{\pi c}{a} \sum_{n=1}^{\infty} n e^{- \frac{n 
 $$
 所以受力为：
 $$
+\begin{gathered}
 F = - \frac{\partial E_{tot}}{\partial a} = - \lim_{L, \Lambda \to \infty} \frac{\partial}{\partial a} \frac{1}{2} \hbar \left(\frac{\pi c}{a} \frac{e^{- \frac{c}{a \Lambda}}}{(1 - e^{- \frac{c}{a \Lambda}})^{2}} + \frac{\pi c}{L - a} \frac{e^{- \frac{c}{(L - a) \Lambda}}}{(1 - e^{- \frac{c}{(L - a) \Lambda}})^{2}} \right) \\ = - \lim_{\alpha, \alpha' \to 0 \,\, L \to \infty} \frac{1}{2} \frac{\hbar \pi c}{a^{2}} \left(\frac{\alpha e^{- \alpha} (1 + e^{- \alpha})}{(1 - e^{- \alpha})^{3}} - \frac{e^{- \alpha}}{(1 - e^{- \alpha})^{2}}\right)  + \frac{1}{2} \frac{\hbar \pi c}{(L - a)^{2}} \left( - \frac{\alpha' e^{- \alpha'} (1 + e^{- \alpha'})}{(1 - e^{- \alpha'})^{3}} + \frac{e^{- \alpha'}}{(1 - e^{- \alpha'})^{2}} \right)  \\ = - \frac{1}{24} \frac{\hbar \pi c}{a^{2}} \qquad (\alpha = \frac{c}{a \Lambda}, \alpha' = \frac{c}{(L - a) \Lambda})
+\end{gathered}
 $$
 e) d 问中，用一个特定的指数函数来控制高频电磁波的贡献，得到了一个有限的电磁力；但是，这个电磁力的大小不依赖于具体函数形式的选取。因此，考虑一个更一般的函数 $f(x)$ ，它只需要满足两个条件：
 
@@ -213,7 +221,9 @@ E_{tot} = \frac{1}{2} \hbar \left( \frac{\pi c}{a} \sum_{n=1}^{\infty} n f(\frac
 $$
 
 $$
+\begin{gathered}
 - \lim_{\Lambda , L \to \infty}  \frac{\partial}{\partial a} E_{tot} = - \lim_{\Lambda , L \to \infty}  \frac{\partial}{\partial a} \frac{\hbar \pi c}{2 a} \left((\frac{a \Lambda}{c})^{2} \int_{0}^{\infty} x f(x) \mathrm{d} x - \frac{1}{12} \right) + \frac{\hbar \pi c}{2 (L - a)} \left( (\frac{(L -a) \Lambda}{c})^{2} \int_{0}^{\infty} x f(x) \mathrm{d} x  - \frac{1}{12} \right) \\ = 
 - \lim_{\Lambda , L \to \infty}  \frac{\partial}{\partial a} \frac{\hbar \pi L \Lambda^{2}}{2 c} \int_{0}^{\infty} x f(x) \mathrm{d} x - \frac{1}{12} \frac{\hbar \pi c}{2 a} - \frac{1}{12} \frac{\hbar \pi c}{2 (L - a)} \\ = - \frac{1}{24} \frac{\hbar \pi c}{a^{2}}
+\end{gathered}
 $$
 

@@ -43,8 +43,10 @@ $$
 
 球外
 $$
+\begin{gathered}
 Q = \int_{0}^{R} \left( \frac{\epsilon K}{(\epsilon - \epsilon_{0}) r^{2}} - \frac{K}{r^{2}} \right) 4 \pi r^{2} d r + 4 \pi R^{2} \frac{K}{R} = \frac{\epsilon K}{\epsilon - \epsilon_{0}} 4 \pi R \\
 \phi (r) = \frac{1}{4 \pi \epsilon_{0}} \frac{Q}{r} = \frac{\epsilon KR}{(\epsilon - \epsilon_{0})\epsilon_{0} r}
+\end{gathered}
 $$
 球内
 $$
@@ -61,8 +63,10 @@ $$
 
 (4) 求该带电介质球产生的静电场总能量
 $$
+\begin{gathered}
 W_{E} = \int_{0}^{R} \frac{1}{2} \epsilon_{0} (\frac{K}{(\epsilon - \epsilon_{0}) r})^{2} 4 \pi r^{2} d r + \int_{R}^{\infty} \frac{1}{2} \epsilon_{0} (\frac{\epsilon KR}{(\epsilon - \epsilon_{0})\epsilon_{0} r^{2}})^{2} 4 \pi r^{2} d r \\ = 
 2\pi \epsilon R \left(1 + \frac{\epsilon}{\epsilon_{0}}\right) \left(\frac{K}{\epsilon - \epsilon_{0}}\right)^{2}
+\end{gathered}
 $$
 (b) 试证:极化电荷出在自由电荷处,无自由电荷也无极化电荷,极化使自由电荷处的总电荷变为原来的$\frac{1}{\epsilon_{r}}$倍.  
 
@@ -139,13 +143,17 @@ $$
 
 由唯一性定理，只要说明满足边界条件
 $$
+\begin{gathered}
 \oint_{S_{i}} d S \frac{\partial}{\partial n_{i}}  \sum_{i} p_{i}(\vec{r}) q_{i} = - \frac{q_{i}}{\epsilon} \\
 \sum_{i} p_{i}(\vec{r}) q_{i} = \phi_{i} \qquad (\vec{r} \in S_{i})
+\end{gathered}
 $$
 的解存在，那么这个解就是唯一解
 $$
+\begin{gathered}
 \oint_{S_{i}} d S \frac{\partial}{\partial n_{i}}  \sum_{i} p_{i}(\vec{r}) q_{i} = \int_{S_{i}} d \vec{S} \cdot \nabla (\sum_{i} p_{i} (\vec{r}) q_{i}) \\
 = \int_{V_{i}} d \tau \nabla \cdot \nabla  (\sum_{i} p_{i} (\vec{r}) q_{i}) = \int_{V_{i}} d \tau \nabla^{2}  (\sum_{i} p_{i} (\vec{r}) q_{i}) = - \frac{q_{i}}{\epsilon}
+\end{gathered}
 $$
 不妨令
 $$
@@ -153,8 +161,10 @@ p_{i} (\vec{r}) = \frac{1}{4 \pi \epsilon} \int_{V_{i}} \frac{\rho_{i} (\vec{r}'
 $$
 
 $$
+\begin{gathered}
 \int_{V_{i}} d \tau \nabla^{2}  (\sum_{i} p_{i} (\vec{r}) q_{i}) = \int_{V_{i}} d \tau \sum_{i} \frac{q_{i}}{4 \pi \epsilon} \nabla^{2} \int_{V_{i}} \frac{\rho_{i} (\vec{r}') d \tau'}{|\vec{r} - \vec{r}'|} = - \frac{q_{i}}{\epsilon} \int_{V_{i}} d \tau \sum_{i} \int_{V_{i}} d \tau' \rho_{i} (\vec{r'}) \delta (\vec{r} - \vec{r'}) \\ =
 - \frac{q_{i}}{\epsilon} \int_{V_{i}} d \tau \rho_{i} (\vec{r})
+\end{gathered}
 $$
 
 所以
@@ -223,5 +233,7 @@ $$
 
 空间电势分布为
 $$
+\begin{gathered}
 \phi (x, y, z) = \frac{1}{4 \pi \epsilon_{0}} ( \frac{Q}{\sqrt{x^{2} + y^{2} + (z - b)^{2}}} - \frac{Q}{\sqrt{x^{2} + y^{2} + (z + b)^{2}}} \\ - \frac{\frac{b}{a}Q}{\sqrt{x^{2} + y^{2} + (z - \frac{a^{2}}{b})^{2}}} + \frac{\frac{b}{a}Q}{\sqrt{x^{2} + y^{2} + (z + \frac{a^{2}}{b})^{2}}} )
+\end{gathered}
 $$

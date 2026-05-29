@@ -22,16 +22,20 @@ $$
 其中 $f$ 为科里奥利力参数，$g$ 为重力加速度。请证明浅水波的运动方程可以写成以下两个连续性方程：
 
 $$
+\begin{gathered}
 \frac{\partial J^{0}}{\partial t} + \nabla \cdot \vec{J} = 0 \\
 J_{0} = h(t, x, y) \\
 \vec{J} = h(t, x, y) \vec{u}(t, x, y)
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 \frac{\partial \tilde{J}^{0}}{\partial t} + \nabla \cdot \vec{\tilde{J}} = 0 \\ 
 \tilde{J}^{0} = \zeta(t, x, y) + f \\ 
 \vec{\tilde{J}} = (\zeta(t, x, y) + f) \vec{u}(t, x, y) \\
 \zeta(t, x, y) = \frac{\partial u^{2}}{\partial x} - \frac{\partial u^{1}}{\partial y}
+\end{gathered}
 $$
 
 第一个方程表征的是浅水波高度的守恒方程，第二个方程描述的是涡旋 $\zeta$ 在存在科里奥利力的情况下的守恒方程。
@@ -42,13 +46,17 @@ $$
 $$
 
 $$
+\begin{gathered}
 \frac{\partial \tilde{J}^{0}}{\partial t} + \nabla \cdot \vec{\tilde{J}} = \frac{\partial}{\partial t} (\zeta(t, x, y) + f) + \nabla \cdot ((\zeta(t, x, y) + f) \vec{u}(t, x, y)) \\ =
 \frac{\partial \zeta}{\partial t} + (\nabla \zeta) \cdot \vec{u} + (\zeta + f) \nabla \cdot \vec{u}
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 \frac{\partial}{\partial t} \zeta = \frac{\partial}{\partial t} (\frac{\partial u^{2}}{\partial x} - \frac{\partial u^{1}}{\partial y}) = \frac{\partial}{\partial x} (f \epsilon^{21} u^{1} - (\vec{u} \cdot \nabla) u^{2} - g \frac{\partial h}{\partial y}) - \frac{\partial}{\partial y} (f \epsilon^{12} u^{2} - (\vec{u} \cdot \nabla) u^{1} - g \frac{\partial h}{\partial x}) \\ =
 \frac{\partial}{\partial x} (-f u^{1} - (\vec{u} \cdot \nabla) u^{2} - g \frac{\partial h}{\partial y}) - \frac{\partial}{\partial y} (f u^{2} - (\vec{u} \cdot \nabla) u^{1} - g \frac{\partial h}{\partial x})
+\end{gathered}
 $$
 
 $$
@@ -61,6 +69,7 @@ $$
 
 所以
 $$
+\begin{gathered}
 \frac{\partial \zeta}{\partial t} + (\nabla \zeta) \cdot \vec{u} + (\zeta + f) \nabla \cdot \vec{u} \\ = 
 \frac{\partial}{\partial x} (-f u^{1} - (\vec{u} \cdot \nabla) u^{2} - g \frac{\partial h}{\partial y}) - \frac{\partial}{\partial y} (f u^{2} - (\vec{u} \cdot \nabla) u^{1} - g \frac{\partial h}{\partial x}) \\ +
 \frac{\partial}{\partial x}(\frac{\partial u^{2}}{\partial x} - \frac{\partial u^{1}}{\partial y}) u^{1} + \frac{\partial}{\partial y}(\frac{\partial u^{2}}{\partial x} - \frac{\partial u^{1}}{\partial y}) u^{2} \\ + 
@@ -68,6 +77,7 @@ $$
 \frac{\partial}{\partial y} (u^{1} \frac{\partial u^{1}}{\partial x} +  u^{2} \frac{\partial u^{1}}{\partial y}) - \frac{\partial}{\partial x} (u^{1} \frac{\partial u^{2}}{\partial x} +  u^{2} \frac{\partial u^{2}}{\partial y}) \\ +
 u^{1} \frac{\partial}{\partial x}(\frac{\partial u^{2}}{\partial x} - \frac{\partial u^{1}}{\partial y}) + u^{2} \frac{\partial}{\partial y}(\frac{\partial u^{2}}{\partial x} - \frac{\partial u^{1}}{\partial y}) \\ + 
 (\frac{\partial u^{2}}{\partial x} - \frac{\partial u^{1}}{\partial y}) (\frac{\partial u^{1}}{\partial x} + \frac{\partial u^{2}}{\partial y}) = 0
+\end{gathered}
 $$
 
 #### 2. 浅水波运动方程与麦克斯韦方程组的类比
@@ -86,8 +96,10 @@ $$
 $$
 所以
 $$
+\begin{gathered}
 \frac{\partial h}{\partial t} + u_{i} \partial_{i} h + h \partial_{i} u_{i} = 0 \\
 \frac{\partial h}{\partial t} + \partial_{i} (u_{i} h) = 0
+\end{gathered}
 $$
 因为 $E_{i} = h \epsilon_{ij} u_{j}$ ，所以
 $$
@@ -113,8 +125,10 @@ $$
 $$
 
 $$
+\begin{gathered}
 \frac{1}{c} \epsilon^{kj} \partial_{k} E_{j} + \partial_{0} (\epsilon^{ij} \partial_{i} A_{j}) = 0 \\
 - \frac{1}{c} \nabla \times \vec{E} - \frac{1}{c} \frac{\partial}{\partial t} (\nabla \times \vec{A}) = 0
+\end{gathered}
 $$
 
 所以
@@ -144,10 +158,12 @@ p_{n} = C_{N}^{n} (\frac{1}{2} + q)^{n} (\frac{1}{2} - q)^{N - n}
 $$
 
 $$
+\begin{gathered}
 <s> = \sum_{n = 0}^{N} \frac{1}{2} (2n - N) C_{N}^{n} (\frac{1}{2} + q)^{n} (\frac{1}{2} - q)^{N - n} \\ = 
 \sum_{n = 0}^{N} n C_{N}^{n} (\frac{1}{2} + q)^{n} (\frac{1}{2} - q)^{N - n} - \frac{1}{2} N \\ =
 (\frac{1}{2} + q) N \sum_{n = 1}^{N} C_{N - 1}^{n - 1} (\frac{1}{2} + q)^{n - 1} (\frac{1}{2} - q)^{N - n} - \frac{1}{2} N \\ =
 (\frac{1}{2} + q) N - \frac{1}{2} N = q N
+\end{gathered}
 $$
 
 #### 3. 一维伊辛模型的相变证明

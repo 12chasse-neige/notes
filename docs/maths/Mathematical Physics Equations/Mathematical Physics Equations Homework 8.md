@@ -6,9 +6,11 @@ Chasse_neige
 
 (a) $\mathrm{P}_{2 n}(0)$, $\mathrm{P}_{2 n+1}^{\prime}(0)$
 $$
+\begin{gathered}
 P_{n} (x) = \frac{1}{2^{n} n!} \frac{\mathrm{d}^{n}}{\mathrm{d} x^{n}} (x^{2} - 1)^{n} \\ =
 \frac{1}{2^{n} n!} \frac{\mathrm{d}^{n}}{\mathrm{d} x^{n}} \sum_{m = 0}^{n} \frac{(-1)^{m} n!}{m! (n - m)!} x^{2(n - m)} \\ =
 \frac{1}{2^{n} n!} \sum_{m = 0}^{[\frac{n}{2}]} \frac{(-1)^{m} n!}{m! (n - m)!} \frac{(2n - 2m)!}{(n - 2m)!} x^{n - 2m}
+\end{gathered}
 $$
 
 $$
@@ -67,10 +69,12 @@ $$
 
 对比系数，得到
 $$
+\begin{gathered}
 P'_{0} (\pm 1) = 0 \\
 P'_{1} (\pm 1) = 1 \\
 P'_{2} (\pm 1) = \pm 3 \\
 P'_{l} (\pm 1) = (\pm 1)^{l + 1} \frac{l (l + 1)}{2}
+\end{gathered}
 $$
 对于 $2$ 阶导，在两边继续对 $x$ 偏导得到
 $$
@@ -78,17 +82,21 @@ $$
 $$
 
 $$
+\begin{gathered}
 \frac{3 t^{2}}{(1 \mp t)^{5}} = \sum_{l = 0}^{\infty} P''_{l} (\pm 1) t^{l} \\
 = \sum_{l = 4}^{\infty} 3t^{2} \left(1 \pm 5t  + 15 (\mp t)^{2} + 35 (\pm t)^{3}  + (-1)^{l} \frac{(l + 1)(l + 2) (l + 3) (l + 4)}{24} (\mp t)^{l} \right)
+\end{gathered}
 $$
 
 对比两边系数，得到
 $$
+\begin{gathered}
 P''_{0} (\pm 1) = P''_{1} (\pm 1) = 0 \\
 P''_{2} (\pm 1) = 3 \\
 P''_{3} (\pm 1) = \pm 15 \\
 P''_{4} (\pm 1) = 45 \\
 P''_{l} (\pm 1) = (\pm 1)^{l} \frac{(l - 1) l (l + 1) (l + 2)}{8}
+\end{gathered}
 $$
 
 
@@ -134,7 +142,9 @@ $$
 $$
 因此
 $$
+\begin{gathered}
 \frac{d}{dx} \left[ (1 - x^{2}) (u' v - u v') \right]  = 2x (u' v - u v') - [k(k+1) - l(l+1)] u v - 2x (u' v - u v') \\ = - [k(k+1) - l(l+1)] u v
+\end{gathered}
 $$
 即：
 $$
@@ -216,8 +226,10 @@ $$
 $$
 所以后一项为 $0$，得到
 $$
+\begin{gathered}
 \int_{-1}^{1} \dv{P_{k} (x)}{x} \dv{P_{l} (x)}{x} \, \dd{x} = \left. P_{l} (x) \dv{P_{k} (x)}{x} \right|_{-1}^{1} = P_{l} (1) P_{k}' (1) - P_{l} (-1) P_{k}' (-1) \\ =
 \frac{k (k + 1)}{2} (1+ (-1)^{l + k})
+\end{gathered}
 $$
 5.计算下列积分
 
@@ -244,9 +256,11 @@ $$
 - 如果 $k$ 和 $l$ 奇偶性不同，则利用 Legendre 方程的结论计算 (不失一般性，假设 $k = 2k', l = 2l' + 1$)
 
 $$
+\begin{gathered}
 \int_{0}^{1} \mathrm{P}_{k}(x) \mathrm{P}_{l}(x)  \mathrm{d} x = \frac{1}{l (l + 1) - k(k + 1)} \left. (1 - x^{2}) (P'_{k} (x) P_{l} (x) - P'_{l} (x) P_{k} (x)) \right|_{0}^{1} \\ =
 \frac{P'_{l} (0) P_{k} (0) - P'_{k} (0) P_{l} (0)}{l (l + 1) - k(k + 1)} = \frac{1}{(2l' + 1) (2l' + 2) - 2k' (2k' + 1)} \left(\frac{(-1)^{l'} (2l' + 1)!}{2^{2l'} (l'!)^{2}} \frac{(-1)^{k'} (2k')!}{2^{2k'} (k'!)^{2}}\right) \\ =
 \frac{(-1)^{l' + k'}}{(2l' + 1) (2l' + 2) - 2k' (2k' + 1)} \frac{(2l' + 1)! (2k')!}{2^{2 (l' + k')} (l'!)^{2} (k'!)^{2}}
+\end{gathered}
 $$
 
  (c) 
@@ -259,8 +273,10 @@ $$
 $$
 当$l \neq 0$ 时，直接利用和 (a) 类似的思路，分部积分得到
 $$
+\begin{gathered}
 \int_{-1}^{1} \mathrm{P}_{l}(x) \ln (1 - x) \, \mathrm{d} x \\ =
 - \frac{(l - 1)!}{2^{l} l!} \int_{-1}^{1} (1 + x)^{l} \, \dd{x} = - \frac{2}{l (l + 1)}
+\end{gathered}
 $$
 (d) 
 $$
@@ -317,7 +333,9 @@ $$
 $$
 
 $$
+\begin{gathered}
 \frac{2}{4n + 1} a_{2n} = - \int_{-1}^{0} P_{1} (x) P_{2n} (x) \, \dd{x} + \int_{0}^{1} P_{1} (x) P_{2n} (x) \, \dd{x} \\ = 2 \int_{0}^{1} P_{1} (x) P_{2n} (x) \, \dd{x}
+\end{gathered}
 $$
 
 直接带入上一题中的结果
@@ -334,8 +352,10 @@ $$
 
 利用生成函数的表达式
 $$
+\begin{gathered}
 \sqrt{1 - 2 x t + t^{2}} = (1 - 2xt + t^{2}) \sum_{l = 0}^{\infty} P_{l} (x) t^{l} \\ =
 \sum_{l} (1 + t^{2}) t^{l} P_{l} (x) - \sum_{l} 2 t^{l + 1} \left( \frac{l + 1}{2l + 1} P_{l + 1} (x) + \frac{l}{2l + 1} P_{l - 1} (x)\right)
+\end{gathered}
 $$
 整理得到
 $$
@@ -343,8 +363,10 @@ a_{0} = (1 + t^{2}) - \frac{2}{3} t^{2} = 1 + \frac{1}{3} t^{2}
 $$
 
 $$
+\begin{gathered}
 a_{n} = (1 + t^{2}) t^{n} - 2 t^{n} \frac{n}{2n - 1} - 2 t^{n + 2} \frac{n + 1}{2n + 3} \\ =
 - \frac{1}{2n - 1} t^{n} + \frac{1}{2n + 3} t^{n + 2}
+\end{gathered}
 $$
 
 8.利用勒让德多项式的生成函数证明
@@ -387,7 +409,9 @@ $$
 $$
 考虑生成函数在 $x = \cos \theta$ 与 $t$ 和 $-t$ 的乘积
 $$
+\begin{gathered}
 \frac{1}{\sqrt{1-2 \cos \theta t + t^{2}}} \cdot \frac{1}{\sqrt{1-2 \cos \theta (-t) + (-t)^{2}}} \\= \frac{1}{\sqrt{1-2 \cos \theta t + t^{2}}} \cdot \frac{1}{\sqrt{1+2 \cos \theta t + t^{2}}} = \frac{1}{\sqrt{1 - 2 \cos 2\theta t^{2} + t^{4}}}
+\end{gathered}
 $$
 右边
 $$

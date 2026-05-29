@@ -16,8 +16,10 @@ $$
 $$
 所以得到递推关系
 $$
+\begin{gathered}
 k(k - 1) C_{k} = C_{k - 4} \\
 C_{k} = \frac{1}{k (k - 1)} C_{k - 4}
+\end{gathered}
 $$
 所以得到
 $$
@@ -25,13 +27,17 @@ C_{2} = C_{3} = 0
 $$
 
 $$
+\begin{gathered}
 C_{4k} = \frac{1}{4k \cdot (4k - 1) \cdot 4(k - 1) \cdot (4(k - 1) - 1) \cdots 4 \cdot 3} C_{0} \\ =
 \frac{\Gamma(\frac{3}{4})}{2^{4k} \Gamma(k + 1) \Gamma(k + \frac{3}{4})} C_{0}
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 C_{4 k + 1} = \frac{1}{(4 k + 1) \cdot 4k \cdot (4 (k - 1) + 1) \cdot 4 (k - 1) \cdots 5 \cdot 4} C_{1} \\ =
 \frac{\Gamma(\frac{5}{4})}{2^{4k} \Gamma(k + \frac{5}{4}) \Gamma(k + 1)} C_{1}
+\end{gathered}
 $$
 
 所以两个解为
@@ -57,9 +63,11 @@ $$
 
 所以递推公式满足
 $$
+\begin{gathered}
 k (k -  1) C_{k} - (k + 2) (k + 1) C_{k + 2} + k C_{k} - C_{k} = 0 \\
 (k^{2} - 1) C_{k} = (k + 2)(k + 1) C_{k + 2} \\
 (k - 1) C_{k} = (k + 2) C_{k + 2}
+\end{gathered}
 $$
 所以
 $$
@@ -67,8 +75,10 @@ C_{k + 2}= \frac{k - 1}{k + 2} C_{k}
 $$
 带入
 $$
+\begin{gathered}
 C_{2k} = \frac{2k - 3}{2k} \cdot \frac{2k - 5}{2k - 2} \cdots \frac{-1}{2} C_{0} \\ = 
 \frac{\Gamma(k - \frac{1}{2})}{\Gamma(k + 1) \Gamma(- \frac{1}{2})} C_{0}
+\end{gathered}
 $$
 
 $$
@@ -145,8 +155,10 @@ g (1 - z) + \sum_{k = 2}^{\infty} k (k - 1) C_{k} z^{k - 1} - \sum_{k = 1}^{\inf
 $$
 所以
 $$
+\begin{gathered}
 C_{0} = - g \\
 - g + 2 C_{2} - C_{1} + C_{1} = 0 
+\end{gathered}
 $$
 即
 $$
@@ -156,8 +168,10 @@ $$
 
 递推关系为
 $$
+\begin{gathered}
 (k + 1) k C_{k + 1} - (k - 1) C_{k} = 0 \\
 C_{k + 1} = \frac{k - 1}{k (k + 1)} C_{k}
+\end{gathered}
 $$
 得到
 $$
@@ -200,13 +214,17 @@ C_{k} = - \frac{m^{2}}{(k + 1)k} C_{k - 2}
 $$
 得到
 $$
+\begin{gathered}
 C_{2k} = (-1)^{k} \frac{m^{2}}{(2k + 1) 2k} \cdot \frac{m^{2}}{(2k - 1) (2k - 2)} \cdots \frac{m^{2}}{3 \cdot 2} C_{0} \\ =
 (-1)^{k} \frac{m^{2k}}{(2k + 1) !} C_{0}
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 C_{2k + 1} = (-1)^{k} \frac{m^{2}}{(2k  + 2) (2k + 1)} \cdot \frac{m^{2}}{2k (2k - 1)} \cdots \frac{m^{2}}{4 \cdot 3} C_{1} \\ =
 (-1)^{k} \frac{2 m^{2k}}{(2k + 2)!} C_{1}
+\end{gathered}
 $$
 
 注意此时的低次项的条件需要满足（这一神奇的条件来自 $\rho$ 等于小整数带来的低此项导数缺失）

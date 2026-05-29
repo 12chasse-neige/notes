@@ -64,8 +64,10 @@ $$
 
 4.3.1 设粒子的波函数是 $\psi(x) = C[\sin^{2} kx + \frac{1}{2} \cos kx]$ ($-\infty < x < +\infty$, $k > 0$)，求它的动量测量值和相应的测量几率、动量平均值和动能平均值。提示：把 $\psi(x)$ 化为 $e^{\frac{i}{\hbar}px}$ 的线性组合。由于 $|\psi(x)|^{2}$ 在 $-\infty < x < +\infty$ 上的积分是发散的，所以无需求 $C$，但是所问的值都是有意义的。
 $$
+\begin{gathered}
 \psi(x) = C \frac{1 - \cos (2kx)}{2} + \frac{C}{2} \cos kx \\ =
 \frac{C}{2} \left(1 + \frac{1}{2} e^{ikx} + \frac{1}{2} e^{-ikx} - \frac{1}{2} e^{2ikx} + \frac{1}{2} e^{-2ikx}\right)
+\end{gathered}
 $$
 所以可能的动量测量值是 $\hbar k, -\hbar k, 2 \hbar k, -2 \hbar k, 0$，对应的概率分别是
 
@@ -89,8 +91,10 @@ i \hbar \pdv{}{t} \Psi (x, t) = - \frac{\hbar^{2}}{2m} \pdv[2]{}{x} \Psi (x, t)
 $$
 带入
 $$
+\begin{gathered}
 LHS = i \hbar \pdv{}{t} \frac{\sqrt{\alpha}}{4\sqrt[4]{\pi}} \sqrt{f(t)} \exp\left(-\frac{\alpha^{2}x^{2}}{2} f(t)\right) \\ = 
 \frac{i \hbar \sqrt{\alpha}}{4\sqrt[4]{\pi}} \left(\frac{f' (t)}{2 \sqrt{f(t)}} - \frac{\alpha^{2} x^{2}}{2} \sqrt{f (t)} f'(t) \right) \exp\left(-\frac{\alpha^{2}x^{2}}{2} f(t)\right)
+\end{gathered}
 $$
 考虑到
 $$
@@ -102,9 +106,11 @@ LHS = \frac{i \hbar \sqrt{\alpha}}{4\sqrt[4]{\pi}} \left(- i\frac{\hbar \alpha^{
 $$
 我们再考虑右侧
 $$
+\begin{gathered}
 RHS = - \frac{\hbar^{2}}{2m} \pdv[2]{}{x} \frac{\sqrt{\alpha}}{4\sqrt[4]{\pi}} \sqrt{f(t)} \exp\left(-\frac{\alpha^{2}x^{2}}{2} f(t)\right) \\ =
 \frac{\hbar^{2} \sqrt{\alpha}}{8 m \sqrt[4]{\pi}} \pdv{}{x} \alpha^{2} x\sqrt{f^{3} (t)} \exp\left(-\frac{\alpha^{2}x^{2}}{2} f(t)\right) \\ = 
 \frac{\hbar^{2} \sqrt{\alpha}}{8 m \sqrt[4]{\pi}} \left(\alpha^{2} (f(t))^{\frac{3}{2}} - \alpha^{4} x^{2} (f(t))^{\frac{5}{2}}\right) \exp\left(-\frac{\alpha^{2}x^{2}}{2} f(t)\right)
+\end{gathered}
 $$
 比较之后发现 $LHS = RHS$ ，所以该波函数是满足含时薛定谔方程的。
 
@@ -122,9 +128,11 @@ $$
 $$
 所以上述积分就是
 $$
+\begin{gathered}
 \phi_{n} (p) = \frac{(-1)^{n}}{\alpha} \sqrt{\frac{1}{2^{n + 1} \hbar \pi^{\frac{3}{2}} n!}} \int_{-\infty}^{\infty} e^{\frac{\xi^{2}}{2}} e^{- \frac{ip}{\hbar \alpha} \xi} \dv[n]{}{\xi} e^{- \xi^{2}} \dd{\xi} \\ =
 \frac{1}{\alpha} \sqrt{\frac{1}{2^{n + 1} \hbar \pi^{\frac{3}{2}} n!}} \int_{-\infty}^{\infty} \dv[n]{}{\xi} \left(e^{\frac{\xi^{2}}{2} - \frac{i p}{\hbar \alpha} \xi}\right) e^{- \xi^{2}} \dd{\xi} \\ =
 \frac{1}{\alpha} \sqrt{\frac{1}{2^{n + 1} \hbar \pi^{\frac{3}{2}} n!}} \int_{- \infty}^{\infty} \dv[n]{}{\xi} \left(e^{\frac{1}{2} (\xi - \frac{ip}{\hbar \alpha})^{2} + \frac{p^{2}}{2 \hbar^{2} \alpha^{2}}} \right) e^{- \xi^{2}} \dd{\xi}
+\end{gathered}
 $$
 
 利用提示中的定理
@@ -133,10 +141,12 @@ $$
 $$
 其中 $\eta = \frac{p}{\hbar \alpha}$，所以上面那个积分可以表示为
 $$
+\begin{gathered}
 \frac{1}{\alpha} \sqrt{\frac{1}{2^{n + 1} \hbar \pi^{\frac{3}{2}} n!}} \int_{- \infty}^{\infty} i^{n} \pdv[n]{}{\eta} \left(e^{\frac{1}{2} (\xi - i \eta)^{2}} \right) e^{\frac{\eta^{2}}{2}} e^{- \xi^{2}} \dd{\xi} \\ =
 \frac{i^{n}}{\alpha} \sqrt{\frac{1}{2^{n + 1} \hbar \pi^{\frac{3}{2}} n!}} e^{\frac{\eta^{2}}{2}} \pdv[n]{}{\eta} \int_{- \infty}^{\infty}  \left(e^{\frac{1}{2} (\xi - i \eta)^{2}} \right) e^{- \xi^{2}} \dd{\xi} \\ =
 \frac{i^{n}}{\alpha} \sqrt{\frac{1}{2^{n + 1} \hbar \pi^{\frac{3}{2}} n!}} e^{\frac{\eta^{2}}{2}} \pdv[n]{}{\eta} e^{- \eta^{2}} \int_{- \infty}^{\infty} e^{-\frac{1}{2} (\xi + i \eta)^{2}} \dd{\xi}  \\ =
 \frac{i^{n}}{\alpha} \sqrt{\frac{1}{2^{n} \hbar \pi^{\frac{1}{2}} n!}} e^{\frac{\eta^{2}}{2}} \dv[n]{}{\eta} e^{- \eta^{2}}
+\end{gathered}
 $$
 所以
 $$

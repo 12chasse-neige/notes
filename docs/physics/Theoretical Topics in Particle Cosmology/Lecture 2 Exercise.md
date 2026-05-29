@@ -11,8 +11,10 @@ $$
 $$
 We’ll use the residue theorem to treat wirth the radial part
 $$
+\begin{gathered}
 \frac{1}{(2 \pi)^{2}x} \int_{0}^{\infty} \frac{2u \sin u \dd{u}}{u^{2} + m^{2} x^{2}} = \frac{1}{(2 \pi)^{2} x} \int_{- \infty}^{\infty} \frac{1}{2 i} \frac{2u e^{iu} \dd{u}}{u^{2} + m^{2} x^{2}} \\
 = \frac{1}{2 \pi x} \Res[\frac{u e^{iu}}{u^{2} + m^{2} x^{2}}, u = imx] = \frac{e^{- mx}}{4 \pi x}
+\end{gathered}
 $$
 (2) Starting from the action of the photon field (without source), please derive its gauge invariant energy-momentum tensor $T_{\mu\nu}$ and show that it is traceless.
 
@@ -30,8 +32,10 @@ S_{\text{EM}} = - \int \dd[4]{x} \frac{\sqrt{-g}}{4} F_{\mu \nu} F^{\mu \nu}
 $$
 Thus we can expand the varation of the action as follows 
 $$
+\begin{gathered}
 \delta S_{\text{EM}} = - \int \frac{\dd[4]{x}}{4} \left(F_{\mu \nu} F^{\mu \nu} \delta (\sqrt{-g}) + 2 \sqrt{-g} F^{\mu \nu} \delta F_{\mu\nu}\right) \\ =
 - \int \frac{\dd[4]{x}}{4}  \left(\frac{1}{2} F_{\mu \nu} F^{\mu \nu} \sqrt{-g} g^{\mu \nu} \delta g_{\mu \nu} + 2 \sqrt{-g} F^{\mu \nu} (F^{\rho \sigma} g_{\sigma \nu} \delta g_{\rho \mu} + F^{\rho \sigma} g_{\rho \mu} \delta g_{\sigma \nu})\right)
+\end{gathered}
 $$
 Therefore, we can get the form of the energy-momentum tensor
 $$
@@ -147,6 +151,7 @@ $$
 >The little group is ISO(2).
 
 $$
+\begin{gathered}
 \comm{J_{z}}{T_{x}} = 
 \begin{pmatrix} 
 0 & 0 & 0 & 0 \\ 
@@ -185,9 +190,11 @@ i & 0 & 0 & -i \\
 1 & 0 & 0 & -1 \\
 0 & 0 & 1 & 0 
 \end{pmatrix} = i T_{y}
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 \comm{J_{z}}{T_{y}} = \begin{pmatrix} 0 & 0 & 0 & 0 \\ 0 & 0 & i & 0 \\ 0 & -i & 0 & 0 \\ 0 & 0 & 0 & 0 \end{pmatrix} \begin{pmatrix} 0 & 0 & i & 0 \\ 0 & 0 & 0 & 0 \\ i & 0 & 0 & -i \\ 0 & 0 & i & 0 \end{pmatrix} - \begin{pmatrix} 0 & 0 & i & 0 \\ 0 & 0 & 0 & 0 \\ i & 0 & 0 & -i \\ 0 & 0 & i & 0 \end{pmatrix} \begin{pmatrix} 0 & 0 & 0 & 0 \\ 0 & 0 & i & 0 \\ 0 & -i & 0 & 0 \\ 0 & 0 & 0 & 0 \end{pmatrix} \\ = 
 \begin{pmatrix}
 0 & 0 & 0 & 0 \\
@@ -206,9 +213,11 @@ $$
 0 & 0 & 0 & 0 \\
 0 & -1 & 0 & 0 
 \end{pmatrix} = -i T_{x}
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 \comm{T_{x}}{T_{y}} = \begin{pmatrix} 0 & i & 0 & 0 \\ i & 0 & 0 & -i \\ 0 & 0 & 0 & 0 \\ 0 & i & 0 & 0 \end{pmatrix} \begin{pmatrix} 0 & 0 & i & 0 \\ 0 & 0 & 0 & 0 \\ i & 0 & 0 & -i \\ 0 & 0 & i & 0 \end{pmatrix} - \begin{pmatrix} 0 & 0 & i & 0 \\ 0 & 0 & 0 & 0 \\ i & 0 & 0 & -i \\ 0 & 0 & i & 0 \end{pmatrix} \begin{pmatrix} 0 & i & 0 & 0 \\ i & 0 & 0 & -i \\ 0 & 0 & 0 & 0 \\ 0 & i & 0 & 0 \end{pmatrix} \\ =
 \begin{pmatrix}
 0 & 0 & 0 & 0 \\
@@ -221,6 +230,7 @@ $$
 0 & 0 & 0 & 0 \\
 0 & 0 & 0 & 0 \\
 \end{pmatrix} = 0
+\end{gathered}
 $$
 
 (5) Please derive (33).
@@ -234,7 +244,9 @@ $$
 
 We’ve already known that $e^{\mu\nu}_{\pm}(k) = e^{\mu}_{\pm} (k) e^{\nu}_{\pm} (k)$, so transformation rule for this tensor is
 $$
+\begin{gathered}
 e^{\mu\nu}_{\pm}(k) \to \left(R_{y}^{-1}(\theta) L_{x}(\eta_{2}) L_{z}(\eta_{1}) e^{\mu}_{\pm}(k)\right) \left(R_{y}^{-1}(\theta) L_{x}(\eta_{2}) L_{z}(\eta_{1}) e^{\nu}_{\pm}(k)\right) \\ =
 \left(e^{\mu}_{\pm}(k) + \frac{\tan \theta}{\sqrt{2} k^{0}} k^{\mu}\right) \left(e^{\nu}_{\pm}(k) + \frac{\tan \theta}{\sqrt{2} k^{0}} k^{\nu}\right) \\
 = e^{\mu}_{\pm}(k) e^{\nu}_{\pm}(k) + \frac{\tan \theta}{\sqrt{2} k^{0}} \left(e^{\mu}_{\pm}(k) k^{\nu} + k^{\mu} e^{\nu}_{\pm}(k) + \frac{\tan \theta}{\sqrt{2} k^{0}} k^{\mu} k^{\nu} \right) \\ = e^{\mu\nu}_{\pm}(k) + \frac{\tan \theta}{\sqrt{2} k^{0}} \left[ e^{\mu}_{\pm}(k) + \frac{\tan \theta}{2\sqrt{2} k^{0}} k^{\mu} \right] k^{\nu} + (\mu \leftrightarrow \nu)
+\end{gathered}
 $$

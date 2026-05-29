@@ -95,6 +95,7 @@ e^{\frac{\eta}{2}} & 0 \\
 $$
 
 $$
+\begin{gathered}
 L_{x} (\mathrm{arcsinh} (\tan \theta)) = e^{\frac{\eta}{2} \hat{x} \cdot \vec{\sigma}} = \begin{pmatrix}
 \cosh (\frac{1}{2} \mathrm{arcsinh} (\tan \theta)) & \sinh (\frac{1}{2} \mathrm{arcsinh} (\tan \theta)) \\
 \sinh (\frac{1}{2} \mathrm{arcsinh} (\tan \theta)) & \cosh (\frac{1}{2} \mathrm{arcsinh} (\tan \theta))
@@ -103,6 +104,7 @@ L_{x} (\mathrm{arcsinh} (\tan \theta)) = e^{\frac{\eta}{2} \hat{x} \cdot \vec{\s
 \cos \frac{\theta}{2} & \sin \frac{\theta}{2} \\
 \sin \frac{\theta}{2} & \cos \frac{\theta}{2}
 \end{pmatrix}
+\end{gathered}
 $$
 
 And the rotation matrix
@@ -136,6 +138,7 @@ $$
 $$
 Another $R \times L$ type LGT’s transformation matrix is
 $$
+\begin{gathered}
 M = R_{x}^{-1}(-\theta) L_{y}(\operatorname{arcsinh}(\tan \theta)) L_{z}(\log (\cos \theta)) \\ =
 \begin{pmatrix}
 \cos \frac{\theta}{2} & - i\sin \frac{\theta}{2} \\
@@ -150,6 +153,7 @@ i \sin \frac{\theta}{2} & \cos \frac{\theta}{2}
 1 & -i \tan \theta \\
 0 & 1
 \end{pmatrix}
+\end{gathered}
 $$
 The ket $\ket{p}$ will change like
 $$
@@ -193,11 +197,13 @@ M_{3} (1_{a}^{+}, 2_{b}^{+}, 3_{c}^{-}) = -i \epsilon_{1}^{+ \mu} \epsilon_{2}^{
 $$
 Take $q_{1} = q_{2} = q$ and $q_{3} = 1$, we can simplify the amplitude expression as follows
 $$
+\begin{gathered}
 M_{3} (1_{a}^{+}, 2_{b}^{+}, 3_{c}^{-}) = g f^{abc} \epsilon_{1}^{+ \mu} \epsilon_{2}^{+ \nu} \epsilon_{3}^{- \rho} \left[\eta_{\mu \nu} (p_{1 \rho} - p_{2 \rho}) + \eta_{\nu \rho} (p_{2 \mu} - p_{3 \mu}) + \eta_{\rho \mu} (p_{3 \nu} - p_{1 \nu})\right] \\ = 
 g f^{abc} \frac{\langle q | \sigma^{\mu} | p_{1} ]}{\langle p_{1} q \rangle} \frac{\langle q | \sigma^{\nu} | p_{2}]}{\langle p_{2} q \rangle} \frac{[p_{1}| \sigma^{\rho} | p_{3} \rangle}{[p_{3} p_{1}]} \left[\eta_{\mu \nu} (p_{1 \rho} - p_{2 \rho}) + \eta_{\nu \rho} (p_{2 \mu} - p_{3 \mu}) + \eta_{\rho \mu} (p_{3 \nu} - p_{1 \nu})\right] \\ =
 -g f^{abc} \left[0 + \frac{|1] \langle 3 |}{[31]} \cdot \frac{|q \rangle [2|}{\langle 2q \rangle} \left( \frac{|q \rangle [1|}{\langle 1q \rangle} \cdot (|2 \rangle [2| - |3 \rangle[3|)\right) + 0\right] \\ =
 - \frac{1}{2} g f^{abc} \frac{[21] \langle 3q \rangle}{[31] \langle 2q \rangle} \left(\frac{\langle 2q \rangle [12]}{\langle 1q \rangle} - \frac{\langle 3q \rangle [13]}{\langle 1q \rangle}\right) \\ =
 - \frac{1}{2} g f^{abc} \left( \frac{[12]^{2} \langle q3 \rangle}{[31] \langle 1q \rangle} - \frac{[12] \langle q3 \rangle^{2}}{\langle 2q \rangle \langle 1q \rangle} \right)
+\end{gathered}
 $$
 
 Using the momentum conservation

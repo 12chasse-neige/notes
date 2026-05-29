@@ -10,10 +10,12 @@ Z (\beta) = \frac{e^{- \frac{1}{2} \beta h \nu}}{1 - e^{- \beta h \nu}}
 $$
 所以熵是
 $$
+\begin{gathered}
 S = 3N k_{B} \left(\ln Z - \beta \pdv{\ln Z}{\beta}\right) \\ = 
 3N k_{B} \left(- \frac{1}{2} \beta h \nu - \ln (1 - e^{- \beta h \nu}) - \beta \frac{1 - e^{- \beta h \nu}}{e^{- \frac{1}{2} \beta h \nu}} \cdot \frac{- \frac{1}{2} h \nu e^{- \frac{1}{2} \beta h \nu} (1 - e^{- \beta h \nu}) - h \nu e^{- \frac{3}{2} \beta h \nu}}{(1 - e^{- \beta h \nu})^{2}}\right) \\ =
 - 3N k_{B} \left(\frac{1}{2} \beta h \nu + \ln (1 - e^{- \beta h \nu}) - \beta h \nu \frac{e^{- \beta h \nu} + \frac{1}{2} (1 - e^{- \beta h \nu})}{1 - e^{- \beta h \nu}}\right) \\ = 
 3N k_{B} \left(-\ln (1 - e^{- \beta h \nu}) + \beta h \nu \frac{1}{e^{\beta h \nu} - 1}\right)
+\end{gathered}
 $$
 7.22 以 $n$ 表示晶体中原子的密度, 设原子的总角动量量子数为$1$, 磁矩为 $\mu$, 在外磁场 $B$ 下, 原子磁矩可以有三个不同的取向, 即平行、垂直、反平行于外磁场。假设磁矩之间的相互作用可以忽略, 试求在温度为 $T$ 时晶体的磁化强度 $M$, 以及 $M$ 在弱场高温极限和强场低温极限下的近似值。
 

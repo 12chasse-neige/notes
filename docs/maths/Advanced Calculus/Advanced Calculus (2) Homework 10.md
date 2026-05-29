@@ -14,9 +14,11 @@ $$
 $$
 利用 $x, y$ 对原曲面进行参数化，则第二型曲面积分简化为
 $$
+\begin{gathered}
 \iint_{S} x^{2} \, dy \, dz + y^{2} \, dz \, dx + z^{2} \, dx \, dy = \iint_{D}  ((1 - x - y)^{2}, y^{2}, x^{2}) \cdot ((1, 0, -1) \times (0, 1, -1)) dx \, dy \\ = 
 \iint_{D} ((1 - x - y)^{2}, y^{2}, x^{2}) \cdot (1, 1, 1) dx \, dy = \iint_{D} (1 + 2 x^{2} + 2 y^{2} - 2x - 2y + 2xy) dx \, dy \\ =
 \pi + \pi - 0  = 2 \pi
+\end{gathered}
 $$
 (2) 设 $S$ 的边界为 $\partial S$，赋予边界的正定向。计算第二型曲线积分  
 $$
@@ -24,8 +26,10 @@ $$
 $$
 同样使用参数化 $z = 1 - x - y, x = \cos \theta, y = \sin \theta$ ，则第二型曲面积分化为
 $$
+\begin{gathered}
 \int_{\partial S} z^{2} \, dx + x^{2} \, dy + y^{2} \, dz = \int_{0}^{2 \pi} ((1 - x - y)^{2}, x^{2}, y^{2}) \cdot (- \sin \theta, \cos \theta, \sin \theta - \cos \theta) d \theta \\ = 
 \int_{0}^{2 \pi} (- (1 - \cos \theta - \sin \theta)^{2} \sin \theta + \cos^{3} \theta + \sin^{3} \theta - \cos \theta \sin^{2} \theta) d \theta = 2 \pi
+\end{gathered}
 $$
 
 ### 2  
@@ -36,8 +40,10 @@ $$
 $$
 由于$C \subset \mathbb{R}^{2}$ 是光滑的闭曲线，所以 $C$ 可以参数化。假设 
 $$
+\begin{gathered}
 x = x (t) \\
 y = y (t)
+\end{gathered}
 $$
 其中 $t \in [0,1]$ 是一个参数化
 
@@ -47,11 +53,13 @@ $$
 $$
 则第二型曲线积分化为
 $$
+\begin{gathered}
 \oint_{C} \frac{-(x^{2} y + y^{3}) \, dx + (x^{3} + x y^{2}) \, dy}{(x^{2} + y^{2})^{2}} = \int_{0}^{1} \frac{-(x^{2} y + y^{3}) x' + (x^{3} + x y^{2}) y'}{(x^{2} + y^{2})^{2}} dt = \int_{0}^{1} \left(\arctan (\frac{y}{x}) \right)' dt \\= 
 \begin{cases} 
 0  \qquad (\text{原点不在曲线内})\\
 2 \pi \qquad (\text{原点在曲线内})
 \end{cases}
+\end{gathered}
 $$
 第3 题需要用到如下事实：设 $f$ 在矩形区域 $[a, b] \times [c, d]$ 上连续，且有连续的偏导函数 $\frac{\partial f}{\partial x}$。对每个 $x \in [a, b]$，定义函数 $g(x) = \int_{c}^{d} f(x, y) \, dy$，则有 $g'(x) = \int_{c}^{d} \frac{\partial f(x,y)}{\partial x} \, dy$。  
 
@@ -75,8 +83,10 @@ g(r) = \frac{1}{2\pi r} \int_{C(r)} f(x, y) \, ds = \frac{1}{2 \pi r} \int_{C (r
 $$
 
 $$
+\begin{gathered}
 g' (r) = \frac{1}{2 \pi} \int_{C (r)} \frac{\partial f}{\partial r} d \theta = \frac{1}{2 \pi} \int_{C (r)} f_{x} \cos \theta + f_{y} \sin \theta d \theta \\ = 
 \frac{1}{2 \pi r} \int_{C (r)} f_{x} d (y_{0} + r \sin \theta) - f_{y} d (x_{0} + r \cos \theta) = \frac{1}{2\pi r} \int_{C(r)} -f_{y}(x,y) \, dx + f_{x}(x,y) \, dy
+\end{gathered}
 $$
 
 (2) 设 $x_{0}^{2} + y_{0}^{2} > R^{2}$。计算 $\frac{1}{2\pi R} \int_{C(R)} \ln(x^{2} + y^{2}) \, ds$。  
@@ -100,16 +110,20 @@ $$
 $$
 选取球坐标作为参数化
 $$
+\begin{gathered}
 x = \sin \theta \cos \phi \\
 y = \sin \theta \sin \phi \\
 z = \cos \theta
+\end{gathered}
 $$
 上半球
 $$
+\begin{gathered}
 \iint_{S} z^{k} (x \, dy \, dz + y \, dz \, dx + z \, dx \, dy) \\= 
 \iint_{S} \cos^{k} \theta (\sin \theta \cos \phi, \sin \theta \sin \phi, \cos \theta) \cdot \((\cos \theta \cos \phi, \cos \theta \sin \phi, - \sin \theta) \times (- \sin \theta \sin \phi, \sin \theta \cos \phi, 0)) d \theta d \phi \\ = 
 \iint_{S} \cos^{k} \theta (\sin \theta \cos \phi, \sin \theta \sin \phi, \cos \theta) \cdot (\sin \theta \cos \phi, \sin \theta \sin \phi, \cos \theta) \sin \theta d \theta d \phi \\ = 
 \iint_{S} \cos^{k} \theta \sin \theta d \theta d \phi = 2 \pi \int_{0}^{1} x^{k} dx = \frac{2 \pi}{k + 1}
+\end{gathered}
 $$
 
 所以整个球面积分为
@@ -153,7 +167,9 @@ $$
 
 同样使用 Gauss 定理
 $$
+\begin{gathered}
 \nabla \cdot \frac{(x, y, z)}{(a^{2} x^{2} + b^{2}y^{2} + c^{2} z^{2})^{\frac}{3}{2}} = \frac{1}{(a^{2} x^{2} + b^{2}y^{2} + c^{2} z^{2})^{3}} ((a^{2} x^{2} + b^{2}y^{2} + c^{2} z^{2})^{\frac}{3}{2} - 3 (a^{2} x^{2} + b^{2}y^{2} + c^{2} z^{2})^{\frac}{1}{2} a x^{2} \\ + (a^{2} x^{2} + b^{2}y^{2} + c^{2} z^{2})^{\frac}{3}{2} - 3 (a^{2} x^{2} + b^{2}y^{2} + c^{2} z^{2})^{\frac}{1}{2} b y^{2} \\ + (a^{2} x^{2} + b^{2}y^{2} + c^{2} z^{2})^{\frac}{3}{2} - 3 (a^{2} x^{2} + b^{2}y^{2} + c^{2} z^{2})^{\frac}{1}{2} c z^{2}) = 0 \qquad (0 \notin S)
+\end{gathered}
 $$
 所以
 $$
@@ -173,9 +189,11 @@ $$
 $$
 利用 Gauss 定理
 $$
+\begin{gathered}
 \iint_{S} P e^{f (x, y, z)} dy dz + Q e^{f (x, y, z)} dz dx + R e^{f (x, y, z)} dx dy \\ =
 \iiint_{V} \frac{\partial}{\partial x} (P e^{f (x, y, z)}) + \frac{\partial}{\partial y} ( Q e^{f (x, y, z)})  + \frac{\partial}{\partial z} ( R e^{f (x, y, z)}) dx dy dz \\ = 
 \iiint_{V} \left( \frac{\partial P}{\partial x} + \frac{\partial Q}{\partial y} + \frac{\partial R}{\partial z} \right) e^{f(x, y, z)} \, dx \, dy \, dz + \iiint_{V} \left( P \frac{\partial f}{\partial x} + Q \frac{\partial f}{\partial y} + R \frac{\partial f}{\partial z} \right) e^{f(x, y, z)} \, dx \, dy \, dz = 0
+\end{gathered}
 $$
 所以
 $$
@@ -202,8 +220,10 @@ $$
 
 利用推导 Gauss 定理时 local model 的结果
 $$
+\begin{gathered}
 \iint_{\partial B} P(x,y,z) e^{Q(x,y,z)} \, dy \wedge dz = \iiint_{B} \frac{\partial}{\partial x} ( P(x,y,z) e^{Q(x,y,z)}) dx  \wedge dy \wedge dz \\ = 
 \iiint_{B} \left( \frac{\partial P}{\partial x} + P \frac{\partial Q}{\partial x} \right) e^{Q(x,y,z)} \, dV
+\end{gathered}
 $$
 
  (2) 证明：对于三元多项式 $P(x,y,z)$，有  

@@ -148,8 +148,10 @@ Unitarity tells us that the poles in S-matrices cannot be more singular than sim
 
 $s = -(p_{1} + p_{2})^{2}$, if $M$ has a simple pole at $s = m^{2} - i \epsilon$
 $$
+\begin{gathered}
 M  \to \frac{R}{-s + m^{2} - i\epsilon} = P \frac{R}{-s + m^{2}} + i \pi R \delta(s - m^{2}) \\
 \Rightarrow \Im M = \pi R \delta(s - m^{2})
+\end{gathered}
 $$
 RHS of Optical theorem
 $$
@@ -157,8 +159,10 @@ $$
 $$
 
 $$
+\begin{gathered}
 \Rightarrow \int \frac{\dd{\vec{p}}_{X}}{(2 \pi)^{3}} \frac{1}{2 E_{pX}} \delta^{4} (p_{X} - p_{1} - p_{2}) \times |C|^{2} + \cdots \\
 \propto \delta (s - m^{2}) \times |C|^{2} + \cdots
+\end{gathered}
 $$
 
 Remarks: causality [$E_{X}$]

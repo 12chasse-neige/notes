@@ -6,8 +6,10 @@ Chasse_neige
 
 柱内空间满足拉普拉斯方程
 $$
+\begin{gathered}
 \nabla^{2} \phi = 0 \\
 \phi(r, 0 ,z) = \phi(r, 2\pi, z) \quad \left. \phi \right|_{r = 0} \text{有界}
+\end{gathered}
 $$
 
 $$
@@ -81,8 +83,10 @@ V \quad (0 \leq \theta \leq \pi)\\
 $$
 利用三角函数的正交性确定系数
 $$
+\begin{gathered}
 \pi A_{n} a^{n} = \int_{0}^{\pi} V \sin(n \theta) \, \dd \theta + \int_{\pi}^{2\pi} -V \sin(n \theta) \, \dd \theta \\ =
 \frac{V}{n} (1 - (-1)^{n}) + \frac{V}{n} (1 - (-1)^{n}) = \frac{2 V}{n} (1 - (-1)^{n})
+\end{gathered}
 $$
 得到
 $$
@@ -90,15 +94,19 @@ A_{n} = \frac{2 V (1 - (-1)^{n})}{\pi n a^{n}}
 $$
 所以柱内电势分布为
 $$
+\begin{gathered}
 \phi(r, \theta) = \sum_{n = 1}^{\infty} \frac{2 V (1 - (-1)^{n})}{\pi n} \left(\frac{r}{a}\right)^{n} \sin(n \theta) \\ =
 \sum_{m = 0}^{\infty} \frac{4 V}{(2m + 1) \pi} \left(\frac{r}{a}\right)^{2m + 1} \sin(2m + 1) \theta
+\end{gathered}
 $$
 2.试求扇形区域 $0 \leq r \leq a$, $0 \leq \varphi \leq \pi / 3$ 内稳定温度分布. 已知该区域内无热源, 扇形之边保持温度为 0, 弧形变上保持温度为 $f(\phi)$.
 
 由于区域内无热源，在稳定温度分布下热传导方程的形式等价与拉普拉斯方程
 $$
+\begin{gathered}
 \nabla^{2} T = 0 \\
 T(r, 0) = T(r, \frac{\pi}{3}) = 0, \quad \left. T \right|_{r = 0} \text{有界}
+\end{gathered}
 $$
 我们直接把上一问的分离变量解抄过来
 $$
@@ -106,8 +114,10 @@ $$
 $$
 
 $$
+\begin{gathered}
 \sqrt{\alpha}： \quad \Theta(\theta) = A \sin(\sqrt{\alpha} \theta) + B \cos(\sqrt{\alpha} \theta) \\
 R(r) = C r^{\sqrt{\alpha}} + D r^{- \sqrt{\alpha}}
+\end{gathered}
 $$
 
 带入边界条件
@@ -116,8 +126,10 @@ $$
 $$
 得到
 $$
+\begin{gathered}
 \sqrt{\alpha} = 3n \quad (n \in \mathbb{Z}) \\
 B = 0
+\end{gathered}
 $$
 由 $r = 0$ 时温度的有界性
 $$
@@ -170,8 +182,10 @@ $$
 
 待定系数
 $$
+\begin{gathered}
 A a^{2} \sin 2 \theta = - \frac{a^{5}}{21} \sin 2 \theta \\
 A = - \frac{a^{3}}{21}
+\end{gathered}
 $$
 所以齐次方程的解为
 $$

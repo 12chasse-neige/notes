@@ -14,6 +14,7 @@ g_{\mu \nu} = \text{diag} \begin{pmatrix}
 $$
 Copy the Christoffel symbols of the Schwarzschild metric from the last homework
 $$
+\begin{gathered}
 \Gamma^{t} {}_{tr} = \Gamma^{t} {}_{rt} = \frac{B'}{2B} = \frac{GM}{r^{2} - 2 GM r} \\
 \Gamma^{r} {}_{tt} = \frac{B'}{2A} = \frac{GM}{r^{2}} \left(1 - \frac{2 GM}{r}\right) \\
 \Gamma^{r} {}_{rr} = \frac{A'}{2A} = - \frac{GM}{r^{2} - 2 GM r} \\
@@ -22,6 +23,7 @@ $$
 \Gamma^{\theta} {}_{r\theta} = \Gamma^{\theta} {}_{\theta r} = \frac{1}{r} \\
 \Gamma^{\theta} {}_{\phi\phi} = -\sin\theta\cos\theta \\
 \Gamma^{\phi} {}_{r\phi} = \Gamma^{\phi} {}_{\phi r} = \frac{1}{r} \\\Gamma^{\phi} {}_{\theta\phi} = \Gamma^{\phi} {}_{\phi\theta} = \cot\theta
+\end{gathered}
 $$
 To proove that $\delta^{\mu} {}_{t}$ is Killing vector, we have to show that
 $$
@@ -52,8 +54,10 @@ $$
 $$
 So we also add the covariant derivatives of this vector
 $$
+\begin{gathered}
 \xi_{\phi; r} + \xi_{r; \phi} = \xi_{\phi, r} + \xi_{r, \phi} - \Gamma^{\phi} {}_{\phi r} \xi_{\phi} - \Gamma^{\phi} {}_{r \phi} \xi_{\phi} \\ = 
 2 r \sin^{2} \theta + 0 - 2 \cdot \frac{1}{r} \cdot r^{2} \sin^{2} \theta = 0
+\end{gathered}
 $$
 
 $$
@@ -115,8 +119,10 @@ u_{1} = \frac{G^{3} M^{3}}{L^{4}} (3 + \frac{3}{2} e^{2} + 3 e \phi \sin \phi - 
 $$
 Thus our total track equation leads to
 $$
+\begin{gathered}
 u = \cdots + \frac{GM}{L^{2}} e \cos \phi + 3 \frac{G^{3} M^{3}}{L^{4}} e \phi \sin \phi \\ \approx 
 \cdots + \frac{GM}{L^{2}} e \cos ((1 - 3 \frac{G^{2} M^{2}}{L^{2}}) \phi)
+\end{gathered}
 $$
 So the precession angle per period is
 $$
@@ -128,9 +134,11 @@ The $L$ in this precession angle is the classical $L$ which contains the mass of
 
 The parameters of Mercury orbit are
 $$
+\begin{gathered}
 a = 0.3870993 \mathrm{AU} \\
 e = 0.20564 \\
 T = 87.969257 \mathrm{D}
+\end{gathered}
 $$
 So the total precession angle in one century of the Mercury orbit is
 $$
@@ -141,9 +149,11 @@ $$
 
 The parameters of Mars orbit are
 $$
+\begin{gathered}
 a = 1.52371 \mathrm{AU} \\
 e = 0.09339 \\
 T = 686.92971 \mathrm{D}
+\end{gathered}
 $$
 So the total precession angle in one century of the Mars orbit is
 $$
@@ -194,6 +204,8 @@ $$
 $$
 So B will receive the later signal when time in its frame has passed
 $$
+\begin{gathered}
 \Delta t_{B} = \Delta t \cdot \frac{2}{3\left(1 - \frac{2 GM}{r}\right)} + \Delta t \cdot \frac{\sqrt{\frac{2 GM}{r} - \frac{1}{3}}}{1 - \frac{2 GM}{r}} \cdot \sqrt{\frac{2}{3}} \\ =
 \frac{2 + \sqrt{\frac{12 GM}{r} - 2}}{3 \left(1 - \frac{2 GM}{r}\right)} \Delta t
+\end{gathered}
 $$

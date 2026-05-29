@@ -12,20 +12,26 @@ $$
 $$
 考虑
 $$
+\begin{gathered}
 \nabla^{2}_{r_{1}} = \sum_{i} \pdv[2]{}{r_{1i}} = \sum_{i} \pdv{}{r_{1i}} \left(\sum_{j} \pdv{R_{j}}{r_{1i}} \pdv{}{R_{j}} + \pdv{r_{j}}{r_{1i}} \pdv{}{r_{j}}\right) \\ =
 \sum_{i} \pdv{}{r_{1i}} \left(\frac{m_{1}}{m_{1} + m_{2}} \pdv{}{R_{i}} + \pdv{}{r_{i}}\right) = \sum_{i} \left(\frac{m_{1}^{2}}{(m_{1} + m_{2})^{2}} \pdv[2]{}{R_{i}} + 2 \frac{m_{1}}{m_{1} + m_{2}} \pdv{}{R_{i}} \pdv{}{r_{i}} + \pdv[2]{}{r_{i}}\right)
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 \nabla^{2}_{r_{2}} = \sum_{i} \pdv[2]{}{r_{2i}} = \sum_{i} \pdv{}{r_{2i}} \left(\sum_{j} \pdv{R_{j}}{r_{2i}} \pdv{}{R_{j}} + \pdv{r_{j}}{r_{2i}} \pdv{}{r_{j}}\right) \\ =
 \sum_{i} \pdv{}{r_{2i}} \left(\frac{m_{2}}{m_{1} + m_{2}} \pdv{}{R_{i}} - \pdv{}{r_{i}}\right) = \sum_{i} \left(\frac{m_{2}^{2}}{(m_{1} + m_{2})^{2}} \pdv[2]{}{R_{i}} - 2 \frac{m_{2}}{m_{1} + m_{2}} \pdv{}{R_{i}} \pdv{}{r_{i}} + \pdv[2]{}{r_{i}}\right)
+\end{gathered}
 $$
 
 所以动能算符可以化为
 $$
+\begin{gathered}
 \hat{T} = - \frac{\hbar^{2}}{2 m_{1}} \nabla_{r_{1}}^{2} - \frac{\hbar^{2}}{2 m_{2}} \nabla^{2}_{r_{2}} \\ = 
 - \frac{\hbar^{2} (m_{1} + m_{2})}{2 (m_{1} + m_{2})^{2}} \nabla_{R}^{2} - \frac{\hbar^{2}}{2} \left(\frac{1}{m_{1}} + \frac{1}{m_{2}}\right) \nabla_{r}^{2} \\ =
 - \frac{\hbar^{2}}{2M} \nabla_{R}^{2} - \frac{\hbar^{2}}{2\mu} \nabla_{r}^{2}
+\end{gathered}
 $$
 6.1.2 质量为 $\mu$ 的粒子在势阱
 $$
@@ -330,8 +336,10 @@ $$
 $$
 
 $$
+\begin{gathered}
 \vec{J} (\vec{r}, t) = \frac{-\mathrm{i} \hbar}{2 m}\left(\Psi^{*} \nabla \Psi-\Psi \nabla \Psi^{*}\right) \\ = 
 \frac{- i \hbar}{2m} \sum_{mn}(a^{*}_{m} (t) a_{n} (t) u^{*}_{m} (\vec{r}) \nabla u_{n} (\vec{r}) - a_{m} (t) a^{*}_{n} (t) u_{m} (\vec{r}) \nabla u^{*}_{n} (\vec{r}))
+\end{gathered}
 $$
 
 带入 $\int u^{*}_{m} (\vec{r}) u_{n} (\vec{r}) \dd{\tau} = \delta_{mn}$，我们把该方程化为积分形式并且把积分体积趋于无穷，此时

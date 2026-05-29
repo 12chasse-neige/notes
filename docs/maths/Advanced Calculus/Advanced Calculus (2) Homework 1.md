@@ -99,12 +99,16 @@ $$
 
 当 $p \leq 1$ 时，
 $$
+\begin{gathered}
 1 - \frac{1}{2^{2p}} + \frac{1}{3^{p}} - \frac{1}{4^{2p}} + \cdots + \frac{1}{(2n-1)^{p}} - \frac{1}{(2n)^{2p}} + \cdots \\ = 1 - \frac{1}{2^{p}} + \frac{1}{2^{p}} - \frac{1}{2^{2p}} + \frac{1}{3^{p}} - \frac{1}{4^{p}} + \frac{1}{4^{p}} - \frac{1}{4^{2p}}  + \cdots + \frac{1}{(2n-1)^{p}} - \frac{1}{(2n)^{p}} + \frac{1}{(2n)^{p}}- \frac{1}{(2n)^{2p}} + \cdots
+\end{gathered}
 $$
 拆分成两个级数：
 $$
+\begin{gathered}
 1 - \frac{1}{2^{2p}} + \frac{1}{3^{p}} - \frac{1}{4^{2p}} + \cdots + \frac{1}{(2n-1)^{p}} - \frac{1}{(2n)^{2p}} + \cdots \\ = 
 1 - \frac{1}{2^{p}} + \frac{1}{3^{p}} - \frac{1}{4^{p}} + \cdots + \frac{1}{(2n-1)^{p}} - \frac{1}{(2n)^{p}} + \cdots + \sum_{n} \frac{1}{(2n)^{p}} - \frac{1}{(2n)^{2p}} 
+\end{gathered}
 $$
 由 Leibniz Test，第一部分的绝对值单调递减且趋于零，所以收敛。故原级数的收敛性等价于第二部分收敛性。
 

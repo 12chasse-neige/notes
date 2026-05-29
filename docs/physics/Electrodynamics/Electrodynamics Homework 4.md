@@ -157,11 +157,13 @@ $$
 $$
 对一个点粒子而言，
 $$
+\begin{gathered}
 \vec{f} = e (\vec{E} + \vec{v} \times \vec{B}) \\
 f_{k} = e (- ic F_{4k} + \epsilon_{ijk} v_{i} \frac{1}{2} \epsilon_{jlm} F_{lm}) = 
 e ( - ic F_{4k} + \frac{1}{2} \begin{vmatrix} \delta_{kl} & \delta_{km} \\ \delta_{il} & \delta_{im} \end{vmatrix} v_{i} F_{lm}) \\ = 
 e(- ic F_{4k} + \frac{1}{2} (\delta_{kl} \delta_{im} - \delta_{km} \delta_{il}) v_{i} F_{lm}) \\ = 
 e(- ic F_{4k} + \frac{1}{2} v_{i} (F_{ki} - F_{ik}))
+\end{gathered}
 $$
 利用 $F$ 的反对称性，上式可以化为：
 $$

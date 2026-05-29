@@ -84,8 +84,10 @@ $$
 
 割线为从 $z = -1$ 到 $z = 1$ 沿 $x$ 轴的连线，并且在割线上岸 $\arg (\frac{1 - z}{1 + z}) = 0$
 $$
+\begin{gathered}
 \sqrt{\frac{1-z}{1+z}} = \sqrt{\frac{\frac{1}{z} - 1}{\frac{1}{z} + 1}} = i (\frac{1}{z} - 1) (1 - \frac{1}{z^{2}})^{- \frac{1}{2}} = i (\frac{1}{z} - 1) \sum_{n = 0}^{\infty} (-1)^{n} \begin{pmatrix} n \\ - \frac{1}{2} \end{pmatrix} \frac{1}{z}^{2n} \\ = 
 i \sum_{n = 0}^{\infty} (-1)^{n} \begin{pmatrix} n \\ - \frac{1}{2} \end{pmatrix} (\frac{1}{z}^{2n + 1} - \frac{1}{z}^{2n})
+\end{gathered}
 $$
 收敛半径为 $\left|\frac{1}{z}\right| < 1$
 
@@ -110,8 +112,10 @@ $$
 
 证明
 $$
+\begin{gathered}
 \int_{0}^{1} \frac{t^{a-1}}{1 + t^{b}} dt = \int_{0}^{1} \sum_{n = 0}^{\infty} (-1)^{n} t^{nb + a - 1} dt \\ = 
 \sum_{n = 0}^{\infty} \int_{0}^{1} (-1)^{n} t^{nb + a - 1} dt = \sum_{n=0}^{\infty} \frac{(-1)^{n}}{a + nb}
+\end{gathered}
 $$
 据此求出以下级数之和：  
 

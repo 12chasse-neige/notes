@@ -56,8 +56,10 @@ L = T (S_{m}^{\beta} - S_{m}^{\alpha}) = H_{m}^{\beta} - H_{m}^{\alpha}
 $$
 所以
 $$
+\begin{gathered}
 \dv{L}{T} = \left(\pdv{H_{m}^{\beta}}{T}\right)_{p} + \left(\pdv{H_{m}^{\beta}}{p}\right)_{T} \dv{p}{T} - \left(\pdv{H_{m}^{\alpha}}{T}\right)_{p} - \left(\pdv{H_{m}^{\alpha}}{p}\right)_{T} \dv{p}{T} \\ =
 c_{p}^{\beta} - c_{p}^{\alpha} + \left(V_{m}^{\beta} - V_{m}^{\alpha} + T \left(\pdv{V_{m}^{\alpha}}{T}\right)_{p} - T \left(\pdv{V_{m}^{\beta}}{T}\right)_{p}\right) \dv{p}{T}
+\end{gathered}
 $$
 再带入 Clapeyron 方程
 $$
@@ -65,8 +67,10 @@ $$
 $$
 
 $$
+\begin{gathered}
 \dv{L}{T} = c_{p}^{\beta} - c_{p}^{\alpha} + \left(V_{m}^{\beta} - V_{m}^{\alpha} + T \left(\pdv{V_{m}^{\alpha}}{T}\right)_{p} - T \left(\pdv{V_{m}^{\beta}}{T}\right)_{p}\right) \frac{L}{T (V_{m}^{\beta} - V_{m}^{\alpha})} \\ =
 c_{p}^{\beta}-c_{p}^{\alpha}+\frac{L}{T}-\left[\left(\frac{\partial V_{m}^{\beta}}{\partial T}\right)_{p}-\left(\frac{\partial V_{m}^{\alpha}}{\partial T}\right)_{p}\right] \frac{L}{V_{m}^{\beta}-V_{m}^{\alpha}}
+\end{gathered}
 $$
 
 如果 $\beta$ 相是气相， $\alpha$ 相是凝聚相，则上式可以变为
@@ -131,13 +135,17 @@ S = - \left(\pdv{F}{T}\right)_{M} = - F'_{0} (T) - \frac{1}{2} a' (T) M^{2} - \f
 $$
 所以临界点两侧的熵为
 $$
+\begin{gathered}
 S (T) = - F'_{0} (T) \quad (T > T_{c}) \\
 S (T) = - F'_{0} (T) + \frac{a}{b} a'(T) - \frac{a^{2}}{4 b^{2}} b'(T) \quad (T < T_{c})
+\end{gathered}
 $$
 带入临界点附近 $a$ 和 $b$ 的行为
 $$
+\begin{gathered}
 a (T) = a_{0} \frac{T - T_{c}}{T_{c}} \\
 b (T) = b
+\end{gathered}
 $$
 所以有序相中的熵函数为
 $$
@@ -158,8 +166,10 @@ $$
 
 寻找极值点
 $$
+\begin{gathered}
 \left(\pdv{G}{m}\right)_{T} = bm + \frac{4}{3} c m^{3} + \frac{3}{2} d m^{5} = 0 \\
 \left(\pdv[2]{G}{m}\right)_{T} = b + 4 c m^{2} + \frac{15}{2} d m^{4} > 0
+\end{gathered}
 $$
 对于一级相变，在临界点处序参量会发生跳变。考虑临界温度处相变前后的自由能
 $$

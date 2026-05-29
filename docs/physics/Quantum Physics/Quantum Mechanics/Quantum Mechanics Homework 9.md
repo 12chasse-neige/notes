@@ -43,9 +43,11 @@ $$
 于是
 
 $$
+\begin{gathered}
 P_{1}=|\langle 1,1|\Phi\rangle|^{2}+|\langle 1,0|\Phi\rangle|^{2}+|\langle 1,-1|\Phi\rangle|^{2}\\
 =\cos^{2}{\frac{\theta}{2}}+\frac{1}{2}\sin^{2}{\frac{\theta}{2}}\\
 =\frac{3+\cos{\theta}}{4}
+\end{gathered}
 $$
 
 也可以直接用 $P_{1}=1-P_{0}$ 得到同样的结果。 
@@ -59,9 +61,11 @@ $$
 先把前两个电子合成。对于 $1,2$ 两个电子有三重态
 
 $$
+\begin{gathered}
 \ket{1,1}_{12}=\ket{++}_{12}\\
 \ket{1,0}_{12}=\frac{1}{\sqrt{2}}(\ket{+-}_{12}+\ket{-+}_{12})\\
 \ket{1,-1}_{12}=\ket{--}_{12}
+\end{gathered}
 $$
 
 以及单态
@@ -75,21 +79,25 @@ $$
 对于 $S_{12}=0,S=\frac{1}{2}$，只需要把第三个电子接上去，所以
 
 $$
+\begin{gathered}
 \ket{0;\frac{1}{2},\frac{1}{2}}
 =\frac{1}{\sqrt{2}}(\ket{+-+}-\ket{-++})\\
 \ket{0;\frac{1}{2},-\frac{1}{2}}
 =\frac{1}{\sqrt{2}}(\ket{+--}-\ket{-+-})
+\end{gathered}
 $$
 
 对于 $S_{12}=1,S=\frac{3}{2}$，最高权态为 $\ket{+++}$，反复用降算符或者直接利用完全对称性得到
 
 $$
+\begin{gathered}
 \ket{1;\frac{3}{2},\frac{3}{2}}=\ket{+++}\\
 \ket{1;\frac{3}{2},\frac{1}{2}}
 =\frac{1}{\sqrt{3}}(\ket{++-}+\ket{+-+}+\ket{-++})\\
 \ket{1;\frac{3}{2},-\frac{1}{2}}
 =\frac{1}{\sqrt{3}}(\ket{+--}+\ket{-+-}+\ket{--+})\\
 \ket{1;\frac{3}{2},-\frac{3}{2}}=\ket{---}
+\end{gathered}
 $$
 
 最后考虑 $S_{12}=1,S=\frac{1}{2}$ 的情况。在 $m=\frac{1}{2}$ 的子空间里，$S_{12}=1$ 的两个基矢是
@@ -212,12 +220,14 @@ $$
 (c) 当 $\vec{A}=(-By/2,Bx/2,0)$ 时
 
 $$
+\begin{gathered}
 \hat{H}_{c}
 =\frac{1}{2\mu}\left[\left(\hat{p}_{x}+\frac{qB}{2}\hat{y}\right)^{2}
 +\left(\hat{p}_{y}-\frac{qB}{2}\hat{x}\right)^{2}+\hat{p}_{z}^{2}\right]\\
 =\frac{\hat{p}_{x}^{2}+\hat{p}_{y}^{2}+\hat{p}_{z}^{2}}{2\mu}
 -\frac{qB}{2\mu}\hat{L}_{z}
 +\frac{q^{2}B^{2}}{8\mu}(\hat{x}^{2}+\hat{y}^{2})
+\end{gathered}
 $$
 
 这个形式显然与 $\hat{L}_{z}$ 对易，但是它显含 $x,y$，所以

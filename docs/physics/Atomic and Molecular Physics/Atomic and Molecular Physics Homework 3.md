@@ -22,9 +22,11 @@ in the rotating frame where $\vec{W} = (\Omega, 0, \omega - \omega_{0})$
 
 So when it exactly resonances, the Pauli matrix vector will evolve as
 $$
+\begin{gathered}
 \sigma_{x} (t) = 0 \\
 \sigma_{y} (t) = - \sin(\Omega t) \\
 \sigma_{z} (t) = \cos(\Omega t)
+\end{gathered}
 $$
 After time $\tau$, the components of the Pauli matrix vector will become
 $$
@@ -50,9 +52,11 @@ $$
 
 The evolvement of the Pauli matrix vector is
 $$
+\begin{gathered}
 \sigma_{x} = 0 \\
 \sigma_{y} = - \cos (\Omega t) \\
 \sigma_{z} = - \sin (\Omega t)
+\end{gathered}
 $$
 After the time $\tau$, the vector will become
 $$
@@ -76,9 +80,11 @@ before it falls into the interaction region the second time.
 
 In the second pass, the Pauli matrix vector becomes
 $$
+\begin{gathered}
 \sigma_{x} = \sin (\Delta T) \\
 \sigma_{y} = - \cos(\Delta T) \cos (\Omega t) \\
 \sigma_{z} = - \cos(\Delta T) \sin (\Omega t)
+\end{gathered}
 $$
 So after the $\frac{\pi}{2}$ time $\tau$, the vector will become
 $$
@@ -306,8 +312,10 @@ E_{\pm} = \pm \frac{1}{2} \sqrt{\epsilon^{2} + 4V^{2}} = \pm \frac{\epsilon}{2} 
 $$
 The unperturbed energies are $E_{1} = -\frac{\epsilon}{2}$ and $E_{2} = \frac{\epsilon}{2}$, so the shifts are:
 $$
+\begin{gathered}
 \Delta E_{1} \approx -\frac{V^{2}}{\epsilon} \\
 \Delta E_{2} \approx \frac{V^{2}}{\epsilon}
+\end{gathered}
 $$
 In perturbation theory, $H_{I}$ has matrix element $\langle 2 | H_{I} | 1 \rangle = V$, so
 $$

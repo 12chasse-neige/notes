@@ -132,15 +132,19 @@ $$
 
 所以格林函数为
 $$
+\begin{gathered}
 G(t ; t^{\prime}) = \theta(t'-t) e^{\beta(t-t^{\prime})} \\
 \left. G (t; t') \right|_{t > t'} = 0
+\end{gathered}
 $$
 其中 $\theta$ 为阶跃函数。利用格林函数求解定解问题
 $$
+\begin{gathered}
 \int_{0}^{\infty} y(t) \left(\dv{}{t} - \beta \right) G (t; t') + G (t; t') \left(\dv{}{t} + \beta \right) y(t) \, \dd{t} \\ = 
 - y (t') + \int_{0}^{t'} e^{\beta (t - t')} g (t) \, \dd{t}
 \\ =
 \left. y (t) G(t; t') \right|_{0}^{\infty} = - a e^{- \beta t'}
+\end{gathered}
 $$
 所以
 $$

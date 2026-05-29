@@ -13,10 +13,12 @@ $$
    $$
    证明：
    $$
+   \begin{gathered}
    \mathcal{L} = \epsilon^{\mu \nu \rho \sigma} F_{\mu \nu} F_{\rho \sigma} = \epsilon^{\mu \nu \rho \sigma} (\partial_{\mu} A_{\nu} - \partial_{\nu} A_{\mu}) (\partial_{\rho} A_{\sigma} - \partial_{\sigma} A_{\rho}) \\ = 
    4 \epsilon^{\mu \nu \rho \sigma} \partial_{\mu} A_{\nu} \partial_{\rho} A_{\sigma} \\ =
    4 (\epsilon^{ijk} \partial_{0} A_{i} \partial_{j} A_{k} - \epsilon^{ijk} \partial_{i} A_{0} \partial_{j} A_{k}  + \epsilon^{ijk} \partial_{i} A_{j} \partial_{0} A_{k} - \epsilon^{ijk} \partial_{i} A_{j} \partial_{k} A_{0}) \\ =
    8 ( \partial_{t} \vec{A}  \cdot (\nabla \times \vec{A}) + \nabla \phi \cdot (\nabla \times \vec{A})) = -8 \vec{E} \cdot \vec{B}
+   \end{gathered}
    $$
    
 2. 在低维情况下，Chern-Simons 理论有独特的性质，在 3 维时空当中，带有外源的 Chern-Simons 理论可以写为：
@@ -50,8 +52,10 @@ $$
    $$
    
    $$
+   \begin{gathered}
     \frac{\kappa}{2} \epsilon^{\rho\mu\nu} \partial_{\mu} A_{\rho} = \frac{\kappa}{2} \epsilon^{\nu\mu\rho} \partial_{\mu} A_{\rho} - J^{\nu} \\
     \kappa \epsilon^{\mu \rho \nu} \partial_{\mu} A_{\rho} = J^{\nu}
+   \end{gathered}
    $$
    
    所以
@@ -76,9 +80,11 @@ $$
    $$
    注：一个粒子绕着另外一个粒子可被视为将两粒子交换两次。AB 相位的结果告诉我们两粒子交换两次多出一个相位。因此，如果相位不等于 1，则两粒子为任意子。（费米子和玻色子都要求交换两次的相位等于 1。）
    $$
+   \begin{gathered}
    e \oint_{C} \vec{A} \cdot d\vec{x} = e \oint_{C}  \frac{e}{2\pi\kappa} \sum_{m \neq n} \epsilon_{ij} \frac{x_{n}^{j} - x_{m}^{j}}{|\vec{x}_{n} - \vec{x}_{m}|^{2}} d x^{i} \\ =
    e \iint_{S} \nabla \times \vec{A} \cdot d \vec{S} = e \iint_{S} \frac{\rho}{\kappa} d x_{1} d x_{2} \\ = 
    e \iint_{S} \frac{e}{\kappa} \sum_{n=1}^{2} \delta(\vec{x} - \vec{x}_{n}(t)) d x_{1} d x_{2} = \frac{e^{2}}{\kappa}
+   \end{gathered}
    $$
 
 ### 2 最小作用量原理与磁单极 (19-1)
@@ -89,10 +95,12 @@ $$
 $$
 其中 $F_{A}^{\mu\nu} = \partial^{\mu} A^{\nu} - \partial^{\nu} A^{\mu}$，$F_{B}^{\mu\nu} = \partial^{\mu} B^{\nu} - \partial^{\nu} B^{\mu}$。此外 $J^{\mu}$ 与通常的电流，$K^{\mu}$ 为平常的磁流，$n^{\mu}$ 为狄拉克弦的方向矢量。
 $$
+\begin{gathered}
 \delta s = \delta \int -\frac{n^{\alpha} n^{\mu}}{8\pi n^{2}} \eta^{\beta\nu} \left( F^{A}_{\alpha\beta} F^{A}_{\mu\nu} + F^{B}_{\alpha\beta} F^{B}_{\mu\nu} \right) + \frac{n^{\alpha} n_{\mu}}{16\pi n^{2}} \epsilon^{\mu\nu\gamma\delta} \left( F^{B}_{\alpha\nu} F^{A}_{\gamma\delta} - F^{A}_{\alpha\nu} F^{B}_{\gamma\delta} \right) - A_{\mu} J^{\mu} - \frac{4\pi}{e^{2}} B_{\mu} K^{\mu} \, d x^{4} \\ =
 \int - \frac{n^{\alpha} n^{\mu}}{8\pi n^{2}} \eta^{\beta \nu} \left(F^{A}_{\alpha \beta} \delta F^{A}_{\mu \nu} + F^{A}_{\mu \nu} \delta F^{A}_{\alpha \beta} +  F^{B}_{\alpha\beta} \delta F^{B}_{\mu\nu} +  F^{B}_{\mu \nu} \delta F^{B}_{\alpha\beta} \right) \\ +
 \frac{n^{\alpha} n_{\mu}}{16\pi n^{2}} \epsilon^{\mu\nu\gamma\delta} \left( F^{B}_{\alpha\nu} \delta F^{A}_{\gamma\delta} + F^{A}_{\gamma\delta} \delta F^{B}_{\alpha\nu} - F^{A}_{\alpha\nu} \delta F^{B}_{\gamma\delta} - F^{B}_{\gamma \delta} \delta F^{A}_{\alpha \nu} \right) \\ -
 J^{\mu} \delta A_{\mu} -  \frac{4\pi}{e^{2}} K^{\mu} \delta B_{\mu} \, d x^{4}
+\end{gathered}
 $$
 现在对第一项的变分进行分析
 $$
@@ -100,38 +108,48 @@ $$
 $$
 
 $$
+\begin{gathered}
 n^{\alpha} n^{\mu} \eta^{\beta \nu} (F^{A}_{\alpha \beta} \delta F^{A}_{\mu \nu} +  F^{A}_{\mu \nu} \delta F^{A}_{\alpha \beta}) \\ = 
 n^{\alpha} n^{\mu} \eta^{\beta \nu} F^{A}_{\alpha \beta} \partial_{\mu} \delta A_{\nu} - n^{\alpha} n^{\mu} \eta^{\beta \nu} F^{A}_{\alpha \beta} \partial_{\nu} \delta A_{\mu} + n^{\alpha} n^{\mu} \eta^{\beta \nu} F^{A}_{\mu \nu} \partial_{\alpha} \delta A_{\beta} - n^{\alpha} n^{\mu} \eta^{\beta \nu} F^{A}_{\mu \nu} \partial_{\beta} \delta A_{\alpha} \\ = 
 n^{\alpha} n^{\mu} \eta^{\beta \nu} F^{A}_{\alpha \beta} \partial_{\mu} \delta A_{\nu} - n^{\alpha} n^{\nu} \eta^{\beta \mu} F^{A}_{\alpha \beta} \partial_{\mu} \delta A_{\nu} + n^{\mu} n^{\alpha} \eta^{\nu \beta} F^{A}_{\alpha \beta} \partial_{\mu} \delta A_{\nu} - n^{\mu} n^{\alpha} \eta^{\nu \beta} F^{A}_{\alpha \beta} \partial_{\nu} \delta A_{\mu} \\ =
 2 (n^{\alpha} n^{\mu} \eta^{\beta \nu} - n^{\alpha} n^{\nu} \eta^{\beta \mu}) F^{A}_{\alpha \beta} \partial_{\mu} \delta A_{\nu}
+\end{gathered}
 $$
 
 同理
 $$
+\begin{gathered}
 n^{\alpha} n^{\mu} \eta^{\beta \nu} (F^{B}_{\alpha \beta} \delta F^{B}_{\mu \nu} +  F^{B}_{\mu \nu} \delta F^{B}_{\alpha \beta}) \\ =
 2 (n^{\alpha} n^{\mu} \eta^{\beta \nu} - n^{\alpha} n^{\nu} \eta^{\beta \mu}) F^{B}_{\alpha 
 \beta} \partial_{\mu} \delta B_{\nu}
+\end{gathered}
 $$
  再分析第二项
 $$
+\begin{gathered}
 n^{\alpha} n_{\mu} \epsilon^{\mu \nu \gamma \delta} \left( F^{B}_{\alpha\nu} \delta F^{A}_{\gamma\delta} + F^{A}_{\gamma\delta} \delta F^{B}_{\alpha\nu} - F^{A}_{\alpha\nu} \delta F^{B}_{\gamma\delta} - F^{B}_{\gamma \delta} \delta F^{A}_{\alpha \nu} \right) \\ =
 (n^{\alpha} n_{\mu} \epsilon^{\mu \nu \gamma \delta} - n^{\gamma} n_{\mu} \epsilon^{\mu \delta \alpha \nu}) \left( F^{B}_{\alpha\nu} \delta F^{A}_{\gamma\delta} + F^{A}_{\gamma\delta} \delta F^{B}_{\alpha\nu} \right) \\ = 
 (2 n^{\alpha} n_{\mu} \epsilon^{\mu \nu \gamma \delta} - n^{\gamma} n_{\mu} \epsilon^{\mu \delta \alpha \nu} + n^{\delta} n_{\mu} \epsilon^{\mu \gamma \alpha \nu}) F^{B}_{\alpha \nu} \partial_{\gamma} \delta A_{\delta} \\ +
 (n^{\alpha} n_{\mu} \epsilon^{\mu \nu \gamma \delta} - n^{\nu} n_{\mu} \epsilon^{\mu \alpha \gamma \delta} - 2 n^{\gamma} n_{\mu} \epsilon^{\mu \delta \alpha \nu}) F^{A}_{\gamma \delta} \partial_{\alpha} \delta B_{\nu}
+\end{gathered}
 $$
 对这几项作分部积分并且舍去全微分项，得到
 $$
+\begin{gathered}
 \delta s = \int d \tau - \frac{1}{4 \pi n^{2}} ((n^{\alpha} n^{\mu} \eta^{\beta \nu} - n^{\alpha} n^{\nu} \eta^{\beta \mu}) F^{A}_{\alpha \beta} \partial_{\mu} \delta A_{\nu} + (n^{\alpha} n^{\mu} \eta^{\beta \nu} - n^{\alpha} n^{\nu} \eta^{\beta \mu}) F^{B}_{\alpha \beta} \partial_{\mu} \delta B_{\nu}) \\ + 
 \frac{1}{16 \pi n^{2}} ((2 n^{\alpha} n_{\mu} \epsilon^{\mu \nu \gamma \delta} - n^{\gamma} n_{\mu} \epsilon^{\mu \delta \alpha \nu} + n^{\delta} n_{\mu} \epsilon^{\mu \gamma \alpha \nu}) F^{B}_{\alpha \nu} \partial_{\gamma} \delta A_{\delta} \\ +
 (n^{\alpha} n_{\mu} \epsilon^{\mu \nu \gamma \delta} - n^{\nu} n_{\mu} \epsilon^{\mu \alpha \gamma \delta} - 2 n^{\gamma} n_{\mu} \epsilon^{\mu \delta \alpha \nu}) F^{A}_{\gamma \delta} \partial_{\alpha} \delta B_{\nu}) \\ -
 J^{\mu} \delta A_{\mu} -  \frac{4\pi}{e^{2}} K^{\mu} \delta B_{\mu} \, d x^{4} = 0
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 \int d \tau  \frac{1}{4 \pi n^{2}} ((n^{\alpha} n^{\mu} \eta^{\beta \nu} - n^{\alpha} n^{\nu} \eta^{\beta \mu}) \delta A_{\nu} \partial_{\mu} F^{A}_{\alpha \beta}   + (n^{\alpha} n^{\mu} \eta^{\beta \nu} - n^{\alpha} n^{\nu} \eta^{\beta \mu}) \delta B_{\nu} \partial_{\mu} F^{B}_{\alpha \beta} ) \\ -
 \frac{1}{16 \pi n^{2}} ((2 n^{\alpha} n_{\mu} \epsilon^{\mu \nu \gamma \delta} - n^{\gamma} n_{\mu} \epsilon^{\mu \delta \alpha \nu} + n^{\delta} n_{\mu} \epsilon^{\mu \gamma \alpha \nu})  \delta A_{\delta} \partial_{\gamma} F^{B}_{\alpha \nu}  \\ -
 (n^{\alpha} n_{\mu} \epsilon^{\mu \nu \gamma \delta} - n^{\nu} n_{\mu} \epsilon^{\mu \alpha \gamma \delta} - 2 n^{\gamma} n_{\mu} \epsilon^{\mu \delta \alpha \nu}) \delta B_{\nu} \partial_{\alpha} F^{A}_{\gamma \delta}) \\ -
 J^{\mu} \delta A_{\mu} -  \frac{4\pi}{e^{2}} K^{\mu} \delta B_{\mu} \, d x^{4} = 0
+\end{gathered}
 $$
 
 所以可以整理得到包含 $A^{\mu}$ 与 $B^{\mu}$ 的拉氏量对应的运动方程为
@@ -198,26 +216,34 @@ $$
 $$
 
 $$
+\begin{gathered}
 \nabla \times \vec{E} = - \frac{\partial}{\partial t} \vec{B} \\
 \vec{k} \times \vec{E} = \omega \vec{B}
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 \nabla \times \vec{B} = \mu_{0} \frac{\partial}{\partial t} \vec{D} \\
 \vec{k} \times \vec{B} = - \mu_{0} \omega \vec{D}
+\end{gathered}
 $$
 
 所以
 $$
+\begin{gathered}
 \vec{k} \times (\vec{k} \times \vec{E}) = - \mu_{0} \omega^{2} \vec{D} \\
 (\vec{k} \cdot \vec{E}) \vec{k} - k^{2} \vec{E} = - \mu_{0} \omega^{2} \vec{D} \\
 k_{i} E_{i} k_{j} - k^{2} E_{j} = - \mu_{0} \omega^{2} \epsilon_{ij} E_{i}
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 (k \cos \alpha E_{x} + k \cos \beta E_{y} + k \sqrt{1 - \cos^{2} \alpha - \cos^{2} \beta} E_{z}) k \cos \alpha - k^{2} E_{x} = - \mu_{0} \omega^{2} \epsilon_{x} E_{x} \\
 (k \cos \alpha E_{x} + k \cos \beta E_{y} + k \sqrt{1 - \cos^{2} \alpha - \cos^{2} \beta} E_{z}) k \cos \beta - k^{2} E_{y} = - \mu_{0} \omega^{2} \epsilon_{y} E_{y} \\
 (k \cos \alpha E_{x} + k \cos \beta E_{y} + k \sqrt{1 - \cos^{2} \alpha - \cos^{2} \beta} E_{z}) k \sqrt{1 - \cos^{2} \alpha - \cos^{2} \beta} - k^{2} E_{z} = - \mu_{0} \omega^{2} \epsilon_{z} E_{z}
+\end{gathered}
 $$
 
 $$
@@ -228,24 +254,30 @@ $$
 
 方程有解要求左边系数矩阵的行列式为 $0$
 $$
+\begin{gathered}
 (\mu_{0} \omega^{2} \epsilon_{x} - k^{2} \sin^{2} \alpha) (\mu_{0} \omega^{2} \epsilon_{y} - k^{2} \sin^{2} \beta) (\mu_{0} \omega^{2} \epsilon_{z} - k^{2} (\cos^{2} \alpha + \cos^{2} \beta)) \\ + k^{2} \cos \beta \cos \alpha  k^{2} \sqrt{1 - \cos^{2} \alpha - \cos^{2} \beta} \cos \beta k^{2} \cos \alpha \sqrt{1 - \cos^{2} \alpha - \cos^{2} \beta} \\ +
 k^{2} \sqrt{1 - \cos^{2} \alpha - \cos^{2} \beta} \cos \alpha k^{2} \cos \alpha \cos \beta  k^{2} \cos \beta \sqrt{1 - \cos^{2} \alpha - \cos^{2} \beta} \\ -
 k^{2} \sqrt{1 - \cos^{2} \alpha - \cos^{2} \beta} \cos \alpha (\mu_{0} \omega^{2} \epsilon_{y} - k^{2} \sin^{2} \beta) k^{2} \cos \alpha \sqrt{1 - \cos^{2} \alpha - \cos^{2} \beta} \\ -
 (\mu_{0} \omega^{2} \epsilon_{x} - k^{2} \sin^{2} \alpha) k^{2} \sqrt{1 - \cos^{2} \alpha - \cos^{2} \beta} \cos \beta k^{2} \cos \beta \sqrt{1 - \cos^{2} \alpha - \cos^{2} \beta} \\ -
 k^{2} \cos \beta \cos \alpha k^{2} \cos \alpha \cos \beta ( \mu_{0} \omega^{2} \epsilon_{z} - k^{2} (\cos^{2} \alpha + \cos^{2} \beta) ) = 0
+\end{gathered}
 $$
 解得
 
 行列式展开后，通过对称性化简，发现$k^{6}$项抵消，最终得到一个关于$k^{2}$的二次方程：
 
 $$
+\begin{gathered}
 \mu_{0}^{3} \omega^{6} \epsilon_{x} \epsilon_{y} \epsilon_{z} - \mu_{0}^{2} \omega^{4} k^{2} \left[ \epsilon_{x} \epsilon_{y} (\cos^{2} \alpha + \cos^{2} \beta) + \epsilon_{x} \epsilon_{z} \sin^{2} \beta + \epsilon_{y} \epsilon_{z} \sin^{2} \alpha \right] \\ + \mu_{0} \omega^{2} k^{4} \left[ \epsilon_{x} \cos^{2} \alpha + \epsilon_{y} \cos^{2} \beta + \epsilon_{z} (\sin^{2} \alpha \sin^{2} \beta - \cos^{2} \alpha \cos^{2} \beta) \right] = 0
+\end{gathered}
 $$
 
 将方程除以$\mu_{0} \omega^{2}$并设$\lambda = k^{2}$，得到二次方程：
 
 $$
+\begin{gathered}
 \mu_{0}^{2} \omega^{4} \epsilon_{x} \epsilon_{y} \epsilon_{z} - \mu_{0} \omega^{2} \lambda \left[ \epsilon_{x} \epsilon_{y} (\cos^{2} \alpha + \cos^{2} \beta) + \epsilon_{x} \epsilon_{z} \sin^{2} \beta + \epsilon_{y} \epsilon_{z} \sin^{2} \alpha \right] \\ + \lambda^{2} \left[ \epsilon_{x} \cos^{2} \alpha + \epsilon_{y} \cos^{2} \beta + \epsilon_{z} (1 - \cos^{2} \alpha - \cos^{2} \beta) \right] = 0
+\end{gathered}
 $$
 
 解得$\lambda$即$k^{2}$为：
@@ -257,7 +289,9 @@ $$
 其中判别式$\Delta$为：
 
 $$
+\begin{gathered}
 \Delta = \left( \epsilon_{x} \epsilon_{y} (\cos^{2} \alpha + \cos^{2} \beta) + \epsilon_{x} \epsilon_{z} \sin^{2} \beta + \epsilon_{y} \epsilon_{z} \sin^{2} \alpha \right)^{2} \\ - 4 \epsilon_{x} \epsilon_{y} \epsilon_{z} \left( \epsilon_{x} \cos^{2} \alpha + \epsilon_{y} \cos^{2} \beta + \epsilon_{z} (1 - \cos^{2} \alpha - \cos^{2} \beta) \right)
+\end{gathered}
 $$
 
 最终，$|\vec{k}|$的值为：
@@ -275,13 +309,17 @@ $$
 $$
 
 $$
+\begin{gathered}
 \left( \epsilon_{x} \epsilon_{y} (\cos^{2} \alpha + \cos^{2} \beta) + \epsilon_{x} \epsilon_{z} \sin^{2} \beta + \epsilon_{y} \epsilon_{z} \sin^{2} \alpha \right)^{2} \\ = 4 \epsilon_{x} \epsilon_{y} \epsilon_{z} \left( \epsilon_{x} \cos^{2} \alpha + \epsilon_{y} \cos^{2} \beta + \epsilon_{z} (1 - \cos^{2} \alpha - \cos^{2} \beta) \right)
+\end{gathered}
 $$
 
 所以
 $$
+\begin{gathered}
 (\epsilon_{x} \epsilon_{y} (\cos^{2} \alpha + \cos^{2} \beta))^{2} + (\epsilon_{x} \epsilon_{z} \sin^{2} \beta )^{2} + (\epsilon_{y} \epsilon_{z} \sin^{2} \alpha)^{2} \\ =
 2 \epsilon_{x} \epsilon_{y} \epsilon_{z} ( \epsilon_{x} (2 \cos^{2} \alpha - (\cos^{2} \alpha + \cos^{2} \beta) \sin^{2} \beta) +\epsilon_{y} (2 \cos^{2} \beta - (\cos^{2} \alpha \\ + \cos^{2} \beta) \sin^{2} \alpha) +  \epsilon_{z} (2 - 2 \cos^{2} \alpha - 2 \cos^{2} \beta - \sin^{2} \alpha \sin^{2} \beta ))
+\end{gathered}
 $$
 解得，当
 $$

@@ -19,13 +19,16 @@ $$
 
 Calculate the components, we can find all nonzero terms are
 $$
+\begin{gathered}
 \Gamma^{t} {}_{tr} = \Gamma^{t} {}_{rt} = \frac{B'}{2B}\\
 \Gamma^{r} {}_{tt} = \frac{B'}{2A} \\
 \Gamma^{r} {}_{rr} = \frac{A'}{2A} \\
 \Gamma^{t} {}_{tt} = \frac{\dot{B}}{2B} \\
 \Gamma^{t} {}_{rr} = \frac{\dot{A}}{2B} 
+\end{gathered}
 $$
 $$
+\begin{gathered}
 \Gamma^{r} {}_{tr} = \Gamma^{r} {}_{rt} = \frac{\dot{A}}{2A} \\
 \Gamma^{r} {}_{\theta\theta} = -\frac{r}{A} \\
 \Gamma^{r} {}_{\phi\phi} = -\frac{r\sin^{2}\theta}{A} \\
@@ -33,24 +36,29 @@ $$
 \Gamma^{\theta} {}_{\phi\phi} = -\sin\theta\cos\theta \\
 \Gamma^{\phi} {}_{r\phi} = \Gamma^{\phi} {}_{\phi r} = \frac{1}{r} \\
 \Gamma^{\phi} {}_{\theta\phi} = \Gamma^{\phi} {}_{\phi\theta} = \cot\theta
+\end{gathered}
 $$
 
 where prime means derivative of the space direction while dot means derivative of the time direction.
 
 Calculate Ricci tensors using the definition
 $$
+\begin{gathered}
 R_{\mu \kappa} = g^{\lambda \nu} R_{\lambda \mu \nu \kappa} = R^{\lambda} {}_{\mu \lambda \kappa} \\ = 
 \Gamma^{\lambda} {}_{\mu \lambda, \kappa} - \Gamma^{\lambda} {}_{\mu \kappa, \lambda} + \Gamma^{\eta} {}_{\mu \lambda} \Gamma^{\lambda} {}_{\eta \kappa} - \Gamma^{\eta} {}_{\mu \kappa} \Gamma^{\lambda} {}_{\eta \lambda}
+\end{gathered}
 $$
 
 And we can get all nonzero components
 
 $$
+\begin{gathered}
 R_{tt} = \frac{\ddot{A}}{2A} - \frac{\dot{A}^{2}}{4A^{2}} - \frac{\dot{A}\dot{B}}{4AB} - \frac{B''}{2A} + \frac{B'}{4A} \left( \frac{A'}{A} + \frac{B'}{B} \right) - \frac{B'}{rA}  \\
 R_{tr} = - \frac{\dot{A}}{rA} \\
 R_{rr} = -\frac{\ddot{A}}{2B} + \frac{\dot{A}}{4B} \left( \frac{\dot{A}}{A} + \frac{\dot{B}}{B} \right) + \frac{B''}{2B} - \frac{B'}{4B} \left( \frac{A'}{A} + \frac{B'}{B} \right) - \frac{A'}{rA}  \\
 R_{\theta\theta} = - 1 + \frac{1}{A} - \frac{r}{2A}\left( \frac{A'}{A} - \frac{B'}{B} \right) \\
 R_{\phi\phi} = \sin^{2}\theta \, R_{\theta\theta}
+\end{gathered}
 $$
 
 
@@ -68,13 +76,17 @@ S = - \frac{1}{4} \int \dd[4]{x} \sqrt{-g} F^{\mu \nu} F_{\mu \nu}
 $$
 and do the variation
 $$
+\begin{gathered}
 \delta S = - \frac{1}{4} \int \dd[4]{x} F_{\alpha \beta} F_{\mu \nu} \delta (\sqrt{- g} g^{\mu \alpha} g^{\nu \beta}) \\ =
 - \frac{1}{4} \int \dd[4]{x} F_{\alpha \beta} F_{\mu \nu} (g^{\mu \alpha} g^{\nu \beta} \cdot \frac{1}{2} \sqrt{- g} g^{\rho \sigma} \delta g_{\rho \sigma} - \sqrt{- g} g^{\nu \beta} g^{\sigma \alpha} g^{\mu \rho} \delta g_{\rho \sigma} - \sqrt{- g} g^{\mu \alpha} g^{\nu \rho} g^{\sigma \beta} \delta g_{\rho \sigma})
+\end{gathered}
 $$
 So the energy-momentum tensor density is
 $$
+\begin{gathered}
 T^{\rho \sigma} = \frac{2}{\sqrt{-g}} \cdot \left(- \frac{1}{4} F_{\alpha \beta} F_{\mu \nu} (g^{\mu \alpha} g^{\nu \beta} \cdot \frac{1}{2} \sqrt{- g} g g^{\rho \sigma} - \sqrt{- g} g^{\nu \beta} g^{\sigma \alpha} g^{\mu \rho} - \sqrt{- g} g^{\mu \alpha} g^{\nu \rho} g^{\sigma \beta}\right) \\ =
 F^{\rho \beta} F^{\sigma} {}_{\beta} - \frac{1}{4} g^{\rho \sigma} F^{\mu \nu} F_{\mu \nu}
+\end{gathered}
 $$
 
 

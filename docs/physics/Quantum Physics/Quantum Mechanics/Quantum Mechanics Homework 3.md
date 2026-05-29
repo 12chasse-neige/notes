@@ -142,10 +142,12 @@ $$
 $$
 比较两种方法得到的波函数，有
 $$
+\begin{gathered}
 c_{1} t' = 1 \\
 c_{2} t'^{*} = r^{*} \\
 c_{1} + c_{2} r'^{*} = t^{*} \\
 c_{1} r' + c_{2} = 0
+\end{gathered}
 $$
 综合上述条件，得到
 $$
@@ -167,8 +169,10 @@ $$
 其中 $k = \frac{\sqrt{2mE}}{\hbar}$，则对于 $\delta$ 势 $V(x)=\alpha\delta(x)$，边界条件为
 
 $$
+\begin{gathered}
 \psi(0^+)=\psi(0^-) \\
 \psi'(0^+)-\psi'(0^-)=\frac{2m\alpha}{\hbar^{2}}\psi(0)
+\end{gathered}
 $$
 对于 $\delta(x)$ 处（$x=0$），$\alpha=\frac{\hbar^{2}}{mL}$，跃变条件
 $$
@@ -182,10 +186,12 @@ $$
 
 应用边界条件待定系数
 $$
+\begin{gathered}
 A + B = C + D \\
 ik (C - D) - ik (A - B) = \frac{2}{L} (A + B) \\
 C e^{ika} + D e^{-ika} = F e^{ika} \\
 ik F e^{ika} - ik (C e^{ika} - D e^{-ika}) = \frac{2}{L} F e^{ika}
+\end{gathered}
 $$
 得到透射振幅
 $$
@@ -278,14 +284,18 @@ $$
 
 证明：
 $$
+\begin{gathered}
 \comm{\hat{L}_{x}}{\hat{L}_{y}} = \comm{\hat{y} \hat{p}_{z} - \hat{z} \hat{p}_{y}}{\hat{z} \hat{p}_{x} - \hat{x} \hat{p}_{z}} = \comm{\hat{y} \hat{p}_{z}}{\hat{z} \hat{p}_{x}} - 0 - 0 + \comm{\hat{z} \hat{p}_{y}}{\hat{x} \hat{p}_{z}} \\ =
 \hat{y} \comm{\hat{p}_{z}}{\hat{z}} \hat{p}_{x} - \hat{x} \comm{\hat{p}_{z}}{\hat{z}} \hat{p}_{y} = i \hbar (\hat{x} \hat{p}_{y} - \hat{y} \hat{p}_{x}) = i \hbar \hat{p}_{z}
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 \comm{\hat{L}^{2}}{\hat{L}_{x}} = \comm{\hat{L}_{x}^{2} + \hat{L}_{y}^{2} + \hat{L}_{z}^{2}}{\hat{L}_{x}} \\ = 
 \hat{L}_{x} \comm{\hat{L}_{x}}{\hat{L}_{x}} + \comm{\hat{L}_{x}}{\hat{L}_{x}} \hat{L}_{x} + \hat{L}_{y} \comm{\hat{L}_{y}}{\hat{L}_{x}} + \comm{\hat{L}_{y}}{\hat{L}_{x}} \hat{L}_{y} + \hat{L}_{z} \comm{\hat{L}_{z}}{\hat{L}_{x}} + \comm{\hat{L}_{z}}{\hat{L}_{x}} \hat{L}_{z} \\ =
 0 + 0 - i\hbar \{\hat{L}_{y},\hat{L}_{z}\} + i \hbar \{\hat{L}_{z}, \hat{L}_{y}\} = 0
+\end{gathered}
 $$
 
 (c) $\left(\hat{F} \hat{G}\right)^{\dagger}=\hat{G}^{\dagger} \hat{F}^{\dagger}$; 

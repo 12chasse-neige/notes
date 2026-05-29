@@ -95,10 +95,12 @@ a_{1} = \frac{a_{+} + a_{-}^{\dagger}}{\sqrt{2}} \quad a_{2} = \frac{a_{+} - a_{
 $$
 把输入信号改写成形式
 $$
+\begin{gathered}
 E_{\text{in}} = E_{\text{in}}^{(+)} + E_{\text{in}}^{(-)} \\ =
 \int_{o}^{\infty} \sqrt{\frac{4 \pi \hbar \omega_{o}}{\mathcal{A} c}} (\cos (\omega_{o} t) - i \sin (\omega_{o} t)) \left(\frac{1}{2} (a_{1} + i a_{2}) e^{- i \Omega t} + \frac{1}{2} (a_{1}^{\dagger} + i a_{2}^{\dagger}) e^{i \Omega t} \right) \, \frac{\dd{\Omega}}{2 \pi} + c.c. \\ =
 \int_{0}^{\infty} \sqrt{\frac{4 \pi \hbar \omega_{o}}{\mathcal{A} c}} \left[ \frac{\cos (\omega_{o} t)}{2} (a_{1} e^{- i \Omega t} + a_{1}^{\dagger} e^{i \Omega t}) + \frac{\sin (\omega_{o} t)}{2} (a_{2} e^{- i \Omega t} + a_{2}^{\dagger} e^{i \Omega t}) \right] \, \frac{\dd{\Omega}}{2 \pi} + c.c. \\ =
 \int_{0}^{\infty} \sqrt{\frac{4 \pi \hbar \omega_{o}}{\mathcal{A} c}} \left[ \cos (\omega_{o} t) (a_{1} e^{- i \Omega t} + a_{1}^{\dagger} e^{i \Omega t}) + \sin (\omega_{o} t) (a_{2} e^{- i \Omega t} + a_{2}^{\dagger} e^{i \Omega t}) \right] \, \frac{\dd{\Omega}}{2 \pi}
+\end{gathered}
 $$
 对于 dark port 端的输出信号，我们只要替换上式中的产生湮灭算符，就可以在三角基底下将其表示为
 $$
@@ -157,19 +159,25 @@ $$
 
 由上图的边界条件，可以得到噪声项之间的关系为
 $$
+\begin{gathered}
 j_{j} = \sqrt{T} f_{j} + \sqrt{R} k_{j} \\
 g_{j} = \sqrt{T} k_{j} - \sqrt{R} f_{j}
+\end{gathered}
 $$
 
 我们现在加入引力波对于腔内光场的影响。假设 carrier light 在打到镜面上的时候腔的长度是 $L + X(t)$，那么 carrier light 一来一回回到 $x = L$ 的位置的时候的相位就是
 $$
+\begin{gathered}
 E_{\text{carrier}} = \sqrt{\frac{4 \pi \hbar \omega_{o}}{\mathcal{A} c}} \frac{2}{\sqrt{T}} D \cos (\omega_{o} (t - \frac{2 X (t)}{c})) \\ =
 \sqrt{\frac{4 \pi \hbar \omega_{o}}{\mathcal{A} c}} \frac{2}{\sqrt{T}} D \left(\cos \omega_{o} t + \sin \omega_{o} t \cdot \frac{2 \omega_{o}}{c} \int_{- \infty}^{\infty} X e^{- i \Omega t} \frac{\dd{\Omega}}{2 \pi}\right)
+\end{gathered}
 $$
 所以引力波在这里的效果实际上是把一部分的 carrier light 给挤到了 side band 里面！这个效果用 annihilation and creation operators 可以表示为
 $$
+\begin{gathered}
 \delta k_{1} = 0 \\
 \delta k_{2} = \frac{2}{\sqrt{T}} D\frac{2 \omega_{o} X}{c}
+\end{gathered}
 $$
 所以在 back mirror 处的 operator 之间的关系可以表示为
 $$
@@ -234,8 +242,10 @@ x_{\text{BA}} = - \sqrt{\frac{{\cal K}_*}{2}} L h_{\text{SQL}} \cdot \left(a_{1}
 $$
 其中
 $$
+\begin{gathered}
 I_{SQL} = \frac{m L^{2} \gamma^{4}}{4 \omega_{o}} \\
 h_{SQL} = \sqrt{\frac{8 \hbar}{m \Omega^{2} L^{2}}}
+\end{gathered}
 $$
 这就是 Ponderomotive effect，即散粒噪声 $a_{1}$ 推动了镜子，产生了一个与 $a_{1}$ 成正比的随机位移 $x_{\text{BA}}$
 
@@ -270,8 +280,10 @@ $$
 
 所以二者合成之后得到
 $$
+\begin{gathered}
 b_{j} = \frac{g_{j}^{n} - g_{j}^{e}}{\sqrt{2}} \\ =
 \left(1 - \frac{1}{2}{\cal E}\right) e^{2i\beta} a_{j} + \sqrt{\cal E} e^{i\beta} n_{j} + \sqrt{\frac{(c/2L)^{2} T}{\gamma_*^{2} + \Omega^{2}}} e^{i\beta_*} \frac{\delta k_{j}^{n} - \delta k_{j}^{e}}{\sqrt{2}}
+\end{gathered}
 $$
 
 对于量子噪声项（第一、二项）：共模的激光器噪声被完美抵消，只剩下 $a_{j}$ 和 $n_{j}$
@@ -332,8 +344,10 @@ R (\theta) a_{\pm} R^{\dagger} (\theta) = a_{\pm} e^{i \theta}
 $$
 这个性质可以利用公式 $e^{A} B e^{-A}$ 的对易子展开式证明。当我们把变量替换成 $a_{i}$ 的时候，上述算符就开始体现出旋转的性质
 $$
+\begin{gathered}
 R (\theta) a_{1} R^{\dagger} (\theta) = a_{1} \cos \theta - a_{2} \sin \theta \\
 R (\theta) a_{2} R^{\dagger} (\theta) = a_{2} \cos \theta + a_{1} \sin \theta
+\end{gathered}
 $$
 所以 rotation 算符在 $1,2$ 相空间上的性质就是把态矢量逆时针旋转 $\theta$
 
@@ -351,16 +365,20 @@ S(r, \phi) a_{\pm} S^{\dagger} (r, \phi) = a_{\pm} \cosh r + a_{\mp}^{\dagger} e
 $$
 这个性质同样可以利用公式 $e^{A} B e^{-A}$ 的对易子展开式证明。当我们把变量替换成 $a_{i}$ 的时候，上述算符变为
 $$
+\begin{gathered}
 S (r, \phi) a_{1} S^{\dagger} (r, \phi) = a_{1} (\cosh r + \sinh r \cos 2 \phi) + a_{2} \sinh r \sin 2 \phi \\
 S (r, \phi) a_{2} s^{\dagger} (r, \phi) = a_{2} (\cosh r - \sinh r \cos 2 \phi) + a_{1} \sinh r \sin 2 \phi
+\end{gathered}
 $$
 
 #### 利用算符描述噪声传递
 
 上述推导出的量子噪声传递
 $$
+\begin{gathered}
 \Delta b_{1} = a_{1} e^{2 i \beta} \\
 \Delta b_{2} = (a_{2} - \mathcal{K} a_{1}) e^{2 i \beta} \\
+\end{gathered}
 $$
 用两个算符重新表示，就是
 $$
@@ -388,8 +406,10 @@ S_{b_{1}} = 1, \quad S_{b_{2}} = 1 + \mathcal{K}^{2}, \quad S_{b_{1} b_{2}} = \l
 $$
 那么我们在把噪声扭转一个角度 $\phi$ 之后，对应的谱密度就是
 $$
+\begin{gathered}
 b'_{1} = b_{1} \cos \phi + b_{2} \sin \phi \\
 b'_{2} = b_{2} \cos \phi - b_{1} \sin \phi
+\end{gathered}
 $$
 计算得到
 $$
@@ -428,7 +448,9 @@ h_{n} = \frac{h_{SQL}}{\sqrt{2 \mathcal{K}}} \Delta b_{2} e^{- i \beta}
 $$
 计算得到
 $$
+\begin{gathered}
 h_{ns} = - \frac{h_{SQL}}{\sqrt{2 \mathcal{K}}} \sqrt{1 + \mathcal{K}^{2}} e^{- i \beta} \times \\ \left(a_{1} (\cosh R \cos \Phi - \sinh R \cos(\Phi - 2(\Phi + \lambda)) - a_{2} (\cosh R  \sin \Phi - \sinh R \sin(\Phi - 2 (\Phi + \lambda)))\right)
+\end{gathered}
 $$
 所以总的噪声谱就是
 $$
@@ -451,8 +473,10 @@ $$
 
 那么传播时的相位关系表现为
 $$
+\begin{gathered}
 E (f_{i}, t) = E (d_{i}, t - \frac{l}{c}) \\
 E (c_{i}, t) = E (e_{i}, t - \frac{l}{c})
+\end{gathered}
 $$
 经过计算可以得到输出算符和入射之间的关系
 

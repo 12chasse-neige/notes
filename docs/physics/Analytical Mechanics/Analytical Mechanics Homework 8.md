@@ -32,6 +32,7 @@ $$
 
 B 在最低点的速率，考虑 $t = 0$ 时
 $$
+\begin{gathered}
 \vec{v}_{B} = \vec{\omega} \times \vec{r}_{B} = \begin{pmatrix}
 0 \\
 - \omega \sin \theta \\
@@ -46,6 +47,7 @@ a \cos \theta - \frac{L}{2} \sin \theta
 0 \\
 0
 \end{pmatrix}
+\end{gathered}
 $$
 所以 B 在最低点处的速率为
 $$
@@ -168,26 +170,34 @@ $$
 
 撤去外力矩之后系统的自由转动即为欧拉-潘索情况，带入欧拉方程
 $$
+\begin{gathered}
 I_{1} \dot{\omega}_{1} -  (I_{2} - I_{3}) \omega_{2} \omega_{3} = 0 \\
 I_{2} \dot{\omega}_{2} -  (I_{3} - I_{1}) \omega_{3} \omega_{1} = 0 \\
 I_{3} \dot{\omega}_{3} -  (I_{1} - I_{2}) \omega_{1} \omega_{2} = 0
+\end{gathered}
 $$
 所以
 $$
+\begin{gathered}
 \dot{\omega}_{1} + \omega_{2} \omega_{3} = 0 \\
 \dot{\omega}_{3} - \omega_{1} \omega_{2} = 0
+\end{gathered}
 $$
 带入初始条件
 $$
+\begin{gathered}
 \omega_{1} = 0\\
 \omega_{2} = - \Omega \cos \alpha \\
 \omega_{3} = \Omega \sin \alpha
+\end{gathered}
 $$
 解得
 $$
+\begin{gathered}
 \omega_{1} = \Omega \sin \alpha \sin (\Omega \cos \alpha t) \\
 \omega_{2} = - \Omega \cos \alpha \\
 \omega_{3} = \Omega \sin \alpha \cos (\Omega \cos \alpha t)
+\end{gathered}
 $$
 所以实验室系中的角速度为（重新选取实验室系坐标轴的方向使得 $+z$ 方向和角动量方向相同）
 $$

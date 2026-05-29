@@ -16,8 +16,10 @@ Chasse_neige
 
 这段微元的运动方程为
 $$
+\begin{gathered}
 \lambda dx \frac{\partial^{2}}{\partial t^{2}} u (x, t) = \frac{\partial}{\partial x} T (x) dx + \lambda g dx \\
 \lambda \frac{\partial^{2}}{\partial t^{2}} u (x, t) = \frac{\partial}{\partial x} T (x) + \lambda g
+\end{gathered}
 $$
 而张力关于 $x$ 的表达式为
 $$

@@ -12,8 +12,10 @@ $$
 
 当 $k > l$ 时
 $$
+\begin{gathered}
 \int_{-1}^{1} \mathrm{P}_{k}^{\prime}(x) \mathrm{P}_{l}(x) \, \mathrm{d}x = \left. P_{k} (x) P_{l} (x) \right|_{-1}^{1} - \int_{-1}^{1} P_{k} (x) P'_{l} (x) \, \dd{x} \\ =
 P_{k} (1) P_{l} (1) - P_{k} (-1) P_{l} (-1) = 1 - (-1)^{k + l}
+\end{gathered}
 $$
 (b) 
 $$
@@ -39,8 +41,10 @@ $$
 
 方程以及边界条件为
 $$
+\begin{gathered}
 \nabla^{2} u = 0 \\
 u |_{r = a} = u_{0}, \quad u |_{\theta = \frac{\pi}{2}} = 0
+\end{gathered}
 $$
 由于问题关于 $z$ 轴是轴对称的，所以解可以写成径向函数以及 Legendre 多项式的叠加
 $$
@@ -109,9 +113,11 @@ B_{2l} b^{2l} + C_{2l} b^{-2l-1} = 0
 $$
 解得
 $$
+\begin{gathered}
 A_{2l} = \frac{Q}{4 \pi \epsilon_{0}} P_{2n} (0) \left( \frac{1}{a^{2l + 1}} - \frac{a^{2l}}{b^{4l + 1}}\right) \\
 B_{2l} = - \frac{Q}{4 \pi \epsilon_{0}} P_{2n} (0) \frac{a^{2l}}{b^{4l + 1}} \\
 C_{2l} = \frac{Q}{4 \pi \epsilon_{0}} P_{2n} (0) a^{2l} 
+\end{gathered}
 $$
 最终得到
 $$

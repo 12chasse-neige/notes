@@ -92,8 +92,10 @@ $$
 $$
 有界，所以原级数收敛
 $$
+\begin{gathered}
 \sum_{n=1}^{\infty} \frac{\cos n\theta}{n} = \Re \left[\sum_{n = 1}^{\infty} \frac{e^{i n \theta}}{n} \right] \\ = 
 - \Re [\ln (1 - e^{i \theta})] = - \frac{1}{2} \ln (2 - 2 \cos \theta) = - \ln (2 \sin \frac{\theta}{2})
+\end{gathered}
 $$
 (3) 
 $$
@@ -101,8 +103,10 @@ $$
 $$
 由于(1)中的级数收敛，由比较定理，此级数收敛
 $$
+\begin{gathered}
 \sum_{n=0}^{\infty} \frac{\cos (2n+1)\theta}{2n+1} = \Re \left[\sum_{n = 1}^{\infty} \frac{e^{i (2n + 1) \theta}}{2n + 1}\right] = \frac{1}{2} \Re[\ln (1 + e^{i \theta}) - \ln (1 - e^{i \theta})] \\ = 
 \frac{1}{4} (\ln (2 + 2 \cos \theta) - \ln (2 - 2 \cos \theta)) = \frac{1}{2} \ln (\cot \frac{\theta}{2})
+\end{gathered}
 $$
 (5) 
 $$
@@ -114,8 +118,10 @@ $$
 $$
 由于级数 $\sum_{n} \frac{1}{n^{2}}$ 收敛，所以该级数绝对收敛
 $$
+\begin{gathered}
 \sum_{n=0}^{\infty} \frac{(-1)^{n} \sin (2n+1)\theta}{(2n+1)^{2}} = \sum_{n = 0}^{\infty} \int_{0}^{\theta} \frac{(-1)^{n} \cos (2n + 1) \theta}{2n + 1} d \theta \\ = 
 \int_{0}^{\theta} \left(\sum_{0}^{\infty} \frac{(-1)^{n} \cos (2n + 1) \theta}{2n + 1} \right) d \theta = \int_{0}^{\theta} \frac{\pi}{4} \text{sgn} (\cos \theta) d \theta = \frac{\pi}{4} \theta
+\end{gathered}
 $$
 1.将下列函数在指定点展开成 Taylor 级数，并给出收敛半径
 
@@ -127,16 +133,20 @@ $$
 
 (b) $$\frac{1}{1+z+z^{2}}$$ 在 $z=0$ 展开
 $$
+\begin{gathered}
 \frac{1}{1 + z + z^{2}} = \frac{1}{\sqrt{3} i} \left( \frac{1}{z + \frac{1 - \sqrt{3} i}{2}} - \frac{1}{z + \frac{1 + \sqrt{3} i}{2}} \right) \\ = 
 \frac{1}{\sqrt{3} i} \left( \frac{1 + \sqrt{3} i}{2} \sum_{n = 0}^{\infty} (- \frac{1 + \sqrt{3} i}{2} z)^{n} - \frac{1 - \sqrt{3} i}{2} \sum_{n = 0}^{\infty} (- \frac{1 - \sqrt{3} i}{2} z)^{n} \right) \\ =
 \sum_{n = 0}^{\infty} \left( \frac{3 - \sqrt{3} i}{6}  (- \frac{1 + \sqrt{3} i}{2})^{n} + \frac{3 + \sqrt{3} i}{6} (- \frac{1 - \sqrt{3} i}{2})^{n} \right) z^{n}
+\end{gathered}
 $$
 收敛半径为 $1$
 
 (c) $\frac{\sin z}{1 - z}$ 在 $z = 0$ 展开
 $$
+\begin{gathered}
 \frac{\sin z}{1 - z} = \sum_{k =0}^{\infty} \sum_{l = 0}^{\infty} \frac{(-1)^{k}}{(2 k + 1)!} z^{2k + 1} z^{l} \\ = 
 \sum_{k =0}^{\infty} \sum_{l = 0}^{\infty} \frac{(-1)^{k}}{(2 k + 1)!} z^{2k + l + 1} \\ = 
 \sum_{n = 0}^{\infty} \left(\sum_{k = 0}^{[\frac{n - 1}{2}]} \frac{(-1)^{k}}{(2 k + 1)!} \right) z^{n} 
+\end{gathered}
 $$
 收敛半径为 $1$

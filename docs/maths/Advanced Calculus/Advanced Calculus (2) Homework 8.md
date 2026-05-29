@@ -6,16 +6,20 @@ Chasse_neige
 
 作换元
 $$
+\begin{gathered}
 u = xy \\
 v = \frac{y}{x}
+\end{gathered}
 $$
 此时积分区域 $\Phi^{-1} (D)$ 变为 $u \in [a,b], v \in [c,d]$
 
 利用换元公式
 $$
+\begin{gathered}
 S = \iint_{D} dx dy = \iint_{\Phi^{-1} (D)} \begin{vmatrix} y & - \frac{y}{x^{2}} \\ x & \frac{1}{x} \end{vmatrix}^{-1} du dv \\ =
 \iint_{\Phi^{-1} (D)} \begin{vmatrix} \sqrt{uv} & - \frac{v}{\sqrt{\frac{u}{v}}} \\ \sqrt{\frac{u}{v}} & \frac{1}{\sqrt{\frac{u}{v}}} \end{vmatrix}^{-1} du dv = \iint_{\Phi^{-1} (D)} \frac{1}{2v} du dv \\ =
 \frac{b - a}{2} \ln \frac{d}{c}
+\end{gathered}
 $$
 2.设四条曲线 $x^{2} - y^{2} = 1, x^{2} - y^{2} = 4, \frac{x^{2}}{4} + y^{2} = 1$ 以及 $\frac{x^{2}}{4} + y^{2} = 4$ 在第一象限内围成的平面区域为 $D$。计算积分
 $$
@@ -24,16 +28,20 @@ $$
 
 作换元
 $$
+\begin{gathered}
 u = x^{2} - y^{2} \\
 v = \frac{x^{2}}{4} + y{2}
+\end{gathered}
 $$
 此时积分区间变为 $\Phi^{-1} (D)$ ，即 $u \in [1,4], v \in [1,4]$            
 
 利用换元公式
 $$
+\begin{gathered}
 \iint_{D} \frac{xy}{x^{2} - y^{2}} dxdy = \iint_{\Phi^{-1} (D)} (f \circ \Phi) \det (J_{\Phi}) du dv \\ =
 \iint_{\Phi^{-1} (D)} \frac{\frac{4}{5} \sqrt{(u + v) (v - \frac{u}{4})}}{u} \begin{vmatrix} \frac{1}{\sqrt{5 (u + v)}} & - \frac{1}{4} \frac{1}{\sqrt{5 (v - \frac{u}{4})}} \\ \frac{1}{\sqrt{5 (u + v)}} & \frac{1}{\sqrt{5 (v - \frac{u}{4})}} \end{vmatrix} du dv \\ =
 \iint_{\Phi^{-1} (D)} \frac{1}{5u} du dv = \frac{6}{5} \ln 2
+\end{gathered}
 $$
 3.给定 $a, b, c > 0$，令
 $$
@@ -46,18 +54,22 @@ $$
 
 作换元
 $$
+\begin{gathered}
 x = a r \sin \theta \cos \phi \\
 y = b r \sin \theta \sin \phi \\
 z = c r \cos \theta
+\end{gathered}
 $$
 其中 $r \in [0,1], \theta \in [0, \frac{\pi}{2}] , \phi \in [0, 2 \pi)$
 
 利用换元公式
 $$
+\begin{gathered}
 \iiint_{V} zdxdydz = \iiint_{\Phi^{-1} (V)} (f \circ \Phi) \det (J_{\Phi}) dr d\theta d\phi \\ =
 \iiint_{\Phi^{-1} (V)} c r \cos \theta abc r^{2} \sin \theta dr d \theta d \phi \\ = 
 \iiint_{\Phi^{-1} (V)}abc^{2} r^{3} dr \sin \theta \cos \theta d \theta d \phi \\ =
 abc^{2} \cdot \frac{1}{4} \cdot \frac{1}{2} \cdot 2 \pi = \frac{\pi}{4} abc^{2}
+\end{gathered}
 $$
 4.考虑三维区域
 $$
@@ -65,22 +77,28 @@ V = \{(x, y, z) | x^{2} + y^{2} + z^{2} + xy + yz + zx \leq 1\}
 $$
 计算 $V$ 的体积 (提示: 把 $V$ 的定义式配方, 然后适当换元)
 $$
+\begin{gathered}
 x^{2} + y^{2} + z^{2} + xy + yz + zx \leq 1  \\
 (\frac{\sqrt{2}}{2} x + \frac{\sqrt{2}}{2} y)^{2} + (\frac{\sqrt{2}}{2} y + \frac{\sqrt{2}}{2} z)^{2} + (\frac{\sqrt{2}}{2} x + \frac{\sqrt{2}}{2} z)^{2} \leq 1
+\end{gathered}
 $$
 所以作换元
 $$
+\begin{gathered}
 u = \frac{\sqrt{2}}{2} y + \frac{\sqrt{2}}{2} z \\
 v = \frac{\sqrt{2}}{2} x + \frac{\sqrt{2}}{2} z \\
 w = \frac{\sqrt{2}}{2} x + \frac{\sqrt{2}}{2} y
+\end{gathered}
 $$
 利用换元公式
 $$
+\begin{gathered}
 \iiint_{V} dxdydz = \iiint_{\Phi^{-1} (V)} (f \circ \Phi) \det (J_{\Phi}) du dv dw \\ =
 \iiint_{\Phi^{-1} (V)} \begin{vmatrix} 0 & \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2} \\
 \frac{\sqrt{2}}{2} & 0 & \frac{\sqrt{2}}{2} \\
 \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2} & 0 \end{vmatrix}^{-1} du dv dw \\ = 
 \frac{1}{\frac{\sqrt{2}}{2}} \cdot \frac{4 \pi}{3} = \frac{4 \sqrt{2} \pi}{3}
+\end{gathered}
 $$
 5.设 $f$ 在矩形区域 $[a, b] \times [c, d]$ 上连续，且有连续的偏导函数 $\frac{\partial f}{\partial x}$。
 
@@ -122,8 +140,10 @@ $$
 
 证明
 $$
+\begin{gathered}
 g' (x)  = \lim_{h \to 0} \frac{g (x + h) - g (x)}{h} = \lim_{h \to 0} \frac{1}{h} \left( \int_{c}^{d} f (x + h, y) dy - \int_{c}^{d} f (x, y) dy \right) \\ = 
 \lim_{h \to 0} \int_{c}^{d} \frac{f (x + h, y) - f(x, y)}{h} dy
+\end{gathered}
 $$
 现在证明积分和极限符号的可交换性
 
@@ -153,17 +173,21 @@ V = \iiint_{V} dx dy dz
 $$
 现在作如下换元
 $$
+\begin{gathered}
 x = (1 - t) u \\
 y = (1 - t) v \\
 z = t
+\end{gathered}
 $$
 且满足 $(u,v,0) \in D, t \in [0,1]$
 
 利用换元公式
 $$
+\begin{gathered}
 V = \iiint_{\Phi^{-1} (V)} \det (J_{\Phi}) du dv dt \\ = 
 \iiint_{\Phi^{-1} (V)} \begin{vmatrix} 1 - t & 0 & 0 \\ 0 & 1 - t & 0 \\ -u & -v & 1 \end{vmatrix} du dv dt \\ =
 \iiint_{\Phi^{-1} (V)} (1 - t)^{2} du dv dt = \iint_{D} du dv \int_{0}^{1} (1 - t)^{2} dt = \frac{1}{3} S
+\end{gathered}
 $$
 7.给定非负整数 $a,b,c$。令
 $$
@@ -175,16 +199,20 @@ $$
 $$
 利用 Fubini 定理的推论
 $$
+\begin{gathered}
 \iiint_{Q} x^{a} y^{b} z^{c} dx dy dz = \int_{0}^{1} z^{c} dz \iint_{D_{z}} x^{a} y^{b} dx dy \\ =
 \int_{0}^{1} z^{c} dz \int_{0}^{1 - z} y^{b} dy \int_{0}^{1 - z - y} x^{a} dx \\ = 
 \int_{0}^{1} z^{c} dz \int_{0}^{1 - z} \frac{1}{1 + a} y^{b} (1 - z -y)^{a + 1} dy \\ =
 \frac{1}{a + 1} \int_{0}^{1} z^{c} dz \int_{0}^{1 - z} y^{b} \sum_{n = 0}^{a + 1} C_{a + 1}^{n} (1 - z)^{n} (- y)^{a + 1 - n} dy \\ = 
 \frac{1}{a + 1} \int_{0}^{1} z^{c} dz \sum_{n = 0}^{a + 1} C_{a + 1}^{n} (1 - z)^{n} (-1)^{a + 1 - n}  \frac{1}{a + b + 2 - n} (1 - z)^{a + b + 2 - n} \\ =
 \frac{1}{a + 1}  \sum_{n = 0}^{a + 1} C_{a + 1}^{n} \frac{(-1)^{a + 1 - n}}{a + b + 2 - n} \int_{0}^{1} z^{c} (1 - z)^{a + b + 2} dz
+\end{gathered}
 $$
 因为
 $$
+\begin{gathered}
 \int_{0}^{1} z^{c} (1 - z)^{a + b + 2} = \left. \frac{1}{c + 1} z^{c + 1} (1 - z)^{a + b + 2} \right|_{z = 0}^{z = 1} + \frac{a + b + 2}{c + 1} \int_{0}^{1} z^{c + 1} (1 - z)^{a + b + 1} dz \\ = \frac{a + b + 2}{c + 1} \int_{0}^{1} z^{c + 1} (1 - z)^{a + b + 1} dz
+\end{gathered}
 $$
 一直迭代下去
 $$
@@ -192,12 +220,14 @@ $$
 $$
 所以原积分等于
 $$
+\begin{gathered}
 \iiint_{Q} x^{a} y^{b} z^{c} dx dy dz  \\ =
 \sum_{n = 0}^{a + 1} \frac{1}{a + 1}  C_{a + 1}^{n} \frac{(-1)^{a + 1 - n}}{a + b + 2 - n} \frac{(a + b + 2)! c!}{(a + b + c + 3)!} \\ = 
 \sum_{n = 0}^{a + 1} \frac{(a + 1)!}{n! (a + 1 - n)!} \frac{(a + b + 2)! c!}{(a + b + c + 3)!} \frac{(-1)^{a + 1 - n}}{(a + 1) (a + b + 2 - n)} \\ =
 \frac{a! c! (a + b + 2)!}{(a + b + c + 3)!} \sum_{n = 0}^{a + 1} \frac{(-1)^{n}}{n! (a + 1 - n)! (b + 1 + n)} \\ = 
 \frac{a! c!}{(a + b + c + 3)!} \sum_{n = 0}^{a + 1} \frac{(-1)^{n} (b + n)!}{n!} C_{a + b + 2}^{a + 1 - n} \\ = 
 \frac{a! b! c!}{(a + b + c + 3)!} \sum_{n = 0}^{a + 1} (-1)^{n} C_{b + n}^{b} C_{a + b + 2}^{b + 1 + n}
+\end{gathered}
 $$
 在计算最后的求和，注意到
 $$

@@ -31,9 +31,11 @@ $$
 
 再利用电场定出剩余系数
 $$
+\begin{gathered}
 \vec{E} = - \nabla \phi = - \hat{r} \frac{\partial}{\partial r} (A_{0} + \frac{B_{0}}{r} + (A_{1} r + \frac{B_{1}}{r^{2}}) \cos \theta) - \frac{\hat{\theta}}{r} \frac{\partial}{\partial \theta} (A_{0} + \frac{B_{0}}{r} + (A_{1} r + \frac{B_{1}}{r^{2}}) \cos \theta) \\ = 
 \frac{B_{0}}{r^{2}} \hat{r} - A_{1} \cos \theta \hat{r} + \frac{2 B_{1}}{r^{3}} \cos \theta \hat{r} + \frac{1}{r} (A_{1} r + \frac{B_{1}}{r^{2}}) \sin \theta \hat{\theta} \\ =
 \frac{R_{0} (\Phi_{0} - \phi_{0})}{r^{2}} \hat{r} - A_{1} \cos \theta \hat{r} + A_{1} \sin \theta \hat{\theta} + \frac{2 B_{1}}{r^{3}} \cos \theta \hat{r} + \frac{B_{1}}{r^{3}} \sin \theta \hat{\theta}
+\end{gathered}
 $$
 当 $r \to \infty, \theta  = 0$ 时，电场大小为 $E_{0}$ ，所以 
 $$
@@ -68,9 +70,11 @@ $$
 
 再利用电场定出剩余系数
 $$
+\begin{gathered}
 \vec{E} = - \nabla \phi = - \hat{r} \frac{\partial}{\partial r} (A_{0} + \frac{B_{0}}{r} + (A_{1} r + \frac{B_{1}}{r^{2}}) \cos \theta) - \frac{\hat{\theta}}{r} \frac{\partial}{\partial \theta} (A_{0} + \frac{B_{0}}{r} + (A_{1} r + \frac{B_{1}}{r^{2}}) \cos \theta) \\ = 
 \frac{B_{0}}{r^{2}} \hat{r} - A_{1} \cos \theta \hat{r} + \frac{2 B_{1}}{r^{3}} \cos \theta \hat{r} + \frac{1}{r} (A_{1} r + \frac{B_{1}}{r^{2}}) \sin \theta \hat{\theta} \\ =
 \frac{B_{0}}{r^{2}} \hat{r} - A_{1} \cos \theta \hat{r} + A_{1} \sin \theta \hat{\theta} + \frac{2 B_{1}}{r^{3}} \cos \theta \hat{r} + \frac{B_{1}}{r^{3}} \sin \theta \hat{\theta}
+\end{gathered}
 $$
 当 $r \to \infty, \theta  = 0$ 时，电场大小为 $E_{0}$ ，所以 
 $$
@@ -121,9 +125,11 @@ $$
 
 电场
 $$
+\begin{gathered}
 \vec{E} = - \nabla (\phi' + \frac{\vec{p}_{t} \cdot \vec{r}}{4\pi\epsilon_{1} r^{3}}) \\ =
 - \hat{r} \frac{\partial}{\partial r} (A_{0} + A_{1} r \cos \theta + \frac{p_{t} \cos \theta}{4 \pi \epsilon_{1} r^{2}}) - \frac{\hat{\theta}}{r} \frac{\partial}{\partial \theta} (A_{0} + A_{1} r + \cos \theta + \frac{p_{t} \cos \theta}{4 \pi \epsilon_{1} r^{2}}) \\ = 
 - A_{1} \cos \theta \hat{r} + A_{1} \sin \theta \hat{\theta} + \frac{p_{t}}{2 \pi \epsilon_{1} r^{3}} \cos \theta \hat{r} + \frac{p_{t}}{4 \pi \epsilon_{1} r^{3}} \sin \theta \hat{\theta}
+\end{gathered}
 $$
 
 
@@ -138,13 +144,17 @@ $$
 
 再利用电场确定剩余系数
 $$
+\begin{gathered}
 \vec{E}  = - \nabla \phi = - \hat{r} \frac{\partial}{\partial r} (\frac{D_{0}}{r} + \frac{D_{1}}{r^{2}} \cos \theta) - \frac{\hat{\theta}}{r} \frac{\partial}{\partial \theta} (\frac{D_{0}}{r} + \frac{D_{1}}{r^{2}} \cos \theta) \\ =
 \frac{D_{0}}{r^{2}} \hat{r} + \frac{2 D_{1}}{r^{3}} \cos \theta \hat{r} + \frac{D_{1}}{r^{3}} \sin \theta \hat{\theta}
+\end{gathered}
 $$
 在 $r = R_{0}$ 处电势连续
 $$
+\begin{gathered}
 A_{0} = \frac{D_{0}}{R_{0}} \\ 
 A_{1} R_{0} + \frac{p_{t}}{4 \pi \epsilon_{1} R_{0}^{2}} = \frac{D_{1}}{R_{0}^{2}}
+\end{gathered}
 $$
 在$r = R_{0}$ 处电场强度切向连续
 $$
@@ -152,14 +162,18 @@ A_{1} + \frac{p_{t}}{4 \pi \epsilon_{1} R_{0}^{3}} = \frac{D_{1}}{R_{0}^{3}}
 $$
 在$r = R_{0}$ 处电位移矢量法向连续
 $$
+\begin{gathered}
 \epsilon_{1} B_{0} = \epsilon_{2} D_{0} = 0\\ 
 \epsilon_{1} (\frac{p_{t}}{2 \pi \epsilon_{1} R_{0}^{3}} - A_{1}) = \epsilon_{2} \frac{2 D_{1}}{R_{0}^{3}}
+\end{gathered}
 $$
 可以解出
 $$
+\begin{gathered}
 A_{0} = D_{0} = 0 \\
 A_{1} = \frac{(\epsilon_{1} - \epsilon_{2}) p_{t}}{2 \pi \epsilon_{1} (\epsilon_{1} + 2 \epsilon_{2}) R_{0}^{3}} \\ 
 D_{1} = \frac{3 p_{t}}{4 \pi (\epsilon_{1} + 2 \epsilon_{2})}
+\end{gathered}
 $$
 所以电势分布为
 $$
@@ -189,12 +203,14 @@ $$
 $$
 利用勒让德多项式的正交性
 $$
+\begin{gathered}
 \int_{0}^{\pi} \phi (R_{0}, \theta) P_{n} (\cos \theta) \sin \theta d \theta \\ =
 \int_{-1}^{0} - \phi_{0} P_{n} (x) d x + \int_{0}^{1} \phi_{0} P_{n} (x) d x = (-1)^{n + 1} \phi_{0} \left. \frac{P_{n+1}(x)-P_{n-1}(x)}{2n+1} \right|_{0}^{1} + \phi_{0} \left. \frac{P_{n+1}(x)-P_{n-1}(x)}{2n+1} \right|_{0}^{1} \\ = 
 \begin{cases}
 0 & (n \text{是偶数}) \\
 2 \phi_{0} \frac{P_{n - 1} (0) - P_{n + 1} (0)}{2 n + 1} & (n \text{是奇数})
 \end{cases}
+\end{gathered}
 $$
 所以
 $$
@@ -206,8 +222,10 @@ $$
 $$
 即 $n$ 是奇数时
 $$
+\begin{gathered}
 A_{n} = \frac{\phi_{0}}{R_{0}^{n}} (P_{n - 1} (0) - P_{n + 1} (0)) \\ = 
 (-1)^{\frac{n - 1}{2}} \frac{\phi_{0}}{R_{0}^{n}} \frac{(n - 2)!!}{(n + 1)!!} (2n + 1)
+\end{gathered}
 $$
 所以
 $$
@@ -221,12 +239,14 @@ $$
 $$
 利用勒让德多项式的正交性
 $$
+\begin{gathered}
 \int_{0}^{\pi} \phi (R_{0}, \theta) P_{n} (\cos \theta) \sin \theta d \theta \\ =
 \int_{-1}^{0} - \phi_{0} P_{n} (x) d x + \int_{0}^{1} \phi_{0} P_{n} (x) d x = (-1)^{n + 1} \phi_{0} \left. \frac{P_{n+1}(x)-P_{n-1}(x)}{2n+1} \right|_{0}^{1} + \phi_{0} \left. \frac{P_{n+1}(x)-P_{n-1}(x)}{2n+1} \right|_{0}^{1} \\ = 
 \begin{cases}
 0 & (n \text{是偶数}) \\
 2 \phi_{0} \frac{P_{n - 1} (0) - P_{n + 1} (0)}{2 n + 1} & (n \text{是奇数})
 \end{cases}
+\end{gathered}
 $$
 所以
 $$
@@ -238,8 +258,10 @@ $$
 $$
 即 $n$ 是偶数时
 $$
+\begin{gathered}
 B_{n} = \phi_{0} R_{0}^{n + 1} (P_{n - 1} (0) - P_{n + 1} (0)) \\ = 
 (-1)^{\frac{n - 1}{2}} \phi_{0} R_{0}^{n + 1} \frac{(n - 2)!!}{(n + 1)!!} (2 n + 1)
+\end{gathered}
 $$
 所以
 $$
@@ -285,8 +307,10 @@ $$
 $$
 
 $$
+\begin{gathered}
 \frac{\partial G (\vec{r}, \vec{r'})}{\partial n'} = \hat{r'} \cdot \nabla' \frac{1}{4\pi\epsilon_{0}} \left( \frac{1}{|\vec{r} - \vec{r}'|} - \frac{\frac{R_{0}}{r'}}{|\vec{r} - \frac{R_{0}^{2}}{r'^{2}}\vec{r}'|} \right) \\ = 
 \hat{r'} \cdot \frac{1}{4 \pi \epsilon_{0}} \left(\frac{\vec{r} - \vec{r'}}{|\vec{r} - \vec{r'}|^{3}} + \frac{\frac{R_{0} \vec{r'}}{r'^{3}}}{|\vec{r} - \frac{R_{0}^{2}}{r'^{2}}\vec{r}'|} +  \frac{R_{0}}{r'}\frac{\vec{r} - \frac{R_{0}^{2}}{r'^{2}}\vec{r}'}{|\vec{r} - \frac{R_{0}^{2}}{r'^{2}}\vec{r}'|^{3}} \cdot (\frac{2 R_{0}^{2}}{r'^{4}} \vec{r'} \vec{r'} - \frac{R_{0}^{2}}{r'^{2}} \overset{\leftrightarrow}{I}) \right)
+\end{gathered}
 $$
 
 在 $r' = R_{0}$ 处
@@ -307,14 +331,17 @@ $$
 $$
 
 $$
+\begin{gathered}
 \frac{1 - t^{2}}{(1 - 2xt + t^{2})^{\frac{3}{2}}} = \frac{1 - 2xt + t^{2} + 2xt - 2t^{2}}{(1 - 2xt + t^{2})^{\frac{3}{2}}} = \frac{1}{\sqrt{1 - 2 x t + t^{2}}} + \frac{2t(x - t)}{(1 - 2xt + t^{2})^{\frac{3}{2}}} \\ = 
 \sum_{n} (1 + 2n) t^{n} P_{n} (x)
+\end{gathered}
 $$
 
 带入 $x = \cos \gamma$ 以及 $t = \frac{r_{<}}{r_{>}}$ （$\gamma$ 为 $\vec{r}$ 与 $\vec{r'}$ 的夹角，$\alpha$ 为积分点和 $z$ 轴的夹角，$\theta$ 为场点和$z$ 轴的夹角）
 
 所以在球内（取 $\alpha$ 和 $\phi$ 为积分用的球坐标，其中$\phi$ 的起始位置为 $\vec{r'}$ 的投影位置）
 $$
+\begin{gathered}
 \phi (r, \theta) =  \frac{1}{4 \pi R_{0}^{2}} \oint_{S} \phi (R_{0}, \alpha) \sum_{n} (1 + 2n) (\frac{r}{R_{0}})^{n} P_{n} (\cos \gamma) d S' \\ =
 \sum_{n} \frac{1 + 2n}{4 \pi} \int_{0}^{\pi} \int_{0}^{2 \pi} (\frac{r}{R_{0}})^{n} \phi (R_{0}, \alpha) P_{n} (\sin \theta \sin \alpha \cos \phi + \cos \theta \cos \alpha) \sin \alpha d \alpha d \phi \\ =
 \sum_{n} \frac{1 + 2n}{4 \pi} \int_{0}^{\pi} \int_{0}^{2 \pi} (\frac{r}{R_{0}})^{n} \phi (R_{0}, \alpha) P_{n} (\cos \theta) P_{n} (\cos \alpha) \sin \alpha d \alpha d \phi \\ = 
@@ -323,9 +350,11 @@ $$
 \sum_{n} \frac{1 + 2n}{2} (\frac{r}{R_{0}})^{n} P_{n} (\cos \theta) \left(\int_{-1}^{0} - \phi_{0} P_{n} (x) d x + \int_{0}^{1} \phi_{0} P_{n} (x) d x \right) \\ = 
 \sum_{n} \frac{1 + 2n}{2} (\frac{r}{R_{0}})^{n} P_{n} (\cos \theta) \left((-1)^{n + 1} \phi_{0} \left. \frac{P_{n+1}(x)-P_{n-1}(x)}{2n+1} \right|_{0}^{1} + \phi_{0} \left. \frac{P_{n+1}(x)-P_{n-1}(x)}{2n+1} \right|_{0}^{1}\right) \\ = 
 \sum_{n = 0}^{\infty} (-1)^{n} (4n + 3) \frac{(2n - 1)!!}{(2n + 2)!!} \phi_{0} \left( \frac{r}{R_{0}} \right)^{2n + 1} P_{2n + 1} (\cos \theta)
+\end{gathered}
 $$
 同理，在球外
 $$
+\begin{gathered}
 \phi (r, \theta) = \frac{1}{4 \pi R_{0}^{2}} \oint_{S} \phi (R_{0}, \alpha) \sum_{n} (1 + 2n) (\frac{R_{0}}{r})^{n + 1} P_{n} (\cos \gamma) d S' \\ =
 \sum_{n} \frac{1 + 2n}{4 \pi} \int_{0}^{\pi} \int_{0}^{2 \pi}(\frac{R_{0}}{r})^{n + 1} \phi (R_{0}, \alpha) P_{n} (\sin \theta \sin \alpha \cos \phi + \cos \theta \cos \alpha) \sin \alpha d \alpha d \phi \\ =
 \sum_{n} \frac{1 + 2n}{4 \pi} \int_{0}^{\pi} \int_{0}^{2 \pi}(\frac{R_{0}}{r})^{n + 1} \phi (R_{0}, \alpha) P_{n} (\cos \theta) P_{n} (\cos \alpha) \sin \alpha d \alpha d \phi \\ = 
@@ -334,4 +363,5 @@ $$
 \sum_{n} \frac{1 + 2n}{2} (\frac{R_{0}}{r})^{n + 1} P_{n} (\cos \theta) \left(\int_{-1}^{0} - \phi_{0} P_{n} (x) d x + \int_{0}^{1} \phi_{0} P_{n} (x) d x \right) \\ = 
 \sum_{n} \frac{1 + 2n}{2} (\frac{R_{0}}{r})^{n + 1} P_{n} (\cos \theta) \left((-1)^{n + 1} \phi_{0} \left. \frac{P_{n+1}(x)-P_{n-1}(x)}{2n+1} \right|_{0}^{1} + \phi_{0} \left. \frac{P_{n+1}(x)-P_{n-1}(x)}{2n+1} \right|_{0}^{1}\right) \\ = 
 \sum_{n = 0}^{\infty} (-1)^{n} (4n + 3) \frac{(2n - 1)!!}{(2n + 2)!!} \phi_{0} \left( \frac{R_{0}}{r} \right)^{2n + 2} P_{2n + 1} (\cos \theta)
+\end{gathered}
 $$

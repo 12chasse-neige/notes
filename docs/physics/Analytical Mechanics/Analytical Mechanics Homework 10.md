@@ -23,14 +23,18 @@ $$
 
 先得到坐标空间的运动方程
 $$
+\begin{gathered}
 \dv{}{t}(m \dot{q}) = - m \omega^{2} q \\
 \ddot{q} = - \omega^{2} q
+\end{gathered}
 $$
 再写出动量空间的拉格朗日方程
 $$
+\begin{gathered}
 \dv{}{t} \pdv{}{\dot{p}} K = \pdv{}{p} K\\
 \frac{\ddot{p}}{m \omega^{2}} = - \frac{p}{m} \\
 \ddot{p} = - \omega^{2} p
+\end{gathered}
 $$
 二者形式相同。
 
@@ -40,13 +44,17 @@ $$
 
 写出动能
 $$
+\begin{gathered}
 T = \frac{1}{2} m (l \dot{\theta}_{1})^{2} + \frac{1}{2} m (l^{2} \dot{\theta}_{1}^{2} + l^{2} (\dot{\theta}_{1} + \dot{\theta}_{2})^{2} + 2 l^{2} \dot{\theta}_{1}(\dot{\theta}_{1} + \dot{\theta}_{2}) \cos(\theta_{2})) \\ \approx
 \frac{1}{2} m l^{2} (5 \dot{\theta}_{1}^{2} + \dot{\theta}_{2}^{2} + 4 \dot{\theta}_{1} \dot{\theta}_{2})
+\end{gathered}
 $$
 势能
 $$
+\begin{gathered}
 V = - mg l \cos \theta_{1} - mg (l \cos \theta_{1} + l \cos(\theta_{1} + \theta_{2})) \\ \approx
 \frac{1}{2} mgl (3 \theta_{1}^{2} + \theta_{2}^{2} + 2 \theta_{1} \theta_{2})
+\end{gathered}
 $$
 所以
 $$
@@ -54,13 +62,17 @@ L \approx \frac{1}{2} m l^{2} (5 \dot{\theta}_{1}^{2} + \dot{\theta}_{2}^{2} + 4
 $$
 得到
 $$
+\begin{gathered}
 p_{\theta_{1}} = m l^{2} (5 \dot{\theta}_{1} + 2 \dot{\theta}_{2}) \\
 p_{\theta_{2}} = m l^{2} ( \dot{\theta}_{2} + 2 \dot{\theta}_{1})
+\end{gathered}
 $$
 所以
 $$
+\begin{gathered}
 H = p_{\theta_{1}} \frac{p_{\theta_{1}} - 2 p_{\theta_{2}}}{ml^{2}} + p_{\theta_{2}} \frac{5 p_{\theta_{2}} - 2 p_{\theta_{1}}}{ml^{2}} - \frac{p_{\theta_{1}}^{2} + 5 p_{\theta_{2}}^{2} - 4 p_{\theta_{1}} p_{\theta_{2}}}{2m l^{2}} + \frac{1}{2} mgl (3 \theta_{1}^{2} + \theta_{2}^{2} + 2 \theta_{1} \theta_{2}) \\ =
 \frac{p_{\theta_{1}}^{2} + 5 p_{\theta_{2}}^{2} - 4 p_{\theta_{1}} p_{\theta_{2}}}{2m l^{2}} + \frac{1}{2} mgl (3 \theta_{1}^{2} + \theta_{2}^{2} + 2 \theta_{1} \theta_{2})
+\end{gathered}
 $$
 循环积分
 $$
@@ -68,8 +80,10 @@ H = Const
 $$
 正则方程
 $$
+\begin{gathered}
 \dot{p_{\theta_{1}}} = -mgl (3 \theta_{1} + \theta_{2}) \\
 \dot{p_{\theta_{2}}} = -mgl (\theta_{2} + \theta_{1})
+\end{gathered}
 $$
 解得
 $$
@@ -123,7 +137,9 @@ $$
 
 3.给出第二种形式的正则变换生成函数 $F_{2}(x_{0}, p, t)$，由此证明 $x_{0}$，$p_{0}$ 到 $x$，$p$ 是正则变换
 $$
+\begin{gathered}
 \dd{F_{2}} = p_{0} \dd{x_{0}}+ x \dd{p} + (H - H_{0}) \, \dd{t} \\ = (p - mat) \, \dd{x_{0}} +(x_{0} + \frac{p - mat}{m} t + \frac{1}{2} a t^{2}) \dd{p} + (\frac{p^{2}}{2m} - ma (x_{0} + \frac{p - mat}{m} t + \frac{1}{2} a t^{2})) \, \dd{t} 
+\end{gathered}
 $$
 所以
 $$

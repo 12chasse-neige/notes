@@ -136,6 +136,7 @@ $$
 
 由于电磁场张量在变换下满足二阶张量的变换关系，所以对于 $x$ 方向的Boost：
 $$
+\begin{gathered}
 F' = 
 \begin{pmatrix}
 \gamma & 0 & 0 & i\beta\gamma \\
@@ -162,6 +163,7 @@ i\beta\gamma & 0 & 0 & \gamma
 -\gamma(B_{2} + \tfrac{\beta E_{3}}{c}) & -B_{1} & 0 & -i\gamma(\tfrac{E_{3}}{c} + \beta B_{2}) \\
 i \frac{E_{1}}{c} & i\gamma(\tfrac{E_{2}}{c} - \beta B_{3}) & i\gamma(\tfrac{E_{3}}{c} + \beta B_{2}) & 0
 \end{pmatrix}
+\end{gathered}
 $$
 得到对于 Boost 而言 $E'_{\parallel} = E_{\parallel}$   $E'_{\perp} = \gamma (E_{\perp} + \vec{v} \times \vec{B})$  $B'_{\parallel} = B_{\parallel}$  $B'_{\perp} = \gamma (B_{\perp} - \vec{v} \times \vec{E})$
 
@@ -217,7 +219,9 @@ $$
 $$
 换至 $S$ 系中
 $$
+\begin{gathered}
 \vec{E} = \vec{E'} \cdot \frac{\vec{v}}{v} \hat{v} + \gamma (\vec{E'} - \vec{E'} \cdot \frac{\vec{v}}{v} \hat{v} ) = \frac{q}{4 \pi \epsilon_{0} \gamma^{3} S^{3}} (\gamma (\vec{R} \cdot \hat{v}) \hat{v} + \gamma (\gamma (\vec{R} \cdot \hat{v}) \hat{v} + \vec{R} - (\vec{R} \cdot \hat{v}) \hat{v}  - \gamma (\vec{R} \cdot \hat{v}) \hat{v}) \\ = \frac{q}{4 \pi \epsilon_{0} \gamma^{3} S^{3}}  \gamma \vec{R} = \frac{q \vec{R}}{4 \pi \epsilon_{0} S^{3}} (1 - \frac{v^{2}}{c^{2}})
+\end{gathered}
 $$
 
 $$

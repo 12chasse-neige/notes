@@ -10,11 +10,14 @@ Chasse_neige
 
 分解：（$L$ 代表纵向，$T$ 代表横向）
 $$
+\begin{gathered}
 \mathbf{E} = \mathbf{E}_{T} + \mathbf{E}_{L} \\
 \mathbf{B} = \mathbf{B}_{T} + \mathbf{B}_{L}
+\end{gathered}
 $$
 所以麦克斯韦方程组化为
 $$
+\begin{gathered}
 \nabla \cdot \mathbf{E} = \nabla \cdot (\mathbf{E}_{T} + \mathbf{E}_{L}) = \nabla \cdot \mathbf{E}_{L} = \frac{\rho}{\epsilon_{0}} \\
 \nabla \cdot \mathbf{B} = \nabla \cdot (\mathbf{B}_{T} + \mathbf{B}_{L}) = \nabla \cdot \mathbf{B}_{L} = 0 \\
 \nabla \cdot \mathbf{B}_{L} = \nabla \times \mathbf{B}_{L} = 0 \\
@@ -22,6 +25,7 @@ $$
 \nabla \times \mathbf{E} = \nabla \times (\mathbf{E}_{T} + \mathbf{E}_{L}) = \nabla \times \mathbf{E}_{T} = - \frac{\partial}{\partial t} \mathbf{B}_{T} \\
 \nabla \times \mathbf{B} = \nabla \times \mathbf{B}_{T} = \mu_{0}  \mathbf{J} + \mu_{0} \epsilon_{0} \frac{\partial}{\partial t} \mathbf{E} = \mu_{0} (\mathbf{J}_{T} + \mathbf{J}_{L}) + \mu_{0} \epsilon_{0} \frac{\partial}{\partial t} (\mathbf{E}_{T} + \mathbf{E}_{L})  = \mu_{0} \mathbf{J}_{T} + \mu_{0} \epsilon_{0} \frac{\partial}{\partial t} \mathbf{E}_{T}\\
 \mu_{0} \mathbf{J}_{L} + \mu_{0} \epsilon_{0} \frac{\partial}{\partial t} \mathbf{E}_{L} = 0
+\end{gathered}
 $$
 其中电场的无旋部分 $\mathbf{E}_{L}$ 满足 $\nabla \cdot \mathbf{E}_{L} = \frac{\rho}{\epsilon_{0}}$ ，即对应库仑场
 
@@ -95,8 +99,10 @@ $$
 $$
 
 $$
+\begin{gathered}
 \mathbf{B} = \nabla \times \mathbf{A} = \sum_{k} \left[ (\nabla e^{i \mathbf{k} \cdot \mathbf{x}}) \times \mathbf{a}_{k}(t)  + (\nabla e^{-i \mathbf{k} \cdot \mathbf{x}}) \times \mathbf{a}_{k}^*(t) \right] \\ = 
 i \sum_{k} e^{i \mathbf{k} \cdot \mathbf{x}} \mathbf{k} \times \mathbf{a}_{k} (t) - e^{-i \mathbf{k} \cdot \mathbf{x}} \mathbf{k} \times \mathbf{a}_{k}^{*} (t)
+\end{gathered}
 $$
 
 ### 2. 推迟势
@@ -169,6 +175,7 @@ $$
 
 所以矢势的散度为：（以下用 $\nabla'_{r'}$ 表示仅仅对于空间部分的散度，即不考虑散度中推迟项带来的影响）
 $$
+\begin{gathered}
 \nabla \cdot \mathbf{A} =  \nabla \cdot \int \frac{\mu_{0} (\mathbf{j} (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) - \epsilon_{0} \frac{\partial}{\partial t} \nabla'_{r'} \phi (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}))}{4 \pi |\mathbf{r} - \mathbf{r'}|} d \tau' \\ = 
 \frac{\mu_{0}}{4 \pi} \int \left( - \nabla' \frac{1}{|\mathbf{r} - \mathbf{r'}|}\right) \cdot \left(\mathbf{j} (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) - \epsilon_{0} \frac{\partial}{\partial t} \nabla'_{r'} \phi (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c})\right) + \\ 
 \frac{1}{|\mathbf{r} - \mathbf{r'}|} \nabla \cdot \left(\mathbf{j} (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) - \epsilon_{0} \frac{\partial}{\partial t} \nabla'_{r'} \phi (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c})\right) d \tau' \\ =
@@ -180,5 +187,6 @@ $$
 \frac{1}{|\mathbf{r} - \mathbf{r'}|} \frac{\partial}{\partial t} \left(\mathbf{j} (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) - \epsilon_{0} \frac{\partial}{\partial t} \nabla'_{r'} \phi (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c})\right) \cdot (\nabla (t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) + \nabla' (t - \frac{|\mathbf{r} - \mathbf{r'}|}{c})) \, d \tau' \\ = 
 \frac{\mu_{0}}{4 \pi} \int \frac{1}{|\mathbf{r} - \mathbf{r'}|} \left( \nabla'_{r'} \cdot \mathbf{j} (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) - \epsilon_{0} \frac{\partial}{\partial t} {\nabla'_{r'}}^{2} \phi (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c})\right) \, d \tau' \\ = 
 \frac{\mu_{0}}{4 \pi} \int \frac{1}{|\mathbf{r} - \mathbf{r'}|} (\nabla'_{r'} \cdot \mathbf{j} (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) + \frac{\partial}{\partial t} \rho (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c})) \, d \tau' = 0
+\end{gathered}
 $$
 其中最后一步是流守恒的直接结果。

@@ -17,14 +17,18 @@ u(x, y) = X (x) Y (y)
 $$
 
 $$
+\begin{gathered}
 X'' + \lambda X = 0 \\
 Y'' - \lambda Y = 0
+\end{gathered}
 $$
 
 所以通解为
 $$
+\begin{gathered}
 Y (y) = A \sin(\sqrt{\lambda} y) + B \cos(\sqrt{\lambda} y) \\
 X (x) = C \sinh(\sqrt{\lambda} x) + D \cosh(\sqrt{\lambda} x)
+\end{gathered}
 $$
 带入第2条边界条件
 $$
@@ -76,8 +80,10 @@ $$
 $$
 在一维情形下化为
 $$
+\begin{gathered}
 \frac{\partial}{\partial t} u - D \frac{\partial^{2}}{\partial x^{2}} u = \alpha u \qquad (- \frac{d}{2} \leq x \leq \frac{d}{2}) \\
 \frac{\partial}{\partial t} u - D \frac{\partial^{2}}{\partial x^{2}} u = 0 \qquad (x < -\frac{d}{2} \quad \text{or} \quad x > \frac{d}{2} )
+\end{gathered}
 $$
  分离变量，对于铀块内的情形
 $$
@@ -94,13 +100,17 @@ $$
 
 所以
 $$
+\begin{gathered}
 D X'' + (\alpha - \lambda) X = 0 \\
 T' = \lambda T
+\end{gathered}
 $$
 对于铀块外
 $$
+\begin{gathered}
 D X'' = \lambda' X \\
 T' = \lambda' T
+\end{gathered}
 $$
 由对称性以及界面处的数密度以及流密度连续性条件，容易得到坐标方程的解仅余弦项非零，且边界处为对应驻波的波节处
 $$
@@ -118,8 +128,10 @@ $$
 
 此时数密度的演化方程变为
 $$
+\begin{gathered}
 \frac{\partial}{\partial t} u - D \left(\frac{\partial^{2}}{\partial x^{2}} u + \frac{\partial^{2}}{\partial y^{2}} u + \frac{\partial^{2}}{\partial z^{2}} u\right) = \alpha u \qquad (0 \leq x \leq a \quad \text{and} \quad 0 \leq y \leq a \quad \text{and} \quad 0 \leq z \leq a) \\
 \frac{\partial}{\partial t} u - D \left(\frac{\partial^{2}}{\partial x^{2}} u + \frac{\partial^{2}}{\partial y^{2}} u + \frac{\partial^{2}}{\partial z^{2}} u\right) = 0 \qquad (\text{Other area} )
+\end{gathered}
 $$
 
 和一维的时候的处理方法基本相同，先分离变量
@@ -128,13 +140,17 @@ u(x, y, z, t) = U(x, y, z) T(t)
 $$
 得到
 $$
+\begin{gathered}
 T' = \lambda T\\
 D \nabla^{2} U + (\alpha - \lambda) U = 0
+\end{gathered}
 $$
 对于立方体外空间
 $$
+\begin{gathered}
 T' = \lambda' T \\
 D \nabla^{2} U = \lambda' U
+\end{gathered}
 $$
 由于这个问题对于三个坐标显然是对称的，所以在对 $U$ 的进一步分离变量中我们可以假设
 $$
@@ -167,14 +183,18 @@ w(x, y) = X (x) Y (y)
 $$
 
 $$
+\begin{gathered}
 X'' - \lambda X = 0 \\
 Y'' + \lambda Y = 0
+\end{gathered}
 $$
 
 所以通解为
 $$
+\begin{gathered}
 X (x) = C \sin(\sqrt{\lambda} x) + D \cos(\sqrt{\lambda} x) \\
 Y (y) = A \sinh(\sqrt{\lambda} y) + B \cosh(\sqrt{\lambda} y)
+\end{gathered}
 $$
 带入边界条件
 $$
@@ -221,13 +241,17 @@ $$
 
 利用正交性确定系数
 $$
+\begin{gathered}
 A_{n} = - \frac{b}{6 a \sinh(\omega_{n} b)} \int_{0}^{a} x (x^{3} - a^{3}) \sin(\omega_{n} x) dx \\
 = - \frac{2b}{a \sinh(\omega_{n} b)}\left(\dfrac{a^{5} \left(-1\right)^{n}}{n^{3} \pi^{3}} + \dfrac{2 a^{5}}{n^{5} \pi^{5}} \left(1 - \left(-1\right)^{n}\right)\right)
+\end{gathered}
 $$
 所以解为
 $$
+\begin{gathered}
 u(x, y) = v(x, y) + w(x, y) \\
 = \frac{1}{12} x^{4}y - \frac{1}{12} a^{3} xy- \sum_{n = 1}^{\infty} \frac{2a^{4}b}{\sinh(\frac{n \pi}{a} b)}\left(\dfrac{\left(-1\right)^{n}}{n^{3} \pi^{3}} + \dfrac{2}{n^{5} \pi^{5}} \left(1 - \left(-1\right)^{n}\right)\right) \sin(\frac{n \pi}{a} x) \sinh(\frac{n \pi}{a} y)
+\end{gathered}
 $$
 或者可以写成一种更对称的等价形式（这是直接猜的形式再待定系数得到的解）
 $$

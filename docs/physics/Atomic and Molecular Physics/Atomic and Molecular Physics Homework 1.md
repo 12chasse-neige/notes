@@ -25,18 +25,24 @@ $$
 
 So
 $$
+\begin{gathered}
 \psi_{100} = R_{10} (r) Y_{00} (\theta, \phi) = \sqrt{\left( \frac{2}{a_{0}} \right)^{3} \frac{1}{2}} e^{-\frac{r}{a_{0}}} L_{0}^{1} \left(\frac{2r}{a_{0}} \right) \sqrt{\frac{1}{4 \pi}} P_{0}^{0} (\cos \theta) \\
 = \frac{2}{a_{0}^{\frac{3}{2}}} \sqrt{\frac{1}{4 \pi}} e^{- \frac{r}{a_{0}}}
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 \psi_{200} = R_{20} (r) Y_{00} (\theta, \phi) = \sqrt{\left( \frac{2}{2 a_{0}} \right)^{3} \frac{1}{8}} e^{- \frac{r}{2 a_{0}}} L_{1}^{1} \left(\frac{r}{a_{0}} \right) \sqrt{\frac{1}{4 \pi}} P_{0}^{0} (\cos \theta) \\ 
 = \frac{1}{2\sqrt{2} a_{0}^{\frac{3}{2}}} \sqrt{\frac{1}{4 \pi}} \left(2 - \frac{r}{a_{0}}\right) e^{- \frac{r}{a_{0}}}
+\end{gathered}
 $$
 
 $$
+\begin{gathered}
 \psi_{210} = R_{21} (r) Y_{1 0} (\theta, \phi) = \sqrt{\frac{1}{a_{0}}^{3} \frac{1}{24}} e^{-\frac{r}{2 a_{0}}} \frac{r}{a_{0}} L_{0}^{3} \left( \frac{r}{a_{0}} \right) \sqrt{\frac{3}{4 \pi}} P_{1}^{0} (\cos \theta) \\ 
 = \frac{1}{2 \sqrt{2} a_{0}^{\frac{3}{2}}} \sqrt{\frac{1}{4 \pi}} \frac{r}{a_{0}} e^{- \frac{r}{2 a_{0}}} \cos \theta
+\end{gathered}
 $$
 
 $$
@@ -56,8 +62,10 @@ $$
 
 The probability current
 $$
+\begin{gathered}
 J_{nlm} = \frac{\hbar}{2 \mu i} (\psi_{nlm}^{*} \nabla \psi_{nlm} - \psi_{nlm} \nabla \psi_{nlm}^{*}) \\ 
 = \frac{\hbar}{2 \mu i} \frac{2 i m}{r \sin \theta} \left( \psi_{nl-m} \psi_{nlm} \right) \hat{e}_{\phi} = \frac{\hbar m}{\mu r \sin \theta} |\psi_{nlm}|^{2} \hat{e}_{\phi}
+\end{gathered}
 $$
 For $\psi_{200}$ and $\psi_{210}$
 $$
@@ -84,15 +92,19 @@ H_{hfB} = A \left( \frac{I_+ J_- + I_- J_+}{2} + I_{z} J_{z} \right) + \frac{\mu
 $$
 For $^{87}\text{Rb}$ atoms' $5 S_{1/2}$ state
 $$
+\begin{gathered}
 m_{J} = -\frac{1}{2}, \frac{1}{2} \\
 m_{I} = - \frac{3}{2}, -\frac{1}{2}, \frac{1}{2}, \frac{3}{2}
+\end{gathered}
 $$
 Using the basis of 
 $$
+\begin{gathered}
 \ket{m_{J}  = -\frac{1}{2}} \otimes \ket{m_{I} =  -\frac{3}{2}}, \quad \ket{m_{J}  = -\frac{1}{2}} \otimes \ket{m_{I} =  -\frac{1}{2}} \\
 \ket{m_{J}  = -\frac{1}{2}} \otimes \ket{m_{I} =  \frac{1}{2}}, \quad \ket{m_{J}  = -\frac{1}{2}} \otimes \ket{m_{I} =  \frac{3}{2}} \\
 \ket{m_{J}  = \frac{1}{2}} \otimes \ket{m_{I} =  -\frac{3}{2}}, \quad \ket{m_{J}  = \frac{1}{2}} \otimes \ket{m_{I} =  -\frac{1}{2}} \\
 \ket{m_{J}  = \frac{1}{2}} \otimes \ket{m_{I} =  \frac{1}{2}}, \quad \ket{m_{J}  = \frac{1}{2}} \otimes \ket{m_{I} =  \frac{3}{2}} \\
+\end{gathered}
 $$
 The Hamiltonian matrix can be obtained as
 $$
