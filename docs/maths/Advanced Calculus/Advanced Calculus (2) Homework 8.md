@@ -1,9 +1,6 @@
 # 高等微积分（2） 第8次作业
-
 Chasse_neige
-
 1.给定 $0 < a < b, 0 < c < d$，设四条曲线 $xy = a, xy = b, y = cx$ 以及 $y = dx$ 在第一象限内围成的平面区域为 $D$。计算 $D$ 的面积。
-
 作换元
 $$
 \begin{gathered}
@@ -12,7 +9,6 @@ v = \frac{y}{x}
 \end{gathered}
 $$
 此时积分区域 $\Phi^{-1} (D)$ 变为 $u \in [a,b], v \in [c,d]$
-
 利用换元公式
 $$
 \begin{gathered}
@@ -25,7 +21,6 @@ $$
 $$
 \iint_{D} \frac{xy}{x^{2} - y^{2}} dxdy
 $$
-
 作换元
 $$
 \begin{gathered}
@@ -34,7 +29,6 @@ v = \frac{x^{2}}{4} + y{2}
 \end{gathered}
 $$
 此时积分区间变为 $\Phi^{-1} (D)$ ，即 $u \in [1,4], v \in [1,4]$            
-
 利用换元公式
 $$
 \begin{gathered}
@@ -51,7 +45,6 @@ $$
 $$
 \iiint_{V} zdxdydz
 $$
-
 作换元
 $$
 \begin{gathered}
@@ -61,7 +54,6 @@ z = c r \cos \theta
 \end{gathered}
 $$
 其中 $r \in [0,1], \theta \in [0, \frac{\pi}{2}] , \phi \in [0, 2 \pi)$
-
 利用换元公式
 $$
 \begin{gathered}
@@ -101,16 +93,12 @@ $$
 \end{gathered}
 $$
 5.设 $f$ 在矩形区域 $[a, b] \times [c, d]$ 上连续，且有连续的偏导函数 $\frac{\partial f}{\partial x}$。
-
 (1) 证明: 对任何 $x_{0} \in [a, b]$，有
 $$
 \int_{c}^{d} f(x_{0}, y) dy = \int_{c}^{d} f(a, y) dy + \int_{a}^{x_{0}} dx \int_{c}^{d} \frac{\partial f(x, y)}{\partial x} dy
 $$
-
 证明
-
 定义函数 $g (x) = f (x, y_{0})$
-
 容易得知
 $$
 \left. \frac{d}{dx} g (x) \right|_{x = x_{0}} = \left. \frac{\partial f}{\partial x} \right|_{(x,y) = (x_{0}, y_{0})}
@@ -123,11 +111,9 @@ $$
 $$
 f (x_{0}, y)  = f (a, y) + \int_{a}^{x_{0}} \frac{\partial f (x, y)}{\partial x} dx
 $$
-
 $$
 \int_{c}^{d} f (x_{0}, y) dy = \int_{c}^{d} f(a, y) dy + \int_{c}^{d} dy \int_{a}^{x_{0}} \frac{\partial f (x, y)}{\partial x} dx
 $$
-
 由于偏导数 $\frac{\partial f}{\partial x}$ 连续，所以它可积。利用 Fubini 定理
 $$
 \int_{c}^{d} dy \int_{a}^{x_{0}} \frac{\partial f (x, y)}{\partial x} dx = \int_{a}^{x_{0}} dx \int_{c}^{d} \frac{\partial f(x, y)}{\partial x} dy
@@ -137,7 +123,6 @@ $$
 \int_{c}^{d} f(x_{0}, y) dy = \int_{c}^{d} f(a, y) dy + \int_{a}^{x_{0}} dx \int_{c}^{d} \frac{\partial f(x, y)}{\partial x} dy
 $$
 (2) 对每个 $x \in [a, b]$，定义函数 $g(x) = \int_{c}^{d} f(x, y) dy$。证明: $g'(x) = \int_{c}^{d} \frac{\partial f(x, y)}{\partial x} dy$。
-
 证明
 $$
 \begin{gathered}
@@ -146,7 +131,6 @@ g' (x)  = \lim_{h \to 0} \frac{g (x + h) - g (x)}{h} = \lim_{h \to 0} \frac{1}{h
 \end{gathered}
 $$
 现在证明积分和极限符号的可交换性
-
 由微分中值定理，存在 $\theta \in [0, 1]$，使得 
 $$
 \frac{f (x + h, y) - f(x, y)}{h} = \frac{\partial}{\partial x} f (x + \theta h, y)
@@ -180,7 +164,6 @@ z = t
 \end{gathered}
 $$
 且满足 $(u,v,0) \in D, t \in [0,1]$
-
 利用换元公式
 $$
 \begin{gathered}
@@ -233,11 +216,9 @@ $$
 $$
 \sum_{k = 0}^{\infty} (-1)^{k} C_{b + k}^{b} x^{k} = \frac{1}{(1 + x)^{b + 1}}
 $$
-
 $$
 \sum_{l = 0}^{a + b + 2} C_{a + b + 2}^{l} x^{l} = (1 + x)^{a + b + 2}
 $$
-
 所以
 $$
 \sum_{k = 0}^{\infty} \sum_{l = 0}^{a + b + 2} (-1)^{k} C_{b + k}^{b} C_{a + b + 2}^{l} x^{k + l} = \sum_{n = 0}^{\infty}  \sum_{k = \max \{0, n - (a + b + 2) \}}^{n} (-1)^{k} C_{b + k}^{b} C_{a + b + 2}^{n - k} x^{n} = (1 + x)^{a + 1} = \sum_{n = 0}^{a + 1} C_{a + 1}^{n} x^{n}

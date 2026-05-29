@@ -1,9 +1,6 @@
 # 数学物理方程 第5次作业
-
 Chasse_neige
-
 1.无限长空心圆柱导体半径为 $a$, 分成两半且相互绝缘, 一半电势为 $V$, 另外一半电势为 $-V$, 求柱内电势分布.
-
 柱内空间满足拉普拉斯方程
 $$
 \begin{gathered}
@@ -11,11 +8,9 @@ $$
 \phi(r, 0 ,z) = \phi(r, 2\pi, z) \quad \left. \phi \right|_{r = 0} \text{有界}
 \end{gathered}
 $$
-
 $$
 \frac{1}{r} \pdv{}{r} (r \pdv{}{r} \phi) + \frac{1}{r^{2}} \pdv{}{\theta^{2}}{} \phi + \pdv{}{z^{2}}{} \phi = 0
 $$
-
 直接分离变量
 $$
 \phi(r, \theta, z) = w(r, \theta) Z(z)
@@ -28,28 +23,22 @@ $$
 $$
 w(r, \theta) = R(r) \Theta(\theta)
 $$
-
 $$
 \frac{r}{R} \dv{}{r} (r \dv{}{r} R) = - \frac{1}{\Theta} \frac{\mathrm{d}^{2}}{\mathrm{d} \theta^{2}} \Theta = \alpha
 $$
-
 $$
 \Theta'' = - \alpha \Theta
 $$
-
 $$
 r^{2} R'' + r R' = \alpha R
 $$
-
 解得特征函数
 $$
 \Theta(\theta) = A \sin(\sqrt{\alpha} \theta) + B \cos(\sqrt{\alpha} \theta)
 $$
-
 $$
 R(r) = C r^{\lambda_{+}} + D r^{\lambda_{-}}
 $$
-
 其中 $\lambda_{\pm}$ 为特征方程 $\lambda (\lambda - 1) + \lambda = \alpha$ 的解
 $$
 R(r) = C r^{\sqrt{\alpha}} + D r^{- \sqrt{\alpha}}
@@ -100,7 +89,6 @@ $$
 \end{gathered}
 $$
 2.试求扇形区域 $0 \leq r \leq a$, $0 \leq \varphi \leq \pi / 3$ 内稳定温度分布. 已知该区域内无热源, 扇形之边保持温度为 0, 弧形变上保持温度为 $f(\phi)$.
-
 由于区域内无热源，在稳定温度分布下热传导方程的形式等价与拉普拉斯方程
 $$
 \begin{gathered}
@@ -112,14 +100,12 @@ $$
 $$
 \sqrt{\alpha} = 0 : \quad R(r) = E + F \ln r
 $$
-
 $$
 \begin{gathered}
 \sqrt{\alpha}： \quad \Theta(\theta) = A \sin(\sqrt{\alpha} \theta) + B \cos(\sqrt{\alpha} \theta) \\
 R(r) = C r^{\sqrt{\alpha}} + D r^{- \sqrt{\alpha}}
 \end{gathered}
 $$
-
 带入边界条件
 $$
 \Theta(0) = \Theta(\frac{\pi}{3}) = 0
@@ -143,11 +129,9 @@ $$
 $$
 \frac{\pi}{6} A_{n} a^{3n} = \int_{0}^{\frac{\pi}{3}} f(\phi) \sin(3n \phi) \, \dd \phi
 $$
-
 $$
 A_{n} = \frac{6 \int_{0}^{\frac{\pi}{3}} f(\phi) \sin(3n \phi) \, \dd \phi}{\pi a^{3n}}
 $$
-
 所以解函数可以表示为
 $$
 T(r, \theta) = \sum_{n = 1}^{\infty} \frac{6 \int_{0}^{\frac{\pi}{3}} f(\phi) \sin(3n \phi) \, \dd \phi}{\pi a^{3n}} r^{3n} \sin(3n \theta)
@@ -175,11 +159,9 @@ $$
 $$
 \Theta(\theta) = A \sin 2 \theta
 $$
-
 $$
 R(r) =  r^{2}
 $$
-
 待定系数
 $$
 \begin{gathered}

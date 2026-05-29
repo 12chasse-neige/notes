@@ -1,14 +1,10 @@
 # 分析力学 第12次作业
-
 Chasse_neige
-
 7.6 用两种方法证明以下变换是正则变换
 $$
 Q = \sqrt{2p} \sin q, \quad P = \sqrt{2p} \cos q
 $$
-
 (2)  计算泊松括号。
-
 计算泊松括号为
 $$
 \begin{gathered}
@@ -21,16 +17,12 @@ $$
 [Q,Q]_{pq} = [P, P]_{pq} = 0
 $$
 所以是正则变换。
-
 7.8 用两种方法证明以下变换是正则变换
 $$
 Q_{i} = q_{i} \cos \theta_{i} - p_{i} \sin \theta_{i}, \quad P_{i} = q_{i} \sin \theta_{i} + p_{i} \cos \theta_{i}, \quad i = 1, 2, 3, \cdots, s
 $$
-
 其中 $\theta_{i}$ 是适当的常量，$s$ 是系统自由度个数。
-
 (2) 计算泊松括号。
-
 计算泊松括号
 $$
 \begin{gathered}
@@ -39,7 +31,6 @@ $$
 \delta_{ij}
 \end{gathered}
 $$
-
 $$
 \begin{gathered}
 [Q_{i}, Q_{j}]_{pq} = \sum_{k} \pdv{Q_{i}}{q_{k}} \pdv{Q_{j}}{p_{k}} - \pdv{Q_{i}}{p_{k}} \pdv{Q_{j}}{q_{k}} \\ = 
@@ -47,7 +38,6 @@ $$
 0
 \end{gathered}
 $$
-
 $$
 \begin{gathered}
 [P_{i}, P_{j}]_{pq} = \sum_{k} \pdv{P_{i}}{q_{k}} \pdv{P_{j}}{p_{k}} - \pdv{P_{i}}{p_{k}} \pdv{P_{j}}{q_{k}} \\ = 
@@ -55,13 +45,9 @@ $$
 0
 \end{gathered}
 $$
-
 所以是正则变换。
-
 7.11 求证: 角动量 $J = (J_{1}, J_{2}, J_{3})$ 分量之间满足 $[J_{1}, J_{2}] = J_{3}$。
-
 证明：
-
 写出角动量的分量式子
 $$
 J_{k}  = \epsilon_{ijk} r_{i} p_{k}
@@ -84,9 +70,7 @@ $$
 $$
 \vec{A} = \vec{p} \times \vec{J} - \frac{mk\vec{r}}{r}
 $$
-
 利用泊松括号证明该矢量是守恒量。
-
 由于 $A$ 不显含 $t$ ，所以
 $$
 \dv{\vec{A}}{t} = \pdv{\vec{A}}{t} + [\vec{A}, H] = [\vec{A},H]
@@ -114,40 +98,32 @@ $$
 $$
 [p^{2}, \frac{p^{2}}{2m}] = 0
 $$
-
 $$
 [r_{i}, \frac{p^{2}}{2m}] = [r_{i}, p_{j}] \frac{p_{j}}{m} = \delta_{ij} \frac{p_{j}}{m} =\frac{p_{i}}{m}
 $$
-
 $$
 \begin{gathered}
 [p^{2} r_{i}, \frac{k}{r}] = [r_{i}, \frac{k}{r}] p^{2} + 2 p_{j} [p_{j}, \frac{k}{r}] r_{i} \\ = 
 0 + \frac{2 p_{j} r_{j}}{r^{3}} k r_{i}
 \end{gathered}
 $$
-
 $$
 [(p_{j} r_{j}) p_{i}, \frac{p^{2}}{2m}] = [p_{j} r_{j} p_{i}, p_{k}] \frac{p_{k}}{m} = p_{j} p_{i} \delta_{jk} \frac{p_{k}}{m} = \frac{p^{2}}{m} p_{i}
 $$
-
 $$
 [p_{j} r_{j} p_{i}, \frac{k}{r}] = \frac{k}{r^{2}}  (r_{j} p_{i} \frac{r_{j}}{r} + p_{j} r_{j} \frac{r_{i}}{r} )
 $$
-
 $$
 [\frac{mk r_{i}}{r}, \frac{p^{2}}{2m}] = p_{j} k [\frac{r_{i}}{r}, p_{j}] = \frac{p_{i} k}{r} - \frac{k p_{j} r_{j} r_{i}}{r^{3}}
 $$
-
 $$
 [\frac{mk r_{i}}{r}, \frac{k}{r}] = 0
 $$
-
 所以带入得到
 $$
 [A_{i}, H] = p^{2} \frac{p_{i}}{m} - \frac{2 p_{j} r_{j}}{r^{3}} k r_{i} - \frac{p^{2}}{m} p_{i} +\frac{k}{r^{2}}  (r p_{i} + p_{j} r_{j} \frac{r_{i}}{r}) - \frac{p_{i} k}{r} + \frac{k p_{j} r_{j} r_{i}}{r^{3}} = 0
 $$
 所以是守恒量
-
 7.14 计算拉普拉斯-龙格-楞次矢量 $\mathbf{A}$ 各分量之间的泊松括号。
 $$
 \begin{gathered}
@@ -159,17 +135,14 @@ $$
 $$
 \epsilon_{lmi} \epsilon_{knj} [p_{l}J_{m}, p_{k} J_{n}] = -2mH \epsilon_{ijk} J_{k} - 2mk \frac{1}{r} \epsilon_{ijk} J_{k} + 2mk \left( \frac{r_{j}}{r} p_{i} - \frac{r_{i}}{r} p_{j} \right)
 $$
-
 第二项
 $$
 - mk \epsilon_{knj} [\frac{r_{i}}{r}, p_{k} J_{n}] = -2 mk \frac{1}{r} \epsilon_{ijk} J_{k} - 2 mk \frac{r_{j}}{r} p_{i} + 2 mk \frac{r_{i}}{r} p_{j}
 $$
-
 第三项
 $$
 - mk \epsilon_{lmi} [p_{l} J_{m}, \frac{r_{j}}{r}] = 2 mk \frac{1}{r} \epsilon_{ijk} J_{k} + 2 mk \frac{r_{j}}{r} p_{i} - 2 mk \frac{r_{i}}{r} p_{j}
 $$
-
 将三项相加，所有含 $\frac{mk}{r}$ 和 $r_{i} p_{j}$ 的项相互抵消，最终结果为
 $$
 [A_{i}, A_{j}] = -2mH \epsilon_{ijk} J_{k}

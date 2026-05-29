@@ -1,13 +1,8 @@
 # 电动力学 第8周作业
-
 Chasse_neige
-
 ### 4. 谐振腔 
-
 书4.14, 4.15
-
 4.14 一对无限大的平行理想导体板，相距为 $b$，电磁波沿平行于板面的 $z$ 方向传播，设波在 $x$ 方向是均匀的，求可能传播的波模和每种波模的截止频率。
-
  解亥姆霍兹方程 $(\nabla^{2} + k^{2}) u = 0$得
 $$
 u (x, y, z) = X(x) Y(y) Z(z) = (C_{1} \cos k_{x} x  + D_{1} \sin k_{x} x) (C_{2} \cos k_{y} y + D_{2} \sin k_{y} y) e^{i(k_{z} z - \omega t)}
@@ -17,19 +12,16 @@ $$
 u (x, y, z) = (C_{2} \cos k_{y} y + D_{2} \sin k_{y} y)  e^{i(k_{z} z - \omega t)}
 $$
 对于 $E_{x}$ ，带入边界条件 $E_{x} \big|_{y = 0} = 0$ 以及$E_{x} \big|_{y = b} = 0$
-
 得到
 $$
 E_{x} = A_{1} \sin\left(\frac{n\pi}{b} y\right) e^{i(k_{z} z - \omega t)}
 $$
 对于 $E_{z}$ ，带入边界条件 $E_{z} \big|_{y = 0} = 0$ 以及$E_{z} \big|_{y = b} = 0$
-
 得到
 $$
 E_{z} = A_{3} \sin\left(\frac{n\pi}{b} y\right) e^{i(k_{z} z - \omega t)}
 $$
 对于 $E_{y}$ ，由 $\nabla \cdot \vec{E} = 0$
-
 得到
 $$
 E_{y} = A_{2} \cos\left(\frac{n\pi}{b} y\right) e^{i(k_{z} z - \omega t)}
@@ -47,12 +39,10 @@ $$
 \omega_{c}^{(n)} = \frac{n \pi c}{b}
 $$
 4.15 证明整个谐振腔内的电场能量和磁场能量对时间的平均值总相等。
-
 证明：
 $$
 \mathbf{E}(\mathbf{r}, t) = \text{Re}[\mathbf{E}(\mathbf{r}) e^{-i\omega t}]
 $$
-
 $$
 \mathbf{B}(\mathbf{r}, t) = \text{Re}[\mathbf{B}(\mathbf{r}) e^{-i\omega t}]
 $$
@@ -65,7 +55,6 @@ $$
 \int_{V} \nabla \cdot (\mathbf{E} \times \mathbf{H}^*) \, dV = \oint_{\partial V} (\mathbf{E} \times \mathbf{H}^*) \cdot d\mathbf{S}
 $$
 在谐振腔的金属边界上，电场的切向分量为零，磁场的法向分量为零，导致面积分为零。因此：
-
 $$
 \int_{V} (\mu_{0} |\mathbf{H}|^{2} - \varepsilon_{0} |\mathbf{E}|^{2}) \, dV = 0
 $$
@@ -73,19 +62,12 @@ $$
 $$
 \frac{1}{\mu_{0}} \int_{V} |\mathbf{B}|^{2} \, dV = \varepsilon_{0} \int_{V} |\mathbf{E}|^{2} \, dV
 $$
-
 这说明电场能量和磁场能量的时间平均值相等。
-
 ### 5. 电磁波的定向传播
-
 作业：
-
 (a) 书4.12, 4.13
-
 4.12 论证矩形波导管内不存在 $TM_{m0}$ 或 $TM_{0n}$ 波。
-
 证明：
-
 对于矩形波导中的 $TM$ 波，有分量
 $$
 \begin{gathered}
@@ -95,9 +77,7 @@ E_{z} = A_{z} \sin k_{x} x \sin k_{y} y e^{i (k_{z} z - \omega t)}
 \end{gathered}
 $$
 由 $\nabla \cdot \vec{E} = 0$，得到$- k_{x} A_{x} - k_{y} A_{y} + i k_{z} A_{z} = 0$
-
 由 $B_{z} = 0$，得到  $k_{y} A_{x} = k_{x} A_{y}$ 
-
 对于$k_{x}$ 或 $k_{y}$ 中一个为 $0$ 的传播模式：不妨假设 $k_{x} = 0$
 则有
 $$
@@ -108,9 +88,7 @@ E_{z} = 0
 \end{gathered}
 $$
 由于  $k_{y} A_{x} = k_{x} A_{y}$ ，所以 $A_{x} = 0$，即电场的三个方向分量均为零，故矩形波导管内不存在 $TM_{m0}$ 或 $TM_{0n}$ 波。
-
 4.13 频率为 $30 \times 10^{9} \, \text{Hz}$ 的微波，在 $0.7 \, \text{cm} \times 0.4 \, \text{cm}$ 的矩形波导管中能以什么波模传播？在 $0.7 \, \text{cm} \times 0.6 \, \text{cm}$ 的矩形波导管中能以什么波模传播？
-
 带入截止频率公式
 $$
 f_{c}^{(m,n)} = \frac{c}{2 \pi} \sqrt{\frac{m \pi}{L_{1}}^{2} + \frac{n \pi}{L_{2}}^{2}}
@@ -123,7 +101,6 @@ f_{c}^{01} = 3.75 \times 10^{10} \text{Hz}
 \end{gathered}
 $$
 所以仅有$TE_{10}$ 模式
-
 在 $0.7 \, \text{cm} \times 0.6 \, \text{cm}$ 的矩形波导管中
 $$
 \begin{gathered}
@@ -133,29 +110,22 @@ f_{c}^{11} = 3.29 \times 10^{10} \text{Hz}
 \end{gathered}
 $$
 所以仅$TE_{10} ,\,  TE_{01}$ 模式可以传播
-
 (b) 试证，电磁波定向传输中的$TM$波 ($B_{z} = 0$) 满足，
-
 $$
 (\nabla_{xy}^{2} + \mu\epsilon\omega^{2} - k_{z}^{2}) E_{z} = 0
 $$
-
 边界条件：
 $$
 E_{z} \bigg|_{\text{边界}} = 0
 $$
-
 横向电场和磁场：
 $$
 \vec{E}_{t} = \frac{i k_{z}}{\mu\epsilon\omega^{2} - k_{z}^{2}} \nabla_{xy} E_{z}
 $$
-
 $$
 \vec{B}_{t} = \frac{-i \mu\epsilon\omega}{\mu\epsilon\omega^{2} - k_{z}^{2}} \nabla_{xy} \times \vec{E}_{z}
 $$
-
 并求表面(管壁)上的面电荷与面电流。
-
 证明：
 对于定向传输中的$TM$波 ，作如下拆分：
 $$
@@ -177,7 +147,6 @@ i \omega \vec{B}_{t} = \nabla_{xy} \times \vec{E}_{z} + i k_{z} (\hat{z} \times 
 \end{gathered}
 $$
 对于$TM$波，有 $B_{z} = 0$
-
 所以 $\nabla_{xy} \times \vec{E}_{t} = 0$
 $$
 i \omega \nabla_{xy} \times \vec{B}_{t} = \nabla_{xy} \times (\nabla_{xy} \times \vec{E}_{z}) + i k_{z} \nabla_{xy} \times (\hat{z} \times \vec{E}_{t}) = - \nabla_{xy}^{2} \vec{E}_{z} + i k_{z} \nabla_{xy} \cdot E_{t} \hat{z}
@@ -213,7 +182,6 @@ $$
 \vec{B}_{t} = \frac{-i \mu\epsilon\omega}{\mu\epsilon\omega^{2} - k_{z}^{2}} \nabla_{xy} \times \vec{E}_{z}
 $$
 表面(管壁)上的面电荷与面电流：
-
 面电荷
 $$
 \sigma_{f} = \hat{n} \cdot \vec{D} = \epsilon \hat{n} \cdot \vec{E}_{t} e^{i (k_{z} z - \omega t)}  = \epsilon \frac{i k_{z}}{\mu\epsilon\omega^{2} - k_{z}^{2}} \hat{n} \cdot \nabla_{xy} E_{z} e^{i (k_{z} z - \omega t)}

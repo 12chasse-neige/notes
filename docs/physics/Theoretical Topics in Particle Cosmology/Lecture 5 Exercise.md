@@ -1,12 +1,9 @@
 # Lecture 5 Exercise
-
 (1) For null momentum $p^{\mu} = (p^{0},p^{1},p^{2},p^{3})$, please find the expressions for $|p\rangle$, $|p]$, $\langle p|$, and $[p|$ when $p^{0} < 0$.
-
 Using $p_{\mu} (\sigma^{\mu})_{a\dot{a}}$  to construct the matrix
 $$
 p_{a \dot{a}} = \begin{pmatrix} -p^{0} + p^{3} & p^{1} - i p^{2} \\ p^{1} + i p^{2} & -p^{0} - p^{3} \end{pmatrix}
 $$
-
 We can decompose this matrix into the outer product of the left and right spinors. For the circumstances where $p^{0} < 0$, we can deduce that
 $$
 p^{0} + p^{3} = - \sqrt{(p^{1})^{2} + (p^{2})^{2} + (p^{3})^{2}} + p^{3}< 0
@@ -40,15 +37,12 @@ p^{0} + p^{3} \\
 p^{1} + i p^{2} 
 \end{pmatrix}
 $$
-
 $$
 \bra{p} =\frac{i}{\sqrt{- (p^{0} + p^{3})}} \begin{pmatrix}
 p^{0} + p^{3} & p^{1} - i p^{2}
 \end{pmatrix}
 $$
-
 (2) Please show, for a null momentum $k^{\mu} = (k,0,0,k)$, how does $|k\rangle$ transform under the 3 independent LGTs (See Lecture 2).
-
 For a null momentum, the ket $\ket{k}$ equals
 $$
 \ket{k} = \frac{1}{\sqrt{2k}} \begin{pmatrix}
@@ -60,11 +54,9 @@ $$
 \end{pmatrix}
 $$
 The 3 independent LGTs are
-
 1.  Rotation around $\hat{k}$: $R_{z} (\theta)$
 2.  $R \times L$-type transform: $R_{y}^{-1}(\theta) L_{x}\left(\operatorname{arcsinh}(\tan \theta)\right) L_{z}(\log (\cos \theta))$
 3.  $R \times L$-type transform: $R_{x}^{-1}(-\theta) L_{y}(\operatorname{arcsinh}(\tan \theta)) L_{z}(\log (\cos \theta))$
-
 First consider the rotation around $z$ axis, the transformation matrix $M$ is
 $$
 M = \begin{pmatrix}
@@ -93,7 +85,6 @@ e^{\frac{\eta}{2}} & 0 \\
 0 & 1
 \end{pmatrix}
 $$
-
 $$
 \begin{gathered}
 L_{x} (\mathrm{arcsinh} (\tan \theta)) = e^{\frac{\eta}{2} \hat{x} \cdot \vec{\sigma}} = \begin{pmatrix}
@@ -106,7 +97,6 @@ L_{x} (\mathrm{arcsinh} (\tan \theta)) = e^{\frac{\eta}{2} \hat{x} \cdot \vec{\s
 \end{pmatrix}
 \end{gathered}
 $$
-
 And the rotation matrix
 $$
 R_{y} (\theta) = e^{i \frac{\theta}{2} \hat{y} \cdot \vec{\sigma}} = \begin{pmatrix}
@@ -114,14 +104,12 @@ R_{y} (\theta) = e^{i \frac{\theta}{2} \hat{y} \cdot \vec{\sigma}} = \begin{pmat
 - \sin \frac{\theta}{2} & \cos \frac{\theta}{2}
 \end{pmatrix}
 $$
-
 $$
 R_{y}^{-1} (\theta) = \begin{pmatrix}
 \cos \frac{\theta}{2} & - \sin \frac{\theta}{2} \\
 \sin \frac{\theta}{2} & \cos \frac{\theta}{2}
 \end{pmatrix}
 $$
-
 So the total transformation matrix is
 $$
 M = \begin{pmatrix}
@@ -163,9 +151,7 @@ $$
 \end{pmatrix}
 $$
 (3) Compute the tree-level 3-point amplitude of 3 gluons $\mathcal{M}_{3}(1^+_{a},2^+_{b},3^-_{c})$ with Feynman rules from a Yang-Mills theory and compare your result with (35).
-
 <img src="./Lecture 5 Exercise.assets/image-20260505153630650.png" alt="image-20260505153630650" style="zoom:50%;" />
-
 First, we write the Lagrangian for the Yang-Mills Field
 $$
 \mathcal{L} = - \frac{1}{4} F^{a}_{\mu \nu} F^{a \mu \nu}
@@ -182,7 +168,6 @@ Doing fourier transform, we get the vertex
 $$
 V_{\mu \nu \rho}^{abc} (p_{1}, p_{2}, p_{3}) = i g f^{abc} \left[\eta_{\mu \nu} (p_{1 \rho} - p_{2 \rho}) + \eta_{\nu \rho} (p_{2 \mu} - p_{3 \mu}) + \eta_{\rho \mu} (p_{3 \nu} - p_{1 \nu})\right]
 $$
-
 Then we can plug in the spinor-helicity formalism of the polarization vectors
 $$
 \epsilon^{+}_{a \dot{a}} = \frac{| q \rangle [p|}{\langle pq \rangle} \quad \epsilon^{-}_{a \dot{a}} = \frac{|q] \langle p |}{[pq]}
@@ -205,20 +190,16 @@ g f^{abc} \frac{\langle q | \sigma^{\mu} | p_{1} ]}{\langle p_{1} q \rangle} \fr
 - \frac{1}{2} g f^{abc} \left( \frac{[12]^{2} \langle q3 \rangle}{[31] \langle 1q \rangle} - \frac{[12] \langle q3 \rangle^{2}}{\langle 2q \rangle \langle 1q \rangle} \right)
 \end{gathered}
 $$
-
 Using the momentum conservation
 $$
 |1 \rangle [1| + |2 \rangle [2| + |3 \rangle [3| = 0
 $$
-
 $$
 \langle q1 \rangle [12] + \langle q3 \rangle [32] = 0
 $$
-
 $$
 \langle q2 \rangle [21] + \langle q3 \rangle [31] = 0
 $$
-
 Substitute these results into the previous form, the first term becomes
 $$
 \frac{[12]^{2} \langle q3 \rangle}{[31] \langle 1q \rangle} = - \frac{[12]^{2}}{[31]} \cdot \frac{[12]}{[23]} = - \frac{[12]^{3}}{[31] [23]}
@@ -232,55 +213,41 @@ $$
 M_{3} (1_{a}^{+}, 2_{b}^{+}, 3_{c}^{-}) = g f^{abc} \frac{[12]^{3}}{[31][23]}
 $$
 which is consistent with the form we get in the lecture 5.
-
 (4) How does a photon talk to a graviton? Can a photon be weighty and can a graviton be charged? Please answer these questions by going through the following steps. 
-
 (a) Please find all 3-point massless amplitudes of 1 spin-1 and 2 spin-2 particles consistent with LGT properties. Please do the same for 2 spin-1 and 1 spin-2 particles. 
-
 For 1 spin-1 and 2 spin-2 particles, we have
 $$
 M_{3} (1_{a}^{+1}, 2_{b}^{+2}, 3_{c}^{+2}) = \lambda_{abc} [12] [23]^{3} [31]
 $$
-
 $$
 M_{3} (1^{+1}_{a}, 2^{+2}_{b}, 3^{-2}_{c}) = \kappa_{abc} \frac{[12]^{5}}{[23] [31]^{3}}
 $$
-
 $$
 M_{3} (1_{a}^{-1}, 2_{b}^{+2}, 3_{c}^{+2}) = \lambda_{abc} \frac{[23]^{5}}{[12][31]}
 $$
-
 $$
 M_{3} (1_{a}^{+1}, 2_{b}^{-2}, 3_{c}^{-2}) = \lambda_{abc} \frac{\langle 23 \rangle^{5}}{\langle 12\rangle \langle 31 \rangle}
 $$
-
 $$
 M_{3} (1^{-1}_{a}, 2^{-2}_{b}, 3^{+2}_{c}) = \kappa_{abc} \frac{\langle 12 \rangle^{5}}{\langle 23 \rangle \langle 31 \rangle^{3}}
 $$
-
 $$
 M_{3} (1_{a}^{-1}, 2_{b}^{-2}, 3_{c}^{-2}) = \lambda_{abc} \langle 12 \rangle \langle 23 \rangle^{3} \langle 31 \rangle
 $$
-
 For 2 spin-1 and 1 spin-2 particles, the amplitudes are
 $$
 M_{3} (1_{a}^{+1}, 2_{b}^{+1}, 3_{c}^{+2}) = \lambda_{abc} [23]^{2} [31]^{2}
 $$
-
 $$
 M_{3} (1_{a}^{+1}, 2_{b}^{-1}, 3_{c}^{+2}) = \kappa_{abc} \frac{[31]^{4}}{[12]^{2}}
 $$
-
 $$
 M_{3} (1_{a}^{-1}, 2_{b}^{+1}, 3_{c}^{-2}) = \kappa_{abc} \frac{\langle31\rangle^{4}}{\langle 12 \rangle^{2}}
 $$
-
 $$
 M_{3} (1_{a}^{-1}, 2_{b}^{-1}, 3_{c}^{-2}) = \lambda_{abc} \langle23\rangle^{2} \langle31\rangle^{2}
 $$
-
 (b) Apply various consistent conditions to identify consistent amplitudes among results from (a). How many different ways can a photon talk to a graviton? Which one is the one realized in general relativity?
-
 For the $\gamma h h$ type interaction, we can know from the dimensional analysis that the ++- type is the minimal coupling. For the two amplitudes
 $$
 M_{3} (1^{-1}_{a}, 2^{-2}_{b}, 3^{+2}_{c}) = \kappa_{abc} \frac{\langle 12 \rangle^{5}}{\langle 23 \rangle \langle 31 \rangle^{3}}
@@ -290,7 +257,6 @@ $$
 M_{3} (1_{a}^{-1}, 2_{b}^{+2}, 3_{c}^{+2}) = \lambda_{abc} \frac{[23]^{5}}{[12][31]}
 $$
 If we exchange the 2 and 3 graviton, the amplitude is antisymmetric, which means that the coupling coefficient is reversed, so the amplitude has to be zero.
-
 If the spin-2 particle is allowed to be charged, then the $\gamma h h$ amplitude is not automatically zero. However, Bose symmetry implies that the coupling tensor must be antisymmetric in the two spin-2 flavor indices
 $$
 \kappa_{abc}=-\kappa_{acb}
@@ -314,7 +280,6 @@ M_{3}(1_{\gamma}^{-1},2_{H}^{-2},3_{H}^{+2})
 \frac{\langle12\rangle^{5}}{\langle23\rangle\langle31\rangle^{3}}
 $$
 These describe electromagnetic minimal coupling of a charged spin-2 field, not the ordinary graviton of general relativity.
-
 For the $\gamma \gamma h$ type interaction, we can know from dimensional analysis that the minimal coupling is the +-+ type, but the spin statistics do not forbid the non-minimal type from existing. So that both the interactions
 $$
 M_{3} (1_{a}^{+1}, 2_{b}^{+1}, 3_{c}^{+2}) = \lambda_{abc} [23]^{2} [31]^{2}
@@ -328,6 +293,4 @@ $$
 h_{\mu \nu} T^{\mu \nu}
 $$
 in the Lagrangian.
-
 (5) [This is a non-exercise; Do it only if you really want to!] Please start from the Einstein-Hilbert action $\int d^{4} x \sqrt{-g} R$ and derive the Feynman rule for the graviton cubic self-interaction. Then use it to compute the 3-point graviton amplitude at the tree level and compare your result with (37).
-

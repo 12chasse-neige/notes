@@ -1,8 +1,6 @@
 # 高等微积分（2） 第10次作业  
 Chasse_neige
-
 ### 1  
-
 定义曲面 $S$ 为 
 $$
 S = \{(x, y, z) \mid x^{2} + y^{2} \leq 1, x + y + z = 1\}
@@ -31,9 +29,7 @@ $$
 \int_{0}^{2 \pi} (- (1 - \cos \theta - \sin \theta)^{2} \sin \theta + \cos^{3} \theta + \sin^{3} \theta - \cos \theta \sin^{2} \theta) d \theta = 2 \pi
 \end{gathered}
 $$
-
 ### 2  
-
 设 $C \subset \mathbb{R}^{2}$ 是光滑的闭曲线，取逆时针方向（定向）。假设 $(0, 0) \notin C$，计算第二型曲线积分  
 $$
 \oint_{C} \frac{-(x^{2} y + y^{3}) \, dx + (x^{3} + x y^{2}) \, dy}{(x^{2} + y^{2})^{2}}
@@ -46,7 +42,6 @@ y = y (t)
 \end{gathered}
 $$
 其中 $t \in [0,1]$ 是一个参数化
-
 注意到
 $$
 \left(\arctan (\frac{y}{x}) \right)' = \frac{- yx' + xy'}{x^{2} + y^{2}} = \frac{-(x^{2} y + y^{3}) x' + (x^{3} + x y^{2}) y'}{(x^{2} + y^{2})^{2}}
@@ -62,7 +57,6 @@ $$
 \end{gathered}
 $$
 第3 题需要用到如下事实：设 $f$ 在矩形区域 $[a, b] \times [c, d]$ 上连续，且有连续的偏导函数 $\frac{\partial f}{\partial x}$。对每个 $x \in [a, b]$，定义函数 $g(x) = \int_{c}^{d} f(x, y) \, dy$，则有 $g'(x) = \int_{c}^{d} \frac{\partial f(x,y)}{\partial x} \, dy$。  
-
 ### 3  
 给定$(x_{0}, y_{0}) \in \mathbb{R}^{2}$。对于正数 $r$，令 $C(r) = \{(x, y) \mid (x - x_{0})^{2} + (y - y_{0})^{2} = r^{2}\}$。设$f$ 在区域 $D(R) = \{(x, y) \mid (x - x_{0})^{2} + (y - y_{0})^{2} \leq R^{2}\}$ 上是光滑函数，定义函数$g(r)$ 为如下的第一型曲线积分  
 $$
@@ -74,21 +68,17 @@ $$
 g'(r) = \frac{1}{2\pi r} \int_{C(r)} -f_{y}(x,y) \, dx + f_{x}(x,y) \, dy
 $$
 其中 $C(r)$ 取逆时针定向。
-
 证明
-
 第一型曲线积分
 $$
 g(r) = \frac{1}{2\pi r} \int_{C(r)} f(x, y) \, ds = \frac{1}{2 \pi r} \int_{C (r)} f (x_{0} + r \cos \theta, y_{0} + r \sin \theta) r d \theta
 $$
-
 $$
 \begin{gathered}
 g' (r) = \frac{1}{2 \pi} \int_{C (r)} \frac{\partial f}{\partial r} d \theta = \frac{1}{2 \pi} \int_{C (r)} f_{x} \cos \theta + f_{y} \sin \theta d \theta \\ = 
 \frac{1}{2 \pi r} \int_{C (r)} f_{x} d (y_{0} + r \sin \theta) - f_{y} d (x_{0} + r \cos \theta) = \frac{1}{2\pi r} \int_{C(r)} -f_{y}(x,y) \, dx + f_{x}(x,y) \, dy
 \end{gathered}
 $$
-
 (2) 设 $x_{0}^{2} + y_{0}^{2} > R^{2}$。计算 $\frac{1}{2\pi R} \int_{C(R)} \ln(x^{2} + y^{2}) \, ds$。  
 $$
 g (r) = \frac{1}{2\pi r} \int_{C(r)} \ln(x^{2} + y^{2}) \, ds
@@ -101,9 +91,7 @@ $$
 $$
 g (R) = \lim_{r \to 0} \frac{1}{2\pi r} \int_{C(r)} \ln(x^{2} + y^{2}) \, ds = \ln (x_{0}^{2} + y_{0}^{2})
 $$
-
 ### 4  
-
 设 $S = \{(x, y, z) \in \mathbb{R}^{3} \mid x^{2} + y^{2} + z^{2} = 1\}$ 是单位球面，取指向外面的定向。对给定的非负整数 $k$，计算第二型曲面积分  
 $$
 \iint_{S} z^{k} (x \, dy \, dz + y \, dz \, dx + z \, dx \, dy) \quad \text{或等价的} \quad \iint_{S} z^{k} (x \, dy \wedge dz + y \, dz \wedge dx + z \, dx \wedge dy)
@@ -125,15 +113,11 @@ $$
 \iint_{S} \cos^{k} \theta \sin \theta d \theta d \phi = 2 \pi \int_{0}^{1} x^{k} dx = \frac{2 \pi}{k + 1}
 \end{gathered}
 $$
-
 所以整个球面积分为
 $$
 \iint_{S} z^{k} (x \, dy \, dz + y \, dz \, dx + z \, dx \, dy) = \begin{cases}  0 \qquad (\text{n为偶数}) \\ \frac{4 \pi}{k + 1} \qquad (\text{n为奇数}) \end{cases}
 $$
-
-
 ### 5  
-
 设 $S$ 为曲面  
 $$
 (x-1)^{2} + y^{2} + z^{2} = 2,
@@ -145,26 +129,21 @@ $$
 $$
 \iint_{S} \frac{x \, dy \, dz + y \, dz \, dx + z \, dx \, dy}{(x^{2} + y^{2} + z^{2})^{3/2}} = \iint_{S} \frac{\vec{r}}{r^{3}} \cdot d \vec{S}
 $$
-
 利用 Gauss 定理
 $$
 \iint_{S‘} \frac{\vec{r}}{r^{3}} \cdot d \vec{S} = \iiint_{V’} \nabla \cdot \frac{\vec{r}}{r^{3}} d v = 0 \qquad (0 \notin S')
 $$
 取 $S' = \{ (x - 1)^{2} + y^{2}+ z^{2} = 2, x^{2} + y^{2} + z^{2} = 0.1 \}$
-
 所以
 $$
 \iint_{S} \frac{x \, dy \, dz + y \, dz \, dx + z \, dx \, dy}{(x^{2} + y^{2} + z^{2})^{3/2}} = \iint_{x^{2} + y^{2} + z^{2} = 0.1} \frac{x \, dy \, dz + y \, dz \, dx + z \, dx \, dy}{(x^{2} + y^{2} + z^{2})^{3/2}} = 4 \pi
 $$
-
 ### 6  
-
 设 $S \subseteq \mathbb{R}^{3}$ 是 $C^{1}$ 光滑的闭曲面，取指向外面的定向（或用课本上的术语，$S$ 是它所围成区域的外侧面），$(0, 0, 0) \notin S$。计算第二型曲面积分  
 $$
 \iint_{S} \frac{x \, dy \, dz + y \, dz \, dx + z \, dx \, dy}{(a^{2} x^{2} + b^{2} y^{2} + c^{2} z^{2})^{3/2}}
 $$
 其中 $a, b, c$ 是给定的正数。  
-
 同样使用 Gauss 定理
 $$
 \begin{gathered}
@@ -175,14 +154,12 @@ $$
 $$
 \iint_{S} \frac{x \, dy \, dz + y \, dz \, dx + z \, dx \, dy}{(a^{2} x^{2} + b^{2} y^{2} + c^{2} z^{2})^{3/2}} = \iiint_{V} \nabla \cdot \frac{(x, y, z)}{(a^{2} x^{2} + b^{2}y^{2} + c^{2} z^{2})^{\frac}{3}{2}}d v = 0
 $$
-
 ### 7  
 设 $S \subseteq \mathbb{R}^{3}$ 是封闭的光滑曲面，$V$ 是由 $S$ 围成的三维有界闭区域（称之为 $S$ 的内部）。设 $f(x, y, z), P(x, y, z), Q(x, y, z), R(x, y, z)$ 都是 $V$ 上的 $C^{1}$ 光滑函数，且 $P, Q, R$ 在 $S$ 上恒等于 0。证明：  
 $$
 \iiint_{V} \left( \frac{\partial P}{\partial x} + \frac{\partial Q}{\partial y} + \frac{\partial R}{\partial z} \right) e^{f(x, y, z)} \, dx \, dy \, dz = -\iiint_{V} \left( P \frac{\partial f}{\partial x} + Q \frac{\partial f}{\partial y} + R \frac{\partial f}{\partial z} \right) e^{f(x, y, z)} \, dx \, dy \, dz
 $$
 证明
-
 因为$P, Q, R$ 在 $S$ 上恒等于 0，所以积分
 $$
 \iint_{S} P e^{f (x, y, z)} dy dz + Q e^{f (x, y, z)} dz dx + R e^{f (x, y, z)} dx dy = 0
@@ -199,10 +176,7 @@ $$
 $$
 \iiint_{V} \left( \frac{\partial P}{\partial x} + \frac{\partial Q}{\partial y} + \frac{\partial R}{\partial z} \right) e^{f(x, y, z)} \, dx \, dy \, dz = -\iiint_{V} \left( P \frac{\partial f}{\partial x} + Q \frac{\partial f}{\partial y} + R \frac{\partial f}{\partial z} \right) e^{f(x, y, z)} \, dx \, dy \, dz
 $$
-
-
 ### 8  
-
 对于函数 $f : \mathbb{R}^{3} \to \mathbb{R}$，如果极限  
 $$
 \lim_{M \to \infty} \iiint_{x^{2} + y^{2} + z^{2} \leq M^{2}} f(x, y, z) \, dx \, dy \, dz
@@ -217,7 +191,6 @@ $$
 \iint_{\partial B} P(x,y,z) e^{Q(x,y,z)} \, dy \wedge dz = \iiint_{B} \left( \frac{\partial P}{\partial x} + P \frac{\partial Q}{\partial x} \right) e^{Q(x,y,z)} \, dV
 $$
 其中 $B = \{(x,y,z) \mid x^{2} + y^{2} + z^{2} \leq M^{2}\}$, $\partial B$ 是 $B$ 的边界，取指向外面的定向。
-
 利用推导 Gauss 定理时 local model 的结果
 $$
 \begin{gathered}
@@ -225,13 +198,11 @@ $$
 \iiint_{B} \left( \frac{\partial P}{\partial x} + P \frac{\partial Q}{\partial x} \right) e^{Q(x,y,z)} \, dV
 \end{gathered}
 $$
-
  (2) 证明：对于三元多项式 $P(x,y,z)$，有  
 $$
 \iiint_{\mathbb{R}^{3}} \frac{\partial P}{\partial x} e^{-x^{2} - y^{2} - z^{2}} \, dx \, dy \, dz = 2 \iiint_{\mathbb{R}^{3}} x P(x,y,z) e^{-x^{2} - y^{2} - z^{2}} \, dx \, dy \, dz
 $$
 证明
-
 取 $f (x, y, z) = - (x^{2} + y^{2} + z^{2})$，上一小问结果化为
 $$
 \iint_{\partial B} P(x,y,z) e^{- (x^{2} + y^{2} + z^{2})} \, dy \wedge dz = \iiint_{B} \frac{\partial P}{\partial x} e^{-x^{2} - y^{2} - z^{2}} \, dx \, dy \, dz - 2 \iiint_{B} x P(x,y,z) e^{-x^{2} - y^{2} - z^{2}} \, dx \, dy \, dz

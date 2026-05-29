@@ -1,15 +1,13 @@
 # Lecture 2 Exercise
-
 (1) Please finish the integral
 $$
 \int \frac{d^{3}\vec{k}}{(2\pi)^{3}} \frac{e^{+i \vec{k} \cdot \vec{x}}}{\vec{k}^{2} + m^{2}} \tag{35}
 $$
-
 The integral equals
 $$
 \int \frac{d^{3}\vec{k}}{(2\pi)^{3}} \frac{e^{+i \vec{k} \cdot \vec{x}}}{\vec{k}^{2} + m^{2}} = \frac{1}{(2 \pi)^{2}} \int \frac{k^{2} \dd{k}}{k^{2} + m^{2}} \int \sin \theta \dd{\theta} e^{i k x \cos \theta} = \frac{1}{(2 \pi)^{2} x} \int_{0}^{\infty} \frac{2u \sin u \dd{u}}{u^{2} + m^{2} x^{2}}
 $$
-We’ll use the residue theorem to treat wirth the radial part
+We’ll use the residue theorem to treat with the radial part
 $$
 \begin{gathered}
 \frac{1}{(2 \pi)^{2}x} \int_{0}^{\infty} \frac{2u \sin u \dd{u}}{u^{2} + m^{2} x^{2}} = \frac{1}{(2 \pi)^{2} x} \int_{- \infty}^{\infty} \frac{1}{2 i} \frac{2u e^{iu} \dd{u}}{u^{2} + m^{2} x^{2}} \\
@@ -17,7 +15,6 @@ $$
 \end{gathered}
 $$
 (2) Starting from the action of the photon field (without source), please derive its gauge invariant energy-momentum tensor $T_{\mu\nu}$ and show that it is traceless.
-
 The Lagrangian of the photon field is
 $$
 \mathcal{L} = -\frac{1}{4} F_{\mu\nu} F^{\mu\nu}
@@ -46,16 +43,13 @@ $$
 \eta_{\mu \nu} T^{\mu \nu} = \eta_{\mu \nu} F^{\mu \alpha} F^{\nu} {}_{\alpha} - \frac{1}{4} \eta^{\mu \nu} \eta_{\mu \nu} F^{\rho \sigma} F_{\rho \sigma} = F^{\mu \alpha} F_{\mu \alpha} - F^{\rho \sigma} F_{\rho \sigma} = 0
 $$
 is traceless.
-
 (3) Please derive (26).
-
 >But a direct calculation gives
 >
 >$$
 >R_{y}^{-1}(\theta) L_{x}(\eta_{2}) L_{z}(\eta_{1}) e^{\mu}_{\pm}(k) = e^{\mu}_{\pm}(k) + \frac{\tan \theta}{\sqrt{2} k^{0}} k^{\mu} \tag{26}
 >$$
 >
-
 Write the matrix for the transformation directly
 $$
 R_{y}^{-1}(\theta) L_{x}(\eta_{2}) L_{z}(\eta_{1}) = 
@@ -77,7 +71,6 @@ R_{y}^{-1}(\theta) L_{x}(\eta_{2}) L_{z}(\eta_{1}) =
 \end{pmatrix}
 $$
 The calculation gives out that this product equals
-
 $$
 \begin{pmatrix}
 \cosh \eta_{2} \cosh \eta_{1} & \sinh \eta_{2} & 0 & \cosh \eta_{2} \sinh \eta_{1} \\
@@ -86,7 +79,6 @@ $$
 \sin \theta \sinh \eta_{2} \cosh \eta_{1} + \cos \theta \sinh \eta_{1} & \sin \theta \cosh \eta_{2} & 0 & \sin \theta \sinh \eta_{2} \sinh \eta_{1} + \cos \theta \cosh \eta_{1}
 \end{pmatrix}
 $$
-
 And the relation between $\eta_{1}$, $\eta_{2}$ and $\theta$ satisfies
 $$
 \cos \theta = \cosh \eta_{1} - \sinh \eta_{1}
@@ -127,13 +119,10 @@ I e^{\mu}_{\pm}(k) + \begin{pmatrix}
 \frac{\sin^{2} \theta (1 + 2 \cos^{2} \theta)}{2 \cos^{2} \theta} & \tan \theta & 0 & \frac{2 \cos^{4} \theta - 3 \cos^{2} \theta + 1}{2 \cos^{2} \theta}
 \end{pmatrix} e^{\mu}_{\pm}(k) = e^{\mu}_{\pm}(k) + \frac{1}{\sqrt{2}} \begin{pmatrix} \tan \theta \\ 0 \\ 0 \\ \tan \theta \end{pmatrix}
 $$
-
 $$
 e^{\mu}_{\pm}(k) + \frac{1}{\sqrt{2}} \begin{pmatrix} \tan \theta \\ 0 \\ 0 \\ \tan \theta \end{pmatrix} = e^{\mu}_{\pm}(k) + \frac{\tan \theta}{\sqrt{2} k^{0}} k^{\mu}
 $$
-
 (4) Please prove (29).
-
 >What are they? $R_{z}(\theta)$ is clearly an SO(2) generator; For 2 $R \times L$-type transform, taking $\theta \rightarrow 0$ we get generators:
 >
 >$$
@@ -149,7 +138,6 @@ $$
 >$$
 >
 >The little group is ISO(2).
-
 $$
 \begin{gathered}
 \comm{J_{z}}{T_{x}} = 
@@ -192,7 +180,6 @@ i & 0 & 0 & -i \\
 \end{pmatrix} = i T_{y}
 \end{gathered}
 $$
-
 $$
 \begin{gathered}
 \comm{J_{z}}{T_{y}} = \begin{pmatrix} 0 & 0 & 0 & 0 \\ 0 & 0 & i & 0 \\ 0 & -i & 0 & 0 \\ 0 & 0 & 0 & 0 \end{pmatrix} \begin{pmatrix} 0 & 0 & i & 0 \\ 0 & 0 & 0 & 0 \\ i & 0 & 0 & -i \\ 0 & 0 & i & 0 \end{pmatrix} - \begin{pmatrix} 0 & 0 & i & 0 \\ 0 & 0 & 0 & 0 \\ i & 0 & 0 & -i \\ 0 & 0 & i & 0 \end{pmatrix} \begin{pmatrix} 0 & 0 & 0 & 0 \\ 0 & 0 & i & 0 \\ 0 & -i & 0 & 0 \\ 0 & 0 & 0 & 0 \end{pmatrix} \\ = 
@@ -215,7 +202,6 @@ $$
 \end{pmatrix} = -i T_{x}
 \end{gathered}
 $$
-
 $$
 \begin{gathered}
 \comm{T_{x}}{T_{y}} = \begin{pmatrix} 0 & i & 0 & 0 \\ i & 0 & 0 & -i \\ 0 & 0 & 0 & 0 \\ 0 & i & 0 & 0 \end{pmatrix} \begin{pmatrix} 0 & 0 & i & 0 \\ 0 & 0 & 0 & 0 \\ i & 0 & 0 & -i \\ 0 & 0 & i & 0 \end{pmatrix} - \begin{pmatrix} 0 & 0 & i & 0 \\ 0 & 0 & 0 & 0 \\ i & 0 & 0 & -i \\ 0 & 0 & i & 0 \end{pmatrix} \begin{pmatrix} 0 & i & 0 & 0 \\ i & 0 & 0 & -i \\ 0 & 0 & 0 & 0 \\ 0 & i & 0 & 0 \end{pmatrix} \\ =
@@ -232,16 +218,13 @@ $$
 \end{pmatrix} = 0
 \end{gathered}
 $$
-
 (5) Please derive (33).
-
 >The polarization tensor $e^{\mu\nu}_{\pm}$ is symmetric, traceless, and transverse.  Once again, $e^{\mu\nu}_{\pm}$ is not a Lorentz tensor.  Under the two “Abelian” LGTs:
 >
 >$$
 >e^{\mu\nu}_{\pm}(k) \rightarrow e^{\mu\nu}_{\pm}(k) + \frac{\tan \theta}{\sqrt{2} k^{0}} \left[ e^{\mu}_{\pm}(k) + \frac{\tan \theta}{2\sqrt{2} k^{0}} k^{\mu} \right] k^{\nu} + (\mu \leftrightarrow \nu) \tag{33}
 >$$
 >
-
 We’ve already known that $e^{\mu\nu}_{\pm}(k) = e^{\mu}_{\pm} (k) e^{\nu}_{\pm} (k)$, so transformation rule for this tensor is
 $$
 \begin{gathered}

@@ -2,7 +2,6 @@
 comments: false
 ---
 # Quantum Optics
-
 ## Syllabus
 1. Vacuum  
 2. Photon sources (States)  Fire (thermal state) Laser (coherent state)  Parametric amplifier (squeezed State) single photon source  

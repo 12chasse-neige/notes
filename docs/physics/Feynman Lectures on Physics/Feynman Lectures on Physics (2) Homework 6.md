@@ -1,57 +1,42 @@
 # 费曼物理学（2） 第6次作业
-
 Chasse_neige
-
 ### 1 运动电荷的场 (25-5)
-
 直接计算匀速运动电荷产生的电磁场，并将其与静止电荷电磁场洛伦兹变换后的结果做比较。
-
 假设电荷以速度$v$ 朝$x$ 轴正方向运动，假设 $t = 0$ 时电荷正好在原点，计算 $t = 0$ 时刻空间的电场分布
-
 考虑李纳-维谢尔势（用$\vec{r}' = \vec{r} + \vec{v} t$ 表示推迟后的相对位矢）
 $$
 |\vec{r} + \vec{v} t| = ct
 $$
-
 $$
 t = \frac{|\vec{r'} - \vec{r}|}{v} = \frac{r'}{c}
 $$
-
 $$
 r'^{2} + r^{2} - 2 \vec{r'} \cdot \vec{r} = \beta^{2} r'^{2}
 $$
-
 $$
 \frac{\vec{r'} - \vec{r}}{|\vec{r'} - \vec{r}|} \cdot \vec{r} = \vec{r} \cdot \hat{x}
 $$
-
 $$
 \vec{r'} \cdot \vec{r} - r^{2} = \beta r' \vec{r} \cdot \hat{x}
 $$
-
 $$
 r^{2} + (1 - \beta^{2}) r'^{2} - 2 \beta r' \vec{r} \cdot \hat{x} - 2 r^{2} = 0
 $$
-
 $$
 (1 - \beta^{2}) r'^{2} - 2 \beta (\vec{r} \cdot \hat{x}) r' - r^{2} = 0
 $$
-
 $$
 r' = \frac{\beta (\vec{r} \cdot \hat{x}) + \sqrt{\beta^{2} (\vec{r} \cdot \hat{x})^{2} + (1 - \beta^{2}) r^{2}}}{1 - \beta^{2}}
 $$
-
 $$
 r' -  \frac{\vec{v} \cdot \vec{r'}}{c} = ct (1 - \beta^{2}) - \frac{\vec{r} \cdot \vec{v}}{c} = r' (1 - \beta^{2}) - \frac{\vec{r} \cdot \vec{v}}{c} = \sqrt{\beta^{2} (\vec{r} \cdot \hat{x})^{2} + (1 - \beta^{2}) r^{2}}
 $$
-
 $$
 \begin{gathered}
 \phi = \frac{q}{4 \pi \epsilon_{0} (r' - \frac{\vec{v} \cdot \vec{r'}}{c})} \\
 \vec{A} = \phi \vec{v} = \frac{q \vec{v}}{4 \pi \epsilon_{0} c^{2} (r' - \frac{\vec{v} \cdot \vec{r'}}{c})}
 \end{gathered}
 $$
-
 所以
 $$
 \begin{gathered}
@@ -61,7 +46,6 @@ $$
 \end{gathered}
 $$
 对比洛伦兹变换结果
-
 在粒子随动系中
 $$
 \vec{E'} = \frac{q}{4 \pi \epsilon_{0} r'^{3}} \vec{r'}
@@ -83,19 +67,15 @@ $$
 \end{gathered}
 $$
 可以看出，两种计算方式的结果是相同的
-
 ### 2 麦克斯韦方程组的洛伦兹协变性 (26-3)
 请证明麦克斯韦方程组在洛伦兹变换下保持协变，即麦克斯韦方程组形式在洛伦兹变换下保持不变。
-
 麦克斯韦方程组在张量形式下可以表示为：
-
 $$
 \begin{aligned}
 \partial_{\mu} F^{\mu\nu} &= \frac{4\pi}{c} j^{\nu} \\
 \partial_{\mu} {}^{\star}\!F^{\mu\nu} &= 0
 \end{aligned}
 $$
-
 电磁场张量 $F^{\mu\nu}$ 定义为：
 $$
 F^{\mu\nu} = \begin{pmatrix}
@@ -105,7 +85,6 @@ E_{y} & B_{z} & 0 & -B_{x} \\
 E_{z} & -B_{y} & B_{x} & 0
 \end{pmatrix}.
 $$
-
 对偶电磁场张量 ${}^{\star}\!F^{\mu\nu}$ 定义为：
 $$
 {}^{\star}\!F^{\mu\nu} = \begin{pmatrix}
@@ -115,71 +94,54 @@ $$
 -B_{z} & E_{y} & -E_{x} & 0
 \end{pmatrix}.
 $$
-
 四维流密度 $j^{\nu}$ 定义为：
 $$
 j^{\nu} = \left( c \rho, \vec{J} \right)
 $$
-
 洛伦兹变换可以表示为：
 $$
 x'^{\mu} = \Lambda^{\mu}{}_{\nu} x^{\nu}
 $$
-
 其中 $\Lambda^{\mu}{}_{\nu}$ 是洛伦兹变换矩阵，满足：
 $$
 \Lambda^{\mu}{}_{\alpha} \Lambda^{\nu}{}_{\beta} \eta_{\mu\nu} = \eta_{\alpha\beta},
 $$
-
 其中 $\eta_{\mu\nu} = \text{diag}(-1, 1, 1, 1)$ 
-
 $$
 F'^{\mu\nu} = \Lambda^{\mu}{}_{\alpha} \Lambda^{\nu}{}_{\beta} F^{\alpha\beta},
 $$
-
 $$
 j'^{\nu} = \Lambda^{\nu}{}_{\beta} j^{\beta}
 $$
-
 $$
 \partial'_{\mu} = \frac{\partial}{\partial x'^{\mu}} = \frac{\partial x^{\alpha}}{\partial x'^{\mu}} \frac{\partial}{\partial x^{\alpha}} = \Lambda^{\alpha}{}_{\mu} \partial_{\alpha}
 $$
-
 $$
 F'^{\mu\nu} = \Lambda^{\mu}{}_{\alpha} \Lambda^{\nu}{}_{\beta} F^{\alpha\beta}
 $$
-
 $$
 j'^{\nu} = \Lambda^{\nu}{}_{\beta} j^{\beta}
 $$
-
 $$
 \partial'_{\mu} F'^{\mu\nu} = \Lambda^{\delta}{}_{\mu} \partial_{\delta} \left( \Lambda^{\mu}{}_{\alpha} \Lambda^{\nu}{}_{\beta} F^{\alpha\beta} \right)
 $$
-
 $$
 \begin{gathered}
 \partial'_{\mu} F'^{\mu\nu} = \delta^{\delta}{}_{\alpha} \Lambda^{\nu}{}_{\beta} \partial_{\delta} F^{\alpha\beta} \\ = 
 \Lambda^{\nu}{}_{\beta} \partial_{\alpha} F^{\alpha\beta} = \frac{4 \pi}{c} \Lambda^{\nu}{}_{\beta} j^{\beta} = \frac{4 \pi}{c} j'^{\nu}
 \end{gathered}
 $$
-
 同理，对于对偶电磁场张量：
 $$
 \partial'_{\mu} {}^{\star}\!F'^{\mu\nu} = 0
 $$
-
 所以麦克斯韦方程组是洛伦兹协变的。
-
 ### 3 对称性与电磁动量 (27-6)
-
 在课堂上，大家表示电磁场能量-动量张量的推导比较繁琐，并且看不出太明显的物理意义。在本题当中，我们尝试从时空平移不变性出发，利用诺特定理推导能量-动量张量的表达式。从而将能量-动量张量与对称性联系起来。
-
 (1). 考虑一个无穷小的变换: $x^{\mu} \rightarrow x^{\mu} + \epsilon^{\mu}(x)$。在此无穷小变换下，电磁势按照如下变换: $A^{\mu} \rightarrow A^{\mu} + \epsilon^{\nu}(x)\partial_{\nu} A^{\mu}$。对于一般的理论而言，其作用量只明显包含电磁势 $A^{\mu}$ 及其导数 $\partial_{\nu} A^{\mu}$。请证明在上述变换下，作用量的变化满足:
 $$
 \delta S = \int d^{4x} \left( \frac{\partial \mathcal{L}}{\partial A^{\mu}} \epsilon^{\nu}(x) \partial_{\nu} A^{\mu} + \frac{\partial \mathcal{L}}{\partial (\partial_{\sigma} A^{\mu})} \partial_{\sigma} [\epsilon^{\nu}(x) \partial_{\nu} A^{\mu}] \right)
 $$
-
 证明
 $$
 \begin{gathered}
@@ -198,7 +160,6 @@ $$
 $$
 \delta S = \int d^{4x} T^{\mu\nu} \partial_{\mu} \epsilon_{\nu}(x), \quad T^{\mu\nu} = \frac{\partial \mathcal{L}}{\partial (\partial_{\mu} A_{\sigma})} \partial^{\nu} A_{\sigma} - \eta^{\mu\nu} \mathcal{L}
 $$
-
 证明
 $$
 \begin{gathered}
@@ -219,11 +180,9 @@ $$
 $$
 T^{\mu\nu} = - F^{\mu\sigma} \partial_{\nu} A^{\sigma} - \eta^{\mu\nu} \mathcal{L}
 $$
-
 $$
 \mathcal{L} = -\frac{1}{4} (\partial_{\mu} A_{\sigma} - \partial_{\sigma} A_{\mu}) (\partial^{\mu} A^{\sigma} - \partial^{\sigma} A^{\mu}) = - \frac{1}{2} \partial_{\mu} A_{\sigma} \partial^{\mu} A^{\sigma} + \frac{1}{2} \partial_{\mu} A_{\sigma} \partial^{\sigma} A^{\mu}
 $$
-
 $$
 \begin{gathered}
 T^{\mu\nu} = \frac{\partial \mathcal{L}}{\partial (\partial_{\mu} A_{\sigma})} \partial^{\nu} A_{\sigma} - \eta^{\mu\nu} \mathcal{L} \\ =
@@ -231,7 +190,6 @@ T^{\mu\nu} = \frac{\partial \mathcal{L}}{\partial (\partial_{\mu} A_{\sigma})} \
 - F^{\mu\sigma} \partial_{\nu} A^{\sigma} - \eta^{\mu\nu} \mathcal{L}
 \end{gathered}
 $$
-
 (4) 对于一般的电磁理论而言，我们可以采用希尔伯特的定义方式，让其能量-动量张量是对称张量。具体而言，对于电磁理论而言，其能量-动量张量对称化之后可以写为:
 $$
 T^{\mu\nu} = \eta^{\sigma\lambda} F^{\mu\sigma} F^{\lambda\nu} - \eta^{\mu\nu} \mathcal{L}
@@ -240,7 +198,6 @@ $$
 $$
 \partial_{\mu} T^{\mu 0} = 0, \quad \Rightarrow \quad \frac{1}{2} \frac{\partial}{\partial t} \left( \vec{E} \cdot \vec{E} + \vec{B} \cdot \vec{B} \right) + \nabla \cdot ( \vec{E} \times \vec{B} ) = 0
 $$
-
 证明
 $$
 \begin{gathered}
@@ -250,13 +207,9 @@ $$
 \frac{1}{2} \frac{\partial}{\partial t} (\vec{E} \cdot \vec{E} + \vec{B} \cdot \vec{B}) + \nabla \cdot (\vec{E} \times \vec{B}) = 0
 \end{gathered}
 $$
-
 ### 4 菲涅尔定律及其应用 (33-1)
-
 菲涅尔棱镜是一种将线性偏振光转换为圆偏振光的光学器件。如图所示，光线垂直线入射到棱镜的表面，然后在棱镜内部经历两次全内反射，最后再垂直射出棱镜。光线在棱镜内每次反射都会使平行于入射平面的光波分量与垂直于入射平面的光波分量之间产生 45° 的相位差。因此，经过两次内反射后，原本与入射平面成 45° 线偏振的光波会变成圆偏振光。
-
 <img src="./Feynman Lectures on Physics (2) Homework 6.assets/image-20260128015539066.png" alt="image-20260128015539066" style="zoom:50%;" />
-
 (1). 对于偏振方向平行入射平面的电磁波而言，请计算单次内部反射后，反射波与入射波的相位差。
 $$
 \delta_{p} = 2 \arctan \frac{n}{\cos \theta_{i}} \sqrt{(n \sin \theta_{i})^{2}  - 1}

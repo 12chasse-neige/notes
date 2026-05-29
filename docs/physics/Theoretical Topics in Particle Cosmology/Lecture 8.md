@@ -1,20 +1,13 @@
 # Lecture 8
-
 Chasse_neige
-
 ## Leading Order Effects
-
 1.  Coulomb’s Law and Newton’s Law
 2.  Special Relativistic Correction
 3.  Light Bending
 4.  Shapiro Delay
-
 Using non-relativistic limit and classic limit, we can simplify the problem by inducing particle number conservation.
-
 ## NR limit
-
 Charged scalar particles $\phi_{1,2}$ with $Q_{1,2} > 0$, let $m_{1} \leq m_{2}$. Consider a 2 to 2 scattering with $\ket{\{\phi_{1} (\vec{p}_{1}), \phi_{2} (\vec{p}_{2})\}_{+}}$
-
 The out state can be written as
 $$
 \ket{\{\phi_{1} \phi_{2} (\bar{\phi}_{1} \phi_{1})^{M} (\bar{\phi}_{2} \phi_{2})^{N} \gamma^{L}\}_{-}}
@@ -27,22 +20,17 @@ where
 $$
 H = \int \frac{\dd[3]{p}}{(2 \pi)^{3}} \left[\sqrt{\vec{p}^{2} + m_{1}^{2}} a_{1}^{\dagger} (\vec{p}) a_{1} (\vec{P}) + 1 \leftrightarrow 2\right] + \cdots
 $$
-
 ### Fiels Theoretic Perspective
-
 $$
 \mathcal{L} = - \partial_{\mu} \phi^{*} \partial^{\mu} \phi - m^{2} \phi^{*} \phi
 $$
-
 While $E \to 0$, we can  claim that the 1 ps sectors domains. We want to analyse the non-relativistic QFT in the band of the 1 ps states, so we shift the energy zero point to a  static 1 ps.
 $$
 \phi (t, \vec{x}) = \frac{1}{\sqrt{2m}} \Psi (t, \vec{x}) e^{- i mt}
 $$
-
 $$
 \mathcal{L} = i \Psi^{\dagger} \dot{\Psi} + \frac{1}{2m} \Psi^{\dagger} \nabla^{2} \Psi + \frac{1}{2m} \dot{\Psi}^{\dagger} \dot{\Psi}
 $$
-
 Using the limit $E \to 0$, the Lagrangian approaches
 $$
 \mathcal{L} = i \Psi^{\dagger} \dot{\Psi} + \frac{1}{2m} \Psi^{\dagger} \nabla^{2} \Psi
@@ -51,25 +39,20 @@ The corresponding EoM is
 $$
 i \dot{\Psi} = - \frac{1}{2m} \nabla^{2} \Psi
 $$
-
 ### Including Massless Exchange
-
 $$
 \begin{gathered}
 \mathcal{L} = - |(\partial_{\mu} - i e A_{\mu}) \phi |^{2} - m^{2} \phi^{2} - \frac{1}{4} F_{\mu \nu} F^{\mu \nu} \\ =
 i \Psi^{\dagger} \dot{\Psi} + \frac{1}{2m} \Psi^{\dagger} \nabla^{2} \Psi + \frac{1}{2} (E^{2} - B^{2}) + e A_{0} \Psi^{\dagger} \Psi - \frac{1}{m} e A_{i} \Psi^{\dagger} \partial_{i} \Psi - \frac{e^{2}}{2m} A^{2} \Psi^{\dagger} \Psi + \cdots
 \end{gathered}
 $$
-
 #### NR Power Couting
-
 $$
 \begin{gathered}
 [t] = 2 [x] \\
 [m] = 0
 \end{gathered}
 $$
-
 Here the dimension of energy consists with momentum, say
 $$
 [E] = [p^{2}]
@@ -78,11 +61,9 @@ So we choose
 $$
 [x]_{NR} = -1 \Rightarrow [\mathcal{L}] = 5 , [\Psi] =\frac{3}{2}
 $$
-
 $$
 [\vec{E}] = [\vec{B}] = \frac{5}{2}, [\vec{A}] = [A_{0}] = \frac{3}{2}
 $$
-
 So under the low-energy limit, the terms that concerns are
 $$
 \mathcal{L} = i \Psi^{\dagger} \dot{\Psi} + \frac{1}{2m} \Psi^{\dagger} \nabla^{2} \Psi- \frac{1}{2} A_{0} \nabla^{2} A_{0} + e A_{0} \Psi^{\dagger} \Psi + \cdots
@@ -100,12 +81,9 @@ $$
 i \Psi^{\dagger} \dot{\Psi} + \frac{1}{2m} \Psi^{\dagger} \nabla^{2} \Psi \to \Psi^{\dagger} \left[i \dot{\Psi} - \sqrt{m^{2} - \nabla^{2}} \Psi\right]
 $$
 In practice, we want to match an on-shell amplitude $M$, where
-
 1.  For classical paalication, only nonlocal V is relevant.
 2.  Nonlocal V only from non-analytic part of an amplitude.
-
 ## NR Physics from On-shell Amplitude
-
 Conside a 2 to 2 scattering $p_{1} p_{2} \to p'_{1} p'_{2}$ in the CoM system.
 $$
 \begin{gathered}
@@ -121,7 +99,6 @@ $$
 \end{gathered}
 $$
 Def $V (p', p) = \int \dd[3]{r} e^{-i \vec{q} \cdot \vec{r}} V(\vec{r}, \vec{p})$, where $\vec{q} = \vec{p} - \vec{p'}$
-
 Notice that in the NRQM, the normalizations are
 $$
 \ket{p}_{NR} = \frac{1}{\sqrt{2 E_{p}}} \ket{p}
@@ -141,30 +118,23 @@ and the leading order
 $$
 i M_{NR} (\vec{p'}, \vec{p}) = - i V (\vec{p'}, \vec{p})
 $$
-
 $$
 \Rightarrow V (\vec{r}, \vec{p}) = - \int \frac{\dd[3] {q}}{(2 \pi)^{3}} e^{i \vec{q} \cdot \vec{r}} \frac{M (\vec{p} - \vec{q}, \vec{p})}{4 E_{1} E_{2}}
 $$
-
 ## Long Range Potential
-
 $$
 V (\vec{r}, \vec{p}) = - \int \frac{\dd[3] {q}}{(2 \pi)^{3}} e^{i \vec{q} \cdot \vec{r}} \frac{M (\vec{p} - \vec{q}, \vec{p})}{4 E_{1} E_{2}}
 $$
-
 We want to get Newton’s Law and its leading-roder relativistic correction.
 $$
 i M = \sum_{h = \pm 2} \frac{-i}{q^{2} - i \epsilon} \times (i M_{L}^{-h}) \times (i M_{R}^{+h})
 $$
-
 $$
 i M_{L}^{-h} = i\sqrt{2} \kappa \epsilon_{\mu \nu}^{(h)*} p_{1}^{\mu} p_{1}^{\nu}
 $$
-
 $$
 i M_{R}^{+h} = i\sqrt{2} \kappa \epsilon_{\mu \nu}^{(h)} p_{1}^{\prime\mu} p_{1}^{\prime\nu}
 $$
-
 The sum of the polarization tensors is
 $$
 \sum_{h= \pm 2} \epsilon_{\mu \nu}^{(h)*} \epsilon_{\rho \sigma}^{(h)} = \eta_{\mu \rho} \eta_{\nu \sigma} + \eta_{\mu \sigma} \eta_{\nu \rho} - \eta_{\mu \nu} \eta_{\rho \sigma} + \cdots
@@ -181,9 +151,7 @@ Plugging in $\kappa = \sqrt{8 \pi G}$, expanding in $p^{2}$
 $$
 V (\vec{r}, \vec{p}) = \frac{G}{|\vec{r}|}\left[-m_{1} m_{2} - \frac{3m_{1}^{2} + 8 m_{1} m_{2} + 3 m_{2}^{2}}{2 m_{1} m_{2}} p^{2} + \cdots \right]
 $$
-
 ### Bound States
-
 Not in any order in perturbation theory, so we have to resume loops.
 $$
 \mathcal{L} = \sum_{a= 1}^{2} \Psi_{a}^{\dagger} (i \partial_{t} + e Q_{a} A_{0}) + \frac{1}{2m} \nabla^{2}) \Psi_{a} - \frac{1}{2} A_{0} \nabla^{2} A_{0}
@@ -197,4 +165,3 @@ $$
 \langle A_{0} (t_{1}, \vec{k}) A_{0}^{\dagger}(t_{2}, - \vec{k}) = \delta (t_{1} - t_{2}) \frac{-i}{k^{2}}
 $$
 The time sequence garuantees that only the ladder graphs remains.
-

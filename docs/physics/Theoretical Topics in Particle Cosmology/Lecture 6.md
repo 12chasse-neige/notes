@@ -1,21 +1,13 @@
 # Lecture 6
-
 Chasse_neige
-
 ## Four Particle Test
-
 From 3 pt amplitude, using consistency to guess the result of 4 pt.
-
 Tension: non-zero spin will not be compatible with locality.
-
 We assume perturbativity in the 4 pt test and amplitudes are doinated by the on-shell pole terms. (+ analytic terms required by consistency), this means that $M$s are rational functions of all kinetic variables. We call this “tree-level approximation”.
-
 ### DoF Counting
-
 $$
 4 \times 4 - 4 - 10 = 2
 $$
-
 $$
 \begin{gathered}
 s \equiv - (p_{1} + p_{2})^{2} \\
@@ -23,7 +15,6 @@ t \equiv - (p_{1} + p_{4})^{2} \\
 u \equiv - (p_{1} + p_{3})^{2}
 \end{gathered}
 $$
-
 And we have
 $$
 s + u + t = 0
@@ -33,11 +24,8 @@ $$
 M_{4} = M_{4} (s, t, u)
 $$
 We assume that $M$ is a rational function.
-
 ### Most General Form of $M_{4}$
-
 #### Self-Interact Massless Scalar
-
 On-shell Factorization Theorem gives that in the $s$ channel
 $$
 \lim_{s \to 0} i M_{4} (1, 2, 3, 4) = i M_{3} (p_{1}, p_{2}, - p_{s}) \times i M_{3} (p_{s}, p_{3}, p_{4}) \times \frac{-i}{-s - i \epsilon}
@@ -54,32 +42,24 @@ From the field theory we can claim that
 $$
 \frac{1}{s} + \frac{1}{t} + \frac{1}{u}  \to \mu \phi^{3} \times \mu \phi^{3}
 $$
-
 $$
 Const \to \lambda_{0} \phi^{4}
 $$
-
 $$
 s^{2} + t^{2} + u^{2} \to \lambda_{1} (\partial_{\mu} \phi^{4})
 $$
-
 $$
 stu \to \lambda_{2} (\partial_{\mu} \phi)^{2} \square (\partial_{\nu} \phi)^{2}
 $$
-
 ## Yang-Mills Theory
-
 Massless spin-1 particles ($n \geq 3$), we call these particles gluons, and the species colors. The amplitude
 $$
 M_{4} (1_{a}^{+}, 2_{b}^{+}, 3_{c}^{-}, 4_{d}^{-}) = [12]^{2} \langle 34 \rangle^{2} \cdot f(s,t, u)
 $$
-
 ### s-channel ($s \to 0$)
-
 $$
 p_{s} \equiv p_{1} + p_{2} = - \ket{s} [s|
 $$
-
 Under this representation 
 $$
 \begin{gathered}
@@ -91,11 +71,9 @@ Simplify
 $$
 [1s] \langle s4 \rangle = [11] \langle 14 \rangle + [12] \langle 24 \rangle = [12] \langle 24 \rangle
 $$
-
 $$
 \langle 3s \rangle [s2] = \langle 34 \rangle [42]
 $$
-
 Define
 $$
 \alpha = \sum_{e} \kappa_{abe} \kappa_{ecd}
@@ -104,13 +82,10 @@ Then the amplitude can be expressed as
 $$
 \lim_{s \to 0} M_{4} = [12]^{2} \langle 34 \rangle^{2} \frac{\alpha}{st}
 $$
-
 ### t-channel ($t \to 0$)
-
 $$
 p_{t} = - \ket{t} [t|
 $$
-
 Amplitude is
 $$
 \begin{gathered}
@@ -158,19 +133,13 @@ $$
 \sum_{e} \kappa_{abe} \kappa_{cde} + \kappa_{ade} \kappa_{bce} + \kappa_{ace} \kappa_{dbe} = 0
 $$
 called Jacobi’s Identity.
-
 Consistant interaction among $n$ ($n \geq 3$) massless spin-1 particles (by minimal coupling) must have a Lie-algebra structure.
-
 ## Self-Interaction of Spin-j (j > 1)
-
 $$
 \lim_{s \to 0} M_{4} = \frac{\alpha}{s} \left(\frac{[12]^{2} \langle 34\rangle^{2}}{t}\right)^{j}
 $$
-
 $u$ and $t$ channels are similar.
-
 ### Gravity (j = 2)
-
 $$
 \begin{gathered}
 M_{4} (1_{a}^{+2}, 2_{b}^{+2}, 3_{c}^{-2}, 4_{c}^{-2}) = [12]^{4} \langle 34 \rangle^{4} \frac{A}{stu} \\ \to
@@ -181,22 +150,18 @@ M_{4} (1_{a}^{+2}, 2_{b}^{+2}, 3_{c}^{-2}, 4_{c}^{-2}) = [12]^{4} \langle 34 \ra
 \end{cases}
 \end{gathered}
 $$
-
 This gives out 
 $$
 \alpha = \beta = \gamma
 $$
-
 $$
 \sum_{e} \kappa_{abe} \kappa_{cde} = \sum_{e} \kappa_{ade} \kappa_{bce} = \sum_{e} \kappa_{ace} \kappa_{bde}
 $$
-
 With a proper choice of basis, we can give out a simple form of $\kappa$
 $$
 \kappa_{abc} = \kappa_{a} \delta_{ab} \delta_{ac}
 $$
 There can not be more than one massless spin-2 particles interaction by each other through minimal coupling.
-
 Amplitude:
 $$
 M_{4} = [12]^{4} \langle 34 \rangle^{4} \frac{\kappa^{2}}{stu}
@@ -205,11 +170,9 @@ Consider spin-j (j>2)
 $$
 M_{4} (1_{a}^{+j}, 2_{b}^{+j}, 3_{c}^{-j}, 4_{d}^{-j}) = [12]^{2j} [34]^{2j} f(s, t, u)
 $$
-
 $$
 [M_{4}] = 0 \Rightarrow [f] = -4j
 $$
-
 Do consistent factorization similarly, which requires $f \propto \kappa^{2}, [\kappa] = 1-j$
 $$
 f = \kappa^{2} \tilde{f}(s,t,u)
@@ -219,30 +182,20 @@ $$
 [\tilde{f}] = -2 - 2j
 $$
 If $j > 2$, we can say that $[\tilde{f}] < -6$, which is impossible because this will cause double-pole singularity in any channel.
-
 So massless spin-j particles cannot have minimal self-interaction.
-
 ### Remarks
-
 1.  No underlying theory assumed in our derivation. Tension: spin $\leftrightarrow$ locality
 2.  $j = 1,2$ 4pt amplitudes’s form is nearly “uniquely” fixed.
 3.  “constructable”: 3pt $\to$ n-pt ($n > 3$) “BCFW”
-
 ## Gravitational Couplings of all Massless Particles
-
 Simplify: we only consider how 1 species of spin-j particles coulple with gravitons.
 $$
 M (1^{+j}, 2^{+j}, 3^{-j}, 4^{-j})
 $$
 is impossible if $j > 2$ (same reason as analyzed above, they can’t minimal couple with gravitons), so we only consider $j = 0,1,2$
-
 ### Gravitional Compton Scattering
-
 Gravitional coupling $\kappa_{j}$ of a spin-j particles equals the graviton cubic self-coupling $\kappa$.
-
 If we consider more than 1 massless spin-2 particles, then any other massless can only couple gravitationally to one of them.
-
 ### Remarks
-
 1.  Minimal couplings are assumed in all our derivation.
 2.  Massive particles can also be derived using the same trick, but the spinor-helicity formalism will be more complicated (need to spinors to construct one momentum).

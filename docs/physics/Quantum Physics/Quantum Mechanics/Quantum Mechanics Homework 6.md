@@ -1,11 +1,7 @@
 # 量子力学 第6次作业
-
 Chasse_neige
-
 ## 第六章 中心力场
-
 6.1.1 把二体系统的动能算符化为质心的动能算符与约化粒子的动能算符之和。
-
 引入 $\vec{R} = \frac{m_{1}\vec{r}_{1} + m_{2} \vec{r}_{2}}{m_{1} + m_{2}}$, $\vec{r} = \vec{r}_{1} - \vec{r}_{2}$，此时质心动能以及约化粒子的动能算符可以化为
 $$
 \hat{T} = - \frac{\hbar^{2}}{2M} \nabla_{R}^{2} - \frac{\hbar^{2}}{2\mu} \nabla_{r}^{2}
@@ -17,14 +13,12 @@ $$
 \sum_{i} \pdv{}{r_{1i}} \left(\frac{m_{1}}{m_{1} + m_{2}} \pdv{}{R_{i}} + \pdv{}{r_{i}}\right) = \sum_{i} \left(\frac{m_{1}^{2}}{(m_{1} + m_{2})^{2}} \pdv[2]{}{R_{i}} + 2 \frac{m_{1}}{m_{1} + m_{2}} \pdv{}{R_{i}} \pdv{}{r_{i}} + \pdv[2]{}{r_{i}}\right)
 \end{gathered}
 $$
-
 $$
 \begin{gathered}
 \nabla^{2}_{r_{2}} = \sum_{i} \pdv[2]{}{r_{2i}} = \sum_{i} \pdv{}{r_{2i}} \left(\sum_{j} \pdv{R_{j}}{r_{2i}} \pdv{}{R_{j}} + \pdv{r_{j}}{r_{2i}} \pdv{}{r_{j}}\right) \\ =
 \sum_{i} \pdv{}{r_{2i}} \left(\frac{m_{2}}{m_{1} + m_{2}} \pdv{}{R_{i}} - \pdv{}{r_{i}}\right) = \sum_{i} \left(\frac{m_{2}^{2}}{(m_{1} + m_{2})^{2}} \pdv[2]{}{R_{i}} - 2 \frac{m_{2}}{m_{1} + m_{2}} \pdv{}{R_{i}} \pdv{}{r_{i}} + \pdv[2]{}{r_{i}}\right)
 \end{gathered}
 $$
-
 所以动能算符可以化为
 $$
 \begin{gathered}
@@ -42,7 +36,6 @@ V(r)=
 \end{cases}
 $$
 中运动并处于束缚的 S 态，求它的能量 $E$ 应满足的超越方程。问这个势阱窄 ($a$ 小) 和浅 ($V_{0}$ 小) 到什么程度时，它会容纳不了任何束缚态？
-
 此时波函数满足的径向方程为
 $$
 \frac{1}{r^{2}} \dv{}{r}(r^{2} \dv{R}{r}) + \frac{2 \mu}{\hbar^{2}} \left(E - V (r) - \frac{l(l + 1) \hbar^{2}}{2 \mu r^{2}}\right) R = 0
@@ -90,7 +83,6 @@ $$
 V_{0} a^{2} > \frac{\pi^{2} \hbar^{2}}{8 \mu}
 $$
 6.3.1 在直角坐标系和球坐标系中分别算出三维各向同性谐振子的能级 $E_{N}$ 的简并度。
-
 在直角坐标系中
 $$
 \hat{H} = - \frac{\hbar^{2}}{2 \mu} \left(\pdv[2]{}{x} + \pdv[2]{}{y} + \pdv[2]{}{z}\right) + \frac{1}{2} \mu \omega^{2} (x^{2} + y^{2} + z^{2})
@@ -156,69 +148,52 @@ $$
 l = N, N-2, N-4, \cdots
 $$
 对于单个 $l$，磁量子数的简并度为 $2l + 1$，所以总的简并度为
-
-
 $$
 g_{N} = \sum_{j = 0}^{[\frac{N}{2}]}(2N - 4j + 1) = \frac{(N + 2) (N + 1)}{2}
 $$
 6.3.2 三维各向同性谐振子的第一激发态 $N=1$ 的能级是 3 重简并的。请分别在直角坐标系中和球坐标系中写出它的简并波函数，并且给出从直角坐标系波函数到球坐标系波函数的变换。
-
 直角坐标系归一化波函数为
-
 $$
 \psi_{100}(x,y,z) = \sqrt{2} \alpha^{5/2} \pi^{-3/4} x e^{-\alpha^{2} r^{2}/2}
 $$
-
 $$
 \psi_{010}(x,y,z) = \sqrt{2} \alpha^{5/2} \pi^{-3/4} y e^{-\alpha^{2} r^{2}/2}
 $$
-
 $$
 \psi_{001}(x,y,z) = \sqrt{2} \alpha^{5/2} \pi^{-3/4} z e^{-\alpha^{2} r^{2}/2}
 $$
-
 其中 $\alpha = \sqrt{m\omega/\hbar}$
-
 球坐标系中对应量子数 $n=1, l=1, m = -1,0,1$ 的波函数为
 $$
 \psi_{1,1,0}(r,\theta,\phi) = \sqrt{\frac{8\alpha^{5}}{3\sqrt{\pi}}} r e^{-\alpha^{2} r^{2}/2} Y_{10}(\theta,\phi)
 $$
-
 $$
 \psi_{1,1,1}(r,\theta,\phi) = \sqrt{\frac{8\alpha^{5}}{3\sqrt{\pi}}} r e^{-\alpha^{2} r^{2}/2} Y_{11}(\theta,\phi)
 $$
-
 $$
 \psi_{1,1,-1}(r,\theta,\phi) = \sqrt{\frac{8\alpha^{5}}{3\sqrt{\pi}}} r e^{-\alpha^{2} r^{2}/2} Y_{1-1}(\theta,\phi)
 $$
-
 其中球谐函数为
 $$
 Y_{10} = \sqrt{\frac{3}{4\pi}} \cos\theta, \quad Y_{11} = -\sqrt{\frac{3}{8\pi}} \sin\theta e^{i\phi}, \quad Y_{1-1} = \sqrt{\frac{3}{8\pi}} \sin\theta e^{-i\phi}
 $$
-
 直角坐标到球坐标的变换关系为
 $$
 \psi_{z} = \psi_{1,1,0}
 $$
-
 $$
 \psi_{x} = \frac{1}{\sqrt{2}} (-\psi_{1,1,1} + \psi_{1,1,-1})
 $$
-
 $$
 \psi_{y} = \frac{i}{\sqrt{2}} (\psi_{1,1,1} + \psi_{1,1,-1})
 $$
-
 写成矩阵形式，就是
 $$
 \begin{pmatrix} \psi_{x} \\ \psi_{y} \\ \psi_{z} \end{pmatrix} = 
 \begin{pmatrix} -\frac{1}{\sqrt{2}} & 0 & \frac{1}{\sqrt{2}} \\ \frac{i}{\sqrt{2}} & 0 & \frac{i}{\sqrt{2}} \\ 0 & 1 & 0 \end{pmatrix}
 \begin{pmatrix} \psi_{1,1,1} \\ \psi_{1,1,0} \\ \psi_{1,1,-1} \end{pmatrix}
 $$
-
 6.3.3（选做）请在平面极坐标系中求解二维各向同性谐振子，即求出它的能级和各能级的简并度。提示：参看习题 3.4.3。
-
 在平面极坐标下分离变量，得到
 $$
 \hat{H} = - \frac{\hbar^{2}}{2 \mu} \left(\frac{1}{r}\pdv{}{r} \left(r \pdv{}{r}\right) + \frac{1}{r^{2}} \pdv[2]{}{\theta}\right) + \frac{1}{2} \mu \omega^{2} r^{2}
@@ -268,23 +243,17 @@ $$
 E_{n} = \hbar \omega (n + 1), \quad n = 0,1,2,\dots
 $$
 其中 $n = 2n_{\rho} + |m_{l}|$，$n_{\rho} = 0,1,2,\dots$ 为径向量子数，$m_{l} = 0, \pm 1, \pm 2, \dots$ 为角动量量子数。
-
 简并度：对于给定 $n$，可能的 $m_{l}$ 值为 $n, n-2, \dots, -n$，非零 $|m_{l}|$ 对应两个简并态（$m_{l} = \pm |m_{l}|$），$m_{l}=0$ 对应一个态，所以简并度为 $n+1$
-
 6.4.1 求电子偶素和缪子 muon 氢原子 (以 muon $(m_{\mu}=207 m_{e})$ 代替氢原子中的电子) 的基态能量。
-
 对于电子偶素，电子和正电子质量相等 $m_{1} = m_{2} = m_{e}$，约化质量 $\mu = m_{e}/2$，基态能量
 $$
 E_{1}^{Ps} = -\frac{\mu c^{2} \alpha^{2}}{2} = -\frac{1}{2} \cdot \frac{m_{e} c^{2} \alpha^{2}}{2} \approx -6.8 \, \text{eV}
 $$
-
 缪子质量 $m_{\mu} = 207 m_{e}$，质子质量 $m_{p} \approx 1836 m_{e}$，约化质量 $\mu \approx 186 m_{e}$，基态能量
 $$
 E_{1}^{\mu H} = -\frac{\mu c^{2} \alpha^{2}}{2} \approx -186 \times 13.6 \, \text{eV} \approx -2.53 \, \text{keV}
 $$
-
 6.4.2 求氢原子基态下的 $\delta x \cdot \delta p_{x}$；这个状态是最小测不准态吗？提示：对这个状态 $\langle x^{2} \rangle = (1/3) \langle r^{2} \rangle$, $\langle p^{2}_{x} \rangle = (1/3) \langle p^{2} \rangle$。
-
 氢原子基态波函数 $\psi_{100}(r) = \frac{1}{\sqrt{\pi a_{0}^{3}}} e^{-r/a_{0}}$，其中 $a_{0}$ 为玻尔半径。由于球对称性
 $$
 \langle x \rangle = 0, \quad \langle p_{x} \rangle = 0
@@ -302,21 +271,17 @@ $$
 \delta x \cdot \delta p_{x} = \frac{\hbar}{\sqrt{3}} \approx 0.577 \hbar
 $$
 不是最小测不准态。
-
 6.4.3（选做）量子电动力学给出：电子偶素在单位时间内发生湮灭的几率是
 $$
 \Gamma = \pi r^{2}_{e} c |\psi_{100}(0)|^{2}
 $$
 其中 $r_{e}=k_{1} e^{2} / m_{e} c^{2} (k_{1}=1 / 4 \pi \varepsilon_{0})$ 是电子的经典半径， $\psi_{100}(r)$ 是电子偶素的基态波函数。求电子偶素的寿命 $\tau=1 / \Gamma$ 。
-
 >  提示：我们有关系 $k_{1} e^{2}=\alpha \hbar c$ ，而 $\alpha \approx 1 / 137$ (是纯数)， $\hbar c \approx 0.1973 \mathrm{eV} \cdot \mu \mathrm{m}, m_{e} c^{2} \simeq 0.511 \mathrm{MeV}, c \simeq 3 \times 10^{8} \mathrm{~m} \cdot \mathrm{s}^{-1}$ 。记住 $\hbar c \approx 0.2 \mathrm{eV} \cdot \mu \mathrm{m}$ (误差 $\sim 1 \%$ ) 很有用。
-
 湮灭率公式
 $$
 \Gamma = \pi r_{e}^{2} c |\psi_{100}(0)|^{2}
 $$
 其中经典半径 $r_{e} = \frac{k_{1} e^{2}}{m_{e} c^{2}} = \frac{\alpha \hbar c}{m_{e} c^{2}}$，波函数平方 $|\psi_{100}(0)|^{2} = \frac{1}{8\pi a_{0}^{3}}$，玻尔半径 $a_{0} = \frac{\hbar}{\alpha m_{e} c}$
-
 代入得到
 $$
 \Gamma = \frac{\alpha^{5} m_{e} c^{2}}{8 \hbar}
@@ -325,23 +290,18 @@ $$
 $$
 \Gamma \approx 2.0 \times 10^{9} \, \text{s}^{-1}, \quad \tau = \frac{1}{\Gamma} \approx 5.0 \times 10^{-10} \, \text{s}
 $$
-
 ## 第七章 量子力学中的代数方法
-
 7.1.1 几率守恒方程是 $\frac{\partial \rho}{\partial t}+\nabla \cdot \vec{J}=0, \rho=|\Psi|^{2}$, $\vec{J}=\frac{-\mathrm{i} \hbar}{2 m}\left(\Psi^{*} \nabla \Psi-\Psi \nabla \Psi^{*}\right)$ 。如果采用分立表象即 $\Psi(\vec{r}, t)=\sum a_{n}(t) u_{n}(\vec{r})$ ，其中 $\left\{u_{n}(\vec{r})\right\}$ 都是束缚态, 那么这个方程的矩阵形式是什么样子? 提示:转为积分形式的方程 $\frac{\mathrm{d}}{\mathrm{d} t} W_{V}+\oint_{S} \vec{J} \cdot \mathrm{d} \vec{S}=0$ 并且让积分体积趋于无穷。
-
 带入
 $$
 \rho (\vec{r}, t) = \Psi^{*} \Psi = \sum_{mn} a^{*}_{m} (t) a_{n} (t) u_{m} (\vec{r}) u_{n} (\vec{r})
 $$
-
 $$
 \begin{gathered}
 \vec{J} (\vec{r}, t) = \frac{-\mathrm{i} \hbar}{2 m}\left(\Psi^{*} \nabla \Psi-\Psi \nabla \Psi^{*}\right) \\ = 
 \frac{- i \hbar}{2m} \sum_{mn}(a^{*}_{m} (t) a_{n} (t) u^{*}_{m} (\vec{r}) \nabla u_{n} (\vec{r}) - a_{m} (t) a^{*}_{n} (t) u_{m} (\vec{r}) \nabla u^{*}_{n} (\vec{r}))
 \end{gathered}
 $$
-
 带入 $\int u^{*}_{m} (\vec{r}) u_{n} (\vec{r}) \dd{\tau} = \delta_{mn}$，我们把该方程化为积分形式并且把积分体积趋于无穷，此时
 $$
 W_{V} = \int \dd{\tau} \sum_{mn} a^{*}_{m} (t) a_{n} (t) u_{m} (\vec{r}) u_{n} (\vec{r}) = \sum_{mn} \delta_{mn} a^{*}_{m} (t) a_{n} (t) = \sum_{n} a^{*}_{n} (t) a_{n} (t)
@@ -355,7 +315,6 @@ $$
 \sum_{n}|a_{n}(t)|^{2}=1
 $$
 对任意时刻都成立。若写成矩阵形式，令列向量 $a=(a_{1},a_{2},\cdots)^{T}$，则几率守恒就是
-
 $$
 \dv{}{t}(a^{\dagger}a)=0
 $$
@@ -365,9 +324,7 @@ $$
 =\frac{\mathrm{i}}{\hbar}a^{\dagger}Ha-\frac{\mathrm{i}}{\hbar}a^{\dagger}Ha=0
 $$
 这就是几率守恒方程在分立表象中的矩阵表达。
-
 7.1.2 求在 $-a<x<+a$ 的无限势阱中, 粒子的坐标算符 $\hat{x}$ 在能量表象中的矩阵元 $x_{m n}$ 
-
 本征态为
 $$
 \psi_{n} (x) = \sqrt{\frac{1}{a}} \sin (\frac{n \pi}{2a} (x + a))
@@ -406,7 +363,6 @@ x_{mn}=
 \end{cases}
 $$
 7.2.1 (a) 验证 $L_{x}=\hbar\left(\begin{array}{ccc}0 & 0 & 0 \\ 0 & 0 & -\mathrm{i} \\ 0 & \mathrm{i} & 0\end{array}\right), L_{y}=\hbar\left(\begin{array}{ccc}0 & 0 & \mathrm{i} \\ 0 & 0 & 0 \\ -\mathrm{i} & 0 & 0\end{array}\right), L_{z}=\hbar\left(\begin{array}{ccc}0 & -\mathrm{i} & 0 \\ \mathrm{i} & 0 & 0 \\ 0 & 0 & 0\end{array}\right)$ 满足 $\left[L_{x}, L_{y}\right]=\mathrm{i} \hbar L_{z}$, 这称为角动量算符的“自伴表示”
-
 先记 $L_{i}=\hbar M_{i}$，直接计算
 $$
 [M_{x},M_{y}]=
@@ -429,9 +385,7 @@ $$
 =\mathrm{i}\hbar(\hbar M_{z})
 =\mathrm{i}\hbar L_{z}
 $$
-
 (b) 把 $L_{z}$ 对角化 (本征值从大到小排列), 明确写出该变换
-
 对角化 $L_{z}$：其本征值为 $\hbar,0,-\hbar$，可取归一化本征矢
 $$
 v_{+}=\frac{1}{\sqrt2}\begin{pmatrix} -1\\ -\mathrm{i}\\ 0\end{pmatrix},\quad
@@ -456,9 +410,7 @@ U^{\dagger}L_{z}U=\hbar
 0&0&-1
 \end{pmatrix}
 $$
-
 (c) 写出 $L_{x}$ 和 $L_{y}$ 在同样的变换下变成了什么矩阵
-
 在同样变换下
 $$
 U^{\dagger}L_{x}U=\frac{\hbar}{\sqrt2}
@@ -476,11 +428,8 @@ U^{\dagger}L_{y}U=\frac{\hbar}{\sqrt2}
 \end{pmatrix}
 $$
 这就是 $l=1$ 表象中的标准角动量矩阵。
-
 7.3.1 设一个量子系统的正交归一完备态矢量集是 $\{|n\rangle(n=1,2, \cdots)\}$, 那么用 $|\psi\rangle=\sum c_{n}|n\rangle\left(c_{n} \in \mathbb{C}\right)$来描写的系统状态称为量子纯态。如果系统是处在 $\{|n\rangle\}$ 的非相干混合上, 那就用 $\rho=\sum p_{n}|n\rangle\langle n|$ 来描写, 其中 $p_{n}$ 是系统处在状态 $|n\rangle$ 上的几率, 这种状态称为混合态, $\rho$ 称为密度矩阵或密度算符。
-
 (a) 根据上面所说的 $\left\{p_{n}\right\}$ 的定义, 请写出 $\left\{p_{n}\right\}$ 应满足的条件。把这些条件写成对于 $\rho$ 的式子是什么样子? 
-
 由定义，$\{p_{n}\}$ 必须满足
 $$
 p_{n}\ge 0,\quad \sum_{n}p_{n}=1
@@ -493,9 +442,7 @@ $$
 $$
 \rho^{\dagger}=\rho,\quad \rho\ge0,\quad \Tr\rho=1
 $$
-
 (b) 量子纯态可看成是混合态的特殊情况, 描写量子纯态 $|\psi\rangle$ 的密度矩阵直接定义为 $\rho_{\psi}=|\psi\rangle\langle\psi|$ 。那么 $\rho_{\psi}$满足什么条件? 
-
 对于纯态密度算符 $\rho_{\psi}=|\psi\rangle\langle\psi|$，除满足上面三条外，还满足
 $$
 \rho_{\psi}^{2}=\rho_{\psi}
@@ -505,27 +452,22 @@ $$
 \Tr(\rho_{\psi}^{2})=1
 $$
 而一般混合态满足 $\Tr(\rho^{2})<1$。力学量 $F$ 在混合态 $\rho$ 下的平均值是
-
 $$
 \langle F\rangle=\Tr(\rho F)
 $$
 (c) 对于混合态 $\rho$， 一个力学量（算符）$F$ 的平均值如何用 $\rho$ 和 $F$ 来表达？
-
 若 $\rho=\sum_{n}p_{n}|n\rangle\langle n|$，则
 $$
 \langle F\rangle=\sum_{n}p_{n}\langle n|F|n\rangle
 $$
 即按几率加权平均。
-
 7.4.1 用数学归纳法证明:  $\mathrm{e}^{\xi^{2}} \frac{\mathrm{d}^{n}}{\mathrm{~d} \xi^{n}} \mathrm{e}^{-\xi^{2}}=\mathrm{e}^{\xi^{2} / 2}\left(\frac{\mathrm{d}}{\mathrm{d} \xi}-\xi\right)^{n} \mathrm{e}^{-\xi^{2} / 2}(n \in \mathbb{N})$ 
-
 命题
 $$
 P(n):
 \mathrm{e}^{\xi^{2}}\dv[n]{}{\xi}\mathrm{e}^{-\xi^{2}}
 =\mathrm{e}^{\xi^{2}/2}\left(\dv{}{\xi}-\xi\right)^{n}\mathrm{e}^{-\xi^{2}/2}
 $$
-
 当 $n=1$ 时
 $$
 \mathrm{e}^{\xi^{2}}\dv{}{\xi}\mathrm{e}^{-\xi^{2}}=-2\xi
@@ -536,7 +478,6 @@ $$
 =\mathrm{e}^{\xi^{2}/2}(-\xi-\xi)\mathrm{e}^{-\xi^{2}/2}=-2\xi
 $$
 所以 $P(1)$ 成立。设 $P(n)$ 成立，则
-
 $$
 \mathrm{e}^{\xi^{2}}\dv[n+1]{}{\xi}\mathrm{e}^{-\xi^{2}}
 =\left(\dv{}{\xi}-2\xi\right)\left[\mathrm{e}^{\xi^{2}}\dv[n]{}{\xi}\mathrm{e}^{-\xi^{2}}\right]
@@ -556,11 +497,8 @@ $$
 =\mathrm{e}^{\xi^{2}/2}\left(\dv{}{\xi}-\xi\right)^{n+1}\mathrm{e}^{-\xi^{2}/2}
 $$
 即 $P(n+1)$ 成立，因此命题对任意 $n\in\mathbb N$ 成立。
-
 7.4.2 在自然单位制下， $\hat{a}=\frac{1}{\sqrt{2}}(\hat{x}+\mathrm{i} \hat{p})$, $\hat{a}^{\dagger}=\frac{1}{\sqrt{2}}(\hat{x}-\mathrm{i} \hat{p})$, $\hat{N} \equiv \hat{a}^{\dagger} \hat{a}$. 记 $|n\rangle(n=0,1,2,\cdots)$ 是 $\hat{N}$的本征态。
-
 求证: 若 $\hat{a}|\alpha\rangle=\alpha|\alpha\rangle,\langle\alpha|\alpha\rangle=1, \alpha \in \mathbb{C}$， 则 $|\alpha\rangle=\mathrm{e}^{-\alpha^{*} \alpha / 2} \sum_{n=0}^{\infty} \frac{\alpha^{n}}{\sqrt{n !}}|n\rangle$ ，其中 $|\alpha\rangle$ 称为相干态。
-
 展开本征态
 $$
 |\alpha\rangle=\sum_{n=0}^{\infty}c_{n}|n\rangle
@@ -599,7 +537,6 @@ $$
 |\alpha\rangle=\mathrm{e}^{-\alpha^{*}\alpha/2}\sum_{n=0}^{\infty}\frac{\alpha^{n}}{\sqrt{n!}}|n\rangle
 $$
 7.4.3 在自然单位制下 $\hat{H}=\hat{N}+ \frac{1}{2}$ ，求证: 含时间的 Schrödinger 方程 $\mathrm{i} \partial_{t}|\psi\rangle=\hat{H}|\psi\rangle$ 满足初始条件 $|\psi\rangle|_{t=0}=|\alpha\rangle$ 的解是 $|\psi (t) \rangle = \mathrm{e}^{-\mathrm{i} t / 2}|\alpha \mathrm{e}^{-\mathrm{i} t}\rangle$, 其中 $|\alpha \mathrm{e}^{-\mathrm{i} t}\rangle$ 代表 $a$ 的本征值为 $\alpha \mathrm{e}^{-\mathrm{i} t}$ 的相干态。
-
 时间演化算符
 $$
 U(t)=\mathrm{e}^{-\mathrm{i}\hat H t}
@@ -636,7 +573,6 @@ $$
 |\psi\rangle(t)=\mathrm{e}^{-\mathrm{i}t/2}|\alpha\mathrm{e}^{-\mathrm{i}t}\rangle
 $$
 7.4.4 (选做) (a) 求证: 若 $a(\eta)=a \cosh \eta+a^{\dagger} \sinh \eta, a^{\dagger}(\eta)=a^{\dagger} \cosh \eta+a \sinh \eta(-\infty<\eta<+\infty)$,则 $\left[a(\eta), a^{\dagger}(\eta)\right]=1$ 。
-
 由定义
 $$
 a(\eta)=a\cosh\eta+a^{\dagger}\sinh\eta,\quad
@@ -659,7 +595,6 @@ $$
 =\cosh^{2}\eta-\sinh^{2}\eta=1
 $$
 (b) 求证: 若态 $\left|\alpha\right\rangle_{\eta}$ 满足 $a(\eta)\left|\alpha\right\rangle_{\eta}=\alpha\left|\alpha\right\rangle_{\eta}$, 则 $\left|\alpha\right\rangle_{\eta}=\mathrm{e}^{\frac{1}{2}\eta\left(a^{2}-\left(a^{\dagger}\right)^{2}\right)}|\alpha\rangle$ 
-
 再记
 $$
 S(\eta)=\exp\left[\frac{\eta}{2}(a^{2}-a^{\dagger2})\right]
@@ -685,5 +620,3 @@ $$
 |\alpha\rangle_{\eta}
 =\exp\left[\frac{\eta}{2}(a^{2}-a^{\dagger2})\right]|\alpha\rangle
 $$
-
-

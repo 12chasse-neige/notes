@@ -27,7 +27,8 @@
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "notes:remove-vacuum-lines": "node scripts/remove-vacuum-lines.mjs"
   },
   "dependencies": {
     "@giscus/vue": "^3.1.1"

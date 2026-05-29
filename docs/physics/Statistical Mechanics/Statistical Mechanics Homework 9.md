@@ -1,9 +1,6 @@
 # 统计力学 第9次作业
-
 Chasse_neige
-
 9.9 利用德拜频谱求固体在高温和低温下配分函数的对数 $\ln Z$，从而求内能和熵。
-
 德拜模型中，固体的频率分布可以写成
 $$
 g(\omega) \dd{\omega} = \frac{9N}{\omega_{D}^{3}} \omega^{2} \dd{\omega}, \quad 0 \leq \omega \leq \omega_{D}
@@ -12,7 +9,6 @@ $$
 $$
 \int_{0}^{\omega_{D}} g(\omega) \dd{\omega} = 3N
 $$
-
 频率为 $\omega$ 的一个振动模式的配分函数为
 $$
 z_{\omega} = \frac{e^{- \frac{1}{2} \beta \hbar \omega}}{1 - e^{- \beta \hbar \omega}}
@@ -33,7 +29,6 @@ $$
 $$
 \ln Z = -\frac{9N}{8} y_{D} - \frac{9N}{y_{D}^{3}} \int_{0}^{y_{D}} x^{2} \ln \left(1 - e^{-x}\right) \dd{x}
 $$
-
 先看高温极限。此时 $T \gg \theta_{D}$，也就是 $y_{D} \ll 1$，利用展开
 $$
 -\frac{x}{2} - \ln \left(1 - e^{-x}\right) = - \ln x - \frac{x^{2}}{24} + O(x^{4})
@@ -70,7 +65,6 @@ $$
 $$
 S \approx 3N k_{B} \left[2 + \ln \left(\frac{T}{\theta_{D}}\right)\right]
 $$
-
 再看低温极限。此时 $T \ll \theta_{D}$，也就是 $y_{D} \gg 1$，积分上限可以近似取到无穷大
 $$
 \int_{0}^{\infty} x^{2} \ln \left(1 - e^{-x}\right) \dd{x} = -\frac{\pi^{4}}{45}
@@ -87,9 +81,7 @@ $$
 $$
 S = k_{B} \left(\ln Z + \beta U\right) \approx \frac{4N \pi^{4}}{5} k_{B} \left(\frac{T}{\theta_{D}}\right)^{3}
 $$
-
 9.10 固体中某种准粒子遵从玻色分布，具有以下的色散关系 $\omega = A k^{2}$。试证明在低温范围，这种准粒子的激发所导致的热容量与 $T^{3/2}$ 成比例（铁磁体中的自旋波具有这种性质）。
-
 对于满足 $\omega = A k^{2}$ 的准粒子，其单个激发的能量为
 $$
 \varepsilon = \hbar \omega = \hbar A k^{2}

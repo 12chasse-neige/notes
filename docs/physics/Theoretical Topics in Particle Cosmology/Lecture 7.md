@@ -1,19 +1,13 @@
 # Lecture 7
-
 Chasse_neige
-
 ## QFT Perspective
-
 ### General Remarks
-
 What is field theory: relacistic quantum theory with Hamiltonian
 $$
 H (t) = \int \dd[3] {x} \mathcal{H} (t, \vec{x})
 $$
 Where $\mathcal{H} (t, \vec{x})$ is polynomial function of local operators $\phi(t, \vec{x})$ and $\partial \phi$.
-
 We need a dynamical theory with annihilation and creation operators.
-
 Causality: $a, a^{\dagger} \to \phi (t, \vec{x})$
 $$
 \phi(x) = \int \frac{\dd[3]{k}}{(2 \pi)^{3}} \frac{1}{\sqrt{2 E_{k}}} \left[e^{i k \cdot x} a_{\vec{k}} + c.c.\right]
@@ -23,32 +17,24 @@ $$
 \mathcal{L} = - \frac{1}{2} (\partial_{\mu} \phi)^{2} - \frac{1}{2} m^{2} \phi^{2} + \text{interaction}
 $$
 In the interaction part, operators $(\partial \phi)^{2}$ and $\phi^{2}$ are not allowed! We normalize $\phi$ by the kinetic term, call these canonically normalized fields bare fields.
-
 Using $\langle \vec{p} | \phi_{R} (0)| \Omega \rangle = 1$ to normalize the fields
 $$
 \mathcal{L} =  \underbrace{-\frac{1}{2} Z (\partial_{\mu} \phi_{R})^{2} - \frac{1}{2} Z \phi_{R}^{2}}_{\text{renormalized field}} + \left[\underbrace{\delta_{Z} (\partial_{\mu} \phi_{R})^{2} + \delta_{m} \phi_{R}^{2}}_{\text{conter term}} + \cdots\right]
 $$
-
 ### Perturbation Theory
-
 $$
 S = T e^{-i \int \dd{t} H_{int}(t)}
 $$
-
 $$
 \ket{\phi_{0}} = \ket{p_{1} \cdots p_{N}} = \left(\prod_{i} \sqrt{2 E_{p_{i}}} a_{p_{i}}^{\dagger}\right) \ket{0}
 $$
-
 $$
 G_{\phi} (x, y) \equiv \langle 0 | T \{\phi(x) \phi(y)\} | 0 \rangle
 $$
-
 $$
 G_{\phi} = \int \frac{\dd[4]{p}}{(2 \pi)^{4}} \frac{-i}{p^{2} + m^{2} - i \epsilon} e^{ip \cdot (x - y)}
 $$
-
 ### Photon Field
-
 We use the polarization vector as an adapter
 $$
 A (x) = \int \frac{\dd[3]{k}}{(2 \pi)^{3}} \frac{1}{\sqrt{2 E_{k}}} \sum_{s = \pm 1} \left[e^{ik \cdot x} e_{\mu}^{(s)} a_{s, k} + c.c.\right]
@@ -66,7 +52,6 @@ $$
 \mathcal{L} = -\frac{1}{4} F_{\mu \nu} F^{\mu \nu}
 $$
 We can thus using $F_{\mu \nu}$ to couple with matter.
-
 Matter Theory: $S_{M}$ with global U(1) symmetry
 $$
 \delta S_{M} = \int \dd[4] {x} J^{\mu} \partial_{\mu} \alpha (x)
@@ -76,16 +61,13 @@ $$
 S_{M} + e \int \dd[4]{x} J^{\mu} A_{\mu}
 $$
 is L-inv.
-
 ### Photon Propagator
-
 $$
 \begin{gathered}
 G_{\mu \nu} = \langle 0 | T \{A_{\mu} (x) A_{\nu} (y)\} | 0 \rangle \\ =
 \int \frac{\dd[4]{p}}{(2 \pi)^{4}} \frac{-i}{p - i\epsilon} e^{i p \cdot (x - y)} \times P_{\mu \nu} (p)
 \end{gathered}
 $$
-
 Where $P$ is described by the “adaptors”
 $$
 \begin{gathered}
@@ -128,9 +110,7 @@ The second term is proportional to
 $$
 J_{A}^{1} J_{B}^{1} + J_{A}^{2} J_{B}^{2} = \sum_{h = \pm 1} J_{A}^{(h)} J_{B}^{(h)}
 $$
-
 ### Graviton Field
-
 Similarly, the polarization tensor 
 $$
 e_{\mu \nu}^{(\pm2)} \to e_{\mu \nu}^{(\pm2)} + 2 \xi_{(\mu} k_{\nu)}
@@ -144,10 +124,8 @@ $$
 \mathcal{L} = - \frac{1}{4} \partial_{\lambda} h_{\mu \nu} \partial^{\lambda} h^{\mu \nu} + \cdots
 $$
 Adding some terms to make the Lagrangian gauge invariant, with options:
-
 1.  We do the genuine gauge transform with $\partial_{\mu} \xi^{\mu} = 0$ and $h_{\mu \nu}$ traceless.
 2.  Allow $h \neq 0$, using arbitrary $\xi^{\mu}$.
-
 Try option 2 ($h \neq 0$)
 $$
 \mathcal{L} = \frac{1}{4} h_{\mu \nu} \square h^{\mu \nu} + a h \square h + b h \partial^{\mu} \partial^{\nu} h + c h_{\mu \nu} \partial^{\mu} \partial_{\lambda} h^{\nu \lambda}
@@ -169,7 +147,6 @@ $$
 \mathcal{L}_{int} = \frac{\kappa}{2} h_{\mu \nu} T^{\mu \nu}
 $$
 Why option 1 doesn’t work:
-
 Choose $h = 0$ and $\partial_{\mu} \xi^{\mu} = 0$
 $$
 \mathcal{L}_{UM} = \frac{1}{4} h_{\mu \nu} \square h^{\mu \nu} - \frac{1}{2} h_{\mu \nu} \partial^{\mu} \partial_{\lambda} h^{\nu \lambda}
@@ -178,9 +155,7 @@ This is called Unimodular Gravity.
 $$
 \mathcal{L'}_{UM} = \mathcal{L}_{UM} + Ah \Rightarrow S_{EH} + \int \dd[4]{x} A (\sqrt{-g} - 1)
 $$
-
 #### How does matter couple to $h_{\mu \nu}$ in unimodular gravity
-
 The energy momentum tensors with the constrain
 $$
 \partial_{\mu} T^{\mu \nu} = \partial^{\nu} \Phi (x)
@@ -189,9 +164,7 @@ can couple with $h_{\mu \nu}$. The coupling term is
 $$
 \mathcal{L}_{int} = \frac{\kappa}{2} h_{\mu \nu} \left(T^{\mu \nu} - \frac{1}{4} \eta^{\mu \nu} T\right)
 $$
-
 ### Graviton Propagator
-
 Choosing the gauge fixing term as
 $$
 \mathcal{L}_{GF} = -\frac{1}{2} \left(\partial^{\mu} \bar{h}_{\mu \nu} \right)^{2}
@@ -231,4 +204,3 @@ M (p) = \frac{\kappa^{2}}{4 (- E^{2} + p^{2})} \left[(T_{A}^{11} - T_{A}^{22}) (
 \end{gathered}
 $$
 The first term is on-shell poles of the gravitons, the second term is the Newtonian potential, and the third term gives out the velocity-dependent potential.
-

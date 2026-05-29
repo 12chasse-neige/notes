@@ -1,7 +1,5 @@
 # 数学物理方程 第3次作业
-
 Chasse_neige
-
 3.求解
 $$
 \begin{aligned}
@@ -10,19 +8,16 @@ $$
 & \left.\frac{\partial u}{\partial y}\right|_{y=0}=\left.\frac{\partial u}{\partial y}\right|_{y=b}=0
 \end{aligned}
 $$
-
 分离变量
 $$
 u(x, y) = X (x) Y (y)
 $$
-
 $$
 \begin{gathered}
 X'' + \lambda X = 0 \\
 Y'' - \lambda Y = 0
 \end{gathered}
 $$
-
 所以通解为
 $$
 \begin{gathered}
@@ -35,7 +30,6 @@ $$
 \frac{\partial u}{\partial y} = X (x) \left(\sqrt{\lambda} A \cos(\sqrt{\lambda y}) - \sqrt{\lambda} B \sin (\sqrt{\lambda} y)\right)
 $$
 所以 $A = 0$, $\omega_{n} = \sqrt{\lambda} = \frac{n \pi}{b}$
-
 带回原解中，得到一般形式的解
 $$
 u (x, y)  = E x + F + \sum_{n = 1}^{\infty} (C_{n} \sinh(\omega_{n} x) + D_{n} \cosh(\omega_{n} x))B_{n} \cos(\omega_{n} y) 
@@ -48,20 +42,16 @@ $$
 $$
 B_{n} D_{n} = \frac{2}{b} \int_{0}^{b} u_{0} \cos(\omega_{n} y) dy = 0
 $$
-
 $$
 u (x, y) = \sum_{n = 1}^{\infty} B_{n} C_{n} \sinh(\omega_{n} x) \cos(\omega_{n} y) + Ex + F
 $$
-
 所以
 $$
 u_{0} \left[\left(\frac{y}{b}\right)^{2}-2 \frac{y}{b}\right] = \sum_{n = 1}^{\infty} B_{n} C_{n} \sinh(\omega_{n} a) \cos(\omega_{n} y) + Ea + F
 $$
-
 $$
 B_{n} C_{n} = \frac{2}{b \sinh(\omega_{n} a)} \int_{0}^{b} u_{0} \left[\left(\frac{y}{b}\right)^{2}-2 \frac{y}{b}\right] \cos(\omega_{n} y) dy = \frac{4 u_{0}}{n^{2} \pi^{2} \sinh(\frac{n \pi}{b} a)}
 $$
-
 所以方程的解为
 $$
 u(x, y) = Ex + F + \sum_{n = 1}^{\infty} \frac{4 u_{0}}{n^{2} \pi^{2} \sinh(\frac{n \pi}{b} a)} \sinh(\frac{n \pi}{b} x) \cos(\frac{n \pi}{b} y)
@@ -71,9 +61,7 @@ $$
 u (x, y) = u_{0} \left(1 - \frac{5x}{3a}\right) + \sum_{n = 1}^{\infty} \frac{4 u_{0}}{n^{2} \pi^{2} \sinh(\frac{n \pi}{b} a)} \sinh(\frac{n \pi}{b} x) \cos(\frac{n \pi}{b} y)
 $$
 4.当层状铀块的厚度超过一定临界值时, 中子浓度将随时间不断增加, 以致引起爆炸. 试估算层状铀块的临界厚度. 如果铀块为立方体, 则其临界棱长应为多大?
-
 （1）层状铀块，一维情形
-
 采用第一次作业中求出的扩散方程
 $$
 \frac{\partial}{\partial t} u  - D \nabla^{2} u = \alpha u
@@ -89,15 +77,12 @@ $$
 $$
 u(x, t) = X (x) T (t)
 $$
-
 $$
 X T' - D X'' T = \alpha X T
 $$
-
 $$
 \frac{T'}{T} = D \frac{X''}{X} + \alpha = \lambda
 $$
-
 所以
 $$
 \begin{gathered}
@@ -125,7 +110,6 @@ $$
 d_{c} = \pi \sqrt{\frac{D}{\alpha}}
 $$
 （2）立方体铀块，三维情形
-
 此时数密度的演化方程变为
 $$
 \begin{gathered}
@@ -133,7 +117,6 @@ $$
 \frac{\partial}{\partial t} u - D \left(\frac{\partial^{2}}{\partial x^{2}} u + \frac{\partial^{2}}{\partial y^{2}} u + \frac{\partial^{2}}{\partial z^{2}} u\right) = 0 \qquad (\text{Other area} )
 \end{gathered}
 $$
-
 和一维的时候的处理方法基本相同，先分离变量
 $$
 u(x, y, z, t) = U(x, y, z) T(t)
@@ -172,23 +155,19 @@ $$
 & u \mid_{y=0}=u \mid_{y=b}=0
 \end{aligned}
 $$
-
 $$
 u(x, y) = v(x, y) + w(x, y) 
 $$
-
 对齐次方程分离变量
 $$
 w(x, y) = X (x) Y (y)
 $$
-
 $$
 \begin{gathered}
 X'' - \lambda X = 0 \\
 Y'' + \lambda Y = 0
 \end{gathered}
 $$
-
 所以通解为
 $$
 \begin{gathered}
@@ -201,7 +180,6 @@ $$
 D = 0, \quad \omega_{n} = \sqrt{\lambda}  = \frac{n \pi}{a}
 $$
 初始条件由特解的情况给出
-
 对于特解，给定泊松方程
 $$
 \frac{\partial^{2} v}{\partial x^{2}} + \frac{\partial^{2} v}{\partial y^{2}} = x^{2} y
@@ -210,7 +188,6 @@ $$
 $$
 v(0, y) = v(a, y) = 0
 $$
-
 容易得到一个特解为
 $$
 v (x, y) = \frac{1}{12} x^{4}y - \frac{1}{12} a^{3} xy
@@ -228,17 +205,13 @@ $$
 w(x, y) = \sum_{n = 1}^{\infty} \sin(\omega_{n} x) (A_{n} \sinh(\omega_{n} y) + B_{n} \cosh(\omega_{n} y))
 $$
 由于 $w(x, 0) = 0$
-
 所以 $B_{n} = 0$
-
 $$
 w(x, y) = \sum_{n = 1}^{\infty} A_{n} \sin(\omega_{n} x) \sinh(\omega_{n} y)
 $$
-
 $$
 \sum_{n = 1}^{\infty} A_{n} \sinh(\omega_{n} b) \sin(\omega_{n} x) =  - \frac{b}{12} x(x^{3} - a^{3})
 $$
-
 利用正交性确定系数
 $$
 \begin{gathered}
@@ -257,4 +230,3 @@ $$
 $$
 u(x, y) = \sum_{m=1}^{\infty} \sum_{n=1}^{\infty} \frac{4 a^{2} b (-1)^{n}}{n\pi^{3} \left( \frac{m^{2}}{a^{2}} + \frac{n^{2}}{b^{2}} \right)} \left[ \frac{1}{m} (-1)^{m} + \frac{2}{m^{3} \pi^{2}} \left( (-1)^{m} - 1 \right) \right] \sin\left(\frac{m\pi x}{a}\right) \sin\left(\frac{n\pi y}{b}\right)
 $$
-
