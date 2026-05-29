@@ -1,8 +1,13 @@
 # 电动力学 第9周作业
+
 Chasse_neige
+
 ### 1. 电磁场的矢势和标势
+
 作业：书5.1, 5.4
+
 5.1 若把麦克斯韦方程组的所有矢量都分解为无旋的（纵场）和无散的（横场）两部分，写出 $E$ 和 $B$ 的这两部分在真空中所满足的方程式，并证明电场的无旋部分对应于库仑场。
+
 分解：（$L$ 代表纵向，$T$ 代表横向）
 $$
 \begin{gathered}
@@ -23,32 +28,42 @@ $$
 \end{gathered}
 $$
 其中电场的无旋部分 $\mathbf{E}_{L}$ 满足 $\nabla \cdot \mathbf{E}_{L} = \frac{\rho}{\epsilon_{0}}$ ，即对应库仑场
+
 5.4 设真空中矢势 $\mathbf{A}(\mathbf{x},t)$ 可用复数傅里叶展开为
 $$
 \mathbf{A}(\mathbf{x},t) = \sum_{k} \left[ \mathbf{a}_{k}(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_{k}^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}} \right]
 $$
+
 其中 $\mathbf{a}_{k}^*$ 是 $\mathbf{a}_{k}$ 的复共轭。
+
 (1) 证明 $\mathbf{a}_{k}$ 满足谐振子方程
+
 $$
 \frac{d^{2} \mathbf{a}_{k}(t)}{dt^{2}} + k^{2} c^{2} \mathbf{a}_{k}(t) = 0
 $$
+
 证明：真空中没有自由电荷和电流，所以
 $$
 \nabla \times (\nabla \times \mathbf{B}) = \mu_{0} \epsilon_{0} \frac{\partial}{\partial t} (\nabla \times \mathbf{E}) = - \mu_{0} \epsilon_{0} \frac{\partial^{2}}{\partial t^{2}} \mathbf{B}
 $$
+
 $$
 \nabla \times (\nabla \times (\nabla \times \mathbf{A})) = - \mu_{0} \epsilon_{0} \frac{\partial^{2}}{\partial t^{2}} \nabla \times \mathbf{A}
 $$
+
 $$
 \nabla \times \left( \nabla \times (\nabla \times \mathbf{A}) + \mu_{0} \epsilon_{0} \frac{\partial^{2}}{\partial t^{2}} \mathbf{A} \right) = 0
 $$
+
 所以可以选取适当规范使得
 $$
 \nabla \times (\nabla \times \mathbf{A}) + \mu_{0} \epsilon_{0} \frac{\partial^{2}}{\partial t^{2}} \mathbf{A} = 0
 $$
+
 $$
 \nabla \times (\nabla \times \sum_{k} \left[ \mathbf{a}_{k}(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_{k}^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}} \right]) + \frac{1}{c^{2}} \frac{\partial^{2}}{\partial t^{2}} \sum_{k} \left[ \mathbf{a}_{k}(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_{k}^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}} \right] = 0
 $$
+
 所以在库伦规范下
 $$
 \nabla^{2} \mathbf{A} = \frac{1}{c^{2}} \frac{\partial^{2}}{\partial t^{2}} \mathbf{A}
@@ -62,32 +77,43 @@ $$
 \frac{d^{2} \mathbf{a}_{k}(t)}{dt^{2}} + k^{2} c^{2} \mathbf{a}_{k}(t) = 0
 $$
 (2) 当选取规范 $\nabla \cdot \mathbf{A} = 0, \varphi = 0$ 时，证明 $\mathbf{k} \cdot \mathbf{a}_{k} = 0$
+
 证明：
 $$
 \nabla \cdot \mathbf{A} = \nabla \cdot  \sum_{k} \left[ \mathbf{a}_{k}(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_{k}^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}} \right] = 0
 $$
+
 $$
 \therefore \,\, \nabla \cdot (\mathbf{a}_{k}(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_{k}^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}}) = 0
 $$
+
 $$
 \nabla \cdot (\mathbf{a}_{k}(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_{k}^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}}) = (\nabla e^{i \mathbf{k} \cdot \mathbf{x}}) \cdot \mathbf{a}_{k} + (\nabla e^{- i \mathbf{k} \cdot \mathbf{x}}) \cdot \mathbf{a}_{k}^{*} = i e^{i \mathbf{k} \cdot \mathbf{x}} \mathbf{k} \cdot \mathbf{a}_{k} - i e^{- i \mathbf{k} \cdot \mathbf{x}} \mathbf{k} \cdot \mathbf{a}_{k}^{*} = 0
 $$
+
 对于任意 $\mathbf{x}$ 成立，所以$\mathbf{k} \cdot \mathbf{a}_{k} = 0$
+
 (3) 把 $\mathbf{E}$ 和 $\mathbf{B}$ 用 $\mathbf{a}_{k}$ 和 $\mathbf{a}_{k}^*$ 表示出来
 $$
 \mathbf{E} = - \frac{\partial}{\partial t} \mathbf{A} = - \sum_{k} \left[ \frac{d}{d t} \mathbf{a}_{k}(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \frac{d}{d t} \mathbf{a}_{k}^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}} \right]
 $$
+
 $$
 \begin{gathered}
 \mathbf{B} = \nabla \times \mathbf{A} = \sum_{k} \left[ (\nabla e^{i \mathbf{k} \cdot \mathbf{x}}) \times \mathbf{a}_{k}(t)  + (\nabla e^{-i \mathbf{k} \cdot \mathbf{x}}) \times \mathbf{a}_{k}^*(t) \right] \\ = 
 i \sum_{k} e^{i \mathbf{k} \cdot \mathbf{x}} \mathbf{k} \times \mathbf{a}_{k} (t) - e^{-i \mathbf{k} \cdot \mathbf{x}} \mathbf{k} \times \mathbf{a}_{k}^{*} (t)
 \end{gathered}
 $$
+
 ### 2. 推迟势
+
 作业： 
 (a) 书5.5 
+
 5.5 设 $\mathbf{A}$ 和 $\phi$ 是满足洛伦兹规范的矢势和标势
+
 (1) 引入一矢量函数 $\mathbf{Z} (\vec{x}, t)$（赫兹矢量），若令 $\phi = -\nabla \cdot \mathbf{Z}$，证明 $\mathbf{A} = \frac{1}{c^{2}} \frac{\partial \mathbf{Z}}{\partial t}$
+
 由于 $\nabla \cdot \mathbf{A} + \frac{1}{c^{2}} \frac{\partial}{\partial t} \phi = 0$
 $$
 \nabla \cdot \mathbf{A} =  \frac{1}{c^{2}} \frac{\partial}{\partial t} \nabla \cdot \mathbf{Z}
@@ -97,19 +123,24 @@ $$
 \mathbf{A} = \frac{1}{c^{2}} \frac{\partial \mathbf{Z}}{\partial t}
 $$
 (2) 若令 $\rho = -\nabla \cdot \mathbf{P}$ 证明 $\mathbf{Z}$ 满足方程 $\nabla^{2} \mathbf{Z} - \frac{1}{c^{2}} \frac{\partial^{2} \mathbf{Z}}{\partial t^{2}} = -c^{2} \mu_{0} \mathbf{P}$，写出在真空中的推迟解
+
 证明：
 $$
 \nabla \cdot \mathbf{E} = \frac{\rho}{\epsilon_{0}}
 $$
+
 $$
 \nabla \cdot (- \nabla \phi - \frac{\partial}{\partial t} \mathbf{A}) = \frac{\rho}{\epsilon_{0}}
 $$
+
 $$
 \nabla \cdot (- \nabla (- \nabla \cdot \mathbf{Z}) - \frac{\partial}{\partial t} \frac{1}{c^{2}} \frac{\partial \mathbf{Z}}{\partial t}) = \frac{- \nabla \cdot \mathbf{P}}{\epsilon_{0}}
 $$
+
 $$
 \nabla^{2} (\nabla \cdot \mathbf{Z}) - \frac{1}{c^{2}} \frac{\partial}{\partial t} (\nabla \cdot \mathbf{Z}) = - c^{2} \mu_{0} (\nabla \cdot \mathbf{P})
 $$
+
 所以可以选取合适的 $\mathbf{Z}$ 以及 $\mathbf{P}$ 使得
 $$
 \nabla^{2} \mathbf{Z} - \frac{1}{c^{2}} \frac{\partial^{2} \mathbf{Z}}{\partial t^{2}} = -c^{2} \mu_{0} \mathbf{P}
@@ -126,17 +157,22 @@ $$
 $$
 \mathbf{E} = - \nabla \phi - \frac{\partial}{\partial t} \mathbf{A} =  \nabla (\nabla \cdot \mathbf{Z}) - \frac{1}{c^{2}} \frac{\partial^{2}}{\partial t^{2}} \mathbf{Z} = \nabla (\nabla \cdot \mathbf{Z}) - \nabla^{2} \mathbf{Z} - c^{2} \mu_{0} \mathbf{P} = \nabla \times (\nabla \times \mathbf{Z}) - c^{2} \mu_{0} \mathbf{P}
 $$
+
 $$
 \mathbf{B} = \nabla \times \mathbf{A} = \nabla \times \frac{1}{c^{2}} \frac{\partial \mathbf{Z}}{\partial t} = \frac{1}{c^{2}} \frac{\partial}{\partial t} \nabla \times \mathbf{Z}
 $$
+
 (b) 试证，库伦规范的解满足$$\nabla \cdot \mathbf{A} = 0$$
+
 证明：库伦规范下的解为
 $$
 \phi (\mathbf{r}, t) = \int \frac{\rho (\mathbf{r}, t)}{4 \pi \epsilon_{0} |\mathbf{r} - \mathbf{r'}|} d \tau' 
 $$
+
 $$
 \mathbf{A} (\mathbf{r}, t) = \int \frac{\mu_{0} (\mathbf{j} (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}) - \epsilon_{0} \frac{\partial}{\partial t} \nabla'_{r'} \phi (\mathbf{r'}, t - \frac{|\mathbf{r} - \mathbf{r'}|}{c}))}{4 \pi |\mathbf{r} - \mathbf{r'}|} d \tau'
 $$
+
 所以矢势的散度为：（以下用 $\nabla'_{r'}$ 表示仅仅对于空间部分的散度，即不考虑散度中推迟项带来的影响）
 $$
 \begin{gathered}

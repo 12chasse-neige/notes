@@ -1,7 +1,11 @@
 # General Relativity Homework 4
+
 Chasse_neige
+
 ## Problem 1
+
 Please show that $\delta^{\mu} {}_{t}$ and $\delta^{\mu} {}_{\phi}$ are Killing vectors of the Schwarzschild metric.
+
 The Schwarzschild metric can be written as
 $$
 g_{\mu \nu} = \text{diag} \begin{pmatrix}
@@ -33,14 +37,17 @@ Consider the covariant derivative of the vector
 $$
 \xi_{\mu; \nu} = \xi_{\mu, \nu} - \Gamma^{\eta} {}_{\mu \nu} \xi_{\eta}
 $$
+
 $$
 \xi_{\nu; \mu} = \xi_{\nu, \mu} - \Gamma^{\eta} {}_{\nu \mu} \xi_{\eta}
 $$
+
 So we can write down the non-zero components of the covariant derivative of this vector (for this derivative is symmetric, we only need to consider the components with $\mu \leq \nu$)
 $$
 \xi_{t; r} + \xi_{r; t} = - \frac{2 GM}{r^{2}} - \Gamma^{t} {}_{tr} \xi_{t} - \Gamma^{t} {}_{rt} \xi_{t} = - \frac{2GM}{r^{2}} + 2 \cdot \frac{GM}{r^{2} - 2 GM r} \cdot \left(1 - \frac{2GM}{r}\right) = 0
 $$
 For other components, the $\xi_{\mu, \nu}$ is zero and the Christoffel symbols with the sign $\Gamma^{t} {}_{\mu \nu}$ are zero, so the covariant derivative is zero. So we have shown that $\delta^{\mu} {}_{t}$ is a Killing vector.
+
 Similarly, to show that the vector $\delta^{\mu} {}_{\phi}$ is a Killing vector, we first use the metric tensor to lower the index of $\delta^{\mu} {}_{\phi}$, we have
 $$
 \xi_{\mu} = g_{\mu \nu} \delta^{\nu} {}_{\phi} =  \left(0, 0, 0, r^{2} \sin^{2} \theta\right)
@@ -52,12 +59,17 @@ $$
 2 r \sin^{2} \theta + 0 - 2 \cdot \frac{1}{r} \cdot r^{2} \sin^{2} \theta = 0
 \end{gathered}
 $$
+
 $$
 \xi_{\phi; \theta} + \xi_{\theta; \phi} = \xi_{\phi, \theta} + \xi_{\theta, \phi} - \Gamma^{\phi} {}_{\phi \theta} \xi_{\phi} - \Gamma^{\phi} {}_{\theta \phi} \xi_{\phi} = 2 r^{2} \sin\theta \cos\theta + 0 - 2 \cdot \cot\theta \cdot r^{2} \sin^{2} \theta = 0
 $$
+
 For other components, the $\xi_{\mu, \nu}$ is zero and the Christoffel symbols with the sign $\Gamma^{\phi} {}_{\mu \nu}$ are zero, so the covariant derivative is zero. So we have shown that $\delta^{\mu} {}_{\phi}$ is a Killing vector.
+
 ## Problem 2
+
 Please repeat the steps of calculating the phenomena of Mercury precession and light deflection induced by general relativity, and calculate what is the precession angle of the Mars during GR effect.
+
 First, we use the Killing vectors to find some conserved quantities. For the Killing vector $\delta^{\mu} {}_{t}$, we have
 $$
 g_{\mu \nu} U^{\mu} \delta^{\nu} {}_{t} = - \left(1 - \frac{2 GM}{r}\right) \cdot \dv{t}{\tau} = \text{Constant} \equiv -E
@@ -67,6 +79,7 @@ $$
 g_{\mu \nu} U^{\mu} \delta^{\nu} {}_{\phi} = r^{2} \sin^{2} \theta \cdot \dv{\phi}{\tau} = \text{Constant} \equiv L
 $$
 We choose the plain $\theta = \frac{\pi}{2}$,  so the $\theta$ component’s geodesic equation is automatically satisfied.
+
 Now we can derive the track of the planet
 $$
 \dd{\tau}^{2} = \left(1 − \frac{2 GM}{r}\right) \dd{t}^{2} − \left(1 − \frac{2GM}{r}\right)^{−1} \dd{r}^{2} − r^{2} (\dd{\theta}^{2} + \sin^{2} \theta \dd{\phi}^{2})
@@ -116,7 +129,9 @@ $$
 \Delta \phi = 6 \pi \frac{G^{2} M^{2} m^{2}}{L^{2} c^{2}}
 $$
 The $L$ in this precession angle is the classical $L$ which contains the mass of the planet.
+
 ### Mercury Precession
+
 The parameters of Mercury orbit are
 $$
 \begin{gathered}
@@ -129,7 +144,9 @@ So the total precession angle in one century of the Mercury orbit is
 $$
 \Delta \phi = \frac{100 \times 365}{87.969257} \times 6 \pi \times \frac{G M_{\text{sun}}}{a (1 - e^{2}) \cdot c^{2}} \approx 42.98''
 $$
+
 ### Mars Precession
+
 The parameters of Mars orbit are
 $$
 \begin{gathered}
@@ -142,13 +159,17 @@ So the total precession angle in one century of the Mars orbit is
 $$
 \Delta \phi = \frac{100 \times 365}{686.92971} \times 6 \pi \times \frac{G M_{\text{sun}}}{a (1 - e^{2}) \cdot c^{2}} \approx 1.35''
 $$
+
 ## Problem 3
+
 For a Schwarzschild blackhole with mass $M$, the metric can be written as
 $$
 \dd{\tau}^{2} = \left(1 − \frac{2 GM}{r}\right) \dd{t}^{2} − \left(1 − \frac{2GM}{r}\right)^{−1} \dd{r}^{2} − r^{2} (\dd{\theta}^{2} + \sin^{2} \theta \dd{\phi}^{2})
 \tag{1}
 $$
+
 Now, consider two observers $A$ and $B$. At $t=t_{0}$ they were both at $r= 6GM$. At $t_{0}$, $A$ starts to freely fall into the blackhole in the radial direction, while $B$ remains fixed at $r= 6GM$. From $t_{0}$, $A$ sends back a signal to $B$ every $Δt$ (measured by the clock flying with $A$). Please calculate how often $B$ observed a signal from $A$.
+
  First consider the geodesic equation of the observer $A$ in the radial direction, the motion equation is
 $$
 \left(\dv{r}{\tau}\right)^{2} - E^{2} + 1 - \frac{2 GM}{r} =0

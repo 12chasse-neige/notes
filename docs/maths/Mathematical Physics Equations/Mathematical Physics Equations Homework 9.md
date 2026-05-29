@@ -1,11 +1,15 @@
 # 数学物理方程 第9次作业
+
 Chasse_neige
+
 7.计算下列积分
+
 (a) 
 $$
 \int_{-1}^{1} \mathrm{P}_{k}^{\prime}(x) \mathrm{P}_{l}(x) \, \mathrm{d}x
 $$
 当 $k \leq l$ 时，利用 Legendre 多项式的正交性，积分为 $0$
+
 当 $k > l$ 时
 $$
 \begin{gathered}
@@ -34,6 +38,7 @@ $$
 \int_{-1}^{1} \dfrac{\mathrm{P}_{l}(x)}{(1 - 2xt + t^{2})^{3/2}} \, \mathrm{d}x =  \sum_{k = l + 1}^{\infty} (1 - (-1)^{k + l}) t^{k - 1} = 2 t^{l}  \frac{1}{1 - t^{2}} = \frac{2 t^{l}}{1 - t^{2}}
 $$
 8.一半径为 $a$ 的半球, 球面温度为 $u_{0}$, 底面温度为 $0$. 求半球内的温度分布.
+
 方程以及边界条件为
 $$
 \begin{gathered}
@@ -61,9 +66,11 @@ $$
 $$
 u_{0} = u (a, \theta) = \sum_{l} A_{2l + 1} a^{2l + 1} P_{2l + 1} (\cos \theta)
 $$
+
 $$
 \int_{0}^{\frac{\pi}{2}} u_{0} P_{2l + 1} (\cos \theta) \sin \theta \, \dd{\theta} - \int_{\frac{\pi}{2}}^{\pi}  u_{0} P_{2l + 1} (\cos \theta) \sin \theta \, \dd{\theta} = A_{2l + 1} a^{2l + 1} \int_{0}^{\pi} P^{2}_{2l + 1} (\cos \theta) \sin \theta \, \dd{\theta}
 $$
+
 注意这个积分已经把问题进行了延拓至整个球
 $$
 A_{2l + 1} = \frac{4l + 3}{2a^{2l + 1}} \left( \int_{0}^{1} u_{0} P_{2l + 1} (x) \, \dd{x} - \int_{-1}^{0} u_{0} P_{2l + 1} (x) \, \dd{x} \right)= (-1)^{l} \frac{1}{a^{2l + 1}} \frac{(2l)! (4l + 3)}{2^{2l + 1} l! (l+ 1)!}
@@ -73,23 +80,29 @@ $$
 u (r, \theta) = \sum_{l = 0}^{\infty} (-1)^{l} \frac{r^{2l + 1}}{a^{2l + 1}} \frac{(2l)! (4l + 3)}{2^{2l + 1} l! (l+ 1)!} P_{2l + 1} (\cos \theta)
 $$
 9.一半径为 $b$ 的接地导体球壳, 内部放一均匀带电圆环, 环的半径为 $a$, 电量为 $Q$, 环心与球心重合. 试求球壳内电势分布.
+
 取圆环轴线为 $z$ 轴，直接猜测解为
 $$
 \phi (r, \theta) = \begin{cases} \sum_{l} A_{2l} r^{2l} P_{2l} (\cos \theta) \quad (0 \leq r \leq a) \\
 \sum_{l} \left(B_{2l} r^{2l} + C_{2l} r^{- 2l - 1} \right) P_{2l} (\cos \theta) \quad (a \leq r \leq b) \end{cases}
 $$
 的形式，利用边界条件待定系数
+
 对于 $0 \leq r \leq a$
 $$
 r^{2} \left. \pdv{u (r, \frac{\pi}{2})}{r} \right|_{r = a-}^{r = a+} = - \frac{Q}{2 \pi \epsilon_{0}} \delta (\theta - \frac{\pi}{2})
 $$
+
 $$
 (2l a^{2l + 1} (B_{2l} - A_{2l}) - (2l + 1) C_{2l} a^{-2l}) \frac{2}{4l + 1} = - \frac{Q}{2 \pi \epsilon_{0}} \frac{(-1)^{l} (2l)!}{2^{2l} (l!)^{2}}
 $$
+
 再利用电势连续的条件
 $$
 A_{2l} a^{2l} = B_{2l} a^{2l} + C_{2l} a^{-2l-1}
 $$
+
+
 对于 $a \leq r \leq b$
 $$
 u(b, \theta) = 0

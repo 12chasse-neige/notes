@@ -1,7 +1,10 @@
 # Atomic and Molecular Physics Homework 1
+
 Chasse_neige
+
 ### Question 1
 The eigenfunctions of a Hydrogen are of the form $\psi_{nlm} = R_{nl}(r)P_{l}^{m}(\cos\theta)e^{im\phi}$
+
 (a) Write down the explicit forms of $\psi_{100}$, $\psi_{200}$, $\psi_{210}$ and $\psi_{21\pm1}$.
 $$
 R_{nl}(r) = \sqrt{\left( \frac{2}{n a_{0}} \right)^{3} \frac{(n-l-1)!}{2n[(n+l)!]}} e^{- \frac{r}{(n a_{0})}} \left( \frac{2r}{n a_{0}} \right)^{l} L_{n-l-1}^{2l+1} \left( \frac{2r}{n a_{0}} \right)
@@ -10,6 +13,7 @@ Where
 $$
 L_{k}^{\alpha}(x) = \sum_{j=0}^{k} (-1)^{j} \binom{k+\alpha}{k-j} \frac{x^{j}}{j!}
 $$
+
 And
 $$
 Y_{lm}(\theta, \phi) = \sqrt{\frac{2l+1}{4\pi} \frac{(l-m)!}{(l+m)!}} P_{l}^{m} (\cos \theta) e^{i m \phi}
@@ -18,6 +22,7 @@ Where
 $$
 P_{l}^{m}(x) = (-1)^{m} (1 - x^{2})^{\frac{m}{2}} \frac{d^{m}}{dx^{m}} P_{l}(x)
 $$
+
 So
 $$
 \begin{gathered}
@@ -25,29 +30,36 @@ $$
 = \frac{2}{a_{0}^{\frac{3}{2}}} \sqrt{\frac{1}{4 \pi}} e^{- \frac{r}{a_{0}}}
 \end{gathered}
 $$
+
 $$
 \begin{gathered}
 \psi_{200} = R_{20} (r) Y_{00} (\theta, \phi) = \sqrt{\left( \frac{2}{2 a_{0}} \right)^{3} \frac{1}{8}} e^{- \frac{r}{2 a_{0}}} L_{1}^{1} \left(\frac{r}{a_{0}} \right) \sqrt{\frac{1}{4 \pi}} P_{0}^{0} (\cos \theta) \\ 
 = \frac{1}{2\sqrt{2} a_{0}^{\frac{3}{2}}} \sqrt{\frac{1}{4 \pi}} \left(2 - \frac{r}{a_{0}}\right) e^{- \frac{r}{a_{0}}}
 \end{gathered}
 $$
+
 $$
 \begin{gathered}
 \psi_{210} = R_{21} (r) Y_{1 0} (\theta, \phi) = \sqrt{\frac{1}{a_{0}}^{3} \frac{1}{24}} e^{-\frac{r}{2 a_{0}}} \frac{r}{a_{0}} L_{0}^{3} \left( \frac{r}{a_{0}} \right) \sqrt{\frac{3}{4 \pi}} P_{1}^{0} (\cos \theta) \\ 
 = \frac{1}{2 \sqrt{2} a_{0}^{\frac{3}{2}}} \sqrt{\frac{1}{4 \pi}} \frac{r}{a_{0}} e^{- \frac{r}{2 a_{0}}} \cos \theta
 \end{gathered}
 $$
+
 $$
 \psi_{21 \pm 1} = R_{21} (r) Y_{1 \pm 1} (\theta, \phi) = \sqrt{\frac{1}{a_{0}}^{3} \frac{1}{24}} e^{-\frac{r}{2 a_{0}}} \frac{r}{a_{0}} L_{0}^{3} \left( \frac{r}{a_{0}} \right) \sqrt{\frac{3}{4 \pi} 2^{\mp 1}} P_{1}^{\pm 1} (\cos \theta) e^{i \pm 1 \phi}
 $$
+
 Show the two functions respectively 
 $$
 \psi_{211} = - \frac{1}{4 a_{0}^{\frac{3}{2}}} \sqrt{\frac{1}{4 \pi}} \frac{r}{a_{0}} e^{- \frac{r}{2 a_{0}}} \sin \theta e^{i \phi}
 $$
+
 $$
 \psi_{21-1} = \frac{1}{4 a_{0}^{\frac{3}{2}}} \sqrt{\frac{1}{4 \pi}} \frac{r}{a_{0}} e^{- \frac{r}{2 a_{0}}} \sin \theta e^{- i \phi}
 $$
+
 (b) Calculate spatial dependence of the probability current $J=\frac{\hbar}{2\mu i}(\psi^*\nabla\psi-\psi\nabla\psi^*)$ of $\psi_{nlm}$. Describe and sketch distribution of $J$ for $\psi_{200}$, $\psi_{210}$ and $\psi_{211}$.
+
 The probability current
 $$
 \begin{gathered}
@@ -64,12 +76,16 @@ $$
 J (r, \theta, \phi) = \frac{\hbar}{\mu} \frac{r}{64 \pi a_{0}^{5}} e^{- \frac{r}{a_{0}}} \sin \theta \hat{e}_{\phi}
 $$
 (c) Use the probability current obtained above to show that the z-component of the magnetic moment of $\psi_{nlm}$ is given by $M_{z}=m\mu_{B}$ where $\mu_{B}=\frac{e\hbar}{2\mu}$ is the Bohr magneton.
+
 $$
 M_{z} = - \int \frac{e}{2} \vec{r} \times \vec{J} dv = -\frac{e \hbar m}{2 \mu} \int \frac{|\psi_{nlm}|^{2}}{r \sin \theta} r \sin \theta dv = - m \mu_{B}
 $$
+
 ### Question 2
 Using $H_{hfB} = A \vec{I} \cdot \vec{J} + \frac{\mu_{B}}{\hbar} (g_{J} J_{z} + g_{I} I_{z}) B_{z}$, compute the hyperfine structure of the $5S_{1/2}$ ground state of $^{87}\text{Rb}$ atom under the influence of an external magnetic field. The relevant parameters are given in the next page.
+
 (a) You should write a Matlab or Mathematica script or any computation script of your preference. Use $|J, m_{J}\rangle |I, m_{I}\rangle$ as your starting basis to obtain the matrix representation of $H_{hfB}$ and then diagonalize this matrix to obtain the eigenenergies and eigenstates. Do not use the Breit-Rabi formula. Submit your results together with 1 page of your program.
+
 Under the  $|J, m_{J}\rangle |I, m_{I}\rangle$ basis, the Hamiltonian can be represented as
 $$
 H_{hfB} = A \left( \frac{I_+ J_- + I_- J_+}{2} + I_{z} J_{z} \right) + \frac{\mu_{B}}{\hbar} (g_{J} J_{z} + g_{I} I_{z}) B_{z}
@@ -114,6 +130,7 @@ H_{ij} = \begin{cases}
 \end{cases}
 $$
 The Matlab script for calculating the Hamiltonian is as follows 
+
 ```matlab
 % 参数
 A = 3.417341305452145; % GHz * h
@@ -167,6 +184,7 @@ eigenvalues = diag(D);
 [eigenvalues_sorted, sort_idx] = sort(eigenvalues);
 eigenvectors_sorted = V(:, sort_idx);
 ```
+
 The results show that the Matrix representation of the Hamiltonian is (when the magnetic field is 0)
 $$
 H_{B = 0} = \begin{pmatrix}
@@ -210,55 +228,74 @@ $$
 $$
 \ket{F = 1, m_{F} = 1} = - 0.500 \ket{m_{J} = \frac{1}{2}} \otimes \ket{m_{I} = \frac{1}{2}} + 0.866 \ket{m_{J} = -\frac{1}{2}} \otimes \ket{m_{I} = \frac{3}{2}}
 $$
+
 $$
 \ket{F = 1, m_{F} = 0} = - 0.707 \ket{m_{J} = \frac{1}{2}} \otimes \ket{m_{I} = -\frac{1}{2}} + 0.707 \ket{m_{J} = -\frac{1}{2}} \otimes \ket{m_{I} = \frac{1}{2}}
 $$
+
 $$
 \ket{F = 1, m_{F} = -1} = 0.866 \ket{m_{J} = \frac{1}{2}} \otimes \ket{m_{I} = -\frac{3}{2}} -0.500 \ket{m_{J} = -\frac{1}{2}} \otimes \ket{m_{I} = -\frac{1}{2}}
 $$
+
 $$
 \ket{F = 2, m_{F} = - 2} = \ket{m_{J} = - \frac{1}{2}} \otimes \ket{m_{I} = - \frac{3}{2}}
 $$
+
 $$
 \ket{F = 2, m_{F} = - 1} = 0.866 \ket{m_{J} = - \frac{1}{2}} \otimes \ket{m_{I} = - \frac{1}{2}} + 0.500 \ket{m_{J} = \frac{1}{2}} \otimes \ket{m_{I} = - \frac{3}{2}}
 $$
+
 $$
 \ket{F = 2, m_{F} = 0} = - 0.707 \ket{m_{J} = \frac{1}{2}} \otimes \ket{m_{I} = -\frac{1}{2}} - 0.707 \ket{m_{J} = -\frac{1}{2}} \otimes \ket{m_{I} = \frac{1}{2}}
 $$
+
 $$
 \ket{F = 2, m_{F} = 1} = - 0.866 \ket{m_{J} = \frac{1}{2}} \otimes \ket{m_{I} = \frac{3}{2}} - 0.500 \ket{m_{J} = \frac{1}{2}} \otimes \ket{m_{I} = \frac{1}{2}}
 $$
+
 $$
 \ket{F = 2, m_{F} = 2} = \ket{m_{J} = \frac{1}{2}} \otimes \ket{m_{I} = \frac{3}{2}}
 $$
+
 For the results given by the Clebsch-Gordan coefficients,
+
 <img src="./Atomic and Molecular Physics Homework 1.assets/image-20251009000608068.png" alt="image-20251009000608068">
+
 We can see from the table that 
 $$
 \ket{F = 1, m_{F} = 1} = \frac{\sqrt{3}}{2} \ket{m_{J} = - \frac{1}{2}} \otimes \ket{m_{I} = \frac{3}{2}} + \frac{1}{2} \ket{m_{J} = \frac{1}{2}} \otimes \ket{m_{I} = \frac{1}{2}}
 $$
+
 $$
 \ket{F = 1, m_{F} = 0} = - \frac{1}{\sqrt{2}} \ket{m_{J} = \frac{1}{2}} \otimes \ket{m_{I} = -\frac{1}{2}} + \frac{1}{\sqrt{2}} \ket{m_{J} = -\frac{1}{2}} \otimes \ket{m_{I} = \frac{1}{2}}
 $$
+
 $$
 \ket{F = 1, m_{F} = -1} = - \frac{\sqrt{3}}{2} \ket{m_{J} = \frac{1}{2}} \otimes \ket{m_{I} = -\frac{3}{2}} + \frac{1}{2} \ket{m_{J} = -\frac{1}{2}} \otimes \ket{m_{I} = -\frac{1}{2}}
 $$
+
 $$
 \ket{F = 2, m_{F} = - 2} = \ket{m_{J} = - \frac{1}{2}} \otimes \ket{m_{I} = - \frac{3}{2}}
 $$
+
 $$
 \ket{F = 2, m_{F} = - 1} = \frac{\sqrt{3}}{2} \ket{m_{J} = - \frac{1}{2}} \otimes \ket{m_{I} = - \frac{1}{2}} + \frac{1}{2} \ket{m_{J} = \frac{1}{2}} \otimes \ket{m_{I} = - \frac{3}{2}}
 $$
+
 $$
 \ket{F = 2, m_{F} = 0} = \frac{1}{\sqrt{2}} \ket{m_{J} = \frac{1}{2}} \otimes \ket{m_{I} = -\frac{1}{2}} + \frac{\sqrt{2}}{2} \ket{m_{J} = -\frac{1}{2}} \otimes \ket{m_{I} = \frac{1}{2}}
 $$
+
 $$
 \ket{F = 2, m_{F} = 1} = - \frac{\sqrt{3}}{2} \ket{m_{J} = \frac{1}{2}} \otimes \ket{m_{I} = \frac{3}{2}} - \frac{1}{2} \ket{m_{J} = \frac{1}{2}} \otimes \ket{m_{I} = \frac{1}{2}}
 $$
+
+
 $$
 \ket{F = 2, m_{F} = 2} = \ket{m_{J} = \frac{1}{2}} \otimes \ket{m_{I} = \frac{3}{2}}
 $$
 are exactly the same as those we've calculated apart from some signs of the whole eigenvectors.
+
 For the eigenenergies when $B = 0$, the script gives that there are two possible values
 $$
 E_{-} = h \cdot -4.272 GHz, \qquad E_{+} = h \cdot 2.563 GHz
@@ -276,7 +313,10 @@ $$
 H_{+} = A \frac{6 - \frac{15}{4} - \frac{3}{4}}{2} = 0.75 A = h \cdot 2.563 GHz \approx E_{+}
 $$
 These show that our calculations are corresponding to the formula given in class.
+
+
 Hint for Question 2:
+
 $$
 \vec{I} \cdot \vec{J} = \frac{I_+ J_- + I_- J_+}{2} + I_{z} J_{z}
 $$

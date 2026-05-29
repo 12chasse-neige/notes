@@ -1,5 +1,7 @@
 # 统计力学 第12次作业
+
 Chasse_neige
+
 9.15 试证明在巨正则系综理论中熵可表示为
 $$
 S = -k \sum_N \sum_s \rho_{Ns} \ln \rho_{Ns}

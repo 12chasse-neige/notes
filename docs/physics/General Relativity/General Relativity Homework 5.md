@@ -1,6 +1,9 @@
 # General Relativity Homework 5
+
 Chasse_neige
+
 ## Problem 1
+
 Please calculate the connection and the Ricci tensor for the metric
 $$
 \dd{\tau^{2}} = B(t, r) \dd{t}^{2} - A(t, r) \dd{r}^{2} - r^{2} \dd{\Omega^{2}}
@@ -13,6 +16,7 @@ First we derive the Christoffel symbol
 $$
 \Gamma^{\lambda} {}_{\mu \nu} = g^{\lambda \eta} (g_{\eta \mu, \nu} + g_{\eta \nu, \mu} - g_{\mu \nu, \eta})
 $$
+
 Calculate the components, we can find all nonzero terms are
 $$
 \begin{gathered}
@@ -34,7 +38,9 @@ $$
 \Gamma^{\phi} {}_{\theta\phi} = \Gamma^{\phi} {}_{\phi\theta} = \cot\theta
 \end{gathered}
 $$
+
 where prime means derivative of the space direction while dot means derivative of the time direction.
+
 Calculate Ricci tensors using the definition
 $$
 \begin{gathered}
@@ -42,7 +48,9 @@ R_{\mu \kappa} = g^{\lambda \nu} R_{\lambda \mu \nu \kappa} = R^{\lambda} {}_{\m
 \Gamma^{\lambda} {}_{\mu \lambda, \kappa} - \Gamma^{\lambda} {}_{\mu \kappa, \lambda} + \Gamma^{\eta} {}_{\mu \lambda} \Gamma^{\lambda} {}_{\eta \kappa} - \Gamma^{\eta} {}_{\mu \kappa} \Gamma^{\lambda} {}_{\eta \lambda}
 \end{gathered}
 $$
+
 And we can get all nonzero components
+
 $$
 \begin{gathered}
 R_{tt} = \frac{\ddot{A}}{2A} - \frac{\dot{A}^{2}}{4A^{2}} - \frac{\dot{A}\dot{B}}{4AB} - \frac{B''}{2A} + \frac{B'}{4A} \left( \frac{A'}{A} + \frac{B'}{B} \right) - \frac{B'}{rA}  \\
@@ -52,8 +60,12 @@ R_{\theta\theta} = - 1 + \frac{1}{A} - \frac{r}{2A}\left( \frac{A'}{A} - \frac{B
 R_{\phi\phi} = \sin^{2}\theta \, R_{\theta\theta}
 \end{gathered}
 $$
+
+
 ## Problem 2 
+
 Please derive the energy-momentum tensor for electromagnetic field.
+
 We use the variation of the action to get the form for the energy-momentum tensor
 $$
 T^{\mu \nu} = \frac{2}{\sqrt{-g}} \frac{\delta S}{\delta g_{\mu \nu}}
@@ -76,3 +88,8 @@ T^{\rho \sigma} = \frac{2}{\sqrt{-g}} \cdot \left(- \frac{1}{4} F_{\alpha \beta}
 F^{\rho \beta} F^{\sigma} {}_{\beta} - \frac{1}{4} g^{\rho \sigma} F^{\mu \nu} F_{\mu \nu}
 \end{gathered}
 $$
+
+
+
+
+

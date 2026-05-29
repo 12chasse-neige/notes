@@ -1,11 +1,16 @@
 # 统计力学 第3次作业
+
 Chasse_neige
+
 3.7. 试证明在相变中物质摩尔内能的变化为
+
 $$
 \Delta U_{m}=L\left(1-\frac{p}{T} \dv{T}{p} \right)
 $$
 如果一相是气相, 可看作理想气体, 另一相是凝聚相, 试将公式化简。
+
 证明：
+
 假设相变过程中的潜热 $L$ 表示
 $$
 L = T \Delta S_{m}
@@ -39,10 +44,12 @@ $$
 \dv{L}{T}=c_{p}^{\beta}-c_{p}^{\alpha}+\frac{L}{T}-\left[\left(\frac{\partial V_{m}^{\beta}}{\partial T}\right)_{p}-\left(\frac{\partial V_{m}^{\alpha}}{\partial T}\right)_{p}\right] \frac{L}{V_{m}^{\beta}-V_{m}^{\alpha}}
 $$
 如果 $\beta$ 相是气相, $\alpha$ 相是凝聚相, 试证明上式可简化为
+
 $$
 \dv{L}{T}=c_{p}^{\beta}-c_{p}^{\alpha}
 $$
 证明：
+
 利用潜热的定义
 $$
 L = T (S_{m}^{\beta} - S_{m}^{\alpha}) = H_{m}^{\beta} - H_{m}^{\alpha}
@@ -58,12 +65,14 @@ $$
 $$
 \dv{p}{T} = \frac{L}{T (V_{m}^{\beta} - V_{m}^{\alpha})}
 $$
+
 $$
 \begin{gathered}
 \dv{L}{T} = c_{p}^{\beta} - c_{p}^{\alpha} + \left(V_{m}^{\beta} - V_{m}^{\alpha} + T \left(\pdv{V_{m}^{\alpha}}{T}\right)_{p} - T \left(\pdv{V_{m}^{\beta}}{T}\right)_{p}\right) \frac{L}{T (V_{m}^{\beta} - V_{m}^{\alpha})} \\ =
 c_{p}^{\beta}-c_{p}^{\alpha}+\frac{L}{T}-\left[\left(\frac{\partial V_{m}^{\beta}}{\partial T}\right)_{p}-\left(\frac{\partial V_{m}^{\alpha}}{\partial T}\right)_{p}\right] \frac{L}{V_{m}^{\beta}-V_{m}^{\alpha}}
 \end{gathered}
 $$
+
 如果 $\beta$ 相是气相， $\alpha$ 相是凝聚相，则上式可以变为
 $$
 \dv{L}{T} = c_{p}^{\beta}-c_{p}^{\alpha}+\frac{L}{T} - \left(\frac{\partial V_{m}^{\beta}}{\partial T}\right)_{p} \frac{L}{V_{m}^{\beta}}
@@ -72,17 +81,23 @@ $$
 $$
 V_{m}^{\beta} = \frac{RT}{p}
 $$
+
 $$
 \dv{L}{T} = c_{p}^{\beta}-c_{p}^{\alpha}+\frac{L}{T} - \frac{R}{p} \frac{L p}{RT} = c_{p}^{\beta}-c_{p}^{\alpha}
 $$
+
 3.13. 将范氏气体在不同温度下的等温线的极大点 $N$ 与极小点 $J$ 联起来, 可以得到一条曲线 $NCJ$, 如右图所示 (此处 $V_{\mathrm{m}}$ 为气体的摩尔体积)。
 <img src="./Statistical Mechanics Homework 3.assets/image-20260311100008543.png" alt="image-20260311100008543" style="zoom:50%;" />
+
 试证明这条曲线的方程为
 $$
 \mathrm{p} V_{\mathrm{m}}^{3}=a\left(V_{\mathrm{m}}-2 b\right)
 $$
+
 并说明这条曲线划分出来的三个区域Ⅰ、Ⅱ、Ⅲ的含义。
+
 证明：
+
 极值点具有性质
 $$
 \pdv{p}{V_{m}} = 0
@@ -99,12 +114,17 @@ $$
 $$
 p + \frac{a}{V_{m}^{2}} = \frac{2a}{V_{m}^{3}} (V_{m} - b)
 $$
+
 $$
 p V_{m}^{3} = a V_{m} - 2ab
 $$
+
 **划分出的区域的含义**
+
 图中区域Ⅰ中的状态相应于过热液体；区域 Ⅲ 中的状态相应于过饱和蒸气；区域Ⅱ中的状态是不能实现的，因为这些状态不满足平衡稳定性的要求。
+
 3.20 试根据朗道自由能式导出单轴铁磁体的熵函数在无序相和有序相的表达式并证明熵函数在临界点是连续的。
+
 Landau 自由能在临界点附近可以展开为
 $$
 F (T, M) = F_{0} (T) + \frac{1}{2} a (T) M^{2} + \frac{1}{4} b (T) M^{4}
@@ -136,11 +156,14 @@ $$
 \frac{a_{0}}{b} \frac{T - T_{c}}{T_{c}} \frac{a_{0}}{T_{c}} = 0
 $$
 所以熵在临界点是连续的。
+
 选做题: 假定朗道自由能写为
 $$
 G(T, m)=a(T)+\frac{1}{2} b(T) m^{2}+\frac{1}{3} c m^{4}+\frac{1}{4} d m^{6}
 $$
+
 其中, $d>0, c<0$。试证明这一体系有一级相变，并请计算相变潜热。
+
 寻找极值点
 $$
 \begin{gathered}

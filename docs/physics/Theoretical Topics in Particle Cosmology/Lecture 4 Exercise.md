@@ -1,4 +1,5 @@
 # Lecture 4 Exercise 
+
 (1) Please derive the Dyson series (4) for the transition amplitude in the presence of a source $j$.
 $$
 S_{\Phi\Psi}[j] = \langle \Phi_{-} | T\bigg\{ \exp\!\Big(-i\int dt\, d^{3}\mathbf{x}\, j O\Big) \bigg\} | \Psi_{+} \rangle \tag{4}
@@ -30,7 +31,9 @@ So the component of the S-matrix can be represented as
 $$
 S_{\Phi\Psi}[j] = \langle \Phi_{-} | U (- \infty, \infty) | \Psi_{+} \rangle = \langle \Phi_{-} | T\bigg\{ \exp\!\Big(-i\int dt\, d^{3}\mathbf{x}\, j O\Big) \bigg\} | \Psi_{+} \rangle
 $$
+
 (2) Please fill in the missing steps in the proof of the on‑shell factorization theorem.
+
 >**§2 On‑Shell Factorization Theorem** 
 >Now we are ready to state an important theorem concerning the simple poles of a Green function. For simplicity, we will work with a model with scalar particles only and we work with vacuum Green function, namely, taking $\Psi=\Phi=\Omega$ in (5) and drop the subscripts, $G=G_{\Omega\Omega}$. The generalization to arbitrary in/out states is straightforward. Generalization to spinning particles will be commented afterwards.
 >
@@ -154,7 +157,9 @@ $$
 > $$
 >
 >3. We would like to formulate the on‑shell factorization theorem for $S$-matrix elements, but there are subtleties. So, our strategy is to state and prove the theorem for Green functions first, and then convert a Green function to $S$-matrix element, which is the well‑known Lehmann–Symanzik–Zimmermann (LSZ) reduction.
+
 After using the integral representation of the $\theta$-function and inserting the complete set of states, keeping only the one‑particle contribution, we have
+
 $$
 \begin{gather}
 G_{\text{pole}} = \int\prod_{a=1}^{n} d^{4}x_{a}\,e^{-ik_{a}\cdot x_{a}}
@@ -167,6 +172,7 @@ e^{-i\omega[\min\{x^{0}_{\ell+1},\dots ,x^{0}_{n}\}-\max\{x^{0}_{1},\dots ,x^{0}
 \tag{A}
 \end{gather}
 $$
+
 The pole at $s_{\ell}=m^{2}$ comes from the region where the early operators $(O_{1},\dots ,O_{\ell})$ are all earlier than the late operators $(O_{\ell+1},\dots ,O_{n})$.  In that region the time ordering factorises
 $$
 T\{O_{1}\cdots O_{n}\}=T\{O_{\ell+1}\cdots O_{n}\}\,T\{O_{1}\cdots O_{\ell}\}
@@ -179,10 +185,12 @@ $$
 \tag{C}
 $$
 because corrections from the relative times inside each cluster do not affect the singular part.Introduce the coordinate differences
+
 $$
 z_{i}=x_{i}-x_{1}\;(i=2,\dots ,\ell),\quad
 y_{i}=x_{i}-x_{\ell+1}\;(i=\ell+2,\dots ,n)
 $$
+
 Using the momentum eigenstate property $P^{\mu}|\mathbf{p}\rangle=p^{\mu}|\mathbf{p}\rangle$ we can extract the dependence on the reference points
 $$
 \begin{gather}
@@ -195,6 +203,7 @@ $$
 \tag{D}
 \end{gather}
 $$
+
 Insert (C) and (D) into (A).  The Fourier exponentials combine as
 $$
 \begin{gathered}
@@ -209,6 +218,7 @@ $$
 K_{1\cdots\ell}^{\mu}=\sum_{a=1}^{\ell}k_{a}^{\mu},\qquad
 K_{(\ell+1)\cdots n}^{\mu}=\sum_{a=\ell+1}^{n}k_{a}^{\mu}
 $$
+
 The integrals over $x_{1}$ and $x_{\ell+1}$ are now Gaussian and yield delta‑functions
 $$
 \begin{gather}
@@ -219,29 +229,35 @@ $$
 \tag{E}
 \end{gather}
 $$
+
 The two delta‑functions in (E) enforce
 $$
 p^{\mu}=(\omega,\mathbf{0})-K_{1\cdots\ell}^{\mu},
 \quad
 K_{(\ell+1)\cdots n}^{\mu}=p^{\mu}-(\omega,\mathbf{0})
 $$
+
 Adding the two equations gives overall momentum conservation
 $$
 K_{1 \cdots \ell}^{\mu} + K_{(\ell+1)\cdots n}^{\mu} = 0
 $$
 which is already contained in the definition of the Green function. The on‑shell condition $p^{2}=m^{2}$ then relates $\omega$ to the early‑cluster momentum
+
 $$
 \big(\omega-K_{1\cdots\ell}^{0}\big)^{2} - |\mathbf{K}_{1\cdots\ell}|^{2} = m^{2}
 $$
+
 Defining $E_{p}=\sqrt{|\mathbf{K}_{1\cdots\ell}|^{2}+m^{2}}$, we obtain
 $$
 \omega - K_{1\cdots\ell}^{0} = \pm E_{p}
 $$
+
 The sign is fixed by the requirement that the pole appears when approaching from $K_{1\cdots\ell}^{0}<0$.  For $K_{1\cdots\ell}^{0}<0$ the relevant solution is
 $$
 \omega = K_{1\cdots\ell}^{0} + E_{p} \tag{F}
 $$
 because in that case $\omega$ can be small (near the pole) while $E_{p}>0$. After performing the integrals over $x_{1},x_{\ell+1}$ and using the delta‑functions to eliminate $p$, the expression (A) reduces to
+
 $$
 \begin{gathered}
 G_{\text{pole}}=
@@ -260,12 +276,15 @@ G_{\text{pole}}=
 \langle\mathbf{p}|T\{O_{1}(0)O_{2}(z_{2})\cdots\}|\Omega\rangle\Big]
 \end{gathered}
 $$
+
 The three‑dimensional delta‑function sets $\mathbf{p}=-\mathbf{K}_{1\cdots\ell}$ and the energy delta‑function fixes $\omega$ as in (F).  The integrals over the internal coordinates $y_{i},z_{i}$ are precisely the definitions of the amputated Green functions $G_{L}$ and $G_{E}$ given in eqs. (8)–(9) of the theorem (up to the overall momentum‑conserving delta‑functions, which are already present).
+
 Carrying out the $\omega$ integral with the help of the energy delta‑function gives a factor
 $$
 \frac{1}{\omega+i\epsilon}\;\longrightarrow\;
 \frac{1}{K_{1\cdots\ell}^{0}+E_{p}+i\epsilon}
 $$
+
 Recall that $s_{\ell}\equiv -K_{1\cdots\ell}^{2}=-(K_{1\cdots\ell}^{0})^{2}+|\mathbf{K}_{1\cdots\ell}|^{2}$. Using $E_{p}^{2}=|\mathbf{K}_{1\cdots\ell}|^{2}+m^{2}$ we have
 $$
 \begin{gathered}
@@ -275,16 +294,21 @@ K_{1\cdots\ell}^{0}+E_{p}+i\epsilon
 =\frac{-s_{\ell}+m^{2}}{K_{1\cdots\ell}^{0}-E_{p}}+i\epsilon
 \end{gathered}
 $$
+
 The factor $1/(K_{1\cdots\ell}^{0}-E_{p})$ is analytic near the pole and can be absorbed into the definition of the residues.  The singular part is therefore
+
 $$
 \frac{1}{-s_{\ell}+m^{2}-i\epsilon'}
 \qquad\bigl(\epsilon'=\epsilon\,(K_{1\cdots\ell}^{0}-E_{p})>0\bigr)
 $$
+
 Multiplying by the overall $-1/(2\pi i)$ from the $\theta$-function representation and noting that the contour integration around the pole yields an extra factor $2\pi i$, we finally obtain the pole factor
 $$
 \frac{-i}{-s_{\ell}+m^{2}-i\epsilon}
 $$
+
 The remaining integrals over the internal coordinates are exactly the amputated Green functions defined in the theorem:
+
 $$
 \begin{aligned}
 G_{E}\,(2\pi)^{4}\delta^{(4)}(K_{1\cdots\ell}+p)
@@ -295,11 +319,14 @@ G_{L}\,(2\pi)^{4}\delta^{(4)}(K_{(\ell+1)\cdots n}-p)
 \langle\Omega|T\{O_{\ell+1}(x_{\ell+1})\cdots O_{n}(x_{n})\}|\mathbf{p}\rangle
 \end{aligned}
 $$
+
 Assembling all pieces we arrive at the advertised result
+
 $$
 \lim_{\substack{s_{\ell}\to m^{2}\\ K^{0}_{1\cdots\ell}<0}}
 G(s_{\ell})
 = G_{L}\;\frac{-i}{-s_{\ell}+m^{2}-i\epsilon}\;G_{E}\; 
 \tag{10}
 $$
+
 The case $K^{0}_{1\cdots\ell}>0$ is treated analogously, with the roles of “early” and “late” interchanged, giving the same pole structure with the amputated functions defined as in eqs. (11)–(12). 

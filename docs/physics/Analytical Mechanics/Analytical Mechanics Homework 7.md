@@ -1,6 +1,9 @@
 # 分析力学 第7次作业
+
 Chasse_neige
+
 4.8 单摆振动方程为 $\ddot{\theta}+\frac{g}{l} \sin \theta=0$, 若振动角度不太大, 利用微扰近似方法给出二阶精度的近似解, 包括周期的二阶精度修正。
+
 展开
 $$
 \sin \theta = \theta - \frac{1}{6} \theta^{3} + o(\theta^{5})
@@ -13,12 +16,14 @@ $$
 $$
 \omega = \omega_{0} + \epsilon \omega_{1} + \epsilon^{2} \omega_{2}
 $$
+
 $$
 \begin{gathered}
 \ddot{\theta} = - \omega_{0}^{2} \theta + \epsilon^{2} \frac{\omega_{0}^{2}}{6} \theta^{3} \\
 \ddot{\theta} + \omega^{2} \theta = (\omega^{2} - \omega_{0}^{2}) \theta + \epsilon^{2} \frac{\omega_{0}^{2}}{6} \theta^{3}
 \end{gathered}
 $$
+
 作代换 $\tau = \omega t + \phi$，得到
 $$
 \theta'' + \theta = (1 - \frac{\omega_{0}^{2}}{\omega^{2}}) \theta + \epsilon^{2} \frac{\omega_{0}^{2}}{6 \omega^{2}} \theta^{3}
@@ -79,11 +84,15 @@ $$
 $$
 \theta (t) = A \cos \tau + \frac{A^{3}}{192} \left(\cos\tau - \cos 3\tau \right)
 $$
+
 $$
 \omega = \omega_{0} \left( 1- \frac{A^{2}}{16} \right)
 $$
+
 4.13 二氧化碳分子经典模型如图 4.15 所示,平衡时原子在一直线上。只考虑原子在直线上运动的模式,求分子的简正频率和简正振动模式。
+
 <img src="./Analytical Mechanics Homework 7.assets/image-20251104165523589.png" alt="image-20251104165523589" style="zoom:50%;" />
+
 直接给出相对于平衡位置的坐标运动方程
 $$
 \begin{gathered}
@@ -126,14 +135,18 @@ $$
 x = x_{1} - x_{3}
 \end{gathered}
 $$
+
 $$
 \begin{gathered}
 \omega = \sqrt{\omega_{1}^{2} + 2 \omega_{2}^{2}} = \sqrt{\frac{k}{m} + 2 \frac{k}{M}} \\
 x = - x_{1} + 2 x_{2} - x_{3}
 \end{gathered}
 $$
+
 4.15 一耦合摆作小振动，如图 4.17所示，两个小球质量都是 $m$，系在长度都是 $l$ 的轻杆，小球之间用劲度系数为 $k$ 的弹簧相连，弹簧的自然长度与两个悬点 $O, O'$ 之间的距离相同，系统限于两个轻杆自然下垂的铅直平面内运动。两球初始静止，一球在平衡位置，另一球则拉到 $\theta_{2}=\alpha$，求解系统。
+
 <img src="./Analytical Mechanics Homework 7.assets/image-20251104165552635.png" alt="image-20251104165552635" style="zoom:50%;" />
+
 首先写出运动方程
 $$
 \begin{pmatrix} \ddot{\theta}_{1} \\ \ddot{\theta}_{2} \end{pmatrix} = 

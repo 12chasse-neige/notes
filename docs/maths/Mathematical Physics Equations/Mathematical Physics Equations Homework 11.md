@@ -1,5 +1,7 @@
 # 数学物理方程 第11次作业
+
 Chasse_neige
+
 1.计算下列积分 
 (a)  
 $$
@@ -23,6 +25,8 @@ $$
 \end{gathered}
 $$
 同理
+
+
 $$
 \begin{gathered}
 \int_{- \frac{\pi}{2}}^{\frac{\pi}{2}} \cos^{2} \theta \sin \theta e^{- i a \sin \theta}  \, \dd{\theta} = - \left. \frac{1}{ia} \cos \theta \sin \theta e^{- ia \sin \theta} \right|_{- \frac{\pi}{2}}^{\frac{\pi}{2}} + \frac{1}{ia} \int_{- \frac{\pi}{2}}^{\frac{\pi}{2}} (2 \cos^{2} \theta - 1) e^{- ia \sin \theta} \, \dd{\theta} \\ =
@@ -35,6 +39,8 @@ $$
 $$
 \frac{1}{2i} \int_{- \frac{\pi}{2}}^{\frac{\pi}{2}} \cos^{2} \theta \sin \theta \left(e^{i a \sin \theta} - e^{- i a \sin \theta}\right) \, \dd{\theta} = \frac{\pi}{a} J_{2} (a)
 $$
+
+
 2.利用生成函数证明下列等式 
 (a)  
 $$
@@ -47,23 +53,29 @@ $$
 $$
 e^{ix} = \sum_{k = - \infty}^{\infty} J_{k} (x) (i)^{k}
 $$
+
 $$
 e^{-i x} = \sum_{k = - \infty}^{\infty} J_{k} (x) (-i)^{k}
 $$
+
 所以
 $$
 \cos x = \frac{1}{2}(e^{ix} + e^{- ix}) = J_{0}(x)-2 J_{2}(x)+2 J_{4}(x)-2 J_{6}(x)+\cdots
 $$
+
 $$
 \sin x = \frac{1}{2i} (e^{ix} - e^{- ix}) = 2 J_{1}(x)-2 J_{3}(x)+2 J_{5}(x)-2 J_{7}(x)+\cdots
 $$
+
 (b)  
 $$
 1=J_{0}^{2}(x)+2\left[J_{1}^{2}(x)+J_{2}^{2}(x)+\cdots\right]
 $$
+
 $$
 1 = e^{ix} e^{-ix} = \left(\sum_{k = - \infty}^{\infty} J_{k} (x) (i)^{k} \right) \left(\sum_{k = - \infty}^{\infty} J_{k} (x) (-i)^{k} \right) = \sum_{k = - \infty}^{\infty} J_{k}^{2} (x) = J_{0}^{2}(x)+2\left[J_{1}^{2}(x)+J_{2}^{2}(x)+\cdots\right]
 $$
+
 3.计算如下积分 
 (a)  
 $$
@@ -72,6 +84,7 @@ $$
 $$
 \int_{0}^{x} x^{-1} J_{4} (x) \, \dd{x} = \int_{0}^{x} \frac{1}{8} (J_{3} (x) + J_{5} (x)) \, \dd{x} = \frac{1}{8} \left(2 J_{4}(x) + 2 \int_{0}^{x} J_{5} (x) \, \dd{x} \right)
 $$
+
 利用递推关系
 $$
 J_{5} = J_{3} - 2 J'_{4} = J_{1} - 2J'_{2} - 2 J'_{4}
@@ -80,19 +93,23 @@ $$
 $$
 \int_{0}^{x} J_{5} (x) \, \dd{x} =  \int_{0}^{x} J_{1} (x) \, \dd{x} - 2 J_{2} (x) - 2J_{4} (x)
 $$
+
 $$
 \int_{0}^{x} J_{1} (x) \, \dd{x} = - \int_{0}^{x} J'_{0} (x) \, \dd{x} = - (J_{0} (x) - 1)
 $$
+
 所以
 $$
 \int_{0}^{x} x^{-1} J_{4} (x) \, \dd{x} = \frac{1}{8} (2(1 - J_{0} (x)) - 4J_{2} (x) - 2J_{4} (x)) = \frac{1}{4} (1 - J_{0} (x) - 2 J_{2} (x) - J_{4} (x))
 $$
+
 $$
 \begin{gathered}
 \int_{0}^{x} x^{3} J_{0} (x) \, \dd{x} = \int_{0}^{x} 2 x^{2} J_{1} (x) - x^{3} J_{2} (x) \, \dd{x} \\ = 
 \int_{0}^{x} 2 \dv{}{x}(x^{2} J_{2} (x)) - \dv{}{x} (x^{3} J_{3} (x)) \, \dd{x} = 2 x^{2} J_{2} (x) - x^{3} J_{3} (x)
 \end{gathered}
 $$
+
 (b)  
 $$
 \int_{0}^{x} \mathrm{~J}_{0}(x) \cos x \mathrm{~d} x, \quad \int_{0}^{x} x^{n} \mathrm{~J}_{n}(x) \cos x \mathrm{~d} x
@@ -110,18 +127,22 @@ F'(t) = J_{0}(t) \cos t + t J_{0}'(t) \cos t - t J_{0}(t) \sin t + J_{1}(t) \sin
 = J_{0}(t) \cos t
 \end{gathered}
 $$
+
 因此  
 $$
 \int J_{0}(t) \cos t \, dt = t J_{0}(t) \cos t + t J_{1}(t) \sin t + C
 $$
+
 所以
 $$
 \int_{0}^{x} J_{0}(t) \cos t \, dt = \left. t J_{0}(t) \cos t + t J_{1}(t) \sin t \right|_{0}^{x} = x J_{0}(x) \cos x + x J_{1}(x) \sin x.
 $$
+
 对于第二个积分，考虑 $\dv{}{x} (x^{n} J_{n} (x)) = x^{n} J_{n - 1} (x)$ ，所以
 $$
 F(t) = t^{n + 1} J_{n} (t) \cos t + t^{n + 1} J_{n + 1} (t) \sin t
 $$
+
 $$
 \begin{gathered}
 F' (t) = (n + 1)  t^{n} J_{n} (t) \cos t + t^{n + 1} J'_{n} (t) \cos t - t^{n + 1} J_{n} (t) \sin t + t^{n + 1} J_{n} (t) \sin t + t^{n + 1} J_{n + 1} (t) \cos t \\ =
@@ -129,6 +150,7 @@ F' (t) = (n + 1)  t^{n} J_{n} (t) \cos t + t^{n + 1} J'_{n} (t) \cos t - t^{n + 
 (n + 1)  t^{n} J_{n} (t) \cos t + t^{n} J_{n} (t) \cos t = (2n + 1) t^{n} J_{n} (t) \cos t
 \end{gathered}
 $$
+
 所以
 $$
 \int_{0}^{x} x^{n} \mathrm{~J}_{n}(x) \cos x \mathrm{~d} x = \frac{1}{2n + 1} x^{n} J_{n} (x) \cos x
@@ -145,17 +167,21 @@ $$
 $$
 \dv{}{t} T = - \omega^{2} T
 $$
+
 $$
 \dv[2]{}{\varphi} \Phi = - \mu \Phi
 $$
+
 $$
 R'' + \frac{R'}{\rho} + (1 - \frac{\mu}{\rho^{2}}) R = 0
 $$
+
 其中
 $$
 \rho = \sqrt{\frac{\omega^{2}}{\kappa}} r
 $$
 显然当 $\omega = 0$ 时解不满足初始条件
+
 所以解为
 $$
 \Phi(\varphi) = \sin 2 \varphi
@@ -176,10 +202,12 @@ $$
 $$
 B_{2,n} = \frac{u_{0} \int_{0}^{a} r J_{2}\left( \frac{\mu^{(2)}_{n}}{a} r \right) \mathrm{d}r}{\int_{0}^{a} r \left[ J_{2}\left( \frac{\mu^{(2)}_{n}}{a} r \right) \right]^{2} \mathrm{d}r}
 $$
+
 计算积分得系数为
 $$
 B_{2,n} = \frac{2 u_{0} \left[ 2 - 2 J_{0}(\mu^{(2)}_{n}) - \mu^{(2)}_{n} J_{1}(\mu^{(2)}_{n}) \right]}{{\mu^{(2)}_{n}}^{2} \left[ J_{3}(\mu^{(2)}_{n}) \right]^{2}}
 $$
+
 所以最终解为
 $$
 u(r, \varphi, t) = 2 u_{0} \sin 2\varphi \sum_{n=1}^{\infty} \frac{2 - 2 J_{0}(\mu^{(2)}_{n}) - \mu^{(2)}_{n} J_{1}(\mu^{(2)}_{n})}{{\mu^{(2)}_{n}}^{2} \left[ J_{3}(\mu^{(2)}_{n}) \right]^{2}} J_{2}\left( \frac{\mu^{(2)}_{n}}{a} r \right) \exp\left( -\kappa \left( \frac{\mu^{(2)}_{n}}{a} \right)^{2} t \right)

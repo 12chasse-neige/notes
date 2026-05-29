@@ -1,7 +1,11 @@
 # 高等微积分 （2） 第5次作业
+
 Chasse_neige
+
 ### 1 
+
 计算偏导数
+
 (1) 设 $f \in C^{1}(\mathbb{R}, \mathbb{R})$, $z = xy + xf\left( \dfrac{y}{x} \right)$. 求 $x \dfrac{\partial z}{\partial x} + y \dfrac{\partial z}{\partial y}$
 $$
 x \dfrac{\partial z}{\partial x} + y \dfrac{\partial z}{\partial y} = x (y + f + x f' (- \frac{y}{x^{2}})) + y(x + x f' \frac{1}{x}) = 2 x y + x f
@@ -29,7 +33,9 @@ $$
 \end{gathered}
 $$
 这里, 我们称函数 $f : \mathbb{R}^{n} \rightarrow \mathbb{R}$ 是 $C^{k}$ 光滑的, 记作 $f \in C^{k}(\mathbb{R}^{n}, \mathbb{R})$, 如果 $f$ 的各个 $k$ 阶 (偏) 导函数都存在且连续.
+
 ### 2 
+
 给定 $C^{1}$ 光滑的函数 $F : \mathbb{R}^{3} \rightarrow \mathbb{R}$. 求函数
 $$
 F(u^{2} - x^{2}, u^{2} - y^{2}, u^{2} - z^{2})
@@ -43,11 +49,14 @@ $$
 \frac{\partial F}{\partial u} = 2u (F'_{1} + F'_{2} + F'_{3})
 \end{gathered}
 $$
+
 ### 3 
+
 给定 $n \times n$ 的对称实矩阵 $(A_{ij})_{1 \leq i,j \leq n}$(即对任何 $i, j$, 有 $A_{ij} = A_{ji}$). 定义二次函数
 $$
 Q(x_{1}, \ldots, x_{n}) = \sum_{i=1}^{n} \sum_{j=1}^{n} A_{ij} x_{i} x_{j}, \quad \forall (x_{1}, \ldots, x_{n}) \in \mathbb{R}^{n}
 $$
+
 (1) 求 $Q$ 的微分
 $$
 d Q = 2  \sum_{i=1}^{n} \sum_{j=1}^{n} A_{ij} x_{i} d x_{j}, \quad \forall (x_{1}, \ldots, x_{n}) \in \mathbb{R}^{n}
@@ -57,11 +66,15 @@ $$
 g(x_{1}, \ldots, x_{n}) = f(x_{1}, \ldots, x_{n}) e^{- \frac{1}{2} Q(x_{1}, \ldots, x_{n})}.
 $$
 计算 $g$ 的各个偏导数 $\dfrac{\partial g}{\partial x_{1}}, \ldots, \dfrac{\partial g}{\partial x_{n}}$.
+
 $$
 \frac{\partial g}{\partial x_{k}} = f'_{k} e^{- \frac{1}{2} Q} - \frac{1}{2}  f  \sum_{i=1}^{n} \sum_{j=1}^{n} A_{ij} \delta_{ik} x_{j} + A_{ij} x_{i} \delta_{jk} e^{- \frac{1}{2} Q} =  f'_{k} e^{- \frac{1}{2} Q} - f  \sum_{i=1}^{n} A_{ik} x_{i} e^{- \frac{1}{2} Q}
 $$
+
 ### 4 
+
 设 $f : \mathbb{R}^{3} \rightarrow \mathbb{R}$ 是 $C^{1}$ 光滑的函数, 即 $f$ 的各个偏导数都存在且连续.
+
 (1) 对于给定的点 $(x, y, z) \in \mathbb{R}^{3}$, 考虑关于 $t$ 的一元函数
 $$
 g(t) = f(tx, ty, tz).
@@ -74,11 +87,13 @@ $$
 $$
 f(x, y, z) = f(0, 0, 0) + x \int_{0}^{1} f_{x}(tx, ty, tz) \, dt + y \int_{0}^{1} f_{y}(tx, ty, tz) \, dt + z \int_{0}^{1} f_{z}(tx, ty, tz) \, dt
 $$
+
 在本题 (3), (4) 小问中假设 $f$ 满足: 对任何 $(x, y, z) \in \mathbb{R}^{3}$ 都有
 $$
 x f_{x}(x, y, z) + y f_{y}(x, y, z) + z f_{z}(x, y, z) = n f(x, y, z),
 $$
 其中 $n$ 是某个给定的正整数.
+
 证明：
 $$
 \begin{gathered}
@@ -98,19 +113,24 @@ $$
 $$
 f(tx, ty, tz) = t^{n} f(x, y, z)
 $$
+
 证明：
+
 由于 $f$ 满足: 对任何 $(x, y, z) \in \mathbb{R}^{3}$ 都有
 $$
 x f_{x}(x, y, z) + y f_{y}(x, y, z) + z f_{z}(x, y, z) = n f(x, y, z),
 $$
 所以 $g' (1) = n g (1)$
+
 对于一般的 $g (t)$ ，作换元 $x' = tx, y' = ty, z' =tz$，所以
 $$
 t g' (t) = n g (t) 
 $$
+
 $$
 \frac{d g}{g} = n \frac{dt}{t}
 $$
+
 两遍同时积分
 $$
 \begin{gathered}

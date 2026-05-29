@@ -1,11 +1,16 @@
 # General Relativity Homework 3
+
 Chasse_neige
+
 ## Problem 1
+
 Following the steps in Wednesday’s class, please derive the Einstein’s field equation of general relativity.
+
 To get the Einstein’s field equation, we’ll need to construct a tensor which contains the second order derivative of the metric tensor. As is proved in the last homework, the Riemann tensor, which has the form
 $$
 R^{\lambda} {}_{\mu \nu \kappa} = \Gamma^{\lambda} {}_{\mu \nu, \kappa} - \Gamma^{\lambda} {}_{\mu \kappa, \nu} + \Gamma^{\eta} {}_{\mu \nu} \Gamma^{\lambda} {}_{\eta \kappa} - \Gamma^{\eta} {}_{\mu \kappa} \Gamma^{\lambda} {}_{\eta \nu}
 $$
+
 is the tensor we can use to build the field equation. To be compatible with the energy momentum tensor (second order), we’ll need to contract the Riemann tensor to get the Ricci tensor, which is defined as
 $$
 \begin{gathered}
@@ -57,10 +62,12 @@ Now the only barrier between us and the field equation is the coefficient $C_{1}
 $$
 R_{\mu \nu} = \Gamma^{\lambda} {}_{\mu \lambda, \nu} - \Gamma^{\lambda} {}_{\mu \nu, \lambda} + \underbrace{\Gamma^{\eta} {}_{\mu \lambda} \Gamma^{\lambda} {}_{\eta \nu} - \Gamma^{\eta} {}_{\mu \nu} \Gamma^{\lambda} {}_{\eta \lambda}}_{=0}
 $$
+
 Given the Christoffel symbol
 $$
 \Gamma^{\lambda} {}_{\mu \lambda} = \frac{1}{2} g^{\lambda \eta} \left(g_{\eta \mu, \lambda} + g_{\eta \lambda, \mu} - g_{\mu \lambda, \eta}\right)
 $$
+
 $$
 \Gamma^{\lambda} {}_{\mu \nu} = \frac{1}{2} g^{\lambda \eta} \left(g_{\eta \mu, \nu} + g_{\eta \nu, \mu} - g_{\mu \nu, \eta}\right)
 $$
@@ -75,12 +82,14 @@ Under weak field approximation
 $$
 g_{\mu \nu} = \eta_{\mu \nu} + h_{\mu \nu} \quad (h \ll 1)
 $$
+
 $$
 \begin{gathered}
 R_{\mu \nu} \approx \frac{1}{2} \eta^{\lambda \kappa} (h_{\kappa \lambda, \mu \nu} + h_{\mu \nu, \kappa \lambda} - h_{\mu \lambda, \kappa \nu} - h_{\kappa \nu,\mu \lambda}) \\ =
 \frac{1}{2} (h_{, \mu \nu} + \square h_{\mu \nu} - h_{\mu} {}^{\kappa} {}_{, \kappa \nu} - h^{\lambda} {}_{\nu, \mu \lambda})
 \end{gathered}
 $$
+
 And the Ricci scalar
 $$
 R = \square h - h^{\rho \sigma} {}_{, \rho \sigma}
@@ -94,6 +103,7 @@ $$
 h_{\mu \nu} = \text{diag} (- 2 \Phi, - 2 \Phi, - 2 \Phi, - 2 \Phi)
 $$
 where $\Phi$ is the Newtonian gravitational potential. Using this metric, we can calculate the trace of the perturbation $h = \eta^{\mu \nu} h_{\mu \nu}$. 
+
 $$
 h = (-1)(-2\Phi) + 3(1)(-2\Phi) = -4\Phi = 2h_{00}
 $$
@@ -101,6 +111,7 @@ Because the field is static, all time derivatives vanish ($\partial_{0} = 0$). T
 $$
 h^{\rho \sigma} {}_{, \rho \sigma} = \partial_{i} \partial_{j} h_{ij} = \sum_{i} \partial_{i}^{2} h_{00} = \nabla^{2} h_{00}
 $$
+
 Substitute these relations into the $00$ component of our tensor
 $$
 G_{00} = R_{00} - \frac{R}{2} g_{00} \approx \frac{1}{2} (\square h_{00} + \square h - h^{\rho \sigma} {}_{, \rho \sigma})
@@ -112,12 +123,17 @@ Therefore, by defining $C_{1} = 1$ in our constructed geometric tensor $G_{\mu \
 $$
 G_{\mu \nu} = R_{\mu \nu} - \frac{1}{2} R g_{\mu \nu} = - 8 \pi G T_{\mu \nu}
 $$
+
+
 ## Problem 2
+
 For an isotropic static system, as shown in Friday’s class, the general form of the metric can be written as
 $$
 \dd{\tau}^{2} = B(r) \dd{t}^{2} - A(r) \dd{r}^{2} - r^{2} (\dd{\theta}^{2} + \sin^{2} \theta \dd{\phi}^{2})
 $$
+
 Please calculate the affine connection $\Gamma^{\lambda} {}_{\mu \nu}$ and the Ricci tensor.
+
 The components of the metric tensors (covariant and contravariant) are
 $$
 \begin{gathered}
@@ -125,7 +141,9 @@ g_{\mu \nu} = \text{diag} (-B, A, r^{2}, r^{2} \sin^{2} \theta) \\
 g^{\mu \nu} = \text{diag} (-\frac{1}{B}, \frac{1}{A}, \frac{1}{r^{2}}, \frac{1}{r^{2} \sin^{2} \theta})
 \end{gathered}
 $$
+
 ### Affine Connection
+
 The affine connection is defined as
 $$
 \Gamma^{\lambda} {}_{\mu \nu} = \frac{1}{2} g^{\lambda \eta} (g_{\eta \mu, \nu} + g_{\eta \nu, \mu} - g_{\mu \nu, \eta})
@@ -145,7 +163,9 @@ $$
 \end{gathered}
 $$
 where primes denote derivatives with respect to $r$.
+
 ### **Ricci Tensor**  
+
 First, we’ll calculate the components of the Riemann tensor
 $$
 R^{\lambda} {}_{\mu \nu \kappa} = \Gamma^{\lambda} {}_{\mu \nu, \kappa} - \Gamma^{\lambda} {}_{\mu \kappa, \nu} + \Gamma^{\eta} {}_{\mu \nu} \Gamma^{\lambda} {}_{\eta \kappa} - \Gamma^{\eta} {}_{\mu \kappa} \Gamma^{\lambda} {}_{\eta \nu}
@@ -166,6 +186,7 @@ $$
 R'_{t' r} = R_{tr}
 $$
 So we can derive that $R_{tr} = 0$. Similarly, using the transformation of $\phi \to - \phi$ and $\theta \to \pi - \theta$ we can know that the other off-diagnal components of the tensor are also zero.
+
 The diagnal part of the components are as follows (after careful calculation)
 $$
 \begin{gathered}

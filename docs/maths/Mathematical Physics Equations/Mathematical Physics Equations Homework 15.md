@@ -1,19 +1,26 @@
 # 数学物理方程 第15次作业
+
 Chasse_neige
+
 1.试求一维问题的格林函数
 $$
 \left\{\begin{array}{l} \frac{\mathrm{d}^{2} G\left(x ; x^{\prime}\right)}{\mathrm{d} x^{2}}+\omega_{0}^{2} G\left(x ; x^{\prime}\right)=\delta\left(x-x^{\prime}\right), \quad 0<x, x^{\prime}<l \\ G\left(0 ; x^{\prime}\right)=0, \quad G\left(l ; x^{\prime}\right)=0 \end{array}\right.
 $$
+
 并利用格林函数求解定解问题
+
 $$
 \left\{\begin{array}{l} y^{\prime \prime}(x)+\omega_{0}^{2} y(x)=f(x), \quad 0<x<l \\ y(0)=a, \quad y(l)=b \end{array}\right.
 $$
+
 求解格林函数
+
 所求方程为
 $$
 \frac{\mathrm{d}^{2} G\left(x ; x^{\prime}\right)}{\mathrm{d} x^{2}}+\omega_{0}^{2} G\left(x ; x^{\prime}\right)=\delta\left(x-x^{\prime}\right), \quad 0<x, x^{\prime}<l
 $$
 当 $x \neq x'$ 时，方程为齐次方程 $G'' + \omega_{0}^{2} G = 0$，其通解形式为 $C_{1} \sin(\omega_{0} x) + C_{2} \cos(\omega_{0} x)$。
+
 (1) 在区间 $0 < x < x'$ 上，满足 $G(0)=0$ 的解的形式为：
 $$
 G_{1}(x) = A \sin(\omega_{0} x)
@@ -62,7 +69,9 @@ $$
 $$
 G(x ; x^{\prime}) = -\frac{\sin(\omega_{0} x_<) \sin(\omega_{0}(l-x_>))}{\omega_{0} \sin(\omega_{0} l)}
 $$
+
 利用格林函数求解定解问题
+
 定解问题为
 $$
 y^{\prime \prime}(x)+\omega_{0}^{2} y(x)=f(x), \quad y(0)=a, \quad y(l)=b
@@ -96,14 +105,18 @@ $$
 $$
 y(x) = \int_{0}^{l} G\left(x ; x^{\prime}\right) f\left(x^{\prime}\right) \mathrm{d} x^{\prime} + b \frac{\sin \left(\omega_{0} x\right)}{\sin \left(\omega_{0} l\right)} + a \frac{\sin \left(\omega_{0}(l-x)\right)}{\sin \left(\omega_{0} l\right)}
 $$
+
 2.试求一维问题的格林函数
 $$
 \left\{\begin{array}{l} \frac{\mathrm{d} G\left(t' ; t\right)}{\mathrm{d} t}-\beta G\left(t' ; t \right)= - \delta\left(t-t^{\prime}\right), \quad t, t^{\prime}>0 \\ \left.G\left(t' ; t\right)\right|_{t>t^{\prime}}=0 \end{array}\right.
 $$
+
 并利用格林函数求解定解问题
+
 $$
 \left\{\begin{array}{l}y'(t)+\beta y(t)=g(t), \quad t>0 \\y(0)=a\end{array}\right.
 $$
+
 所求方程为
 $$
 \frac{\mathrm{d} G\left(t ; t^{\prime}\right)}{\mathrm{d} t}-\beta G\left(t ; t^{\prime}\right)=\delta\left(t-t^{\prime}\right), \quad t, t^{\prime}>0
@@ -116,6 +129,7 @@ $$
 $$
 由于 $G(t'-)=0$，故 $G(t'+)=1$
 由 $C e^{\beta t'} = 1$ 得 $C = e^{-\beta t'}$
+
 所以格林函数为
 $$
 \begin{gathered}
@@ -140,10 +154,13 @@ $$
 $$
 \left\{\begin{array}{l}\nabla^{2} G\left(x, y ; x^{\prime}, y^{\prime}\right)=-\delta\left(x-x^{\prime}\right) \delta\left(y-y^{\prime}\right) \\G\left|_{x=0} =0, \quad G |_{x=a}=0\right. \\G\left|_{y=0} =0, \quad G |_{y=b}=0\right.\end{array}\right.
 $$
+
 并用该格林函数形式上给出定解问题
+
 $$
 \left\{\begin{array}{l}\nabla^{2} u(x, y)=f(x, y) \\u\left|_{x=0} =\alpha(y), \quad u |_{x=a}=\beta(y)\right. \\u\left|_{y=0} =\mu(x), \quad u |_{y=b}=\nu(x)\right.\end{array}\right.
 $$
+
 所求方程为二维 Poisson 方程
 $$
 \nabla^{2} G\left(x, y ; x^{\prime}, y^{\prime}\right)=-\delta\left(x-x^{\prime}\right) \delta\left(y-y^{\prime}\right)
@@ -159,15 +176,18 @@ $$
 \delta(x-x')\delta(y-y') = \frac{4}{ab} \sum_{n=1}^{\infty} \sum_{m=1}^{\infty} \sin\left(\frac{n\pi x'}{a}\right) \sin\left(\frac{m\pi y'}{b}\right) \sin\left(\frac{n\pi x}{a}\right) \sin\left(\frac{m\pi y}{b}\right)
 $$
 设 $G = \sum C_{nm} \phi_{nm}$，代入方程得 $C_{nm} = \frac{4}{ab} \frac{\phi_{nm}(x',y')}{k_{nm}^{2}}$
+
 格林函数为
 $$
 G\left(x, y ; x^{\prime}, y^{\prime}\right)=\frac{4}{a b} \sum_{n=1}^{\infty} \sum_{m=1}^{\infty} \frac{\sin \left(\frac{n \pi x}{a}\right) \sin \left(\frac{m \pi y}{b}\right) \sin \left(\frac{n \pi x^{\prime}}{a}\right) \sin \left(\frac{m \pi y^{\prime}}{b}\right)}{\left(\frac{n \pi}{a}\right)^{2}+\left(\frac{m \pi}{b}\right)^{2}}
 $$
+
 定解问题
 $$
 \nabla^{2} u(x, y)=f(x, y)
 $$
 边界条件：$u|_{x=0}=\alpha, u|_{x=a}=\beta, u|_{y=0}=\mu, u|_{y=b}=\nu$
+
 利用格林第二公式
 $$
 \iint_{D} (u \nabla^{2} G - G \nabla^{2} u) \mathrm{d}x' \mathrm{d}y' = \oint_{\partial D} (u \frac{\partial G}{\partial n'} - G \frac{\partial u}{\partial n'}) \mathrm{d}l'

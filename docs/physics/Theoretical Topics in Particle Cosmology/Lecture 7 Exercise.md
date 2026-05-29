@@ -1,5 +1,7 @@
 # Lecture 7 Exercise
+
 (1) Please derive the commutator $[\phi(t, \tilde{x}), \dot{\phi}(t, \tilde{y})]$ from the commutators of creation and annihilation operators, using (1) and (2).
+
 >  Long story short, causality (in the formal of microcausality) requires that we pack creation and annihilation operators, $a^{\dagger}_{\tilde{k}}$ and $a_{\tilde{k}}$, properly into a local operator $\phi(x)$:
 >
 >  $$
@@ -14,13 +16,17 @@
 >  \mathcal{L} = -\frac{1}{2} (\partial_{\mu} \phi)^{2} - \frac{1}{2} m^{2} \phi^{2} + \text{"interactions"} \tag{2}
 >  $$
 >
+
 The commutator for this problem is 
 \[
 \comm{\phi (t, \tilde{x})}{\dot{\phi} (t, \tilde{y})} = \int \frac{\dd[3]{\tilde{k}}}{(2 \pi)^{3}} \int \frac{\dd[3]{\tilde{k'}}}{(2 \pi)^{3}} \frac{1}{2 \sqrt{E_{k} E_{k'}}} \comm{e^{+ik\cdot x} a_{\tilde{k}} + e^{-ik\cdot x} a^{\dagger}_{\tilde{k}}}{- i E_{k'}e^{+ik' \cdot y} a_{\tilde{k'}} + i E_{k'} e^{-ik\cdot y} a^{\dagger}_{\tilde{k'}}} \\ =
 \int \frac{\dd[3]{\tilde{k}}}{(2 \pi)^{3}} \int \frac{\dd[3]{\tilde{k'}}}{(2 \pi)^{3}} \frac{1}{2 \sqrt{E_{k} E_{k'}}} i E_{k'} \left(e^{i k \cdot x - i k' \cdot y} \comm{a_{\tilde{k}}}{a^{\dagger}_{\tilde{k'}}} - e^{i k' \cdot y - i k \cdot x} \comm{a_{\tilde{k}}^{\dagger}}{a_{\tilde{k'}}}\right) \\ =
 \int \frac{\dd[3]{\tilde{k}}}{(2 \pi)^{3}} \frac{1}{2 E_{k}} i E_{k} \left(e^{i k \cdot (x - y)} + e^{i k \cdot (y - x)} \right) = i \delta (x - y)
 \]
+
+
 (2) Please determine $a$ by the Lorentz invariance of the massless spin-1 Lagrangian $\mathcal{L}$ in (11), and also $a$, $b$, and $c$ in the massless spin-2 Lagrangian in (26).
+
 >  Famously, the unwanted terms are avoided if we exploit the Lorentz-index contraction and add a new term:
 >
 >  $$
@@ -35,43 +41,60 @@ The commutator for this problem is
 >  \mathcal{L} = +\frac{1}{4} h^{\mu\nu} \Box h_{\mu\nu} + a h \Box h + b h \partial_{\mu} \partial_{\nu} h^{\mu\nu} + c h^{\mu\nu} \partial_{\mu} \partial^{\lambda} h_{\nu\lambda} \tag{26}
 >  $$
 >
+
 For the Lorentz invariance, we assume that under LGT, the vector potential and metric will transform like
 \[
 A'_{\mu} = A_{\mu} + \partial_{\mu} \alpha
 \]
+
 \[
 h'_{\mu \nu} = h_{\mu \nu} + \partial_{\mu} \xi_{\nu} + \partial_{\nu} \xi_{\mu}
 \]
+
 Plugging in those results, we have the difference of Langrangian of spin-1 under LGT
 \[
 \delta \mathcal{L}^{\prime} = - (\partial_{\mu} \partial_{\nu} \alpha) \partial^{\mu} A^{\nu} - \frac{1}{2} (\partial_{\mu} \partial_{\nu} \alpha)(\partial^{\mu} \partial^{\nu} \alpha) + 2a (\partial_{\mu} \partial^{\mu} \alpha) \partial_{\nu} A^{\nu} + a (\partial_{\mu} \partial^{\mu} \alpha)^{2}
 \]
 To make these terms vanish, we can find that we should let $a = \frac{1}{2}$.
+
 For spin-2, demand invariance under
+
 $$
 \delta h_{\mu\nu}=\partial_\mu \xi_\nu+\partial_\nu \xi_\mu 
 $$
+
 From
+
 $$
 \mathcal{L}=\frac14 h^{\mu\nu}\Box h_{\mu\nu}+a h\Box h+b h\partial_\mu\partial_\nu h^{\mu\nu}+c h^{\mu\nu}\partial_\mu\partial^\lambda h_{\nu\lambda}
 $$
+
 the equation-of-motion tensor is
+
 $$
 E_{\mu\nu}=\frac12\Box h_{\mu\nu}+2a\eta_{\mu\nu}\Box h+b\eta_{\mu\nu}\partial_\rho\partial_\sigma h^{\rho\sigma}+b\partial_\mu\partial_\nu h+c\left(\partial_\mu\partial^\lambda h_{\nu\lambda}+\partial_\nu\partial^\lambda h_{\mu\lambda}\right)
 $$
+
 Gauge invariance that guarantees the Lorentz invariance requires the Bianchi identity
+
 $$
 \partial^\mu E_{\mu\nu}=0
 $$
+
 This gives the conditions
+
 $$
 \frac12+c=0,\quad b+c=0,\quad 2a+b=0
 $$
+
 Therefore
+
 $$
 a=-\frac14,\quad b=\frac12,\quad c=-\frac12
 $$
+
 (3) Please derive the graviton's propagator (38) by solving the equation (36).
+
 >  The graviton propagator $G_{\mu\nu,\rho\sigma}$ is a solution to
 >
 >  $$
@@ -90,6 +113,7 @@ $$
 >  G_{\mu\nu,\rho\sigma}(p) = \frac{-i}{p^{2} - i\epsilon} \left[ \eta_{\mu\rho} \eta_{\nu\sigma} + \eta_{\mu\sigma} \eta_{\nu\rho} - \eta_{\mu\nu} \eta_{\rho\sigma} \right] \tag{38}
 >  $$
 >
+
 The form $G(p)$ is given by the Fourier transform 
 \[
 G^{\mu \nu, \rho \sigma} (x, y) = \int \frac{\dd[4]{p}}{(2 \pi)^{4}} e^{i p \cdot (x - y)} G^{\mu \nu, \rho \sigma} (p)
@@ -98,12 +122,17 @@ Plugging in the ansatz
 \[
 \frac{1}{4} (\eta_{\lambda\mu} \eta_{\kappa\nu} + \eta_{\lambda\nu} \eta_{\kappa\mu} - \eta_{\lambda\kappa} \eta_{\mu\nu}) \square_{x} G^{\mu\nu,\rho\sigma}(x,y) = \frac{i}{2} \delta^{(4)}(x-y) (\delta^{\rho}_{\lambda} \delta^{\sigma}_{\kappa} + \delta^{\sigma}_{\lambda} \delta^{\rho}_{\kappa})
 \]
+
+
 (4) Please expand the Hilbert-Einstein action $S = \frac{M_{\text{Pl}}^{2}}{2} \int d^{4} x \sqrt{-g} R$ with $g_{\mu\nu} = \eta_{\mu\nu} + \kappa h_{\mu\nu}$ to quadratic order in $h_{\mu\nu}$ and show that quadratic Lagrangian for $h_{\mu\nu}$ is identical to (27) up to total derivative terms.
+
 >  Then, Lorentz-invariance (namely, invariant under $\delta h_{\mu\nu} = \partial_{\mu} \xi_{\nu} + \partial_{\nu} \xi_{\mu}$ with free $\xi_{\mu}$) uniquely fixes $a = -\frac{1}{4}$, $b = \frac{1}{2}$, $c = -\frac{1}{2}$. So, the Lorentz invariant Lagrangian for a free graviton reads:
 >  \[
 >  \mathcal{L} = \frac{1}{4} h^{\mu\nu} \Box h_{\mu\nu} - \frac{1}{4} h \Box h + \frac{1}{2} h \partial_{\mu} \partial_{\nu} h^{\mu\nu} - \frac{1}{2} h^{\mu\nu} \partial_{\mu} \partial^{\lambda} h_{\nu\lambda} \tag{27}
 >  \]
+
 For the expansion part, actually I’ve done this annoying calculation once in the general relativity homework and I don’t want to do it again. So please allow me to copy the expansion process here:
+
 >  Consider the perturbation to the metric field in Minkowski background. We expand the metric tensor as $g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}$.
 >
 >  (1) Please calculate $g^{\mu\nu}$, $g^{1/2}$, $\Gamma^{\lambda} {}_{\mu\nu}$, $R_{\mu\nu}$ to the $O(h)$ order.
@@ -322,7 +351,9 @@ For the expansion part, actually I’ve done this annoying calculation once in t
 >  + \frac{1}{2} \partial_{\mu}h^{\mu\nu}\partial^{\lambda}h_{\lambda\nu}
 >  $$
 >  
+
 Show that quadratic Lagrangian for $h_{\mu\nu}$ is identical to (27) up to total derivative terms:
+
 Compare the result of mine to the result of (27)
 \[
 \mathcal{L} = \frac{1}{4} h^{\mu\nu} \Box h_{\mu\nu} - \frac{1}{4} h \Box h + \frac{1}{2} h \partial_{\mu} \partial_{\nu} h^{\mu\nu} - \frac{1}{2} h^{\mu\nu} \partial_{\mu} \partial^{\lambda} h_{\nu\lambda}
