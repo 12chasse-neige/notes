@@ -1,302 +1,302 @@
 [
   {
-    "title": "Quantum Mechanics Homework 7: Angular Momentum",
-    "desc": "Proves commutator identities for vector operators using angular momentum algebra.",
+    "title": "C++ Programming Basics: Keywords Overview",
+    "desc": "A comprehensive list of C++ keywords categorized by usage, from data types to OOP.",
     "tags": [
-      "angular momentum",
-      "commutator",
-      "vector operator"
+      "C++",
+      "keywords",
+      "programming"
     ],
-    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 7"
+    "link": "/coding/C++/C++_Note"
   },
   {
-    "title": "Quantum Mechanics Homework 8: Pauli Matrices",
-    "desc": "Proofs of Pauli matrix identities and spin operators.",
+    "title": "Advanced Calculus 2 Homework 1: Series Convergence",
+    "desc": "Analyzes convergence of six series using comparison, ratio, and root tests.",
     "tags": [
-      "Pauli matrices",
-      "spin operators",
-      "quantum mechanics"
+      "series convergence",
+      "ratio test",
+      "root test"
     ],
-    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 8"
+    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 1"
   },
   {
-    "title": "Quantum Mechanics Homework 9: Spin States",
-    "desc": "Calculates probabilities for singlet and triplet states of two electrons, and writes three-electron spin states.",
+    "title": "Advanced Calculus 2 Homework 10",
+    "desc": "Surface and line integrals computation with parameterization and orientation.",
     "tags": [
-      "quantum mechanics",
-      "spin states",
-      "angular momentum coupling"
+      "surface integral",
+      "line integral",
+      "parameterization"
     ],
-    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 9"
+    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 10"
   },
   {
-    "title": "Statistical Mechanics Homework 11: Ideal Gas",
-    "desc": "Derives equation of state, internal energy, entropy, and chemical potential for monatomic ideal gas using canonical ensemble.",
+    "title": "高等微积分作业：幂级数与函数展开",
+    "desc": "分析幂级数收敛域、求和公式及函数项级数性质。",
     "tags": [
-      "canonical ensemble",
-      "ideal gas",
-      "partition function"
+      "幂级数",
+      "收敛域",
+      "泰勒展开"
     ],
-    "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 11"
+    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 2"
   },
   {
-    "title": "Quantum Mechanics Homework 3: Step Potential",
-    "desc": "Analysis of reflection and transmission coefficients for a step potential, verifying probability conservation.",
+    "title": "Advanced Calculus 2 Homework 3",
+    "desc": "Metric on continuous functions, Cauchy sequences, Cauchy-Schwarz inequality, open sets.",
     "tags": [
-      "quantum mechanics",
-      "step potential",
-      "probability conservation"
+      "metric space",
+      "Cauchy sequence",
+      "Cauchy-Schwarz inequality"
     ],
-    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 3"
+    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 3"
   },
   {
-    "title": "Non-Relativistic Limit in QFT",
-    "desc": "Leading order effects and NR limit of charged scalar particles with massless exchange.",
+    "title": "Advanced Calculus 2 Homework 5 Solutions",
+    "desc": "Partial derivative calculations for various composite functions with chain rule.",
     "tags": [
-      "non-relativistic limit",
-      "QFT",
-      "scattering"
+      "partial derivatives",
+      "chain rule",
+      "multivariable calculus"
     ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 8"
+    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 5"
   },
   {
-    "title": "Classical Limit of Light Bending",
-    "desc": "Analyzing phase shifts and classical limit in graviton exchange with photons.",
+    "title": "Advanced Calculus 2 Homework 6 Analysis",
+    "desc": "Implicit function theorem and Taylor expansion for z(x,y) near (1,1).",
     "tags": [
-      "phase shift",
-      "classical limit",
-      "partial wave expansion"
+      "implicit function",
+      "partial derivatives",
+      "Taylor expansion"
     ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 9"
+    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 6"
   },
   {
-    "title": "Ergosphere Observer Angular Velocity Range",
-    "desc": "Derives allowed angular velocity range for observers inside ergosphere, approaching horizon.",
+    "title": "Advanced Calculus 2 Homework 7 Analysis",
+    "desc": "Critical points and extremum analysis of two functions with Hessian matrix.",
     "tags": [
-      "Kerr metric",
-      "ergosphere",
-      "angular velocity"
+      "critical points",
+      "Hessian matrix",
+      "multivariable calculus"
     ],
-    "link": "/physics/General Relativity/General Relativity Homework 6"
+    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 7"
   },
   {
-    "title": "Statistical Mechanics Homework 10: Electron Gas",
-    "desc": "Calculates Fermi energy, internal energy, and degeneracy pressure for free electron gas at 0K.",
+    "title": "高等微积分作业：换元法求面积与积分",
+    "desc": "通过变量替换计算区域面积和多重积分，展示换元公式的应用。",
     "tags": [
-      "Fermi gas",
-      "degeneracy pressure",
-      "statistical mechanics"
+      "换元积分",
+      "多重积分",
+      "雅可比行列式"
     ],
-    "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 10"
+    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 8"
   },
   {
-    "title": "Interferometer Noise and Quantum Noise",
-    "desc": "Analysis of noise sources in Advanced LIGO, including quantum, thermal, and technical noise.",
+    "title": "高等微积分作业：曲面面积与质心",
+    "desc": "椭球面面积参数化，球面面积计算，上半球面质心求解。",
     "tags": [
-      "quantum noise",
-      "interferometer",
-      "gravitational wave detector"
+      "曲面面积",
+      "参数化",
+      "质心"
     ],
-    "link": "/physics/General Relativity/Gravitational Waves/Quantum Noise"
+    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 9"
   },
   {
-    "title": "Debye Model: Partition Function, Energy, Entropy",
-    "desc": "Derives ln Z, internal energy, and entropy for solids using Debye spectrum in high and low T limits.",
+    "title": "复变函数作业：模恒等与倍角公式",
+    "desc": "证明模为1的复数变换恒等式，并推导n倍角三角函数公式。",
     "tags": [
-      "Debye model",
-      "partition function",
-      "statistical mechanics"
+      "复变函数",
+      "三角函数",
+      "模恒等式"
     ],
-    "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 9"
+    "link": "/maths/Complex Analysis/Complex Analysis Homework 1"
   },
   {
-    "title": "Photon Field Energy-Momentum Tensor",
-    "desc": "Derivation of gauge invariant, traceless energy-momentum tensor for photon field.",
+    "title": "Complex Analysis Homework 10: Residue Theorem",
+    "desc": "Using residue theorem to compute definite integrals with trigonometric and hyperbolic functions.",
     "tags": [
-      "energy-momentum tensor",
-      "photon field",
-      "Noether theorem"
+      "residue theorem",
+      "contour integration",
+      "complex analysis"
     ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 2 Exercise"
+    "link": "/maths/Complex Analysis/Complex Analysis Homework 10"
   },
   {
-    "title": "Lorentz Invariance and Optical Theorem Proof",
-    "desc": "Demonstrates Lorentz invariance of inner product and proves optical theorem via S-matrix unitarity.",
+    "title": "复变函数第11次作业：留数定理应用",
+    "desc": "利用留数定理计算三个含参数积分，涉及支点与围道积分。",
     "tags": [
-      "Lorentz invariance",
-      "optical theorem",
-      "S-matrix"
+      "留数定理",
+      "围道积分",
+      "复变函数"
     ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 3 Exercise"
+    "link": "/maths/Complex Analysis/Complex Analysis Homework 11"
   },
   {
-    "title": "Dyson Series and On-Shell Factorization",
-    "desc": "Derivation of Dyson series for transition amplitude with source j.",
+    "title": "复变函数作业：初等与多值函数",
+    "desc": "证明三角与双曲函数的恒等式及不等式，涉及复变函数基本性质。",
     "tags": [
-      "Dyson series",
-      "transition amplitude",
-      "on-shell factorization"
+      "复变函数",
+      "初等函数",
+      "多值函数"
     ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 4 Exercise"
+    "link": "/maths/Complex Analysis/Complex Analysis Homework 2"
   },
   {
-    "title": "Spinor Helicity for Null Momentum with p0<0",
-    "desc": "Derives spinor expressions for null momentum with negative energy and shows transformation under LGTs.",
+    "title": "复变函数第4次作业分析",
+    "desc": "计算复积分并确定参数a使函数单值。",
     "tags": [
-      "spinor helicity",
-      "null momentum",
-      "little group transformations"
+      "复变函数",
+      "积分计算",
+      "解析函数"
     ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 5 Exercise"
+    "link": "/maths/Complex Analysis/Complex Analysis Homework 4"
   },
   {
-    "title": "Vanishing All-Plus Gluon Amplitude",
-    "desc": "Tree-level 4-point all-plus gluon amplitude vanishes due to forbidden 3-point vertex.",
+    "title": "复变函数第5次作业分析",
+    "desc": "判断正项级数收敛性命题，给出反例与证明。",
     "tags": [
-      "Yang-Mills",
-      "gluon amplitude",
-      "tree level"
+      "级数收敛",
+      "反例",
+      "复变函数"
     ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 6 Exercise"
+    "link": "/maths/Complex Analysis/Complex Analysis Homework 5"
   },
   {
-    "title": "Massless Amplitudes and Spinor Helicity",
-    "desc": "Lecture on massless amplitudes using spinor helicity formalism and Lorentz group decomposition.",
+    "title": "复变函数第6次作业分析",
+    "desc": "确定级数收敛半径，证明和函数不连续，求和函数。",
     "tags": [
-      "spinor helicity",
-      "massless amplitudes",
-      "Lorentz group"
+      "复变函数",
+      "级数收敛",
+      "和函数"
     ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 5"
+    "link": "/maths/Complex Analysis/Complex Analysis Homework 6"
   },
   {
-    "title": "Bose-Einstein Condensation in 2D and 3D",
-    "desc": "Proves no BEC in 2D ideal Bose gas; derives critical temperature for 3D harmonic trap.",
+    "title": "Complex Analysis Homework 7: Taylor Series",
+    "desc": "Taylor expansions of sec z, log((1+z)/(1-z)), and sqrt((1-z)/(1+z)) with convergence radii.",
     "tags": [
-      "Bose-Einstein condensation",
-      "ideal Bose gas",
-      "harmonic trap"
+      "Taylor series",
+      "complex analysis",
+      "convergence radius"
     ],
-    "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 8"
+    "link": "/maths/Complex Analysis/Complex Analysis Homework 7"
   },
   {
-    "title": "QFT Perspective on Field Theory",
-    "desc": "Relativistic quantum field theory with Hamiltonian, causality, renormalization, and perturbation theory.",
+    "title": "复变函数第8次作业：Laurent展开",
+    "desc": "求解三个函数的Laurent展开，包括不同区域和分支。",
     "tags": [
-      "quantum field theory",
-      "renormalization",
-      "perturbation theory"
+      "Laurent series",
+      "complex analysis",
+      "singularities"
     ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 7"
+    "link": "/maths/Complex Analysis/Complex Analysis Homework 8"
   },
   {
-    "title": "Quantum Mechanics Homework 6: Central Force Field",
-    "desc": "Derivation of kinetic operator and bound state condition in spherical well.",
+    "title": "Spring Vibration Problem Analysis",
+    "desc": "Derives wave equation for a vertical spring with mass and initial conditions.",
     "tags": [
-      "central force",
-      "kinetic operator",
-      "bound state"
+      "wave equation",
+      "boundary conditions",
+      "spring-mass system"
     ],
-    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 6"
+    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 1"
   },
   {
-    "title": "Feynman Diagrams for Beginners",
-    "desc": "Introduction to Feynman diagrams with exercises, covering Dirac equation and QED scattering.",
+    "title": "Spherical Harmonic Expansion and PDE Solution",
+    "desc": "Expand functions in spherical harmonics and solve Laplace equation with source terms.",
     "tags": [
-      "Feynman diagrams",
-      "quantum field theory",
-      "QED"
+      "spherical harmonics",
+      "Laplace equation",
+      "boundary value problem"
     ],
-    "link": "/physics/Quantum Physics/Quantum Field Theory/Feynman Diagrams for Beginners"
+    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 10"
   },
   {
-    "title": "Statistical Mechanics Homework 3: Phase Transition Proofs",
-    "desc": "Derives molar internal energy change and latent heat variation with temperature.",
+    "title": "Mathematical Physics Homework 11: Integral Calculation",
+    "desc": "Compute integral using substitution and Bessel function J2(a).",
     "tags": [
-      "phase transition",
-      "Clapeyron equation",
-      "latent heat"
+      "Bessel function",
+      "integration",
+      "substitution"
     ],
-    "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 3"
+    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 11"
   },
   {
-    "title": "统计力学第6次作业：二维气体速率分布",
-    "desc": "推导二维理想气体速度与速率分布，计算平均、最概然及方均根速率。",
+    "title": "Critical Radius of Uranium Cylinder and Sphere",
+    "desc": "Derivation of critical radius for cylindrical and spherical uranium blocks using neutron diffusion equation.",
     "tags": [
-      "统计力学",
-      "二维气体",
-      "速率分布"
+      "neutron diffusion",
+      "critical radius",
+      "Bessel function"
     ],
-    "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 6"
+    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 12"
   },
   {
-    "title": "Lecture 6: Chasse_neige and Yang-Mills",
-    "desc": "Analyzes four-particle test, DoF counting, and Yang-Mills amplitude structure.",
+    "title": "Dirac Delta Function Identities and Coordinate Representations",
+    "desc": "Proofs of delta function identities including scaling, product, and Laplacian in 3D.",
     "tags": [
-      "amplitudes",
-      "Yang-Mills",
-      "on-shell"
+      "Dirac delta",
+      "coordinate transformation",
+      "Laplacian"
     ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 6"
+    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 13"
   },
   {
-    "title": "引力波的产生、传播与探测",
-    "desc": "线性引力近似下推导线性化爱因斯坦方程，分析引力波微扰。",
+    "title": "Laplace Transform for Forced Oscillations",
+    "desc": "Solve forced vibration problem using Laplace transform with partial fractions.",
     "tags": [
-      "引力波",
-      "线性引力",
-      "爱因斯坦方程"
+      "Laplace transform",
+      "forced vibration",
+      "partial fractions"
     ],
-    "link": "/physics/General Relativity/Gravitational Waves/Gravitational Waves Formation and Propagation"
+    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 14"
   },
   {
-    "title": "Statistical Mechanics Homework 7 Solutions",
-    "desc": "Entropy of Einstein solid and magnetization of crystal with spin-1 atoms.",
+    "title": "Green's Function for 1D Problem",
+    "desc": "Derives Green's function for ODE with Dirichlet BCs and solves boundary value problem.",
     "tags": [
-      "Einstein solid",
-      "magnetization",
-      "statistical mechanics"
+      "Green's function",
+      "Sturm-Liouville",
+      "Boundary value problem"
     ],
-    "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 7"
+    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 15"
   },
   {
-    "title": "量子力学对称性与守恒量分析",
-    "desc": "证明自由粒子角动量守恒及Feynman-Hellmann定理。",
+    "title": "Math Physics Homework 3: Laplace Equation",
+    "desc": "Solving Laplace equation with mixed boundary conditions using separation of variables.",
     "tags": [
-      "角动量守恒",
-      "Feynman-Hellmann定理",
-      "量子力学"
+      "Laplace equation",
+      "separation of variables",
+      "boundary conditions"
     ],
-    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 5"
+    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 3"
   },
   {
-    "title": "On-Shell Factorization in QFT",
-    "desc": "Analyzing Green functions and poles in scalar field theory with light bulb model.",
+    "title": "Solving Heat Equation with Sinusoidal Boundary",
+    "desc": "Decompose solution, use eigenfunction expansion to solve non-homogeneous heat equation.",
     "tags": [
-      "on-shell factorization",
-      "Green function",
-      "scalar field"
+      "heat equation",
+      "eigenfunction expansion",
+      "boundary conditions"
     ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 4"
+    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 4"
   },
   {
-    "title": "Killing Vectors of Schwarzschild Metric",
-    "desc": "Proving δ^μ_t and δ^μ_φ are Killing vectors in Schwarzschild spacetime.",
+    "title": "Math Physics Homework 5: Cylinder Potential",
+    "desc": "Potential inside a split cylinder with opposite halves at ±V.",
     "tags": [
-      "Killing vectors",
-      "Schwarzschild metric",
-      "general relativity"
+      "Laplace equation",
+      "separation of variables",
+      "Fourier series"
     ],
-    "link": "/physics/General Relativity/General Relativity Homework 4"
+    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 5"
   },
   {
-    "title": "General Relativity Homework 5 Analysis",
-    "desc": "Calculate connection and Ricci tensor for a time-dependent metric.",
+    "title": "Math Physics HW6: Series Solutions",
+    "desc": "Solving ODEs via power series around z=0, deriving recurrence relations and two independent solutions.",
     "tags": [
-      "Christoffel symbols",
-      "Ricci tensor",
-      "general relativity"
+      "power series",
+      "ordinary differential equation",
+      "recurrence relation"
     ],
-    "link": "/physics/General Relativity/General Relativity Homework 5"
+    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 6"
   }
 ]
