@@ -1,7 +1,7 @@
 [
   {
     "title": "C++ Programming Basics: Keywords Overview",
-    "desc": "A comprehensive list of C++ keywords categorized by usage, from data types to OOP.",
+    "desc": "A comprehensive list of C++ keywords organized by category for beginners.",
     "tags": [
       "C++",
       "keywords",
@@ -10,18 +10,38 @@
     "link": "/coding/C++/C++_Note"
   },
   {
-    "title": "Advanced Calculus 2 Homework 1: Series Convergence",
-    "desc": "Analyzes convergence of six series using comparison, ratio, and root tests.",
+    "title": "Python Escape Characters Guide",
+    "desc": "Learn common escape sequences like \\n, \\t, and raw strings in Python.",
     "tags": [
-      "series convergence",
-      "ratio test",
-      "root test"
+      "Python",
+      "Escape Characters",
+      "String Formatting"
+    ],
+    "link": "/coding/Python/Python_Note"
+  },
+  {
+    "title": "Advanced Calculus: Taylor's Theorem Review",
+    "desc": "Covers Taylor's theorem with Peano, Lagrange, and Cauchy remainder forms.",
+    "tags": [
+      "Taylor's Theorem",
+      "Calculus",
+      "Remainder Forms"
+    ],
+    "link": "/maths/Advanced Calculus/Advanced Calculus (1) Final Review"
+  },
+  {
+    "title": "高等微积分作业：级数收敛性分析",
+    "desc": "判断六个级数的收敛发散性，使用比较、比值、根值判别法。",
+    "tags": [
+      "级数收敛",
+      "比值判别法",
+      "根值判别法"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 1"
   },
   {
     "title": "Advanced Calculus 2 Homework 10",
-    "desc": "Surface and line integrals computation with parameterization and orientation.",
+    "desc": "Surface and line integrals computation with parameterization.",
     "tags": [
       "surface integral",
       "line integral",
@@ -31,7 +51,7 @@
   },
   {
     "title": "高等微积分作业：幂级数与函数展开",
-    "desc": "分析幂级数收敛域、求和公式及函数项级数性质。",
+    "desc": "分析幂级数收敛域、求和公式及函数展开，证明关键等式。",
     "tags": [
       "幂级数",
       "收敛域",
@@ -40,18 +60,28 @@
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 2"
   },
   {
-    "title": "Advanced Calculus 2 Homework 3",
-    "desc": "Metric on continuous functions, Cauchy sequences, Cauchy-Schwarz inequality, open sets.",
+    "title": "高等微积分作业：度量空间与不等式",
+    "desc": "证明连续函数空间度量、Cauchy列收敛、柯西不等式及开集表示。",
     "tags": [
-      "metric space",
-      "Cauchy sequence",
-      "Cauchy-Schwarz inequality"
+      "度量空间",
+      "Cauchy列",
+      "柯西不等式"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 3"
   },
   {
-    "title": "Advanced Calculus 2 Homework 5 Solutions",
-    "desc": "Partial derivative calculations for various composite functions with chain rule.",
+    "title": "Advanced Calculus Homework 4 Analysis",
+    "desc": "Proofs of minimum on R^2 and extreme values on unit circle.",
+    "tags": [
+      "continuous function",
+      "compactness",
+      "extreme value theorem"
+    ],
+    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 4"
+  },
+  {
+    "title": "Advanced Calculus 2 Homework 5",
+    "desc": "Partial derivatives computation for various composite functions.",
     "tags": [
       "partial derivatives",
       "chain rule",
@@ -60,7 +90,7 @@
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 5"
   },
   {
-    "title": "Advanced Calculus 2 Homework 6 Analysis",
+    "title": "Advanced Calculus Homework 6 Analysis",
     "desc": "Implicit function theorem and Taylor expansion for z(x,y) near (1,1).",
     "tags": [
       "implicit function",
@@ -71,47 +101,47 @@
   },
   {
     "title": "Advanced Calculus 2 Homework 7 Analysis",
-    "desc": "Critical points and extremum analysis of two functions with Hessian matrix.",
+    "desc": "Find critical points and classify extrema for two functions.",
     "tags": [
       "critical points",
       "Hessian matrix",
-      "multivariable calculus"
+      "extrema"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 7"
   },
   {
-    "title": "高等微积分作业：换元法求面积与积分",
-    "desc": "通过变量替换计算区域面积和多重积分，展示换元公式的应用。",
+    "title": "Advanced Calculus Homework 8 Solutions",
+    "desc": "Area and integral calculations using variable transformations.",
     "tags": [
-      "换元积分",
-      "多重积分",
-      "雅可比行列式"
+      "double integral",
+      "variable transformation",
+      "Jacobian"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 8"
   },
   {
-    "title": "高等微积分作业：曲面面积与质心",
-    "desc": "椭球面面积参数化，球面面积计算，上半球面质心求解。",
+    "title": "Advanced Calculus 2 Homework 9: Surface Area and Center of Mass",
+    "desc": "Compute ellipsoid surface area via double integral and hemisphere center of mass.",
     "tags": [
-      "曲面面积",
-      "参数化",
-      "质心"
+      "surface area",
+      "center of mass",
+      "parametrization"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 9"
   },
   {
-    "title": "复变函数作业：模恒等与倍角公式",
-    "desc": "证明模为1的复数变换恒等式，并推导n倍角三角函数公式。",
+    "title": "Complex Function Homework 1",
+    "desc": "Proof of modulus equality and trigonometric multiple-angle formulas.",
     "tags": [
-      "复变函数",
-      "三角函数",
-      "模恒等式"
+      "complex analysis",
+      "trigonometric identities",
+      "De Moivre's theorem"
     ],
     "link": "/maths/Complex Analysis/Complex Analysis Homework 1"
   },
   {
     "title": "Complex Analysis Homework 10: Residue Theorem",
-    "desc": "Using residue theorem to compute definite integrals with trigonometric and hyperbolic functions.",
+    "desc": "Computing definite integrals using residue theorem with contour integration.",
     "tags": [
       "residue theorem",
       "contour integration",
@@ -121,37 +151,47 @@
   },
   {
     "title": "复变函数第11次作业：留数定理应用",
-    "desc": "利用留数定理计算三个含参数积分，涉及支点与围道积分。",
+    "desc": "利用留数定理计算三个含参数积分，涉及支点割线围道技巧。",
     "tags": [
       "留数定理",
-      "围道积分",
-      "复变函数"
+      "复变积分",
+      "围道积分"
     ],
     "link": "/maths/Complex Analysis/Complex Analysis Homework 11"
   },
   {
     "title": "复变函数作业：初等与多值函数",
-    "desc": "证明三角与双曲函数的恒等式及不等式，涉及复变函数基本性质。",
+    "desc": "证明三角与双曲函数的恒等式及模不等式。",
     "tags": [
       "复变函数",
-      "初等函数",
-      "多值函数"
+      "双曲函数",
+      "三角恒等式"
     ],
     "link": "/maths/Complex Analysis/Complex Analysis Homework 2"
   },
   {
-    "title": "复变函数第4次作业分析",
-    "desc": "计算复积分并确定参数a使函数单值。",
+    "title": "复变函数作业：多值函数与支点分析",
+    "desc": "判断多值函数支点，计算沿不同路径的函数值。",
+    "tags": [
+      "多值函数",
+      "支点",
+      "复变函数"
+    ],
+    "link": "/maths/Complex Analysis/Complex Analysis Homework 3"
+  },
+  {
+    "title": "复变函数第4次作业解析",
+    "desc": "计算复积分并证明Poisson公式，涉及留数定理应用。",
     "tags": [
       "复变函数",
-      "积分计算",
-      "解析函数"
+      "围道积分",
+      "留数定理"
     ],
     "link": "/maths/Complex Analysis/Complex Analysis Homework 4"
   },
   {
     "title": "复变函数第5次作业分析",
-    "desc": "判断正项级数收敛性命题，给出反例与证明。",
+    "desc": "判断级数收敛性，给出反例与证明，涉及正项级数和复数级数。",
     "tags": [
       "级数收敛",
       "反例",
@@ -160,18 +200,18 @@
     "link": "/maths/Complex Analysis/Complex Analysis Homework 5"
   },
   {
-    "title": "复变函数第6次作业分析",
-    "desc": "确定级数收敛半径，证明和函数不连续，求和函数。",
+    "title": "Complex Function Homework 6 Analysis",
+    "desc": "Determines convergence radii and sum functions, proving discontinuity at z=1.",
     "tags": [
-      "复变函数",
-      "级数收敛",
-      "和函数"
+      "complex analysis",
+      "power series",
+      "convergence radius"
     ],
     "link": "/maths/Complex Analysis/Complex Analysis Homework 6"
   },
   {
-    "title": "Complex Analysis Homework 7: Taylor Series",
-    "desc": "Taylor expansions of sec z, log((1+z)/(1-z)), and sqrt((1-z)/(1+z)) with convergence radii.",
+    "title": "复变函数第7次作业：Taylor展开",
+    "desc": "求解sec z、ln((1+z)/(1-z))和sqrt((1-z)/(1+z))的Taylor级数及收敛半径。",
     "tags": [
       "Taylor series",
       "complex analysis",
@@ -181,26 +221,36 @@
   },
   {
     "title": "复变函数第8次作业：Laurent展开",
-    "desc": "求解三个函数的Laurent展开，包括不同区域和分支。",
+    "desc": "求解三个函数的Laurent展开，包括在奇点附近和不同区域。",
     "tags": [
-      "Laurent series",
-      "complex analysis",
-      "singularities"
+      "Laurent展开",
+      "复变函数",
+      "奇点"
     ],
     "link": "/maths/Complex Analysis/Complex Analysis Homework 8"
   },
   {
+    "title": "复变函数作业：解析延拓与奇点",
+    "desc": "证明两个级数互为解析延拓，并分析级数的奇点分布。",
+    "tags": [
+      "解析延拓",
+      "级数收敛",
+      "奇点"
+    ],
+    "link": "/maths/Complex Analysis/Complex Analysis Homework 9"
+  },
+  {
     "title": "Spring Vibration Problem Analysis",
-    "desc": "Derives wave equation for a vertical spring with mass and initial conditions.",
+    "desc": "Derives wave equation, boundary and initial conditions for a hanging spring with mass.",
     "tags": [
       "wave equation",
       "boundary conditions",
-      "spring-mass system"
+      "spring vibration"
     ],
     "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 1"
   },
   {
-    "title": "Spherical Harmonic Expansion and PDE Solution",
+    "title": "Math Physics Homework 10: Spherical Harmonics",
     "desc": "Expand functions in spherical harmonics and solve Laplace equation with source terms.",
     "tags": [
       "spherical harmonics",
@@ -210,17 +260,17 @@
     "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 10"
   },
   {
-    "title": "Mathematical Physics Homework 11: Integral Calculation",
-    "desc": "Compute integral using substitution and Bessel function J2(a).",
+    "title": "Math Physics Homework 11: Integral Calculation",
+    "desc": "Compute integral using substitution and Bessel function J2.",
     "tags": [
       "Bessel function",
       "integration",
-      "substitution"
+      "mathematical physics"
     ],
     "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 11"
   },
   {
-    "title": "Critical Radius of Uranium Cylinder and Sphere",
+    "title": "Critical Radius of Cylindrical and Spherical Uranium Blocks",
     "desc": "Derivation of critical radius for cylindrical and spherical uranium blocks using neutron diffusion equation.",
     "tags": [
       "neutron diffusion",
@@ -230,73 +280,23 @@
     "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 12"
   },
   {
-    "title": "Dirac Delta Function Identities and Coordinate Representations",
-    "desc": "Proofs of delta function identities including scaling, product, and Laplacian in 3D.",
+    "title": "Dirac Delta Function Identities in Physics",
+    "desc": "Proofs of delta function properties in 1D and 3D coordinates.",
     "tags": [
       "Dirac delta",
       "coordinate transformation",
-      "Laplacian"
+      "mathematical physics"
     ],
     "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 13"
   },
   {
     "title": "Laplace Transform for Forced Oscillations",
-    "desc": "Solve forced vibration problem using Laplace transform with partial fractions.",
+    "desc": "Solving forced vibration with Laplace transform, partial fractions, and inverse transform.",
     "tags": [
       "Laplace transform",
       "forced vibration",
       "partial fractions"
     ],
     "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 14"
-  },
-  {
-    "title": "Green's Function for 1D Problem",
-    "desc": "Derives Green's function for ODE with Dirichlet BCs and solves boundary value problem.",
-    "tags": [
-      "Green's function",
-      "Sturm-Liouville",
-      "Boundary value problem"
-    ],
-    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 15"
-  },
-  {
-    "title": "Math Physics Homework 3: Laplace Equation",
-    "desc": "Solving Laplace equation with mixed boundary conditions using separation of variables.",
-    "tags": [
-      "Laplace equation",
-      "separation of variables",
-      "boundary conditions"
-    ],
-    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 3"
-  },
-  {
-    "title": "Solving Heat Equation with Sinusoidal Boundary",
-    "desc": "Decompose solution, use eigenfunction expansion to solve non-homogeneous heat equation.",
-    "tags": [
-      "heat equation",
-      "eigenfunction expansion",
-      "boundary conditions"
-    ],
-    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 4"
-  },
-  {
-    "title": "Math Physics Homework 5: Cylinder Potential",
-    "desc": "Potential inside a split cylinder with opposite halves at ±V.",
-    "tags": [
-      "Laplace equation",
-      "separation of variables",
-      "Fourier series"
-    ],
-    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 5"
-  },
-  {
-    "title": "Math Physics HW6: Series Solutions",
-    "desc": "Solving ODEs via power series around z=0, deriving recurrence relations and two independent solutions.",
-    "tags": [
-      "power series",
-      "ordinary differential equation",
-      "recurrence relation"
-    ],
-    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 6"
   }
 ]
