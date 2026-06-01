@@ -235,18 +235,18 @@ $$
 $$
 二阶导数：
 $$
-\frac{d^{2}\xi^{\alpha}}{d\tau^{2}} = \frac{\partial^{2} \xi^{\alpha}}{\partial x^{\mu} \partial x^{\nu}} \frac{dx^{\mu}}{d\tau} \frac{dx^{\nu}}{d\tau} + \frac{\partial \xi^{\alpha}}{\partial x^{\mu}} \frac{d^{2}{x}^{\mu}}{d\tau^{2}}
+\frac{d^{2}\xi^{\alpha}}{d\tau^{2}} = \frac{\partial^{2} \xi^{\alpha}}{\partial x^{\mu} \partial x^{\nu}} \frac{dx^{\mu}}{d\tau} \frac{dx^{\nu}}{d\tau} + \frac{\partial \xi^{\alpha}}{\partial x^{\mu}} \frac{d^{2}x^{\mu}}{d\tau^{2}}
 $$
 根据 $\frac{d^{2}\xi^{\alpha}}{d\tau^{2}} = 0$，代入得：
 
 $$
-\frac{\partial^{2} \xi^{\alpha}}{\partial x^{\mu} \partial x^{\nu}} \frac{dx^{\mu}}{d\tau} \frac{dx^{\nu}}{d\tau} + \frac{\partial \xi^{\alpha}}{\partial x^{\mu}} \frac{d^{2}{x}^{\mu}}{d\tau^{2}} = 0
+\frac{\partial^{2} \xi^{\alpha}}{\partial x^{\mu} \partial x^{\nu}} \frac{dx^{\mu}}{d\tau} \frac{dx^{\nu}}{d\tau} + \frac{\partial \xi^{\alpha}}{\partial x^{\mu}} \frac{d^{2}x^{\mu}}{d\tau^{2}} = 0
 $$
 
 乘以 $\frac{\partial x^{\lambda}}{\partial \xi^{\alpha}}$ 并利用 $\frac{\partial x^{\lambda}}{\partial \xi^{\alpha}} \frac{\partial \xi^{\alpha}}{\partial x^{\mu}} = \delta^{\lambda}_{\mu}$，得到：
 
 $$
-\frac{d^{2}{x}^{\lambda}}{d\tau^{2}} + \Gamma^{\lambda}_{\mu\nu} \frac{dx^{\mu}}{d\tau} \frac{dx^{\nu}}{d\tau} = 0
+\frac{d^{2}x^{\lambda}}{d\tau^{2}} + \Gamma^{\lambda}_{\mu\nu} \frac{dx^{\mu}}{d\tau} \frac{dx^{\nu}}{d\tau} = 0
 $$
 
 其中克里斯托夫符号定义为：
@@ -257,7 +257,7 @@ $$
 
 所以在 $x^{\mu}$ 坐标下的运动方程即测地线方程为
 $$
-\frac{d^{2}{x}^{\lambda}}{d\tau^{2}} + \Gamma^{\lambda}_{\mu\nu} \frac{dx^{\mu}}{d\tau} \frac{dx^{\nu}}{d\tau} = 0
+\frac{d^{2}x^{\lambda}}{d\tau^{2}} + \Gamma^{\lambda}_{\mu\nu} \frac{dx^{\mu}}{d\tau} \frac{dx^{\nu}}{d\tau} = 0
 $$
 
 ### 4. 协变性，牛顿引力与爱因斯坦引力

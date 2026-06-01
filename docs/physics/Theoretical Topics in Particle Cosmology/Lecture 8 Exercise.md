@@ -112,7 +112,7 @@ $$
 We have neglected a few obviously higher order terms in $m^{-1}$, but the remaining ones are not equally important in the NR limit. Through a long-winded argument of dimensional counting in the nonrelativistic regime [1], it turns out that the Coulomb interaction, namely the first term in the second line of (8), is more relevant in the low-energy (low-speed) limit, and the others are irrelevant. So, in this limit, we should keep the Coulomb terms and neglect others. This leads to:
 
 $$
-\mathcal{L}=i\Psi^{\dagger}\dot{\Psi}+\frac{1}{2m}\Psi^{\dagger}\nabla^{2}\Psi-\frac{1}{2}A_{0}\nabla^{2A}_{0}+eA_{0}\Psi^{\dagger}\Psi+\cdots. \tag{9}
+\mathcal{L}=i\Psi^{\dagger}\dot{\Psi}+\frac{1}{2m}\Psi^{\dagger}\nabla^{2}\Psi-\frac{1}{2}A_{0}\nabla^{2}A_{0}+eA_{0}\Psi^{\dagger}\Psi+\cdots. \tag{9}
 $$
 
 Now, we can further integrate $A_{0}$ out using its classical solution:
@@ -157,7 +157,7 @@ $\S 2$ NR Physics from On-Shell Amplitudes
 
 We consider a given 2-to-2 scattering process and want to compute the amplitude in two ways: 1) from the underlying theory (by using amplitude techniques without resorting to a QFT); 2) from NR limit, i.e., the quantum mechanics.
 
-For a $2\to2$ scattering $p_{1p}_{2}\to p_{1}'p_{2}'$, the kinematics in the EoM frame can be assigned as:
+For a $2\to2$ scattering $p_{1}p_{2}\to p_{1}'p_{2}'$, the kinematics in the EoM frame can be assigned as:
 
 $$
 p_{1}^{\mu}=(E_{1},\vec{p}),\quad p_{2}^{\mu}=(E_{2},-\vec{p}),\quad E_{a}=\sqrt{\vec{p}^{2}+m_{a}^{2}},
@@ -218,7 +218,7 @@ $$
 Then we find
 
 $$
-V(\vec{r},\vec{p})=-\int\frac{d^{3}\vec{q}}{(2\pi)^{3}}e^{+i\vec{q}\cdot\vec{r}}\frac{\mathcal{M}(\vec{p}-\vec{q},\vec{p})}{4E_{1E}_{2}}. \tag{22}
+V(\vec{r},\vec{p})=-\int\frac{d^{3}\vec{q}}{(2\pi)^{3}}e^{+i\vec{q}\cdot\vec{r}}\frac{\mathcal{M}(\vec{p}-\vec{q},\vec{p})}{4E_{1}E_{2}}. \tag{22}
 $$
 
 That is, the NR potential is the spatial Fourier transform of the $2\to2$ amplitude in the leading Born approximation.
@@ -242,13 +242,13 @@ $$
 Here the coupling coefficient $2e$ is chosen to recover the correct result in the NR limit. Then, with $\sum_{h=\pm1}\varepsilon_{\mu}^{(h)*}(q)\varepsilon_{\nu}^{(h)}(q)=\eta_{\mu\nu}+\alpha q_{\mu} q_{\nu}$, we have
 
 $$
-\mathcal{M}=+\frac{4e^{2Q}_{aQ}_{b}}{|\vec{q}|^{2}-i\varepsilon}p_{1}\cdot p_{2}+\mathcal{O}(q^{0})=-\frac{4e^{2Q}_{aQ}_{b}}{|\vec{q}|^{2}-i\varepsilon}\left(E_{1E}_{2}+\vec{p}^{2}\right)+\mathcal{O}(q^{0}). \tag{25}
+\mathcal{M}=+\frac{4e^{2}Q_{a}Q_{b}}{|\vec{q}|^{2}-i\varepsilon}p_{1}\cdot p_{2}+\mathcal{O}(q^{0})=-\frac{4e^{2}Q_{a}Q_{b}}{|\vec{q}|^{2}-i\varepsilon}\left(E_{1}E_{2}+\vec{p}^{2}\right)+\mathcal{O}(q^{0}). \tag{25}
 $$
 
 Then, using (22), we get:
 
 $$
-V(\vec{r},\vec{p})=\frac{e^{2Q}_{aQ}_{b}}{4\pi|\vec{r}|}\left(1+\frac{\vec{p}^{2}}{\sqrt{m_{1}^{2}+\vec{p}^{2}}\sqrt{m_{2}^{2}+\vec{p}^{2}}}\right)+\text{contact terms}. \tag{26}
+V(\vec{r},\vec{p})=\frac{e^{2}Q_{a}Q_{b}}{4\pi|\vec{r}|}\left(1+\frac{\vec{p}^{2}}{\sqrt{m_{1}^{2}+\vec{p}^{2}}\sqrt{m_{2}^{2}+\vec{p}^{2}}}\right)+\text{contact terms}. \tag{26}
 $$
 
 In the NR limit $|\vec{p}|\ll m_{1,2}$, this is nothing but the Coulomb's law.
@@ -266,24 +266,24 @@ $$
 Here "$\cdots$" denotes regular terms. Using $\sum_{h=\pm2}\varepsilon_{\mu\nu}^{(h)*}(q)\varepsilon_{\rho\sigma}^{(h)}(q)=\eta_{\mu\rho}\eta_{\nu\sigma}+\eta_{\mu\sigma}\eta_{\nu\rho}-\eta_{\mu\nu}\eta_{\rho\sigma}+(q\text{-dependent terms})$, we get
 
 $$
-\mathcal{M}=\frac{2\kappa^{2}}{\vec{q}^{2}}\left[-m_{1}^{2m}_{2}^{2}+2(p_{1}\cdot p_{2})^{2}\right]+\mathcal{O}(q^{0}). \tag{29}
+\mathcal{M}=\frac{2\kappa^{2}}{\vec{q}^{2}}\left[-m_{1}^{2}m_{2}^{2}+2(p_{1}\cdot p_{2})^{2}\right]+\mathcal{O}(q^{0}). \tag{29}
 $$
 
 Then, using (22) again, we get:
 
 $$
-V(\vec{r},\vec{p})=\frac{\kappa^{2}}{16\pi|\vec{r}|}\left[\frac{m_{1}^{2m}_{2}^{2}-2(E_{1E}_{2}+\vec{p}^{2})^{2}}{E_{1E}_{2}}\right]+\text{contact terms}. \tag{30}
+V(\vec{r},\vec{p})=\frac{\kappa^{2}}{16\pi|\vec{r}|}\left[\frac{m_{1}^{2}m_{2}^{2}-2(E_{1}E_{2}+\vec{p}^{2})^{2}}{E_{1}E_{2}}\right]+\text{contact terms}. \tag{30}
 $$
 
 Using $\kappa=\sqrt{8\pi G_{N}}$ and expanding in $\vec{p}^{2}$, we get
 
 $$
-V(\vec{r},\vec{p})=\frac{G_{N}}{|\vec{r}|}\left[-m_{1m}_{2}-\frac{3m_{1}^{2}+8m_{1m}_{2}+3m_{2}^{2}}{2m_{1m}_{2}}\vec{p}^{2}+\cdots\right]+\text{contact terms}. \tag{31}
+V(\vec{r},\vec{p})=\frac{G_{N}}{|\vec{r}|}\left[-m_{1}m_{2}-\frac{3m_{1}^{2}+8m_{1}m_{2}+3m_{2}^{2}}{2m_{1}m_{2}}\vec{p}^{2}+\cdots\right]+\text{contact terms}. \tag{31}
 $$
 
 The leading term is clearly the Newtonian potential. The second term represents the first special-relativistic correction. Note that it has the same sign as the first term, showing that the first-order special-relativistic correction produces an attractive force between two antiparallel mass current, in accordance with our discussion in the last lecture.
 
-We have successfully recovered Coulomb's and Newton's potentials together with their special-relativistic corrections. It's curious to observe that the force mediated by a massless spin-1 boson is independent of the source mass at the leading order in $\vec{p}^{2}$: $V_{\mathrm{Coulomb}}\sim -\mathcal{M}_{\mathrm{NR}}\sim -\frac{1}{4m_{1m}_{2}}\mathcal{M}\sim -\frac{1}{4m_{1m}_{2}}\times p_{1}^{\mu} p_{2}^{\nu}\sum_{h}\varepsilon_{\mu}^{(h)*}\varepsilon_{\nu}^{(h)}\sim\mathcal{O}(m_{1}^{0} m_{2}^{0})$. On the contrary, the force from exchanging a spin-2 particle is proportional to the source's mass due to more polarization indices and thus to more momenta in the numerator: $V_{\mathrm{Newton}}\sim -\frac{1}{4m_{1m}_{2}}p_{1}^{\mu} p_{1}^{\nu} p_{2}^{\rho} p_{2}^{\sigma}\sum_{h}\varepsilon_{\mu\nu}^{(h)*}\varepsilon_{\rho\sigma}^{(h)}\sim\mathcal{O}(m_{1} m_{2})$. So, the strength of gravity being proportional to the mass is a natural consequence of massless spin-2 mediation and is by itself not yet the equivalence principle; As detailed in Lecture 4, the equivalence principle says that the proportional coefficient is universal.
+We have successfully recovered Coulomb's and Newton's potentials together with their special-relativistic corrections. It's curious to observe that the force mediated by a massless spin-1 boson is independent of the source mass at the leading order in $\vec{p}^{2}$: $V_{\mathrm{Coulomb}}\sim -\mathcal{M}_{\mathrm{NR}}\sim -\frac{1}{4m_{1}m_{2}}\mathcal{M}\sim -\frac{1}{4m_{1}m_{2}}\times p_{1}^{\mu} p_{2}^{\nu}\sum_{h}\varepsilon_{\mu}^{(h)*}\varepsilon_{\nu}^{(h)}\sim\mathcal{O}(m_{1}^{0} m_{2}^{0})$. On the contrary, the force from exchanging a spin-2 particle is proportional to the source's mass due to more polarization indices and thus to more momenta in the numerator: $V_{\mathrm{Newton}}\sim -\frac{1}{4m_{1}m_{2}}p_{1}^{\mu} p_{1}^{\nu} p_{2}^{\rho} p_{2}^{\sigma}\sum_{h}\varepsilon_{\mu\nu}^{(h)*}\varepsilon_{\rho\sigma}^{(h)}\sim\mathcal{O}(m_{1} m_{2})$. So, the strength of gravity being proportional to the mass is a natural consequence of massless spin-2 mediation and is by itself not yet the equivalence principle; As detailed in Lecture 4, the equivalence principle says that the proportional coefficient is universal.
 
 Naturally, you may wonder if the long-range force mediated by a massless scalar would be inversely proportional to the source's mass. You are asked to figure it out by yourself.
 
@@ -291,7 +291,7 @@ $\S 3$ Bound states
 
 Above we mentioned that the Coulomb term is a relevant interaction in the NR limit. This has the consequence that, when going to the extremely low speed limit, the Coulomb term would be as important as the kinetic term, so that it can no longer be treated as a perturbation as we did in Born series.
 
-Physically, what happens is that bound states can form when the speed of the particle is lowered to the point where $mv^{2}\sim\alpha Q_{aQ}_{b}/r$ (or $v^{2}\sim G_{N} M/r$ for gravity). That is, we get new degrees of freedom. Thanks to this transition, we have hydrogen atoms and all chemical elements as well as our solar system. Clearly, bound states are very important and physically fun, but we have no much space to discuss them in detail. So we will only make a few brief comments.
+Physically, what happens is that bound states can form when the speed of the particle is lowered to the point where $mv^{2}\sim\alpha Q_{a}Q_{b}/r$ (or $v^{2}\sim G_{N} M/r$ for gravity). That is, we get new degrees of freedom. Thanks to this transition, we have hydrogen atoms and all chemical elements as well as our solar system. Clearly, bound states are very important and physically fun, but we have no much space to discuss them in detail. So we will only make a few brief comments.
 
 While it is trivial (trivial = we learned it from kindergarten) to get bound-state solutions given the potential, it is still interesting to see how do they arise from Feynman diagrams in a theory where the bound states are given their fields. (That is, we consider a theory where the Feynman graphs involve only electron, proton, and photon lines but not a hydrogen line.)
 
@@ -300,7 +300,7 @@ It is relatively easy to see that bound states cannot arise from any finite orde
 But which loop diagrams do we need to sum over? To answer this question, it is easiest answered by considering the NR Lagrangian, since we know how to get bound states in the NR limit. (Solving Schr\"odinger's equation!) Taking the NR scalar QED as an example:
 
 $$
-\mathcal{L}=\sum_{a=1}^{2}\Psi_{a}^{\dagger}\left(i\partial_{t}+eQ_{aA}_{0}+\frac{\nabla^{2}}{2m_{a}}\right)\Psi_{a}-\frac{1}{2}A_{0}\nabla^{2A}_{0.} \tag{32}
+\mathcal{L}=\sum_{a=1}^{2}\Psi_{a}^{\dagger}\left(i\partial_{t}+eQ_{a}A_{0}+\frac{\nabla^{2}}{2m_{a}}\right)\Psi_{a}-\frac{1}{2}A_{0}\nabla^{2}A_{0}. \tag{32}
 $$
 
 Recall that the propagators in this Lagrangian reads:

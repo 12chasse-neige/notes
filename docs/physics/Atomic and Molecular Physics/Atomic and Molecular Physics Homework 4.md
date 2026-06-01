@@ -22,7 +22,7 @@ $$
 
 So the Schrödinger equation gives that the zero-order wavefunction takes the form of 
 $$
-\psi^{(0)} (r_{1}, r_{2}) = \psi_{2s}^{(Z = 2)} (r_{1}) \psi_{4p}^{(Z = 1)} (r_{2})
+\psi^{(0)} (r_{1}, r_{2}) = \psi_{2}s^{(Z = 2)} (r_{1}) \psi_{4}p^{(Z = 1)} (r_{2})
 $$
 
 $$
@@ -55,11 +55,11 @@ a \\ b
 $$
 Where the parameters is the direct integral
 $$
-J = \frac{e^{2}}{4 \pi \epsilon_{0}} \iint u_{2s}^{*} (1) u_{2s} (1) \frac{1}{r_{12}} u_{4p}^{*}(2) u_{4p} (2) \, \dd[3]{r_{1}} \dd[3]{r_{2}}
+J = \frac{e^{2}}{4 \pi \epsilon_{0}} \iint u_{2}s^{*} (1) u_{2s} (1) \frac{1}{r_{12}} u_{4}p^{*}(2) u_{4p} (2) \, \dd[3]{r_{1}} \dd[3]{r_{2}}
 $$
 and the exchange integral
 $$
-K = \frac{e^{2}}{4 \pi \epsilon_{0}} \iint u_{2s}^{*} (1) u_{4p}^{*} (2) \frac{1}{r_{12}} u_{2s} (2) u_{4p} (1) \, \dd[3]{r_{1}} \dd[3]{r_{2}}
+K = \frac{e^{2}}{4 \pi \epsilon_{0}} \iint u_{2}s^{*} (1) u_{4}p^{*} (2) \frac{1}{r_{12}} u_{2s} (2) u_{4p} (1) \, \dd[3]{r_{1}} \dd[3]{r_{2}}
 $$
 Given that the factor $\frac{1}{r_{12}}$ can be expanded by the spherical harmonic functions
 $$
@@ -267,13 +267,13 @@ According to the Hund's Rules, the ordering of the states are:
 
 Considering the Fine Structure Spin-Orbit Splitting:
 
-1. The $^{3P}$ term ($S=1, L=1$) splits into $J = 0, 1, 2$. For a less-than-half-filled shell, the lowest $J$ has the lowest energy. $^{3P}_{0} <^{3P}_{1} <^{3P}_{2}$.
+1. The $^{3P}$ term ($S=1, L=1$) splits into $J = 0, 1, 2$. For a less-than-half-filled shell, the lowest $J$ has the lowest energy. $^{3}P_{0} <^{3}P_{1} <^{3}P_{2}$.
 
-2. The $^{1D}$ term ($S=0, L=2$) has only $J=2$: $^{1D}_{2}$.
+2. The $^{1D}$ term ($S=0, L=2$) has only $J=2$: $^{1}D_{2}$.
 
-3. The $^{1S}$ term ($S=0, L=0$) has only $J=0$: $^{1S}_{0}$.
+3. The $^{1S}$ term ($S=0, L=0$) has only $J=0$: $^{1}S_{0}$.
 
-So the energy order at low $\chi$ is  $^{3P}_{0} <^{3P}_{1} <^{3P}_{2} <^{1D}_{2} <^{1S}_{0}$.
+So the energy order at low $\chi$ is  $^{3}P_{0} <^{3}P_{1} <^{3}P_{2} <^{1}D_{2} <^{1}S_{0}$.
 
 $j-j$ Coupling Limit (Right Side):
 The electrons couple their spin and orbital angular momenta individually ($j = l \pm s$). For $p$ electrons ($l=1$), $j$ can be $1/2$ or $3/2$.
@@ -285,27 +285,27 @@ The electrons couple their spin and orbital angular momenta individually ($j = l
 
 States with the same total angular momentum $J$ do not cross (non-crossing rule).So  we can  connect the levels from left to right based on their energy order for each $J$.
 
-1. $J=0$: Lowest ($^{3P}_{0}$) $\to$ Lowest ($1/2, 1/2$)$_{0}$. Highest ($^{1S}_{0}$) $\to$ Highest ($3/2, 3/2$)$_{0}$.
-2. $J=1$: Only one state ($^{3P}_{1}$) $\to$ Middle group ($3/2, 1/2$)$_{1}$.
-3. $J=2$: Lower ($^{3P}_{2}$) $\to$ Middle group ($3/2, 1/2$)$_{2}$. Higher ($^{1D}_{2}$) $\to$ Highest group ($3/2, 3/2$)$_{2}$.
+1. $J=0$: Lowest ($^{3}P_{0}$) $\to$ Lowest ($1/2, 1/2$)$_{0}$. Highest ($^{1}S_{0}$) $\to$ Highest ($3/2, 3/2$)$_{0}$.
+2. $J=1$: Only one state ($^{3}P_{1}$) $\to$ Middle group ($3/2, 1/2$)$_{1}$.
+3. $J=2$: Lower ($^{3}P_{2}$) $\to$ Middle group ($3/2, 1/2$)$_{2}$. Higher ($^{1}D_{2}$) $\to$ Highest group ($3/2, 3/2$)$_{2}$.
 
 According to the analysis above, we can get the assigned term symbols for the points given:
 
 Left Side (L-S Coupling Region):
 
-(a) $^{1S}_{0}$ : The highest energy term on the LHS.
+(a) $^{1}S_{0}$ : The highest energy term on the LHS.
 
-(b) $^{1D}_{2}$ : The middle energy term.
+(b) $^{1}D_{2}$ : The middle energy term.
 
 (c) $^{3} P$: The lowest energy term.
 
 The bottom cluster originates from the $^{3P}$ term:
 
- (f) $^{3P}_{0}$ : The lowest level of the triplet.
+ (f) $^{3}P_{0}$ : The lowest level of the triplet.
 
-(d) $^{3P}_{2}$ : The highest level of the triplet.
+(d) $^{3}P_{2}$ : The highest level of the triplet.
 
-(e) $^{3P}_{1}$ : The middle level of the triplet.
+(e) $^{3}P_{1}$ : The middle level of the triplet.
 
 Right Side (j-j Coupling Region): In $j-j$ coupling notation $(j_{1}, j_{2})_{J}$
 
@@ -317,11 +317,11 @@ Right Side (j-j Coupling Region): In $j-j$ coupling notation $(j_{1}, j_{2})_{J}
 
 (g) $(3/2, 3/2)_{0}$: The highest state, connected to $^{1} S_{0}$.
 
-(h) $(3/2, 3/2)_{2}$ : The second highest state, connected to $^{1D}_{2}$.
+(h) $(3/2, 3/2)_{2}$ : The second highest state, connected to $^{1}D_{2}$.
 
-(j) $(3/2, 1/2)_{2}$ : The upper state of the middle group ($J=2$), connected to $^{3P}_{2}$.
+(j) $(3/2, 1/2)_{2}$ : The upper state of the middle group ($J=2$), connected to $^{3}P_{2}$.
 
-(k) $(3/2, 1/2)_{1}$ : The lower state of the middle group ($J=1$), connected to $^{3P}_{1}$.
+(k) $(3/2, 1/2)_{1}$ : The lower state of the middle group ($J=1$), connected to $^{3}P_{1}$.
 
 
 

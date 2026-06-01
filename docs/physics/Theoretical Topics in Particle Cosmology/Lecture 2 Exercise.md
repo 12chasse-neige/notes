@@ -9,7 +9,7 @@ The integral equals
 $$
 \int \frac{d^{3}\vec{k}}{(2\pi)^{3}} \frac{e^{+i \vec{k} \cdot \vec{x}}}{\vec{k}^{2} + m^{2}} = \frac{1}{(2 \pi)^{2}} \int \frac{k^{2} \dd{k}}{k^{2} + m^{2}} \int \sin \theta \dd{\theta} e^{i k x \cos \theta} = \frac{1}{(2 \pi)^{2} x} \int_{0}^{\infty} \frac{2u \sin u \dd{u}}{u^{2} + m^{2} x^{2}}
 $$
-We’ll use the residue theorem to treat wirth the radial part
+We’ll use the residue theorem to treat with the radial part
 $$
 \begin{gathered}
 \frac{1}{(2 \pi)^{2}x} \int_{0}^{\infty} \frac{2u \sin u \dd{u}}{u^{2} + m^{2} x^{2}} = \frac{1}{(2 \pi)^{2} x} \int_{- \infty}^{\infty} \frac{1}{2 i} \frac{2u e^{iu} \dd{u}}{u^{2} + m^{2} x^{2}} \\
