@@ -4,9 +4,9 @@ Chasse_neige
 
 ## Next to Leading Order Effect: Mercury Precession
 
-\[
+$$
 v \sim  \sqrt{\frac{Gm}{r}}
-\]
+$$
 
 The $G_{N}^{2}$ term refers to a 1-loop (non-ladder) graph.
 
@@ -21,9 +21,9 @@ The long-range effects come from the $q \to 0$ singularity, so we only consider 
 
 #### Landau Analysis
 
-\[
+$$
 f(z) = \int_{w_{1}}^{w_{2}} \dd{w} g (z, w)
-\]
+$$
 
 Result: only 2 cases will give out singularity on the contour
 

@@ -8,7 +8,7 @@ Chasse_neige
 
 (1). 一般而言，叉乘只能定义在特殊的维度，做为其推广，外积可以定义在任意维度。假设 $\vec{e}_{1} = (1, 0, 0)^{T}$、$\vec{e}_{2} = (0, 1, 0)^{T}$ 和 $\vec{e}_{3} = (0, 0, 1)^{T}$ 为 $\mathbb{R}^{3}$ 上的标准基底，则 $\forall \vec{u} = u_{1}\vec{e}_{1} + u_{2}\vec{e}_{2} + u_{3}\vec{e}_{3}$，$\vec{v} = v_{1}\vec{e}_{1} + v_{2}\vec{e}_{2} + v_{3}\vec{e}_{3} \in \mathbb{R}^{3}$，其外积定义为：
 $$
-\vec{u} \wedge \vec{v} = (u_{1v}_{2} - u_{2v}_{1}) (\vec{e}_{1} \wedge \vec{e}_{2}) + (u_{2v}_{3} - u_{3v}_{2}) (\vec{e}_{2} \wedge \vec{e}_{3}) + (u_{3v}_{1} - u_{1v}_{3}) (\vec{e}_{3} \wedge \vec{e}_{1}) \quad (1.1)
+\vec{u} \wedge \vec{v} = (u_{1} {v}_{2} - u_{2}{v}_{1}) (\vec{e}_{1} \wedge \vec{e}_{2}) + (u_{2}{v}_{3} - u_{3}{v}_{2}) (\vec{e}_{2} \wedge \vec{e}_{3}) + (u_{3}{v}_{1} - u_{1}{v}_{3}) (\vec{e}_{3} \wedge \vec{e}_{1}) \quad (1.1)
 $$
 对于 $\vec{w} = w_{1}\vec{e}_{1} + w_{2}\vec{e}_{2} + w_{3}\vec{e}_{3}$，试计算：
 $$

@@ -69,7 +69,7 @@ $$
 \frac{q^{2}}{16 \pi^{2} \epsilon_{0} m^{2} c^{3}} \frac{\delta^{3}}{\gamma^{2}} \left[ \vec{F}^{2} - (\vec{\beta} \cdot \vec{F})^{2} - \frac{\delta^{2}}{\gamma^{2}} (\vec{F} \cdot \vec{e}_{r} - \vec{F} \cdot \vec{\beta})^{2} \right]
 \end{gathered}
 $$
-(b) 试由定义，$\frac{1}{J} = \int d^{3x}' \delta \left( r' - r_{0}\left(t - \frac{\|r-r'\|}{c}\right) \right)$ 证明：$J = 1 - \frac{\vec{R}^*}{R^*} \cdot \frac{\vec{v}^*}{c}$。并讨论 $J$ 的物理意义。若在介质中，式中 $c$ 应换为 $\frac{c}{n}$（$n$ 为介质的折射率），则 $J$ 有可能为$0$，它对应什么物理？  
+(b) 试由定义，$\frac{1}{J} = \int d^{3}{x}' delta \left( r' - r_{0}\left(t - \frac{\|r-r'\|}{c}\right) \right)$ 证明：$J = 1 - \frac{\vec{R}^*}{R^*} \cdot \frac{\vec{v}^*}{c}$。并讨论 $J$ 的物理意义。若在介质中，式中 $c$ 应换为 $\frac{c}{n}$（$n$ 为介质的折射率），则 $J$ 有可能为$0$，它对应什么物理？  
 
 证明，由三维 $\delta$ 函数的性质
 $$

@@ -135,47 +135,47 @@ $$
 
 ### EM Scattering
 
-\[
+$$
 \mathcal{M} = \frac{4 e^{2} Q_{a} Q_{b}}{q^{2} - i \epsilon} p_{1} \cdot p_{2} = -\frac{4 e^{2} Q_{a} Q_{b}}{q^{2} - i \epsilon} \times \frac{E_{CM}^{2} - m^{2}}{2}
-\]
+$$
 
 Doing fourier transform, this phase will have some infared radiation divergence, so we’ll do some cut-off.
-\[
+$$
 \chi_{EM,0} (E, b) = 2 \alpha Q_{a} Q_{b} \log \frac{b}{b_{IR}}
-\]
+$$
 Finding the saddle point, the results are
-\[
+$$
 \theta = \frac{1}{p} \left|\pdv{\chi(E, b)}{b}\right| = \frac{2 \alpha Q_{a} Q_{b}}{pb}
-\]
+$$
 But the EM case will not have time delay in the leading order.
 
 ### Photon Spin
 
 Considering the photon helicity and expand the result to the first-order of $G_{N}$ and $\hbar$, we can get
-\[
+$$
 \theta = \frac{4 G m}{b} + \frac{15 \pi}{4} \left(\frac{G m}{b}\right)^{2} + C \left(\frac{G m}{b}\right)^{2} \times \frac{1}{mb} + \cdots
-\]
+$$
 
 ## Gravitational Light-by-light Scattering
 
 Two photons exchange a graviton. The long-range part is only induced by the t-channel singularity. The two cases are while the beams are parallel or anti-parallel (we can always boost the not parallel cases to that)
 
 1.  Parallel: $s = t = u = 0$
-    \[
+    $$
     \mathcal{M} \sim G \times O(s,t,u) = 0
-    \]
+    $$
     Two parallel beams of light do not feel gravitational attraction.
 
 2.  Anti-parallel
-    \[
+    $$
     \lim_{t \to 0} \mathcal{M} (1^{+}, 2^{+}, 3^{-}, 4^{-}) = \frac{\kappa^{2}}{t} [12]^{2} \langle 34 \rangle^{2} = \frac{16 \kappa^{2} p^{4}}{t}
-    \]
+    $$
     So we have the phase shift
-    \[
+    $$
     \chi_{0} = - \frac{\kappa^{2} p^{2}}{\pi^{2}} \ln \frac{b}{b_{IR}}
-    \]
+    $$
     And get the angle
-    \[
+    $$
     \theta = \frac{8 G p}{b}
-    \]
+    $$
     
