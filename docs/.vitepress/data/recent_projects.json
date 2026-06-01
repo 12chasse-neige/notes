@@ -1,302 +1,302 @@
 [
   {
-    "title": "Electrodynamics Week 15 Homework",
-    "desc": "Relativistic charged particle radiation field derived from Liénard-Wiechert potentials.",
+    "title": "Advanced Calculus Final Review",
+    "desc": "Taylor's theorem with Peano, Lagrange, and Cauchy remainder forms.",
     "tags": [
-      "Liénard-Wiechert",
-      "radiation field",
-      "relativistic electrodynamics"
-    ],
-    "link": "/physics/Electrodynamics/Electrodynamics Homework 13"
-  },
-  {
-    "title": "Feynman Physics (2) Homework 1: Exterior Algebra",
-    "desc": "High-dimensional vector analysis using wedge product and Hodge duality with Einstein summation.",
-    "tags": [
-      "exterior algebra",
-      "Hodge dual",
-      "Levi-Civita symbol"
-    ],
-    "link": "/physics/Feynman Lectures on Physics/Feynman Lectures on Physics (2) Homework 1"
-  },
-  {
-    "title": "浅水波与电磁理论的等价性",
-    "desc": "证明浅水波方程可写为连续性方程，与Chern-Simons电磁理论等价。",
-    "tags": [
-      "浅水波",
-      "Chern-Simons",
-      "连续性方程"
-    ],
-    "link": "/physics/Feynman Lectures on Physics/Feynman Lectures on Physics (2) Homework 7"
-  },
-  {
-    "title": "Statistical Mechanics Homework 12: Entropy and Adsorption",
-    "desc": "Derives entropy in grand canonical ensemble and finds adsorption density relation.",
-    "tags": [
-      "grand canonical ensemble",
-      "entropy",
-      "adsorption"
-    ],
-    "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 12"
-  },
-  {
-    "title": "Mercury Precession and 1-loop Amplitudes",
-    "desc": "Analyzing next-to-leading order effects and on-shell data for precession rate.",
-    "tags": [
-      "Mercury precession",
-      "1-loop amplitudes",
-      "Landau analysis"
-    ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 10"
-  },
-  {
-    "title": "Deriving Commutators in QFT",
-    "desc": "Derive commutator for scalar field and fix parameters in spin-1 and spin-2 Lagrangians.",
-    "tags": [
-      "quantum field theory",
-      "commutator",
-      "Lorentz invariance"
-    ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 7 Exercise"
-  },
-  {
-    "title": "Classical Gravitational Effects on Light",
-    "desc": "Light bending and Shapiro delay from classical gravity, with scattering amplitude insights.",
-    "tags": [
-      "light bending",
-      "Shapiro delay",
-      "classical limit"
-    ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 9 Exercise"
-  },
-  {
-    "title": "Classical Limit and Light Bending",
-    "desc": "Analyzes phase shifts and classical limit in light bending via graviton exchange.",
-    "tags": [
-      "phase shift",
-      "classical limit",
-      "light bending"
-    ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 9"
-  },
-  {
-    "title": "Landau Levels in Quantum Mechanics",
-    "desc": "Derivation of Landau levels using two different gauges and operator algebra.",
-    "tags": [
-      "Landau levels",
-      "quantum mechanics",
-      "gauge invariance"
-    ],
-    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 10"
-  },
-  {
-    "title": "C++ Programming Basics Keywords",
-    "desc": "Overview of C++ keywords for data types, control flow, and OOP.",
-    "tags": [
-      "C++",
-      "keywords",
-      "programming"
-    ],
-    "link": "/coding/C++/C++_Note"
-  },
-  {
-    "title": "Python Escape Characters Guide",
-    "desc": "Common escape characters in Python with examples and usage scenarios.",
-    "tags": [
-      "Python",
-      "Escape Characters",
-      "String Formatting"
-    ],
-    "link": "/coding/Python/Python_Note"
-  },
-  {
-    "title": "Advanced Calculus Final Review: Taylor's Theorem",
-    "desc": "Covers Taylor's theorem with Peano, Lagrange, and Cauchy remainder forms.",
-    "tags": [
-      "Taylor's Theorem",
-      "Remainder Forms",
-      "Advanced Calculus"
+      "Taylor's theorem",
+      "remainder",
+      "advanced calculus"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (1) Final Review"
   },
   {
-    "title": "Advanced Calculus 2 Homework 1 Analysis",
-    "desc": "Convergence tests for six series with detailed proofs using comparison, ratio, root tests.",
+    "title": "Analytical Mechanics Homework 3",
+    "desc": "Variational methods for geodesics on sphere and minimal surface of revolution.",
     "tags": [
-      "series convergence",
-      "ratio test",
-      "comparison test"
+      "calculus of variations",
+      "geodesic",
+      "minimal surface"
     ],
-    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 1"
+    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 3"
   },
   {
-    "title": "Advanced Calculus 2 Homework 10",
-    "desc": "Surface and line integrals computation with parameterization and Green's theorem.",
+    "title": "Analytical Mechanics Homework 5",
+    "desc": "Central force on Archimedean spiral and inverse-cube law trajectory.",
     "tags": [
-      "surface integral",
-      "line integral",
-      "parameterization"
+      "central force",
+      "Archimedean spiral",
+      "inverse-cube law"
     ],
-    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 10"
+    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 5"
   },
   {
-    "title": "高等微积分作业：幂级数与函数展开",
-    "desc": "分析幂级数收敛域、求和公式及函数项级数性质。",
+    "title": "Analytical Mechanics Homework 7",
+    "desc": "Perturbation method for pendulum with second-order correction",
     "tags": [
-      "幂级数",
-      "收敛域",
-      "泰勒展开"
+      "analytical mechanics",
+      "perturbation theory",
+      "pendulum"
     ],
-    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 2"
+    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 7"
   },
   {
-    "title": "Advanced Calculus 2 Homework 3",
-    "desc": "Metric space, Cauchy sequence convergence, Cauchy-Schwarz inequality, open set representation.",
+    "title": "Atomic and Molecular Physics Homework 1",
+    "desc": "Hydrogen eigenfunctions: explicit forms of psi_100, psi_200, psi_210, psi_21±1.",
     "tags": [
-      "metric space",
-      "Cauchy sequence",
-      "Cauchy-Schwarz inequality"
+      "Hydrogen atom",
+      "eigenfunctions",
+      "quantum mechanics"
     ],
-    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 3"
+    "link": "/physics/Atomic and Molecular Physics/Atomic and Molecular Physics Homework 1"
   },
   {
-    "title": "Advanced Calculus 2 Homework 4",
-    "desc": "Proves existence of minima and maxima for continuous functions on closed sets.",
+    "title": "Atomic and Molecular Physics Homework 2",
+    "desc": "Density matrix representation for two-level quantum state using Pauli matrices.",
     "tags": [
-      "continuous function",
-      "closed set",
-      "extreme value theorem"
+      "quantum mechanics",
+      "density matrix",
+      "Pauli matrices"
     ],
-    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 4"
+    "link": "/physics/Atomic and Molecular Physics/Atomic and Molecular Physics Homework 2"
   },
   {
-    "title": "Advanced Calculus Homework 5 Solutions",
-    "desc": "Partial derivatives computation for multivariable functions with chain rule.",
+    "title": "Electrodynamics Homework 1",
+    "desc": "Vector analysis using Levi-Civita and Kronecker delta identities.",
     "tags": [
-      "partial derivatives",
-      "chain rule",
-      "multivariable calculus"
+      "electrodynamics",
+      "vector analysis",
+      "Levi-Civita symbol"
     ],
-    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 5"
+    "link": "/physics/Electrodynamics/Electrodynamics Homework 1"
   },
   {
-    "title": "Advanced Calculus 2 Homework 6 Analysis",
-    "desc": "Implicit function theorem applied to cubic equation, partial derivatives and Taylor expansion.",
+    "title": "Electrodynamics Homework 12",
+    "desc": "Electrostatic potential, bound and free charges, energy of dielectric sphere.",
     "tags": [
-      "implicit function",
-      "partial derivative",
-      "Taylor expansion"
+      "electrostatics",
+      "dielectric sphere",
+      "bound charge"
     ],
-    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 6"
+    "link": "/physics/Electrodynamics/Electrodynamics Homework 10"
   },
   {
-    "title": "高等微积分作业：临界点与极值分析",
-    "desc": "求解二元函数临界点并判断极值，证明三元函数在闭球上有最大值。",
+    "title": "Electrodynamics Homework 11: Laplace Equation",
+    "desc": "Conducting sphere in uniform field with battery or total charge Q.",
     "tags": [
-      "critical points",
-      "extrema",
-      "multivariable calculus"
+      "Laplace equation",
+      "separation of variables",
+      "conducting sphere"
     ],
-    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 7"
+    "link": "/physics/Electrodynamics/Electrodynamics Homework 11"
   },
   {
-    "title": "高等微积分作业：换元法计算面积与积分",
-    "desc": "使用变量替换计算平面区域面积和三重积分，涉及雅可比行列式。",
+    "title": "Electrodynamics Homework 12: Steady Current and Surface",
+    "desc": "Current distribution and surface charge for a sphere in a conducting fluid.",
     "tags": [
-      "变量替换",
-      "雅可比行列式",
-      "多重积分"
+      "electrodynamics",
+      "steady current",
+      "conductivity"
     ],
-    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 8"
+    "link": "/physics/Electrodynamics/Electrodynamics Homework 12"
   },
   {
-    "title": "Advanced Calculus 2 Homework 9: Surface Area and Center of Mass",
-    "desc": "Compute ellipsoid surface area via double integral and find centroid of hemisphere.",
+    "title": "Electrodynamics Homework 13: Relativistic Radiation",
+    "desc": "Derivation of radiation field for relativistically accelerated charged particle using Liénard-Wiechert potentials.",
     "tags": [
-      "surface area",
-      "double integral",
-      "center of mass"
+      "electrodynamics",
+      "Liénard-Wiechert potentials",
+      "relativistic radiation"
     ],
-    "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 9"
+    "link": "/physics/Electrodynamics/Electrodynamics Homework 13"
   },
   {
-    "title": "Complex Function Homework 1",
-    "desc": "Proof of modulus equality and trigonometric multiple-angle formulas.",
+    "title": "Electrodynamics Homework 2: Sources and Fields",
+    "desc": "Analysis of current flux and proof of dipole moment rate and force between loops.",
     "tags": [
-      "complex analysis",
-      "trigonometric identities",
-      "de Moivre's theorem"
+      "electrodynamics",
+      "current density",
+      "dipole moment"
     ],
-    "link": "/maths/Complex Analysis/Complex Analysis Homework 1"
+    "link": "/physics/Electrodynamics/Electrodynamics Homework 2"
   },
   {
-    "title": "复变函数第10次作业：留数定理应用",
-    "desc": "利用留数定理计算四个积分，涉及三角函数和有理函数。",
+    "title": "Electrodynamics Homework 4",
+    "desc": "Particle decay, Lorentz transformation of energy and momentum, beam angle transformation.",
     "tags": [
-      "留数定理",
-      "围道积分",
-      "复变函数"
+      "particle decay",
+      "Lorentz transformation",
+      "energy-momentum"
     ],
-    "link": "/maths/Complex Analysis/Complex Analysis Homework 10"
+    "link": "/physics/Electrodynamics/Electrodynamics Homework 4"
   },
   {
-    "title": "复变函数第11次作业：留数定理应用",
-    "desc": "利用留数定理计算三个含参数积分，涉及支点与围道积分。",
+    "title": "Electrodynamics Homework 6: Wave Equations",
+    "desc": "Wave equation and plane wave solutions in ideal dielectric media.",
     "tags": [
-      "留数定理",
-      "围道积分",
-      "复变函数"
+      "electrodynamics",
+      "wave equation",
+      "dielectric"
     ],
-    "link": "/maths/Complex Analysis/Complex Analysis Homework 11"
+    "link": "/physics/Electrodynamics/Electrodynamics Homework 6"
   },
   {
-    "title": "复变函数作业：初等与多值函数",
-    "desc": "证明三角与双曲函数恒等式及模不等式，含指数推导。",
+    "title": "Electrodynamics Homework 7: Resonant Cavity and Waveguides",
+    "desc": "Analysis of wave modes in parallel plates and proof of energy equality in cavity.",
     "tags": [
-      "复变函数",
-      "初等函数",
-      "多值函数"
+      "resonant cavity",
+      "cutoff frequency",
+      "waveguide"
     ],
-    "link": "/maths/Complex Analysis/Complex Analysis Homework 2"
+    "link": "/physics/Electrodynamics/Electrodynamics Homework 7"
   },
   {
-    "title": "复变函数作业：多值函数与支点分析",
-    "desc": "分析多值函数支点，计算沿不同路径的函数值。",
+    "title": "Electrodynamics Homework 8: Vector and Scalar Potentials",
+    "desc": "Decomposes Maxwell's equations into longitudinal and transverse parts, proves Coulomb field correspondence.",
     "tags": [
-      "多值函数",
-      "支点",
-      "复变函数"
+      "Maxwell's equations",
+      "vector potential",
+      "scalar potential"
     ],
-    "link": "/maths/Complex Analysis/Complex Analysis Homework 3"
+    "link": "/physics/Electrodynamics/Electrodynamics Homework 8"
   },
   {
-    "title": "复变函数第4次作业解析",
-    "desc": "计算围道积分并确定参数使函数单值，证明Poisson公式。",
+    "title": "Electrodynamics Homework 9: Multipole Expansion",
+    "desc": "Magnetic moment of rotating charged sphere, force on magnetic dipole near permeable interface.",
     "tags": [
-      "复变函数",
-      "围道积分",
-      "Poisson公式"
+      "multipole expansion",
+      "magnetic moment",
+      "image method"
     ],
-    "link": "/maths/Complex Analysis/Complex Analysis Homework 4"
+    "link": "/physics/Electrodynamics/Electrodynamics Homework 9"
   },
   {
-    "title": "Complex Analysis Homework 5 Analysis",
-    "desc": "Counterexamples for series convergence and absolute convergence tests.",
+    "title": "Feynman Physics 2 Homework 1",
+    "desc": "Vector analysis in higher dimensions using wedge product and Hodge duality.",
     "tags": [
-      "series",
-      "convergence",
-      "counterexample"
+      "Feynman Lectures",
+      "Physics",
+      "Homework"
     ],
-    "link": "/maths/Complex Analysis/Complex Analysis Homework 5"
+    "link": "/physics/Feynman Lectures on Physics/Feynman Lectures on Physics (2) Homework 1"
   },
   {
-    "title": "复变函数第6次作业分析",
-    "desc": "级数收敛半径与和函数连续性分析，包含幂级数与三角级数求和。",
+    "title": "Feynman Physics 2 Homework 2",
+    "desc": "Photon mass modifies electrostatics; Coulomb law deviation analysis.",
     "tags": [
-      "复变函数",
-      "级数收敛",
-      "和函数"
+      "photon mass",
+      "electrostatics",
+      "Coulomb law"
     ],
-    "link": "/maths/Complex Analysis/Complex Analysis Homework 6"
+    "link": "/physics/Feynman Lectures on Physics/Feynman Lectures on Physics (2) Homework 2"
+  },
+  {
+    "title": "Feynman Physics 2 Homework 4",
+    "desc": "Superconductivity, London equations, vector potential, magnetic field lines.",
+    "tags": [
+      "superconductivity",
+      "London equations",
+      "vector potential"
+    ],
+    "link": "/physics/Feynman Lectures on Physics/Feynman Lectures on Physics (2) Homework 4"
+  },
+  {
+    "title": "Feynman Physics 2 Homework 5",
+    "desc": "Chern-Simons theory: Lagrangian, field equations, and applications.",
+    "tags": [
+      "Chern-Simons theory",
+      "electromagnetic duality",
+      "quantum Hall effect"
+    ],
+    "link": "/physics/Feynman Lectures on Physics/Feynman Lectures on Physics (2) Homework 5"
+  },
+  {
+    "title": "Feynman Physics 2 Homework 7",
+    "desc": "Shallow water waves equivalence to Chern-Simons gauge theory",
+    "tags": [
+      "shallow water waves",
+      "Chern-Simons theory",
+      "gauge theory"
+    ],
+    "link": "/physics/Feynman Lectures on Physics/Feynman Lectures on Physics (2) Homework 7"
+  },
+  {
+    "title": "General Relativity Homework 6",
+    "desc": "Analyzes allowed angular velocity range inside Kerr ergosphere.",
+    "tags": [
+      "Kerr metric",
+      "ergosphere",
+      "angular velocity"
+    ],
+    "link": "/physics/General Relativity/General Relativity Homework 6"
+  },
+  {
+    "title": "Detecting and Analyzing Gravitational Waves",
+    "desc": "Overview of gravitational wave detection methods and interferometer response analysis.",
+    "tags": [
+      "gravitational waves",
+      "detection",
+      "interferometry"
+    ],
+    "link": "/physics/General Relativity/Gravitational Waves/Detecting Gravitiational Waves"
+  },
+  {
+    "title": "Gravitational Wave Formation and Propagation",
+    "desc": "Linearized gravity approximation for gravitational wave generation and propagation.",
+    "tags": [
+      "gravitational waves",
+      "linearized gravity",
+      "general relativity"
+    ],
+    "link": "/physics/General Relativity/Gravitational Waves/Gravitational Waves Formation and Propagation"
+  },
+  {
+    "title": "Quantum Noise in Gravitational Wave Detectors",
+    "desc": "Analysis of noise sources including quantum, thermal, and technical noise in Advanced LIGO.",
+    "tags": [
+      "quantum noise",
+      "gravitational waves",
+      "Advanced LIGO"
+    ],
+    "link": "/physics/General Relativity/Gravitational Waves/Quantum Noise"
+  },
+  {
+    "title": "Feynman Diagrams for Beginners",
+    "desc": "Introduction to Feynman diagrams with exercises for QFT beginners.",
+    "tags": [
+      "Feynman diagrams",
+      "quantum field theory",
+      "QED"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Field Theory/Feynman Diagrams for Beginners"
+  },
+  {
+    "title": "Quantum Mechanics Homework 1",
+    "desc": "Photon number in cavity, infinite well energy, de Broglie wave velocities.",
+    "tags": [
+      "quantum mechanics",
+      "blackbody radiation",
+      "Sommerfeld quantization"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 1"
+  },
+  {
+    "title": "Quantum Mechanics Homework 10",
+    "desc": "Landau levels from Hamiltonian with specific gauge and operator algebra.",
+    "tags": [
+      "Landau levels",
+      "Hamiltonian",
+      "gauge"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 10"
+  },
+  {
+    "title": "Quantum Mechanics Homework 2",
+    "desc": "Infinite square well problems: pressure, wave function evolution, and probability.",
+    "tags": [
+      "quantum mechanics",
+      "infinite square well",
+      "wave function"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 2"
   }
 ]
