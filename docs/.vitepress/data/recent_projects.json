@@ -1,5 +1,175 @@
 [
   {
+    "title": "Electrodynamics Homework 9: Multipole Expansion",
+    "desc": "Magnetic moment of rotating charged sphere, force on magnetic dipole near permeable interface.",
+    "tags": [
+      "multipole expansion",
+      "magnetic moment",
+      "image method"
+    ],
+    "link": "/physics/Electrodynamics/Electrodynamics Homework 9"
+  },
+  {
+    "title": "Feynman Physics 2 Homework 4",
+    "desc": "Superconductivity, London equations, vector potential, magnetic field lines.",
+    "tags": [
+      "superconductivity",
+      "London equations",
+      "vector potential"
+    ],
+    "link": "/physics/Feynman Lectures on Physics/Feynman Lectures on Physics (2) Homework 4"
+  },
+  {
+    "title": "Feynman Physics 2 Homework 5",
+    "desc": "Chern-Simons theory in 3D and 4D spacetime",
+    "tags": [
+      "Chern-Simons theory",
+      "electromagnetic field",
+      "Euler-Lagrange equation"
+    ],
+    "link": "/physics/Feynman Lectures on Physics/Feynman Lectures on Physics (2) Homework 5"
+  },
+  {
+    "title": "General Relativity Homework 6",
+    "desc": "Angular velocity range inside Kerr ergosphere near horizon.",
+    "tags": [
+      "Kerr metric",
+      "ergosphere",
+      "angular velocity"
+    ],
+    "link": "/physics/General Relativity/General Relativity Homework 6"
+  },
+  {
+    "title": "Detecting and Analyzing Gravitational Waves",
+    "desc": "Overview of gravitational wave detection across frequency bands and interferometer response.",
+    "tags": [
+      "gravitational waves",
+      "detection",
+      "interferometer"
+    ],
+    "link": "/physics/General Relativity/Gravitational Waves/Detecting Gravitiational Waves"
+  },
+  {
+    "title": "Feynman Diagrams for Beginners",
+    "desc": "Introduction to Feynman diagrams with exercises for QFT beginners.",
+    "tags": [
+      "Feynman diagrams",
+      "quantum field theory",
+      "QED"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Field Theory/Feynman Diagrams for Beginners"
+  },
+  {
+    "title": "Quantum Mechanics Homework 1",
+    "desc": "Photon number in cavity, infinite well energy, de Broglie wave velocities.",
+    "tags": [
+      "quantum mechanics",
+      "blackbody radiation",
+      "infinite potential well"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 1"
+  },
+  {
+    "title": "Quantum Mechanics Homework 2",
+    "desc": "Particle in infinite square well: pressure, wavefunction evolution, and probability.",
+    "tags": [
+      "quantum mechanics",
+      "infinite square well",
+      "wavefunction"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 2"
+  },
+  {
+    "title": "Quantum Mechanics Homework 5",
+    "desc": "Symmetries and conserved quantities in quantum mechanics.",
+    "tags": [
+      "angular momentum",
+      "conservation law",
+      "Feynman-Hellmann theorem"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 5"
+  },
+  {
+    "title": "Statistical Mechanics Homework 1",
+    "desc": "Derives equation of state from thermal expansion and compressibility.",
+    "tags": [
+      "statistical mechanics",
+      "equation of state",
+      "thermal expansion"
+    ],
+    "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 1"
+  },
+  {
+    "title": "Particle Cosmology Lecture 2 Exercise",
+    "desc": "Integral evaluation and derivation of gauge invariant energy-momentum tensor.",
+    "tags": [
+      "quantum field theory",
+      "energy-momentum tensor",
+      "residue theorem"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 2 Exercise"
+  },
+  {
+    "title": "Lorentz Invariance and Optical Theorem",
+    "desc": "Proves Lorentz invariance of inner product and optical theorem via unitarity.",
+    "tags": [
+      "Lorentz invariance",
+      "optical theorem",
+      "S-matrix unitarity"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 3 Exercise"
+  },
+  {
+    "title": "Scattering Theory and Analyticity",
+    "desc": "Fundamental principles restrain interactions via scattering amplitude analyticity.",
+    "tags": [
+      "scattering theory",
+      "analyticity",
+      "Fock space"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 3"
+  },
+  {
+    "title": "Dyson Series and On-Shell Factorization",
+    "desc": "Derives Dyson series for transition amplitude with source and on-shell factorization theorem.",
+    "tags": [
+      "Dyson series",
+      "transition amplitude",
+      "on-shell factorization"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 4 Exercise"
+  },
+  {
+    "title": "Massless Amplitudes and Spinor Helicity",
+    "desc": "Spinor helicity formalism for massless amplitudes using Lorentz group decomposition.",
+    "tags": [
+      "spinor helicity",
+      "massless amplitudes",
+      "Lorentz group"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 5"
+  },
+  {
+    "title": "Particle Cosmology Lecture 7 Exercise",
+    "desc": "Derive commutator and determine parameters via Lorentz invariance.",
+    "tags": [
+      "commutator",
+      "Lorentz invariance",
+      "field theory"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 7 Exercise"
+  },
+  {
+    "title": "Classical Limit for Light Bending",
+    "desc": "Phase shift and classical limit in particle scattering with gravitons.",
+    "tags": [
+      "classical limit",
+      "light bending",
+      "phase shift"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 9"
+  },
+  {
     "title": "Advanced Calculus Final Review",
     "desc": "Taylor's theorem with Peano, Lagrange, and Cauchy remainder forms.",
     "tags": [
@@ -41,11 +211,11 @@
   },
   {
     "title": "Atomic and Molecular Physics Homework 1",
-    "desc": "Hydrogen eigenfunctions: explicit forms of psi_100, psi_200, psi_210, psi_21±1.",
+    "desc": "Hydrogen eigenfunctions: explicit forms of ψ100, ψ200, ψ210, ψ21±1",
     "tags": [
       "Hydrogen atom",
       "eigenfunctions",
-      "quantum mechanics"
+      "spherical harmonics"
     ],
     "link": "/physics/Atomic and Molecular Physics/Atomic and Molecular Physics Homework 1"
   },
@@ -60,8 +230,8 @@
     "link": "/physics/Atomic and Molecular Physics/Atomic and Molecular Physics Homework 2"
   },
   {
-    "title": "Electrodynamics Homework 1",
-    "desc": "Vector analysis using Levi-Civita and Kronecker delta identities.",
+    "title": "Electrodynamics Homework 1: Vector Analysis",
+    "desc": "Proofs using Levi-Civita and Kronecker delta identities.",
     "tags": [
       "electrodynamics",
       "vector analysis",
@@ -70,12 +240,12 @@
     "link": "/physics/Electrodynamics/Electrodynamics Homework 1"
   },
   {
-    "title": "Electrodynamics Homework 12",
-    "desc": "Electrostatic potential, bound and free charges, energy of dielectric sphere.",
+    "title": "Electrodynamics Homework 12: Electrostatic Potential",
+    "desc": "Dielectric sphere polarization, bound and free charge densities, potential, energy.",
     "tags": [
       "electrostatics",
       "dielectric sphere",
-      "bound charge"
+      "polarization"
     ],
     "link": "/physics/Electrodynamics/Electrodynamics Homework 10"
   },
@@ -100,18 +270,18 @@
     "link": "/physics/Electrodynamics/Electrodynamics Homework 12"
   },
   {
-    "title": "Electrodynamics Homework 13: Relativistic Radiation",
-    "desc": "Derivation of radiation field for relativistically accelerated charged particle using Liénard-Wiechert potentials.",
+    "title": "Electrodynamics Homework 13: Moving Charged Particles",
+    "desc": "Relativistic radiation fields from accelerated charges using Liénard-Wiechert potentials.",
     "tags": [
       "electrodynamics",
       "Liénard-Wiechert potentials",
-      "relativistic radiation"
+      "radiation fields"
     ],
     "link": "/physics/Electrodynamics/Electrodynamics Homework 13"
   },
   {
-    "title": "Electrodynamics Homework 2: Sources and Fields",
-    "desc": "Analysis of current flux and proof of dipole moment rate and force between loops.",
+    "title": "Electrodynamics Homework 2",
+    "desc": "Current flux and dipole moment rate of change proofs.",
     "tags": [
       "electrodynamics",
       "current density",
@@ -128,175 +298,5 @@
       "energy-momentum"
     ],
     "link": "/physics/Electrodynamics/Electrodynamics Homework 4"
-  },
-  {
-    "title": "Electrodynamics Homework 6: Wave Equations",
-    "desc": "Wave equation and plane wave solutions in ideal dielectric media.",
-    "tags": [
-      "electrodynamics",
-      "wave equation",
-      "dielectric"
-    ],
-    "link": "/physics/Electrodynamics/Electrodynamics Homework 6"
-  },
-  {
-    "title": "Electrodynamics Homework 7: Resonant Cavity and Waveguides",
-    "desc": "Analysis of wave modes in parallel plates and proof of energy equality in cavity.",
-    "tags": [
-      "resonant cavity",
-      "cutoff frequency",
-      "waveguide"
-    ],
-    "link": "/physics/Electrodynamics/Electrodynamics Homework 7"
-  },
-  {
-    "title": "Electrodynamics Homework 8: Vector and Scalar Potentials",
-    "desc": "Decomposes Maxwell's equations into longitudinal and transverse parts, proves Coulomb field correspondence.",
-    "tags": [
-      "Maxwell's equations",
-      "vector potential",
-      "scalar potential"
-    ],
-    "link": "/physics/Electrodynamics/Electrodynamics Homework 8"
-  },
-  {
-    "title": "Electrodynamics Homework 9: Multipole Expansion",
-    "desc": "Magnetic moment of rotating charged sphere, force on magnetic dipole near permeable interface.",
-    "tags": [
-      "multipole expansion",
-      "magnetic moment",
-      "image method"
-    ],
-    "link": "/physics/Electrodynamics/Electrodynamics Homework 9"
-  },
-  {
-    "title": "Feynman Physics 2 Homework 1",
-    "desc": "Vector analysis in higher dimensions using wedge product and Hodge duality.",
-    "tags": [
-      "Feynman Lectures",
-      "Physics",
-      "Homework"
-    ],
-    "link": "/physics/Feynman Lectures on Physics/Feynman Lectures on Physics (2) Homework 1"
-  },
-  {
-    "title": "Feynman Physics 2 Homework 2",
-    "desc": "Photon mass modifies electrostatics; Coulomb law deviation analysis.",
-    "tags": [
-      "photon mass",
-      "electrostatics",
-      "Coulomb law"
-    ],
-    "link": "/physics/Feynman Lectures on Physics/Feynman Lectures on Physics (2) Homework 2"
-  },
-  {
-    "title": "Feynman Physics 2 Homework 4",
-    "desc": "Superconductivity, London equations, vector potential, magnetic field lines.",
-    "tags": [
-      "superconductivity",
-      "London equations",
-      "vector potential"
-    ],
-    "link": "/physics/Feynman Lectures on Physics/Feynman Lectures on Physics (2) Homework 4"
-  },
-  {
-    "title": "Feynman Physics 2 Homework 5",
-    "desc": "Chern-Simons theory: Lagrangian, field equations, and applications.",
-    "tags": [
-      "Chern-Simons theory",
-      "electromagnetic duality",
-      "quantum Hall effect"
-    ],
-    "link": "/physics/Feynman Lectures on Physics/Feynman Lectures on Physics (2) Homework 5"
-  },
-  {
-    "title": "Feynman Physics 2 Homework 7",
-    "desc": "Shallow water waves equivalence to Chern-Simons gauge theory",
-    "tags": [
-      "shallow water waves",
-      "Chern-Simons theory",
-      "gauge theory"
-    ],
-    "link": "/physics/Feynman Lectures on Physics/Feynman Lectures on Physics (2) Homework 7"
-  },
-  {
-    "title": "General Relativity Homework 6",
-    "desc": "Analyzes allowed angular velocity range inside Kerr ergosphere.",
-    "tags": [
-      "Kerr metric",
-      "ergosphere",
-      "angular velocity"
-    ],
-    "link": "/physics/General Relativity/General Relativity Homework 6"
-  },
-  {
-    "title": "Detecting and Analyzing Gravitational Waves",
-    "desc": "Overview of gravitational wave detection methods and interferometer response analysis.",
-    "tags": [
-      "gravitational waves",
-      "detection",
-      "interferometry"
-    ],
-    "link": "/physics/General Relativity/Gravitational Waves/Detecting Gravitiational Waves"
-  },
-  {
-    "title": "Gravitational Wave Formation and Propagation",
-    "desc": "Linearized gravity approximation for gravitational wave generation and propagation.",
-    "tags": [
-      "gravitational waves",
-      "linearized gravity",
-      "general relativity"
-    ],
-    "link": "/physics/General Relativity/Gravitational Waves/Gravitational Waves Formation and Propagation"
-  },
-  {
-    "title": "Quantum Noise in Gravitational Wave Detectors",
-    "desc": "Analysis of noise sources including quantum, thermal, and technical noise in Advanced LIGO.",
-    "tags": [
-      "quantum noise",
-      "gravitational waves",
-      "Advanced LIGO"
-    ],
-    "link": "/physics/General Relativity/Gravitational Waves/Quantum Noise"
-  },
-  {
-    "title": "Feynman Diagrams for Beginners",
-    "desc": "Introduction to Feynman diagrams with exercises for QFT beginners.",
-    "tags": [
-      "Feynman diagrams",
-      "quantum field theory",
-      "QED"
-    ],
-    "link": "/physics/Quantum Physics/Quantum Field Theory/Feynman Diagrams for Beginners"
-  },
-  {
-    "title": "Quantum Mechanics Homework 1",
-    "desc": "Photon number in cavity, infinite well energy, de Broglie wave velocities.",
-    "tags": [
-      "quantum mechanics",
-      "blackbody radiation",
-      "Sommerfeld quantization"
-    ],
-    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 1"
-  },
-  {
-    "title": "Quantum Mechanics Homework 10",
-    "desc": "Landau levels from Hamiltonian with specific gauge and operator algebra.",
-    "tags": [
-      "Landau levels",
-      "Hamiltonian",
-      "gauge"
-    ],
-    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 10"
-  },
-  {
-    "title": "Quantum Mechanics Homework 2",
-    "desc": "Infinite square well problems: pressure, wave function evolution, and probability.",
-    "tags": [
-      "quantum mechanics",
-      "infinite square well",
-      "wave function"
-    ],
-    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 2"
   }
 ]
