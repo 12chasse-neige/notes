@@ -4,41 +4,41 @@ Chasse_neige
 #### 1 超导 (16-3)
 1. 描述超导电流 $\vec{j_{s}}$ 时，除了正常的电磁方程，电流还额外满足伦敦方程 $(a > 0)$：
    $$
-\begin{align}
+   \begin{align}
    \nabla \times \vec{j_{s}} &= -a \vec{B} \\
    \frac{\partial}{\partial t} \vec{j_{s}} &= a \vec{E} 
    \end{align}
-$$
+   $$
    试证明电流有限要求超导体的电阻为零，而磁场在超导体内指数衰减。
    
    证明：
    
    假设电阻不为零，即存在 $\sigma$ 使得 $\vec{j} = \sigma \vec{E}$
    $$
-\frac{\partial}{\partial t} \vec{j_{s}} = a \vec{E} = \frac{\alpha}{\sigma} \vec{j}_{s}
-$$
+   \frac{\partial}{\partial t} \vec{j_{s}} = a \vec{E} = \frac{\alpha}{\sigma} \vec{j}_{s}
+   $$
    所以超导电流会随时间指数增长，最终发散。
    
    磁场：由于超导体内无电场，所以 $\nabla \times \vec{B} = \mu_{0} \vec{j}_{s}$
    $$
-\nabla \times (\nabla \times \vec{B}) = \mu_{0} (\nabla \times \vec{j}_{s}) = - a \mu_{0} \vec{B}
-$$
+   \nabla \times (\nabla \times \vec{B}) = \mu_{0} (\nabla \times \vec{j}_{s}) = - a \mu_{0} \vec{B}
+   $$
    
    $$
-\nabla^{2} \vec{B} = a \mu_{0} \vec{B}
-$$
+   \nabla^{2} \vec{B} = a \mu_{0} \vec{B}
+   $$
    
    所以磁场在超导体内以 $e^{- \sqrt{a \mu_{0}} r}$ 指数衰减
 
 #### 2 矢势的应用 (蒋济帆)
 1. 证明：为使得磁矢势满足 $\nabla \times \vec{A} = \vec{B}$, 可取
    $$
-\vec{A}(\vec{r}) = \frac{\mu_{0}}{4\pi} \int_{V'} \frac{\vec{j}(\vec{r'})}{|\vec{r} - \vec{r'}|} dV'
-$$
+   \vec{A}(\vec{r}) = \frac{\mu_{0}}{4\pi} \int_{V'} \frac{\vec{j}(\vec{r'})}{|\vec{r} - \vec{r'}|} dV'
+   $$
    其中 $\vec{r}$ 为空间中某一点的位矢，$\vec{r'}$ 为空间中场源的位矢，$\vec{j}(\vec{r'})$ 为空间中的电流密度，$V'$ 是整个空间。
    $$
-\nabla \times \vec{A} = \nabla \times \frac{\mu_{0}}{4\pi} \int_{V'} \frac{\vec{j}(\vec{r'})}{|\vec{r} - \vec{r'}|} dV' = - \frac{\mu_{0}}{4\pi} \int_{V'} \vec{j}(\vec{r'}) \times \nabla \frac{1}{|\vec{r} - \vec{r'}|} dV' = \frac{\mu_{0}}{4\pi} \int_{V'} \vec{j}(\vec{r'})  \times \frac{\vec{r} - \vec{r'}}{|\vec{r} - \vec{r'}|^{3}} dV' = \vec{B}
-$$
+   \nabla \times \vec{A} = \nabla \times \frac{\mu_{0}}{4\pi} \int_{V'} \frac{\vec{j}(\vec{r'})}{|\vec{r} - \vec{r'}|} dV' = - \frac{\mu_{0}}{4\pi} \int_{V'} \vec{j}(\vec{r'}) \times \nabla \frac{1}{|\vec{r} - \vec{r'}|} dV' = \frac{\mu_{0}}{4\pi} \int_{V'} \vec{j}(\vec{r'})  \times \frac{\vec{r} - \vec{r'}}{|\vec{r} - \vec{r'}|^{3}} dV' = \vec{B}
+   $$
 
 2. 计算通有方向与大小均相同的电流的两无限长平行直导线周围的磁感线的方程。该种曲线的名称是什么？
 
@@ -46,45 +46,45 @@ $$
 
    矢势
    $$
-\vec{A} (\vec{r}) = \frac{\mu_{0} I}{2 \pi} \left(\frac{1}{\sqrt{(x - a)^{2} + y^{2}}} + \frac{1}{\sqrt{(x + a)^{2} + y^{2}}}\right) \hat{z}
-$$
+   \vec{A} (\vec{r}) = \frac{\mu_{0} I}{2 \pi} \left(\frac{1}{\sqrt{(x - a)^{2} + y^{2}}} + \frac{1}{\sqrt{(x + a)^{2} + y^{2}}}\right) \hat{z}
+   $$
    由于二维时对于仅在$z$ 方向上的矢势，磁场可以表示为
    $$
-\vec{B} = \nabla \times \vec{A} = (\partial_{y} A_{z}, - \partial_{x} A_{z}, 0)
-$$
+   \vec{B} = \nabla \times \vec{A} = (\partial_{y} A_{z}, - \partial_{x} A_{z}, 0)
+   $$
 
    $$
-\vec{B} \cdot \nabla A = \partial_{y} A_{z} \partial_{x} A_{z} - \partial_{x} A_{z} \partial_{y} A_{z} = 0
-$$
+   \vec{B} \cdot \nabla A = \partial_{y} A_{z} \partial_{x} A_{z} - \partial_{x} A_{z} \partial_{y} A_{z} = 0
+   $$
 
    所以 $\vec{B}$ 和 $\nabla A$ 垂直，即磁感线为 $A$ 的等值线：
    $$
-\frac{1}{\sqrt{(x - a)^{2} + y^{2}}} + \frac{1}{\sqrt{(x + a)^{2} + y^{2}}} = C
-$$
+   \frac{1}{\sqrt{(x - a)^{2} + y^{2}}} + \frac{1}{\sqrt{(x + a)^{2} + y^{2}}} = C
+   $$
    其中$C$ 为常数。
 
 3. 考虑一条截面为半径是 $a$ 的圆的闭合导线 (磁导率为 $\mu_{0}$, $a$ 远小于导线的其他各项几何尺寸), 设电流在导线内部均匀分布, 导线的各个横截面的中心在同一平面内。记该导线的自感为 $L$。
    - (i) 证明：在合理的近似下，有
      $$
-L = \frac{\mu_{0}}{4\pi} \oint_{l} \oint_{l} \frac{\theta(|\vec{r_{1}} - \vec{r_{2}}| - \eta a)}{|\vec{r_{1}} - \vec{r_{2}}|} d\vec{r_{1}} \cdot d\vec{r_{2}}
-$$
+     L = \frac{\mu_{0}}{4\pi} \oint_{l} \oint_{l} \frac{\theta(|\vec{r_{1}} - \vec{r_{2}}| - \eta a)}{|\vec{r_{1}} - \vec{r_{2}}|} d\vec{r_{1}} \cdot d\vec{r_{2}}
+     $$
      的形式，其中 $\ell$ 是整条回路，
      $$
-\theta(\xi) = \begin{cases}
+     \theta(\xi) = \begin{cases}
      1, & \xi > 0 \\
      0, & \xi < 0
      \end{cases}
-$$
+     $$
      并求常数 $\eta$
 
      把导线通以 $\vec{j}$ 的匀强电流密度，则闭合导线内的磁通为（$l$是导线中心线）
      $$
-\Phi = \int_{S} d \vec{S} \cdot \vec{B} = \int_{S} d \vec{S} \cdot (\nabla \times \vec{A}) = \oint_{\partial S} d \vec{l} \cdot \vec{A} = \oint_{\partial S} d \vec{l} \cdot \oint_{\partial S} \frac{\mu_{0}}{4 \pi} \frac{\vec{j} d \tau'}{|\vec{r} - \vec{r'}|}
-$$
+     \Phi = \int_{S} d \vec{S} \cdot \vec{B} = \int_{S} d \vec{S} \cdot (\nabla \times \vec{A}) = \oint_{\partial S} d \vec{l} \cdot \vec{A} = \oint_{\partial S} d \vec{l} \cdot \oint_{\partial S} \frac{\mu_{0}}{4 \pi} \frac{\vec{j} d \tau'}{|\vec{r} - \vec{r'}|}
+     $$
      所以自感可以表示为除去导线内部部分的区域的磁通积分
      $$
-L = \frac{\Phi}{\pi a^{2} j} = \oint_{l} \oint_{l}  d \vec{r_{1}} \cdot  \frac{\mu_{0}}{4 \pi} \frac{\theta (|\vec{r_{1}} - \vec{r_{2}}| - a)}{|\vec{r}_{1} - \vec{r}_{2}|} d \vec{r}_{2} = \frac{\mu_{0}}{4\pi} \oint_{l} \oint_{l} \frac{\theta(|\vec{r_{1}} - \vec{r_{2}}| - a)}{|\vec{r_{1}} - \vec{r_{2}}|} d\vec{r_{1}} \cdot d\vec{r_{2}}
-$$
+     L = \frac{\Phi}{\pi a^{2} j} = \oint_{l} \oint_{l}  d \vec{r_{1}} \cdot  \frac{\mu_{0}}{4 \pi} \frac{\theta (|\vec{r_{1}} - \vec{r_{2}}| - a)}{|\vec{r}_{1} - \vec{r}_{2}|} d \vec{r}_{2} = \frac{\mu_{0}}{4\pi} \oint_{l} \oint_{l} \frac{\theta(|\vec{r_{1}} - \vec{r_{2}}| - a)}{|\vec{r_{1}} - \vec{r_{2}}|} d\vec{r_{1}} \cdot d\vec{r_{2}}
+     $$
      
      所以 $\eta = 1$
      
@@ -92,29 +92,29 @@ $$
    
      自感为
      $$
-L = \frac{\mu_{0}R}{2} \int_{2 \arcsin \frac{a}{2 R}}^{2 \pi - 2 \arcsin \frac{a}{2R}} \frac {\cos \theta}{2 R \sin \frac{\theta}{2}} R d \theta = \frac{\mu_{0} R}{2} \left( \ln \frac{1 + \sqrt{1 - \frac{a}{2 R}^{2}}}{1 - \sqrt{1 - \frac{a}{2 R}^{2}}} - 4  \sqrt{1 - \frac{a}{2 R}^{2}} \right)
-$$
+     L = \frac{\mu_{0}R}{2} \int_{2 \arcsin \frac{a}{2 R}}^{2 \pi - 2 \arcsin \frac{a}{2R}} \frac {\cos \theta}{2 R \sin \frac{\theta}{2}} R d \theta = \frac{\mu_{0} R}{2} \left( \ln \frac{1 + \sqrt{1 - \frac{a}{2 R}^{2}}}{1 - \sqrt{1 - \frac{a}{2 R}^{2}}} - 4  \sqrt{1 - \frac{a}{2 R}^{2}} \right)
+     $$
      
    
 4. 计算两个半径分别为 $R_{1}$ 和 $R_{2}$、圆心间距为 $l$ 的同轴导体圆环间的互感。结果利用完全椭圆积分
    $$
-\begin{align}
+   \begin{align}
    K(k^{2}) &\triangleq \int_{0}^{\frac{\pi}{2}} \frac{d\theta}{\sqrt{1 - k^{2} \sin^{2} \theta}}, \\
    E(k^{2}) &\triangleq \int_{0}^{\frac{\pi}{2}} \sqrt{1 - k^{2} \sin^{2} \theta} \, d\theta
    \end{align}
-$$
+   $$
    表示，不要出现积分符号。
    $$
-\begin{gathered}
+   \begin{gathered}
    M = \frac{\Phi_{12}}{I} = \frac{\mu_{0}}{4 \pi} \int_{0}^{2 \pi} \int_{0}^{2 \pi} \frac{R_{1} R_{2}  d \theta \cos \phi d \phi}{\sqrt{l^{2} + R_{1}^{2} + R_{2}^{2} - 2 R_{1} R_{2} \cos \phi}} \\ = \frac{\mu_{0} R_{1} R_{2}}{\sqrt{l^{2} + (R_{1} + R_{2})^{2}}} \\ \left( ( - 2 + \frac{l^{2} + (R_{1} + R_{2})^{2}}{R_{1} R_{2}}) K(\frac{4 R_{1} R_{2}}{l^{2} + (R_{1} + R_{2})^{2}}) -  \frac{l^{2} + (R_{1} + R_{2})^{2}}{R_{1} R_{2}} E(\frac{4 R_{1} R_{2}}{l^{2} + (R_{1} + R_{2})^{2}})\right)
    \end{gathered}
-$$
+   $$
    
 
    注：可能用到的积分等式：
    $$
-\int_{0}^{2\pi} \ln(a - \cos x) \, dx = 2\pi \ln a + \sqrt{a^{2} - 1}, \quad a > 1
-$$
+   \int_{0}^{2\pi} \ln(a - \cos x) \, dx = 2\pi \ln a + \sqrt{a^{2} - 1}, \quad a > 1
+   $$
 
 5. 
 

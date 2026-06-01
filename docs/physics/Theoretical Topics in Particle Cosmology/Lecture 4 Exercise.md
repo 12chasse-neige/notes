@@ -40,36 +40,36 @@ $$
 >We work in momentum space
 >
 >$$
-G(k_{1},\dots ,k_{n})\,(2\pi)^{4}\delta^{(4)}(k_{1}+\cdots +k_{n}) \equiv \int \prod_{a=1}^{n}\Big[ d^{4}x_{a}\, e^{-ik_{a}\cdot x_{a}} \Big] \langle \Omega | T\big\{ O_{1}(x_{1})\cdots O_{n}(x_{n}) \big\} | \Omega \rangle \tag{7}
-$$
+>G(k_{1},\dots ,k_{n})\,(2\pi)^{4}\delta^{(4)}(k_{1}+\cdots +k_{n}) \equiv \int \prod_{a=1}^{n}\Big[ d^{4}x_{a}\, e^{-ik_{a}\cdot x_{a}} \Big] \langle \Omega | T\big\{ O_{1}(x_{1})\cdots O_{n}(x_{n}) \big\} | \Omega \rangle \tag{7}
+>$$
 >
 >Importantly, these $k_{i}$’s are completely arbitrary 4‑momenta without any mass‑shell constraints. Assuming scalars only, $G$ is a function of Lorentz invariant combinations like $K_{12}^{2}$, $K_{123}^{2}$, $\dots$ where $K^{\mu}_{1\cdots n}\equiv k^{\mu}_{1}+\cdots +k^{\mu}_{n}$. We want to know $G$’s behavior on the complex plane of $s_{\ell}\equiv -K_{1\cdots\ell}^{2}$ with the condition $K^{0}_{1\cdots\ell}<0$.
 >
 >**Theorem (on‑shell factorization):** $G(s_{\ell})$ develops a simple pole at $s_{\ell}=m^{2}$ when approaching it from $K^{0}_{1\cdots\ell}<0$, if there is a one‑particle state of species $A$, 3‑momentum $|\mathbf{p}\rangle$, and mass $m$ having nonvanishing matrix element:
 >$$
-G_{E}\,(2\pi)^{4}\delta^{(4)}(K_{1\cdots\ell}+p) \equiv \int \prod_{a=1}^{\ell}\Big[ d^{4}x_{a}\, e^{-ik_{a}\cdot x_{a}} \Big] \langle \mathbf{p} | T\big\{ O_{1}(x_{1})\cdots O_{\ell}(x_{\ell}) \big\} | \Omega \rangle \tag{8}
-$$
+>G_{E}\,(2\pi)^{4}\delta^{(4)}(K_{1\cdots\ell}+p) \equiv \int \prod_{a=1}^{\ell}\Big[ d^{4}x_{a}\, e^{-ik_{a}\cdot x_{a}} \Big] \langle \mathbf{p} | T\big\{ O_{1}(x_{1})\cdots O_{\ell}(x_{\ell}) \big\} | \Omega \rangle \tag{8}
+>$$
 >
 >$$
-G_{L}\,(2\pi)^{4}\delta^{(4)}(K_{(\ell+1)\cdots n}-p) \equiv \int \prod_{a=\ell+1}^{n}\Big[ d^{4}x_{a}\, e^{-ik_{a}\cdot x_{a}} \Big] \langle \Omega | T\big\{ O_{\ell+1}(x_{\ell+1})\cdots O_{n}(x_{n}) \big\} | \mathbf{p} \rangle \tag{9}
-$$
+>G_{L}\,(2\pi)^{4}\delta^{(4)}(K_{(\ell+1)\cdots n}-p) \equiv \int \prod_{a=\ell+1}^{n}\Big[ d^{4}x_{a}\, e^{-ik_{a}\cdot x_{a}} \Big] \langle \Omega | T\big\{ O_{\ell+1}(x_{\ell+1})\cdots O_{n}(x_{n}) \big\} | \mathbf{p} \rangle \tag{9}
+>$$
 >
 >Then
 >
 >$$
-\begin{gathered}
-\lim_{\substack{s_{\ell}\to m^{2}\\ K^{0}_{1\cdots\ell}<0}} G(s_{\ell}) = G_{L}\; \frac{-i}{-s_{\ell}+m^{2}-i\epsilon}\; G_{E} \tag{10}
-\end{gathered}
-$$
+>\begin{gathered}
+>\lim_{\substack{s_{\ell}\to m^{2}\\ K^{0}_{1\cdots\ell}<0}} G(s_{\ell}) = G_{L}\; \frac{-i}{-s_{\ell}+m^{2}-i\epsilon}\; G_{E} \tag{10}
+>\end{gathered}
+>$$
 >
 >If $K^{0}_{1\cdots\ell}>0$, then the above limit still holds, yet with
 >$$
-G'_{E}\,(2\pi)^{4}\delta^{(4)}(K_{(\ell+1)\cdots n}+p) \equiv \int \prod_{a=\ell+1}^{n}\Big[ d^{4}x_{a}\, e^{-ik_{a}\cdot x_{a}} \Big] \langle \mathbf{p} | T\big\{ O_{\ell+1}(x_{\ell+1})\cdots O_{n}(x_{n}) \big\} | \Omega \rangle \tag{11}
-$$
+>G'_{E}\,(2\pi)^{4}\delta^{(4)}(K_{(\ell+1)\cdots n}+p) \equiv \int \prod_{a=\ell+1}^{n}\Big[ d^{4}x_{a}\, e^{-ik_{a}\cdot x_{a}} \Big] \langle \mathbf{p} | T\big\{ O_{\ell+1}(x_{\ell+1})\cdots O_{n}(x_{n}) \big\} | \Omega \rangle \tag{11}
+>$$
 >
 >$$
-G'_{L}\,(2\pi)^{4}\delta^{(4)}(K_{1\cdots\ell}-p) \equiv \int \prod_{a=1}^{\ell}\Big[ d^{4}x_{a}\, e^{-ik_{a}\cdot x_{a}} \Big] \langle \Omega | T\big\{ O_{1}(x_{1})\cdots O_{\ell}(x_{\ell}) \big\} | \mathbf{p} \rangle \tag{12}
-$$
+>G'_{L}\,(2\pi)^{4}\delta^{(4)}(K_{1\cdots\ell}-p) \equiv \int \prod_{a=1}^{\ell}\Big[ d^{4}x_{a}\, e^{-ik_{a}\cdot x_{a}} \Big] \langle \Omega | T\big\{ O_{1}(x_{1})\cdots O_{\ell}(x_{\ell}) \big\} | \mathbf{p} \rangle \tag{12}
+>$$
 >
 >**Remarks** Clearly, $s_{\ell}\to m^{2}$ means an “internal” particle going on shell. The residue factorizes into $G_{L}G_{E}$. 
 >The physical intuition is: An on‑shell particle can propagate arbitrarily long distance. The divergence is from the accumulation over long distances, where $G_{E}$ & $G_{L}$ are very far apart in spacetime. So they must factorize, which is loosely a consequence of cluster decomposition.
@@ -88,49 +88,49 @@ $$
 >   Using the integral representation
 >
 > $$
-\theta(z) = -\frac{1}{2\pi i}\int_{-\infty}^{+\infty} \frac{d\omega}{\omega+i\epsilon}\, e^{-i\omega z} \tag{13}
-$$
+> \theta(z) = -\frac{1}{2\pi i}\int_{-\infty}^{+\infty} \frac{d\omega}{\omega+i\epsilon}\, e^{-i\omega z} \tag{13}
+> $$
 >
 >   we can write
 >
 > $$
-G = \int \prod_{a=1}^{n}\Big[ d^{4}x_{a}\, e^{-ik_{a}\cdot x_{a}} \Big] \frac{-1}{2\pi i}\int \frac{d\omega}{\omega+i\epsilon}\, e^{-i\omega[\min-\max]} \langle \Omega | T\big\{ O_{1}(x_{1})\cdots O_{n}(x_{n}) \big\} | \Omega \rangle + \cdots \tag{14}
-$$
+> G = \int \prod_{a=1}^{n}\Big[ d^{4}x_{a}\, e^{-ik_{a}\cdot x_{a}} \Big] \frac{-1}{2\pi i}\int \frac{d\omega}{\omega+i\epsilon}\, e^{-i\omega[\min-\max]} \langle \Omega | T\big\{ O_{1}(x_{1})\cdots O_{n}(x_{n}) \big\} | \Omega \rangle + \cdots \tag{14}
+> $$
 >
 >   where terms in $\cdots$ do not contribute poles at $s_{\ell}=m^{2}$. Also, thanks to the $\theta$ function, we can write:
 >
 > $$
-\langle \Omega | T\big\{ O_{1}\cdots O_{n} \big\} | \Omega \rangle = \langle \Omega | T\big\{ O_{\ell+1}\cdots O_{n} \big\} T\big\{ O_{1}\cdots O_{\ell} \big\} | \Omega \rangle \tag{15}
-$$
+> \langle \Omega | T\big\{ O_{1}\cdots O_{n} \big\} | \Omega \rangle = \langle \Omega | T\big\{ O_{\ell+1}\cdots O_{n} \big\} T\big\{ O_{1}\cdots O_{\ell} \big\} | \Omega \rangle \tag{15}
+> $$
 >
 >2. Insert a complete basis
 >
 > $$
-1 = |\Omega\rangle\langle\Omega| + \sum_{\text{species}} \underbrace{\int \frac{d^{3}\mathbf{p}}{(2\pi)^{3}}\frac{1}{2E_{p}} |\mathbf{p}\rangle\langle\mathbf{p}|}_{\text{one‑particle state part}} + \cdots \tag{16}
-$$
+> 1 = |\Omega\rangle\langle\Omega| + \sum_{\text{species}} \underbrace{\int \frac{d^{3}\mathbf{p}}{(2\pi)^{3}}\frac{1}{2E_{p}} |\mathbf{p}\rangle\langle\mathbf{p}|}_{\text{one‑particle state part}} + \cdots \tag{16}
+> $$
 >
 >   Claim: Only the **one‑particle state part** contributes poles.
 >
 > $$
-\begin{gather}
-\langle \Omega | T\big\{ O_{\ell+1}\cdots O_{n} \big\} T\big\{ O_{1}\cdots O_{\ell} \big\} | \Omega \rangle \\ =
-\int \frac{d^{3}\mathbf{p}}{(2\pi)^{3}}\frac{1}{2E_{p}} \langle \Omega | T\big\{ O_{\ell+1}\cdots O_{n} \big\} | \mathbf{p} \rangle \langle \mathbf{p} | T\big\{ O_{1}\cdots O_{\ell} \big\} | \Omega \rangle + \cdots \tag{17}
-\end{gather}
-$$
+> \begin{gather}
+> \langle \Omega | T\big\{ O_{\ell+1}\cdots O_{n} \big\} T\big\{ O_{1}\cdots O_{\ell} \big\} | \Omega \rangle \\ =
+> \int \frac{d^{3}\mathbf{p}}{(2\pi)^{3}}\frac{1}{2E_{p}} \langle \Omega | T\big\{ O_{\ell+1}\cdots O_{n} \big\} | \mathbf{p} \rangle \langle \mathbf{p} | T\big\{ O_{1}\cdots O_{\ell} \big\} | \Omega \rangle + \cdots \tag{17}
+> \end{gather}
+> $$
 >
 >3. Rewrite
 >
 > $$
-\langle \Omega | T\big\{ O_{\ell+1}(x_{\ell+1})\cdots O_{n}(x_{n}) \big\} | \mathbf{p} \rangle = e^{ip\cdot x_{\ell+1}} \langle \Omega | T\big\{ O_{\ell+1}(0)O_{\ell+2}(y_{\ell+2})\cdots O_{n}(y_{n}) \big\} | \mathbf{p} \rangle \tag{18}
-$$
+> \langle \Omega | T\big\{ O_{\ell+1}(x_{\ell+1})\cdots O_{n}(x_{n}) \big\} | \mathbf{p} \rangle = e^{ip\cdot x_{\ell+1}} \langle \Omega | T\big\{ O_{\ell+1}(0)O_{\ell+2}(y_{\ell+2})\cdots O_{n}(y_{n}) \big\} | \mathbf{p} \rangle \tag{18}
+> $$
 >
 >   with $y_{i}\equiv x_{i}-x_{\ell+1}$, ($i=\ell+1,\dots ,n$), and similarly for the other factor.
 >
 >   $\Rightarrow$ Finishing $x_{1}$, $x_{\ell+1}$ and $\omega$ integrals produces a $\delta$‑product that gives a denominator
 >
 > $$
-\frac{1}{\omega+i\epsilon} \;\to\; \frac{1}{K^{0}_{1\cdots\ell} + \sqrt{\mathbf{K}_{1\cdots\ell}^{2}+m^{2}} + i\epsilon} \tag{19}
-$$
+> \frac{1}{\omega+i\epsilon} \;\to\; \frac{1}{K^{0}_{1\cdots\ell} + \sqrt{\mathbf{K}_{1\cdots\ell}^{2}+m^{2}} + i\epsilon} \tag{19}
+> $$
 >
 >   Note that the pole is produced by the **negative** energy $K^{0}_{1\cdots\ell}<0$.
 >
@@ -145,20 +145,20 @@ $$
 >2. Also, from the proof, it is clear how to generalize this result when the intermediate on‑shell particle $A$ has nonzero spin: We simply sum over all helicity states:
 >
 > $$
-\begin{gathered}
-\lim_{\substack{s_{\ell}\to m^{2}\\ K^{0}_{1\cdots\ell}<0}} G(s_{\ell}) = \sum_{h} G_{L}(h)\; \frac{-i}{-s_{\ell}+m^{2}-i\epsilon}\; G_{E}(-h), \tag{20}
-\end{gathered}
-$$
+> \begin{gathered}
+> \lim_{\substack{s_{\ell}\to m^{2}\\ K^{0}_{1\cdots\ell}<0}} G(s_{\ell}) = \sum_{h} G_{L}(h)\; \frac{-i}{-s_{\ell}+m^{2}-i\epsilon}\; G_{E}(-h), \tag{20}
+> \end{gathered}
+> $$
 >
 >   where the sum goes from $-s,-s+1,\dots ,s-1,s$ for massive $A$ and $-s,+s$ for massless $A$, and
 >
 > $$
-G_{E}(-h)\,(2\pi)^{4}\delta^{(4)}(K_{1\cdots\ell}+p) \equiv \int \prod_{a=1}^{\ell}\Big[ d^{4}x_{a}\, e^{-ik_{a}\cdot x_{a}} \Big] \langle \mathbf{p},h | T\big\{ O_{1}(x_{1})\cdots O_{\ell}(x_{\ell}) \big\} | \Omega \rangle, \tag{21}
-$$
+> G_{E}(-h)\,(2\pi)^{4}\delta^{(4)}(K_{1\cdots\ell}+p) \equiv \int \prod_{a=1}^{\ell}\Big[ d^{4}x_{a}\, e^{-ik_{a}\cdot x_{a}} \Big] \langle \mathbf{p},h | T\big\{ O_{1}(x_{1})\cdots O_{\ell}(x_{\ell}) \big\} | \Omega \rangle, \tag{21}
+> $$
 >
 > $$
-G_{L}(h)\,(2\pi)^{4}\delta^{(4)}(K_{(\ell+1)\cdots n}-p) \equiv \int \prod_{a=\ell+1}^{n}\Big[ d^{4}x_{a}\, e^{-ik_{a}\cdot x_{a}} \Big] \langle \Omega | T\big\{ O_{\ell+1}(x_{\ell+1})\cdots O_{n}(x_{n}) \big\} | \mathbf{p},h \rangle. \tag{22}
-$$
+> G_{L}(h)\,(2\pi)^{4}\delta^{(4)}(K_{(\ell+1)\cdots n}-p) \equiv \int \prod_{a=\ell+1}^{n}\Big[ d^{4}x_{a}\, e^{-ik_{a}\cdot x_{a}} \Big] \langle \Omega | T\big\{ O_{\ell+1}(x_{\ell+1})\cdots O_{n}(x_{n}) \big\} | \mathbf{p},h \rangle. \tag{22}
+> $$
 >
 >3. We would like to formulate the on‑shell factorization theorem for $S$-matrix elements, but there are subtleties. So, our strategy is to state and prove the theorem for Green functions first, and then convert a Green function to $S$-matrix element, which is the well‑known Lehmann–Symanzik–Zimmermann (LSZ) reduction.
 

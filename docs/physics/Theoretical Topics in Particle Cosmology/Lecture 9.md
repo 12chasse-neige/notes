@@ -162,20 +162,20 @@ Two photons exchange a graviton. The long-range part is only induced by the t-ch
 
 1.  Parallel: $s = t = u = 0$
     $$
-\mathcal{M} \sim G \times O(s,t,u) = 0
-$$
+    \mathcal{M} \sim G \times O(s,t,u) = 0
+    $$
     Two parallel beams of light do not feel gravitational attraction.
 
 2.  Anti-parallel
     $$
-\lim_{t \to 0} \mathcal{M} (1^{+}, 2^{+}, 3^{-}, 4^{-}) = \frac{\kappa^{2}}{t} [12]^{2} \langle 34 \rangle^{2} = \frac{16 \kappa^{2} p^{4}}{t}
-$$
+    \lim_{t \to 0} \mathcal{M} (1^{+}, 2^{+}, 3^{-}, 4^{-}) = \frac{\kappa^{2}}{t} [12]^{2} \langle 34 \rangle^{2} = \frac{16 \kappa^{2} p^{4}}{t}
+    $$
     So we have the phase shift
     $$
-\chi_{0} = - \frac{\kappa^{2} p^{2}}{\pi^{2}} \ln \frac{b}{b_{IR}}
-$$
+    \chi_{0} = - \frac{\kappa^{2} p^{2}}{\pi^{2}} \ln \frac{b}{b_{IR}}
+    $$
     And get the angle
     $$
-\theta = \frac{8 G p}{b}
-$$
+    \theta = \frac{8 G p}{b}
+    $$
     

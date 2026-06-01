@@ -42,8 +42,8 @@ Naturally, we induce the Hamiltonian $H_{0}$ (‘free Hamiltonian’), and we ca
 
 3. We can choose a complete set of eigenstate of $\mathcal{H}$ called in states
    $$
-\ket{\Psi_{+}} \equiv | \{n_{1}, \vec{p}_{1}, \sigma_{1} , \cdots , n_{N}, \vec{p}_{N}, \sigma_{N}\}_{+} \rangle \quad N = 0, 1, 2, \cdots
-$$
+   \ket{\Psi_{+}} \equiv | \{n_{1}, \vec{p}_{1}, \sigma_{1} , \cdots , n_{N}, \vec{p}_{N}, \sigma_{N}\}_{+} \rangle \quad N = 0, 1, 2, \cdots
+   $$
    and $\ket{\Psi_{+}}$ asymptotically approach $\ket{\Psi_{0}} \in \mathcal{H}_{0}$ as $t \to \infty$. (in the wave-packet sense)
 
 $$
@@ -67,8 +67,8 @@ $$
 
    S-operator: acting on states in $\mathcal{H}_{0}$
    $$
-\langle \Phi_{0} | S | \Psi_{0} \rangle \equiv \braket{\Phi_{-}}{\Psi_{+}}
-$$
+   \langle \Phi_{0} | S | \Psi_{0} \rangle \equiv \braket{\Phi_{-}}{\Psi_{+}}
+   $$
    
 
 ## Properties of S-matrix

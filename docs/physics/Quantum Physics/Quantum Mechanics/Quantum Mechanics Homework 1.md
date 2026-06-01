@@ -275,64 +275,64 @@ $$
 >
 >设 $H$ 是一个 $N \times N$ 的 Hermitian 矩阵，其特征值按递增顺序排列为  
 >$$
-\lambda_{1} \le \lambda_{2} \le \dots \le \lambda_{N}
-$$
+>\lambda_{1} \le \lambda_{2} \le \dots \le \lambda_{N}
+>$$
 >那么对于 $k = 1, 2, \dots, N$，有
 >
 >$$
-\begin{gathered}
-\lambda_{k} = \min_{\substack{U \subset \mathbb{C}^{N} \\ \dim(U) = k}} \max_{\substack{x \in U \\ x \neq 0}} \frac{x^{\dagger} H x}{x^{\dagger} x}
-\end{gathered}
-$$
+>\begin{gathered}
+>\lambda_{k} = \min_{\substack{U \subset \mathbb{C}^{N} \\ \dim(U) = k}} \max_{\substack{x \in U \\ x \neq 0}} \frac{x^{\dagger} H x}{x^{\dagger} x}
+>\end{gathered}
+>$$
 >
 >由谱定理，存在一组标准正交基 $\{u_{1}, u_{2}, \dots, u_{N}\}$，满足  
 >$$
-H u_{i} = \lambda_{i} u_{i}, \quad \lambda_{1} \le \lambda_{2} \le \dots \le \lambda_{N}
-$$
+>H u_{i} = \lambda_{i} u_{i}, \quad \lambda_{1} \le \lambda_{2} \le \dots \le \lambda_{N}
+>$$
 >
 >设 $S_{k-1} = \mathrm{span}\{u_{1}, \dots, u_{k-1}\}$，其维数为 $k-1$。 考虑线性映射 $P: U \to \mathbb{C}^{k-1}$ 定义为 $P(x) = (\langle u_{1}, x\rangle, \dots, \langle u_{k-1}, x\rangle)$。 $\dim(U) = k$，$\dim(\mathbb{C}^{k-1}) = k-1$，所以 $\ker P \subset U$ 的维数至少为 $1$。 因此存在非零向量 $y \in U$ 使得 $P(y) = 0$。
 >将 $y$ 按特征基展开
 >$$
-y = \sum_{j=1}^{N} c_{j} u_{j}, \quad c_{j} = \langle u_{j}, y\rangle
-$$
+>y = \sum_{j=1}^{N} c_{j} u_{j}, \quad c_{j} = \langle u_{j}, y\rangle
+>$$
 >$c_{1} = \dots = c_{k-1} = 0$，所以
 >$$
-y = \sum_{j=k}^{N} c_{j} u_{j}
-$$
+>y = \sum_{j=k}^{N} c_{j} u_{j}
+>$$
 >于是
 >$$
-\langle y | H | y \rangle = \sum_{j=k}^{N} \lambda_{j} |c_{j}|^{2}
-$$
+>\langle y | H | y \rangle = \sum_{j=k}^{N} \lambda_{j} |c_{j}|^{2}
+>$$
 >由于 $\lambda_{j} \ge \lambda_{k}$ 当 $j \ge k$，有
 >$$
-\langle y | H | y \rangle \ge \lambda_{k} \sum_{j=k}^{N} |c_{j}|^{2} = \lambda_{k} \|y\|^{2}
-$$
+>\langle y | H | y \rangle \ge \lambda_{k} \sum_{j=k}^{N} |c_{j}|^{2} = \lambda_{k} \|y\|^{2}
+>$$
 >因此
 >$$
-\frac{\langle y | H | y \rangle}{\|y\|^{2}} \ge \lambda_{k}
-$$
+>\frac{\langle y | H | y \rangle}{\|y\|^{2}} \ge \lambda_{k}
+>$$
 >所以对任意 $k$ 维子空间 $U$，存在非零 $y \in U$ 使得上式成立，从而
 >$$
-\max_{x \in U, x\neq 0} \frac{x^{\dagger} H x}{x^{\dagger} x} \ge \lambda_{k}
-$$
+>\max_{x \in U, x\neq 0} \frac{x^{\dagger} H x}{x^{\dagger} x} \ge \lambda_{k}
+>$$
 >于是
 >$$
-\min_{\dim(U)=k} \max_{x \in U} \frac{x^{\dagger} H x}{x^{\dagger} x} \ge \lambda_{k}
-$$
+>\min_{\dim(U)=k} \max_{x \in U} \frac{x^{\dagger} H x}{x^{\dagger} x} \ge \lambda_{k}
+>$$
 >
 >取 $U_{0} = \mathrm{span}\{u_{1}, \dots, u_{k}\}$，则对任意 $x \in U_{0}$，有
 >$$
-x = \sum_{j=1}^{k} a_{j} u_{j}
-$$
+>x = \sum_{j=1}^{k} a_{j} u_{j}
 >$$
-\langle x | H | x \rangle = \sum_{j=1}^{k} \lambda_{j} |a_{j}|^{2} \le \lambda_{k} \sum_{j=1}^{k} |a_{j}|^{2} = \lambda_{k} \|x\|^{2}
-$$
+>$$
+>\langle x | H | x \rangle = \sum_{j=1}^{k} \lambda_{j} |a_{j}|^{2} \le \lambda_{k} \sum_{j=1}^{k} |a_{j}|^{2} = \lambda_{k} \|x\|^{2}
+>$$
 >所以
 >$$
-\max_{x \in U_{0}} \frac{x^{\dagger} H x}{x^{\dagger} x} \le \lambda_{k}
-$$
+>\max_{x \in U_{0}} \frac{x^{\dagger} H x}{x^{\dagger} x} \le \lambda_{k}
+>$$
 >得到结论
 >$$
-\min_{\dim(U)=k} \max_{x \in U} \frac{x^{\dagger} H x}{x^{\dagger} x} = \lambda_{k}
-$$
+>\min_{\dim(U)=k} \max_{x \in U} \frac{x^{\dagger} H x}{x^{\dagger} x} = \lambda_{k}
+>$$
 >

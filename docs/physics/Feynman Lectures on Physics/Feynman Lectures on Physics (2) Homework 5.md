@@ -9,83 +9,83 @@ $$
 
 1. 请回忆第一次作业第三题，证明上述拉氏量可以写为：
    $$
-\mathcal{L} = -8 \vec{E} \cdot \vec{B}
-$$
+   \mathcal{L} = -8 \vec{E} \cdot \vec{B}
+   $$
    证明：
    $$
-\begin{gathered}
+   \begin{gathered}
    \mathcal{L} = \epsilon^{\mu \nu \rho \sigma} F_{\mu \nu} F_{\rho \sigma} = \epsilon^{\mu \nu \rho \sigma} (\partial_{\mu} A_{\nu} - \partial_{\nu} A_{\mu}) (\partial_{\rho} A_{\sigma} - \partial_{\sigma} A_{\rho}) \\ = 
    4 \epsilon^{\mu \nu \rho \sigma} \partial_{\mu} A_{\nu} \partial_{\rho} A_{\sigma} \\ =
    4 (\epsilon^{ijk} \partial_{0} A_{i} \partial_{j} A_{k} - \epsilon^{ijk} \partial_{i} A_{0} \partial_{j} A_{k}  + \epsilon^{ijk} \partial_{i} A_{j} \partial_{0} A_{k} - \epsilon^{ijk} \partial_{i} A_{j} \partial_{k} A_{0}) \\ =
    8 ( \partial_{t} \vec{A}  \cdot (\nabla \times \vec{A}) + \nabla \phi \cdot (\nabla \times \vec{A})) = -8 \vec{E} \cdot \vec{B}
    \end{gathered}
-$$
+   $$
    
 2. 在低维情况下，Chern-Simons 理论有独特的性质，在 3 维时空当中，带有外源的 Chern-Simons 理论可以写为：
    $$
-\mathcal{L} = \frac{\kappa}{2} \epsilon^{\mu\nu\rho} A_{\mu} \partial_{\nu} A_{\rho} - A_{\mu} J^{\mu}
-$$
+   \mathcal{L} = \frac{\kappa}{2} \epsilon^{\mu\nu\rho} A_{\mu} \partial_{\nu} A_{\rho} - A_{\mu} J^{\mu}
+   $$
    其中 $\mu, \nu, \rho = \{0, 1, 2\}$。请利用 Euler-Lagrange 方程证明 3 维时空 Chern-Simons 理论对应的运动方程为：
    $$
-\rho = \kappa B
-$$
+   \rho = \kappa B
    $$
-J^{i} = \kappa \epsilon^{ij} E_{j}
-$$
+   $$
+   J^{i} = \kappa \epsilon^{ij} E_{j}
+   $$
    其中 $i, j = \{1, 2\}$，第一个方程可以理解为每一个电荷都带着一个垂直纸面向外的磁场，第二个方程就是第一个方程的演化方程。
 
    利用 Euler-Lagrange 方程
    $$
-\frac{\partial}{\partial x_{\mu}} \frac{\partial}{\partial (\partial_{\mu} A_{\nu})} \mathcal{L} = \frac{\partial}{\partial A_{\nu}} \mathcal{L}
-$$
+   \frac{\partial}{\partial x_{\mu}} \frac{\partial}{\partial (\partial_{\mu} A_{\nu})} \mathcal{L} = \frac{\partial}{\partial A_{\nu}} \mathcal{L}
+   $$
    
    $$
-\frac{\partial}{\partial (\partial_{\mu} A_{\nu})} \mathcal{L}  = \frac{\partial}{\partial (\partial_{\mu} A_{\nu})} (\frac{\kappa}{2} \epsilon^{\rho\mu\nu} A_{\rho} \partial_{\mu} A_{\nu} - A_{\mu} J^{\mu}) = \frac{\kappa}{2} \epsilon^{\rho\mu\nu} A_{\rho}
-$$
+   \frac{\partial}{\partial (\partial_{\mu} A_{\nu})} \mathcal{L}  = \frac{\partial}{\partial (\partial_{\mu} A_{\nu})} (\frac{\kappa}{2} \epsilon^{\rho\mu\nu} A_{\rho} \partial_{\mu} A_{\nu} - A_{\mu} J^{\mu}) = \frac{\kappa}{2} \epsilon^{\rho\mu\nu} A_{\rho}
+   $$
    
    $$
-\frac{\partial}{\partial x_{\mu}} \frac{\kappa}{2} \epsilon^{\rho\mu\nu} A_{\rho} =  \frac{\kappa}{2} \epsilon^{\rho\mu\nu} \partial_{\mu} A_{\rho}
-$$
+   \frac{\partial}{\partial x_{\mu}} \frac{\kappa}{2} \epsilon^{\rho\mu\nu} A_{\rho} =  \frac{\kappa}{2} \epsilon^{\rho\mu\nu} \partial_{\mu} A_{\rho}
+   $$
    
    $$
-\frac{\partial}{\partial A_{\nu}} (\frac{\kappa}{2} \epsilon^{\nu\mu\rho} A_{\nu} \partial_{\mu} A_{\rho} - A_{\nu} J^{\nu}) = \frac{\kappa}{2} \epsilon^{\nu\mu\rho} \partial_{\mu} A_{\rho} - J^{\nu}
-$$
+   \frac{\partial}{\partial A_{\nu}} (\frac{\kappa}{2} \epsilon^{\nu\mu\rho} A_{\nu} \partial_{\mu} A_{\rho} - A_{\nu} J^{\nu}) = \frac{\kappa}{2} \epsilon^{\nu\mu\rho} \partial_{\mu} A_{\rho} - J^{\nu}
+   $$
    
    $$
-\begin{gathered}
+   \begin{gathered}
     \frac{\kappa}{2} \epsilon^{\rho\mu\nu} \partial_{\mu} A_{\rho} = \frac{\kappa}{2} \epsilon^{\nu\mu\rho} \partial_{\mu} A_{\rho} - J^{\nu} \\
     \kappa \epsilon^{\mu \rho \nu} \partial_{\mu} A_{\rho} = J^{\nu}
    \end{gathered}
-$$
+   $$
    
    所以
    $$
-\rho = \kappa \epsilon^{ij 0} \partial_{i} A_{j} = \kappa (\nabla \times A) = \kappa B
-$$
+   \rho = \kappa \epsilon^{ij 0} \partial_{i} A_{j} = \kappa (\nabla \times A) = \kappa B
+   $$
    
    $$
-J^{i} = \kappa (\epsilon^{0ji} \partial_{0} A_{j} + \epsilon^{j0i} \partial_{j} A_{0}) = \kappa \epsilon^{ij} E_{j}
-$$
+   J^{i} = \kappa (\epsilon^{0ji} \partial_{0} A_{j} + \epsilon^{j0i} \partial_{j} A_{0}) = \kappa \epsilon^{ij} E_{j}
+   $$
    
 3. 考虑二维平面上存在两个电荷的情况，此时电荷密度与矢量势可以写为：
    $$
-\rho(\vec{x}, t) = e \sum_{n=1}^{2} \delta(\vec{x} - \vec{x}_{n}(t))
-$$
+   \rho(\vec{x}, t) = e \sum_{n=1}^{2} \delta(\vec{x} - \vec{x}_{n}(t))
    $$
-A_{i}(\vec{x}_{n}, t) = \frac{e}{2\pi\kappa} \sum_{m \neq n} \epsilon_{ij} \frac{x_{n}^{j} - x_{m}^{j}}{|\vec{x}_{n} - \vec{x}_{m}|^{2}}
-$$
+   $$
+   A_{i}(\vec{x}_{n}, t) = \frac{e}{2\pi\kappa} \sum_{m \neq n} \epsilon_{ij} \frac{x_{n}^{j} - x_{m}^{j}}{|\vec{x}_{n} - \vec{x}_{m}|^{2}}
+   $$
    试计算 Aharonov-Bohm 相位：
    $$
-e \oint_{C} \vec{A} \cdot d\vec{x}
-$$
+   e \oint_{C} \vec{A} \cdot d\vec{x}
+   $$
    注：一个粒子绕着另外一个粒子可被视为将两粒子交换两次。AB 相位的结果告诉我们两粒子交换两次多出一个相位。因此，如果相位不等于 1，则两粒子为任意子。（费米子和玻色子都要求交换两次的相位等于 1。）
    $$
-\begin{gathered}
+   \begin{gathered}
    e \oint_{C} \vec{A} \cdot d\vec{x} = e \oint_{C}  \frac{e}{2\pi\kappa} \sum_{m \neq n} \epsilon_{ij} \frac{x_{n}^{j} - x_{m}^{j}}{|\vec{x}_{n} - \vec{x}_{m}|^{2}} d x^{i} \\ =
    e \iint_{S} \nabla \times \vec{A} \cdot d \vec{S} = e \iint_{S} \frac{\rho}{\kappa} d x_{1} d x_{2} \\ = 
    e \iint_{S} \frac{e}{\kappa} \sum_{n=1}^{2} \delta(\vec{x} - \vec{x}_{n}(t)) d x_{1} d x_{2} = \frac{e^{2}}{\kappa}
    \end{gathered}
-$$
+   $$
 
 ### 2 最小作用量原理与磁单极 (19-1)
 

@@ -427,8 +427,8 @@ where $t_{\text{ret}} = t - r$ and $M_{c}$ is the chirp mass.
 
 >  The chirp mass is defined as
 >  $$
-M_{c} = (\mu^{3} m^{2})^{1/5}
-$$
+>  M_{c} = (\mu^{3} m^{2})^{1/5}
+>  $$
 
 For a weak and slow source, the quadrupole formula is
 $$

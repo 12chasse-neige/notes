@@ -56,12 +56,12 @@ $$
 
 3. $\hat{L}_{z}$ 守恒：$\hat{L}_{z} = x \hat{p}_{y} - y \hat{p}_{x}$
    $$
-[\hat{L}_{z}, \hat{H}] = [\hat{L}_{z}, \frac{\hat{p}^{2}}{2m}] + [\hat{L}_{z}, -q|\vec{E}| z]
-$$
+   [\hat{L}_{z}, \hat{H}] = [\hat{L}_{z}, \frac{\hat{p}^{2}}{2m}] + [\hat{L}_{z}, -q|\vec{E}| z]
+   $$
    由 5.1.1 知 $[\hat{L}_{z}, \hat{p}^{2}] = 0$，故第一项为零。第二项
    $$
-[\hat{L}_{z}, z] = [x \hat{p}_{y} - y \hat{p}_{x}, z] = x [\hat{p}_{y}, z] - y [\hat{p}_{x}, z] + [x, z] \hat{p}_{y} - [y, z] \hat{p}_{x} = 0
-$$
+   [\hat{L}_{z}, z] = [x \hat{p}_{y} - y \hat{p}_{x}, z] = x [\hat{p}_{y}, z] - y [\hat{p}_{x}, z] + [x, z] \hat{p}_{y} - [y, z] \hat{p}_{x} = 0
+   $$
    因此 $[\hat{L}_{z}, \hat{H}] = 0$，$\hat{L}_{z}$ 守恒。
 
 这些守恒量函数独立，构成基本守恒量集。
@@ -159,13 +159,13 @@ $$
 
 1. 空间对称 $\psi_{S}$ 与自旋单态 $\chi_{00} = \frac{1}{\sqrt{2}} (\ket{\uparrow\downarrow} - \ket{\downarrow\uparrow})$ 结合
    $$
-\Psi_{1} = \psi_{S}(x_{1}, x_{2}) \cdot \chi_{00}
-$$
+   \Psi_{1} = \psi_{S}(x_{1}, x_{2}) \cdot \chi_{00}
+   $$
 
 2. 空间反对称 $\psi_{A}$ 与自旋三重态（对称）结合，三重态有三个
    $$
-\Psi_{2} = \psi_{A}(x_{1}, x_{2}) \cdot \ket{\uparrow\uparrow}, \quad \Psi_{3} = \psi_{A}(x_{1}, x_{2}) \cdot \frac{1}{\sqrt{2}} (\ket{\uparrow\downarrow} + \ket{\downarrow\uparrow}), \quad \Psi_{4} = \psi_{A}(x_{1}, x_{2}) \cdot \ket{\downarrow\downarrow}
-$$
+   \Psi_{2} = \psi_{A}(x_{1}, x_{2}) \cdot \ket{\uparrow\uparrow}, \quad \Psi_{3} = \psi_{A}(x_{1}, x_{2}) \cdot \frac{1}{\sqrt{2}} (\ket{\uparrow\downarrow} + \ket{\downarrow\uparrow}), \quad \Psi_{4} = \psi_{A}(x_{1}, x_{2}) \cdot \ket{\downarrow\downarrow}
+   $$
    共四个可能状态。
 
 5.4.1 (选做) 在 Schrödinger 图画中，Hamiltonian 算符常常可以分解为 $\hat{H}^{(\mathrm{S})}=\hat{H}_{0}+\hat{V}^{(\mathrm{S})}$，$\hat{H}_{0}$ 描述自由粒子的运动，而 $\hat{V}^{(\mathrm{S})}$ 描述粒子间的相互作用。这时候可以采用相互作用图画 interaction picture。把该图画中的波函数记为 $\Psi^{(\mathrm{I})}$，力学量算符记为 $\hat{F}^{(\mathrm{I})}$，那么它们由 $\Psi^{(\mathrm{S})}$ 和 $\hat{F}^{(\mathrm{S})}$ 经下面的幺正变换给出：$\Psi^{(\mathrm{I})}=\mathrm{e}^{\frac{i}{\hbar}\hat{H}_{0t}}\Psi^{(\mathrm{S})}$，$\hat{F}^{(\mathrm{I})}=\mathrm{e}^{\frac{i}{\hbar}\hat{H}_{0t}}\hat{F}^{(\mathrm{S})}\mathrm{e}^{-\frac{i}{\hbar}\hat{H}_{0t}}$。问：在相互作用图画中，$\mathrm{i}\hbar \frac{\partial \Psi^{(\mathrm{I})}}{\partial t}=$?， $\mathrm{i}\hbar \frac{\partial \hat{F}^{(\mathrm{I})}}{\partial t}=$? 

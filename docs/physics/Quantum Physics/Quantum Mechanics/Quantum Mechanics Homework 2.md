@@ -203,36 +203,36 @@ $$
 
 1. 对于偶宇称的情形
    $$
-\psi (x) = \begin{cases}
+   \psi (x) = \begin{cases}
    A \cos (\frac{\sqrt{2mE}}{\hbar}x) + B \sin(\frac{\sqrt{2mE}}{\hbar} x) \quad (x > 0) \\
    A \cos (\frac{\sqrt{2mE}}{\hbar}x) - B \sin(\frac{\sqrt{2mE}}{\hbar} x) \quad (x < 0)
    \end{cases}
-$$
+   $$
    所以此时
    $$
-\left. \psi' (x) \right|_{x = 0^{-}}^{x = 0^{+}} = \frac{2\sqrt{2mE}}{\hbar} B  = \frac{2m \gamma}{\hbar^{2}} \psi (0)
-$$
+   \left. \psi' (x) \right|_{x = 0^{-}}^{x = 0^{+}} = \frac{2\sqrt{2mE}}{\hbar} B  = \frac{2m \gamma}{\hbar^{2}} \psi (0)
+   $$
    所以
    $$
-\psi (0) = A = \sqrt{\frac{2 E \hbar^{2}}{m \gamma^{2}}} B
-$$
+   \psi (0) = A = \sqrt{\frac{2 E \hbar^{2}}{m \gamma^{2}}} B
+   $$
    再带入边界条件
    $$
-\psi(a) \propto \sqrt{\frac{2 E \hbar^{2}}{m \gamma^{2}}} \cos(\frac{\sqrt{2mE}}{\hbar} a) + \sin (\frac{\sqrt{2mE}}{\hbar}a) = 0
-$$
+   \psi(a) \propto \sqrt{\frac{2 E \hbar^{2}}{m \gamma^{2}}} \cos(\frac{\sqrt{2mE}}{\hbar} a) + \sin (\frac{\sqrt{2mE}}{\hbar}a) = 0
+   $$
    得到允许的能量满足的条件是
    $$
-- \sqrt{\frac{2 E \hbar^{2}}{m \gamma^{2}}} = \tan \left(\frac{\sqrt{2mE}}{\hbar} a\right)
-$$
+   - \sqrt{\frac{2 E \hbar^{2}}{m \gamma^{2}}} = \tan \left(\frac{\sqrt{2mE}}{\hbar} a\right)
+   $$
 
 2. 对于奇宇称的情形
    $$
-\psi(x) = A \sin(\frac{\sqrt{2mE}}{\hbar}x)
-$$
+   \psi(x) = A \sin(\frac{\sqrt{2mE}}{\hbar}x)
+   $$
    此时 $\left. \psi' (x) \right|_{x = 0^{-}}^{x = 0^{+}} = \frac{2\sqrt{2mE}}{\hbar} B  = \frac{2m \gamma}{\hbar^{2}} \psi (0)$ 的条件自动满足，也就是说 $\delta$ 函数势对解没有影响，所以能谱相当于无限深方势阱的奇宇称能谱
    $$
-E_{n} = \frac{n^{2} \pi^{2} \hbar^{2}}{2m a^{2}}
-$$
+   E_{n} = \frac{n^{2} \pi^{2} \hbar^{2}}{2m a^{2}}
+   $$
    
 3. 
 
@@ -255,53 +255,53 @@ $$
 
 1. 考虑偶宇称的情况，不妨假设
    $$
-\psi (x) = \begin{cases}
+   \psi (x) = \begin{cases}
    A e^{\frac{\sqrt{-2mE}}{\hbar} x} \quad (x < -\frac{a}{2}) \\
    B \left(e^{-\frac{\sqrt{-2mE}}{\hbar} x} + e^{\frac{\sqrt{-2mE}}{\hbar} x}\right) \quad (- \frac{a}{2} < x < 0) \\
    B \left(e^{\frac{\sqrt{-2mE}}{\hbar} x} + e^{-\frac{\sqrt{-2mE}}{\hbar} x}\right) \quad (0 < x < \frac{a}{2}) \\
    A e^{- \frac{\sqrt{-2mE}}{\hbar} x} \quad (x > \frac{a}{2})
    \end{cases}
-$$
+   $$
    利用连续性条件和 $\delta$ 函数带来的条件待定一下系数
    $$
-A e^{- \frac{\sqrt{-2mE}a}{2\hbar}} = 2B \cosh(\frac{\sqrt{-2mE} a}{2\hbar})
-$$
+   A e^{- \frac{\sqrt{-2mE}a}{2\hbar}} = 2B \cosh(\frac{\sqrt{-2mE} a}{2\hbar})
+   $$
 
    $$
-- A \frac{\sqrt{-2mE}}{\hbar} e^{- \frac{\sqrt{-2mE}a}{2\hbar}} - 2B \frac{\sqrt{-2mE}}{\hbar} \sinh(\frac{\sqrt{-2mE}a}{2 \hbar}) = - \frac{2}{L} \psi \left(\frac{a}{2}\right )
-$$
+   - A \frac{\sqrt{-2mE}}{\hbar} e^{- \frac{\sqrt{-2mE}a}{2\hbar}} - 2B \frac{\sqrt{-2mE}}{\hbar} \sinh(\frac{\sqrt{-2mE}a}{2 \hbar}) = - \frac{2}{L} \psi \left(\frac{a}{2}\right )
+   $$
 
    所以能级满足的条件是
    $$
-kL \left(1 + \tanh(\frac{ka}{2})\right) = 2
-$$
+   kL \left(1 + \tanh(\frac{ka}{2})\right) = 2
+   $$
    即
    $$
-kL = 1 + e^{-ka}
-$$
+   kL = 1 + e^{-ka}
+   $$
    其中 $k = \frac{\sqrt{-2mE}}{\hbar}$
 
 2. 考虑奇宇称的情况，不妨假设
    $$
-\psi (x) = \begin{cases}
+   \psi (x) = \begin{cases}
    - A e^{\frac{\sqrt{-2mE}}{\hbar} x} \quad (x < -\frac{a}{2}) \\
    2B \sinh(\frac{\sqrt{-2mE}}{\hbar} x) \quad (- \frac{a}{2} < x < \frac{a}{2}) \\
    A e^{- \frac{\sqrt{-2mE}}{\hbar} x} \quad (x > \frac{a}{2})
    \end{cases}
-$$
+   $$
    同样假设 $k = \frac{\sqrt{-2mE}}{\hbar}$，利用连续性条件和 $\delta$ 函数带来的条件待定一下系数
    $$
-A e^{-\frac{ka}{2}} = 2B \sinh(\frac{ka}{2})
-$$
+   A e^{-\frac{ka}{2}} = 2B \sinh(\frac{ka}{2})
+   $$
 
    $$
--kA e^{- \frac{ka}{2}} - 2kB \cosh(\frac{ka}{2}) = -\frac{2}{L} \psi \left(\frac{a}{2}\right)
-$$
+   -kA e^{- \frac{ka}{2}} - 2kB \cosh(\frac{ka}{2}) = -\frac{2}{L} \psi \left(\frac{a}{2}\right)
+   $$
 
    所以能级满足的条件是
    $$
-kL = 1 - e^{-ka}
-$$
+   kL = 1 - e^{-ka}
+   $$
    此时需要对于 $L$ 和 $a$ 的相对大小进行分类。当 $L < a$ 时，上述条件方程有解，所以该问题存在奇宇称的束缚态；当 $L > a$ 时，上述条件方程没有非零解，所以该问题不存在奇宇称的解。
 
 3.4.1 分别求线性谐振子处于基态和第一激发态时, 粒子出现几率最大的位置。

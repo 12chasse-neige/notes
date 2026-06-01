@@ -181,12 +181,12 @@ $$
 高斯分布和高斯随机过程在物理系统中十分常见。比如，处于热平衡的房间里某一快空间内的气体分子数 $N(t)$ 便是一个高斯过程。通常情况下，当我们观察一个宏观系统，其内部有很多自由度，往往对应的宏观测量量就是高斯的。在数学上，这和中心极限定理有关：
 >假设 $y$ 是一个随机变量，其概率分布是 $P(y)$，因此平均值和标准差分别是 
 >$$
-\bar{y} = \langle y \rangle = \int y P(y) dy，\quad (\sigma_{y})^{2} = \langle (y-\bar{y})^{2} \rangle = \langle y^{2} \rangle - \bar{y}^{2}
-$$
+>\bar{y} = \langle y \rangle = \int y P(y) dy，\quad (\sigma_{y})^{2} = \langle (y-\bar{y})^{2} \rangle = \langle y^{2} \rangle - \bar{y}^{2}
+>$$
 >那么如果有 $N$ 个类似的随机变量 $y_{1}, \cdots y_{n}$，它们的平均值（在 $N$ 很大时）$Y = \frac{1}{N} \sum_{i=1}^{N} y_{i}$ 将满足一个均值为 $\bar{y}$，标准差 $\sigma_{Y} = \frac{\sigma_{y}}{\sqrt{N}}$ 的高斯分布
 >$$
-P(Y) = \frac{1}{\sqrt{2\pi \sigma_{Y}^{2}}} e^{-(Y-\bar{y})^{2}/2\sigma_{Y}^{2}}
-$$
+>P(Y) = \frac{1}{\sqrt{2\pi \sigma_{Y}^{2}}} e^{-(Y-\bar{y})^{2}/2\sigma_{Y}^{2}}
+>$$
 
 我们可以看到不管之前单一随机变量 $y_{i}$ 的概率分布为如何，多个加在一起的综合效应总是高斯的。这就是为什么生活中有那么多高斯分布。
 
