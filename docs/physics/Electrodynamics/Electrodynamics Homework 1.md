@@ -283,7 +283,7 @@ $$
 $$
 
 $$
-\nabla (\vec{a} \cdot \vec{r}) = (\vec{a} \cdot \nabla) \vec{r} + (\vec{r} \cdot \nabla) \vec{a} + \vec{a} \times (\nabla \times \vec{r}) + \vec{r} \times (\nabla \times \vec{a}) = \vec{a} + 0 + 0 + 0 = \vec{a} 
+\nabla (\vec{a} \cdot \vec{r}) = (\vec{a} \cdot \nabla) \vec{r} + (\vec{r} \cdot \nabla) \vec{a} + \vec{a} \times (\nabla \times \vec{r}) + \vec{r} \times (\nabla \times \vec{a}) = \vec{a} + 0 + 0 + 0 = \vec{a}
 $$
 
 $$

@@ -52,8 +52,8 @@ is traceless.
 >But a direct calculation gives
 >
 >$$
->R_{y}^{-1}(\theta) L_{x}(\eta_{2}) L_{z}(\eta_{1}) e^{\mu}_{\pm}(k) = e^{\mu}_{\pm}(k) + \frac{\tan \theta}{\sqrt{2} k^{0}} k^{\mu} \tag{26}
->$$
+R_{y}^{-1}(\theta) L_{x}(\eta_{2}) L_{z}(\eta_{1}) e^{\mu}_{\pm}(k) = e^{\mu}_{\pm}(k) + \frac{\tan \theta}{\sqrt{2} k^{0}} k^{\mu} \tag{26}
+$$
 >
 
 Write the matrix for the transformation directly
@@ -137,16 +137,16 @@ $$
 >What are they? $R_{z}(\theta)$ is clearly an SO(2) generator; For 2 $R \times L$-type transform, taking $\theta \rightarrow 0$ we get generators:
 >
 >$$
->R_{z}(\theta) = 1 - i \theta \underbrace{\begin{pmatrix} 0 & 0 & 0 & 0 \\ 0 & 0 & i & 0 \\ 0 & -i & 0 & 0 \\ 0 & 0 & 0 & 0 \end{pmatrix}}_{J_{z}}, \quad R_{y}^{-1} L_{x} L_{z} = 1 - i \theta \underbrace{\begin{pmatrix} 0 & i & 0 & 0 \\ i & 0 & 0 & -i \\ 0 & 0 & 0 & 0 \\ 0 & i & 0 & 0 \end{pmatrix}}_{T_{x}} \tag{27}
->$$
+R_{z}(\theta) = 1 - i \theta \underbrace{\begin{pmatrix} 0 & 0 & 0 & 0 \\ 0 & 0 & i & 0 \\ 0 & -i & 0 & 0 \\ 0 & 0 & 0 & 0 \end{pmatrix}}_{J_{z}}, \quad R_{y}^{-1} L_{x} L_{z} = 1 - i \theta \underbrace{\begin{pmatrix} 0 & i & 0 & 0 \\ i & 0 & 0 & -i \\ 0 & 0 & 0 & 0 \\ 0 & i & 0 & 0 \end{pmatrix}}_{T_{x}} \tag{27}
+$$
 >
 >$$
->R_{x}^{-1} L_{y} L_{z} = 1 - i \theta \underbrace{\begin{pmatrix} 0 & 0 & i & 0 \\ 0 & 0 & 0 & 0 \\ i & 0 & 0 & -i \\ 0 & 0 & i & 0 \end{pmatrix}}_{T_{y}} \tag{28}
->$$
+R_{x}^{-1} L_{y} L_{z} = 1 - i \theta \underbrace{\begin{pmatrix} 0 & 0 & i & 0 \\ 0 & 0 & 0 & 0 \\ i & 0 & 0 & -i \\ 0 & 0 & i & 0 \end{pmatrix}}_{T_{y}} \tag{28}
+$$
 >
 >$$
->[J_{z}, T_{x}] = i T_{y}, \quad [J_{z}, T_{y}] = -i T_{x}, \quad [T_{x}, T_{y}] = 0 \tag{29}
->$$
+[J_{z}, T_{x}] = i T_{y}, \quad [J_{z}, T_{y}] = -i T_{x}, \quad [T_{x}, T_{y}] = 0 \tag{29}
+$$
 >
 >The little group is ISO(2).
 
@@ -238,8 +238,8 @@ $$
 >The polarization tensor $e^{\mu\nu}_{\pm}$ is symmetric, traceless, and transverse.  Once again, $e^{\mu\nu}_{\pm}$ is not a Lorentz tensor.  Under the two “Abelian” LGTs:
 >
 >$$
->e^{\mu\nu}_{\pm}(k) \rightarrow e^{\mu\nu}_{\pm}(k) + \frac{\tan \theta}{\sqrt{2} k^{0}} \left[ e^{\mu}_{\pm}(k) + \frac{\tan \theta}{2\sqrt{2} k^{0}} k^{\mu} \right] k^{\nu} + (\mu \leftrightarrow \nu) \tag{33}
->$$
+e^{\mu\nu}_{\pm}(k) \rightarrow e^{\mu\nu}_{\pm}(k) + \frac{\tan \theta}{\sqrt{2} k^{0}} \left[ e^{\mu}_{\pm}(k) + \frac{\tan \theta}{2\sqrt{2} k^{0}} k^{\mu} \right] k^{\nu} + (\mu \leftrightarrow \nu) \tag{33}
+$$
 >
 
 We’ve already known that $e^{\mu\nu}_{\pm}(k) = e^{\mu}_{\pm} (k) e^{\nu}_{\pm} (k)$, so transformation rule for this tensor is

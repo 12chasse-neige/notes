@@ -58,7 +58,7 @@ $$
 \psi_{21-1} = \frac{1}{4 a_{0}^{\frac{3}{2}}} \sqrt{\frac{1}{4 \pi}} \frac{r}{a_{0}} e^{- \frac{r}{2 a_{0}}} \sin \theta e^{- i \phi}
 $$
 
-(b) Calculate spatial dependence of the probability current $J=\frac{\hbar}{2\mu i}(\psi^*\nabla\psi-\psi\nabla\psi^*)$ of $\psi_{nlm}$. Describe and sketch distribution of $J$ for $\psi_{200}$, $\psi_{210}$ and $\psi_{211}$.
+(b) Calculate spatial dependence of the probability current $J=\frac{\hbar}{2\mu i}(\psi^{*}\nabla\psi-\psi\nabla\psi^{*})$ of $\psi_{nlm}$. Describe and sketch distribution of $J$ for $\psi_{200}$, $\psi_{210}$ and $\psi_{211}$.
 
 The probability current
 $$
@@ -88,7 +88,7 @@ Using $H_{hfB} = A \vec{I} \cdot \vec{J} + \frac{\mu_{B}}{\hbar} (g_{J} J_{z} + 
 
 Under the  $|J, m_{J}\rangle |I, m_{I}\rangle$ basis, the Hamiltonian can be represented as
 $$
-H_{hfB} = A \left( \frac{I_+ J_- + I_- J_+}{2} + I_{z} J_{z} \right) + \frac{\mu_{B}}{\hbar} (g_{J} J_{z} + g_{I} I_{z}) B_{z}
+H_{hfB} = A \left( \frac{I_{+} J_{-} + I_{-} J_{+}}{2} + I_{z} J_{z} \right) + \frac{\mu_{B}}{\hbar} (g_{J} J_{z} + g_{I} I_{z}) B_{z}
 $$
 For $^{87}\text{Rb}$ atoms' $5 S_{1/2}$ state
 $$
@@ -108,7 +108,7 @@ $$
 $$
 The Hamiltonian matrix can be obtained as
 $$
-H_{ij} = A \bra{i} \frac{I_+ J_- + I_- J_+}{2} + I_{z} J_{z} \ket{j} + \frac{\mu_{B}}{\hbar} (g_{J} J_{z} + g_{I} I_{z}) B_{z}
+H_{ij} = A \bra{i} \frac{I_{+} J_{-} + I_{-} J_{+}}{2} + I_{z} J_{z} \ket{j} + \frac{\mu_{B}}{\hbar} (g_{J} J_{z} + g_{I} I_{z}) B_{z}
 $$
 For diagonals, the x and y components of the spin operator is 0, so the Hamiltonian is 
 $$
@@ -302,7 +302,7 @@ E_{-} = h \cdot -4.272 GHz, \qquad E_{+} = h \cdot 2.563 GHz
 $$
 The formula given in the lecture notes show that
 $$
-H = A I \cdot J  = A \frac{F (F + 1) - I (I + 1) - J (J + 1)}{2} 
+H = A I \cdot J  = A \frac{F (F + 1) - I (I + 1) - J (J + 1)}{2}
 $$
 When $F = 1$
 $$
@@ -318,6 +318,6 @@ These show that our calculations are corresponding to the formula given in class
 Hint for Question 2:
 
 $$
-\vec{I} \cdot \vec{J} = \frac{I_+ J_- + I_- J_+}{2} + I_{z} J_{z}
+\vec{I} \cdot \vec{J} = \frac{I_{+} J_{-} + I_{-} J_{+}}{2} + I_{z} J_{z}
 $$
 <img src="./Atomic and Molecular Physics Homework 1.assets/image-20250929134001198.png" alt="image-20250929134001198">

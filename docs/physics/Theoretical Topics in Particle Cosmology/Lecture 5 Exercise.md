@@ -162,7 +162,7 @@ $$
 \sqrt{2k}
 \end{pmatrix}
 $$
-(3) Compute the tree-level 3-point amplitude of 3 gluons $\mathcal{M}_{3}(1^+_{a},2^+_{b},3^-_{c})$ with Feynman rules from a Yang-Mills theory and compare your result with (35).
+(3) Compute the tree-level 3-point amplitude of 3 gluons $\mathcal{M}_{3}(1^{+}_{a},2^{+}_{b},3^{-}_{c})$ with Feynman rules from a Yang-Mills theory and compare your result with (35).
 
 <img src="./Lecture 5 Exercise.assets/image-20260505153630650.png" alt="image-20260505153630650" style="zoom:50%;" />
 
@@ -189,7 +189,7 @@ $$
 $$
 In the 4-vector form, they are
 $$
-\epsilon^{+ \mu} \propto \frac{\langle q | \sigma^{\mu} | p]}{\langle pq \rangle} \quad \epsilon^{- \mu} \propto \frac{[q| \sigma^{\mu} | p \rangle}{[pq]} 
+\epsilon^{+ \mu} \propto \frac{\langle q | \sigma^{\mu} | p]}{\langle pq \rangle} \quad \epsilon^{- \mu} \propto \frac{[q| \sigma^{\mu} | p \rangle}{[pq]}
 $$
 Thus we can get the amplitude
 $$
@@ -299,7 +299,7 @@ Therefore a single real spin-2 particle cannot carry such a charge. A charged sp
 $$
 H_{\mu\nu}=\frac{1}{\sqrt{2}}(h^{1}_{\mu\nu}+i h^{2}_{\mu\nu})
 $$
-Then the photon can couple to $H^+H^-$, and the minimal $\gamma h h$ amplitudes are
+Then the photon can couple to $H^{+}H^{-}$, and the minimal $\gamma h h$ amplitudes are
 $$
 M_{3}(1_{\gamma}^{+1},2_{H}^{+2},3_{H}^{-2})
 =

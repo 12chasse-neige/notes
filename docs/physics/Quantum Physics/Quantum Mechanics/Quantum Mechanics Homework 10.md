@@ -52,10 +52,12 @@ $$
 其中
 
 $$
+\begin{gathered}
 \varphi_{n}(\eta)
 =\frac{1}{\sqrt{2^{n}n!}}\left(\frac{\alpha^{2}}{\pi}\right)^{1/4}
 H_{n}(\alpha\eta)\mathrm{e}^{-\alpha^{2}\eta^{2}/2}\\
 \alpha=\sqrt{\frac{eB}{\hbar}}
+\end{gathered}
 $$
 
 9.2.2 我们已经看到，对 Landau 能级这个问题，选择不同的矢量势得到相同的能谱（虽然本征函数不同）。实际上，如果采用算符代数方法，可以无需明确地选好矢量势就得到能谱。现在的 Hamiltonian 是 $\hat{H}=\frac{1}{2\mu}[(\hat{p}_{x}+eA_{x})^{2}+(\hat{p}_{y}+eA_{y})^{2}]$，让我们令 $\hat{Q}=\sqrt{\frac{1}{\hbar eB}}(\hat{p}_{x}+eA_{x})$，$\hat{P}=\sqrt{\frac{1}{\hbar eB}}(\hat{p}_{y}+eA_{y})$。请证明：
@@ -72,11 +74,13 @@ $$
 则
 
 $$
+\begin{gathered}
 [\hat{\pi}_{x},\hat{\pi}_{y}]
 =[\hat{p}_{x},eA_{y}]+[eA_{x},\hat{p}_{y}]\\
 =-\mathrm{i}\hbar e\pdv[]{A_{y}}{x}
 +\mathrm{i}\hbar e\pdv[]{A_{x}}{y}\\
 =-\mathrm{i}\hbar eB
+\end{gathered}
 $$
 
 因此
@@ -104,10 +108,12 @@ $$
 因此
 
 $$
+\begin{gathered}
 \hat{H}
 =\frac{1}{2\mu}(\hat{\pi}_{x}^{2}+\hat{\pi}_{y}^{2})\\
 =\frac{\hbar eB}{2\mu}(\hat{Q}^{2}+\hat{P}^{2})\\
 =\frac{1}{2}(\hat{P}^{2}+\hat{Q}^{2})\hbar\omega_{\mathrm{c}}
+\end{gathered}
 $$
 
 其中
@@ -163,11 +169,13 @@ $$
 所以
 
 $$
+\begin{gathered}
 \hat{H}
 =\frac{1}{2\mu}(\hat{\vec{p}}+e\vec{A})^{2}
 -\hat{\vec{\mu}}_{s}\cdot\vec{B}\\
 =\frac{1}{2\mu}(\hat{\vec{p}}+e\vec{A})^{2}
 +g\frac{e}{2\mu}\hat{\vec{S}}\cdot\vec{B}
+\end{gathered}
 $$
 
 若 $\vec{B}=B\vec{e}_{z}$，则
@@ -181,10 +189,12 @@ $$
 因此能量变成
 
 $$
+\begin{gathered}
 E_{n,m_{s}}
 =\left(n+\frac{1}{2}\right)\hbar\omega_{\mathrm{c}}
 +\frac{g}{2}m_{s}\hbar\omega_{\mathrm{c}}\\
 m_{s}=\pm\frac{1}{2}
+\end{gathered}
 $$
 
 其中 $S_{z}=m_{s}\hbar$。若取电子的 $g=2$，则
@@ -209,8 +219,10 @@ $$
 而 $N\geq 1$ 时有两种来源
 
 $$
+\begin{gathered}
 n=N,\quad m_{s}=-\frac{1}{2}\\
 n=N-1,\quad m_{s}=\frac{1}{2}
+\end{gathered}
 $$
 
 所以若每个无自旋 Landau 能级的轨道简并度为 $\mathcal{D}$，则最低能级的简并度仍为 $\mathcal{D}$，而其余能级的简并度变为 $2\mathcal{D}$。在面积为 $\mathcal{A}$ 的有限样品中，通常有
@@ -253,8 +265,10 @@ $$
 注意 $m_{j}$ 在整个过程中仍然守恒，所以只有相同 $m_{j}$ 的态会互相混合。两个极端态本来就是唯一的
 
 $$
+\begin{gathered}
 \ket{\frac{3}{2},\frac{3}{2}}=\ket{1,\frac{1}{2}}\\
 \ket{\frac{3}{2},-\frac{3}{2}}=\ket{-1,-\frac{1}{2}}
+\end{gathered}
 $$
 
 它们直接成为弱场下 $3P_{3/2}$ 的 $m_{j}=\pm\frac{3}{2}$ 态。
@@ -262,38 +276,46 @@ $$
 对于 $m_{j}=\frac{1}{2}$，强场基矢为 $\ket{0,\frac{1}{2}}$ 和 $\ket{1,-\frac{1}{2}}$。弱场下它们重新组合为
 
 $$
+\begin{gathered}
 \ket{\frac{3}{2},\frac{1}{2}}
 =\sqrt{\frac{2}{3}}\ket{0,\frac{1}{2}}
 +\sqrt{\frac{1}{3}}\ket{1,-\frac{1}{2}}\\
 \ket{\frac{1}{2},\frac{1}{2}}
 =\sqrt{\frac{1}{3}}\ket{0,\frac{1}{2}}
 -\sqrt{\frac{2}{3}}\ket{1,-\frac{1}{2}}
+\end{gathered}
 $$
 
 对于 $m_{j}=-\frac{1}{2}$，强场基矢为 $\ket{-1,\frac{1}{2}}$ 和 $\ket{0,-\frac{1}{2}}$。弱场下它们重新组合为
 
 $$
+\begin{gathered}
 \ket{\frac{3}{2},-\frac{1}{2}}
 =\sqrt{\frac{1}{3}}\ket{-1,\frac{1}{2}}
 +\sqrt{\frac{2}{3}}\ket{0,-\frac{1}{2}}\\
 \ket{\frac{1}{2},-\frac{1}{2}}
 =\sqrt{\frac{2}{3}}\ket{-1,\frac{1}{2}}
 -\sqrt{\frac{1}{3}}\ket{0,-\frac{1}{2}}
+\end{gathered}
 $$
 
 所以强场下那个二重简并的 $M=0$ 并不是整体变成弱场下的一个二重态；它的两个态分别属于 $m_{j}=-\frac{1}{2}$ 和 $m_{j}=\frac{1}{2}$ 两个不同的子空间，并分别与相邻的强场能级混合。最后形成的就是弱场下的两组精细结构能级
 
 $$
+\begin{gathered}
 3P_{3/2}\quad m_{j}=\frac{3}{2},\frac{1}{2},-\frac{1}{2},-\frac{3}{2}\\
 3P_{1/2}\quad m_{j}=\frac{1}{2},-\frac{1}{2}
+\end{gathered}
 $$
 
 在弱场极限中，它们的 Zeeman 位移为
 
 $$
+\begin{gathered}
 \Delta E=\mu_{\mathrm{B}}Bg_{j}m_{j}\\
 g_{3/2}=\frac{4}{3}\\
 g_{1/2}=\frac{2}{3}
+\end{gathered}
 $$
 
 10.1.1 设 $\hat{H}^{(0)}$ 有 2 个不简并能级 $E_{10}>E_{20}$，$\hat{H}'$ 在它上面的矩阵元为 $H'_{11}=H'_{22}=a$，$H'_{12}=H'_{21}=b$，$a,b$ 是实数。
@@ -314,15 +336,19 @@ $$
 二级修正为
 
 $$
+\begin{gathered}
 E_{1}^{(2)}=\frac{|H'_{21}|^{2}}{E_{10}-E_{20}}=\frac{b^{2}}{\Delta}\\
 E_{2}^{(2)}=\frac{|H'_{12}|^{2}}{E_{20}-E_{10}}=-\frac{b^{2}}{\Delta}
+\end{gathered}
 $$
 
 因此到二级为止
 
 $$
+\begin{gathered}
 E_{1}=E_{10}+a+\frac{b^{2}}{\Delta}\\
 E_{2}=E_{20}+a-\frac{b^{2}}{\Delta}
+\end{gathered}
 $$
 (b) 实际上这个问题是有严格解的，把严格解也求出来，并讨论一下：在什么条件下严格解化为微扰论的解？
 
@@ -355,8 +381,10 @@ $$
 于是
 
 $$
+\begin{gathered}
 E_{+}\simeq E_{10}+a+\frac{b^{2}}{\Delta}\\
 E_{-}\simeq E_{20}+a-\frac{b^{2}}{\Delta}
+\end{gathered}
 $$
 
 这就回到了微扰论的结果。所以真正需要的小量条件是非对角耦合远小于能级间隔，即 $|b|\ll E_{10}-E_{20}$。对角元 $a$ 在这个例子里只是把两个能级整体平移。
@@ -364,8 +392,10 @@ $$
 10.1.2 习题 3.3.1 是求粒子在无限深势阱加中心 $\delta$ 势垒中的能谱，其中
 
 $$
+\begin{gathered}
 V(x)=\gamma\delta(x)\quad (|x|<a,\gamma>0)\\
 V(x)=+\infty\quad (|x|>a)
+\end{gathered}
 $$
 
 那里是求精确解，现在请你把中心 $\delta$ 势垒 $V'(x)=\gamma\delta(x)$ 做为对无限深势阱的微扰再解一下（准确到一级微扰），并比较二者的结果。
@@ -373,17 +403,21 @@ $$
 先看未受微扰的无限深势阱 $-a<x<a$。按宇称分类，偶宇称本征态可以写为
 
 $$
+\begin{gathered}
 \psi_{r}^{(+)}(x)=\frac{1}{\sqrt{a}}\cos{\frac{(2r+1)\pi x}{2a}}\\
 E_{r}^{(+,0)}=\frac{\hbar^{2}}{2\mu}\left(\frac{(2r+1)\pi}{2a}\right)^{2}\\
 r=0,1,2,\cdots
+\end{gathered}
 $$
 
 奇宇称本征态可以写为
 
 $$
+\begin{gathered}
 \psi_{r}^{(-)}(x)=\frac{1}{\sqrt{a}}\sin{\frac{r\pi x}{a}}\\
 E_{r}^{(-,0)}=\frac{\hbar^{2}}{2\mu}\left(\frac{r\pi}{a}\right)^{2}\\
 r=1,2,\cdots
+\end{gathered}
 $$
 
 一级能量修正为
@@ -426,10 +460,12 @@ $$
 和精确解比较：奇宇称态精确地满足 $\psi(0)=0$，所以不受 $\delta$ 势垒影响，这一点和微扰论完全一致。偶宇称态的精确解可以写成 $E=\frac{\hbar^{2}k^{2}}{2\mu}$，并满足边界条件和导数跃变条件
 
 $$
+\begin{gathered}
 \psi(a)=0\\
 \left.\dv[]{\psi}{x}\right|_{0^{+}}
 -\left.\dv[]{\psi}{x}\right|_{0^{-}}
 =\frac{2\mu\gamma}{\hbar^{2}}\psi(0)
+\end{gathered}
 $$
 
 这给出超越方程

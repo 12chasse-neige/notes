@@ -76,7 +76,7 @@ L = - \lambda \sqrt{1 + f'^{2}} f + c \sqrt{1 + f'^{2}}
 $$
 带入EL方程
 $$
-\frac{d}{dx}  \frac{\partial}{\partial f'} (- \lambda \sqrt{1 + f'^{2}} f + c \sqrt{1 + f'^{2}} ) = \frac{\partial}{\partial f}  - \lambda \sqrt{1 + f'^{2}} f + c \sqrt{1 + f'^{2}} 
+\frac{d}{dx}  \frac{\partial}{\partial f'} (- \lambda \sqrt{1 + f'^{2}} f + c \sqrt{1 + f'^{2}} ) = \frac{\partial}{\partial f}  - \lambda \sqrt{1 + f'^{2}} f + c \sqrt{1 + f'^{2}}
 $$
 由于拉格朗日量中不显含 $x$
 

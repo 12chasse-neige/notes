@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import { execSync } from 'child_process';
 import OpenAI from 'openai';
-import 'dotenv/config'
+import 'dotenv/config';
 
 // --------------------------------------------------------------------------
 // Configuration
@@ -13,29 +13,104 @@ const OUTPUT_FILE = 'docs/.vitepress/data/recent_projects.json';
 const IGNORE_FILES = ['index.md', 'README.md'];
 const IGNORE_DIRS = ['.vitepress', 'public', 'node_modules', '.git'];
 const MAX_FILES_TO_ANALYZE = 30;
+const MODEL = process.env.AI_MODEL || 'deepseek-chat';
+const CJK_RE = /[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\uac00-\ud7af]/u;
 
 // Initialize OpenAI safely
 // If no key is provided, client will be null, handled later
 const apiKey = process.env.AI_API_KEY;
 const openai = apiKey ? new OpenAI({
-  apiKey: apiKey, 
-  baseURL: process.env.AI_BASE_URL || 'https://api.deepseek.com' 
+  apiKey: apiKey,
+  baseURL: process.env.AI_BASE_URL || 'https://api.deepseek.com'
 }) : null;
+
+function containsCJK(value) {
+  if (typeof value === 'string') return CJK_RE.test(value);
+  if (Array.isArray(value)) return value.some(item => containsCJK(item));
+  if (value && typeof value === 'object') {
+    return Object.values(value).some(item => containsCJK(item));
+  }
+  return false;
+}
+
+function limitWords(text, maxWords) {
+  const words = text.trim().split(/\s+/).filter(Boolean);
+  return words.slice(0, maxWords).join(' ');
+}
+
+function fallbackSummaryFor(filePath) {
+  const rawTitle = path.basename(filePath, path.extname(filePath))
+    .replace(/[_-]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  const title = rawTitle && !containsCJK(rawTitle)
+    ? limitWords(rawTitle, 7)
+    : 'Recent Study Note';
+
+  return {
+    title,
+    desc: 'A recent technical note from the study collection.',
+    tags: ['study notes', 'technical writing', 'markdown']
+  };
+}
+
+function normalizeAIData(data, filePath) {
+  const fallback = fallbackSummaryFor(filePath);
+  const title = typeof data?.title === 'string' && data.title.trim()
+    ? limitWords(data.title, 7)
+    : fallback.title;
+  const desc = typeof data?.desc === 'string' && data.desc.trim()
+    ? limitWords(data.desc, 15)
+    : fallback.desc;
+  const tags = Array.isArray(data?.tags)
+    ? data.tags
+      .map(tag => String(tag).trim())
+      .filter(Boolean)
+      .slice(0, 3)
+    : [];
+
+  while (tags.length < 3) {
+    tags.push(fallback.tags[tags.length]);
+  }
+
+  return { title, desc, tags };
+}
+
+function enforceEnglishFallback(data, filePath) {
+  const fallback = fallbackSummaryFor(filePath);
+  const tags = data.tags.map((tag, index) => (
+    containsCJK(tag) ? fallback.tags[index] : tag
+  ));
+
+  return {
+    title: containsCJK(data.title) ? fallback.title : data.title,
+    desc: containsCJK(data.desc) ? fallback.desc : data.desc,
+    tags
+  };
+}
+
+function parseJsonObject(rawContent) {
+  try {
+    return JSON.parse(rawContent);
+  } catch {
+    const match = rawContent.match(/\{[\s\S]*\}/);
+    if (!match) throw new Error('AI response did not contain a JSON object.');
+    return JSON.parse(match[0]);
+  }
+}
 
 // --------------------------------------------------------------------------
 // Helper: Get Recent Files using Git
 // --------------------------------------------------------------------------
 function getRecentFiles(dir) {
-  // ... (Keep your existing getRecentFiles logic here) ...
-  // [Code omitted for brevity, it is the same as before]
   const files = [];
   function scan(directory) {
     const list = fs.readdirSync(directory);
     list.forEach(file => {
       const fullPath = path.join(directory, file);
       // Check if file exists before stat (edge case)
-      if (!fs.existsSync(fullPath)) return; 
-      
+      if (!fs.existsSync(fullPath)) return;
+
       const stat = fs.statSync(fullPath);
       if (stat.isDirectory()) {
         if (!IGNORE_DIRS.includes(file)) scan(fullPath);
@@ -60,28 +135,98 @@ async function analyzeWithAI(filePath) {
   if (!openai) return null; // No client, no analysis
 
   const content = fs.readFileSync(filePath, 'utf-8');
-  const snippet = content.slice(0, 2000); 
+  const snippet = content.slice(0, 2000);
+
+  const systemPrompt = [
+    'You write short project-card metadata in English only.',
+    'If the source Markdown is Chinese or mixed-language, translate the topic into natural English.',
+    'Never output Chinese, Japanese, or Korean characters.',
+    'Return strict JSON only.'
+  ].join(' ');
 
   const prompt = `
-    You are a technical editor. Analyze the following Markdown content.
-    Output a JSON object with exactly these keys **in English**:
-    1. "title": A short, catchy title (max 7 words).
-    2. "desc": A concise summary (max 15 words, engaging).
-    3. "tags": An array of 3 technical keywords (strings).
-    Content: ${snippet}
-  `;
+Analyze this Markdown excerpt and return one JSON object with exactly these keys:
+{
+  "title": "short English title, max 7 words",
+  "desc": "concise English summary, max 15 words",
+  "tags": ["English keyword", "English keyword", "English keyword"]
+}
+
+Rules:
+- Every value must be English.
+- Do not copy non-English headings or tags verbatim; translate them.
+- Use technical keywords when possible.
+
+File path: ${filePath}
+Content:
+${snippet}
+`;
 
   try {
     const completion = await openai.chat.completions.create({
-      messages: [{ role: "user", content: prompt }],
-      model: "deepseek-chat",
-      response_format: { type: "json_object" },
-      temperature: 0.3
+      messages: [
+        { role: 'system', content: systemPrompt },
+        { role: 'user', content: prompt }
+      ],
+      model: MODEL,
+      response_format: { type: 'json_object' },
+      temperature: 0.1
     });
-    return JSON.parse(completion.choices[0].message.content);
+
+    let aiData = normalizeAIData(
+      parseJsonObject(completion.choices[0].message.content),
+      filePath
+    );
+
+    if (containsCJK(aiData)) {
+      console.warn(`[Warn] Non-English AI output detected for ${filePath}. Retrying translation.`);
+      aiData = await translateSummaryToEnglish(aiData, filePath);
+    }
+
+    if (containsCJK(aiData)) {
+      console.warn(`[Warn] Translation still contained non-English text for ${filePath}. Using fallback fields.`);
+      aiData = enforceEnglishFallback(aiData, filePath);
+    }
+
+    return aiData;
   } catch (error) {
     console.error(`[Error] AI analysis failed for ${filePath}:`, error.message);
     return null;
+  }
+}
+
+async function translateSummaryToEnglish(data, filePath) {
+  const prompt = `
+Translate this JSON object's title, desc, and tags into natural English.
+Keep the same JSON keys and return strict JSON only.
+Do not output Chinese, Japanese, or Korean characters.
+
+File path: ${filePath}
+JSON:
+${JSON.stringify(data, null, 2)}
+`;
+
+  try {
+    const completion = await openai.chat.completions.create({
+      messages: [
+        {
+          role: 'system',
+          content: 'You translate project-card metadata into English and return JSON only.'
+        },
+        { role: 'user', content: prompt }
+      ],
+      model: MODEL,
+      response_format: { type: 'json_object' },
+      temperature: 0
+    });
+
+    return normalizeAIData(
+      parseJsonObject(completion.choices[0].message.content),
+      filePath
+    );
+  } catch (error) {
+    console.error(`[Error] English translation failed for ${filePath}:`, error.message);
+    return data;
   }
 }
 

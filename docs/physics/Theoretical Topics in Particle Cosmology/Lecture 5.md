@@ -166,64 +166,64 @@ We can use the principles to constrain the form of $M$
 
 1.  Poincare inv. + LGT
     $$
-    p_{i} \cdot p_{j} = 0 \Rightarrow \langle ij \rangle [ij] = 0  \quad (i \neq j)
-    $$
+p_{i} \cdot p_{j} = 0 \Rightarrow \langle ij \rangle [ij] = 0  \quad (i \neq j)
+$$
     let $\langle 12 \rangle = 0$, we can derive
     $$
-    \sum_{i} | i \rangle [i| = 0 \Rightarrow \langle 13 \rangle = \langle 23 \rangle = 0
-    $$
+\sum_{i} | i \rangle [i| = 0 \Rightarrow \langle 13 \rangle = \langle 23 \rangle = 0
+$$
     Similarly, we can get if $[12] = 0$, then
     $$
-    \sum_{i} | i \rangle [i| = 0 \Rightarrow [13] = [23] = 0
-    $$
+\sum_{i} | i \rangle [i| = 0 \Rightarrow [13] = [23] = 0
+$$
     This will constrain $M$ in the form of
     $$
-    M (1, 2 ,3 ) = M^{L}_{abc} (\psi_{1}, \psi_{2}, \psi_{3}) \, \text{or} \, M^{R}_{abc} (\tilde{\psi}_{\dot{1}}, \tilde{\psi}_{\dot{2}}, \tilde{\psi}_{\dot{3}})
-    $$
+M (1, 2 ,3 ) = M^{L}_{abc} (\psi_{1}, \psi_{2}, \psi_{3}) \, \text{or} \, M^{R}_{abc} (\tilde{\psi}_{\dot{1}}, \tilde{\psi}_{\dot{2}}, \tilde{\psi}_{\dot{3}})
+$$
     LGT: Rotate particle i around $\vec{p}_{i}$
     $$
-    z_{i} \equiv e^{-i \theta_{i} \vec{J} \cdot \hat{p}_{i}}
-    $$
+z_{i} \equiv e^{-i \theta_{i} \vec{J} \cdot \hat{p}_{i}}
+$$
     Under this rotation, the spinors will act as
     $$
-    \begin{gathered}
+\begin{gathered}
     \psi_{i} \to z_{i}^{- \frac{1}{2}} \psi_{i} \\
     \tilde{\psi}_{i} \to z_{i}^{\frac{1}{2}} \tilde{\psi}_{i}
     \end{gathered}
-    $$
+$$
     So the M will perform as
     $$
-    M^{L}_{abc} (\psi_{1}, \psi_{2}, \psi_{3}) \to z_{1}^{-h_{1}} z_{2}^{-h_{2}} z_{3}^{-h_{3}} M^{L}_{abc} (\psi_{1}, \psi_{2}, \psi_{3})
-    $$
+M^{L}_{abc} (\psi_{1}, \psi_{2}, \psi_{3}) \to z_{1}^{-h_{1}} z_{2}^{-h_{2}} z_{3}^{-h_{3}} M^{L}_{abc} (\psi_{1}, \psi_{2}, \psi_{3})
+$$
 
     $$
-    M^{R}_{abc} (\tilde{\psi}_{\dot{1}}, \tilde{\psi}_{\dot{2}}, \tilde{\psi}_{\dot{3}}) \to z_{1}^{h_{1}} z_{2}^{h_{2}} z_{3}^{h_{3}} M^{R}_{abc} (\tilde{\psi}_{\dot{1}}, \tilde{\psi}_{\dot{2}}, \tilde{\psi}_{\dot{3}})
-    $$
+M^{R}_{abc} (\tilde{\psi}_{\dot{1}}, \tilde{\psi}_{\dot{2}}, \tilde{\psi}_{\dot{3}}) \to z_{1}^{h_{1}} z_{2}^{h_{2}} z_{3}^{h_{3}} M^{R}_{abc} (\tilde{\psi}_{\dot{1}}, \tilde{\psi}_{\dot{2}}, \tilde{\psi}_{\dot{3}})
+$$
 
     Ansats: $M^{L}_{abc} = \lambda^{L}_{abc} \langle 12 \rangle^{n_{1}} \langle 23 \rangle^{n_{2}} \langle 31 \rangle^{n_{3}}$, solve the results of the LGTs, the amplitude can be represented as
     $$
-    \lambda^{L}_{abc} \langle 12 \rangle^{h_{3} - h_{1} - h_{2}} \langle 23 \rangle^{h_{1} - h_{2}-  h_{3}} \langle 31 \rangle^{h_{2} - h_{1} - h_{3}}
-    $$
+\lambda^{L}_{abc} \langle 12 \rangle^{h_{3} - h_{1} - h_{2}} \langle 23 \rangle^{h_{1} - h_{2}-  h_{3}} \langle 31 \rangle^{h_{2} - h_{1} - h_{3}}
+$$
     Similarly, the right hand amplitude will have the form
     $$
-    \lambda^{R}_{abc} [12]^{- h_{3} + h_{1} + h_{2}} [23]^{- h_{1} + h_{2} +  h_{3}} [31]^{- h_{2} + h_{1} + h_{3}}
-    $$
+\lambda^{R}_{abc} [12]^{- h_{3} + h_{1} + h_{2}} [23]^{- h_{1} + h_{2} +  h_{3}} [31]^{- h_{2} + h_{1} + h_{3}}
+$$
     
 2.  Locality
     $$
-    [\langle 12 \rangle^{h_{3} - h_{1} - h_{2}} \langle 23 \rangle^{h_{1} - h_{2}-  h_{3}} \langle 31 \rangle^{h_{2} - h_{1} - h_{3}}] = - (h_{1} + h_{2} + h_{3})
-    $$
+[\langle 12 \rangle^{h_{3} - h_{1} - h_{2}} \langle 23 \rangle^{h_{1} - h_{2}-  h_{3}} \langle 31 \rangle^{h_{2} - h_{1} - h_{3}}] = - (h_{1} + h_{2} + h_{3})
+$$
     
     $$
-    [[12]^{- h_{3} + h_{1} + h_{2}} [23]^{- h_{1} + h_{2} +  h_{3}} [31]^{- h_{2} + h_{1} + h_{3}}] = h_{1} + h_{2} + h_{3}
-    $$
+[[12]^{- h_{3} + h_{1} + h_{2}} [23]^{- h_{1} + h_{2} +  h_{3}} [31]^{- h_{2} + h_{1} + h_{3}}] = h_{1} + h_{2} + h_{3}
+$$
     because the negative dimensions requires something like $\frac{1}{p}$, which is not allowed (singularity here must come from on-shell factorization), and dim-0 also has similar problems
     $$
-    h_{1} + h_{2} + h_{3} = 0 \Rightarrow \begin{cases}
+h_{1} + h_{2} + h_{3} = 0 \Rightarrow \begin{cases}
     h_{1} = h_{2} = h_{3} = 0 \\
     h_{i} > 0, h_{j} < 0 \quad (\cross)
     \end{cases}
-    $$
+$$
 
     We can choose the left or right hand form of the amplitude according to whether $\sum_{i} h_{i} > 0$. 
 

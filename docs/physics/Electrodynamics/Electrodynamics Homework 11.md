@@ -91,7 +91,7 @@ $$
 
 因为导体球表面带电量为 $Q$ ，所以
 $$
-Q = \epsilon_{0} \oint d \vec{S} \cdot \vec{E} = \epsilon_{0} \oint d S (\frac{B_{0}}{R_{0}^{2}}  - A_{1} \cos \theta) 
+Q = \epsilon_{0} \oint d \vec{S} \cdot \vec{E} = \epsilon_{0} \oint d S (\frac{B_{0}}{R_{0}^{2}}  - A_{1} \cos \theta)
 $$
 
 $$

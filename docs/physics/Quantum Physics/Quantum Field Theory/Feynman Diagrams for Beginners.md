@@ -112,38 +112,38 @@ $$
 
 >我们利用鲜于课上讲的关系对这些关系的正确性进行一个快速的口头估算验证。
 >$$
->1 \mathrm{eV}^{-1} = 1 \mathrm{\mu m}
->$$
+1 \mathrm{eV}^{-1} = 1 \mathrm{\mu m}
+$$
 >
 >$$
->1 \text{K} = 10^{-4} \text{eV}
->$$
+1 \text{K} = 10^{-4} \text{eV}
+$$
 >
 >$$
->1 \text{g} = 10^{23} \text{GeV}
->$$
+1 \text{g} = 10^{23} \text{GeV}
+$$
 >
 >结合自然单位制的基本规律，$1 \text{fermi} = 10^{-15} \text{m} = 10^{-23} \text{s}$，所以
 >$$
->1 \mathrm{fermi} = 10^{-9} \mathrm{\mu m} \approx 10^{9} \mathrm{eV}^{-1} = 1 \mathrm{GeV}^{-1}
->$$
+1 \mathrm{fermi} = 10^{-9} \mathrm{\mu m} \approx 10^{9} \mathrm{eV}^{-1} = 1 \mathrm{GeV}^{-1}
+$$
 >
 >同理
 >$$
->1 \text{mb} = 10^{-27} \text{cm}^{2} = 10^{-19} \mathrm{\mu m}^{2} \approx 10^{19} \text{eV}^{-2} = 10 \text{GeV}^{-2}
->$$
+1 \text{mb} = 10^{-27} \text{cm}^{2} = 10^{-19} \mathrm{\mu m}^{2} \approx 10^{19} \text{eV}^{-2} = 10 \text{GeV}^{-2}
+$$
 >还有
 >$$
->1 \text{GeV}^{-1} = 10^{-9} \text{eV}^{-1} \approx 10^{-9} \mathrm{\mu m} = 10^{-15} \text{m} \approx 10^{-23} \text{s}
->$$
+1 \text{GeV}^{-1} = 10^{-9} \text{eV}^{-1} \approx 10^{-9} \mathrm{\mu m} = 10^{-15} \text{m} \approx 10^{-23} \text{s}
+$$
 >
 >$$
->1 \text{kg} = 1000 \text{g} \approx 10^{26} \text{GeV}
->$$
+1 \text{kg} = 1000 \text{g} \approx 10^{26} \text{GeV}
+$$
 >
 >$$
->1 \text{m} \approx 10^{-8} \text{s} = 10^{6} \mathrm{\mu m} = 10^{6} \text{eV}^{-1} = 10^{15} \text{GeV}^{-1}
->$$
+1 \text{m} \approx 10^{-8} \text{s} = 10^{6} \mathrm{\mu m} = 10^{6} \text{eV}^{-1} = 10^{15} \text{GeV}^{-1}
+$$
 >
 用 $\mathrm{GeV}$ 计算要优雅得多。使用 $m_{e} = 0.511{\cdot} 10^{-3} \mathrm{GeV}$，我们立即得到：
 $$
@@ -159,8 +159,8 @@ $$
 
 >同样进行估算。
 >$$
->\tau \approx 0.1 \text{eV}^{-1} = 0.1 \mathrm{\mu m} = 10^{-7} \text{m} \approx 10^{-15} \text{s}
->$$
+\tau \approx 0.1 \text{eV}^{-1} = 0.1 \mathrm{\mu m} = 10^{-7} \text{m} \approx 10^{-15} \text{s}
+$$
 ## 2 单粒子狄拉克方程
 
 ### 2.1 狄拉克方程
@@ -258,49 +258,49 @@ $$
 
 **练习 3** 证明对于任意三维矢量 $\vec{a}$，$( \vec{\sigma} \cdot \vec{a})^{2} = \vec{a}^{2}$。
 >$$
->\sigma_{i} a_{i} \sigma_{j} a_{j} \delta_{ij} = (\delta_{ij} + i \epsilon_{ijk} \sigma_{k}) \delta_{ij} a_{i} a_{j} = a_{i} a_{i}
->$$
+\sigma_{i} a_{i} \sigma_{j} a_{j} \delta_{ij} = (\delta_{ij} + i \epsilon_{ijk} \sigma_{k}) \delta_{ij} a_{i} a_{j} = a_{i} a_{i}
+$$
 >
 
 **练习 4** 利用泡利矩阵的性质，证明狄拉克表示中的 $\gamma$ 矩阵满足 $\{\gamma^{i} , \gamma^{j}\} = 2 g^{ij} = -  \delta^{ij}$，符合反对易关系。（反对易关系的其他分量，$(\gamma^{0})^{2} = 1$，$\{\gamma^{0}, \gamma^{i} \} = 0$，是平凡的证明。）
 
 >$$
->\begin{gathered}
->\{\gamma^{i} , \gamma^{j}\} = \gamma^{i} \gamma^{j} + \gamma^{j} \gamma^{i} = \begin{pmatrix} 0 & \sigma^{i} \\ -\sigma^{i} & 0 \end{pmatrix} \begin{pmatrix} 0 & \sigma^{j} \\ -\sigma^{j} & 0 \end{pmatrix} + \begin{pmatrix} 0 & \sigma^{j} \\ -\sigma^{j} & 0 \end{pmatrix} \begin{pmatrix} 0 & \sigma^{i} \\ -\sigma^{i} & 0 \end{pmatrix} 
->\\ = 
->2 \begin{pmatrix} - \{\sigma^{i}, \sigma^{j}\} & 0 \\ 0 & - \{\sigma^{i}, \sigma^{j}\} \end{pmatrix} = -2 \delta_{ij}
->\end{gathered}
->$$
+\begin{gathered}
+\{\gamma^{i} , \gamma^{j}\} = \gamma^{i} \gamma^{j} + \gamma^{j} \gamma^{i} = \begin{pmatrix} 0 & \sigma^{i} \\ -\sigma^{i} & 0 \end{pmatrix} \begin{pmatrix} 0 & \sigma^{j} \\ -\sigma^{j} & 0 \end{pmatrix} + \begin{pmatrix} 0 & \sigma^{j} \\ -\sigma^{j} & 0 \end{pmatrix} \begin{pmatrix} 0 & \sigma^{i} \\ -\sigma^{i} & 0 \end{pmatrix}
+\\ =
+2 \begin{pmatrix} - \{\sigma^{i}, \sigma^{j}\} & 0 \\ 0 & - \{\sigma^{i}, \sigma^{j}\} \end{pmatrix} = -2 \delta_{ij}
+\end{gathered}
+$$
 
 **练习 5** 证明在狄拉克表示中 $\gamma^{0} \gamma^{\mu} \gamma^{0} = \gamma^{\mu^{\dagger}}$
 
 >$$
->\gamma^{0} \gamma^{\mu} \gamma^{0} = \begin{pmatrix} 1 & 0 \\ 0 & - 1 \end{pmatrix} \gamma^{\mu} \begin{pmatrix} 1 & 0 \\ 0 & - 1 \end{pmatrix}
->$$
+\gamma^{0} \gamma^{\mu} \gamma^{0} = \begin{pmatrix} 1 & 0 \\ 0 & - 1 \end{pmatrix} \gamma^{\mu} \begin{pmatrix} 1 & 0 \\ 0 & - 1 \end{pmatrix}
+$$
 >
 >假设 $\gamma^{\mu} = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$，此时
 >$$
->\begin{pmatrix} 1 & 0 \\ 0 & - 1 \end{pmatrix} \gamma^{\mu} \begin{pmatrix} 1 & 0 \\ 0 & - 1 \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & - 1 \end{pmatrix} \begin{pmatrix} a & b \\ c & d \end{pmatrix} \begin{pmatrix} 1 & 0 \\ 0 & - 1 \end{pmatrix} = \begin{pmatrix} a & -b \\ -c & d \end{pmatrix}
->$$
+\begin{pmatrix} 1 & 0 \\ 0 & - 1 \end{pmatrix} \gamma^{\mu} \begin{pmatrix} 1 & 0 \\ 0 & - 1 \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & - 1 \end{pmatrix} \begin{pmatrix} a & b \\ c & d \end{pmatrix} \begin{pmatrix} 1 & 0 \\ 0 & - 1 \end{pmatrix} = \begin{pmatrix} a & -b \\ -c & d \end{pmatrix}
+$$
 >带入 $\gamma^{i} = \begin{pmatrix} 0 & \sigma^{i} \\ -\sigma^{i} & 0 \end{pmatrix}$，所以
 >$$
->\gamma^{0} \gamma^{\mu} \gamma^{0} = \gamma^{\mu^{\dagger}}
->$$
+\gamma^{0} \gamma^{\mu} \gamma^{0} = \gamma^{\mu^{\dagger}}
+$$
 
 **练习 6** 通过将狄拉克方程写成 $i \partial \psi / \partial t = H \psi$ 的形式来确定狄拉克哈密顿量。证明狄拉克哈密顿量的厄米性意味着无论表示如何，前一个练习中的关系都成立。Feynman slash 记号 $\rlap / a \equiv a_{\mu} \gamma^{\mu}$ 经常被使用。
 
 >改写狄拉克方程
 >$$
->i \gamma^{\mu} \partial_{\mu} \psi = m \psi
->$$
+i \gamma^{\mu} \partial_{\mu} \psi = m \psi
+$$
 >即
 >$$
->i \pdv{\psi}{t} = (m + i \gamma^{j} \partial_{j} \gamma^{0}) \psi
->$$
+i \pdv{\psi}{t} = (m + i \gamma^{j} \partial_{j} \gamma^{0}) \psi
+$$
 >所以哈密顿量为
 >$$
->H = m + i \gamma^{j} \gamma^{0} \partial_{j}
->$$
+H = m + i \gamma^{j} \gamma^{0} \partial_{j}
+$$
 
 ### 2.2 伴随狄拉克方程与狄拉克流
 
@@ -321,8 +321,8 @@ $$
 **练习 7** 验证流 $j^{\mu} = \bar {\psi} \gamma^{\mu} \psi$ 是守恒的，即满足连续性关系 $\partial_{\mu} j^{\mu} = 0$。这个相对论性四流的分量是 $j^{\mu} = ( \rho , j )$。注意 $\rho =$ $j^{0} = \bar {\psi} \gamma^{0} \psi = \psi^{\dagger} \psi > 0$，即概率是正定的。
 
 >$$
->\partial_{\mu} j^{\mu} = \partial_{\mu} (\bar{\psi} \gamma^{\mu} \psi) = \partial_{\mu} (\psi^{\dagger}  \gamma^{0} \gamma^{\mu} \psi) = (\partial_{\mu} \psi)^{\dagger} \gamma^{0} \gamma^{\mu} \psi + \psi^{\dagger} \gamma^{0} \gamma^{\mu} (\partial_{\mu} \psi) = - m \bar{\psi} \psi + m \bar{\psi} \psi = 0
->$$
+\partial_{\mu} j^{\mu} = \partial_{\mu} (\bar{\psi} \gamma^{\mu} \psi) = \partial_{\mu} (\psi^{\dagger}  \gamma^{0} \gamma^{\mu} \psi) = (\partial_{\mu} \psi)^{\dagger} \gamma^{0} \gamma^{\mu} \psi + \psi^{\dagger} \gamma^{0} \gamma^{\mu} (\partial_{\mu} \psi) = - m \bar{\psi} \psi + m \bar{\psi} \psi = 0
+$$
 
 ### 2.3 狄拉克方程的自由粒子解
 

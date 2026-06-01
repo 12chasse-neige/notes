@@ -208,13 +208,13 @@ $$
 $$
 R^{GW}_{z0z0} = R^{GW}_{z0x0} = R^{GW}_{z0y0} = 0
 $$
-且 $R^{GW}_{x0x0} = -R^{GW}_{y0y0} \equiv -\frac{1}{2} \ddot{h}_+(t-z), \quad R^{GW}_{x0y0} = R^{GW}_{y0x0} \equiv -\frac{1}{2} \ddot{h}_{\times}(t-z)$
+且 $R^{GW}_{x0x0} = -R^{GW}_{y0y0} \equiv -\frac{1}{2} \ddot{h}_{+}(t-z), \quad R^{GW}_{x0y0} = R^{GW}_{y0x0} \equiv -\frac{1}{2} \ddot{h}_{\times}(t-z)$
 
-这里两个独立非0的分量分别被定义成了两个无量纲函数的导数： $h_+, h_{\times}$ 这里 $\ddot{} \equiv \partial^{2}/\partial t^{2}$。由于 $z0z0, z0x0, z0y0$ 分量全为0，所以对应的 $\mathcal{E}_{zz}, \mathcal{E}_{yz}, \mathcal{E}_{xz}$ 全为0，所以此波为横波，因为它没有传播方向 $z$ 方向的分量。而 $R^{GW}_{x0x0} = -R^{GW}_{y0y0} \Rightarrow \mathcal{E}^{GW}_{xx} = -\mathcal{E}^{GW}_{yy}$，所以 $\mathcal{E}^{GW}$ 的迹为 $0$。这两个性质：Transverse 和 Traceless 通常被简称为 TT， $h_+$ 和 $h_{\times}$ 通常被称为引力波场中“+”偏振态和“$\times$”偏振态。
+这里两个独立非0的分量分别被定义成了两个无量纲函数的导数： $h_{+}, h_{\times}$ 这里 $\ddot{} \equiv \partial^{2}/\partial t^{2}$。由于 $z0z0, z0x0, z0y0$ 分量全为0，所以对应的 $\mathcal{E}_{zz}, \mathcal{E}_{yz}, \mathcal{E}_{xz}$ 全为0，所以此波为横波，因为它没有传播方向 $z$ 方向的分量。而 $R^{GW}_{x0x0} = -R^{GW}_{y0y0} \Rightarrow \mathcal{E}^{GW}_{xx} = -\mathcal{E}^{GW}_{yy}$，所以 $\mathcal{E}^{GW}$ 的迹为 $0$。这两个性质：Transverse 和 Traceless 通常被简称为 TT， $h_{+}$ 和 $h_{\times}$ 通常被称为引力波场中“+”偏振态和“$\times$”偏振态。
 
-因此我们可以利用两个偏振态基矢来重构所有的黎曼张量分量。首先我们定义 $e^+ = \vec{e}_{x} \otimes \vec{e}_{x} - \vec{e}_{y} \otimes \vec{e}_{y}, \, e^{\times} = \vec{e}_{x} \otimes \vec{e}_{y} + \vec{e}_{y} \otimes \vec{e}_{x}$和一个 $2$ 阶引力波场
+因此我们可以利用两个偏振态基矢来重构所有的黎曼张量分量。首先我们定义 $e^{+} = \vec{e}_{x} \otimes \vec{e}_{x} - \vec{e}_{y} \otimes \vec{e}_{y}, \, e^{\times} = \vec{e}_{x} \otimes \vec{e}_{y} + \vec{e}_{y} \otimes \vec{e}_{x}$和一个 $2$ 阶引力波场
 $$
-h^{TT}_{\alpha\beta} = h_+ e^+_{\alpha\beta} + h_{\times} e^{\times}_{\alpha\beta}
+h^{TT}_{\alpha\beta} = h_{+} e^{+}_{\alpha\beta} + h_{\times} e^{\times}_{\alpha\beta}
 $$
 那么对应的黎曼张量则是
 $$
@@ -224,7 +224,7 @@ $$
 $$
 \quad R^{GW}_{0j0k} = -\frac{1}{2} \ddot{h}^{TT}_{jk}
 $$
-我们发现这样通过极化张量 $e_+, e_{\times}$ 定义出来的 $h_+, h_{\times}$ 和我们之前通过 $R^{GW}_{x0x0}$ 和 $R^{GW}_{x0y0}$ 定义的 $h_+, h_{\times}$ 是一致的。
+我们发现这样通过极化张量 $e_{+}, e_{\times}$ 定义出来的 $h_{+}, h_{\times}$ 和我们之前通过 $R^{GW}_{x0x0}$ 和 $R^{GW}_{x0y0}$ 定义的 $h_{+}, h_{\times}$ 是一致的。
 
 #### 引力波和物质的相互作用
 
@@ -239,13 +239,13 @@ $$
 
 如果来的引力波是“+”偏振，我们得到
 $$
-\delta x = \frac{1}{2} h_+ x, \quad \delta y = -\frac{1}{2} h_+ y, \quad \delta z = 0
+\delta x = \frac{1}{2} h_{+} x, \quad \delta y = -\frac{1}{2} h_{+} y, \quad \delta z = 0
 $$
 粒子的运动垂直于 $z$ 方向（横波）。而初始在 $x-y$ 平面上的一个环状的粒子分布将随着引力波的到达在 $x$ 方向拉长和 $y$ 方向压缩，或反过来。由于 $R_{x0x0} = -R_{y0y0}$，压缩的程度一直和拉长的程度一样，因此这个椭圆的面积和初始的圆面积一样。
 
-$h_+$ 偏振波的效应能用潮汐力场的形式表达
+$h_{+}$ 偏振波的效应能用潮汐力场的形式表达
 $$
-\frac{d^{2} \delta \vec{x}}{dt^{2}} = \frac{1}{2} \ddot{h}_+ (x \vec{e}_{x} - y \vec{e}_{y})
+\frac{d^{2} \delta \vec{x}}{dt^{2}} = \frac{1}{2} \ddot{h}_{+} (x \vec{e}_{x} - y \vec{e}_{y})
 $$
 
 所以这个场的散度为0 $[\nabla \cdot (\ ) = 0]$，它可以像电场一样用电力线来描述场，此处我们就唤作潮汐力线，可以看出来整个力线的分布是遵循二极矩的形式。
@@ -282,9 +282,9 @@ $$
 $$
 T^{GW}_{\alpha\beta} = \frac{1}{16\pi} \langle h_{+,\alpha} h_{+,\beta} + h_{\times,\alpha} h_{\times,\beta} \rangle
 $$
-当引力波是沿着 $z$ 方向传播的平面波时， $h_+ = h_+(t-z), h_{\times} = h_{\times}(t-z)$，我们会发现能动张量的非零分量为
+当引力波是沿着 $z$ 方向传播的平面波时， $h_{+} = h_{+}(t-z), h_{\times} = h_{\times}(t-z)$，我们会发现能动张量的非零分量为
 $$
-T^{GW}_{00} = T^{GW}_{0z} = T^{GW}_{z0} = T^{GW}_{zz} = \frac{1}{16\pi} \langle \dot{h}_+^{2} + \dot{h}_{\times}^{2} \rangle
+T^{GW}_{00} = T^{GW}_{0z} = T^{GW}_{z0} = T^{GW}_{zz} = \frac{1}{16\pi} \langle \dot{h}_{+}^{2} + \dot{h}_{\times}^{2} \rangle
 $$
 与电磁波的能动张量 $T_{EM} \propto E^{2} + B^{2}$ 很类似。考虑一个弱引力，接近能用牛顿力学描述的系统。它的牛顿引力势为
 $$
@@ -404,7 +404,7 @@ $$
 $$
 其中传递函数定义为
 $$
-D(\hat{a}, f) = \frac{e^{-i 2\pi f T}}{2} \left[ e^{i \pi f T_+} \operatorname{sinc}(\pi f T_-) + e^{-i \pi f T_-} \operatorname{sinc}(\pi f T_+) \right]
+D(\hat{a}, f) = \frac{e^{-i 2\pi f T}}{2} \left[ e^{i \pi f T_{+}} \operatorname{sinc}(\pi f T_{-}) + e^{-i \pi f T_{-}} \operatorname{sinc}(\pi f T_{+}) \right]
 $$
 其中 $T_{\pm} \equiv T(1 \pm \hat{a} \cdot \hat{n})$ 是简写。进一步的分析需要从光子转向连续电磁波。
 
@@ -416,7 +416,7 @@ $$
 $$
 在电磁波于一条臂中传播一个周期之后，相应场的相位延迟为
 $$
- \omega(2T + \delta T_{\text{r.c.}}) = 2kL + \psi
+\omega(2T + \delta T_{\text{r.c.}}) = 2kL + \psi
 $$
 定义 $\psi(t) = \omega \delta T_{\text{r.c.}} (t)$，那么对于两条臂上返回的电磁波，其相位分别可以表示为
 $$

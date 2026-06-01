@@ -33,11 +33,11 @@ We study NR limit in this lecture and classical limits next.
 
 $\S 1$ NR Limit
 
-For definiteness, suppose we have two species of stable and electrically charged scalar particles $\varphi_{1,2}$ with $q_{1,2}>0$ and $m_{1,2}$ ($m_{1}\leq m_{2}$ without loss of generality). Consider their scattering in the center-of-mass frame. So, the initial state is $|\{\varphi_{1}(\vec{p}),\varphi_{2}(-\vec{p})\}_+\rangle$.
+For definiteness, suppose we have two species of stable and electrically charged scalar particles $\varphi_{1,2}$ with $q_{1,2}>0$ and $m_{1,2}$ ($m_{1}\leq m_{2}$ without loss of generality). Consider their scattering in the center-of-mass frame. So, the initial state is $|\{\varphi_{1}(\vec{p}),\varphi_{2}(-\vec{p})\}_{+}\rangle$.
 
-Question: What are the possible out states? — The answer is simple: linear combinations of $|\{\varphi_{1}\varphi_{2}(\bar{\varphi}_{1}\varphi_{1})^{M}(\bar{\varphi}_{2}\varphi_{2})^{N}\gamma^{L}\}_-\rangle$.
+Question: What are the possible out states? — The answer is simple: linear combinations of $|\{\varphi_{1}\varphi_{2}(\bar{\varphi}_{1}\varphi_{1})^{M}(\bar{\varphi}_{2}\varphi_{2})^{N}\gamma^{L}\}_{-}\rangle$.
 
-However, if $p_{1}^{0}+p_{2}^{0}=\sqrt{\vec{p}^{2}+m_{1}^{2}}+\sqrt{\vec{p}^{2}+m_{2}^{2}}<3m_{1}+m_{2}$, we must have $M=N=0$. So, we get a stronger version of particle number conservation: $|\{\varphi_{1}\varphi_{2}\}_+\rangle\to|\{\varphi_{1}\varphi_{2}\gamma^{L}\}_-\rangle$. As a result, we can restrict ourselves to the $\mathcal{H}_{\varphi_{1}}^{(1)}\otimes\mathcal{H}_{\varphi_{2}}^{(1)}$ sector of the full Hilbert space $\mathcal{H}$. (Of course, the photon number can still change in this kinematic region.)
+However, if $p_{1}^{0}+p_{2}^{0}=\sqrt{\vec{p}^{2}+m_{1}^{2}}+\sqrt{\vec{p}^{2}+m_{2}^{2}}<3m_{1}+m_{2}$, we must have $M=N=0$. So, we get a stronger version of particle number conservation: $|\{\varphi_{1}\varphi_{2}\}_{+}\rangle\to|\{\varphi_{1}\varphi_{2}\gamma^{L}\}_{-}\rangle$. As a result, we can restrict ourselves to the $\mathcal{H}_{\varphi_{1}}^{(1)}\otimes\mathcal{H}_{\varphi_{2}}^{(1)}$ sector of the full Hilbert space $\mathcal{H}$. (Of course, the photon number can still change in this kinematic region.)
 
 Then, the Hamiltonian for the charged scalar fields reduces to the familiar two-particle form in QM when restricted in the two-particle subspace $\mathcal{H}_{\varphi_{1}}^{(1)}\otimes\mathcal{H}_{\varphi_{2}}^{(1)}$:
 
@@ -56,7 +56,7 @@ $\S 1.1$ A field-theoretic perspective
 It is very instructive to rethink the NR limit from a modern QFT (EFT) perspective. Consider a theory of a free complex scalar:
 
 $$
-\mathcal{L}=-\partial_{\mu}\varphi^*\partial^{\mu}\varphi-m^{2}\varphi^*\varphi. \tag{2}
+\mathcal{L}=-\partial_{\mu}\varphi^{*}\partial^{\mu}\varphi-m^{2}\varphi^{*}\varphi. \tag{2}
 $$
 
 When lower energy $\to 0$ in the 1PS sector, the mass term is more relevant due to the smaller operator dimension. It eventually becomes more important than the kinetic term and the relativistic counting scheme (i.e., the natural unit) breaks down.
@@ -118,7 +118,7 @@ $$
 Now, we can further integrate $A_{0}$ out using its classical solution:
 
 $$
-A_{0}=\nabla^{-2}e\Psi^*\Psi=-\int d^{3}\vec{y}\,\frac{1}{4\pi|\vec{x}-\vec{y}|}e\Psi^{\dagger}\Psi. \tag{10}
+A_{0}=\nabla^{-2}e\Psi^{*}\Psi=-\int d^{3}\vec{y}\,\frac{1}{4\pi|\vec{x}-\vec{y}|}e\Psi^{\dagger}\Psi. \tag{10}
 $$
 
 Then,

@@ -457,7 +457,7 @@ $$
 
 (c) 试证明：
 $$
-D_{\parallel} = \frac{4 \mu_{1} \cos \theta_{1} \text{Re} \left( \frac{k_{2} k_{2z}^*}{k_{2}^{*}} \right)}{\mu_{2} k_{1} \left| \frac{k_{2z}}{k_{2}} + \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}}
+D_{\parallel} = \frac{4 \mu_{1} \cos \theta_{1} \text{Re} \left( \frac{k_{2} k_{2z}^{*}}{k_{2}^{*}} \right)}{\mu_{2} k_{1} \left| \frac{k_{2z}}{k_{2}} + \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}}
 $$
 $$
 R_{\parallel} = \left| \frac{\frac{k_{2z}}{k_{2}} - \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1}}{\frac{k_{2z}}{k_{2}} + \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1}} \right|^{2}
@@ -496,7 +496,7 @@ $$
 得到：
 $$
 \begin{gathered}
-\frac{\frac{1}{2 \mu_{2} \omega} (k_{2Rz} \mathbf{E}_{2 \parallel}^{2} - \Re [E_{2 \parallel z} (\mathbf{k}_{2} \cdot \mathbf{E}_{2 \parallel}^{*})])}{\frac{1}{2 \mu_{1} \omega} (k_{1Rz}  \mathbf{E}_{1 \parallel}^{2})} = \frac{\mu_{1}}{\mu_{2} k_{1} \cos \theta_{1}} \left| \frac{2 \cos \theta_{1}}{\frac{k_{2z}}{k_{2}} + \frac{\mu_{1} k_{2} \cos \theta_{1}}{\mu_{2} k_{1}}} \right|^{2} \Re [k_{2} \frac{k_{2z}^{*}}{k_{2}^{*}}] \\ = \frac{4 \mu_{1} \cos \theta_{1} \text{Re} \left( \frac{k_{2} k_{2z}^*}{k_{2}^{*}} \right)}{\mu_{2} k_{1} \left| \frac{k_{2z}}{k_{2}} + \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}}
+\frac{\frac{1}{2 \mu_{2} \omega} (k_{2Rz} \mathbf{E}_{2 \parallel}^{2} - \Re [E_{2 \parallel z} (\mathbf{k}_{2} \cdot \mathbf{E}_{2 \parallel}^{*})])}{\frac{1}{2 \mu_{1} \omega} (k_{1Rz}  \mathbf{E}_{1 \parallel}^{2})} = \frac{\mu_{1}}{\mu_{2} k_{1} \cos \theta_{1}} \left| \frac{2 \cos \theta_{1}}{\frac{k_{2z}}{k_{2}} + \frac{\mu_{1} k_{2} \cos \theta_{1}}{\mu_{2} k_{1}}} \right|^{2} \Re [k_{2} \frac{k_{2z}^{*}}{k_{2}^{*}}] \\ = \frac{4 \mu_{1} \cos \theta_{1} \text{Re} \left( \frac{k_{2} k_{2z}^{*}}{k_{2}^{*}} \right)}{\mu_{2} k_{1} \left| \frac{k_{2z}}{k_{2}} + \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}}
 \end{gathered}
 $$
 
@@ -510,9 +510,9 @@ $$
 
 $$
 \begin{gathered}
-D_{\parallel} + R_{\parallel} = \frac{4 \mu_{1} \cos \theta_{1} \text{Re} \left( \frac{k_{2} k_{2z}^*}{k_{2}^{*}} \right)}{\mu_{2} k_{1} \left| \frac{k_{2z}}{k_{2}} + \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}} + \left| \frac{\frac{k_{2z}}{k_{2}} - \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1}}{\frac{k_{2z}}{k_{2}} + \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1}} \right|^{2} \\ = 
-\frac{4 \mu_{1} \cos \theta_{1} \text{Re} \left( \frac{k_{2} k_{2z}^*}{k_{2}^{*}} \right) + \mu_{2} k_{1} \left| \frac{k_{2z}}{k_{2}} - \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}}{\mu_{2} k_{1} \left| \frac{k_{2z}}{k_{2}} + \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}} \\ =
-\frac{\mu_{2} k_{1} \left(4 \frac{\mu_{1}}{\mu_{2} k_{1}} \cos \theta_{1} \text{Re} \left( \frac{k_{2} k_{2z}^*}{k_{2}^{*}} \right) +  \left| \frac{k_{2z}}{k_{2}} - \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}\right)}{\mu_{2} k_{1} \left| \frac{k_{2z}}{k_{2}} + \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}} \\ =
+D_{\parallel} + R_{\parallel} = \frac{4 \mu_{1} \cos \theta_{1} \text{Re} \left( \frac{k_{2} k_{2z}^{*}}{k_{2}^{*}} \right)}{\mu_{2} k_{1} \left| \frac{k_{2z}}{k_{2}} + \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}} + \left| \frac{\frac{k_{2z}}{k_{2}} - \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1}}{\frac{k_{2z}}{k_{2}} + \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1}} \right|^{2} \\ = 
+\frac{4 \mu_{1} \cos \theta_{1} \text{Re} \left( \frac{k_{2} k_{2z}^{*}}{k_{2}^{*}} \right) + \mu_{2} k_{1} \left| \frac{k_{2z}}{k_{2}} - \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}}{\mu_{2} k_{1} \left| \frac{k_{2z}}{k_{2}} + \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}} \\ =
+\frac{\mu_{2} k_{1} \left(4 \frac{\mu_{1}}{\mu_{2} k_{1}} \cos \theta_{1} \text{Re} \left( \frac{k_{2} k_{2z}^{*}}{k_{2}^{*}} \right) +  \left| \frac{k_{2z}}{k_{2}} - \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}\right)}{\mu_{2} k_{1} \left| \frac{k_{2z}}{k_{2}} + \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}} \\ =
 \frac{\mu_{2} k_{1} \left| \frac{k_{2z}}{k_{2}} + \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}}{\mu_{2} k_{1} \left| \frac{k_{2z}}{k_{2}} + \frac{k_{2} \mu_{1}}{k_{1} \mu_{2}} \cos \theta_{1} \right|^{2}} = 1
 \end{gathered}
 $$

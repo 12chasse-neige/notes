@@ -175,7 +175,7 @@ $$
 $$
 所以 $\vec{A}$ 仅仅有平行于 $\vec{J}$ 方向的分量，此处可以当作标量处理，在圆柱外其满足拉普拉斯方程
 $$
-A = C \ln r +  \sum_{n = 0}^{\infty} (A_{n} r^{n} + \frac{B_{n}}{r^{n}}) \cos (n \theta) + (C_{n} r^{n} + \frac{D_{n}}{r^{n}}) \sin (n \theta) 
+A = C \ln r +  \sum_{n = 0}^{\infty} (A_{n} r^{n} + \frac{B_{n}}{r^{n}}) \cos (n \theta) + (C_{n} r^{n} + \frac{D_{n}}{r^{n}}) \sin (n \theta)
 $$
 由旋转对称性，柱外矢势与角度无关，所以
 $$
@@ -210,7 +210,7 @@ A_{out} (r)  = C \ln \frac{a}{r}
 $$
 此外由磁场强度的切向连续性，在柱面上
 $$
-\frac{1}{2} J a = \frac{C}{\mu a} 
+\frac{1}{2} J a = \frac{C}{\mu a}
 $$
 
 $$

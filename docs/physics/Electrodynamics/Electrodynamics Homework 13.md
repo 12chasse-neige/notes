@@ -69,7 +69,7 @@ $$
 \frac{q^{2}}{16 \pi^{2} \epsilon_{0} m^{2} c^{3}} \frac{\delta^{3}}{\gamma^{2}} \left[ \vec{F}^{2} - (\vec{\beta} \cdot \vec{F})^{2} - \frac{\delta^{2}}{\gamma^{2}} (\vec{F} \cdot \vec{e}_{r} - \vec{F} \cdot \vec{\beta})^{2} \right]
 \end{gathered}
 $$
-(b) 试由定义，$\frac{1}{J} = \int d^{3}{x}' delta \left( r' - r_{0}\left(t - \frac{\|r-r'\|}{c}\right) \right)$ 证明：$J = 1 - \frac{\vec{R}^*}{R^*} \cdot \frac{\vec{v}^*}{c}$。并讨论 $J$ 的物理意义。若在介质中，式中 $c$ 应换为 $\frac{c}{n}$（$n$ 为介质的折射率），则 $J$ 有可能为$0$，它对应什么物理？  
+(b) 试由定义，$\frac{1}{J} = \int d^{3}{x}' delta \left( r' - r_{0}\left(t - \frac{\|r-r'\|}{c}\right) \right)$ 证明：$J = 1 - \frac{\vec{R}^{*}}{R^{*}} \cdot \frac{\vec{v}^{*}}{c}$。并讨论 $J$ 的物理意义。若在介质中，式中 $c$ 应换为 $\frac{c}{n}$（$n$ 为介质的折射率），则 $J$ 有可能为$0$，它对应什么物理？  
 
 证明，由三维 $\delta$ 函数的性质
 $$
@@ -85,21 +85,21 @@ $$
 $$
 所以
 $$
-J = \left\|\overset{\leftrightarrow}{I} - \frac{\vec{R}^{*} \vec{v}^{*}}{c R^{*}} \right\| = 1 - \frac{\vec{R}^*}{R^*} \cdot \frac{\vec{v}^*}{c}
+J = \left\|\overset{\leftrightarrow}{I} - \frac{\vec{R}^{*} \vec{v}^{*}}{c R^{*}} \right\| = 1 - \frac{\vec{R}^{*}}{R^{*}} \cdot \frac{\vec{v}^{*}}{c}
 $$
 当在介质中时
 $$
-J = 1 - \frac{\vec{R}^*}{R^*} \cdot \frac{n \vec{v}^*}{c}
+J = 1 - \frac{\vec{R}^{*}}{R^{*}} \cdot \frac{n \vec{v}^{*}}{c}
 $$
 当 $n$ 取值大到 $J = 0$ 时，也就是粒子运动速度大于介质中光速，此时会发生切连科夫辐射，此时辐射强度集中在 $\cos \theta = \frac{c}{n v^{*}}$ 处。
 
 (c) 试证任意运动的电磁场为
 $$
-\vec{E}(\vec{r}, t) = \frac{q}{4\pi\epsilon_{0} S^{* 3}} \left( \vec{R}^* - \frac{R^* \vec{v}^*}{c} \right) \left(1 - \frac{v^{2}}{c^{2}}\right) + \frac{q}{4\pi\epsilon_{0} c^{2} S^{* 3}} \vec{R}^* \times \left[ \left( \vec{R}^* - \frac{R^* \vec{v}^*}{c} \right) \times \vec{a}^* \right]
+\vec{E}(\vec{r}, t) = \frac{q}{4\pi\epsilon_{0} S^{* 3}} \left( \vec{R}^{*} - \frac{R^{*} \vec{v}^{*}}{c} \right) \left(1 - \frac{v^{2}}{c^{2}}\right) + \frac{q}{4\pi\epsilon_{0} c^{2} S^{* 3}} \vec{R}^{*} \times \left[ \left( \vec{R}^{*} - \frac{R^{*} \vec{v}^{*}}{c} \right) \times \vec{a}^{*} \right]
 $$
 
 $$
-\vec{B}(\vec{r}, t) = \frac{\vec{R}^*}{cR^*} \times \vec{E}(\vec{r}, t)
+\vec{B}(\vec{r}, t) = \frac{\vec{R}^{*}}{cR^{*}} \times \vec{E}(\vec{r}, t)
 $$
 
 证明
@@ -111,31 +111,31 @@ $$
 \frac{\partial}{\partial t} = \frac{\partial t^{*}}{\partial t} \frac{\partial}{\partial t^{*}}
 \end{gathered}
 $$
-由推迟时间定义 $t^* = t - \frac{R^*}{c}$，固定场点 $\vec{r}$，对 $t$ 求导：
+由推迟时间定义 $t^{*} = t - \frac{R^{*}}{c}$，固定场点 $\vec{r}$，对 $t$ 求导：
 $$
-\frac{\partial t^*}{\partial t} = 1 - \frac{1}{c} \frac{\partial R^*}{\partial t}
+\frac{\partial t^{*}}{\partial t} = 1 - \frac{1}{c} \frac{\partial R^{*}}{\partial t}
 $$
-其中 $R^* = |\vec{r} - \vec{r}_{0}(t^*)|$，且：
+其中 $R^{*} = |\vec{r} - \vec{r}_{0}(t^{*})|$，且：
 $$
-\frac{\partial R^*}{\partial t} = -\frac{\vec{R}^* \cdot \vec{v}^*}{R^*} \frac{\partial t^*}{\partial t}
+\frac{\partial R^{*}}{\partial t} = -\frac{\vec{R}^{*} \cdot \vec{v}^{*}}{R^{*}} \frac{\partial t^{*}}{\partial t}
 $$
 代入得：
 $$
-\frac{\partial t^*}{\partial t} = 1 + \frac{\vec{R}^* \cdot \vec{v}^*}{c R^*} \frac{\partial t^*}{\partial t} \implies \frac{\partial t^*}{\partial t} = \frac{R^*}{R^* - \frac{\vec{R}^* \cdot \vec{v}^*}{c}} = \frac{R^*}{S^*}
+\frac{\partial t^{*}}{\partial t} = 1 + \frac{\vec{R}^{*} \cdot \vec{v}^{*}}{c R^{*}} \frac{\partial t^{*}}{\partial t} \implies \frac{\partial t^{*}}{\partial t} = \frac{R^{*}}{R^{*} - \frac{\vec{R}^{*} \cdot \vec{v}^{*}}{c}} = \frac{R^{*}}{S^{*}}
 $$
-$\nabla R^*$
-$R^* = |\vec{r} - \vec{r}_{0}(t^*)|$，固定 $t$，对 $\vec{r}$ 求梯度：
+$\nabla R^{*}$
+$R^{*} = |\vec{r} - \vec{r}_{0}(t^{*})|$，固定 $t$，对 $\vec{r}$ 求梯度：
 $$
-\nabla R^* = \frac{\vec{R}^*}{R^*} - \frac{\vec{R}^* \cdot \vec{v}^*}{R^*} \nabla t^*
+\nabla R^{*} = \frac{\vec{R}^{*}}{R^{*}} - \frac{\vec{R}^{*} \cdot \vec{v}^{*}}{R^{*}} \nabla t^{*}
 $$
-代入 $\nabla t^* = -\frac{1}{c} \nabla R^*$：
+代入 $\nabla t^{*} = -\frac{1}{c} \nabla R^{*}$：
 $$
-\nabla R^* = \frac{\vec{R}^*}{R^*} + \frac{\vec{R}^* \cdot \vec{v}^*}{c R^*} \nabla R^* \implies \nabla R^* = \frac{\frac{\vec{R}^*}{R^*}}{1 - \frac{\vec{R}^* \cdot \vec{v}^*}{c R^*}} = \frac{\vec{R}^*}{S^*}
+\nabla R^{*} = \frac{\vec{R}^{*}}{R^{*}} + \frac{\vec{R}^{*} \cdot \vec{v}^{*}}{c R^{*}} \nabla R^{*} \implies \nabla R^{*} = \frac{\frac{\vec{R}^{*}}{R^{*}}}{1 - \frac{\vec{R}^{*} \cdot \vec{v}^{*}}{c R^{*}}} = \frac{\vec{R}^{*}}{S^{*}}
 $$
-$\nabla t^*$ 
-由 $t^* = t - \frac{R^*}{c}$ 得：
+$\nabla t^{*}$ 
+由 $t^{*} = t - \frac{R^{*}}{c}$ 得：
 $$
-\nabla t^* = -\frac{1}{c} \nabla R^* = -\frac{1}{c} \frac{\vec{R}^*}{S^*}
+\nabla t^{*} = -\frac{1}{c} \nabla R^{*} = -\frac{1}{c} \frac{\vec{R}^{*}}{S^{*}}
 $$
 综上所述
 $$
@@ -148,10 +148,10 @@ $$
 $$
 所以由李纳维谢尔势
 $$
-\phi(\vec{r}, t) = \frac{q}{4\pi\epsilon_{0}} \frac{1}{S^*}
+\phi(\vec{r}, t) = \frac{q}{4\pi\epsilon_{0}} \frac{1}{S^{*}}
 $$
 $$
-\vec{A}(\vec{r}, t) = \frac{\mu_{0} q}{4\pi} \frac{\vec{v}^*}{S^*}
+\vec{A}(\vec{r}, t) = \frac{\mu_{0} q}{4\pi} \frac{\vec{v}^{*}}{S^{*}}
 $$
 
 $$
@@ -161,30 +161,30 @@ $$
 
 
 $-\nabla \phi$ 
-$\phi = \frac{q}{4\pi\epsilon_{0}} (S^*)^{-1}$，先求 $\nabla S^*$：
+$\phi = \frac{q}{4\pi\epsilon_{0}} (S^{*})^{-1}$，先求 $\nabla S^{*}$：
 $$
-\nabla S^* = \nabla R^* - \frac{1}{c} \nabla (\vec{R}^* \cdot \vec{v}^*) = \frac{\vec{R}^*}{S^*} - \frac{\vec{v}^*}{c} + \frac{1}{c^{2}} (\vec{R}^* \cdot \vec{a}^* - v^{*2}) \frac{\vec{R}^*}{S^*}
+\nabla S^{*} = \nabla R^{*} - \frac{1}{c} \nabla (\vec{R}^{*} \cdot \vec{v}^{*}) = \frac{\vec{R}^{*}}{S^{*}} - \frac{\vec{v}^{*}}{c} + \frac{1}{c^{2}} (\vec{R}^{*} \cdot \vec{a}^{*} - v^{*2}) \frac{\vec{R}^{*}}{S^{*}}
 $$
 故：
 $$
--\nabla \phi = \frac{q}{4\pi\epsilon_{0}} \frac{1}{(S^*)^{2}} \left[ \frac{\vec{R}^*}{S^*} - \frac{\vec{v}^*}{c} + \frac{1}{c^{2}} (\vec{R}^* \cdot \vec{a}^* - v^{*2}) \frac{\vec{R}^*}{S^*} \right]
+-\nabla \phi = \frac{q}{4\pi\epsilon_{0}} \frac{1}{(S^{*})^{2}} \left[ \frac{\vec{R}^{*}}{S^{*}} - \frac{\vec{v}^{*}}{c} + \frac{1}{c^{2}} (\vec{R}^{*} \cdot \vec{a}^{*} - v^{*2}) \frac{\vec{R}^{*}}{S^{*}} \right]
 $$
 $-\frac{\partial \vec{A}}{\partial t}$
-$\vec{A} = \frac{\mu_{0} q}{4\pi} \frac{\vec{v}^*}{S^*}$，计算得：
+$\vec{A} = \frac{\mu_{0} q}{4\pi} \frac{\vec{v}^{*}}{S^{*}}$，计算得：
 $$
--\frac{\partial \vec{A}}{\partial t} = -\frac{q}{4\pi\epsilon_{0} c^{2}} \frac{1}{(S^*)^{2}} \frac{R^*}{S^*} \left[ \vec{a}^* + \frac{\vec{v}^* (\vec{R}^* \cdot \vec{v}^*)}{(R^*)^{2}} - \frac{v^{*2}}{c} \frac{\vec{v}^*}{R^*} + \frac{\vec{v}^* (\vec{R}^* \cdot \vec{a}^*)}{c R^*} \right]
+-\frac{\partial \vec{A}}{\partial t} = -\frac{q}{4\pi\epsilon_{0} c^{2}} \frac{1}{(S^{*})^{2}} \frac{R^{*}}{S^{*}} \left[ \vec{a}^{*} + \frac{\vec{v}^{*} (\vec{R}^{*} \cdot \vec{v}^{*})}{(R^{*})^{2}} - \frac{v^{*2}}{c} \frac{\vec{v}^{*}}{R^{*}} + \frac{\vec{v}^{*} (\vec{R}^{*} \cdot \vec{a}^{*})}{c R^{*}} \right]
 $$
 自场项：
 $$
-\vec{E}_{\text{self}} = \frac{q}{4\pi\epsilon_{0} S^{*3}} \left( \vec{R}^* - \frac{R^* \vec{v}^*}{c} \right) \left(1 - \frac{v^{2}}{c^{2}}\right)
+\vec{E}_{\text{self}} = \frac{q}{4\pi\epsilon_{0} S^{*3}} \left( \vec{R}^{*} - \frac{R^{*} \vec{v}^{*}}{c} \right) \left(1 - \frac{v^{2}}{c^{2}}\right)
 $$
 辐射项：
 $$
-\vec{E}_{\text{radia}} = \frac{q}{4\pi\epsilon_{0} c^{2} S^{*3}} \vec{R}^* \times \left[ \left( \vec{R}^* - \frac{R^* \vec{v}^*}{c} \right) \times \vec{a}^* \right]
+\vec{E}_{\text{radia}} = \frac{q}{4\pi\epsilon_{0} c^{2} S^{*3}} \vec{R}^{*} \times \left[ \left( \vec{R}^{*} - \frac{R^{*} \vec{v}^{*}}{c} \right) \times \vec{a}^{*} \right]
 $$
 总电场：
 $$
-\vec{E}(\vec{r}, t) = \vec{E}_{\text{vel}} + \vec{E}_{\text{acc}} = \frac{q}{4\pi\epsilon_{0} S^{* 3}} \left( \vec{R}^* - \frac{R^* \vec{v}^*}{c} \right) \left(1 - \frac{v^{2}}{c^{2}}\right) + \frac{q}{4\pi\epsilon_{0} c^{2} S^{* 3}} \vec{R}^* \times \left[ \left( \vec{R}^* - \frac{R^* \vec{v}^*}{c} \right) \times \vec{a}^* \right]
+\vec{E}(\vec{r}, t) = \vec{E}_{\text{vel}} + \vec{E}_{\text{acc}} = \frac{q}{4\pi\epsilon_{0} S^{* 3}} \left( \vec{R}^{*} - \frac{R^{*} \vec{v}^{*}}{c} \right) \left(1 - \frac{v^{2}}{c^{2}}\right) + \frac{q}{4\pi\epsilon_{0} c^{2} S^{* 3}} \vec{R}^{*} \times \left[ \left( \vec{R}^{*} - \frac{R^{*} \vec{v}^{*}}{c} \right) \times \vec{a}^{*} \right]
 $$
 磁场：
 $$
@@ -193,7 +193,7 @@ $$
 \end{gathered}
 $$
 $$
-\nabla^{*} \phi = \nabla^{*} \frac{q}{4\pi\epsilon_{0}} \frac{1}{S^*}  = - \frac{q}{4\pi\epsilon_{0} S^{2*}} \nabla^{*} (R^{*} - \frac{\vec{R}^{*} \cdot \vec{v}^{*}}{c}) = - \frac{q}{4\pi\epsilon_{0} S^{2*}} (\frac{\vec{R}^{*}}{R^{*}} - \frac{\vec{v}^{*}}{c})
+\nabla^{*} \phi = \nabla^{*} \frac{q}{4\pi\epsilon_{0}} \frac{1}{S^{*}}  = - \frac{q}{4\pi\epsilon_{0} S^{2*}} \nabla^{*} (R^{*} - \frac{\vec{R}^{*} \cdot \vec{v}^{*}}{c}) = - \frac{q}{4\pi\epsilon_{0} S^{2*}} (\frac{\vec{R}^{*}}{R^{*}} - \frac{\vec{v}^{*}}{c})
 $$
 
 所以
@@ -357,7 +357,7 @@ $$
 $$
 
 $$
-\vec{a}  = (- \omega^{2} R_{0} \cos \omega t, - \omega^{2} R_{0} \sin \omega t) = - \omega^{2} R_{0} \cos \theta \cos \omega t \vec{e}_{r} - \omega^{2} R_{0} \sin \theta \cos \omega t \vec{e}_{\theta} - \omega^{2} R_{0} \sin \omega t \vec{e}_{\phi} 
+\vec{a}  = (- \omega^{2} R_{0} \cos \omega t, - \omega^{2} R_{0} \sin \omega t) = - \omega^{2} R_{0} \cos \theta \cos \omega t \vec{e}_{r} - \omega^{2} R_{0} \sin \theta \cos \omega t \vec{e}_{\theta} - \omega^{2} R_{0} \sin \omega t \vec{e}_{\phi}
 $$
 
 带入 $\vec{v} \cdot \vec{a} = 0$ 时的辐射功率公式

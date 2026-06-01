@@ -130,7 +130,7 @@ $$
 <img src="./Quantum Noise.assets/image-20260318192533476.png" alt="image-20260318192533476" style="zoom:50%;" />
 
 $$
-f_{j}^{n} = \frac{d_{j} + a_{j}}{\sqrt{2}} \quad f_{j}^{e} = \frac{d_{j} - a_{j}}{\sqrt{2}} 
+f_{j}^{n} = \frac{d_{j} + a_{j}}{\sqrt{2}} \quad f_{j}^{e} = \frac{d_{j} - a_{j}}{\sqrt{2}}
 $$
 
 $$
@@ -192,11 +192,11 @@ $$
 为了简化它，使用 Resonant Approximation
 -  假设镜子反射率极高（$R \approx 1, \tilde{R} \approx 1$）
 -   假设 side band 频率 $\Omega$ 远小于自由光谱范围（$\Omega \ll c/2L$），所以 $e^{2i\Omega L/c} \approx 1 + 2i\Omega L/c$
--   引入腔的半带宽 $\gamma = \frac{Tc}{4L}$ 和损耗修正 $\gamma_* = \gamma(1 + \epsilon/2)$
+-   引入腔的半带宽 $\gamma = \frac{Tc}{4L}$ 和损耗修正 $\gamma_{*} = \gamma(1 + \epsilon/2)$
 
-经过近似分母变成了极其简洁的形式：$(2L/c)(\gamma_* - i\Omega)$，于是，$j_{j}$ 化简为
+经过近似分母变成了极其简洁的形式：$(2L/c)(\gamma_{*} - i\Omega)$，于是，$j_{j}$ 化简为
 $$
-j_{j} = \frac{\sqrt{T}(f_{j} + \sqrt{\epsilon/2} q_{j}) + \delta k_{j}}{(2L/c)(\gamma_* - i\Omega)}
+j_{j} = \frac{\sqrt{T}(f_{j} + \sqrt{\epsilon/2} q_{j}) + \delta k_{j}}{(2L/c)(\gamma_{*} - i\Omega)}
 $$
 所以腔内的循环功率 $W_{\text{circ}}$ 为
 $$
@@ -204,7 +204,7 @@ W_{\text{circ}} = \frac{4}{T} \cdot \frac{1}{2} I_{0} = \frac{I_{0}/2}{\gamma L/
 $$
 涨落 $\delta W_{\text{circ}}$
 $$
-\delta W_{\text{circ}} = \int_{0}^{\infty} \frac{\sqrt{I_{o}\hbar\omega_{o}} (f_{1} + \sqrt{\epsilon/2} q_{1})}{(L/c)(\gamma_* - i\Omega)} e^{-i\Omega t} \frac{d\Omega}{2\pi} + c.c.
+\delta W_{\text{circ}} = \int_{0}^{\infty} \frac{\sqrt{I_{o}\hbar\omega_{o}} (f_{1} + \sqrt{\epsilon/2} q_{1})}{(L/c)(\gamma_{*} - i\Omega)} e^{-i\Omega t} \frac{d\Omega}{2\pi} + c.c.
 $$
 这个光强涨落公式纯粹是由真空散粒噪声（$f_{1}, q_{1}$）引起的，引力波的影响全部反应在相位涨落上。
 
@@ -225,11 +225,11 @@ $$
 
 定义
 $$
-\mathcal{K}_* \equiv \frac{(I_{o}/I_{\text{SQL}}) 2\gamma^{4}}{\Omega^{2}[\gamma^{2}(1 + \epsilon/2)^{2} + \Omega^{2}]}
+\mathcal{K}_{*} \equiv \frac{(I_{o}/I_{\text{SQL}}) 2\gamma^{4}}{\Omega^{2}[\gamma^{2}(1 + \epsilon/2)^{2} + \Omega^{2}]}
 $$
 
 $$
-\beta_* \equiv \arctan\left(\frac{\Omega}{\gamma_*}\right) = \arctan\left(\frac{\Omega}{\gamma(1 + \epsilon/2)}\right)
+\beta_{*} \equiv \arctan\left(\frac{\Omega}{\gamma_{*}}\right) = \arctan\left(\frac{\Omega}{\gamma(1 + \epsilon/2)}\right)
 $$
 
 $$
@@ -238,7 +238,7 @@ $$
 
 最后得到
 $$
-x_{\text{BA}} = - \sqrt{\frac{{\cal K}_*}{2}} L h_{\text{SQL}} \cdot \left(a_{1} + \sqrt{\frac{\epsilon}{2}} n_{1}\right) e^{i\beta_*}
+x_{\text{BA}} = - \sqrt{\frac{{\cal K}_{*}}{2}} L h_{\text{SQL}} \cdot \left(a_{1} + \sqrt{\frac{\epsilon}{2}} n_{1}\right) e^{i\beta_{*}}
 $$
 其中
 $$
@@ -254,7 +254,7 @@ $$
 根据前镜的反射公式，把前面求出来的腔内场代进去，经过和分母一样的 Resonant Approximation，化简后得到离开单条臂的输出场 $g_{j}$
 
 $$
-g_{j} = \left(1 - \frac{1}{2}{\cal E}\right) e^{2i\beta} f_{j} + \sqrt{\cal E} e^{i\beta} q_{j} + \sqrt{\frac{(c/2L)^{2} T}{\gamma_*^{2} + \Omega^{2}}} e^{i\beta_*} \delta k_{j}
+g_{j} = \left(1 - \frac{1}{2}{\cal E}\right) e^{2i\beta} f_{j} + \sqrt{\cal E} e^{i\beta} q_{j} + \sqrt{\frac{(c/2L)^{2} T}{\gamma_{*}^{2} + \Omega^{2}}} e^{i\beta_{*}} \delta k_{j}
 $$
 
 其中
@@ -271,18 +271,18 @@ $$
 
 从北臂出来的光 $g_{j}^{n}$ 和从东臂出来的光 $g_{j}^{e}$ 再次回到分束镜，在暗端口发生干涉，合成最终的输出场 $b_{j}$
 $$
-g_{j}^{n} = \left(1 - \frac{1}{2}{\cal E}\right) e^{2i\beta} f_{j}^{n} + \sqrt{\cal E} e^{i\beta} q_{j}^{n} + \sqrt{\frac{(c/2L)^{2} T}{\gamma_*^{2} + \Omega^{2}}} e^{i\beta_*} \delta k_{j}^{n}
+g_{j}^{n} = \left(1 - \frac{1}{2}{\cal E}\right) e^{2i\beta} f_{j}^{n} + \sqrt{\cal E} e^{i\beta} q_{j}^{n} + \sqrt{\frac{(c/2L)^{2} T}{\gamma_{*}^{2} + \Omega^{2}}} e^{i\beta_{*}} \delta k_{j}^{n}
 $$
 
 $$
-g_{j}^{e} = \left(1 - \frac{1}{2}{\cal E}\right) e^{2i\beta} f_{j}^{e} + \sqrt{\cal E} e^{i\beta} q_{j}^{e} + \sqrt{\frac{(c/2L)^{2} T}{\gamma_*^{2} + \Omega^{2}}} e^{i\beta_*} \delta k_{j}^{e}
+g_{j}^{e} = \left(1 - \frac{1}{2}{\cal E}\right) e^{2i\beta} f_{j}^{e} + \sqrt{\cal E} e^{i\beta} q_{j}^{e} + \sqrt{\frac{(c/2L)^{2} T}{\gamma_{*}^{2} + \Omega^{2}}} e^{i\beta_{*}} \delta k_{j}^{e}
 $$
 
 所以二者合成之后得到
 $$
 \begin{gathered}
 b_{j} = \frac{g_{j}^{n} - g_{j}^{e}}{\sqrt{2}} \\ =
-\left(1 - \frac{1}{2}{\cal E}\right) e^{2i\beta} a_{j} + \sqrt{\cal E} e^{i\beta} n_{j} + \sqrt{\frac{(c/2L)^{2} T}{\gamma_*^{2} + \Omega^{2}}} e^{i\beta_*} \frac{\delta k_{j}^{n} - \delta k_{j}^{e}}{\sqrt{2}}
+\left(1 - \frac{1}{2}{\cal E}\right) e^{2i\beta} a_{j} + \sqrt{\cal E} e^{i\beta} n_{j} + \sqrt{\frac{(c/2L)^{2} T}{\gamma_{*}^{2} + \Omega^{2}}} e^{i\beta_{*}} \frac{\delta k_{j}^{n} - \delta k_{j}^{e}}{\sqrt{2}}
 \end{gathered}
 $$
 
@@ -294,10 +294,10 @@ b_{1} = \left(1 - \frac{1}{2}{\cal E}\right) a_{1} e^{2i\beta} + \sqrt{\cal E} n
 $$
 
 $$
-b_{2} = \left(1 - \frac{1}{2}{\cal E}\right) a_{2} e^{2i\beta} + \sqrt{\cal E} n_{2} e^{i\beta} + \sqrt{2{\cal K}_*} \left( \frac{h + x_{\text{BA}}/L}{h_{\text{SQL}}} \right) e^{i\beta_*}
+b_{2} = \left(1 - \frac{1}{2}{\cal E}\right) a_{2} e^{2i\beta} + \sqrt{\cal E} n_{2} e^{i\beta} + \sqrt{2{\cal K}_{*}} \left( \frac{h + x_{\text{BA}}/L}{h_{\text{SQL}}} \right) e^{i\beta_{*}}
 $$
 
-如果我们忽略 end mirror 处的损耗并且代入 $x_{BA}$ 和噪声项之间的关系 $x_{\text{BA}} = - \sqrt{\frac{{\cal K}_*}{2}} L h_{\text{SQL}} \cdot \left(a_{1} + \sqrt{\frac{\epsilon}{2}} n_{1}\right) e^{i\beta_*}$，那么上述结论可以进一步表示为
+如果我们忽略 end mirror 处的损耗并且代入 $x_{BA}$ 和噪声项之间的关系 $x_{\text{BA}} = - \sqrt{\frac{{\cal K}_{*}}{2}} L h_{\text{SQL}} \cdot \left(a_{1} + \sqrt{\frac{\epsilon}{2}} n_{1}\right) e^{i\beta_{*}}$，那么上述结论可以进一步表示为
 $$
 b_{1} = a_{1} e^{2 i \beta}
 $$
@@ -432,7 +432,7 @@ $$
 $$
 所以最后的噪声就是
 $$
-\langle \text{in} | h_{n} h_{n'} | \text{in} \rangle 
+\langle \text{in} | h_{n} h_{n'} | \text{in} \rangle
 $$
 把压缩算符提进去
 $$

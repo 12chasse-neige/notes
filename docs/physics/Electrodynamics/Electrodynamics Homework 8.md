@@ -31,10 +31,10 @@ $$
 
 5.4 设真空中矢势 $\mathbf{A}(\mathbf{x},t)$ 可用复数傅里叶展开为
 $$
-\mathbf{A}(\mathbf{x},t) = \sum_{k} \left[ \mathbf{a}_{k}(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_{k}^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}} \right]
+\mathbf{A}(\mathbf{x},t) = \sum_{k} \left[ \mathbf{a}_{k}(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_{k}^{*}(t) e^{-i \mathbf{k} \cdot \mathbf{x}} \right]
 $$
 
-其中 $\mathbf{a}_{k}^*$ 是 $\mathbf{a}_{k}$ 的复共轭。
+其中 $\mathbf{a}_{k}^{*}$ 是 $\mathbf{a}_{k}$ 的复共轭。
 
 (1) 证明 $\mathbf{a}_{k}$ 满足谐振子方程
 
@@ -61,7 +61,7 @@ $$
 $$
 
 $$
-\nabla \times (\nabla \times \sum_{k} \left[ \mathbf{a}_{k}(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_{k}^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}} \right]) + \frac{1}{c^{2}} \frac{\partial^{2}}{\partial t^{2}} \sum_{k} \left[ \mathbf{a}_{k}(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_{k}^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}} \right] = 0
+\nabla \times (\nabla \times \sum_{k} \left[ \mathbf{a}_{k}(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_{k}^{*}(t) e^{-i \mathbf{k} \cdot \mathbf{x}} \right]) + \frac{1}{c^{2}} \frac{\partial^{2}}{\partial t^{2}} \sum_{k} \left[ \mathbf{a}_{k}(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_{k}^{*}(t) e^{-i \mathbf{k} \cdot \mathbf{x}} \right] = 0
 $$
 
 所以在库伦规范下
@@ -80,27 +80,27 @@ $$
 
 证明：
 $$
-\nabla \cdot \mathbf{A} = \nabla \cdot  \sum_{k} \left[ \mathbf{a}_{k}(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_{k}^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}} \right] = 0
+\nabla \cdot \mathbf{A} = \nabla \cdot  \sum_{k} \left[ \mathbf{a}_{k}(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_{k}^{*}(t) e^{-i \mathbf{k} \cdot \mathbf{x}} \right] = 0
 $$
 
 $$
-\therefore \,\, \nabla \cdot (\mathbf{a}_{k}(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_{k}^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}}) = 0
+\therefore \,\, \nabla \cdot (\mathbf{a}_{k}(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_{k}^{*}(t) e^{-i \mathbf{k} \cdot \mathbf{x}}) = 0
 $$
 
 $$
-\nabla \cdot (\mathbf{a}_{k}(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_{k}^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}}) = (\nabla e^{i \mathbf{k} \cdot \mathbf{x}}) \cdot \mathbf{a}_{k} + (\nabla e^{- i \mathbf{k} \cdot \mathbf{x}}) \cdot \mathbf{a}_{k}^{*} = i e^{i \mathbf{k} \cdot \mathbf{x}} \mathbf{k} \cdot \mathbf{a}_{k} - i e^{- i \mathbf{k} \cdot \mathbf{x}} \mathbf{k} \cdot \mathbf{a}_{k}^{*} = 0
+\nabla \cdot (\mathbf{a}_{k}(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \mathbf{a}_{k}^{*}(t) e^{-i \mathbf{k} \cdot \mathbf{x}}) = (\nabla e^{i \mathbf{k} \cdot \mathbf{x}}) \cdot \mathbf{a}_{k} + (\nabla e^{- i \mathbf{k} \cdot \mathbf{x}}) \cdot \mathbf{a}_{k}^{*} = i e^{i \mathbf{k} \cdot \mathbf{x}} \mathbf{k} \cdot \mathbf{a}_{k} - i e^{- i \mathbf{k} \cdot \mathbf{x}} \mathbf{k} \cdot \mathbf{a}_{k}^{*} = 0
 $$
 
 对于任意 $\mathbf{x}$ 成立，所以$\mathbf{k} \cdot \mathbf{a}_{k} = 0$
 
-(3) 把 $\mathbf{E}$ 和 $\mathbf{B}$ 用 $\mathbf{a}_{k}$ 和 $\mathbf{a}_{k}^*$ 表示出来
+(3) 把 $\mathbf{E}$ 和 $\mathbf{B}$ 用 $\mathbf{a}_{k}$ 和 $\mathbf{a}_{k}^{*}$ 表示出来
 $$
-\mathbf{E} = - \frac{\partial}{\partial t} \mathbf{A} = - \sum_{k} \left[ \frac{d}{d t} \mathbf{a}_{k}(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \frac{d}{d t} \mathbf{a}_{k}^*(t) e^{-i \mathbf{k} \cdot \mathbf{x}} \right]
+\mathbf{E} = - \frac{\partial}{\partial t} \mathbf{A} = - \sum_{k} \left[ \frac{d}{d t} \mathbf{a}_{k}(t) e^{i \mathbf{k} \cdot \mathbf{x}} + \frac{d}{d t} \mathbf{a}_{k}^{*}(t) e^{-i \mathbf{k} \cdot \mathbf{x}} \right]
 $$
 
 $$
 \begin{gathered}
-\mathbf{B} = \nabla \times \mathbf{A} = \sum_{k} \left[ (\nabla e^{i \mathbf{k} \cdot \mathbf{x}}) \times \mathbf{a}_{k}(t)  + (\nabla e^{-i \mathbf{k} \cdot \mathbf{x}}) \times \mathbf{a}_{k}^*(t) \right] \\ = 
+\mathbf{B} = \nabla \times \mathbf{A} = \sum_{k} \left[ (\nabla e^{i \mathbf{k} \cdot \mathbf{x}}) \times \mathbf{a}_{k}(t)  + (\nabla e^{-i \mathbf{k} \cdot \mathbf{x}}) \times \mathbf{a}_{k}^{*}(t) \right] \\ = 
 i \sum_{k} e^{i \mathbf{k} \cdot \mathbf{x}} \mathbf{k} \times \mathbf{a}_{k} (t) - e^{-i \mathbf{k} \cdot \mathbf{x}} \mathbf{k} \times \mathbf{a}_{k}^{*} (t)
 \end{gathered}
 $$
@@ -166,7 +166,7 @@ $$
 
 证明：库伦规范下的解为
 $$
-\phi (\mathbf{r}, t) = \int \frac{\rho (\mathbf{r}, t)}{4 \pi \epsilon_{0} |\mathbf{r} - \mathbf{r'}|} d \tau' 
+\phi (\mathbf{r}, t) = \int \frac{\rho (\mathbf{r}, t)}{4 \pi \epsilon_{0} |\mathbf{r} - \mathbf{r'}|} d \tau'
 $$
 
 $$

@@ -107,7 +107,7 @@ $$
 $$
 
 $$
-\vec{r} \times (\vec{m} \times \nabla \delta) = \vec{m} (\vec{r} \cdot \nabla \delta) - (\vec{r} \cdot \vec{m}) \nabla \delta 
+\vec{r} \times (\vec{m} \times \nabla \delta) = \vec{m} (\vec{r} \cdot \nabla \delta) - (\vec{r} \cdot \vec{m}) \nabla \delta
 $$
 
 $$

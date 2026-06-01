@@ -42,8 +42,8 @@ Here, $c$ is some point between $a$ and $x$. The remainder term $R_{n}(x)$ repre
 > Given that $f(x)$ is $(n+1)$ times differentiable, then we can use the Cauchy's Mean Value Theorem on the functions $F(t) = f(a+t \Delta x) - P_{n}(t \Delta x)$ and $G(t) = (t \Delta x)^{n+1}$, where $t$ is an arbitrary constant between $0$ and $1$
 >
 > $$
-> \frac{F(t)-F(0)}{G(t)-G(0)} = \frac{(f'(a+t_{1} \Delta x) - P_{n}'(t_{1} \Delta x)) \Delta x}{(n+1)(t_{1} \Delta x)^{n} \Delta x} = \ldots = \frac{f^{(n)}(a+t_{n+1} \Delta x)}{(n+1)!} 
-> $$
+\frac{F(t)-F(0)}{G(t)-G(0)} = \frac{(f'(a+t_{1} \Delta x) - P_{n}'(t_{1} \Delta x)) \Delta x}{(n+1)(t_{1} \Delta x)^{n} \Delta x} = \ldots = \frac{f^{(n)}(a+t_{n+1} \Delta x)}{(n+1)!}
+$$
 >
 > then let $t=1$ and we can get the Lagrange's form.
 
@@ -62,8 +62,8 @@ where $c$ is some number between $a$ and $x$ .
 > Given that $f(x)$ is $(n+1)$ times differentiable, then we can use the Cauchy's Mean Value Theorem on the functions $F(t) = f(x) - P_{n}(x-t \Delta x)$ and $G(t) = x - t \Delta x$, where $t$ is an arbitrary constant between $0$ and $1$
 >
 > $$
-> \frac{F(t)-F(0)}{G(0)-G(t)} = \frac{f^{(n+1)}(x-t_{1} \Delta x)(t_{1} \Delta x)^{n} \Delta x}{n!\Delta x}
-> $$
+\frac{F(t)-F(0)}{G(0)-G(t)} = \frac{f^{(n+1)}(x-t_{1} \Delta x)(t_{1} \Delta x)^{n} \Delta x}{n!\Delta x}
+$$
 >
 > then let $t=1$ and we can get the Cauchy's form.
 
@@ -84,23 +84,23 @@ $$
 > First use $f$'s Taylor Series about a:
 >
 > $$
-> f(x) = f(a) + f'(a)(x-a) + \frac{f''(a)}{2}(x-a)^{2} + \frac{f'''(a+t(x-a))}{6}(x-a)^{3}
-> $$
+f(x) = f(a) + f'(a)(x-a) + \frac{f''(a)}{2}(x-a)^{2} + \frac{f'''(a+t(x-a))}{6}(x-a)^{3}
+$$
 >
 > so it is trivial that 
 >
 > $$
-> f(a+h) = f(a) + f'(a)h + \frac{f''(a)}{2}h^{2} + \frac{f'''(a+th)}{6}h^{3} 
-> $$
+f(a+h) = f(a) + f'(a)h + \frac{f''(a)}{2}h^{2} + \frac{f'''(a+th)}{6}h^{3}
+$$
 >
 > $$
-> f(a-h) = f(a) - f'(a)h + \frac{f''(a)}{2}h^{2} + \frac{f'''(a-th)}{6}h^{3} 
-> $$
+f(a-h) = f(a) - f'(a)h + \frac{f''(a)}{2}h^{2} + \frac{f'''(a-th)}{6}h^{3}
+$$
 >
 > so 
 > $$
-> \lvert f(a+h) + f(a-h) - 2f(a) \rvert = \lvert f''(a)h^{2} + \frac{f'''(a+th) + f'''(a-th)}{6}h^{3} \rvert \leq \lvert f''(a)h^{2} + \frac{1}{3}Mh^{3} \rvert
-> $$
+\lvert f(a+h) + f(a-h) - 2f(a) \rvert = \lvert f''(a)h^{2} + \frac{f'''(a+th) + f'''(a-th)}{6}h^{3} \rvert \leq \lvert f''(a)h^{2} + \frac{1}{3}Mh^{3} \rvert
+$$
 >
 
 ###### Example 2 Linear Interpolation
@@ -118,24 +118,24 @@ Given that on the interval $[a,b]$, $\sup_{x \in [a,b]} \lvert f'' \rvert = M$ a
 > Given that $f''$ is continuous on the interval $[a,b]$, then $f$ can be estimated by the Taylor Series
 >
 > $$
-> f(a) = f(x) + f'(x)(a-x) + \frac{1}{2}(a-x)^{2f}''(\xi), a < \xi < b  
-> $$
+f(a) = f(x) + f'(x)(a-x) + \frac{1}{2}(a-x)^{2f}''(\xi), a < \xi < b
+$$
 >
 > $$
-> f(b) = f(x) + f'(x)(b-x) + \frac{1}{2}(b-x)^{2f}''(\eta), a < \eta < b
-> $$
+f(b) = f(x) + f'(x)(b-x) + \frac{1}{2}(b-x)^{2f}''(\eta), a < \eta < b
+$$
 >
 > so the error equals to 
 >
 > $$
-> \lvert f(x) - l(x) \rvert = \lvert \frac{(b-x)(a-x)}{2} (\frac{x-a}{b-a}f''(\xi) + \frac{b-x}{b-a}f''(\eta)) \rvert
-> $$
+\lvert f(x) - l(x) \rvert = \lvert \frac{(b-x)(a-x)}{2} (\frac{x-a}{b-a}f''(\xi) + \frac{b-x}{b-a}f''(\eta)) \rvert
+$$
 >
 > Notice that $\frac{x-a}{b-a}f''(\xi) + \frac{b-x}{b-a}f''(\eta)$ is actually between the two values $f''(\xi)$ and $f''(\eta)$ and $f''$ is continuous on the closed interval $[a,b]$, according to the Intermediate Value Theorem, there exists a $\zeta \in [a,b]$  so that
 >
 > $$
-> \lvert f''(\zeta) \rvert = \lvert \frac{x-a}{b-a}f''(\xi) + \frac{b-x}{b-a}f''(\eta) \rvert \leq M
-> $$
+\lvert f''(\zeta) \rvert = \lvert \frac{x-a}{b-a}f''(\xi) + \frac{b-x}{b-a}f''(\eta) \rvert \leq M
+$$
 >
 > while the Quadratic Function $(b-x)(x-a)$ has a maximum $\frac{1}{4} (b-a)^{2}$ on the interval $[a,b]$, then the error $\lvert f(x) - l(x) \rvert \leq \frac{1}{8} (b-a)^{2} M$ is trivial.
 
@@ -189,12 +189,12 @@ $$
 $$
 >  Proof.
 > $$
-> \int_{a}^{b} (f(x)+\lambda g(x))^{2} dx \geq 0
-> $$
+\int_{a}^{b} (f(x)+\lambda g(x))^{2} dx \geq 0
+$$
 > where $\lambda$ is an arbitrary constant.
 > $$
-> \lambda^{2} \int_{a}^{b} g^{2}(x) dx + 2 \lambda \int_{a}^{b} f(x) g(x) dx + \int_{a}^{b} f^{2}(x) dx \geq 0
-> $$
+\lambda^{2} \int_{a}^{b} g^{2}(x) dx + 2 \lambda \int_{a}^{b} f(x) g(x) dx + \int_{a}^{b} f^{2}(x) dx \geq 0
+$$
 > Using the criterion $\Delta \leq 0$ can get the inequality.
 
 2. Hölder Inequality
@@ -209,12 +209,12 @@ $$
 > Proof.
 > Notice that $e^{x}$ is a convex on $\mathbb{R}$. Use the Jensen Inequality,
 > $$
-> e^{\frac{1}{p} \ln a^{p} + \frac{1}{q}\ln b^{q}} \leq \frac{1}{p} \, e^{\ln a^{p}} + \frac{1}{q} \, e^{\ln b^{q}}
-> $$
+e^{\frac{1}{p} \ln a^{p} + \frac{1}{q}\ln b^{q}} \leq \frac{1}{p} \, e^{\ln a^{p}} + \frac{1}{q} \, e^{\ln b^{q}}
+$$
 > we can get the Yong inequality 
 > $$
-> \frac{1}{p} \, a^{p} + \frac{1}{q} \, b^{q} \geq ab
-> $$
+\frac{1}{p} \, a^{p} + \frac{1}{q} \, b^{q} \geq ab
+$$
 > Then let $a = \frac{\lvert f \rvert}{\left( \int_{a}^{b} \lvert f(x) \rvert^{p} dx \right)^{1/p}}$ and $b = \frac{\lvert g \rvert}{\left( \int_{a}^{b} \lvert g(x) \rvert^{q} dx \right)^{1/q}}$
 > and we can get the inequality.
 
@@ -226,8 +226,8 @@ $$
 $$
 >  Proof.
 > $$
-> \int_{a}^{b} \lvert f(x) + g(x)\rvert^{p} \, dx \leq \int_{a}^{b} \lvert f(x) + g(x)\rvert^{p-1} \lvert f \rvert \, dx  + \int_{a}^{b} \lvert f(x) + g(x)\rvert^{p-1} \lvert g \rvert \, dx \leq \left( \int_{a}^{b} \lvert f(x) + g(x)\rvert^{p} \, dx \right)^{\frac{p-1}{p}} \left( \int_{a}^{b} \lvert f(x)\rvert^{p} \, dx \right)^{1/p} + \left( \int_{a}^{b} \lvert f(x) + g(x)\rvert^{p} \, dx \right)^{\frac{p-1}{p}} \left( \int_{a}^{b} \lvert g(x)\rvert^{p} \, dx \right)^{1/p}
-> $$
+\int_{a}^{b} \lvert f(x) + g(x)\rvert^{p} \, dx \leq \int_{a}^{b} \lvert f(x) + g(x)\rvert^{p-1} \lvert f \rvert \, dx  + \int_{a}^{b} \lvert f(x) + g(x)\rvert^{p-1} \lvert g \rvert \, dx \leq \left( \int_{a}^{b} \lvert f(x) + g(x)\rvert^{p} \, dx \right)^{\frac{p-1}{p}} \left( \int_{a}^{b} \lvert f(x)\rvert^{p} \, dx \right)^{1/p} + \left( \int_{a}^{b} \lvert f(x) + g(x)\rvert^{p} \, dx \right)^{\frac{p-1}{p}} \left( \int_{a}^{b} \lvert g(x)\rvert^{p} \, dx \right)^{1/p}
+$$
 > where the second $\leq$ is based on the Hölder Inequality.
 
 ---
@@ -258,12 +258,12 @@ $$
 
 > Proof. 
 > $$
-> \because f \in R[a,b]
-> $$
+\because f \in R[a,b]
+$$
 >
 > $$
-> \therefore \exists \pi, \,s.t.\, \forall \epsilon > 0, \, \sum_{i=1}^{n} \omega_{i} \Delta x_{i} < \epsilon
-> $$
+\therefore \exists \pi, \,s.t.\, \forall \epsilon > 0, \, \sum_{i=1}^{n} \omega_{i} \Delta x_{i} < \epsilon
+$$
 >
 > 
 >
@@ -275,13 +275,13 @@ $$
 >    According to the Weierstrass First Approximation Theorem, we can choose a polnomial $P_{n} (x)$, so that 
 >
 > $$
-> \sup_{x \in [a,b]} \lvert P_{n} (x) - f(x) \rvert < \epsilon
-> $$
+\sup_{x \in [a,b]} \lvert P_{n} (x) - f(x) \rvert < \epsilon
+$$
 >
 > For example, the Bernstein polynomial for $f \in [a,b] \rightarrow f'\in [0,1]$
 > $$
-> B_{n}(f')(x) = \sum_{k=0}^{n} f'(\frac{k}{n})\, C_{n}^{k}\, x^{k}\, (1-x)^{n-k}
-> $$
+B_{n}(f')(x) = \sum_{k=0}^{n} f'(\frac{k}{n})\, C_{n}^{k}\, x^{k}\, (1-x)^{n-k}
+$$
 > can be a template.
 
 ###### Example 2 Riemann-Lebesgue Lemma
@@ -297,26 +297,26 @@ $$
 > According to the additivity principle,
 >
 > $$
-> \int_{a}^{b} f(x) g(px) dx = \sum_{k=1}^{n} \int_{x_{k-1}}^{x_{k}} f(x) g(px) dx
-> $$
+\int_{a}^{b} f(x) g(px) dx = \sum_{k=1}^{n} \int_{x_{k-1}}^{x_{k}} f(x) g(px) dx
+$$
 >
 > Using the Integral Mean Value Theorem, we can deduce that for every interval $[x_{k-1}, x_{k}]$, there exists a $\xi_{k} \in  [x_{k-1}, x_{k}]$ so that 
 >
 > $$
-> \int_{x_{k-1}}^{x_{k}} f(x) g(px) dx = f(\xi_{k}) \int_{x_{k-1}}^{x_{k}} g(px) dx
-> $$
+\int_{x_{k-1}}^{x_{k}} f(x) g(px) dx = f(\xi_{k}) \int_{x_{k-1}}^{x_{k}} g(px) dx
+$$
 >
 > Choose a partition $\pi: a=x_{0} < a + \frac{T}{p} = x_{1} < \cdots < x_{n} = b$, so
 >
 > $$
-> \int_{x_{k-1}}^{x_{k}} g(px) dx = \frac{1}{p} \int_{0}^{T} g(t) dt
-> $$
+\int_{x_{k-1}}^{x_{k}} g(px) dx = \frac{1}{p} \int_{0}^{T} g(t) dt
+$$
 >
 > Therefore, we can add the parts and use the definition of the Riemann Integral to get the lemma:
 >
 > $$
-> \lim_{p \to \infty} \int_{a}^{b} f(x) g(px) \, dx = \lim_{p \to \infty} \frac{1}{p} \sum_{k=1}^{n} f(\xi_{k}) \int_{0}^{T} g(t) dt = \lim_{n \to \infty} \sum_{k=1}^{n} f(\xi_{k}) \frac{b-a}{nT} \int_{0}^{T} g(t) dt = \frac{1}{T} \int_{0}^{T} g(x) \, dx \int_{a}^{b} f(x) \, dx
-> $$
+\lim_{p \to \infty} \int_{a}^{b} f(x) g(px) \, dx = \lim_{p \to \infty} \frac{1}{p} \sum_{k=1}^{n} f(\xi_{k}) \int_{0}^{T} g(t) dt = \lim_{n \to \infty} \sum_{k=1}^{n} f(\xi_{k}) \frac{b-a}{nT} \int_{0}^{T} g(t) dt = \frac{1}{T} \int_{0}^{T} g(x) \, dx \int_{a}^{b} f(x) \, dx
+$$
 >
 
 ###### Example 3
@@ -337,18 +337,18 @@ $$
 > Given that $f$ is differentiable, we can write its Taylor series
 >
 > $$
-> f(\xi(x)) = f(a) + f'(a) (\xi-a) + o(\xi - a)
-> $$
+f(\xi(x)) = f(a) + f'(a) (\xi-a) + o(\xi - a)
+$$
 >
 > $$
-> \therefore \int_{a}^{x} f(x) dx = (f(a) + f'(a) (\xi-a) + o(\xi - a)) (x-a)
-> $$
+\therefore \int_{a}^{x} f(x) dx = (f(a) + f'(a) (\xi-a) + o(\xi - a)) (x-a)
+$$
 >
 > $$
-> \therefore \lim_{x \to a+} \frac{\int_{a}^{x} f(x) dx}{(x-a)^{2}} = \frac{1}{2} f'(a) = f'(a) \frac{\xi-a}{x-a} 
-> $$
+\therefore \lim_{x \to a+} \frac{\int_{a}^{x} f(x) dx}{(x-a)^{2}} = \frac{1}{2} f'(a) = f'(a) \frac{\xi-a}{x-a}
+$$
 >
 > $$
-> \therefore \lim_{x \to a+} \frac{\xi(x)-a}{x-a} = \frac{1}{2}
-> $$
+\therefore \lim_{x \to a+} \frac{\xi(x)-a}{x-a} = \frac{1}{2}
+$$
 

@@ -92,7 +92,7 @@ $$
 \hat{\boldsymbol{J}}\times\hat{\boldsymbol{V}}-\hat{\boldsymbol{V}}\times\hat{\boldsymbol{J}}=\frac{\mathrm{i}}{\hbar}[\hat{J}^{2},\hat{\boldsymbol{V}}]
 $$
 
-7.6.1 对于最大合成即 $j=j_{1}+j_{2}$ 的情形，CG系数是不难计算的。为简单起见下面省去 $j_{1},j_{2}$ 而把合成的状态记为 $|j,m\rangle_{\mathrm{c}}$，未合成的状态记为 $|m_{1},m_{2}\rangle_{\mathrm{n}}$。首先，根据约定，$|j_{1}+j_{2},j_{1}+j_{2}\rangle_{\mathrm{c}}=|j_{1},j_{2}\rangle_{\mathrm{n}}$，其次现在 $\hat{J}_- = \hat{J}_{1-} + \hat{J}_{2-}$，而它的作用是 $\hat{J}_- |j, m\rangle = \sqrt{(j-m+1)(j+m)} |j, m-1\rangle$（取 $\hbar = 1$）。请根据这些条件写出 (a) $|j_{1} + j_{2}, j_{1} + j_{2} - 1\rangle_{c}$ 和 (b) $|j_{1} + j_{2}, j_{1} + j_{2} - 2\rangle_{c}$，再往下的事情就是递推了（不要求写出）。
+7.6.1 对于最大合成即 $j=j_{1}+j_{2}$ 的情形，CG系数是不难计算的。为简单起见下面省去 $j_{1},j_{2}$ 而把合成的状态记为 $|j,m\rangle_{\mathrm{c}}$，未合成的状态记为 $|m_{1},m_{2}\rangle_{\mathrm{n}}$。首先，根据约定，$|j_{1}+j_{2},j_{1}+j_{2}\rangle_{\mathrm{c}}=|j_{1},j_{2}\rangle_{\mathrm{n}}$，其次现在 $\hat{J}_{-} = \hat{J}_{1-} + \hat{J}_{2-}$，而它的作用是 $\hat{J}_{-} |j, m\rangle = \sqrt{(j-m+1)(j+m)} |j, m-1\rangle$（取 $\hbar = 1$）。请根据这些条件写出 (a) $|j_{1} + j_{2}, j_{1} + j_{2} - 1\rangle_{c}$ 和 (b) $|j_{1} + j_{2}, j_{1} + j_{2} - 2\rangle_{c}$，再往下的事情就是递推了（不要求写出）。
 
 记 $j=j_{1}+j_{2}$，最高权态为
 

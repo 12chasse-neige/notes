@@ -91,12 +91,12 @@ I find a surplus $\frac{1}{2}$, not knowing whether it’s from the difference i
 
     By taking the Cauchy Principal Value ($\mathcal{P}$) of the integral
     $$
-    \tilde{\chi}(\omega) = \frac{1}{i\pi} \mathcal{P} \int_{-\infty}^{\infty} \frac{\tilde{\chi}(\omega')}{\omega' - \omega} d\omega'
-    $$
+\tilde{\chi}(\omega) = \frac{1}{i\pi} \mathcal{P} \int_{-\infty}^{\infty} \frac{\tilde{\chi}(\omega')}{\omega' - \omega} d\omega'
+$$
     Splitting $\tilde{\chi}$ into real and imaginary parts ($\tilde{\chi} = \text{Re}\,\chi + i\text{Im}\,\chi$) yields
     $$
-    \text{Re}\,\tilde{\chi}(\omega) = \frac{1}{\pi} \mathcal{P} \int_{-\infty}^{\infty} \frac{\text{Im}\,\tilde{\chi}(\omega')}{\omega' - \omega} d\omega' \quad \text{and} \quad \text{Im}\,\tilde{\chi}(\omega) = -\frac{1}{\pi} \mathcal{P} \int_{-\infty}^{\infty} \frac{\text{Re}\,\tilde{\chi}(\omega')}{\omega' - \omega} d\omega'
-    $$
+\text{Re}\,\tilde{\chi}(\omega) = \frac{1}{\pi} \mathcal{P} \int_{-\infty}^{\infty} \frac{\text{Im}\,\tilde{\chi}(\omega')}{\omega' - \omega} d\omega' \quad \text{and} \quad \text{Im}\,\tilde{\chi}(\omega) = -\frac{1}{\pi} \mathcal{P} \int_{-\infty}^{\infty} \frac{\text{Re}\,\tilde{\chi}(\omega')}{\omega' - \omega} d\omega'
+$$
     This shows that if you know the absorption (imaginary part) of a system across all frequencies, you can calculate its dispersion (real part), an
     
     d vice versa.

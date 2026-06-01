@@ -29,7 +29,7 @@ $$
 $$
 特别的，对于 $\mathbb{R}^{3}$ 中的矢量 $\vec{u} = (u_{1}, u_{2}, u_{3})$ 有：
 $$
-\star \vec{u} = u_{1}\vec{e}_{2} \wedge \vec{e}_{3} + u_{2}\vec{e}_{3} \wedge \vec{e}_{1} + u_{3}\vec{e}_{1} \wedge \vec{e}_{2} 
+\star \vec{u} = u_{1}\vec{e}_{2} \wedge \vec{e}_{3} + u_{2}\vec{e}_{3} \wedge \vec{e}_{1} + u_{3}\vec{e}_{1} \wedge \vec{e}_{2}
 $$
 试证明：
 $$
@@ -191,7 +191,7 @@ $$
 
 (4). 给定一个标量场 $f$，和 1-形式场（矢量场）$A$，试证明：
 $$
-(\nabla f)_{\mu} = (df)_{\mu}, \quad (\nabla \times A)_{\mu} = \star (dA)_{\mu}, \quad \nabla \cdot A = \star (d \star A) 
+(\nabla f)_{\mu} = (df)_{\mu}, \quad (\nabla \times A)_{\mu} = \star (dA)_{\mu}, \quad \nabla \cdot A = \star (d \star A)
 $$
 
 既然题目里出现了旋度，默认在三维下进行运算：
@@ -233,7 +233,7 @@ $$
 
 取 $\mathbf{\mu}$ 为 0-form，则
 $$
-d(d \mathbf{\mu}) = \epsilon_{ij} \partial_{i} \partial_{j} \mu = 0 
+d(d \mathbf{\mu}) = \epsilon_{ij} \partial_{i} \partial_{j} \mu = 0
 $$
 
 $$

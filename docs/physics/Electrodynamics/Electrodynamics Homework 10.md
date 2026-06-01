@@ -28,7 +28,7 @@ $$
 $$
 
 $$
- (1 - \frac{\epsilon_{0}}{\epsilon}) \vec{D} = \vec{P}
+(1 - \frac{\epsilon_{0}}{\epsilon}) \vec{D} = \vec{P}
 $$
 
 $$

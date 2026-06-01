@@ -116,7 +116,7 @@ $$
 
 居里定律  
 $$
-M = \frac{C}{T} H \quad 
+M = \frac{C}{T} H \quad
 $$
 自由能（亥姆霍兹自由能）$F = U - TS$，由 $\mathrm{d} F = - S \, \mathrm{d}T + \mu_{0} H \, \mathrm{d}M$ 和居里定律积分得
 $$

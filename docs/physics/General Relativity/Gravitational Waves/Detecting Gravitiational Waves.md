@@ -21,7 +21,7 @@
 接下来我们首先在 TT 规范下考虑干涉仪的响应。我们把干涉仪的双臂分别放在 $x$, $y$ 轴上。简单起见我们假设引力波沿着 $z$ 轴传播，极化（偏振）态为"+"。
 
 $$
-d s^{2} = - dt^{2} + (1+h_+(t-z)) dx^{2} + (1-h_+(t-z)) dy^{2} + dz^{2}
+d s^{2} = - dt^{2} + (1+h_{+}(t-z)) dx^{2} + (1-h_{+}(t-z)) dy^{2} + dz^{2}
 $$
 
 简化起见我们省略下标 "+"。我们把分光镜 (Beam Splitter) 和后端镜 (End Mirror) 看作自由悬浮的物体，那么引力波来后，它们应该走测地线。另外，由于上述度规与 $x$, $y$ 无关，那么 $u_{x}, u_{y}$ 应该是守恒量（回忆之前证明克尔时空 $u_{t}, u_{\phi}$ 是守恒量时用到了 $g_{\alpha\beta}$ 与 $t$ 或 $\phi$ 无关）。又由于上述度规是对角的
@@ -181,12 +181,12 @@ $$
 高斯分布和高斯随机过程在物理系统中十分常见。比如，处于热平衡的房间里某一快空间内的气体分子数 $N(t)$ 便是一个高斯过程。通常情况下，当我们观察一个宏观系统，其内部有很多自由度，往往对应的宏观测量量就是高斯的。在数学上，这和中心极限定理有关：
 >假设 $y$ 是一个随机变量，其概率分布是 $P(y)$，因此平均值和标准差分别是 
 >$$
->\bar{y} = \langle y \rangle = \int y P(y) dy，\quad (\sigma_{y})^{2} = \langle (y-\bar{y})^{2} \rangle = \langle y^{2} \rangle - \bar{y}^{2}
->$$
+\bar{y} = \langle y \rangle = \int y P(y) dy，\quad (\sigma_{y})^{2} = \langle (y-\bar{y})^{2} \rangle = \langle y^{2} \rangle - \bar{y}^{2}
+$$
 >那么如果有 $N$ 个类似的随机变量 $y_{1}, \cdots y_{n}$，它们的平均值（在 $N$ 很大时）$Y = \frac{1}{N} \sum_{i=1}^{N} y_{i}$ 将满足一个均值为 $\bar{y}$，标准差 $\sigma_{Y} = \frac{\sigma_{y}}{\sqrt{N}}$ 的高斯分布
 >$$
->P(Y) = \frac{1}{\sqrt{2\pi \sigma_{Y}^{2}}} e^{-(Y-\bar{y})^{2}/2\sigma_{Y}^{2}}
->$$
+P(Y) = \frac{1}{\sqrt{2\pi \sigma_{Y}^{2}}} e^{-(Y-\bar{y})^{2}/2\sigma_{Y}^{2}}
+$$
 
 我们可以看到不管之前单一随机变量 $y_{i}$ 的概率分布为如何，多个加在一起的综合效应总是高斯的。这就是为什么生活中有那么多高斯分布。
 
@@ -257,7 +257,7 @@ $$
 \int_{-T/2}^{T/2} y^{2}(t) dt = \int_{-\infty}^{\infty} y_{T}^{2}(t) dt = \int_{-\infty}^{\infty} |\tilde{y}_{T}(f)|^{2} df = 2 \int_{0}^{\infty} |\tilde{y}_{T}(f)|^{2} df
 $$
 
-其中最后一个等式用到了 $y_{T}(t)$ 是实数，所以 $\tilde{y}_{T}(f) = \tilde{y}^*(-f)$。从这个式子我们可以看出来
+其中最后一个等式用到了 $y_{T}(t)$ 是实数，所以 $\tilde{y}_{T}(f) = \tilde{y}^{*}(-f)$。从这个式子我们可以看出来
 
 $$
 \lim_{T\to\infty} \frac{1}{T} \int_{-T/2}^{T/2} y^{2}(t) dt = \lim_{T\to\infty} \frac{2}{T} \int_{0}^{\infty} |\tilde{y}_{T}(f)|^{2} df
@@ -297,7 +297,7 @@ $$
 显然 $S_{yy}(f) = S_{y}(f)$。而如果 $x(t)$ 和 $y(t)$ 是两个不同随机过程，一般来说 $S_{xy}(f)$ 是复数
 
 $$
-S_{xy}^*(f) = S_{xy}(-f) = S_{yx}(f)
+S_{xy}^{*}(f) = S_{xy}(-f) = S_{yx}(f)
 $$
 
 因此我们可以集中讨论正频率情况
@@ -333,7 +333,7 @@ $$
 $$
 类似的还有 
 $$
-2 \langle y(f) \tilde{y}^*(f') \rangle = S_{y}(f) \delta(f-f')
+2 \langle y(f) \tilde{y}^{*}(f') \rangle = S_{y}(f) \delta(f-f')
 $$
 直观上，我们来理解下谱密度 $S_{y}(f)$ 到底是啥意思。考虑一个随机过程 $y(t)$ 在时间 $0$ 到 $\Delta t$ 之间的演化。那么它的傅利叶变换可以包括从 $f=\infty$ 到 $f=1/\Delta t$ 之间的频率。我们考虑 $f \in (f, \infty)$ 附近的 $y$ 的平方差
 
@@ -409,14 +409,14 @@ $$
 
 $$
 \begin{gathered}
-\langle N^{2}(t) \rangle = \langle \int df_{1} e^{2\pi i f_{1} t} \int df_{2} e^{-2\pi i f_{2} t} \tilde{n}(f_{1}) \tilde{n}^*(f_{2}) k(f_{1}) k^*(f_{2}) \rangle \\ = \int_{0}^{\infty} \dd{f} S_{n} (f) |k(f)|^{2}
+\langle N^{2}(t) \rangle = \langle \int df_{1} e^{2\pi i f_{1} t} \int df_{2} e^{-2\pi i f_{2} t} \tilde{n}(f_{1}) \tilde{n}^{*}(f_{2}) k(f_{1}) k^{*}(f_{2}) \rangle \\ = \int_{0}^{\infty} \dd{f} S_{n} (f) |k(f)|^{2}
 \end{gathered}
 $$
 
 而我们的目的是选取合适的 $k(t)$ 使得 $S/\sqrt{\langle N^{2} \rangle}$ 最大化。使其最大化的滤波函数为
 
 $$
-\tilde{k}(f) = \text{Const.} \times \frac{\tilde{h}^*(f)}{S_{n}(f)} \leftarrow \text{Wiener 滤波函数}
+\tilde{k}(f) = \text{Const.} \times \frac{\tilde{h}^{*}(f)}{S_{n}(f)} \leftarrow \text{Wiener 滤波函数}
 $$
 
 而将其代入对应的 $S/\sqrt{\langle N^{2} \rangle}$，我们得到
@@ -438,7 +438,7 @@ $$
 我们先定义两个波型的内积
 
 $$
-(g, h) = 2 \int_{-\infty}^{\infty} \frac{\tilde{g}(f)\tilde{h}^*(f)}{S_{n}(f)} df \Rightarrow SNR^{2} = (h, h)
+(g, h) = 2 \int_{-\infty}^{\infty} \frac{\tilde{g}(f)\tilde{h}^{*}(f)}{S_{n}(f)} df \Rightarrow SNR^{2} = (h, h)
 $$
 
 对于每一个事件，都有一个真实的 $\lambda_{0}$。那我们怎么通过数据分析得到 $\lambda_{0}$ 的较好估计呢？

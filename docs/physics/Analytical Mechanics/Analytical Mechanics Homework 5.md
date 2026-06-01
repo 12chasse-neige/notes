@@ -17,7 +17,7 @@ $$
 $$
 可以求出
 $$
-\dot{\theta} = \frac{L}{m r_{0}^{2} \theta^{2}} 
+\dot{\theta} = \frac{L}{m r_{0}^{2} \theta^{2}}
 $$
 
 $$
@@ -54,7 +54,7 @@ $$
 
 作代换
 $$
-u = \frac{1}{r}  
+u = \frac{1}{r}
 $$
 此时
 $$

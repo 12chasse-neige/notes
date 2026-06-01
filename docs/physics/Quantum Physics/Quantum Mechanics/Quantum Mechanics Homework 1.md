@@ -170,16 +170,16 @@ $$
 设势能 $V = V_{\text{re}} + i V_{\text{im}}$，薛定谔方程及其共轭为
 
 $$
-i\hbar \frac{\partial \Psi}{\partial t} = \left( -\frac{\hbar^{2}}{2m} \nabla^{2} + V \right) \Psi, \quad -i\hbar \frac{\partial \Psi^*}{\partial t} = \left( -\frac{\hbar^{2}}{2m} \nabla^{2} + V^* \right) \Psi^*
+i\hbar \frac{\partial \Psi}{\partial t} = \left( -\frac{\hbar^{2}}{2m} \nabla^{2} + V \right) \Psi, \quad -i\hbar \frac{\partial \Psi^{*}}{\partial t} = \left( -\frac{\hbar^{2}}{2m} \nabla^{2} + V^{*} \right) \Psi^{*}
 $$
 
-概率密度 $\rho = \Psi^* \Psi$，计算时间导数
+概率密度 $\rho = \Psi^{*} \Psi$，计算时间导数
 
 $$
-\frac{\partial \rho}{\partial t} = \frac{1}{i\hbar} \left[ -\frac{\hbar^{2}}{2m} \nabla \cdot (\Psi^* \nabla \Psi - \Psi \nabla \Psi^*) + (V - V^*) \rho \right]
+\frac{\partial \rho}{\partial t} = \frac{1}{i\hbar} \left[ -\frac{\hbar^{2}}{2m} \nabla \cdot (\Psi^{*} \nabla \Psi - \Psi \nabla \Psi^{*}) + (V - V^{*}) \rho \right]
 $$
 
-由于 $V - V^* = 2i V_{\text{im}}$，所以概率流密度 $\mathbf{j} = \frac{\hbar}{2m i} (\Psi^* \nabla \Psi - \Psi \nabla \Psi^*)$，得
+由于 $V - V^{*} = 2i V_{\text{im}}$，所以概率流密度 $\mathbf{j} = \frac{\hbar}{2m i} (\Psi^{*} \nabla \Psi - \Psi \nabla \Psi^{*})$，得
 
 $$
 \frac{\partial \rho}{\partial t} + \nabla \cdot \mathbf{j} = \frac{2 V_{\text{im}}}{\hbar} \rho
@@ -265,7 +265,9 @@ $$
 
 再证明 $E_{n1} \leq E_{n2}$：利用 Sturm-Liouville型方程本征值的一般性质，即所谓的 Courant–Fischer 定理，第 $k$ 个本征值对应着
 $$
+\begin{gathered}
 \lambda_{k} = \min_{\substack{U \subset \mathbb{C}^{N} \\ \dim(U) = k}} \max_{\substack{x \in U \\ x \neq 0}} \frac{x^{\dagger} H x}{x^{\dagger} x}
+\end{gathered}
 $$
 所以对于原 Hilbert 空间的同一 $k$ 维子空间而言，假设 $1$ 对应的极大值的态是 $\psi$，那么带入 $H_{2}$ 中容易发现存在比它更大的，也就是同一子空间的 $2$ 的最大值大于 $1$. 由于这一规律对于所有子空间成立，所以 $E_{01} \leq E_{02}$ 得证。
 
@@ -273,62 +275,64 @@ $$
 >
 >设 $H$ 是一个 $N \times N$ 的 Hermitian 矩阵，其特征值按递增顺序排列为  
 >$$
->\lambda_{1} \le \lambda_{2} \le \dots \le \lambda_{N}
->$$
+\lambda_{1} \le \lambda_{2} \le \dots \le \lambda_{N}
+$$
 >那么对于 $k = 1, 2, \dots, N$，有
 >
 >$$
->\lambda_{k} = \min_{\substack{U \subset \mathbb{C}^{N} \\ \dim(U) = k}} \max_{\substack{x \in U \\ x \neq 0}} \frac{x^{\dagger} H x}{x^{\dagger} x}
->$$
+\begin{gathered}
+\lambda_{k} = \min_{\substack{U \subset \mathbb{C}^{N} \\ \dim(U) = k}} \max_{\substack{x \in U \\ x \neq 0}} \frac{x^{\dagger} H x}{x^{\dagger} x}
+\end{gathered}
+$$
 >
 >由谱定理，存在一组标准正交基 $\{u_{1}, u_{2}, \dots, u_{N}\}$，满足  
 >$$
->H u_{i} = \lambda_{i} u_{i}, \quad \lambda_{1} \le \lambda_{2} \le \dots \le \lambda_{N}
->$$
+H u_{i} = \lambda_{i} u_{i}, \quad \lambda_{1} \le \lambda_{2} \le \dots \le \lambda_{N}
+$$
 >
 >设 $S_{k-1} = \mathrm{span}\{u_{1}, \dots, u_{k-1}\}$，其维数为 $k-1$。 考虑线性映射 $P: U \to \mathbb{C}^{k-1}$ 定义为 $P(x) = (\langle u_{1}, x\rangle, \dots, \langle u_{k-1}, x\rangle)$。 $\dim(U) = k$，$\dim(\mathbb{C}^{k-1}) = k-1$，所以 $\ker P \subset U$ 的维数至少为 $1$。 因此存在非零向量 $y \in U$ 使得 $P(y) = 0$。
 >将 $y$ 按特征基展开
 >$$
->y = \sum_{j=1}^{N} c_{j} u_{j}, \quad c_{j} = \langle u_{j}, y\rangle
->$$
+y = \sum_{j=1}^{N} c_{j} u_{j}, \quad c_{j} = \langle u_{j}, y\rangle
+$$
 >$c_{1} = \dots = c_{k-1} = 0$，所以
 >$$
->y = \sum_{j=k}^{N} c_{j} u_{j}
->$$
+y = \sum_{j=k}^{N} c_{j} u_{j}
+$$
 >于是
 >$$
->\langle y | H | y \rangle = \sum_{j=k}^{N} \lambda_{j} |c_{j}|^{2}
->$$
+\langle y | H | y \rangle = \sum_{j=k}^{N} \lambda_{j} |c_{j}|^{2}
+$$
 >由于 $\lambda_{j} \ge \lambda_{k}$ 当 $j \ge k$，有
 >$$
->\langle y | H | y \rangle \ge \lambda_{k} \sum_{j=k}^{N} |c_{j}|^{2} = \lambda_{k} \|y\|^{2}
->$$
+\langle y | H | y \rangle \ge \lambda_{k} \sum_{j=k}^{N} |c_{j}|^{2} = \lambda_{k} \|y\|^{2}
+$$
 >因此
 >$$
->\frac{\langle y | H | y \rangle}{\|y\|^{2}} \ge \lambda_{k}
->$$
+\frac{\langle y | H | y \rangle}{\|y\|^{2}} \ge \lambda_{k}
+$$
 >所以对任意 $k$ 维子空间 $U$，存在非零 $y \in U$ 使得上式成立，从而
 >$$
->\max_{x \in U, x\neq 0} \frac{x^{\dagger} H x}{x^{\dagger} x} \ge \lambda_{k}
->$$
+\max_{x \in U, x\neq 0} \frac{x^{\dagger} H x}{x^{\dagger} x} \ge \lambda_{k}
+$$
 >于是
 >$$
->\min_{\dim(U)=k} \max_{x \in U} \frac{x^{\dagger} H x}{x^{\dagger} x} \ge \lambda_{k}
->$$
+\min_{\dim(U)=k} \max_{x \in U} \frac{x^{\dagger} H x}{x^{\dagger} x} \ge \lambda_{k}
+$$
 >
 >取 $U_{0} = \mathrm{span}\{u_{1}, \dots, u_{k}\}$，则对任意 $x \in U_{0}$，有
 >$$
->x = \sum_{j=1}^{k} a_{j} u_{j}
+x = \sum_{j=1}^{k} a_{j} u_{j}
+$$
 >$$
->$$
->\langle x | H | x \rangle = \sum_{j=1}^{k} \lambda_{j} |a_{j}|^{2} \le \lambda_{k} \sum_{j=1}^{k} |a_{j}|^{2} = \lambda_{k} \|x\|^{2}
->$$
+\langle x | H | x \rangle = \sum_{j=1}^{k} \lambda_{j} |a_{j}|^{2} \le \lambda_{k} \sum_{j=1}^{k} |a_{j}|^{2} = \lambda_{k} \|x\|^{2}
+$$
 >所以
 >$$
->\max_{x \in U_{0}} \frac{x^{\dagger} H x}{x^{\dagger} x} \le \lambda_{k}
->$$
+\max_{x \in U_{0}} \frac{x^{\dagger} H x}{x^{\dagger} x} \le \lambda_{k}
+$$
 >得到结论
 >$$
->\min_{\dim(U)=k} \max_{x \in U} \frac{x^{\dagger} H x}{x^{\dagger} x} = \lambda_{k}
->$$
+\min_{\dim(U)=k} \max_{x \in U} \frac{x^{\dagger} H x}{x^{\dagger} x} = \lambda_{k}
+$$
 >

@@ -106,7 +106,7 @@ G_{\mu \nu} (p) = \frac{- i \eta_{\mu \nu}}{p^{2} - i \epsilon}
 $$
 Or in some QFT textbooks, we can do this by calculating the inverse of the Lagrangian
 $$
-\mathcal{L} + \mathcal{L}_{GF} 
+\mathcal{L} + \mathcal{L}_{GF}
 $$
 Consider the current between two sources, the amplitude is 
 $$

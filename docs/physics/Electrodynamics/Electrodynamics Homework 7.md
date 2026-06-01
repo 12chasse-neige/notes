@@ -58,11 +58,11 @@ $$
 $$
 由于
 $$
-\nabla \cdot (\mathbf{E} \times \mathbf{H}^*) = \mathbf{H}^{*} \cdot (\nabla \times \mathbf{E}) - \mathbf{E} \cdot (\nabla \times \mathbf{H}^{*}) = i\omega (\mu_{0} |\mathbf{H}|^{2} - \varepsilon_{0} |\mathbf{E}|^{2})
+\nabla \cdot (\mathbf{E} \times \mathbf{H}^{*}) = \mathbf{H}^{*} \cdot (\nabla \times \mathbf{E}) - \mathbf{E} \cdot (\nabla \times \mathbf{H}^{*}) = i\omega (\mu_{0} |\mathbf{H}|^{2} - \varepsilon_{0} |\mathbf{E}|^{2})
 $$
 对两边进行体积积分，并应用散度定理：
 $$
-\int_{V} \nabla \cdot (\mathbf{E} \times \mathbf{H}^*) \, dV = \oint_{\partial V} (\mathbf{E} \times \mathbf{H}^*) \cdot d\mathbf{S}
+\int_{V} \nabla \cdot (\mathbf{E} \times \mathbf{H}^{*}) \, dV = \oint_{\partial V} (\mathbf{E} \times \mathbf{H}^{*}) \cdot d\mathbf{S}
 $$
 在谐振腔的金属边界上，电场的切向分量为零，磁场的法向分量为零，导致面积分为零。因此：
 

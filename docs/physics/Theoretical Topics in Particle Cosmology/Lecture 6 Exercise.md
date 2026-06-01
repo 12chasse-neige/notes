@@ -8,7 +8,7 @@ $$
 $$
 So the all-plus 4-pt amplitude requires a +++ type 3-pt amplitude, which is not allowed in the tree-level Yang-Mills theory.
 
-(2) Please study the $u$-channel factorization of the 4-gluon amplitude $M_{4}(1_{a}^+, 2_{b}^+, 3_{c}^-, 4_{d}^-)$ and provide detailed steps leading to (13).
+(2) Please study the $u$-channel factorization of the 4-gluon amplitude $M_{4}(1_{a}^{+}, 2_{b}^{+}, 3_{c}^{-}, 4_{d}^{-})$ and provide detailed steps leading to (13).
 
 $$
 \lim_{u\to 0} M_{4} = [12]^{2} \langle 34 \rangle^{2} \frac{\gamma}{us}, \quad \gamma \equiv \sum_{e} \kappa_{ace} \kappa_{dbe} \tag{13}

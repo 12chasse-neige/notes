@@ -13,15 +13,15 @@ $$
 利用熵和巨配分函数和之间的关系
 
 $$
- S = k (\ln \Xi + \alpha \bar{N} + \beta \bar{E}) 
+S = k (\ln \Xi + \alpha \bar{N} + \beta \bar{E})
 $$
 再利用巨正则系综中热力学量和巨配分函数的关系
 
 $$
-	\bar{N} = - \pdv[]{\ln \Xi}{\alpha} = \frac{1}{\Xi} \sum_{N} \sum_{s} N e^{- \alpha N - \beta E_{s}}
+\bar{N} = - \pdv[]{\ln \Xi}{\alpha} = \frac{1}{\Xi} \sum_{N} \sum_{s} N e^{- \alpha N - \beta E_{s}}
 $$
 $$
-	\bar{E} = - \pdv[]{\ln \Xi}{\beta} = \frac{1}{\Xi} \sum_{N} \sum_{s} E_{s} e^{- \alpha N - \beta E_{s}}
+\bar{E} = - \pdv[]{\ln \Xi}{\beta} = \frac{1}{\Xi} \sum_{N} \sum_{s} E_{s} e^{- \alpha N - \beta E_{s}}
 $$
 所以可以把熵用巨配分函数展开为
 
@@ -34,12 +34,12 @@ $$
 发现
 
 $$
-	\ln \rho_{Ns} = - \alpha N - \beta E_{s} - \ln \Xi
+\ln \rho_{Ns} = - \alpha N - \beta E_{s} - \ln \Xi
 $$
 所以上述形式等价于
 
 $$
-	S = k \left( \ln \Xi - \frac{1}{\Xi} \sum_{N} \sum_{s} (\alpha N + \beta E_{s}) e^{- \alpha N - \beta E_{s}} \right) = - k \sum_{N} \sum_{s} \rho_{Ns} \ln \rho_{Ns}
+S = k \left( \ln \Xi - \frac{1}{\Xi} \sum_{N} \sum_{s} (\alpha N + \beta E_{s}) e^{- \alpha N - \beta E_{s}} \right) = - k \sum_{N} \sum_{s} \rho_{Ns} \ln \rho_{Ns}
 $$
 9.16 设单原子分子理想气体与固体吸附面接触达到平衡，被吸附的分子可以在吸附面上作二维运动，其能量为 $\frac{p^{2}}{2m} - \varepsilon_{0}$，束缚能 $\varepsilon_{0}$ 是
 大于零的常量。试根据巨正则分布求吸附面上被吸附分子的面密度与气体温度和压强的关系。
@@ -47,7 +47,7 @@ $$
 首先写出该吸附系统的巨配分函数。设吸附面面积为 $A$，吸附分子数为 $N$ 时总能量为
 
 $$
-	E_{N} = \sum_{i=1}^{N} \left( \frac{p_{xi}^{2}+p_{yi}^{2}}{2m} - \varepsilon_{0} \right)
+E_{N} = \sum_{i=1}^{N} \left( \frac{p_{xi}^{2}+p_{yi}^{2}}{2m} - \varepsilon_{0} \right)
 $$
 
 所以经典极限下的巨配分函数为
@@ -69,13 +69,12 @@ $$
 $$
 \int \dd[2]{p}\, e^{-\beta p^{2}/2m}
 = \int_{0}^{2\pi} \dd{\theta} \int_{0}^{\infty} p e^{-\beta p^{2}/2m}\dd{p}
-= \frac{2\pi m}{\beta} 
+= \frac{2\pi m}{\beta}
 $$
 
 因此
 
 $$
-
 \Xi
 = \sum_{N=0}^{\infty} \frac{1}{N!}
 \left( e^{-\alpha+\beta \varepsilon_{0}} \frac{A}{h^{2}} \frac{2\pi m}{\beta} \right)^{N}
@@ -93,7 +92,7 @@ $$
 
 $$
 n_{s} = \frac{\bar{N}}{A}
-= e^{-\alpha+\beta \varepsilon_{0}} \frac{2\pi m}{\beta h^{2}} 
+= e^{-\alpha+\beta \varepsilon_{0}} \frac{2\pi m}{\beta h^{2}}
 $$
 
 平衡时吸附相和气相的化学势相同，即 $e^{-\alpha}=e^{\beta \mu}$。对三维单原子理想气体，经典极限下
@@ -101,7 +100,7 @@ $$
 $$
 p = \frac{kT}{\lambda^{3}} e^{\beta \mu},
 \qquad
-\lambda = \frac{h}{\sqrt{2\pi m kT}} 
+\lambda = \frac{h}{\sqrt{2\pi m kT}}
 $$
 
 因此

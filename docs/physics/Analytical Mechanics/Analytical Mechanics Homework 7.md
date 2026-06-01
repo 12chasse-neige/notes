@@ -42,7 +42,7 @@ $$
 $$
 所以1阶方程为
 $$
-\theta''_{1} + \theta_{1} = 2 A \frac{\omega_{1}}{\omega_{0}} \cos \tau 
+\theta''_{1} + \theta_{1} = 2 A \frac{\omega_{1}}{\omega_{0}} \cos \tau
 $$
 采用拉普拉斯变换，舍弃初值相关项
 $$

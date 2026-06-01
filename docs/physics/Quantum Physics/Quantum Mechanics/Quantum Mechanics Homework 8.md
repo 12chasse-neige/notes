@@ -23,7 +23,7 @@ $$
 
 这里如果 $\vec{a},\vec{b}$ 的分量是算符，乘积的次序理解为 $a_{i}b_{j}$，并且这些算符与 Pauli 矩阵对易。
 
-8.1.2 记 $\sigma_{\pm} = \frac{1}{2}(\sigma_{x} \pm \mathrm{i}\sigma_{y})$，求证：$\sigma_+\alpha = 0$，$\sigma_+\beta = \alpha$，$\sigma_-\alpha = \beta$，$\sigma_-\beta = 0$ 以及 $\sigma_+^{2} = \sigma_-^{2} = 0$，所以 $\sigma_+$ 是 $S_{z}$ 的升级算符，$\sigma_-$ 是 $S_{z}$ 的降级算符。
+8.1.2 记 $\sigma_{\pm} = \frac{1}{2}(\sigma_{x} \pm \mathrm{i}\sigma_{y})$，求证：$\sigma_{+}\alpha = 0$，$\sigma_{+}\beta = \alpha$，$\sigma_{-}\alpha = \beta$，$\sigma_{-}\beta = 0$ 以及 $\sigma_{+}^{2} = \sigma_{-}^{2} = 0$，所以 $\sigma_{+}$ 是 $S_{z}$ 的升级算符，$\sigma_{-}$ 是 $S_{z}$ 的降级算符。
 
 取
 
@@ -68,7 +68,7 @@ $$
 
 由于 $S_{z}=\frac{\hbar}{2}\sigma_{z}$，$\alpha$ 和 $\beta$ 的 $S_{z}$ 本征值分别为 $\frac{\hbar}{2}$ 和 $-\frac{\hbar}{2}$，所以 $\sigma_{+}$ 把 $\beta$ 升为 $\alpha$，而 $\sigma_{-}$ 把 $\alpha$ 降为 $\beta$。
 
-8.1.3 记 $P_{\pm} = \frac{1}{2}(1 \pm \sigma_{z})$，求证：$P_+\alpha = \alpha$，$P_+\beta = 0$，$P_-\alpha = 0$，$P_-\beta = \beta$ 以及 $P_+^{2} = P_+$，$P_-^{2} = P_-$，$P_+P_- = P_-P_+ = 0$，$P_+ + P_- = I$。所以 $P_+$，$P_-$ 分别称为态 $\alpha$，$\beta$ 的投影算符。
+8.1.3 记 $P_{\pm} = \frac{1}{2}(1 \pm \sigma_{z})$，求证：$P_{+}\alpha = \alpha$，$P_{+}\beta = 0$，$P_{-}\alpha = 0$，$P_{-}\beta = \beta$ 以及 $P_{+}^{2} = P_{+}$，$P_{-}^{2} = P_{-}$，$P_{+}P_{-} = P_{-}P_{+} = 0$，$P_{+} + P_{-} = I$。所以 $P_{+}$，$P_{-}$ 分别称为态 $\alpha$，$\beta$ 的投影算符。
 
 由 $\sigma_{z}$ 的矩阵形式得到
 
@@ -147,9 +147,9 @@ $$
 
 等号成立，因此态 $\alpha$ 是 $S_{x}$ 和 $S_{y}$ 的最小测不准态。
 
-8.2.1 令 $\hat{P}^+ = \dfrac{1}{2l+1}\left[l + 1 + \dfrac{1}{\hbar}(\vec{\sigma} \cdot \hat{\vec{L}})\right]$，$\hat{P}^- = \dfrac{1}{2l+1}\left[l - \dfrac{1}{\hbar}(\vec{\sigma} \cdot \hat{\vec{L}})\right]$。求证：
+8.2.1 令 $\hat{P}^{+} = \dfrac{1}{2l+1}\left[l + 1 + \dfrac{1}{\hbar}(\vec{\sigma} \cdot \hat{\vec{L}})\right]$，$\hat{P}^{-} = \dfrac{1}{2l+1}\left[l - \dfrac{1}{\hbar}(\vec{\sigma} \cdot \hat{\vec{L}})\right]$。求证：
 
-(a) $(\hat{P}^+)^{2} = \hat{P}^+$，$(\hat{P}^-)^{2} = \hat{P}^-$，$\hat{P}^+\hat{P}^- = \hat{P}^-\hat{P}^+ = 0$，$\hat{P}^+ + \hat{P}^- = I$
+(a) $(\hat{P}^{+})^{2} = \hat{P}^{+}$，$(\hat{P}^{-})^{2} = \hat{P}^{-}$，$\hat{P}^{+}\hat{P}^{-} = \hat{P}^{-}\hat{P}^{+} = 0$，$\hat{P}^{+} + \hat{P}^{-} = I$
 
 令
 
@@ -222,7 +222,7 @@ $$
 =\frac{\hat{A}+l+1+l-\hat{A}}{2l+1}=I
 $$
 
-(b) $\hat{P}^+\phi_{ljm_{j}} = \phi_{ljm_{j}}$（for $j = l + \dfrac{1}{2}$），$\hat{P}^-\phi_{ljm_{j}} = \phi_{ljm_{j}}$（for $j = l - \dfrac{1}{2}$）。因此 $\hat{P}^+$ 和 $\hat{P}^-$ 分别称为 $\phi_{ljm_{j}}$（$j = l + (1/2)$）和 $\phi_{ljm_{j}}$（$j = l - (1/2)$）的投影算符。
+(b) $\hat{P}^{+}\phi_{ljm_{j}} = \phi_{ljm_{j}}$（for $j = l + \dfrac{1}{2}$），$\hat{P}^{-}\phi_{ljm_{j}} = \phi_{ljm_{j}}$（for $j = l - \dfrac{1}{2}$）。因此 $\hat{P}^{+}$ 和 $\hat{P}^{-}$ 分别称为 $\phi_{ljm_{j}}$（$j = l + (1/2)$）和 $\phi_{ljm_{j}}$（$j = l - (1/2)$）的投影算符。
 
 因为 $\hat{\vec{J}}=\hat{\vec{L}}+\hat{\vec{S}}$，且 $\hat{\vec{S}}=\frac{\hbar}{2}\vec{\sigma}$，所以
 
@@ -278,7 +278,7 @@ $$
 
 8.2.2 请推导（不是代入课文中的公式）$l = 1$，$j = \frac{1}{2}$，$m_{j} = +\frac{1}{2}$ 时 $\phi_{ljm_{j}}$ 的表达式。
 
->  提示：它是 $\hat{\vec{L}} \cdot \hat{\vec{S}}$ 的本征态；可以利用 $\hat{L}_+Y_{10}(\theta, \varphi) = \sqrt{2}\hbar Y_{11}(\theta, \varphi)$，$\hat{L}_-Y_{11}(\theta, \varphi) = \sqrt{2}\hbar Y_{10}(\theta, \varphi)$
+>  提示：它是 $\hat{\vec{L}} \cdot \hat{\vec{S}}$ 的本征态；可以利用 $\hat{L}_{+}Y_{10}(\theta, \varphi) = \sqrt{2}\hbar Y_{11}(\theta, \varphi)$，$\hat{L}_{-}Y_{11}(\theta, \varphi) = \sqrt{2}\hbar Y_{10}(\theta, \varphi)$
 
 当 $m_{j}=\frac{1}{2}$ 时，只能由两个态线性组合得到
 

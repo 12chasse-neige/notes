@@ -414,9 +414,9 @@ This is the Einstein-Hilbert action expanded around flat spacetime to second ord
 
 ## Problem 4 
 
-Please follow the steps on the class and the materials about GWs I sent to you to show that the $h_+$ and $h_{\times}$ produced by a nonrelativistic binary system can be written as
+Please follow the steps on the class and the materials about GWs I sent to you to show that the $h_{+}$ and $h_{\times}$ produced by a nonrelativistic binary system can be written as
 $$
-h_+(t) = \frac{4(GM_{c})^{5/3}}{r} \left(\frac{\omega_{GW}}{2}\right)^{2/3} \frac{1+\cos^{2}\theta}{2} \cos(\omega_{GW} t_{\text{ret}} + 2 \varphi)
+h_{+}(t) = \frac{4(GM_{c})^{5/3}}{r} \left(\frac{\omega_{GW}}{2}\right)^{2/3} \frac{1+\cos^{2}\theta}{2} \cos(\omega_{GW} t_{\text{ret}} + 2 \varphi)
 $$
 
 $$
@@ -427,8 +427,8 @@ where $t_{\text{ret}} = t - r$ and $M_{c}$ is the chirp mass.
 
 >  The chirp mass is defined as
 >  $$
->  M_{c} = (\mu^{3} m^{2})^{1/5}
->  $$
+M_{c} = (\mu^{3} m^{2})^{1/5}
+$$
 
 For a weak and slow source, the quadrupole formula is
 $$
@@ -492,7 +492,7 @@ $$
 
 With the polarization convention
 $$
-e^{+}_{ij} = e^{\theta}_{i}e^{\theta}_{j} - e^{\varphi}_{i}e^{\varphi}_{j} 
+e^{+}_{ij} = e^{\theta}_{i}e^{\theta}_{j} - e^{\varphi}_{i}e^{\varphi}_{j}
 $$
 
 $$
@@ -565,7 +565,7 @@ $$
 
 Substituting this into the two polarizations, we finally obtain
 $$
-h_+(t) = \frac{4(GM_{c})^{5/3}}{r} \left(\frac{\omega_{GW}}{2}\right)^{2/3} \frac{1+\cos^{2}\theta}{2} \cos(\omega_{GW} t_{\text{ret}} + 2\varphi)
+h_{+}(t) = \frac{4(GM_{c})^{5/3}}{r} \left(\frac{\omega_{GW}}{2}\right)^{2/3} \frac{1+\cos^{2}\theta}{2} \cos(\omega_{GW} t_{\text{ret}} + 2\varphi)
 $$
 
 $$

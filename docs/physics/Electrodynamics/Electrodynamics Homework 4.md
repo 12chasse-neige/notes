@@ -171,7 +171,7 @@ f_{k} =  e(ic F_{k4} + v_{i} F_{ki})
 $$
 所以对于 $K_{\mu}$ 的前三个分量而言，可以看到
 $$
-\gamma f_{k} = e (F_{ki} \gamma v_{i} + F_{k4} i \gamma c) 
+\gamma f_{k} = e (F_{ki} \gamma v_{i} + F_{k4} i \gamma c)
 $$
 
 $$

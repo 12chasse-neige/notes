@@ -124,13 +124,13 @@ $$
 > 提示：根据流体静力学可导出气压随高度变化率
 >
 >$$
->\frac{dp(z)}{dz} = -\rho(z) g
->$$
+\frac{dp(z)}{dz} = -\rho(z) g
+$$
 >再利用理想气体的绝热方程求出
 > 
 >$$
->\left( \frac{\partial T}{\partial p} \right)_{s} = \frac{\gamma - 1}{\gamma} \frac{T(z)}{p(z)}
->$$
+\left( \frac{\partial T}{\partial p} \right)_{s} = \frac{\gamma - 1}{\gamma} \frac{T(z)}{p(z)}
+$$
 >
 >从而可以求出 $\frac{dT}{dz}$。
 

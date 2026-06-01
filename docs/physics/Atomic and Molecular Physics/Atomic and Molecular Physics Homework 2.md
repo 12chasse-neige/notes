@@ -200,7 +200,7 @@ So the total transition rate is proportional to $\frac{1}{2}$.
 
 For the $5P_{3/2} |F=3, m_{F}=3\rangle$ state, the spontaneous-emission transition rate is proportional to
 $$
-\frac{1}{2} \quad (\sigma^{-} \text{transitions}) 
+\frac{1}{2} \quad (\sigma^{-} \text{transitions})
 $$
 So the total transition rate is proportional to $\frac{1}{2}$.
 
@@ -247,43 +247,43 @@ under high magnetic field. So we can design sequence of transitions to all state
 1.From initial $|m_{J} = -1/2, m_{I} = -1/2\rangle$ to $|m_{J} = 1/2, m_{I} = -1/2\rangle$
 
 - Type: Electron spin flip ($\Delta m_{J} = +1$, $\Delta m_{I} = 0$)  
-- Polarization: $\sigma^+$  
+- Polarization: $\sigma^{+}$  
 - This transition directly populates $|m_{J} = 1/2, m_{I} = -1/2\rangle$.
 
 2.From initial $|m_{J} = -1/2, m_{I} = -1/2\rangle$ to $|m_{J} = -1/2, m_{I} = -3/2\rangle$
 
 - Type: Nuclear spin flip ($\Delta m_{I} = -1$, $\Delta m_{J} = 0$)  
-- Polarization: $\sigma^-$  
+- Polarization: $\sigma^{-}$  
 - This transition directly populates $|m_{J} = -1/2, m_{I} = -3/2\rangle$.
 
 3.From initial $|m_{J} = -1/2, m_{I} = -1/2\rangle$ to $|m_{J} = -1/2, m_{I} = 1/2\rangle$
 
 - Type: Nuclear spin flip ($\Delta m_{I} = +1$, $\Delta m_{J} = 0$)  
-- Polarization: $\sigma^+$  
+- Polarization: $\sigma^{+}$  
 - This transition directly populates $|m_{J} = -1/2, m_{I} = 1/2\rangle$. 
 
 4.From $|m_{J} = -1/2, m_{I} = 1/2\rangle$ to $|m_{J} = -1/2, m_{I} = 3/2\rangle$
 
 - Type: Nuclear spin flip ($\Delta m_{I} = +1$, $\Delta m_{J} = 0$)  
-- Polarization: $\sigma^+$  
+- Polarization: $\sigma^{+}$  
 - This transition populates $|m_{J} = -1/2, m_{I} = 3/2\rangle$ from the state reached in step 3.
 
 5.From $|m_{J} = 1/2, m_{I} = -1/2\rangle$ to $|m_{J} = 1/2, m_{I} = -3/2\rangle$
 
 - Type: Nuclear spin flip ($\Delta m_{I} = -1$, $\Delta m_{J} = 0$)  
-- Polarization: $\sigma^-$  
+- Polarization: $\sigma^{-}$  
 - This transition populates $|m_{J} = 1/2, m_{I} = -3/2\rangle$ from the state reached in step 1.
 
 6.From $|m_{J} = 1/2, m_{I} = -1/2\rangle$ to $|m_{J} = 1/2, m_{I} = 1/2\rangle$
 
 - Type: Nuclear spin flip ($\Delta m_{I} = +1$, $\Delta m_{J} = 0$)  
-- Polarization: $\sigma^+$  
+- Polarization: $\sigma^{+}$  
 - This transition populates $|m_{J} = 1/2, m_{I} = 1/2\rangle$ from the state reached in step 1.
 
 7.From $|m_{J} = 1/2, m_{I} = 1/2\rangle$ to $|m_{J} = 1/2, m_{I} = 3/2\rangle$
 
 - Type: Nuclear spin flip ($\Delta m_{I} = +1$, $\Delta m_{J} = 0$)  
-- Polarization: $\sigma^+$  
+- Polarization: $\sigma^{+}$  
 - This transition populates $|m_{J} = 1/2, m_{I} = 3/2\rangle$ from the state reached in step 6.
 
 **c)** Discuss in detail the electric-dipole transition rules from the $5S_{1/2}$ to $5P_{3/2}$ states at low and high magnetic fields.
