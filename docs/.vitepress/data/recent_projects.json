@@ -1,17 +1,37 @@
 [
   {
-    "title": "Quantum Mechanics Homework 10: Landau Levels",
-    "desc": "Analysis of Landau levels using different gauges and operator algebra.",
+    "title": "Electrodynamics Week 15 Homework",
+    "desc": "Relativistic charged particle radiation field derived from Liénard-Wiechert potentials.",
     "tags": [
-      "Landau levels",
-      "quantum mechanics",
-      "harmonic oscillator"
+      "Liénard-Wiechert",
+      "radiation field",
+      "relativistic electrodynamics"
     ],
-    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 10"
+    "link": "/physics/Electrodynamics/Electrodynamics Homework 13"
   },
   {
-    "title": "Statistical Mechanics Homework: Grand Canonical Ensemble",
-    "desc": "Derives entropy formula and surface density of adsorbed ideal gas.",
+    "title": "Feynman Physics (2) Homework 1: Exterior Algebra",
+    "desc": "High-dimensional vector analysis using wedge product and Hodge duality with Einstein summation.",
+    "tags": [
+      "exterior algebra",
+      "Hodge dual",
+      "Levi-Civita symbol"
+    ],
+    "link": "/physics/Feynman Lectures on Physics/Feynman Lectures on Physics (2) Homework 1"
+  },
+  {
+    "title": "浅水波与电磁理论的等价性",
+    "desc": "证明浅水波方程可写为连续性方程，与Chern-Simons电磁理论等价。",
+    "tags": [
+      "浅水波",
+      "Chern-Simons",
+      "连续性方程"
+    ],
+    "link": "/physics/Feynman Lectures on Physics/Feynman Lectures on Physics (2) Homework 7"
+  },
+  {
+    "title": "Statistical Mechanics Homework 12: Entropy and Adsorption",
+    "desc": "Derives entropy in grand canonical ensemble and finds adsorption density relation.",
     "tags": [
       "grand canonical ensemble",
       "entropy",
@@ -20,18 +40,68 @@
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 12"
   },
   {
-    "title": "C++ Programming Basics: Keywords Overview",
-    "desc": "A comprehensive list of C++ keywords organized by category for beginners.",
+    "title": "Mercury Precession and 1-loop Amplitudes",
+    "desc": "Analyzing next-to-leading order effects and on-shell data for precession rate.",
+    "tags": [
+      "Mercury precession",
+      "1-loop amplitudes",
+      "Landau analysis"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 10"
+  },
+  {
+    "title": "Deriving Commutators in QFT",
+    "desc": "Derive commutator for scalar field and fix parameters in spin-1 and spin-2 Lagrangians.",
+    "tags": [
+      "quantum field theory",
+      "commutator",
+      "Lorentz invariance"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 7 Exercise"
+  },
+  {
+    "title": "Classical Gravitational Effects on Light",
+    "desc": "Light bending and Shapiro delay from classical gravity, with scattering amplitude insights.",
+    "tags": [
+      "light bending",
+      "Shapiro delay",
+      "classical limit"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 9 Exercise"
+  },
+  {
+    "title": "Classical Limit and Light Bending",
+    "desc": "Analyzes phase shifts and classical limit in light bending via graviton exchange.",
+    "tags": [
+      "phase shift",
+      "classical limit",
+      "light bending"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 9"
+  },
+  {
+    "title": "Landau Levels in Quantum Mechanics",
+    "desc": "Derivation of Landau levels using two different gauges and operator algebra.",
+    "tags": [
+      "Landau levels",
+      "quantum mechanics",
+      "gauge invariance"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 10"
+  },
+  {
+    "title": "C++ Programming Basics Keywords",
+    "desc": "Overview of C++ keywords for data types, control flow, and OOP.",
     "tags": [
       "C++",
       "keywords",
-      "programming basics"
+      "programming"
     ],
     "link": "/coding/C++/C++_Note"
   },
   {
     "title": "Python Escape Characters Guide",
-    "desc": "Learn common escape sequences like \\n, \\t, and raw strings in Python.",
+    "desc": "Common escape characters in Python with examples and usage scenarios.",
     "tags": [
       "Python",
       "Escape Characters",
@@ -40,12 +110,12 @@
     "link": "/coding/Python/Python_Note"
   },
   {
-    "title": "Advanced Calculus: Taylor's Theorem Review",
+    "title": "Advanced Calculus Final Review: Taylor's Theorem",
     "desc": "Covers Taylor's theorem with Peano, Lagrange, and Cauchy remainder forms.",
     "tags": [
-      "Taylor's theorem",
-      "remainder forms",
-      "advanced calculus"
+      "Taylor's Theorem",
+      "Remainder Forms",
+      "Advanced Calculus"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (1) Final Review"
   },
@@ -55,13 +125,13 @@
     "tags": [
       "series convergence",
       "ratio test",
-      "root test"
+      "comparison test"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 1"
   },
   {
     "title": "Advanced Calculus 2 Homework 10",
-    "desc": "Surface and line integrals computed with parameterization and Green's theorem.",
+    "desc": "Surface and line integrals computation with parameterization and Green's theorem.",
     "tags": [
       "surface integral",
       "line integral",
@@ -71,7 +141,7 @@
   },
   {
     "title": "高等微积分作业：幂级数与函数展开",
-    "desc": "分析幂级数收敛域、求和公式及函数展开，证明关键等式。",
+    "desc": "分析幂级数收敛域、求和公式及函数项级数性质。",
     "tags": [
       "幂级数",
       "收敛域",
@@ -81,7 +151,7 @@
   },
   {
     "title": "Advanced Calculus 2 Homework 3",
-    "desc": "Metric on continuous functions, Cauchy completeness, Cauchy-Schwarz inequality, open sets.",
+    "desc": "Metric space, Cauchy sequence convergence, Cauchy-Schwarz inequality, open set representation.",
     "tags": [
       "metric space",
       "Cauchy sequence",
@@ -90,18 +160,18 @@
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 3"
   },
   {
-    "title": "Advanced Calculus Homework 4 Analysis",
-    "desc": "Proofs of minimum on R^2 and extreme values on unit circle.",
+    "title": "Advanced Calculus 2 Homework 4",
+    "desc": "Proves existence of minima and maxima for continuous functions on closed sets.",
     "tags": [
       "continuous function",
-      "compactness",
+      "closed set",
       "extreme value theorem"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 4"
   },
   {
-    "title": "Advanced Calculus 2 Homework 5",
-    "desc": "Partial derivatives computation for various composite functions.",
+    "title": "Advanced Calculus Homework 5 Solutions",
+    "desc": "Partial derivatives computation for multivariable functions with chain rule.",
     "tags": [
       "partial derivatives",
       "chain rule",
@@ -120,68 +190,68 @@
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 6"
   },
   {
-    "title": "Advanced Calculus 2 Homework 7 Analysis",
-    "desc": "Critical points and extrema of functions in 2D and 3D.",
+    "title": "高等微积分作业：临界点与极值分析",
+    "desc": "求解二元函数临界点并判断极值，证明三元函数在闭球上有最大值。",
     "tags": [
       "critical points",
-      "Hessian matrix",
-      "extrema"
+      "extrema",
+      "multivariable calculus"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 7"
   },
   {
-    "title": "高等微积分作业：换元法求面积与积分",
-    "desc": "通过变量变换计算区域面积和多重积分，展示换元公式应用。",
+    "title": "高等微积分作业：换元法计算面积与积分",
+    "desc": "使用变量替换计算平面区域面积和三重积分，涉及雅可比行列式。",
     "tags": [
-      "多重积分",
-      "变量变换",
-      "雅可比行列式"
+      "变量替换",
+      "雅可比行列式",
+      "多重积分"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 8"
   },
   {
-    "title": "Advanced Calculus 2 Homework 9",
-    "desc": "Surface area of ellipsoid and sphere, centroid of hemisphere.",
+    "title": "Advanced Calculus 2 Homework 9: Surface Area and Center of Mass",
+    "desc": "Compute ellipsoid surface area via double integral and find centroid of hemisphere.",
     "tags": [
       "surface area",
-      "ellipsoid",
-      "centroid"
+      "double integral",
+      "center of mass"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 9"
   },
   {
-    "title": "复变函数作业：模恒等式与倍角公式",
-    "desc": "证明模为1的恒等式，推导cos(nθ)和sin(nθ)表达式。",
+    "title": "Complex Function Homework 1",
+    "desc": "Proof of modulus equality and trigonometric multiple-angle formulas.",
     "tags": [
-      "复变函数",
-      "三角函数",
-      "恒等式"
+      "complex analysis",
+      "trigonometric identities",
+      "de Moivre's theorem"
     ],
     "link": "/maths/Complex Analysis/Complex Analysis Homework 1"
   },
   {
-    "title": "Complex Analysis Homework 10: Residue Theorem",
-    "desc": "Compute integrals using residue theorem with contour integration techniques.",
+    "title": "复变函数第10次作业：留数定理应用",
+    "desc": "利用留数定理计算四个积分，涉及三角函数和有理函数。",
     "tags": [
-      "residue theorem",
-      "contour integration",
-      "complex analysis"
+      "留数定理",
+      "围道积分",
+      "复变函数"
     ],
     "link": "/maths/Complex Analysis/Complex Analysis Homework 10"
   },
   {
     "title": "复变函数第11次作业：留数定理应用",
-    "desc": "利用留数定理计算三个含参数积分，涉及支点与割线选取。",
+    "desc": "利用留数定理计算三个含参数积分，涉及支点与围道积分。",
     "tags": [
       "留数定理",
-      "复变积分",
-      "支点割线"
+      "围道积分",
+      "复变函数"
     ],
     "link": "/maths/Complex Analysis/Complex Analysis Homework 11"
   },
   {
     "title": "复变函数作业：初等与多值函数",
-    "desc": "证明三角恒等式、双曲函数恒等式及模不等式。",
+    "desc": "证明三角与双曲函数恒等式及模不等式，含指数推导。",
     "tags": [
       "复变函数",
       "初等函数",
@@ -191,7 +261,7 @@
   },
   {
     "title": "复变函数作业：多值函数与支点分析",
-    "desc": "分析多值函数的支点，并计算沿不同路径的函数值。",
+    "desc": "分析多值函数支点，计算沿不同路径的函数值。",
     "tags": [
       "多值函数",
       "支点",
@@ -201,7 +271,7 @@
   },
   {
     "title": "复变函数第4次作业解析",
-    "desc": "计算复积分，确定单值条件，证明Poisson公式。",
+    "desc": "计算围道积分并确定参数使函数单值，证明Poisson公式。",
     "tags": [
       "复变函数",
       "围道积分",
@@ -210,93 +280,23 @@
     "link": "/maths/Complex Analysis/Complex Analysis Homework 4"
   },
   {
-    "title": "复变函数第5次作业分析",
-    "desc": "判断级数收敛性与绝对收敛性，提供反例与证明。",
+    "title": "Complex Analysis Homework 5 Analysis",
+    "desc": "Counterexamples for series convergence and absolute convergence tests.",
     "tags": [
-      "级数收敛",
-      "复变函数",
-      "反例"
+      "series",
+      "convergence",
+      "counterexample"
     ],
     "link": "/maths/Complex Analysis/Complex Analysis Homework 5"
   },
   {
     "title": "复变函数第6次作业分析",
-    "desc": "级数收敛半径、和函数不连续性与求和计算。",
+    "desc": "级数收敛半径与和函数连续性分析，包含幂级数与三角级数求和。",
     "tags": [
       "复变函数",
       "级数收敛",
       "和函数"
     ],
     "link": "/maths/Complex Analysis/Complex Analysis Homework 6"
-  },
-  {
-    "title": "Complex Analysis Homework 7: Taylor Series",
-    "desc": "Expanding sec(z), logarithmic, and square root functions in Taylor series with convergence radii.",
-    "tags": [
-      "Taylor series",
-      "complex analysis",
-      "convergence radius"
-    ],
-    "link": "/maths/Complex Analysis/Complex Analysis Homework 7"
-  },
-  {
-    "title": "Complex Function Homework 8: Laurent Expansions",
-    "desc": "Laurent expansions of rational and logarithmic functions in different regions.",
-    "tags": [
-      "Laurent series",
-      "complex analysis",
-      "singularities"
-    ],
-    "link": "/maths/Complex Analysis/Complex Analysis Homework 8"
-  },
-  {
-    "title": "复变函数作业：解析延拓与奇点分析",
-    "desc": "证明两个级数互为解析延拓，并分析另一个级数的奇点与解析延拓性。",
-    "tags": [
-      "解析延拓",
-      "级数收敛",
-      "奇点"
-    ],
-    "link": "/maths/Complex Analysis/Complex Analysis Homework 9"
-  },
-  {
-    "title": "Spring Vibration Problem Analysis",
-    "desc": "Derives wave equation and boundary conditions for a hanging spring with mass.",
-    "tags": [
-      "wave equation",
-      "boundary conditions",
-      "spring vibration"
-    ],
-    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 1"
-  },
-  {
-    "title": "Spherical Harmonic Expansion & PDE Solution",
-    "desc": "Expands functions in spherical harmonics and solves Laplace equation with source.",
-    "tags": [
-      "spherical harmonics",
-      "Laplace equation",
-      "boundary value problem"
-    ],
-    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 10"
-  },
-  {
-    "title": "Math Physics Homework 11: Integral Evaluation",
-    "desc": "Compute integral using substitution and Bessel function J2(a).",
-    "tags": [
-      "Bessel function",
-      "integration",
-      "substitution"
-    ],
-    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 11"
-  },
-  {
-    "title": "Mathematical Physics Equations Homework 12",
-    "desc": "Critical radius of cylindrical and spherical uranium blocks solved.",
-    "tags": [
-      "neutron diffusion",
-      "Bessel functions",
-      "critical radius"
-    ],
-    "link": "/maths/Mathematical Physics Equations/Mathematical Physics Equations Homework 12"
   }
 ]
