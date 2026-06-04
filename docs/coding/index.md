@@ -1,7 +1,9 @@
 ---
+
 title: Coding Notes
 layout: doc
 comments: false
+
 ---
 
 <script setup>

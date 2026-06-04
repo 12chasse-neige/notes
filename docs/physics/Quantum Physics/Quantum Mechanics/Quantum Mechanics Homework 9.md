@@ -50,13 +50,16 @@ P_{1}=|\langle 1,1|\Phi\rangle|^{2}+|\langle 1,0|\Phi\rangle|^{2}+|\langle 1,-1|
 \end{gathered}
 $$
 
-也可以直接用 $P_{1}=1-P_{0}$ 得到同样的结果。 
+也可以直接用 $P_{1}=1-P_{0}$ 得到同样的结果。
 
 8.4.2 有 3 个电子的自旋合成为 1 个总自旋，即 $\hat{\vec{S}}=\hat{\vec{S}}_{1}+\hat{\vec{S}}_{2}+\hat{\vec{S}}_{3}$。可以先合成出 $\hat{\vec{S}}_{12}=\hat{\vec{S}}_{1}+\hat{\vec{S}}_{2}$，再合成出 $\hat{\vec{S}}=\hat{\vec{S}}_{12}+\hat{\vec{S}}_{3}$，因此有 3 种可能的情形：$S_{12}=0,S=\frac{1}{2}$；$S_{12}=1,S=\frac{3}{2}$；$S_{12}=1,S=\frac{1}{2}$。态 $\ket{S,m_{S}}$ 总是 $\ket{\pm_{1},\pm_{2},\pm_{3}}$ 的线性组合，请把它们写出来。
 
->  提示：$S_{12}=0,S=\frac{1}{2}$ 和 $S_{12}=1,S=\frac{3}{2}$ 是不难写的，$S_{12}=1,S=\frac{1}{2}$ 和它们正交。
->
->  **说明** 读者会问：我们知道 $\alpha=\begin{pmatrix}1\\0\end{pmatrix},\beta=\begin{pmatrix}0\\1\end{pmatrix}$，那么 $\alpha_{1}\beta_{2}=$？答案是 $\alpha_{1}\beta_{2}=\begin{pmatrix}1\begin{pmatrix}0\\1\end{pmatrix}\\0\begin{pmatrix}0\\1\end{pmatrix}\end{pmatrix}=\begin{pmatrix}0\\1\\0\\0\end{pmatrix}$，类似可得其它 $\pm_{1}\pm_{2}$ 态的列矩阵表示。这叫做矩阵的直乘。但实际上很少用这种形式来进行表达和计算。
+#### Reference material
+
+提示：$S_{12}=0,S=\frac{1}{2}$ 和 $S_{12}=1,S=\frac{3}{2}$ 是不难写的，$S_{12}=1,S=\frac{1}{2}$ 和它们正交。
+**说明** 读者会问：我们知道 $\alpha=\begin{pmatrix}1\\0\end{pmatrix},\beta=\begin{pmatrix}0\\1\end{pmatrix}$，那么 $\alpha_{1}\beta_{2}=$？答案是 $\alpha_{1}\beta_{2}=\begin{pmatrix}1\begin{pmatrix}0\\1\end{pmatrix}\\0\begin{pmatrix}0\\1\end{pmatrix}\end{pmatrix}=\begin{pmatrix}0\\1\\0\\0\end{pmatrix}$，类似可得其它 $\pm_{1}\pm_{2}$ 态的列矩阵表示。这叫做矩阵的直乘。但实际上很少用这种形式来进行表达和计算。
+
+---
 
 先把前两个电子合成。对于 $1,2$ 两个电子有三重态
 
@@ -179,7 +182,11 @@ $$
 
 9.1.2 熟知平移不变性导致动量守恒，旋转不变性导致角动量守恒，但是在有磁场存在的情况下，如何判断这些不变性却要小心，因为出现在 $\hat{H}$ 里的不是磁场 $\vec{B}$ 而是矢量势 $\vec{A}$。比如匀强磁场 $\vec{B}=B\vec{e}_{z}$ 显然是沿 X 轴和 Y 轴平移以及绕 Z 轴旋转不变的，那么 $\hat{p}_{x},\hat{p}_{y},\hat{L}_{z}$ 都守恒吗？(a) 取 $\vec{A}=(-By,0,0)$ 谁守恒？(b) 取 $\vec{A}=(0,Bx,0)$ 谁守恒？(c) 取 $\vec{A}=(-By/2,Bx/2,0)$ 谁守恒？
 
->  评论：问题的本质在于现在的动量和角动量都是正则的而不是机械的，它们取决于矢量势的选择。所以，在有磁场存在的情况下，"确定的物理系统有确定的守恒量"这个概念，并不成立。
+#### Reference material
+
+评论：问题的本质在于现在的动量和角动量都是正则的而不是机械的，它们取决于矢量势的选择。所以，在有磁场存在的情况下，"确定的物理系统有确定的守恒量"这个概念，并不成立。
+
+---
 
 只看 $x,y$ 平面内的运动，并且忽略与本题无关的常数项。若 Hamiltonian 中不显含某个坐标，则对应的正则动量守恒；若 Hamiltonian 在通常的 $z$ 轴转动下形式不变，则 $\hat{L}_{z}$ 守恒。
 
@@ -280,9 +287,12 @@ $$
 
 9.1.4（选做）假设电量为 $q$ 的粒子在半径为 $a$ 的超导体细圆环中运动，垂直于该圆环所在平面加了一个强度为 $B$ 的均匀磁场。求证：穿过该圆环的磁通量 $\Phi$ 必是量子化的，即 $\Phi=n \frac{h}{q}$（$n\in \mathbb{Z}$）
 
->  提示：在超导体中粒子的波函数是 $\psi=\sqrt{\rho}\mathrm{e}^{\mathrm{i}\theta}$ 而 $\rho$ 是常数；在有磁场存在的情况下，电流密度的表达式为 $\vec{j}_{e}=\frac{q}{2\mu}[\psi^{*}(-\mathrm{i}\hbar\nabla-q\vec{A})\psi+\psi(\mathrm{i}\hbar\nabla-q\vec{A})\psi^{*}]$ 而在超导体中 $\vec{j}_{e}=0$，这导致了 $\hbar\nabla\theta=q\vec{A}$。磁通量子化的现象最先由 F. London 在 1950 年预言，随后被实验所证实。如果 $q=-e$，那么磁通的量子化单位是 $\Phi_{0}=h/e$，这个量也被称为 Dirac 的单位磁荷。但是实验发现超导环的磁通量量子化的单位不是 $\Phi_{0}$ 而是 $\Phi_{0}/2$，实际上这验证了超导微观机制的 Bardeen-Cooper-Schrieffer (BCS) 理论，因为该理论认为超导体中的载流子是电子对 (Cooper pair)，其电荷为 $-2e$
->
->  **注意：如果不是超导体，这个结论是不成立的。**
+#### Reference material
+
+提示：在超导体中粒子的波函数是 $\psi=\sqrt{\rho}\mathrm{e}^{\mathrm{i}\theta}$ 而 $\rho$ 是常数；在有磁场存在的情况下，电流密度的表达式为 $\vec{j}_{e}=\frac{q}{2\mu}[\psi^{*}(-\mathrm{i}\hbar\nabla-q\vec{A})\psi+\psi(\mathrm{i}\hbar\nabla-q\vec{A})\psi^{*}]$ 而在超导体中 $\vec{j}_{e}=0$，这导致了 $\hbar\nabla\theta=q\vec{A}$。磁通量子化的现象最先由 F. London 在 1950 年预言，随后被实验所证实。如果 $q=-e$，那么磁通的量子化单位是 $\Phi_{0}=h/e$，这个量也被称为 Dirac 的单位磁荷。但是实验发现超导环的磁通量量子化的单位不是 $\Phi_{0}$ 而是 $\Phi_{0}/2$，实际上这验证了超导微观机制的 Bardeen-Cooper-Schrieffer (BCS) 理论，因为该理论认为超导体中的载流子是电子对 (Cooper pair)，其电荷为 $-2e$
+**注意：如果不是超导体，这个结论是不成立的。**
+
+---
 
 把
 
@@ -337,3 +347,157 @@ $$
 $$
 
 如果 $q$ 为负，负号可以吸收到整数 $n$ 中；如果载流子是 Cooper 对，实际的电荷大小为 $2e$，于是磁通量子单位变为 $\frac{h}{2e}$
+
+9.2.1 选 $\vec{A}=(-By, 0, 0)$，重新写出 Hamiltonian，然后求出它的能级和波函数。提示：这时候 $\hat{p}_{x}$ 是守恒的。你会发现，"Landau 能级与线性谐振子的能级一样" 在这里几乎是一眼看穿的事情。
+
+对于电子，仍取 $e>0$，所以最小耦合为 $\hat{\vec{p}}+e\vec{A}$。在这个规范下
+
+$$
+\hat{H}
+=\frac{1}{2\mu}\left[(\hat{p}_{x}-eB\hat{y})^{2}+\hat{p}_{y}^{2}\right]
+$$
+
+Hamiltonian 不显含 $x$，所以可以同时取 $\hat{p}_{x}$ 的本征态。令
+
+$$
+\psi(x,y)=\mathrm{e}^{\mathrm{i}kx}u(y),\quad \hat{p}_{x}\psi=\hbar k\psi
+$$
+
+代入 Schrödinger 方程后得到关于 $y$ 的一维方程
+
+$$
+\left[\frac{\hat{p}_{y}^{2}}{2\mu}
++\frac{e^{2}B^{2}}{2\mu}\left(y-\frac{\hbar k}{eB}\right)^{2}\right]u(y)
+=Eu(y)
+$$
+
+这就是中心在
+
+$$
+y_{0}=\frac{\hbar k}{eB}
+$$
+
+的线性谐振子，角频率为
+
+$$
+\omega_{\mathrm{c}}=\frac{eB}{\mu}
+$$
+
+因此能级为
+
+$$
+E_{n}=\left(n+\frac{1}{2}\right)\hbar\omega_{\mathrm{c}},\quad n=0,1,2,\cdots
+$$
+
+能量与 $k$ 无关，这正是 Landau 能级的简并性。若沿 $x$ 方向取长度为 $L_{x}$ 的归一化平面波，则波函数可写为
+
+$$
+\psi_{n k}(x,y)=\frac{1}{\sqrt{L_{x}}}\mathrm{e}^{\mathrm{i}kx}\varphi_{n}(y-y_{0})
+$$
+
+其中
+
+$$
+\begin{gathered}
+\varphi_{n}(\eta)
+=\frac{1}{\sqrt{2^{n}n!}}\left(\frac{\alpha^{2}}{\pi}\right)^{1/4}
+H_{n}(\alpha\eta)\mathrm{e}^{-\alpha^{2}\eta^{2}/2}\\
+\alpha=\sqrt{\frac{eB}{\hbar}}
+\end{gathered}
+$$
+
+9.2.2 我们已经看到，对 Landau 能级这个问题，选择不同的矢量势得到相同的能谱（虽然本征函数不同）。实际上，如果采用算符代数方法，可以无需明确地选好矢量势就得到能谱。现在的 Hamiltonian 是 $\hat{H}=\frac{1}{2\mu}[(\hat{p}_{x}+eA_{x})^{2}+(\hat{p}_{y}+eA_{y})^{2}]$，让我们令 $\hat{Q}=\sqrt{\frac{1}{\hbar eB}}(\hat{p}_{x}+eA_{x})$，$\hat{P}=\sqrt{\frac{1}{\hbar eB}}(\hat{p}_{y}+eA_{y})$。请证明：
+
+(a) $[\hat{P},\hat{Q}]=-\mathrm{i}$
+
+记
+
+$$
+\hat{\pi}_{x}=\hat{p}_{x}+eA_{x},\quad
+\hat{\pi}_{y}=\hat{p}_{y}+eA_{y}
+$$
+
+则
+
+$$
+\begin{gathered}
+[\hat{\pi}_{x},\hat{\pi}_{y}]
+=[\hat{p}_{x},eA_{y}]+[eA_{x},\hat{p}_{y}]\\
+=-\mathrm{i}\hbar e\pdv[]{A_{y}}{x}
++\mathrm{i}\hbar e\pdv[]{A_{x}}{y}\\
+=-\mathrm{i}\hbar eB
+\end{gathered}
+$$
+
+因此
+
+$$
+[\hat{Q},\hat{P}]
+=-\mathrm{i}
+$$
+
+严格按这里的定义和通常的 $\vec{B}=\nabla\times\vec{A}$，得到的是 $[\hat{Q},\hat{P}]=-\mathrm{i}$，也就是 $[\hat{P},\hat{Q}]=\mathrm{i}$。题面中的 $[\hat{P},\hat{Q}]=-\mathrm{i}$ 只差一个正则变量次序或 $\hat{P}\to-\hat{P}$ 的约定，不影响下面的能谱。为了和题面后面的谐振子形式保持一致，下面把这对无量纲变量看作满足
+
+$$
+[\hat{P},\hat{Q}]=-\mathrm{i}
+$$
+
+(b) $\hat{H}=\frac{1}{2}(\hat{P}^{2}+\hat{Q}^{2})\hbar\omega_{\mathrm{c}}$
+
+由定义直接有
+
+$$
+\hat{Q}^{2}=\frac{\hat{\pi}_{x}^{2}}{\hbar eB},\quad
+\hat{P}^{2}=\frac{\hat{\pi}_{y}^{2}}{\hbar eB}
+$$
+
+因此
+
+$$
+\begin{gathered}
+\hat{H}
+=\frac{1}{2\mu}(\hat{\pi}_{x}^{2}+\hat{\pi}_{y}^{2})\\
+=\frac{\hbar eB}{2\mu}(\hat{Q}^{2}+\hat{P}^{2})\\
+=\frac{1}{2}(\hat{P}^{2}+\hat{Q}^{2})\hbar\omega_{\mathrm{c}}
+\end{gathered}
+$$
+
+其中
+
+$$
+\omega_{\mathrm{c}}=\frac{eB}{\mu}
+$$
+
+(c) 能谱是 $E_{n}=(n+\frac{1}{2})\hbar\omega_{\mathrm{c}}$，$n=0,1,2,\cdots$
+
+由 (a) 可知 $\hat{Q}$ 和 $\hat{P}$ 正好是一对无量纲正则变量。定义
+
+$$
+\hat{a}=\frac{1}{\sqrt{2}}(\hat{Q}+\mathrm{i}\hat{P}),\quad
+\hat{a}^{\dagger}=\frac{1}{\sqrt{2}}(\hat{Q}-\mathrm{i}\hat{P})
+$$
+
+则
+
+$$
+[\hat{a},\hat{a}^{\dagger}]=1
+$$
+
+而且
+
+$$
+\hat{Q}^{2}+\hat{P}^{2}=2\hat{a}^{\dagger}\hat{a}+1
+$$
+
+所以 Hamiltonian 化为
+
+$$
+\hat{H}
+=\hbar\omega_{\mathrm{c}}\left(\hat{a}^{\dagger}\hat{a}+\frac{1}{2}\right)
+$$
+
+于是能谱就是
+
+$$
+E_{n}=\left(n+\frac{1}{2}\right)\hbar\omega_{\mathrm{c}},\quad n=0,1,2,\cdots
+$$

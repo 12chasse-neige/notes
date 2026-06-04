@@ -278,7 +278,11 @@ $$
 
 8.2.2 请推导（不是代入课文中的公式）$l = 1$，$j = \frac{1}{2}$，$m_{j} = +\frac{1}{2}$ 时 $\phi_{ljm_{j}}$ 的表达式。
 
->  提示：它是 $\hat{\vec{L}} \cdot \hat{\vec{S}}$ 的本征态；可以利用 $\hat{L}_{+}Y_{10}(\theta, \varphi) = \sqrt{2}\hbar Y_{11}(\theta, \varphi)$，$\hat{L}_{-}Y_{11}(\theta, \varphi) = \sqrt{2}\hbar Y_{10}(\theta, \varphi)$
+#### Reference material
+
+提示：它是 $\hat{\vec{L}} \cdot \hat{\vec{S}}$ 的本征态；可以利用 $\hat{L}_{+}Y_{10}(\theta, \varphi) = \sqrt{2}\hbar Y_{11}(\theta, \varphi)$，$\hat{L}_{-}Y_{11}(\theta, \varphi) = \sqrt{2}\hbar Y_{10}(\theta, \varphi)$
+
+---
 
 当 $m_{j}=\frac{1}{2}$ 时，只能由两个态线性组合得到
 
@@ -354,11 +358,16 @@ $$
 <img src="./Quantum Mechanics Homework 8.assets/image-20260517195959670.png" alt="image-20260517195959670">
 
 (a) 请证明：若$\vec{J}=\vec{J}_{1}+\vec{J}_{2}$，则有
+
 $$
 \bar{J}_{1z}=\frac{j(j+1)+j_{1}(j_{1}+1)-j_{2}(j_{2}+1)}{2j(j+1)}J_{z}, \quad \bar{J}_{2z}=\frac{j(j+1)+j_{2}(j_{2}+1)-j_{1}(j_{1}+1)}{2j(j+1)}J_{z}
 $$
 
->  提示：参考§7.6.3给出的定理。它的半经典图像是（见右，摘自Griffiths《量子力学概论》中文版第182页，英文版p.278）：$\vec{J}_{1}$和$\vec{J}_{2}$在绕着$\vec{J}$转，$\vec{J}$又在绕着Z轴转，因而成立$\bar{J}_{1z}=\frac{\vec{J}_{1}\cdot\vec{J}}{j^{2}}J_{z}$，$\bar{J}_{2z}=\frac{\vec{J}_{2}\cdot\vec{J}}{j^{2}}J_{z}$。由此即可导出上式。
+#### Reference material
+
+提示：参考§7.6.3给出的定理。它的半经典图像是（见右，摘自Griffiths《量子力学概论》中文版第182页，英文版p.278）：$\vec{J}_{1}$和$\vec{J}_{2}$在绕着$\vec{J}$转，$\vec{J}$又在绕着Z轴转，因而成立$\bar{J}_{1z}=\frac{\vec{J}_{1}\cdot\vec{J}}{j^{2}}J_{z}$，$\bar{J}_{2z}=\frac{\vec{J}_{2}\cdot\vec{J}}{j^{2}}J_{z}$。由此即可导出上式。
+
+---
 
 在 $|j,m\rangle$ 态中，$\vec{J}_{1}$ 和 $\vec{J}_{2}$ 的平均投影只能沿着 $\vec{J}$ 的方向。因此可以写成
 
@@ -474,7 +483,11 @@ $$
 
 8.2.4 (选做) 多分量波函数还可以描写其它物理系统。比如，某Bose-Einstein凝聚体(BEC)中的原子的自旋可能是$F_{1}$也可能是$F_{2}$，若它们在给定点$\vec{r}$上的几率振幅分别为$\psi_{1}$和$\psi_{2}$，那么系统的波函数就可以写为$\psi(\vec{r},t)=(\psi_{1}(\vec{r},t),\psi_{2}(\vec{r},t))^{T}$，这种情形称为赝自旋pseudospin。这时，系统的Hamiltonian可以写为$\hat{H}=-\frac{\hbar^{2}}{2\mu}\nabla^{2}+V$，$V=\begin{pmatrix} V_{0}(\vec{r}) & -A \\ -A & V_{0}(\vec{r}) \end{pmatrix}$，其中$V_{0}(\vec{r})$描写约束BEC系统的磁光阱，而$A$是正实常数。请解释一下非对角元素$A$的物理意义。
 
->  提示：观察$\partial|\psi_{i}|^{2}/\partial t$（$i=1,2$）。
+#### Reference material
+
+提示：观察$\partial|\psi_{i}|^{2}/\partial t$（$i=1,2$）。
+
+---
 
 记
 
@@ -519,7 +532,11 @@ $$
 
 8.3.1 考虑原子序数（即核外电子数目）为 $Z$ 的原子。如果这些原子中的单电子能级从低到高的排列顺序是 1s < 2s < 2p < 3s < 3p < 4s < 3d < 4p < 5s < 4d < 5p < 6s < 4f < 5d < 6p < 7s < ⋯ (其中 4s < 3d，5s < 4d，6s < 4f < 5d 就是壳层交叉)。请你据此指出第 1,2,3,4,5,6 周期的元素的原子序数 $Z$ 的范围。
 
->  提示：一个周期中打头的和结尾的元素的主量子数是相同的。
+#### Reference material
+
+提示：一个周期中打头的和结尾的元素的主量子数是相同的。
+
+---
 
 每个壳层的容量为
 

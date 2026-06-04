@@ -25,9 +25,11 @@ d s^{2} = - dt^{2} + (1+h_{+}(t-z)) dx^{2} + (1-h_{+}(t-z)) dy^{2} + dz^{2}
 $$
 
 简化起见我们省略下标 "+"。我们把分光镜 (Beam Splitter) 和后端镜 (End Mirror) 看作自由悬浮的物体，那么引力波来后，它们应该走测地线。另外，由于上述度规与 $x$, $y$ 无关，那么 $u_{x}, u_{y}$ 应该是守恒量（回忆之前证明克尔时空 $u_{t}, u_{\phi}$ 是守恒量时用到了 $g_{\alpha\beta}$ 与 $t$ 或 $\phi$ 无关）。又由于上述度规是对角的
+
 $$
 u^{x} = \frac{dx}{d \tau} = 0, \quad u^{y} = \frac{dy}{d \tau} = 0
 $$
+
 因此这些镜子的坐标都不变。当然，对于给定的 $\Delta x = \ell_{x}, \Delta y = \ell_{y}$，对应的真实长度 (proper length) 应该是
 
 $$
@@ -39,7 +41,9 @@ $$
 $$
 ds^{2}=0 \Rightarrow dt^{2} = (1+h(t))dx^{2}
 $$
+
 由于臂长远小于波长，我们近似认为传播一个来回时 $h(t)$ 不变。所以到达 $x$ 后端镜时
+
 $$
 t_{x} - t_{i} = \left(1 + \frac{1}{2}h(t) \right) \ell_{x} = L_{x}
 $$
@@ -56,15 +60,18 @@ $$
 t_{f_{y}} - t_{i} = 2L_{y} \Rightarrow t_{f_{x}} - t_{f_{y}} = 2L_{x} - 2L_{y} = 2h(t)\ell
 $$
 
-如果光的频率是 $\omega_{0}$。反射回来的光的相位差是 
+如果光的频率是 $\omega_{0}$。反射回来的光的相位差是
+
 $$
 \Delta \phi = \omega_{0} (t_{f_{x}} - t_{f_{y}}) = 2\omega_{0} h(t) \ell
 $$
+
 而此相位差会导致在暗口 (dark port) 两束光不再是完美相消，由此我们在 dark port 会观察到与 h 成正比的信号。
 
 ### 引力波作用于镜子
 
 接下来我们讨论第二种观点。我们可以选取原点放在分光镜的局部惯性系 $g_{\alpha\beta} = \eta_{\alpha\beta} + O(R_{\mu\nu\lambda\rho} x^{\lambda} x^{\rho})$，假设局部惯性系的坐标为 $(\hat{t}, \hat{x}, \hat{y}, \hat{z})$，那么新的度规可以通过如下的坐标系变换从原来的 TT 规范下的度规转换而来
+
 $$
 x = \left(1 - \frac{1}{2}h(\hat{t}-\hat{z})\right) \hat{x}, \quad y = \left( 1 + \frac{1}{2}h(\hat{t}-\hat{z})\right) \hat{y}
 $$
@@ -83,9 +90,9 @@ $$
 虽然这个表达式是从 TT 规范变换而来，但可以证明它不仅在原点附近满足真空爱因斯坦方程：它自己就是一个严格解。在此参考系内的镜子的运动方程（通过计算 $\frac{d^{2}\hat{x}^{j}}{dt^{2}} = -R_{j0k0}^{GW} \hat{x}^{k}$）可以得到
 
 $$
-\begin{cases} 
-\hat{x} = L_{x} = (1 + \frac{1}{2}h(\hat{t})) \ell_{x}, \quad \hat{y} = \hat{z} = 0 & \text{对于 x 臂的后端镜} \\ 
-\hat{y} = L_{y} = (1 - \frac{1}{2}h(\hat{t})) \ell_{y}, \quad \hat{x} = \hat{z} = 0 & \text{对于 y 臂的后端镜} 
+\begin{cases}
+\hat{x} = L_{x} = (1 + \frac{1}{2}h(\hat{t})) \ell_{x}, \quad \hat{y} = \hat{z} = 0 & \text{对于 x 臂的后端镜} \\
+\hat{y} = L_{y} = (1 - \frac{1}{2}h(\hat{t})) \ell_{y}, \quad \hat{x} = \hat{z} = 0 & \text{对于 y 臂的后端镜}
 \end{cases}
 $$
 
@@ -144,6 +151,7 @@ $$
 #### 稳态随机过程
 
 当 $P_{n}$ 只与时间差而不是绝对时间相关时，此随机过程系综被认为是稳态随机过程。
+
 $$
 P_{n}(y_{n}, t_{n}+\tau; \cdots; y_{1}, t_{1}+\tau) = P_{n}(y_{n}, t_{n}; \cdots; y_{1}, t_{1})
 $$
@@ -157,6 +165,7 @@ $$
 #### 马尔可夫过程
 
 一个随机过程在其下一个时刻的演化只和当前时刻的状态相关时
+
 $$
 P_{n}(y_{n}, t_{n} | y_{n-1}, t_{n-1}; \cdots; y_{1}, t_{1}) = P_{n}(y_{n}, t_{n} | y_{n-1}, t_{n-1})
 $$
@@ -168,6 +177,7 @@ $$
 #### 高斯过程
 
 当一个随机过程的概率分布都是高斯型时，比如
+
 $$
 P_{n}(y_{n}, t_{n}; \cdots; y_{1}, t_{1}) = A \exp \left[ - \sum_{j=1}^{n} \sum_{k=1}^{n} \alpha_{jk} (y_{j} - \bar{y})(y_{k} - \bar{y}) \right]
 $$
@@ -179,14 +189,21 @@ $$
 4.  $\bar{y}$ 是一个常数：可以证明 $\bar{y} = \langle y \rangle = \int y P(y) dy$
 
 高斯分布和高斯随机过程在物理系统中十分常见。比如，处于热平衡的房间里某一快空间内的气体分子数 $N(t)$ 便是一个高斯过程。通常情况下，当我们观察一个宏观系统，其内部有很多自由度，往往对应的宏观测量量就是高斯的。在数学上，这和中心极限定理有关：
->假设 $y$ 是一个随机变量，其概率分布是 $P(y)$，因此平均值和标准差分别是 
->$$
->\bar{y} = \langle y \rangle = \int y P(y) dy，\quad (\sigma_{y})^{2} = \langle (y-\bar{y})^{2} \rangle = \langle y^{2} \rangle - \bar{y}^{2}
->$$
->那么如果有 $N$ 个类似的随机变量 $y_{1}, \cdots y_{n}$，它们的平均值（在 $N$ 很大时）$Y = \frac{1}{N} \sum_{i=1}^{N} y_{i}$ 将满足一个均值为 $\bar{y}$，标准差 $\sigma_{Y} = \frac{\sigma_{y}}{\sqrt{N}}$ 的高斯分布
->$$
->P(Y) = \frac{1}{\sqrt{2\pi \sigma_{Y}^{2}}} e^{-(Y-\bar{y})^{2}/2\sigma_{Y}^{2}}
->$$
+#### Reference material
+
+假设 $y$ 是一个随机变量，其概率分布是 $P(y)$，因此平均值和标准差分别是
+
+$$
+\bar{y} = \langle y \rangle = \int y P(y) dy，\quad (\sigma_{y})^{2} = \langle (y-\bar{y})^{2} \rangle = \langle y^{2} \rangle - \bar{y}^{2}
+$$
+
+那么如果有 $N$ 个类似的随机变量 $y_{1}, \cdots y_{n}$，它们的平均值（在 $N$ 很大时）$Y = \frac{1}{N} \sum_{i=1}^{N} y_{i}$ 将满足一个均值为 $\bar{y}$，标准差 $\sigma_{Y} = \frac{\sigma_{y}}{\sqrt{N}}$ 的高斯分布
+
+$$
+P(Y) = \frac{1}{\sqrt{2\pi \sigma_{Y}^{2}}} e^{-(Y-\bar{y})^{2}/2\sigma_{Y}^{2}}
+$$
+
+---
 
 我们可以看到不管之前单一随机变量 $y_{i}$ 的概率分布为如何，多个加在一起的综合效应总是高斯的。这就是为什么生活中有那么多高斯分布。
 
@@ -195,6 +212,7 @@ $$
 #### 相关函数
 
 对于一个随机过程，我们有时候用时间平均 $\bar{y}$ 来代替系统平均。这是因为长时间的演化该随机过程可能可以有效的遍历整个系综的统计实现。对于任意 $y(t)$ 的函数 $F$，其时间平均定义为
+
 $$
 \bar{F}[y(t)] \equiv \lim_{T\to\infty} \frac{1}{T} \int_{-T/2}^{T/2} F[y(t)] dt
 $$
@@ -232,6 +250,7 @@ $$
 #### 傅立叶变换和谱密度
 
 这两个概念对引力波数据分析至关重要。其中傅立叶变换
+
 $$
 \tilde{y}(f) = \int_{-\infty}^{\infty} y(t) e^{i2\pi f t} dt
 $$
@@ -246,7 +265,7 @@ $$
 
 $$
 \begin{gathered}
-y_{T}(t) = y(t) \quad -T/2 < t < T/2 \\  
+y_{T}(t) = y(t) \quad -T/2 < t < T/2 \\
 y_{T}(t) = 0 \quad t < -T/2, t> T/2
 \end{gathered}
 $$
@@ -313,6 +332,7 @@ C_{y}(\tau) = \int_{0}^{\infty} S_{y}(f) \cos(2\pi f \tau) df, \quad S_{y}(f) = 
 $$
 
 类似的对于二维随机过程有
+
 $$
 C_{xy}(\tau) = \frac{1}{2} \int_{-\infty}^{\infty} S_{xy} e^{-i2\pi f \tau} df = \frac{1}{2} \int_{0}^{\infty} (S_{xy} e^{-i2\pi f \tau} + S_{yx} e^{i2\pi f \tau}) df
 $$
@@ -328,13 +348,17 @@ $$
 $$
 
 让 $t' = t + \tau$，遍历定理
+
 $$
 \int_{-\infty}^{\infty} C_{xy}(\tau) e^{2\pi i f' \tau} d\tau \int_{-\infty}^{\infty} e^{2\pi i (f'-f)t'} dt' = \frac{1}{2} S_{xy} \delta(f-f')
 $$
-类似的还有 
+
+类似的还有
+
 $$
 2 \langle y(f) \tilde{y}^{*}(f') \rangle = S_{y}(f) \delta(f-f')
 $$
+
 直观上，我们来理解下谱密度 $S_{y}(f)$ 到底是啥意思。考虑一个随机过程 $y(t)$ 在时间 $0$ 到 $\Delta t$ 之间的演化。那么它的傅利叶变换可以包括从 $f=\infty$ 到 $f=1/\Delta t$ 之间的频率。我们考虑 $f \in (f, \infty)$ 附近的 $y$ 的平方差
 
 $$
@@ -365,17 +389,20 @@ $$
 y(t) = \sum_{i} F(t-t_{i}) \quad \text{脉冲i达时间} t_{i} \text{是随机的}
 $$
 
-那么 
+那么
+
 $$
 \langle y(f) \tilde{y}(f') \rangle = \langle \sum_{i} F(f) e^{i2\pi f t_{i}} \sum_{j} \tilde{F}(f') e^{-i2\pi f' t_{j}} \rangle = \langle \sum_{j} F(f) \tilde{F}(f') \rangle = R |\tilde{F}(f)|^{2} \delta(f-f')
 $$
 
 其中$R$是单位时间脉冲数
+
 $$
 S_{y}(f) = 2R |\tilde{F}(f)|^{2}
 $$
 
 当每个 $\tau_{p}$ 内都有 $R\tau_{p} \gg 1$ 时，中心极限定理告诉我们 $y(t)$ 实际上是一个高斯随机过程。而当我们感兴趣的 $f \ll \frac{1}{\tau_{p}}$ 时
+
 $$
 \tilde{F}(f) \approx \tilde{F}(0) \Rightarrow S_{y}(f) = 2R |\tilde{F}(0)|^{2}, \quad C_{y}(\tau) = R |\tilde{F}(0)|^{2} \delta(\tau)
 $$
@@ -444,6 +471,7 @@ $$
 对于每一个事件，都有一个真实的 $\lambda_{0}$。那我们怎么通过数据分析得到 $\lambda_{0}$ 的较好估计呢？
 
 考虑（频域）数据 $d(f) = \tilde{h}(\lambda_{0}, f) + n(f)$。如果我们测量的系统参数是 $\lambda$，那么数据减去期望的信号的残差为
+
 $$
 d(f) - \tilde{h}(\lambda, f) = [\tilde{h}(\lambda_{0}) - \tilde{h}(\lambda)] + n(f) \approx \frac{\partial \tilde{h}}{\partial \lambda} (\lambda_{0} - \lambda) + n(f)
 $$
@@ -458,11 +486,14 @@ $$
 (d-\tilde{h}(\lambda_{\max}), \frac{\partial h}{\partial \lambda_{i}}(\lambda_{\max})) = 0
 $$
 
-或者 
+或者
+
 $$
 ( \tilde{h}(\lambda_{0}) - \tilde{h}(\lambda_{\max}), \frac{\partial h}{\partial \lambda_{i}}(\lambda_{\max}) ) = -(n, \frac{\partial h}{\partial \lambda_{i}}(\lambda_{\max}))
 $$
+
 定义等 式的右边 $v_{i} \equiv (n, \frac{\partial h}{\partial \lambda_{i}}(\lambda_{\max})) \approx (n, \frac{\partial h}{\partial \lambda_{i}}(\lambda_{0}))$。$v^{i}$ 显然是一个高斯随机变量。其均值为 0。而它的协方差矩阵
+
 $$
 \Gamma_{ij} \equiv \langle v_{i} v_{j} \rangle = \langle (n, \frac{\partial h}{\partial \lambda_{i}} u_{0}) ( \frac{\partial h}{\partial \lambda_{j}} u_{0}, n ) \rangle = (\frac{\partial h}{\partial \lambda_{i}}, \frac{\partial h}{\partial \lambda_{j}}) \bigg|_{\lambda_{0}}
 $$
@@ -494,6 +525,5 @@ $$
 $$
 (\Delta \lambda_{i})_{rms} = \langle \Delta \lambda_{i}^{2} \rangle^{1/2} = \langle \text{Var} \Delta \lambda_{i} \rangle^{1/2} = \sqrt{(\Gamma^{-1})_{ii}}
 $$
-
 
 

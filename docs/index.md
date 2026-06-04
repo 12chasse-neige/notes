@@ -1,4 +1,5 @@
 ---
+
 layout: home
 
 hero:
@@ -21,6 +22,7 @@ features:
     details: Interactive demos alongside theory.
   - title: Clean Design
     details: Distraction-free reading experience.
+
 ---
 
 <script setup>

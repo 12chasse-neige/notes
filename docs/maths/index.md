@@ -1,7 +1,9 @@
 ---
+
 title: Maths Notes
 layout: doc
 comments: false
+
 ---
 
 <script setup>

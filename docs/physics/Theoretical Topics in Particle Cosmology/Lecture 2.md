@@ -4,7 +4,7 @@ Chasse_neige
 
 ## Why Massless Spin-2?
 
-### Classical Field Theory 
+### Classical Field Theory
 
 First, consider a massless spin-1 particle
 $$
@@ -15,7 +15,7 @@ $$
 \partial_{\mu} F^{\mu \nu} = e J^{\nu} \quad \square A^{\mu} = e J^{\mu}
 $$
 
-for a static point source 
+for a static point source
 $$
 \begin{cases}
 J^{0} = q_{\alpha} \delta^{3} (\vec{x} - \vec{x}_{\alpha}) \\
@@ -26,9 +26,9 @@ So we can get the form of the vector potential
 $$
 A^{0} = \frac{- e q_{\alpha}}{4 \pi |\vec{x} - \vec{x}_{\alpha}|}
 $$
-And the total energy 
+And the total energy
 $$
-E = \int \dd{x} e J_{b \mu} A^{\mu} = \int \dd{x} e (-q_{b} 
+E = \int \dd{x} e J_{b \mu} A^{\mu} = \int \dd{x} e (-q_{b}
 \delta^{3} (\vec{x} - \vec{x}_{b})) \left(\frac{- e q_{\alpha}}{4 \pi |\vec{x} - \vec{x}_{\alpha}|}\right) = \frac{\alpha q_{a} q_{b}}{|\vec{x}_{\alpha} - \vec{x}_{b}|}
 $$
 Then consider a massive spin-0 (scalar field)
@@ -46,15 +46,14 @@ the form of $\phi$ is
 $$
 \phi = \int \frac{\dd{k}}{(2 \pi)^{3}} \frac{g q_{\alpha}}{k^{2} + m^{2}} e^{i \vec{k} \cdot (\vec{x} - \vec{x}_{\alpha})} = \frac{g q_{\alpha}}{4 \pi} \frac{e^{- m |\vec{x} - \vec{x}_{\alpha}|}}{|\vec{x} - \vec{x}_{\alpha}|}
 $$
-The total energy 
+The total energy
 $$
 E = - g \int \dd{x} \phi j_{b} = -\frac{g^{2} q_{a} q_{b}}{4 \pi} \frac{e^{- m |\vec{x} - \vec{x}_{\alpha}|}}{|\vec{x} - \vec{x}_{\alpha}|}
 $$
+### Lesson
+1. Inverse square law -> massless mediator
+2. Spin-0 mediates attractive force and Spin-1 mediates repulsive force
 
->### Lesson
->
->1. Inverse square law -> massless mediator
->2. Spin-0 mediates attractive force and Spin-1 mediates repulsive force
 
 Gravity could be mediated by a massless spin-0 particle, but under this circumstance light won’t bend.
 
@@ -82,7 +81,7 @@ $$
 E = \kappa \int \dd{x} h_{00} T_{b}^{00} = - \frac{\kappa^{2}}{4 \pi} \frac{m_{a} m_{b}}{|\vec{x} - \vec{x}_{a}|}
 $$
 
-## Massless Spinning Particles are peculiar! 
+## Massless Spinning Particles are peculiar!
 
 ### Polarizations of the photon
 
@@ -131,7 +130,7 @@ $$
 $$
 Polarization is a representation of not LGT, but SO(2).
 
-The charge of SO(2) is called helicity: $R_{z} (\theta) X = e^{- i h \theta} X$, so the nonlinear term is price we have to pay for embedding $h = \pm 1$ into “$e_{\pm}^{\mu}$”. 
+The charge of SO(2) is called helicity: $R_{z} (\theta) X = e^{- i h \theta} X$, so the nonlinear term is price we have to pay for embedding $h = \pm 1$ into “$e_{\pm}^{\mu}$”.
 
 The transformation $e \to e + \alpha k$ is traditionally called a gauge transformation. Gauge inv, is enforced by L-symmetry.
 

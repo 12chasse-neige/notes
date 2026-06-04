@@ -1,7 +1,9 @@
 ---
+
 title: Physics Notes
 layout: doc
 comments: false
+
 ---
 
 <script setup>

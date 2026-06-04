@@ -2,13 +2,14 @@
 
 Teacher: 鲜于中之
 
-> 采用自然单位制 $c = \hbar = k_{B} = 1$
->
-> 其中 $1 \mathrm{GeV} \approx 10^{-24} \mathrm{g} \approx (10^{-24} \mathrm{s})^{-1} \approx (10^{-16} \mathrm{m})^{-1}$
->
-> 采用度规 $(-1, 1, 1, 1)$
->
-> 常用 $M_{pl} = \sqrt{8 \pi G_{N}} \approx 2.4 \times 10^{18} \mathrm{GeV}$ 
+#### Given / From lecture
+
+采用自然单位制 $c = \hbar = k_{B} = 1$
+其中 $1 \mathrm{GeV} \approx 10^{-24} \mathrm{g} \approx (10^{-24} \mathrm{s})^{-1} \approx (10^{-16} \mathrm{m})^{-1}$
+采用度规 $(-1, 1, 1, 1)$
+常用 $M_{pl} = \sqrt{8 \pi G_{N}} \approx 2.4 \times 10^{18} \mathrm{GeV}$
+
+---
 
 ## Motivation
 
@@ -27,13 +28,17 @@ From massless spin-2 particles.
 ## A Heuristic Introduction to Gravity
 
 Newton’s Law
+
 $$
 \phi = - \frac{Gm}{r}
 $$
+
 Coulomb’s Law
+
 $$
 \phi = + \frac{eq}{r}
 $$
+
 Newtonian Gravity is peculiar in 3 ways:
 
 1. Force at a distance (nonlocal)
@@ -70,9 +75,11 @@ Move $\Lambda$ downward, at some scale, dramatic things happen.
 ### At $\Lambda$~ $O(100 \mathrm{GeV})$: EWSB, $\langle h \rangle \approx 246 \mathrm{GeV}$
 
 W and Z becomes massive, while photon still massless
+
 $$
 m_{W} \approx 80 \mathrm{GeV} \quad m_{Z} \approx 91 \mathrm{GeV}
 $$
+
 Below $m_{W}$, weak interation -> 4-Fermi Theory
 
 ### At $\Lambda$ ~ $O(1\mathrm{GeV})$: QCD confinement
@@ -83,7 +90,7 @@ proton $m_{p} \approx 938 \mathrm{MeV}$
 
 2 peculiar things: baryon (lepton) number conserved, baryon and anti-baryon asymmetry.
 
-Our universe is in a N-baryon state ($N \approx 10^{80}$), we are not in a QFT vacuum. 
+Our universe is in a N-baryon state ($N \approx 10^{80}$), we are not in a QFT vacuum.
 
 At $\Lambda \leq 1 \mathrm{GeV}$: proton, neutron, meson, photon, graviton
 
@@ -105,7 +112,7 @@ Bound States: Chemical Element…
 
 1. Force at a distance is absurd:
 
-   consequence of particle propagation 
+   consequence of particle propagation
 
    all interactions are local
 
@@ -126,7 +133,7 @@ We’ll import Lorentz inv. as a  constraint in QFT parametization, it is incred
 
 Massless Spin-2
 
-Free Theory (L-inv. -> gauge) 
+Free Theory (L-inv. -> gauge)
 
 +int. (Scattering Theory)
 

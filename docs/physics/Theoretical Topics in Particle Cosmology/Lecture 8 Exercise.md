@@ -85,7 +85,7 @@ $$
 
 and the equation of motion is $i\dot{\Psi}=-\frac{1}{2m}\nabla^{2}\Psi$.
 
-This looks like a Schr\"odinger equation, but it isn't; It is the Heisenberg equation of an NR scalar field $\Psi$. However, we can write:
+This looks like a Schrödinger equation, but it isn't; It is the Heisenberg equation of an NR scalar field $\Psi$. However, we can write:
 
 $$
 \Psi(t,\vec{x})=\int\frac{d^{3k}}{(2\pi)^{3}}e^{-iE_{kt}+i\vec{k}\cdot\vec{x}}a_{\vec{k}}. \tag{6}
@@ -93,7 +93,7 @@ $$
 
 That is, we no longer need to pair annihilation and creation operators in a single local field operator.
 
-Then: $\Psi^{\dagger}(t,\vec{x})|\Omega\rangle$ is a time-dependent position eigenstate in the 1PS subspace, satisfying the Schr\"odinger equation identical to the Heisenberg equation above.
+Then: $\Psi^{\dagger}(t,\vec{x})|\Omega\rangle$ is a time-dependent position eigenstate in the 1PS subspace, satisfying the Schrödinger equation identical to the Heisenberg equation above.
 
 $\S 1.2$ Including massless exchange
 
@@ -109,7 +109,7 @@ $$
 \mathcal{L}=i\Psi^{\dagger}\dot{\Psi}+\frac{1}{2m}\Psi^{\dagger}\nabla^{2}\Psi+\frac{1}{2}\left(\vec{E}^{2}-\vec{B}^{2}\right)+eA_{0}\Psi^{\dagger}\Psi-\frac{1}{m}eA_{i}\Psi^{\dagger}\partial_{i}\Psi-\frac{e^{2}}{2m}\vec{A}^{2}\Psi^{\dagger}\Psi+\cdots. \tag{8}
 $$
 
-We have neglected a few obviously higher order terms in $m^{-1}$, but the remaining ones are not equally important in the NR limit. Through a long-winded argument of dimensional counting in the nonrelativistic regime [1], it turns out that the Coulomb interaction, namely the first term in the second line of (8), is more relevant in the low-energy (low-speed) limit, and the others are irrelevant. So, in this limit, we should keep the Coulomb terms and neglect others. This leads to:
+We have neglected a few obviously higher order terms in $m^{-1}$, but the remaining ones are not equally important in the NR limit. Through a long-winded argument of dimensional counting in the non-relativistic regime [1], it turns out that the Coulomb interaction, namely the first term in the second line of (8), is more relevant in the low-energy (low-speed) limit, and the others are irrelevant. So, in this limit, we should keep the Coulomb terms and neglect others. This leads to:
 
 $$
 \mathcal{L}=i\Psi^{\dagger}\dot{\Psi}+\frac{1}{2m}\Psi^{\dagger}\nabla^{2}\Psi-\frac{1}{2}A_{0}\nabla^{2}A_{0}+eA_{0}\Psi^{\dagger}\Psi+\cdots. \tag{9}
@@ -297,7 +297,7 @@ While it is trivial (trivial = we learned it from kindergarten) to get bound-sta
 
 It is relatively easy to see that bound states cannot arise from any finite order in the perturbation theory. Indeed, the on-shell mediation of a bound state, say a hydrogen atom would generate a pole in the amplitude, which cannot be produced by Feynman graphs involving protons, electrons, and photons only. So, the bound state must be from summing over an infinite number of loop diagrams.
 
-But which loop diagrams do we need to sum over? To answer this question, it is easiest answered by considering the NR Lagrangian, since we know how to get bound states in the NR limit. (Solving Schr\"odinger's equation!) Taking the NR scalar QED as an example:
+But which loop diagrams do we need to sum over? To answer this question, it is easiest answered by considering the NR Lagrangian, since we know how to get bound states in the NR limit. (Solving Schrödinger's equation!) Taking the NR scalar QED as an example:
 
 $$
 \mathcal{L}=\sum_{a=1}^{2}\Psi_{a}^{\dagger}\left(i\partial_{t}+eQ_{a}A_{0}+\frac{\nabla^{2}}{2m_{a}}\right)\Psi_{a}-\frac{1}{2}A_{0}\nabla^{2}A_{0}. \tag{32}
@@ -317,14 +317,14 @@ This is very intuitive: The charged particle's propagator is proportional to $\t
 
 Put them together and we see that the Feynman graphs involving an electron and a proton must have a ladder structure:
 
-In particular, cross-ladder graphs must be negligible in the leading NR limit. So, resumming all these ladder graphs gives us the familiar bound solutions of a hydrogen atom. The same conclusion can also be reached by analyzing amplitudes directly without using a field theory, as discussed in Sec. 13.6 of Weinberg's Vol. 1.
+In particular, cross-ladder graphs must be negligible in the leading NR limit. So, resuming all these ladder graphs gives us the familiar bound solutions of a hydrogen atom. The same conclusion can also be reached by analyzing amplitudes directly without using a field theory, as discussed in Sec. 13.6 of Weinberg's Vol. 1.
 
 Exercise
 
-(1) Consider a model of a heavy scalar particle $\varphi$ of mass $m$ and a massless scalar $\chi$ with the following Lagrangian:
+(1) Consider a model of a heavy scalar particle $\varphi$ of mass $m$ and a massless scalar $\chi$ with the following Lagrangian
 
 $$
-\mathcal{L}=-\frac{1}{2}\left[(\partial_{\mu}\varphi)^{2}+m^{2}\varphi^{2}+(\partial_{\mu}\chi)^{2}+\mu\chi\varphi^{2}\right].
+\mathcal{L}=-\frac{1}{2}\left[(\partial_{\mu}\varphi)^{2}+m^{2}\varphi^{2}+(\partial_{\mu}\chi)^{2}+\mu\chi\varphi^{2}\right]
 $$
 
 This model is disastrously bad from a QFT viewpoint. Nevertheless, please derive the long-range potential for $\varphi$ particle due to the exchange of $\chi$ to the leading order in the coupling $\mu$.
