@@ -1,117 +1,57 @@
 [
   {
-    "title": "Analytical Mechanics Homework 10",
-    "desc": "Canonical variables, momentum-space Lagrangian, double pendulum small oscillations.",
+    "title": "C++ Programming Basics Notes",
+    "desc": "Covers keywords, data types, control flow, and OOP concepts.",
     "tags": [
-      "analytical mechanics",
-      "canonical variables",
-      "Lagrangian"
+      "C++",
+      "programming",
+      "keywords"
     ],
-    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 10"
+    "link": "/coding/C++/C++_Note"
   },
   {
-    "title": "Atomic and Molecular Physics Homework 4",
-    "desc": "Autoionizing state energy calculation for helium atom with perturbation theory.",
+    "title": "Python Escape Characters Reference",
+    "desc": "Common escape sequences in Python strings with examples.",
     "tags": [
-      "autoionizing state",
-      "helium",
-      "perturbation theory"
+      "Python",
+      "escape characters",
+      "string formatting"
     ],
-    "link": "/physics/Atomic and Molecular Physics/Atomic and Molecular Physics Homework 4"
+    "link": "/coding/Python/Python_Note"
   },
   {
-    "title": "Electrodynamics Homework 6: Wave Equations",
-    "desc": "Wave equations in ideal dielectrics and plane wave solutions with non-parallel D and E.",
+    "title": "Advanced Calculus Final Review",
+    "desc": "Taylor's theorem with Peano, Lagrange, and Cauchy remainder forms.",
     "tags": [
-      "electrodynamics",
-      "wave equation",
-      "dielectric"
+      "Taylor's theorem",
+      "remainder",
+      "calculus"
     ],
-    "link": "/physics/Electrodynamics/Electrodynamics Homework 6"
+    "link": "/maths/Advanced Calculus/Advanced Calculus (1) Final Review"
   },
   {
-    "title": "Electrodynamics Homework 8: Resonant Cavity and Waveguides",
-    "desc": "Analysis of wave modes in parallel plates and proof of energy equality in cavity.",
+    "title": "Analytical Mechanics Homework 1",
+    "desc": "Virtual work principle for rod in bowl and two balls on wire.",
     "tags": [
-      "resonant cavity",
-      "cutoff frequency",
-      "waveguide"
+      "virtual work",
+      "equilibrium",
+      "constraints"
     ],
-    "link": "/physics/Electrodynamics/Electrodynamics Homework 7"
+    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 1"
   },
   {
-    "title": "Feynman Physics 2 Homework 1",
-    "desc": "Vector analysis in higher dimensions using wedge product and Hodge duality.",
+    "title": "Analytical Mechanics Homework 2",
+    "desc": "Lagrangian equations for spring-mass, wedge, and conical pendulum systems.",
     "tags": [
-      "wedge product",
-      "Hodge dual",
-      "Levi-Civita symbol"
+      "Lagrangian mechanics",
+      "spring-mass system",
+      "inclined plane"
     ],
-    "link": "/physics/Feynman Lectures on Physics/Feynman Lectures on Physics (2) Homework 1"
-  },
-  {
-    "title": "Feynman Physics 2 Homework 7",
-    "desc": "Shallow water waves equivalence to Chern-Simons electromagnetic theory",
-    "tags": [
-      "shallow water waves",
-      "Chern-Simons theory",
-      "quantum Hall effect"
-    ],
-    "link": "/physics/Feynman Lectures on Physics/Feynman Lectures on Physics (2) Homework 7"
-  },
-  {
-    "title": "Particle Cosmology Lecture 2 Exercise",
-    "desc": "Integral evaluation and derivation of photon energy-momentum tensor.",
-    "tags": [
-      "quantum field theory",
-      "residue theorem",
-      "energy-momentum tensor"
-    ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 2 Exercise"
-  },
-  {
-    "title": "Graviton Coupling and Classical Gravity Effects",
-    "desc": "Explore classical consequences of graviton coupling, recovering GR effects like light deflection.",
-    "tags": [
-      "graviton",
-      "classical gravity",
-      "general relativity"
-    ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 8 Exercise"
-  },
-  {
-    "title": "Electrodynamics Homework 9: Multipole Expansion",
-    "desc": "Magnetic moment of rotating charged sphere, force on magnetic dipole near interface.",
-    "tags": [
-      "multipole expansion",
-      "magnetic moment",
-      "image method"
-    ],
-    "link": "/physics/Electrodynamics/Electrodynamics Homework 9"
-  },
-  {
-    "title": "Feynman Physics 2 Homework 4",
-    "desc": "Superconductivity, London equations, vector potential, magnetic field lines.",
-    "tags": [
-      "superconductivity",
-      "London equations",
-      "vector potential"
-    ],
-    "link": "/physics/Feynman Lectures on Physics/Feynman Lectures on Physics (2) Homework 4"
-  },
-  {
-    "title": "Feynman Physics 2 Homework 5",
-    "desc": "Chern-Simons theory in 4D and 3D spacetime with equations of motion.",
-    "tags": [
-      "Chern-Simons theory",
-      "electromagnetic field",
-      "Euler-Lagrange equation"
-    ],
-    "link": "/physics/Feynman Lectures on Physics/Feynman Lectures on Physics (2) Homework 5"
+    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 2"
   },
   {
     "title": "General Relativity Homework 6",
-    "desc": "Angular velocity range for observers in Kerr ergosphere.",
+    "desc": "Analyzes allowed angular velocity range inside Kerr black hole ergosphere.",
     "tags": [
       "Kerr metric",
       "ergosphere",
@@ -120,14 +60,24 @@
     "link": "/physics/General Relativity/General Relativity Homework 6"
   },
   {
-    "title": "Detecting and Analyzing Gravitational Waves",
+    "title": "Detecting Gravitational Waves and Data Analysis",
     "desc": "Overview of gravitational wave detection across frequency bands and interferometer response.",
     "tags": [
       "gravitational waves",
-      "detection",
+      "detectors",
       "interferometry"
     ],
     "link": "/physics/General Relativity/Gravitational Waves/Detecting Gravitiational Waves"
+  },
+  {
+    "title": "Quantum Noise in Gravitational Wave Detectors",
+    "desc": "Analysis of noise sources in Advanced LIGO, focusing on quantum noise and thermal effects.",
+    "tags": [
+      "quantum noise",
+      "gravitational waves",
+      "LIGO"
+    ],
+    "link": "/physics/General Relativity/Gravitational Waves/Quantum Noise"
   },
   {
     "title": "Feynman Diagrams for Beginners",
@@ -145,13 +95,23 @@
     "tags": [
       "quantum mechanics",
       "blackbody radiation",
-      "infinite potential well"
+      "Sommerfeld quantization"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 1"
   },
   {
+    "title": "Quantum Mechanics Homework 10: Spin in Landau",
+    "desc": "Adds electron spin to Landau levels, modifies Hamiltonian and degeneracy.",
+    "tags": [
+      "Landau levels",
+      "Zeeman effect",
+      "spin"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 10"
+  },
+  {
     "title": "Quantum Mechanics Homework 2",
-    "desc": "Particle in infinite square well: pressure, wave function evolution, and probability.",
+    "desc": "Infinite square well problems: pressure, wave function evolution, and probability.",
     "tags": [
       "quantum mechanics",
       "infinite square well",
@@ -160,14 +120,54 @@
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 2"
   },
   {
-    "title": "Quantum Mechanics Homework 5",
-    "desc": "Symmetries and conserved quantities, angular momentum, Feynman-Hellmann theorem.",
+    "title": "Quantum Mechanics Homework 4",
+    "desc": "Proofs on inverse operators and uncertainty relations.",
+    "tags": [
+      "Hermitian operator",
+      "unitary operator",
+      "uncertainty relation"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 4"
+  },
+  {
+    "title": "Quantum Mechanics Homework 6",
+    "desc": "Central force field, kinetic operator decomposition, bound S-state energy equation.",
     "tags": [
       "quantum mechanics",
-      "angular momentum",
-      "Feynman-Hellmann theorem"
+      "central force",
+      "kinetic operator"
     ],
-    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 5"
+    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 6"
+  },
+  {
+    "title": "Quantum Mechanics Homework 7",
+    "desc": "Angular momentum commutators and vector operator identities.",
+    "tags": [
+      "angular momentum",
+      "commutator",
+      "vector operator"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 7"
+  },
+  {
+    "title": "Quantum Mechanics Homework 8",
+    "desc": "Pauli matrix identities, ladder operators, and projection operators.",
+    "tags": [
+      "Pauli matrices",
+      "ladder operators",
+      "projection operators"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 8"
+  },
+  {
+    "title": "Quantum Mechanics Homework 9",
+    "desc": "Spin states of two and three electrons, singlet and triplet probabilities.",
+    "tags": [
+      "quantum mechanics",
+      "spin",
+      "singlet"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 9"
   },
   {
     "title": "Statistical Mechanics Homework 1",
@@ -180,24 +180,54 @@
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 1"
   },
   {
-    "title": "Lorentz Invariance and Optical Theorem",
-    "desc": "Proves Lorentz invariance of inner product and optical theorem via unitarity.",
+    "title": "Statistical Mechanics Homework 4",
+    "desc": "Normalization, marginal distribution, and classification of bosons and fermions.",
     "tags": [
-      "Lorentz invariance",
-      "optical theorem",
-      "S-matrix unitarity"
+      "probability distribution",
+      "normalization",
+      "boson"
     ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 3 Exercise"
+    "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 4"
   },
   {
-    "title": "Scattering Theory Axioms and Fock Space",
-    "desc": "Fundamental principles restrain interactions; scattering amplitude analyticity explored.",
+    "title": "Particle Cosmology Theoretical Topics Lecture 1",
+    "desc": "Introduction to gravity, QFT, and fundamental interactions in natural units.",
     "tags": [
-      "scattering theory",
-      "Fock space",
-      "analyticity"
+      "particle cosmology",
+      "gravity",
+      "quantum field theory"
     ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 3"
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 1"
+  },
+  {
+    "title": "Mercury Precession and Gravitational Compton Scattering",
+    "desc": "Next-to-leading order effects in particle cosmology, including 1-loop amplitudes and Landau analysis.",
+    "tags": [
+      "particle cosmology",
+      "gravitational scattering",
+      "loop amplitudes"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 10"
+  },
+  {
+    "title": "Particle Cosmology Lecture 2 Exercise",
+    "desc": "Integral evaluation and derivation of photon energy-momentum tensor.",
+    "tags": [
+      "quantum field theory",
+      "residue theorem",
+      "energy-momentum tensor"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 2 Exercise"
+  },
+  {
+    "title": "Massless Spin-2 in Particle Cosmology",
+    "desc": "Classical field theory for massless spin-2 and gravity mediation.",
+    "tags": [
+      "spin-2",
+      "field theory",
+      "gravity"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 2"
   },
   {
     "title": "Dyson Series and On-Shell Factorization",
@@ -205,98 +235,68 @@
     "tags": [
       "Dyson series",
       "transition amplitude",
-      "interaction picture"
+      "on-shell factorization"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 4 Exercise"
   },
   {
-    "title": "Spinor Helicity Formalism for Massless Amplitudes",
-    "desc": "Massless amplitudes using spinor helicity formalism and Lorentz group decomposition.",
-    "tags": [
-      "spinor helicity",
-      "massless amplitudes",
-      "Lorentz group"
-    ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 5"
-  },
-  {
     "title": "Particle Cosmology Lecture 7 Exercise",
-    "desc": "Derive commutator and determine parameters via Lorentz invariance.",
+    "desc": "Derive commutator and determine parameters from Lorentz invariance.",
     "tags": [
       "commutator",
       "Lorentz invariance",
-      "Lagrangian"
+      "quantum field theory"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 7 Exercise"
   },
   {
-    "title": "Classical Limit for Light Bending",
-    "desc": "Phase shift and classical limit in particle scattering with graviton exchange.",
+    "title": "Graviton Coupling and Classical Gravity Effects",
+    "desc": "Leading order graviton coupling yields classical EM and gravity effects.",
     "tags": [
-      "classical limit",
-      "light bending",
-      "phase shift"
+      "graviton",
+      "classical gravity",
+      "general relativity"
     ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 9"
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 8 Exercise"
   },
   {
-    "title": "Advanced Calculus Final Review",
-    "desc": "Taylor's theorem with Peano, Lagrange, and Cauchy remainder forms.",
+    "title": "Analytical Mechanics Homework 10",
+    "desc": "Canonical variables, momentum-space Lagrangian, double pendulum small oscillations.",
     "tags": [
-      "Taylor's theorem",
-      "remainder",
-      "advanced calculus"
+      "canonical variables",
+      "Lagrangian",
+      "double pendulum"
     ],
-    "link": "/maths/Advanced Calculus/Advanced Calculus (1) Final Review"
+    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 10"
   },
   {
-    "title": "Analytical Mechanics Homework 3",
-    "desc": "Variational methods for geodesics on sphere and minimal surface of revolution.",
+    "title": "Atomic and Molecular Physics Homework 4",
+    "desc": "Autoionizing state energy and UV wavelength for helium atom.",
     "tags": [
-      "calculus of variations",
-      "geodesic",
-      "minimal surface"
+      "atomic physics",
+      "autoionizing state",
+      "helium"
     ],
-    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 3"
+    "link": "/physics/Atomic and Molecular Physics/Atomic and Molecular Physics Homework 4"
   },
   {
-    "title": "Analytical Mechanics Homework 5",
-    "desc": "Central forces on Archimedean spiral and inverse-cubic gravity.",
+    "title": "Electrodynamics Homework 6: Wave Equations",
+    "desc": "Wave equations in ideal dielectric and plane wave solutions.",
     "tags": [
-      "central force",
-      "Archimedean spiral",
-      "inverse-cubic law"
+      "electrodynamics",
+      "wave equation",
+      "dielectric"
     ],
-    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 5"
+    "link": "/physics/Electrodynamics/Electrodynamics Homework 6"
   },
   {
-    "title": "Analytical Mechanics Homework 7",
-    "desc": "Perturbation method for pendulum with second-order correction",
+    "title": "Electrodynamics Homework 8: Resonant Cavity and Waveguides",
+    "desc": "Analysis of wave modes in parallel plates and proof of energy equality in cavity.",
     "tags": [
-      "analytical mechanics",
-      "perturbation theory",
-      "pendulum"
+      "resonant cavity",
+      "cutoff frequency",
+      "waveguide"
     ],
-    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 7"
-  },
-  {
-    "title": "Atomic and Molecular Physics Homework 1",
-    "desc": "Hydrogen eigenfunctions: explicit forms of psi_100, psi_200, psi_210, psi_21±1.",
-    "tags": [
-      "Hydrogen atom",
-      "eigenfunctions",
-      "spherical harmonics"
-    ],
-    "link": "/physics/Atomic and Molecular Physics/Atomic and Molecular Physics Homework 1"
-  },
-  {
-    "title": "Atomic and Molecular Physics Homework 2",
-    "desc": "Density matrix representation for two-level quantum state using Pauli matrices.",
-    "tags": [
-      "quantum mechanics",
-      "density matrix",
-      "Pauli matrices"
-    ],
-    "link": "/physics/Atomic and Molecular Physics/Atomic and Molecular Physics Homework 2"
+    "link": "/physics/Electrodynamics/Electrodynamics Homework 7"
   }
 ]
