@@ -1,7 +1,87 @@
 [
   {
+    "title": "Analytical Mechanics Homework 10",
+    "desc": "Canonical variables, momentum-space Lagrangian, double pendulum small oscillations.",
+    "tags": [
+      "analytical mechanics",
+      "canonical variables",
+      "Lagrangian"
+    ],
+    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 10"
+  },
+  {
+    "title": "Atomic and Molecular Physics Homework 4",
+    "desc": "Autoionizing state energy calculation for helium atom with perturbation theory.",
+    "tags": [
+      "autoionizing state",
+      "helium",
+      "perturbation theory"
+    ],
+    "link": "/physics/Atomic and Molecular Physics/Atomic and Molecular Physics Homework 4"
+  },
+  {
+    "title": "Electrodynamics Homework 6: Wave Equations",
+    "desc": "Wave equations in ideal dielectrics and plane wave solutions with non-parallel D and E.",
+    "tags": [
+      "electrodynamics",
+      "wave equation",
+      "dielectric"
+    ],
+    "link": "/physics/Electrodynamics/Electrodynamics Homework 6"
+  },
+  {
+    "title": "Electrodynamics Homework 8: Resonant Cavity and Waveguides",
+    "desc": "Analysis of wave modes in parallel plates and proof of energy equality in cavity.",
+    "tags": [
+      "resonant cavity",
+      "cutoff frequency",
+      "waveguide"
+    ],
+    "link": "/physics/Electrodynamics/Electrodynamics Homework 7"
+  },
+  {
+    "title": "Feynman Physics 2 Homework 1",
+    "desc": "Vector analysis in higher dimensions using wedge product and Hodge duality.",
+    "tags": [
+      "wedge product",
+      "Hodge dual",
+      "Levi-Civita symbol"
+    ],
+    "link": "/physics/Feynman Lectures on Physics/Feynman Lectures on Physics (2) Homework 1"
+  },
+  {
+    "title": "Feynman Physics 2 Homework 7",
+    "desc": "Shallow water waves equivalence to Chern-Simons electromagnetic theory",
+    "tags": [
+      "shallow water waves",
+      "Chern-Simons theory",
+      "quantum Hall effect"
+    ],
+    "link": "/physics/Feynman Lectures on Physics/Feynman Lectures on Physics (2) Homework 7"
+  },
+  {
+    "title": "Particle Cosmology Lecture 2 Exercise",
+    "desc": "Integral evaluation and derivation of photon energy-momentum tensor.",
+    "tags": [
+      "quantum field theory",
+      "residue theorem",
+      "energy-momentum tensor"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 2 Exercise"
+  },
+  {
+    "title": "Graviton Coupling and Classical Gravity Effects",
+    "desc": "Explore classical consequences of graviton coupling, recovering GR effects like light deflection.",
+    "tags": [
+      "graviton",
+      "classical gravity",
+      "general relativity"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 8 Exercise"
+  },
+  {
     "title": "Electrodynamics Homework 9: Multipole Expansion",
-    "desc": "Magnetic moment of rotating charged sphere, force on magnetic dipole near permeable interface.",
+    "desc": "Magnetic moment of rotating charged sphere, force on magnetic dipole near interface.",
     "tags": [
       "multipole expansion",
       "magnetic moment",
@@ -21,7 +101,7 @@
   },
   {
     "title": "Feynman Physics 2 Homework 5",
-    "desc": "Chern-Simons theory in 3D and 4D spacetime",
+    "desc": "Chern-Simons theory in 4D and 3D spacetime with equations of motion.",
     "tags": [
       "Chern-Simons theory",
       "electromagnetic field",
@@ -31,7 +111,7 @@
   },
   {
     "title": "General Relativity Homework 6",
-    "desc": "Angular velocity range inside Kerr ergosphere near horizon.",
+    "desc": "Angular velocity range for observers in Kerr ergosphere.",
     "tags": [
       "Kerr metric",
       "ergosphere",
@@ -45,7 +125,7 @@
     "tags": [
       "gravitational waves",
       "detection",
-      "interferometer"
+      "interferometry"
     ],
     "link": "/physics/General Relativity/Gravitational Waves/Detecting Gravitiational Waves"
   },
@@ -71,20 +151,20 @@
   },
   {
     "title": "Quantum Mechanics Homework 2",
-    "desc": "Particle in infinite square well: pressure, wavefunction evolution, and probability.",
+    "desc": "Particle in infinite square well: pressure, wave function evolution, and probability.",
     "tags": [
       "quantum mechanics",
       "infinite square well",
-      "wavefunction"
+      "wave function"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 2"
   },
   {
     "title": "Quantum Mechanics Homework 5",
-    "desc": "Symmetries and conserved quantities in quantum mechanics.",
+    "desc": "Symmetries and conserved quantities, angular momentum, Feynman-Hellmann theorem.",
     "tags": [
+      "quantum mechanics",
       "angular momentum",
-      "conservation law",
       "Feynman-Hellmann theorem"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 5"
@@ -100,16 +180,6 @@
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 1"
   },
   {
-    "title": "Particle Cosmology Lecture 2 Exercise",
-    "desc": "Integral evaluation and derivation of gauge invariant energy-momentum tensor.",
-    "tags": [
-      "quantum field theory",
-      "energy-momentum tensor",
-      "residue theorem"
-    ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 2 Exercise"
-  },
-  {
     "title": "Lorentz Invariance and Optical Theorem",
     "desc": "Proves Lorentz invariance of inner product and optical theorem via unitarity.",
     "tags": [
@@ -120,12 +190,12 @@
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 3 Exercise"
   },
   {
-    "title": "Scattering Theory and Analyticity",
-    "desc": "Fundamental principles restrain interactions via scattering amplitude analyticity.",
+    "title": "Scattering Theory Axioms and Fock Space",
+    "desc": "Fundamental principles restrain interactions; scattering amplitude analyticity explored.",
     "tags": [
       "scattering theory",
-      "analyticity",
-      "Fock space"
+      "Fock space",
+      "analyticity"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 3"
   },
@@ -135,13 +205,13 @@
     "tags": [
       "Dyson series",
       "transition amplitude",
-      "on-shell factorization"
+      "interaction picture"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 4 Exercise"
   },
   {
-    "title": "Massless Amplitudes and Spinor Helicity",
-    "desc": "Spinor helicity formalism for massless amplitudes using Lorentz group decomposition.",
+    "title": "Spinor Helicity Formalism for Massless Amplitudes",
+    "desc": "Massless amplitudes using spinor helicity formalism and Lorentz group decomposition.",
     "tags": [
       "spinor helicity",
       "massless amplitudes",
@@ -155,13 +225,13 @@
     "tags": [
       "commutator",
       "Lorentz invariance",
-      "field theory"
+      "Lagrangian"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 7 Exercise"
   },
   {
     "title": "Classical Limit for Light Bending",
-    "desc": "Phase shift and classical limit in particle scattering with gravitons.",
+    "desc": "Phase shift and classical limit in particle scattering with graviton exchange.",
     "tags": [
       "classical limit",
       "light bending",
@@ -191,11 +261,11 @@
   },
   {
     "title": "Analytical Mechanics Homework 5",
-    "desc": "Central force on Archimedean spiral and inverse-cube law trajectory.",
+    "desc": "Central forces on Archimedean spiral and inverse-cubic gravity.",
     "tags": [
       "central force",
       "Archimedean spiral",
-      "inverse-cube law"
+      "inverse-cubic law"
     ],
     "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 5"
   },
@@ -211,7 +281,7 @@
   },
   {
     "title": "Atomic and Molecular Physics Homework 1",
-    "desc": "Hydrogen eigenfunctions: explicit forms of ψ100, ψ200, ψ210, ψ21±1",
+    "desc": "Hydrogen eigenfunctions: explicit forms of psi_100, psi_200, psi_210, psi_21±1.",
     "tags": [
       "Hydrogen atom",
       "eigenfunctions",
@@ -228,75 +298,5 @@
       "Pauli matrices"
     ],
     "link": "/physics/Atomic and Molecular Physics/Atomic and Molecular Physics Homework 2"
-  },
-  {
-    "title": "Electrodynamics Homework 1: Vector Analysis",
-    "desc": "Proofs using Levi-Civita and Kronecker delta identities.",
-    "tags": [
-      "electrodynamics",
-      "vector analysis",
-      "Levi-Civita symbol"
-    ],
-    "link": "/physics/Electrodynamics/Electrodynamics Homework 1"
-  },
-  {
-    "title": "Electrodynamics Homework 12: Electrostatic Potential",
-    "desc": "Dielectric sphere polarization, bound and free charge densities, potential, energy.",
-    "tags": [
-      "electrostatics",
-      "dielectric sphere",
-      "polarization"
-    ],
-    "link": "/physics/Electrodynamics/Electrodynamics Homework 10"
-  },
-  {
-    "title": "Electrodynamics Homework 11: Laplace Equation",
-    "desc": "Conducting sphere in uniform field with battery or total charge Q.",
-    "tags": [
-      "Laplace equation",
-      "separation of variables",
-      "conducting sphere"
-    ],
-    "link": "/physics/Electrodynamics/Electrodynamics Homework 11"
-  },
-  {
-    "title": "Electrodynamics Homework 12: Steady Current and Surface",
-    "desc": "Current distribution and surface charge for a sphere in a conducting fluid.",
-    "tags": [
-      "electrodynamics",
-      "steady current",
-      "conductivity"
-    ],
-    "link": "/physics/Electrodynamics/Electrodynamics Homework 12"
-  },
-  {
-    "title": "Electrodynamics Homework 13: Moving Charged Particles",
-    "desc": "Relativistic radiation fields from accelerated charges using Liénard-Wiechert potentials.",
-    "tags": [
-      "electrodynamics",
-      "Liénard-Wiechert potentials",
-      "radiation fields"
-    ],
-    "link": "/physics/Electrodynamics/Electrodynamics Homework 13"
-  },
-  {
-    "title": "Electrodynamics Homework 2",
-    "desc": "Current flux and dipole moment rate of change proofs.",
-    "tags": [
-      "electrodynamics",
-      "current density",
-      "dipole moment"
-    ],
-    "link": "/physics/Electrodynamics/Electrodynamics Homework 2"
-  },
-  {
-    "title": "Electrodynamics Homework 4",
-    "desc": "Particle decay, Lorentz transformation of energy and momentum, beam angle transformation.",
-    "tags": [
-      "particle decay",
-      "Lorentz transformation",
-      "energy-momentum"
-    ],
-    "link": "/physics/Electrodynamics/Electrodynamics Homework 4"
   }
 ]
