@@ -144,4 +144,27 @@ For the Quasi-Keplerian motions, we can find a radial action $S_{r} (E, J)$, whi
 $$
 S_{r} (E, J) = \frac{1}{2 \pi} \oint \dd{r} p_{r} (E, J, r)
 $$
-And this is a gauge invariance. We'll use this as the bridge from the amplitude to the precession angle.
+And this is a gauge invariance. We'll use this as the bridge from the amplitude to the precession angle. In the Newtonian limit, the form of this action will become
+
+$$
+S_{r} (E, J) = \frac{1}{\pi} \int_{r_{min}}^{r_{max}} \dd{r} \sqrt{ p^{2}(E) + 2 \mu M_{NR} (r) - \frac{J^{2}}{r^{2}} }
+$$
+
+#### Periastron Advance 
+
+$$
+\Delta \phi = 2 \pi \cdot \frac{\pdv[]{H}{S_{\phi}}}{\pdv[]{H}{S_{r}}} = - 2 \pi \pdv[]{S_{r}}{J}
+$$
+
+So we can get the precession angle from the gauge invariance $S_{r}$.
+
+$$
+S_{r} = \frac{1}{\pi} \int_{r_{min}}^{r_{max}} \dd{r} \sqrt{ A + \frac{2B}{r} - \frac{C}{r^{2}} } = i \left[ \sqrt{ -C } + \frac{B}{\sqrt{ A }} \right]
+$$
+
+with $A = p^{2}, B = G_{N}, C = J - 6 G_{N}^{2} M^{2} \mu$, we can get the precession angle
+
+$$
+\Delta \phi = 2 \pi \pdv[]{}{J} \sqrt{ J^{2} - 6 G_{N}^{2} M^{2} \mu^{2} } \approx 2 \pi + \frac{6\pi G_{N}M}{a (1-e^{2})}
+$$
+
