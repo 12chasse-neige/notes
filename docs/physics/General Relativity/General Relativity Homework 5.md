@@ -53,10 +53,10 @@ And we can get all nonzero components
 
 $$
 \begin{gathered}
-R_{tt} = \frac{\ddot{A}}{2A} - \frac{\dot{A}^{2}}{4A^{2}} - \frac{\dot{A}\dot{B}}{4AB} - \frac{B''}{2A} + \frac{B'}{4A} \left( \frac{A'}{A} + \frac{B'}{B} \right) - \frac{B'}{rA}  \\
-R_{tr} = - \frac{\dot{A}}{rA} \\
-R_{rr} = -\frac{\ddot{A}}{2B} + \frac{\dot{A}}{4B} \left( \frac{\dot{A}}{A} + \frac{\dot{B}}{B} \right) + \frac{B''}{2B} - \frac{B'}{4B} \left( \frac{A'}{A} + \frac{B'}{B} \right) - \frac{A'}{rA}  \\
-R_{\theta\theta} = - 1 + \frac{1}{A} - \frac{r}{2A}\left( \frac{A'}{A} - \frac{B'}{B} \right) \\
+R_{tt} = - \frac{\ddot{A}}{2A} + \frac{\dot{A}^{2}}{4A^{2}} + \frac{\dot{A}\dot{B}}{4AB} + \frac{B''}{2A} - \frac{B'}{4A} \left( \frac{A'}{A} + \frac{B'}{B} \right) + \frac{B'}{rA}  \\
+R_{tr} = R_{rt} =  \frac{\dot{A}}{rA} \\
+R_{rr} = \frac{\ddot{A}}{2B} - \frac{\dot{A}}{4B} \left( \frac{\dot{A}}{A} + \frac{\dot{B}}{B} \right) - \frac{B''}{2B} + \frac{B'}{4B} \left( \frac{A'}{A} + \frac{B'}{B} \right) + \frac{A'}{rA}  \\
+R_{\theta\theta} =  1 - \frac{1}{A} + \frac{r}{2A}\left( \frac{A'}{A} - \frac{B'}{B} \right) \\
 R_{\phi\phi} = \sin^{2}\theta \, R_{\theta\theta}
 \end{gathered}
 $$
