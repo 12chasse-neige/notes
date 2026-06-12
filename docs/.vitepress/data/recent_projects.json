@@ -1,5 +1,15 @@
 [
   {
+    "title": "General Relativity Homework 5",
+    "desc": "Calculate connection and Ricci tensor for a time-relevant metric.",
+    "tags": [
+      "General Relativity",
+      "Christoffel symbols",
+      "Ricci tensor"
+    ],
+    "link": "/physics/General Relativity/General Relativity Homework 5"
+  },
+  {
     "title": "Quantum Mechanics Homework 10: Spin in Landau",
     "desc": "Adding electron spin to Landau levels changes Hamiltonian, energy spectrum, and degeneracy.",
     "tags": [
@@ -21,21 +31,21 @@
   },
   {
     "title": "Statistical Mechanics Homework 13",
-    "desc": "Prove Jacobian determinant equals -1 for collision direction along x-axis.",
+    "desc": "Jacobian determinant for collision direction parallel to x-axis equals -1",
     "tags": [
-      "Jacobian",
-      "collision",
-      "statistical mechanics"
+      "statistical mechanics",
+      "Jacobian determinant",
+      "collision"
     ],
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 13"
   },
   {
-    "title": "Mercury Precession and 1-Loop Amplitudes",
+    "title": "Mercury Precession and 1-loop Amplitudes",
     "desc": "Next-to-leading order effects in particle cosmology using on-shell data.",
     "tags": [
       "particle cosmology",
-      "1-loop amplitudes",
-      "gravitational Compton scattering"
+      "mercury precession",
+      "1-loop amplitudes"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 10"
   },
@@ -51,21 +61,21 @@
   },
   {
     "title": "C++ Programming Basics Notes",
-    "desc": "Covers keywords, data types, control flow, and OOP concepts.",
+    "desc": "C++ keywords, data types, control flow, and OOP concepts.",
     "tags": [
       "C++",
-      "programming",
-      "keywords"
+      "keywords",
+      "programming basics"
     ],
     "link": "/coding/C++/C++_Note"
   },
   {
-    "title": "Python Programming Basics: Escape Characters",
-    "desc": "Common escape characters in Python with examples and usage scenarios.",
+    "title": "Python Programming Basics Notes",
+    "desc": "Escape characters in Python strings with examples and usage scenarios.",
     "tags": [
       "Python",
-      "Escape Characters",
-      "String Formatting"
+      "escape characters",
+      "string formatting"
     ],
     "link": "/coding/Python/Python_Note"
   },
@@ -81,7 +91,7 @@
   },
   {
     "title": "Analytical Mechanics Homework 1",
-    "desc": "Virtual work principle for rod in bowl and two beads on wire.",
+    "desc": "Virtual work principle for rod in bowl and two balls on wire",
     "tags": [
       "virtual work",
       "equilibrium",
@@ -101,7 +111,7 @@
   },
   {
     "title": "General Relativity Homework 6",
-    "desc": "Angular velocity range for observers in Kerr ergosphere.",
+    "desc": "Angular velocity range for observers inside Kerr ergosphere.",
     "tags": [
       "Kerr metric",
       "ergosphere",
@@ -114,8 +124,8 @@
     "desc": "Overview of gravitational wave detection across frequency bands and interferometer response.",
     "tags": [
       "gravitational waves",
-      "detection",
-      "interferometer"
+      "detectors",
+      "interferometry"
     ],
     "link": "/physics/General Relativity/Gravitational Waves/Detecting Gravitiational Waves"
   },
@@ -141,27 +151,27 @@
   },
   {
     "title": "Quantum Mechanics Homework 1",
-    "desc": "Photon number, infinite well, de Broglie wave velocities.",
+    "desc": "Photon number in cavity, infinite well energy, de Broglie wave velocities.",
     "tags": [
       "quantum mechanics",
-      "blackbody radiation",
+      "photon statistics",
       "Sommerfeld quantization"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 1"
   },
   {
     "title": "Quantum Mechanics Homework 4",
-    "desc": "Proofs of operator identities and uncertainty relation generalization.",
+    "desc": "Proofs on inverse operators, Hermitian transformations, and uncertainty relations.",
     "tags": [
+      "quantum mechanics",
       "Hermitian operator",
-      "unitary operator",
-      "uncertainty relation"
+      "uncertainty principle"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 4"
   },
   {
-    "title": "Quantum Mechanics Homework 6",
-    "desc": "Central force field, kinetic operator decomposition, bound S-state energy equation.",
+    "title": "Quantum Mechanics Homework 6: Central Force Field",
+    "desc": "Kinetic operator separation and bound state energy equation in spherical well.",
     "tags": [
       "quantum mechanics",
       "central force",
@@ -171,7 +181,7 @@
   },
   {
     "title": "Quantum Mechanics Homework 7",
-    "desc": "Angular momentum commutator and vector operator identities",
+    "desc": "Angular momentum commutators and vector operator identities.",
     "tags": [
       "angular momentum",
       "commutator",
@@ -191,7 +201,7 @@
   },
   {
     "title": "Quantum Mechanics Homework 9",
-    "desc": "Probability of singlet and triplet states for two electrons; three-electron spin states.",
+    "desc": "Two-electron spin states: singlet and triplet probabilities; three-electron total spin states.",
     "tags": [
       "quantum mechanics",
       "spin states",
@@ -211,7 +221,7 @@
   },
   {
     "title": "Statistical Mechanics Homework 4",
-    "desc": "Normalize probability distribution and classify particles as bosons or fermions.",
+    "desc": "Normalization of probability distribution and classification of bosons and fermions.",
     "tags": [
       "probability distribution",
       "normalization",
@@ -241,7 +251,7 @@
   },
   {
     "title": "Massless Spin-2 in Particle Cosmology",
-    "desc": "Classical field theory for massless spin-2 and gravity mediation.",
+    "desc": "Classical field theory for spin-1, spin-0, and spin-2 particles.",
     "tags": [
       "spin-2",
       "field theory",
@@ -251,11 +261,11 @@
   },
   {
     "title": "Dyson Series and On-Shell Factorization",
-    "desc": "Derivation of Dyson series for transition amplitude with source j.",
+    "desc": "Derives Dyson series for transition amplitude with source and fills missing steps in factorization proof.",
     "tags": [
       "Dyson series",
       "transition amplitude",
-      "interaction picture"
+      "on-shell factorization"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 4 Exercise"
   },
@@ -288,15 +298,5 @@
       "double pendulum"
     ],
     "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 10"
-  },
-  {
-    "title": "Atomic and Molecular Physics Homework 4",
-    "desc": "Autoionizing state energy and UV wavelength calculation for helium.",
-    "tags": [
-      "autoionizing state",
-      "helium",
-      "perturbation theory"
-    ],
-    "link": "/physics/Atomic and Molecular Physics/Atomic and Molecular Physics Homework 4"
   }
 ]
