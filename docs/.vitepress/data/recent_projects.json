@@ -1,17 +1,37 @@
 [
   {
-    "title": "General Relativity Homework 5",
-    "desc": "Calculate connection and Ricci tensor for a time-relevant metric.",
+    "title": "Early Universe Timeline and Key Processes",
+    "desc": "Chronology from inflation to BBN with temperatures and reactions.",
     "tags": [
-      "General Relativity",
+      "inflation",
+      "reheating",
+      "BBN"
+    ],
+    "link": "/physics/General Relativity/Early Universe"
+  },
+  {
+    "title": "General Relativity Homework 5",
+    "desc": "Calculate connection and Ricci tensor for time-relevant metric.",
+    "tags": [
       "Christoffel symbols",
-      "Ricci tensor"
+      "Ricci tensor",
+      "general relativity"
     ],
     "link": "/physics/General Relativity/General Relativity Homework 5"
   },
   {
+    "title": "Feynman Diagrams for Beginners",
+    "desc": "Introduction to Feynman diagrams with exercises for QFT beginners.",
+    "tags": [
+      "Feynman diagrams",
+      "quantum field theory",
+      "QED"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Field Theory/Feynman Diagrams for Beginners"
+  },
+  {
     "title": "Quantum Mechanics Homework 10: Spin in Landau",
-    "desc": "Adding electron spin to Landau levels changes Hamiltonian, energy spectrum, and degeneracy.",
+    "desc": "Adds electron spin to Landau levels, modifies Hamiltonian and degeneracy.",
     "tags": [
       "Landau levels",
       "electron spin",
@@ -31,7 +51,7 @@
   },
   {
     "title": "Statistical Mechanics Homework 13",
-    "desc": "Jacobian determinant for collision direction parallel to x-axis equals -1",
+    "desc": "Jacobian determinant for collision direction parallel to x-axis equals -1.",
     "tags": [
       "statistical mechanics",
       "Jacobian determinant",
@@ -41,41 +61,41 @@
   },
   {
     "title": "Mercury Precession and 1-loop Amplitudes",
-    "desc": "Next-to-leading order effects in particle cosmology using on-shell data.",
+    "desc": "Next-to-leading order effects in particle cosmology with on-shell data analysis.",
     "tags": [
       "particle cosmology",
-      "mercury precession",
-      "1-loop amplitudes"
+      "gravitational precession",
+      "on-shell amplitudes"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 10"
   },
   {
-    "title": "Particle Cosmology Lecture 11: Graviton Interactions",
-    "desc": "Expanding theory to all orders, recovering GR with graviton interactions.",
+    "title": "Particle Cosmology Lecture 11",
+    "desc": "Expanding theory to all orders, recovering GR with higher-order corrections.",
     "tags": [
       "graviton",
-      "general relativity",
-      "Noether's theorem"
+      "Noether's theorem",
+      "energy-momentum tensor"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 11"
   },
   {
     "title": "C++ Programming Basics Notes",
-    "desc": "C++ keywords, data types, control flow, and OOP concepts.",
+    "desc": "Covers keywords, data types, control flow, and OOP concepts.",
     "tags": [
       "C++",
-      "keywords",
-      "programming basics"
+      "programming",
+      "keywords"
     ],
     "link": "/coding/C++/C++_Note"
   },
   {
-    "title": "Python Programming Basics Notes",
-    "desc": "Escape characters in Python strings with examples and usage scenarios.",
+    "title": "Python Programming Basics: Escape Characters",
+    "desc": "Common escape sequences in Python strings with examples and usage scenarios.",
     "tags": [
       "Python",
-      "escape characters",
-      "string formatting"
+      "Escape Characters",
+      "String Formatting"
     ],
     "link": "/coding/Python/Python_Note"
   },
@@ -84,8 +104,8 @@
     "desc": "Taylor's theorem with Peano, Lagrange, and Cauchy remainder forms.",
     "tags": [
       "Taylor's theorem",
-      "remainder",
-      "calculus"
+      "remainder forms",
+      "advanced calculus"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (1) Final Review"
   },
@@ -101,7 +121,7 @@
   },
   {
     "title": "Analytical Mechanics Homework 2",
-    "desc": "Lagrangian equations for spring-mass, inclined plane, and conical pendulum systems.",
+    "desc": "Lagrangian equations for spring-mass, wedge, and conical pendulum systems.",
     "tags": [
       "Lagrangian mechanics",
       "spring-mass system",
@@ -111,7 +131,7 @@
   },
   {
     "title": "General Relativity Homework 6",
-    "desc": "Angular velocity range for observers inside Kerr ergosphere.",
+    "desc": "Analyzes allowed angular velocity range inside Kerr black hole ergosphere.",
     "tags": [
       "Kerr metric",
       "ergosphere",
@@ -120,7 +140,7 @@
     "link": "/physics/General Relativity/General Relativity Homework 6"
   },
   {
-    "title": "Detecting and Analyzing Gravitational Waves",
+    "title": "Detecting Gravitational Waves and Data Analysis",
     "desc": "Overview of gravitational wave detection across frequency bands and interferometer response.",
     "tags": [
       "gravitational waves",
@@ -131,7 +151,7 @@
   },
   {
     "title": "Quantum Noise in Gravitational Wave Detectors",
-    "desc": "Analysis of noise sources in Advanced LIGO, focusing on quantum noise and thermal effects.",
+    "desc": "Analysis of noise sources in Advanced LIGO, focusing on quantum noise and thermal noise.",
     "tags": [
       "quantum noise",
       "gravitational waves",
@@ -140,21 +160,11 @@
     "link": "/physics/General Relativity/Gravitational Waves/Quantum Noise"
   },
   {
-    "title": "Feynman Diagrams for Beginners",
-    "desc": "Introduction to Feynman diagrams with exercises for QFT beginners.",
-    "tags": [
-      "Feynman diagrams",
-      "quantum field theory",
-      "QED"
-    ],
-    "link": "/physics/Quantum Physics/Quantum Field Theory/Feynman Diagrams for Beginners"
-  },
-  {
     "title": "Quantum Mechanics Homework 1",
     "desc": "Photon number in cavity, infinite well energy, de Broglie wave velocities.",
     "tags": [
       "quantum mechanics",
-      "photon statistics",
+      "blackbody radiation",
       "Sommerfeld quantization"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 1"
@@ -170,8 +180,8 @@
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 4"
   },
   {
-    "title": "Quantum Mechanics Homework 6: Central Force Field",
-    "desc": "Kinetic operator separation and bound state energy equation in spherical well.",
+    "title": "Quantum Mechanics Homework 6",
+    "desc": "Central force field: kinetic operator separation and bound S-state energy equation.",
     "tags": [
       "quantum mechanics",
       "central force",
@@ -230,7 +240,7 @@
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 4"
   },
   {
-    "title": "Particle Cosmology Lecture 1",
+    "title": "Particle Cosmology Theoretical Topics Lecture 1",
     "desc": "Introduction to gravity, QFT, and fundamental interactions in natural units.",
     "tags": [
       "particle cosmology",
@@ -253,19 +263,19 @@
     "title": "Massless Spin-2 in Particle Cosmology",
     "desc": "Classical field theory for spin-1, spin-0, and spin-2 particles.",
     "tags": [
-      "spin-2",
-      "field theory",
-      "gravity"
+      "massless spin-2",
+      "classical field theory",
+      "particle cosmology"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 2"
   },
   {
     "title": "Dyson Series and On-Shell Factorization",
-    "desc": "Derives Dyson series for transition amplitude with source and fills missing steps in factorization proof.",
+    "desc": "Derivation of Dyson series for transition amplitude with source j.",
     "tags": [
       "Dyson series",
       "transition amplitude",
-      "on-shell factorization"
+      "interaction picture"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 4 Exercise"
   },
@@ -281,22 +291,12 @@
   },
   {
     "title": "Graviton Coupling and Classical Gravity Effects",
-    "desc": "Explore classical consequences of graviton coupling, recovering GR effects like light deflection.",
+    "desc": "Explore classical EM and gravity effects from graviton coupling, including Newton's law and light deflection.",
     "tags": [
       "graviton",
       "classical gravity",
       "general relativity"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 8 Exercise"
-  },
-  {
-    "title": "Analytical Mechanics Homework 10",
-    "desc": "Canonical variables, momentum-space Lagrangian, double pendulum small oscillations.",
-    "tags": [
-      "canonical variables",
-      "Lagrangian",
-      "double pendulum"
-    ],
-    "link": "/physics/Analytical Mechanics/Analytical Mechanics Homework 10"
   }
 ]
