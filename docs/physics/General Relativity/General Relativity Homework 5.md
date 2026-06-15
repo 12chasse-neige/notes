@@ -88,8 +88,3 @@ T^{\rho \sigma} = \frac{2}{\sqrt{-g}} \cdot \left(- \frac{1}{4} F_{\alpha \beta}
 F^{\rho \beta} F^{\sigma} {}_{\beta} - \frac{1}{4} g^{\rho \sigma} F^{\mu \nu} F_{\mu \nu}
 \end{gathered}
 $$
-
-
-
-
-

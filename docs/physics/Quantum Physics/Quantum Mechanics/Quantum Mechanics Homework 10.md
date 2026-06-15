@@ -832,13 +832,11 @@ $$
 即
 
 $$
-\boxed{
 \delta_{l}
 =\frac{\pi}{2}\left[
 l+\frac{1}{2}
 -\sqrt{\left(l+\frac{1}{2}\right)^{2}+\alpha}
 \right]
-}
 $$
 
 因为 $\alpha>0$，所以 $\nu_{l}>l$，各阶相移都是负的。这也符合 $U(r)=\alpha/r^{2}$ 是排斥势的直观图像。
@@ -954,9 +952,7 @@ $$
 最后得到
 
 $$
-\boxed{
 a_{0}=\frac{2a^{2}}{2a+L}
-}
 $$
 
 作为检验：当 $L\to 0$ 时，$\delta$ 势垒趋于无限强，结果 $a_{0}\to a$，回到硬球的散射长度；当 $L\to\infty$ 时，势垒趋于消失，结果 $a_{0}\to 0$。
