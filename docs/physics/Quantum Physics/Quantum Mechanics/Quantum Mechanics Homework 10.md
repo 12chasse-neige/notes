@@ -646,19 +646,16 @@ $$
 \Delta m=m'-m=\pm 1
 $$
 
-因此发生共振跃迁的条件是外场角频率等于相邻 Zeeman 能级间隔除以 $\hbar$：
+因此发生共振跃迁的条件是外场角频率等于相邻 Zeeman 能级间隔除以 $\hbar$
 
 $$
-\boxed{
 \omega=\omega_{0}
 =\frac{|\lambda|\mu_{\mathrm N}B_{0}}{\hbar}
-}
 $$
 
 如果保留 $\lambda$ 的符号，则吸收跃迁对应的能量差取正值；物理共振频率总是上式中的正数。
 
 11.1.1 完全刚性硬球指的是势场
-
 $$
 V(r) = \begin{cases} +\infty, & (r < a) \\ 0, & (r > a) \end{cases}
 $$

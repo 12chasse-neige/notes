@@ -902,4 +902,3 @@ $$
 =\exp\left[\frac{\eta}{2}(a^{2}-a^{\dagger2})\right]|\alpha\rangle
 $$
 
-

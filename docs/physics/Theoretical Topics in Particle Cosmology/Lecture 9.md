@@ -178,4 +178,3 @@ Two photons exchange a graviton. The long-range part is only induced by the t-ch
     $$
     \theta = \frac{8 G p}{b}
     $$
-    

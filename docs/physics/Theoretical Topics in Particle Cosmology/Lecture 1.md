@@ -1,13 +1,15 @@
-# Theoretical Topics in Particle Cosmology
+# Lecture 1
 
 Teacher: 鲜于中之
 
 #### Given / From lecture
 
-采用自然单位制 $c = \hbar = k_{B} = 1$
-其中 $1 \mathrm{GeV} \approx 10^{-24} \mathrm{g} \approx (10^{-24} \mathrm{s})^{-1} \approx (10^{-16} \mathrm{m})^{-1}$
-采用度规 $(-1, 1, 1, 1)$
-常用 $M_{pl} = \sqrt{8 \pi G_{N}} \approx 2.4 \times 10^{18} \mathrm{GeV}$
+$c = \hbar = k_{B} = 1$
+
+$1 \mathrm{GeV} \approx 10^{-24} \mathrm{g} \approx (10^{-24} \mathrm{s})^{-1} \approx (10^{-16} \mathrm{m})^{-1}$
+
+Use the metric with signs $(-1, 1, 1, 1)$
+Def that $M_{pl} = \sqrt{8 \pi G_{N}} \approx 2.4 \times 10^{18} \mathrm{GeV}$
 
 ---
 

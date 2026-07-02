@@ -174,3 +174,6 @@ $$
 T = \frac{b}{\lambda_{\text{max}}} = \frac{2.898 \times 10^{-3}}{4.80 \times 10^{-7}} \approx 6037 \, \text{K}.
 $$
 故太阳表面的温度约为 $6.0 \times 10^{3} \, \text{K}$
+
+
+

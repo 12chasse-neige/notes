@@ -34,17 +34,19 @@ $$
 \ln Z = -\frac{9N}{8} y_{D} - \frac{9N}{y_{D}^{3}} \int_{0}^{y_{D}} x^{2} \ln \left(1 - e^{-x}\right) \dd{x}
 $$
 
+#### 高温极限
+
 先看高温极限。此时 $T \gg \theta_{D}$，也就是 $y_{D} \ll 1$，利用展开
 $$
 -\frac{x}{2} - \ln \left(1 - e^{-x}\right) = - \ln x - \frac{x^{2}}{24} + O(x^{4})
 $$
 代入积分，得到
 $$
-\ln Z \approx 3N \left[1 + \ln \left(\frac{T}{\theta_{D}}\right)\right] - \frac{3N}{40} \left(\frac{\theta_{D}}{T}\right)^{2}
+\ln Z \approx N \left[1 + 3\ln \left(\frac{T}{\theta_{D}}\right)\right] - \frac{3N}{40} \left(\frac{\theta_{D}}{T}\right)^{2}
 $$
 只保留主项时
 $$
-\ln Z \approx 3N \left[1 + \ln \left(\frac{T}{\theta_{D}}\right)\right]
+\ln Z \approx N \left[1 + 3 \ln \left(\frac{T}{\theta_{D}}\right)\right]
 $$
 内能由
 $$
@@ -64,12 +66,14 @@ S = k_{B} \left(\ln Z + \beta U\right)
 $$
 因此高温下
 $$
-S \approx 3N k_{B} \left[2 + \ln \left(\frac{T}{\theta_{D}}\right) + \frac{1}{40} \left(\frac{\theta_{D}}{T}\right)^{2}\right]
+S \approx 3N k_{B} \left[\frac{4}{3} + \ln \left(\frac{T}{\theta_{D}}\right) + \frac{1}{40} \left(\frac{\theta_{D}}{T}\right)^{2}\right]
 $$
 只保留主项时
 $$
-S \approx 3N k_{B} \left[2 + \ln \left(\frac{T}{\theta_{D}}\right)\right]
+S \approx 3N k_{B} \left[\frac{4}{3} + \ln \left(\frac{T}{\theta_{D}}\right)\right]
 $$
+
+#### 低温极限
 
 再看低温极限。此时 $T \ll \theta_{D}$，也就是 $y_{D} \gg 1$，积分上限可以近似取到无穷大
 $$

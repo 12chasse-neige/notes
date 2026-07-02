@@ -2,7 +2,7 @@
 
 (1) Please derive the commutator $[\phi(t, \tilde{x}), \dot{\phi}(t, \tilde{y})]$ from the commutators of creation and annihilation operators, using (1) and (2).
 
-#### Given / From lecture
+#### From lecture
 
 Long story short, causality (in the formal of micro-causality) requires that we pack creation and annihilation operators, $a^{\dagger}_{\tilde{k}}$ and $a_{\tilde{k}}$, properly into a local operator $\phi(x)$:
 
@@ -32,7 +32,7 @@ $$
 
 (2) Please determine $a$ by the Lorentz invariance of the massless spin-1 Lagrangian $\mathcal{L}$ in (11), and also $a$, $b$, and $c$ in the massless spin-2 Lagrangian in (26).
 
-#### Given / From lecture
+#### From lecture
 
 Famously, the unwanted terms are avoided if we exploit the Lorentz-index contraction and add a new term:
 
@@ -67,7 +67,7 @@ $$
 
 To make these terms vanish, we can find that we should let $a = \frac{1}{2}$.
 
-  For spin-2, demand invariance under
+For spin-2, demand invariance under
 
 $$
 \delta h_{\mu\nu}=\partial_{\mu} \xi_{\nu}+\partial_{\nu} \xi_{\mu}
@@ -79,7 +79,7 @@ $$
 \mathcal{L}=\frac14 h^{\mu\nu}\Box h_{\mu\nu}+a h\Box h+b h\partial_{\mu}\partial_{\nu} h^{\mu\nu}+c h^{\mu\nu}\partial_{\mu}\partial^{\lambda} h_{\nu\lambda}
 $$
 
-the equation-of-motion tensor is
+the EoM tensor is
 
 $$
 E_{\mu\nu}=\frac12\Box h_{\mu\nu}+2a\eta_{\mu\nu}\Box h+b\eta_{\mu\nu}\partial_{\rho}\partial_{\sigma} h^{\rho\sigma}+b\partial_{\mu}\partial_{\nu} h+c\left(\partial_{\mu}\partial^{\lambda} h_{\nu\lambda}+\partial_{\nu}\partial^{\lambda} h_{\mu\lambda}\right)
@@ -105,7 +105,7 @@ $$
 
 (3) Please derive the graviton's propagator (38) by solving the equation (36).
 
-#### Given / From lecture
+#### From lecture
 
 The graviton propagator $G_{\mu\nu,\rho\sigma}$ is a solution to
 
@@ -168,28 +168,24 @@ $$
 Now we do the contraction explicitly. For the $A$ part,
 
 $$
-\begin{aligned}
-& (\eta_{\lambda\mu}\eta_{\kappa\nu}+\eta_{\lambda\nu}\eta_{\kappa\mu}-\eta_{\lambda\kappa}\eta_{\mu\nu})
-(\eta^{\mu\rho}\eta^{\nu\sigma}+\eta^{\mu\sigma}\eta^{\nu\rho}) \\
-&= 2(\delta^{\rho}_{\lambda}\delta^{\sigma}_{\kappa}+\delta^{\sigma}_{\lambda}\delta^{\rho}_{\kappa})-2\eta_{\lambda\kappa}\eta^{\rho\sigma}
-\end{aligned}
+(\eta_{\lambda\mu}\eta_{\kappa\nu}+\eta_{\lambda\nu}\eta_{\kappa\mu}-\eta_{\lambda\kappa}\eta_{\mu\nu})
+(\eta^{\mu\rho}\eta^{\nu\sigma}+\eta^{\mu\sigma}\eta^{\nu\rho}) 
+= 2(\delta^{\rho}_{\lambda}\delta^{\sigma}_{\kappa}+\delta^{\sigma}_{\lambda}\delta^{\rho}_{\kappa})-2\eta_{\lambda\kappa}\eta^{\rho\sigma}
 $$
 
-For the $B$ part, in four dimensions,
+For the $B$ part, in four dimensions
 
 $$
-\begin{aligned}
 (\eta_{\lambda\mu}\eta_{\kappa\nu}+\eta_{\lambda\nu}\eta_{\kappa\mu}-\eta_{\lambda\kappa}\eta_{\mu\nu})
 \eta^{\mu\nu}\eta^{\rho\sigma}
-&= (\eta_{\lambda\kappa}+\eta_{\lambda\kappa}-4\eta_{\lambda\kappa})\eta^{\rho\sigma} \\
-&= -2\eta_{\lambda\kappa}\eta^{\rho\sigma}
-\end{aligned}
+= (\eta_{\lambda\kappa}+\eta_{\lambda\kappa}-4\eta_{\lambda\kappa})\eta^{\rho\sigma}
+= -2\eta_{\lambda\kappa}\eta^{\rho\sigma}
 $$
 
 Thus the left hand side becomes
 
 $$
-\frac{1}{4}\left[2A(\delta^{\rho}_{\lambda}\delta^{\sigma}_{\kappa}+\delta^{\sigma}_{\lambda}\delta^{\rho}_{\kappa})-2(A+B)\eta_{\lambda\kappa}\eta^{\rho\sigma}\right]
+\frac{1}{4} \left[2A(\delta^{\rho}_{\lambda}\delta^{\sigma}_{\kappa}+\delta^{\sigma}_{\lambda}\delta^{\rho}_{\kappa})-2(A+B)\eta_{\lambda\kappa}\eta^{\rho\sigma}\right]
 $$
 
 Comparing with the right hand side gives
@@ -217,7 +213,7 @@ which is exactly (38).
 
 (4) Please expand the Hilbert-Einstein action $S = \frac{M_{\text{Pl}}^{2}}{2} \int d^{4} x \sqrt{-g} R$ with $g_{\mu\nu} = \eta_{\mu\nu} + \kappa h_{\mu\nu}$ to quadratic order in $h_{\mu\nu}$ and show that quadratic Lagrangian for $h_{\mu\nu}$ is identical to (27) up to total derivative terms.
 
-#### Given / From lecture
+#### From lecture
 
 Then, Lorentz-invariance (namely, invariant under $\delta h_{\mu\nu} = \partial_{\mu} \xi_{\nu} + \partial_{\nu} \xi_{\mu}$ with free $\xi_{\mu}$) uniquely fixes $a = -\frac{1}{4}$, $b = \frac{1}{2}$, $c = -\frac{1}{2}$. So, the Lorentz invariant Lagrangian for a free graviton reads:
 
@@ -229,7 +225,7 @@ $$
 
 For the expansion part, actually I’ve done this annoying calculation once in the general relativity homework and I don’t want to do it again. So please allow me to copy the expansion process here:
 
-#### Given / From lecture
+#### From my GR Homework
 
 Consider the perturbation to the metric field in Minkowski background. We expand the metric tensor as $g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}$.
 
