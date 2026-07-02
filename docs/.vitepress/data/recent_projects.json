@@ -1,7 +1,137 @@
 [
   {
+    "title": "Statistical Machine Learning Lecture Notes",
+    "desc": "Mathematical derivations for linear regression and MSE optimization",
+    "tags": [
+      "linear regression",
+      "mean squared error",
+      "ordinary least squares"
+    ],
+    "link": "/coding/Deep Learning/Lecture 1B: Statistical Machine Learning"
+  },
+  {
+    "title": "Deep Learning Basics Lecture Notes",
+    "desc": "Definitions, derivations, and three gaps in deep learning.",
+    "tags": [
+      "deep learning",
+      "machine learning",
+      "neural networks"
+    ],
+    "link": "/coding/Deep Learning/Lecture 2A: Deep Learning Basics"
+  },
+  {
+    "title": "Quantum Mechanics Homework 10: Spin in Landau",
+    "desc": "Adding electron spin to Landau levels changes Hamiltonian, energy spectrum, and degeneracy.",
+    "tags": [
+      "Landau levels",
+      "electron spin",
+      "Zeeman effect"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 10"
+  },
+  {
+    "title": "Quantum Mechanics Homework 6",
+    "desc": "Central force field, kinetic operator separation, bound S-state energy equation.",
+    "tags": [
+      "quantum mechanics",
+      "central force",
+      "kinetic operator"
+    ],
+    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 6"
+  },
+  {
+    "title": "Statistical Mechanics Homework 8",
+    "desc": "Bose-Einstein condensation in 2D ideal gas and 3D harmonic trap.",
+    "tags": [
+      "Bose-Einstein condensation",
+      "ideal Bose gas",
+      "harmonic trap"
+    ],
+    "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 8"
+  },
+  {
+    "title": "Statistical Mechanics Homework 9",
+    "desc": "Debye spectrum for partition function, internal energy, and entropy.",
+    "tags": [
+      "Debye model",
+      "partition function",
+      "internal energy"
+    ],
+    "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 9"
+  },
+  {
+    "title": "Final Project Requirements for Particle Cosmology",
+    "desc": "Choose a topic on massless particles or Mercury precession, write a term paper.",
+    "tags": [
+      "particle cosmology",
+      "massless particles",
+      "Mercury precession"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Final Project/Final Project Requirements"
+  },
+  {
+    "title": "Particle Cosmology Lecture 1: Gravity and QFT",
+    "desc": "Introduction to gravity, QFT, and fundamental interactions in particle cosmology.",
+    "tags": [
+      "gravity",
+      "quantum field theory",
+      "particle cosmology"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 1"
+  },
+  {
+    "title": "Commutation Relations in QFT",
+    "desc": "Derive commutator from creation/annihilation operators and determine Lagrangian parameters.",
+    "tags": [
+      "quantum field theory",
+      "commutator",
+      "Lorentz invariance"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 7 Exercise"
+  },
+  {
+    "title": "Long-Range Potential from Scalar Exchange",
+    "desc": "Derives potential for heavy scalar via massless scalar exchange in QFT.",
+    "tags": [
+      "scalar field",
+      "long-range potential",
+      "Fourier transform"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 8 Exercise"
+  },
+  {
+    "title": "Electromagnetic Light Bending by Proton",
+    "desc": "Determines leading order of electromagnetic bending angle for photon by proton.",
+    "tags": [
+      "light bending",
+      "electromagnetic interaction",
+      "Compton scattering"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 9 Exercise"
+  },
+  {
+    "title": "Classical Limit for Light Bending",
+    "desc": "Phase shift and classical limit in particle scattering with graviton exchange.",
+    "tags": [
+      "particle physics",
+      "scattering theory",
+      "classical limit"
+    ],
+    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 9"
+  },
+  {
+    "title": "X-ray Notes",
+    "desc": "Notes on X-ray physics and applications.",
+    "tags": [
+      "X-ray",
+      "physics",
+      "radiation"
+    ],
+    "link": "/physics/X-ray/x-ray note"
+  },
+  {
     "title": "Early Universe Timeline and Key Processes",
-    "desc": "Chronology from inflation to BBN with temperatures and reactions.",
+    "desc": "Chronological table of early universe events from inflation to BBN.",
     "tags": [
       "inflation",
       "reheating",
@@ -11,7 +141,7 @@
   },
   {
     "title": "General Relativity Homework 5",
-    "desc": "Calculate connection and Ricci tensor for time-relevant metric.",
+    "desc": "Calculate connection and Ricci tensor for a time-dependent metric.",
     "tags": [
       "Christoffel symbols",
       "Ricci tensor",
@@ -30,18 +160,8 @@
     "link": "/physics/Quantum Physics/Quantum Field Theory/Feynman Diagrams for Beginners"
   },
   {
-    "title": "Quantum Mechanics Homework 10: Spin in Landau",
-    "desc": "Adds electron spin to Landau levels, modifies Hamiltonian and degeneracy.",
-    "tags": [
-      "Landau levels",
-      "electron spin",
-      "Zeeman effect"
-    ],
-    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 10"
-  },
-  {
     "title": "Quantum Mechanics Homework 2",
-    "desc": "Infinite square well problems: pressure, wave function evolution, and probability.",
+    "desc": "Particle in infinite square well: pressure, wave function evolution, and probability.",
     "tags": [
       "quantum mechanics",
       "infinite square well",
@@ -51,7 +171,7 @@
   },
   {
     "title": "Statistical Mechanics Homework 13",
-    "desc": "Jacobian determinant for collision direction parallel to x-axis equals -1.",
+    "desc": "Prove Jacobian determinant J = -1 for collision direction parallel to x-axis.",
     "tags": [
       "statistical mechanics",
       "Jacobian determinant",
@@ -60,22 +180,22 @@
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 13"
   },
   {
-    "title": "Mercury Precession and 1-loop Amplitudes",
-    "desc": "Next-to-leading order effects in particle cosmology with on-shell data analysis.",
+    "title": "Particle Cosmology: Mercury Precession and 1-loop Amplitudes",
+    "desc": "Next-to-leading order effects in gravity, 1-loop amplitudes, and gravitational Compton scattering.",
     "tags": [
-      "particle cosmology",
-      "gravitational precession",
-      "on-shell amplitudes"
+      "Mercury precession",
+      "1-loop amplitudes",
+      "gravitational Compton scattering"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 10"
   },
   {
-    "title": "Particle Cosmology Lecture 11",
-    "desc": "Expanding theory to all orders, recovering GR with higher-order corrections.",
+    "title": "Particle Cosmology Lecture 11: Graviton Interactions",
+    "desc": "Expanding theory to all orders, recovering GR with graviton interactions.",
     "tags": [
       "graviton",
-      "Noether's theorem",
-      "energy-momentum tensor"
+      "general relativity",
+      "Noether's theorem"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 11"
   },
@@ -84,18 +204,18 @@
     "desc": "Covers keywords, data types, control flow, and OOP concepts.",
     "tags": [
       "C++",
-      "programming",
-      "keywords"
+      "Programming",
+      "Keywords"
     ],
     "link": "/coding/C++/C++_Note"
   },
   {
-    "title": "Python Programming Basics: Escape Characters",
-    "desc": "Common escape sequences in Python strings with examples and usage scenarios.",
+    "title": "Python Escape Characters Reference",
+    "desc": "Common escape sequences in Python strings with examples and usage.",
     "tags": [
       "Python",
-      "Escape Characters",
-      "String Formatting"
+      "escape characters",
+      "string formatting"
     ],
     "link": "/coding/Python/Python_Note"
   },
@@ -104,14 +224,14 @@
     "desc": "Taylor's theorem with Peano, Lagrange, and Cauchy remainder forms.",
     "tags": [
       "Taylor's theorem",
-      "remainder forms",
-      "advanced calculus"
+      "remainder",
+      "calculus"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (1) Final Review"
   },
   {
     "title": "Analytical Mechanics Homework 1",
-    "desc": "Virtual work principle for rod in bowl and two balls on wire",
+    "desc": "Virtual work principle for rod in bowl and two beads on wire",
     "tags": [
       "virtual work",
       "equilibrium",
@@ -121,7 +241,7 @@
   },
   {
     "title": "Analytical Mechanics Homework 2",
-    "desc": "Lagrangian equations for spring-mass, wedge, and conical pendulum systems.",
+    "desc": "Lagrangian equations for spring-mass, inclined plane, and conical pendulum systems.",
     "tags": [
       "Lagrangian mechanics",
       "spring-mass system",
@@ -131,7 +251,7 @@
   },
   {
     "title": "General Relativity Homework 6",
-    "desc": "Analyzes allowed angular velocity range inside Kerr black hole ergosphere.",
+    "desc": "Angular velocity range inside ergosphere for fixed r.",
     "tags": [
       "Kerr metric",
       "ergosphere",
@@ -140,7 +260,7 @@
     "link": "/physics/General Relativity/General Relativity Homework 6"
   },
   {
-    "title": "Detecting Gravitational Waves and Data Analysis",
+    "title": "Detecting and Analyzing Gravitational Waves",
     "desc": "Overview of gravitational wave detection across frequency bands and interferometer response.",
     "tags": [
       "gravitational waves",
@@ -150,8 +270,8 @@
     "link": "/physics/General Relativity/Gravitational Waves/Detecting Gravitiational Waves"
   },
   {
-    "title": "Quantum Noise in Gravitational Wave Detectors",
-    "desc": "Analysis of noise sources in Advanced LIGO, focusing on quantum noise and thermal noise.",
+    "title": "Quantum Noise and Noise Composition",
+    "desc": "Analysis of quantum noise, thermal noise, and other noise sources in Advanced LIGO.",
     "tags": [
       "quantum noise",
       "gravitational waves",
@@ -165,7 +285,7 @@
     "tags": [
       "quantum mechanics",
       "blackbody radiation",
-      "Sommerfeld quantization"
+      "infinite potential well"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 1"
   },
@@ -175,128 +295,8 @@
     "tags": [
       "quantum mechanics",
       "Hermitian operator",
-      "uncertainty principle"
+      "uncertainty relation"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 4"
-  },
-  {
-    "title": "Quantum Mechanics Homework 6",
-    "desc": "Central force field: kinetic operator separation and bound S-state energy equation.",
-    "tags": [
-      "quantum mechanics",
-      "central force",
-      "kinetic operator"
-    ],
-    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 6"
-  },
-  {
-    "title": "Quantum Mechanics Homework 7",
-    "desc": "Angular momentum commutators and vector operator identities.",
-    "tags": [
-      "angular momentum",
-      "commutator",
-      "vector operator"
-    ],
-    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 7"
-  },
-  {
-    "title": "Quantum Mechanics Homework 8",
-    "desc": "Pauli matrix identities, ladder operators, and projection operators.",
-    "tags": [
-      "Pauli matrices",
-      "ladder operators",
-      "projection operators"
-    ],
-    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 8"
-  },
-  {
-    "title": "Quantum Mechanics Homework 9",
-    "desc": "Two-electron spin states: singlet and triplet probabilities; three-electron total spin states.",
-    "tags": [
-      "quantum mechanics",
-      "spin states",
-      "singlet"
-    ],
-    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 9"
-  },
-  {
-    "title": "Statistical Mechanics Homework 1",
-    "desc": "Derives equation of state from thermal expansion and compressibility.",
-    "tags": [
-      "statistical mechanics",
-      "equation of state",
-      "thermal expansion"
-    ],
-    "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 1"
-  },
-  {
-    "title": "Statistical Mechanics Homework 4",
-    "desc": "Normalization of probability distribution and classification of bosons and fermions.",
-    "tags": [
-      "probability distribution",
-      "normalization",
-      "bosons"
-    ],
-    "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 4"
-  },
-  {
-    "title": "Particle Cosmology Theoretical Topics Lecture 1",
-    "desc": "Introduction to gravity, QFT, and fundamental interactions in natural units.",
-    "tags": [
-      "particle cosmology",
-      "gravity",
-      "quantum field theory"
-    ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 1"
-  },
-  {
-    "title": "Particle Cosmology Lecture 2 Exercise",
-    "desc": "Integral evaluation and derivation of photon energy-momentum tensor.",
-    "tags": [
-      "quantum field theory",
-      "residue theorem",
-      "energy-momentum tensor"
-    ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 2 Exercise"
-  },
-  {
-    "title": "Massless Spin-2 in Particle Cosmology",
-    "desc": "Classical field theory for spin-1, spin-0, and spin-2 particles.",
-    "tags": [
-      "massless spin-2",
-      "classical field theory",
-      "particle cosmology"
-    ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 2"
-  },
-  {
-    "title": "Dyson Series and On-Shell Factorization",
-    "desc": "Derivation of Dyson series for transition amplitude with source j.",
-    "tags": [
-      "Dyson series",
-      "transition amplitude",
-      "interaction picture"
-    ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 4 Exercise"
-  },
-  {
-    "title": "Particle Cosmology Lecture 7 Exercise",
-    "desc": "Derive commutator and determine parameters from Lorentz invariance.",
-    "tags": [
-      "commutator",
-      "creation operator",
-      "annihilation operator"
-    ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 7 Exercise"
-  },
-  {
-    "title": "Graviton Coupling and Classical Gravity Effects",
-    "desc": "Explore classical EM and gravity effects from graviton coupling, including Newton's law and light deflection.",
-    "tags": [
-      "graviton",
-      "classical gravity",
-      "general relativity"
-    ],
-    "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 8 Exercise"
   }
 ]
