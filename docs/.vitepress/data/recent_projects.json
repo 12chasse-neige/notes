@@ -21,10 +21,10 @@
   },
   {
     "title": "Deep Learning Basics Lecture Notes",
-    "desc": "Covers statistical learning review, three gaps, and neural network introduction.",
+    "desc": "Definitions, derivations, and gaps in deep learning.",
     "tags": [
       "deep learning",
-      "statistical learning",
+      "machine learning",
       "neural networks"
     ],
     "link": "/coding/Deep Learning/Lecture 2A: Deep Learning Basics"
@@ -40,18 +40,18 @@
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 10"
   },
   {
-    "title": "Quantum Mechanics Homework 6: Central Force Field",
-    "desc": "Transforms kinetic energy operator and solves bound S-state in spherical well.",
+    "title": "Quantum Mechanics Homework 6",
+    "desc": "Central force field: kinetic operator decomposition and bound state equation.",
     "tags": [
       "quantum mechanics",
       "central force",
-      "kinetic energy operator"
+      "kinetic operator"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 6"
   },
   {
     "title": "Statistical Mechanics Homework 8",
-    "desc": "Bose-Einstein condensation in 2D ideal gas and 3D harmonic trap",
+    "desc": "BEC in 2D ideal Bose gas and 3D harmonic trap",
     "tags": [
       "Bose-Einstein condensation",
       "ideal Bose gas",
@@ -61,11 +61,11 @@
   },
   {
     "title": "Debye Model: Partition Function and Thermodynamics",
-    "desc": "Derives ln Z, internal energy, and entropy for solids using Debye spectrum.",
+    "desc": "Derives ln Z, internal energy, and entropy for solids at high and low temperatures.",
     "tags": [
       "Debye model",
       "partition function",
-      "internal energy"
+      "statistical mechanics"
     ],
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 9"
   },
@@ -80,8 +80,8 @@
     "link": "/physics/Theoretical Topics in Particle Cosmology/Final Project/Final Project Requirements"
   },
   {
-    "title": "Particle Cosmology Lecture 1",
-    "desc": "Introduction to gravity, QFT, and fundamental interactions with natural units.",
+    "title": "Particle Cosmology Lecture 1: Gravity and QFT",
+    "desc": "Introduction to gravity, QFT, and fundamental interactions in particle cosmology.",
     "tags": [
       "gravity",
       "quantum field theory",
@@ -90,12 +90,12 @@
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 1"
   },
   {
-    "title": "Commutation Relations in Field Theory",
-    "desc": "Derive commutator from creation/annihilation operators and determine Lagrangian parameters.",
+    "title": "Commutation Relations in QFT",
+    "desc": "Derive commutator from creation/annihilation operators and find Lagrangian parameters.",
     "tags": [
+      "quantum field theory",
       "commutator",
-      "field theory",
-      "creation operator"
+      "Lagrangian"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 7 Exercise"
   },
@@ -110,18 +110,18 @@
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 8 Exercise"
   },
   {
-    "title": "Electromagnetic Light Bending by Proton",
-    "desc": "Determines leading order of electromagnetic bending angle for photon by proton.",
+    "title": "Electromagnetic Bending of Light by Proton",
+    "desc": "Determines leading order of EM bending angle at O(e^6) and its functional form.",
     "tags": [
+      "particle cosmology",
       "light bending",
-      "electromagnetic interaction",
-      "Compton scattering"
+      "electromagnetic interaction"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 9 Exercise"
   },
   {
     "title": "Classical Limit for Light Bending",
-    "desc": "Phase shift and classical limit in particle scattering with graviton exchange.",
+    "desc": "Phase shift and classical limit in particle scattering with gravitons.",
     "tags": [
       "light bending",
       "phase shift",
@@ -131,7 +131,7 @@
   },
   {
     "title": "Early Universe Timeline and Key Processes",
-    "desc": "Chronology from inflation to BBN with temperatures and reactions.",
+    "desc": "Chronology from inflation to BBN with temperatures, times, and reactions.",
     "tags": [
       "inflation",
       "reheating",
@@ -161,10 +161,10 @@
   },
   {
     "title": "Quantum Mechanics Homework 2",
-    "desc": "Particle in infinite potential well: pressure, wave function evolution, probability.",
+    "desc": "Infinite square well problems: pressure, wave function evolution, and probability.",
     "tags": [
       "quantum mechanics",
-      "infinite potential well",
+      "infinite square well",
       "wave function"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 2"
@@ -173,9 +173,9 @@
     "title": "Statistical Mechanics Homework 13",
     "desc": "Prove Jacobian determinant equals -1 for collision direction along x-axis.",
     "tags": [
-      "Jacobian",
-      "collision",
-      "statistical mechanics"
+      "statistical mechanics",
+      "Jacobian determinant",
+      "molecular collisions"
     ],
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 13"
   },
@@ -204,7 +204,7 @@
     "desc": "Covers keywords, data types, control flow, and OOP concepts.",
     "tags": [
       "C++",
-      "Programming",
+      "Programming Basics",
       "Keywords"
     ],
     "link": "/coding/C++/C++_Note"
@@ -224,14 +224,14 @@
     "desc": "Taylor's theorem with Peano, Lagrange, and Cauchy remainder forms.",
     "tags": [
       "Taylor's theorem",
-      "remainder",
-      "calculus"
+      "remainder forms",
+      "advanced calculus"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (1) Final Review"
   },
   {
     "title": "Analytical Mechanics Homework 1",
-    "desc": "Virtual work principle for rod in bowl and two balls on wire",
+    "desc": "Virtual work principle for rod in bowl and two beads on wire",
     "tags": [
       "virtual work",
       "equilibrium",
@@ -251,7 +251,7 @@
   },
   {
     "title": "General Relativity Homework 6",
-    "desc": "Analyzes allowed angular velocity range inside Kerr black hole ergosphere.",
+    "desc": "Analyzes allowed angular velocity range inside Kerr ergosphere.",
     "tags": [
       "Kerr metric",
       "ergosphere",
@@ -261,11 +261,11 @@
   },
   {
     "title": "Detecting and Analyzing Gravitational Waves",
-    "desc": "Overview of gravitational wave detectors and data analysis across frequency bands.",
+    "desc": "Overview of gravitational wave detection across frequency bands and interferometer response.",
     "tags": [
       "gravitational waves",
       "detectors",
-      "data analysis"
+      "interferometry"
     ],
     "link": "/physics/General Relativity/Gravitational Waves/Detecting Gravitiational Waves"
   },
@@ -281,7 +281,7 @@
   },
   {
     "title": "Quantum Mechanics Homework 1",
-    "desc": "Photon number in cavity, infinite well energy, de Broglie velocities.",
+    "desc": "Photon number in cavity, infinite well energy, de Broglie wave speeds.",
     "tags": [
       "quantum mechanics",
       "blackbody radiation",
