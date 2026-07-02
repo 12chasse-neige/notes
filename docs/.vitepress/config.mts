@@ -157,6 +157,77 @@ function findFirstLink(items: any[]): { text: string, link: string } | null {
   return null
 }
 
+function addClass(token: any, className: string) {
+  const index = token.attrIndex('class')
+  if (index < 0) {
+    token.attrPush(['class', className])
+  } else if (!token.attrs[index][1].split(/\s+/).includes(className)) {
+    token.attrs[index][1] += ` ${className}`
+  }
+}
+
+function findContainingListItem(tokens: any[], inlineIndex: number): number {
+  const inlineLevel = tokens[inlineIndex].level
+
+  for (let i = inlineIndex - 1; i >= 0; i--) {
+    const token = tokens[i]
+    if (token.type === 'list_item_open' && token.level === inlineLevel - 2) {
+      return i
+    }
+  }
+
+  return -1
+}
+
+function findContainingList(tokens: any[], listItemIndex: number): number {
+  const listItemLevel = tokens[listItemIndex].level
+
+  for (let i = listItemIndex - 1; i >= 0; i--) {
+    const token = tokens[i]
+    if (
+      (token.type === 'bullet_list_open' || token.type === 'ordered_list_open') &&
+      token.level === listItemLevel - 1
+    ) {
+      return i
+    }
+  }
+
+  return -1
+}
+
+function enableTaskLists(md: any) {
+  const marker = /^\[( |x|X)\][ \t]+/
+
+  md.core.ruler.after('inline', 'task_lists', (state: any) => {
+    state.tokens.forEach((token: any, index: number) => {
+      if (token.type !== 'inline' || !token.children?.length) return
+
+      const firstChild = token.children[0]
+      if (!firstChild?.content) return
+
+      const match = firstChild.content.match(marker)
+      if (!match) return
+
+      const listItemIndex = findContainingListItem(state.tokens, index)
+      if (listItemIndex < 0) return
+
+      const checkbox = new state.Token('html_inline', '', 0)
+      checkbox.content = `<input class="task-list-item-checkbox" type="checkbox" disabled${match[1].toLowerCase() === 'x' ? ' checked' : ''}>`
+
+      firstChild.content = firstChild.content.slice(match[0].length)
+      token.content = token.content.replace(marker, '')
+      token.children.unshift(checkbox)
+
+      addClass(state.tokens[listItemIndex], 'task-list-item')
+
+      const listIndex = findContainingList(state.tokens, listItemIndex)
+      if (listIndex >= 0) {
+        addClass(state.tokens[listIndex], 'contains-task-list')
+      }
+    })
+  })
+}
+
 export default defineConfig({
   base: '/notes/', // IMPORTANT: Matches your repo name
   title: 'Chasse_neige',
@@ -247,6 +318,8 @@ export default defineConfig({
     },
     breaks: false,
     config: (md) => {
+      enableTaskLists(md)
+
       md.core.ruler.push('patch_math_newlines', (state) => {
         state.tokens.forEach((token) => {
           if (token.type === 'math_block') {

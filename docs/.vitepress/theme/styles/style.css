@@ -46,6 +46,15 @@ mjx-container[display="true"] {
   overflow-y: hidden;
 }
 
+.vp-doc .task-list-item {
+  list-style: none;
+}
+
+.vp-doc .task-list-item-checkbox {
+  margin: 0 0.5em 0.2em -1.4em;
+  vertical-align: middle;
+}
+
 /* =======================================================
    HERO SECTION OVERRIDES
    ======================================================= */

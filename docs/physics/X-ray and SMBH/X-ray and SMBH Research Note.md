@@ -106,4 +106,35 @@ The last two are the caution/comparison papers. Bachetti et al. shows that a ULX
 
 ### Intermediate-Mass Black Holes
 
-We describe Intermediate Black Holes as bhs with mass from $100 \to 10^{5} M_{\odot}$
+We describe Intermediate Black Holes as bhs with mass from $100 \sim 10^{5} M_{\odot}$.
+
+>  #### accretion signature
+>
+>  An **accretion signature** means an **observable clue that a black hole is actively swallowing gas**.
+
+>  #### ULX and HLX
+>
+>  Ultra-luminous X-ray sources, or ULXs, are extremely bright X-ray point sources in other galaxies, but not located at the galaxy center. Very extreme ULXs above $10^{41}\ {\rm erg\ s^{-1}}$ are often called **hyper-luminous X-ray sources**, or HLXs.  
+
+How could we form non-stellar-mass bhs?
+
+1.  gravitational runaway
+2.  collapse of Population III stars
+3.  “direct collapse” into a bh
+
+<img src="./X-ray%20and%20SMBH%20Research%20Note.assets/image-20260702210223165.png" alt="image-20260702210223165" style="zoom:50%;" />
+
+#### Seeding Model
+
+Pop III stars will likely leave bhs around $M_{\text{BH}} \sim 100 M_{\odot}$, excepting first stars in the mass range of $1 4 0-2 6 0 ~ M_{\odot}$ that would explode as pair-instability supernovae and leave no remnant. This model is challenged by bh growing.
+
+Direct collapsing will leave bhs around $M_{BH} \sim 10^{4} - 10^{6} M_{\odot}$, but this channel can only operate at very high redshift. The number density of halos that suffer direct collapse is very uncertain.
+
+Gravitational runaway will produce $M_{BH} \sim 10^{3} - 10^{4} M_{\odot}$ within a dense stellar cluster.
+
+Theory predicts many possible IMBH populations, including nuclear and wandering black holes, but uncertainties in accretion, mergers, recoil, and occupation fraction make it difficult to use present-day demographics alone to identify the true seeding channel.
+
+#### Stellar and Gas Dynamical Searches for IMBHs
+
+
+
