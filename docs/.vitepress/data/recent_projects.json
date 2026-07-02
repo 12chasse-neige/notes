@@ -1,5 +1,15 @@
 [
   {
+    "title": "X-ray and SMBH Research Note",
+    "desc": "Final project on IMBH candidate HLX-1 using astroquery and Sherpa.",
+    "tags": [
+      "X-ray astronomy",
+      "supermassive black holes",
+      "intermediate-mass black holes"
+    ],
+    "link": "/physics/X-ray and SMBH/X-ray and SMBH Research Note"
+  },
+  {
     "title": "Statistical Machine Learning Lecture Notes",
     "desc": "Mathematical derivations for linear regression and MSE optimization",
     "tags": [
@@ -11,10 +21,10 @@
   },
   {
     "title": "Deep Learning Basics Lecture Notes",
-    "desc": "Definitions, derivations, and three gaps in deep learning.",
+    "desc": "Covers statistical learning review, three gaps, and neural network introduction.",
     "tags": [
       "deep learning",
-      "machine learning",
+      "statistical learning",
       "neural networks"
     ],
     "link": "/coding/Deep Learning/Lecture 2A: Deep Learning Basics"
@@ -30,18 +40,18 @@
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 10"
   },
   {
-    "title": "Quantum Mechanics Homework 6",
-    "desc": "Central force field, kinetic operator separation, bound S-state energy equation.",
+    "title": "Quantum Mechanics Homework 6: Central Force Field",
+    "desc": "Transforms kinetic energy operator and solves bound S-state in spherical well.",
     "tags": [
       "quantum mechanics",
       "central force",
-      "kinetic operator"
+      "kinetic energy operator"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 6"
   },
   {
     "title": "Statistical Mechanics Homework 8",
-    "desc": "Bose-Einstein condensation in 2D ideal gas and 3D harmonic trap.",
+    "desc": "Bose-Einstein condensation in 2D ideal gas and 3D harmonic trap",
     "tags": [
       "Bose-Einstein condensation",
       "ideal Bose gas",
@@ -50,8 +60,8 @@
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 8"
   },
   {
-    "title": "Statistical Mechanics Homework 9",
-    "desc": "Debye spectrum for partition function, internal energy, and entropy.",
+    "title": "Debye Model: Partition Function and Thermodynamics",
+    "desc": "Derives ln Z, internal energy, and entropy for solids using Debye spectrum.",
     "tags": [
       "Debye model",
       "partition function",
@@ -61,17 +71,17 @@
   },
   {
     "title": "Final Project Requirements for Particle Cosmology",
-    "desc": "Choose a topic on massless particles or Mercury precession, write a term paper.",
+    "desc": "Term paper on massless particle interactions or Mercury precession from amplitudes.",
     "tags": [
       "particle cosmology",
-      "massless particles",
-      "Mercury precession"
+      "scattering amplitudes",
+      "massless particles"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Final Project/Final Project Requirements"
   },
   {
-    "title": "Particle Cosmology Lecture 1: Gravity and QFT",
-    "desc": "Introduction to gravity, QFT, and fundamental interactions in particle cosmology.",
+    "title": "Particle Cosmology Lecture 1",
+    "desc": "Introduction to gravity, QFT, and fundamental interactions with natural units.",
     "tags": [
       "gravity",
       "quantum field theory",
@@ -80,12 +90,12 @@
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 1"
   },
   {
-    "title": "Commutation Relations in QFT",
+    "title": "Commutation Relations in Field Theory",
     "desc": "Derive commutator from creation/annihilation operators and determine Lagrangian parameters.",
     "tags": [
-      "quantum field theory",
       "commutator",
-      "Lorentz invariance"
+      "field theory",
+      "creation operator"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 7 Exercise"
   },
@@ -113,25 +123,15 @@
     "title": "Classical Limit for Light Bending",
     "desc": "Phase shift and classical limit in particle scattering with graviton exchange.",
     "tags": [
-      "particle physics",
-      "scattering theory",
+      "light bending",
+      "phase shift",
       "classical limit"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 9"
   },
   {
-    "title": "X-ray Notes",
-    "desc": "Notes on X-ray physics and applications.",
-    "tags": [
-      "X-ray",
-      "physics",
-      "radiation"
-    ],
-    "link": "/physics/X-ray/x-ray note"
-  },
-  {
     "title": "Early Universe Timeline and Key Processes",
-    "desc": "Chronological table of early universe events from inflation to BBN.",
+    "desc": "Chronology from inflation to BBN with temperatures and reactions.",
     "tags": [
       "inflation",
       "reheating",
@@ -161,31 +161,31 @@
   },
   {
     "title": "Quantum Mechanics Homework 2",
-    "desc": "Particle in infinite square well: pressure, wave function evolution, and probability.",
+    "desc": "Particle in infinite potential well: pressure, wave function evolution, probability.",
     "tags": [
       "quantum mechanics",
-      "infinite square well",
+      "infinite potential well",
       "wave function"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 2"
   },
   {
     "title": "Statistical Mechanics Homework 13",
-    "desc": "Prove Jacobian determinant J = -1 for collision direction parallel to x-axis.",
+    "desc": "Prove Jacobian determinant equals -1 for collision direction along x-axis.",
     "tags": [
-      "statistical mechanics",
-      "Jacobian determinant",
-      "collision"
+      "Jacobian",
+      "collision",
+      "statistical mechanics"
     ],
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 13"
   },
   {
-    "title": "Particle Cosmology: Mercury Precession and 1-loop Amplitudes",
-    "desc": "Next-to-leading order effects in gravity, 1-loop amplitudes, and gravitational Compton scattering.",
+    "title": "Mercury Precession and 1-loop Amplitudes",
+    "desc": "Next-to-leading order effects in particle cosmology using on-shell data.",
     "tags": [
-      "Mercury precession",
-      "1-loop amplitudes",
-      "gravitational Compton scattering"
+      "particle cosmology",
+      "mercury precession",
+      "1-loop amplitudes"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 10"
   },
@@ -231,7 +231,7 @@
   },
   {
     "title": "Analytical Mechanics Homework 1",
-    "desc": "Virtual work principle for rod in bowl and two beads on wire",
+    "desc": "Virtual work principle for rod in bowl and two balls on wire",
     "tags": [
       "virtual work",
       "equilibrium",
@@ -251,7 +251,7 @@
   },
   {
     "title": "General Relativity Homework 6",
-    "desc": "Angular velocity range inside ergosphere for fixed r.",
+    "desc": "Analyzes allowed angular velocity range inside Kerr black hole ergosphere.",
     "tags": [
       "Kerr metric",
       "ergosphere",
@@ -261,17 +261,17 @@
   },
   {
     "title": "Detecting and Analyzing Gravitational Waves",
-    "desc": "Overview of gravitational wave detection across frequency bands and interferometer response.",
+    "desc": "Overview of gravitational wave detectors and data analysis across frequency bands.",
     "tags": [
       "gravitational waves",
       "detectors",
-      "interferometry"
+      "data analysis"
     ],
     "link": "/physics/General Relativity/Gravitational Waves/Detecting Gravitiational Waves"
   },
   {
-    "title": "Quantum Noise and Noise Composition",
-    "desc": "Analysis of quantum noise, thermal noise, and other noise sources in Advanced LIGO.",
+    "title": "Quantum Noise in Gravitational Wave Detectors",
+    "desc": "Analysis of noise sources in Advanced LIGO, focusing on quantum noise and thermal effects.",
     "tags": [
       "quantum noise",
       "gravitational waves",
@@ -281,21 +281,21 @@
   },
   {
     "title": "Quantum Mechanics Homework 1",
-    "desc": "Photon number in cavity, infinite well energy, de Broglie wave velocities.",
+    "desc": "Photon number in cavity, infinite well energy, de Broglie velocities.",
     "tags": [
       "quantum mechanics",
       "blackbody radiation",
-      "infinite potential well"
+      "Sommerfeld quantization"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 1"
   },
   {
     "title": "Quantum Mechanics Homework 4",
-    "desc": "Proofs on inverse operators, Hermitian transformations, and uncertainty relations.",
+    "desc": "Proofs of inverse operator properties and uncertainty relation generalization.",
     "tags": [
-      "quantum mechanics",
       "Hermitian operator",
-      "uncertainty relation"
+      "uncertainty relation",
+      "unitary operator"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 4"
   }
