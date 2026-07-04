@@ -1,5 +1,15 @@
 [
   {
+    "title": "PyTorch Lecture 3: Tensors and Autograd",
+    "desc": "Covers tensors, GPU, autograd, modules, optimizers, and training loop.",
+    "tags": [
+      "PyTorch",
+      "deep learning",
+      "tensors"
+    ],
+    "link": "/coding/Deep Learning/Lecture 3: PyTorch"
+  },
+  {
     "title": "X-ray and SMBH Research Note",
     "desc": "Final project on IMBH candidate HLX-1 using astroquery and Sherpa.",
     "tags": [
@@ -40,8 +50,8 @@
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 10"
   },
   {
-    "title": "Quantum Mechanics Homework 6",
-    "desc": "Central force field: kinetic operator decomposition and bound state equation.",
+    "title": "Quantum Mechanics Homework 6: Central Force Field",
+    "desc": "Kinetic operator separation and bound state energy equation in spherical well.",
     "tags": [
       "quantum mechanics",
       "central force",
@@ -61,7 +71,7 @@
   },
   {
     "title": "Debye Model: Partition Function and Thermodynamics",
-    "desc": "Derives ln Z, internal energy, and entropy for solids at high and low temperatures.",
+    "desc": "Derives ln Z, internal energy, and entropy for solids using Debye spectrum.",
     "tags": [
       "Debye model",
       "partition function",
@@ -71,11 +81,11 @@
   },
   {
     "title": "Final Project Requirements for Particle Cosmology",
-    "desc": "Term paper on massless particle interactions or Mercury precession from amplitudes.",
+    "desc": "Choose a topic on massless particles or Mercury precession, write a term paper.",
     "tags": [
       "particle cosmology",
-      "scattering amplitudes",
-      "massless particles"
+      "massless particles",
+      "Mercury precession"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Final Project/Final Project Requirements"
   },
@@ -90,18 +100,18 @@
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 1"
   },
   {
-    "title": "Commutation Relations in QFT",
-    "desc": "Derive commutator from creation/annihilation operators and find Lagrangian parameters.",
+    "title": "Commutation Relations in Field Theory",
+    "desc": "Derive commutator from creation/annihilation operators and determine Lagrangian parameters.",
     "tags": [
-      "quantum field theory",
       "commutator",
-      "Lagrangian"
+      "field theory",
+      "creation operator"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 7 Exercise"
   },
   {
-    "title": "Long-Range Potential from Scalar Exchange",
-    "desc": "Derives potential for heavy scalar via massless scalar exchange in QFT.",
+    "title": "Heavy Scalar Long-Range Potential",
+    "desc": "Derives potential from scalar exchange in a problematic QFT model.",
     "tags": [
       "scalar field",
       "long-range potential",
@@ -110,12 +120,12 @@
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 8 Exercise"
   },
   {
-    "title": "Electromagnetic Bending of Light by Proton",
-    "desc": "Determines leading order of EM bending angle at O(e^6) and its functional form.",
+    "title": "Electromagnetic Light Bending by Proton",
+    "desc": "Determines leading order of electromagnetic bending angle for photon by proton.",
     "tags": [
-      "particle cosmology",
       "light bending",
-      "electromagnetic interaction"
+      "electromagnetic interaction",
+      "Compton scattering"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 9 Exercise"
   },
@@ -131,7 +141,7 @@
   },
   {
     "title": "Early Universe Timeline and Key Processes",
-    "desc": "Chronology from inflation to BBN with temperatures, times, and reactions.",
+    "desc": "Chronological table of early universe events from inflation to BBN.",
     "tags": [
       "inflation",
       "reheating",
@@ -141,7 +151,7 @@
   },
   {
     "title": "General Relativity Homework 5",
-    "desc": "Calculate connection and Ricci tensor for a time-dependent metric.",
+    "desc": "Calculate connection and Ricci tensor for time-relevant metric",
     "tags": [
       "Christoffel symbols",
       "Ricci tensor",
@@ -171,31 +181,31 @@
   },
   {
     "title": "Statistical Mechanics Homework 13",
-    "desc": "Prove Jacobian determinant equals -1 for collision direction along x-axis.",
+    "desc": "Jacobian determinant equals -1 for collision direction parallel to x-axis.",
     "tags": [
       "statistical mechanics",
       "Jacobian determinant",
-      "molecular collisions"
+      "collision dynamics"
     ],
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 13"
   },
   {
     "title": "Mercury Precession and 1-loop Amplitudes",
-    "desc": "Next-to-leading order effects in particle cosmology using on-shell data.",
+    "desc": "Next-to-leading order effects in particle cosmology, focusing on gravitational Compton scattering.",
     "tags": [
       "particle cosmology",
-      "mercury precession",
+      "gravitational precession",
       "1-loop amplitudes"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 10"
   },
   {
-    "title": "Particle Cosmology Lecture 11: Graviton Interactions",
-    "desc": "Expanding theory to all orders, recovering GR with graviton interactions.",
+    "title": "Particle Cosmology Lecture 11",
+    "desc": "Expanding theory to all orders, recovering GR with higher-order terms.",
     "tags": [
       "graviton",
-      "general relativity",
-      "Noether's theorem"
+      "Noether's theorem",
+      "energy-momentum tensor"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 11"
   },
@@ -204,14 +214,14 @@
     "desc": "Covers keywords, data types, control flow, and OOP concepts.",
     "tags": [
       "C++",
-      "Programming Basics",
+      "Programming",
       "Keywords"
     ],
     "link": "/coding/C++/C++_Note"
   },
   {
     "title": "Python Escape Characters Reference",
-    "desc": "Common escape sequences in Python strings with examples and usage.",
+    "desc": "Common escape sequences in Python strings with examples.",
     "tags": [
       "Python",
       "escape characters",
@@ -224,8 +234,8 @@
     "desc": "Taylor's theorem with Peano, Lagrange, and Cauchy remainder forms.",
     "tags": [
       "Taylor's theorem",
-      "remainder forms",
-      "advanced calculus"
+      "remainder",
+      "calculus"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (1) Final Review"
   },
@@ -251,7 +261,7 @@
   },
   {
     "title": "General Relativity Homework 6",
-    "desc": "Analyzes allowed angular velocity range inside Kerr ergosphere.",
+    "desc": "Angular velocity range for observers inside Kerr ergosphere.",
     "tags": [
       "Kerr metric",
       "ergosphere",
@@ -264,14 +274,14 @@
     "desc": "Overview of gravitational wave detection across frequency bands and interferometer response.",
     "tags": [
       "gravitational waves",
-      "detectors",
+      "detection",
       "interferometry"
     ],
     "link": "/physics/General Relativity/Gravitational Waves/Detecting Gravitiational Waves"
   },
   {
-    "title": "Quantum Noise in Gravitational Wave Detectors",
-    "desc": "Analysis of noise sources in Advanced LIGO, focusing on quantum noise and thermal effects.",
+    "title": "Quantum Noise and Noise Composition",
+    "desc": "Analysis of noise sources in Advanced LIGO, focusing on quantum noise and thermal noise.",
     "tags": [
       "quantum noise",
       "gravitational waves",
@@ -281,22 +291,12 @@
   },
   {
     "title": "Quantum Mechanics Homework 1",
-    "desc": "Photon number in cavity, infinite well energy, de Broglie wave speeds.",
+    "desc": "Photon number, infinite well, de Broglie wave velocities.",
     "tags": [
       "quantum mechanics",
       "blackbody radiation",
       "Sommerfeld quantization"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 1"
-  },
-  {
-    "title": "Quantum Mechanics Homework 4",
-    "desc": "Proofs of inverse operator properties and uncertainty relation generalization.",
-    "tags": [
-      "Hermitian operator",
-      "uncertainty relation",
-      "unitary operator"
-    ],
-    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 4"
   }
 ]
