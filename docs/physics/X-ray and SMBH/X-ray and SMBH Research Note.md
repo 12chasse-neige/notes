@@ -11,7 +11,7 @@ I'll use python's astroquery package to fetch data, and use Sherpa for modeling 
 
 ## Papers to Read
 
-- [ ] Intermediate-Mass Black Holes
+- [x] Intermediate-Mass Black Holes
 authors: "Greene, J. E.; Strader, J.; Ho, L. C."
 year: 2020
 journal: "Annual Review of Astronomy and Astrophysics"
@@ -21,7 +21,7 @@ doi: "10.1146/annurev-astro-032620-021835"
 arxiv: "1911.09678"
 purpose: "General review of IMBH searches, including dynamical searches, accretion signatures, dwarf galaxies, globular clusters, and the observational gap around $10^{2}-10^{5}$ solar masses."
 
-- [ ] Ultraluminous X-Ray Sources
+- [x] Ultraluminous X-Ray Sources
 authors: "Kaaret, P.; Feng, H.; Roberts, T. P."
 year: 2017
 journal: "Annual Review of Astronomy and Astrophysics"
@@ -104,7 +104,7 @@ The last two are the caution/comparison papers. Bachetti et al. shows that a ULX
 
 ## Notes from Papers
 
-### Intermediate-Mass Black Holes
+### Intermediate-Mass Black Holes: the Big Picture
 
 We describe Intermediate Black Holes as bhs with mass from $100 \sim 10^{5} M_{\odot}$.
 
@@ -118,9 +118,9 @@ We describe Intermediate Black Holes as bhs with mass from $100 \sim 10^{5} M_{\
 
 How could we form non-stellar-mass bhs?
 
-1.  gravitational runaway
-2.  collapse of Population III stars
-3.  “direct collapse” into a bh
+1.  gravitational runaway: $10^{3} - 10^{4} M_{\odot}$ seeds
+2.  collapse of Population III stars: $100 M_{\odot}$ seeds
+3.  “direct collapse” into a bh: $10^{4} - 10^{6} M_{\odot}$ seeds
 
 <img src="./X-ray%20and%20SMBH%20Research%20Note.assets/image-20260702210223165.png" alt="image-20260702210223165" style="zoom:50%;" />
 
@@ -136,5 +136,44 @@ Theory predicts many possible IMBH populations, including nuclear and wandering 
 
 #### Stellar and Gas Dynamical Searches for IMBHs
 
+If a black hole sits in a cluster or galaxy nucleus, nearby stars/gas should move faster or in a special pattern because of the black hole’s gravitational pull. If we can measure those motions precisely enough, we can infer the black-hole mass.
 
+Mass–anisotropy degeneracy is the problem that “extra central mass” and “special stellar orbit directions” can produce similar observed stellar motions, making dynamical black-hole detections uncertain. Proper motions help because they turn a one-dimensional velocity measurement into a much more three-dimensional dynamical measurement, letting us separate “extra gravity” from “special orbit directions.”
+
+<img src="./X-ray%20and%20SMBH%20Research%20Note.assets/image-20260703213104752.png" alt="image-20260703213104752" style="zoom:50%;" />
+
+Current dynamical measurements or limits on black hole mass in low-mass stellar systems.
+
+Seen from the image that dynamical evidence is very ambiguous at $M_{BH} \leq 10^{4}M_{\odot}$, highlighting the importance for HLXs.
+
+#### Searches for Accreting IMBHs in Galaxy Nuclei
+
+##### Optical Spectroscopic Selection
+
+If an IMBH is sitting in a galaxy nucleus and accreting gas, it may behave like a scaled-down AGN. The accretion disk produces energetic radiation. That radiation ionizes surrounding gas. The gas then emits optical lines such as Hα, Hβ, [O III], [N II], [S II], etc. So astronomers look for AGN-like optical emission-line signatures in low-mass galaxies.
+
+The method
+$$
+M_{\rm BH}=f_{\rm vir}\frac{r_{\rm BLR}\Delta V^2}{G}
+$$
+
+>  #### BPT Diagram
+>
+>  A **BPT diagram** is an optical emission-line diagnostic plot used to decide what is ionizing the gas in a galaxy: **young stars** or an **active black hole**.
+
+Problem for BPT search: the AGNs become hopelessly intermingled with star-forming galaxies at low metallicity. 
+
+**BPT selection**: uses optical line ratios like [O III]/Hβ and [N II]/Hα.
+
+**He II λ4686 diagnostic**: uses the He II line, which requires high-energy photons, so people hoped it would reveal hard AGN radiation.
+
+**Mid-infrared color cuts**: AGN often heat dust to high temperatures, giving red mid-IR colors, so this is used to find luminous AGNs.
+
+The three methods merely give out overlaps. In low-mass, low-metallicity galaxies, many “classic AGN signs” stop being clean. Mid-IR red colors can be produced by young starbursts, not just AGN-heated dust. He II λ4686 can be powered by high-mass X-ray binaries. [O IV] can be excited by massive O stars and Wolf-Rayet stars. Even [Ne V], usually considered a strong AGN indicator because it needs very high ionization energy, can be produced by fast shocks from stellar winds or supernovae.
+
+#### X-ray Observations Matters
+
+High occupation is found in $M_{*} \sim 10^{9} - 10^{10} M_{\odot}$ galaxies, using the X-ray data.
+
+### Ultraluminous X-Ray Sources: General Review for ULXs
 
