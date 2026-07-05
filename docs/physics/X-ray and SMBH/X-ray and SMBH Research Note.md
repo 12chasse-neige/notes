@@ -47,7 +47,7 @@ I'll use python's astroquery package to fetch data, and use Sherpa for modeling 
 
   purpose: "Main review for ULXs. Explains why ULXs were once considered IMBH candidates, and why many are now interpreted as super-Eddington neutron stars or stellar-mass black holes."
 
-- [ ] An Intermediate-mass Black Hole of Over 500 Solar Masses in the Galaxy ESO 243-49
+- [x] An Intermediate-mass Black Hole of Over 500 Solar Masses in the Galaxy ESO 243-49
 
   authors: "Farrell, S. A.; Webb, N. A.; Barret, D.; Godet, O.; Rodrigues, J. M."
 
@@ -67,7 +67,7 @@ I'll use python's astroquery package to fetch data, and use Sherpa for modeling 
 
   purpose: "Discovery/claim paper for ESO 243-49 HLX-1 as one of the strongest IMBH candidates, based on its extreme X-ray luminosity."
 
-- [ ] A Redshift for the Intermediate-mass Black Hole Candidate HLX-1: Confirmation of its Association with the Galaxy ESO 243-49
+- [x] A Redshift for the Intermediate-mass Black Hole Candidate HLX-1: Confirmation of its Association with the Galaxy ESO 243-49
 
   authors: "Wiersema, K.; Farrell, S. A.; Webb, N. A.; Servillat, M.; Maccarone, T. J.; Barret, D.; Godet, O."
 
