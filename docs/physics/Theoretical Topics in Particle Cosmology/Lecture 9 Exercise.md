@@ -27,7 +27,7 @@ $$
 $$
 The phase shift $\chi(E,b)$ at an impact parameter $b$ is the fourier transform for the proportional part of the momentum $\vec{q}$
 $$
-\chi (E, b)=\frac{1}{4 E_{\mathrm{CM}} p} \int \frac{\mathrm{~d}^2 \vec{q}_{\perp}}{(2 \pi)^2} e^{\mathrm{i} \vec{b}_{\perp} \cdot \vec{q}_{\perp}} \mathcal{M}_{\mathrm{Born}}(\vec{p}, \vec{q})
+\chi (E, b)=\frac{1}{4 E_{\mathrm{CM}} p} \int \frac{\mathrm{~d}^{2} \vec{q}_{\perp}}{(2 \pi)^{2}} e^{\mathrm{i} \vec{b}_{\perp} \cdot \vec{q}_{\perp}} \mathcal{M}_{\mathrm{Born}}(\vec{p}, \vec{q})
 $$
 Plugging in the form of the amplitude, we can get the form for $\chi$
 $$

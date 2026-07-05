@@ -8,7 +8,7 @@ $$
 
 This model is disastrously bad from a QFT viewpoint. Nevertheless, please derive the long-range potential for $\varphi$ particle due to the exchange of $\chi$ to the leading order in the coupling $\mu$.
 
-![tree_level_phi_chi_paper_style](./Lecture%208%20Exercise.assets/tree_level_phi_chi_paper_style.png)
+<img src="./Lecture 8 Exercise.assets/tree_level_phi_chi_paper_style.png" alt="tree_level_phi_chi_paper_style">
 
 To get the long-range potential for this Lagrangian, first we need the propagator and vertex for this scattering process.
 
@@ -47,7 +47,7 @@ At this time the Lagrangian is
 $$
 \mathcal{L} = -\frac{1}{2}\left[(\partial_{\mu}\varphi)^{2}+m^{2}\varphi^{2}+(\partial_{\mu}\chi)^{2}+ \frac{1}{2} \lambda \chi^{2}\varphi^{2}\right]
 $$
-![tree_level_phi2_chi2_paper_style](./Lecture%208%20Exercise.assets/tree_level_phi2_chi2_paper_style.png)
+<img src="./Lecture 8 Exercise.assets/tree_level_phi2_chi2_paper_style.png" alt="tree_level_phi2_chi2_paper_style">
 
 Now the propagator doesn't change, but the 4 particle vertex will give out 
 $$
@@ -55,7 +55,7 @@ $$
 $$
 This interacrion part will give out possible loop diagrams as follows
 
-![complete_one_loop_phi2_chi2_paper_style](./Lecture%208%20Exercise.assets/complete_one_loop_phi2_chi2_paper_style.png)
+<img src="./Lecture 8 Exercise.assets/complete_one_loop_phi2_chi2_paper_style.png" alt="complete_one_loop_phi2_chi2_paper_style">
 
 Among these possible loop diagrams, only case (d) will contribute to the NR long-range potential, so the total amplitude can be derived as
 $$
