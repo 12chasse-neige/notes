@@ -386,7 +386,7 @@ Learn the data analysis method from this paper.
 
 
 
-## Other Papers’Core Point
+## Other Papers’ Core Point
 
 ### An intermediate-mass black hole of over 500 solar masses in the galaxy ESO 243-49
 
