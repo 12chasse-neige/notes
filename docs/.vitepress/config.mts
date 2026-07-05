@@ -228,10 +228,131 @@ function enableTaskLists(md: any) {
   })
 }
 
+function stripFrontmatter(src: string) {
+  const frontmatterMatch = src.match(/^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/)
+  if (!frontmatterMatch) {
+    return { body: src, frontmatter: '' }
+  }
+
+  return {
+    body: src.slice(frontmatterMatch[0].length),
+    frontmatter: frontmatterMatch[1]
+  }
+}
+
+function shouldIndexForSearch(frontmatter: string) {
+  return !/^search:\s*false\s*$/m.test(frontmatter)
+}
+
+function stripMarkdownForSearch(src: string) {
+  return src
+    .replace(/<script\b[\s\S]*?<\/script>/gi, ' ')
+    .replace(/<style\b[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<!--[\s\S]*?-->/g, ' ')
+    .replace(/^```[\s\S]*?^```\s*$/gm, ' ')
+    .replace(/^~~~[\s\S]*?^~~~\s*$/gm, ' ')
+    .replace(/\$\$[\s\S]*?\$\$/g, ' ')
+    .replace(/\\\[[\s\S]*?\\\]/g, ' ')
+    .replace(/\\\([\s\S]*?\\\)/g, ' ')
+    .replace(/\$[^$\n]+\$/g, ' ')
+    .replace(/!\[([^\]]*)\]\([^)]+\)/g, '$1')
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/<[^>]*>/g, ' ')
+}
+
+function normalizeSearchText(src: string) {
+  return stripMarkdownForSearch(src)
+    .replace(/^#{1,6}\s+/gm, '')
+    .replace(/[`*_~>#|[\]{}]/g, ' ')
+    .replace(/&(?:[a-z]+|#\d+|#x[\da-f]+);/gi, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
+function cleanHeadingTitle(src: string) {
+  return src
+    .replace(/\s+\{#[^}]+\}\s*$/, '')
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/<[^>]*>/g, '')
+    .replace(/[`*_~]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
+function createSearchAnchor(title: string, seenAnchors: Map<string, number>) {
+  const anchor = title
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036F]/g, '')
+    .replace(/[\u0000-\u001f]/g, '')
+    .replace(/[\s~`!@#$%^&*()\-_+=[\]{}|\\;:"'“”‘’<>,.?/]+/g, '-')
+    .replace(/-{2,}/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .replace(/^(\d)/, '_$1')
+    .toLowerCase() || 'section'
+
+  const seen = seenAnchors.get(anchor) || 0
+  seenAnchors.set(anchor, seen + 1)
+  return seen === 0 ? anchor : `${anchor}-${seen}`
+}
+
+function splitMarkdownForSearch(file: string, src: string) {
+  if (!src.trim()) return []
+
+  const fallbackTitle = path.basename(file, '.md')
+  const sections: { anchor?: string, titles: string[], text: string }[] = []
+  const seenAnchors = new Map<string, number>()
+  const titles: string[] = []
+  let currentAnchor: string | undefined
+  let currentTitles = [fallbackTitle]
+  let buffer: string[] = []
+
+  const pushSection = () => {
+    const text = normalizeSearchText(buffer.join('\n')).slice(0, 12000)
+    if (text) {
+      sections.push({
+        anchor: currentAnchor,
+        titles: currentTitles,
+        text
+      })
+    }
+    buffer = []
+  }
+
+  for (const line of src.split(/\r?\n/)) {
+    const heading = line.match(/^(#{1,6})\s+(.+?)\s*#*\s*$/)
+    if (!heading) {
+      buffer.push(line)
+      continue
+    }
+
+    pushSection()
+
+    const level = heading[1].length - 1
+    const title = cleanHeadingTitle(heading[2])
+    if (!title) continue
+
+    titles[level] = title
+    titles.length = level + 1
+    currentTitles = titles.filter(Boolean)
+    currentAnchor = createSearchAnchor(title, seenAnchors)
+    buffer.push(title)
+  }
+
+  pushSection()
+  return sections
+}
+
 export default defineConfig({
   base: '/notes/', // IMPORTANT: Matches your repo name
   title: 'Chasse_neige',
   description: 'Notes on Physics, Math, and Programming',
+  buildConcurrency: 8,
+
+  vite: {
+    build: {
+      chunkSizeWarningLimit: 4096
+    }
+  },
 
   head: [
     ['link', { rel: 'icon', href: '/notes/favicon.ico' }]
@@ -277,11 +398,25 @@ export default defineConfig({
     sidebar: mySidebar,
     outline: { level: [2, 6], label: 'On this page' },
     socialLinks: [{ icon: 'github', link: 'https://github.com/12chasse-neige' }],
-    search: { provider: 'local' },
+    search: {
+      provider: 'local',
+      options: {
+        _render(src) {
+          const { body, frontmatter } = stripFrontmatter(src)
+          return shouldIndexForSearch(frontmatter) ? body : ''
+        },
+        miniSearch: {
+          _splitIntoSections: splitMarkdownForSearch
+        }
+      }
+    },
     footer: { message: 'Built with VitePress', copyright: 'Copyright © 2026 Chasse_neige' }
   },
 
   markdown: {
+    languageAlias: {
+      mathematica: 'wolfram'
+    },
     math: {
       tex: {
         processEscapes: true,
