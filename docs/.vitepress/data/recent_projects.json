@@ -1,5 +1,15 @@
 [
   {
+    "title": "Intermediate-Mass Black Holes Overview",
+    "desc": "Seeding models and observational signatures of IMBHs from literature notes.",
+    "tags": [
+      "intermediate-mass black holes",
+      "accretion signature",
+      "seeding models"
+    ],
+    "link": "/physics/X-ray and SMBH/Notes from Literatures"
+  },
+  {
     "title": "Early Universe Timeline and Key Processes",
     "desc": "Chronology from inflation to BBN with temperatures and reactions.",
     "tags": [
@@ -10,18 +20,18 @@
     "link": "/physics/General Relativity/Early Universe"
   },
   {
-    "title": "Long-Range Potential from Scalar Exchange",
-    "desc": "Derives the non-relativistic potential for a heavy scalar via massless scalar exchange.",
+    "title": "Particle Cosmology Lecture 8 Exercise",
+    "desc": "Derives long-range potential for heavy scalar via massless scalar exchange.",
     "tags": [
       "scalar field",
-      "non-relativistic potential",
+      "long-range potential",
       "Fourier transform"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 8 Exercise"
   },
   {
     "title": "Electromagnetic Light Bending by Proton",
-    "desc": "Determines leading order of electromagnetic bending angle for photon by proton.",
+    "desc": "Determines leading order of electromagnetic bending angle at O(e^6).",
     "tags": [
       "light bending",
       "electromagnetic interaction",
@@ -40,18 +50,8 @@
     "link": "/physics/X-ray and SMBH/Literature Review"
   },
   {
-    "title": "Intermediate-Mass Black Holes Overview",
-    "desc": "Seeding models and observational signatures of IMBHs from literature notes.",
-    "tags": [
-      "intermediate-mass black holes",
-      "accretion signature",
-      "seeding models"
-    ],
-    "link": "/physics/X-ray and SMBH/Notes from Literatures"
-  },
-  {
     "title": "X-ray and SMBH Research Note",
-    "desc": "Final project on IMBH candidate HLX-1 using astroquery and Sherpa.",
+    "desc": "Final project analyzing X-ray luminosity and variability of IMBH candidate HLX-1",
     "tags": [
       "X-ray astronomy",
       "supermassive black holes",
@@ -100,8 +100,8 @@
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 10"
   },
   {
-    "title": "Quantum Mechanics Homework 6: Central Force Field",
-    "desc": "Kinetic operator separation and bound state energy equation in spherical well.",
+    "title": "Quantum Mechanics Homework 6",
+    "desc": "Central force field, kinetic operator transformation, bound S-state energy equation.",
     "tags": [
       "quantum mechanics",
       "central force",
@@ -111,7 +111,7 @@
   },
   {
     "title": "Statistical Mechanics Homework 8",
-    "desc": "BEC in 2D ideal Bose gas and 3D harmonic trap",
+    "desc": "Bose-Einstein condensation in 2D ideal gas and 3D harmonic trap.",
     "tags": [
       "Bose-Einstein condensation",
       "ideal Bose gas",
@@ -141,7 +141,7 @@
   },
   {
     "title": "Particle Cosmology Lecture 1: Gravity and QFT",
-    "desc": "Introduction to gravity, QFT, and fundamental interactions with natural units.",
+    "desc": "Introduction to gravity, QFT, and fundamental interactions in particle cosmology.",
     "tags": [
       "gravity",
       "quantum field theory",
@@ -150,18 +150,18 @@
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 1"
   },
   {
-    "title": "Particle Cosmology Lecture 7 Exercise",
-    "desc": "Derive commutator and determine parameters for spin-1 and spin-2 Lagrangians.",
+    "title": "Commutation Relations in Field Theory",
+    "desc": "Derive commutator from creation/annihilation operators and determine Lagrangian parameters.",
     "tags": [
       "commutator",
-      "creation operator",
-      "annihilation operator"
+      "field theory",
+      "creation operator"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 7 Exercise"
   },
   {
     "title": "Classical Limit for Light Bending",
-    "desc": "Phase shift and classical limit in particle scattering with gravitons.",
+    "desc": "Phase shift and classical limit in particle scattering with graviton exchange.",
     "tags": [
       "light bending",
       "phase shift",
@@ -201,7 +201,7 @@
   },
   {
     "title": "Statistical Mechanics Homework 13",
-    "desc": "Prove Jacobian determinant equals -1 for collision direction along x-axis.",
+    "desc": "Jacobian determinant equals -1 for collision direction parallel to x-axis.",
     "tags": [
       "statistical mechanics",
       "Jacobian determinant",
@@ -210,12 +210,12 @@
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 13"
   },
   {
-    "title": "Mercury Precession and 1-Loop Amplitudes",
-    "desc": "Next-to-leading order effects in particle cosmology using on-shell data.",
+    "title": "Mercury Precession and 1-loop Amplitudes",
+    "desc": "Next-to-leading order effects in particle cosmology, focusing on gravitational Compton scattering.",
     "tags": [
       "particle cosmology",
-      "1-loop amplitudes",
-      "gravitational Compton scattering"
+      "gravitational precession",
+      "1-loop amplitudes"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 10"
   },
@@ -234,8 +234,8 @@
     "desc": "Covers keywords, data types, control flow, and OOP concepts.",
     "tags": [
       "C++",
-      "Programming",
-      "Keywords"
+      "programming",
+      "keywords"
     ],
     "link": "/coding/C++/C++_Note"
   },
@@ -261,7 +261,7 @@
   },
   {
     "title": "Analytical Mechanics Homework 1",
-    "desc": "Virtual work principle for rod in bowl and two beads on wire.",
+    "desc": "Virtual work principle for rod in bowl and two beads on wire",
     "tags": [
       "virtual work",
       "equilibrium",
@@ -281,7 +281,7 @@
   },
   {
     "title": "General Relativity Homework 6",
-    "desc": "Analyzes allowed angular velocity range inside Kerr black hole ergosphere.",
+    "desc": "Analyzes allowed angular velocity range inside Kerr ergosphere.",
     "tags": [
       "Kerr metric",
       "ergosphere",
