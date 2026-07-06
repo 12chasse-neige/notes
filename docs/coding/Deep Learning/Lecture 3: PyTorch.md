@@ -8,22 +8,6 @@ These notes turn the PyTorch lecture deck into a self-contained course. The aim 
 - `nn.Module`, `torch.nn.functional`, and `torch.optim` remove boilerplate
 - a real training program is just tensors, a forward pass, a scalar loss, backpropagation, and a parameter update
 
-The lecture's central story is:
-
-$$
-\text{hand-written linear algebra}
-\longrightarrow
-\text{tensors}
-\longrightarrow
-\text{autograd}
-\longrightarrow
-\text{modules}
-\longrightarrow
-\text{optimizers}
-\longrightarrow
-\text{GPU and compile}.
-$$
-
 ## 1. Why Deep Learning Needs a Framework
 
 ### 1.1 Training Is Mostly Matrix Multiplication
