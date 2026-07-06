@@ -1,21 +1,41 @@
 [
   {
+    "title": "PyTorch Lecture 3 Notes",
+    "desc": "Tensors, GPU, autograd, and training loop explained.",
+    "tags": [
+      "PyTorch",
+      "Deep Learning",
+      "Tensors"
+    ],
+    "link": "/coding/Deep Learning/Lecture 3: PyTorch"
+  },
+  {
+    "title": "Optimization Lecture Notes",
+    "desc": "SGD convergence analysis with Taylor expansion and smoothness conditions.",
+    "tags": [
+      "optimization",
+      "SGD",
+      "convex optimization"
+    ],
+    "link": "/coding/Deep Learning/Lecture 4: Optimization"
+  },
+  {
     "title": "Intermediate-Mass Black Holes Overview",
     "desc": "Seeding models and observational signatures of IMBHs from literature notes.",
     "tags": [
       "intermediate-mass black holes",
       "accretion signature",
-      "seeding models"
+      "ULX"
     ],
     "link": "/physics/X-ray and SMBH/Notes from Literatures"
   },
   {
-    "title": "Early Universe Timeline and Key Processes",
-    "desc": "Chronology from inflation to BBN with temperatures and reactions.",
+    "title": "Early Universe Timeline from Inflation to BBN",
+    "desc": "Key stages: inflation, reheating, neutrino decoupling, e+e- annihilation, BBN.",
     "tags": [
       "inflation",
       "reheating",
-      "BBN"
+      "neutrino decoupling"
     ],
     "link": "/physics/General Relativity/Early Universe"
   },
@@ -31,7 +51,7 @@
   },
   {
     "title": "Electromagnetic Light Bending by Proton",
-    "desc": "Determines leading order of electromagnetic bending angle at O(e^6).",
+    "desc": "Determines leading order of electromagnetic bending angle for photon by proton.",
     "tags": [
       "light bending",
       "electromagnetic interaction",
@@ -51,23 +71,13 @@
   },
   {
     "title": "X-ray and SMBH Research Note",
-    "desc": "Final project analyzing X-ray luminosity and variability of IMBH candidate HLX-1",
+    "desc": "Final project on IMBH candidate HLX-1 using astroquery and Sherpa.",
     "tags": [
       "X-ray astronomy",
       "supermassive black holes",
       "intermediate-mass black holes"
     ],
     "link": "/physics/X-ray and SMBH/X-ray and SMBH Research Note"
-  },
-  {
-    "title": "PyTorch Lecture 3: Tensors, Autograd, Modules",
-    "desc": "Understand PyTorch's design: tensors, GPU, autograd, modules, optimizers.",
-    "tags": [
-      "PyTorch",
-      "deep learning",
-      "tensors"
-    ],
-    "link": "/coding/Deep Learning/Lecture 3: PyTorch"
   },
   {
     "title": "Statistical Machine Learning Lecture Notes",
@@ -90,18 +100,18 @@
     "link": "/coding/Deep Learning/Lecture 2A: Deep Learning Basics"
   },
   {
-    "title": "Quantum Mechanics Homework 10",
-    "desc": "Electron spin in Landau levels and Zeeman effect in sodium D line.",
+    "title": "Quantum Mechanics Homework 10: Spin in Landau",
+    "desc": "Adds electron spin to Landau levels, modifies Hamiltonian and degeneracy.",
     "tags": [
       "Landau levels",
       "Zeeman effect",
-      "electron spin"
+      "spin"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 10"
   },
   {
-    "title": "Quantum Mechanics Homework 6",
-    "desc": "Central force field, kinetic operator transformation, bound S-state energy equation.",
+    "title": "Quantum Mechanics Homework 6: Central Force Field",
+    "desc": "Kinetic operator separation and bound state energy equation in spherical well.",
     "tags": [
       "quantum mechanics",
       "central force",
@@ -121,7 +131,7 @@
   },
   {
     "title": "Debye Model: Partition Function and Thermodynamics",
-    "desc": "Derives ln Z, internal energy, and entropy for solids at high and low temperatures.",
+    "desc": "Derives ln Z, internal energy, and entropy for solids in high and low temperature limits.",
     "tags": [
       "Debye model",
       "partition function",
@@ -151,7 +161,7 @@
   },
   {
     "title": "Commutation Relations in Field Theory",
-    "desc": "Derive commutator from creation/annihilation operators and determine Lagrangian parameters.",
+    "desc": "Derive commutator from creation/annihilation operators and find Lagrangian parameters.",
     "tags": [
       "commutator",
       "field theory",
@@ -163,9 +173,9 @@
     "title": "Classical Limit for Light Bending",
     "desc": "Phase shift and classical limit in particle scattering with graviton exchange.",
     "tags": [
+      "classical limit",
       "light bending",
-      "phase shift",
-      "classical limit"
+      "phase shift"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 9"
   },
@@ -191,17 +201,17 @@
   },
   {
     "title": "Quantum Mechanics Homework 2",
-    "desc": "Particle in infinite square well: pressure, wave function evolution, probability.",
+    "desc": "Particle in infinite potential well: pressure, wave function evolution, and probability.",
     "tags": [
-      "infinite square well",
-      "wave function",
-      "energy eigenstate"
+      "quantum mechanics",
+      "infinite potential well",
+      "wave function"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 2"
   },
   {
     "title": "Statistical Mechanics Homework 13",
-    "desc": "Jacobian determinant equals -1 for collision direction parallel to x-axis.",
+    "desc": "Prove Jacobian determinant equals -1 for collision direction along x-axis.",
     "tags": [
       "statistical mechanics",
       "Jacobian determinant",
@@ -210,12 +220,12 @@
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 13"
   },
   {
-    "title": "Mercury Precession and 1-loop Amplitudes",
-    "desc": "Next-to-leading order effects in particle cosmology, focusing on gravitational Compton scattering.",
+    "title": "Next to Leading Order Mercury Precession",
+    "desc": "One-loop amplitudes and gravitational Compton scattering in particle cosmology.",
     "tags": [
-      "particle cosmology",
-      "gravitational precession",
-      "1-loop amplitudes"
+      "Mercury precession",
+      "one-loop amplitudes",
+      "gravitational Compton scattering"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 10"
   },
@@ -234,8 +244,8 @@
     "desc": "Covers keywords, data types, control flow, and OOP concepts.",
     "tags": [
       "C++",
-      "programming",
-      "keywords"
+      "Programming",
+      "Keywords"
     ],
     "link": "/coding/C++/C++_Note"
   },
@@ -281,22 +291,12 @@
   },
   {
     "title": "General Relativity Homework 6",
-    "desc": "Analyzes allowed angular velocity range inside Kerr ergosphere.",
+    "desc": "Analyzes angular velocity range for observers in Kerr ergosphere.",
     "tags": [
       "Kerr metric",
       "ergosphere",
       "angular velocity"
     ],
     "link": "/physics/General Relativity/General Relativity Homework 6"
-  },
-  {
-    "title": "Detecting and Analyzing Gravitational Waves",
-    "desc": "Overview of gravitational wave detection across frequency bands and interferometer response.",
-    "tags": [
-      "gravitational waves",
-      "detection",
-      "interferometry"
-    ],
-    "link": "/physics/General Relativity/Gravitational Waves/Detecting Gravitiational Waves"
   }
 ]
