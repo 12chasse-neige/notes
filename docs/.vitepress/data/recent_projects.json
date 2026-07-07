@@ -1,11 +1,21 @@
 [
   {
+    "title": "X-ray and SMBH Research Note",
+    "desc": "Final project on IMBH candidate HLX-1 using astroquery and Sherpa.",
+    "tags": [
+      "X-ray astronomy",
+      "supermassive black holes",
+      "intermediate-mass black holes"
+    ],
+    "link": "/physics/X-ray and SMBH/X-ray and SMBH Research Note"
+  },
+  {
     "title": "PyTorch Lecture 3 Notes",
-    "desc": "Tensors, GPU, autograd, and training loop explained.",
+    "desc": "Covers tensors, GPU, autograd, and training loop basics.",
     "tags": [
       "PyTorch",
-      "Deep Learning",
-      "Tensors"
+      "deep learning",
+      "tensors"
     ],
     "link": "/coding/Deep Learning/Lecture 3: PyTorch"
   },
@@ -20,38 +30,38 @@
     "link": "/coding/Deep Learning/Lecture 4: Optimization"
   },
   {
-    "title": "Intermediate-Mass Black Holes Overview",
-    "desc": "Seeding models and observational signatures of IMBHs from literature notes.",
+    "title": "Intermediate-Mass Black Holes Literature Notes",
+    "desc": "Overview of IMBH formation, accretion signatures, and dynamical searches.",
     "tags": [
       "intermediate-mass black holes",
-      "accretion signature",
-      "ULX"
+      "accretion signatures",
+      "seeding models"
     ],
     "link": "/physics/X-ray and SMBH/Notes from Literatures"
   },
   {
-    "title": "Early Universe Timeline from Inflation to BBN",
-    "desc": "Key stages: inflation, reheating, neutrino decoupling, e+e- annihilation, BBN.",
+    "title": "Early Universe Timeline and Key Processes",
+    "desc": "Chronology from inflation to BBN with temperatures and reactions.",
     "tags": [
       "inflation",
       "reheating",
-      "neutrino decoupling"
+      "BBN"
     ],
     "link": "/physics/General Relativity/Early Universe"
   },
   {
-    "title": "Particle Cosmology Lecture 8 Exercise",
-    "desc": "Derives long-range potential for heavy scalar via massless scalar exchange.",
+    "title": "Long-Range Potential from Scalar Exchange",
+    "desc": "Derive potential for heavy scalar via massless scalar exchange.",
     "tags": [
+      "quantum field theory",
       "scalar field",
-      "long-range potential",
-      "Fourier transform"
+      "long-range potential"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 8 Exercise"
   },
   {
     "title": "Electromagnetic Light Bending by Proton",
-    "desc": "Determines leading order of electromagnetic bending angle for photon by proton.",
+    "desc": "Determines leading order of electromagnetic bending angle at O(e^6).",
     "tags": [
       "light bending",
       "electromagnetic interaction",
@@ -60,7 +70,7 @@
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 9 Exercise"
   },
   {
-    "title": "HLX-1 and Intermediate-Mass Black Hole Review",
+    "title": "HLX-1 and Intermediate-Mass Black Hole Problem",
     "desc": "Review of ESO 243-49 HLX-1 as an IMBH candidate and ULX ambiguity.",
     "tags": [
       "intermediate-mass black hole",
@@ -68,16 +78,6 @@
       "ultraluminous X-ray source"
     ],
     "link": "/physics/X-ray and SMBH/Literature Review"
-  },
-  {
-    "title": "X-ray and SMBH Research Note",
-    "desc": "Final project on IMBH candidate HLX-1 using astroquery and Sherpa.",
-    "tags": [
-      "X-ray astronomy",
-      "supermassive black holes",
-      "intermediate-mass black holes"
-    ],
-    "link": "/physics/X-ray and SMBH/X-ray and SMBH Research Note"
   },
   {
     "title": "Statistical Machine Learning Lecture Notes",
@@ -91,7 +91,7 @@
   },
   {
     "title": "Deep Learning Basics Lecture Notes",
-    "desc": "Definitions, derivations, and gaps in deep learning.",
+    "desc": "Definitions and derivations for deep learning fundamentals.",
     "tags": [
       "deep learning",
       "machine learning",
@@ -100,18 +100,18 @@
     "link": "/coding/Deep Learning/Lecture 2A: Deep Learning Basics"
   },
   {
-    "title": "Quantum Mechanics Homework 10: Spin in Landau",
-    "desc": "Adds electron spin to Landau levels, modifies Hamiltonian and degeneracy.",
+    "title": "Quantum Mechanics Homework 10",
+    "desc": "Electron spin in Landau levels and Zeeman effect in sodium D line.",
     "tags": [
       "Landau levels",
       "Zeeman effect",
-      "spin"
+      "electron spin"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 10"
   },
   {
-    "title": "Quantum Mechanics Homework 6: Central Force Field",
-    "desc": "Kinetic operator separation and bound state energy equation in spherical well.",
+    "title": "Quantum Mechanics Homework 6",
+    "desc": "Central force field, kinetic operator decomposition, bound S-state energy equation.",
     "tags": [
       "quantum mechanics",
       "central force",
@@ -120,8 +120,8 @@
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 6"
   },
   {
-    "title": "Statistical Mechanics Homework 8",
-    "desc": "Bose-Einstein condensation in 2D ideal gas and 3D harmonic trap.",
+    "title": "Bose-Einstein Condensation in 2D and 3D",
+    "desc": "Proof of no BEC in 2D ideal Bose gas and BEC in 3D harmonic trap.",
     "tags": [
       "Bose-Einstein condensation",
       "ideal Bose gas",
@@ -130,17 +130,17 @@
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 8"
   },
   {
-    "title": "Debye Model: Partition Function and Thermodynamics",
-    "desc": "Derives ln Z, internal energy, and entropy for solids in high and low temperature limits.",
+    "title": "Debye Model: Partition Function, Internal Energy, Entropy",
+    "desc": "Derives ln Z, U, S for solids using Debye spectrum in high and low temperature",
     "tags": [
       "Debye model",
       "partition function",
-      "statistical mechanics"
+      "internal energy"
     ],
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 9"
   },
   {
-    "title": "Final Project Requirements for Particle Cosmology",
+    "title": "Particle Cosmology Final Project Requirements",
     "desc": "Term paper on massless particle interactions or Mercury precession from amplitudes.",
     "tags": [
       "particle cosmology",
@@ -150,8 +150,8 @@
     "link": "/physics/Theoretical Topics in Particle Cosmology/Final Project/Final Project Requirements"
   },
   {
-    "title": "Particle Cosmology Lecture 1: Gravity and QFT",
-    "desc": "Introduction to gravity, QFT, and fundamental interactions in particle cosmology.",
+    "title": "Particle Cosmology Lecture 1 Introduction",
+    "desc": "Overview of gravity, QFT, and fundamental interactions at various scales.",
     "tags": [
       "gravity",
       "quantum field theory",
@@ -161,11 +161,11 @@
   },
   {
     "title": "Commutation Relations in Field Theory",
-    "desc": "Derive commutator from creation/annihilation operators and find Lagrangian parameters.",
+    "desc": "Derive commutator from creation/annihilation operators and determine Lagrangian parameters.",
     "tags": [
+      "quantum field theory",
       "commutator",
-      "field theory",
-      "creation operator"
+      "Lorentz invariance"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 7 Exercise"
   },
@@ -173,19 +173,19 @@
     "title": "Classical Limit for Light Bending",
     "desc": "Phase shift and classical limit in particle scattering with graviton exchange.",
     "tags": [
-      "classical limit",
       "light bending",
-      "phase shift"
+      "phase shift",
+      "classical limit"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 9"
   },
   {
     "title": "General Relativity Homework 5",
-    "desc": "Calculate connection and Ricci tensor for a time-dependent metric.",
+    "desc": "Calculate connection and Ricci tensor for time-relevant metric.",
     "tags": [
+      "General Relativity",
       "Christoffel symbols",
-      "Ricci tensor",
-      "general relativity"
+      "Ricci tensor"
     ],
     "link": "/physics/General Relativity/General Relativity Homework 5"
   },
@@ -201,40 +201,40 @@
   },
   {
     "title": "Quantum Mechanics Homework 2",
-    "desc": "Particle in infinite potential well: pressure, wave function evolution, and probability.",
+    "desc": "Infinite square well problems: pressure, wave function evolution, and probability.",
     "tags": [
       "quantum mechanics",
-      "infinite potential well",
+      "infinite square well",
       "wave function"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 2"
   },
   {
     "title": "Statistical Mechanics Homework 13",
-    "desc": "Prove Jacobian determinant equals -1 for collision direction along x-axis.",
+    "desc": "Jacobian determinant for molecular collision direction parallel to x-axis equals -1.",
     "tags": [
       "statistical mechanics",
-      "Jacobian determinant",
-      "collision dynamics"
+      "Jacobian",
+      "collision"
     ],
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework 13"
   },
   {
-    "title": "Next to Leading Order Mercury Precession",
-    "desc": "One-loop amplitudes and gravitational Compton scattering in particle cosmology.",
+    "title": "Mercury Precession and 1-loop Amplitudes",
+    "desc": "Next-to-leading order effects in particle cosmology using on-shell data.",
     "tags": [
-      "Mercury precession",
-      "one-loop amplitudes",
-      "gravitational Compton scattering"
+      "particle cosmology",
+      "mercury precession",
+      "1-loop amplitudes"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 10"
   },
   {
-    "title": "Particle Cosmology Lecture 11: Graviton Interactions",
-    "desc": "Expanding theory to all orders, recovering GR with graviton interactions.",
+    "title": "Perturbative Gravity and Deser's Recursion",
+    "desc": "Expanding GR to all orders using Noether's theorem and Deser's recursion.",
     "tags": [
-      "graviton",
       "general relativity",
+      "graviton interactions",
       "Noether's theorem"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 11"
@@ -250,7 +250,7 @@
     "link": "/coding/C++/C++_Note"
   },
   {
-    "title": "Python Escape Characters Reference",
+    "title": "Python Programming Basics: Escape Characters",
     "desc": "Common escape sequences in Python strings with examples and usage.",
     "tags": [
       "Python",
@@ -271,7 +271,7 @@
   },
   {
     "title": "Analytical Mechanics Homework 1",
-    "desc": "Virtual work principle for rod in bowl and two beads on wire",
+    "desc": "Virtual work principle for rod in bowl and two balls on wire",
     "tags": [
       "virtual work",
       "equilibrium",
@@ -291,7 +291,7 @@
   },
   {
     "title": "General Relativity Homework 6",
-    "desc": "Analyzes angular velocity range for observers in Kerr ergosphere.",
+    "desc": "Angular velocity range for observers inside Kerr ergosphere.",
     "tags": [
       "Kerr metric",
       "ergosphere",
