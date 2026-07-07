@@ -173,3 +173,19 @@ The last two are the caution/comparison papers. Bachetti et al. shows that a ULX
 
 ## Problem Found
 
+Mark the bkg region by hand.
+
+| ObsID      | Label | source radius | bkg radius  | bkg radius in degree      |
+| ---------- | ----- | ------------- | ----------- | ------------------------- |
+| 0204540201 | XMM1  | 22.5″         | 39.0″       | 0.01083 deg               |
+| 0560180901 | XMM2  | 27.0″         | 46.8″ ≈ 47″ | 0.01300 deg / 0.01306 deg |
+| 0655510201 | XMM3  | 14.0″         | 24.2″ ≈ 24″ | 0.00672 deg / 0.00667 deg |
+| 0693060401 | XMM4  | 14.0″         | 24.2″ ≈ 24″ | 0.00672 deg / 0.00667 deg |
+| 0693060301 | XMM5  | 14.0″         | 24.2″ ≈ 24″ | 0.00672 deg / 0.00667 deg |
+| 0801310101 | XMM6  | 20.0″         | 34.6″ ≈ 35″ | 0.00961 deg / 0.00972 deg |
+| 0844030101 | XMM7  | 14.0″         | 24.2″ ≈ 24″ | 0.00672 deg / 0.00667 deg |
+| 0891802101 | XMM8  | 14.0″         | 24.2″ ≈ 24″ | 0.00672 deg / 0.00667 deg |
+
+May I skip the pn channel for 0204540201?
+
+![image-20260708020713055](./X-ray%20and%20SMBH%20Research%20Note.assets/image-20260708020713055.png)
