@@ -13,6 +13,6 @@ Pulser Timing Array： nHz 波段
 ## 相对论基础
 
 找对偶基可以用对应分量的梯度方向，即
-\[
+$$
 \theta^{\alpha} = \nabla x^{\alpha}
-\]
+$$

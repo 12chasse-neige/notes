@@ -188,13 +188,13 @@ Mark the bkg region by hand.
 
 May I skip the pn channel for 0204540201?
 
-![image-20260708020713055](./X-ray%20and%20SMBH%20Research%20Note.assets/image-20260708020713055.png)
+<img src="./X-ray and SMBH Research Note.assets/image-20260708020713055.png" alt="image-20260708020713055">
 
 ## Fitting Result
 
 Timeline
 
-![Light curve of ESO 243–49 HLX−1 obtained from Swift/XRT in 0.3–10 keV. Four scattered data points before day 285 (MJD 55048) are removed in the related timing analysis. Solid lines of different colours are used to denote 5-d rebinned data obtained through different interpolation methods including linear, quadratic and spline interpolations. Only the data obtained via linear interpolation are considered in our timing analysis. The orange and green horizontal lines are used to label the time intervals of different outburst and quiescent epochs adopted for spectral analysis in Table 3.](./X-ray%20and%20SMBH%20Research%20Note.assets/stz3372fig1.jpeg)
+<img src="./X-ray and SMBH Research Note.assets/stz3372fig1.jpeg" alt="Light curve of ESO 243–49 HLX−1 obtained from Swift/XRT in 0.3–10 keV. Four scattered data points before day 285 (MJD 55048) are removed in the related timing analysis. Solid lines of different colours are used to denote 5-d rebinned data obtained through different interpolation methods including linear, quadratic and spline interpolations. Only the data obtained via linear interpolation are considered in our timing analysis. The orange and green horizontal lines are used to label the time intervals of different outburst and quiescent epochs adopted for spectral analysis in Table 3.">
 
 | obsid      | label | date       | preferred_model      | observation_state | NH       | NH_status | Gamma                | Tin                     | disk_norm                    | pl_norm                                          | crossnorm_constants                              | fit_stat   | dof        | q_value_chi2 | aic        | bic        | flux_abs_03_10 | flux_unabs_03_10 | lum_unabs_03_10 | upper_limit_flux_03_10 | upper_limit_lum_03_10 | status |
 | ---------- | ----- | ---------- | -------------------- | ----------------- | -------- | --------- | -------------------- | ----------------------- | ---------------------------- | ------------------------------------------------ | ------------------------------------------------ | ---------- | ---------- | ------------ | ---------- | ---------- | -------------- | ---------------- | --------------- | ---------------------- | --------------------- | ------ |

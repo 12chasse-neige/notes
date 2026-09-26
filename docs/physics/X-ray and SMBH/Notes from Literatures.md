@@ -5,11 +5,8 @@
 We describe Intermediate Black Holes as bhs with mass from $100 \sim 10^{5} M_{\odot}$.
 
 >  #### accretion signature
->
 >  An **accretion signature** means an **observable clue that a black hole is actively swallowing gas**.
-
 >  #### ULX and HLX
->
 >  Ultra-luminous X-ray sources, or ULXs, are extremely bright X-ray point sources in other galaxies, but not located at the galaxy center. Very extreme ULXs above $10^{41}\ {\rm erg\ s^{-1}}$ are often called **hyper-luminous X-ray sources**, or HLXs.  
 
 How could we form non-stellar-mass bhs?
@@ -18,7 +15,7 @@ How could we form non-stellar-mass bhs?
 2.  collapse of Population III stars: $100 M_{\odot}$ seeds
 3.  “direct collapse” into a bh: $10^{4} - 10^{6} M_{\odot}$ seeds
 
-<img src="./Notes%20from%20Literatures.assets/image-20260702210223165.png" alt="image-20260702210223165" style="zoom:50%;" />
+<img src="./Notes from Literatures.assets/image-20260702210223165.png" alt="image-20260702210223165" style="zoom:50%;" />
 
 ### Seeding Model
 
@@ -36,7 +33,7 @@ If a black hole sits in a cluster or galaxy nucleus, nearby stars/gas should mov
 
 Mass–anisotropy degeneracy is the problem that “extra central mass” and “special stellar orbit directions” can produce similar observed stellar motions, making dynamical black-hole detections uncertain. Proper motions help because they turn a one-dimensional velocity measurement into a much more three-dimensional dynamical measurement, letting us separate “extra gravity” from “special orbit directions.”
 
-<img src="./Notes%20from%20Literatures.assets/image-20260703213104752.png" alt="image-20260703213104752" style="zoom:50%;" />
+<img src="./Notes from Literatures.assets/image-20260703213104752.png" alt="image-20260703213104752" style="zoom:50%;" />
 
 Current dynamical measurements or limits on black hole mass in low-mass stellar systems.
 
@@ -50,11 +47,10 @@ If an IMBH is sitting in a galaxy nucleus and accreting gas, it may behave like 
 
 The method
 $$
-M_{\rm BH}=f_{\rm vir}\frac{r_{\rm BLR}\Delta V^2}{G}
+M_{\rm BH}=f_{\rm vir}\frac{r_{\rm BLR}\Delta V^{2}}{G}
 $$
-
->  #### BPT Diagram
 >
+>  #### BPT Diagram
 >  A **BPT diagram** is an optical emission-line diagnostic plot used to decide what is ionizing the gas in a galaxy: **young stars** or an **active black hole**.
 
 Problem for BPT search: the AGNs become hopelessly intermingled with star-forming galaxies at low metallicity. 
@@ -72,21 +68,19 @@ The three methods merely give out overlaps. In low-mass, low-metallicity galaxie
 High occupation is found in $M_{*} \sim 10^{9} - 10^{10} M_{\odot}$ galaxies, using the X-ray data.
 
 >  #### Fundamental Plane
->
 >  The **fundamental plane** here means the **fundamental plane of black-hole activity** or **X-ray–radio fundamental plane**. It is an empirical relation connecting three quantities:
->  $$
->  L_R,\quad L_X,\quad M_{\rm BH}.
->  $$
->  Here $L_R$ is the compact radio luminosity, usually from a jet; $L_X$ is the X-ray luminosity, usually from the inner accretion flow/corona; and $M_{\rm BH}$ is the black-hole mass.
->
+> $$
+L_{R},\quad L_{X},\quad M_{\rm BH}.
+$$
+>  Here $L_{R}$ is the compact radio luminosity, usually from a jet; $L_{X}$ is the X-ray luminosity, usually from the inner accretion flow/corona; and $M_{\rm BH}$ is the black-hole mass.
 >  It is called a plane because if you plot black holes in 3D space with axes
->  $$
->  \log L_R,\quad \log L_X,\quad \log M_{\rm BH},
->  $$
+> $$
+\log L_{R},\quad \log L_{X},\quad \log M_{\rm BH},
+$$
 >  many accreting black holes lie roughly on a plane, not randomly scattered. One common form is
->  $$
->  \log L_R = \xi_X \log L_X + \xi_M \log M_{\rm BH} + b.
->  $$
+> $$
+\log L_{R} = \xi_{X} \log L_{X} + \xi_{M} \log M_{\rm BH} + b.
+$$
 >  The exact coefficients depend on calibration, but the conceptual message is: radio luminosity, X-ray luminosity, and black-hole mass are correlated in low-accretion-rate black holes with compact jets.
 
 ### Accreting Black Holes Outside of Galaxy Nuclei
@@ -96,9 +90,7 @@ High occupation is found in $M_{*} \sim 10^{9} - 10^{10} M_{\odot}$ galaxies, us
 Usually ULX samples are constructed from objects for which the Eddington limit is exceeded for a typical stellar mass black hole of $\sim 10 M_{\odot}$. ULXs were initially interpreted as strong candidates for IMBHs, largely from the simple argument that inferred isotropic luminosities $\gtrsim 10^{40} \rm erg \, s^{-1}$ imply accretors  above $\sim 100 M_{\odot}$.
 
 >  #### HLX-1
->
 >  Modeling of the optical and X-ray emission through the state changes are consistent with a black hole mass of a few $10^{4} M_{\odot}$. Radio emission associated with the state changes gives similar mass estimates, in the range $M_{BH} \sim 10^{4} - 10^{5} M_{\odot}$, while fundamental plane gives out a result as high as $\sim 3 \times 10^{6} M_{\odot}$.
->
 >  An intriguing puzzle in HLX-1 is the nature of the X-ray luminosity variations and state changes. Since X-ray monitoring of the source began in 2008, the state changes appeared nearly periodic at intervals of  1 yr, leading to the idea that they were associated with the orbital period of a tidally captured companion star on an eccentric orbit.
 
 Besides HLX-1, no other very luminous ULXs are as convincing as IMBH candidates.
@@ -128,12 +120,11 @@ ULXs are defined as point-like sources within or near the optical extent of a ho
 The key physical properties of an ultraluminous X-ray binary are the mass, spin, and nature (black hole or neutron star) of the compact object, the nature of the companion star, and the orbital separation and eccentricity.
 
 >  #### Threshold Luminosity for ULX
->
 >   A comon defintion in use today is $1 \times1 0^{3 9} \, \mathrm{e r g \, s^{-1}}$ which is convenient in cgs units. Another commonly used definition is $3 \times1 0^{3 9} \, \mathrm{e r g \, s^{-1}}$ which closely corresponds to the Eddington luminosity for a $20 M_{\odot}$ black hole
 
 ULXs are preferentially associated with star-forming galaxies, as can be inferred from the XLFs, and also with the star forming regions within galaxies.
 
-<img src="./Notes%20from%20Literatures.assets/image-20260704144943028.png" alt="image-20260704144943028" style="zoom:50%;" />
+<img src="./Notes from Literatures.assets/image-20260704144943028.png" alt="image-20260704144943028" style="zoom:50%;" />
 
 ### Comparison with Galactic X-ray Binaries
 
@@ -141,7 +132,7 @@ Galactic black-hole X-ray binaries (GBHBs) are the natural comparison sample, be
 
 The important diagnostic is not only the spectral shape, but the combination of spectrum and variability. In the thermal state, the disk should have a roughly constant inner radius, so
 $$
-L_{\rm disk} \propto T_{\rm in}^4.
+L_{\rm disk} \propto T_{\rm in}^{4}.
 $$
 This relation is useful because the inner radius is tied to the ISCO, and therefore to the compact-object mass and spin.
 
@@ -165,18 +156,15 @@ The first model was borrowed from GBHBs, which contains disk thermal component a
 
 But then the problem appears. In real GBHB thermal states, the disk dominates the X-ray spectrum, especially in the 2–10 keV band. In these ULX fits, however, the power-law component dominates above about 1 keV. That is already suspicious: the spectrum is not really behaving like a clean sub-Eddington thermal disk state.
 
-<img src="./Notes%20from%20Literatures.assets/image-20260704152304420.png" alt="image-20260704152304420" style="zoom:50%;" />
+<img src="./Notes from Literatures.assets/image-20260704152304420.png" alt="image-20260704152304420" style="zoom:50%;" />
 
 The stronger result is that the hard component is not actually a simple power law. In high-quality XMM-Newton and NuSTAR spectra it curves or turns over at only a few keV, far below the $\sim 60\ \rm keV$ breaks usually seen in Galactic black-hole hard states.
 
 So the "cool disk + power law" fit should not be read literally as an IMBH disk plus standard corona. A more physical picture is that the spectrum belongs to an **ultraluminous state**, probably connected with super-Eddington accretion.
 
 >  #### UL Spectral Regimes
->
 >  **Hard ultraluminous (hard UL)**: the harder component dominates, possibly because we are looking closer to the central funnel.
->
 >  **Soft ultraluminous (soft UL)**: the soft component dominates, probably because the wind/photosphere blocks more of the inner disk.
->
 >  **Broadened disk (BD)**: the spectrum looks disk-like but too broad for a standard thin disk. It may indicate near-Eddington or mildly super-Eddington disks.
 
 #### Supersoft ULXs
@@ -195,7 +183,7 @@ Typical extra columns are around $\sim (1-3)\times 10^{21}\ {\rm cm^{-2}}$, but 
 
 ULX spectra change with time, but the trends are not as simple as in standard Galactic black-hole states. Some sources become softer as they brighten, while others become harder.
 
-The cool component often does not follow $L_{\rm disk}\propto T_{\rm in}^4$. In several ULXs the fitted soft component becomes cooler as the luminosity increases, closer to what we expect if the soft component comes from an expanding wind/photosphere rather than a stable thin disk.
+The cool component often does not follow $L_{\rm disk}\propto T_{\rm in}^{4}$. In several ULXs the fitted soft component becomes cooler as the luminosity increases, closer to what we expect if the soft component comes from an expanding wind/photosphere rather than a stable thin disk.
 
 Some ULXs also jump between spectral regimes. For example, a source can look hard UL in one observation and broadened-disk-like in another. This is evidence that both accretion rate and viewing angle matter.
 
@@ -226,7 +214,6 @@ Low-frequency QPOs and broadband noise are less clean. They can appear in ULXs s
 Fast variability also correlates with spectral type. Hard UL spectra are often relatively quiet, while soft UL spectra can show strong variability. The variable part often matches the hard spectral component, supporting a picture where clumpy wind material partly obscures the inner disk.
 
 >  #### QPO
->
 >  A quasi-periodic oscillation is a peak in the variability power spectrum. It is not a perfectly stable clock, but it tells us that some characteristic radius or timescale in the accretion flow is repeatedly modulating the X-ray light.
 
 #### Long-term Periodicities and Quasi-periodicities
@@ -299,7 +286,7 @@ Super-Eddington accretion is not only "high radiation." A large part of the rele
 
 To power a luminosity $L_{\rm Bol}$, the mass transfer rate must satisfy
 $$
-\dot{m} = \frac{L_{\rm Bol}}{\eta c^2}.
+\dot{m} = \frac{L_{\rm Bol}}{\eta c^{2}}.
 $$
 For $\eta \sim 0.1$, $10^{39}\ {\rm erg\ s^{-1}}$ already needs $\dot{m}\sim 10^{-7}M_{\odot}\ {\rm yr^{-1}}$.
 
@@ -310,7 +297,6 @@ Ordinary wind-fed or transient Galactic systems usually cannot maintain such hig
 For neutron-star ULXs, the magnetic field is central. The accretion disk is truncated at the magnetospheric radius, where magnetic pressure balances the inflow. If that radius moves too far out, the propeller effect can stop accretion and produce low states.
 
 >  #### Propeller Effect
->
 >  If the neutron-star magnetosphere rotates faster than the inner disk can orbit, incoming gas is flung away instead of accreted. The source can then drop into a faint state.
 
 Strong magnetic fields may help a neutron star exceed the Eddington limit by channeling gas into columns and reducing scattering opacity for some photon polarizations. Mild beaming may also help, but the nearly sinusoidal pulse profiles argue against extremely narrow beams.
@@ -324,7 +310,6 @@ For black holes, the key idea is that a disk is not spherical. Radiation escapes
 At super-Eddington rates, the inner disk becomes thick and launches a massive radiation-pressure-driven wind. Inside the spherization radius, excess material is expelled, and the central emission can be geometrically collimated into a funnel.
 
 >  #### Spherization Radius
->
 >  The spherization radius is the radius inside which the disk locally reaches the Eddington limit and begins to lose mass through a strong wind. Outside it, the disk can look more like an ordinary thin disk.
 
 The paper discusses several theoretical pictures: very thick "Polish doughnut" disks, slim disks with strong advection, and porous/leaky disks. Modern simulations broadly support the important ingredients: a thick inner flow, a strong outflow, and a low-density funnel.
@@ -341,7 +326,7 @@ The scenario is attractive but not complete. Some mHz QPOs, soft lags, and addit
 
 ### IMBH Candidates
 
-The review treats IMBHs as black holes between ordinary stellar remnants and SMBHs, roughly $10^2-10^5M_{\odot}$. ULXs above the star-forming galaxy XLF break, especially HLXs with $L_X \gtrsim 10^{41}\ {\rm erg\ s^{-1}}$, are the most interesting IMBH candidates.
+The review treats IMBHs as black holes between ordinary stellar remnants and SMBHs, roughly $10^{2}-10^{5}M_{\odot}$. ULXs above the star-forming galaxy XLF break, especially HLXs with $L_{X} \gtrsim 10^{41}\ {\rm erg\ s^{-1}}$, are the most interesting IMBH candidates.
 
 But contamination is severe. Background AGN and foreground stars can mimic HLXs, so optical identification and host-galaxy association are essential.
 
@@ -349,7 +334,7 @@ But contamination is severe. Background AGN and foreground stars can mimic HLXs,
 
 HLX-1 is the strongest IMBH candidate in this review. Its luminosity peaks above $10^{42}\ {\rm erg\ s^{-1}}$, it is off-nuclear, and it shows state transitions resembling Galactic black-hole binaries.
 
-The disk component follows approximately $L_{\rm disk}\propto T_{\rm in}^4$, which supports a standard-disk interpretation. Depending on spin and disk modeling, mass estimates range from a few $10^3M_{\odot}$ up to $\sim 10^5M_{\odot}$.
+The disk component follows approximately $L_{\rm disk}\propto T_{\rm in}^{4}$, which supports a standard-disk interpretation. Depending on spin and disk modeling, mass estimates range from a few $10^{3}M_{\odot}$ up to $\sim 10^{5}M_{\odot}$.
 
 The H-alpha line confirms association with ESO 243-49. The optical counterpart may be a massive star cluster, and its velocity offset suggests HLX-1 could be the stripped nucleus of a dwarf satellite galaxy.
 
