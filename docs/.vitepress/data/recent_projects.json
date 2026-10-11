@@ -1,21 +1,21 @@
 [
   {
     "title": "Astrophysics Lecture Notes",
-    "desc": "Measuring celestial parameters, coordinates, distances, magnitudes, and luminosity in astrophysics.",
+    "desc": "Notes on astrophysical measurements, stellar magnitudes, solar structure, and magnetic activity.",
     "tags": [
       "astrophysics",
-      "astronomical coordinates",
-      "stellar magnitude"
+      "solar physics",
+      "stellar astronomy"
     ],
     "link": "/physics/Astrophysics/Astrophysics Lecture Notes"
   },
   {
     "title": "Black Hole and Compact Objects Homework",
-    "desc": "Astrophysics problem set on white dwarfs, nucleosynthesis, stars, and Gaia data.",
+    "desc": "Problems on white dwarfs, p-p fusion, Gamow peak, and solar neutrino flux.",
     "tags": [
       "astrophysics",
-      "white dwarfs",
-      "stellar evolution"
+      "white dwarf",
+      "nuclear fusion"
     ],
     "link": "/physics/Astrophysics/Black Hole and Compact Objects Homework"
   },
@@ -30,34 +30,84 @@
     "link": "/physics/Astrophysics/Black Hole and Compact Objects"
   },
   {
-    "title": "Gravitational Wave Astronomy Notes",
-    "desc": "Detectors across frequency bands and relativistic foundations for gravitational wave astronomy.",
+    "title": "HLX-1 and Intermediate-Mass Black Holes",
+    "desc": "Review of ESO 243-49 HLX-1 as an intermediate-mass black hole candidate.",
     "tags": [
-      "gravitational waves",
-      "LISA",
-      "pulsar timing array"
+      "intermediate-mass black hole",
+      "ultraluminous X-ray source",
+      "HLX-1"
     ],
-    "link": "/physics/Gravitational Wave Astronomy/Gravitational Wave Astronomy"
+    "link": "/physics/Astrophysics/X-ray and SMBH/Literature Review"
   },
   {
-    "title": "Intermediate-Mass Black Hole Seeding Notes",
-    "desc": "Literature notes on IMBH formation channels, accretion signatures, and dynamical searches.",
+    "title": "Intermediate-Mass Black Hole Formation Notes",
+    "desc": "Literature notes on IMBH seeding channels, accretion signatures, and dynamical searches.",
     "tags": [
       "intermediate-mass black holes",
       "black hole seeding",
       "ultraluminous X-ray sources"
     ],
-    "link": "/physics/X-ray and SMBH/Notes from Literatures"
+    "link": "/physics/Astrophysics/X-ray and SMBH/Notes from Literatures"
   },
   {
     "title": "X-ray and SMBH Research Note",
-    "desc": "Final project analyzing X-ray luminosity and variability of IMBH candidate HLX-1.",
+    "desc": "Data analysis and paper on IMBH candidate HLX-1 X-ray luminosity and variability.",
     "tags": [
       "X-ray astronomy",
       "intermediate-mass black holes",
       "HLX-1"
     ],
-    "link": "/physics/X-ray and SMBH/X-ray and SMBH Research Note"
+    "link": "/physics/Astrophysics/X-ray and SMBH/X-ray and SMBH Research Note"
+  },
+  {
+    "title": "Gravitational Wave Astronomy Homework",
+    "desc": "Homework on scalar fields, metrics, and covariant derivatives in non-orthogonal coordinates.",
+    "tags": [
+      "gravitational waves",
+      "scalar field",
+      "covariant derivative"
+    ],
+    "link": "/physics/Gravitational Wave Astronomy/Gravitational Wave Astronomy Homework"
+  },
+  {
+    "title": "Gravitational Wave Astronomy Notes",
+    "desc": "Detectors, relativity, geodesic equations, and Riemann tensor for gravitational waves.",
+    "tags": [
+      "gravitational waves",
+      "general relativity",
+      "geodesic deviation"
+    ],
+    "link": "/physics/Gravitational Wave Astronomy/Gravitational Wave Astronomy"
+  },
+  {
+    "title": "Detecting Gravitational Waves",
+    "desc": "Interferometer response and frequency bands for gravitational wave detection",
+    "tags": [
+      "gravitational waves",
+      "interferometer",
+      "LIGO"
+    ],
+    "link": "/physics/Gravitational Wave Astronomy/Gravitational Waves/Detecting Gravitiational Waves"
+  },
+  {
+    "title": "Gravitational Wave Formation and Propagation",
+    "desc": "Linearized Einstein equations for gravitational wave generation and propagation in spacetime.",
+    "tags": [
+      "gravitational waves",
+      "linearized gravity",
+      "metric perturbation"
+    ],
+    "link": "/physics/Gravitational Wave Astronomy/Gravitational Waves/Gravitational Waves Formation and Propagation"
+  },
+  {
+    "title": "Quantum Noise in Gravitational Wave Detectors",
+    "desc": "Noise budget and quantum noise sources in Advanced LIGO interferometers.",
+    "tags": [
+      "quantum noise",
+      "interferometer",
+      "gravitational waves"
+    ],
+    "link": "/physics/Gravitational Wave Astronomy/Gravitational Waves/Quantum Noise"
   },
   {
     "title": "Astrophysics Homework Overview",
@@ -70,8 +120,8 @@
     "link": "/physics/Astrophysics/Astrophysics Homework"
   },
   {
-    "title": "Qt Basics Guide",
-    "desc": "Introduction to Qt framework fundamentals for C++ developers",
+    "title": "Qt Basics",
+    "desc": "Introduction to Qt framework fundamentals for C++ development",
     "tags": [
       "Qt",
       "C++",
@@ -80,18 +130,18 @@
     "link": "/coding/C++/Qt/Qt Basics"
   },
   {
-    "title": "C++ Programming Basics",
-    "desc": "Introduction to C++ syntax, keywords, and basic programming concepts",
+    "title": "C++ Grammar Basics",
+    "desc": "Introduction to C++ keywords and basic programming concepts",
     "tags": [
       "C++",
-      "programming basics",
-      "keywords"
+      "keywords",
+      "programming basics"
     ],
     "link": "/coding/C++/C++ Grammar Basic"
   },
   {
-    "title": "Python Programming Basics",
-    "desc": "Introduction to Python escape characters and string formatting basics.",
+    "title": "Python Programming Basics Guide",
+    "desc": "Covers Python escape characters, string formatting, and raw strings.",
     "tags": [
       "Python",
       "escape characters",
@@ -100,38 +150,28 @@
     "link": "/coding/Python/Python Grammar Basic"
   },
   {
-    "title": "Quantum Noise in Gravitational Wave Detectors",
-    "desc": "Noise budget and quantum noise sources in Advanced LIGO interferometers.",
-    "tags": [
-      "quantum noise",
-      "gravitational waves",
-      "interferometer"
-    ],
-    "link": "/physics/General Relativity/Gravitational Waves/Quantum Noise"
-  },
-  {
     "title": "PyTorch Deep Learning Lecture Notes",
-    "desc": "Tensors, GPU acceleration, autograd, and training loops explained for deep learning.",
+    "desc": "Covers tensors, GPU acceleration, autograd, and training loops in PyTorch.",
     "tags": [
       "PyTorch",
       "deep learning",
-      "tensors"
+      "autograd"
     ],
     "link": "/coding/Deep Learning/Lecture 3: PyTorch"
   },
   {
     "title": "Optimization in Deep Learning",
-    "desc": "Lecture notes on SGD convergence, learning rates, and momentum methods.",
+    "desc": "Lecture notes on SGD convergence, learning rates, and momentum methods",
     "tags": [
       "optimization",
-      "SGD",
+      "stochastic gradient descent",
       "convergence"
     ],
     "link": "/coding/Deep Learning/Lecture 4: Optimization"
   },
   {
     "title": "Early Universe Thermal History Timeline",
-    "desc": "Timeline of inflation, reheating, neutrino decoupling, and Big Bang nucleosynthesis stages.",
+    "desc": "Timeline of inflation, reheating, neutrino decoupling, and Big Bang nucleosynthesis epochs.",
     "tags": [
       "cosmology",
       "Big Bang nucleosynthesis",
@@ -151,27 +191,17 @@
   },
   {
     "title": "Electromagnetic Light Bending by Proton",
-    "desc": "Photon deflection by proton first nonzero at order e^6 via two-photon exchange.",
+    "desc": "Photon bending by proton first nonzero at order e^6 via two-photon exchange.",
     "tags": [
       "light bending",
       "electromagnetic interaction",
-      "photon-proton scattering"
+      "proton"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 9 Exercise"
   },
   {
-    "title": "HLX-1 and Intermediate-Mass Black Holes",
-    "desc": "Review of ESO 243-49 HLX-1 as an intermediate-mass black hole candidate.",
-    "tags": [
-      "intermediate-mass black hole",
-      "ultraluminous X-ray source",
-      "HLX-1"
-    ],
-    "link": "/physics/X-ray and SMBH/Literature Review"
-  },
-  {
     "title": "Statistical Machine Learning Lecture Notes",
-    "desc": "Linear regression, MSE, and ordinary least squares derivation with matrix calculus.",
+    "desc": "Linear regression, MSE, and ordinary least squares derivations with matrix calculus.",
     "tags": [
       "machine learning",
       "linear regression",
@@ -181,11 +211,11 @@
   },
   {
     "title": "Deep Learning Basics Lecture Notes",
-    "desc": "Statistical learning review and neural network foundations with mathematical derivations",
+    "desc": "Definitions and derivations for statistical learning, model gaps, and neural networks.",
     "tags": [
       "deep learning",
-      "neural networks",
-      "statistical learning"
+      "machine learning",
+      "neural networks"
     ],
     "link": "/coding/Deep Learning/Lecture 2A: Deep Learning Basics"
   },
@@ -201,17 +231,17 @@
   },
   {
     "title": "Quantum Mechanics Homework 6 Solutions",
-    "desc": "Central force problems: two-body kinetic operator and spherical potential well bound states",
+    "desc": "Two-body kinetic operator separation and bound states in spherical potential well",
     "tags": [
       "quantum mechanics",
       "central force",
-      "two-body problem"
+      "bound states"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 6"
   },
   {
     "title": "Statistical Mechanics Homework 8 Solutions",
-    "desc": "Bose-Einstein condensation in 2D ideal gas and 3D harmonic traps",
+    "desc": "Bose-Einstein condensation in 2D ideal gas and 3D harmonic trap",
     "tags": [
       "Bose-Einstein condensation",
       "statistical mechanics",
@@ -251,7 +281,7 @@
   },
   {
     "title": "Particle Cosmology Lecture 7 Exercises",
-    "desc": "Derive scalar field commutators and Lorentz-invariant massless spin Lagrangians.",
+    "desc": "Deriving scalar field commutators and Lorentz-invariant spin Lagrangians.",
     "tags": [
       "quantum field theory",
       "commutators",
@@ -261,42 +291,12 @@
   },
   {
     "title": "Particle Cosmology Lecture 9 Notes",
-    "desc": "Classical limit, light bending, phase shift, and partial wave expansion in scattering.",
+    "desc": "Classical limit, light bending, phase shift, and S-matrix partial wave expansion.",
     "tags": [
       "particle cosmology",
       "classical limit",
       "light bending"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 9"
-  },
-  {
-    "title": "General Relativity Homework 5",
-    "desc": "Compute Christoffel symbols and Ricci tensor for a time-dependent metric.",
-    "tags": [
-      "general relativity",
-      "Ricci tensor",
-      "Christoffel symbols"
-    ],
-    "link": "/physics/General Relativity/General Relativity Homework 5"
-  },
-  {
-    "title": "Feynman Diagrams for Beginners",
-    "desc": "Introductory QFT guide with exercises on Feynman diagrams and QED calculations.",
-    "tags": [
-      "Feynman diagrams",
-      "quantum field theory",
-      "QED"
-    ],
-    "link": "/physics/Quantum Physics/Quantum Field Theory/Feynman Diagrams for Beginners"
-  },
-  {
-    "title": "Quantum Mechanics Homework 2 Solutions",
-    "desc": "Infinite square well problems: pressure, wavefunction evolution, energy probabilities.",
-    "tags": [
-      "quantum mechanics",
-      "infinite potential well",
-      "wavefunction normalization"
-    ],
-    "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 2"
   }
 ]
