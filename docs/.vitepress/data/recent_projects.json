@@ -1,30 +1,20 @@
 [
   {
-    "title": "Astrophysics Homework Overview",
-    "desc": "Modern astrophysics achievements, frontier problems, and impact on fundamental physics.",
-    "tags": [
-      "astrophysics",
-      "cosmology",
-      "gravitational waves"
-    ],
-    "link": "/physics/Astrophysics/Astrophysics Homework"
-  },
-  {
     "title": "Astrophysics Lecture Notes",
-    "desc": "Measuring celestial parameters, distances, magnitudes, and stellar luminosity in astrophysics.",
+    "desc": "Measuring celestial parameters, coordinates, distances, magnitudes, and luminosity in astrophysics.",
     "tags": [
       "astrophysics",
-      "stellar luminosity",
-      "distance measurement"
+      "astronomical coordinates",
+      "stellar magnitude"
     ],
     "link": "/physics/Astrophysics/Astrophysics Lecture Notes"
   },
   {
     "title": "Black Hole and Compact Objects Homework",
-    "desc": "Astrophysics problem set on white dwarfs, neutron stars, black holes, and Gaia data.",
+    "desc": "Astrophysics problem set on white dwarfs, nucleosynthesis, stars, and Gaia data.",
     "tags": [
       "astrophysics",
-      "compact objects",
+      "white dwarfs",
       "stellar evolution"
     ],
     "link": "/physics/Astrophysics/Black Hole and Compact Objects Homework"
@@ -41,7 +31,7 @@
   },
   {
     "title": "Gravitational Wave Astronomy Notes",
-    "desc": "Detectors across frequency bands and relativity foundations for gravitational wave astronomy.",
+    "desc": "Detectors across frequency bands and relativistic foundations for gravitational wave astronomy.",
     "tags": [
       "gravitational waves",
       "LISA",
@@ -50,44 +40,14 @@
     "link": "/physics/Gravitational Wave Astronomy/Gravitational Wave Astronomy"
   },
   {
-    "title": "Qt Basics Guide",
-    "desc": "Introduction to Qt framework fundamentals for C++ development",
+    "title": "Intermediate-Mass Black Hole Seeding Notes",
+    "desc": "Literature notes on IMBH formation channels, accretion signatures, and dynamical searches.",
     "tags": [
-      "Qt",
-      "C++",
-      "GUI"
+      "intermediate-mass black holes",
+      "black hole seeding",
+      "ultraluminous X-ray sources"
     ],
-    "link": "/coding/C++/Qt/Qt Basics"
-  },
-  {
-    "title": "C++ Programming Basics",
-    "desc": "Introduction to C++ keywords, data types, and basic syntax.",
-    "tags": [
-      "C++",
-      "programming",
-      "keywords"
-    ],
-    "link": "/coding/C++/C++ Grammar Basic"
-  },
-  {
-    "title": "Python Programming Basics",
-    "desc": "Introduction to Python escape characters and string formatting basics",
-    "tags": [
-      "Python",
-      "escape characters",
-      "strings"
-    ],
-    "link": "/coding/Python/Python Grammar Basic"
-  },
-  {
-    "title": "Quantum Noise in Gravitational Wave Detectors",
-    "desc": "Noise sources and quantum noise in Advanced LIGO interferometer strain sensitivity.",
-    "tags": [
-      "quantum noise",
-      "gravitational waves",
-      "interferometer"
-    ],
-    "link": "/physics/General Relativity/Gravitational Waves/Quantum Noise"
+    "link": "/physics/X-ray and SMBH/Notes from Literatures"
   },
   {
     "title": "X-ray and SMBH Research Note",
@@ -100,8 +60,58 @@
     "link": "/physics/X-ray and SMBH/X-ray and SMBH Research Note"
   },
   {
+    "title": "Astrophysics Homework Overview",
+    "desc": "Modern astrophysics achievements, frontier problems, and impact on fundamental physics.",
+    "tags": [
+      "astrophysics",
+      "cosmology",
+      "gravitational waves"
+    ],
+    "link": "/physics/Astrophysics/Astrophysics Homework"
+  },
+  {
+    "title": "Qt Basics Guide",
+    "desc": "Introduction to Qt framework fundamentals for C++ developers",
+    "tags": [
+      "Qt",
+      "C++",
+      "GUI"
+    ],
+    "link": "/coding/C++/Qt/Qt Basics"
+  },
+  {
+    "title": "C++ Programming Basics",
+    "desc": "Introduction to C++ syntax, keywords, and basic programming concepts",
+    "tags": [
+      "C++",
+      "programming basics",
+      "keywords"
+    ],
+    "link": "/coding/C++/C++ Grammar Basic"
+  },
+  {
+    "title": "Python Programming Basics",
+    "desc": "Introduction to Python escape characters and string formatting basics.",
+    "tags": [
+      "Python",
+      "escape characters",
+      "strings"
+    ],
+    "link": "/coding/Python/Python Grammar Basic"
+  },
+  {
+    "title": "Quantum Noise in Gravitational Wave Detectors",
+    "desc": "Noise budget and quantum noise sources in Advanced LIGO interferometers.",
+    "tags": [
+      "quantum noise",
+      "gravitational waves",
+      "interferometer"
+    ],
+    "link": "/physics/General Relativity/Gravitational Waves/Quantum Noise"
+  },
+  {
     "title": "PyTorch Deep Learning Lecture Notes",
-    "desc": "PyTorch fundamentals: tensors, GPU acceleration, autograd, modules, and training loops explained.",
+    "desc": "Tensors, GPU acceleration, autograd, and training loops explained for deep learning.",
     "tags": [
       "PyTorch",
       "deep learning",
@@ -111,23 +121,13 @@
   },
   {
     "title": "Optimization in Deep Learning",
-    "desc": "Lecture notes on SGD convergence, learning rates, and optimization theory.",
+    "desc": "Lecture notes on SGD convergence, learning rates, and momentum methods.",
     "tags": [
       "optimization",
       "SGD",
       "convergence"
     ],
     "link": "/coding/Deep Learning/Lecture 4: Optimization"
-  },
-  {
-    "title": "Intermediate-Mass Black Hole Seeding Notes",
-    "desc": "Literature notes on IMBH formation channels, accretion signatures, and dynamical searches.",
-    "tags": [
-      "intermediate-mass black holes",
-      "black hole seeding",
-      "ultraluminous X-ray sources"
-    ],
-    "link": "/physics/X-ray and SMBH/Notes from Literatures"
   },
   {
     "title": "Early Universe Thermal History Timeline",
@@ -151,17 +151,17 @@
   },
   {
     "title": "Electromagnetic Light Bending by Proton",
-    "desc": "Photon bending by proton first nonzero at order e^6 via two-photon exchange.",
+    "desc": "Photon deflection by proton first nonzero at order e^6 via two-photon exchange.",
     "tags": [
       "light bending",
       "electromagnetic interaction",
-      "proton"
+      "photon-proton scattering"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 9 Exercise"
   },
   {
     "title": "HLX-1 and Intermediate-Mass Black Holes",
-    "desc": "Review of HLX-1 as an intermediate-mass black hole candidate and ULX ambiguities.",
+    "desc": "Review of ESO 243-49 HLX-1 as an intermediate-mass black hole candidate.",
     "tags": [
       "intermediate-mass black hole",
       "ultraluminous X-ray source",
@@ -201,11 +201,11 @@
   },
   {
     "title": "Quantum Mechanics Homework 6 Solutions",
-    "desc": "Central force problems: two-body kinetic operator and bound states in spherical well",
+    "desc": "Central force problems: two-body kinetic operator and spherical potential well bound states",
     "tags": [
       "quantum mechanics",
       "central force",
-      "bound states"
+      "two-body problem"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework 6"
   },
@@ -221,7 +221,7 @@
   },
   {
     "title": "Debye Model Partition Function Homework",
-    "desc": "Derive internal energy and entropy for solids using Debye spectrum limits.",
+    "desc": "Derive internal energy and entropy from Debye spectrum at high and low temperatures.",
     "tags": [
       "statistical mechanics",
       "Debye model",
@@ -251,7 +251,7 @@
   },
   {
     "title": "Particle Cosmology Lecture 7 Exercises",
-    "desc": "Deriving field commutators and Lorentz-invariant massless spin Lagrangians.",
+    "desc": "Derive scalar field commutators and Lorentz-invariant massless spin Lagrangians.",
     "tags": [
       "quantum field theory",
       "commutators",
@@ -274,14 +274,14 @@
     "desc": "Compute Christoffel symbols and Ricci tensor for a time-dependent metric.",
     "tags": [
       "general relativity",
-      "Christoffel symbols",
-      "Ricci tensor"
+      "Ricci tensor",
+      "Christoffel symbols"
     ],
     "link": "/physics/General Relativity/General Relativity Homework 5"
   },
   {
     "title": "Feynman Diagrams for Beginners",
-    "desc": "Introductory guide to Feynman diagrams with exercises and QED example calculations.",
+    "desc": "Introductory QFT guide with exercises on Feynman diagrams and QED calculations.",
     "tags": [
       "Feynman diagrams",
       "quantum field theory",
@@ -291,7 +291,7 @@
   },
   {
     "title": "Quantum Mechanics Homework 2 Solutions",
-    "desc": "Infinite square well problems: pressure, wavefunction evolution, and energy probabilities.",
+    "desc": "Infinite square well problems: pressure, wavefunction evolution, energy probabilities.",
     "tags": [
       "quantum mechanics",
       "infinite potential well",
