@@ -307,8 +307,8 @@ $$
 这只是一个 Convention 的问题。但若是用双边谱密度那么负频率也得考虑。
 
 <img src="./Detecting Gravitiational Waves.assets/image-20260212220414776.png" alt="image-20260212220414776" style="zoom: 50%;" />
-如图，LIGO 在 2007 年 3 月测量的探测器读出的双臂长度差 $x(t)$ 的谱密度。在 150Hz 以上，其主要贡献是光子到达时间的非均匀性引起散粒噪声；在 150Hz 和 40Hz 之间主要来源是镜子镀的膜的涨落引起的布朗噪声；在 40Hz 以下主要是地震噪声。图中的 y 轴画的是 $\sqrt{S_{x}(f)}$，其单位为 $m/\sqrt{\text{Hz}}$。如果 $x(t)$ 和 $y(t)$ 是两个随机过程，那么类似于 $S_{y} (f)$ 的定义，我们也可以定义 $S_{xy}(f)$ (交叉谱密度)
 
+如图，LIGO 在 2007 年 3 月测量的探测器读出的双臂长度差 $x(t)$ 的谱密度。在 150Hz 以上，其主要贡献是光子到达时间的非均匀性引起散粒噪声；在 150Hz 和 40Hz 之间主要来源是镜子镀的膜的涨落引起的布朗噪声；在 40Hz 以下主要是地震噪声。图中的 y 轴画的是 $\sqrt{S_{x}(f)}$，其单位为 $m/\sqrt{\text{Hz}}$。如果 $x(t)$ 和 $y(t)$ 是两个随机过程，那么类似于 $S_{y} (f)$ 的定义，我们也可以定义 $S_{xy}(f)$ (交叉谱密度)
 $$
 S_{xy}(f) = \lim_{T\to\infty} \frac{2}{T} \int_{-T/2}^{T/2} (x(t)-\bar{x}) e^{-i2\pi f t} dt \int_{-T/2}^{T/2} (y(t')-\bar{y}) e^{i2\pi f t'} dt'
 $$
@@ -525,5 +525,4 @@ $$
 $$
 (\Delta \lambda_{i})_{rms} = \langle \Delta \lambda_{i}^{2} \rangle^{1/2} = \langle \text{Var} \Delta \lambda_{i} \rangle^{1/2} = \sqrt{(\Gamma^{-1})_{ii}}
 $$
-
 
