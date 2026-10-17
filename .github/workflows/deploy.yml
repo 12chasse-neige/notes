@@ -52,11 +52,16 @@ jobs:
           commit_message: "chore: update recent projects json [skip ci]"
           file_pattern: docs/.vitepress/data/recent_projects.json
 
-      # Combined and fixed build step
+      - name: Check Markdown math parsing
+        run: npm run docs:test
+
       - name: Build with VitePress
         run: npm run docs:build
         env:
           NODE_OPTIONS: "--max-old-space-size=8192"
+
+      - name: Check rendered equations
+        run: npm run docs:check-math
 
       # Upload must happen AFTER the build is successful
       - name: Upload artifact

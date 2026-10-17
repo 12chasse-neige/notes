@@ -28,7 +28,9 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "NODE_OPTIONS=--max-old-space-size=6144 vitepress build docs",
     "docs:preview": "vitepress preview docs",
-    "notes:remove-vacuum-lines": "node scripts/remove-vacuum-lines.mjs"
+    "notes:remove-vacuum-lines": "node scripts/remove-vacuum-lines.mjs",
+    "docs:test": "node --test tests/markdown-math.test.mjs",
+    "docs:check-math": "node scripts/check-math.mjs"
   },
   "dependencies": {
     "@giscus/vue": "^3.1.1"

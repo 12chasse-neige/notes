@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import markdownItMathjax3 from 'markdown-it-mathjax3'
+import { enableMath } from './markdown/math.mjs'
 import * as fs from 'fs'
 import * as path from 'path'
 import { fileURLToPath } from 'url'
@@ -426,6 +426,7 @@ export default defineConfig({
           bra: ['{\\left\\langle #1 \\right|}', 1],
           braket: ['{\\left\\langle #1 \\middle| #2 \\right\\rangle}', 2],
           ketbra: ['{\\left| #1 \\right\\rangle \\left\\langle #2 \\right|}', 2],
+          mel: ['{\\left\\langle #1 \\right| #2 \\left| #3 \\right\\rangle}', 3],
           expval: ['{\\left\\langle #1 \\right\\rangle}', 1],
           Res: ['{\\mathrm{Res}}'],
           oiint: '{\\mathop{\\unicode{x222F}}\\nolimits}',
@@ -454,17 +455,7 @@ export default defineConfig({
     breaks: false,
     config: (md) => {
       enableTaskLists(md)
-
-      md.core.ruler.push('patch_math_newlines', (state) => {
-        state.tokens.forEach((token) => {
-          if (token.type === 'math_block') {
-            const content = token.content.trim()
-            if (content.includes('\\\\') && !content.includes('\\begin')) {
-              token.content = `\\begin{gather}\n${content}\n\\end{gather}`
-            }
-          }
-        })
-      })
+      enableMath(md)
     }
   }
 })

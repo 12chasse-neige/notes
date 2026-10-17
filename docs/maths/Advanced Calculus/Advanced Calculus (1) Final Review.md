@@ -121,11 +121,11 @@ Given that on the interval $[a,b]$, $\sup_{x \in [a,b]} \lvert f'' \rvert = M$ a
 Given that $f''$ is continuous on the interval $[a,b]$, then $f$ can be estimated by the Taylor Series
 
 $$
-f(a) = f(x) + f'(x)(a-x) + \frac{1}{2}(a-x)^{2f}''(\xi), a < \xi < b
+f(a) = f(x) + f'(x)(a-x) + \frac{1}{2}(a-x)^{2} f''(\xi), a < \xi < b
 $$
 
 $$
-f(b) = f(x) + f'(x)(b-x) + \frac{1}{2}(b-x)^{2f}''(\eta), a < \eta < b
+f(b) = f(x) + f'(x)(b-x) + \frac{1}{2}(b-x)^{2} f''(\eta), a < \eta < b
 $$
 
 so the error equals to
@@ -296,9 +296,19 @@ $$
 $$
 
 1. For step functions:
-   Choose $$ g(x) = \sum_{k=1}^{n} f(x_{k-1}) I_{[x_{k-1}, x_{k}]} $$
+   Choose
+
+   $$
+   g(x) = \sum_{k=1}^{n} f(x_{k-1}) I_{[x_{k-1}, x_{k}]}
+   $$
+
 2. For piecewise linear functions:
-   Choose $$ g(x) = \sum_{k=1}^{n} \left( f(x_{k-1}) + \frac{f(x_{k}) - f(x_{k-1})}{\Delta x_{k}} (x - x_{k-1}) \right) I_{[x_{k-1}, x_{k}]} $$
+   Choose
+
+   $$
+   g(x) = \sum_{k=1}^{n} \left( f(x_{k-1}) + \frac{f(x_{k}) - f(x_{k-1})}{\Delta x_{k}} (x - x_{k-1}) \right) I_{[x_{k-1}, x_{k}]}
+   $$
+
 3. For continuous and differentiable functions:
    According to the Weierstrass First Approximation Theorem, we can choose a polnomial $P_{n} (x)$, so that
 

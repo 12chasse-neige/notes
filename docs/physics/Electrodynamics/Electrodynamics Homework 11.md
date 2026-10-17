@@ -285,7 +285,7 @@ $$
 $$
 P_{n}(0)=\begin{cases}
 0 & (n=奇数)\\
-(-1)^{\frac}{n}{2} \cdot \frac{1 \cdot 3 \cdot 5 \cdots (n-1)}{2 \cdot 4 \cdot 6 \cdots n} & (n=偶数)
+(-1)^{\frac{n}{2}} \cdot \frac{1 \cdot 3 \cdot 5 \cdots (n-1)}{2 \cdot 4 \cdot 6 \cdots n} & (n=偶数)
 \end{cases}
 $$
 

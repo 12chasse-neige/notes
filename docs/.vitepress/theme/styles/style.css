@@ -7,6 +7,10 @@
   --vp-c-brand-3: #1d4ed8;
   /* Even Darker */
   --vp-c-brand-soft: rgba(59, 130, 246, 0.14);
+  --note-heading-color: #617f9f;
+  --note-subheading-color: #5e748b;
+  --note-heading-accent: #a9c4df;
+  --note-heading-tint: rgba(137, 169, 202, 0.09);
 
   /* -- Global Animation -- */
   /* Smooth transition for dark mode toggle */
@@ -18,6 +22,10 @@
   --vp-c-brand-1: #60a5fa;
   /* Lighter blue for dark backgrounds */
   --vp-c-brand-2: #3b82f6;
+  --note-heading-color: #afc4d9;
+  --note-subheading-color: #bac9d9;
+  --note-heading-accent: #87a5c3;
+  --note-heading-tint: rgba(153, 181, 209, 0.09);
 }
 
 /* Custom Scrollbar */
@@ -39,11 +47,91 @@
   background: var(--vp-c-brand-1);
 }
 
-/* Block Equation Styling Adjustment */
-mjx-container[display="true"] {
+/* Reading hierarchy uses the same blue accents as navigation and cards. */
+.vp-doc :is(h1, h2, h3, h4, h5, h6) {
+  position: relative;
+  font-weight: 700;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.vp-doc h1 {
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+}
+
+.vp-doc h1::after {
+  display: block;
+  width: 3rem;
+  height: 4px;
+  margin-top: 0.9rem;
+  border-radius: 2px;
+  background: var(--note-heading-accent);
+  content: '';
+}
+
+.vp-doc h2 {
+  margin-top: 3rem;
+  padding: 0.65rem 0.9rem;
+  border-top: 0;
+  border-left: 3px solid var(--note-heading-accent);
+  border-radius: 0 6px 6px 0;
+  background: var(--note-heading-tint);
+  color: var(--note-heading-color);
+}
+
+.vp-doc h3 {
+  margin-top: 2rem;
+  color: var(--note-heading-color);
+}
+
+.vp-doc h4 {
+  margin-top: 1.75rem;
+  color: var(--note-subheading-color);
+  font-size: 1.1rem;
+}
+
+.vp-doc :is(h5, h6) {
+  margin-top: 1.5rem;
+  color: var(--note-subheading-color);
+  font-size: 1rem;
+}
+
+.vp-doc h6 {
+  letter-spacing: 0.02em;
+}
+
+.vp-doc h2 .header-anchor {
+  top: 0.65rem;
+}
+
+.vp-doc .header-anchor:focus-visible {
+  border-radius: 3px;
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 2px;
+  opacity: 1;
+}
+
+/* Keep wide equations scrollable without cropping tall accents or integrals.
+   MathJax injects margin: 1em 0 inline, so this override is intentional. */
+.vp-doc mjx-container[display="true"] {
+  max-width: 100%;
   margin: 1.5em 0 !important;
+  padding: 0.5rem 0.25rem;
   overflow-x: auto;
   overflow-y: hidden;
+  box-sizing: border-box;
+}
+
+.vp-doc mjx-container[display="true"]:focus-visible {
+  border-radius: 4px;
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 2px;
+}
+
+.vp-doc :is(h1, h2, h3, h4, h5, h6) mjx-container {
+  font-size: 100% !important;
 }
 
 .vp-doc .task-list-item {
@@ -112,10 +200,6 @@ mjx-container[display="true"] {
   --vp-layout-max-width: 100% !important;
 }
 
-.VPDoc {
-  padding: 32px 64px 96px !important;
-}
-
 .container {
   max-width: 100% !important;
 }
@@ -149,4 +233,18 @@ mjx-container[display="true"] {
 .VPDoc.has-sidebar .content {
   flex: 1;
   min-width: 0;
+}
+
+/* Preserve reading space on phones; widen the gutter with the viewport. */
+@media (min-width: 960px) {
+  .VPDoc {
+    padding: 32px 32px 96px !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .VPDoc {
+    padding-right: 64px !important;
+    padding-left: 64px !important;
+  }
 }

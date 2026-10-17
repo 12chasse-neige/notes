@@ -195,7 +195,7 @@ Q = \{(x,y,z) \in R^{3} | x+y+z \leq 1, x \geq 0, y \geq 0, z \geq 0\}
 $$
 计算三重积分
 $$
-\iiint_{Q} x^{ay}^{bz}^{c} dxdydz
+\iiint_{Q} x^{a} y^{b} z^{c} dxdydz
 $$
 利用 Fubini 定理的推论
 $$

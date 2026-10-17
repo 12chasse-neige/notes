@@ -162,7 +162,7 @@ $$
 \mathbf{B} = \nabla \times \mathbf{A} = \nabla \times \frac{1}{c^{2}} \frac{\partial \mathbf{Z}}{\partial t} = \frac{1}{c^{2}} \frac{\partial}{\partial t} \nabla \times \mathbf{Z}
 $$
 
-(b) 试证，库伦规范的解满足$$\nabla \cdot \mathbf{A} = 0$$
+(b) 试证，库伦规范的解满足 $\nabla \cdot \mathbf{A} = 0$
 
 证明：库伦规范下的解为
 $$

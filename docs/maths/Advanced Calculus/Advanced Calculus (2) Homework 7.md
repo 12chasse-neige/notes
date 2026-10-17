@@ -279,7 +279,7 @@ F(x_{1}, ..., x_{n}) = f(x_{1}, ..., x_{n}) - \lambda g(x_{1}, ..., x_{n})
 $$
 证明：如果对任何 $t$，都有 $g(x_{1}(t), ..., x_{n}(t)) = 0$，则 
 $$
-h''(0) =  \left. \sum_{i=1}^{n} \sum_{j=1}^{n} \frac{\partial^{2} F}{\partial x_{i} \partial x_{j}} \right|_{\mathbf}{p}  x_{i}'(0)  x_{j}'(0)
+h''(0) =  \left. \sum_{i=1}^{n} \sum_{j=1}^{n} \frac{\partial^{2} F}{\partial x_{i} \partial x_{j}} \right|_{\mathbf{p}}  x_{i}'(0)  x_{j}'(0)
 $$
 证明：已知
 $$
@@ -287,7 +287,7 @@ h'' (0) = \left. \sum_{i = 1}^{n}  x''_{i} (0) \frac{\partial}{\partial x_{i}} f
 $$
 由于
 $$
-\left. \frac{\partial^{2} F}{\partial x_{i} \partial x_{j}} \right|_{\mathbf}{p} = \left. \frac{\partial^{2} f}{\partial x_{i} \partial x_{j}} \right|_{\mathbf}{p}  - \lambda \left. \frac{\partial^{2} g}{\partial x_{i} \partial x_{j}} \right|_{\mathbf}{p}
+\left. \frac{\partial^{2} F}{\partial x_{i} \partial x_{j}} \right|_{\mathbf{p}} = \left. \frac{\partial^{2} f}{\partial x_{i} \partial x_{j}} \right|_{\mathbf{p}}  - \lambda \left. \frac{\partial^{2} g}{\partial x_{i} \partial x_{j}} \right|_{\mathbf{p}}
 $$
 所以
 $$
@@ -319,7 +319,7 @@ $$
 $$
 \begin{gathered}
 h'' (0) = \left. \sum_{i = 1}^{n}  x''_{i} (0) \frac{\partial}{\partial x_{i}} f \right|_{\mathbf{p}} - \lambda  \left. \sum_{i = 1}^{n}  \sum_{j = 1}^{n} x'_{i} (0) x'_{j} (0) \frac{\partial^{2}}{\partial x_{j} \partial x_{i}} g \right|_{\mathbf{p}} + \left. \sum_{i = 1}^{n}  \sum_{j = 1}^{n} x'_{i} (0) x'_{j} (0) \frac{\partial^{2}}{\partial x_{j} \partial x_{i}} F \right|_{\mathbf{p}} \\ =
-\left. \sum_{i=1}^{n} \sum_{j=1}^{n} \frac{\partial^{2} F}{\partial x_{i} \partial x_{j}} \right|_{\mathbf}{p}  x_{i}'(0)  x_{j}'(0)
+\left. \sum_{i=1}^{n} \sum_{j=1}^{n} \frac{\partial^{2} F}{\partial x_{i} \partial x_{j}} \right|_{\mathbf{p}}  x_{i}'(0)  x_{j}'(0)
 \end{gathered}
 $$
 

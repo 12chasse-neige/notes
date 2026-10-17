@@ -162,12 +162,24 @@ $$
 $$
 f (x_{0} + h_{1}, y_{0} + h_{2}) = f (x_{0}, y_{0}) + \mathcal{L} (\mathbf{h}) + \alpha (\mathbf{h})
 $$
-带入 $f (0,0) = 0$以及$|f(x, y)| \leq x^{2} + y^{2}$ 可以作为 $\alpha (\mathbf{h})$，所以f$在$(0, 0)$处的微分为0
+带入 $f (0,0) = 0$以及$|f(x, y)| \leq x^{2} + y^{2}$ 可以作为 $\alpha (\mathbf{h})$，所以 $f$ 在 $(0, 0)$处的微分为0
 
-证明$|f(x, y)| \leq x^2 + y^2$可以作为$\alpha (\mathbf{h})$可以作为误差项：$$\lim_{(x, y) \to 0} \frac{|f (x, y)|}{\sqrt{x^{2} + y^{2}}}  \leq \lim_{(x, y) \to 0} \sqrt{x^{2} + y^{2}} = 0$$(3) 设$g$在$(0, 0)$点的某个开球邻域$U$中有定义, 且满足$|g(x, y)| \leq \sqrt{x^2 + y^2}$,$\forall x, y \in U$.$g$在$(0, 0)$处是否一定可微?
+证明$|f(x, y)| \leq x^2 + y^2$可以作为$\alpha (\mathbf{h})$可以作为误差项：
 
-不一定，反例：$$g(x,y) = \begin{cases} \frac{xy}{\sqrt{x^{2} + y^{2}}} \qquad (x \neq 0) \\ 0 \qquad (x = 0) \end{cases}$$$$\lim_{(x,y) \to 0} g(x,y) = \lim_{(x,y) \to 0} \frac{xy}{\sqrt{x^{2} + y^{2}}}$$不存在。$g$ 甚至不连续。
+$$
+\lim_{(x, y) \to 0} \frac{|f (x, y)|}{\sqrt{x^{2} + y^{2}}}  \leq \lim_{(x, y) \to 0} \sqrt{x^{2} + y^{2}} = 0
+$$
 
-  ​	
+(3) 设$g$在$(0, 0)$点的某个开球邻域$U$中有定义, 且满足$|g(x, y)| \leq \sqrt{x^2 + y^2}$,$\forall x, y \in U$.$g$在$(0, 0)$处是否一定可微?
 
-  
+不一定，反例：
+
+$$
+g(x,y) = \begin{cases} \frac{xy}{\sqrt{x^{2} + y^{2}}} \qquad (x \neq 0) \\ 0 \qquad (x = 0) \end{cases}
+$$
+
+$$
+\lim_{(x,y) \to 0} g(x,y) = \lim_{(x,y) \to 0} \frac{xy}{\sqrt{x^{2} + y^{2}}}
+$$
+
+不存在。$g$ 甚至不连续。

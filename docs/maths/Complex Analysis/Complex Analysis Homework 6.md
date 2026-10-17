@@ -131,7 +131,7 @@ $$
 $$
 收敛半径为 $\infty$
 
-(b) $$\frac{1}{1+z+z^{2}}$$ 在 $z=0$ 展开
+(b) $\frac{1}{1+z+z^{2}}$ 在 $z=0$ 展开
 $$
 \begin{gathered}
 \frac{1}{1 + z + z^{2}} = \frac{1}{\sqrt{3} i} \left( \frac{1}{z + \frac{1 - \sqrt{3} i}{2}} - \frac{1}{z + \frac{1 + \sqrt{3} i}{2}} \right) \\ = 

@@ -120,7 +120,7 @@ $$
 $$
 \begin{gathered}
 \iint_{S} z^{k} (x \, dy \, dz + y \, dz \, dx + z \, dx \, dy) \\= 
-\iint_{S} \cos^{k} \theta (\sin \theta \cos \phi, \sin \theta \sin \phi, \cos \theta) \cdot \((\cos \theta \cos \phi, \cos \theta \sin \phi, - \sin \theta) \times (- \sin \theta \sin \phi, \sin \theta \cos \phi, 0)) d \theta d \phi \\ = 
+\iint_{S} \cos^{k} \theta (\sin \theta \cos \phi, \sin \theta \sin \phi, \cos \theta) \cdot ((\cos \theta \cos \phi, \cos \theta \sin \phi, - \sin \theta) \times (- \sin \theta \sin \phi, \sin \theta \cos \phi, 0)) d \theta d \phi \\ =
 \iint_{S} \cos^{k} \theta (\sin \theta \cos \phi, \sin \theta \sin \phi, \cos \theta) \cdot (\sin \theta \cos \phi, \sin \theta \sin \phi, \cos \theta) \sin \theta d \theta d \phi \\ = 
 \iint_{S} \cos^{k} \theta \sin \theta d \theta d \phi = 2 \pi \int_{0}^{1} x^{k} dx = \frac{2 \pi}{k + 1}
 \end{gathered}
@@ -168,12 +168,12 @@ $$
 同样使用 Gauss 定理
 $$
 \begin{gathered}
-\nabla \cdot \frac{(x, y, z)}{(a^{2} x^{2} + b^{2}y^{2} + c^{2} z^{2})^{\frac}{3}{2}} = \frac{1}{(a^{2} x^{2} + b^{2}y^{2} + c^{2} z^{2})^{3}} ((a^{2} x^{2} + b^{2}y^{2} + c^{2} z^{2})^{\frac}{3}{2} - 3 (a^{2} x^{2} + b^{2}y^{2} + c^{2} z^{2})^{\frac}{1}{2} a x^{2} \\ + (a^{2} x^{2} + b^{2}y^{2} + c^{2} z^{2})^{\frac}{3}{2} - 3 (a^{2} x^{2} + b^{2}y^{2} + c^{2} z^{2})^{\frac}{1}{2} b y^{2} \\ + (a^{2} x^{2} + b^{2}y^{2} + c^{2} z^{2})^{\frac}{3}{2} - 3 (a^{2} x^{2} + b^{2}y^{2} + c^{2} z^{2})^{\frac}{1}{2} c z^{2}) = 0 \qquad (0 \notin S)
+\nabla \cdot \frac{(x, y, z)}{(a^{2} x^{2} + b^{2}y^{2} + c^{2} z^{2})^{\frac{3}{2}}} = \frac{1}{(a^{2} x^{2} + b^{2}y^{2} + c^{2} z^{2})^{3}} ((a^{2} x^{2} + b^{2}y^{2} + c^{2} z^{2})^{\frac{3}{2}} - 3 (a^{2} x^{2} + b^{2}y^{2} + c^{2} z^{2})^{\frac{1}{2}} a x^{2} \\ + (a^{2} x^{2} + b^{2}y^{2} + c^{2} z^{2})^{\frac{3}{2}} - 3 (a^{2} x^{2} + b^{2}y^{2} + c^{2} z^{2})^{\frac{1}{2}} b y^{2} \\ + (a^{2} x^{2} + b^{2}y^{2} + c^{2} z^{2})^{\frac{3}{2}} - 3 (a^{2} x^{2} + b^{2}y^{2} + c^{2} z^{2})^{\frac{1}{2}} c z^{2}) = 0 \qquad (0 \notin S)
 \end{gathered}
 $$
 所以
 $$
-\iint_{S} \frac{x \, dy \, dz + y \, dz \, dx + z \, dx \, dy}{(a^{2} x^{2} + b^{2} y^{2} + c^{2} z^{2})^{3/2}} = \iiint_{V} \nabla \cdot \frac{(x, y, z)}{(a^{2} x^{2} + b^{2}y^{2} + c^{2} z^{2})^{\frac}{3}{2}}d v = 0
+\iint_{S} \frac{x \, dy \, dz + y \, dz \, dx + z \, dx \, dy}{(a^{2} x^{2} + b^{2} y^{2} + c^{2} z^{2})^{3/2}} = \iiint_{V} \nabla \cdot \frac{(x, y, z)}{(a^{2} x^{2} + b^{2}y^{2} + c^{2} z^{2})^{\frac{3}{2}}}d v = 0
 $$
 
 ### 7  
