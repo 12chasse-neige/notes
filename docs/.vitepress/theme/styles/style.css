@@ -11,6 +11,16 @@
   --note-subheading-color: #5e748b;
   --note-heading-accent: #a9c4df;
   --note-heading-tint: rgba(137, 169, 202, 0.09);
+  --note-reading-width: 1000px;
+  --note-table-heading-bg: rgba(137, 169, 202, 0.13);
+  --note-blockquote-bg: rgba(137, 169, 202, 0.08);
+
+  /* Keep Latin text in Inter while giving CJK glyphs a deliberate,
+     high-quality fallback on macOS, Windows, and Linux. */
+  --vp-font-family-base: 'Inter', 'PingFang SC', 'Hiragino Sans GB',
+    'Noto Sans SC', 'Noto Sans CJK SC', 'Source Han Sans SC',
+    'Microsoft YaHei', ui-sans-serif, system-ui, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
   /* -- Global Animation -- */
   /* Smooth transition for dark mode toggle */
@@ -26,6 +36,8 @@
   --note-subheading-color: #bac9d9;
   --note-heading-accent: #87a5c3;
   --note-heading-tint: rgba(153, 181, 209, 0.09);
+  --note-table-heading-bg: rgba(153, 181, 209, 0.1);
+  --note-blockquote-bg: rgba(153, 181, 209, 0.07);
 }
 
 /* Custom Scrollbar */
@@ -47,12 +59,36 @@
   background: var(--vp-c-brand-1);
 }
 
+::selection {
+  background: var(--vp-c-brand-soft);
+}
+
 /* Reading hierarchy uses the same blue accents as navigation and cards. */
+.vp-doc {
+  /* Keep Chinese closing punctuation off the start of a line. */
+  line-break: strict;
+}
+
 .vp-doc :is(h1, h2, h3, h4, h5, h6) {
   position: relative;
   font-weight: 700;
   line-height: 1.45;
   overflow-wrap: anywhere;
+  scroll-margin-top: 96px;
+}
+
+/* Long-form prose should stay comfortable on wide screens, while equations,
+   tables, images, and code are free to use the wider canvas. */
+.vp-doc > :is(p, ul, ol, blockquote),
+.vp-doc > div > :is(p, ul, ol, blockquote) {
+  max-width: var(--note-reading-width);
+}
+
+@media (min-width: 1600px) {
+  .vp-doc > :is(h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, .custom-block, details),
+  .vp-doc > div > :is(h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, .custom-block, details) {
+    max-width: var(--note-reading-width);
+  }
 }
 
 .vp-doc h1 {
@@ -77,8 +113,9 @@
   border-top: 0;
   border-left: 3px solid var(--note-heading-accent);
   border-radius: 0 6px 6px 0;
-  background: var(--note-heading-tint);
+  background: linear-gradient(90deg, var(--note-heading-tint), transparent 88%);
   color: var(--note-heading-color);
+  transition: color 0.25s ease, background-color 0.25s ease;
 }
 
 .vp-doc h3 {
@@ -113,21 +150,89 @@
   opacity: 1;
 }
 
+/* Inline formulas are inline-blocks so a long formula scrolls inside its own
+   line instead of stretching the whole page on narrow screens. */
+.vp-doc mjx-container:not([display="true"]) {
+  display: inline-block;
+  min-width: 0 !important;
+  max-width: 100%;
+  overflow: hidden;
+  vertical-align: baseline;
+}
+
+.vp-doc mjx-container:not([display="true"]).is-scrollable {
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+}
+
 /* Keep wide equations scrollable without cropping tall accents or integrals.
    MathJax injects margin: 1em 0 inline, so this override is intentional. */
 .vp-doc mjx-container[display="true"] {
+  /* MathJax sets min-width to the full equation width for wide displays,
+     which otherwise defeats max-width and creates page-wide overflow. */
+  min-width: 0 !important;
   max-width: 100%;
-  margin: 1.5em 0 !important;
-  padding: 0.5rem 0.25rem;
+  margin: 1.4em 0 !important;
+  padding: 0.6rem 0.35rem 0.7rem;
+  border-radius: 6px;
   overflow-x: auto;
   overflow-y: hidden;
+  overscroll-behavior-x: contain;
   box-sizing: border-box;
 }
 
-.vp-doc mjx-container[display="true"]:focus-visible {
+.vp-doc mjx-container[display="true"]:focus-visible,
+.vp-doc mjx-container:not([display="true"]).is-scrollable:focus-visible {
   border-radius: 4px;
   outline: 2px solid var(--vp-c-brand-1);
   outline-offset: 2px;
+}
+
+/* Scrollable equations get a soft edge fade. The class is added by the theme
+   only when the formula really overflows, so short maths is untouched. */
+.vp-doc mjx-container.is-scrollable {
+  scrollbar-width: thin;
+  scrollbar-color: var(--vp-c-divider) transparent;
+}
+
+.vp-doc mjx-container.is-scrollable::-webkit-scrollbar {
+  height: 5px;
+}
+
+.vp-doc mjx-container.is-scrollable::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.vp-doc mjx-container.is-scrollable::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: var(--vp-c-divider);
+}
+
+.vp-doc mjx-container.is-scrollable::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-brand-1);
+}
+
+.vp-doc mjx-container.is-scrollable:not(.is-at-end) {
+  -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
+  mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
+}
+
+.vp-doc mjx-container.is-scrollable.is-at-end:not(.is-at-start) {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 28px);
+  mask-image: linear-gradient(to right, transparent, #000 28px);
+}
+
+.vp-doc mjx-container.is-scrollable:not(.is-at-start):not(.is-at-end) {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 24px, #000 calc(100% - 24px), transparent);
+  mask-image: linear-gradient(to right, transparent, #000 24px, #000 calc(100% - 24px), transparent);
+}
+
+/* Keep the focus ring crisp and reveal the whole viewport when keyboard
+   users tab into a scrollable equation. */
+.vp-doc mjx-container.is-scrollable:focus-visible {
+  -webkit-mask-image: none;
+  mask-image: none;
 }
 
 .vp-doc :is(h1, h2, h3, h4, h5, h6) mjx-container {
@@ -141,6 +246,187 @@
 .vp-doc .task-list-item-checkbox {
   margin: 0 0.5em 0.2em -1.4em;
   vertical-align: middle;
+}
+
+/* ---------------------------------------------------------------
+   Tables, quotes, and code
+   --------------------------------------------------------------- */
+.vp-doc table {
+  width: fit-content;
+  max-width: 100%;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 10px;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.94em;
+  scrollbar-width: thin;
+  scrollbar-color: var(--vp-c-divider) transparent;
+}
+
+.vp-doc table::-webkit-scrollbar {
+  height: 6px;
+}
+
+.vp-doc table::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.vp-doc table::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: var(--vp-c-divider);
+}
+
+.vp-doc table::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-brand-1);
+}
+
+.vp-doc tr {
+  border-top: 0;
+  background-color: transparent;
+}
+
+.vp-doc tr:nth-child(2n) {
+  background-color: var(--vp-c-bg-soft);
+}
+
+.vp-doc th,
+.vp-doc td {
+  padding: 0.6rem 0.9rem;
+  border: 0;
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.vp-doc th {
+  background-color: var(--note-table-heading-bg);
+  color: var(--vp-c-text-1);
+  font-size: 0.9em;
+}
+
+.vp-doc td {
+  color: var(--vp-c-text-1);
+  font-size: 0.94em;
+  line-height: 1.65;
+}
+
+.vp-doc tr:last-child td {
+  border-bottom: 0;
+}
+
+.vp-doc blockquote {
+  margin: 1.5rem 0;
+  padding: 0.35rem 1rem;
+  border-left: 3px solid var(--note-heading-accent);
+  border-radius: 0 8px 8px 0;
+  background: var(--note-blockquote-bg);
+  color: var(--vp-c-text-2);
+}
+
+.vp-doc blockquote > p {
+  margin: 0.6rem 0;
+}
+
+.vp-doc div[class*='language-'] {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 10px;
+}
+
+.vp-doc :not(pre) > code {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 5px;
+  background-color: var(--vp-c-bg-soft);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.vp-doc a {
+  text-underline-offset: 3px;
+}
+
+/* Wrapped outline labels keep long Chinese headings readable instead of
+   cutting them off with an ellipsis. */
+.VPDocAsideOutline .VPDocOutlineItem .outline-link {
+  display: block;
+  overflow: visible;
+  white-space: normal;
+  text-overflow: clip;
+  padding: 5px 0;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.VPDocAsideOutline .content .outline-title {
+  letter-spacing: 0.02em;
+}
+
+/* =======================================================
+   HOME PAGE
+   ======================================================= */
+
+.VPFeature .icon {
+  color: var(--vp-c-brand-1);
+  background: linear-gradient(145deg, var(--vp-c-brand-soft), var(--vp-c-bg-soft));
+}
+
+.VPFeature .icon svg {
+  width: 26px;
+  height: 26px;
+}
+
+.home-recent {
+  max-width: 1280px;
+  margin: 3.5rem auto 4rem;
+  padding: 0 24px;
+}
+
+.home-recent-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.home-recent-eyebrow {
+  margin: 0 0 0.35rem;
+  color: var(--vp-c-brand-1);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.vp-doc .home-recent-title {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  color: var(--vp-c-text-1);
+  font-size: clamp(1.45rem, 2.2vw, 1.8rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.home-recent-subtitle {
+  max-width: 34rem;
+  margin: 0 0 0.2rem;
+  color: var(--vp-c-text-2);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .home-recent {
+    margin-top: 2.5rem;
+    padding: 0 20px;
+  }
+
+  .home-recent-head {
+    align-items: flex-start;
+  }
 }
 
 /* =======================================================

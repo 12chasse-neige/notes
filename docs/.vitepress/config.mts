@@ -269,6 +269,31 @@ function normalizeSearchText(src: string) {
     .trim()
 }
 
+// MiniSearch's default tokenizer keeps an entire Chinese sentence as one
+// token, so searches such as "级数" or "微积分" find nothing. Index CJK text as
+// deterministic bigrams (the same on every browser), while keeping Latin words
+// intact. The function is serialized into the client, so it must stay
+// self-contained.
+function tokenizeSearch(text: string) {
+  const cjk = /[\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff]+/
+  const chunks = text.match(/[\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff]+|[A-Za-z0-9_]+/g) ?? []
+  const tokens: string[] = []
+
+  for (const chunk of chunks) {
+    if (cjk.test(chunk)) {
+      if (chunk.length === 1) {
+        tokens.push(chunk)
+      } else {
+        for (let i = 0; i < chunk.length - 1; i++) tokens.push(chunk.slice(i, i + 2))
+      }
+    } else {
+      tokens.push(chunk)
+    }
+  }
+
+  return tokens
+}
+
 function cleanHeadingTitle(src: string) {
   return src
     .replace(/\s+\{#[^}]+\}\s*$/, '')
@@ -277,6 +302,16 @@ function cleanHeadingTitle(src: string) {
     .replace(/[`*_~]/g, '')
     .replace(/\s+/g, ' ')
     .trim()
+}
+
+function stripMathFromSearchTitle(src: string, replacement = ' ', tidyPunctuation = true) {
+  const stripped = src
+    .replace(/\$\$[\s\S]*?\$\$/g, replacement)
+    .replace(/\$[^$\n]+\$/g, replacement)
+    .replace(/\\\[[\s\S]*?\\\]/g, replacement)
+    .replace(/\\\([\s\S]*?\\\)/g, replacement)
+    .replace(/\s+/g, ' ')
+  return (tidyPunctuation ? stripped.replace(/\s+([，。；：、！？])/g, '$1') : stripped).trim()
 }
 
 function createSearchAnchor(title: string, seenAnchors: Map<string, number>) {
@@ -328,13 +363,17 @@ function splitMarkdownForSearch(file: string, src: string) {
     pushSection()
 
     const level = heading[1].length - 1
-    const title = cleanHeadingTitle(heading[2])
-    if (!title) continue
+    const rawTitle = cleanHeadingTitle(heading[2])
+    if (!rawTitle) continue
 
+    // VitePress drops inline math when it generates heading anchors. Mirror
+    // that for the anchor, but show an ellipsis in the human-readable title.
+    const anchorTitle = stripMathFromSearchTitle(rawTitle, ' ', false) || rawTitle
+    const title = stripMathFromSearchTitle(rawTitle, ' … ') || rawTitle
     titles[level] = title
     titles.length = level + 1
     currentTitles = titles.filter(Boolean)
-    currentAnchor = createSearchAnchor(title, seenAnchors)
+    currentAnchor = createSearchAnchor(anchorTitle, seenAnchors)
     buffer.push(title)
   }
 
@@ -406,6 +445,9 @@ export default defineConfig({
           return shouldIndexForSearch(frontmatter) ? body : ''
         },
         miniSearch: {
+          options: {
+            tokenize: tokenizeSearch
+          },
           _splitIntoSections: splitMarkdownForSearch
         }
       }

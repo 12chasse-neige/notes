@@ -17,11 +17,14 @@ hero:
 
 features:
   - title: Mathematical Rigor
-    details: Detailed derivations using LaTeX.
-  - title: Physics Simulations
-    details: Interactive demos alongside theory.
+    details: Detailed derivations, typeset with LaTeX and MathJax.
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17 5H6l6 7-6 7h11"/><path d="M17 5v3"/></svg>'
+  - title: Physics & Maths
+    details: Lecture notes, homework solutions, and research write-ups.
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2.1"/><ellipse cx="12" cy="12" rx="9" ry="3.8" transform="rotate(45 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="3.8" transform="rotate(-45 12 12)"/></svg>'
   - title: Clean Design
-    details: Distraction-free reading experience.
+    details: Distraction-free reading with light and dark themes.
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M4 9h16"/><path d="M9 9v11"/></svg>'
 
 ---
 
@@ -31,10 +34,14 @@ import RecentProjects from './.vitepress/theme/components/RecentProjects.vue'
 import recentData from './.vitepress/data/recent_projects.json'
 </script>
 
-<div class="container" style="margin-top: 50px; padding: 0 24px; max-width: 1152px; margin-left: auto; margin-right: auto;">
-  <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 20px;">
-    Recent Notes & Projects (AI Summarized)
-  </h2>
+<div class="home-recent">
+  <div class="home-recent-head">
+    <div>
+      <p class="home-recent-eyebrow">Latest updates</p>
+      <h2 class="home-recent-title">Recent notes & projects</h2>
+    </div>
+    <p class="home-recent-subtitle">Summaries generated automatically from the newest notes.</p>
+  </div>
 
   <RecentProjects :projects="recentData" />
 </div>

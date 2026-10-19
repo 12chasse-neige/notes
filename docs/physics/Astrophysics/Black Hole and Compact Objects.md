@@ -19,7 +19,7 @@
 
 $X_{i}$ 是各核素的质量分数；常用 $X,Y,Z$ 分别表示氢、氦和重元素质量分数。完整模型还需要中心与表面边界条件。快速自转、强磁场和潮汐形变超出了这个零阶近似。
 
-#### 质量守恒与静力学平衡（第 10–12 页）
+#### 质量守恒与静力学平衡
 
 厚度为 $\mathrm{d}r$ 的球壳质量为 $\mathrm{d}M=4\pi r^{2}\rho\,\mathrm{d}r$，因此
 $$
@@ -48,7 +48,7 @@ a_{\rm rad}=\frac{4\sigma_{\rm B}}{c}.
 $$
 $n_{\rm tot}$ 计入离子和自由电子，$m_{\rm u}$ 是原子质量单位，$\mu=\rho/(n_{\rm tot}m_{\rm u})$ 是平均分子量，随组成和电离状态而变。电子热压与电子简并压是同一电子群状态方程的不同极限，不能作为两群独立粒子的压强重复相加。
 
-为了研究压强与密度的关系，常采用**多方模型**
+为了研究压强与密度的关系，常采用多方模型
 $$
 P=K\rho^{1+1/n}=K\rho^{\gamma},\qquad \gamma=1+\frac1n.
 $$
@@ -391,3 +391,147 @@ e^{-} + p \to n + \nu_{e}
 
 吸收线少，线宽大
 
+
+
+## 双星系统演化
+
+双星是一个非常普遍的情况
+
+### 拉格朗日点和洛希瓣
+
+在 COM 的 inertial frame 里面考虑双星系统，存在共轴拉格朗日点 $L_{1}, L_{2}, L_{3}$ 以及离轴拉格朗日点 $L_{4}, L_{5}$ （和双星构成等边三角形）。
+
+#### 洛希瓣
+
+我们把经过 $L_{1}$ 的等势面成为洛希瓣。
+
+#### 洛希半径
+
+$$
+R_{1}=\frac{0.49q^{-2/3}}{0.6q^{-2/3}+\ln(1+q^{-1/3})}a,\quad R_{2}=\frac{0.49q^{2/3}}{0.6q^{2/3}+\ln(1+q^{1/3})}a
+$$
+
+质量比 $q \ll 1$: （也称希尔半径）
+
+$$
+R_{2}\approx a\left(\frac{q}{3}\right)^{1/3}
+$$
+
+质量比 $q \lesssim 0.5$:
+
+$$
+R_{2}\approx0.46a\left(\frac{q}{1+q}\right)^{1/3}
+$$
+
+#### 不相接双星（detached binary）
+
+半径接近洛希半径→椭球变星（Ellipsoidal variable）
+
+#### 半相接双星（semi-detached binary）
+
+洛希瓣超流（Roche lobe overflow, RLOF）质量转移，吸积盘
+
+#### 相接双星（contact binary）
+
+公共包层 (common envelope, CE)
+
+### 双星之间质量转移
+
+总角动量
+\[
+J = M_{1} a_{1}^{2} \omega + M_{2} a_{2}^{2} \omega = M_{1} M_{2} \sqrt{\frac{Ga}{M}}
+\]
+假设总角动量以及质量守恒
+\[
+\frac{\dot{a}}{a} = - \frac{2 \dot{M}_{1}}{M_{1}} \left(1 - \frac{M_{1}}{M_{2}}\right)
+\]
+如果我们假设 $M_{1}$ 充满洛希瓣，失去质量
+
+如果 $M_{1}<M_{2}$， $\dot{a}>0$，轨道扩张
+
+如果 $M_{1}>M_{2}$， $\dot{a}<0$，轨道收缩 -> 洛希瓣变小 -> 质量转移加速 -> 轨道进一步收缩 -> 失控质量转移（runaway mass transfer）-> 公共包层
+
+### 双星的观测
+
+#### 食变双星
+
+![image-20261012204344277](./Black%20Hole%20and%20Compact%20Objects.assets/image-20261012204344277.png)
+
+存在主食以及次食
+
+#### 反射效应
+
+\[
+\frac{\Delta F_{refl}}{F}\approx\alpha_{refl}\left(\frac{R_{2}}{a}\right)^{2}\sin i
+\]
+
+#### 椭球和集束效应
+
+受到潮汐变形以及多普勒效应导致
+\[
+\frac{\Delta F_{ellip}}{F}\approx\alpha_{ellip}\left(\frac{R}{a}\right)^{3}\frac{M_{2}}{M_{1}}\sin^{2}i
+\]
+
+$$
+F_{obs}\approx F_{0}\left(1-\frac{V_{r}}{c}\right)^{4}\rightarrow\frac{\Delta F}{F}\approx\frac{4V_{r}}{c}
+$$
+
+### 双星中的白矮星以及爆发现象
+
+#### 激变双星
+
+物质要能损失角动量才能被吸积
+
+输质星需要满足条件
+
+$$
+R_{2}\gtrsim0.46a\left(\frac{q}{1+q}\right)^{1/3}
+$$
+
+结合开普勒第三定律可以得到激变变星轨道周期
+
+$$
+P\lesssim\frac{10}{\sqrt{G\overline{{\rho}}_{2}}}\approx10\Bigg(\frac{\overline{{\rho}}_{2}}{\mathrm{g/c m}^{3}}\Bigg)^{-1/2}\mathrm{h r}
+$$
+
+从双星轨道周期可得输质星的平均密度；双星间距 $\leq 2R_{\odot}$
+
+#### 激变双星的演化
+
+P $\geq$ 3 hr: 输质星的磁阻尼（magnetic braking）和双星的潮汐作用 $\rightarrow$轨道角动量损失，双星周期减小。
+
+P~3 hr: 输质星完全对流化，磁场减弱（消失） $\rightarrow M_{2} < M_{1}$，稳定质量转移，双星脱离接触。
+
+2  $\lesssim$ P/hr  $\lesssim$ 3: 引力波辐射主导角动量损失 $\rightarrow$双星周期继续减小，但互不接触。
+
+1  $\leq$ P/hr  $\leq$ 2: 引力波辐射增强，双星间距收缩速度再次超过输质星半径收缩速度，双星重新开始接触 $\rightarrow$CV再形成。
+
+P~1.5 hr: 输质星仅剩简并核，稳定 RLOF要求双星间距增大→周期增大。
+
+#### 矮新星及其光变
+
+ 核聚变供能的能量转换率： $\epsilon_{n} \approx 0.7\%$;
+
+ 被吸积物质的引力能与静止能量之比
+
+$$
+\epsilon_{g}=\frac{G M m/R}{m c^{2}}=\frac{G M}{c^{2}R}=0.5\Bigg(\frac{R_{\mathrm{S}}}{R}\Bigg)
+$$
+
+白矮星  $(R \sim R_{\oplus}) : \epsilon_g < \epsilon_n$
+
+-  矮新星（不稳定吸积主导）光变小于经典新星（不稳定核燃烧主导）光变。
+
+中子星和黑洞（ $R \sim R_{S}$）： $\epsilon_{g} \gg \epsilon_{n}$， 吸积供能是“看见”中子星和黑洞的重要方式。
+
+#### Ia型超新星
+
+银河系：几百年一次，白矮星质量达到钱德拉塞卡极限时发生失控核燃烧
+
+1. （吸积或双星并合）白矮星质量接近极限；
+
+2. 星体收缩，核心温度升高，核燃烧开始；
+
+3. 简并压对温度不敏感 $\rightarrow$星体继续收缩，核心温度进一步升高，核燃烧更加迅速；
+
+4. 热压力超过引力→星体爆炸

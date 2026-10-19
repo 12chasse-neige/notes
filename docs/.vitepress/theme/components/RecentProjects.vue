@@ -26,13 +26,15 @@ defineProps<{
         <div class="card-content">
           <h3 class="title">{{ project.title }}</h3>
           <p class="description">{{ project.desc }}</p>
+        </div>
+        <div class="card-footer">
           <div class="tags" v-if="project.tags">
             <span v-for="tag in project.tags" :key="tag" class="tag">
               {{ tag }}
             </span>
           </div>
+          <span class="arrow-icon" aria-hidden="true">→</span>
         </div>
-        <div class="arrow-icon">→</div>
       </a>
     </div>
   </div>
@@ -75,19 +77,30 @@ defineProps<{
 .card-link {
   display: flex;
   flex-direction: column;
+  gap: 1.1rem;
   height: 100%;
   padding: 1.5rem;
   text-decoration: none !important;
   color: inherit;
-  justify-content: space-between;
+}
+
+.card-link:focus-visible {
+  border-radius: 11px;
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: -3px;
+}
+
+.card-content {
+  flex: 1;
 }
 
 /* Text Styles */
 .title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin: 0 0 0.55rem;
   color: var(--vp-c-text-1);
+  font-size: 1.15rem;
+  font-weight: 650;
+  line-height: 1.45;
   transition: color 0.3s;
 }
 
@@ -96,44 +109,79 @@ defineProps<{
 }
 
 .description {
-  font-size: 0.95rem;
-  color: var(--vp-c-text-2);
-  line-height: 1.5;
-  margin-bottom: 1rem;
   display: -webkit-box;
   -webkit-line-clamp: 3; /* Limit to 3 lines */
   line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  margin: 0;
+  color: var(--vp-c-text-2);
+  font-size: 0.92rem;
+  line-height: 1.6;
 }
 
-/* Tags */
+/* Tags and end-of-card affordance */
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: auto;
+}
+
 .tags {
   display: flex;
-  gap: 0.5rem;
   flex-wrap: wrap;
+  gap: 0.4rem;
+  min-width: 0;
 }
 
 .tag {
-  font-size: 0.75rem;
+  padding: 0.18rem 0.55rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 999px;
   background-color: var(--vp-c-bg-mute);
-  padding: 0.2rem 0.6rem;
-  border-radius: 4px;
   color: var(--vp-c-text-2);
+  font-size: 0.72rem;
+  font-weight: 500;
+  line-height: 1.5;
+  white-space: nowrap;
 }
 
-/* Arrow Animation */
 .arrow-icon {
-  margin-top: 1rem;
-  font-weight: bold;
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--vp-c-brand-soft);
   color: var(--vp-c-brand-1);
-  opacity: 0;
-  transform: translateX(-10px);
-  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  font-weight: 700;
+  transition: transform 0.25s ease, background-color 0.25s ease;
 }
 
 .project-card:hover .arrow-icon {
-  opacity: 1;
-  transform: translateX(0);
+  transform: translateX(3px);
+  background: var(--vp-c-brand-1);
+  color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-card,
+  .arrow-icon,
+  .title {
+    transition: none;
+  }
+
+  .project-card:hover {
+    transform: none;
+  }
+
+  .project-card:hover .arrow-icon {
+    transform: none;
+  }
 }
 </style>

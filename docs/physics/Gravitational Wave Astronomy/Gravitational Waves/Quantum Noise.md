@@ -303,7 +303,7 @@ b_{1} = a_{1} e^{2 i \beta}
 $$
 
 $$
-b_{2} = (a_{2} - \mathcal{K} a_{1}) e^{2 i \beta} - \sqrt{2 \mathcal{K}} \frac{h}{h_{SQL}} e^{i \beta}
+b_{2} = (a_{2} - \mathcal{K} a_{1}) e^{2 i \beta} + \sqrt{2 \mathcal{K}} \frac{h}{h_{SQL}} e^{i \beta}
 $$
 
 #### 噪声谱

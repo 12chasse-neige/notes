@@ -1,29 +1,45 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue'
+import { useRoute } from 'vitepress'
+import { ref, nextTick, onMounted, onUnmounted, watch } from 'vue'
 
 // Reactive state for progress width (0-100)
 const progress = ref(0)
+const route = useRoute()
 
 // Function to calculate scroll percentage
 const updateProgress = () => {
   const scrollTop = window.scrollY
   const docHeight = document.documentElement.scrollHeight
   const winHeight = window.innerHeight
-  
-  // Calculate percentage
-  const scrollPercent = scrollTop / (docHeight - winHeight)
-  const scrollPercentRounded = Math.round(scrollPercent * 100)
+  const scrollable = docHeight - winHeight
+
+  if (scrollable <= 0) {
+    progress.value = 0
+    return
+  }
 
   // Ensure value is between 0 and 100
-  progress.value = Math.min(Math.max(scrollPercentRounded, 0), 100)
+  progress.value = Math.min(Math.max(Math.round((scrollTop / scrollable) * 100), 0), 100)
 }
 
+// A new page starts at the top again, so do not leave the previous page's bar.
+watch(
+  () => route.path,
+  () =>
+    nextTick(() => {
+      requestAnimationFrame(updateProgress)
+    })
+)
+
 onMounted(() => {
-  window.addEventListener('scroll', updateProgress)
+  updateProgress()
+  window.addEventListener('scroll', updateProgress, { passive: true })
+  window.addEventListener('resize', updateProgress, { passive: true })
 })
 
 onUnmounted(() => {
   window.removeEventListener('scroll', updateProgress)
+  window.removeEventListener('resize', updateProgress)
 })
 </script>
 
