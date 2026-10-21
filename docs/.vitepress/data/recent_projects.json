@@ -1,7 +1,7 @@
 [
   {
     "title": "Astrophysics Homework Problems",
-    "desc": "Hydrogen spectral lines, Sirius distance modulus, and Planck versus Rayleigh-Jeans law.",
+    "desc": "Hydrogen spectral lines, Sirius distance modulus, and Rayleigh-Jeans approximation exercises",
     "tags": [
       "astrophysics",
       "spectroscopy",
@@ -11,7 +11,7 @@
   },
   {
     "title": "Astrophysics Lecture Notes",
-    "desc": "Lecture notes on stellar parameters, magnitudes, spectra, and solar physics",
+    "desc": "Notes on stellar parameters, magnitudes, spectra, and solar physics",
     "tags": [
       "astrophysics",
       "stellar astronomy",
@@ -24,28 +24,28 @@
     "desc": "Stellar structure, evolution, and compact remnants including black holes",
     "tags": [
       "astrophysics",
-      "stellar evolution",
+      "stellar structure",
       "black holes"
     ],
     "link": "/physics/Astrophysics/Black Hole and Compact Objects"
   },
   {
     "title": "Early Universe Thermal History",
-    "desc": "Timeline of inflation, reheating, neutrino decoupling, and Big Bang nucleosynthesis.",
+    "desc": "Timeline of inflation, reheating, neutrino decoupling, and Big Bang nucleosynthesis in the early universe.",
     "tags": [
       "early universe",
-      "cosmology",
-      "Big Bang nucleosynthesis"
+      "inflation",
+      "neutrino decoupling"
     ],
     "link": "/physics/General Relativity/Early Universe"
   },
   {
     "title": "Gravitational Wave Astronomy Homework",
-    "desc": "Exercises on non-orthogonal coordinates, scalar field gradients, and Hessian",
+    "desc": "Exercises on non-orthogonal coordinates, scalar field gradients, and Hessian.",
     "tags": [
       "gravitational waves",
       "differential geometry",
-      "metric tensor"
+      "scalar field"
     ],
     "link": "/physics/Gravitational Wave Astronomy/Gravitational Wave Astronomy Homework"
   },
@@ -71,7 +71,7 @@
   },
   {
     "title": "Advanced Calculus Final Review Notes",
-    "desc": "Taylor's theorem with Peano, Lagrange, and Cauchy remainder forms",
+    "desc": "Taylor's theorem with Peano, Lagrange, and Cauchy remainder forms.",
     "tags": [
       "Taylor theorem",
       "remainder forms",
@@ -100,12 +100,12 @@
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 4"
   },
   {
-    "title": "Advanced Calculus Homework 7",
-    "desc": "Critical points and extrema of multivariable functions using Hessian analysis",
+    "title": "Advanced Calculus Homework 7 Solutions",
+    "desc": "Critical points and extrema analysis using Hessian matrices for multivariable functions",
     "tags": [
-      "calculus",
       "critical points",
-      "Hessian matrix"
+      "Hessian matrix",
+      "multivariable calculus"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 7"
   },
@@ -121,7 +121,7 @@
   },
   {
     "title": "Complex Analysis Homework 6 Solutions",
-    "desc": "Radius of convergence, series continuity, and summation of trigonometric series",
+    "desc": "Radius of convergence, series continuity, and summation exercises solved.",
     "tags": [
       "complex analysis",
       "power series",
@@ -130,18 +130,18 @@
     "link": "/maths/Complex Analysis/Complex Analysis Homework 6"
   },
   {
-    "title": "Complex Analysis Homework 9",
-    "desc": "Analytic continuation proofs and singularities of power series",
+    "title": "Complex Analysis Homework 9 Solutions",
+    "desc": "Proofs on analytic continuation, singularities, and power series",
     "tags": [
       "analytic continuation",
-      "power series",
+      "complex analysis",
       "singularities"
     ],
     "link": "/maths/Complex Analysis/Complex Analysis Homework 9"
   },
   {
-    "title": "Electrodynamics Homework: Laplace Equation Solutions",
-    "desc": "Solving conductor sphere potential using separation of variables in uniform field",
+    "title": "Electrodynamics Homework 11 Solutions",
+    "desc": "Laplace equation and separation of variables for conducting sphere in uniform field",
     "tags": [
       "electrodynamics",
       "Laplace equation",
@@ -151,7 +151,7 @@
   },
   {
     "title": "Electrodynamics Homework 8 Solutions",
-    "desc": "Decompose Maxwell fields into longitudinal and transverse parts; Fourier modes as harmonic oscillators.",
+    "desc": "Maxwell equations decomposed into longitudinal and transverse fields; Fourier modes as harmonic oscillators.",
     "tags": [
       "electrodynamics",
       "Maxwell equations",
@@ -161,7 +161,7 @@
   },
   {
     "title": "Black Hole and Compact Objects Homework",
-    "desc": "Problems on white dwarfs, nuclear reaction rates, and solar neutrino flux estimates.",
+    "desc": "Homework on white dwarfs, nuclear reaction rates, and solar neutrino estimates.",
     "tags": [
       "astrophysics",
       "white dwarf",
@@ -171,7 +171,7 @@
   },
   {
     "title": "HLX-1 and Intermediate-Mass Black Hole Review",
-    "desc": "Literature review of HLX-1 as an intermediate-mass black hole candidate.",
+    "desc": "Literature review on HLX-1 as an intermediate-mass black hole candidate.",
     "tags": [
       "intermediate-mass black hole",
       "ultraluminous X-ray source",
@@ -191,17 +191,17 @@
   },
   {
     "title": "X-ray and SMBH Research Note",
-    "desc": "Data analysis of IMBH candidate HLX-1 using astroquery and Sherpa",
+    "desc": "Analysis of X-ray luminosity and variability of IMBH candidate HLX-1.",
     "tags": [
       "X-ray astronomy",
-      "intermediate-mass black hole",
+      "intermediate-mass black holes",
       "HLX-1"
     ],
     "link": "/physics/Astrophysics/X-ray and SMBH/X-ray and SMBH Research Note"
   },
   {
     "title": "Gravitational Wave Detection and Data Analysis",
-    "desc": "Detector responses across frequency bands and interferometer working principles",
+    "desc": "Detector responses across frequency bands and interferometer principles for gravitational waves",
     "tags": [
       "gravitational waves",
       "interferometer",
@@ -231,7 +231,7 @@
   },
   {
     "title": "C++ Programming Fundamentals",
-    "desc": "Basic C++ grammar covering keywords, types, control flow, and OOP.",
+    "desc": "Overview of C++ keywords, types, control flow, and OOP basics",
     "tags": [
       "C++",
       "keywords",
@@ -240,8 +240,8 @@
     "link": "/coding/C++/C++ Grammar Basic"
   },
   {
-    "title": "Python Programming Basics",
-    "desc": "Covers Python escape characters, string formatting, and raw strings.",
+    "title": "Python Escape Characters Basics",
+    "desc": "Guide to Python escape characters, raw strings, and formatting examples.",
     "tags": [
       "Python",
       "escape characters",
@@ -261,7 +261,7 @@
   },
   {
     "title": "Optimization in Deep Learning",
-    "desc": "Lecture notes on SGD convergence, learning rates, and momentum methods",
+    "desc": "SGD convergence, optimality conditions, and learning rate schedules explained.",
     "tags": [
       "optimization",
       "stochastic gradient descent",
@@ -270,28 +270,28 @@
     "link": "/coding/Deep Learning/Lecture 4: Optimization"
   },
   {
-    "title": "Long-Range Potential from Scalar Exchange",
-    "desc": "Derives Yukawa-like long-range potential from heavy scalar exchanging massless scalar at tree level.",
+    "title": "Particle Cosmology Lecture 8 Exercise",
+    "desc": "Derives long-range Yukawa-like potential from scalar exchange in QFT model",
     "tags": [
-      "quantum field theory",
-      "scalar exchange",
-      "long-range potential"
+      "particle cosmology",
+      "scalar field",
+      "Feynman diagram"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 8 Exercise"
   },
   {
     "title": "Electromagnetic Light Bending by Proton",
-    "desc": "Photon bending by proton first nonzero at order e^6 via two-photon exchange loop",
+    "desc": "Determining leading-order photon bending angle by a charged proton via electromagnetic interaction",
     "tags": [
       "light bending",
       "electromagnetic interaction",
-      "photon-proton scattering"
+      "photon scattering"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 9 Exercise"
   },
   {
     "title": "Statistical Machine Learning Lecture Notes",
-    "desc": "Mathematical derivations of linear regression and ordinary least squares optimization.",
+    "desc": "Mathematical derivations for linear regression and ordinary least squares optimization.",
     "tags": [
       "machine learning",
       "linear regression",
