@@ -68,6 +68,10 @@ jspm_packages/
 .cache/
 public
 
+# Keep this site's static assets (fonts, art) out of the generic rule above.
+!docs/public/
+!docs/public/**
+
 # Storybook build outputs
 .out
 .storybook-out

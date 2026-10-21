@@ -26,26 +26,51 @@ const totalNotes = computed(() =>
 function previewNotes(subject: SubjectOverview) {
   return subject.notes.slice(0, 4)
 }
+
+const ROMAN = [
+  'I',
+  'II',
+  'III',
+  'IV',
+  'V',
+  'VI',
+  'VII',
+  'VIII',
+  'IX',
+  'X',
+  'XI',
+  'XII',
+  'XIII',
+  'XIV',
+  'XV'
+]
+
+function numeral(index: number) {
+  return ROMAN[index] ?? String(index + 1).padStart(2, '0')
+}
 </script>
 
 <template>
   <div class="section-overview">
     <p class="overview-meta">
-      <span>{{ subjects.length }} subjects</span>
+      <span class="overview-meta__star" aria-hidden="true">✦</span>
+      <span>{{ subjects.length }} {{ subjects.length === 1 ? 'subject' : 'subjects' }}</span>
       <span class="meta-dot" aria-hidden="true">·</span>
-      <span>{{ totalNotes }} notes</span>
+      <span>{{ totalNotes }} {{ totalNotes === 1 ? 'note' : 'notes' }}</span>
+      <span class="overview-meta__rule" aria-hidden="true" />
     </p>
 
     <div class="subject-grid">
       <article
-        v-for="subject in subjects"
+        v-for="(subject, index) in subjects"
         :key="subject.name"
         class="subject-card"
+        :style="{ '--reveal-delay': `${Math.min(index, 8) * 55}ms` }"
+        data-glow
+        data-reveal
       >
         <div class="subject-head">
-          <a class="subject-title" :href="withBase(subject.url)">
-            {{ subject.name }}
-          </a>
+          <span class="subject-index" aria-hidden="true">{{ numeral(index) }}</span>
           <span
             class="subject-count"
             :aria-label="`${subject.count} ${subject.count === 1 ? 'note' : 'notes'}`"
@@ -54,10 +79,14 @@ function previewNotes(subject: SubjectOverview) {
           </span>
         </div>
 
+        <a class="subject-title" :href="withBase(subject.url)">
+          {{ subject.name }}
+        </a>
+
         <ul class="note-list">
           <li v-for="note in previewNotes(subject)" :key="note.url">
             <a :href="withBase(note.url)" :title="note.title">
-              <span class="note-dot" aria-hidden="true"></span>
+              <span class="note-marker" aria-hidden="true" />
               <span class="note-title">{{ note.title }}</span>
             </a>
           </li>
@@ -67,6 +96,7 @@ function previewNotes(subject: SubjectOverview) {
           {{ subject.hasIndex ? 'Open subject' : 'Start reading' }}
           <span class="more-arrow" aria-hidden="true">→</span>
         </a>
+
       </article>
     </div>
   </div>
@@ -74,118 +104,193 @@ function previewNotes(subject: SubjectOverview) {
 
 <style scoped>
 .section-overview {
-  margin: 2rem 0 1rem;
+  margin: 2.6rem 0 1rem;
 }
 
 .overview-meta {
   display: flex;
   align-items: center;
-  gap: 0.45rem;
-  margin: 0 0 1rem;
-  color: var(--vp-c-text-3);
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
+  gap: 0.55rem;
+  margin: 0 0 1.5rem;
+  color: var(--ink-3);
+  font-family: var(--font-sans);
+  font-size: 9.5px;
+  font-weight: 650;
+  letter-spacing: 0.16em;
+  line-height: 1.5;
   text-transform: uppercase;
 }
 
+.overview-meta__star {
+  color: var(--section-accent);
+  font-family: var(--font-serif);
+  font-size: 9px;
+  letter-spacing: 0;
+}
+
+.overview-meta__rule {
+  flex: 1;
+  height: 1px;
+  margin-left: 0.5rem;
+  background: linear-gradient(90deg, var(--line), transparent);
+}
+
 .meta-dot {
-  opacity: 0.7;
+  color: var(--line-strong);
 }
 
 .subject-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.05rem;
 }
 
 .subject-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   min-width: 0;
-  padding: 1.15rem 1.2rem 1rem;
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 12px;
-  background: var(--vp-c-bg-soft);
-  transition:
-    transform 0.25s ease,
-    border-color 0.25s ease,
-    box-shadow 0.25s ease;
+  min-height: 300px;
+  overflow: hidden;
+  padding: 1.25rem 1.3rem 1.15rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background-color: var(--paper-0);
+  background-image: linear-gradient(
+    var(--shade-angle, 125deg),
+    var(--section-soft),
+    transparent 60%,
+    color-mix(in srgb, var(--section-accent) 4%, transparent)
+  );  transition:
+    transform 0.45s var(--ease-out),
+    border-color 0.4s var(--ease-out),
+    box-shadow 0.45s var(--ease-out);
+}
+
+.subject-card::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, var(--section-accent), transparent 70%);
+  content: '';
+  transform: scaleX(0.16);
+  transform-origin: left center;
+  transition: transform 0.65s var(--ease-out);
 }
 
 .subject-card:hover {
-  transform: translateY(-2px);
-  border-color: var(--vp-c-brand-1);
-  box-shadow: 0 12px 28px -20px rgba(37, 99, 235, 0.55);
+  border-color: color-mix(in srgb, var(--section-accent) 40%, var(--line));
+  box-shadow: var(--shade-x, 0px) var(--shade-y, 18px) 36px -20px rgba(39, 32, 21, .35);
+  transform: translateY(-4px);
+}
+
+.subject-card:hover::before {
+  transform: scaleX(1);
 }
 
 .subject-head {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
-  gap: 0.75rem;
+  gap: 0.7rem;
 }
 
-.subject-title {
-  color: var(--vp-c-text-1);
+.subject-index {
+  color: var(--section-accent);
+  font-family: var(--font-display);
   font-size: 1.05rem;
-  font-weight: 650;
-  line-height: 1.4;
-  text-decoration: none;
-  overflow-wrap: anywhere;
-}
-
-.subject-title:hover {
-  color: var(--vp-c-brand-1);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1;
 }
 
 .subject-count {
-  flex: none;
-  min-width: 1.7rem;
-  padding: 0.1rem 0.45rem;
-  border-radius: 999px;
-  background: var(--vp-c-brand-soft);
-  color: var(--vp-c-brand-1);
-  font-size: 0.76rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 25px;
+  height: 25px;
+  padding: 0 0.4rem;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--ink-2);
+  font-family: var(--font-display);
+  font-size: 0.82rem;
   font-weight: 600;
-  line-height: 1.4;
-  text-align: center;
+  line-height: 1;
+}
+
+.subject-title {
+  display: block;
+  margin-top: 1.15rem;
+  color: var(--ink-1);
+  font-family: var(--font-display);
+  font-size: 1.55rem;
+  font-weight: 600;
+  letter-spacing: -0.018em;
+  line-height: 1.18;
+  overflow-wrap: anywhere;
+  text-decoration: none;
+  transition: color 0.25s var(--ease-out);
+}
+
+.subject-title:hover {
+  color: var(--section-accent);
 }
 
 .note-list {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
-  margin: 0.95rem 0 1.1rem;
+  gap: 0.18rem;
+  margin: 1.1rem 0 1.2rem;
   padding: 0;
   list-style: none;
+}
+
+.note-list > li {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+}
+
+.note-list > li::before {
+  display: none;
 }
 
 .note-list a {
   display: flex;
   gap: 0.55rem;
-  color: var(--vp-c-text-2);
-  font-size: 0.875rem;
-  line-height: 1.55;
+  align-items: baseline;
+  padding: 0.18rem 0;
+  color: var(--ink-2);
+  font-family: var(--font-serif);
+  font-size: 0.85rem;
+  line-height: 1.5;
   text-decoration: none;
+  transition: color 0.2s var(--ease-out);
 }
 
 .note-list a:hover {
-  color: var(--vp-c-brand-1);
+  color: var(--section-accent);
 }
 
-.note-dot {
+.note-marker {
   flex: none;
-  width: 4px;
-  height: 4px;
-  margin-top: 0.6em;
-  border-radius: 50%;
-  background: var(--vp-c-divider);
-  transition: background-color 0.2s ease;
+  width: 3px;
+  height: 3px;
+  margin-top: 0.58em;
+  background: var(--section-accent);
+  opacity: 0.5;
+  transform: rotate(45deg);
+  transition:
+    background-color 0.2s var(--ease-out),
+    opacity 0.2s var(--ease-out);
 }
 
-.note-list a:hover .note-dot {
-  background: var(--vp-c-brand-1);
+.note-list a:hover .note-marker {
+  opacity: 1;
 }
 
 .note-title {
@@ -198,35 +303,54 @@ function previewNotes(subject: SubjectOverview) {
   align-items: center;
   gap: 0.35rem;
   margin-top: auto;
-  color: var(--vp-c-brand-1);
-  font-size: 0.8rem;
-  font-weight: 600;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--line);
+  color: var(--section-accent);
+  font-family: var(--font-sans);
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  line-height: 1.5;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .more-arrow {
-  transition: transform 0.2s ease;
+  font-size: 11px;
+  transition: transform 0.25s var(--ease-out);
 }
 
 .subject-more:hover .more-arrow {
   transform: translateX(3px);
 }
 
+
 .subject-card :is(a):focus-visible {
-  border-radius: 4px;
-  outline: 2px solid var(--vp-c-brand-1);
+  border-radius: 3px;
+  outline: 2px solid var(--section-accent);
   outline-offset: 3px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1100px) {
+  .subject-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
   .subject-grid {
     grid-template-columns: 1fr;
+  }
+
+  .subject-card {
+    min-height: 0;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .subject-card,
-  .note-dot,
+  .subject-card::before,
+  .subject-more,
   .more-arrow {
     transition: none;
   }

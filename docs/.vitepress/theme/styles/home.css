@@ -1,0 +1,109 @@
+/* ==========================================================================
+   Home — the atlas
+   ========================================================================== */
+
+.VPHome .vp-doc.container {
+  max-width: 1320px;
+  padding: 0 clamp(24px, 5vw, 64px);
+}
+
+.VPHome {
+  overflow: clip;
+}
+
+/* Shared section furniture ------------------------------------------------ */
+.home-section {
+  position: relative;
+  padding: clamp(5rem, 8vw, 7.5rem) 0 clamp(4rem, 6vw, 6rem);
+}
+
+.home-section__head {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr);
+  align-items: end;
+  gap: 2.5rem;
+  margin-bottom: clamp(2.2rem, 4vw, 3.5rem);
+}
+
+.vp-doc .home-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 0 0 1rem;
+  color: var(--gold);
+  font-family: var(--font-sans);
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.vp-doc .home-eyebrow::before {
+  width: 34px;
+  height: 1px;
+  background: currentColor;
+  content: '';
+}
+
+.vp-doc .home-title {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  color: var(--ink-1);
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 4.4vw, 3.9rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.02;
+  text-wrap: balance;
+}
+
+.vp-doc .home-title::before {
+  display: none;
+}
+
+.vp-doc .home-title em {
+  color: var(--gold);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.vp-doc .home-lead {
+  max-width: 31rem;
+  margin: 0 0 0.3rem;
+  color: var(--ink-2);
+  font-family: var(--font-serif);
+  font-size: 1.02rem;
+  line-height: 1.8;
+}
+
+.vp-doc .home-section__head .home-lead {
+  justify-self: end;
+}
+
+/* A small star marking the seam between the night sky and the paper. */
+.home-collections {
+  padding-top: clamp(3rem, 5vw, 4.6rem);
+}
+
+@media (max-width: 900px) {
+  .home-section__head {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .vp-doc .home-section__head .home-lead {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 640px) {
+  .home-section {
+    padding: 4rem 0 3.25rem;
+  }
+
+  .vp-doc .home-title {
+    font-size: clamp(2.35rem, 10vw, 3rem);
+  }
+}

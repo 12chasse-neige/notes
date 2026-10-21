@@ -1,0 +1,13 @@
+# Fonts
+
+This directory contains the Latin subsets used by the site. Both families are
+licensed under the SIL Open Font License 1.1.
+
+- **Cormorant Garamond** — Copyright 2015 the Cormorant Project Authors
+  (https://github.com/CatharsisFonts/Cormorant). See `OFL-Cormorant.txt`.
+- **Newsreader** — Copyright 2020 The Newsreader Project Authors
+  (https://github.com/productiontype/Newsreader). See `OFL-Newsreader.txt`.
+
+The files are served locally so the site does not depend on a third-party font
+CDN at runtime. CJK glyphs intentionally fall back to the reader's system serif
+face (Songti SC, Noto Serif CJK, Source Han Serif, SimSun, …).

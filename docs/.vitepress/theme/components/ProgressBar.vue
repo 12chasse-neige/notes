@@ -2,12 +2,10 @@
 import { useRoute } from 'vitepress'
 import { ref, nextTick, onMounted, onUnmounted, watch } from 'vue'
 
-// Reactive state for progress width (0-100)
 const progress = ref(0)
 const route = useRoute()
 
-// Function to calculate scroll percentage
-const updateProgress = () => {
+function updateProgress() {
   const scrollTop = window.scrollY
   const docHeight = document.documentElement.scrollHeight
   const winHeight = window.innerHeight
@@ -18,11 +16,12 @@ const updateProgress = () => {
     return
   }
 
-  // Ensure value is between 0 and 100
-  progress.value = Math.min(Math.max(Math.round((scrollTop / scrollable) * 100), 0), 100)
+  progress.value = Math.min(
+    Math.max(Math.round((scrollTop / scrollable) * 100), 0),
+    100
+  )
 }
 
-// A new page starts at the top again, so do not leave the previous page's bar.
 watch(
   () => route.path,
   () =>
@@ -44,8 +43,10 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="progress-container">
-    <div class="progress-bar" :style="{ width: progress + '%' }"></div>
+  <div class="progress-container" aria-hidden="true">
+    <div class="progress-bar" :style="{ width: progress + '%' }">
+      <span v-if="progress > 1" class="progress-star">♪</span>
+    </div>
   </div>
 </template>
 
@@ -54,17 +55,38 @@ onUnmounted(() => {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 9999;
   width: 100%;
-  height: 3px; /* Height of the progress bar */
-  z-index: 9999; /* Ensure it stays on top of everything */
+  height: 2px;
   background: transparent;
-  pointer-events: none; /* Let clicks pass through */
+  pointer-events: none;
 }
 
 .progress-bar {
+  position: relative;
   height: 100%;
-  background: var(--vp-c-brand-1); /* Use your theme's blue color */
-  transition: width 0.1s ease-out; /* Slight smoothing */
-  box-shadow: 0 0 10px var(--vp-c-brand-1); /* Optional glow effect */
+  background: linear-gradient(90deg, var(--teal), var(--gold) 62%, var(--gold-bright));
+  box-shadow:
+    0 0 10px rgba(215, 174, 102, 0.5),
+    0 0 22px rgba(215, 174, 102, 0.22);
+  transition: width 0.14s linear;
+}
+
+.progress-star {
+  position: absolute;
+  top: 50%;
+  right: -3px;
+  color: var(--gold-bright);
+  font-family: var(--font-serif);
+  font-size: 9px;
+  line-height: 1;
+  text-shadow: 0 0 8px rgba(234, 203, 144, 0.9);
+  transform: translateY(-50%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .progress-bar {
+    transition: none;
+  }
 }
 </style>

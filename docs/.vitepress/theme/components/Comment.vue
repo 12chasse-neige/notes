@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useData, useRoute } from 'vitepress'
-import { ref, watch, onMounted, nextTick } from 'vue'
+import { ref, watch, nextTick } from 'vue'
 
 const { isDark } = useData()
 const route = useRoute()
@@ -65,22 +65,100 @@ watch(isDark, (dark) => {
 </script>
 
 <template>
-  <div class="comments-wrapper">
-    <div ref="commentContainer"></div>
-  </div>
+  <section class="comments-wrapper" aria-labelledby="comments-title">
+    <header class="comments-head">
+      <div>
+        <p class="comments-eyebrow">Marginalia</p>
+        <div id="comments-title" class="comments-title" role="heading" aria-level="2">Comments</div>
+      </div>
+      <p class="comments-note">Discussion powered by GitHub</p>
+    </header>
+    <div class="comments-frame">
+      <div ref="commentContainer" />
+    </div>
+  </section>
 </template>
 
 <style scoped>
 .comments-wrapper {
-  margin-top: 3rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--vp-c-divider);
+  max-width: var(--reading-width);
+  margin-top: 3.5rem;
+  padding-top: 2.4rem;
+  border-top: 1px solid var(--line);
 }
-</style>
 
-<style scoped>
-.comments-container {
-  margin-top: 64px;
-  padding-top: 32px;
+.comments-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  margin-bottom: 1.4rem;
+}
+
+.comments-eyebrow {
+  margin: 0 0 0.4rem;
+  color: var(--gold);
+  font-family: var(--font-sans);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.comments-title {
+  margin: 0;
+  color: var(--ink-1);
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.comments-note {
+  margin: 0 0 0.15rem;
+  color: var(--ink-3);
+  font-family: var(--font-sans);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.comments-frame {
+  position: relative;
+  min-height: 170px;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comments-frame:not(:has(iframe))::before {
+  color: var(--ink-3);
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  font-style: italic;
+  content: 'Fetching the discussion from GitHub…';
+}
+
+.comments-frame:has(iframe) {
+  display: block;
+  min-height: 0;
+}
+
+.dark .comments-frame {
+  background: rgba(255, 255, 255, 0.015);
+}
+
+@media (max-width: 640px) {
+  .comments-frame {
+    padding: 0.65rem;
+  }
 }
 </style>

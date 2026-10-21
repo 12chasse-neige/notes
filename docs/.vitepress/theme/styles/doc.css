@@ -1,0 +1,1136 @@
+/* ==========================================================================
+   The Night Atlas — reading room
+   ========================================================================== */
+
+/* Layout ------------------------------------------------------------------ */
+.VPDoc {
+  --reading-width: 100%;
+  --outline-width: clamp(256px, 21vw, 352px);
+  padding: 48px 32px 8px;
+  /* Equations and tables own their scrollers. Keep SVG overhangs inside the
+     reading canvas while fonts and formula measurements settle. */
+  overflow-x: clip;
+}
+
+.VPDoc .vp-doc {
+  animation: doc-enter 0.62s var(--ease-out) both;
+}
+
+@keyframes doc-enter {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .VPDoc .vp-doc {
+    animation: none;
+  }
+}
+
+@media (min-width: 960px) {
+  .VPDoc {
+    padding: 56px 40px 24px;
+  }
+}
+
+.Layout .VPDoc.has-sidebar .content,
+.Layout .VPDoc .content {
+  flex: 1;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.Layout .VPDoc.has-aside .content-container,
+.Layout .VPDoc .content-container {
+  width: 100%;
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+/* VitePress mounts an aside even when there are no outline headings. Release
+   that column automatically, including after client-side route navigation. */
+.VPDoc:not(:has(.VPDocAsideOutline.has-outline)) .aside {
+  display: none;
+}
+
+.Layout .VPDoc .aside {
+  flex: 0 0 calc(var(--outline-width) + 28px);
+  width: calc(var(--outline-width) + 28px);
+  max-width: calc(var(--outline-width) + 28px);
+  padding-left: 28px;
+}
+
+.Layout .VPDoc .aside-container,
+.Layout .VPDoc .aside-curtain {
+  width: var(--outline-width);
+}
+
+/* Doc masthead ------------------------------------------------------------ */
+.doc-masthead {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 22px;
+  margin: 0 0 1.15rem;
+  color: var(--ink-3);
+  font-family: var(--font-sans);
+  font-size: 9.5px;
+  font-weight: 650;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  animation: doc-masthead-in 0.8s var(--ease-out) both;
+}
+
+.doc-masthead__mark {
+  color: var(--section-accent);
+  font-family: var(--font-serif);
+  font-size: 11px;
+  letter-spacing: 0;
+}
+
+.doc-masthead__section {
+  color: var(--ink-2);
+}
+
+.doc-masthead__sep {
+  color: var(--line-strong);
+  margin: 0 1px;
+}
+
+.doc-masthead__subject {
+  max-width: 42ch;
+  overflow: hidden;
+  color: var(--ink-3);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.doc-masthead__rule {
+  flex: 1;
+  height: 1px;
+  min-width: 16px;
+  margin-left: 6px;
+  background: linear-gradient(90deg, var(--line), transparent);
+}
+
+.doc-masthead__year {
+  flex: none;
+  color: var(--gold);
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+}
+
+@keyframes doc-masthead-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Base typography --------------------------------------------------------- */
+.vp-doc {
+  color: var(--ink-1);
+  font-family: var(--font-serif);
+  font-size: 17.5px;
+  line-height: 1.9;
+  letter-spacing: 0.003em;
+  line-break: strict;
+  overflow-wrap: break-word;
+  text-wrap: pretty;
+}
+
+.vp-doc > div,
+.vp-doc.main {
+  font: inherit;
+}
+
+.vp-doc :is(h1, h2, h3, h4, h5, h6) {
+  position: relative;
+  color: var(--ink-1);
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.22;
+  letter-spacing: -0.012em;
+  text-wrap: balance;
+  scroll-margin-top: calc(var(--vp-nav-height) + 28px);
+}
+
+.vp-doc h1 {
+  margin: 0 0 2.1rem;
+  font-size: clamp(2.7rem, 4.6vw, 4.1rem);
+  font-weight: 500;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+}
+
+.vp-doc h1::after {
+  display: block;
+  width: 72px;
+  height: 1px;
+  margin-top: 1.35rem;
+  background: linear-gradient(90deg, var(--section-accent), transparent);
+  content: '';
+}
+
+.vp-doc h1::before {
+  position: absolute;
+  top: 0.62em;
+  left: -1.3rem;
+  color: var(--section-accent);
+  font-family: var(--font-serif);
+  font-size: 0.28em;
+  font-weight: 400;
+  letter-spacing: 0;
+  content: '✦';
+  opacity: 0.85;
+}
+
+.vp-doc h2 {
+  margin: 3.4rem 0 1.15rem;
+  padding-top: 1.05rem;
+  border-top: 1px solid var(--line);
+  font-size: clamp(1.75rem, 2.5vw, 2.25rem);
+  line-height: 1.18;
+}
+
+.vp-doc h2::before {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 54px;
+  height: 1px;
+  background: var(--section-accent);
+  content: '';
+}
+
+.vp-doc h3 {
+  margin: 2.3rem 0 0.8rem;
+  border-left: 2px solid var(--section-accent);
+  padding-left: 0.85rem;
+  font-size: 1.38rem;
+  line-height: 1.35;
+}
+
+.vp-doc h4 {
+  margin: 1.9rem 0 0.55rem;
+  font-size: 1.16rem;
+  font-weight: 650;
+  letter-spacing: 0;
+}
+
+.vp-doc h5,
+.vp-doc h6 {
+  margin: 1.6rem 0 0.45rem;
+  color: var(--ink-2);
+  font-family: var(--font-sans);
+  font-size: 0.71rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.vp-doc h6 {
+  letter-spacing: 0.2em;
+}
+
+.vp-doc :is(h1, h2, h3, h4, h5, h6) .header-anchor {
+  color: var(--section-accent);
+  font-family: var(--font-serif);
+  font-size: 0.72em;
+  font-weight: 400;
+  opacity: 0;
+  text-decoration: none;
+  transition: opacity 0.2s var(--ease-out);
+}
+
+.vp-doc :is(h1, h2, h3, h4, h5, h6):hover .header-anchor,
+.vp-doc .header-anchor:focus-visible {
+  opacity: 0.75;
+}
+
+.vp-doc h2 .header-anchor {
+  top: 1.1rem;
+}
+
+.vp-doc h3 .header-anchor {
+  top: 0.1rem;
+}
+
+/* Prose ------------------------------------------------------------------- */
+.vp-doc > :is(p, ul, ol, blockquote, .custom-block, details),
+.vp-doc > div > :is(p, ul, ol, blockquote, .custom-block, details) {
+  max-width: var(--reading-width);
+}
+
+.vp-doc p,
+.vp-doc li,
+.vp-doc blockquote {
+  font-family: var(--font-serif);
+}
+
+.vp-doc p {
+  margin: 1.05rem 0;
+  color: var(--ink-1);
+  line-height: 1.9;
+}
+
+.vp-doc strong {
+  color: var(--ink-1);
+  font-weight: 650;
+}
+
+.vp-doc em {
+  font-style: italic;
+}
+
+.vp-doc a {
+  color: var(--teal);
+  font-weight: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: rgba(42, 95, 90, 0.35);
+  text-underline-offset: 3px;
+  transition:
+    color 0.2s var(--ease-out),
+    text-decoration-color 0.2s var(--ease-out);
+}
+
+.vp-doc a:hover {
+  color: var(--gold);
+  text-decoration-color: var(--gold);
+}
+
+.dark .vp-doc a {
+  text-decoration-color: rgba(138, 197, 185, 0.35);
+}
+
+.dark .vp-doc a:hover {
+  color: var(--gold-bright);
+}
+
+.vp-doc :not(pre) > code {
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: var(--vp-code-bg);
+  color: var(--vp-code-color);
+  font-family: var(--font-mono);
+  font-size: 0.83em;
+  padding: 0.12em 0.36em;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.vp-doc mark {
+  border-radius: 2px;
+  background: var(--highlight);
+  color: inherit;
+  padding: 0.05em 0.2em;
+}
+
+.vp-doc kbd {
+  display: inline-block;
+  border: 1px solid var(--line-strong);
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  background: var(--paper-0);
+  color: var(--ink-2);
+  font-family: var(--font-mono);
+  font-size: 0.78em;
+  line-height: 1.4;
+  padding: 0.08em 0.4em;
+}
+
+.vp-doc ul,
+.vp-doc ol {
+  margin: 1rem 0;
+  padding-left: 1.45rem;
+}
+
+.vp-doc ul {
+  list-style: none;
+}
+
+.vp-doc ul > li {
+  position: relative;
+}
+
+.vp-doc ul > li::before {
+  position: absolute;
+  top: 0.8em;
+  left: -1.08rem;
+  width: 4px;
+  height: 4px;
+  background: var(--section-accent);
+  content: '';
+  transform: rotate(45deg);
+  opacity: 0.7;
+}
+
+.vp-doc ul > li:has(> input[type='checkbox'])::before,
+.vp-doc li.task-list-item::before {
+  display: none;
+}
+
+.vp-doc ol {
+  list-style: none;
+  counter-reset: item;
+}
+
+.vp-doc ol > li {
+  counter-increment: item;
+  position: relative;
+}
+
+.vp-doc ol > li::before {
+  position: absolute;
+  top: 0;
+  left: -1.6rem;
+  width: 1.3rem;
+  color: var(--section-accent);
+  font-family: var(--font-display);
+  font-size: 1.05em;
+  font-weight: 600;
+  text-align: right;
+  content: counter(item) '.';
+}
+
+.vp-doc li {
+  margin: 0.35rem 0;
+  padding-left: 0.1rem;
+  line-height: 1.82;
+}
+
+.vp-doc li > p {
+  margin: 0.35rem 0;
+}
+
+.vp-doc li > ul,
+.vp-doc li > ol {
+  margin: 0.3rem 0;
+}
+
+.vp-doc .task-list-item-checkbox {
+  margin: 0 0.55em 0.15em -1.4em;
+  accent-color: var(--gold);
+}
+
+/* Rules and images -------------------------------------------------------- */
+.vp-doc hr {
+  position: relative;
+  height: 1px;
+  margin: 3.2rem 0;
+  border: 0;
+  background: linear-gradient(90deg, transparent, var(--line-strong), transparent);
+  overflow: visible;
+}
+
+.vp-doc hr::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0 12px;
+  background: var(--vp-c-bg);
+  color: var(--section-accent);
+  font-size: 12px;
+  line-height: 1;
+  content: '✦';
+  transform: translate(-50%, -50%);
+}
+
+.vp-doc img {
+  display: block;
+  margin-inline: auto;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xs);
+  background: var(--paper-0);
+  box-shadow: var(--shadow-s);
+}
+
+.vp-doc figure {
+  margin: 1.8rem 0;
+  text-align: center;
+}
+
+/* Standalone figures use the article width even when authored in a paragraph
+   or an image link. Preserve explicit source sizes and aspect ratios. */
+.VPDoc .vp-doc p:has(img) {
+  max-width: 100%;
+}
+
+.VPDoc .vp-doc a:has(> img) {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+.vp-doc figcaption {
+  margin-top: 0.55rem;
+  color: var(--ink-3);
+  font-family: var(--font-sans);
+  font-size: 0.76rem;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+/* Quotes ------------------------------------------------------------------ */
+.vp-doc blockquote {
+  position: relative;
+  margin: 2rem 0;
+  border-left: 1px solid var(--section-accent);
+  padding: 1.15rem 1.5rem 1.15rem 3.15rem;
+  background: linear-gradient(90deg, var(--section-soft), transparent 78%);
+  color: var(--ink-2);
+  font-family: var(--font-display);
+  font-size: 1.18em;
+  font-style: italic;
+  line-height: 1.7;
+}
+
+.vp-doc blockquote::before {
+  position: absolute;
+  top: 0.12rem;
+  left: 1.05rem;
+  color: var(--section-accent);
+  font-family: var(--font-display);
+  font-size: 3.2rem;
+  font-style: normal;
+  line-height: 1;
+  content: '“';
+  opacity: 0.56;
+}
+
+.vp-doc blockquote > p {
+  margin: 0.45rem 0;
+  color: inherit;
+}
+
+.vp-doc blockquote cite {
+  display: block;
+  margin-top: 0.6rem;
+  color: var(--ink-3);
+  font-family: var(--font-sans);
+  font-size: 0.68em;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Tables ------------------------------------------------------------------ */
+.table-scroll {
+  max-width: 100%;
+  margin: 1.8rem 0;
+  overflow-x: auto;
+  border-radius: var(--radius-xs);
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-strong) transparent;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.vp-doc table {
+  display: table;
+  width: 100%;
+  max-width: 100%;
+  margin: 1.8rem 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xs);
+  border-collapse: separate;
+  border-spacing: 0;
+  background: rgba(255, 255, 255, 0.18);
+  font-family: var(--font-serif);
+  font-size: 0.92em;
+  line-height: 1.65;
+  overflow: hidden;
+}
+
+.dark .vp-doc table {
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.table-scroll > table {
+  margin: 0;
+  min-width: 100%;
+  width: 100%;
+  max-width: none;
+}
+
+.vp-doc thead {
+  background: linear-gradient(180deg, var(--section-soft), transparent);
+}
+
+.vp-doc tr {
+  border-top: 0;
+  background: transparent;
+}
+
+.vp-doc tr:nth-child(2n) {
+  background: rgba(93, 84, 66, 0.035);
+}
+
+.dark .vp-doc tr:nth-child(2n) {
+  background: rgba(236, 228, 211, 0.025);
+}
+
+.vp-doc th {
+  border: 0;
+  border-bottom: 1px solid var(--line-strong);
+  padding: 0.78rem 1rem;
+  color: var(--ink-2);
+  font-family: var(--font-sans);
+  font-size: 0.68em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-align: left;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.vp-doc td {
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  padding: 0.72rem 1rem;
+  color: var(--ink-1);
+  font-size: 0.95em;
+  line-height: 1.7;
+  vertical-align: top;
+}
+
+.vp-doc tr:last-child td {
+  border-bottom: 0;
+}
+
+.vp-doc th:first-child,
+.vp-doc td:first-child {
+  padding-left: 1.15rem;
+}
+
+.vp-doc th:last-child,
+.vp-doc td:last-child {
+  padding-right: 1.15rem;
+}
+
+/* Mathematics ------------------------------------------------------------- */
+.vp-doc mjx-container {
+  color: var(--ink-1);
+}
+
+.vp-doc mjx-container:not([display='true']) {
+  /* Keep the formula's own baseline. A non-visible overflow would make an
+     inline-block use its bottom edge as the baseline and lift the maths off
+     the Chinese text. */
+  display: inline-block;
+  min-width: 0 !important;
+  max-width: 100%;
+  overflow: visible;
+  vertical-align: baseline;
+}
+
+.vp-doc .inline-math-scroll {
+  display: inline-flex;
+  align-items: baseline;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  vertical-align: baseline;
+  border-radius: 2px;
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-strong) transparent;
+}
+
+.vp-doc .inline-math-scroll > mjx-container:not([display='true']) {
+  flex: 0 0 auto;
+  max-width: none !important;
+  overflow: visible !important;
+}
+
+.vp-doc .inline-math-scroll::-webkit-scrollbar {
+  height: 4px;
+}
+
+.vp-doc .inline-math-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.vp-doc .inline-math-scroll::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: var(--line-strong);
+}
+
+.vp-doc .inline-math-scroll:focus-visible {
+  outline: 2px solid var(--section-accent);
+  outline-offset: 3px;
+}
+
+.vp-doc .inline-math-scroll.is-scrollable:not(.is-at-end) {
+  -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 22px), transparent);
+  mask-image: linear-gradient(to right, #000 calc(100% - 22px), transparent);
+}
+
+.vp-doc .inline-math-scroll.is-scrollable.is-at-end:not(.is-at-start) {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 22px);
+  mask-image: linear-gradient(to right, transparent, #000 22px);
+}
+
+.vp-doc .inline-math-scroll.is-scrollable:not(.is-at-start):not(.is-at-end) {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 18px,
+    #000 calc(100% - 18px),
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 18px,
+    #000 calc(100% - 18px),
+    transparent
+  );
+}
+
+.vp-doc .inline-math-scroll:focus-visible {
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+.vp-doc mjx-container[display='true'] {
+  min-width: 0 !important;
+  max-width: 100%;
+  margin: 1.9em 0 !important;
+  padding: 0.3rem 0.2rem 0.35rem;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  box-sizing: border-box;
+}
+
+.vp-doc mjx-container[display='true']:focus-visible,
+.vp-doc mjx-container:not([display='true']).is-scrollable:focus-visible {
+  outline: 2px solid var(--section-accent);
+  outline-offset: 2px;
+}
+
+.vp-doc mjx-container.is-scrollable {
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-strong) transparent;
+}
+
+.vp-doc mjx-container.is-scrollable::-webkit-scrollbar {
+  height: 5px;
+}
+
+.vp-doc mjx-container.is-scrollable::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.vp-doc mjx-container.is-scrollable::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: var(--line-strong);
+}
+
+.vp-doc mjx-container.is-scrollable::-webkit-scrollbar-thumb:hover {
+  background: var(--section-accent);
+}
+
+.vp-doc mjx-container.is-scrollable:not(.is-at-end) {
+  -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
+  mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
+}
+
+.vp-doc mjx-container.is-scrollable.is-at-end:not(.is-at-start) {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 28px);
+  mask-image: linear-gradient(to right, transparent, #000 28px);
+}
+
+.vp-doc mjx-container.is-scrollable:not(.is-at-start):not(.is-at-end) {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 24px,
+    #000 calc(100% - 24px),
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 24px,
+    #000 calc(100% - 24px),
+    transparent
+  );
+}
+
+.vp-doc mjx-container.is-scrollable:focus-visible {
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+.vp-doc :is(h1, h2, h3, h4, h5, h6) mjx-container {
+  font-size: 100% !important;
+}
+
+/* Code -------------------------------------------------------------------- */
+.vp-doc div[class*='language-'] {
+  position: relative;
+  margin: 1.7rem 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xs);
+  background: var(--vp-code-block-bg);
+  box-shadow: var(--shadow-s);
+}
+
+.vp-doc div[class*='language-']::before {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 2;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #c37f6f;
+  box-shadow:
+    11px 0 0 #cda55d,
+    22px 0 0 #6f9f97;
+  content: '';
+  opacity: 0.72;
+  pointer-events: none;
+}
+
+.dark .vp-doc div[class*='language-']::before {
+  background: #c37f6f;
+  box-shadow:
+    11px 0 0 #cda55d,
+    22px 0 0 #6f9f97;
+}
+
+.vp-doc div[class*='language-'] > span.lang {
+  top: 8px;
+  right: 42px;
+  color: var(--ink-3);
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.vp-doc div[class*='language-'] > button.copy {
+  top: 7px;
+  right: 9px;
+  width: 26px;
+  height: 26px;
+  border-color: transparent;
+  background: transparent;
+}
+
+.vp-doc div[class*='language-'] > button.copy:hover {
+  background: rgba(93, 84, 66, 0.08);
+}
+
+.vp-doc div[class*='language-'] > button.copy.copied {
+  border-color: var(--gold) !important;
+}
+
+.vp-doc div[class*='language-'] > button.copy .vpi-copy,
+.vp-doc div[class*='language-'] > button.copy .vpi-check {
+  color: var(--ink-3);
+}
+
+.vp-doc div[class*='language-'] pre {
+  padding-top: 2.15rem;
+  padding-bottom: 18px;
+  background: transparent !important;
+}
+
+.vp-doc div[class*='language-'] code {
+  font-family: var(--font-mono);
+  font-size: 0.84em;
+  line-height: 1.78;
+}
+
+.vp-doc div[class*='language-'] .line-numbers-wrapper {
+  color: var(--ink-3);
+}
+
+.vp-doc .line-highlight {
+  background: var(--vp-code-line-highlight-color);
+}
+
+/* Custom containers ------------------------------------------------------- */
+.vp-doc .custom-block {
+  margin: 1.8rem 0;
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--section-accent);
+  border-radius: var(--radius-xs);
+  background: var(--section-soft);
+  padding: 1rem 1.2rem 0.95rem;
+  color: var(--ink-1);
+  font-family: var(--font-serif);
+  font-size: 0.94em;
+  line-height: 1.75;
+}
+
+.vp-doc .custom-block .custom-block-title {
+  margin-bottom: 0.45rem;
+  color: var(--section-accent);
+  font-family: var(--font-sans);
+  font-size: 0.68em;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.vp-doc .custom-block.tip {
+  border-left-color: var(--teal);
+  background: var(--teal-soft);
+}
+
+.vp-doc .custom-block.tip .custom-block-title {
+  color: var(--teal);
+}
+
+.vp-doc .custom-block.warning {
+  border-left-color: var(--gold);
+  background: rgba(198, 154, 84, 0.12);
+}
+
+.vp-doc .custom-block.danger {
+  border-left-color: var(--rose);
+  background: var(--rose-soft);
+}
+
+.vp-doc .custom-block.danger .custom-block-title {
+  color: var(--rose);
+}
+
+.vp-doc .custom-block p {
+  margin: 0.5rem 0;
+}
+
+.vp-doc details {
+  margin: 1.6rem 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xs);
+  background: rgba(255, 255, 255, 0.15);
+  padding: 0.2rem 1.1rem;
+}
+
+.dark .vp-doc details {
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.vp-doc summary {
+  cursor: pointer;
+  padding: 0.75rem 0;
+  color: var(--ink-1);
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+}
+
+.vp-doc summary::marker {
+  color: var(--gold);
+}
+
+/* Pager ------------------------------------------------------------------- */
+.VPDocFooter {
+  margin-top: 72px;
+  max-width: var(--reading-width);
+}
+
+.VPDocFooter .edit-info {
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+}
+
+.VPDocFooter .last-updated,
+.VPDocFooter .edit-link-button {
+  color: var(--ink-3);
+  font-family: var(--font-sans);
+  font-size: 11px;
+  letter-spacing: 0.03em;
+}
+
+.VPDocFooter .prev-next {
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+  gap: 12px;
+}
+
+.VPDocFooter .pager-link {
+  border-color: var(--line);
+  border-radius: var(--radius-xs);
+  background: transparent;
+  padding: 14px 16px 16px;
+  transition:
+    border-color 0.25s var(--ease-out),
+    background-color 0.25s var(--ease-out),
+    transform 0.25s var(--ease-out);
+}
+
+.VPDocFooter .pager-link:hover {
+  border-color: var(--section-accent);
+  background: var(--section-soft);
+  transform: translateY(-2px);
+}
+
+.VPDocFooter .pager-link .desc {
+  color: var(--ink-3);
+  font-family: var(--font-sans);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.VPDocFooter .pager-link .title {
+  color: var(--ink-1);
+  font-family: var(--font-display);
+  font-size: 1.22rem;
+  font-weight: 600;
+  line-height: 1.3;
+  padding-top: 4px;
+}
+
+/* End mark ---------------------------------------------------------------- */
+.doc-end {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: var(--reading-width);
+  margin: 64px 0 8px;
+  color: var(--gold);
+}
+
+.doc-end__star {
+  font-family: var(--font-serif);
+  font-size: 9px;
+}
+
+.doc-end__word {
+  color: var(--gold);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-style: italic;
+  letter-spacing: 0.06em;
+  line-height: 1;
+}
+
+.doc-end::before,
+.doc-end::after {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--line-strong));
+  content: '';
+}
+
+.doc-end::after {
+  background: linear-gradient(90deg, var(--line-strong), transparent);
+}
+
+/* 404 --------------------------------------------------------------------- */
+.NotFound .title {
+  font-family: var(--font-display);
+  font-size: clamp(4rem, 12vw, 7rem);
+  font-weight: 500;
+  color: var(--section-accent);
+}
+
+.NotFound .text {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: var(--ink-2);
+}
+
+.NotFound .link {
+  border-radius: var(--radius-xs);
+  background: var(--ink-1);
+  color: var(--paper-1);
+  font-family: var(--font-sans);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .VPDoc {
+    padding: 34px 20px 8px;
+  }
+
+  .VPDoc .content-container {
+    max-width: 100%;
+  }
+
+  .vp-doc {
+    font-size: 16.5px;
+    line-height: 1.86;
+  }
+
+  .vp-doc h1 {
+    font-size: clamp(2.35rem, 9vw, 3rem);
+    margin-bottom: 1.7rem;
+  }
+
+  .vp-doc h1::before {
+    display: none;
+  }
+
+  .vp-doc h2 {
+    margin-top: 2.7rem;
+    font-size: clamp(1.55rem, 6vw, 1.9rem);
+  }
+
+  .vp-doc h3 {
+    font-size: 1.24rem;
+  }
+
+  .vp-doc mjx-container[display='true'] {
+    margin: 1.5em 0 !important;
+    padding: 0.25rem 0.15rem 0.3rem;
+  }
+
+  .vp-doc th,
+  .vp-doc td {
+    padding: 0.6rem 0.7rem;
+  }
+
+  .doc-masthead {
+    margin-bottom: 0.9rem;
+  }
+
+  .doc-masthead__rule {
+    display: none;
+  }
+
+  .doc-end {
+    margin-top: 48px;
+  }
+
+  .doc-end__word {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .vp-doc > :is(h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, .custom-block, details),
+  .vp-doc > div > :is(h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, .custom-block, details) {
+    max-width: var(--reading-width);
+  }
+}

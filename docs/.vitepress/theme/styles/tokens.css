@@ -1,0 +1,311 @@
+/* ==========================================================================
+   The Night Atlas — design tokens
+   A warm, observatory-inspired reading room: parchment and ink by day,
+   midnight and starlight by night.
+   ========================================================================== */
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('/fonts/cormorant-garamond.woff2') format('woff2');
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('/fonts/cormorant-garamond-italic.woff2') format('woff2');
+  font-weight: 300 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Newsreader';
+  src: url('/fonts/newsreader.woff2') format('woff2');
+  font-weight: 200 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Newsreader';
+  src: url('/fonts/newsreader-italic.woff2') format('woff2');
+  font-weight: 200 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light;
+
+  /* Type ------------------------------------------------------------------ */
+  --font-display: 'Cormorant Garamond', 'Iowan Old Style', 'Palatino Linotype',
+    Palatino, 'Songti SC', 'Noto Serif SC', 'Source Han Serif SC', serif;
+  --font-serif: 'Newsreader', 'Iowan Old Style', 'Palatino Linotype', Palatino,
+    'Songti SC', 'Noto Serif SC', 'Source Han Serif SC', 'SimSun', serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'PingFang SC', 'Hiragino Sans GB', 'Noto Sans SC', 'Microsoft YaHei',
+    ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  --font-mono: 'SFMono-Regular', 'Cascadia Code', 'JetBrains Mono', Menlo,
+    Consolas, 'Liberation Mono', monospace;
+
+  /* Daylight palette ------------------------------------------------------ */
+  --paper-0: #fcf9f2;
+  --paper-1: #f5f0e5;
+  --paper-2: #efe7d8;
+  --paper-3: #e7ddcc;
+  --ink-1: #211f1a;
+  --ink-2: #565045;
+  --ink-3: #6f6759;
+  --line: rgba(48, 42, 31, 0.13);
+  --line-strong: rgba(48, 42, 31, 0.24);
+  --gold: #946b2a;
+  --gold-bright: #b98d47;
+  --gold-soft: rgba(148, 107, 42, 0.11);
+  --teal: #2a5f5a;
+  --teal-bright: #3f7a73;
+  --teal-soft: rgba(42, 95, 90, 0.1);
+  --rose: #a25b45;
+  --rose-bright: #bd7259;
+  --rose-soft: rgba(162, 91, 69, 0.1);
+  --highlight: #f0e0b8;
+  --glass: rgba(250, 246, 237, 0.78);
+  --glass-strong: rgba(250, 246, 237, 0.92);
+  --code-bg: #efe7d8;
+  --code-ink: #3c403b;
+
+  /* Elevation ------------------------------------------------------------- */
+  --shadow-s: 0 1px 2px rgba(39, 32, 21, 0.04),
+    0 10px 26px -18px rgba(39, 32, 21, 0.35);
+  --shadow-m: 0 2px 4px rgba(39, 32, 21, 0.05),
+    0 24px 54px -30px rgba(39, 32, 21, 0.45);
+  --shadow-l: 0 4px 10px rgba(39, 32, 21, 0.06),
+    0 42px 90px -42px rgba(39, 32, 21, 0.5);
+
+  /* Shape & motion -------------------------------------------------------- */
+  --radius-xs: 3px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --ease-out: cubic-bezier(0.22, 0.8, 0.24, 1);
+  --ease-spring: cubic-bezier(0.34, 1.4, 0.64, 1);
+  --reading-width: 840px;
+  --nav-height: 72px;
+
+  /* Section accents are switched by [data-section] on <html>. */
+  --section-accent: var(--gold);
+  --section-accent-bright: var(--gold-bright);
+  --section-soft: var(--gold-soft);
+
+  /* VitePress mapping ----------------------------------------------------- */
+  --vp-c-bg: var(--paper-1);
+  --vp-c-bg-alt: var(--paper-2);
+  --vp-c-bg-elv: var(--paper-0);
+  --vp-c-bg-soft: var(--paper-2);
+  --vp-c-bg-mute: var(--paper-3);
+  --vp-c-text-1: var(--ink-1);
+  --vp-c-text-2: var(--ink-2);
+  --vp-c-text-3: var(--ink-3);
+  --vp-c-divider: var(--line);
+  --vp-c-border: var(--line-strong);
+  --vp-c-gutter: var(--line);
+  --vp-c-neutral: var(--ink-1);
+  --vp-c-neutral-inverse: var(--paper-0);
+
+  --vp-c-brand-1: var(--teal);
+  --vp-c-brand-2: var(--teal-bright);
+  --vp-c-brand-3: #204c47;
+  --vp-c-brand-soft: var(--teal-soft);
+
+  --vp-c-default-1: #c6bba8;
+  --vp-c-default-2: #ddd3c2;
+  --vp-c-default-3: #e9e0d1;
+  --vp-c-default-soft: rgba(93, 84, 66, 0.08);
+
+  --vp-font-family-base: var(--font-sans);
+  --vp-font-family-mono: var(--font-mono);
+  --vp-font-family-serif: var(--font-serif);
+
+  --vp-nav-height: var(--nav-height);
+  --vp-nav-height-mobile: 60px;
+  --vp-nav-bg-color: var(--glass);
+  --vp-nav-screen-bg-color: var(--paper-1);
+  --vp-nav-logo-height: 28px;
+  --vp-local-nav-bg-color: var(--glass-strong);
+  --vp-sidebar-width: 288px;
+  --vp-sidebar-bg-color: transparent;
+  --vp-layout-max-width: 1440px;
+
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: #fbf7ee;
+  --vp-button-brand-bg: var(--teal);
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: #fffdf7;
+  --vp-button-brand-hover-bg: var(--teal-bright);
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: #fffdf7;
+  --vp-button-brand-active-bg: #204c47;
+
+  --vp-button-alt-border: var(--line-strong);
+  --vp-button-alt-text: var(--ink-1);
+  --vp-button-alt-bg: transparent;
+  --vp-button-alt-hover-border: var(--gold);
+  --vp-button-alt-hover-text: var(--ink-1);
+  --vp-button-alt-hover-bg: var(--gold-soft);
+
+  --vp-code-block-bg: var(--code-bg);
+  --vp-code-block-color: var(--code-ink);
+  --vp-code-color: var(--teal);
+  --vp-code-bg: rgba(42, 95, 90, 0.08);
+  --vp-code-line-highlight-color: rgba(198, 154, 84, 0.12);
+  --vp-code-copy-code-bg: var(--paper-0);
+  --vp-code-copy-code-hover-bg: var(--paper-0);
+  --vp-code-copy-code-border-color: var(--line);
+  --vp-code-lang-color: var(--ink-3);
+
+  --vp-input-border-color: var(--line-strong);
+  --vp-input-bg-color: var(--paper-0);
+  --vp-input-switch-bg-color: transparent;
+
+  --vp-custom-block-font-size: 14.5px;
+  --vp-custom-block-code-font-size: 13px;
+  --vp-custom-block-tip-border: transparent;
+  --vp-custom-block-tip-bg: var(--teal-soft);
+  --vp-custom-block-note-bg: var(--gold-soft);
+  --vp-custom-block-info-bg: rgba(93, 84, 66, 0.07);
+  --vp-custom-block-warning-bg: rgba(186, 138, 42, 0.12);
+  --vp-custom-block-danger-bg: var(--rose-soft);
+
+  --vp-local-search-bg: var(--paper-0);
+  --vp-local-search-result-bg: transparent;
+  --vp-local-search-result-border: transparent;
+  --vp-local-search-result-selected-bg: var(--gold-soft);
+  --vp-local-search-result-selected-border: var(--gold);
+  --vp-local-search-highlight-bg: var(--gold-bright);
+  --vp-local-search-highlight-text: #221b0e;
+
+  --vp-shadow-1: var(--shadow-s);
+  --vp-shadow-2: var(--shadow-s);
+  --vp-shadow-3: var(--shadow-m);
+  --vp-shadow-4: var(--shadow-m);
+  --vp-shadow-5: var(--shadow-l);
+}
+
+/* Nightfall palette ------------------------------------------------------- */
+.dark {
+  color-scheme: dark;
+
+  --paper-0: #141c27;
+  --paper-1: #0c121a;
+  --paper-2: #111923;
+  --paper-3: #17222e;
+  --ink-1: #ece4d3;
+  --ink-2: #b9b1a1;
+  --ink-3: #948b7c;
+  --line: rgba(233, 222, 201, 0.11);
+  --line-strong: rgba(233, 222, 201, 0.2);
+  --gold: #d7ae66;
+  --gold-bright: #eacb90;
+  --gold-soft: rgba(215, 174, 102, 0.12);
+  --teal: #8ac5b9;
+  --teal-bright: #a8d8ce;
+  --teal-soft: rgba(138, 197, 185, 0.12);
+  --rose: #e0a58d;
+  --rose-bright: #efbda9;
+  --rose-soft: rgba(224, 165, 141, 0.12);
+  --highlight: #3b301d;
+  --glass: rgba(11, 17, 25, 0.76);
+  --glass-strong: rgba(11, 17, 25, 0.92);
+  --code-bg: #0e151e;
+  --code-ink: #ccd6d0;
+
+  --shadow-s: 0 1px 2px rgba(0, 0, 0, 0.2),
+    0 12px 30px -20px rgba(0, 0, 0, 0.8);
+  --shadow-m: 0 2px 4px rgba(0, 0, 0, 0.25),
+    0 28px 60px -32px rgba(0, 0, 0, 0.9);
+  --shadow-l: 0 4px 10px rgba(0, 0, 0, 0.3),
+    0 50px 100px -46px rgba(0, 0, 0, 0.95);
+
+  --vp-c-bg: var(--paper-1);
+  --vp-c-bg-alt: var(--paper-2);
+  --vp-c-bg-elv: var(--paper-0);
+  --vp-c-bg-soft: var(--paper-2);
+  --vp-c-bg-mute: var(--paper-3);
+  --vp-c-text-1: var(--ink-1);
+  --vp-c-text-2: var(--ink-2);
+  --vp-c-text-3: var(--ink-3);
+  --vp-c-divider: var(--line);
+  --vp-c-border: var(--line-strong);
+  --vp-c-gutter: var(--line);
+  --vp-c-neutral: var(--ink-1);
+  --vp-c-neutral-inverse: var(--paper-0);
+
+  --vp-c-brand-1: var(--teal);
+  --vp-c-brand-2: var(--teal-bright);
+  --vp-c-brand-3: #6aa99e;
+  --vp-c-brand-soft: var(--teal-soft);
+
+  --vp-c-default-1: #3c4653;
+  --vp-c-default-2: #2a3542;
+  --vp-c-default-3: #1c2733;
+  --vp-c-default-soft: rgba(152, 168, 184, 0.1);
+
+  --vp-nav-bg-color: var(--glass);
+  --vp-nav-screen-bg-color: var(--paper-1);
+  --vp-local-nav-bg-color: var(--glass-strong);
+  --vp-sidebar-bg-color: transparent;
+
+  --vp-button-brand-text: #0d151c;
+  --vp-button-brand-bg: var(--teal);
+  --vp-button-brand-hover-text: #0d151c;
+  --vp-button-brand-hover-bg: var(--teal-bright);
+  --vp-button-brand-active-text: #0d151c;
+  --vp-button-brand-active-bg: #a8d8ce;
+
+  --vp-code-block-bg: var(--code-bg);
+  --vp-code-block-color: var(--code-ink);
+  --vp-code-color: var(--teal);
+  --vp-code-bg: rgba(138, 197, 185, 0.1);
+  --vp-code-line-highlight-color: rgba(215, 174, 102, 0.1);
+  --vp-code-copy-code-bg: var(--paper-0);
+  --vp-code-copy-code-hover-bg: var(--paper-0);
+  --vp-code-copy-code-border-color: var(--line);
+  --vp-code-lang-color: var(--ink-3);
+  --vp-code-tab-bg: var(--code-bg);
+  --vp-code-tab-divider: var(--line);
+
+  --vp-input-border-color: var(--line-strong);
+  --vp-input-bg-color: var(--paper-0);
+  --vp-input-switch-bg-color: transparent;
+
+  --vp-custom-block-tip-bg: var(--teal-soft);
+  --vp-custom-block-note-bg: var(--gold-soft);
+  --vp-custom-block-info-bg: rgba(152, 168, 184, 0.09);
+  --vp-custom-block-warning-bg: rgba(215, 174, 102, 0.12);
+  --vp-custom-block-danger-bg: var(--rose-soft);
+
+  --vp-local-search-bg: var(--paper-0);
+  --vp-local-search-result-selected-bg: var(--gold-soft);
+  --vp-local-search-result-selected-border: var(--gold);
+  --vp-local-search-highlight-bg: var(--gold);
+  --vp-local-search-highlight-text: #17120a;
+}
+
+/* Section identity -------------------------------------------------------- */
+html[data-section='physics'] {
+  --section-accent: var(--gold);
+  --section-accent-bright: var(--gold-bright);
+  --section-soft: var(--gold-soft);
+}
+
+html[data-section='maths'] {
+  --section-accent: var(--teal);
+  --section-accent-bright: var(--teal-bright);
+  --section-soft: var(--teal-soft);
+}
+
+html[data-section='coding'] {
+  --section-accent: var(--rose);
+  --section-accent-bright: var(--rose-bright);
+  --section-soft: var(--rose-soft);
+}

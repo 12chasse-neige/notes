@@ -87,7 +87,7 @@ function generateScopedSidebar() {
   // [!code focus] AUTO-DISCOVERY: Scan DOCS_ROOT for any top-level folders
   // This fixes case-sensitivity issues on Linux/GitHub Actions
   const topLevelSections = fs.readdirSync(DOCS_ROOT, { withFileTypes: true })
-    .filter(dirent => dirent.isDirectory() && !dirent.name.startsWith('.') && dirent.name !== '.vitepress')
+    .filter(dirent => dirent.isDirectory() && !dirent.name.startsWith('.') && !['.vitepress', 'public'].includes(dirent.name))
     .map(dirent => dirent.name)
 
   console.log(`[Config] Found Top-level Sections: ${topLevelSections.join(', ')}`)
@@ -383,8 +383,9 @@ function splitMarkdownForSearch(file: string, src: string) {
 
 export default defineConfig({
   base: '/notes/', // IMPORTANT: Matches your repo name
+  appearance: true,
   title: 'Chasse_neige',
-  description: 'Notes on Physics, Math, and Programming',
+  description: 'A personal notebook of physics, mathematics, and code — notes in B♭ minor.',
   buildConcurrency: 8,
 
   vite: {
@@ -394,7 +395,32 @@ export default defineConfig({
   },
 
   head: [
-    ['link', { rel: 'icon', href: '/notes/favicon.ico' }]
+    ['link', { rel: 'icon', href: '/notes/favicon.ico' }],
+    [
+      'link',
+      {
+        rel: 'preload',
+        href: '/notes/fonts/newsreader.woff2',
+        as: 'font',
+        type: 'font/woff2',
+        crossorigin: ''
+      }
+    ],
+    [
+      'link',
+      {
+        rel: 'preload',
+        href: '/notes/fonts/cormorant-garamond.woff2',
+        as: 'font',
+        type: 'font/woff2',
+        crossorigin: ''
+      }
+    ],
+    [
+      'script',
+      {},
+      "document.documentElement.classList.add('js')"
+    ]
   ],
 
   transformPageData(pageData) {
@@ -431,7 +457,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Physics', link: '/physics/' },
-      { text: 'Math', link: '/maths/' },
+      { text: 'Maths', link: '/maths/' },
       { text: 'Coding', link: '/coding/' },
     ],
     sidebar: mySidebar,
@@ -452,10 +478,17 @@ export default defineConfig({
         }
       }
     },
-    footer: { message: 'Built with VitePress', copyright: 'Copyright © 2026 Chasse_neige' }
+    footer: {
+      message: 'Notes in B♭ minor · Set in Cormorant Garamond & Newsreader',
+      copyright: '© 2026 Chasse_neige · Built with VitePress'
+    }
   },
 
   markdown: {
+    theme: {
+      light: 'vitesse-light',
+      dark: 'vitesse-dark'
+    },
     languageAlias: {
       mathematica: 'wolfram'
     },

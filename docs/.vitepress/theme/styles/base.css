@@ -1,0 +1,1194 @@
+/* ==========================================================================
+   The Night Atlas — shell, navigation, sidebar, atmosphere
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: var(--line-strong) transparent;
+}
+
+body {
+  min-width: 0;
+  background-color: var(--paper-1);
+  color: var(--ink-1);
+  font-family: var(--font-sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  background-image: linear-gradient(122deg, rgba(42, 95, 90, .035), transparent 38%, rgba(148, 107, 42, .055));
+  background-attachment: fixed;
+}
+
+.dark body {
+  background-color: var(--paper-1);
+  background-image: linear-gradient(122deg, rgba(138, 197, 185, .025), transparent 38%, rgba(215, 174, 102, .035));
+  background-attachment: fixed;
+}
+
+/* A barely-there film of paper grain. It sits above the page but below
+   navigation and dialogs, so the surface feels printed instead of flat. */
+/* A barely-there film of paper grain. Kept on the body pseudo-element so the
+   custom Layout keeps a clean, hydration-safe root node. */
+body::after {
+  position: fixed;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  opacity: 0.045;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='0.72'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+  content: '';
+}
+
+.dark body::after {
+  opacity: 0.07;
+  mix-blend-mode: soft-light;
+}
+
+::selection {
+  background: var(--gold-bright);
+  color: #1b1509;
+}
+
+.dark ::selection {
+  background: var(--gold);
+  color: #17120a;
+}
+
+/* Scrollbars -------------------------------------------------------------- */
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  border-radius: 999px;
+  background: var(--line-strong);
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold);
+  background-clip: content-box;
+}
+
+/* Focus ------------------------------------------------------------------- */
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+/* Wide displays use the full canvas; beyond 1920px the layout is centred
+   again so very large monitors do not stretch the navigation into the corners. */
+@media (min-width: 1440px) {
+  :root {
+    --vp-layout-max-width: 100vw;
+    --reading-width: 1000px;
+  }
+
+  .VPNavBar:not(.has-sidebar) .container {
+    max-width: 1320px;
+  }
+}
+
+@media (min-width: 1920px) {
+  :root {
+    --vp-layout-max-width: 1920px;
+  }
+}
+
+/* The shell --------------------------------------------------------------- */
+.Layout {
+  position: relative;
+  z-index: 2;
+}
+
+.Layout,
+.VPSidebar,
+.VPFooter,
+.VPDoc {
+  transition:
+    background-color 0.4s var(--ease-out),
+    color 0.4s var(--ease-out);
+}
+
+/* A quiet close affordance for the mobile catalogue drawer. */
+.sidebar-close {
+  display: none;
+}
+
+@media (max-width: 959px) {
+  .VPSidebar .nav {
+    position: relative;
+  }
+
+  .sidebar-close {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    z-index: 3;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 7px;
+    border: 0;
+    border-radius: 3px;
+    background: transparent;
+    color: var(--ink-3);
+    cursor: pointer;
+    font-family: var(--font-sans);
+    font-size: 8.5px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    transition:
+      color 0.2s var(--ease-out),
+      background-color 0.2s var(--ease-out);
+  }
+
+  .sidebar-close:hover {
+    background: var(--gold-soft);
+    color: var(--gold);
+  }
+
+  .sidebar-close__icon {
+    font-family: var(--font-serif);
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 0.7;
+  }
+
+  /* The drawer owns the screen while it is open. */
+  body:has(.VPSidebar.open) .VPNav,
+  body:has(.VPSidebar.open) .VPLocalNav {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.VPContent.is-home {
+  padding-top: 0;
+}
+
+.VPHome {
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+
+.VPNav {
+  --vp-nav-bg-color: transparent;
+}
+
+.VPNavBar {
+  transition: color 0.3s var(--ease-out);
+}
+
+.VPNavBar .container {
+  max-width: calc(var(--vp-layout-max-width) - 72px);
+}
+
+.VPNavBar .wrapper {
+  transition:
+    background-color 0.35s var(--ease-out),
+    box-shadow 0.35s var(--ease-out),
+    backdrop-filter 0.35s var(--ease-out);
+}
+
+.VPNavBar:not(.home.top) .wrapper {
+  background: var(--glass);
+  box-shadow: inset 0 -1px 0 var(--line);
+  -webkit-backdrop-filter: blur(18px) saturate(1.25);
+  backdrop-filter: blur(18px) saturate(1.25);
+}
+
+.VPNavBar .divider {
+  display: none;
+}
+
+.VPNavBarTitle .title {
+  font-family: var(--font-display);
+  font-size: 23px;
+  font-weight: 600;
+  letter-spacing: 0.005em;
+  color: var(--ink-1);
+}
+
+.VPNavBarTitle .title > span::after {
+  content: '.';
+  color: var(--gold);
+  margin-left: 1px;
+}
+
+.VPNavBarTitle .logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 12px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: saturate(0.88) contrast(1.04);
+  box-shadow:
+    0 0 0 1px var(--line-strong),
+    0 0 0 4px var(--paper-1);
+  transition:
+    transform 0.5s var(--ease-spring),
+    box-shadow 0.35s var(--ease-out);
+}
+
+.VPNavBarTitle .title:hover .logo {
+  transform: rotate(-8deg) scale(1.05);
+  box-shadow:
+    0 0 0 1px var(--gold),
+    0 0 0 4px var(--paper-1);
+}
+
+.VPNavBarMenu {
+  gap: 2px;
+}
+
+.VPNavBarMenuLink {
+  position: relative;
+  padding: 0 13px;
+  color: var(--ink-2);
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.VPNavBarMenuLink::after {
+  content: '';
+  position: absolute;
+  right: 13px;
+  bottom: 21px;
+  left: 13px;
+  height: 1px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.35s var(--ease-out);
+}
+
+.VPNavBarMenuLink:hover {
+  color: var(--ink-1);
+}
+
+.VPNavBarMenuLink:hover::after,
+.VPNavBarMenuLink.active::after {
+  transform: scaleX(1);
+}
+
+.VPNavBarMenuLink.active {
+  color: var(--ink-1);
+  font-weight: 700;
+}
+
+/* VitePress only marks an exact section landing page as active. Keep the
+   matching top-level section lit while reading any of its notes. */
+html[data-section='physics'] .VPNavBarMenuLink[href$='/physics/'],
+html[data-section='maths'] .VPNavBarMenuLink[href$='/maths/'],
+html[data-section='coding'] .VPNavBarMenuLink[href$='/coding/'] {
+  color: var(--ink-1);
+  font-weight: 700;
+}
+
+html[data-section='physics'] .VPNavBarMenuLink[href$='/physics/']::after,
+html[data-section='maths'] .VPNavBarMenuLink[href$='/maths/']::after,
+html[data-section='coding'] .VPNavBarMenuLink[href$='/coding/']::after {
+  transform: scaleX(1);
+}
+
+html[data-section='physics'] .VPNavScreenMenuLink[href$='/physics/'],
+html[data-section='maths'] .VPNavScreenMenuLink[href$='/maths/'],
+html[data-section='coding'] .VPNavScreenMenuLink[href$='/coding/'],
+html[data-section='home'] .VPNavScreenMenuLink[href$='/notes/'] {
+  color: var(--gold);
+}
+
+html[data-section='physics'] .VPNavBarMenuLink[href$='/physics/']::before,
+html[data-section='maths'] .VPNavBarMenuLink[href$='/maths/']::before,
+html[data-section='coding'] .VPNavBarMenuLink[href$='/coding/']::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  width: 3px;
+  height: 3px;
+  margin-top: -1px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.VPNavBarMenuLink.active::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  width: 3px;
+  height: 3px;
+  margin-top: -1px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+/* Search affordance ------------------------------------------------------- */
+.DocSearch-Button {
+  height: 34px;
+  min-width: 176px;
+  margin: 0;
+  padding: 0 12px 0 13px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.24);
+  color: var(--ink-3);
+  box-shadow: none;
+  transition:
+    border-color 0.3s var(--ease-out),
+    background-color 0.3s var(--ease-out),
+    box-shadow 0.3s var(--ease-out);
+}
+
+.DocSearch-Button:hover {
+  border-color: var(--gold);
+  background: var(--paper-0);
+  box-shadow: 0 6px 20px -16px rgba(39, 32, 21, 0.55);
+}
+
+.DocSearch-Button .DocSearch-Search-Icon {
+  width: 16px;
+  height: 16px;
+  color: var(--ink-3);
+}
+
+.DocSearch-Button-Placeholder {
+  padding: 0 0 0 8px;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  letter-spacing: 0.02em;
+}
+
+.DocSearch-Button-Keys {
+  gap: 3px;
+  min-width: auto;
+}
+
+.DocSearch-Button-Key {
+  width: auto;
+  min-width: 19px;
+  height: 20px;
+  padding: 0 5px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--paper-2);
+  color: var(--ink-3);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  line-height: 18px;
+  box-shadow: none;
+}
+
+/* Theme switch ------------------------------------------------------------ */
+.VPNavBar .VPNavBarAppearance {
+  display: flex;
+  align-items: center;
+  margin-left: 14px;
+}
+
+@media (max-width: 767px) {
+  .VPNavBar .VPNavBarAppearance { margin-left: 8px; margin-right: 2px; }
+  .VPNavBar .VPSwitchAppearance { width: 36px !important; }
+  .VPNavBar .VPSwitchAppearance[aria-checked='true'] .check { transform: translateX(14px); }
+}
+
+.VPSwitchAppearance {
+  width: 40px !important;
+  height: 22px !important;
+  border-color: var(--line-strong) !important;
+  background: transparent !important;
+}
+
+.VPSwitchAppearance .check {
+  top: 1px;
+  left: 1px;
+  width: 18px;
+  height: 18px;
+  background: var(--gold);
+  box-shadow: 0 1px 3px rgba(39, 32, 21, 0.28);
+}
+
+.VPSwitchAppearance .icon [class^='vpi-'] {
+  color: #231b0d !important;
+}
+
+.dark .VPSwitchAppearance .check {
+  background: var(--gold);
+}
+
+/* Dividers between nav groups */
+.menu + .translations::before,
+.menu + .appearance::before,
+.menu + .social-links::before,
+.translations + .appearance::before,
+.appearance + .social-links::before {
+  background: linear-gradient(transparent, var(--line-strong), transparent);
+}
+
+.VPSocialLink {
+  color: var(--ink-3);
+}
+
+.VPSocialLink:hover {
+  color: var(--gold);
+}
+
+/* Home: the nav dissolves into the night sky at the top of the page. */
+.VPNavBar.home.top {
+  background: transparent;
+}
+
+@media (min-width: 960px) {
+  .dark .VPNavBar.home.top .wrapper {
+    background: transparent;
+    box-shadow: none;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+
+  .dark .VPNavBar.home.top .VPNavBarTitle .title {
+    color: #f4eddf;
+  }
+
+  .dark .VPNavBar.home.top .VPNavBarTitle .logo {
+    box-shadow:
+      0 0 0 1px rgba(244, 237, 223, 0.22),
+      0 0 0 4px rgba(9, 14, 22, 0.55);
+  }
+
+  .dark .VPNavBar.home.top .VPNavBarMenuLink {
+    color: rgba(244, 237, 223, 0.62);
+  }
+
+  .dark .VPNavBar.home.top .VPNavBarMenuLink:hover,
+  .dark .VPNavBar.home.top .VPNavBarMenuLink.active {
+    color: #f6efdf;
+  }
+
+  .dark .VPNavBar.home.top .DocSearch-Button {
+    border-color: rgba(244, 237, 223, 0.16);
+    background: rgba(255, 255, 255, 0.045);
+    color: rgba(244, 237, 223, 0.66);
+  }
+
+  .dark .VPNavBar.home.top .DocSearch-Button:hover {
+    border-color: rgba(215, 174, 102, 0.7);
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  .dark .VPNavBar.home.top .DocSearch-Button .DocSearch-Search-Icon,
+  .dark .VPNavBar.home.top .DocSearch-Button-Placeholder,
+  .dark .VPNavBar.home.top .DocSearch-Button-Key {
+    color: rgba(244, 237, 223, 0.66);
+  }
+
+  .dark .VPNavBar.home.top .DocSearch-Button-Key {
+    border-color: rgba(244, 237, 223, 0.14);
+    background: rgba(255, 255, 255, 0.06);
+  }
+
+  .dark .VPNavBar.home.top .VPSocialLink {
+    color: rgba(244, 237, 223, 0.58);
+  }
+
+  .dark .VPNavBar.home.top .VPSocialLink:hover {
+    color: #eacb90;
+  }
+
+  .dark .VPNavBar.home.top .VPSwitchAppearance {
+    border-color: rgba(244, 237, 223, 0.2) !important;
+  }
+
+  .dark .VPNavBar.home.top .VPSwitchAppearance:hover {
+    border-color: rgba(215, 174, 102, 0.8) !important;
+  }
+}
+
+@media (max-width: 959px) {
+  .VPNavBar.home.top .wrapper {
+    background: var(--glass);
+    box-shadow: inset 0 -1px 0 var(--line);
+    -webkit-backdrop-filter: blur(18px) saturate(1.2);
+    backdrop-filter: blur(18px) saturate(1.2);
+  }
+}
+
+/* ==========================================================================
+   Sidebar — a printed catalogue
+   ========================================================================== */
+
+@media (max-width: 959px) {
+  .Layout .VPSidebar {
+    width: min(86vw, 336px);
+    border-right: 1px solid var(--line);
+    background: var(--paper-1);
+    box-shadow: var(--shadow-l);
+  }
+
+  .dark .Layout .VPSidebar {
+    background: var(--paper-1);
+  }
+
+  .Layout .VPSidebar .nav::before {
+    display: block;
+    margin: 0 12px 18px;
+    color: var(--ink-3);
+    font-family: var(--font-sans);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    content: 'Catalogue';
+  }
+}
+
+@media (min-width: 960px) {
+  .Layout .VPSidebar {
+    border-right: 1px solid var(--line);
+    background:
+      linear-gradient(180deg, var(--paper-1) 0%, rgba(245, 240, 229, 0.55) 70%, transparent 100%);
+  }
+
+  .dark .Layout .VPSidebar {
+    background:
+      linear-gradient(180deg, var(--paper-1) 0%, rgba(12, 18, 26, 0.55) 70%, transparent 100%);
+  }
+}
+
+.VPSidebar .nav {
+  padding-top: 24px;
+  padding-bottom: 48px;
+}
+
+@media (min-width: 960px) {
+  .VPSidebar .nav {
+    padding-top: 34px;
+  }
+
+  .VPSidebar .nav::before {
+    display: block;
+    margin: 0 12px 18px;
+    color: var(--ink-3);
+    font-family: var(--font-sans);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    content: 'Catalogue';
+  }
+}
+
+.VPSidebarItem.level-0 {
+  padding-bottom: 18px;
+}
+
+.VPSidebarItem.level-0 > .item > .text {
+  font-family: var(--font-display);
+  font-size: 1.28rem;
+  font-weight: 600;
+  letter-spacing: 0.005em;
+  color: var(--ink-1);
+  line-height: 1.3;
+}
+
+.VPSidebarItem.level-0 > .item {
+  padding-left: 2px;
+}
+
+.VPSidebarItem.level-0 .caret {
+  color: var(--ink-3);
+  margin-right: -9px;
+}
+
+.VPSidebarItem.level-0 > .item:hover .caret {
+  color: var(--gold);
+}
+
+.VPSidebarItem.level-1 .link,
+.VPSidebarItem.level-2 .link,
+.VPSidebarItem.level-3 .link,
+.VPSidebarItem.level-4 .link,
+.VPSidebarItem.level-5 .link {
+  min-width: 0;
+  margin-left: -9px;
+  padding: 1px 9px;
+  border-radius: var(--radius-xs);
+  transition:
+    background-color 0.25s var(--ease-out),
+    color 0.25s var(--ease-out);
+}
+
+.VPSidebarItem.level-1 .text,
+.VPSidebarItem.level-2 .text,
+.VPSidebarItem.level-3 .text,
+.VPSidebarItem.level-4 .text,
+.VPSidebarItem.level-5 .text {
+  min-width: 0;
+  padding: 4px 0;
+  overflow-wrap: anywhere;
+  color: var(--ink-2);
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  font-weight: 450;
+  letter-spacing: 0.005em;
+  line-height: 1.5;
+  transition: color 0.25s var(--ease-out);
+}
+
+.VPSidebarItem.level-1 .link:hover,
+.VPSidebarItem.level-2 .link:hover,
+.VPSidebarItem.level-3 .link:hover,
+.VPSidebarItem.level-4 .link:hover,
+.VPSidebarItem.level-5 .link:hover {
+  background: rgba(168, 120, 47, 0.07);
+}
+
+.dark .VPSidebarItem.level-1 .link:hover,
+.dark .VPSidebarItem.level-2 .link:hover,
+.dark .VPSidebarItem.level-3 .link:hover,
+.dark .VPSidebarItem.level-4 .link:hover,
+.dark .VPSidebarItem.level-5 .link:hover {
+  background: rgba(215, 174, 102, 0.08);
+}
+
+.VPSidebarItem.level-1 .link:hover .text,
+.VPSidebarItem.level-2 .link:hover .text,
+.VPSidebarItem.level-3 .link:hover .text,
+.VPSidebarItem.level-4 .link:hover .text,
+.VPSidebarItem.level-5 .link:hover .text {
+  color: var(--ink-1);
+}
+
+.VPSidebarItem.is-active > .item > .link .text {
+  color: var(--section-accent) !important;
+  font-weight: 620;
+}
+
+.VPSidebarItem.is-active > .item > .link {
+  background: var(--section-soft);
+}
+
+.VPSidebarItem.level-1.is-active > .item > .indicator,
+.VPSidebarItem.level-2.is-active > .item > .indicator,
+.VPSidebarItem.level-3.is-active > .item > .indicator,
+.VPSidebarItem.level-4.is-active > .item > .indicator,
+.VPSidebarItem.level-5.is-active > .item > .indicator {
+  top: 8px;
+  bottom: 8px;
+  left: -10px;
+  width: 1px;
+  border-radius: 0;
+  background: var(--section-accent);
+}
+
+.VPSidebarItem.level-0.has-active > .item > .text,
+.VPSidebarItem.level-0.has-active > .item > .link > .text {
+  color: var(--ink-1);
+}
+
+.VPSidebarItem.level-1 .items,
+.VPSidebarItem.level-2 .items,
+.VPSidebarItem.level-3 .items,
+.VPSidebarItem.level-4 .items {
+  margin-left: 3px;
+  border-left-color: var(--line);
+  padding-left: 14px;
+}
+
+.VPSidebarItem.level-1.has-active > .item > .text,
+.VPSidebarItem.level-2.has-active > .item > .text,
+.VPSidebarItem.level-3.has-active > .item > .text,
+.VPSidebarItem.level-4.has-active > .item > .text {
+  color: var(--ink-1);
+}
+
+/* Mobile navigation screen ------------------------------------------------ */
+.VPNavScreen {
+  background: var(--paper-1);
+}
+
+.VPNavScreenMenuLink,
+.VPNavScreenMenuGroupLink {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--ink-1);
+}
+
+.VPNavScreenAppearance .text {
+  color: var(--ink-3);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+.VPLocalNav {
+  border-bottom: 1px solid var(--line);
+  background: var(--glass-strong);
+  -webkit-backdrop-filter: blur(16px) saturate(1.2);
+  backdrop-filter: blur(16px) saturate(1.2);
+}
+
+.VPLocalNav .menu,
+.VPLocalNav .VPLocalNavOutlineDropdown button {
+  color: var(--ink-2);
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.VPLocalNav .vpi-menu,
+.VPLocalNav .vpi-chevron-right {
+  color: var(--gold);
+}
+
+/* A tiny five-line staff in the catalogue margin. */
+.sidebar-staff {
+  position: relative;
+  width: 76px;
+  height: 18px;
+  margin: -4px 12px 20px;
+  opacity: 0.58;
+}
+
+.sidebar-staff__lines {
+  display: block;
+  width: 100%;
+  height: 12px;
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--line-strong) 0 1px,
+    transparent 1px 3px
+  );
+  -webkit-mask-image: linear-gradient(90deg, #000 64%, transparent);
+  mask-image: linear-gradient(90deg, #000 64%, transparent);
+}
+
+.sidebar-staff__note {
+  position: absolute;
+  top: -4px;
+  left: 46px;
+  color: var(--gold);
+  font-family: var(--font-serif);
+  font-size: 12px;
+  line-height: 1;
+  transform: rotate(-8deg);
+}
+
+/* Mobile navigation colophon --------------------------------------------- */
+.nav-screen-colophon {
+  margin-top: 1.8rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.nav-screen-colophon__mark {
+  margin: 0 0 0.7rem;
+  color: var(--gold);
+  font-family: var(--font-serif);
+  font-size: 11px;
+  line-height: 1;
+}
+
+.nav-screen-colophon__line {
+  max-width: 15rem;
+  margin: 0 0 1rem;
+  color: var(--ink-2);
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.nav-screen-colophon__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--gold);
+  font-family: var(--font-sans);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-screen-colophon__link span {
+  font-size: 12px;
+  transition: transform 0.25s var(--ease-out);
+}
+
+.nav-screen-colophon__link:hover span {
+  transform: translateX(3px);
+}
+
+/* ==========================================================================
+   Right-hand outline — marginalia
+   ========================================================================== */
+
+.VPDocAsideOutline .content {
+  border-left-color: var(--line);
+  padding-left: 18px;
+}
+
+.VPDocAsideOutline .content .outline-title {
+  margin-bottom: 6px;
+  color: var(--ink-3);
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.VPDocAsideOutline .content .outline-title::before {
+  content: '✦';
+  margin-right: 7px;
+  color: var(--section-accent);
+  font-size: 9px;
+  letter-spacing: 0;
+}
+
+.VPDocAsideOutline .VPDocOutlineItem .outline-link {
+  color: var(--ink-3);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 450;
+  line-height: 1.65;
+  padding: 5px 0;
+  white-space: normal;
+  overflow: visible;
+  overflow-wrap: anywhere;
+  text-overflow: clip;
+  transition: color 0.2s var(--ease-out);
+}
+
+.VPDocAsideOutline .VPDocOutlineItem .outline-link:hover {
+  color: var(--ink-1);
+}
+
+.VPDocAsideOutline .VPDocOutlineItem .outline-link.active {
+  color: var(--section-accent) !important;
+  font-weight: 620;
+}
+
+.VPDocAsideOutline .VPDocOutlineItem.nested {
+  padding-right: 0;
+  padding-left: 14px;
+}
+
+.VPDocAsideOutline .outline-marker {
+  width: 2px;
+  border-radius: 0;
+  background: var(--section-accent);
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.VPFooter {
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid var(--line);
+  background: transparent;
+  padding: 42px 24px 46px;
+}
+
+.VPFooter .container {
+  max-width: 1080px;
+}
+
+.VPFooter .message {
+  color: var(--ink-2);
+  font-family: var(--font-display);
+  font-size: 1.12rem;
+  font-style: italic;
+  letter-spacing: 0.01em;
+}
+
+.VPFooter .message::before {
+  content: '✦';
+  margin-right: 9px;
+  color: var(--gold);
+  font-family: var(--font-serif);
+  font-size: 0.72em;
+  font-style: normal;
+}
+
+.VPFooter .copyright {
+  margin-top: 8px;
+  color: var(--ink-3);
+  font-family: var(--font-sans);
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/* ==========================================================================
+   Search dialog
+   ========================================================================== */
+
+.VPLocalSearchBox .backdrop {
+  background: rgba(12, 12, 12, 0.48);
+  -webkit-backdrop-filter: blur(7px) saturate(0.8);
+  backdrop-filter: blur(7px) saturate(0.8);
+}
+
+.VPLocalSearchBox .shell {
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  background: var(--paper-0);
+  box-shadow: var(--shadow-l);
+}
+
+.VPLocalSearchBox .search-bar {
+  border-bottom: 1px solid var(--line);
+  background: transparent;
+}
+
+.VPLocalSearchBox .search-input {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--ink-1);
+}
+
+.VPLocalSearchBox .search-actions::before {
+  background: var(--paper-2);
+  border-color: var(--line);
+}
+
+.VPLocalSearchBox .results {
+  padding: 6px;
+}
+
+.VPLocalSearchBox .result {
+  border: 1px solid transparent;
+  border-radius: var(--radius-xs);
+}
+
+.VPLocalSearchBox .result.selected {
+  border-color: var(--line);
+  background: var(--gold-soft);
+}
+
+.VPLocalSearchBox .titles {
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  color: var(--ink-2);
+}
+
+.VPLocalSearchBox .title.main {
+  color: var(--ink-1);
+  font-weight: 600;
+}
+
+.VPLocalSearchBox .excerpt {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xs);
+  background: var(--paper-1);
+}
+
+.VPLocalSearchBox mark {
+  background: var(--gold-bright);
+  color: #1d1609;
+  border-radius: 2px;
+}
+
+.VPLocalSearchBox .search-keyboard-shortcuts {
+  border-top: 1px solid var(--line);
+  color: var(--ink-3);
+  font-size: 11px;
+}
+
+.VPLocalSearchBox .search-keyboard-shortcuts kbd {
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: var(--paper-1);
+  color: var(--ink-3);
+  box-shadow: none;
+}
+
+/* ==========================================================================
+   Scroll reveal & shared ornaments
+   ========================================================================== */
+
+.js [data-reveal] {
+  opacity: 0;
+  transform: translate3d(0, 20px, 0);
+  transition:
+    opacity 0.8s var(--ease-out),
+    transform 0.9s var(--ease-out);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.js [data-reveal].is-revealed {
+  opacity: 1;
+  transform: none;
+  will-change: auto;
+}
+
+@media print {
+  .js [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .js [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Small print ------------------------------------------------------------- */
+@media print {
+  body {
+    background: #fff !important;
+    color: #111 !important;
+  }
+
+  body::after {
+    display: none !important;
+  }
+
+  .VPNav,
+  .VPSidebar,
+  .VPDocAside,
+  .VPLocalNav,
+  .VPNavBar,
+  .VPFooter,
+  .progress-container,
+  .doc-masthead,
+  .comments-wrapper {
+    display: none !important;
+  }
+
+  .VPContent,
+  .VPDoc,
+  .VPDoc .content,
+  .VPDoc .content-container {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .vp-doc {
+    font-size: 11pt;
+  }
+
+  .vp-doc a {
+    color: inherit;
+    text-decoration: underline;
+  }
+}
+
+/* Responsive shell -------------------------------------------------------- */
+@media (max-width: 767px) {
+  body,
+  .dark body {
+    background-attachment: scroll;
+  }
+
+  .VPNavBar .container {
+    max-width: 100%;
+  }
+
+  .VPNavBarSearch {
+    flex-grow: 0;
+    padding-left: 0;
+  }
+
+  .DocSearch-Button {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 50%;
+    margin-left: auto;
+  }
+
+  .DocSearch-Button .DocSearch-Button-Container {
+    justify-content: center;
+    gap: 0;
+  }
+
+  .DocSearch-Button-Placeholder,
+  .DocSearch-Button-Keys {
+    display: none;
+  }
+
+  .DocSearch-Button .DocSearch-Search-Icon {
+    width: 17px;
+    height: 17px;
+    margin: 0;
+  }
+
+  .VPNavBarTitle .title {
+    font-size: 21px;
+  }
+
+  .VPNavBarTitle .logo {
+    width: 27px;
+    height: 27px;
+    margin-right: 10px;
+  }
+
+  .VPFooter {
+    padding: 34px 20px 38px;
+  }
+}
+
+@media (max-width: 767px) {
+  .VPNavBar .content-body .VPNavBarAppearance::before { display: none; }
+}
+
+@media (max-width: 380px) {
+  .VPNavBar .wrapper { padding-inline: 16px 8px; }
+  .VPNavBarTitle .title { font-size: 19px; }
+  .VPNavBarTitle .logo { width: 24px; height: 24px; margin-right: 8px; }
+  .VPNavBar .VPNavBarHamburger { width: 40px; }
+  .VPNavBar .VPNavBarAppearance { margin-left: 4px; }
+  .VPNavBar .DocSearch-Button { width: 36px; min-width: 36px; height: 36px; }
+}
