@@ -1,7 +1,7 @@
 [
   {
     "title": "Astrophysics Homework Problems",
-    "desc": "Hydrogen spectral lines, Sirius distance modulus, and Rayleigh-Jeans approximation exercises",
+    "desc": "Hydrogen transitions, Sirius distance modulus, and Rayleigh-Jeans approximation exercises",
     "tags": [
       "astrophysics",
       "spectroscopy",
@@ -11,7 +11,7 @@
   },
   {
     "title": "Astrophysics Lecture Notes",
-    "desc": "Notes on stellar parameters, magnitudes, spectra, and solar physics",
+    "desc": "Lecture notes on stellar parameters, magnitudes, spectra, and the Sun",
     "tags": [
       "astrophysics",
       "stellar astronomy",
@@ -24,18 +24,18 @@
     "desc": "Stellar structure, evolution, and compact remnants including black holes",
     "tags": [
       "astrophysics",
-      "stellar structure",
+      "stellar evolution",
       "black holes"
     ],
     "link": "/physics/Astrophysics/Black Hole and Compact Objects"
   },
   {
     "title": "Early Universe Thermal History",
-    "desc": "Timeline of inflation, reheating, neutrino decoupling, and Big Bang nucleosynthesis in the early universe.",
+    "desc": "Timeline of inflation, reheating, neutrino decoupling, and Big Bang nucleosynthesis.",
     "tags": [
       "early universe",
-      "inflation",
-      "neutrino decoupling"
+      "cosmology",
+      "nucleosynthesis"
     ],
     "link": "/physics/General Relativity/Early Universe"
   },
@@ -71,11 +71,11 @@
   },
   {
     "title": "Advanced Calculus Final Review Notes",
-    "desc": "Taylor's theorem with Peano, Lagrange, and Cauchy remainder forms.",
+    "desc": "Taylor's theorem with Peano, Lagrange, and Cauchy remainder forms",
     "tags": [
       "Taylor theorem",
       "remainder forms",
-      "calculus"
+      "advanced calculus"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (1) Final Review"
   },
@@ -91,7 +91,7 @@
   },
   {
     "title": "Advanced Calculus Homework 4 Solutions",
-    "desc": "Proofs on minimum existence, closed sets, and compactness in R2",
+    "desc": "Proofs on minimum existence, closed unit circle, and continuous extrema",
     "tags": [
       "advanced calculus",
       "compactness",
@@ -103,9 +103,9 @@
     "title": "Advanced Calculus Homework 7 Solutions",
     "desc": "Critical points and extrema analysis using Hessian matrices for multivariable functions",
     "tags": [
+      "advanced calculus",
       "critical points",
-      "Hessian matrix",
-      "multivariable calculus"
+      "Hessian matrix"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 7"
   },
@@ -131,17 +131,17 @@
   },
   {
     "title": "Complex Analysis Homework 9 Solutions",
-    "desc": "Proofs on analytic continuation, singularities, and power series",
+    "desc": "Analytic continuation proofs and singularities of power series",
     "tags": [
       "analytic continuation",
-      "complex analysis",
+      "power series",
       "singularities"
     ],
     "link": "/maths/Complex Analysis/Complex Analysis Homework 9"
   },
   {
-    "title": "Electrodynamics Homework 11 Solutions",
-    "desc": "Laplace equation and separation of variables for conducting sphere in uniform field",
+    "title": "Electrodynamics Homework: Laplace Equation Solutions",
+    "desc": "Solving conductor sphere potential using separation of variables in uniform field",
     "tags": [
       "electrodynamics",
       "Laplace equation",
@@ -151,7 +151,7 @@
   },
   {
     "title": "Electrodynamics Homework 8 Solutions",
-    "desc": "Maxwell equations decomposed into longitudinal and transverse fields; Fourier modes as harmonic oscillators.",
+    "desc": "Decompose Maxwell fields into longitudinal and transverse parts; Fourier modes as harmonic oscillators.",
     "tags": [
       "electrodynamics",
       "Maxwell equations",
@@ -161,7 +161,7 @@
   },
   {
     "title": "Black Hole and Compact Objects Homework",
-    "desc": "Homework on white dwarfs, nuclear reaction rates, and solar neutrino estimates.",
+    "desc": "Problems on white dwarfs, Gamow peak, nuclear reaction rates, and solar neutrinos.",
     "tags": [
       "astrophysics",
       "white dwarf",
@@ -181,17 +181,17 @@
   },
   {
     "title": "Intermediate-Mass Black Hole Literature Notes",
-    "desc": "Notes on IMBH formation, seeding models, and dynamical search methods.",
+    "desc": "Notes on IMBH formation, seeding models, ULXs, and dynamical searches",
     "tags": [
       "intermediate-mass black holes",
       "seeding models",
-      "X-ray sources"
+      "ultraluminous X-ray sources"
     ],
     "link": "/physics/Astrophysics/X-ray and SMBH/Notes from Literatures"
   },
   {
     "title": "X-ray and SMBH Research Note",
-    "desc": "Analysis of X-ray luminosity and variability of IMBH candidate HLX-1.",
+    "desc": "Final project analyzing X-ray luminosity and variability of IMBH candidate HLX-1.",
     "tags": [
       "X-ray astronomy",
       "intermediate-mass black holes",
@@ -200,8 +200,8 @@
     "link": "/physics/Astrophysics/X-ray and SMBH/X-ray and SMBH Research Note"
   },
   {
-    "title": "Gravitational Wave Detection and Data Analysis",
-    "desc": "Detector responses across frequency bands and interferometer principles for gravitational waves",
+    "title": "Gravitational Wave Detection and Analysis",
+    "desc": "Detector responses across frequency bands and interferometer working principles",
     "tags": [
       "gravitational waves",
       "interferometer",
@@ -221,7 +221,7 @@
   },
   {
     "title": "Qt Basics Guide",
-    "desc": "Introduction to Qt framework fundamentals for C++ development",
+    "desc": "Introduction to Qt framework fundamentals for C++ developers",
     "tags": [
       "Qt",
       "C++",
@@ -231,7 +231,7 @@
   },
   {
     "title": "C++ Programming Fundamentals",
-    "desc": "Overview of C++ keywords, types, control flow, and OOP basics",
+    "desc": "Introduction to C++ basics, keywords, and program structure",
     "tags": [
       "C++",
       "keywords",
@@ -240,8 +240,8 @@
     "link": "/coding/C++/C++ Grammar Basic"
   },
   {
-    "title": "Python Escape Characters Basics",
-    "desc": "Guide to Python escape characters, raw strings, and formatting examples.",
+    "title": "Python Programming Basics",
+    "desc": "Covers Python escape characters, string formatting, and raw strings",
     "tags": [
       "Python",
       "escape characters",
@@ -254,14 +254,14 @@
     "desc": "Self-contained PyTorch course covering tensors, GPU, autograd, and training.",
     "tags": [
       "PyTorch",
-      "tensors",
-      "autograd"
+      "deep learning",
+      "tensors"
     ],
     "link": "/coding/Deep Learning/Lecture 3: PyTorch"
   },
   {
     "title": "Optimization in Deep Learning",
-    "desc": "SGD convergence, optimality conditions, and learning rate schedules explained.",
+    "desc": "SGD convergence, learning rates, momentum, and adaptive methods explained via Taylor expansion.",
     "tags": [
       "optimization",
       "stochastic gradient descent",
@@ -270,12 +270,12 @@
     "link": "/coding/Deep Learning/Lecture 4: Optimization"
   },
   {
-    "title": "Particle Cosmology Lecture 8 Exercise",
-    "desc": "Derives long-range Yukawa-like potential from scalar exchange in QFT model",
+    "title": "Long-Range Potential from Scalar Exchange",
+    "desc": "Derives Yukawa-like long-range potential from heavy scalar exchanging massless scalar at tree level.",
     "tags": [
-      "particle cosmology",
-      "scalar field",
-      "Feynman diagram"
+      "quantum field theory",
+      "scalar exchange",
+      "long-range potential"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 8 Exercise"
   },
@@ -291,7 +291,7 @@
   },
   {
     "title": "Statistical Machine Learning Lecture Notes",
-    "desc": "Mathematical derivations for linear regression and ordinary least squares optimization.",
+    "desc": "Mathematical derivations of linear regression and ordinary least squares optimization.",
     "tags": [
       "machine learning",
       "linear regression",
