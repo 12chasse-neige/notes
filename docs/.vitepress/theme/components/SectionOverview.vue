@@ -53,11 +53,9 @@ function numeral(index: number) {
 <template>
   <div class="section-overview">
     <p class="overview-meta">
-      <span class="overview-meta__star" aria-hidden="true">✦</span>
       <span>{{ subjects.length }} {{ subjects.length === 1 ? 'subject' : 'subjects' }}</span>
       <span class="meta-dot" aria-hidden="true">·</span>
       <span>{{ totalNotes }} {{ totalNotes === 1 ? 'note' : 'notes' }}</span>
-      <span class="overview-meta__rule" aria-hidden="true" />
     </p>
 
     <div class="subject-grid">
@@ -121,20 +119,6 @@ function numeral(index: number) {
   text-transform: uppercase;
 }
 
-.overview-meta__star {
-  color: var(--section-accent);
-  font-family: var(--font-serif);
-  font-size: 9px;
-  letter-spacing: 0;
-}
-
-.overview-meta__rule {
-  flex: 1;
-  height: 1px;
-  margin-left: 0.5rem;
-  background: linear-gradient(90deg, var(--line), transparent);
-}
-
 .meta-dot {
   color: var(--line-strong);
 }
@@ -153,7 +137,7 @@ function numeral(index: number) {
   min-height: 300px;
   overflow: hidden;
   padding: 1.25rem 1.3rem 1.15rem;
-  border: 1px solid var(--line);
+  border: 0;
   border-radius: var(--radius-sm);
   background-color: var(--paper-0);
   background-image: linear-gradient(
@@ -161,33 +145,15 @@ function numeral(index: number) {
     var(--section-soft),
     transparent 60%,
     color-mix(in srgb, var(--section-accent) 4%, transparent)
-  );  transition:
+  );  box-shadow: var(--shadow-s);
+  transition:
     transform 0.45s var(--ease-out),
-    border-color 0.4s var(--ease-out),
     box-shadow 0.45s var(--ease-out);
 }
 
-.subject-card::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(90deg, var(--section-accent), transparent 70%);
-  content: '';
-  transform: scaleX(0.16);
-  transform-origin: left center;
-  transition: transform 0.65s var(--ease-out);
-}
-
 .subject-card:hover {
-  border-color: color-mix(in srgb, var(--section-accent) 40%, var(--line));
   box-shadow: var(--shade-x, 0px) var(--shade-y, 18px) 36px -20px rgba(39, 32, 21, .35);
   transform: translateY(-4px);
-}
-
-.subject-card:hover::before {
-  transform: scaleX(1);
 }
 
 .subject-head {
@@ -213,8 +179,9 @@ function numeral(index: number) {
   min-width: 25px;
   height: 25px;
   padding: 0 0.4rem;
-  border: 1px solid var(--line);
+  border: 0;
   border-radius: 50%;
+  background: var(--section-soft);
   color: var(--ink-2);
   font-family: var(--font-display);
   font-size: 0.82rem;
@@ -304,7 +271,6 @@ function numeral(index: number) {
   gap: 0.35rem;
   margin-top: auto;
   padding-top: 0.85rem;
-  border-top: 1px solid var(--line);
   color: var(--section-accent);
   font-family: var(--font-sans);
   font-size: 9.5px;
@@ -349,7 +315,6 @@ function numeral(index: number) {
 
 @media (prefers-reduced-motion: reduce) {
   .subject-card,
-  .subject-card::before,
   .subject-more,
   .more-arrow {
     transition: none;

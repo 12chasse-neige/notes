@@ -41,19 +41,6 @@ const copy = computed<Required<HomeHeroCopy>>(() => ({
 const hero = ref<HTMLElement | null>(null)
 let frame = 0
 
-// Sparkles have no semantic meaning; they only catch the light.
-const sparkles = Array.from({ length: 22 }, (_, index) => {
-  const a = Math.sin(index * 12.9898) * 43758.5453
-  const b = Math.sin(index * 78.233 + 1.7) * 12345.6789
-  return {
-    left: `${Math.abs(a % 1) * 100}%`,
-    top: `${Math.abs(b % 1) * 72}%`,
-    size: `${1 + (index % 3) * 0.75}px`,
-    delay: `${(index % 9) * 0.7}s`,
-    duration: `${4 + (index % 5)}s`
-  }
-})
-
 function onPointerMove(event: PointerEvent) {
   const element = hero.value
   if (!element || event.pointerType === 'touch') return
@@ -93,19 +80,6 @@ onUnmounted(() => {
   <section ref="hero" class="home-hero" aria-labelledby="home-hero-title">
     <div class="home-hero__sky" aria-hidden="true">
       <div class="home-hero__grid" />
-      <span
-        v-for="(sparkle, index) in sparkles"
-        :key="index"
-        class="home-hero__sparkle"
-        :style="{
-          left: sparkle.left,
-          top: sparkle.top,
-          width: sparkle.size,
-          height: sparkle.size,
-          animationDelay: sparkle.delay,
-          animationDuration: sparkle.duration
-        }"
-      />
     </div>
     <div class="home-hero__lighting" aria-hidden="true" />
 
@@ -165,7 +139,7 @@ onUnmounted(() => {
           <span class="home-hero__meta-item">Physics</span>
           <span class="home-hero__meta-dot" aria-hidden="true">·</span>
           <span class="home-hero__meta-item">Code</span>
-          <span class="home-hero__meta-sep" aria-hidden="true" />
+          <span class="home-hero__meta-dot" aria-hidden="true">·</span>
           <span class="home-hero__meta-item is-muted">Op. I — MMXXVI</span>
         </p>
       </div>
@@ -178,7 +152,6 @@ onUnmounted(() => {
     <div class="home-hero__foot">
       <div class="home-hero__foot-inner">
         <span class="home-hero__foot-label">Études from the quiet hours</span>
-        <span class="home-hero__foot-mark" aria-hidden="true">✦</span>
         <a class="home-hero__scroll" href="#collections">
           Enter the repertoire
           <span class="home-hero__scroll-arrow" aria-hidden="true">↓</span>
@@ -196,7 +169,6 @@ onUnmounted(() => {
   --hero-muted: rgba(var(--hero-rgb), 0.7);
   --hero-faint: rgba(var(--hero-rgb), 0.5);
   --hero-gold: #91652d;
-  --hero-line: rgba(var(--hero-rgb), 0.12);
   --light-x: 72%;
   --light-y: 40%;
   --light-angle: -28deg;
@@ -208,23 +180,10 @@ onUnmounted(() => {
   flex-direction: column;
   min-height: min(100svh, 940px);
   overflow: clip;
-  border-bottom: 1px solid rgba(215, 174, 102, 0.22);
   background: linear-gradient(124deg, #eee8db 0%, #f9f5eb 38%, #e6decd 100%);
   color: var(--hero-ink);
   padding-top: calc(var(--vp-nav-height) + clamp(4.5rem, 8vw, 7.5rem));
   isolation: isolate;
-}
-
-.home-hero::before {
-  position: absolute;
-  inset: 0;
-  z-index: -3;
-  background: url('/art/starfield.svg') center / cover no-repeat;
-  display: none;
-  content: '';
-  opacity: 0.72;
-  -webkit-mask-image: radial-gradient(85% 86% at 62% 34%, #000 20%, transparent 92%);
-  mask-image: radial-gradient(85% 86% at 62% 34%, #000 20%, transparent 92%);
 }
 
 .home-hero::after {
@@ -258,15 +217,6 @@ onUnmounted(() => {
   transform-origin: center top;
 }
 
-.home-hero__sparkle {
-  position: absolute;
-  border-radius: 50%;
-  background: #f4eddf;
-  box-shadow: 0 0 7px rgba(var(--hero-rgb), 0.8);
-  animation: hero-twinkle 5s ease-in-out infinite;
-  opacity: 0.4;
-}
-
 .home-hero__lighting {
   position: absolute;
   left: var(--light-x);
@@ -282,27 +232,31 @@ onUnmounted(() => {
 
 :global(.dark .home-hero) {
   --hero-rgb: 244, 237, 223;
-  --hero-base-rgb: 9, 14, 21;
+  --hero-base-rgb: 0, 0, 0;
   --hero-ink: #f4eddf;
   --hero-gold: #d7ae66;
   --hero-muted: rgba(var(--hero-rgb), .65);
   --hero-faint: rgba(var(--hero-rgb), .4);
-  background: linear-gradient(124deg, #101e23 0%, #090e15 44%, #1d2023 76%, #26231f 100%);
+  background:
+    radial-gradient(48% 56% at 76% 48%, rgba(215, 174, 102, 0.05), transparent 68%),
+    linear-gradient(165deg, #000 0%, #010203 42%, #020304 72%, #050506 100%);
 }
 
-:global(.dark .home-hero::before) { display: block; }
 :global(.dark .home-hero::after) {
-  background: linear-gradient(124deg, rgba(2, 7, 13, .12) 20%, transparent 52%, rgba(2, 7, 13, .3));
+  background:
+    radial-gradient(132% 100% at 52% 45%, transparent 36%, rgba(0, 0, 0, 0.62) 100%);
+}
+:global(.dark .home-hero__grid) {
+  opacity: 0.22;
 }
 :global(.dark .home-hero__lighting) {
-  background: linear-gradient(90deg, rgba(1, 5, 10, .16) calc(50% - 44vw), transparent calc(50% - 28vw), rgba(216, 179, 112, .12) 50%, transparent calc(50% + 28vw), rgba(1, 5, 10, .16) calc(50% + 44vw));
+  background: linear-gradient(90deg, rgba(0, 0, 0, .24) calc(50% - 44vw), transparent calc(50% - 28vw), rgba(216, 179, 112, .06) 50%, transparent calc(50% + 28vw), rgba(0, 0, 0, .24) calc(50% + 44vw));
 }
 :global(html:not(.dark) .home-hero__kicker),
 :global(html:not(.dark) .home-hero__quote-label),
 :global(html:not(.dark) .home-hero__meta),
 :global(html:not(.dark) .home-hero__meta-item.is-muted) { color: var(--hero-muted); }
 :global(html:not(.dark) .home-hero__button--primary) { color: #fff9ee; }
-:global(html:not(.dark) .home-hero__sparkle) { opacity: .12; animation: none; background: var(--hero-gold); box-shadow: none; }
 
 .home-hero__inner {
   position: relative;
@@ -362,18 +316,6 @@ onUnmounted(() => {
   animation: hero-rise 1s var(--ease-out) 0.14s both;
 }
 
-.home-hero__name::after {
-  content: '✦';
-  display: inline-block;
-  margin-left: 0.12em;
-  color: var(--hero-gold);
-  font-family: var(--font-serif);
-  font-size: 0.16em;
-  font-style: normal;
-  vertical-align: super;
-  opacity: 0.8;
-}
-
 .home-hero__page {
   display: block;
   margin-top: 0.06em;
@@ -393,21 +335,19 @@ onUnmounted(() => {
   max-width: 23rem;
   margin-top: 1.7rem;
   padding: 0.52rem 0.85rem 0.52rem 0.55rem;
-  border: 1px solid rgba(215, 174, 102, 0.2);
-  border-radius: 3px;
-  background: linear-gradient(90deg, rgba(215, 174, 102, 0.08), rgba(255, 255, 255, 0.02));
+  border: 0;
+  border-radius: 4px;
+  background: rgba(215, 174, 102, 0.07);
   color: rgba(var(--hero-rgb), 0.82);
   text-decoration: none;
   animation: hero-rise 0.9s var(--ease-out) 0.36s both;
   transition:
-    border-color 0.3s var(--ease-out),
     background-color 0.3s var(--ease-out),
     transform 0.3s var(--ease-out);
 }
 
 .home-hero__quote:hover {
-  border-color: rgba(215, 174, 102, 0.6);
-  background-color: rgba(215, 174, 102, 0.08);
+  background-color: rgba(215, 174, 102, 0.13);
   transform: translateY(-1px);
 }
 
@@ -418,8 +358,9 @@ onUnmounted(() => {
   justify-content: center;
   width: 30px;
   height: 30px;
-  border: 1px solid rgba(215, 174, 102, 0.42);
+  border: 0;
   border-radius: 50%;
+  background: rgba(215, 174, 102, 0.13);
   color: var(--hero-gold);
   font-family: var(--font-display);
   font-size: 0.95rem;
@@ -546,8 +487,8 @@ onUnmounted(() => {
   gap: 0.7rem;
   min-height: 46px;
   padding: 0 1.3rem;
-  border: 1px solid transparent;
-  border-radius: 2px;
+  border: 0;
+  border-radius: 3px;
   font-family: var(--font-sans);
   font-size: 10px;
   font-weight: 700;
@@ -557,7 +498,6 @@ onUnmounted(() => {
   text-transform: uppercase;
   transition:
     background-color 0.3s var(--ease-out),
-    border-color 0.3s var(--ease-out),
     color 0.3s var(--ease-out),
     transform 0.3s var(--ease-out),
     box-shadow 0.3s var(--ease-out);
@@ -577,14 +517,12 @@ onUnmounted(() => {
 }
 
 .home-hero__button--ghost {
-  border-color: rgba(var(--hero-rgb), 0.22);
-  background: rgba(255, 255, 255, 0.025);
-  color: rgba(var(--hero-rgb), 0.78);
+  background: rgba(var(--hero-rgb), 0.075);
+  color: rgba(var(--hero-rgb), 0.82);
 }
 
 .home-hero__button--ghost:hover {
-  border-color: rgba(215, 174, 102, 0.7);
-  background: rgba(215, 174, 102, 0.08);
+  background: rgba(215, 174, 102, 0.14);
   color: var(--hero-ink);
   transform: translateY(-2px);
 }
@@ -621,33 +559,40 @@ onUnmounted(() => {
   color: rgba(215, 174, 102, 0.7);
 }
 
-.home-hero__meta-sep {
-  width: 1px;
-  height: 10px;
-  margin: 0 0.45rem;
-  background: rgba(var(--hero-rgb), 0.16);
-}
-
 .home-hero__meta-item.is-muted {
   color: rgba(var(--hero-rgb), 0.3);
 }
 
 .home-hero__art {
   position: relative;
-  justify-self: center;
-  width: min(125%, 760px);
+  justify-self: end;
+  width: min(152%, 930px);
   max-width: none;
+  margin-right: clamp(-110px, -7vw, -28px);
   transform: translate3d(var(--drift-x), var(--drift-y), 0);
   transition: transform 0.6s var(--ease-out);
   animation: hero-fade 1.4s var(--ease-out) 0.38s both;
 }
 
+.home-hero__art::before {
+  position: absolute;
+  inset: 6% 6% 8% 18%;
+  z-index: -1;
+  background: radial-gradient(closest-side, rgba(215, 174, 102, 0.2), transparent 72%);
+  content: '';
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.6s var(--ease-out);
+}
+
+:global(.dark .home-hero__art::before) {
+  opacity: 1;
+}
 
 .home-hero__foot {
   position: relative;
   z-index: 1;
   margin-top: auto;
-  border-top: 1px solid var(--hero-line);
 }
 
 .home-hero__foot-inner {
@@ -668,12 +613,6 @@ onUnmounted(() => {
 
 .home-hero__foot-label {
   white-space: nowrap;
-}
-
-.home-hero__foot-mark {
-  color: var(--hero-gold);
-  font-size: 8px;
-  opacity: 0.7;
 }
 
 .home-hero__scroll {
@@ -720,18 +659,6 @@ onUnmounted(() => {
   }
 }
 
-@keyframes hero-twinkle {
-  0%,
-  100% {
-    opacity: 0.18;
-    transform: scale(0.7);
-  }
-  50% {
-    opacity: 0.9;
-    transform: scale(1.25);
-  }
-}
-
 @media (max-width: 1100px) {
   .home-hero__name {
     font-size: clamp(3.2rem, 6.4vw, 4.8rem);
@@ -772,8 +699,9 @@ onUnmounted(() => {
   .home-hero__art {
     position: relative;
     justify-self: center;
-    width: min(100%, 540px);
+    width: min(114%, 640px);
     margin-top: -1rem;
+    margin-right: 0;
     opacity: 1;
     pointer-events: none;
   }
@@ -843,17 +771,13 @@ onUnmounted(() => {
     letter-spacing: 0.13em;
   }
 
-  .home-hero__meta-sep {
-    display: none;
-  }
-
   .home-hero__meta-item.is-muted {
     flex-basis: 100%;
   }
 
   .home-hero__art {
-    width: min(112%, 440px);
-    margin: -1rem -6% -2rem;
+    width: min(126%, 520px);
+    margin: -1rem -9% -2rem;
   }
 
   .home-hero__foot-inner {
@@ -863,10 +787,6 @@ onUnmounted(() => {
   }
 
   .home-hero__foot-label {
-    display: none;
-  }
-
-  .home-hero__foot-mark {
     display: none;
   }
 
@@ -896,7 +816,6 @@ onUnmounted(() => {
   .home-hero__actions,
   .home-hero__meta,
   .home-hero__art,
-  .home-hero__sparkle,
   .home-hero__equalizer i {
     animation: none;
   }

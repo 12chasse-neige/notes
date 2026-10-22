@@ -84,7 +84,6 @@ watch(isDark, (dark) => {
   max-width: var(--reading-width);
   margin-top: 3.5rem;
   padding-top: 2.4rem;
-  border-top: 1px solid var(--line);
 }
 
 .comments-head {
@@ -131,7 +130,7 @@ watch(isDark, (dark) => {
   position: relative;
   min-height: 170px;
   padding: 1rem 1.1rem;
-  border: 1px solid var(--line);
+  border: 0;
   border-radius: var(--radius-sm);
   background: rgba(255, 255, 255, 0.18);
   display: flex;

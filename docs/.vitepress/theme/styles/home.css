@@ -82,7 +82,7 @@
   justify-self: end;
 }
 
-/* A small star marking the seam between the night sky and the paper. */
+/* The repertoire begins just below the night sky. */
 .home-collections {
   padding-top: clamp(3rem, 5vw, 4.6rem);
 }

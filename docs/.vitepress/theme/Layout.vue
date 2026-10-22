@@ -5,7 +5,6 @@ import { computed, nextTick, onMounted, onUnmounted, watchEffect } from 'vue'
 import Comment from './components/Comment.vue'
 import DocMasthead from './components/DocMasthead.vue'
 import HomeHero from './components/HomeHero.vue'
-import ProgressBar from './components/ProgressBar.vue'
 
 const { Layout } = DefaultTheme
 const { frontmatter, page } = useData()
@@ -255,8 +254,6 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <ProgressBar />
-
   <Layout>
     <template #home-hero-before>
       <HomeHero v-if="isHome" />
@@ -279,7 +276,6 @@ onUnmounted(() => {
 
     <template #doc-after>
       <div v-if="isDoc" class="doc-end" aria-hidden="true">
-        <span class="doc-end__star">✦</span>
         <span class="doc-end__word">Fine.</span>
       </div>
       <Comment v-if="frontmatter.comments !== false" />
@@ -287,7 +283,6 @@ onUnmounted(() => {
 
     <template #nav-screen-content-after>
       <div class="nav-screen-colophon">
-        <p class="nav-screen-colophon__mark" aria-hidden="true">✦</p>
         <p class="nav-screen-colophon__line">
           Mathematics, physics, and code — kept with care.
         </p>

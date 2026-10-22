@@ -28,11 +28,9 @@ const trail = computed(() => {
 
 <template>
   <div class="doc-masthead">
-    <span class="doc-masthead__mark" aria-hidden="true">✦</span>
     <span class="doc-masthead__section">{{ trail.section }}</span>
     <span class="doc-masthead__sep" aria-hidden="true">/</span>
     <span class="doc-masthead__subject">{{ trail.subject }}</span>
-    <span class="doc-masthead__rule" aria-hidden="true" />
     <span class="doc-masthead__year">MMXXVI</span>
   </div>
 </template>
@@ -53,13 +51,6 @@ const trail = computed(() => {
   animation: doc-masthead-in 0.8s var(--ease-out) both;
 }
 
-.doc-masthead__mark {
-  color: var(--section-accent);
-  font-family: var(--font-serif);
-  font-size: 11px;
-  letter-spacing: 0;
-}
-
 .doc-masthead__section {
   color: var(--ink-2);
 }
@@ -77,16 +68,9 @@ const trail = computed(() => {
   white-space: nowrap;
 }
 
-.doc-masthead__rule {
-  flex: 1;
-  height: 1px;
-  min-width: 16px;
-  margin-left: 6px;
-  background: linear-gradient(90deg, var(--line), transparent);
-}
-
 .doc-masthead__year {
   flex: none;
+  margin-left: auto;
   color: var(--gold);
   font-family: var(--font-mono);
   font-size: 9px;
@@ -108,10 +92,6 @@ const trail = computed(() => {
 @media (max-width: 767px) {
   .doc-masthead {
     margin-bottom: 0.9rem;
-  }
-
-  .doc-masthead__rule {
-    display: none;
   }
 }
 

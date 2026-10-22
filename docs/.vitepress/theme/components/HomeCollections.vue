@@ -115,10 +115,6 @@ const cards = computed(() =>
             <span aria-hidden="true">→</span>
           </span>
         </span>
-
-        <span class="collection-card__orbit" aria-hidden="true">
-          <span class="collection-card__satellite" />
-        </span>
       </a>
     </div>
   </section>
@@ -145,7 +141,7 @@ const cards = computed(() =>
   flex-direction: column;
   min-height: 348px;
   overflow: hidden;
-  border: 1px solid var(--line);
+  border: 0;
   border-radius: var(--radius-sm);
   background-color: var(--paper-0);
   background-image: linear-gradient(
@@ -156,34 +152,16 @@ const cards = computed(() =>
   );  color: var(--ink-1);
   padding: 1.55rem 1.6rem 1.35rem;
   text-decoration: none;
+  box-shadow: var(--shadow-s);
   transition:
     transform 0.5s var(--ease-out),
-    border-color 0.4s var(--ease-out),
     box-shadow 0.5s var(--ease-out),
     background-color 0.4s var(--ease-out);
 }
 
-.collection-card::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 2px;
-  background: linear-gradient(90deg, var(--card-accent), transparent 76%);
-  content: '';
-  transform: scaleX(0.2);
-  transform-origin: left center;
-  transition: transform 0.7s var(--ease-out);
-}
-
 .collection-card:hover {
-  border-color: color-mix(in srgb, var(--card-accent) 46%, var(--line));
   box-shadow: var(--shade-x, 0px) var(--shade-y, 18px) 36px -20px rgba(39, 32, 21, .35);
   transform: translateY(-5px);
-}
-
-.collection-card:hover::before {
-  transform: scaleX(1);
 }
 
 .collection-card:focus-visible {
@@ -213,22 +191,21 @@ const cards = computed(() =>
   justify-content: center;
   width: 46px;
   height: 46px;
-  border: 1px solid var(--line);
+  border: 0;
   border-radius: 50%;
+  background: var(--card-soft);
   color: var(--card-accent);
   font-family: var(--font-display);
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1;
   transition:
-    border-color 0.4s var(--ease-out),
     background-color 0.4s var(--ease-out),
     transform 0.6s var(--ease-spring);
 }
 
 .collection-card:hover .collection-card__glyph {
-  border-color: color-mix(in srgb, var(--card-accent) 50%, transparent);
-  background: var(--card-soft);
+  background: color-mix(in srgb, var(--card-accent) 16%, transparent);
   transform: rotate(-6deg);
 }
 
@@ -264,7 +241,6 @@ const cards = computed(() =>
   gap: 1rem;
   margin-top: 2.3rem;
   padding-top: 1rem;
-  border-top: 1px solid var(--line);
 }
 
 .collection-card__stats {
@@ -316,46 +292,6 @@ const cards = computed(() =>
   transform: translateX(3px);
 }
 
-.collection-card__orbit {
-  position: absolute;
-  right: -54px;
-  bottom: -70px;
-  z-index: 0;
-  width: 210px;
-  height: 210px;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  opacity: 0.7;
-  pointer-events: none;
-  transition:
-    transform 0.9s var(--ease-out),
-    opacity 0.5s var(--ease-out);
-}
-
-.collection-card__orbit::before {
-  position: absolute;
-  inset: 36px;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  content: '';
-}
-
-.collection-card__satellite {
-  position: absolute;
-  top: 30px;
-  left: 34px;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: var(--card-accent);
-  box-shadow: 0 0 10px var(--card-accent);
-}
-
-.collection-card:hover .collection-card__orbit {
-  opacity: 0.95;
-  transform: rotate(16deg) scale(1.04);
-}
-
 .collection-card__top,
 .collection-card__body,
 .collection-card__foot {
@@ -400,9 +336,7 @@ const cards = computed(() =>
 
 @media (prefers-reduced-motion: reduce) {
   .collection-card,
-  .collection-card::before,
   .collection-card__glyph,
-  .collection-card__orbit,
   .collection-card__enter span {
     transition: none;
   }

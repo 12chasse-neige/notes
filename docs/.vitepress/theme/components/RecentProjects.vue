@@ -137,18 +137,6 @@ async function toggle() {
 .home-recent {
   padding-top: clamp(4.5rem, 7vw, 6.5rem);
   padding-bottom: clamp(4.5rem, 8vw, 8rem);
-  border-top: 1px solid var(--line);
-}
-
-.home-recent::before {
-  position: absolute;
-  top: -4px;
-  left: 50%;
-  color: var(--gold);
-  font-family: var(--font-serif);
-  font-size: 10px;
-  content: '✦';
-  transform: translateX(-50%);
 }
 
 .projects-grid {
@@ -163,7 +151,7 @@ async function toggle() {
   flex-direction: column;
   min-height: 228px;
   overflow: hidden;
-  border: 1px solid var(--line);
+  border: 0;
   border-radius: var(--radius-sm);
   background-color: var(--paper-0);
   background-image: linear-gradient(
@@ -175,33 +163,15 @@ async function toggle() {
   color: var(--ink-1);
   padding: 1.3rem 1.35rem 1.15rem;
   text-decoration: none;
+  box-shadow: var(--shadow-s);
   transition:
     transform 0.45s var(--ease-out),
-    border-color 0.4s var(--ease-out),
     box-shadow 0.45s var(--ease-out);
 }
 
-.project-card::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(90deg, var(--card-accent), transparent 70%);
-  content: '';
-  transform: scaleX(0);
-  transform-origin: left center;
-  transition: transform 0.6s var(--ease-out);
-}
-
 .project-card:hover {
-  border-color: color-mix(in srgb, var(--card-accent) 38%, var(--line));
   box-shadow: var(--shade-x, 0px) var(--shade-y, 18px) 36px -20px rgba(39, 32, 21, .35);
   transform: translateY(-4px);
-}
-
-.project-card:hover::before {
-  transform: scaleX(1);
 }
 
 .project-card:focus-visible {
@@ -263,21 +233,20 @@ async function toggle() {
   justify-content: center;
   width: 26px;
   height: 26px;
-  border: 1px solid var(--line);
+  border: 0;
   border-radius: 50%;
+  background: var(--card-soft);
   color: var(--ink-3);
   font-family: var(--font-sans);
   font-size: 11px;
   line-height: 1;
   transition:
     color 0.3s var(--ease-out),
-    border-color 0.3s var(--ease-out),
     background-color 0.3s var(--ease-out),
     transform 0.3s var(--ease-out);
 }
 
 .project-card:hover .project-card__arrow {
-  border-color: var(--card-accent);
   background: var(--card-accent);
   color: var(--paper-0);
   transform: translate(2px, -2px) rotate(4deg);
@@ -340,7 +309,6 @@ async function toggle() {
   gap: 0.8rem;
   margin-top: 1.4rem;
   padding-top: 0.9rem;
-  border-top: 1px solid var(--line);
 }
 
 .project-card__tags {
@@ -399,7 +367,6 @@ async function toggle() {
   gap: 1.2rem;
   margin-top: 2rem;
   padding-top: 1.4rem;
-  border-top: 1px solid var(--line);
 }
 
 .recent-count {
@@ -419,9 +386,9 @@ async function toggle() {
   gap: 0.65rem;
   min-height: 42px;
   padding: 0 1.15rem;
-  border: 1px solid var(--line-strong);
-  border-radius: 2px;
-  background: transparent;
+  border: 0;
+  border-radius: 3px;
+  background: var(--gold-soft);
   color: var(--ink-1);
   cursor: pointer;
   font-family: var(--font-sans);
@@ -431,14 +398,12 @@ async function toggle() {
   line-height: 1;
   text-transform: uppercase;
   transition:
-    border-color 0.3s var(--ease-out),
     background-color 0.3s var(--ease-out),
     color 0.3s var(--ease-out);
 }
 
 .recent-toggle:hover {
-  border-color: var(--gold);
-  background: var(--gold-soft);
+  background: color-mix(in srgb, var(--gold) 20%, transparent);
 }
 
 .recent-toggle__icon {
@@ -494,7 +459,6 @@ async function toggle() {
 
 @media (prefers-reduced-motion: reduce) {
   .project-card,
-  .project-card::before,
   .project-card__arrow,
   .project-card__title,
   .project-card__read span,
