@@ -74,7 +74,7 @@ $$
 $$
 a^{2}=\frac{(n+1)K}{4\pi G}\rho_{c}^{1/n-1},
 $$
-代入上面的压强方程，消去量纲后得到 **Lane–Emden 方程**：
+代入上面的压强方程，消去量纲后得到 Lane–Emden 方程
 $$
 \frac{1}{\xi^{2}}\frac{\mathrm{d}}{\mathrm{d}\xi}
 \left(\xi^{2}\frac{\mathrm{d}\theta}{\mathrm{d}\xi}\right)=-\theta^{n},
@@ -88,12 +88,12 @@ $$
 
 #### 从剖面得到总质量和半径
 
-质量积分可由 Lane–Emden 方程转成表面导数：
+质量积分可由 Lane–Emden 方程转成表面导数
 $$
 M=4\pi\int_{0}^{R} r^{2}\rho(r)\,\mathrm{d}r
 =4\pi a^{3}\rho_{c}\int_{0}^{\xi_{1}}\xi^{2}\theta^{n}\,\mathrm{d}\xi
 =4\pi a^{3}\rho_{c}[-\xi_{1}^{2}\theta'(\xi_{1})],
-\qquad R=a\xi_{1}.
+\qquad R=a\xi_{1}
 $$
 若固定 $K,n$ 且 $n\ne3$，由 $a\propto\rho_{c}^{(1-n)/(2n)}$ 和 $M\propto a^{3}\rho_{c}$ 消去 $\rho_{c}$，得到
 $$
@@ -107,16 +107,16 @@ $$
 $$
 \beta\equiv\frac{P_{\rm gas}}{P_{\rm gas}+P_{\rm rad}}
 $$
-在整颗恒星内**假设为常数**，则
+在整颗恒星内假设为常数，则
 $$
 \frac{1-\beta}{\beta}=\frac{P_{\rm rad}}{P_{\rm gas}}
-=\frac{a_{\rm rad}\mu m_{\rm u}}{3k_{\rm B}}\frac{T^{3}}{\rho}.
+=\frac{a_{\rm rad}\mu m_{\rm u}}{3k_{\rm B}}\frac{T^{3}}{\rho}
 $$
 若 $\mu$ 也固定，便有 $T^{3}/\rho=$ 常数，从而 $P\propto\rho^{4/3}$，即 $n=3$。更具体地，
 $$
 P_{\rm total}=
 \left(\frac{3c k_{\rm B}^{4}}{4\sigma_{\rm B}\mu^{4}m_{\rm u}^{4}}
-\frac{1-\beta}{\beta^{4}}\right)^{1/3}\rho^{4/3}.
+\frac{1-\beta}{\beta^{4}}\right)^{1/3}\rho^{4/3}
 $$
 这就是爱丁顿标准模型使用的多方关系。恒定 $\beta$ 是较强的理想化假设；真实恒星内部的气体压、辐射压及输运机制通常随半径改变。该结构模型并不靠预先指定核能来源而成立。
 
@@ -535,3 +535,12 @@ $$
 3. 简并压对温度不敏感 $\rightarrow$星体继续收缩，核心温度进一步升高，核燃烧更加迅速；
 
 4. 热压力超过引力→星体爆炸
+
+
+
+## 相对论的可观测效应
+
+没什么好记的
+
+
+

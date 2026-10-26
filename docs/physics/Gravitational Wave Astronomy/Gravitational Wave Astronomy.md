@@ -144,3 +144,98 @@ $$
 
 ### 星体内部的场方程解
 
+假设球对称度规形式为
+\[
+\dd{s}^{2} = -e^{2 \Phi (r)} \dd{t}^{2} + e^{2 \Lambda (r)} \dd{r}^{2} + r^{2} \dd{\Omega}^{2}
+\]
+静态流体元保持 $(r,\theta,\varphi)$不变，其四速度及自然共动正交标架为
+
+$$
+e_{\hat{0}}=u=e^{-\Phi}\partial_{t},\quad e_{\hat{r}}=e^{-\Lambda}\partial_{r}
+$$
+
+$$
+e_{\hat{\theta}}=r^{-1}\partial_{\theta},\quad e_{\hat{\varphi}}=(r\sin\theta)^{-1}\partial_{\varphi}
+$$
+
+忽略黏性、热流、磁应力和压力各向异性，流体满足
+
+$$
+T^{\mu\nu}=(\varepsilon+P)u^{\mu}u^{\nu}+P g^{\mu\nu},\qquad T^{\hat{\alpha}\hat{\beta}}=\mathrm{d i a g}(\varepsilon,P,P,P)
+$$
+
+对应的坐标分量为
+
+$$
+T^{t t}=e^{-2\Phi}\varepsilon,\quad T^{r r}=e^{-2\Lambda}P
+$$
+
+$$
+T^{\theta\theta}=\frac{P}{r^{2}},\quad T^{\varphi\varphi}=\frac{P}{r^{2}\sin^{2}\theta}
+$$
+
+对能动张量作协变散度，利用度规相容性，有
+
+$$
+0=u^{\alpha}\nabla_{\beta}\big[\big(\varepsilon+P\big)u^{\beta}\big]+\big(\varepsilon+P\big)a^{\alpha}+\nabla^{\alpha}P
+$$
+
+沿  $u_{\alpha}$ 缩并，并用  $u_{\alpha}a^{\alpha}=0$，得到能量守恒式
+
+$$
+u^{\alpha}\nabla_{\alpha}\varepsilon+\big(\varepsilon+P\big)\nabla_{\alpha}u^{\alpha}=0
+$$
+
+用  $q^{\mu}\alpha=\delta^{\mu}\alpha+u^{\mu}u_{\alpha}$ 投影到共动空间，则得到相对论 Euler 方程
+
+$$
+\begin{array}{r}{\big(\varepsilon+P\big)a^{\mu}=-\big(g^{\mu\nu}+u^{\mu}u^{\nu}\big)\nabla_{\nu}P}\end{array}
+$$
+取时间分量即
+\[
+\dv{P}{r} = - (\epsilon + P) \dv{\Phi}{r}
+\]
+
+### TOV方程
+
+计算曲率所需的非零联络系数为
+
+$$
+\begin{aligned}
+\Gamma^{t} {}_{tr}&=\Phi^{\prime},&\Gamma^{r}{}_{tt}&=e^{2\Phi-2\Lambda}\Phi^{\prime},&\Gamma^{r}{}_{rr}&=\Lambda^{\prime},\\
+\Gamma^{r}{}_{\theta\theta}&=-r e^{-2\Lambda},&\Gamma^{r}{}_{\varphi\varphi}&=-r e^{-2\Lambda}\sin^{2}\theta,\\
+\Gamma^{\theta}{}_{r\theta}&=\frac{1}{r},&\Gamma^{\varphi}{}_{r\varphi}&=\frac{1}{r},\\
+\Gamma^{\theta}{}_{\varphi\varphi}&=-\sin\theta\cos\theta,&\Gamma^{\varphi}{}_{\theta\varphi}&=\cot\theta
+\end{aligned}
+$$
+
+其中下方两个指标交换所得的分量相同。在流体共动的正交标架中， $T_{\hat{a}\hat{b}} = \mathrm{diag}(\varepsilon, P, P, P)$。将以上联络代入曲率定义并缩并，爱因斯坦方程的三个不同分量成为
+
+$$
+G_{\hat{0}\hat{0}}=\frac{1-e^{-2\Lambda}}{r^{2}}+\frac{2\Lambda^{\prime}e^{-2\Lambda}}{r}=\frac{1}{r^{2}}\frac{\mathrm{d}}{\mathrm{d}r}\left[r\bigl(1-e^{-2\Lambda}\bigr)\right]=8\pi G\varepsilon
+$$
+
+$$
+G_{\hat{r}\hat{r}}=-\frac{1-e^{-2\Lambda}}{r^{2}}+\frac{2\Phi^{\prime}e^{-2\Lambda}}{r}=8\pi G P
+$$
+
+$$
+G_{\hat{\theta}\hat{\theta}}=G_{\hat{\varphi}\hat{\varphi}}=e^{-2\Lambda}\left[\Phi^{\prime\prime}+\left(\Phi^{\prime}\right)^{2}-\Phi^{\prime}\Lambda^{\prime}+\frac{\Phi^{\prime}-\Lambda^{\prime}}{r}\right]=8\pi G P
+$$
+
+定义质量函数 $e^{- \Lambda(r)} = 1 - \frac{2 m(r)}{r}$，那么上述几个方程给出
+\[
+\dv{m(r)}{r} = 4 \pi r^{2} \rho (r)
+\]
+
+\[
+\dv{\Phi (r)}{r} = \frac{m(r) + 4 \pi r^{3} P (r)}{r (r - 2m (r))}
+\]
+
+把下面方程里面的 $\Phi$ 用 $P$ 替代，就可以得到 TOV 方程的形式
+$$
+\frac{\mathrm{d}P}{\mathrm{d}r}=-\frac{G\big(\varepsilon+P\big)\big(m+4\pi r^{3}P\big)}{r(r-2G m)}
+$$
+
+## 黑洞
+
