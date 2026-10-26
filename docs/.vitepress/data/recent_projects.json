@@ -1,7 +1,7 @@
 [
   {
-    "title": "Astrophysics Homework Problems",
-    "desc": "Hydrogen transitions, Sirius distance modulus, and Rayleigh-Jeans approximation exercises",
+    "title": "Astrophysics Homework Solutions",
+    "desc": "Solutions covering hydrogen spectral lines, Sirius distance modulus, and Planck function.",
     "tags": [
       "astrophysics",
       "spectroscopy",
@@ -11,7 +11,7 @@
   },
   {
     "title": "Astrophysics Lecture Notes",
-    "desc": "Lecture notes on stellar parameters, magnitudes, spectra, and the Sun",
+    "desc": "Lecture notes on stellar parameters, magnitudes, spectra, and solar physics",
     "tags": [
       "astrophysics",
       "stellar astronomy",
@@ -24,30 +24,10 @@
     "desc": "Stellar structure, evolution, and compact remnants including black holes",
     "tags": [
       "astrophysics",
-      "stellar evolution",
+      "stellar structure",
       "black holes"
     ],
     "link": "/physics/Astrophysics/Black Hole and Compact Objects"
-  },
-  {
-    "title": "Early Universe Thermal History",
-    "desc": "Timeline of inflation, reheating, neutrino decoupling, and Big Bang nucleosynthesis.",
-    "tags": [
-      "early universe",
-      "cosmology",
-      "nucleosynthesis"
-    ],
-    "link": "/physics/General Relativity/Early Universe"
-  },
-  {
-    "title": "Gravitational Wave Astronomy Homework",
-    "desc": "Exercises on non-orthogonal coordinates, scalar field gradients, and Hessian.",
-    "tags": [
-      "gravitational waves",
-      "differential geometry",
-      "scalar field"
-    ],
-    "link": "/physics/Gravitational Wave Astronomy/Gravitational Wave Astronomy Homework"
   },
   {
     "title": "Gravitational Wave Astronomy Notes",
@@ -60,12 +40,32 @@
     "link": "/physics/Gravitational Wave Astronomy/Gravitational Wave Astronomy"
   },
   {
+    "title": "Early Universe Thermal History",
+    "desc": "Timeline of inflation, reheating, neutrino decoupling, and Big Bang nucleosynthesis in the early universe.",
+    "tags": [
+      "early universe",
+      "inflation",
+      "neutrino decoupling"
+    ],
+    "link": "/physics/General Relativity/Early Universe"
+  },
+  {
+    "title": "Gravitational Wave Astronomy Homework",
+    "desc": "Tensor calculus exercises on non-orthogonal coordinates, gradients, and Hessians",
+    "tags": [
+      "gravitational waves",
+      "differential geometry",
+      "tensor calculus"
+    ],
+    "link": "/physics/Gravitational Wave Astronomy/Gravitational Wave Astronomy Homework"
+  },
+  {
     "title": "Interferometer Noise and Quantum Noise",
     "desc": "Overview of Advanced LIGO noise sources including quantum, thermal, seismic, and residual gas noise.",
     "tags": [
       "quantum noise",
       "interferometer",
-      "gravitational waves"
+      "Advanced LIGO"
     ],
     "link": "/physics/Gravitational Wave Astronomy/Gravitational Waves/Quantum Noise"
   },
@@ -73,7 +73,7 @@
     "title": "Advanced Calculus Final Review Notes",
     "desc": "Taylor's theorem with Peano, Lagrange, and Cauchy remainder forms",
     "tags": [
-      "Taylor theorem",
+      "Taylor's theorem",
       "remainder forms",
       "advanced calculus"
     ],
@@ -81,7 +81,7 @@
   },
   {
     "title": "Advanced Calculus Homework 10 Solutions",
-    "desc": "Surface and line integrals solved via parametrization and Green's theorem.",
+    "desc": "Surface and line integrals solved via parametrization and Green's theorem",
     "tags": [
       "surface integral",
       "line integral",
@@ -91,7 +91,7 @@
   },
   {
     "title": "Advanced Calculus Homework 4 Solutions",
-    "desc": "Proofs on minimum existence, closed unit circle, and continuous extrema",
+    "desc": "Proofs on minimum existence, closed sets, and compactness in R2",
     "tags": [
       "advanced calculus",
       "compactness",
@@ -103,7 +103,7 @@
     "title": "Advanced Calculus Homework 7 Solutions",
     "desc": "Critical points and extrema analysis using Hessian matrices for multivariable functions",
     "tags": [
-      "advanced calculus",
+      "multivariable calculus",
       "critical points",
       "Hessian matrix"
     ],
@@ -111,7 +111,7 @@
   },
   {
     "title": "Advanced Calculus Homework 8 Solutions",
-    "desc": "Change of variables for double and triple integrals with Jacobians",
+    "desc": "Change of variables for double and triple integrals with Jacobian determinants",
     "tags": [
       "change of variables",
       "Jacobian",
@@ -133,8 +133,8 @@
     "title": "Complex Analysis Homework 9 Solutions",
     "desc": "Analytic continuation proofs and singularities of power series",
     "tags": [
+      "complex analysis",
       "analytic continuation",
-      "power series",
       "singularities"
     ],
     "link": "/maths/Complex Analysis/Complex Analysis Homework 9"
@@ -151,7 +151,7 @@
   },
   {
     "title": "Electrodynamics Homework 8 Solutions",
-    "desc": "Decompose Maxwell fields into longitudinal and transverse parts; Fourier modes as harmonic oscillators.",
+    "desc": "Maxwell equations decomposed into longitudinal and transverse fields; Fourier modes as harmonic oscillators.",
     "tags": [
       "electrodynamics",
       "Maxwell equations",
@@ -161,7 +161,7 @@
   },
   {
     "title": "Black Hole and Compact Objects Homework",
-    "desc": "Problems on white dwarfs, Gamow peak, nuclear reaction rates, and solar neutrinos.",
+    "desc": "Problems on white dwarfs, p-p reactions, Gamow peak, and solar neutrino flux.",
     "tags": [
       "astrophysics",
       "white dwarf",
@@ -181,7 +181,7 @@
   },
   {
     "title": "Intermediate-Mass Black Hole Literature Notes",
-    "desc": "Notes on IMBH formation, seeding models, ULXs, and dynamical searches",
+    "desc": "Notes on IMBH formation, seeding models, and dynamical search methods",
     "tags": [
       "intermediate-mass black holes",
       "seeding models",
@@ -191,7 +191,7 @@
   },
   {
     "title": "X-ray and SMBH Research Note",
-    "desc": "Final project analyzing X-ray luminosity and variability of IMBH candidate HLX-1.",
+    "desc": "Analysis of IMBH candidate HLX-1 using X-ray data and Sherpa modeling.",
     "tags": [
       "X-ray astronomy",
       "intermediate-mass black holes",
@@ -200,7 +200,7 @@
     "link": "/physics/Astrophysics/X-ray and SMBH/X-ray and SMBH Research Note"
   },
   {
-    "title": "Gravitational Wave Detection and Analysis",
+    "title": "Gravitational Wave Detection and Data Analysis",
     "desc": "Detector responses across frequency bands and interferometer working principles",
     "tags": [
       "gravitational waves",
@@ -211,7 +211,7 @@
   },
   {
     "title": "Gravitational Wave Formation and Propagation",
-    "desc": "Linearized gravity derivation of gravitational wave metric perturbations and Einstein equations",
+    "desc": "Linearized gravity derivation of gravitational wave generation and propagation",
     "tags": [
       "gravitational waves",
       "linearized gravity",
@@ -231,7 +231,7 @@
   },
   {
     "title": "C++ Programming Fundamentals",
-    "desc": "Introduction to C++ basics, keywords, and program structure",
+    "desc": "Overview of C++ basics including keywords, types, and control flow",
     "tags": [
       "C++",
       "keywords",
@@ -251,7 +251,7 @@
   },
   {
     "title": "PyTorch Lecture Notes",
-    "desc": "Self-contained PyTorch course covering tensors, GPU, autograd, and training.",
+    "desc": "Self-contained PyTorch course covering tensors, GPU, autograd, and training loops.",
     "tags": [
       "PyTorch",
       "deep learning",
@@ -261,27 +261,27 @@
   },
   {
     "title": "Optimization in Deep Learning",
-    "desc": "SGD convergence, learning rates, momentum, and adaptive methods explained via Taylor expansion.",
+    "desc": "SGD convergence, learning rates, momentum, and adaptive methods explained.",
     "tags": [
       "optimization",
-      "stochastic gradient descent",
+      "SGD",
       "convergence"
     ],
     "link": "/coding/Deep Learning/Lecture 4: Optimization"
   },
   {
-    "title": "Long-Range Potential from Scalar Exchange",
-    "desc": "Derives Yukawa-like long-range potential from heavy scalar exchanging massless scalar at tree level.",
+    "title": "Particle Cosmology Lecture 8 Exercise",
+    "desc": "Derives long-range Yukawa-like potential from scalar exchange via Fourier transform.",
     "tags": [
       "quantum field theory",
-      "scalar exchange",
+      "scattering amplitude",
       "long-range potential"
     ],
     "link": "/physics/Theoretical Topics in Particle Cosmology/Lecture 8 Exercise"
   },
   {
-    "title": "Electromagnetic Light Bending by Proton",
-    "desc": "Determining leading-order photon bending angle by a charged proton via electromagnetic interaction",
+    "title": "Electromagnetic Light Bending Exercise",
+    "desc": "Proton bends light via two-photon exchange at order e^6",
     "tags": [
       "light bending",
       "electromagnetic interaction",
@@ -291,7 +291,7 @@
   },
   {
     "title": "Statistical Machine Learning Lecture Notes",
-    "desc": "Mathematical derivations of linear regression and ordinary least squares optimization.",
+    "desc": "Mathematical derivations for linear regression and ordinary least squares optimization.",
     "tags": [
       "machine learning",
       "linear regression",
