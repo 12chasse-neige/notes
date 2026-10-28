@@ -505,6 +505,8 @@ export default defineConfig({
           expval: ['{\\left\\langle #1 \\right\\rangle}', 1],
           Res: ['{\\mathrm{Res}}'],
           oiint: '{\\mathop{\\unicode{x222F}}\\nolimits}',
+          // Angstrom sign: LaTeX's \AA is a text-mode command that MathJax doesn't define.
+          AA: 'Å',
           abs: ['{\\left| #1 \\right|}', 1],
           dv: ['{\\frac{\\mathrm{d}^{#1} {#2}}{\\mathrm{d} {{#3}}^{#1}}}', 3, ''],
           pdv: ['{\\frac{\\partial^{#1} {#2}}{\\partial {{#3}}^{#1}}}', 3, ''],
