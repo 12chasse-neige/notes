@@ -677,4 +677,154 @@ $L\omega \ll 1$ 保证相距 $L$ 的粒子处场的相位差可忽略，可在�
 \ddot{\xi}^{z}\big|_{t_{0}} = 0
 \]
 
+## 第二次作业
+
+第三章、第四章，必做 50 分，选做 30 分。
+
+### 约定与要求
+
+除第 5 题另作说明外，取 $c=1$、保留 $G$，号差为 $(-,+,+,+)$；$m=GM$ 表示几何质量长度。可引用讲义已证明的通式，但须给出本题的计算与物理解释。数值题须提交程序、标有坐标与单位的图和误差检查。第 4 题后半部分与第 5 题为选做。
+
+### 1 Lane–Emden 方程：中心展开与数值核验 (10分)
+
+考虑牛顿多方模型 $P = K\rho_0^{1+1/n}$，其中 $\rho_0$ 是静质量密度，$K>0$。可直接使用
+\[
+\rho_0 = \rho_{0c}\theta^n,\qquad r = \alpha\xi,\qquad
+\alpha^2 = \frac{(n+1)K}{4\pi G}\rho_{0c}^{1/n-1},\qquad
+\frac{1}{\xi^2}\frac{\mathrm{d}}{\mathrm{d}\xi}\left(\xi^2\theta'\right) = -\theta^n,
+\]
+以及正则中心条件 $\theta(0)=1$、$\theta'(0)=0$。$\xi_1$ 表示第一个正零点，$\omega_n = -\xi_1^2\theta'(\xi_1)$。无需重推无量纲化。
+
+(a) (3分) 求中心展开 $\theta(\xi)$ 至 $\xi^4$ 项及 $\theta'(\xi)$ 至 $\xi^3$ 项，说明如何在小的 $\xi_0>0$ 处设置数值初值。
+
+(b) (2分) 由 $R=\alpha\xi_1$、$M=4\pi\alpha^3\rho_{0c}\omega_n$ 求平均密度与中心密度之比。用 $n=1$ 的解析解 $\theta=\sin\xi/\xi$ 核验 $\xi_1$、$\omega_1$ 及该密度比，作为程序的对照。
+
+(c) (5分) 独立积分 $n=3/2$ 的方程，画出 $\theta(\xi)$ 和 $\rho_0/\rho_{0c}$，报告 $\xi_1$、$\omega_{3/2}$ 及平均密度比。改变起始半径，并将步长减半或收紧误差容限，列表检查端点结果至少达到 $10^{-4}$ 的相对稳定性。说明零点定位方法；不得将讲义表中的数值当作边界条件，也不要把负的 $\theta$ 直接取 $3/2$ 次幂。
+
+### 2 各向同性坐标覆盖什么区域？ (10分)
+
+可直接引用 Schwarzschild 度规的各向同性形式与面积半径关系：
+\[
+\mathrm{d}s^2 = -\left(\frac{1-m/(2\bar r)}{1+m/(2\bar r)}\right)^2\mathrm{d}t^2
++ \left(1+\frac{m}{2\bar r}\right)^4\left(\mathrm{d}\bar r^2 + \bar r^2\mathrm{d}\Omega^2\right),\qquad
+r = \bar r\left(1+\frac{m}{2\bar r}\right)^2,
+\]
+其中 $m>0$、$\bar r>0$，$\mathrm{d}\Omega^2 = \mathrm{d}\vartheta^2 + \sin^2\vartheta\,\mathrm{d}\phi^2$。
+
+(a) (4分) 求给定 $r>2m$ 对应的两个正根 $\bar r_\pm$ 及其乘积，并求 $r(\bar r)$ 的最小值。两支是否分别对应黑洞外部和内部？说明该表达式为何不能直接覆盖 $r<2m$。
+
+(b) (3分) 令 $q=m/\bar r$，把 $g_{tt}$ 和空间共形因子展开至 $q^2$，注明余项阶次。由球面大圆周长核对 $r$ 的几何意义，并解释空间线元“各向同性”是否足以说明空间平直。
+
+(c) (3分) 在外支 $\bar r>m/2$ 求径向光线的坐标速率 $|\mathrm{d}\bar r/\mathrm{d}t|$，展开至 $q^2$。用当地静止观察者的钟尺求测得的光速，解释接近 $\bar r=m/2$ 时坐标速率趋零的含义。
+
+### 3 引力红移与运动发射者 (20分)
+
+在 Schwarzschild 外部令
+\[
+f(r) = 1-\frac{2m}{r},\qquad
+\mathrm{d}s^2 = -f\,\mathrm{d}t^2 + f^{-1}\mathrm{d}r^2 + r^2\mathrm{d}\Omega^2.
+\]
+光子的守恒能量为 $\mathcal{E}=-p_t>0$，观察者 $u^\mu$ 测得的能量为 $E(u)=-p_\mu u^\mu=h_{\mathrm{P}}\nu$，$h_{\mathrm{P}}$ 为普朗克常数。接收者均在无穷远静止。可引用静态发射者在 $r_e>2m$ 处的频率比
+\[
+\frac{\nu_\infty}{\nu_{\mathrm{em}}} = \sqrt{f(r_e)},\qquad
+z \equiv \frac{\lambda_\infty-\lambda_{\mathrm{em}}}{\lambda_{\mathrm{em}}} = \frac{\nu_{\mathrm{em}}}{\nu_\infty}-1.
+\]
+
+(a) (4分) 把地球、太阳和下表的中子星视为孤立、静态球对称天体，计算静止表面原子的精确红移 $z$ 与弱场近似 $GM/(Rc^2)$。对中子星给出弱场近似的相对误差，分母取精确值。
+
+| 天体 | 质量 $M$ | 面积半径 $R$ |
+|:---:|:---:|:---:|
+| 地球 | $5.9722\times10^{24}\,\mathrm{kg}$ | $6.371\times10^{6}\,\mathrm{m}$ |
+| 太阳 | $M_\odot$ | $6.957\times10^{8}\,\mathrm{m}$ |
+| 中子星 | $1.4M_\odot$ | $12\,\mathrm{km}$ |
+
+数值计算取
+\[
+G = 6.67430\times10^{-11}\,\mathrm{m^3\,kg^{-1}\,s^{-2}},\qquad
+c = 2.99792458\times10^{8}\,\mathrm{m\,s^{-1}},
+\]
+\[
+M_\odot = 1.98847\times10^{30}\,\mathrm{kg}.
+\]
+
+(b) (6分) 在发射事件处，原子相对当地静止标架以速率 $0\le\beta<1$ 向内运动，发射一个向外传播的径向光子。可写为
+\[
+e_{\hat 0} = f^{-1/2}\partial_t,\qquad
+e_{\hat r} = f^{1/2}\partial_r,\qquad
+u = \gamma\left(e_{\hat 0}-\beta e_{\hat r}\right),\qquad
+p = E_{\mathrm{stat}}\left(e_{\hat 0}+e_{\hat r}\right),
+\]
+其中 $\gamma=(1-\beta^2)^{-1/2}$。用内积求 $\nu_\infty/\nu_{\mathrm{em}}$，并区分原子共动系中的 $h_{\mathrm{P}}\nu_{\mathrm{em}}$、当地静止者测得的 $E_{\mathrm{stat}}$ 和守恒量 $\mathcal{E}$。忽略发射反冲及原子对几何的影响。
+
+(c) (6分) 原子改为从无穷远静止、径向自由下落。由 $u_t$ 守恒和 $u_\mu u^\mu=-1$ 求 $u^t$、$u^r$，以及当地静止者测得的 $\beta$。代入上一问，求在 $r_e$ 发射的向外径向光子的频率比。
+
+(d) (4分) 在 $r_e=8m$ 比较静态原子与上述自由下落原子的频率比和红移。再以黑洞外部为背景，在 $r_e\to2m^+$ 时比较两种频率比随 $f(r_e)$ 趋零的阶次，解释运动为何会改变红移。这里的静态情形取自一族 $r_e>2m$ 的悬停者，并不假定视界上存在静止观察者。
+
+### 4 Penrose 过程：负能状态与分裂约束 (必做 10分；选做 10分)
+
+考虑 Kerr 黑洞，$\chi = J/(GM^2)=0.8$、$m=GM$。在赤道面 $r=1.8m$ 处，已知零角动量观察者（ZAMO）的参数
+\[
+\alpha = 0.2469563,\qquad m\omega = 0.1936108,\qquad
+\varpi/m = 2.1426878,\qquad m\Omega_H = 0.25,
+\]
+其中 $\alpha$ 为 lapse，$\omega$ 为拖曳角速度，$\varpi=\sqrt{g_{\phi\phi}}$。此处位于外视界 $r_+=1.6m$ 与赤道静止极限面 $r=2m$ 之间。可使用
+\[
+E = -p_t = \alpha E_{\mathrm{loc}}+\omega L,\qquad
+L = p_\phi = \varpi p_{\hat\phi},\qquad
+E-\Omega_H L \ge 0.
+\]
+最后一式仅是未来因果粒子穿过未来事件视界的必要条件。带帽分量及 $E_{\mathrm{loc}}$ 均由 ZAMO 测量，$E$ 为 Killing 能量。
+
+(a) (4分) 某有质量粒子的局部三速度有以下候选值：
+
+| | $v_{\hat r}$ | $v_{\hat\vartheta}$ | $v_{\hat\phi}$ |
+|:---:|:---:|:---:|:---:|
+| A | $-0.2$ | $0$ | $-0.8$ |
+| B | $-0.2$ | $0$ | $-0.5$ |
+| C | $-0.7$ | $0$ | $-0.8$ |
+
+判断哪些候选值能代表有质量粒子，哪些具有负 $E$；写出此处负能所需的方位速度条件。解释负 $E$ 为何不表示当地仪器测得负能量。
+
+(b) (6分) 另有三个拟议的内落粒子方案，粒子静质量均为 $\mu_p>0$，且 $p_{\hat\vartheta}=0$：
+\[
+(E,L) = (-\mu_p,-3m\mu_p),\qquad (-\mu_p,-5m\mu_p),\qquad (-\mu_p,-15m\mu_p).
+\]
+逐一检查视界必要条件、该事件处的未来指向条件 $E_{\mathrm{loc}}>0$，以及质壳条件是否允许实数的内向 $p_{\hat r}$。解释为什么通过这些检查，仍未完成一个可实现的 Penrose 分裂过程的论证。
+
+**以下为选做（共 10分）：分裂反冲是否足够大？**
+
+静质量为 $\mu$ 的母粒子从无穷远静止释放，$E_0=\mu$、$L_0=0$，在赤道面运动并到达上述事件，在此分裂为两个相同静质量 $\mu_d$ 的粒子。忽略分裂中的额外辐射。令 $v_*$ 为任一子粒子在母粒子瞬时静止系中的速率；此处时间平移 Killing 矢量 $\xi=\partial_t$ 满足 $\xi^2 = g_{tt} = 1/9$。
+
+(c) (6分) 用局部四动量守恒求子粒子 Killing 能量的允许范围，以及出现负能子粒子所需的 $v_*$ 与 $\mu_d/\mu$ 条件。提示：把 $\xi$ 分解成平行和正交于母粒子四速度的两部分。
+
+(d) (4分) 判断 $\mu_d=0.2\mu$ 时能否产生负能子粒子。再求 $\mu_d=0$ 极限下另一粒子 Killing 能量的最大局部运动学值，并说明它为何尚不能直接视为逃到无穷远处的可实现能量增益。
+
+### 5 TOV 数值模型与状态方程的有效范围 (选做 20分)
+
+本题单独取 $G=c=1$，长度单位为 km。$\varepsilon$ 表示包括静质量能与内能的总能量密度，$P$ 为压强，$m_\star(r)$ 为包围的几何质量。采用玩具状态方程
+\[
+P = K\varepsilon^2,\qquad K = 140\ \mathrm{km^2},
+\]
+以及两组中心条件，其给定的 cgs 密度均表示 $\rho_E = \varepsilon_{\mathrm{phys}}/c^2$：
+\[
+A:\ \rho_{E,c} = 2.5\times10^{15}\ \mathrm{g\,cm^{-3}},\qquad
+B:\ \rho_{E,c} = 2.5\times10^{16}\ \mathrm{g\,cm^{-3}}.
+\]
+注意，$P=K\varepsilon^2$ 与用静质量密度写出的 $P=K\rho_0^2$ 是不同的模型，不可在数值积分中互换。结构方程为
+\[
+\frac{\mathrm{d}m_\star}{\mathrm{d}r} = 4\pi r^2\varepsilon,\qquad
+\frac{\mathrm{d}P}{\mathrm{d}r} = -\frac{(\varepsilon+P)(m_\star+4\pi r^3P)}{r(r-2m_\star)}.
+\]
+可引用讲义的中心展开；从足够小的 $r_0>0$ 出发，寻找第一次 $P(R)=0$ 的表面。记 $\mathcal{M}=m_\star(R)$，物理质量为 $M_{\mathrm{phys}}=c^2\mathcal{M}/G$。可取 $GM_\odot/c^2=1.476670$ km，其余常数见第 3 题。
+
+(a) (4分) 从 SI 或 cgs 单位推导 $\rho_E$ 到 $\varepsilon$ [km$^{-2}$] 的换算，计算两组 $\varepsilon_c$ 和 $P_c$。写出中心初值的正则展开，并说明实际采用的 $r_0$ 与精度。
+
+(b) (8分) 分别积分两个模型，报告 $R$、$M_{\mathrm{phys}}/M_\odot$ 和紧致度 $\mathcal{M}/R$，并画出 $\varepsilon(r)/\varepsilon_c$、$P(r)/P_c$ 及 $m_\star(r)/\mathcal{M}$。检查内部 $r>2m_\star(r)$ 和压强向外递减，说明表面的插值或事件定位方法。不能仅把最后一个正压网格点当作表面。
+
+(c) (4分) 将步长减半或误差容限收紧，列表展示 $R$ 与 $\mathcal{M}$ 的相对变化均小于 $10^{-3}$；另改变 $r_0$ 检查起点影响。对于此状态方程，压强在表面趋零较平缓；可以推导并积分 $\mathrm{d}\varepsilon/\mathrm{d}r$，用 $\varepsilon=0$ 定位表面。
+
+(d) (4分) 由 $c_s^2/c^2=\mathrm{d}P/\mathrm{d}\varepsilon$ 判断两组模型实际取样的密度区间是否满足因果声速条件，并求该状态方程允许的最大 $\rho_E$。“数值积分得到静态解”“物态在取样区间满足因果性”和“星体对径向扰动稳定”是否等价？说明本题计算能够、不能支持哪些结论。
+
+提交内容：第 1 题及选做第 5 题的数值结果应可复现，附程序、参数设置、图及收敛表；无需使用指定的软件语言。
+
 
