@@ -351,6 +351,28 @@
   content: counter(item) '.';
 }
 
+/* The counter above always restarts at 1 and ignores the `start` attribute,
+   so lists that begin at an arbitrary number fall back to native markers. */
+.vp-doc ol[start] {
+  counter-reset: none;
+  list-style: decimal;
+}
+
+.vp-doc ol[start] > li {
+  counter-increment: none;
+}
+
+.vp-doc ol[start] > li::before {
+  content: none;
+}
+
+.vp-doc ol[start] > li::marker {
+  color: var(--section-accent);
+  font-family: var(--font-display);
+  font-size: 1.05em;
+  font-weight: 600;
+}
+
 .vp-doc li {
   margin: 0.35rem 0;
   padding-left: 0.1rem;
