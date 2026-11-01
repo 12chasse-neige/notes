@@ -544,3 +544,49 @@ $$
 
 
 
+## 超新星以及中子星
+
+超出白矮星极限质量
+
+$$
+M_{\mathrm{m a x}}=\frac{0.197}{\mu_{e}^{2}m_{p}^{2}}\left(\frac{h c}{G}\right)^{3/2}=1.4M_{\odot}\left(\frac{\mu_{e}}{2}\right)^{-2}
+$$
+对于铁核部分，电子简并压无法支撑引力所以开始塌缩。
+
+### 核塌缩型超新星爆发
+
+超新星爆发伴随（大量）中微子辐射:
+
+a. 铁核温度过高 ( $>10^{9}$ K)，中微子大量产生并逃逸，塌缩不可避免
+
+b. 内核等比例塌缩，外核自由落体（时标 $t_{ff} < 1\ s$）
+
+C. 内核超过原子核密度 $\rightarrow$反弹
+
+d. 反弹内核与塌缩外核碰撞，产生反弹激波（prompt shock）
+
+e. 反弹激波逐渐停止，中微子开始大量逃离
+
+f. 中微子加热物质，激波重新加速，星体爆炸（delayed explosion）
+
+### 中子星结构
+
+需要EoS+TOV方程来描写
+
+<img src="./Black%20Hole%20and%20Compact%20Objects.assets/image-20261026214405507.png" alt="image-20261026214405507" style="zoom:50%;" />
+
+广义相对论下的静力学平衡方程（TOV方程）
+
+$$
+\frac{dP}{dr}=-\frac{G\left[m(r)+\frac{4\pi r^{3}P(r)}{c^{2}}\right]\left[\rho(r)+\frac{P(r)}{c^{2}}\right]}{r^{2}\left[1-\frac{2Gm(r)}{rc^{2}}\right]}
+$$
+
+### 质量分布
+
+近3000颗中子星/脉冲星中，约90%为单星系统。
+
+双星中质量测量方法：
+
+质量函数，近心点进动，引力红移，Shapiro delay，轨道衰减（引力波辐射）
+
+<img src="./Black%20Hole%20and%20Compact%20Objects.assets/image-20261026214508214.png" alt="image-20261026214508214" style="zoom:50%;" />

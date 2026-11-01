@@ -1,5 +1,7 @@
 # Black Hole and Compact Objects Homework
 
+## 第一次书面作业
+
 1. 设一颗冷白矮星在非相对论电子退化极限下可用 $n=3/2$ 多方模型描述。若其质量由 $M$ 增加到 $2M$，其半径变为原来的多少倍？
 
    Lane-Emden 方程的解给出白矮星的总质量可以表示为
@@ -254,3 +256,274 @@ N_{WD} = N_{form} \cdot 6.21 \% \approx 6.21 \times 10^{9}
 d) 该星表里有中子星或黑洞吗？为什么？
 
 没有。中子星会在非常偏左的位置，并且非常暗，超出了这张图的坐标范围，并且 gaia 大概率不能在光学波段观测到中子星。很难给一个黑洞在 HR 图上标定，显然 30 pc 之内不存在 AGN，那么恒星级黑洞基本无法在光学波段上被 gaia 观测到。
+
+
+
+## 第二次书面作业
+
+1. 该 [Jupyter Notebook](https://github.com/weizhu0026/public/blob/main/ideal_wd.ipynb) 介绍了如何数值计算非多方情况下白矮星的内部结构以及质量和半径。从这一程序（习惯 matlab 的同学可以参考该程序写出其 matlab 版本）出发，考虑中心密度范围 $10^{5}$-$10^{11} \, \mathrm{g/cm^{3}}$，数值求解 CO 白矮星（$\mu_e = 2$）的质量-半径关系。
+
+a) 不同化学组成的白矮星所对应的质量-半径关系有所不同。如果白矮星由 ${}^{56}\mathrm{Fe}$ 组成，那么它的 $\mu_e$ 是多少？请计算它在同一中心密度范围内的质量-半径关系。
+
+\[
+\mu_{e} = \frac{A}{Z} = \frac{56}{26} = \frac{28}{13}
+\]
+
+
+
+b) 请将以上两步所得到的白矮星质量-半径关系画到同一个图上。同时标注出两种极限情况（低速电子和相对论电子）下的质量-半径关系（或极限值）。请注意作图规范（选取合适坐标范围，正确标注横纵坐标的物理量和单位，合理区分不同的曲线，等）。
+
+
+
+c) 简要描述测量白矮星质量的三种主要方法。
+
+
+
+2. 相对论效应的简单计算
+
+a) 证明牛顿力学下光线的偏折角为
+$$
+\alpha \approx \frac{2GM}{c^{2}b}
+$$
+（即广义相对论偏折角的一半）。各物理量含义如右下图所示。
+
+![光线偏折角、碰撞距离与最短距离的几何示意](./Black%20Hole%20and%20Compact%20Objects%20Homework.assets/homework-2-light-deflection.png)
+
+偏折角 $\alpha$，碰撞距离 $b$，最短距离 $r_0$，中心天体质量 $M$
+
+设中心天体位于原点，光线的碰撞距离为 $b$，取最近点为 $t = 0$，则路径上各点到中心的距离满足
+
+$$
+r^{2} = b^{2} + c^{2}t^{2}
+$$
+
+引力加速度指向中心，其垂直于路径的分量为
+
+$$
+a_{\perp} = -\frac{GM}{r^{2}}\frac{b}{r} = -\frac{GMb}{(b^{2} + c^{2}t^{2})^{3/2}}
+$$
+
+沿这条直线把横向加速度积分，得到横向速度的总改变
+
+$$
+\Delta v_{\perp} = \int_{-\infty}^{+\infty} a_{\perp} \, \dd{t} = -\frac{GM}{bc}\int_{-\infty}^{+\infty} \frac{\dd{u}}{(1 + u^{2})^{3/2}} = -\frac{2GM}{bc}
+$$
+
+在 $GM/(bc^{2}) \ll 1$ 的弱场下，偏折角就是横向速度增量与 $c$ 之比
+
+$$
+\alpha \approx \frac{|\Delta v_{\perp}|}{c} = \frac{2GM}{bc^{2}}
+$$
+
+
+
+b) 在最短距离 $r_0 \gtrsim 3r_s$（$r_s$ 为中心天体的史瓦西半径）情况下，以下公式可以很好地近似光线的偏折角 $\alpha$（各物理量含义如右图示意）
+$$
+\sin \frac{\alpha}{2} = \frac{r_s}{r_0}\left(1 - \frac{r_s}{r_0}\right)^{-1}, \quad b = r_0 \left(1 - \frac{r_s}{r_0}\right)^{-1/2}
+$$
+证明中子星的可观测表面积为总表面积的 75%。
+
+忽略中子星的自转。
+
+
+
+c) 质量各为 $M$、间距为 $a$ 的双星系统的引力波辐射功率约
+$$
+L_{\mathrm{gw}} \approx \left(\frac{r_s}{a}\right)^{5} \frac{c^{5}}{G},
+$$
+证明双星的轨道间距随时间的变化关系满足
+$$
+a = a_0 \left(1 - \frac{t}{t_{\mathrm{merge}}}\right)^{1/4},
+$$
+其中 $a_0$ 为双星的初始间距。估算对于典型的致密双星（$M \sim M_{\odot}$，$a \sim R_{\odot}$），并合时间 $t_{\mathrm{merge}}$ 为多久。
+
+
+
+d) （附加题，但无额外分数）熟悉并复现广义相对论下水星近心点进动的推导。可参考 [Weingartner: The Schwarzschild Metric and Applications](http://physics.gmu.edu/~joe/PHYS428/Topic10.pdf) 或其他相关介绍。
+
+我直接把之前我在广相作业里写的推导 copy 过来：
+
+用 Schwarzschild 度规描述中心天体外的引力场，$M$ 为中心天体质量
+
+$$
+\dd{s}^{2} = \left(1 - \frac{2GM}{rc^{2}}\right)c^{2}\dd{t}^{2} - \left(1 - \frac{2GM}{rc^{2}}\right)^{-1}\dd{r}^{2} - r^{2}\left(\dd{\theta}^{2} + \sin^{2}\theta \, \dd{\phi}^{2}\right)
+$$
+
+括号中的 $1 - 2GM/(rc^{2})$ 就是通常的 $1 - r_{s}/r$，$r_{s}$ 为中心天体的史瓦西半径。度规不显含 $t$ 与 $\phi$，所以 $\delta^{\mu}{}_{t}$ 和 $\delta^{\mu}{}_{\phi}$ 是 Killing 矢量，沿测地线给出两个守恒量
+
+$$
+\left(1 - \frac{2GM}{rc^{2}}\right)\dv{t}{\tau} = E, \qquad r^{2}\dv{\phi}{\tau} = L
+$$
+
+其中 $\tau$ 为固有时，$L$ 是单位质量的角动量。取轨道在赤道面内，$\theta = \pi/2$，此时 $\theta$ 方向的测地线方程自动满足。由四速度归一化 $g_{\mu\nu}U^{\mu}U^{\nu} = c^{2}$ 得到
+
+$$
+c^{2} = \left(1 - \frac{2GM}{rc^{2}}\right)c^{2}\left(\dv{t}{\tau}\right)^{2} - \left(1 - \frac{2GM}{rc^{2}}\right)^{-1}\left(\dv{r}{\tau}\right)^{2} - r^{2}\left(\dv{\phi}{\tau}\right)^{2}
+$$
+
+代入守恒量并整理，得到径向运动方程
+
+$$
+\left(\dv{r}{\tau}\right)^{2} = c^{2}(E^{2} - 1) + \frac{2GM}{r} - \frac{L^{2}}{r^{2}} + \frac{2GM}{c^{2}}\frac{L^{2}}{r^{3}}
+$$
+
+最后一项就是广义相对论的修正，它相当于在牛顿的有效势中多加了一个 $1/r^{3}$ 的吸引项，使轨道不再闭合。令 $u = 1/r$，利用 $\dd{r}/\dd{\tau} = -L\,\dd{u}/\dd{\phi}$，上式化为
+
+$$
+\left(\dv{u}{\phi}\right)^{2} = \frac{c^{2}(E^{2} - 1)}{L^{2}} + \frac{2GM}{L^{2}}u - u^{2} + \frac{2GM}{c^{2}}u^{3}
+$$
+
+对 $\phi$ 求导后即得轨道方程
+
+$$
+\dv[2]{u}{\phi} + u = \frac{GM}{L^{2}} + \frac{3GM}{c^{2}}u^{2}
+$$
+
+与牛顿情形相比，右边多了 $3GMu^{2}/c^{2}$ 这一项。对行星轨道作微扰展开 $u = u_{0} + u_{1}$，零阶解为
+
+$$
+u_{0} = \frac{GM}{L^{2}}(1 + e\cos\phi)
+$$
+
+代回后，一阶修正满足
+
+$$
+\begin{aligned}
+\dv[2]{u_{1}}{\phi} + u_{1} &= \frac{3GM}{c^{2}}u_{0}^{2} \\
+&= \frac{3G^{3}M^{3}}{L^{4}c^{2}}\left(1 + \frac{e^{2}}{2} + 2e\cos\phi + \frac{e^{2}}{2}\cos 2\phi\right)
+\end{aligned}
+$$
+
+解中只有与 $\cos\phi$ 共振的项会随 $\phi$ 累积，即所谓的进动项
+
+$$
+u_{1} = \frac{G^{3}M^{3}}{L^{4}c^{2}}\left(3 + \frac{3}{2}e^{2} + 3e\phi\sin\phi - \frac{e^{2}}{2}\cos 2\phi\right)
+$$
+
+s所以
+
+$$
+\begin{aligned}
+u &\approx \frac{GM}{L^{2}}\left[1 + e\left(\cos\phi + \frac{3G^{2}M^{2}}{L^{2}c^{2}}\phi\sin\phi\right)\right] \\
+&\approx \frac{GM}{L^{2}}\left[1 + e\cos\left(\left(1 - \frac{3G^{2}M^{2}}{L^{2}c^{2}}\right)\phi\right)\right]
+\end{aligned}
+$$
+
+所以每转一圈，近心点的方位角多出
+
+$$
+\Delta\phi = 2\pi \cdot \frac{3G^{2}M^{2}}{L^{2}c^{2}} = \frac{6\pi G^{2}M^{2}}{L^{2}c^{2}}
+$$
+
+在弱场近似下 $L$ 就是牛顿角动量 $r^{2}\dd{\phi}/\dd{t}$，由圆锥曲线的半通径 $p = a(1 - e^{2})$ 和 $L^{2} = GMp$ 得到
+
+$$
+\Delta\phi = \frac{6\pi GM}{a(1 - e^{2})c^{2}}
+$$
+
+若像广义相对论作业那样取 $c = 1$，就回到 $6\pi G^{2}M^{2}/L^{2}$。对水星代入数值：$a = 0.3870993\,\mathrm{AU}$，$e = 0.20564$，$T = 87.969257\,\mathrm{d}$，$GM_{\odot} = 1.3271244 \times 10^{26}\,\mathrm{cm^{3}/s^{2}}$，$1\,\mathrm{AU} = 1.495978707 \times 10^{13}\,\mathrm{cm}$，$c = 2.99792458 \times 10^{10}\,\mathrm{cm/s}$，则
+
+$$
+a(1 - e^{2}) = 0.3870993 \times (1 - 0.20564^{2})\,\mathrm{AU} \approx 5.546 \times 10^{12}\,\mathrm{cm}
+$$
+
+$$
+\begin{aligned}
+\Delta\phi &= \frac{6\pi \times 1.3271244 \times 10^{26}}{5.546 \times 10^{12} \times (2.99792458 \times 10^{10})^{2}} \\
+&\approx 5.019 \times 10^{-7}\,\mathrm{rad} \approx 0.1035''
+\end{aligned}
+$$
+
+即每圈进动约 $0.1035''$。取一个世纪为 $100 \times 365.25\,\mathrm{d}$，水星在此期间转过
+
+$$
+N = \frac{100 \times 365.25}{87.969257} \approx 415.2
+$$
+
+圈，累积进动为
+
+$$
+\Delta\phi_{100\,\mathrm{yr}} = N \times 0.1035'' \approx 43''
+$$
+
+
+
+3. 日本神冈探测器利用 3000 吨纯水作为探测器来探测中微子。在 SN 1987A 超新星爆发事件中，神冈探测到 12 个平均能量为 15 MeV 的中微子。
+
+a) 已知中微子与单个原子核的反应截面（电子反中微子逆 β 衰变截面）约 $2 \times 10^{-41} \, \mathrm{cm^{2}}$，估计中微子的自由程。
+
+纯水中的中微子自由程由靶核数密度与反应截面决定。取水的密度 $\rho = 1 \, \mathrm{g/cm^{3}}$、核子质量 $m_p = 1.673 \times 10^{-24} \, \mathrm{g}$，单位体积内的靶核数为
+
+$$
+n \approx \frac{\rho}{m_p} = \frac{1}{1.673 \times 10^{-24}} \approx 6.0 \times 10^{23} \, \mathrm{cm^{-3}}
+$$
+
+这里按核子计数，水分子中氧核比质子重的影响已包含在平均核子质量里；若只数水中的自由质子，$n$ 小约一个量级，只改变常数因子而不改变结论。取逆 $\beta$ 衰变截面 $\sigma \approx 2 \times 10^{-41} \, \mathrm{cm^{2}}$，则自由程为
+
+$$
+\lambda = \frac{1}{n\sigma} = \frac{1}{6.0 \times 10^{23} \times 2 \times 10^{-41}} \approx 8.4 \times 10^{16} \, \mathrm{cm}
+$$
+
+即 $\lambda \approx 8.4 \times 10^{14} \, \mathrm{m} \approx 5.6 \times 10^{3} \, \mathrm{AU} \approx 1.2 \times 10^{6} \, R_{\odot} \approx 0.027 \, \mathrm{pc} \approx 0.09 \, \mathrm{ly}$，比太阳半径还大约六个量级。而神冈纯水池的尺度只有 $L \sim 16 \, \mathrm{m} = 1.6 \times 10^{3} \, \mathrm{cm}$，两者之比为
+
+$$
+\frac{\lambda}{L} \approx \frac{8.4 \times 10^{16}}{1.6 \times 10^{3}} \approx 5 \times 10^{13}
+$$
+
+要用 $5 \times 10^{13}$ 个这样的水池叠起来才能让中微子被吸收一次，所以 16 m 的水对中微子几乎完全透明，这也是 (c) 中光深只有 $\sim 10^{-14}$ 的来源。
+
+
+
+b) SN 1987A 超新星距离我们的距离约 50 kpc，探测到的中微子为六种中微子之一，假设各种中微子能量均分，估计 SN 1987A 中微子辐射的总能量。
+
+把探测器当作靶，先算一个反中微子被探测到的概率。3000 吨纯水对应 $N_p \approx M_{\mathrm{det}}/m_p = 3.0 \times 10^{9}/(1.673 \times 10^{-24}) \approx 1.8 \times 10^{33}$ 个核子，SN 1987A 距 $d = 50 \, \mathrm{kpc} = 1.54 \times 10^{23} \, \mathrm{cm}$。若中微子各向同性发射，则每个反中微子发生逆 $\beta$ 衰变而被探测到的概率为
+
+$$
+P = \frac{N_p \sigma}{4\pi d^{2}} = \frac{1.8 \times 10^{33} \times 2 \times 10^{-41}}{4\pi \left(1.54 \times 10^{23}\right)^{2}} \approx \frac{3.6 \times 10^{-8}}{3.0 \times 10^{47}} \approx 1.2 \times 10^{-55}
+$$
+
+探测到 12 个事例，反推穿过探测器的电子反中微子数目为
+
+$$
+N_{\bar{\nu}_{e}} \approx \frac{12}{P} \approx 1.0 \times 10^{56}
+$$
+
+取平均能量 $\langle E \rangle = 15 \, \mathrm{MeV} = 2.40 \times 10^{-5} \, \mathrm{erg}$，则电子反中微子带走的能量为
+
+$$
+E_{\bar{\nu}_{e}} \approx N_{\bar{\nu}_{e}} \langle E \rangle \approx 2.4 \times 10^{51} \, \mathrm{erg}
+$$
+
+六种中微子能量均分，总辐射能量为
+
+$$
+E_{\mathrm{tot}} \approx 6 E_{\bar{\nu}_{e}} \approx 1.4 \times 10^{52} \, \mathrm{erg}
+$$
+
+即总辐射能量为 $10^{52}$-$10^{53} \, \mathrm{erg}$ 量级。中子星的引力束缚能 $\sim 3 \times 10^{53} \, \mathrm{erg}$ 是爆发可供释放的能量上限，我们的估计比它小一个量级左右，量级上自洽；差别来自探测阈值与效率、截面随能量的变化以及各味中微子能量的分配，这在量级估计中是允许的。
+
+
+
+c) 神冈探测器对中微子的吸收系数，即“光深”，等于多少？
+
+把自由程与探测器尺度相除，即得中微子在探测器中的光深。取 $L \sim 16 \, \mathrm{m} = 1.6 \times 10^{3} \, \mathrm{cm}$，
+
+$$
+\tau = n\sigma L = \frac{L}{\lambda} = \frac{1.6 \times 10^{3}}{8.4 \times 10^{16}} \approx 1.9 \times 10^{-14}
+$$
+
+$\tau \ll 1$，说明探测器对中微子几乎完全透明：一个中微子穿过整个水池时发生反应的概率只有 $\sim 2 \times 10^{-14}$，被“停下来”的中微子实际上一个也没有。12 个事例之所以能被看到，靠的是 $\sim 10^{56}$ 的巨大通量，而不是探测器吸收了多少中微子。这与 (b) 也是自洽的：用那里的 $N_{\bar{\nu}_{e}}$ 和这里的 $\tau$ 反算，期望事例数为 $N_{\bar{\nu}_{e}} \tau L^{2}/(4\pi d^{2}) \approx 16$，与探测到的 12 个同量级。
+
+
+
+4. （附加题，+20 分）爱丁顿标准模型和标准太阳模型对比。请以 Jupyter Notebook 形式（或 matlab 脚本）提交本题目答案。
+
+a) 根据已知的太阳质量和半径，求太阳内部气体热压力占总压力的比值（即爱丁顿参数 $\beta$）。
+
+
+
+b) 参考第 1 题中的 python 程序，编写程序求解爱丁顿标准模型对应的 Lane-Emden 方程。
+
+
+
+c) 作图对比爱丁顿标准模型和标准太阳模型（图片效果参见第 2 讲 ppt）。标准太阳模型的相关数据：[Standard Solar Model](http://www.sns.ias.edu/~jnb/SNdata/solarmodels.html)，请选择其中的 BS2005 (OP) 版本。
