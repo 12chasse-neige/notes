@@ -1,8 +1,8 @@
-# Astrophysics Lecture Notes
+# Astrophysics
 
 Homework 25%, experiment 25%, final 50%
 
-<img src="./Astrophysics Lecture Notes.assets/IMG_2301.jpeg" alt="IMG_2301" style="zoom:50%;" />
+<img src="./Astrophysics.assets/IMG_2301.jpeg" alt="IMG_2301" style="zoom:50%;" />
 
 ## 天体参数的测量
 
@@ -417,4 +417,81 @@ $$
 \[
 P = P_{g} + P_{r} 
 \]
+
+电离
+$$
+\frac{n_{r+1,0}}{n_{r,0}}=\frac{g_{r+1,0}}{g_{r,0}}\frac{2}{n_{e}h^{3}}e^{-\chi_{r}/k_{B}T}\int_{0}^{\infty}4\pi p_{e}^{2}e^{-p_{e}^{2}/2m_{e}k_{B}T}\mathrm{d}p_{e}
+$$
+
+这是利用 Boltzmann 分布导出的上一级电离和下一级电离之间的数密度关系，积分之后得到 Saha 方程
+
+$$
+\frac{n_{r+1,0}}{n_{r,0}}n_{e}=\frac{2g_{r+1,0}}{g_{r,0}}\frac{(2\pi m k_{B}T)^{3/2}}{h^{3}}e^{-\chi_{r}/k_{B}T}
+$$
+
+给出相邻两电离度原子数占据数的关系
+
+#### 辐射转移
+
+#### 
+
+#### 多方模型
+
+系统遵循以下状态方程
+\[
+P = K \rho^{\gamma} \quad \gamma = 1 + \frac{1}{n}
+\]
+作类似 $\rho = \rho_{c} \theta^{n}$ 的代换，就可以得到 LE 方程
+\[
+\frac{1}{\xi^{2}}\frac{\mathrm{d}}{\mathrm{d}\xi}
+\left(\xi^{2}\frac{\mathrm{d}\theta}{\mathrm{d}\xi}\right)=-\theta^{n},
+\quad \theta(0)=1,\quad \theta'(0)=0.
+\]
+
+### 小质量恒星的演化
+
+主序阶段
+
+-  均匀的化学组成
+-  核心 H 燃烧
+-  质量 $0.08 \sim 100 M_{\odot}$
+
+亚巨星支
+
+-  核心氢烧完，形成氦核心以及氢丰富的外层
+
+红巨星支
+
+-  氦核进一步收缩，中心温度上升，核心电子简并
+
+-  光度增加，温度下降
+
+氦闪
+
+-  核心氦开始燃烧
+-  电子简并解除
+
+水平支
+
+渐进巨星支
+
+-  中心氦耗尽，变成 CO 核，外层氦点火
+-  恒星光度大增，外层膨胀
+
+热脉冲
+
+-  壳层氦闪
+-  晚期 AGB 星每 1-10 万年发生一次热脉冲，每次抛射 $\sim 10\%$ 质量物质
+
+#### 行星状星云
+
+低质量恒星在死亡时抛射的气体包层，收到中心的白矮星发射的紫外光子电离辐射发光产生，通常为环形（中心光深浅）
+
+### 中等及大质量恒星的演化
+
+中等质量恒星 $2 M_{\odot} < M < 8 M_{\odot}$，恒星内部的 H 燃烧主要通过 CNO 循环进行
+
+大质量恒星在 C 燃烧的时候不会出现明显的 C 闪耀，星风强，会让其在蓝、红超巨星间往复
+
+大质量恒星核心电子在演化到铁核才简并
 
