@@ -32,9 +32,9 @@ $$
 b) 估算反应率  $\langle\sigma v\rangle$ 的局部温度指数  $d \ln\langle\sigma v\rangle / d \ln T$
 
 利用课上给出的反应截面公式
-\[
+$$
 \sigma(E)=\frac{S(E)}{E}e^{-\sqrt{E_{G}/E}}
-\]
+$$
 我们可以积分得到反应率的形式为
 $$
 \langle\sigma v\rangle=\left(\frac{8}{\pi\mu_{r}}\right)^{1/2}(k_{B}T)^{-3/2}\int_{0}^{\infty}\sigma(E)E e^{-E/(k_{B}T)} \, \dd{E} \\
@@ -42,17 +42,17 @@ $$
 $$
 
 作为一个估计，我们假设在 Gamow 峰附近 $S(E)$ 是常量，把上述表达式进行展开，并且对指数上的二次项进行高斯积分，得到
-\[
+$$
 \langle \sigma v \rangle \propto T^{-3/2} \left(\frac{E_{0}^{5}}{E_{G}}\right)^{1/4} e^{-\frac{3 E_{0}}{k_{B} T}}
-\]
+$$
 带入 $E_{0} \propto T^{2/3}$，可以知道
-\[
+$$
 \langle \sigma v \rangle \propto T^{-2/3} e^{-\frac{3 E_{0}}{k_{B} T}}
-\]
+$$
 
-\[
+$$
 \dv{\ln \langle \sigma v \rangle}{\ln T} = - \frac{2}{3} + \frac{E_{0}}{k_{B} T} \approx 3.9
-\]
+$$
 
 
 
@@ -74,52 +74,54 @@ $$
 \Delta E = 4 m_{\rm p} - m_{{}^{4} \rm He} + 2m_{\rm e} \approx 26.73 \, \mathrm{MeV} \approx 4.2 \times 10^{-5} \, \mathrm{erg}
 $$
 而太阳的光度约为 $3.83 \times 10^{33} \, \mathrm{erg/s}$，由此可以估计出，单位时间内 p-p 链的数量约为
-\[
+$$
 N_{\text{chain}} = \frac{L_{\odot}}{\Delta E} \approx 9.1 \times 10^{37} \, \mathrm{s^{-1}}
-\]
+$$
 所以太阳单位时间内放出的中微子数量约为
-\[
+$$
 N_{\nu} = 2 N_{\text{chain}} \approx 1.8 \times 10^{38} \, \mathrm{s^{-1}}
-\]
+$$
 我们假设人体的表面积为 $1 \, \mathrm{m}^{2}$，那么单位时间内穿过人体的中微子数量约为
-\[
+$$
 N = N_{\nu} \cdot \frac{S_{\text{person}}}{4 \pi d^{2}} = 1.8 \times 10^{38} \, \mathrm{s^{-1}} \cdot \frac{1 \, \mathrm{m}^{2}}{4 \pi \, \mathrm{AU}^{2}} \approx 6.4 \times 10^{14} \, \mathrm{s^{-1}}
-\]
+$$
 
 
 b) 估计在地球位置处单位面积接收到的太阳辐射功率。请以此为基础并结合现有的光伏发电效率等因素，尝试解释青海塔拉滩光伏基地的年光伏发电量。如果此发电量由煤燃烧提供，每年需要消耗多少吨煤？
 
 利用太阳的光度，可以估算地球位置处单位时间接受的太阳辐射功率为
-\[
+$$
 W = L_{\odot} \cdot \frac{1}{4 \pi (1 \mathrm{AU})^{2}} = \frac{3.83 \times 10^{26} \,\mathrm{W}}{4\pi \times (1.496 \times 10^{11} \,\mathrm{m})^{2}} \approx 1.36 \times 10^{3} \,\mathrm{W/m^{2}}
-\]
+$$
 
 这就是太阳常数。光伏板实际接收到的功率还要再打折扣：昼夜交替和太阳高度角的变化使到达地面的长期平均值只有大气层外的约 $1/4$，大气吸收与散射再乘以约 $0.6$。所以估算光伏实际接受功率为
-\[
+$$
 \bar{W} \approx \frac{W}{4} \times 0.6 \approx 200 \,\mathrm{W/m^{2}}
-\]
+$$
 即每平方米地面一年接收的太阳辐射能约 $1700\,\mathrm{kWh}$。目前主流晶硅光伏组件的光电转换效率约 $20\%$，再计入逆变器损耗、积灰、组件温升等，则每平方米光伏板一年的发电量约为
-\[
+$$
 E \approx 200 \,\mathrm{W/m^{2}} \times 0.2 \times 0.8 \times 8760 \,\mathrm{h} \approx 280 \,\mathrm{kWh/m^{2}}
-\]
+$$
 查资料可得，青海海南州塔拉滩光伏园区占地约 $420\,\mathrm{km^{2}}$，总装机容量约 $16$–$21\,\mathrm{GW}$，2024 年发电量近 $180$ 亿千瓦时。这一数字可以用上面的估算来解释：发出这些电所需的光伏板面积为
-\[
+$$
 S_{\text{panel}} = \frac{1.8 \times 10^{10} \,\mathrm{kWh}}{280 \,\mathrm{kWh/m^{2}}} \approx 6.4 \times 10^{7} \,\mathrm{m^{2}} \approx 64 \,\mathrm{km^{2}}
-\]
+$$
 考虑阵列间防止前后遮挡的间距、道路与升压站等，电池板面积一般只占园区面积的 $1/5-1/3$，对应园区规模约 $200-300\,\mathrm{km^{2}}$，与其实际占地面积同数量级。也可以从装机容量的角度看：青海光伏电站的年等效利用小时数约 $1600\,\mathrm{h}$，由 $16\,\mathrm{GW} \times 1600\,\mathrm{h} \approx 2.6 \times 10^{10}\,\mathrm{kWh}$ 同样得到同数量级的年发电量。如果这些电全部由燃煤电厂提供，按我国约 $300\,\mathrm{g}$ 标准煤$/\mathrm{kWh}$ 的供电煤耗，每年需要消耗的煤约为
 
-\[
+$$
 m_{\text{coal}} \approx 1.8 \times 10^{10} \,\mathrm{kWh} \times 0.3 \,\mathrm{kg/kWh} \approx 5.4 \times 10^{9} \,\mathrm{kg} \approx 5 \times 10^{6} \,\mathrm{t}
-\]
+$$
 即每年约 $500$ 万吨标准煤。
 
 
 
 
 4. 银河系年龄约 100 亿年，有约一千亿颗恒星（高于 0.08 倍太阳质量）。假定恒星的初始质量分布为 Salpeter 质量函数
+
 $$
 \xi(\lg M)=\frac{d N}{d\lg M}\propto M^{-1.35}
 $$
+
 一般认为，初始质量小于 8  倍太阳质量的恒星最终会演化为白矮星，初始质量大于 20 倍太阳质量的恒星最终会演化为黑洞，而质量介于中间的恒星最终会演化成中子星。
 a) 如果银河系所有的恒星都几乎是在同一个时间形成的，那么现在银河系中大概分别有多少白矮星、中子星和黑洞？请写出具体的计算过程，计算结果用科学计数法保留至两位有效数字。
 
@@ -146,9 +148,9 @@ $$
 N(a,b)=N_{\rm form}(0.08)^{1.35}\left(a^{-1.35}-b^{-1.35}\right)
 $$
 需要注意的是，假设所有恒星在银河系产生时同时产生，那么在 $100$ 亿年之后一些质量很小的恒星也无法演化为白矮星，使用主序星的寿命近似公式来进行估算，课上貌似没有提到这部分内容，所以我查了一下一个近似公式是
-\[
+$$
 \tau (M) \approx T \cdot \left(\frac{M}{M_{\odot}}\right)^{-2.5} \, \mathrm{yr}
-\]
+$$
 所以在估算目前白矮星个数的时候，需要以一倍太阳质量对下界进行一个截断。由此得到如果所有恒星产生于银河系产生时期，现在河内致密星的数量大致为
 $$
 \begin{aligned}
@@ -229,26 +231,26 @@ $$
 b）估算全部恒星的数密度和白矮星的数密度。请选择合适的单位来表示最后的结果。
 
 经过我的人工神经网络划定分类标准以及程序计数，得到样本里面的总恒星数量为 $6484$，总白矮星数量为 $429$，所以我估计二者数密度如下
-\[
+$$
 n_{S} = \frac{N_{S}}{\frac{4 \pi}{3} D^{3}} = \frac{6484}{\frac{4 \pi}{3} \cdot (30 \rm pc)^{3}} \approx 0.0573 \, \mathrm{pc}^{-3}
-\]
+$$
 
-\[
+$$
 n_{WD} = \frac{N_{WD}}{\frac{4 \pi}{3} D^{3}} = \frac{429}{\frac{4 \pi}{3} \cdot (30 \rm pc)^{3}} \approx 0.00379 \, \mathrm{pc}^{-3}
-\]
+$$
 
 
 
 c) 以上一步得到的白矮星的比例，估计银河系中白矮星的总数。这一数字是否与第1题中的理论估计值相符？请简单解释下可能的原因。
 
 上述数据集中给出的白矮星比例大约为
-\[
+$$
 \frac{N_{WD}}{N_{S} + N_{WD}} = \frac{429}{6913} \approx 6.21 \%
-\]
+$$
 所以根据这个比例，银河系中白矮星的数量大约为
-\[
+$$
 N_{WD} = N_{form} \cdot 6.21 \% \approx 6.21 \times 10^{9}
-\]
+$$
 这个数字略大于我们的演化模型估计结果，可能原因是早期银河系的恒星生成速率会比现在大，所以理论上完成演化的白矮星数量应该大于均匀生成模型的估计数量；还有可能就是在理地球 30pc 以内的白矮星比例偏高，比如旋臂上产生小质量恒星的比例更大。
 
 
@@ -263,28 +265,44 @@ d) 该星表里有中子星或黑洞吗？为什么？
 
 1. 该 [Jupyter Notebook](https://github.com/weizhu0026/public/blob/main/ideal_wd.ipynb) 介绍了如何数值计算非多方情况下白矮星的内部结构以及质量和半径。从这一程序（习惯 matlab 的同学可以参考该程序写出其 matlab 版本）出发，考虑中心密度范围 $10^{5}$-$10^{11} \, \mathrm{g/cm^{3}}$，数值求解 CO 白矮星（$\mu_e = 2$）的质量-半径关系。
 
-a) 不同化学组成的白矮星所对应的质量-半径关系有所不同。如果白矮星由 ${}^{56}\mathrm{Fe}$ 组成，那么它的 $\mu_e$ 是多少？请计算它在同一中心密度范围内的质量-半径关系。
-
-\[
-\mu_{e} = \frac{A}{Z} = \frac{56}{26} = \frac{28}{13}
-\]
-
-
-
-b) 请将以上两步所得到的白矮星质量-半径关系画到同一个图上。同时标注出两种极限情况（低速电子和相对论电子）下的质量-半径关系（或极限值）。请注意作图规范（选取合适坐标范围，正确标注横纵坐标的物理量和单位，合理区分不同的曲线，等）。
-
-
-
-c) 简要描述测量白矮星质量的三种主要方法。
+   利用该方程可以画出在题给中心密度范围内的质量半径关系曲线
+   
+   <img src="./Black%20Hole%20and%20Compact%20Objects%20Homework.assets/image-20261102111317779.png" alt="image-20261102111317779"  />
+   
+   a) 不同化学组成的白矮星所对应的质量-半径关系有所不同。如果白矮星由 ${}^{56}\mathrm{Fe}$ 组成，那么它的 $\mu_e$ 是多少？请计算它在同一中心密度范围内的质量-半径关系。
+   \[
+   \mu_{e} = \frac{A}{Z} = \frac{56}{26} = \frac{28}{13}
+   \]
+   对于 ${}^{56}\mathrm{Fe}$ 白矮星，同一中心密度范围内的质量-半径关系为
+   
+   ![image-20261102112801943](./Black%20Hole%20and%20Compact%20Objects%20Homework.assets/image-20261102112801943.png)
+   
+   可以看出在这种情况下质量上限会减小。
+   
+   
+   
+   b) 请将以上两步所得到的白矮星质量-半径关系画到同一个图上。同时标注出两种极限情况（低速电子和相对论电子）下的质量-半径关系（或极限值）。请注意作图规范（选取合适坐标范围，正确标注横纵坐标的物理量和单位，合理区分不同的曲线，等）。
+   
+   作图如下
+   
+   ![image-20261102114145599](./Black%20Hole%20and%20Compact%20Objects%20Homework.assets/image-20261102114145599.png)
+   
+   
+   
+   c) 简要描述测量白矮星质量的三种主要方法。
+   
+   光谱法：通过分析白矮星光谱中的吸收线轮廓，可以拟合出它的表面重力加速度和有效温度。一旦知道了表面重力和半径（半径可通过测光或视差估算），就可以通过公式 $g = GM/R^{2}$ 直接计算出质量。
+   
+   双星轨道动力学法：对于双星中的白矮星，可以通过长期监测其光谱，测量出双星轨道的周期和径向速度。利用开普勒定律和牛顿力学，就可以精确地计算出白矮星的质量。
+   
+   引力红移法：通过高分辨率光谱精确测量谱线的红移量，并结合独立方法（如测光）得到的半径，就可以利用公式 $z=GM/(Rc^2)$ 反推出质量。
 
 
 
 2. 相对论效应的简单计算
 
-a) 证明牛顿力学下光线的偏折角为
-$$
-\alpha \approx \frac{2GM}{c^{2}b}
-$$
+a) 证明牛顿力学下光线的偏折角为 $\alpha \approx \frac{2GM}{c^{2}b}$
+
 （即广义相对论偏折角的一半）。各物理量含义如右下图所示。
 
 ![光线偏折角、碰撞距离与最短距离的几何示意](./Black%20Hole%20and%20Compact%20Objects%20Homework.assets/homework-2-light-deflection.png)
@@ -323,8 +341,23 @@ $$
 $$
 证明中子星的可观测表面积为总表面积的 75%。
 
-忽略中子星的自转。
+忽略中子星的自转带来的拖曳。对于其表面一个面元发出的光来说，我们假设与表面相切的光线正好到达平行于地球和该中子星连线的方向，那么这个极限面元和中子星中心的连线和该方向的夹角 $\theta$ 满足
+\[
+\sin \frac{\alpha}{2} = \frac{r_s}{r_0}\left(1 - \frac{r_s}{r_0}\right)^{-1} \quad r_{s} = r_{0} - \frac{r_{0}^{3}}{b^{2}}
+\]
 
+\[
+\theta = \frac{\pi}{2} + \frac{\alpha}{2}
+\]
+
+我们带入中子星的典型质量以及半径关系 $r_{0} \sim 3 r_{s}$，得到
+\[
+\theta \approx \frac{\pi}{2} + \arcsin \frac{1}{2} \approx \frac{2}{3} \pi
+\]
+所以能看到的表面积占比大约
+\[
+\frac{1 - \cos \frac{2}{3} \pi}{2} = \frac{3}{4}
+\]
 
 
 c) 质量各为 $M$、间距为 $a$ 的双星系统的引力波辐射功率约
@@ -336,6 +369,36 @@ $$
 a = a_0 \left(1 - \frac{t}{t_{\mathrm{merge}}}\right)^{1/4},
 $$
 其中 $a_0$ 为双星的初始间距。估算对于典型的致密双星（$M \sim M_{\odot}$，$a \sim R_{\odot}$），并合时间 $t_{\mathrm{merge}}$ 为多久。
+
+对于这样一个双星系统而言，它们的总能量为
+\[
+E = \frac{1}{4}M \omega^{2} a^{2} - \frac{GM^{2}}{a}
+\]
+带入力学平衡的结果
+\[
+\omega = \sqrt{\frac{2 GM}{a^{3}}}
+\]
+
+\[
+E = -\frac{1}{2} \frac{G M^{2}}{a}
+\]
+
+所以假设能量损失完全来自引力波辐射，可以得到距离的演化方程
+\[
+\frac{1}{2} \frac{G M^{2}}{a^{2}}\dv{a}{t} = - \left(\frac{r_s}{a}\right)^{5} \frac{c^{5}}{G}
+\]
+解得
+\[
+a = a_0 \left(1 - \frac{t}{t_{\mathrm{merge}}}\right)^{1/4}
+\]
+其中
+\[
+t_{\rm merge} = \frac{G^{2} M^{2} a_{0}^{4}}{8 r_{s}^{5} c^{5}} 
+\]
+对于典型双星系统，这个合并时间大概是
+\[
+t_{\rm merge} \approx 9.5 \times 10^{14} \rm \, s \approx 3 \times 10^{7} \rm \, y
+\]
 
 
 
@@ -352,7 +415,7 @@ $$
 括号中的 $1 - 2GM/(rc^{2})$ 就是通常的 $1 - r_{s}/r$，$r_{s}$ 为中心天体的史瓦西半径。度规不显含 $t$ 与 $\phi$，所以 $\delta^{\mu}{}_{t}$ 和 $\delta^{\mu}{}_{\phi}$ 是 Killing 矢量，沿测地线给出两个守恒量
 
 $$
-\left(1 - \frac{2GM}{rc^{2}}\right)\dv{t}{\tau} = E, \qquad r^{2}\dv{\phi}{\tau} = L
+\left(1 - \frac{2GM}{rc^{2}}\right)\dv{t}{\tau} = E, \quad r^{2}\dv{\phi}{\tau} = L
 $$
 
 其中 $\tau$ 为固有时，$L$ 是单位质量的角动量。取轨道在赤道面内，$\theta = \pi/2$，此时 $\theta$ 方向的测地线方程自动满足。由四速度归一化 $g_{\mu\nu}U^{\mu}U^{\nu} = c^{2}$ 得到
@@ -400,7 +463,7 @@ $$
 u_{1} = \frac{G^{3}M^{3}}{L^{4}c^{2}}\left(3 + \frac{3}{2}e^{2} + 3e\phi\sin\phi - \frac{e^{2}}{2}\cos 2\phi\right)
 $$
 
-s所以
+所以
 
 $$
 \begin{aligned}
@@ -421,11 +484,7 @@ $$
 \Delta\phi = \frac{6\pi GM}{a(1 - e^{2})c^{2}}
 $$
 
-若像广义相对论作业那样取 $c = 1$，就回到 $6\pi G^{2}M^{2}/L^{2}$。对水星代入数值：$a = 0.3870993\,\mathrm{AU}$，$e = 0.20564$，$T = 87.969257\,\mathrm{d}$，$GM_{\odot} = 1.3271244 \times 10^{26}\,\mathrm{cm^{3}/s^{2}}$，$1\,\mathrm{AU} = 1.495978707 \times 10^{13}\,\mathrm{cm}$，$c = 2.99792458 \times 10^{10}\,\mathrm{cm/s}$，则
-
-$$
-a(1 - e^{2}) = 0.3870993 \times (1 - 0.20564^{2})\,\mathrm{AU} \approx 5.546 \times 10^{12}\,\mathrm{cm}
-$$
+若像广义相对论作业那样取 $c = 1$，就回到 $6\pi G^{2}M^{2}/L^{2}$。对水星代入数值
 
 $$
 \begin{aligned}
@@ -452,67 +511,61 @@ $$
 
 a) 已知中微子与单个原子核的反应截面（电子反中微子逆 β 衰变截面）约 $2 \times 10^{-41} \, \mathrm{cm^{2}}$，估计中微子的自由程。
 
-纯水中的中微子自由程由靶核数密度与反应截面决定。取水的密度 $\rho = 1 \, \mathrm{g/cm^{3}}$、核子质量 $m_p = 1.673 \times 10^{-24} \, \mathrm{g}$，单位体积内的靶核数为
+逆 $\beta$ 衰变 $\bar\nu_e + p \to n + e^+$ 的靶是水中的质子。取水的密度 $\rho = 1 \, \mathrm{g/cm^{3}}$、摩尔质量 $18.015 \, \mathrm{g/mol}$，每个水分子含 $2$ 个质子，因此单位体积内的靶质子数为
 
 $$
-n \approx \frac{\rho}{m_p} = \frac{1}{1.673 \times 10^{-24}} \approx 6.0 \times 10^{23} \, \mathrm{cm^{-3}}
+n_p = \frac{2}{18.015}\rho N_A \approx 6.7 \times 10^{22} \, \mathrm{cm^{-3}}
 $$
 
-这里按核子计数，水分子中氧核比质子重的影响已包含在平均核子质量里；若只数水中的自由质子，$n$ 小约一个量级，只改变常数因子而不改变结论。取逆 $\beta$ 衰变截面 $\sigma \approx 2 \times 10^{-41} \, \mathrm{cm^{2}}$，则自由程为
+取逆 $\beta$ 衰变截面 $\sigma \approx 2 \times 10^{-41} \, \mathrm{cm^{2}}$，则自由程为
 
 $$
-\lambda = \frac{1}{n\sigma} = \frac{1}{6.0 \times 10^{23} \times 2 \times 10^{-41}} \approx 8.4 \times 10^{16} \, \mathrm{cm}
+\lambda = \frac{1}{n_p\sigma} = \frac{1}{6.7 \times 10^{22} \times 2 \times 10^{-41}} \approx 7.5 \times 10^{17} \, \mathrm{cm} = 7.5 \times 10^{15} \, \mathrm{m} \approx 0.24 \, \mathrm{pc}
 $$
 
-即 $\lambda \approx 8.4 \times 10^{14} \, \mathrm{m} \approx 5.6 \times 10^{3} \, \mathrm{AU} \approx 1.2 \times 10^{6} \, R_{\odot} \approx 0.027 \, \mathrm{pc} \approx 0.09 \, \mathrm{ly}$，比太阳半径还大约六个量级。而神冈纯水池的尺度只有 $L \sim 16 \, \mathrm{m} = 1.6 \times 10^{3} \, \mathrm{cm}$，两者之比为
-
-$$
-\frac{\lambda}{L} \approx \frac{8.4 \times 10^{16}}{1.6 \times 10^{3}} \approx 5 \times 10^{13}
-$$
-
-要用 $5 \times 10^{13}$ 个这样的水池叠起来才能让中微子被吸收一次，所以 16 m 的水对中微子几乎完全透明，这也是 (c) 中光深只有 $\sim 10^{-14}$ 的来源。
+（若把每个核子都当作靶，$n \approx \rho/m_p \approx 6.0 \times 10^{23} \, \mathrm{cm^{-3}}$，$\lambda$ 会小约一个量级；但逆 $\beta$ 衰变的靶是质子，所以这里按质子计数。）
 
 
 
 b) SN 1987A 超新星距离我们的距离约 50 kpc，探测到的中微子为六种中微子之一，假设各种中微子能量均分，估计 SN 1987A 中微子辐射的总能量。
 
-把探测器当作靶，先算一个反中微子被探测到的概率。3000 吨纯水对应 $N_p \approx M_{\mathrm{det}}/m_p = 3.0 \times 10^{9}/(1.673 \times 10^{-24}) \approx 1.8 \times 10^{33}$ 个核子，SN 1987A 距 $d = 50 \, \mathrm{kpc} = 1.54 \times 10^{23} \, \mathrm{cm}$。若中微子各向同性发射，则每个反中微子发生逆 $\beta$ 衰变而被探测到的概率为
+若中微子各向同性发射，则每个反中微子发生逆 $\beta$ 衰变而被探测到的概率为
 
 $$
-P = \frac{N_p \sigma}{4\pi d^{2}} = \frac{1.8 \times 10^{33} \times 2 \times 10^{-41}}{4\pi \left(1.54 \times 10^{23}\right)^{2}} \approx \frac{3.6 \times 10^{-8}}{3.0 \times 10^{47}} \approx 1.2 \times 10^{-55}
+P = \frac{N_p \sigma}{4\pi d^{2}} = \frac{2.0 \times 10^{32} \times 2 \times 10^{-41}}{4\pi \left(1.54 \times 10^{23}\right)^{2}} \approx \frac{4.0 \times 10^{-9}}{3.0 \times 10^{47}} \approx 1.3 \times 10^{-56}
 $$
 
-探测到 12 个事例，反推穿过探测器的电子反中微子数目为
+探测到 $12$ 个事例，反推穿过探测器的电子反中微子数目为
 
 $$
-N_{\bar{\nu}_{e}} \approx \frac{12}{P} \approx 1.0 \times 10^{56}
+N_{\bar{\nu}_{e}} \approx \frac{12}{P} \approx 9.0 \times 10^{56}
 $$
 
 取平均能量 $\langle E \rangle = 15 \, \mathrm{MeV} = 2.40 \times 10^{-5} \, \mathrm{erg}$，则电子反中微子带走的能量为
 
 $$
-E_{\bar{\nu}_{e}} \approx N_{\bar{\nu}_{e}} \langle E \rangle \approx 2.4 \times 10^{51} \, \mathrm{erg}
+E_{\bar{\nu}_{e}} \approx N_{\bar{\nu}_{e}} \langle E \rangle \approx 2.2 \times 10^{52} \, \mathrm{erg}
 $$
 
 六种中微子能量均分，总辐射能量为
 
 $$
-E_{\mathrm{tot}} \approx 6 E_{\bar{\nu}_{e}} \approx 1.4 \times 10^{52} \, \mathrm{erg}
+E_{\mathrm{tot}} \approx 6 E_{\bar{\nu}_{e}} \approx 1.3 \times 10^{53} \, \mathrm{erg}
 $$
 
-即总辐射能量为 $10^{52}$-$10^{53} \, \mathrm{erg}$ 量级。中子星的引力束缚能 $\sim 3 \times 10^{53} \, \mathrm{erg}$ 是爆发可供释放的能量上限，我们的估计比它小一个量级左右，量级上自洽；差别来自探测阈值与效率、截面随能量的变化以及各味中微子能量的分配，这在量级估计中是允许的。
+即总辐射能量为 $10^{53} \, \mathrm{erg}$ 量级，与中子星引力束缚能同量级。
 
 
 
 c) 神冈探测器对中微子的吸收系数，即“光深”，等于多少？
 
-把自由程与探测器尺度相除，即得中微子在探测器中的光深。取 $L \sim 16 \, \mathrm{m} = 1.6 \times 10^{3} \, \mathrm{cm}$，
+取 $L \sim 16 \, \mathrm{m} = 1.6 \times 10^{3} \, \mathrm{cm}$
 
 $$
-\tau = n\sigma L = \frac{L}{\lambda} = \frac{1.6 \times 10^{3}}{8.4 \times 10^{16}} \approx 1.9 \times 10^{-14}
+\tau = n_p\sigma L = \frac{L}{\lambda} = \frac{1.6 \times 10^{3}}{7.5 \times 10^{17}} \approx 2.1 \times 10^{-15}
 $$
 
-$\tau \ll 1$，说明探测器对中微子几乎完全透明：一个中微子穿过整个水池时发生反应的概率只有 $\sim 2 \times 10^{-14}$，被“停下来”的中微子实际上一个也没有。12 个事例之所以能被看到，靠的是 $\sim 10^{56}$ 的巨大通量，而不是探测器吸收了多少中微子。这与 (b) 也是自洽的：用那里的 $N_{\bar{\nu}_{e}}$ 和这里的 $\tau$ 反算，期望事例数为 $N_{\bar{\nu}_{e}} \tau L^{2}/(4\pi d^{2}) \approx 16$，与探测到的 12 个同量级。
+$\tau \ll 1$，说明探测器对中微子几乎完全透明。
 
 
 
@@ -520,10 +573,26 @@ $\tau \ll 1$，说明探测器对中微子几乎完全透明：一个中微子�
 
 a) 根据已知的太阳质量和半径，求太阳内部气体热压力占总压力的比值（即爱丁顿参数 $\beta$）。
 
+我们利用爱丁顿模型给出的结论
+$$
+\frac{M_{\star}}{M_{\odot}}\simeq\frac{18.1}{\mu^{2}}\frac{\sqrt{1-\beta}}{\beta^{2}}
+$$
+带入 $M_{\star} = M_{\odot}$ 以及太阳的平均分子量 $\mu \approx 0.6$（离子与电子都计入）得到
+\[
+\beta \approx 0.9995
+\]
+
+
 
 
 b) 参考第 1 题中的 python 程序，编写程序求解爱丁顿标准模型对应的 Lane-Emden 方程。
 
+详见 Jupyter Notebook 的第二部分。
+
 
 
 c) 作图对比爱丁顿标准模型和标准太阳模型（图片效果参见第 2 讲 ppt）。标准太阳模型的相关数据：[Standard Solar Model](http://www.sns.ias.edu/~jnb/SNdata/solarmodels.html)，请选择其中的 BS2005 (OP) 版本。
+
+作图如下
+
+![image-20261102233058484](./Black%20Hole%20and%20Compact%20Objects%20Homework.assets/image-20261102233058484.png)
