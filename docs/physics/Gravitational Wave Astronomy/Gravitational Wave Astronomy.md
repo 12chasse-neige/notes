@@ -237,5 +237,9 @@ $$
 \frac{\mathrm{d}P}{\mathrm{d}r}=-\frac{G\big(\varepsilon+P\big)\big(m+4\pi r^{3}P\big)}{r(r-2G m)}
 $$
 
-## 黑洞
+## 引力波的产生和传播
+
+主要内容就是另一个笔记里面的，这里简单补充
+
+
 
