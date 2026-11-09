@@ -1,5 +1,15 @@
 [
   {
+    "title": "Astrophysics Course Notes",
+    "desc": "Stellar parameters, magnitudes, spectra, HR diagram, and solar physics fundamentals.",
+    "tags": [
+      "astrophysics",
+      "stellar astronomy",
+      "magnitude"
+    ],
+    "link": "/physics/Astrophysics/Astrophysics"
+  },
+  {
     "title": "Gravitational Wave Astronomy Homework",
     "desc": "Homework on scalar fields, metrics, and covariant derivatives in non-orthogonal coordinates.",
     "tags": [
@@ -11,7 +21,7 @@
   },
   {
     "title": "Gravitational Wave Astronomy Notes",
-    "desc": "Lecture notes on gravitational waves, relativity, weak-field approximation, and detectors",
+    "desc": "Relativity foundations, weak-field approximation, and gravitational wave solutions for GW astronomy.",
     "tags": [
       "gravitational waves",
       "general relativity",
@@ -24,7 +34,7 @@
     "desc": "Stellar structure, evolution, and compact remnants including black holes",
     "tags": [
       "astrophysics",
-      "stellar structure",
+      "stellar evolution",
       "black holes"
     ],
     "link": "/physics/Astrophysics/Black Hole and Compact Objects"
@@ -34,14 +44,14 @@
     "desc": "Homework on white dwarfs, nuclear reaction rates, and solar neutrino estimates.",
     "tags": [
       "astrophysics",
-      "white dwarfs",
-      "nuclear reactions"
+      "white dwarf",
+      "nuclear fusion"
     ],
     "link": "/physics/Astrophysics/Black Hole and Compact Objects Homework"
   },
   {
     "title": "Astrophysics Homework Solutions",
-    "desc": "Solutions covering hydrogen spectral lines, Sirius distance modulus, and Planck function limits.",
+    "desc": "Solutions covering hydrogen spectral lines, Sirius distance modulus, and Planck function limits",
     "tags": [
       "astrophysics",
       "spectroscopy",
@@ -50,18 +60,8 @@
     "link": "/physics/Astrophysics/Astrophysics Homework"
   },
   {
-    "title": "Astrophysics Course Notes",
-    "desc": "Stellar parameters, magnitudes, spectra, HR diagram, and solar physics fundamentals.",
-    "tags": [
-      "astrophysics",
-      "stellar astronomy",
-      "magnitude"
-    ],
-    "link": "/physics/Astrophysics/Astrophysics"
-  },
-  {
     "title": "Feynman Lectures Physics Homework Solutions",
-    "desc": "Homework solutions on polarization and particle diffraction from Feynman Lectures",
+    "desc": "Homework solutions on polarization, photon probability, and particle diffraction interference",
     "tags": [
       "quantum mechanics",
       "polarization",
@@ -81,37 +81,37 @@
   },
   {
     "title": "Atomic and Molecular Physics Homework",
-    "desc": "Hydrogen atom eigenfunction derivations and quantum mechanics homework solutions",
+    "desc": "Hydrogen eigenfunction derivations and quantum mechanics homework problems",
     "tags": [
       "atomic physics",
-      "hydrogen atom",
-      "eigenfunctions"
+      "hydrogen wavefunctions",
+      "quantum mechanics"
     ],
     "link": "/physics/Atomic and Molecular Physics/Atomic and Molecular Physics Homework"
   },
   {
     "title": "Electrodynamics Homework Vector Analysis",
-    "desc": "Proving Levi-Civita identities and vector triple product formulas with Einstein summation.",
+    "desc": "Proofs of Levi-Civita identities and vector triple product formulas using Einstein summation.",
     "tags": [
       "electrodynamics",
       "vector analysis",
-      "Levi-Civita symbol"
+      "Einstein summation"
     ],
     "link": "/physics/Electrodynamics/Electrodynamics Homework"
   },
   {
-    "title": "Feynman Lectures Physics Homework Set",
+    "title": "Feynman Lectures Physics Homework Exercises",
     "desc": "Homework on exterior products, Hodge dual, and Einstein summation in vector analysis.",
     "tags": [
-      "vector analysis",
       "exterior product",
-      "Hodge dual"
+      "Hodge dual",
+      "Einstein summation"
     ],
     "link": "/physics/Feynman Lectures on Physics/Feynman Lectures on Physics (2) Homework"
   },
   {
-    "title": "General Relativity Homework Solutions",
-    "desc": "Proofs of energy-momentum tensor covariance and geodesic equation derivation",
+    "title": "General Relativity Homework Problems",
+    "desc": "Homework proving energy-momentum tensor covariance and geodesic equation derivation",
     "tags": [
       "general relativity",
       "energy-momentum tensor",
@@ -121,17 +121,17 @@
   },
   {
     "title": "Quantum Mechanics Homework Solutions",
-    "desc": "Solutions covering photon number, Sommerfeld quantization, and de Broglie wave velocities.",
+    "desc": "Solutions covering photon number, infinite well, and de Broglie waves",
     "tags": [
       "quantum mechanics",
-      "Sommerfeld quantization",
-      "de Broglie waves"
+      "homework",
+      "wave function"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework"
   },
   {
     "title": "Statistical Mechanics Homework Solutions",
-    "desc": "Proofs of thermodynamic equations of state and metal wire tension problems",
+    "desc": "Thermodynamic equation of state and metal wire tension proofs",
     "tags": [
       "statistical mechanics",
       "thermodynamics",
@@ -143,45 +143,45 @@
     "title": "Early Universe Thermal History",
     "desc": "Timeline of inflation, reheating, neutrino decoupling, and Big Bang nucleosynthesis.",
     "tags": [
+      "early universe",
       "cosmology",
-      "inflation",
-      "neutrino decoupling"
+      "Big Bang nucleosynthesis"
     ],
     "link": "/physics/General Relativity/Early Universe"
   },
   {
     "title": "Interferometer Noise and Quantum Noise",
-    "desc": "Overview of Advanced LIGO noise sources including quantum, thermal, seismic, and residual gas noise.",
+    "desc": "Overview of Advanced LIGO noise budget including quantum, thermal, seismic, and residual gas noise.",
     "tags": [
       "quantum noise",
       "interferometer",
-      "thermal noise"
+      "strain sensitivity"
     ],
     "link": "/physics/Gravitational Wave Astronomy/Gravitational Waves/Quantum Noise"
   },
   {
     "title": "Advanced Calculus Final Review Notes",
-    "desc": "Taylor's theorem with Peano, Lagrange, and Cauchy remainder forms.",
+    "desc": "Taylor's theorem with Peano, Lagrange, and Cauchy remainder forms explained.",
     "tags": [
       "Taylor theorem",
-      "remainder forms",
+      "remainder term",
       "advanced calculus"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (1) Final Review"
   },
   {
     "title": "Advanced Calculus Homework 10 Solutions",
-    "desc": "Surface and line integrals solved via parametrization and Stokes theorem",
+    "desc": "Surface and line integrals solved via parametrization and Green's theorem.",
     "tags": [
       "surface integral",
       "line integral",
-      "Stokes theorem"
+      "parametrization"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 10"
   },
   {
     "title": "Advanced Calculus Homework 4 Solutions",
-    "desc": "Proofs on extrema, closed sets, and compactness in R2",
+    "desc": "Proofs on minimum existence, closed unit circle, and extrema on compact sets.",
     "tags": [
       "advanced calculus",
       "compactness",
@@ -190,10 +190,10 @@
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 4"
   },
   {
-    "title": "Advanced Calculus Homework 7",
-    "desc": "Critical points and extrema of multivariable functions using Hessian analysis",
+    "title": "Advanced Calculus Homework 7 Solutions",
+    "desc": "Critical points and extrema analysis using Hessian matrices for multivariable functions",
     "tags": [
-      "multivariable calculus",
+      "advanced calculus",
       "critical points",
       "Hessian matrix"
     ],
@@ -201,7 +201,7 @@
   },
   {
     "title": "Advanced Calculus Homework 8 Solutions",
-    "desc": "Change of variables for double and triple integrals with Jacobian determinants.",
+    "desc": "Change of variables for double and triple integrals with Jacobians",
     "tags": [
       "change of variables",
       "Jacobian",
@@ -211,7 +211,7 @@
   },
   {
     "title": "Complex Analysis Homework 6 Solutions",
-    "desc": "Radius of convergence, series continuity, and summation of trigonometric series",
+    "desc": "Radius of convergence, series continuity, and trigonometric series sums",
     "tags": [
       "complex analysis",
       "power series",
@@ -220,11 +220,11 @@
     "link": "/maths/Complex Analysis/Complex Analysis Homework 6"
   },
   {
-    "title": "Complex Analysis Homework 9 Solutions",
-    "desc": "Analytic continuation proofs, series singularities, and lacunary function exercises.",
+    "title": "Complex Analysis Homework 9",
+    "desc": "Analytic continuation proofs and singularities of power series",
     "tags": [
-      "complex analysis",
       "analytic continuation",
+      "power series",
       "singularities"
     ],
     "link": "/maths/Complex Analysis/Complex Analysis Homework 9"
@@ -241,7 +241,7 @@
   },
   {
     "title": "Intermediate-Mass Black Hole Literature Notes",
-    "desc": "Notes on IMBH formation, seeding models, and dynamical search methods",
+    "desc": "Notes on IMBH formation, seeding models, and dynamical search methods.",
     "tags": [
       "intermediate-mass black holes",
       "seeding models",
@@ -261,7 +261,7 @@
   },
   {
     "title": "Gravitational Wave Detection Methods",
-    "desc": "Detector responses across frequency bands and interferometer working principles",
+    "desc": "Detector responses across frequency bands and interferometer light propagation analysis",
     "tags": [
       "gravitational waves",
       "interferometer",
@@ -281,7 +281,7 @@
   },
   {
     "title": "Qt Basics Guide",
-    "desc": "Introduction to Qt framework fundamentals for C++ developers",
+    "desc": "Introduction to Qt framework fundamentals and core concepts",
     "tags": [
       "Qt",
       "C++",
@@ -290,8 +290,8 @@
     "link": "/coding/C++/Qt/Qt Basics"
   },
   {
-    "title": "C++ Programming Fundamentals",
-    "desc": "Introduction to C++ basics, keywords, and program structure",
+    "title": "C++ Programming Basics",
+    "desc": "Introduction to C++ keywords, data types, and basic program structure",
     "tags": [
       "C++",
       "keywords",
