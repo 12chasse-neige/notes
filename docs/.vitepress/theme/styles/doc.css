@@ -135,62 +135,147 @@
   font: inherit;
 }
 
+/* Heading ladder ----------------------------------------------------------
+   Body copy is a serif at reading size; for Chinese both the headings and the
+   prose fall back to Songti, so rank cannot ride on family alone. Each level
+   carries one device and grows weaker as it descends: h1 a gilded horizon,
+   h2 a full-width plate rule, h3 a hanging diamond, h4 plain bold display,
+   h5/h6 sans micro-labels. Accent rules and gems take the section colour. */
 .vp-doc :is(h1, h2, h3, h4, h5, h6) {
   position: relative;
+  max-width: var(--reading-width);
   color: var(--ink-1);
   font-family: var(--font-display);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.22;
-  letter-spacing: -0.012em;
+  letter-spacing: -0.01em;
   text-wrap: balance;
   scroll-margin-top: calc(var(--vp-nav-height) + 28px);
 }
 
+/* h1 — the plate title, signed with a diamond and its gilded trail. */
 .vp-doc h1 {
-  margin: 0 0 2.1rem;
-  font-size: clamp(2.7rem, 4.6vw, 4.1rem);
+  margin: 0 0 1.2rem;
+  padding-bottom: 1.6rem;
+  font-size: clamp(2.8rem, 4.4vw, 4.05rem);
   font-weight: 500;
-  line-height: 1.02;
-  letter-spacing: -0.03em;
+  line-height: 1.03;
+  letter-spacing: -0.028em;
 }
 
+.vp-doc h1::before {
+  position: absolute;
+  bottom: -3.5px;
+  left: -1.1rem;
+  width: 8px;
+  height: 8px;
+  background: var(--section-accent);
+  content: '';
+  transform: rotate(45deg);
+}
+
+.vp-doc h1::after {
+  position: absolute;
+  bottom: 0;
+  left: 1px;
+  width: 118px;
+  height: 1px;
+  background: linear-gradient(90deg, var(--section-accent), transparent);
+  content: '';
+}
+
+/* h2 — a ruled plate; the rule is the section break read from any distance. */
 .vp-doc h2 {
-  margin: 3.4rem 0 1.15rem;
+  margin: 4rem 0 1.3rem;
   border-top: 0;
-  padding-top: 0;
-  font-size: clamp(1.75rem, 2.5vw, 2.25rem);
-  line-height: 1.18;
+  padding-top: 1.5rem;
+  font-size: clamp(1.95rem, 2.55vw, 2.35rem);
+  line-height: 1.16;
+  letter-spacing: -0.008em;
 }
 
+.vp-doc h2::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 1px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    var(--section-accent) 0,
+    var(--line-strong) 14%,
+    var(--line) 46%,
+    transparent 100%
+  );
+  content: '';
+}
+
+.vp-doc h2::after {
+  position: absolute;
+  top: -4px;
+  left: -1.125rem;
+  width: 9px;
+  height: 9px;
+  background: var(--section-accent);
+  content: '';
+  transform: rotate(45deg);
+}
+
+/* The home page reuses h2 for its section titles; article ornaments must not
+   follow them there (home.css styles .home-title in its own right). */
+.vp-doc .home-title::before,
+.vp-doc .home-title::after {
+  display: none;
+}
+
+/* h3 — a catalogue entry, marked by the diamond that doubles as its link. */
 .vp-doc h3 {
-  margin: 2.3rem 0 0.8rem;
-  font-size: 1.38rem;
-  line-height: 1.35;
+  margin: 2.9rem 0 0.9rem;
+  font-size: 1.5rem;
+  line-height: 1.34;
+  letter-spacing: -0.004em;
 }
 
+/* h4 — bold display without ornament: weight carries the rank. */
 .vp-doc h4 {
-  margin: 1.9rem 0 0.55rem;
-  font-size: 1.16rem;
-  font-weight: 650;
+  margin: 2.1rem 0 0.62rem;
+  font-size: 1.3rem;
+  line-height: 1.44;
   letter-spacing: 0;
 }
 
+/* h5/h6 — the micro-label tier, in sans and tracked caps. */
 .vp-doc h5,
 .vp-doc h6 {
-  margin: 1.6rem 0 0.45rem;
+  margin: 1.75rem 0 0.5rem;
   color: var(--ink-2);
   font-family: var(--font-sans);
-  font-size: 0.71rem;
+  font-size: 0.8rem;
   font-weight: 700;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.14em;
   line-height: 1.5;
   text-transform: uppercase;
 }
 
-.vp-doc h6 {
-  letter-spacing: 0.2em;
+.vp-doc h5::before {
+  position: absolute;
+  top: 0.78em;
+  left: -1.2rem;
+  width: 12px;
+  height: 1px;
+  background: var(--section-accent);
+  content: '';
+  opacity: 0.6;
 }
 
+.vp-doc h6 {
+  color: var(--ink-3);
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+}
+
+/* The permalink survives in the margin at every level; on h3 it is drawn as
+   the level's diamond, so the marker is also the way back to the anchor. */
 .vp-doc :is(h1, h2, h3, h4, h5, h6) .header-anchor {
   color: var(--section-accent);
   font-family: var(--font-serif);
@@ -207,11 +292,76 @@
 }
 
 .vp-doc h2 .header-anchor {
+  top: 1.5rem;
+}
+
+.vp-doc h4 .header-anchor {
   top: 0.1rem;
 }
 
 .vp-doc h3 .header-anchor {
-  top: 0.1rem;
+  top: 0.2em;
+  width: 24px;
+  height: 24px;
+  margin-left: -1.6rem;
+  padding: 0;
+  background: none;
+  opacity: 1;
+  transition: none;
+}
+
+.vp-doc h3 .header-anchor::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  margin: -3px 0 0 -3px;
+  background: var(--section-accent);
+  content: '';
+  opacity: 0.55;
+  transform: rotate(45deg);
+  transition:
+    opacity 0.2s var(--ease-out),
+    transform 0.2s var(--ease-out);
+}
+
+.vp-doc h3:hover .header-anchor {
+  opacity: 1;
+}
+
+.vp-doc h3:hover .header-anchor::before,
+.vp-doc h3 .header-anchor:focus-visible::before {
+  opacity: 1;
+  transform: rotate(45deg) scale(1.15);
+}
+
+.vp-doc h3 .header-anchor:focus-visible {
+  border-radius: 2px;
+  outline: 2px solid var(--section-accent);
+  outline-offset: 1px;
+  opacity: 1;
+}
+
+/* A plate title that opens straight into a section hands the ruling to that
+   section: the h2 rule becomes the title's horizon and the h1 flourish drops. */
+.vp-doc h1:has(+ h2) {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.vp-doc h1:has(+ h2)::before,
+.vp-doc h1:has(+ h2)::after {
+  content: none;
+}
+
+.vp-doc h1 + h2 {
+  margin-top: 2.4rem;
+}
+
+/* Code inside a heading keeps its own weight instead of inheriting bold. */
+.vp-doc :is(h1, h2, h3, h4, h5, h6) code {
+  font-weight: 500;
 }
 
 /* Prose ------------------------------------------------------------------- */
@@ -1013,18 +1163,47 @@
     line-height: 1.86;
   }
 
+  /* The mobile gutter is 20px: the gems hang 8px in from the edge and the
+     h3 link box stops at the text edge instead of covering the first glyph. */
   .vp-doc h1 {
+    padding-bottom: 1.35rem;
+    margin-bottom: 1rem;
     font-size: clamp(2.35rem, 9vw, 3rem);
-    margin-bottom: 1.7rem;
+  }
+
+  .vp-doc h1::before {
+    left: -0.75rem;
+  }
+
+  .vp-doc h1::after {
+    width: 82px;
   }
 
   .vp-doc h2 {
-    margin-top: 2.7rem;
-    font-size: clamp(1.55rem, 6vw, 1.9rem);
+    margin-top: 2.9rem;
+    padding-top: 1.25rem;
+    font-size: clamp(1.6rem, 6vw, 1.95rem);
+  }
+
+  .vp-doc h2::after {
+    left: -0.78rem;
+  }
+
+  .vp-doc h2 .header-anchor {
+    top: 1.25rem;
   }
 
   .vp-doc h3 {
-    font-size: 1.24rem;
+    font-size: 1.34rem;
+  }
+
+  .vp-doc h3 .header-anchor {
+    width: 16px;
+    margin-left: -1rem;
+  }
+
+  .vp-doc h4 {
+    font-size: 1.2rem;
   }
 
   .vp-doc mjx-container[display='true'] {

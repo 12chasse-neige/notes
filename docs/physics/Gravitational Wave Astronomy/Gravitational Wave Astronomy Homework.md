@@ -822,17 +822,17 @@ g_{tt} = -\left(\frac{1-m/(2\bar r)}{1+m/(2\bar r)}\right)^2  =- \left(\frac{1 -
 0 = -\left(\frac{1-m/(2\bar r)}{1+m/(2\bar r)}\right)^2\mathrm{d}t^2
 + \left(1+\frac{m}{2\bar r}\right)^4 \mathrm{d}\bar r^2
 \]
-所以
+所以径向坐标速率为
 \[
 \left|\dv{\bar{r}}{t} \right| = \frac{\left|1 - \frac{m}{2 \bar{r}}\right|}{(1 + \frac{m}{2 \bar{r}})^{3}} \approx 1 - 2q + \frac{9}{4} q^{2} + O (q^{3}) \quad (q < 1)
 \]
 在当地静止观测者的参考系中，$\dd{\tau} = \left|\frac{1 - \frac{q}{2}}{1 + \frac{q}{2}} \right| \dd{t}$ ，光速测出来是 
 \[
-c_{\rm LIF} =
+c_{\rm LIF} = \frac{(1 + \frac{q}{2})^{2} \dd{r}}{\left|\frac{1 - \frac{q}{2}}{1 + \frac{q}{2}} \right| \dd{t}} = 1
 \]
 
 
-在接近 $\bar r=m/2$ 时坐标速率趋零的含义是
+在接近 $\bar r=m/2$ 时坐标速率趋零的含义是在此处由于坐标定义的问题出现了坐标奇性，所以坐标速率会趋近于零。
 
 
 
@@ -845,27 +845,61 @@ f(r) = 1-\frac{2m}{r},\qquad
 \]
 光子的守恒能量为 $\mathcal{E}=-p_t>0$，观察者 $u^\mu$ 测得的能量为 $E(u)=-p_\mu u^\mu=h_{\mathrm{P}}\nu$，$h_{\mathrm{P}}$ 为普朗克常数。接收者均在无穷远静止。可引用静态发射者在 $r_e>2m$ 处的频率比
 \[
-\frac{\nu_\infty}{\nu_{\mathrm{em}}} = \sqrt{f(r_e)},\qquad
-z \equiv \frac{\lambda_\infty-\lambda_{\mathrm{em}}}{\lambda_{\mathrm{em}}} = \frac{\nu_{\mathrm{em}}}{\nu_\infty}-1.
+\frac{\nu_\infty}{\nu_{\mathrm{em}}} = \sqrt{f(r_e)},\quad
+z \equiv \frac{\lambda_\infty-\lambda_{\mathrm{em}}}{\lambda_{\mathrm{em}}} = \frac{\nu_{\mathrm{em}}}{\nu_\infty}-1
 \]
 
 (a) (4分) 把地球、太阳和下表的中子星视为孤立、静态球对称天体，计算静止表面原子的精确红移 $z$ 与弱场近似 $GM/(Rc^2)$。对中子星给出弱场近似的相对误差，分母取精确值。
 
 | 天体 | 质量 $M$ | 面积半径 $R$ |
 |:---:|:---:|:---:|
-| 地球 | $5.9722\times10^{24}\,\mathrm{kg}$ | $6.371\times10^{6}\,\mathrm{m}$ |
-| 太阳 | $M_\odot$ | $6.957\times10^{8}\,\mathrm{m}$ |
+| 地球 | $5.9722\times10^{24}\,\mathrm{kg}\approx 3.0034\times 10^{-6} M_{\odot}$ | $6.371\times10^{6}\,\mathrm{m}$ |
+| 太阳 | $1 M_\odot$ | $6.957\times10^{8}\,\mathrm{m}$ |
 | 中子星 | $1.4M_\odot$ | $12\,\mathrm{km}$ |
 
 数值计算取
 \[
-G = 6.67430\times10^{-11}\,\mathrm{m^3\,kg^{-1}\,s^{-2}},\qquad
-c = 2.99792458\times10^{8}\,\mathrm{m\,s^{-1}},
+G = 6.67430\times10^{-11}\,\mathrm{m^3\,kg^{-1}\,s^{-2}},\quad
+c = 2.99792458\times10^{8}\,\mathrm{m\,s^{-1}}
 \]
 \[
-M_\odot = 1.98847\times10^{30}\,\mathrm{kg}.
+M_\odot = 1.98847\times10^{30}\,\mathrm{kg}
 \]
 
+对于质量为 $M$ 的球对称天体，在表面处的径向光子满足
+\[
+0 = - f \dd{t}^{2} + f^{-1} \dd{r}^{2}
+\]
+所以这些光子的 4-动量就是
+\[
+p^{\mu} = \begin{pmatrix}
+k \\
+k \\
+0 \\
+0
+\end{pmatrix}
+\]
+对于表面处的静止观察者 $u_{\mu} = (- \frac{1}{\sqrt{f}}, 0, 0, 0)$，这些光子的频率以及红移满足
+\[
+\nu = \frac{\nu_{\infty}}{\sqrt{1 - \frac{2 M}{R}}}, \quad z = \frac{1}{\sqrt{1- \frac{2 M}{R}}} - 1
+\]
+经过带入数据以及计算，得到对于这三种星体的红移以及弱场近似分别为
+\[
+z_{\rm E} \approx 6.961311318\times 10^{-10} \\
+z_{\odot} \approx 2.122573512\times 10^{-6} \\
+z_{\rm NS} \approx 0.2351858005
+\]
+
+\[
+\frac{G M_{\rm E}}{R_{\rm E} c^{2}} \approx 6.961311311\times 10^{-10} \\
+\frac{G M_{\odot}}{R_{\odot} c^{2}} \approx 2.122566754\times 10^{-6} \\
+\frac{G M_{\rm NS}}{R_{\rm NS} c^{2}} \approx 0.1722781306
+\]
+
+中子星的弱场近似的相对误差为
+\[
+\frac{0.2351858005 - 0.1722781306}{0.1722781306} \approx 36.51518024\%
+\]
 
 
 (b) (6分) 在发射事件处，原子相对当地静止标架以速率 $0\le\beta<1$ 向内运动，发射一个向外传播的径向光子。可写为
@@ -877,9 +911,57 @@ p = E_{\mathrm{stat}}\left(e_{\hat 0}+e_{\hat r}\right),
 \]
 其中 $\gamma=(1-\beta^2)^{-1/2}$。用内积求 $\nu_\infty/\nu_{\mathrm{em}}$，并区分原子共动系中的 $h_{\mathrm{P}}\nu_{\mathrm{em}}$、当地静止者测得的 $E_{\mathrm{stat}}$ 和守恒量 $\mathcal{E}$。忽略发射反冲及原子对几何的影响。
 
+利用静止观察者 $u_{\mu} = (- \frac{1}{\sqrt{f}}, 0, 0, 0)$，以及光子四动量（在静止观测者系中）
+\[
+p^{\mu} = \begin{pmatrix}
+k \gamma (1 - \beta) \\
+0 \\
+0 \\
+k \gamma (1 - \beta)
+\end{pmatrix}
+\]
+所以在不同半径出的静止观测者测到的频率就满足（假设光子发射的位置为 $r_{0}$ ）
+\[
+\frac{\nu (r)}{\sqrt{1 - \frac{2m}{r}}} = \frac{\nu_{\rm em} \gamma (1 - \beta)}{\sqrt{1 - \frac{2m}{r_{0}}}}
+\]
+所以无穷远处满足
+\[
+\frac{\nu_{\infty}}{\nu_{\rm em}} = \frac{\gamma (1 - \beta)}{\sqrt{1 - \frac{2m}{r_{0}}}}
+\]
+原子共动系中的 $h_{\mathrm{P}}\nu_{\mathrm{em}}$、当地静止者测得的 $E_{\mathrm{stat}}$ 和守恒量 $\mathcal{E}$ 之间的关系是前两者对应的四动量之间满足洛伦兹变换
+\[
+\Lambda^{\mu} {}_{\nu} p_{\rm em}^{\nu}  = p_{\rm stat}^{\mu}
+\]
+也就是
+\[
+E_{\rm stat} = \frac{\gamma (1 - \beta) h_{\rm P} \nu_{\rm em}}{\sqrt{1 - \frac{2m}{r_{0}}}}
+\]
+而传播过程中真正的守恒量其实是
+\[
+\mathcal{E} = - p^{\mu} u_{\mu} = \frac{\gamma (1 - \beta) h_{\rm P} \nu_{\rm em}}{\sqrt{1 - \frac{2m}{r}}}
+\]
+
+
 
 
 (c) (6分) 原子改为从无穷远静止、径向自由下落。由 $u_t$ 守恒和 $u_\mu u^\mu=-1$ 求 $u^t$、$u^r$，以及当地静止者测得的 $\beta$。代入上一问，求在 $r_e$ 发射的向外径向光子的频率比。
+
+\[
+g_{tt} (u^{t})^{2} + g_{rr} (u^{r})^{2} = -1 \Rightarrow -f (u^{t})^{2} + \frac{(u^{r})^{2}}{f} = -1
+\]
+能量守恒意味着
+\[
+- f u^{t} = u_{t} = -1
+\]
+所以
+\[
+u^{t} = \frac{1}{f}, \quad u^{r} = - \sqrt{1 - f}
+\]
+当地静止观测者测得的 $\beta$ 为
+\[
+
+\]
+
 
 
 
@@ -912,6 +994,10 @@ E-\Omega_H L \ge 0.
 
 判断哪些候选值能代表有质量粒子，哪些具有负 $E$；写出此处负能所需的方位速度条件。解释负 $E$ 为何不表示当地仪器测得负能量。
 
+对于此 Kerr 黑洞而言，在目前参数定义下的度规可以写作
+\[
+
+\]
 
 
 (b) (6分) 另有三个拟议的内落粒子方案，粒子静质量均为 $\mu_p>0$，且 $p_{\hat\vartheta}=0$：
