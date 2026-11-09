@@ -1,37 +1,37 @@
 [
   {
     "title": "Gravitational Wave Astronomy Homework",
-    "desc": "Exercises on non-orthogonal coordinates, scalar field gradients, and Hessian",
+    "desc": "Homework on scalar fields, metrics, and covariant derivatives in non-orthogonal coordinates.",
     "tags": [
       "gravitational waves",
       "differential geometry",
-      "metric tensor"
+      "covariant derivative"
     ],
     "link": "/physics/Gravitational Wave Astronomy/Gravitational Wave Astronomy Homework"
   },
   {
-    "title": "Astrophysics Homework Solutions",
-    "desc": "Solutions covering hydrogen spectral lines, Sirius distance modulus, and Planck function limits",
+    "title": "Gravitational Wave Astronomy Notes",
+    "desc": "Lecture notes on gravitational waves, relativity, weak-field approximation, and detectors",
     "tags": [
-      "astrophysics",
-      "spectroscopy",
-      "stellar magnitudes"
+      "gravitational waves",
+      "general relativity",
+      "weak-field approximation"
     ],
-    "link": "/physics/Astrophysics/Astrophysics Homework"
+    "link": "/physics/Gravitational Wave Astronomy/Gravitational Wave Astronomy"
   },
   {
-    "title": "Astrophysics Lecture Notes",
-    "desc": "Notes on astronomical measurements, magnitudes, stellar spectra, and the Sun",
+    "title": "Black Holes and Compact Objects",
+    "desc": "Stellar structure, evolution, and compact remnants including black holes",
     "tags": [
       "astrophysics",
-      "stellar spectra",
-      "Hertzsprung-Russell diagram"
+      "stellar structure",
+      "black holes"
     ],
-    "link": "/physics/Astrophysics/Astrophysics Lecture Notes"
+    "link": "/physics/Astrophysics/Black Hole and Compact Objects"
   },
   {
     "title": "Black Hole and Compact Objects Homework",
-    "desc": "Problems on white dwarfs, p-p reactions, Gamow peak, and solar neutrino estimates.",
+    "desc": "Homework on white dwarfs, nuclear reaction rates, and solar neutrino estimates.",
     "tags": [
       "astrophysics",
       "white dwarfs",
@@ -40,17 +40,27 @@
     "link": "/physics/Astrophysics/Black Hole and Compact Objects Homework"
   },
   {
-    "title": "Black Holes and Compact Objects",
-    "desc": "Stellar structure, evolution, and compact remnants including black holes",
+    "title": "Astrophysics Homework Solutions",
+    "desc": "Solutions covering hydrogen spectral lines, Sirius distance modulus, and Planck function limits.",
     "tags": [
       "astrophysics",
-      "stellar evolution",
-      "black holes"
+      "spectroscopy",
+      "stellar luminosity"
     ],
-    "link": "/physics/Astrophysics/Black Hole and Compact Objects"
+    "link": "/physics/Astrophysics/Astrophysics Homework"
   },
   {
-    "title": "Feynman Lectures Vol 3 Homework",
+    "title": "Astrophysics Course Notes",
+    "desc": "Stellar parameters, magnitudes, spectra, HR diagram, and solar physics fundamentals.",
+    "tags": [
+      "astrophysics",
+      "stellar astronomy",
+      "magnitude"
+    ],
+    "link": "/physics/Astrophysics/Astrophysics"
+  },
+  {
+    "title": "Feynman Lectures Physics Homework Solutions",
     "desc": "Homework solutions on polarization and particle diffraction from Feynman Lectures",
     "tags": [
       "quantum mechanics",
@@ -71,17 +81,17 @@
   },
   {
     "title": "Atomic and Molecular Physics Homework",
-    "desc": "Hydrogen eigenfunction derivations and quantum mechanics homework problems",
+    "desc": "Hydrogen atom eigenfunction derivations and quantum mechanics homework solutions",
     "tags": [
       "atomic physics",
-      "hydrogen wavefunctions",
-      "quantum mechanics"
+      "hydrogen atom",
+      "eigenfunctions"
     ],
     "link": "/physics/Atomic and Molecular Physics/Atomic and Molecular Physics Homework"
   },
   {
     "title": "Electrodynamics Homework Vector Analysis",
-    "desc": "Proving vector identities using Levi-Civita symbols and Einstein summation convention.",
+    "desc": "Proving Levi-Civita identities and vector triple product formulas with Einstein summation.",
     "tags": [
       "electrodynamics",
       "vector analysis",
@@ -90,8 +100,8 @@
     "link": "/physics/Electrodynamics/Electrodynamics Homework"
   },
   {
-    "title": "Feynman Lectures Homework: Vector Analysis",
-    "desc": "Homework on exterior products, Hodge dual, and Einstein summation in higher dimensions.",
+    "title": "Feynman Lectures Physics Homework Set",
+    "desc": "Homework on exterior products, Hodge dual, and Einstein summation in vector analysis.",
     "tags": [
       "vector analysis",
       "exterior product",
@@ -101,7 +111,7 @@
   },
   {
     "title": "General Relativity Homework Solutions",
-    "desc": "Proves energy-momentum tensor is a tensor and derives geodesic equation.",
+    "desc": "Proofs of energy-momentum tensor covariance and geodesic equation derivation",
     "tags": [
       "general relativity",
       "energy-momentum tensor",
@@ -114,14 +124,14 @@
     "desc": "Solutions covering photon number, Sommerfeld quantization, and de Broglie wave velocities.",
     "tags": [
       "quantum mechanics",
-      "homework",
-      "wave function"
+      "Sommerfeld quantization",
+      "de Broglie waves"
     ],
     "link": "/physics/Quantum Physics/Quantum Mechanics/Quantum Mechanics Homework"
   },
   {
     "title": "Statistical Mechanics Homework Solutions",
-    "desc": "Thermodynamic equation of state and metal wire tension proofs",
+    "desc": "Proofs of thermodynamic equations of state and metal wire tension problems",
     "tags": [
       "statistical mechanics",
       "thermodynamics",
@@ -130,20 +140,10 @@
     "link": "/physics/Statistical Mechanics/Statistical Mechanics Homework"
   },
   {
-    "title": "Gravitational Wave Astronomy Notes",
-    "desc": "Relativity foundations, weak-field approximation, and gravitational wave solutions for GW astronomy.",
-    "tags": [
-      "gravitational waves",
-      "general relativity",
-      "weak-field approximation"
-    ],
-    "link": "/physics/Gravitational Wave Astronomy/Gravitational Wave Astronomy"
-  },
-  {
     "title": "Early Universe Thermal History",
-    "desc": "Timeline of inflation, reheating, neutrino decoupling, and Big Bang nucleosynthesis",
+    "desc": "Timeline of inflation, reheating, neutrino decoupling, and Big Bang nucleosynthesis.",
     "tags": [
-      "early universe",
+      "cosmology",
       "inflation",
       "neutrino decoupling"
     ],
@@ -151,7 +151,7 @@
   },
   {
     "title": "Interferometer Noise and Quantum Noise",
-    "desc": "Overview of interferometer noise sources including quantum, thermal, seismic, and residual gas noise.",
+    "desc": "Overview of Advanced LIGO noise sources including quantum, thermal, seismic, and residual gas noise.",
     "tags": [
       "quantum noise",
       "interferometer",
@@ -161,7 +161,7 @@
   },
   {
     "title": "Advanced Calculus Final Review Notes",
-    "desc": "Taylor's theorem with Peano, Lagrange, and Cauchy remainder forms",
+    "desc": "Taylor's theorem with Peano, Lagrange, and Cauchy remainder forms.",
     "tags": [
       "Taylor theorem",
       "remainder forms",
@@ -171,27 +171,27 @@
   },
   {
     "title": "Advanced Calculus Homework 10 Solutions",
-    "desc": "Surface and line integrals, Green's theorem, parametrization, and winding number computations.",
+    "desc": "Surface and line integrals solved via parametrization and Stokes theorem",
     "tags": [
       "surface integral",
       "line integral",
-      "Green's theorem"
+      "Stokes theorem"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 10"
   },
   {
     "title": "Advanced Calculus Homework 4 Solutions",
-    "desc": "Proofs on minimum existence, closed sets, and compactness in R2",
+    "desc": "Proofs on extrema, closed sets, and compactness in R2",
     "tags": [
       "advanced calculus",
       "compactness",
-      "continuity"
+      "extreme value theorem"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 4"
   },
   {
-    "title": "Advanced Calculus Homework 7 Solutions",
-    "desc": "Critical points and extrema analysis for multivariable functions using Hessian matrices",
+    "title": "Advanced Calculus Homework 7",
+    "desc": "Critical points and extrema of multivariable functions using Hessian analysis",
     "tags": [
       "multivariable calculus",
       "critical points",
@@ -201,7 +201,7 @@
   },
   {
     "title": "Advanced Calculus Homework 8 Solutions",
-    "desc": "Change of variables for double and triple integrals with Jacobians",
+    "desc": "Change of variables for double and triple integrals with Jacobian determinants.",
     "tags": [
       "change of variables",
       "Jacobian",
@@ -211,7 +211,7 @@
   },
   {
     "title": "Complex Analysis Homework 6 Solutions",
-    "desc": "Radius of convergence, series continuity, and trigonometric series sums",
+    "desc": "Radius of convergence, series continuity, and summation of trigonometric series",
     "tags": [
       "complex analysis",
       "power series",
@@ -221,7 +221,7 @@
   },
   {
     "title": "Complex Analysis Homework 9 Solutions",
-    "desc": "Analytic continuation proofs and singularities of power series",
+    "desc": "Analytic continuation proofs, series singularities, and lacunary function exercises.",
     "tags": [
       "complex analysis",
       "analytic continuation",
@@ -231,7 +231,7 @@
   },
   {
     "title": "HLX-1 and Intermediate-Mass Black Holes",
-    "desc": "Literature review of HLX-1 as an intermediate-mass black hole candidate",
+    "desc": "Literature review of HLX-1 as an intermediate-mass black hole candidate.",
     "tags": [
       "intermediate-mass black hole",
       "ultraluminous X-ray source",
@@ -260,18 +260,18 @@
     "link": "/physics/Astrophysics/X-ray and SMBH/X-ray and SMBH Research Note"
   },
   {
-    "title": "Gravitational Wave Detection and Data Analysis",
-    "desc": "Detector responses across frequency bands and interferometer principles for gravitational waves",
+    "title": "Gravitational Wave Detection Methods",
+    "desc": "Detector responses across frequency bands and interferometer working principles",
     "tags": [
       "gravitational waves",
       "interferometer",
-      "data analysis"
+      "LIGO"
     ],
     "link": "/physics/Gravitational Wave Astronomy/Gravitational Waves/Detecting Gravitiational Waves"
   },
   {
     "title": "Gravitational Wave Formation and Propagation",
-    "desc": "Linearized gravity derivation of gravitational wave generation and propagation",
+    "desc": "Linearized gravity derivation of gravitational wave metric perturbations and Einstein equations",
     "tags": [
       "gravitational waves",
       "linearized gravity",
@@ -281,17 +281,17 @@
   },
   {
     "title": "Qt Basics Guide",
-    "desc": "Introduction to Qt framework fundamentals for C++ development",
+    "desc": "Introduction to Qt framework fundamentals for C++ developers",
     "tags": [
       "Qt",
       "C++",
-      "GUI framework"
+      "GUI"
     ],
     "link": "/coding/C++/Qt/Qt Basics"
   },
   {
     "title": "C++ Programming Fundamentals",
-    "desc": "Overview of C++ basics including keywords, types, and control flow",
+    "desc": "Introduction to C++ basics, keywords, and program structure",
     "tags": [
       "C++",
       "keywords",
