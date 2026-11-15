@@ -112,3 +112,6 @@ scripts/replace.py
 .claudian/
 preamble.sty
 /zhihu
+
+# Local tool state (code graph index)
+.codegraph/
