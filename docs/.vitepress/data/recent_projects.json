@@ -1,15 +1,5 @@
 [
   {
-    "title": "Astrophysics Course Notes",
-    "desc": "Stellar parameters, magnitudes, spectra, HR diagram, and solar physics fundamentals.",
-    "tags": [
-      "astrophysics",
-      "stellar astronomy",
-      "magnitude"
-    ],
-    "link": "/physics/Astrophysics/Astrophysics"
-  },
-  {
     "title": "Gravitational Wave Astronomy Homework",
     "desc": "Homework on scalar fields, metrics, and covariant derivatives in non-orthogonal coordinates.",
     "tags": [
@@ -18,6 +8,26 @@
       "covariant derivative"
     ],
     "link": "/physics/Gravitational Wave Astronomy/Gravitational Wave Astronomy Homework"
+  },
+  {
+    "title": "Black Holes and Compact Objects",
+    "desc": "Stellar structure, evolution, and compact remnants including black holes.",
+    "tags": [
+      "astrophysics",
+      "stellar evolution",
+      "black holes"
+    ],
+    "link": "/physics/Astrophysics/Black Hole and Compact Objects"
+  },
+  {
+    "title": "Astrophysics Course Notes",
+    "desc": "Lecture notes on stellar parameters, magnitudes, spectra, and solar physics",
+    "tags": [
+      "astrophysics",
+      "stellar astronomy",
+      "magnitude"
+    ],
+    "link": "/physics/Astrophysics/Astrophysics"
   },
   {
     "title": "Gravitational Wave Astronomy Notes",
@@ -30,22 +40,12 @@
     "link": "/physics/Gravitational Wave Astronomy/Gravitational Wave Astronomy"
   },
   {
-    "title": "Black Holes and Compact Objects",
-    "desc": "Stellar structure, evolution, and compact remnants including black holes",
-    "tags": [
-      "astrophysics",
-      "stellar evolution",
-      "black holes"
-    ],
-    "link": "/physics/Astrophysics/Black Hole and Compact Objects"
-  },
-  {
     "title": "Black Hole and Compact Objects Homework",
     "desc": "Homework on white dwarfs, nuclear reaction rates, and solar neutrino estimates.",
     "tags": [
       "astrophysics",
-      "white dwarf",
-      "nuclear fusion"
+      "white dwarfs",
+      "nuclear reactions"
     ],
     "link": "/physics/Astrophysics/Black Hole and Compact Objects Homework"
   },
@@ -55,13 +55,13 @@
     "tags": [
       "astrophysics",
       "spectroscopy",
-      "stellar luminosity"
+      "stellar magnitudes"
     ],
     "link": "/physics/Astrophysics/Astrophysics Homework"
   },
   {
     "title": "Feynman Lectures Physics Homework Solutions",
-    "desc": "Homework solutions on polarization, photon probability, and particle diffraction interference",
+    "desc": "Homework solutions on polarization and particle diffraction from Feynman Lectures Volume 3",
     "tags": [
       "quantum mechanics",
       "polarization",
@@ -71,7 +71,7 @@
   },
   {
     "title": "Analytical Mechanics Homework Solutions",
-    "desc": "Virtual work principle problems on rods and spheres in equilibrium",
+    "desc": "Virtual work solutions for rod and sphere equilibrium problems",
     "tags": [
       "analytical mechanics",
       "virtual work",
@@ -95,12 +95,12 @@
     "tags": [
       "electrodynamics",
       "vector analysis",
-      "Einstein summation"
+      "Levi-Civita symbol"
     ],
     "link": "/physics/Electrodynamics/Electrodynamics Homework"
   },
   {
-    "title": "Feynman Lectures Physics Homework Exercises",
+    "title": "Feynman Lectures Physics Homework Set",
     "desc": "Homework on exterior products, Hodge dual, and Einstein summation in vector analysis.",
     "tags": [
       "exterior product",
@@ -121,7 +121,7 @@
   },
   {
     "title": "Quantum Mechanics Homework Solutions",
-    "desc": "Solutions covering photon number, infinite well, and de Broglie waves",
+    "desc": "Solutions covering photon number, Sommerfeld quantization, and de Broglie wave velocities.",
     "tags": [
       "quantum mechanics",
       "homework",
@@ -131,7 +131,7 @@
   },
   {
     "title": "Statistical Mechanics Homework Solutions",
-    "desc": "Thermodynamic equation of state and metal wire tension proofs",
+    "desc": "Proofs of thermodynamic equations of state and thermal stress problems",
     "tags": [
       "statistical mechanics",
       "thermodynamics",
@@ -164,14 +164,14 @@
     "desc": "Taylor's theorem with Peano, Lagrange, and Cauchy remainder forms explained.",
     "tags": [
       "Taylor theorem",
-      "remainder term",
+      "remainder forms",
       "advanced calculus"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (1) Final Review"
   },
   {
     "title": "Advanced Calculus Homework 10 Solutions",
-    "desc": "Surface and line integrals solved via parametrization and Green's theorem.",
+    "desc": "Surface and line integrals solved via parametrization and Green's theorem",
     "tags": [
       "surface integral",
       "line integral",
@@ -181,7 +181,7 @@
   },
   {
     "title": "Advanced Calculus Homework 4 Solutions",
-    "desc": "Proofs on minimum existence, closed unit circle, and extrema on compact sets.",
+    "desc": "Proofs on extrema, closed sets, and compactness in R2",
     "tags": [
       "advanced calculus",
       "compactness",
@@ -193,9 +193,9 @@
     "title": "Advanced Calculus Homework 7 Solutions",
     "desc": "Critical points and extrema analysis using Hessian matrices for multivariable functions",
     "tags": [
-      "advanced calculus",
       "critical points",
-      "Hessian matrix"
+      "Hessian matrix",
+      "multivariable calculus"
     ],
     "link": "/maths/Advanced Calculus/Advanced Calculus (2) Homework 7"
   },
@@ -211,7 +211,7 @@
   },
   {
     "title": "Complex Analysis Homework 6 Solutions",
-    "desc": "Radius of convergence, series continuity, and trigonometric series sums",
+    "desc": "Radius of convergence, series discontinuity, and trigonometric series sums",
     "tags": [
       "complex analysis",
       "power series",
@@ -231,7 +231,7 @@
   },
   {
     "title": "HLX-1 and Intermediate-Mass Black Holes",
-    "desc": "Literature review of HLX-1 as an intermediate-mass black hole candidate.",
+    "desc": "Literature review of HLX-1 as an intermediate-mass black hole candidate and ULX ambiguities.",
     "tags": [
       "intermediate-mass black hole",
       "ultraluminous X-ray source",
@@ -240,12 +240,12 @@
     "link": "/physics/Astrophysics/X-ray and SMBH/Literature Review"
   },
   {
-    "title": "Intermediate-Mass Black Hole Literature Notes",
-    "desc": "Notes on IMBH formation, seeding models, and dynamical search methods.",
+    "title": "Intermediate-Mass Black Hole Seeding Models",
+    "desc": "Notes on IMBH formation channels, seeding models, and dynamical search methods.",
     "tags": [
       "intermediate-mass black holes",
       "seeding models",
-      "X-ray sources"
+      "ultraluminous X-ray sources"
     ],
     "link": "/physics/Astrophysics/X-ray and SMBH/Notes from Literatures"
   },
@@ -261,7 +261,7 @@
   },
   {
     "title": "Gravitational Wave Detection Methods",
-    "desc": "Detector responses across frequency bands and interferometer light propagation analysis",
+    "desc": "Detector responses across frequency bands and interferometer working principles",
     "tags": [
       "gravitational waves",
       "interferometer",
@@ -295,7 +295,7 @@
     "tags": [
       "C++",
       "keywords",
-      "programming basics"
+      "data types"
     ],
     "link": "/coding/C++/C++ Grammar Basic"
   }
