@@ -26,7 +26,7 @@ $$
 \partial_{v} = \pdv{x}{v} \pdv{}{x} + \pdv{y}{v} \pdv{}{y}
 \]
 
-带入上述关系，得到
+代入上述关系，得到
 \[
 \partial_{u} = \partial_{x} + \kappa u \partial_{y}
 \]
@@ -90,7 +90,7 @@ g^{ab} = \begin{pmatrix}
 \[
 g_{uu, u} = 2 \kappa^{2} u, \quad g_{uv, u} = \kappa, \quad g_{vu, u} = \kappa
 \]
-带入得到联络系数的所有非零分量为
+代入得到联络系数的所有非零分量为
 \[
 \Gamma^{v} {}_{uu} = \kappa
 \]
@@ -100,9 +100,13 @@ g_{uu, u} = 2 \kappa^{2} u, \quad g_{uv, u} = \kappa, \quad g_{vu, u} = \kappa
 H_{ab} = \nabla_{a} \nabla_{b} F  \\ =
 \nabla_{a} (\partial_{b} F) = \partial_{a} \partial_{b} F - \Gamma^{c} {}_{ab} \partial_{c} F
 \]
-然后可以计算得到
+唯一的非零联络系数是 $\Gamma^{v}{}_{uu} = \kappa$，其余 $\Gamma^{u}{}_{ab} = \Gamma^{v}{}_{uv} = \Gamma^{v}{}_{vv} = 0$。于是
 \[
-H_{uu} = \kappa - \Gamma^{v} {}_{uu} \partial_{v} F = \kappa - \kappa = 0
+H_{uu} = \partial_{u}^{2} F - \Gamma^{v} {}_{uu} \partial_{v} F = \kappa - \kappa = 0,
+\]
+\[
+H_{uv} = \partial_{u}\partial_{v} F - \Gamma^{c}{}_{uv}\partial_{c}F = 0,\qquad
+H_{vv} = \partial_{v}^{2} F - \Gamma^{c}{}_{vv}\partial_{c}F = 0,
 \]
 所以 $H_{ab} = 0$，而
 \[
@@ -197,7 +201,7 @@ E(U) = T_{\mu \nu} U^{\mu} U^{\nu} = \epsilon \gamma^{2} + P \gamma^{2} v^{2}
 \[
 T = g_{\mu \nu} T^{\mu \nu} = 0
 \]
-带入爱因斯坦方程中
+代入爱因斯坦方程中
 \[
 R_{\mu \nu} = 8 \pi G (T_{\mu \nu} - \frac{T}{2} g_{\mu \nu}) = 8 \pi G T_{\mu \nu}
 \]
@@ -213,7 +217,7 @@ R_{\mu \nu} = 8 \pi G (T_{\mu \nu} - \frac{T}{2} g_{\mu \nu}) = 8 \pi G T_{\mu \
 \[
 k'^{\mu} = \Lambda^{\mu} {}_{\nu} k^{\nu}
 \]
-带入洛伦兹变换的具体形式就可以得到
+代入洛伦兹变换的具体形式就可以得到
 \[
 k'^{\mu} = \begin{pmatrix}
 \gamma (1 - v) \\
@@ -691,7 +695,7 @@ $L\omega \ll 1$ 保证相距 $L$ 的粒子处场的相位差可忽略，可在�
 
 考虑牛顿多方模型 $P = K\rho_0^{1+1/n}$，其中 $\rho_0$ 是静质量密度，$K>0$。可直接使用
 \[
-\rho_0 = \rho_{0c}\theta^n,\qquad r = \alpha\xi,\quad
+\rho_0 = \rho_{0c}\theta^n,\quad r = \alpha\xi,\quad
 \alpha^2 = \frac{(n+1)K}{4\pi G}\rho_{0c}^{1/n-1},\quad
 \frac{1}{\xi^2}\frac{\mathrm{d}}{\mathrm{d}\xi}\left(\xi^2\theta'\right) = -\theta^n,
 \]
@@ -719,7 +723,7 @@ $L\omega \ll 1$ 保证相距 $L$ 的粒子处场的相位差可忽略，可在�
 +\left(n c_4+\frac{n(n-1)}{2}c_2^2\right)\xi^4
 +O(\xi^5)
 \]
-得到 $n_{2} = -1/6, c_{3} = 0$，再利用
+得到 $c_{2} = -1/6,\ c_{3} = 0$，再在 $\xi^{2}$ 阶比较（$\xi^{4}$ 阶项由 $c_{6}$ 平衡，不决定 $c_{4}$），得到
 \[
 20 c_{4} = - n c_{2}
 \]
@@ -737,7 +741,7 @@ c_{4} = \frac{n}{120}
 \theta'(\xi) = - \frac{1}{3} \xi + \frac{n}{30} \xi^{3}
 \]
 
-在小的 $\xi_0>0$ 处，对于 $n$ 阶 LE 方程，我们根据上式设置数值初值为 $\theta(\xi_{0}), \theta’(\xi_{0})$ 即可。
+在小的 $\xi_0>0$ 处，对于 $n$ 阶 LE 方程，我们根据上式设置数值初值为 $\theta(\xi_{0}), \theta'(\xi_{0})$ 即可。
 
 
 
@@ -745,11 +749,12 @@ c_{4} = \frac{n}{120}
 
 平均密度为
 \[
-\bar{\rho} = \rho_{0c} \frac{\omega_{n}}{\xi_{1}^{3}}
+\bar{\rho} = \frac{M}{\frac{4\pi}{3}R^{3}} = \frac{3M}{4\pi R^{3}}
+= 3\rho_{0c}\frac{\omega_{n}}{\xi_{1}^{3}},
 \]
 所以平均密度与中心密度之比为
 \[
-\frac{\bar{\rho}}{\rho_{0c}}  =\frac{\omega_{n}}{\xi_{1}^{3}}
+\frac{\bar{\rho}}{\rho_{0c}} = \frac{3\omega_{n}}{\xi_{1}^{3}} .
 \]
 对于 $n= 1$ 的情形，由该解析解可以得到
 \[
@@ -757,13 +762,43 @@ c_{4} = \frac{n}{120}
 \]
 此时密度比为
 \[
-\frac{\bar{\rho}}{\rho_{0c}} = \frac{1}{\pi^{2}}
+\frac{\bar{\rho}}{\rho_{0c}} = \frac{3\omega_{1}}{\xi_{1}^{3}} = \frac{3}{\pi^{2}} \approx 0.3040
 \]
+
 
 
 (c) (5分) 独立积分 $n=3/2$ 的方程，画出 $\theta(\xi)$ 和 $\rho_0/\rho_{0c}$，报告 $\xi_1$、$\omega_{3/2}$ 及平均密度比。改变起始半径，并将步长减半或收紧误差容限，列表检查端点结果至少达到 $10^{-4}$ 的相对稳定性。说明零点定位方法；不得将讲义表中的数值当作边界条件，也不要把负的 $\theta$ 直接取 $3/2$ 次幂。
 
+程序见同目录下的 `lane_emden.py`
 
+把 Lane–Emden 方程写成一阶系统
+\[
+\theta' = u,\quad u' = -\theta^{n} - \frac{2}{\xi}u
+\]
+从小的 $\xi_0>0$ 出发，初值完全由 (a) 的中心展开 $\theta(\xi_0)$、$\theta'(\xi_0)$ 给出。采用的零点定位方法是利用 $\theta$ 的正负反转得知中间有一个零点，然后再利用 DOP853 中的插值方法得到零点的精确位置。取 $\xi_0 = 10^{-7}$、rtol $=10^{-11}$ 数值解得
+\[
+\xi_1 = 3.6537537362,\quad \omega_{3/2} = 2.7140551201,\quad
+\frac{\bar\rho}{\rho_{0c}} = \frac{3\omega_{3/2}}{\xi_1^{3}} = 0.1669252752
+\]
+端点稳定性列表如下（$\Delta$ 为相对 $\xi_0=10^{-7}$、rtol $=10^{-11}$ 一行的偏差）
+
+| $\xi_0$ | rtol | $\xi_1$ | $\omega_{3/2}$ | $\bar\rho/\rho_{0c}$ | $\Delta\xi_1/\xi_1$ | $\Delta\omega/\omega$ |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| $10^{-3}$ | $10^{-7}$ | 3.653753712085 | 2.714055116030 | 0.166925278253 | $6.60\times10^{-9}$ | $1.51\times10^{-9}$ |
+| $10^{-3}$ | $10^{-9}$ | 3.653753735698 | 2.714055119718 | 0.166925275243 | $1.41\times10^{-10}$ | $1.48\times10^{-10}$ |
+| $10^{-3}$ | $10^{-11}$ | 3.653753736213 | 2.714055120087 | 0.166925275195 | $2.33\times10^{-13}$ | $1.23\times10^{-11}$ |
+| $10^{-5}$ | $10^{-7}$ | 3.653753713708 | 2.714055161259 | 0.166925280812 | $6.16\times10^{-9}$ | $1.52\times10^{-8}$ |
+| $10^{-5}$ | $10^{-9}$ | 3.653753735746 | 2.714055121088 | 0.166925275321 | $1.28\times10^{-10}$ | $3.57\times10^{-10}$ |
+| $10^{-5}$ | $10^{-11}$ | 3.653753736212 | 2.714055120153 | 0.166925275199 | $5.42\times10^{-14}$ | $1.21\times10^{-11}$ |
+| $10^{-7}$ | $10^{-7}$ | 3.653753710627 | 2.714055207521 | 0.166925284080 | $7.00\times10^{-9}$ | $3.22\times10^{-8}$ |
+| $10^{-7}$ | $10^{-9}$ | 3.653753735482 | 2.714055123590 | 0.166925275511 | $2.00\times10^{-10}$ | $1.28\times10^{-9}$ |
+| $10^{-7}$ | $10^{-11}$ | 3.653753736212 | 2.714055120120 | 0.166925275197 | $0$ | $0$ |
+
+最大相对偏差为 $5.3\times10^{-8}$，远小于题目要求的 $10^{-4}$；收紧容限时 $\xi_1$ 稳定到 $10^{-12}$，$\xi_1$ 与 $\omega$ 的端点结果都是收敛的。
+
+计算结果画在下图
+
+![图 1　$n=3/2$ 的 Lane–Emden 解 $\theta(\xi)$ 与静质量密度分布 $\rho_0/\rho_{0c}=\theta^{3/2}$](./Gravitational%20Wave%20Astronomy%20Homework.assets/lane-emden-profiles.png)
 
 
 
@@ -773,13 +808,14 @@ c_{4} = \frac{n}{120}
 \[
 \mathrm{d}s^2 = -\left(\frac{1-m/(2\bar r)}{1+m/(2\bar r)}\right)^2\mathrm{d}t^2
 + \left(1+\frac{m}{2\bar r}\right)^4\left(\mathrm{d}\bar r^2 + \bar r^2\mathrm{d}\Omega^2\right),\quad
-r = \bar r\left(1+\frac{m}{2\bar r}\right)^2,
+r = \bar r\left(1+\frac{m}{2\bar r}\right)^2
 \]
 其中 $m>0$、$\bar r>0$，$\mathrm{d}\Omega^2 = \mathrm{d}\vartheta^2 + \sin^2\vartheta\,\mathrm{d}\phi^2$
 
 (a) (4分) 求给定 $r>2m$ 对应的两个正根 $\bar r_\pm$ 及其乘积，并求 $r(\bar r)$ 的最小值。两支是否分别对应黑洞外部和内部？说明该表达式为何不能直接覆盖 $r<2m$。
+由面积半径关系 $r = \bar r\left(1 + \frac{m}{2\bar r}\right)^2$，两边乘以 $\bar r$ 得到关于 $\bar r > 0$ 的二次方程
 \[
-\bar{r} \left(1 + \frac{m}{2 \bar{r}}\right)^{2} = 0
+\bar{r}^{2} + (m - r)\bar{r} + \frac{m^{2}}{4} = 0,
 \]
 两个正根及其乘积为
 \[
@@ -787,13 +823,15 @@ r = \bar r\left(1+\frac{m}{2\bar r}\right)^2,
 \]
 $r (\bar r)$ 的最小值出现在
 \[
-r' = \left(1 + \frac{m}{2 \bar{r}}\right)^{2} - \left(1 + \frac{m}{2 \bar{r}}\right) = 0
+\dv{r}{\bar r} = \left(1 + \frac{m}{2 \bar{r}}\right)^{2}
+- \frac{m}{\bar r}\left(1 + \frac{m}{2 \bar{r}}\right)
+= \left(1 + \frac{m}{2 \bar{r}}\right)\left(1 - \frac{m}{2 \bar{r}}\right) = 0
 \]
 处，也就是
 \[
 \bar r = \frac{m}{2} \Rightarrow r_{\rm min} = 2m
 \]
-所以对于所有正的 $\bar r$，只要 $\bar r \neq \frac{m}{2}$，就有 $r > 2m$ 成立。所以这个表达式只对应黑洞外部。
+所以对于所有正的 $\bar r$，只要 $\bar r \neq \frac{m}{2}$，就有 $r > 2m$ 成立，这个表达式只对应黑洞外部。两支并不分别对应黑洞外部与内部：$\bar r_+ \in (m/2, \infty)$ 与 $\bar r_- \in (0, m/2)$ 各自都给出 $r > 2m$，它们其实分别是从 $\bar r \to \infty$ 与 $\bar r \to 0$ 两个渐近区看到的同一个外区。
 
 
 
@@ -810,7 +848,7 @@ g_{tt} = -\left(\frac{1-m/(2\bar r)}{1+m/(2\bar r)}\right)^2  =- \left(\frac{1 -
 \[
 \dd{\sigma}^{2} = \left(1 + \frac{m}{2 \bar{r}}\right)^{4} \bar{r}^{2} \dd{\Omega}^{2} = r^{2} \dd{\Omega}^{2}
 \]
-对应着大圆周长 $2 \pi r$，所以这里的 $r$ 代表了几何量。但是
+对应着大圆周长 $2 \pi r$，所以这里的 $r$ 代表了几何量。这个度规的空间部分和平直时空是共形的，但是这并不足以说明空间平直：各向同性形式只说明空间度规与欧氏度规共形等价，没有办法同时把整个时空在非局域的意义下变换成 Minkowski 度规。
 
 
 
@@ -828,11 +866,12 @@ g_{tt} = -\left(\frac{1-m/(2\bar r)}{1+m/(2\bar r)}\right)^2  =- \left(\frac{1 -
 \]
 在当地静止观测者的参考系中，$\dd{\tau} = \left|\frac{1 - \frac{q}{2}}{1 + \frac{q}{2}} \right| \dd{t}$ ，光速测出来是 
 \[
-c_{\rm LIF} = \frac{(1 + \frac{q}{2})^{2} \dd{r}}{\left|\frac{1 - \frac{q}{2}}{1 + \frac{q}{2}} \right| \dd{t}} = 1
+c_{\rm LIF} = \frac{(1 + \frac{q}{2})^{2} \left|\dv{\bar r}{t}\right|}{\left|\frac{1 - \frac{q}{2}}{1 + \frac{q}{2}} \right|}
+= \frac{(1 + \frac{q}{2})^{2}}{\left|\frac{1 - \frac{q}{2}}{1 + \frac{q}{2}} \right|} \cdot \frac{\left|1 - \frac{q}{2}\right|}{(1 + \frac{q}{2})^{3}} = 1
 \]
 
 
-在接近 $\bar r=m/2$ 时坐标速率趋零的含义是在此处由于坐标定义的问题出现了坐标奇性，所以坐标速率会趋近于零。
+在接近 $\bar r = m/2$ 时坐标速率趋零的含义是：这里 $g_{tt} \to 0$、$g_{\bar r\bar r} \to \infty$，出现的是视界处的坐标奇性而非物理奇性。
 
 
 
@@ -870,20 +909,20 @@ M_\odot = 1.98847\times10^{30}\,\mathrm{kg}
 \[
 0 = - f \dd{t}^{2} + f^{-1} \dd{r}^{2}
 \]
-所以这些光子的 4-动量就是
+径向出射光子满足 $\dd r/\dd t = f$。取 $p_t = -k$（$k$ 即无穷远处测得的能量），则
 \[
-p^{\mu} = \begin{pmatrix}
-k \\
-k \\
-0 \\
-0
-\end{pmatrix}
+p^{\mu} = \left(\frac{k}{f},\ k,\ 0,\ 0\right), \quad
+p_{\mu} = \left(-k,\ \frac{k}{f},\ 0,\ 0\right)
 \]
-对于表面处的静止观察者 $u_{\mu} = (- \frac{1}{\sqrt{f}}, 0, 0, 0)$，这些光子的频率以及红移满足
+表面处的静止观察者 $u^{\mu} = (f^{-1/2}, 0, 0, 0)$ 测得的频率为
 \[
-\nu = \frac{\nu_{\infty}}{\sqrt{1 - \frac{2 M}{R}}}, \quad z = \frac{1}{\sqrt{1- \frac{2 M}{R}}} - 1
+\nu = -p_{\mu}u^{\mu} = \frac{k}{\sqrt{f}} = \frac{\nu_{\infty}}{\sqrt{1 - \frac{2m}{R}}}
 \]
-经过带入数据以及计算，得到对于这三种星体的红移以及弱场近似分别为
+所以红移为
+\[
+z = \frac{\nu_{\rm em}}{\nu_\infty} - 1 = \frac{1}{\sqrt{1 - \frac{2m}{R}}} - 1 
+\]
+经过代入数据以及计算，得到对于这三种星体的红移以及弱场近似分别为
 \[
 z_{\rm E} \approx 6.961311318\times 10^{-10} \\
 z_{\odot} \approx 2.122573512\times 10^{-6} \\
@@ -896,50 +935,46 @@ z_{\rm NS} \approx 0.2351858005
 \frac{G M_{\rm NS}}{R_{\rm NS} c^{2}} \approx 0.1722781306
 \]
 
-中子星的弱场近似的相对误差为
+中子星弱场近似的相对误差为
 \[
-\frac{0.2351858005 - 0.1722781306}{0.1722781306} \approx 36.51518024\%
+\frac{z_{\rm NS} - GM_{\rm NS}/(R_{\rm NS}c^{2})}{z_{\rm NS}}
+\approx \frac{0.2351858005 - 0.1722781306}{0.2351858005} \approx 26.7481\%,
 \]
+
 
 
 (b) (6分) 在发射事件处，原子相对当地静止标架以速率 $0\le\beta<1$ 向内运动，发射一个向外传播的径向光子。可写为
 \[
-e_{\hat 0} = f^{-1/2}\partial_t,\qquad
-e_{\hat r} = f^{1/2}\partial_r,\qquad
-u = \gamma\left(e_{\hat 0}-\beta e_{\hat r}\right),\qquad
-p = E_{\mathrm{stat}}\left(e_{\hat 0}+e_{\hat r}\right),
+e_{\hat 0} = f^{-1/2}\partial_t,\quad
+e_{\hat r} = f^{1/2}\partial_r,\quad
+u = \gamma\left(e_{\hat 0}-\beta e_{\hat r}\right),\quad
+p = E_{\mathrm{stat}}\left(e_{\hat 0}+e_{\hat r}\right)
 \]
 其中 $\gamma=(1-\beta^2)^{-1/2}$。用内积求 $\nu_\infty/\nu_{\mathrm{em}}$，并区分原子共动系中的 $h_{\mathrm{P}}\nu_{\mathrm{em}}$、当地静止者测得的 $E_{\mathrm{stat}}$ 和守恒量 $\mathcal{E}$。忽略发射反冲及原子对几何的影响。
 
-利用静止观察者 $u_{\mu} = (- \frac{1}{\sqrt{f}}, 0, 0, 0)$，以及光子四动量（在静止观测者系中）
+在发射事件处用局部静止标架 $\{e_{\hat 0}, e_{\hat r}\}$，光子沿 $+r$ 方向传播，故 $p = E_{\rm stat}(e_{\hat 0} + e_{\hat r})$。由 $e_{\hat 0}\cdot e_{\hat 0} = -1$、$e_{\hat r}\cdot e_{\hat r} = 1$、$e_{\hat 0}\cdot e_{\hat r} = 0$ 可得
 \[
-p^{\mu} = \begin{pmatrix}
-k \gamma (1 - \beta) \\
-0 \\
-0 \\
-k \gamma (1 - \beta)
-\end{pmatrix}
+p\cdot e_{\hat 0} = -E_{\rm stat}, \quad p\cdot e_{\hat r} = E_{\rm stat}
 \]
-所以在不同半径出的静止观测者测到的频率就满足（假设光子发射的位置为 $r_{0}$ ）
+原子共动系中测得的频率为
 \[
-\frac{\nu (r)}{\sqrt{1 - \frac{2m}{r}}} = \frac{\nu_{\rm em} \gamma (1 - \beta)}{\sqrt{1 - \frac{2m}{r_{0}}}}
+h_{\rm P}\nu_{\rm em} = -p\cdot u = -E_{\rm stat}\,\gamma\left(e_{\hat 0} - \beta e_{\hat r}\right)\cdot\left(e_{\hat 0} + e_{\hat r}\right)
+= E_{\rm stat}\,\gamma(1 + \beta),
 \]
-所以无穷远处满足
+即
 \[
-\frac{\nu_{\infty}}{\nu_{\rm em}} = \frac{\gamma (1 - \beta)}{\sqrt{1 - \frac{2m}{r_{0}}}}
+E_{\rm stat} = \frac{h_{\rm P}\nu_{\rm em}}{\gamma(1+\beta)} = \gamma(1-\beta)\,h_{\rm P}\nu_{\rm em}
 \]
-原子共动系中的 $h_{\mathrm{P}}\nu_{\mathrm{em}}$、当地静止者测得的 $E_{\mathrm{stat}}$ 和守恒量 $\mathcal{E}$ 之间的关系是前两者对应的四动量之间满足洛伦兹变换
+另一方面，$p_t$ 沿测地线守恒。在发射处 $p_t = g_{tt}p^t = -f\,E_{\rm stat}/\sqrt{f} = -E_{\rm stat}\sqrt{f}$，所以
 \[
-\Lambda^{\mu} {}_{\nu} p_{\rm em}^{\nu}  = p_{\rm stat}^{\mu}
+\mathcal{E} = h_{\rm P}\nu_\infty = E_{\rm stat}\sqrt{f(r_0)} = \sqrt{f(r_0)}\,\gamma(1-\beta)\,h_{\rm P}\nu_{\rm em}
 \]
-也就是
+因此
 \[
-E_{\rm stat} = \frac{\gamma (1 - \beta) h_{\rm P} \nu_{\rm em}}{\sqrt{1 - \frac{2m}{r_{0}}}}
+\frac{\nu_{\infty}}{\nu_{\rm em}} = \sqrt{f(r_0)}\,\gamma(1-\beta),
+\quad f(r_0) = 1 - \frac{2m}{r_0}
 \]
-而传播过程中真正的守恒量其实是
-\[
-\mathcal{E} = - p^{\mu} u_{\mu} = \frac{\gamma (1 - \beta) h_{\rm P} \nu_{\rm em}}{\sqrt{1 - \frac{2m}{r}}}
-\]
+三个量的含义不同：$h_{\rm P}\nu_{\rm em}$ 是原子共动系中的能量；$E_{\rm stat} = \gamma(1-\beta)h_{\rm P}\nu_{\rm em}$ 是当地静止观察者测得的能量；$\mathcal{E} = \sqrt{f(r_0)}\,E_{\rm stat}$ 是沿光子世界线守恒、等于无穷远处能量的 Killing 能量。
 
 
 
@@ -959,13 +994,45 @@ u^{t} = \frac{1}{f}, \quad u^{r} = - \sqrt{1 - f}
 \]
 当地静止观测者测得的 $\beta$ 为
 \[
-
+\beta = -\frac{u^{r}}{u^{t}} \cdot \frac{1}{f} = \sqrt{1 - f}
 \]
-
+这里 $\gamma = (1-\beta^{2})^{-1/2} = f^{-1/2}$。把 $\beta = \sqrt{1-f(r_e)}$ 代入上一问的结果
+\[
+\frac{\nu_{\infty}}{\nu_{\rm em}} = \sqrt{f(r_{e})}\,\gamma(1-\beta)
+= \sqrt{f(r_e)}\cdot\frac{1}{\sqrt{f(r_e)}}\left(1-\sqrt{1-f(r_e)}\right)
+= 1 - \sqrt{1 - f(r_{e})}
+\]
+其中 $f(r_{e}) = 1 - \frac{2m}{r_{e}}$。
 
 
 
 (d) (4分) 在 $r_e=8m$ 比较静态原子与上述自由下落原子的频率比和红移。再以黑洞外部为背景，在 $r_e\to2m^+$ 时比较两种频率比随 $f(r_e)$ 趋零的阶次，解释运动为何会改变红移。这里的静态情形取自一族 $r_e>2m$ 的悬停者，并不假定视界上存在静止观察者。
+
+在 $r_{e} = 8m$ 处 $f(r_e) = 1 - 2m/r_e = 3/4$。静止原子的频率比为
+\[
+\frac{\nu_{\infty}}{\nu_{\rm em}} = \sqrt{f (r_{e})} = \frac{\sqrt{3}}{2}
+\]
+红移为
+\[
+z_{\rm stat} = \frac{\nu_{\mathrm{em}}}{\nu_\infty}-1 = \frac{2 \sqrt{3}}{3} - 1
+\]
+自由下落的原子在该处 $\beta = \sqrt{1-f} = 1/2$，频率比为
+\[
+\frac{\nu_{\infty}}{\nu_{\rm em}} = 1 - \sqrt{1 - f(r_{e})} = 1 - \beta = \frac{1}{2}
+\]
+红移为
+\[
+z_{\rm fall} = \frac{\nu_{\mathrm{em}}}{\nu_\infty}-1 = 1
+\]
+以黑洞外部为背景，在 $r_e\to2m^+$（$f(r_e)\to0^+$）时两种频率比都趋零，但阶次不同：
+\[
+\left. \frac{\nu_{\infty}}{\nu_{\rm em}} \right|_{\rm stat} = \sqrt{f (r_{e})} \sim f(r_{e})^{1/2}
+\]
+\[
+\left. \frac{\nu_{\infty}}{\nu_{\rm em}} \right|_{\rm fall}
+= \frac{f(r_{e})}{1 + \sqrt{1 - f(r_{e})}} \sim \frac{f(r_{e})}{2} + \frac{f(r_{e})^{2}}{8} + \cdots \sim f(r_{e})
+\]
+运动之所以会改变红移是因为自由下落的原子相对当地静止标架以 $\beta$ 向内运动，向外发射的光子在这一步已经多了一个 Doppler 红移因子 $\gamma(1-\beta) = \sqrt{(1-\beta)/(1+\beta)}$，它会与引力红移因子 $\sqrt{f}$ 相乘。
 
 
 
@@ -973,8 +1040,8 @@ u^{t} = \frac{1}{f}, \quad u^{r} = - \sqrt{1 - f}
 
 考虑 Kerr 黑洞，$\chi = J/(GM^2)=0.8$、$m=GM$。在赤道面 $r=1.8m$ 处，已知零角动量观察者（ZAMO）的参数
 \[
-\alpha = 0.2469563,\qquad m\omega = 0.1936108,\qquad
-\varpi/m = 2.1426878,\qquad m\Omega_H = 0.25,
+\alpha = 0.2469563,\quad m\omega = 0.1936108,\quad
+\varpi/m = 2.1426878,\quad m\Omega_H = 0.25
 \]
 其中 $\alpha$ 为 lapse，$\omega$ 为拖曳角速度，$\varpi=\sqrt{g_{\phi\phi}}$。此处位于外视界 $r_+=1.6m$ 与赤道静止极限面 $r=2m$ 之间。可使用
 \[
@@ -996,17 +1063,87 @@ E-\Omega_H L \ge 0.
 
 对于此 Kerr 黑洞而言，在目前参数定义下的度规可以写作
 \[
-
+\dd{s}^{2}=-\alpha^{2}\dd{t}^{2}+\frac{\rho^{2}}{\Delta} \dd{r}^{2}+ \rho^{2}\dd{\theta}^{2}+\varpi^{2}(\dd{\varphi} - \omega \dd{t} )^{2}
 \]
+
+其中
+$$
+\Delta=r^{2}-2G M r+a^{2},\quad \rho^{2}=r^{2}+a^{2}\cos^{2}\theta,\\
+\Sigma^{2}=(r^{2}+a^{2})^{2}-a^{2}\Delta\sin^{2}\theta,\\
+\alpha^{2}=\frac{\rho^{2}\Delta}{\Sigma^{2}},\quad \varpi^{2}=\frac{\Sigma^{2}\sin^{2}\theta}{\rho^{2}},\quad \omega =\frac{2G M a r}{\Sigma^{2}}
+$$
+
+为了判断这些粒子的能量，我们定义局部正交的一组基（也即常见的ZAMO）为
+\[
+e_{\hat{0}} = \alpha^{-1} (\partial_{t} + \omega \partial_{\varphi}), \quad e_{\hat{1}} = \frac{\sqrt{\Delta}}{\rho} \partial_{r}, \quad e_{\hat{2}} = \frac{1}{\rho} \partial_{\theta}, \quad e_{\hat{3}} = \frac{1}{\varpi} \partial_{\varphi}
+\]
+所以在 ZAMO 测出的能量和由 Killing 矢量之间定义的能量的关系是
+\[
+E = - p_{t} = \alpha E_{\mathrm{\rm loc}}+ \omega \varpi p_{\hat{\varphi}} = \alpha \gamma + \omega \varpi \gamma v_{\hat{\varphi}}
+\]
+不妨假设粒子均具有单位质量，代入数据得到
+
+|      | $v_{\hat r}$ | $v_{\hat\vartheta}$ | $v_{\hat\phi}$ | $E_{\rm ZAMO}$ |    $E$    |
+| :--: | :----------: | :-----------------: | :------------: | :------------: | :-------: |
+|  A   |    $-0.2$    |         $0$         |     $-0.8$     |    $1.7678$    | $−0.1501$ |
+|  B   |    $-0.2$    |         $0$         |     $-0.5$     |    $1.1868$    | $0.0469$  |
+|  C   |    $-0.7$    |         $0$         |     $-0.8$     |   $−2.7735i$   | $0.2355i$ |
+
+从计算结果可以看出粒子 A 和 B 的数据可以表示有质量粒子，B 为正能， A 为负能。负能所需的方位速度条件是
+\[
+v_{\hat{\varphi}} < - \frac{\alpha}{\omega \varpi}
+\]
+代入位置以及黑洞的参数，得到对于速度的限制就是
+\[
+v_{\hat{\varphi}} < -0.5953
+\]
+负 $E$ 不表示当地仪器测得负能量，在 ergosphere 内 $\xi=\partial_t$ 已经变成类空矢量，$E=-p\cdot\xi$ 不再是任何观察者测得的能量；而对任意未来指向的类时观察者 $u$，$E_{\rm loc} = -p\cdot u > 0$ 恒成立；负 $E$ 只是“相对于 $\partial_t$”定义的量，这也是必须用 ZAMO 来定义当地能量的原因。
+
 
 
 (b) (6分) 另有三个拟议的内落粒子方案，粒子静质量均为 $\mu_p>0$，且 $p_{\hat\vartheta}=0$：
 \[
-(E,L) = (-\mu_p,-3m\mu_p),\qquad (-\mu_p,-5m\mu_p),\qquad (-\mu_p,-15m\mu_p).
+(E,L) = (-\mu_p,-3m\mu_p),\quad (-\mu_p,-5m\mu_p),\quad (-\mu_p,-15m\mu_p)
 \]
 逐一检查视界必要条件、该事件处的未来指向条件 $E_{\mathrm{loc}}>0$，以及质壳条件是否允许实数的内向 $p_{\hat r}$。解释为什么通过这些检查，仍未完成一个可实现的 Penrose 分裂过程的论证。
 
+先在给定事件处把三个条件写成可代入的形式。由题给参数
+\[
+\alpha = 0.2469563,\quad m\omega = 0.1936108,\quad \frac{\varpi}{m} = 2.1426878,\quad m\Omega_H = 0.25
+\]
+有 $\omega\varpi = 0.4148475$，于是
+\[
+E - \Omega_H L = E - (m\Omega_H)\frac{L}{m},\quad
+E_{\rm loc} = \frac{E - \omega L}{\alpha},\quad
+p_{\hat\varphi} = \frac{L}{\varpi}
+\]
+质壳条件为
+\[
+-E_{\rm loc}^{2} + p_{\hat r}^{2} + p_{\hat\varphi}^{2} = -\mu_p^{2}
+\ \Longrightarrow\
+p_{\hat r}^{2} = E_{\rm loc}^{2} - \frac{L^{2}}{\varpi^{2}} - \mu_p^{2}
+\]
+逐一代入三个方案，得到
 
+| 方案 | $(E,\,L)$ | $(E-\Omega_H L)/\mu_p$ | $E_{\rm loc}/\mu_p$ | $p_{\hat r}^{2}/\mu_p^{2}$ | 结论 |
+|:---:|:---:|:---:|:---:|:---:|:--:|
+| (1) | $(-\mu_p,\,-3m\mu_p)$ | $-0.25$ | $-1.6973$ | $<0$ | 视界判据、未来指向、质壳都不满足 |
+| (2) | $(-\mu_p,\,-5m\mu_p)$ | $+0.25$ | $-0.1294$ | $<0$ | 只满足视界判据，非未来指向 |
+| (3) | $(-\mu_p,\,-15m\mu_p)$ | $+2.75$ | $7.7105$ | $9.4444$ | 三条全部满足，$p_{\hat r} = \pm 3.073\,\mu_p$ |
+
+只有第三个方案三条都通过：$E-\Omega_H L = 2.75\mu_p > 0$、$E_{\rm loc} = 7.71\mu_p > 0$、$p_{\hat r} = -3.073\mu_p$ 为实数且内向，即它确实是该事件处一个允许的、向内运动的负能粒子四动量。
+
+但这些检查只说明“该事件处存在一个具有上述 $(E,L)$ 的单粒子四动量”，并不构成一个可实现的 Penrose 分裂过程的论证，原因是：
+
+1. 这三条都是必要条件而不是充分条件。完整的 Penrose 过程还需要一个母粒子带着自己的 $(E_0, L_0)$ 沿未来指向的类时测地线到达同一事件，并在此分裂。四动量守恒要求
+   \[
+   E_0 = E_1 + E_2,\qquad L_0 = L_1 + L_2,\qquad p_{0\hat\theta} = p_{1\hat\theta} + p_{2\hat\theta},
+   \]
+   另一子粒子同样要满足未来指向与质壳条件。题目只给了其中一个子粒子，不知道分裂之后的另一个粒子是不是物理允许的。
+
+2. 即使局部允许，负能子粒子还必须沿测地线真正落入并穿过视界。$E-\Omega_H L\ge0$ 只是穿过视界的必要条件，它在该事件处成立并不意味着轨迹上处处有效势允许。正能子粒子也必须真正逃到无穷远，这同样需要对完整测地线作全局分析。
+
+   
 
 **以下为选做（共 10分）：分裂反冲是否足够大？**
 
@@ -1014,43 +1151,189 @@ E-\Omega_H L \ge 0.
 
 (c) (6分) 用局部四动量守恒求子粒子 Killing 能量的允许范围，以及出现负能子粒子所需的 $v_*$ 与 $\mu_d/\mu$ 条件。提示：把 $\xi$ 分解成平行和正交于母粒子四速度的两部分。
 
+设母粒子四速度为 $u_0 = p_0/\mu$。由 $E_0 = -p_0\cdot\xi = \mu$、$L_0 = p_0\cdot\partial_\phi = 0$ 得
+\[
+\xi\cdot u_0 = -1, \quad u_0^{2} = -1
+\]
+把 $\xi$ 沿 $u_0$ 分解为平行和正交两部分
+\[
+\xi = \xi_{\parallel} + \eta,\quad
+\xi_{\parallel} = \frac{\xi\cdot u_0}{u_0^{2}}\,u_0 = u_0,\quad
+\eta = \xi - u_0
+\]
+则 $\eta\cdot u_0 = \xi\cdot u_0 - u_0^{2} = 0$，且
+\[
+\eta^{2} = \xi^{2} - 2\,\xi\cdot u_0 + u_0^{2} = \frac{1}{9} + 2 - 1 = \frac{10}{9}
+\]
+在母粒子瞬时静止系中，两个子粒子各自静质量为 $\mu_d$、速率为 $v_*$，四动量守恒给出 $p_\pm = \frac{1}{2}p_0 \pm q$，其中 $q\cdot u_0 = 0$，$|q| = \mu_d\gamma_* v_* = \frac{\mu}{2}v_*$，所以子粒子的 Killing 能量为
+\[
+E_{\pm} = -p_\pm\cdot\xi = -\frac{1}{2}p_0\cdot\xi \mp q\cdot\xi
+= \frac{\mu}{2} \mp q\cdot\eta
+\]
+由 $|q\cdot\eta| \le |q|\,|\eta|$ ，得到 Killing 能量的允许范围是
+\[
+E_{\pm} \in \left[\,\mu\left(\frac{1}{2} - \frac{\sqrt{10}}{6}v_*\right),\ \mu\left(\frac{1}{2} + \frac{\sqrt{10}}{6}v_*\right)\right]
+\]
+出现负能子粒子要求下限小于零
+\[
+\frac{1}{2} - \frac{\sqrt{10}}{6}v_* < 0
+\Rightarrow
+v_* > \frac{3}{\sqrt{10}} \approx 0.9487
+\]
+再由质壳关系 $\mu = 2\mu_d\gamma_*$，$v_* > 3/\sqrt{10}$ 等价于 $\gamma_* > \sqrt{10}$，即
+\[
+\frac{\mu_d}{\mu} = \frac{1}{2\gamma_*} < \frac{1}{2\sqrt{10}} \approx 0.1581
+\]
+只有在子粒子质量足够小（$\mu_d/\mu \lesssim 0.158$）且其相对速率足够接近光速（$v_* > 0.9487$）时，才可能出现负 Killing 能量的子粒子。
+
 
 
 (d) (4分) 判断 $\mu_d=0.2\mu$ 时能否产生负能子粒子。再求 $\mu_d=0$ 极限下另一粒子 Killing 能量的最大局部运动学值，并说明它为何尚不能直接视为逃到无穷远处的可实现能量增益。
 
+当 $\mu_d = 0.2\mu$ 时，由 $\mu = 2\mu_d\gamma_*$ 得 $\gamma_* = 2.5$，于是 $v_* = \sqrt{1 - 1/\gamma_*^{2}} = \sqrt{0.84} \approx 0.9165$，这小于阈值 $3/\sqrt{10} \approx 0.9487$，故
+\[
+E_{\min} = \mu\left(\frac{1}{2} - \frac{\sqrt{10}}{6}\times 0.9165\right) \approx 0.0170\,\mu > 0
+\]
+即 $\mu_d = 0.2\mu$ 时不能产生负能子粒子。
 
+当 $\mu_d\to0$ 时 $\gamma_*\to\infty$、$v_*\to1$，另一粒子 Killing 能量的最大局部运动学值为
+\[
+E_{\max} = \mu\left(\frac{1}{2} + \frac{\sqrt{10}}{6}\right) \approx 1.0270\,\mu
+\]
+这个数还不能直接看作逃到无穷远的可实现能量增益，原因有
+
+1.  不知道这个粒子是否真的能逃逸，因为这个粒子带有角动量，必须越过有效势的离心势垒。
+
+2.  不知道负能子粒子能否真正穿过视界，还需满足视界处的必要条件 $E_- - \Omega_H L_- \ge 0$；局部允许的负 Killing 能量并不保证这一条，若它不能落入视界，就无法从黑洞提取能量。
+
+    
 
 ### TOV 数值模型与状态方程的有效范围
 
 本题单独取 $G=c=1$，长度单位为 km。$\varepsilon$ 表示包括静质量能与内能的总能量密度，$P$ 为压强，$m_\star(r)$ 为包围的几何质量。采用玩具状态方程
 \[
-P = K\varepsilon^2,\qquad K = 140\ \mathrm{km^2},
+P = K\varepsilon^2,\quad K = 140\ \mathrm{km^2},
 \]
 以及两组中心条件，其给定的 cgs 密度均表示 $\rho_E = \varepsilon_{\mathrm{phys}}/c^2$：
 \[
-A:\ \rho_{E,c} = 2.5\times10^{15}\ \mathrm{g\,cm^{-3}},\qquad
-B:\ \rho_{E,c} = 2.5\times10^{16}\ \mathrm{g\,cm^{-3}}.
+A: \rho_{E,c} = 2.5\times10^{15}\ \mathrm{g\,cm^{-3}},\quad
+B: \rho_{E,c} = 2.5\times10^{16}\ \mathrm{g\,cm^{-3}}
 \]
 注意，$P=K\varepsilon^2$ 与用静质量密度写出的 $P=K\rho_0^2$ 是不同的模型，不可在数值积分中互换。结构方程为
 \[
-\frac{\mathrm{d}m_\star}{\mathrm{d}r} = 4\pi r^2\varepsilon,\qquad
+\frac{\mathrm{d}m_\star}{\mathrm{d}r} = 4\pi r^2\varepsilon,\quad
 \frac{\mathrm{d}P}{\mathrm{d}r} = -\frac{(\varepsilon+P)(m_\star+4\pi r^3P)}{r(r-2m_\star)}.
 \]
 可引用讲义的中心展开；从足够小的 $r_0>0$ 出发，寻找第一次 $P(R)=0$ 的表面。记 $\mathcal{M}=m_\star(R)$，物理质量为 $M_{\mathrm{phys}}=c^2\mathcal{M}/G$。可取 $GM_\odot/c^2=1.476670$ km，其余常数见第 3 题。
 
 (a) (4分) 从 SI 或 cgs 单位推导 $\rho_E$ 到 $\varepsilon$ [km$^{-2}$] 的换算，计算两组 $\varepsilon_c$ 和 $P_c$。写出中心初值的正则展开，并说明实际采用的 $r_0$ 与精度。
 
+在几何单位制 $G=c=1$ 中，能量密度以长度倒数平方为单位。物理能量密度为 $\varepsilon_{\rm phys} = \rho_E c^{2}$，即
+\[
+\varepsilon = \frac{G\varepsilon_{\rm phys}}{c^{4}} = \frac{G}{c^{2}}\,\rho_E ,
+\quad \frac{G}{c^{2}} = 7.42616\times10^{-28}\ \mathrm{m\,kg^{-1}}
+\]
+换成 km 单位
+\[
+\varepsilon\,[\mathrm{km^{-2}}] = 10^{6}\,\frac{G}{c^{2}}\,\rho_E\,[\mathrm{kg\,m^{-3}}]
+= 7.42616\times10^{-19}\,\rho_E\,[\mathrm{g \cdot cm^{-3}}]
+\]
+于是
+
+| 模型 | $\rho_{E,c}$ [g cm$^{-3}$] | $\varepsilon_c$ [km$^{-2}$] | $P_c = K\varepsilon_c^{2}$ [km$^{-2}$] |
+|:---:|:---:|:---:|:---:|
+| A | $2.5\times10^{15}$ | $1.856540\times10^{-3}$ | $4.825437\times10^{-4}$ |
+| B | $2.5\times10^{16}$ | $1.856540\times10^{-2}$ | $4.825437\times10^{-2}$ |
+
+中心正则展开：$r\to0$ 时 $m_\star = O(r^{3})$，TOV 方程给出
+\[
+m_\star(r) = \frac{4\pi}{3}\varepsilon_c r^{3} + O(r^{5})
+\]
+\[
+\varepsilon(r) = \varepsilon_c - \frac{\pi(\varepsilon_c+P_c)\left(\dfrac{\varepsilon_c}{3}+P_c\right)}{K\varepsilon_c}\,r^{2} + O(r^{4}),
+\quad
+P(r) = P_c - 2\pi(\varepsilon_c+P_c)\left(\frac{\varepsilon_c}{3}+P_c\right)r^{2} + O(r^{4})
+\]
+其中第二式由 $P'$ 的中心展开与 $\dd P/\dd\varepsilon = 2K\varepsilon$ 得到。实际取 $r_0 = 10^{-6}$ km，程序从 $r_0$ 出发用 DOP853 积分，rtol $=10^{-10}$，atol 取 $10^{-16}$（$m_\star$）与 $10^{-22}$（$\varepsilon$）。
+
 
 
 (b) (8分) 分别积分两个模型，报告 $R$、$M_{\mathrm{phys}}/M_\odot$ 和紧致度 $\mathcal{M}/R$，并画出 $\varepsilon(r)/\varepsilon_c$、$P(r)/P_c$ 及 $m_\star(r)/\mathcal{M}$。检查内部 $r>2m_\star(r)$ 和压强向外递减，说明表面的插值或事件定位方法。不能仅把最后一个正压网格点当作表面。
+
+程序见同目录下的 `tov.py`。积分变量取 $(m_\star,\varepsilon)$，计算得到
+
+| 模型 | $R$ [km] | $\mathcal{M}$ [km] | $M_{\rm phys}/M_\odot$ | 紧致度 $\mathcal{M}/R$ |
+|:---:|:---:|:---:|:---:|:---:|
+| A | 10.1024 | 2.2767 | 1.5418 | 0.2254 |
+| B | 6.0632 | 1.8760 | 1.2704 | 0.3094 |
+
+表面定位的方法是把 $\varepsilon = 0$ 设为 terminal event（$direction=-1$），积分在第一次穿过零时停止，半径由输出在最后一步内利用 DOP853 的插值给出，再在同一值上取 $\mathcal{M}=m_\star(R)$。
+
+内部检查：两个模型在 $0<r<R$ 内都有 $r-2m_\star>0$，$\dd P/\dd r<0$、$\dd m_\star/\dd r>0$ 在整个内部成立。计算结果见下图
+
+![图 2　两模型的 $\varepsilon(r)/\varepsilon_c$、$P(r)/P_c$ 与 $m_\star(r)/\mathcal{M}$](./Gravitational%20Wave%20Astronomy%20Homework.assets/tov-profiles.png)
+
+三条曲线都在各自的 $R$ 处终止。模型 B 的中心密度高 10 倍，半径更小，引力质量略低。
 
 
 
 (c) (4分) 将步长减半或误差容限收紧，列表展示 $R$ 与 $\mathcal{M}$ 的相对变化均小于 $10^{-3}$；另改变 $r_0$ 检查起点影响。对于此状态方程，压强在表面趋零较平缓；可以推导并积分 $\mathrm{d}\varepsilon/\mathrm{d}r$，用 $\varepsilon=0$ 定位表面。
 
+由 $P = K\varepsilon^{2}$ 得 $\dd P/\dd\varepsilon = 2K\varepsilon$。把 TOV 压强方程除以 $2K\varepsilon$，得到直接关于 $\varepsilon$ 的正则方程
+\[
+\frac{\dd\varepsilon}{\dd r}
+= -\frac{\left(1+K\varepsilon\right)\left(m_\star + 4\pi K\varepsilon^{2}r^{3}\right)}{2Kr\left(r-2m_\star\right)}
+\]
+在表面 $\varepsilon\to0$ 时，分子 $\to\mathcal{M}>0$、分母 $\to 2KR(R-2\mathcal{M})>0$，所以
+\[
+\left.\frac{\dd\varepsilon}{\dd r}\right|_{R} = -\frac{\mathcal{M}}{2KR(R-2\mathcal{M})}
+\approx \begin{cases}
+-1.45\times10^{-4}\ \mathrm{km^{-3}} \quad (\text{A})\\
+-4.78\times10^{-4}\ \mathrm{km^{-3}} \quad (\text{B})
+\end{cases}
+\]
+是有限非零值，$\varepsilon$ 以有限斜率穿过零，用 $\varepsilon=0$ 的 terminal event 定位表面是稳定的。
+
+把容限从 $10^{-8}$ 收紧到 $10^{-12}$，并把起点 $r_0$ 从 $10^{-4}$ km 改到 $10^{-8}$ km，得到相对变化（$\Delta R/R$，$\Delta\mathcal{M}/\mathcal{M}$ 相对参考行 rtol $=10^{-12}$，$r_0=10^{-8}$ km）
+
+| rtol | $r_0$ [km] | $\Delta R/R$（A） | $\Delta\mathcal{M}/\mathcal{M}$（A） | $\Delta R/R$（B） | $\Delta\mathcal{M}/\mathcal{M}$（B） |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| $10^{-8}$ | $10^{-4}$ | $3.97\times10^{-10}$ | $1.32\times10^{-9}$ | $9.51\times10^{-10}$ | $2.91\times10^{-10}$ |
+| $10^{-8}$ | $10^{-6}$ | $4.08\times10^{-10}$ | $4.41\times10^{-10}$ | $8.60\times10^{-10}$ | $2.82\times10^{-10}$ |
+| $10^{-8}$ | $10^{-8}$ | $4.08\times10^{-10}$ | $4.40\times10^{-10}$ | $8.60\times10^{-10}$ | $2.86\times10^{-10}$ |
+| $10^{-10}$ | $10^{-4}$ | $5.19\times10^{-12}$ | $1.51\times10^{-11}$ | $1.41\times10^{-11}$ | $7.17\times10^{-12}$ |
+| $10^{-10}$ | $10^{-6}$ | $5.32\times10^{-12}$ | $1.45\times10^{-11}$ | $1.13\times10^{-11}$ | $6.46\times10^{-12}$ |
+| $10^{-10}$ | $10^{-8}$ | $5.32\times10^{-12}$ | $1.45\times10^{-11}$ | $1.13\times10^{-11}$ | $6.46\times10^{-12}$ |
+| $10^{-12}$ | $10^{-4}$ | $0$ | $1.95\times10^{-16}$ | $8.79\times10^{-16}$ | $1.30\times10^{-15}$ |
+| $10^{-12}$ | $10^{-6}$ | $1.76\times10^{-16}$ | $1.95\times10^{-16}$ | $0$ | $8.29\times10^{-16}$ |
+| $10^{-12}$ | $10^{-8}$ | $0$ | $0$ | $0$ | $0$ |
+
+所有相对变化都不超过 $1.3\times10^{-9}$，比要求的 $10^{-3}$ 小六个量级以上；改变 $r_0$ 的影响与改变容限处于同一量级，说明起点选择没有引入系统误差。
+
 
 
 (d) (4分) 由 $c_s^2/c^2=\mathrm{d}P/\mathrm{d}\varepsilon$ 判断两组模型实际取样的密度区间是否满足因果声速条件，并求该状态方程允许的最大 $\rho_E$。“数值积分得到静态解”“物态在取样区间满足因果性”和“星体对径向扰动稳定”是否等价？说明本题计算能够、不能支持哪些结论。
 
-提交内容：第 1 题及选做第 5 题的数值结果应可复现，附程序、参数设置、图及收敛表；无需使用指定的软件语言。
+对 $P = K\varepsilon^{2}$
+\[
+\frac{c_s^{2}}{c^{2}} = \frac{\dd P}{\dd\varepsilon} = 2K\varepsilon
+\]
+它在中心取最大值，并随 $r$ 单调下降。对两个模型
 
+| 模型 | $\max c_s^{2}/c^{2} = 2K\varepsilon_c$ | 取样区间是否因果 | 违反因果的区域 |
+|:---:|:---:|:---:|:--:|
+| A | $0.5198$ | 是 | 无 |
+| B | $5.198$ | 否 | $r<3.389$ km |
+
+所以模型 A 的整个取样区间满足因果条件 $c_s\le c$；模型 B 的核心区声速超过光速，其 $R$、$\mathcal{M}$ 只能作为形式解看待。该状态方程允许的最大密度由 $2K\varepsilon_{\max} = 1$ 给出
+
+\[
+\varepsilon_{\max} = \frac{1}{2K} = \frac{1}{280}\ \mathrm{km^{-2}} = 3.5714\times10^{-3}\ \mathrm{km^{-2}} \\
+\rho_{E,\max} = \frac{\varepsilon_{\max}}{7.42616\times10^{-19}\ \mathrm{km^{-2}/(g\,cm^{-3})}}
+\approx 4.809\times10^{15}\ \mathrm{g\,cm^{-3}}
+\]
+题给的三个命题并不等价，“数值积分得到静态解”只说明 TOV 方程在该中心密度下存在解（$P$ 在某个 $R$ 处为零、内部 $r>2m_\star$），这是结构方程的性质，任何正压物态都能积分出这样的解，与物态的微观因果性无关。“物态在取样区间满足因果性”是对 $P(\varepsilon)$ 本身的限制（$c_s\le c$），与解是否存在、是否稳定无关，模型 B 就是“有静态解但不因果”的例子。“星体对径向扰动稳定”是动力学性质，需要对 TOV 平衡解作扰动分析，静态积分本身给不出任何稳定性信息。
+
+因此本题的计算能够支持：两个模型都是 TOV 方程的静态平衡解，A 是满足因果率的，B 的核心区域不满足因果率。
+
+不能支持：任何稳定性相关的结论。
